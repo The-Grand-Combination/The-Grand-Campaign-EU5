@@ -1,0 +1,500 @@
+﻿#Age of Tradition
+maritime_law = {
+	law_category = military
+	potential = {
+		OR = {
+			num_of_ports > 0
+			is_merchant_republic = yes
+		}
+	}
+
+	forestry_ordinance = {
+		country_modifier = {
+			global_naval_supplies_output_modifier = 0.10
+		}
+		estate_preferences = {
+			burghers_estate
+		}
+		years = 2
+	}	
+
+	mandatory_impressment = {
+		country_modifier = {
+			global_sailors_modifier = 0.10
+		}
+		estate_preferences = {
+			nobles_estate
+		}
+		years = 2
+	}		
+
+	navy_audits = {
+		country_modifier = {
+			navy_maintenance_cost = -0.05
+		}
+		estate_preferences = {
+			peasants_estate
+		}
+		years = 2
+	}	
+	
+	protect_trade_routes = {
+	  	country_modifier = {
+			burghers_estate_target_satisfaction = small_permanent_target_satisfaction
+			trade_range_modifier = 0.10
+		}
+		estate_preferences = {
+			burghers_estate
+		}
+		years = 2
+	}
+
+	shipwright_standard_regulation = {
+		country_modifier = {
+			ship_build_speed = 0.10
+		}
+		estate_preferences = {
+			burghers_estate
+		}
+		years = 2
+	}
+
+	#Country Specific
+	ara_consulate_sea = {		
+    	potential = {
+			tag = ARA
+			has_unlocked_policy_trigger = { type = ara_consulate_sea }
+		}
+		country_modifier = {
+			trade_efficiency = small_trade_efficiency_bonus
+			global_merchant_power = 0.1
+			monthly_towards_naval = societal_value_monthly_move
+		}
+		estate_preferences = {
+			burghers_estate
+		}
+		years = 2
+	}
+
+	nav_maritime_code = {
+		
+    	potential = {
+			tag = NAV
+		}
+    	allow = {
+			
+		}
+		country_modifier = {
+			monthly_navy_tradition = 0.05
+			global_sailors_modifier = 0.25
+			monthly_towards_naval = societal_value_monthly_move
+		}
+		estate_preferences = {
+			burghers_estate
+			peasants_estate
+		}
+		years = 2
+	}
+
+	kilwan_merchant_navy = {
+		
+		potential = {
+			tag = ZAN
+		}
+
+		country_modifier = {
+			navy_light_ship_maintenance_cost_modifier = -0.25
+			global_naval_supplies_output_modifier = 0.1
+			monthly_towards_naval = societal_value_monthly_move
+		}
+		estate_preferences = {
+			burghers_estate
+		}
+		years = 2
+	}
+
+	smugglers_haven = {
+		
+		potential = {
+			has_reform = government_reform:pirate_brethren_reform
+		}
+
+		country_modifier = {
+			global_maritime_presence_modifier = 0.1
+			navy_light_ship_maintenance_cost_modifier = -0.25
+		}
+		estate_preferences = {
+			burghers_estate
+		}
+		years = 2
+	}
+
+	act_of_navigation = {
+        potential = {
+			has_unlocked_policy_trigger = { type = act_of_navigation }
+		}
+
+		country_modifier = {
+			global_trades_per_burgher = 0.25
+			monthly_towards_mercantilism = societal_value_monthly_move
+		}
+		estate_preferences = { burghers_estate }
+		years = 2
+	}
+
+}
+
+piracy_law = {
+	law_category = military
+	potential = {
+		num_of_ports > 0
+	}
+
+	state_piracy_policy = {
+		allow = {
+			custom_tooltip = {
+				text = has_state_piracy_policy_access
+				OR = {
+					has_unlocked_policy_trigger = { type = state_piracy_policy }
+					tag = KNI
+					tag = TUR 
+					has_advance = privateers
+					has_advance = letters_of_marque
+					has_reform = government_reform:galley_lords_reform
+					has_reform = government_reform:pirate_brethren_reform
+					capital.region = region:maghreb_region
+				}
+			}
+		}
+		country_modifier = {
+			can_hire_privateers = yes
+			privateer_maintenance_cost_modifier = -0.33
+			can_be_target_of_anti_piracy_cb = yes
+		}
+		estate_preferences = {
+			nobles_estate
+		}
+		years = 2
+	}	
+	issue_letter_of_marque_policy = {
+		allow = {
+			custom_tooltip = {
+				text = has_privateers_or_LoM_advances
+				OR = {
+					has_advance = privateers
+					has_advance = letters_of_marque
+				}
+			}
+		}
+		country_modifier = {
+			hire_privateer_cost_modifier = -0.25
+			navy_maintenance_cost = 0.10
+		}
+		estate_preferences = {
+			crown_estate
+		}
+		years = 2
+	}
+	
+	anti_piracy_policy = {
+		allow = {
+			NOR = {
+				has_reform = government_reform:galley_lords_reform
+				has_reform = government_reform:pirate_brethren_reform
+			}
+		}
+		country_modifier = {
+			anti_piracy_warfare_modifier = 0.25
+			can_create_anti_piracy_cb = yes
+		}
+		estate_preferences = {
+			burghers_estate
+		}
+		years = 2
+		on_activate = {
+			custom_tooltip = {
+				text = anti_piracy_policy_at
+				every_known_country = {
+					limit = {
+						has_policy = state_piracy_policy 
+					}
+					add_opinion = {
+						modifier = allows_state_piracy_modifier
+						target = ROOT
+					}
+				}
+			}
+		}
+		on_deactivate = {
+			custom_tooltip = {
+				text = anti_piracy_policy_dt
+				every_known_country = {
+					limit = {
+						has_opinion = { 
+							target = ROOT 
+							modifier = allows_state_piracy_modifier 
+						}
+					}
+					remove_opinion = { 
+						target = ROOT
+						modifier = allows_state_piracy_modifier 
+					}
+				}
+			}
+		}
+	}
+	sea_beggars_policy = {
+		potential = {
+			has_unlocked_policy_trigger = { type = sea_beggars_policy }
+		}
+		allow = {
+		
+		}
+		country_modifier = {
+			can_hire_privateers = yes
+			ship_capture_chance = 0.1
+		}
+		estate_preferences = {
+			nobles_estate
+		}
+		years = 2
+	}
+}
+
+#Age of Absolutism
+naval_doctrine_law = {
+	law_category = military
+	potential = {
+	}
+
+	fleet_in_being = {
+		country_modifier = {
+			navy_maintenance_cost = -0.10
+			monthly_towards_outward = societal_value_monthly_move
+		}
+		estate_preferences = {
+			crown_estate
+		}
+		years = 2
+
+	}
+
+	free_oarsmen = {
+		country_modifier = {
+			navy_galley_power = 0.10
+			monthly_towards_free_subjects = societal_value_monthly_move
+		}
+		estate_preferences = {
+			peasants_estate
+		}
+		years = 2
+		
+	}
+
+	merchant_navy = {
+		country_modifier = {
+			merchant_power_from_maritime_modifier = 0.1
+			trade_range_modifier = 0.10
+			monthly_towards_free_trade = societal_value_monthly_move
+		}
+		estate_preferences = {
+			burghers_estate
+		}
+		years = 2
+		
+	}
+
+	ship_boarding = {
+		country_modifier = {
+			ship_capture_chance = 0.33
+			navy_tradition_from_battle = 0.5
+		}
+		estate_preferences = {
+			nobles_estate
+		}
+		years = 2
+	}
+
+
+
+	wooden_wall = {
+        potential = {
+			OR = {
+				tag = ENG
+				tag = GBR
+			}
+		}
+
+		country_modifier = {
+			own_coast_naval_combat_bonus = 0.1
+		}
+		estate_preferences = {
+			burghers_estate
+			peasants_estate
+		}
+		years = 2
+
+	}
+
+	grand_armada = {
+		potential = {
+			OR = {
+				tag = CAS
+				AND = {
+					tag = SPA
+					culture = culture:castilian
+				}
+			}
+		}
+
+		country_modifier = {
+			navy_maintenance_cost = -0.10
+			expected_navy_size_modifier = 0.25
+		}
+		estate_preferences = {
+			crown_estate
+			burghers_estate
+		}
+		years = 2
+
+	}
+
+	portuguese_marines = {
+		potential = {
+			OR = {
+				tag = POR
+				AND = {
+					tag = SPA
+					culture = culture:portuguese
+				}
+			}
+		}
+
+		country_modifier = {
+			army_disembark_speed = 0.33
+			blockade_efficiency = 0.1
+		}
+		estate_preferences = {
+			nobles_estate
+			burghers_estate
+		}
+		years = 2
+	}
+
+	ordinance_sea = {
+		potential = {
+			OR = {
+				tag = ARA
+				culture = culture:catalan
+				AND = {
+					tag = SPA
+					OR = {
+						culture = culture:aragonese
+						culture = culture:catalan
+					}
+				}
+			}
+		}
+
+		country_modifier = {
+			navy_initiative = 0.15
+		}
+		estate_preferences = {
+			nobles_estate
+			burghers_estate
+		}
+		years = 2
+	}
+
+	danish_admirality = {
+		potential = {
+			tag = DAN
+		}
+		country_modifier = {
+			monthly_navy_tradition = 0.05
+		}
+		estate_preferences = {
+			burghers_estate
+		}
+		years = 2
+	}
+
+	norwegian_sailors = {
+		potential = {
+			tag = NOR
+		}
+
+		country_modifier = {
+			global_sailors_modifier = 0.2
+		}
+		estate_preferences = {
+			peasants_estate
+		}
+		years = 2
+	}
+
+	venetian_galleys = {
+		potential = {
+			tag = VEN
+		}
+
+		country_modifier = {
+			navy_galley_power = 0.05
+			own_coast_naval_combat_bonus = 0.05
+		}
+		estate_preferences = {
+			nobles_estate
+		}
+		years = 2
+	}
+
+	venetian_oarsmen_conscription = {
+		potential = {
+			has_unlocked_policy_trigger = { type = venetian_oarsmen_conscription }
+		}
+		country_modifier = {
+			navy_galley_power = 0.10
+			global_sailors_modifier = 0.1
+			monthly_towards_naval = societal_value_monthly_move
+		}
+		estate_preferences = {
+			burghers_estate
+		}
+		years = 2
+	}
+
+
+	dutch_trade_fleet = {
+		potential = {
+			tag = NED
+		}
+
+		country_modifier = {
+			merchant_power_from_maritime_modifier = 0.15
+			colonial_range_modifier = 0.2
+		}
+		estate_preferences = {
+			burghers_estate
+		}
+		years = 2
+	}
+
+	basque_mariners = {
+		potential = {
+			OR = {
+				culture = culture:basque
+				tag = NAV
+			}
+		}
+
+		country_modifier = {
+			global_maritime_presence_modifier = 0.2
+			own_coast_naval_combat_bonus = 0.05
+		}
+		estate_preferences = {
+			burghers_estate
+			peasants_estate
+		}
+		years = 2
+	}
+}

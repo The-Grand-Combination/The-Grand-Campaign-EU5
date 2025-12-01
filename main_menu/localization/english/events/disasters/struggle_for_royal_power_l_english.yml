@@ -1,0 +1,17 @@
+﻿l_english:
+ struggle_for_royal_power.1.title: "The Struggle for Royal Power"
+ struggle_for_royal_power.1.desc: "Tension between the [ROOT.GetCountry.GetGovernment.GetRulerTitle] and the Sejm has reached a breaking point. The [ROOT.GetCountry.GetGovernment.GetRulerTitle] has become entirely intolerant of the perpetual need to compromise with the Szlachta in order to accomplish even the most minor act of governance, with these nobles finding cause to act against the monarch at every possible turn. The [ROOT.GetCountry.GetGovernment.GetRulerTitle] believes that it is finally time to put an end to the power of the Sejm in [ROOT.GetCountry.GetName]."
+ struggle_for_royal_power.1.a: "Wage a war on the Szlachta."
+ 
+ 
+ struggle_for_royal_power.100.title: "Struggle for Royal Power Ends"
+ struggle_for_royal_power.100.desc: "After a long struggle involving both political and military conflict, the crisis in [ROOT.GetCountry.GetName] is at an end. There is no longer any doubt as to where the true power in [ROOT.GetCountry.GetName] lies."
+ struggle_for_royal_power.100.a: "The [ROOT.GetCountry.GetGovernment.GetRulerTitle] is supreme!"
+ struggle_for_royal_power.100.b: "The Sejm is supreme!"
+ struggle_for_royal_power.100.c: "This Civil War will be the end of [ROOT.GetCountry.GetName]"
+
+ struggle_for_royal_power.10.title: "Konfederacja"
+ struggle_for_royal_power.10.desc: "Just as the [ROOT.GetCountry.GetGovernment.GetRuler.GetName] has resolved to remove power from the Sejm, so has the Sejm made its own demands to the [ROOT.GetCountry.GetGovernment.GetRuler.GetName]. Mikolaj Zebrzydowski, Jan Szczesny Herburt, Stanislaw Stadnicki, Aleksander Józef Lisowski and Janusz Radziwill have formed a rokosz, or semi-legal rebellion, in Stezyca and Lublin. The nobles have gathered at the rokosz formed a Konfederacja which outlined demands in 67 articles, demanding the dethronement of [ROOT.GetCountry.GetGovernment.GetRuler.GetName] for breaching the Henrician Articles, and the right for the Sejm to appoint state officials instead of the [ROOT.GetCountry.GetGovernment.GetRulerTitle]."
+ struggle_for_royal_power.10.a: "Try to negotiate with the konfederacja."
+ struggle_for_royal_power.10.b: "Reject their demands."
+ 

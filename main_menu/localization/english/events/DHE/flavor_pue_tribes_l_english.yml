@@ -1,0 +1,34 @@
+﻿l_english:
+
+flavor_pue.101.title: "The Chaco Roads"
+flavor_pue.101.desc: "Though their main use by our ancestors have since long passed, the Chaco Roads throughout [ShowLocationNameWithNoTooltip('aaku')] and [ShowLocationNameWithNoTooltip('shiewhibak')] have instead served our people as a critical landmark for transporting food and other goods. However, as the centuries have passed, portions of these roads have fallen into disrepair, resulting in key paths along the roads to slowly fade away.\n\nSeeking to restore portions of these roads, [our_ruler.GetName] has requested help throughout [ROOT.GetCountry.GetCapital.GetName], looking for volunteers to restore these damaged regions before they are lost for good."
+flavor_pue.101.a: "Rebuild the roads of our ancestors."
+flavor_pue.101.b: "We cannot spare the resources."
+
+flavor_pue.102.title: "Irrigation of [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip]"
+flavor_pue.102.desc: "Though our people have managed to form a unique settlement with [ROOT.GetCountry.GetCapital.GetName] situated on a plateau, it has also brought with it the challenges for irrigations as with many settlements within [ShowAreaName('shiewhibak_area')]. Seeking to establish a robust irrigation system, [our_ruler.GetName] has requested assistance in reinforcing existing canals, in order to ensure a more stable source of water for [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip]."
+flavor_pue.102.a: "Divert resources to improve [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip]'s irrigation."
+flavor_pue.102.b: "We have no need for these efforts."
+
+flavor_pue.103.title: "A Place That Always Was"
+flavor_pue.103.desc: "Though many of the [ShowCultureGroupName('puebloan_group')] settlements throughout [ShowAreaName('shiewhibak_area')] have been situated on cliffs, the [ShowCultureGroupNameWithNoTooltip('puebloan_group')] of [ShowLocationName('aaku')] remains one of the most unique, with it being situated on an elevated mesa. Though [ShowLocationNameWithNoTooltip('aaku')] has been met with challenges with its distinct elevated position, this has also been one of its biggest strengths, offering an extremely defensive position should its people be forced into conflict."
+flavor_pue.103.a: "[ShowLocationNameWithNoTooltip('aaku')] position is one of a kind."
+
+flavor_pue.104.title: "Seat of our Ancestors"
+flavor_pue.104.desc: "Having come to be [ROOT.GetCountry.GetGovernment.GetRulerTitle] over multiple [ShowCultureGroupName('puebloan_group')] tribes, [our_ruler.GetName] along with the support of [our_ruler.GetHisHer] inner circle, has requested support amongst the [ShowCultureGroupNameWithNoTooltip('puebloan_group')] settlements to resettle the abandoned [ShowLocationName('tse_bitai')]. Once a major seat of our ancestors, the abandonment of [ShowLocationNameWithNoTooltip('tse_bitai')] resulted in the eventual fragmentation of our peoples into multiple tribes. Though harsh conditions also contributed to our ancestors abandoning the region, [our_ruler.GetNameWithNoTooltip] hopes that through a combined effort, reclaiming [ShowLocationNameWithNoTooltip('tse_bitai')] may now be a possibility."
+flavor_pue.104.a: "We shall return to the seat of our ancestors."
+flavor_pue.104.b: "It is best we not follow in our ancestors path."
+
+flavor_pue.105.title: "Resettlement of [ShowLocationNameWithNoTooltip('tse_bitai')]"
+flavor_pue.105.desc: "Having come to resettle [ShowLocationName('tse_bitai')], [our_ruler.GetName] along with members of the [ShowCultureGroupName('puebloan_group')] settlements under [ROOT.GetCountry.GetName] have debated designating it as the new main capital. Though [ROOT.GetCountry.GetCapital.GetName] has long served our tribe since our ancestors exodus from [ShowLocationNameWithNoTooltip('tse_bitai')], our recent return has prompted debate if it should once more serve as the main settlement for our peoples. Though the resettlement of [ShowLocationNameWithNoTooltip('tse_bitai')] is still in full swing, there are still old fears that the harsh droughts that forced our ancestors to flee may resurface again, and cause another collapse."
+flavor_pue.105.a: "It shall serve as our seat once more."
+flavor_pue.105.b: "It would remain best if [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip] remained the seat of [ROOT.GetCountry.GetNameWithNoTooltip]."
+
+flavor_pue.106.title: "Reuniting the [ShowCultureGroupNameWithNoTooltip('puebloan_group')]"
+flavor_pue.106.desc: "Through the efforts of [our_ruler.GetName], several [ShowCultureGroupName('puebloan_group')] tribes have been brought under a single [ROOT.GetCountry.GetGovernment.GetRulerTitle]. While it has been centuries since the collapse of our ancestors' society, some see [our_ruler.GetNameWithNoTooltip] as a unifying figure who could once again unite the various [ShowCultureGroupNameWithNoTooltip('puebloan_group')] tribes that long since left our ancestral lands."
+flavor_pue.106.a: "It is time our peoples unite once again."
+flavor_pue.106.b: "It would be a costly effort, let us focus on peace instead."
+
+flavor_pue.107.title: "Successors of the Ancestral [ShowCultureGroupNameWithNoTooltip('puebloan_group')]"
+flavor_pue.107.desc: "Once seen as an impossible task, [our_ruler.GetName] has managed to unite the various [ShowCultureGroupName('puebloan_group')] tribes that fractured following the collapse of our ancestors. Having pledged to allow each tribe to retain autonomy in its developed identity, [our_ruler.GetNameWithNoTooltip] hopes that the reunited peoples can retain kinship in the centuries to come and avoid the conflicts that fractured our ancestors."
+flavor_pue.107.a: "May our people remain forever united!"

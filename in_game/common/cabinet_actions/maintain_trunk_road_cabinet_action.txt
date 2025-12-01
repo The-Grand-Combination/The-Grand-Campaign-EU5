@@ -1,0 +1,15 @@
+﻿maintain_trunk_road_cabinet_action = {
+	
+	potential = {
+		has_unlocked_cabinet_action_trigger = {
+			type = maintain_trunk_road_cabinet_action
+		}
+	}
+	ability = dip
+	allow_multiple = no
+
+	country_modifier = {
+		global_road_building_time = -0.15
+		road_cost_on_distance_from_capital = -0.5
+	}
+}

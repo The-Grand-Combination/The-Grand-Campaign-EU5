@@ -1,0 +1,13 @@
+﻿posolsky = {
+	ability = dip
+	icon = diplomatic_endeavors
+	potential = {
+		has_reform = government_reform:prikazi_reform
+		has_variable = posolsky_prikaz_established
+	}
+	
+	country_modifier = {
+		diplomatic_reputation = diplomatic_reputation_mild_bonus
+		diplomatic_annexation_cost = -0.1
+	}
+}

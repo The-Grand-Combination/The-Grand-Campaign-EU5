@@ -1,0 +1,10 @@
+﻿l_english:
+ generic_mercenary_name: "The [AREA.GetName] Company"
+ burgher_cogs_name: "The [AREA.GetName] Cogs"
+ rogue_free_company_1: "Rogue Routiers"
+ rogue_free_company_2: "Rogue Routiers"
+ french_levy_retinue: "French Levy Retinue"
+ french_elite_retinue: "French Infantry Retinue"
+ flo_white_company: "White Company"
+ pol_lisowczycy: "Lisowczyks"
+ mor_ottoman_mercenaries: "Ottoman Corps"

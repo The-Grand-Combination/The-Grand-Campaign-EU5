@@ -1,0 +1,11 @@
+﻿ispolneniya_zakonov = {
+	ability = adm
+	potential = {
+		has_reform = government_reform:prikazi_reform
+	}
+	
+	country_modifier = {
+		global_monthly_control = 0.005
+		legislative_efficiency = 0.1
+	}
+}

@@ -1,0 +1,22 @@
+﻿l_english:
+ noble_marriage.1.title: "A [ROOT.GetCountry.GetGovernment.GetConsortTitle] for the [ROOT.GetCountry.GetGovernment.GetRuler.GetName]"
+ noble_marriage.1.desc: "As our [ROOT.GetCountry.GetGovernment.GetRulerTitle] is not married, the nobility has expressed a concern over the continuation of our monarchy. One of our most important nobles, [target.GetDynasty.GetDynastyHead.GetName], has proposed that our [ROOT.GetCountry.GetGovernment.GetRulerTitle] marries [target.GetName]"
+ noble_marriage.1.a: "This is a good solution!"
+ noble_marriage.1.b: "A mere noble can never be [ROOT.GetCountry.GetGovernment.GetConsortTitle]"
+
+ noble_marriage.2.title: "A Future [ROOT.GetCountry.GetGovernment.GetConsortTitle]!"
+ noble_marriage.2.desc: "As our [ROOT.GetCountry.GetGovernment.GetHeirTitle] is not married, the nobility has expressed a concern over the continuation of our monarchy. One of our most important nobles, [target.GetDynasty.GetDynastyHead.GetName], has proposed that our [ROOT.GetCountry.GetGovernment.GetHeirTitle] marries [target.GetName]"
+ noble_marriage.2.a: "This is a good solution!"
+ noble_marriage.2.b: "This is an insult to our [ROOT.GetCountry.GetGovernment.GetHeirTitle]."
+
+ noble_marriage.3.title: "$noble_marriage.1.title$"
+ noble_marriage.3.desc: "$noble_marriage.1.desc$"
+ noble_marriage.3.a: "There is no other option!"
+ noble_marriage.3.b: "Only one of royal blood will do!"
+ 
+ 
+ valid_female_of_ruler_dynasty: "Is valid female [character|e] of their [dynasty|e]"
+ noble_marriage.4.title: "Closer Ties with the House of [male_target.GetDynasty.GetNameWithNoTooltip]"
+ noble_marriage.4.desc: "In an effort to bind their family to [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetName], [male_target.GetDynasty.GetDynastyHead.GetName], has proposed that he should marry [female_target.GetName]."
+ noble_marriage.4.a: "This is good for the [ROOT.GetCountry.GetLongNameWithNoTooltip]!"
+ noble_marriage.4.b: "This is an insult!"

@@ -1,0 +1,12 @@
+﻿l_english:
+ border_friction.1.title: "Border Friction"
+ border_friction.1.desc: "Not everyone is happy that we have allied ourselves with the [border_claim_country.GetLongName]. An influential faction of our [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] has been pushing for an end to the alliance, focusing on the province of [border_claim_province.GetName], which is held by [border_claim_country.GetNameWithNoTooltip] but which many view as rightfully ours. They have been able to stir up widespread outrage at the situation!"
+ border_friction.1.a: "Perhaps a policy change is in order..."
+ border_friction_from_event: "Irritated over Claims"
+ border_friction.1.b: "Put a positive spin on things!"
+ border_friction.1.c: "Renounce our claim."
+ border_friction.2.title: "$border_friction.1.title$"
+ border_friction.2.desc: "'[border_claim_province.GetName], our rightful territory, is held by other nations and our government seems to be making no effort to recover it! What use are they anyway?' proclaims the broadsheet, calling for war with the [border_claim_country.GetLongName].\n\nStirred up by these invectives, widespread dissatisfaction with our failure to recover our claimed provinces is sweeping the nation."
+ border_friction.2.a: "$border_friction.1.a$"
+ border_friction.2.b: "$border_friction.1.b$"
+ border_friction.2.c: "Revoke the claim."

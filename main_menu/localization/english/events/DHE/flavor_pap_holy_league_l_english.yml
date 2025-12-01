@@ -1,0 +1,47 @@
+﻿l_english:
+ flavor_pap_holy_league.1.title: "The Holy League"
+ flavor_pap_holy_league.1.desc: "The fall of [ShowLocationName('constantinople')] and the subsequent [GetCountry('TUR').GetAdjective] expansion into the [ShowRegionName('balkan_region')] came as a devastating blow to Christendom. As a result, many have been calling us to act in retaliation. As the leader of the [GetUniqueInternationalOrganization('catholic_church').GetName], it is our holy duty to gather the maritime powers of [ShowRegionName('italy_region')] and the Mediterranean to our side and call a crusade in order to banish the infidel from [ShowContinentName('europe')] for good."
+ flavor_pap_holy_league.1.a: "Call the crusade!"
+ flavor_pap_holy_league.1.a.tt: "[THIS.GetCountry.GetName] will be invited to the [crusade|e]."
+ flavor_pap_holy_league.1.b: "We cannot face them..."
+ flavor_pap_holy_league.1.historical_info: "The Holy Leagues were alliances of Christian states, primarily organized by the Pope, to counter the expansion of the Ottoman Empire, which posed a significant threat to Christian kingdoms and the Catholic Church. These leagues were crucial in slowing the Ottoman advance and protecting Europe from further Turkish incursions."
+ 
+ flavor_pap_holy_league.2.title: "Call of the Crusade"
+ flavor_pap_holy_league.2.desc: "A message from the [GetCountry('PAP').GetGovernment.GetRulerTitle] has reached our [ROOT.GetCountry.GetGovernment.GetCourtTitle]. [pope_ruler.GetHeSheFormal|U] has decided to form the Holy League of Mediterranean powers in an attempt to defeat the [GetCountry('TUR').GetAdjective] menace, stop their expansion in the [ShowRegionName('balkan_region')] Peninsula, and safeguard [ShowRegionName('italy_region')]."
+ flavor_pap_holy_league.2.a: "It is our duty to join the Holy League."
+ flavor_pap_holy_league.2.b: "This does not concern us."
+ 
+ flavor_pap_holy_league.3.title: "[target_country.GetNameWithNoTooltip] Joins the Holy League"
+ flavor_pap_holy_league.3.desc: "We have been blessed with great news! [target_ruler.GetName] of [target_country.GetName] has accepted our invitation to join the Holy League, and so the [target_country.GetAdjectiveWithNoTooltip] armies shall march alongside ours against [GetCountry('TUR').GetName]."
+ flavor_pap_holy_league.3.a: "Deus Vult!"
+ 
+ flavor_pap_holy_league.4.title: "[target_country.GetNameWithNoTooltip] Refuses to Join the Holy League"
+ flavor_pap_holy_league.4.desc: "That coward [target_ruler.GetName] of [target_country.GetName] has declined our invitation to join the Holy League, and so we are left without the support of [target_country.GetAdjectiveWithNoTooltip] armies in our struggle against [GetCountry('TUR').GetName]."
+ flavor_pap_holy_league.4.a: "One day, they will have to answer to God!"
+ 
+ flavor_pap_holy_league.5.title: "Triumph of the Holy League"
+ flavor_pap_holy_league.5.desc: "The armies of the Holy League have been successful in their crusade against the [GetCountry('TUR').GetName] and have won a decisive victory. This triumph is hopefully but a first step in our effort to free the [ShowRegionName('balkan_region')] of heathen influences and restore the rule of the Cross over the region."
+ flavor_pap_holy_league.5.a: "God is on our side!"
+ flavor_pap_holy_league.5.historical_info: "The Holy League achieved victories in numerous conflicts against the Ottomans. For example, the Battle of Lepanto or the Siege of Vienna saw the Ottomans defeated, leading to their retreat from large parts of Europe and a significant reduction of their power, both on land and sea."
+ 
+ flavor_pap_holy_league.6.title: "Defeat of the Holy League"
+ flavor_pap_holy_league.6.desc: "With the signing of a humiliating peace treaty, the efforts of the Holy League to break the [GetCountry('TUR').GetAdjective] rule over the [ShowRegionName('balkan_region')] have failed. This crushing blow will likely allow them to secure dominance over the [ShowRegionNameWithNoTooltip('balkan_region')] and send shock waves through [ShowContinentName('europe')]. The once-confident crusaders are in retreat, and [GetCountry('TUR').GetNameWithNoTooltip] are now poised to expand their empire even further."
+ flavor_pap_holy_league.6.a: "A devastating blow..."
+ flavor_pap_holy_league.6.historical_info: "The Ottomans achieved victories in numerous conflicts involving the Holy League. For example, the Battle of Nicopolis, Varna, or Suleiman's wars against the League saw the Ottomans emerge victorious, enabling them to further expand their territory in Europe and cement their dominance in the eastern Mediterranean."
+ 
+ flavor_pap_holy_league.7.title: "Battle of Lepanto"
+ flavor_pap_holy_league.7.desc: "In a momentous and historic clash, the [ROOT.GetCountry.GetAdjective] navy has achieved a decisive victory over the [GetCountry('TUR').GetAdjective] fleet at the Battle of Lepanto. This unparalleled triumph in naval warfare, one of the greatest since antiquity, has dealt a significant blow to [GetCountry('TUR').GetAdjectiveWithNoTooltip] naval power and has the potential to turn the tide in favor of Christendom. The heroism and skill of our sailors and commanders have not only secured a vital strategic victory but also uplifted the spirits of all [ShowReligionGroupAdjective('christian')] nations."
+ flavor_pap_holy_league.7.a: "Our naval might is unmatched!"
+ flavor_pap_holy_league.7.historical_info: "The Battle of Lepanto, fought on October 7, 1571, was a crucial naval engagement between the Holy League, a coalition of Christian states including Venice, Spain, and the Papal States, who stood united against the naval might of the Ottoman Empire. The victory of the Holy League marked a turning point in the struggle for control of the Mediterranean, significantly curbing Ottoman expansion and asserting Christian naval dominance in the region."
+ 
+ flavor_pap_holy_league.8.title: "Crusade of the Holy League"
+ flavor_pap_holy_league.8.desc: "In an attempt to halt [ROOT.GetCountry.GetAdjective] onslaught into the [ShowRegionName('balkan_region')], the infidels have formed a coalition led by [GetCountry('PAP').GetName]. They have called upon other nations to join their cause, and with the declaration of war, vast crusader armies are being mustered, The so-called Holy League shall soon cross our borders and march on [ShowLocationName('constantinople')]."
+ flavor_pap_holy_league.8.a: "Let them come..."
+ 
+ flavor_pap_holy_league.9.title: "Defeat of the Holy League"
+ flavor_pap_holy_league.9.desc: "The banners of the cross have been torn down, and the armies of the Holy League lie defeated. Against all odds, we have stood firm in the face of one of the greatest coalitions ever assembled against us. The [GetCountry('PAP').GetGovernment.GetRulerTitle]'s dreams of reclaiming the [ShowRegionName('balkan_region')] for Christendom have been shattered, and the [ShowReligionGroupAdjective('christian')] kings who dared challenge our might are now licking their wounds, retreating back to their lands in disgrace."
+ flavor_pap_holy_league.9.a: "Our victory will be immortalized in legend!"
+ 
+ flavor_pap_holy_league.10.title: "Victory of the Holy League"
+ flavor_pap_holy_league.10.desc: "The armies of the Holy League have triumphed, and our proud forces have been defeated on the battlefield. The [ShowReligionGroupAdjective('christian')] kings, united by the [GetCountry('PAP').GetGovernment.GetRulerTitle]'s call to crusade, have delivered a significant blown to our [ROOT.GetCountry.GetFlavorRank]. Across [ShowContinentName('europe')], church bells ring out in celebration of the Holy League's victory, while in our lands, there is unrest. The humiliation of defeat weighs heavily on the people. Our enemies have grown bold, and the [ShowReligionGroupAdjectiveWithNoTooltip('christian')] kings may seek further gains while we are weakened."
+ flavor_pap_holy_league.10.a: "A devastating blow..."

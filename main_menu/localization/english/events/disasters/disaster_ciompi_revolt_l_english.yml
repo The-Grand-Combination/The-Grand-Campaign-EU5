@@ -1,0 +1,52 @@
+﻿l_english:
+ ciompi_revolt.1.title: "The Ciompi Revolt"
+ ciompi_revolt.1.desc: "The bells of our churches sound the alarm as thousands of disgruntled peasants and merchants flood the streets of [target_location.GetName], in [target_location.GetAreaName]. A significant uprising by the lower classes against the ruling oligarchy, the revolt is fueled by social and economic grievances, including high taxes and poor working conditions. The Ciompi, mostly composed of wool workers and other artisans, demand political representation and better rights. The uprising threatens to potentially lead to a temporary reformation of the Florentine government unless suppressed by the ruling elite."
+ ciompi_revolt.1.a: "Difficult times are ahead..."
+
+ ciompi_revolt.2.title: "Gente Nuova"
+ ciompi_revolt.2.desc: "Amidst the turbulent times of [GetCurrentYear], a new generation of migrant merchants and citizens, the #italic Gente Nuova#!, has emerged as a political faction in our political circles. They are known for their progressive ideals and advocate for political and social reforms, aiming to challenge the ruling oligarchy and create a more inclusive government. Day by day, they gain support from the middle and lower classes, who are dissatisfied with the existing power structure. The faction's influence grows steadily as they strive to promote their vision for a more equitable society."
+ ciompi_revolt.2.a: "We will gladly sponsor the new generation of entrepreneurs."
+ ciompi_revolt.2.b: "This is not something we can afford at a time of crisis!"
+ ciompi_revolt.2.c: "[target_character.GetNameWithNoTooltip] will negotiate better terms."
+
+ ciompi_revolt.3.title: "The #italic Popolo Minuto#!"
+ ciompi_revolt.3.desc: "During the [GetCurrentYear] Ciompi Revolts, a new faction of disgruntled citizens, the #italic Popolo Minuto#!, has formed. Comprised of lower-class workers and artisans, they joined the uprising to protest against the ruling oligarchy, playing a prominent role during these uncertain times. The #italic Popolo Minuto#! seek improved working conditions, higher wages, and greater political representation. They are known to engage in street battles and demonstrations, fighting for their rights and demanding a fairer society. Their involvement in the revolt highlights the social and economic disparities faced by the lower classes during this period."
+ ciompi_revolt.3.a: "Some funds to ensure their allegiance are necessary."
+ ciompi_revolt.3.b: "They too must tighten their belts..."
+ ciompi_revolt.3.c: "The people trust [target_character.GetNameWithNoTooltip]!"
+
+ ciompi_revolt.4.title: "Spread of the #italic Miserabiles#!"
+ ciompi_revolt.4.desc: "Composed of the most impoverished individuals in society, the so-called #italic Miserabiles#! have joined the uprising alongside the #italic Popolo Minuto#!. They demand relief from extreme poverty and destitution, as well as a fairer distribution of wealth. They often participate in protests and demonstrations, seeking social and economic reforms to improve their dire living conditions. Their presence highlights the desperate plight of the most marginalized members of society during the tumultuous period of the Ciompi Revolts."
+ ciompi_revolt.4.a: "We must alleviate their hardships..."
+ ciompi_revolt.4.b: "They are on their own!"
+ ciompi_revolt.4.c: "[target_character.GetNameWithNoTooltip]'s executive powers will care for all."
+
+ ciompi_revolt.5.title: "Workers Flee the Burden of Tax"
+ ciompi_revolt.5.desc: "As a result of the costs accumulated during the last few years, workers are fleeing our domain due to high taxes. The heavy taxation imposed by the ruling oligarchy has become unbearable for the laboring class and even merchants across our ports. Facing economic hardship, many workers choose to leave their homes in search of better opportunities elsewhere. The exodus of workers exacerbates the social and economic tensions within [ROOT.GetCountry.GetName], further fueling the grievances that lead to the revolt."
+ ciompi_revolt.5.a: "Let them go."
+ ciompi_revolt.5.b: "We can compensate them."
+ ciompi_revolt.5.c: "[target_character.GetNameWithNoTooltip] is a compassionate ruler..."
+ ciompi_revolt_allowed_migration_effect_tt: "Due to our policy of allowing the [migration|e] of either [ShowPopTypeName('peasants')] or [ShowPopTypeName('laborers')], the number of migrating [pops|e] will be increased"
+
+ ciompi_revolt.6.title: "The Powers That Be"
+ ciompi_revolt.6.desc: "Recognizing the grievances of the lower classes, [target_character.GetName]'s many advisors demand [target_character.GetSheHe] tries to weaken the influence of the ruling oligarchy and address the social and economic disparities by challenging the strongholds of noble power within the country. Several steps to implement political reforms and provide representation for the working class have been planned meticulously as the power of individual nobles soars during this time of crisis. By challenging their power and influence, we shall aim to create a more equitable society and alleviate the grievances that fueled the revolt."
+ ciompi_revolt.6.a: "They may keep their rights, for now..."
+ ciompi_revolt.6.b: "Challenge their authority!"
+ ciompi_revolt.6.c: "[target_character.GetNameWithNoTooltip] believes in people, not rich nobles."
+
+ ciompi_revolt.7.title: "Pressure and Reform"
+ ciompi_revolt.7.desc: "The destruction wrought by the Ciompi revolts is etched on the skin of our people. Families go hungry, citizens resort to crime and rebellion as powerful and influential individuals continue to prosper during these harsh times. As a result, numerous voices, both in government and outside of it have demanded radical reforms to address their concerns for representation, meritocracy, and equity."
+ ciompi_revolt.7.a: "The peasants must know their place..."
+ ciompi_revolt.7.b: "The people's voice must be heard!"
+ ciompi_revolt.7.c: "The benevolence of [target_character.GetNameWithNoTooltip] is at full display!"
+
+ ciompi_revolt.8.title: "Crisis and Change"
+ ciompi_revolt.8.desc: "After a prolonged period of instability and revolts, we have managed to pull through these trying times. Hardships, defeats, and obstacles will only serve to strengthen our resolve and push us higher than we have ever reached before. The times of instability are behind us and we look to the future with excitement, whatever it may hold under new leadership."
+ ciompi_revolt.8.a: "Our people have survived the tests of history."
+ ciompi_revolt.8.b: "We need the strong leadership of a powerful man!"
+
+ #Custom Tooltips
+ every_location_capital_area_tt: "Every owned [location|e] in the [target_capital_area.GetName] area will gain the following:"
+ random_owned_non_rural_location_tt: "A random owned urban location will suffer the following:"
+ end_disaster_tt: "This will end the current [disaster|e]"
+ every_location_pops_dissatisfaction_tt: "Every [location|e]'s population will suffer the following:"

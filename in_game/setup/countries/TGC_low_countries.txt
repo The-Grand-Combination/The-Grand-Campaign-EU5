@@ -1,0 +1,54 @@
+NET = {
+	color = map_HOL
+	color2 = rgb { 16 41 202 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = low_franconian
+	religion_definition = calvinist
+
+	description_category = administrative
+	difficulty = 3
+}
+
+BEL = {
+	color = map_BEL
+	color2 = rgb { 16 41 202 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = walloon
+	religion_definition = catholic
+
+	description_category = administrative
+	difficulty = 3
+}
+
+FLA = {
+	color = map_FLA
+	color2 = rgb { 43 141 172 }
+
+	culture_definition = low_franconian
+	religion_definition = catholic
+
+	description_category = administrative
+	difficulty = 2
+}
+
+LUX = {
+	color = rgb { 53 140 73 }
+
+	culture_definition = moselle_franconian
+	religion_definition = catholic
+}
+
+FRI = {
+	color = rgb { 0 128 255 }
+
+	culture_definition = frisian
+	religion_definition = catholic
+}

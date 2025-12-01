@@ -1,0 +1,57 @@
+﻿l_english:
+
+  italian_wars.1.title: "The Italian Wars"
+  italian_wars.1.desc.a: "Dark hands behind closed doors and the endless scheming of other major nations around [ShowRegionName('italy_region')] have led to an unprecedented diplomatic fallout. As a result, our grasp on the peninsula, and our influence upon it, are questioned. At this time of peril, we must not falter. Victory in [ShowRegionNameWithNoTooltip('italy_region')] will surely secure our place among the great powers!"
+  italian_wars.1.desc.b: "War has come to [ShowRegionName('italy_region')]. The banners of foreign conquerors flock to usurp the great wealth held within our peninsula. Never before has our region fallen amid such a power struggle, as great powers circle our home like hungry vultures. It is time for our people to pick up the sword and the shield in favor of protecting our freedom, lest we fall victim to the expansionist tendencies of outsiders..."
+  italian_wars.1.a: "The die has been cast."
+  italian_wars_explanation_tooltip1: "During this time, states in [ShowRegionNameWithNoTooltip('italy_region')] will be able to defend themselves by joining an #italic Italian League#!.\n"
+  italian_wars_explanation_tooltip2: "Foreign countries may create their own #italic Foreign Leagues#! in a bid to expand their influence in the region.\n"
+  italian_wars_explanation_tooltip3: "[rivals|e] and [enemies|e] of #italic Foreign League#! leaders may intervene to assist #italic Italian Leagues#! through war or aid in the form of coin and men\n"
+  italian_wars_explanation_tooltip4: "Leaders of each League gain access to the [ShowPeaceTreatyTypeName('dissolve_league_peace_deal')] [peace_treaty|e]"
+  italian_wars.1.historical_info: "The Italian Wars (1494-1559) were a series of violent conflicts to determine the domination of Italy, mainly fought by France and Spain with a substantial part of Europe involved in this clash of powers. They began when Charles VIII of France invaded Italy in 1494, taking Naples, but Maximilian I of Habsburg, and Isabella of Castile and Ferdinand of Aragon, the Catholic Kings of Spain, rushed to the aid of the Pope to drive him out. The king of France then took Milan, Genoa, and Naples again in 1499, but Spain expelled them back from Naples in 1503, asserting their control over Southern Italy, and Pope Julius II formed an alliance to push the French out of northern Italy. A few years later, Francis I of France revived the French claim over Milan, which was taken in 1515, but in 1525 he lost a decisive battle in Pavia to Emperor Charles V, also King Charles I of Spain, and was captured. Francis I was released after formally renouncing all the French claims in Italy, but then he allied with England, the Pope, Venice, and Florence, with the resulted in the sack of Rome by the German landsknechts of Charles V in 1527, a peace with the Pope, and the imperial coronation of Charles V in Bologna in 1529. The wars finally ended in 1559 with the Peace of Cateau-Cambrésis, leaving the Spanish Habsburgs as the dominant power in Italy for 150 years."
+  italian_wars.2.title: "An End to Hostilities"
+  italian_wars.2.desc: "Under the iron fist of [target_character.GetName], the vultures of [target.GetName] have agreed to signing a white peace under threat of foreign invasion by the armies of [actor.GetName]..."
+  italian_wars.2.a: "An interesting outcome."
+  iw_we_are_safe_for_now_tt: "We are safe, for now..."
+
+  italian_wars.4.title: "Invitation to a League"
+  italian_wars.4.desc: "Tensions are rising in our region, and the reality of war has become all too grim for our people. In a response to the onslaught of terror brought about by foreign invaders, [actor.GetName] has elected to found the [target_io.GetName]. They have since extended an invitation to us, a matter of utmost diplomatic importance..."
+  italian_wars.4.a: "We accept!"
+  italian_wars.4.b: "We cannot risk our neutrality."
+  italian_wars.4.c: "We are loyal to [target_country.GetNameWithNoTooltip]!"
+
+  italian_wars.5.title: "Foreign Intervention"
+  italian_wars.5.desc: "It appears that our current struggle against a powerful foreign league has attracted the attention of another major player. As such, [target_character.GetName] has agreed to join our struggle against [target.GetName]."
+  italian_wars.5.a: "An interesting turn of events!"
+
+  italian_wars.7.title: "[actor.GetNameWithNoTooltip] Intervenes!"
+  italian_wars.7.desc: "The accursed dogs that call themselves [actor.GetLongName] have sent us an ultimatum. Apparently, our war against [target_country.GetName] has motivated them to action against us! They demand an immediate white peace lest they join on the side of our foes!"
+  italian_wars.7.a: "There will be bloodshed."
+  italian_wars.7.b: "We begrudgingly agree..."
+
+  italian_wars.9.title: "Aid from [actor.GetNameWithNoTooltip]"
+  italian_wars.9.desc: "A messenger from [actor.GetName] has made his way to our court, bringing news of their aid towards our ongoing defensive war. They seem concerned about the balance of power and as such they seemed willing to aid us."
+  italian_wars.9.a: "We align against a common foe, for now..."
+
+  italian_wars.10.title: "Balancing the Scales"
+  italian_wars.10.desc: "The ongoing war that plagues the lands of [target.GetName] threatens the balance of power in [ShowRegionName('italy_region')]. We cannot allow another League to set up a stronghold in the region, at our expense. As such, we have decided to send aid to the [target.GetLongNameWithNoTooltip], to bolster their cause of defending their lands from our foes."
+  italian_wars.10.a: "Send them men for their armies."
+  italian_wars.10.b: "They will receive valuable coin."
+
+  italian_wars.100.title: "The End of the Italian Wars"
+  italian_wars.100.desc: "Decades of struggle and the unending strife to protect our region has come to an end under our mighty League. The shadow of foreign invaders no longer plagues our borders as our people look to the future, carving a prosperous route to the ages!"
+  italian_wars.100.a: "Fortius quo fidelius!"
+  iw_gain_5_trust_with_every_member_tt: "We will gain #G 5#! [trust|e] with every other [member|e] of our #italic Italian League#!"
+  iw_send_aid_tt: "We will choose to assist the selected [country|e] through a token of [manpower|e] or [gold|e]"
+
+  italian_wars.200.desc: "The long-awaited conclusion to the Italian Wars has come to an end. With the dissolution of all foreign leagues that sought to subjugate our lands, peace, and prosperity have returned to our peninsula. The way is paved for our own ascension as the true masters of [ShowRegionName('italy_region')]."
+  italian_wars.200.a: "The era of [target_country.GetNameWithNoTooltip] has just begun!"
+
+  italian_wars.300.title: "[target_io.GetNameWithNoTooltip]'s Victory in [ShowRegionNameWithNoTooltip('italy_region')]"
+  italian_wars.300.desc: "Despite fierce and unyielding resistance for decades, [ShowRegionName('italy_region')] now lies firmly and largely under our grasp. Those who sought to interfere with our plans, now cower behind tall walls, fleeing the marching of our great armies. Today marks a new age of the region and our unquestionable claim upon it!"
+  italian_wars.300.a: "Long live [target_character.GetNameWithNoTooltip]!"
+
+  italian_wars.400.title: "[ShowCultureGroupNameWithNoTooltip('italian_group')] Stalemate"
+  italian_wars.400.desc: "Despite our best efforts to move the needle during the unfolding situation of the [ShowSituationName('italian_wars')], it seems that the states within it, as well as any outsider foreign invaders, have failed to unify the region or even substantially enforce their influence..."
+  italian_wars.400.a: "War, what is it good for?"
+  end_the_italian_wars_stalemate_tt: "The [ShowSituationNameWithNoTooltip('italian_wars')] will end in a stalemate..."

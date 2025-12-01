@@ -1,0 +1,57 @@
+﻿l_english:
+ 
+ flavor_hsa.1.title: "[target_character.GetNameWithNoTooltip]"
+ flavor_hsa.1.desc: "The merchant [target_character.GetName], who formerly worked in [ShowLocationName('london')] as a member of the Hanseatic League, has returned to [ShowLocationName('gdansk')]. He is to marry Christine Krüger, daughter of a prestigious Danzig citizen, and is currently looking for a new opportunity."
+ flavor_hsa.1.a: "Hire him"
+ flavor_hsa.1.b: "Ignore him"
+ 
+ flavor_hsa.2.title: "Shipbuilding technology"
+ flavor_hsa.2.desc: "We, the Hansa, sell ships everywhere in Europe, including Italy and control most of the shipbuilding market, mainly in Lübeck and in Danzig. Holland wants to favor Bruges as a huge staple market at the end of a trade route and is starting to become a competitor of us in shipbuilding. Should we stop the flow of shipbuilding technology from Hansa towns to Holland?"
+ flavor_hsa.2.a: "Stop the flow of shipbuilding technology!"
+ STATIC_MODIFIER_NAME_hsa_stop_shipbuilding_technology: "Stop spreading the shipbuilding technology"
+ STATIC_MODIFIER_DESC_hsa_stop_shipbuilding_technology: "The Netherlands has become a competitor to the Hansa and thus the Hansa has stopped spreading its shipbuilding technology."
+ flavor_hsa.2.b: "Spread the shipbuilding technology"
+ STATIC_MODIFIER_NAME_hsa_spread_shipbuilding_technology: "Spread the shipbuilding technology"
+ STATIC_MODIFIER_DESC_hsa_spread_shipbuilding_technology: "Hansa has agreed to spread its shipbuilding technology even though Holland has become its competitor."
+ 
+ flavor_hsa.3.title: "Tagfahrt"
+ flavor_hsa.3.desc: "As a new ruler is proclaimed, it is customary to hold a [ROOT.GetCountry.GetGovernment.GetParliament.GetName] where the league's members are invited to participate in the central meeting. The member communities have chosen #italic Ratssendeboten#! or envoys to represent their local consensus on the issue at the [ROOT.GetCountry.GetGovernment.GetParliament.GetName]. This round of deliberations has brought up some issues with the trade, the administration, and our military efforts at home and abroad. As the envoys have not managed to reach a conclusion as to which of these matters we should address, and although the consensus-building at the [ROOT.GetCountry.GetGovernment.GetParliament.GetName] is supposed to follow the Low Saxon tradition of Einung, it is our duty to decide which matter to address."
+ flavor_hsa.3.a: "Focus on matters of the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]."
+ flavor_hsa.3.b: "Tend to the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')], our lifeblood."
+ flavor_hsa.3.c: "We will hear of the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('peasants_estate')]."
+ flavor_hsa.3.d: "We will have no favorites!"
+ 
+ flavor_hsa.4.title: "[target_character.GetNameWithNoTooltip]"
+ flavor_hsa.4.desc: "An official of the Hanseatic League from [ShowLocationName('cologne')], [target_character.GetName], was elected to the post of Syndic in 1556. He became a permanent official with legal training who worked to protect and extend the diplomatic agreements of the Hansa member towns."
+ flavor_hsa.4.a: "He could do much good in [ROOT.GetCountry.GetName]"
+
+ flavor_hsa.5.title: "The Seal of the League"
+ flavor_hsa.5.desc: "The union that our many merchants operate under has been prospering for some time. Business and affluence flow freely from our trade hubs throughout the entirety of [ShowContinentName('europe')]. In order to further solidify our grasp on our diplomatic status in spite of our decentralized nature, our members have elected to be represented by a common seal, to signify our unity."
+ flavor_hsa.5.a: "We will adopt [target_location.GetNameWithNoTooltip]'s seal."
+ flavor_hsa.5.b: "The merchants of [target_location2.GetNameWithNoTooltip] will represent us."
+ flavor_hsa.5.c: "What about [target_location3.GetNameWithNoTooltip]?"
+
+ flavor_hsa.6.title: "The Paper Mill of [target_location.GetNameWithNoTooltip]"
+ flavor_hsa.6.desc: "Advances across the continent have given way to the rise of improved production techniques and new ways to pursue profit. Word has reached our halls that a successful merchant by the name of [target_character.GetName] from [ShowLocationName('nuremberg')] began using a new paper production method utilizing wood pulp, old rags and other ingredients, years ago. This innovation is surely to bring us profit in the long term, however it requires a small upfront investment..."
+ flavor_hsa.6.desc.a: "Advances across the continent have given way to the rise of improved production techniques and new ways to pursue profit. Word has reached our halls that a successful merchant from [ShowLocationName('nuremberg')] began using a new paper production method utilizing wood pulp, old rags and other ingredients, years ago. This innovation is surely to bring us profit in the long term, however it requires a small upfront investment..."
+ flavor_hsa.6.a: "Let the people have [ShowGoodsName('paper')]!"
+ flavor_hsa.6.b: "We cannot afford that."
+
+ flavor_hsa.7.title: "The [target_country.GetAdjectiveWithNoTooltip] Town Hall"
+ flavor_hsa.7.desc: "Originally established in the 13th century, our [ShowBuildingTypeName('hanseatic_town_hall')] has recently underwent major renovations, expanding its halls and capacity to host deliberations and debates. Since its expansion, it has served both as the municipal seat of the local administration as well as the meeting place for several of our congregations for the [ROOT.GetCountry.GetGovernment.GetParliament.GetName].\n\nThe building has come to symbolize the power of our merchants and thus has imbued us with great diplomatic capabilities, due to our status and wealth."
+ flavor_hsa.7.a: "Another win for our diplomatic efforts!"
+ opinion_diplomacy_with_the_hansa_modifier: "Powerful Hanseatic Diplomats"
+ every_known_country_hansa_tt: "Every neutral or friendly country whose lands host one of our buildings (such as [target_country2.GetName]) will gain [ShowBiasValue('opinion_diplomacy_with_the_hansa_modifier')|+=0] opinion towards us"
+ flavor_hsa.7.historical_info: "Situated in the historic Hanseatic city of Lübeck, Germany, this Town Hall has a history dating back to the 13th century. Originally constructed during the city's heyday as a powerful member of the Hanseatic League, the Town Hall exemplifies Gothic architecture with its intricate stone carvings and sculptures. Serving as the seat of municipal governance, it housed administrative offices, council chambers, and meeting halls, reflecting economic prosperity and political autonomy."
+
+ flavor_hsa.8.title: "[GetCharacter('bernt_notke_script').GetNameWithNoTooltip]"
+ flavor_hsa.8.desc: "The rise of the [ShowInstitutionName('renaissance')] has given ways to many new innovations and the emergence of fresh art across the halls of [ShowContinentName('europe')]. As the currents carry this marvelous new age further north, our people have fallen captive to the charm of pioneers that range from painters to inventors and even the introduction of paper money.\n\nArt, in particular, is experiencing a golden age across our domain, as it is evident from our attention to its proper funding and our elevated prestige. This, in turn, has sprung new artists to rise up, such as [GetCharacter('bernt_notke_script').GetName], who wishes to make a name for [target_country.GetAdjective] talent."
+ flavor_hsa.8.a: "[GetCharacter('bernt_notke_script').GetSheHe|U] is most welcome!"
+ flavor_hsa.8.b: "Even artists are susceptible to greed, it seems..."
+ hsa_bernt_notke_tt: "#italic Employing [GetCharacter('bernt_notke_script').GetShortNameWithNoTooltip] may lead to an interesting artistic creation for the duration of [GetCharacter('bernt_notke_script').GetHerHis] life.#!"
+
+ flavor_hsa.9.title: "[GetCharacter('bernt_notke_script').GetNameWithNoTooltip]'s [ShowWorkOfArtNameWithNoTooltip('danse_macabre_art')]"
+ flavor_hsa.9.desc: "It is well known that artists tend to be quite eccentric as people go. [GetCharacter('bernt_notke_script').GetName] is a valuable example of that, displaying wonderful artistic skill in the depiction of the most depressing topic of all; death. Truly, [GetCharacter('bernt_notke_script').GetHerHis] skills imprint the macabre dance of Death as he carries through his duties, indescriminantly reaping the lives of all, from the highest Emperor and Pope to the lowest peasant.\n\nThe creation is dubbed [ShowWorkOfArtName('danse_macabre_art')] and it spans several dozens of meters wide, a testament to the artist's soul and talent being etched in the ink..." 
+ flavor_hsa.9.a: "We simply must have it!"
+ flavor_hsa.9.b: "A bit too macabre for our taste."
+ 

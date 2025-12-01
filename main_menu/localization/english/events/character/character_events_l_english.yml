@@ -1,0 +1,5 @@
+﻿l_english:
+ character_events.1.title: "The Mood Swings of [target_character.GetNameWithNoTooltip]"
+ character_events.1.title.no_event_target: "The Mood Swings"
+ character_events.1.desc: "Although a person of great responsibility and leader of [ROOT.GetCountry.GetName], [target_character.GetName] is unfortunately known for [target_character.GetHerHis] erratic behavior and mood changes. Once again, [target_character.GetHeSheFormal] attitude towards the affairs of the state is beyond the understanding of [target_character.GetHerHis] subjects..."
+ character_events.1.a: "Let us hope [target_character.GetSheHe] will not be a burden to our nation..."

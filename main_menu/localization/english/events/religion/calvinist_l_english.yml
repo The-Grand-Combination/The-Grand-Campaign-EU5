@@ -1,0 +1,54 @@
+﻿l_english:
+ lots_of_calvinists: "Many [pops|e] in our [country|e] are now following [ShowReligionName('calvinist')]."
+
+ calvinist.1.title: "The Need for Reform"
+ calvinist.1.desc: "The hallowed halls of the College Royal in Paris echoed with anticipation as [john_calvin.GetName], a young and passionate scholar, prepared to deliver a speech that would leave an indelible mark on the religious landscape of Europe. Little did he know that his words would ignite a firestorm of controversy, ultimately leading to his own banishment from the city he once called home.\n\nAs Calvin's powerful oration reverberated through the lecture hall, his fervent beliefs clashed with the entrenched doctrines of the Catholic Church. His eloquent arguments, steeped in a vision of religious reform, struck a chord with the eager audience and stirred unease among the establishment.\n\nNews of Calvin's speech spread like wildfire, reaching the ears of influential figures within the Church hierarchy. The esteemed scholars of the College Royal found themselves forced to condemn him as a heretic, a dangerous threat to the established order."
+ calvinist.1.a: "This has no place in [ROOT.GetCountry.GetLongNameWithNoTooltip]"
+ 
+ calvinist.2.title: "[john_calvin.GetNameWithNoTooltip] in Basel"
+ calvinist.2.desc: "In the quiet corridors of [ShowLocationName('basel')], a groundbreaking work emerges from the diligent pen of [john_calvin.GetName]. Its words, meticulously crafted and steeped in theological insight, are destined to reshape the religious landscape and ignite the fires of reform across Europe. The publication of #italic Institutio Christianae Religionis#! marks a pivotal moment in the life of Calvin and the broader Protestant movement.\n\nWithin the pages of this weighty tome lies a comprehensive exposition of Calvin's religious beliefs and his vision for the reform of Christianity. #italic Institutio Christianae Religionis#! embodies the essence of Calvin's teachings, offering a systematic framework for understanding the true nature of faith, salvation, and the relationship between God and humanity.\n\nNews of the publication spreads like wildfire, captivating the minds of scholars and religious leaders throughout Europe. The Catholic Church, deeply entrenched in its traditional doctrines, views this work with apprehension, recognizing it as a formidable challenge to its authority.\n\nCalvin's magnum opus finds its way into the hands of both fervent supporters and staunch opponents. To some, it becomes a beacon of hope, illuminating a path towards a purer expression of Christian faith. To others, it represents a dangerous departure from established orthodoxy, an incendiary assault on the very foundations of the Church."
+ calvinist.2.a: "What reasons did he have?"
+ 
+ calvinist.3.title: "Calvin's Ministry in Geneva"
+ calvinist.3.desc: "In the picturesque city of [ShowLocationName('geneve')], a new era of religious fervor dawns as [john_calvin.GetName] takes up the mantle of spiritual leadership. His arrival marks the beginning of a transformative period that will shape the destiny of both the city and the Protestant Reformation.\n\nCalvin, renowned for his intellectual prowess and unwavering devotion to reform, brings with him a vision of religious renewal. Guided by his belief in predestination and the sovereignty of God, he seeks to establish a community of devout believers, governed by biblical principles and a disciplined way of life.\n\nAs Calvin assumes his role as minister, the city of Geneva becomes a crucible for reform, attracting like-minded individuals and those seeking refuge from religious persecution. The Reformation takes root, and the city becomes a bastion of Protestant thought and practice.\n\nUnder Calvin's leadership, a system of Church governance is established, centered around the Consistory, a council composed of ministers and elders. This council ensures adherence to Calvin's strict moral code, leading to a transformative influence on all aspects of daily life, from personal behavior to public policies.\n\nGeneva becomes a hub of theological education and a magnet for aspiring ministers, who flock to the city to learn from Calvin's teachings. His influential work, such as his Institutes of the Christian Religion, serves as a guide for believers and a blueprint for Protestant theology.\n\nThe effects of Calvin's ministry ripple beyond Geneva's borders, inspiring reform movements across Europe. His writings and teachings spread far and wide, gaining traction among those seeking a purer expression of faith."
+ calvinist.3.a: "With a lot of Sermons on Deuteronomy!"
+ 
+ calvinist.4.title: "Calvinist Thoughts in [ROOT.GetCountry.GetLongNameWithNoTooltip]"
+ calvinist.4.desc: "The winds of religious reform blow across the fertile lands of [ROOT.GetCountry.GetLongName], as the powerful currents of Calvinist ideals surge through its towns and villages. From humble beginnings, the seeds of Calvinism have taken root, heralding a profound shift in the religious landscape and social fabric of the nation.\n\nDriven by a longing for a purer expression of faith and a rejection of the established religious order, our nation has become a fertile ground for the dissemination of Calvinist ideas. Calvin's theological teachings, centered around predestination, the sovereignty of God, and the authority of Scripture, resonate deeply with the disillusioned faithful seeking a transformative religious experience.\n\nAs these fervent ideas take hold, pockets of believers emerge, gathering in secret to discuss and study Calvin's works, such as his influential Institutes of the Christian Religion. These clandestine meetings serve as a breeding ground for passionate discussions, theological debates, and a sense of community among those who embrace the Calvinist doctrine.\n\nThe growing popularity of Calvinism poses a profound challenge to the traditional religious establishment. The Catholic Church, deeply entrenched in centuries-old dogma, faces the daunting task of reconciling its authority with the fervor of the Calvinist movement."
+ calvinist.4.a: "They will be destroyed!"
+ 
+ 
+ 
+ 
+ calvinist.5.title: "Sending Ministers Abroad"
+ calvinist.5.desc: "Many within the Church are of the opinion that we, as a leading [ShowReligionName('calvinist')] nation, should send our ministers abroad to ensure that the true Reformation continues to spread."
+ calvinist.5.a: "For the glory of God!"
+ calvinist.sent_reformed_ministers: "We will send many [ShowBuildingTypeName('calvinist_preachers')] to [target_country.GetLongName]"
+ sent_reformed_ministers: "Sent Calvinist Preachers"
+ calvinist.5.b: "Keep it within our borders"
+
+ calvinist.6.title: "Foreign Ministers in [ROOT.GetCountry.GetName]"
+ calvinist.6.desc: "There are reports of ministers preaching the Calvinist faith have turned up in [ROOT.GetCountry.GetName]. They appear to come from [from.GetLongName] in order to encourage the local population to resist and fight back against our attempts to root out this heresy."
+ calvinist.6.a: "Outrages!"
+
+
+  
+ calvinist.7.title: "Predestination"
+ calvinist.7.desc: "Calvinist theologians believe that only those who are predestined to be saved can be saved. But since it is impossible to know who is predestined, a notion has developed that it might be possible to discern that a person is predestined by observing their way of life. As hard work, frugality, social success and wealth are thought to be important consequences of being predestined, it seems to inspire followers of the Calvinist faith to strive for reaching them, as well as attracting those who already possess them - like burghers and merchants."
+ calvinist.7.a: "Encourage these beliefs"
+ STATIC_MODIFIER_NAME_calvinist_work_ethic: "Calvinist Work Ethic"
+ STATIC_MODIFIER_DESC_calvinist_work_ethic: "Hard work, social success and wealth are considered consequences of being predestined, and so inspire people to reach those goals."
+ calvinist.7.b: "Leave it be"
+ 
+ calvinist.8.title: "Instruments in Church"
+ calvinist.8.desc: "Leading theologists are of the opinion that music shouldn't be used in religious sermons. They believe that it distracts people from the matter of importance - worship and seeking knowledge of God - and thus favor the ban of musical instruments in churches."
+ calvinist.8.a: "Issue a ban"
+ calvinist.8.b: "Ignore their opinions"
+ 
+
+ calvinist.9.title: "Iconoclastic Fury"
+ calvinist.9.desc: "[ROOT.GetCountry.GetName] has seen outbreaks of religious violence as mobs of [ShowReligionName('calvinist')] followers vandalize churches and destroy [ShowReligionName('catholic')] religious art. The Catholic majority in [ROOT.GetCountry.GetName] demand that the government immediately take action."
+ calvinist.9.a: "Send troops to stop it!"
+ calvinist.9.b: "Encourage it!"
+
+

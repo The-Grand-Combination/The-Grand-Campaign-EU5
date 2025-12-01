@@ -1,0 +1,21 @@
+﻿l_english:
+ flavor_swe_dan.1.title: "The Fate of Southern Halland"
+ flavor_swe_dan.1.desc: "The [GetCountry('DAN').GetLongName] is still in debt, and we have the money to spare. We could offer to buy [ShowLocationName('laholm')] and [ShowLocationName('asbo')] from them, to unify our lands in Scania."
+ flavor_swe_dan.1.historical_info: "In 1341, King Magnus IV Eriksson of Sweden acquired southern Halland from the impoverished Danes. The purchase was a diplomatic and strategic victory, securing Sweden a stronger presence on the western coast and closer access to key trade routes. Though Halland would later become a battleground between Denmark and Sweden, the acquisition marked an early assertion of Swedish influence in the region."
+ flavor_swe_dan.1.a: "Give the offer!"
+ flavor_swe_dan.1.b: "We can spend the money better elsewhere."
+ 
+ flavor_swe_dan_offer: "If they accept, we will pay #Y 250#!@gold!"
+ 
+ flavor_swe_dan.2.title: "$flavor_swe_dan.1.title$"
+ flavor_swe_dan.2.desc: "We are still in debt, and now the [GetCountry('SWE').GetLongName] has offered to buy [ShowLocationName('laholm')] and [ShowLocationName('asbo')]. What shall we do?"
+ flavor_swe_dan.2.a: "We need the money!"
+ flavor_swe_dan.2.b: "This is our land!"
+
+ flavor_swe_dan.3.title: "The Danes Accept"
+ flavor_swe_dan.3.desc: "The [GetCountry('DAN').GetLongName] have accepted our offer to buy [ShowLocationName('laholm')] and [ShowLocationName('asbo')]. Now our lands in Scania is unified."
+ flavor_swe_dan.3.a: "They will be ours forever..."
+
+ flavor_swe_dan.4.title: "The Danes Refuse"
+ flavor_swe_dan.4.desc: "The [GetCountry('DAN').GetLongName] refused our to buy [ShowLocationName('laholm')] and [ShowLocationName('asbo')]. This deserves a military response!"
+ flavor_swe_dan.4.a: "This means War!"

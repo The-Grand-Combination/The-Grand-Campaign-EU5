@@ -1,0 +1,319 @@
+﻿l_english:
+ 
+ flavor_jap.1.title: "The [ShowPolicyNameWithNoTooltip('sakoku_enabled')] Law"
+ flavor_jap.1.desc: "Our decision to seclude ourselves from the world at large through [ShowPolicyName('sakoku_enabled')] has thus far succeeded in making it easier to enforce our control over the population. However, it is clear that we are hindering ourselves when it comes to the spread of new ideas and inventions. As the world around us is starting to globalize, we see our neighbors benefit from this contact with other nations, while we are left to struggle. Perhaps it is time to re-think our policy?"
+ flavor_jap.1.a: "Keep following the [ShowPolicyNameWithNoTooltip('sakoku_enabled')] law."
+ flavor_jap.1.b: "Abandon the [ShowPolicyNameWithNoTooltip('sakoku_enabled')] law."
+
+ flavor_jap.2.title: "Rangaku"
+ flavor_jap.2.desc: "The [target_country.GetAdjective] merchants have now been present on Dejima Island in [target_location.GetName] for some time, and contact between our people and the enclave has been tightly controlled. Even so, our two cultures cannot help but spot glimpses of the other. The [target_country.GetAdjectiveWithNoTooltip] people seem to know things that we do not, particularly in medicine, but also in science, production, and mechanical engineering. Some of our richer citizens have even elected to make use of the [target_country.GetAdjectiveWithNoTooltip] surgeon in the enclave, rather than rely on local doctors.\n\nIt is clear there is much that could be learned from increased interaction with these visitors from the West, if we are willing to risk opening our provinces to them a bit more."
+ flavor_jap.2.a: "Open our provinces to the [target_country.GetAdjectiveWithNoTooltip] knowledge."
+ flavor_jap.2.a.tt: "Unlocks the [ShowGovernmentReformName('jap_rangaku')] [government_reform|e]"
+ flavor_jap.2.b: "Keep our provinces closed."
+ 
+ flavor_jap.3.title: "Wrecked Western Ship"
+ flavor_jap.3.desc: "A ship has reached the shores of [target_location.GetName] after a long and arduous voyage via what the crew calls the #italic Strait of Magellan#!. #italic De Liefde#! is apparently the only ship remaining out of a group of five, and it has only 24 sick and dying men out of an original crew of over a hundred, with less than 10 being able to stand.\n\nIts rich cargo of Western curiosities and military equipment fared far better than its crew, and should be worth quite a bit. What is more, one of the survivors, a navigator called [target_character.GetName], insists [target_character.GetSheHe] be brought before our 'king'..."
+ flavor_jap.3.historical_info: "William Adams was the first Englishman to reach Japan. After having served under Sir Francis Drake during the war with Spain, he joined the Dutch East Indian Company in an expedition through the Strait of Magellan that after many hardships managed to arrive in Japan. He and his second mate Jan Joosten were sent to Tokugawa Ieyasu and entered his service, being both named hatamoto, a high samurai rank, and allowed to carry the two swords. Adams took the name Miura Anjin, and received the territory of Miura. He directed the construction of the first Western-style Japanese ships, as well as various trade and diplomatic missions between Japan and Europe."
+ flavor_jap.3.a: "Help the foreigners."
+ flavor_jap.3.b: "Do nothing."
+ flavor_jap.3.c: "We expect [target_character.GetHerHis] arrival."
+ flavor_jap.3.c.tt: "[target_country.GetName] will decide what to do with [target_character.GetName]."
+
+ flavor_jap.4.title: "$flavor_jap.3.title$"
+ flavor_jap.4.desc: "$flavor_jap.3.desc$"
+ flavor_jap.4.a: "[target_character.GetSheHe|U] is a remarkable individual."
+ flavor_jap.4.b: "Send [target_character.GetHerHim] to the [GetCountry('JAP').GetGovernment.GetAdjective] [GetCountry('JAP').GetGovernment.GetCourtTitle]."
+
+ flavor_jap.5.title: "[target_character.GetNameWithNoTooltip]"
+ flavor_jap.5.desc: "The [target_country.GetLongName] have fulfilled their duty and have sent [target_character.GetName] to us as [target_character.GetSheHe] asked. We now see that [target_character.GetSheHe] is a remarkable individual, with vast knowledge from the world and the sea. [target_character.GetSheHe|U] will undoubtedly be of great service to us if we take [target_character.GetHerHim] under our wing."
+ flavor_jap.5.a: "[target_character.GetSheHe|U] will be a fine addition at [ROOT.GetCountry.GetGovernment.GetCourtTitle]."
+ flavor_jap.5.b: "A curiosity, but we have no use of [target_character.GetHerHim]."
+ 
+ flavor_jap.6.title: "Kirishitan"
+ flavor_jap.6.desc: "The traders that we welcomed have only increased their presence in our country more and more. As they have, they have brought with them [ShowReligionAdjective('catholic')] missionaries, backed by their home states, who have promptly begun to spread [ShowReligionGroupName('christian')] and convert the local populace en masse. If they are not stopped, these Jesuits, Franciscans and Dominicans could pose a significant threat to [ShowReligionName('shinto')]."
+ flavor_jap.6.a: "Stop the missionaries!"
+ flavor_jap.6.a.tt: "Many of our [pops|e] will convert to [ShowReligionName('catholic')] and lose [ShowNamedValue('pop_satisfaction_ultimate_penalty')] [pop_satisfaction|e]"
+ flavor_jap.6.b: "Let them spread their faith."
+ 
+ flavor_jap.7.title: "[ShowLawNameWithNoTooltip('jap_buke_shohatto')]"
+ flavor_jap.7.desc: "The feudal lords have failed in their duty and it is time to make sure they know their responsibilities. The [ShowLawName('jap_buke_shohatto')] or 'The Various Points of Laws for Warrior Houses' is an answer to that, in the form of a series of edicts designed to illustrate the responsibilities and behavior of the samurai. It is supposed to be seen as a code of conduct, a mere description of what an ideal samurai should aspire to be. Thus, the idea is that the samurai themselves want to follow them, rather than us forcing them to."
+ flavor_jap.7.a: "Enforce [ShowLawNameWithNoTooltip('jap_buke_shohatto')] for the whole of the [GetUniqueInternationalOrganization('japanese_shogunate').GetNameWithNoTooltip]."
+ flavor_jap.7.b: "The code is more like guidelines than actual rules."
+ flavor_jap.7.c: "Ignore it."
+ flavor_jap.8.title: "[ShowLawNameWithNoTooltip('jap_buke_shohatto')]"
+ flavor_jap.8.desc: "[target_character.GetName] has issued a collection of edicts called [ShowLawName('jap_buke_shohatto')] or 'The Various Points of Laws for Warrior Houses'. It is a series of edicts, notes on how samurai should behave and what their responsibilities should be. Among them, it enumerates the martial practices and arts in which the warrior class should engage, as well as the activities it should avoid. It also provides guidelines for the proper behavior of $daimyo$, establishing what is allowed and what is not in their domains."
+ flavor_jap.8.a: "These are just guidelines."
+ 
+ flavor_jap.9.title: "Gokaidō"
+ flavor_jap.9.desc: "To increase our control over the [GetUniqueInternationalOrganization('japanese_shogunate').GetName], we should control the movement through the five centrally-administered roads that connect our capital with the outer provinces. The Five Routes or Gokaidō shall have post stations set up along the most-used routes where travelers can rest and buy supplies."
+ flavor_jap.9.historical_info: "The Gokaidō were five major highways in Japan during the Edo period, connecting important cities and regions of the country. These roads played a crucial role in trade, communication, and the movement of people. The Gokaidō infrastructure significantly contributed to Japan's economic and cultural development during this period."
+ flavor_jap.9.a: "Establish the Gokaidō."
+ flavor_jap.9.b: "There is no need for that."
+ 
+ flavor_jap.10.title: "Kyōhō Reforms"
+ flavor_jap.10.desc: "A proposal has been brought up to [target_character.GetName] for the 'Kyōhō Reforms', an array of economic policies aimed at making the [ROOT.GetCountry.GetLongName] financially solvent. As Confucian principles are to some extent ingrained in our government, and since they argue that money is defiling, it will be necessary to shelve certain of these principles if they would hamper the reform process. The reforms include the formation of merchant guilds that will allow greater control and taxation, and place an emphasis on frugality."
+ flavor_jap.10.a: "We shall reform the trade."
+ flavor_jap.10.b: "The military needs reforms."
+ flavor_jap.10.c: "Go with the original, economic reforms."
+ 
+ flavor_jap.11.title: "Genroku"
+ flavor_jap.11.desc: "It is a new Golden Age for us. Years of internal peace in the [ROOT.GetCountry.GetLongName] have created economic stability. Arts and architecture flourish, prosperity is spreading throughout the land, and our brightest minds are achieving remarkable breakthroughs in technology and philosophy."
+ flavor_jap.11.a: "This is our time!"
+ 
+ flavor_jap.12.title: "Kokugaku"
+ flavor_jap.12.desc: "The dominant study of [ShowCultureGroupName('chinese_group')], Confucian, and [ShowReligionGroupAdjective('buddhist')] texts has led to a decline in [ShowCultureGroupName('japanese_group')] study. A few scholars have started to research the early [ShowCultureGroupNameWithNoTooltip('japanese_group')] classics, criticizing the repressive moralizing of Confucian thinkers, and attempts to re-establish [ShowCultureGroupNameWithNoTooltip('japanese_group')] culture before the influx of foreign modes of thought and behavior. They call themselves Kokugaku, or 'National Study' thinkers."
+ flavor_jap.12.a: "We will gladly support these thinkers."
+
+ flavor_jap.13.title: "$kakitsu_treaty$"
+ flavor_jap.13.desc: "Raiders and pirates make their money from plundering trade routes, as they find it more beneficial for them than actually doing honest trade. To limit their activities, envoys from [target_kor.GetName] have come to us offering to sign a treaty that would allow us preferential trading rights with them. By signing the treaty, we will get their ports open to our merchants, but we will have to help them combat piracy in the region."
+ flavor_jap.13.historical_info: "The Kakitsu Treaty, also called Treaty of Gyehae, was signed in 1443 between the Joseon Dynasty of Korea and Sō Sadamori of the Sō clan of Tsushima. The treaty came as a result of an invasion of Tsushima by the Korean forces in an attempt to crack down the piracy that had developed there and that constantly threatened trade around the Korean Peninsula. Sō Sadamori proposed the treaty to establish a fix amount of vessels that would be allowed to trade with Korea, and thus allowing the Sō clan to monopolize this trade."
+ flavor_jap.13.a: "Sign the treaty."
+ flavor_jap.13.b: "This treaty is not to our benefit."
+ kakitsu_treaty: "Kakitsu Treaty"
+
+ # New DHE
+
+ flavor_jap.101.title: "Proclamation of [our_ruler.GetNameWithNoTooltip] as [ROOT.GetCountry.GetGovernment.GetRulerTitle]"
+ flavor_jap.101.desc: "With [go_daigo.GetName] now overthrown, [our_ruler.GetName] has taken to installing [our_ruler.GetHerselfHimself] as [ROOT.GetCountry.GetGovernment.GetRulerTitle] and establishing [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetName] as the successor to Kamakura rule. Though [go_daigo.GetNameWithNoTooltip] has fled to [ShowLocationName('yoshino')], [koumyou.GetName] has been raised in [go_daigo.GetNameWithNoTooltip] place and has officially sanctioned [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetNameWithNoTooltip] rule with [our_ruler.GetNameWithNoTooltip] at the helm. Though most clans support [our_ruler.GetNameWithNoTooltip], there are whispers in the shadows of those who would seek to restore [go_daigo.GetNameWithNoTooltip] as emperor."
+ flavor_jap.101.a: "[ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetNameWithNoTooltip] will guide [ShowRegionNameWithNoTooltip('japan_region')] in this new era!"
+
+ flavor_jap.102.title: "Appointment of [kou_no_moronao.GetNameWithNoTooltip]"
+ flavor_jap.102.desc: "Seeking distinguished individuals to assist in the [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetName] stabilization of [ShowRegionName('japan_region')] along with further curtailing [GetCountry('STC').GetName] power, [our_ruler.GetName] has appointed [kou_no_moronao.GetName] as #italic Shitsuji#!. Though close supporters within the [ROOT.GetCountry.GetGovernment.GetCourtTitle] support [our_ruler.GetNameWithNoTooltip], others have more quietly expressed discontent with [kou_no_moronao.GetNameWithNoTooltip], fearing [kou_no_moronao.GetHeShe] may disrupt the current power makeup within the [ROOT.GetCountry.GetGovernment.GetCourtTitle] internal's politics."
+ flavor_jap.102.a: "Grant him the office of Shitsuji!"
+ flavor_jap.102.b: "Avoid empowering [kou_no_moronao.GetNameWithNoTooltip]."
+ flavor_jap.102.b_tt: "The office of Shitsuji will remain vacant to avoid political strife."
+ jap_should_ko_clan_accept: "Should [GetCountry('KOU').GetName] accept, we will gain the following benefits:"
+ jap_should_ko_clan_decline: "Should [GetCountry('KOU').GetName] decline, we will instead gain the following benefits:"
+ jap_random_court_official_becomes_shitsuji: "An apolitical official from outside the [ROOT.GetCountry.GetGovernment.GetCourtTitle] will become Shitsuji."
+
+ flavor_jap.103.title: "Attempted Assassination of [kou_no_moronao.GetNameWithNoTooltip]"
+ flavor_jap.103.desc: "When initially appointed as Shitsuji, some within the [ROOT.GetCountry.GetGovernment.GetCourtTitle] were rather displeased, seeing [kou_no_moronao.GetName] as a figure who would upend the makeup of the [ROOT.GetCountry.GetGovernment.GetCourtTitle]. As time has passed, many of those fears have come to be realized, with news around [ROOT.GetCountry.GetCapital.GetName] that [kou_no_moronao.GetNameWithNoTooltip] survived an attempt on [kou_no_moronao.GetHisHer] life overnight!\n\nThe culprit of the attempt has emerged to be no other than [ask_tadayoshi.GetName], one of [kou_no_moronao.GetShortNameWithNoTooltip]'s fiercest political rivals in the [ROOT.GetCountry.GetGovernment.GetCourtTitle]."
+ flavor_jap.103.a: "Remove [ask_tadayoshi.GetNameWithNoTooltip] from [ROOT.GetCountry.GetGovernment.GetCourtTitle]!"
+ flavor_jap.103.b: "Spare [ask_tadayoshi.GetNameWithNoTooltip] for now."
+ flavor_jap.103.c: "Remove [kou_no_moronao.GetNameWithNoTooltip] and appoint [ask_tadayoshi.GetNameWithNoTooltip] as Shitsuji."
+
+ flavor_jap.104.title: "[ask_tadayoshi.GetNameWithNoTooltip] Defects to the [GetCountry('STC').GetLongNameWithNoTooltip]"
+ flavor_jap.104.desc: "Though [our_ruler.GetName] exiled [ask_tadayoshi.GetName] from the [ROOT.GetCountry.GetGovernment.GetCourtTitle] for [ask_tadayoshi.GetHisHer] attempted assassination of [kou_no_moronao.GetName], [ask_tadayoshi.GetHeShe] has still managed to retain political allies. Greatly dissatisfied with [our_ruler.GetNameWithNoTooltip] continued rule, [ask_tadayoshi.GetNameWithNoTooltip] has fled [ROOT.GetCountry.GetCapital.GetName] along with [ask_tadayoshi.GetHisHer] supporters to the [GetCountry('STC').GetLongName] to support [stc_ruler.GetName]. Knowing [ask_tadayoshi.GetNameWithNoTooltip] as a powerful individual, many officials within the [ROOT.GetCountry.GetGovernment.GetCourtTitle] have urged [our_ruler.GetNameWithNoTooltip] to not act brazenly in the face of [ask_tadayoshi.GetShortNameWithNoTooltip]'s betrayal, and have instead urged caution in taking further actions against the [GetCountry('STC').GetLongNameWithNoTooltip]."
+ flavor_jap.104.a: "We should be wary of the [GetCountry('STC').GetLongNameWithNoTooltip] now that [ask_tadayoshi.GetNameWithNoTooltip] has fled."
+ south_court_will_become_stronger: "[ask_tadayoshi.GetName] will take many of [ask_tadayoshi.GetHisHer] allies to the [GetCountry('STC').GetLongName], emboldening them."
+
+ flavor_jap.105.title: "[ask_tadayoshi.GetNameWithNoTooltip] Arrives"
+ flavor_jap.105.desc: "In a surprising move, the rogue [ask_tadayoshi.GetName] has arrived to the [ROOT.GetCountry.GetLongName] seeking to swear fealty in support of [our_ruler.GetName]. Having grown dissatisfied with [jap_ruler.GetName]'s handling of [jap_ruler.GetHisHer] [GetCountry('JAP').GetGovernment.GetCourtTitle], [ask_tadayoshi.GetNameWithNoTooltip] has now expressed [ask_tadayoshi.GetHisHer] support in restoring the [ROOT.GetCountry.GetLongNameWithNoTooltip] to the Chrysanthemum Throne."
+ flavor_jap.105.a: "[ask_tadayoshi.GetNameWithNoTooltip] will be crucial in the times ahead."
+
+ flavor_jap.106.title: "[ymn_clan.GetNameWithNoTooltip] Defects to the [GetCountry('STC').GetLongNameWithNoTooltip]"
+ flavor_jap.106.desc: "Terrible news has arrived to [ROOT.GetCountry.GetCapital.GetName] as one of the more influential clans, [ymn_clan.GetName] under [ymn_ruler.GetName], have defected to the [GetCountry('STC').GetLongName]. Fearing a response from [ymn_clan.GetAdjectiveWithNoTooltip] forces, many in the [ROOT.GetCountry.GetGovernment.GetCourtTitle] have put forth the idea of launching an early offensive against [ymn_clan.GetNameWithNoTooltip], hoping to crush any plans for [ymn_clan.GetNameWithNoTooltip] to reinforce the [GetCountry('STC').GetLongNameWithNoTooltip]."
+ flavor_jap.106.a: "We must stay wary of the [ymn_clan.GetLongNameWithNoTooltip]."
+ flavor_jap.106.b: "We shall move to strike them down quickly!"
+ flavor_jap.106.tt: "[GetCountry('YMN').GetLongName] will now support the [GetCountry('STC').GetLongName] in [GetCountry('STC').GetCapital.GetNameWithNoTooltip]."
+
+ flavor_jap.107.title: "A Compromise for Submission"
+ flavor_jap.107.desc: "Among some of the strongest [ShowSpecialStatusName('shugo_daimyo')] of [ShowRegionName('japan_region')], [GetCountry('OUC').GetName] and [GetCountry('YMN').GetName] have proven to be two rather difficult clans to negotiate with, oftentimes wielding their considerable influence to fend off [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetName] demands. However, seeking to further integrate the clans into the greater bureaucracy, [our_ruler.GetName] has proposed an offer of autonomy to [GetCountry('OUC').GetNameWithNoTooltip] and [GetCountry('YMN').GetNameWithNoTooltip], in the form of no interference within their respective clan's domain, should the [ShowSpecialStatusNameWithNoTooltip('shugo_daimyo')] fully submit themselves. While negotiations have looked promising, some within the [ROOT.GetCountry.GetGovernment.GetCourtTitle] have urged [our_ruler.GetNameWithNoTooltip] to not follow through with the deal, worrying it may only embolden the clans longterm."
+ flavor_jap.107.a: "Welcome the compromise with [GetCountry('OUC').GetNameWithNoTooltip] and [GetCountry('YMN').GetNameWithNoTooltip]."
+ flavor_jap.107.b: "Refuse, we will not offer special privileges to any [ShowSpecialStatusNameWithNoTooltip('shugo_daimyo')]!"
+
+ flavor_jap.110.title: "Integration of the [ShowSpecialStatusNameWithNoTooltip('shugo_daimyo')] Into the Bureaucracy"
+ flavor_jap.110.desc: "Seeking to reduce the separation between [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetName] rule and [ShowSpecialStatusName('shugo_daimyo')] autonomy, [our_ruler.GetName] has started laying the foundation for integrating the stronger clans of [ShowRegionName('japan_region')] into the [ROOT.GetCountry.GetFlavorRank]'s bureaucracy. In is through these reforms, [our_ruler.GetName] hopes the dominant clans will remain loyal to the ruling [ROOT.GetCountry.GetFlavorRank], while also rewarding those who prove a valuable asset to [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetNameWithNoTooltip] rule."
+ flavor_jap.110.a: "Let us draw these [ShowSpecialStatusNameWithNoTooltip('shugo_daimyo')] into the [ROOT.GetCountry.GetFlavorRank] bureaucracy."
+ flavor_jap.110.b: "Let us take extra steps to ensure [ShowSpecialStatusNameWithNoTooltip('shugo_daimyo')] loyalty."
+
+ flavor_jap.111.title: "Kanrei Council System"
+ flavor_jap.111.desc: "Among the first reforms of strengthening the [ROOT.GetCountry.GetFlavorRank]'s bureaucracy is the establishment of the new Kanrei council system. Through this reformed system, [our_ruler.GetName] hopes for powerful [ShowSpecialStatusName('shugo_daimyo')] to have a voice in the administration of [ShowRegionName('japan_region')], while also deepening the ties and relations between the [ROOT.GetCountry.GetFlavorRank] and the clans."
+ flavor_jap.111.a: "This council shall help aid the [ROOT.GetCountry.GetGovernment.GetRulerTitle] authority over the [ShowSpecialStatusNameWithNoTooltip('shugo_daimyo')]."
+
+ flavor_jap.112.title: "Inclusion of Powerful clans to the Kanrei Council"
+ flavor_jap.112.desc: "Seeking to build the initial core members of the newly formed Kanrei council, [our_ruler.GetName] has looked towards the strongest clans throughout [ShowRegionName('japan_region')] in hopes of building a strong political relationship for future stability. Through the advice of the [ROOT.GetCountry.GetGovernment.GetCourtTitle], members have recommended [GetCountry('HKW').GetName], [GetCountry('SBA').GetName], and [GetCountry('HTK').GetName] to serve as the first senior members."
+ flavor_jap.112.a: "May they issue in the start of a new era!"
+ flavor_jap.112.b: "Scale back their authority in ensure they do not grow too powerful."
+
+ flavor_jap.113.title: "The Shukurō Kaigi Expansion"
+ flavor_jap.113.desc: "While the initial foundation of the Kanrei council saw three powerful clans appointed to the council, some within the [ROOT.GetCountry.GetGovernment.GetCourtTitle] have suggested [our_ruler.GetName] takes to expanding it. By appointing some weaker clans to the Shukurō Kaigi (council of elders), it would ensure other [ShowSpecialStatusName('shugo_daimyo')] have a stronger voice within the [ROOT.GetCountry.GetGovernment.GetCourtTitle] while also keeping the ruling highest ranking [ShowSpecialStatusNameWithNoTooltip('shugo_daimyo')] in check."
+ flavor_jap.113.a: "Induct some of the weaker clans into Shukurō Kaigi."
+ flavor_jap.113.b: "We cannot risk strengthening these clans further."
+
+ flavor_jap.114.title: "Samurai-Dokoro"
+ flavor_jap.114.desc: "With growing cases of crime throughout [ShowRegionName('japan_region')], [our_ruler.GetName] has moved to strengthen the #italic Samurai-Dokoro#! while also expanding it to be a stronger position of power within the [ROOT.GetCountry.GetLongName]. As the leading office for criminal justice within [ShowRegionNameWithNoTooltip('japan_region')], some within the [ROOT.GetCountry.GetGovernment.GetCourtTitle] have expressed favoritism towards [GetCountry('IMG').GetName] for the office, with others suggest [replacement_clan.GetName] should be rewarded the position instead."
+ flavor_jap.114.a: "Award the office to the [GetCountry('IMG').GetLongNameWithNoTooltip]."
+ flavor_jap.114.b: "Leverage greater authority over the office with [replacement_clan.GetNameWithNoTooltip]."
+
+ flavor_jap.115.title: "Kanrei Council Builds Kinship Among Members"
+ flavor_jap.115.desc: "Though the Kanrei council has come to be a place of political rivalry between clans, it has also grown to be a place for growing kinship between them as well. Furthermore, this kinship has led to [ROOT.GetCountry.GetGovernment.GetAdjective] rule becoming further cemented, with many of the clans expressing absolute loyalty to [our_ruler.GetName]."
+ flavor_jap.115.a: "The council has proven to be an effective tool of the bureaucracy."
+
+ flavor_jap.120.title: "Discontent with [GetCountry('SBA').GetNameWithNoTooltip]"
+ flavor_jap.120.desc: "Although the appointment of the [GetCountry('SBA').GetLongName] to the Kanrei council was meant to improve the standing between the [ROOT.GetCountry.GetFlavorRank] and [GetCountry('SBA').GetNameWithNoTooltip], [sba_ruler.GetName] has grown discontent with [our_ruler.GetName]'s rule, and has increasingly taken steps to openly defy [our_ruler.GetNameWithNoTooltip] within [ROOT.GetCountry.GetGovernment.GetCourtTitle].\n\nSeeking to punish [GetCountry('SBA').GetNameWithNoTooltip] for its unruly behavior, [our_ruler.GetNameWithNoTooltip] has sent envoys throughout [ShowRegionName('japan_region')] to launch a coalition against [sba_ruler.GetNameWithNoTooltip], hoping to depose [sba_ruler.GetHimHer], although others within the [ROOT.GetCountry.GetGovernment.GetCourtTitle] fear this may destabilize the [ROOT.GetCountry.GetFlavorRank]."
+ flavor_jap.120.a: "This insolence cannot stand, seek out other [ShowSpecialStatusNameWithNoTooltip('shugo_daimyo')]!."
+ flavor_jap.120.b: "We will ignore this insolence for now."
+ summoning_of_shugo_lords: "Several [ShowSpecialStatusName('shugo_daimyo')] will come to the request of [our_ruler.GetName] and assist in countering [GetCountry('SBA').GetLongName]."
+
+ flavor_jap.121.title: "Shugo Coalition Against [GetCountry('SBA').GetNameWithNoTooltip]"
+ flavor_jap.121.desc: "Answering the requests of [our_ruler.GetName], the clans of [summoned_shugo_one.GetName], [summoned_shugo_two.GetName], and [summoned_shugo_three.GetName] have offered to assist in the coalition to crush [GetCountry('SBA').GetNameWithNoTooltip]. Although [our_ruler.GetNameWithNoTooltip] has offered great political benefits, some within the [ROOT.GetCountry.GetGovernment.GetCourtTitle] have instead requested the [ROOT.GetCountry.GetFlavorRank] handle the affair personally, as the rewarded clans may attempt to capitalize on their favor with the [ROOT.GetCountry.GetGovernment.GetRulerTitle]."
+ flavor_jap.121.a: "The dishonorable [GetCountry('SBA').GetNameWithNoTooltip] must be brought down."
+ flavor_jap.121.b: "We shall instead handle this ourselves."
+ shugo_lords_will_join_and_prestige: "[summoned_shugo_one.GetName], [summoned_shugo_two.GetName], and [summoned_shugo_three.GetName] will gain [ShowNamedValue('prestige_extreme_bonus')|+] [prestige|e] and join our [war|E] against [GetCountry('SBA').GetName]"
+
+ flavor_jap.122.title: "[chosen_kanrei_leader.GetNameWithNoTooltip] and the Kanrei Council"
+ flavor_jap.122.desc: "The fall of [GetCountry('SBA').GetName] has seen the position of power they held on the Kanrei council evaporate. Seeking to fill the power vacuum left, [chosen_kanrei_leader.GetName] has offered to serve as the most senior clan within the council. Others within the [ROOT.GetCountry.GetGovernment.GetCourtTitle] have instead suggested it is time a new clan outside the council be chosen to fill the vacuum left, along with being one with no previous ambitions."
+ flavor_jap.122.a: "[chosen_kanrei_leader.GetNameWithNoTooltip] shall lead for now."
+ flavor_jap.122.b: "[new_major_kanrei_member.GetNameWithNoTooltip] will assume [GetCountry('SBA').GetNameWithNoTooltip]'s place on the council."
+
+ flavor_jap.123.title: "Growth of Punitive Authority"
+ flavor_jap.123.desc: "The fall of [GetCountry('SBA').GetName] has sent ripples throughout [ShowRegionName('japan_region')], signaling that the [ROOT.GetCountry.GetFlavorRank] is willing to take punitive measures to handle any disruptive nature within its subjects. While previous clans have acted out of line, they did not fear any repercussions from the [ROOT.GetCountry.GetFlavorRank] until now.\n\nAlthough the newly found punitive nature may lessen the ambitions of some [ShowSpecialStatusName('shugo_daimyo')], its has also brought with it some distrust of [our_ruler.GetName]."
+ flavor_jap.123.a: "[ShowSpecialStatusNameWithNoTooltip('shugo_daimyo')] will learn to be more careful of [our_ruler.GetNameWithNoTooltip]'s authority."
+
+ flavor_jap.130.title: "Legitimization of [ROOT.GetCountry.GetGovernment.GetAdjective] Rule"
+ flavor_jap.130.desc: "Although [old_ashikaga_ruler.GetName] established the new [ROOT.GetCountry.GetFlavorRank], it has largely been seen as illegitimate by many of the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] of [ShowRegionName('japan_region')] due to its treatment of the [ShowDynastyName('yamato_dynasty')] family. Seeking to further legitimize the ruling [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetName], [kanrei_council_leader.GetName] has moved to encourage [our_ruler.GetName]'s participation in the ancient ranking system. Being one of the cornerstones of Imperial traditions, should [our_ruler.GetNameWithNoTooltip] show respect for the process, it may strengthen [our_ruler.GetHisHer] legitimacy in the eyes of the elite."
+ flavor_jap.130.a: "Follow the advise of [kanrei_council_leader.GetNameWithNoTooltip] and participate."
+ flavor_jap.130.b: "Refuse to participate in the ancient court ranking system."
+
+ flavor_jap.131.title: "Half-Tax Decree"
+ flavor_jap.131.desc: "Seeking to further bolster the ties of Imperial court to the [ROOT.GetCountry.GetLongName], [our_ruler.GetName] has officially sanctioned the #italic Hanzei#! decree. Outlawing the halving of Imperial lands by [ShowSpecialStatusName('shugo_daimyo')], [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] will now be required to pay a half-tax proportional to the support received by [ROOT.GetCountry.GetGovernment.GetAdjective] representatives in resolving local incursions. Newly appointed [ShowSpecialStatusNameWithNoTooltip('shugo_daimyo')] however have been spared of the decree."
+ flavor_jap.131.a: "This decree will benefit all of [ShowRegionNameWithNoTooltip('japan_region')]!"
+ flavor_jap.131.b: "Allow some confiscation of Imperial lands."
+
+ flavor_jap.132.title: "Kyūshū Tandai"
+ flavor_jap.132.desc: "Being one of the more troublesome regions of [ROOT.GetCountry.GetGovernment.GetAdjective] rule over [ShowRegionName('japan_region')], [ShowAreaName('saikaidou_area')] has proven to be a major stronghold for [GetCountry('STC').GetAdjective] support. Seeking to clamp down on the region, [our_ruler.GetName] has called for a new loyal Tandai be appointed for [ShowAreaNameWithNoTooltip('saikaidou_area')], although some have urged the selection of a local clan loyal to the [ROOT.GetCountry.GetGovernment.GetAdjective] cause in hopes of a more effective administrator."
+ flavor_jap.132.a: "[non_kyushu_clan_tandai.GetNameWithNoTooltip] shall serve as Kyūshū Tandai."
+ flavor_jap.132.b: "Appoint the local [kyushu_clan_tandai.GetLongNameWithNoTooltip] instead."
+
+ flavor_jap.133.title: "Development of the Gobanshū"
+ flavor_jap.133.desc: "Seeking to counter the rising disobedience of some [ShowSpecialStatusName('shugo_daimyo')], [our_ruler.GetName] has requested support from the [ROOT.GetCountry.GetGovernment.GetCourtTitle] for the foundation of a new shogunal army. In order to ensure the loyalty of the new army, [our_ruler.GetNameWithNoTooltip] has ordered its ranks answer directly to the [ROOT.GetCountry.GetGovernment.GetRulerTitle] as well as limited command to only those [ShowSpecialStatusNameWithNoTooltip('shugo_daimyo')] with the most utmost loyalty to the [ROOT.GetCountry.GetFlavorRank]."
+ flavor_jap.133.a: "None shall dare challenge the might of the [ROOT.GetCountry.GetFlavorRank]!"
+ flavor_jap.133.b: "Put a stronger emphasis on a more levy based army."
+
+ flavor_jap.134.title: "Compulsory Residence"
+ flavor_jap.134.desc: "Desiring to further centralize [ShowRegionName('japan_region')], [our_ruler.GetName] has issued a decree demanding [ShowSpecialStatusName('shugo_daimyo')] with positions within the Kanrei council take mandatory residence within [ROOT.GetCountry.GetCapital.GetName]. While some [ShowSpecialStatusNameWithNoTooltip('shugo_daimyo')] will undoubtedly dislike the new decree, forcing the [ShowSpecialStatusNameWithNoTooltip('shugo_daimyo')] to remain in [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip] will undoubtedly weaken any aspirations they may hold against the [ROOT.GetCountry.GetFlavorRank], being under the gaze of [our_ruler.GetNameWithNoTooltip]."
+ flavor_jap.134.a: "Force the [ShowSpecialStatusNameWithNoTooltip('shugo_daimyo')] to take residence within [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip]."
+ flavor_jap.134.b: "Retract implementation of the policy."
+
+ flavor_jap.135.title: "Weakening of [tki_country.GetNameWithNoTooltip]"
+ flavor_jap.135.desc: "While [tki_country.GetName] has always remained one of the stronger clans within [ShowRegionName('japan_region')], in recent times it has grown considerably under [tki_ruler.GetName] and the [ROOT.GetCountry.GetGovernment.GetCourtTitle] can no longer ignore [tki_ruler.GetHisHer] ambitions. With demands from the [ROOT.GetCountry.GetGovernment.GetCourtTitle] to divide the lands of [tki_country.GetNameWithNoTooltip] into cadet branches, [our_ruler.GetName] has called for direct action to be taken to punish [tki_ruler.GetNameWithNoTooltip] for [tki_ruler.GetHisHer] defiance."
+ flavor_jap.135.a: "[tki_country.GetNameWithNoTooltip] must be reined in!"
+ flavor_jap.135.b: "We will pursue this matter no further."
+
+ flavor_jap.136.title: "The Meitoku Uprising"
+ flavor_jap.136.desc: "Though ties between [GetCountry('YMN').GetName] and the [ROOT.GetCountry.GetFlavorRank] have remained stable in recent times, [ymn_ruler.GetName] has caused a near complete collapse with the sudden seizure of Imperial lands within [ymn_ruler.GetHisHer] domain. Ignoring the requests of the [ROOT.GetCountry.GetGovernment.GetCourtTitle] to return the confiscated lands, [our_ruler.GetName] has sought assistance to crush the clan for its dishonorable acts."
+ flavor_jap.136.a: "[GetCountry('YMN').GetNameWithNoTooltip] cannot be allowed further seizure of Imperial lands!"
+ flavor_jap.136.b: "[GetCountry('YMN').GetNameWithNoTooltip] is a strong clan, let us avoid conflict with them."
+
+ flavor_jap.137.title: "Taxing of the Sakaya-Dosō"
+ flavor_jap.137.desc: "Seeking to generate further revenue for the [ROOT.GetCountry.GetFlavorRank], [our_ruler.GetName] has proposed a new tax on the Sakaya-Dosō (moneylenders) throughout [ROOT.GetCountry.GetCapital.GetName]. Though a source of income in the past, in recent times the expansion of [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip] has seen the Sakaya-Dosō of the [ROOT.GetCountry.GetCapital.GetRank.GetName] grow considerably wealthy, to the point that current taxation policies left them with large portions of their wealth remaining."
+ flavor_jap.137.a: "Tax the money lenders!"
+ flavor_jap.137.b: "We cannot risk angering the money lenders."
+
+ flavor_jap.138.title: "Deteriorating Relations With [chi_nation.GetNameWithNoTooltip]"
+ flavor_jap.138.desc: "Though trade once flourished between [ROOT.GetCountry.GetName] and [chi_nation.GetName], recent times have proven to be turbulent between our two states. Seeking to renew ties with [chi_nation.GetNameWithNoTooltip], [our_ruler.GetName] has requested assistance from the [ROOT.GetCountry.GetGovernment.GetCourtTitle] in forming a new delegation, but has also expressed [our_ruler.GetHisHer] discontent with [chi_ruler.GetName]."
+ flavor_jap.138.a: "Let us reestablish relations between our states."
+ flavor_jap.138.b: "The affairs of [chi_nation.GetNameWithNoTooltip] are meaningless to us."
+
+ flavor_jap.140.title: "[ShowWorkOfArtNameWithNoTooltip('hana_no_gosho_palace')]"
+ flavor_jap.140.desc: "With the power basis of the [ROOT.GetCountry.GetFlavorRank] throughout [ShowRegionName('japan_region')] largely consolidated, [our_ruler.GetName] has taken the task to build a grand new palace as a symbol of [ROOT.GetCountry.GetGovernment.GetAdjective] power and splendor. Given the name [ShowWorkOfArtName('hana_no_gosho_palace')], [our_ruler.GetNameWithNoTooltip] hopes it will remain a source of [ROOT.GetCountry.GetGovernment.GetAdjective] might and prestige in the coming centuries."
+ flavor_jap.140.a: "A prestigious palace!"
+
+ flavor_jap.141.title: "Construction of [ShowWorkOfArtNameWithNoTooltip('kinkaku_ji')]"
+ flavor_jap.141.desc: "Having acquired the site from a Saionji family through the use of political leverage and [ROOT.GetCountry.GetGovernment.GetAdjective] treasury, [our_ruler.GetName] has ordered the construction of a grand new structure adorned with gold.\n\nThrough adorning the structure with gold, [our_ruler.GetNameWithNoTooltip] hopes to remove any feelings towards death, while also displaying the magnificence of the [ROOT.GetCountry.GetFlavorRank]."
+ flavor_jap.141.a: "This temple will serve as a symbol of our magnificence!"
+
+ flavor_jap.142.title: "[ShowWorkOfArtNameWithNoTooltip('jinno_shotoki_chronicle')]"
+ flavor_jap.142.desc: "Having caused a stir throughout the [ROOT.GetCountry.GetGovernment.GetCourtTitle], a carefully constructed chronicle by [kitabatake_chikafusa.GetName] has been concluded. Documenting all past emperors up until the current [stc_ruler.GetName], it has been spreading throughout [ShowRegionName('japan_region')] akin to a storm. Some in the [ROOT.GetCountry.GetGovernment.GetCourtTitle] have expressed concerns with the writing, stating that the exclusion of the [GetCountry('NTC').GetLongName] from the chronicle and instead choosing to follow [stc_ruler.GetNameWithNoTooltip] of the [GetCountry('STC').GetName] will cast further questions on [ntc_ruler.GetName]'s legitimacy."
+ flavor_jap.142.a: "A damning chronicle."
+
+ flavor_jap.143.title: "Revival of the [ShowLocationNameWithNoTooltip('ashikaga_loc')] Gakkō"
+ flavor_jap.143.desc: "Although a prominent academy for centuries, in recent times the [ShowLocationName('ashikaga_loc')] Gakkō has seen a steep decline in its innovation. With several supporters sympathetic to the arts of the school present in the [ROOT.GetCountry.GetGovernment.GetCourtTitle], many have begun to urge [our_ruler.GetName] to patronage its strengthening in hopes renewed help from the state will help revive the one great academy."
+ flavor_jap.143.a: "Let us revive this great academy!"
+
+ flavor_jap.144.title: "Arrival of [jesuit_francis_xavier.GetNameWithNoTooltip]"
+ flavor_jap.144.desc: "In recent years, the increasing occurrences of #italic Nanban#! Traders to our shores have stirred controversy among some of the local [ShowSpecialStatusNameWithNoTooltip('shugo_daimyo')] as well as figures within the [ROOT.GetCountry.GetGovernment.GetCourtTitle]. However, a recent figure has attracted the personal attention of [our_ruler.GetName]. Called [jesuit_francis_xavier.GetName] by the Nanban traders, [jesuit_francis_xavier.GetHeShe] has arrived in [arrival_location.GetName] and as a man of faith, [jesuit_francis_xavier.GetHeShe] is hoping to spread [jesuit_francis_xavier.GetHisHer] [ShowReligionName('catholic')] teachings throughout [ShowRegionName('japan_region')]."
+ flavor_jap.144.a: "Allow [jesuit_francis_xavier.GetHimHer] to stay."
+ flavor_jap.144.b: "Lock down any attempts to convert our populace."
+
+ flavor_jap.145.title: "[ShowWorkOfArtNameWithNoTooltip('shokoku_ji')] Temple"
+ flavor_jap.145.desc: "A fierce supporter of [ShowReligionGroupAdjective('buddhist')] monks, [our_ruler.GetName] has diverted funds for the founding of [ShowWorkOfArtName('shokoku_ji')], a new [ShowReligionGroupAdjectiveWithNoTooltip('buddhist')] temple within [ShowLocationName('kyoto')]. Seeing it as a gift to the monks, [our_ruler.GetNameWithNoTooltip] hopes in time to use the new temple as a means to host banquets in the future, and to serve as a place for all to gather within the [ROOT.GetCountry.GetGovernment.GetAdjective] bureaucracy."
+ flavor_jap.145.a: "A wonderful temple!"
+
+ flavor_jap.146.title: "[target_character.GetNameWithNoTooltip]"
+ flavor_jap.146.desc: "One of the resident monks of [ShowWorkOfArtName('shokoku_ji')], [target_character.GetName] has begun to earn the attention of the [ROOT.GetCountry.GetGovernment.GetCourtTitle] with [target_character.GetHerHis] practice of the #italic Suiboku#! ink painting. Through [target_character.GetHisHer] time within [ShowWorkOfArtNameWithNoTooltip('shokoku_ji')], [target_character.GetNameWithNoTooltip] has come to paint several incredible paintings that have impressed the [ROOT.GetCountry.GetGovernment.GetCourtTitle], though none have come to rival the favorite, [ShowWorkOfArtName('catfish_with_a_gourd')]."
+ flavor_jap.146.a: "A skilled individual in Suiboku."
+
+ flavor_jap.147.title: "[target_character.GetNameWithNoTooltip]"
+ flavor_jap.147.desc: "Having learned a great deal in the practice of #italic Suiboku#! from [josetsu.GetName] during [target_character.GetHisHer] time at [ShowWorkOfArtName('shokoku_ji')], [target_character.GetName] has risen through the ranks to serve as director of the [ROOT.GetCountry.GetGovernment.GetCourtTitle] painting in [ROOT.GetCountry.GetCapital.GetName]. Among [target_character.GetHisHer] many paintings in [target_character.GetHisHer] service to the [ROOT.GetCountry.GetFlavorRank], none has attracted more acclaim across the [ROOT.GetCountry.GetGovernment.GetCourtTitle] than [ShowWorkOfArtName('reading_in_a_bamboo_grove')]."
+ flavor_jap.147.a: "An excellent painter!"
+
+ flavor_jap.148.title: "[target_character.GetNameWithNoTooltip]"
+ flavor_jap.148.desc: "Following in the footsteps of [target_character.GetHisHer] master [tensho_shubun.GetName] and the great [josetsu.GetName], [target_character.GetName] has emerged as yet another great painter of our times, having earned fame throughout [ShowRegionName('japan_region')] with [target_character.GetHisHer] merging of [ShowCultureGroupName('japanese_group')] and [ShowCultureGroupName('chinese_group')] ink painting styles. Among [target_character.GetHisHer] many paintings, the [ShowWorkOfArtName('jap_winter_landscape')] serves as one of the finest demonstration of this merging of styles."
+ flavor_jap.148.a: "A renowed individual!"
+
+ flavor_jap.150.title: "Founding of Kanō School"
+ flavor_jap.150.desc: "Throughout [target_character.GetHisHer] service as the chief painter of the [ROOT.GetCountry.GetGovernment.GetCourtTitle], [target_character.GetName] has been a proponent of the various Zen and #italic Suiboku#! painting styles. Though [target_character.GetHisHer] position as chief painter has been criticized by some within the [ROOT.GetCountry.GetGovernment.GetCourtTitle], [target_character.GetHisHer] works have made [target_character.GetHimHer] a close friend of [our_ruler.GetName].\n\nSeeking to found a school of painting, [target_character.GetNameWithNoTooltip] has requested [our_ruler.GetNameWithNoTooltip] spare some [ROOT.GetCountry.GetGovernment.GetAdjective] funding for [target_character.GetHimHer] to grow the newfound style."
+ flavor_jap.150.a: "A wonderful proposal!"
+ flavor_jap.150.b: "Provide [target_character.GetNameWithNoTooltip] with additional funds."
+ flavor_jap.150.c: "Refuse to grant [target_character.GetNameWithNoTooltip] request."
+
+ flavor_jap.151.title: "Favoring of Nō Theatre"
+ flavor_jap.151.desc: "Though many forms of theatre have been the subject of fixations within the [ROOT.GetCountry.GetGovernment.GetCourtTitle] in the past, none have left a more lasting impression than the practice of Nō. However, compared to [our_ruler.GetHerHis] predecessors, [our_ruler.GetName] has taken a distinct liking to the art, and seeks to blend it with the aristocratic arts of the [ROOT.GetCountry.GetGovernment.GetCourtTitle], and has requested support among others in the [ROOT.GetCountry.GetGovernment.GetCourtTitle] to patronage the Nō arts."
+ flavor_jap.151.a: "Patronage the Nō Arts."
+ flavor_jap.151.b: "We will have other forms to display [ROOT.GetCountry.GetGovernment.GetAdjective] power."
+
+ flavor_jap.152.title: "Development of Shoin-Zukuri Architecture"
+ flavor_jap.152.desc: "Seeking to separate the [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetName] era from that of the Kamakura, [our_ruler.GetName] has moved to lay the foundation of a new building style for the [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetNameWithNoTooltip] age. Compared to past building designs, under #italic Shoin-Zukiri#! square posts with tatami mats form the core of the structure.\n\nSeeking to renovate the palace in [ROOT.GetCountry.GetCapital.GetName] to the new designs, [our_ruler.GetNameWithNoTooltip] hopes in time all of [ShowRegionNameWithNoTooltip('japan_region')] will follow in adopting the new Shoin-Zukuri architecture."
+ flavor_jap.152.a: "It is a time of change."
+
+ flavor_jap.153.title: "The Way of [ShowGoodsNameWithNoTooltip('tea')]"
+ flavor_jap.153.desc: "Though [ShowGoodsName('tea')] culture has remained a key part of [ShowCultureGroupName('japanese_group')] traditions, [target_character.GetName] has drawn attention from [our_ruler.GetName] and other members of the [ROOT.GetCountry.GetGovernment.GetCourtTitle] for [target_character.GetHisHer] revolutionizing of the practice. Redefining every aspect of the #italic tea ceremony#!, from utensils to the very procedures, [target_character.GetNameWithNoTooltip]'s new practices have quickly garnered attention and spread throughout [ShowRegionName('japan_region')]."
+ flavor_jap.153.a: "Let us formally adopt this practice."
+ flavor_jap.153.b: "It would be an unnecessary distraction."
+
+ flavor_jap.154.title: "[ShowLocationNameWithNoTooltip('kyoto')] Shoshidai"
+ flavor_jap.154.desc: "Seeking to further strengthen the bureaucracy, [our_ruler.GetName] has laid the foundation for the #italic [ShowLocationName('kyoto')] Shoshidai#! office, an evolution of the previous Tandai office held by regional governors. Under the newly expanded office, the holder will serve as the personal representative of the [ROOT.GetCountry.GetGovernment.GetRulerTitle] and operate directly under [our_ruler.GetHisHer] guidance."
+ flavor_jap.154.a: "Establish the office!"
+ flavor_jap.154.b: "It would be a waste of resources"
+
+ flavor_jap.155.title: "Institutionalisation of the Hatamoto"
+ flavor_jap.155.desc: "Seeking to draw a line between Gokenin, [our_ruler.GetName] has laid the foundation to institutionalize [our_ruler.GetHisHer] most loyal followers as belonging to the Hatamoto class. While functionally similar to the Gokenin of the past centuries, those who are Hatamoto can personally request an audience with [our_ruler.GetNameWithNoTooltip], a special privilege previously only given to very few."
+ flavor_jap.155.a: "Institutionalize the Hatamoto."
+ flavor_jap.155.b: "Maintain the balance between Gokenin and Hatamato."
+
+ flavor_jap.156.title: "Construction of Dejima Island"
+ flavor_jap.156.desc: "With the growing arrival of Nanban traders from foreign lands, many in the [ROOT.GetCountry.GetGovernment.GetCourtTitle] have requested [our_ruler.GetName] lay the foundation for a special port within [ShowLocationName('nishisonogi')]. Serving as a branched off island from the main settlement, 'Dejima' would serve as the designated trading spot for any people desiring to do trade with the Nanban."
+ flavor_jap.156.a: "Construct the island."
+ flavor_jap.156.b: "Build the island port, but lax restrictions for those who do trade within it."
+
+
+ flavor_jap.160.title: "Establishment of the Yoshiwara District"
+ flavor_jap.160.desc: "Seeking to isolate aspects of the [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] within [ShowLocationName('toshima_kanto')], [our_ruler.GetName] has ordered the creation of a new district within [ShowLocationNameWithNoTooltip('toshima_kanto')], Yoshiwara. Within this district, the wealthy [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')] class can live in excess, while also fully isolating them from the rest of the settlement."
+ flavor_jap.160.a: "Establish the district!"
+ flavor_jap.160.b: "[ShowLocationNameWithNoTooltip('toshima_kanto')] does not need the district."
+
+ flavor_jap.161.title: "Kinchū Narabini Kuge Shohatto"
+ flavor_jap.161.desc: "Seeking to further limit the power of the [ShowDynastyName('yamato_dynasty')] family, [our_ruler.GetName] has laid out new laws to limit the authority of [ymt_ruler.GetName] and [ymt_ruler.GetHisHer] influence over the [ROOT.GetCountry.GetGovernment.GetCourtTitle]. Under the new law, the [ROOT.GetCountry.GetFlavorRank] also recommended that [ymt_ruler.GetNameWithNoTooltip] dedicate [ymt_ruler.GetHisHer] life in the pursuit of the arts of scholarship and poetry."
+ flavor_jap.161.a: "Enact the laws to limit the Imperial family."
+ flavor_jap.161.b: "Avoid weakening the Imperial family."
+
+ flavor_jap.162.title: "Construction of [ShowLocationNameWithNoTooltip('osaka')] Castle"
+ flavor_jap.162.desc: "Desiring to surpass many great castles throughout [ShowRegionName('japan_region')], [our_ruler.GetName] has laid the groundwork for the founding of [ShowLocationName('osaka')] castle. Featuring five main towers and a fortified moat around the foreground, [ShowLocationNameWithNoTooltip('osaka')] would undoubtedly be one of the most fortified structures throughout [ShowRegionNameWithNoTooltip('japan_region')], and a major hallmark of [our_ruler.GetNameWithNoTooltip]'s rule."
+ flavor_jap.162.a: "Build the castle!"
+ flavor_jap.162.b: "It would be too great an expense."
+ flavor_jap.162.a.tt: "If [ROOT.GetCountry.GetName] has unlocked [ShowAdvanceName('bastion_advance')] and [ShowLocationName('osaka')] already has a [ShowBuildingTypeName('castle')], a [ShowBuildingTypeName('bastion')] will be built instead."
+
+ flavor_jap.163.title: "Institutionalization of the Kinchū Narabini Kuge Shohatto"
+ flavor_jap.163.desc: "Seeking to further limit the power of [our_ruler.GetName], [jap_ruler.GetName] has enacted the #italic Kinchū Narabini Kuge Shohatto#!. Under the new law, [our_ruler.GetNameWithNoTooltip]'s authority has largely been curtailed, along with [jap_ruler.GetNameWithNoTooltip] recommending [our_ruler.GetNameWithNoTooltip] pursue a life of scholarship and poetry."
+ flavor_jap.163.a: "This is a horrible restriction!"
+
+ flavor_jap.170.title: "Kansei Reforms"
+ flavor_jap.170.desc: "Following decades of instabilities and famines throughout [ShowRegionName('japan_region')], many within the [ROOT.GetCountry.GetGovernment.GetCourtTitle] have urged [our_ruler.GetName] to take extreme measures.\n\nSeeking to stabilize and address the many issues that the [ROOT.GetCountry.GetFlavorRank] faces, many in the [ROOT.GetCountry.GetGovernment.GetCourtTitle] have participated in the drafting of the Kansei reforms. While some of the actions proposed by the [ROOT.GetCountry.GetGovernment.GetCourtTitle] hurt relations with foreign states by curtailing commerce, it would lay the foundation to reinvigorate the agricultural basis of [ShowRegionNameWithNoTooltip('japan_region')]."
+ flavor_jap.170.a: "Enact the reforms!"
+ flavor_jap.170.b: "Forbid the reforms"
+
+ flavor_jap.180.title: "The Office of Shitsuji"
+ flavor_jap.180.desc: "Desiring distinguished individuals within the [GetCountry('JAP').GetGovernment.GetCourtTitle], [jap_ruler.GetName] has offered the prestigious position of #italic Shitsuji#! to [our_ruler.GetName]. An office of immense political influence within the [GetUniqueInternationalOrganization('japanese_shogunate').GetName], should [our_ruler.GetNameWithNoTooltip] accept the offer, [our_ruler.GetHeShe] will be able to wield considerable influence throughout [ShowRegionName('japan_region')]."
+ flavor_jap.180.a: "Accept the position of Shitsuji!"
+ flavor_jap.180.b: "Reject the offer for the office."
+
+ flavor_jap.181.title: "[kou_no_moronao.GetNameWithNoTooltip] Declines Appointment"
+ flavor_jap.181.desc: "Despite being a position of great power, [kou_no_moronao.GetNameWithNoTooltip] has rejected [our_ruler.GetName]'s offer for the office of #italic Shitsuji#!.\n\nSeeking to prevent empowering one of factions within the [ROOT.GetCountry.GetGovernment.GetCourtTitle], [our_ruler.GetNameWithNoTooltip] has instead sought the lower ranking official, [target_character.GetName] in hopes [target_character.GetHeShe] will be untainted by [ROOT.GetCountry.GetGovernment.GetCourtTitle] politics."
+ flavor_jap.181.a: "Let us hope the official can maintain the office with integrity."
+
+ flavor_jap.182.title: "[kou_no_moronao.GetNameWithNoTooltip] Accepts Appointment"
+ flavor_jap.182.desc: "Having received our offer for the office of Shitsuji, [kou_no_moronao.GetName] has arrived in [ROOT.GetCountry.GetCapital.GetName] to formerly accept the position and bolster our [ROOT.GetCountry.GetGovernment.GetCourtTitle] with [kou_no_moronao.GetHisHer] influence."
+ flavor_jap.182.a: "[kou_no_moronao.GetNameWithNoTooltip] shall serve as a fine Shitsuji."
+

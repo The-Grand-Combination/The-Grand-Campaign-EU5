@@ -1,0 +1,45 @@
+﻿l_english:
+ crisis_of_the_sayfawa_dynasty.1.title: "$crisis_of_the_sayfawa_dynasty$"
+ crisis_of_the_sayfawa_dynasty.1.desc: "Dire times are upon us! The sky is split with red clouds, and droughts as well as famines have taken hold of the land as we brace ourselves for the inevitable. Our enemies are many, but our determination for survival shall hold. We must arm ourselves with courage to protect our families and people from this new catastrophe.\n\nHowever, many advisors in our court dispute our fervent call to action and instead support the idea of giving up some of the worthless land we have, in the name of peace..."
+ crisis_of_the_sayfawa_dynasty.1.a: "We are warriors, we will fight!"
+ crisis_of_the_sayfawa_dynasty.1.b: "It is not worth to perish over scraps of land..."
+
+ crisis_of_the_sayfawa_dynasty.2.title: "Rise of a Pretender"
+ crisis_of_the_sayfawa_dynasty.2.desc: "Indeed [ROOT.GetCountry.GetGovernment.GetAdjective] families are no strangers to greed and lust for power. Sadly, ours is no exception as one of our ruler's family members, [pretender_character_scope.GetName] has united many of [pretender_character_scope.GetHerHis] supporters behind a push for the throne. Whatever we do, we cannot appear weak in front of our people at such a trying time. Our most trusted generals and advisors suggest we discard these snakes and strip them of their titles, lest they swallow us whole.\n\nWhile that may be true, many within our midst suggest that the new candidate may bring more stability and legitimacy to the crown..."
+ crisis_of_the_sayfawa_dynasty.2.a: "Accursed snakes, all of you!"
+ crisis_of_the_sayfawa_dynasty.2.b: "It is time to go, [target_character.GetNameWithNoTooltip]."
+ rival_branch_sayfawa: "Sayfawa Rival Branch"
+ csd_every_pop_satisfaction_tt: "All pops in [target_province.GetName]:\nLoses [ShowNamedValue('pop_satisfaction_severe_penalty')|+=2%] [pop_satisfaction|e]\nJoins [rival_branch_sayfawa_scope.GetName]"
+
+ crisis_of_the_sayfawa_dynasty.3.title: "Family Infighting"
+ crisis_of_the_sayfawa_dynasty.3.desc: "It is not uncommon for [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] and those of [ROOT.GetCountry.GetGovernment.GetAdjective] lineage to bicker and fight over scraps of power. It has come to be quite the tradition for a prince of noble descent to raise arms against a brother, especially during the current turbulent times. This blatant disregard of [ROOT.GetCountry.GetGovernment.GetAdjective] etiquette has made us appear uncultured and in decay in the eyes of the world.\n\nShould we fail to whip our family in line, we are sure to suffer the consequences down the line. Our [ROOT.GetCountry.GetGovernment.GetAdjective] house must regain its old splendor and rid itself of petty grievances and power-hungry buffoons."
+ crisis_of_the_sayfawa_dynasty.3.a: "We must put them in their place."
+ crisis_of_the_sayfawa_dynasty.3.b: "They are family after all..."
+
+ crisis_of_the_sayfawa_dynasty.4.title: "Strength Through Unity"
+ crisis_of_the_sayfawa_dynasty.4.desc: "[ROOT.GetCountry.GetReligion.GetName] has gotten a hold over our region for the past few centuries. Through it, we have been taught the ways of divinity and have come to appreciate the beautiful feeling of embracing the true faith. As we tumble deeper in our current chaotic period, many suggest that we must seek strength within our faith, as that will be the pillar to support our ascension and salvation."
+ crisis_of_the_sayfawa_dynasty.4.a: "Our faith will see us through."
+ crisis_of_the_sayfawa_dynasty.4.b: "Our service is to the people, not the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')]."
+ crisis_of_the_sayfawa_dynasty.4.c: "We cannot spare the coin..."
+
+ crisis_of_the_sayfawa_dynasty.5.title: "A Warrior Rises"
+ crisis_of_the_sayfawa_dynasty.5.desc: "Is it true that tough times create tough men? Be that as it may, a young prospecting warrior by the name of [kbo_strong_general_scope.GetName] has stepped forward. [kbo_strong_general_scope.GetSheHe|U] laments the usurpers and wishes to strike [kbo_strong_general_scope.GetHerHis] spear through the bodies of our enemies. Against all the evil that comes from within our borders, those who wish to devour our territory, and the wickedness of our foes, we will rally behind only [kbo_strong_general_scope.GetHerHim] and grant [kbo_strong_general_scope.GetHerHim] the chance to... "
+ crisis_of_the_sayfawa_dynasty.5.a: "...lead our troops to glorious and bloody victory!"
+ crisis_of_the_sayfawa_dynasty.5.b: "...rip and tear as a soldier under our banner."
+
+ crisis_of_the_sayfawa_dynasty.6.title: "The End of the [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetName] Crisis"
+ crisis_of_the_sayfawa_dynasty.6.a.desc: "Despite our foes' best efforts, we have not succumbed to their heinous attempts to usurp our lands. Our people have stood the test of time and have emerged victorious. Celebrations all across our domain are taking place due to finally ridding ourselves of those who wished harm upon our people. Let the sun shine upon us as we enter a new age of prosperity and tranquility. Let those who took advantage of our nation during our weakened state tremble as we regain our footing."
+ crisis_of_the_sayfawa_dynasty.6.b.desc: "The political infighting and the constant annoyances of the [ShowCultureName('bilala_culture')] raids have proven to be more than we could handle. The $bilala_culture$ people have gone deep into our territory, even to our capital of [ShowLocationName('njimi')]. We can no longer claim authority over that area and have been forced to relocate. Many may call us weak for sacrificing our lands for the continued existence of our people. However, little do they know that we will bide our time and plan our return to power. This is not a setback, merely a strategic maneuver as we gather our troops and prepare to regain our lost territory."
+ crisis_of_the_sayfawa_dynasty.6.a: "We are victorious!"
+ crisis_of_the_sayfawa_dynasty.6.b: "We will persevere and regain our strength, in time..."
+
+ crisis_of_the_sayfawa_dynasty.7.title: "$bilala_culture$ Raid"
+ crisis_of_the_sayfawa_dynasty.7.desc: "The [ShowCultureName('bilala_culture')] people have been a thorn in our side for a long time. Their continuous raids into our country are becoming bolder by the day, and their presence among our own people is starting to reach problematic levels. Their recent incursion into [target_location.GetName] has but encouraged others among their kind to settle further inside our borders. If this continues, they will become an unstoppable pest."
+ crisis_of_the_sayfawa_dynasty.7.a: "[ROOT.GetCountry.Custom('common_string_negative')]"
+ crisis_of_the_sayfawa_dynasty.7.b: "Pay them to go away."
+
+ #Tooltips
+ gave_autonomy_to_the_bulala_and_sao_tt: "Gave autonomy to the #Y $bilala_culture$#! and #Y $sao_culture$#! people"
+ kbo_join_tt: "[kbo_strong_general_scope.GetNameWithNoTooltip] will lead our troops and ensure the doom of our foes"
+ sao_and_bilala_reduced_control_tt: "Every [location|e] with [ShowCultureName('bilala_culture')] or [ShowCultureName('sao_culture')] [pops|e] will lose [ShowNamedValue('control_severe_penalty')|+=2%] [control|e]"
+ had_csd_disaster_variable_tt: "Has not had this disaster before"

@@ -1,0 +1,11 @@
+﻿l_english:
+ flavor_chb.1.title: "The Rebellion of [target_character.GetNameWithNoTooltip]"
+ flavor_chb.1.desc: "[GetCharacter('chb_chupan').GetName] was one of the most important generals of the [GetCountry('MGE').GetName]. Although his line fell into a bit of a disgrace, it was not extinguished, and now his grandson [target_character.GetName] has managed to gather many supporters around him. One of the people rallying around him was the governor of [target_location.GetName], allowing him to take control of the [target_location.GetRank.GetName] and all the surrounding area, and he even captured and executed [GetCharacter('jal_muhammad_khan').GetName]."
+ flavor_chb.1.a: "We will squash him and his line like the maggots they are."
+ flavor_chb.1.tt: "[target_character.GetName] has managed to gain territory around [target_location.GetName]"
+ flavor_chb.1.b: "Will his rise bring about greatness?"
+
+ flavor_chb.2.title: "Legacy of a $rank_kingdom_horde_ruler_female$"
+ flavor_chb.2.desc: "[target_khatun.GetName] had been the spouse of [GetCharacter('chb_chupan').GetName], and had very much been involved in the politics of the [GetUniqueInternationalOrganization('ilkhanate').GetName]. Seeing us as an opportunity to wrestle control over the throne, she is willing to defect to our side and offer us her support. We could use her family ties and connections and install her as our puppet to the throne of the [GetUniqueInternationalOrganization('ilkhanate').GetNameWithNoTooltip]. However, she may be too ambitious for her own good, so perhaps marrying her to a more malleable puppet would be best."
+ flavor_chb.2.a: "She will make an excellent $rank_kingdom_horde_ruler_female$."
+ flavor_chb.2.b: "Better not to give her too much influence."

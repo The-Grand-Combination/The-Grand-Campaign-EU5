@@ -1,0 +1,7 @@
+﻿l_english:
+ flavor_kol.1.title: "The Bavarian Archbishops"
+ flavor_kol.1.desc: "A member of the ruling family of Bavaria has been appointed Archbishop of Cologne. This may mean a new era of Bavarian influence here. How shall we proceed?"
+ flavor_kol.1.a: "Allow Bavarian influence"
+ flavor_kol.1.b: "We will go our own way"
+ kol_bavarian_archbishop_replaced: "Bavarian Archbishop Replaced"
+ kol_bavarian_archbishop: "Bavarian Archbishop in Cologne"

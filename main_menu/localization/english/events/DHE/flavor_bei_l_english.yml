@@ -1,0 +1,6 @@
+﻿l_english:
+ flavor_bei.1.title: "The Sultan of Brunei"
+ flavor_bei.1.desc: "As the [ShowReligionGroupAdjective('muslim')] faithful spread through South East Asia, the ambitious [ROOT.GetCountry.GetGovernment.GetRuler.GetName] has become disenchanted with the diplomatic limitations of his traditional [ROOT.GetCountry.GetGovernment.GetRuler.GetReligion.GetAdjective] faith.\n\n[ROOT.GetCountry.GetGovernment.GetRuler.GetHeSheFormal|U] has begun imploring us to adopt the ways of [ShowReligionGroupName('muslim')], as it will open up diplomatic options and even marriage with other faithful rulers.\n\nOf course, there is a degree of excitement amongst our loyal subjects, but is conversion really the right path?"
+ flavor_bei.1.a: "We shall take the shahada."
+ flavor_bei.1.b: "The old ways must be honored."
+ flavor_bei.1.historical_info: "In the 1360s, Awang Alak Betatar, the Hindu Raja of Brunei, converted to Islam. He did this to become eligible to marry a foreign princess, usually understood to be the daughter of the Johor Sultan. Upon his conversion, the former Raja became known as Sultan Muhammad Shah. His dynasty still rules Brunei to this day, making it one of the most venerable ruling houses in history."

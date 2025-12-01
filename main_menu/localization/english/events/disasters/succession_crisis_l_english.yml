@@ -1,0 +1,76 @@
+﻿l_english:
+
+#Events
+ succession_crisis.1.title: "The Bid for the [ROOT.GetCountry.GetAdjectiveWithNoTooltip] Crown"
+ succession_crisis.1.desc: "Years of mismanagement, court intrigue and an unstable rule have wrought the seeds of our downfall! Like shades in the dusk, many prominent individuals with [ROOT.GetCountry.GetGovernment.GetAdjective] aspirations have gathered in a petty attempt to prop up [scope_pretender.GetName] as the rightful ruler of the [ROOT.GetCountry.GetLongName]."
+ succession_crisis.1.a: "Bring me [scope_pretender.GetHerHis] head on a pike!"
+ succession_crisis.1.tt: "A number of our [provinces|e] that are dissatisfied with our rule will join the cause of [scope_pretender.GetNameWithNoTooltip]"
+ 
+ succession_crisis.2.title: "Local Opposition"
+ succession_crisis.2.desc: "Whilst the ruling of [target_ruler.GetName] has left a lot to be desired, the situation in places such as [target_province.GetName] has reached a new low. Cattle skinnier than a hay needle, starvation and depravity reigns in the streets of a once-great province. To that end, the peasants have taken up arms demanding direct compensation from the crown itself!"
+ succession_crisis.2.a: "Blasted traitors!"
+ succession_crisis.2.b: "We must give in to their demands..."
+ every_location_loses_sat_and_joins_rebel_tt: "Every owned [location|e] in [target_province.GetName] will lose [ShowNamedValue('pop_satisfaction_mild_penalty')|+=2%] [pop_satisfaction|e] and support the claim of[scope_pretender.GetName] on our throne"
+ 
+ succession_crisis.3.title: "A Resourceful Minister"
+ succession_crisis.3.desc: "It can be said that despite our ruler's best efforts, the majority of beneficial policies come from the likes of our advisors. Individuals such as [target_character.GetName] have taken it upon themselves to see the [ROOT.GetCountry.GetLongName] through this troubling time..."
+ succession_crisis.3.a: "[target_character.GetHerHis|U] efforts will strengthen the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('crown_estate')]!"
+ succession_crisis.3.b: "Allow [target_character.GetShortNameWithNoTooltip] to continue working around our provinces."
+ 
+ succession_crisis.4.title: "Testing One's Mettle"
+ succession_crisis.4.desc: "Man is indeed a product of his nature and nurture. As such, the recent situation across our borders has given rise to many a hardship as rebellions grip our people. Hope, however, is not lost, as out of the fire rises a capable new face, eager to serve and assist us in these trying times."
+ succession_crisis.4.a: "Grant [target_character.GetHerHim] a post in our administration."
+ succession_crisis.4.b: "[target_character.GetSheHe|U] will fare better in the military."
+  
+ succession_crisis.5.title: "Support for Our Authority"
+ succession_crisis.5.desc: "Despite the best efforts of our central authority to sabotage what is left of our reputation across our provinces, many of our recent policy changes have not fallen on deaf ears. People, especially across the domain of [target_province.GetName], have taken notice and have sent correspondence back, thanking us for hearing their plea and taking care of them and their families, professing their allegiance to [ROOT.GetCountry.GetGovernment.GetRuler.GetName]."
+ succession_crisis.5.a: "They are right to trust us!"
+ succession_crisis.5.b: "[ROOT.GetCountry.GetGovernment.GetRuler.GetShortNameWithNoTooltip] is the rightful holder of our crown!"
+ every_location_gains_sat_and_loses_rebel_tt: "Every owned location in [target_province.GetName] will gain [ShowNamedValue('pop_satisfaction_ultimate_bonus')|+=2%] [pop_satisfaction|e] and denounce their support of[target_character.GetName] on our throne"
+ 
+ succession_crisis.6.title: "A Request to [target_country.GetNameWithNoTooltip]"
+ succession_crisis.6.desc: "The [ROOT.GetCountry.GetLongName] is currently undergoing a very turbulent period, as our [ROOT.GetCountry.GetAdjectiveWithNoTooltip] [ShowDisasterName('succession_crisis')] threatens to tear the [ROOT.GetCountry.GetFlavorRank] apart. The pretenders grow in strength, and soon they may strike at the heart of our [ROOT.GetCountry.GetGovernment.GetGovernmentType.GetName]. Desperate times call for allies, and so we may yet send a messenger to [target_country.GetName], pleading for aid. Should our [ROOT.GetCountry.GetFlavorRank] fall, it will mean ruin and doom for [target_character1.GetName] and [target_character1.GetHerHis] [ROOT.GetCountry.GetGovernment.GetCourtTitle]."
+ succession_crisis.6.a: "Request a competitive loan."
+ succession_crisis.6.b: "Offer our territory in exchange."
+ succession_crisis.6.c: "We need no help."
+ if_they_accept_a_tt: "Should they accept, the following will occur:"
+ sc_seek_foreign_aid_tt: "The selected [country|e] may offer conditional support or a truce in exchange for something"
+ 
+ succession_crisis.7.title: "Request for Aid"
+ succession_crisis.7.desc: "An envoy from [target_character1.GetName] has arrived, requesting assistance in [target_character1.GetHerHis] efforts to crush the ongoing [ShowDisasterName('succession_crisis')] in [target_country2.GetName]. During times of hardship and instability, it is vital to establish and maintain strong relations with our influential neighbors. Through [target_character1.GetHerHis] envoy, [target_character1.GetShortNameWithNoTooltip] has proposed the terms under which [target_character1.GetSheHe] may receive some much-needed aid."
+ succession_crisis.7.a: "Sign the proposal."
+ succession_crisis.7.c: "We cannot accept that."
+ 
+ succession_crisis.8.title: "Captivating Our Dynastic History"
+ succession_crisis.8.desc: "Working tirelessly for days and nights, [target_character2.GetName] has managed to produce a wonderful literary achievement that tells a glorious tale about the greatest moments of the [target_dynasty.GetName] dynasty. A reflection of our greatness, splendor, and aptitude for the arts, this is but the latest expression of our superior culture, to remember our history and secure our future against all those who wish to dethrone [target_character1.GetName]."
+ succession_crisis.8.a: "Let us hope this will solidify our grip on power."
+ scales_with_art_quality_tt: "The amount of [legitimacy|e] gained depends greatly on the quality of the [work_of_art|e] produced by [target_characterGetNameWithNoTooltip]"
+ 
+ succession_crisis.9.title: "Help from the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]"
+ succession_crisis.9.desc: "The movement of the [succession_crisis_pretender_scope.GetName] has gained traction within our [ROOT.GetCountry.GetFlavorRank], which is teetering on the brink of collapse. The [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] that once supported our throne have been forced to reckon with the dangers posed by the growing rebellion. Many among the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] recognize that their lands and privileges are bound to the continuation of our [ROOT.GetCountry.GetGovernment.GetAdjective] line, and thus, a faction has rallied to our defense. With their personal retinues and loyal bannermen, they offer support against the pretenders forces. However, in return they expect greater influence over our governance."
+ succession_crisis.9.a: "We need them."
+ succession_crisis.9.b: "Let us not trade one peril for another!"
+ succession_crisis_9_tt: "Many members of the [SCOPE.sCountry('actor').GetGovernment.GetEstateName('nobles_estate')] $shared_conditional_support_key$"
+ shared_conditional_support_key: "[pops|e] that support the pretender will shift their allegiance in exchange for a new [estate_privilege|e] for their [estate|e]"
+ 
+ succession_crisis.10.title: "Help from the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')]"
+ succession_crisis.10.desc: "Even as our people are divided on their support for the [succession_crisis_pretender_scope.GetName], the faithful look to the [ROOT.GetCountry.GetGovernment.GetEstateNameWith('clergy_estate')] for guidance. Recognizing the danger posed by a fractured [ROOT.GetCountry.GetFlavorRank], their leaders have now stepped forth, offering their support.\n\nIn exchange for a new privilege, their preachers will denounce the pretender as a usurper, calling upon the people to reaffirm their loyalty to [target_character1.GetName]. They argue that only through faith can the [ROOT.GetCountry.GetFlavorRank] be preserved and restored."
+ succession_crisis.10.a: "What choice do we have?"
+ succession_crisis.10.b: "We cannot afford these concessions!"
+ succession_crisis_10_tt: "Many members of the [SCOPE.sCountry('actor').GetGovernment.GetEstateName('clergy_estate')] $shared_conditional_support_key$"
+ 
+ succession_crisis.11.title: "Help from the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')]"
+ succession_crisis.11.desc: "While the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] sharpen their daggers and the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] preach of divine order, the[ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] take a more pragmatic approach. Viewing the crisis as a threat to trade and prosperity, they propose a solution.\n\nAccording to their most influential and rebellious members, they could easily be placated to switch sides. In return, they demand new privileges, establishing a strong base of support in the [ROOT.GetCountry.GetGovernment.GetCourtTitle] of [target_character1.GetName]. A tempting offer, but one that may weaken central authority in the long run"
+ succession_crisis.11.a: "We will give in."
+ succession_crisis.11.b: "They forget their place!"
+ succession_crisis_11_tt: "Many members of the [SCOPE.sCountry('actor').GetGovernment.GetEstateName('burghers_estate')] $shared_conditional_support_key$"
+ 
+ succession_crisis.100.title: "End of the Succession Crisis"
+ succession_crisis.100.desc.a: "The strife across the [ROOT.GetCountry.GetLongName] is over only for an escalated civil war to take place. Mothers, children and innocents fill the streets with screams of terror as fire and metal take over the entire domain..."
+ succession_crisis.100.desc.b: "After a period of instability, the passing of our old ruler has given way to [ROOT.GetCountry.GetGovernment.GetRuler.GetName]'s claim on our throne. For better or worse this is the path we have to go down on..."
+ succession_crisis.100.desc.c: "Alas, the divine has given us a hand of grace. The leader of the brewing rebellion threatening to throw our entire domain in a civil war,has perished. A sign of intervention or a dice roll of luck? For better or worse, we have regained control of our internal affairs, but for how long?"
+ succession_crisis.100.desc.d: "Civil strife, open rebellions, and a myriad other curses have befallen our people. However, none managed to break our spirit and under the guidance of [ROOT.GetCountry.GetGovernment.GetRuler.GetName] we have saved the great [ROOT.GetCountry.GetLongName] from certain doom!"
+ succession_crisis.100.a: "We will rely on prominent members of our court."
+ succession_crisis.100.b: "We can manage on our own!"
+ succession_crisis.100.c: "Was there ever any doubt?"
+ based_on_our_crownpower_and_prestige_tt: "Based on our [crown_power|e] and [prestige|e] we will gain the following:"

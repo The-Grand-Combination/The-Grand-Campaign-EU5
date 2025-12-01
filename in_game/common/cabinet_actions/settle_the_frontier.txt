@@ -1,0 +1,197 @@
+﻿settle_the_frontier = {
+	ability = adm
+	potential = {
+		num_locations > 0
+		OR = {
+			country_type = location
+			country_type = army
+		}
+	}
+
+	min = 0
+
+	select_trigger = {
+		looking_for_a = province_definition
+		source = actor
+		source_flags = possible_colonial_charters
+		target_flag = target
+		name = "settle_the_frontier_select_province_definition"
+		none_available_msg_key = "settle_the_frontier_no_provinces"
+		column = { data = name }
+		column = { data = population }
+		visible = {
+			scope:actor = {
+				is_valid_colonial_charter = root
+				not = {
+					any_cabinet = {
+						has_cabinet_action = yes
+						cabinet_action ?= cabinet_action:settle_the_frontier
+						interaction_target:target ?= root
+					}
+				}
+			}
+		}
+		enabled = {
+		}
+	}
+	
+	select_trigger = {
+		looking_for_a = province
+		source = actor
+		source_flags = possible_colonial_charters
+		target_flag = source
+		cache_targets = yes #always the same set
+		name = "create_colonial_charter_select_province"
+		none_available_msg_key = "create_colonial_charter_select_province_none"
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		#no trigger, possible_colonial_charters does this for us in code
+		enabled = {
+			population > 1
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = character
+		source = actor
+		target_flag = recipient
+		name = "settle_the_frontier_select_character"
+		none_available_msg_key = "settle_the_frontier_no_character"
+		column = { data = character_info }
+		default_sort = "adm"
+		visible = {
+			is_adult = yes
+			is_courtier = yes
+		}
+		enabled = {
+			is_ruler = no
+			is_heir = no
+			is_regent = no
+			is_loyal = yes
+			NOT = { has_character_modifier = settling_no_mans_land }
+		}
+	}
+	years = 10
+	on_activate = {
+		if = {
+			limit = { exists = scope:recipient }
+			custom_tooltip = {
+				text = settle_the_frontier_character_specific_tt
+				scope:recipient = {
+					set_variable = { name = settling_no_mans_land_var value = scope:target }
+					set_variable = { name = settler_character_truthfulness value = 5 }	#If that drops at or below 0, they form their own country
+				}
+			}
+			scope:recipient = {
+				add_character_modifier = {
+					modifier = settling_no_mans_land
+					years = -1
+					mode = add_and_extend
+					desc = settle_the_frontier_modifier_desc
+				}
+			}
+		}
+		else = {
+			custom_tooltip = settle_the_frontier_character_tt
+		}
+		if = {
+			limit = { exists = scope:target }
+			custom_tooltip = {
+				text = settle_the_frontier_specific_tt
+				scope:actor = {
+					trigger_event_silently = settle_the_frontier.1
+				}
+			}
+		}
+		else = {
+			custom_tooltip = settle_the_frontier_tt
+		}
+		if = {
+			limit = {
+				exists = scope:target
+				exists = scope:source
+			}
+			add_migration = {
+				owner = scope:actor
+				from = scope:source.province_definition
+				to = scope:target
+				amount = 1
+				months = 120
+			}
+		}
+	}
+	on_deactivate = {
+		scope:recipient ?= { remove_character_modifier = settling_no_mans_land }
+		if = {
+			limit = {
+				exists = scope:target
+				exists = scope:source
+			}
+			remove_migration = {
+				owner = scope:actor
+				from = scope:source.province_definition
+				to = scope:target
+			}
+		}
+		if = {
+			limit = { cabinet_action:settle_the_frontier = { is_fully_implemented_in = scope:actor } }
+			scope:actor = { trigger_event_silently = settle_the_frontier.100 }
+		}
+		else = {
+			#Settler died / vanished
+			if = {
+				limit = { scope:recipient ?= { OR = { NOT = { owner = scope:actor } is_alive = no } } }
+				scope:actor = { trigger_event_silently = settle_the_frontier.101 }
+			}
+			else_if = {
+				limit = {
+					exists = scope:target
+					scope:target = {
+						any_location_in_province_definition = {
+							OR = {
+								is_ownable = no
+								has_owner = yes
+							}
+							count = all
+						}
+					}
+				}
+				scope:actor = { trigger_event_silently = settle_the_frontier.102 }
+			}
+		}
+	}
+	is_finished = {
+		OR = {
+			#Settling is done!
+			cabinet_action:settle_the_frontier = {
+				is_fully_implemented_in = root
+			}
+			#Somebody else owns the province...
+			scope:target = {
+				any_location_in_province_definition = {
+					OR = {
+						is_ownable = no
+						has_owner = yes
+					}
+					count = all
+				}
+			}
+			#Colonist died...
+			scope:recipient ?= {
+				OR = {
+					NOT = { owner = root }
+					is_alive = no
+				}
+			}
+		}
+	}
+	progress = {
+		cabinet_action:settle_the_frontier = {
+			value = "implementation_progress_percentage(scope:actor)"
+		}
+	}
+}

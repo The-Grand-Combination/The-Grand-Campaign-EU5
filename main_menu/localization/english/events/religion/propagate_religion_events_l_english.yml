@@ -1,0 +1,57 @@
+﻿l_english:
+ propagate_religion_events.1.title: "[ShowReligionGroupAdjectiveWithNoTooltip('muslim')] Traders in [target_location.GetNameWithNoTooltip]"
+ propagate_religion_events.1.desc: "[target_country.GetAdjective] [ShowReligionGroupAdjective('muslim')] traders have been an increasingly common sight in our ports, and we have grown used to them and their religion. In [target_location.GetName] in particular, these merchants have become so commonplace that they already feel like an integral part of the local population.\n\nRecently, some of these traders have approached the [ROOT.GetCountry.GetGovernment.GetCourtTitle], asking to be allowed to build a settlement of their own, just outside [target_location.GetNameWithNoTooltip] proper."
+ propagate_religion_events.1.a: "Only good can come from this."
+ propagate_religion_events.1.b: "No, they must remain where we can control them."
+
+ propagate_religion_events.2.title: "[target_country.GetReligion.GetAdjectiveWithNoTooltip] Missionaries"
+ propagate_religion_events.2.desc: "A group of [target_country.GetReligion.GetAdjective] missionaries from [target_country.GetName] have come to us wanting to settle down in [target_location.GetName] to found a new community there for themselves and their converts. They are cooperating with local authorities and do not oppose our rule, but their presence will likely lead to their religion spreading more quickly into the entire area."
+ propagate_religion_events.2.a: "We cannot let authority slip to outside groups such as this one."
+ propagate_religion_events.2.b: "They will be a welcome addition to our society."
+ location_pops_convert_to_muslim.tt: "#Y 1%#! of the [pops|e] in [target_location.GetName] will [convert|e] to [target_country.GetReligion.GetName]"
+
+ propagate_religion_events.3.title: "[ShowReligionGroupAdjectiveWithNoTooltip('muslim')] Sailors"
+ propagate_religion_events.3.desc: "From the most eastern seas to the warmer waters riding the monsoons, there is an abundance of ships constantly sailing between the many ports, from small dhows to great galleys. Taken together, this trade network provides goods and supplies for more than half of the world's population. What many of these galleys have in common is that they are manned by [ShowReligionGroupAdjective('muslim')] sailors from [ShowContinentName('africa')] or the [ShowSubContinentName('middle_east')] joined by converted locals."
+ propagate_religion_events.3.a: "Let us encourage these sailors to seek out our ports!"
+ propagate_religion_events.3.b: "We have no need of foreign faiths on our ships."
+
+ propagate_religion_events.4.title: "Miracle"
+ propagate_religion_events.4.desc: "A learned [target_character.GetWomanMan] from [target_country.GetName] is said to have cured some of the population in [target_location.GetName] from a harsh illness. The locals are all very impressed and have chosen to adopt the faith of this sage so that [target_character.GetHerHis] God can protect them in the times to come."
+ propagate_religion_events.4.a: "This is a good sign."
+ propagate_religion_events.4.b: "Let us invite this [target_character.GetWomanMan] to [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip]." 
+
+ propagate_religion_events.5.title: "Mosque Established in [target_location.GetNameWithNoTooltip]"
+ propagate_religion_events.5.desc: "The [target_location.GetDominantReligion.GetAdjective] believers of [target_location.GetName] have established a new place to serve as their house of worship. The Mosque is the new clear center of the community and will likely attract greater numbers to settle here. It will also facilitate local conversion of the entire area.\n\nThere is clear indication that the new Mosque is in part being funded by the many [target_country.GetAdjective] traders active in the region, and in our government some worry that this might lead to undue influence for them and their religion."
+ propagate_religion_events.5.a: "We cannot allow this."
+ propagate_religion_events.5.b: "Let us provide them with the support they need to build a better community."
+ propagate_religion.5.b.tt: "Every [location|e] in [target_location.GetArea.GetName] will lose [ShowNamedValue('control_severe_penalty')|+=2%] [control|e] and gain [ShowModifier('mosque_of_x')] for #Y 10#! years"
+
+ propagate_religion_events.6.title: "$rank_kingdom_muslim$ of [ROOT.GetCountry.GetNameWithNoTooltip]?"
+ propagate_religion_events.6.desc: "With [ShowReligionGroupName('muslim')] increasingly becoming the dominant religion of our [ROOT.GetCountry.GetFlavorRank], many of our government officials, [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')], and other notables have begun to adopt Islamic and [ShowLanguageName('arabic_language')] notions of kingship, names, and titles. Many have in fact started to refer to the [ROOT.GetCountry.GetFlavorRank] as a $rank_kingdom_muslim$, even though our official state religion is still [ROOT.GetCountry.GetReligion.GetName]. Some advisors of [target_ruler.GetName] now suggest that it might be prudent to go along with this. If we start referring to our own country as a $rank_kingdom_muslim$, it might ease relations with the many [ShowReligionGroupAdjectiveWithNoTooltip('muslim')] countries around the world."
+ propagate_religion_events.6.a: "It is a sound idea."
+ sultan_titles_for_non_muslims_tooltip: "We will adopt [ShowReligionGroupAdjective('muslim')] titles, improving our relations by #G 75#! towards all known [ShowReligionGroupAdjective('muslim')] [countries|e]."
+ propagate_religion_events.6.b: "No, we must defend the traditional values of the [ROOT.GetCountry.GetLongNameWithNoTooltip]!"
+
+ propagate_religion_events.7.title: "Joining the Community of the Faithful"
+ propagate_religion_events.7.desc: "As [ROOT.GetCountry.GetReligion.GetName] is now the official religion of [ROOT.GetCountry.GetName], we have joined the community of the Faithful. Though some remaining traditionalists lament this change, many more of our [ShowReligionGroupAdjective('muslim')] populace now rejoice over the just rule of our [ROOT.GetCountry.GetFlavorRank]."
+ propagate_religion_events.7.a: "The [ROOT.GetCountry.GetLongNameWithNoTooltip] will be triumphant!"
+ sultan_conversion_tooltip: "Our relations will improve by #G 50#! towards all known [ShowReligionGroupAdjective('muslim')] [countries|e]."
+
+ propagate_religion_events.8.title: "Traveling Scholar"
+ propagate_religion_events.8.desc: "A learned [target_character.GetWomanMan] from the land of [target_country.GetName] has arrived in [ROOT.GetCountry.GetCapital.GetName]. [target_character.GetSheHe|U] claims to have studied under scholars in many famous cities, and [target_character.GetSheHe] is versed in the politics of the greater [ShowReligionGroupAdjective('muslim')] world as well as in intricate matters of theology."
+ propagate_religion_events.8.a: "Let us offer [target_character.GetHerHim] a place at our [ROOT.GetCountry.GetGovernment.GetCourtTitle]!"
+ propagate_religion_events.8.b: "Let us learn as much as we can about the state of things abroad."
+
+ propagate_religion_events.9.title: "[ShowReligionGroupAdjectiveWithNoTooltip('muslim')] Chiefs"
+ propagate_religion_events.9.desc: "In the [ROOT.GetCountry.GetAdjective] hinterlands, many chiefs rule their own little domains with little interference from central rule. However, even though they lack the ability to project much power, some do have greater ambitions. Some local chiefs in [target_location.GetName] have given name to greater pretensions by starting to style themselves sultans and trying to claim legitimacy by converting their population to [ShowReligionGroupName('muslim')]."
+ propagate_religion_events.9.a: "Ridiculous."
+
+ propagate_religion_events.10.title: "[ShowReligionGroupAdjectiveWithNoTooltip('muslim')] Syncretism"
+ propagate_religion_events.10.desc: "An increasingly common sight in the [ROOT.GetCountry.GetAdjective] countryside is that of traveling Sufi scholars, mystic missionaries of the [ShowReligionGroupAdjective('muslim')] faith. They are often warmly received not only by their brothers in faith, but also by the rural population, who have found a way to integrate the [ShowReligionGroupAdjectiveWithNoTooltip('muslim')] creed into their own traditions and myths. The result is not something that would fit in [ShowLocationName('mecca')] or [ShowLocationName('cairo')], but it has made many more predisposed towards [ShowReligionGroupNameWithNoTooltip('muslim')] in general."
+ propagate_religion_events.10.a: "We must protect the faith of our ancestors!"
+ propagate_religion_events.10.b: "What harm can these men do."
+
+ propagate_religion_events.11.title: "[ShowReligionGroupAdjectiveWithNoTooltip('muslim')] Refugees"
+ propagate_religion_events.11.desc: "A number of refugees from a distant war in [target_country.GetName] have arrived at our borders. They are led by [ShowReligionGroupAdjective('muslim')] $rank_county_arabic_ruler_male$ and claim that if we just allow them some unclaimed land they will create a prospering settlement for themselves and lead productive lives as our subjects."
+ propagate_religion_events.11.a: "We might have the perfect spot for them."
+ propagate_religion_events.11.b: "They ought to be able to find sanctuary somewhere else."

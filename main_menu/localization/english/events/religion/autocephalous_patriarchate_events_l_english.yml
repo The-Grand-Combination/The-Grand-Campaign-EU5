@@ -1,0 +1,13 @@
+﻿l_english:
+ 
+ ap_falls_desc_key: "After a turbulent siege and a valiant defense of the resident garrison, [target_location.GetName] has fallen to the might of our great armies. Within its walls resides a powerful religious authority, as the [target_location.GetRank.GetNameWithNoTooltip] once hosted dignitaries of the [ShowReligionAdjective('orthodox')] faith. The question remains yet, should we abolish this kindred institution or adopt it under our protection?"
+ autocephalous_patriarchates.1.title: "Autocephalous Patriarchate Seat Falls!"
+ autocephalous_patriarchates.1.desc: "$ap_falls_desc_key$"
+ autocephalous_patriarchates.1.a: "Dissolve the Patriarchate."
+ autocephalous_patriarchates.1.b: "Keep the Patriarchate."
+
+ autocephalous_patriarchates.2.title: "Autocephalous Patriarchate Seat Falls!"
+ autocephalous_patriarchates.2.desc: "$ap_falls_desc_key$"
+ autocephalous_patriarchates.2.a: "Dissolve the Patriarchate."
+ autocephalous_patriarchates.2.b: "Keep it."
+ every_member_of_scopeloser_ap_loses_opinion_of_scopewinner_tt: "Every member of the [target_ap.GetName] will lose [ShowBiasValue('destroyed_my_autocephalous_patriarchate')|-=0] opinion of us"

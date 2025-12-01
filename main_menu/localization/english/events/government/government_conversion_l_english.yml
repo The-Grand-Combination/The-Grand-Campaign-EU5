@@ -1,0 +1,5 @@
+﻿l_english:
+ government_conversion_events.conversion_complete.title: "The Rise of the [target_country.GetAdjectiveWithNoTooltip] [target_government_type.GetNameWithNoTooltip]"
+ government_conversion_events.conversion_complete.title_fallback: "Reformation of the Government"
+ government_conversion_events.conversion_complete.desc: "The last few years were a period of turbulence and unrest. Although best in the long run for the [target_country.GetLongName] to reform into a [target_government_type.GetName], many old and decadent people of influence fought tooth and nail to maintain the old order of the [origin_government_type.GetName]. Regardless, [target_character.GetName] managed to overcome the odds, and abolished old traditions which were in the way of centralizing the power of the newly founded [target_government_type.GetNameWithNoTooltip]."
+ government_conversion_events.conversion_complete.a: "A [origin_government_type.GetNameWithNoTooltip] no more, today we are a [target_government_type.GetNameWithNoTooltip]!"

@@ -1,0 +1,36 @@
+﻿l_english:
+ flavor_zaz.1.title: "Rise of the $ZAZ_ADJ$ Sich"
+ flavor_zaz.1.desc: "With the ever-increasing influence of the [ROOT.GetCountry.GetGovernment.GetEstateName('cossacks_estate')] within [ROOT.GetCountry.GetName], the numerous warriors, serfs, and tribesmen have all slowly migrated to the lands of [ShowAreaName('zaporizhzhia_area')]. Having constructed several fortifications over the Dnieper, they now intend to make their stay there, hoping for one day to achieve a self-governing status within [ROOT.GetCountry.GetNameWithNoTooltip].\n\nOther nations as well have noticed this, and are now planning how to properly utilize this desperation of this new Sich into complete control over the area."
+ flavor_zaz.1.historical_info: "The Zaporozhian Sich stands as the most famous of the cossacks. Founded between the late 15th and 16th century, its emergence is attributed to the construction of the Khortytsia castle near the Dnieper river. They would go on to serve the Polish-Lithuanian Commonwealth against the rising Ottomans, but would eventually rebel and join the Russian Empire, but even then they would truggle to maintain their cossack identity. Eventually they would be disbanded and by 1775 they were replaced by the Danubian Sich."
+ flavor_zaz.1.a: "These [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('cossacks_estate')] want to rule now?"
+ flavor_zaz.1.b: "They will make fine subjects of us."
+ zaz_gains_cores_in_all_of_zaporizhzhia_area_tt: "$ZAZ$ will gain [cores|e] in the entire [ShowAreaName('zaporizhzhia_area')] [area|e]."
+
+ flavor_zaz.2.title: "Our Future with the [target_international_organization.GetNameWithNoTooltip]"
+ flavor_zaz.2.desc: "Despite our status as a loyal [ROOT.GetCountry.GetReligion.GetAdjective] [ROOT.GetCountry.GetFlavorRank] within the [target_international_organization.GetName], many people, including [target_character.GetName], have noticed how distant [ROOT.GetCountry.GetName] has become from [target_country.GetName]. Instead of sitting idly by as we let this trend continue, members of the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] and the [ROOT.GetCountry.GetGovernment.GetCourtTitle] wish to undo all of this. There are some, however, who think that this is a chance for [ROOT.GetCountry.GetNameWithNoTooltip] to develop its own culture, one independent from meddling of the officials in [target_country.GetCapital.GetName]."
+ flavor_zaz.2.a: "Let us grant them a gift as a gesture of friendship."
+ flavor_zaz.2.b: "No gifts will be given to [target_country.GetNameWithNoTooltip]!"
+
+ flavor_zaz.1000.title: "A Trial of Allegiance"
+ flavor_zaz.1000.desc: "Although many people within [ROOT.GetCountry.GetName] have been content with [target_country.GetAdjective] rule, there has been a small rift between [target_character.GetName] and [ROOT.GetCountry.GetGovernment.GetRulerOrRegent.GetName], leading to much of the [ROOT.GetCountry.GetGovernment.GetCourtTitle] wishing to seek of a new alternative. One of them is the [target_country2.GetLongName], seeking to employ our [ROOT.GetCountry.GetGovernment.GetEstateName('cossacks_estate')] in their army, and in exchange they will help us break free from the rule that we are under."
+ flavor_zaz.1000.a: "We shall ask them for help."
+ flavor_zaz.1000.b: "Rebelling against [target_country.GetNameWithNoTooltip] is risky, even with the backing of [target_character2.GetNameWithNoTooltip]."
+ zaz_russia_will_declare_war_if_they_accept_tt: "Should [target_country2.GetName] accept our offer, we will become their [ShowSubjectTypeName('vassal')] and declare war on [target_country.GetName]"
+ zaz_no_rebellion_tt: "We will choose not to rebel against [target_country.GetName]"
+ 
+ flavor_zaz.1001.title: "$flavor_zaz.1000.title$"
+ flavor_zaz.1001.desc: "Although there have been many conflicts between us and [target_country.GetName], they have always been in firm control over their [ROOT.GetCountry.GetGovernment.GetEstateName('cossacks_estate')] subjects in [target_country3.GetName]. Recent developments in their politics though have made [target_character3.GetName] wish to change allegiance, and [target_character3.GetSheHe] has offered [target_character2.GetName] to join us instead, in echange of helping them in ridding themselves of the [target_country.GetAdjectiveWithFlagWithNoTooltip] rule they have suffered for long enough."
+ flavor_zaz.1001.a: "We ride at dawn."
+ flavor_zaz.1001.b: "Why should we trust those nomads to not betray us as well?"
+
+ flavor_zaz.1100.title: "The [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('cossacks_estate')] Regalia"
+ flavor_zaz.1100.desc: "Despite our services within the [target_country.GetAdjective] military, there has never been any honor granted to us by the [target_country.GetGovernment.GetRulerTitle]. Instead, we have only received the benefits of the common soldiers, such as loot and land. [ROOT.GetCountry.GetGovernment.GetRulerOrRegent.GetName] as well as the [ROOT.GetCountry.GetGovernment.GetCourtTitle] wish to request regalia for the [ROOT.GetCountry.GetAdjective] elites, who served in many campaigns and have brought many victories for [target_country.GetNameWithNoTooltip]. Perhaps if they listen to this request, we can ensure that there is no disatisfaction from the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')]."
+ flavor_zaz.1100.a: "We shall request some of the finest regalia."
+ flavor_zaz.1100.b: "Our achievements and tales are more valuable than a few artifacts."
+ zaz_request_work_of_art_from_overlord_tt: "We will request from [target_country.GetName] to create a [work_of_art|e] for us"
+ zaz_no_request_from_overlord_tt: "We will send no request to [target_country.GetName]"
+
+ flavor_zaz.1101.title: "$flavor_zaz.1100.title$"
+ flavor_zaz.1101.desc: "Our subject in [target_country2.GetName] has been beneficial to us with their [target_country2.GetGovernment.GetEstateName('cossacks_estate')] armies serving [ROOT.GetCountry.GetGovernment.GetRulerOrRegent.GetName] to their fullest. They, however, think that we have not rewarded them with enough gifts, so they request that we forge their elites several regalia in order to signify their authority over the rest of the [target_country2.GetGovernment.GetEstateNameWithNoTooltip('cossacks_estate')]. We could respect their demands and forge them, although many debate that the coffers of [ROOT.GetCountry.GetName] should not be spent on such trivial cases and instead should be directed into improving the [ROOT.GetCountry.GetFlavorRank]."
+ flavor_zaz.1101.a: "Let us placate our subject."
+ flavor_zaz.1101.b: "We are not able to afford such a request."

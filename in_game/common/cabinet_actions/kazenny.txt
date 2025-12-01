@@ -1,0 +1,11 @@
+﻿kazenny  = {
+	ability = adm
+	potential = {
+		has_reform = government_reform:prikazi_reform
+	}
+	
+	country_modifier = {
+		tax_income_efficiency = tiny_tax_income_efficiency_bonus
+		global_distance_from_capital_cost_modifier = -0.025
+	}
+}

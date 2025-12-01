@@ -1,0 +1,26 @@
+﻿l_english:
+ peasants_war.1.title: "Peasants' War"
+ peasants_war.1.desc: "The peasantry has for some time demanded economic, religious and political amendments. Their dissatisfaction has grown to such an extent that violent revolts are becoming a common day practice. Even though there is no central leadership and they lack proper armament, the peasants have still managed to pose a challenge to the authority. Several important buildings, both religious and other, have been burnt and plundered as a protest."
+ peasants_war.1.a: "Dire times are ahead of us"
+ peasants_war.1.a.tt: "Our [ShowPopTypeName('peasants')], [ShowPopTypeName('laborers')], and [ShowPopTypeName('soldiers')] in [ROOT.GetCountry.GetCapital.GetRegion.GetName] will join the [target_rebel.GetName]"
+ 
+ peasants_war.2.title: "Peasant Protests"
+ peasants_war.2.desc: "Regional revolts and protests are erupting all over our nation. Furious peasants are demanding immediate reforms of the social and political order. The weight of the heavy taxes and the cruelty of their landlords have finally driven them over the edge."
+ peasants_war.2.a: "Enforce serfdom"
+ peasants_war.2.b: "Restrict serfdom"
+ 
+ peasants_war.3.title: "Religious Revolt"
+ peasants_war.3.desc: "The ideas of the Reformation have appealed to a large number of the oppressed peasantry. The appeal is in many cases based on social motives, many believe that they will receive support and that their hardship will lessen. This isn't necessarily the case, as the revolt has gained momentum and atrocities at the hands of the peasants have become more widespread, the reformists have begun to oppose the 'murderous peasants'."
+ peasants_war.3.a: "Crush them!"
+ peasants_war.3.b: "Let them choose their own faith"
+ opinion_pope_religious_tolerance: "Your religious tolerance has angered the Pope"
+
+ 
+ peasants_war.5.title: "National Decentralization"
+ peasants_war.5.desc: "During the first stages of the Peasants' War, the rebels have gained ground simply by overwhelming the lords and knights. Due to our already politically decentralized nation, what started out as several smaller, local uprisings has spread over the provincial borders and engulfed a larger part of our nation."
+ peasants_war.5.a: "Crush the rebels"
+ peasants_war.5.b: "We have to negotiate a solution"
+ 
+ peasants_war.6.title: "The End of the Peasants' War"
+ peasants_war.6.desc: "The instability of the past years now finally seems to be over! We no longer have to worry about peasants fighting for reforms. Their will to fight has been drained."
+ peasants_war.6.a: "Restore order"

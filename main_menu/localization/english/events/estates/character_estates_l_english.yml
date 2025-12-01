@@ -1,0 +1,25 @@
+﻿l_english:
+ character_estates.1.title: "[target_character.GetNameWithNoTooltip] Loses Fortune"
+ character_estates.1.desc: "After a series of poor investments, [target_character.GetName] has been left penniless. As a member of our court, [target_character.GetHeShe] has sent to us a desperate plea that we give [target_character.GetHimHer] some financial assistance to help [target_character.GetHimHer] back onto his feet, lest [target_character.GetHeShe] ends up living out [target_character.GetHisHer] days on the streets."
+ character_estates.1.a: "Private fortunes are not our concern."
+ character_estates.1.b: "We must bail [target_character.GetHimHer] out."
+ 
+ character_estates.2.title: "An Unlikely Inheritor"
+ character_estates.2.desc: "A landed member of the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] has died without any immediate heir. Our heralds have determined that, under [ROOT.GetCountry.GetAdjectiveWithNoTooltip] law, the extant title would pass to the lowly [target_character.GetName], a very distant relative.\n\nDespite [target_character.GetHisHer] blood connection, [target_character.GetHeShe] is clearly not of noble stature, so it might be preferable to merge the title into the [ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')] instead."
+ character_estates.2.a: "Invest the new noble."
+ character_estates.2.b: "Usurp the title for ourselves."
+ 
+ character_estates.3.title: "A Fortunate Peasant"
+ character_estates.3.desc: "By virtue of the connections that [target_character.GetHeShe] has made in our court, as well as some shrewd business decisions, the peasant [target_character.GetName] has managed to amass a significant fortune that rivals even the successful amongst our [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')].\n\nMost are already assuming that he belongs, but is that really the message we should send?"
+ character_estates.3.a: "Send congratulations."
+ character_estates.3.b: "A rich peasant is still a peasant."
+ 
+ character_estates.4.title: "The Call of God"
+ character_estates.4.desc: "Like many pious people seeking a spiritual lifestyle, our courtier [target_character.GetName] has decided to join a [ROOT.GetCountry.GetReligion.GetAdjective] religious order.\n\nThe [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] will of course be delighted to have a person of such political standing inducted into their orders, but we can block the process if it is not part of our plan."
+ character_estates.4.a: "Allow [target_character.GetHimHer]."
+ character_estates.4.b: "Forbid it."
+ 
+ character_estates.5.title: "Military Promotion"
+ character_estates.5.desc: "Every man, high and low, agrees that [target_character.GetName] has served with distinction in the [target_character.GetUnitPointer.GetName]. Unusually, the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] are eager to be associated with [target_character.GetHisHer] heroism, and have recommended that we bestow upon [target_character.GetHimHer] the highest aristocratic honors."
+ character_estates.5.a: "Grant him a title."
+ character_estates.5.b: "We should not frivolously reward the soldiery."

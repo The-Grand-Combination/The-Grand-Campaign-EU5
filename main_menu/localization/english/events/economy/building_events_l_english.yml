@@ -1,0 +1,10 @@
+﻿l_english:
+ building.1.title: "University of [new_university.GetNameWithNoTooltip]"
+ building.1.desc: "After a series of heated debates turned violent, scholars from the University of [old_university.GetName] have fled to [new_university.GetName] to establish a rival learning institution there.\n\n[old_university.GetNameWithNoTooltip] alumni make up a sizeable portion of the [ROOT.GetCountry.GetAdjective] [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')], and they are petitioning us to clamp down on this education rebellion."
+ building.1.a: "Encourage this new learning institution."
+ building.1.b: "Instruct the refugees to return to [old_university.GetNameWithNoTooltip]."
+ #
+ building.2.title: "Town and Gown"
+ building.2.desc: "Students from the University of [university.GetName] are under the protection of the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')], and as such are afforded different rights to the local townsfolk. The two communities living in close proximity often causes distrust, but recently the distrust has escalated into violent riots."
+ building.2.a: "Side with the university."
+ building.2.b: "Side with the townsfolk."

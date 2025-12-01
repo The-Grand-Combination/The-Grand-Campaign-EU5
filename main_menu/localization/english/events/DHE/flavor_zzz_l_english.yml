@@ -1,0 +1,10 @@
+﻿l_english:
+ flavor_zzz.1.title: "The Walls of [target_location.GetNameWithNoTooltip]"
+ flavor_zzz.1.desc: "With our rising militancy in [ShowRegionName('guinea_region')], [target_location.GetName] has become a center of not only culture, but conflict. For that, [target_character.GetName] wants to construct walls in [target_character.GetHerHis] name, ensuring that the [target_location.GetRank.GetName] never falls."
+ flavor_zzz.1.a: "Let us protect [target_location.GetNameWithNoTooltip]."
+ flavor_zzz.1.b: "There is no need for walls."
+
+ flavor_zzz.2.title: "[ROOT.GetCountry.GetNameWithNoTooltip] on the Offensive"
+ flavor_zzz.2.desc: "Due to the increase in military power for [ROOT.GetCountry.GetName], [target_character.GetName] and [target_character.GetHerHis] [ROOT.GetCountry.GetGovernment.GetCourtTitle] have already made plans on how to further increase our power. They suggest either an approach to conquer our neighbors, or a more defensive strategy, focused on protecting any gains we have made."
+ flavor_zzz.2.a: "Go forth and conquer!"
+ flavor_zzz.2.b: "Consolidate the current gains."

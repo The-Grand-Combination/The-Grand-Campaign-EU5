@@ -1,0 +1,83 @@
+﻿l_english:
+ flavor_mug.1.title: "[ShowReligiousSchoolNameWithNoTooltip('din_i_ilahi_school')]"
+ flavor_mug.1.desc: "With the [ROOT.GetCountry.GetAdjective] [ROOT.GetCountry.GetFlavorRank] being the melting pot of different faiths, [target_character.GetName] has been thinking of abandoning the ways of [target_religious_school.GetName]. Instead, [target_character.GetSheHe] wishes to create [target_character.GetHerHis] own one. This school would be closer to a new religion, where all sects are considered as one. Called [ShowReligiousSchoolName('din_i_ilahi_school')], its purpose is to unite the people residing in the [ROOT.GetCountry.GetFlavorRank]."
+ flavor_mug.1.historical_info: "The multicultural and multireligious character of the Mughals is what marked the reign of Akbar 'the Great'. He led several reforms to help with that, and even created his own faith. It was known as the Dīn-i Ilāhī, the Religion of God, which functioned similar to the Yasa-e Changezi of the Timurids, treating all sects as one."
+ flavor_mug.1.a: "A religion for all our people is most ideal."
+ flavor_mug.1.b: "Why abandon the ways of [ROOT.GetCountry.GetReligiousSchool.GetNameWithNoTooltip]?"
+ mug_enable_din_i_ilahi_school_tt: "[ShowReligiousSchoolName('din_i_ilahi_school')] will be unlocked for all [ShowReligionAdjective('sunni')] and [ShowReligionAdjective('ibadi')] [countries|e]"
+
+ flavor_mug.2.title: "Birth of the [ShowLawNameWithNoTooltip('dahsala_system')]"
+ flavor_mug.2.desc: "The current taxation system has become complicated with all of the different regional laws we have integrated from our conquests. It is safe to say that it is disorganized and that several reforms have to be made to remedy that fact. [target_character.GetName] wishes to organize it all into the [ShowLawName('dahsala_system')]. It is meant to properly organize the taxation of non-[ROOT.GetCountry.GetReligion.GetGroup.GetAdjective] [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] rather than abide to their local laws."
+ flavor_mug.2.historical_info: "The chaotic and disorganized taxation system during the reign of Akbar resulted in lots of land revenue being lost for the Mughals. It was for that reason that the finance minister at the time, Raja Todar Mal, decided to reform them all into a more streamlined system, the Dahsala. There were three ways that a region was taxed. The Zabiti, Nasaq, and Galla-Bakshi."
+ flavor_mug.2.a: "The system will allow is to properly tax the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('peasants_estate')]."
+ flavor_mug.2.b: "There is no need of such reforms."
+
+ flavor_mug.3.title: "Organizing the Sūbah"
+ flavor_mug.3.desc: "Due to the current size of the [ROOT.GetCountry.GetFlavorRank], it is not feasible to rule it all from [ROOT.GetCountry.GetCapital.GetName]. For that reason, a new way of organizing these places has been proposed, that being the [ShowGovernmentReformName('subah_organization_reform')] system, meant to grant governorship to any prominent member of the [ROOT.GetCountry.GetAdjective] [ROOT.GetCountry.GetFlavorRank]."
+ flavor_mug.3.a: "Ensuring that all the Sūbah are under control is our priority."
+ flavor_mug.3.b: "All of our regions are fine already."
+
+ flavor_mug.4.title: "Coinage Reforms of [target_character.GetNameWithNoTooltip]"
+ flavor_mug.4.desc: "In order to ensure the financial stability of the [ROOT.GetCountry.GetFlavorRank], as well as reduce any inflation problems that our economy may be facing, [target_character.GetName] has proposed minting a new coin. Using the vast supplies of [ShowGoodsName('goods_gold')] and [ShowGoodsName('silver')], it will allow us to mint multiple variants of these coins. However, the [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] might not be too fond of such economic changes."
+ flavor_mug.4.a: "Let us mint these new coins."
+ flavor_mug.4.b: "There is no need to upset the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')]."
+
+ flavor_mug.5.title: "Protecting Land Trade"
+ flavor_mug.5.desc: "Banditry has been rampant within trade routes in [ShowRegionName('hindustan_region')], with merchants frequently reporting losing their goods when their caravans pass through these lands. These disruptions of traversal are not acceptable in the [ROOT.GetCountry.GetFlavorRank]. [target_character.GetName] wishes to prevent that by establishing new highway guards, known as the [ShowBuildingTypeName('rahdar')], in order to protect these routes."
+ flavor_mug.5.historical_info: "Due to the banditry of Hindustan during the 16th century, many of the roads were unprotected. This would lead to many foreign merchants losing their goods, leading to the the local administrators compensating for these losses. To minimize these accidents, Akbar set up the rahdars, highway police that would ensure the safety of any traveler."
+ flavor_mug.5.a: "Let us establish these highway guards."
+ flavor_mug.5.b: "There is no need to supervise anything."
+
+ flavor_mug.6.title: "The $taj_mahal$"
+ flavor_mug.6.desc: "The death of [target_character.GetName] has left [target_character2.GetName] mourning. Wishing to remember [target_character.GetHerHim], [target_character2.GetSheHe] has now hired [target_artist.GetName] to design what [target_character2.GetNameWithNoTooltip] wishes is the magum opus of the [ROOT.GetCountry.GetAdjective] architecture. Calling it the $taj_mahal$, it is planned to be built from ivory-white marble, and where [target_character.GetNameWithNoTooltip] will rest eternally."
+ flavor_mug.6.historical_info: "Being one of the most popular examples of Mughal architecture, the Taj Mahal was built as a memorial of the wife of Shāh Jahān. It was inspired by the Gūr-i Amīr in Samarkand, which was the mausoleum of Timur. After the death of Shāh Jahān, he was buried right next to his wife."
+ flavor_mug.6.a: "A memory for [target_character.GetNameWithNoTooltip]!"
+ flavor_mug.6.b: "[target_character.GetNameWithNoTooltip] is already remembered."
+
+ flavor_mug.7.title: "Implementation of the [ShowPolicyNameWithNoTooltip('mansabdar_system')]"
+ flavor_mug.7.desc: "The military organization within [ROOT.GetCountry.GetName] for a long time has not been one where merit is favored, but rather the amount of lands they possess. Instead, there should be a more fair system, where the merits and positions is what determines the amount of land and wealth one receives. This would surely upset the balance of power within the [ROOT.GetCountry.GetFlavorRank], but it is bound to massively improve our land forces."
+ flavor_mug.7.a: "Let us implement this system."
+ flavor_mug.7.b: "The current people in charge of the army shall not be replaced."
+
+ flavor_mug.8.title: "The $peacock_throne$"
+ flavor_mug.8.desc: "With the [ROOT.GetCountry.GetAdjective] golden age in full motion, [target_character.GetName] has plans to create a mighty throne for any future [ROOT.GetCountry.GetGovernment.GetRulerTitle] to sit upon. Planned to be decorated with dancing peacock in its rear as well as jewelries to project our might to any visitor within the [ROOT.GetCountry.GetGovernment.GetCourtTitle], it will end up being costly yet prestigious at the same time."
+ flavor_mug.8.a: "It shall be a majestic throne!"
+ flavor_mug.8.b: "Spend resources on mere decoration?"
+
+ flavor_mug.9.title: "A Dīwān of the People"
+ flavor_mug.9.desc: "Despite our current government being serving enough to the masses, the [ROOT.GetCountry.GetReligion.GetGroup.GetAdjective] elites have been finding ways to rule over any other minority within [ROOT.GetCountry.GetName]. [target_character.GetName] has been wishing of reforming the Dīwān, one that would favor a multicultural state, allowing us to gather many great men regardless of their personal beliefs."
+ flavor_mug.9.a: "It is time to implement this system."
+ flavor_mug.9.b: "No need to reform a working government."
+
+ flavor_mug.10.title: "The [ShowBuildingTypeNameWithNoTooltip('ibadat_khana')] of [target_location.GetNameWithNoTooltip]"
+ flavor_mug.10.desc: "With the dominance of the [ShowReligiousSchoolName('din_i_ilahi_school')] within [ROOT.GetCountry.GetName], many have suggested that a meeting house is created for discussions of different faiths. Known as the [ShowBuildingTypeName('ibadat_khana')], it is meant to unite the people of [ROOT.GetCountry.GetNameWithNoTooltip] through faith, truly embracing a [ShowSocietyDirectionName('humanist')] [ROOT.GetCountry.GetFlavorRank]."
+ flavor_mug.10.a: "Let us build this house of knowledge."
+ flavor_mug.10.b: "No need to undermine [ROOT.GetCountry.GetReligion.GetGroup.GetNameWithNoTooltip]."
+
+flavor_mug.11.title: "The [ShowBuildingTypeNameWithNoTooltip('red_fort')] of [target_location.GetNameWithNoTooltip]"
+flavor_mug.11.desc: "In order to further strengthen our control over [target_location.GetName], [target_character.GetName] has suggested to build a grand fortress in the [target_location.GetRank.GetName]. Using the Yamunā River as a natural barrier, it would be a safer place for the [ROOT.GetCountry.GetGovernment.GetRulerTitle] to reside in."
+flavor_mug.11.a: "Let us fortify the [target_location.GetRank.GetNameWithNoTooltip]."
+flavor_mug.11.b: "There is no need for fortifications."
+
+flavor_mug.12.title: "Founding of Fatehpur Sikrī"
+flavor_mug.12.desc: "The [target_location.GetRank.GetName] of [target_location.GetName] has been growing lately, eventually leading to new districts being created. One of them is Fatehpur Sikrī, which has caught the attention of [target_character.GetName], wishing to transform it into the center of [ShowRegionName('hindustan_region')]. Whilst this will be helpful, it would also be costly."
+flavor_mug.12.historical_info: "Founded in 1571 as the new capital of the Mughal Empire, Fatehpur Sikri received great attention from Emperor Akbar, who sought refuge from the busyness of Agra. He oversaw the construction of new gardens, temples, and commercial centers, transforming the city into a vibrant hub. Even monumental structures like the Buland Darwaza, the Door of Victory, were built during this time. Unfortunately, the town was completely abandoned in 1610 after the emperor lost interest in it."
+flavor_mug.12.a: "Let this district prosper."
+flavor_mug.12.b: "We should attend to more important matters."
+
+flavor_mug.13.title: "Promotion of [ShowLanguageNameWithNoTooltip('rajasthani_language')]"
+flavor_mug.13.desc: "The [ShowLanguageName('rajasthani_language')] language has been prominent within the [ROOT.GetCountry.GetAdjective] [ROOT.GetCountry.GetGovernment.GetCourtTitle]. Despite that, the [ROOT.GetCountry.GetGovernment.GetCourtTitle] has been lacking those people who are so versed in the ways of warfare. We could elevate them within the [ROOT.GetCountry.GetFlavorRank], but it runs the risk of angering the entrenched elites of the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')]."
+flavor_mug.13.a: "Let us promote them."
+flavor_mug.13.b: "No need to placate minorities."
+mug_all_rajput_pops_lose_satisfaction_tt: "All [pops|e] that speak the [ShowLanguageName('rajasthani_language')] [language|e] will lose [ShowNamedValue('pop_satisfaction_extreme_penalty')|+=2%] [pop_satisfaction|e]"
+
+flavor_mug.14.title: "Aiding the Grand Trunk Road"
+flavor_mug.14.desc: "Due to recent technological advancements, as well as negligence over trade within [ShowRegionName('hindustan_region')], the Grand Trunk Road has been in decline. Being the connection between [ShowRegionName('persia_region')] and [ShowRegionName('bengal_region')], it has led to it prospering in the past. [target_character.GetName] wishes to modernize this road, allowing for a grand road between [target_location.GetName] amd [target_location2.GetName]."
+flavor_mug.14.a: "It shall be a grand road indeed."
+flavor_mug.14.b: "Let us not spend resources improving ancient roads."
+
+flavor_mug.15.title: "Founding of [target_location.GetNameWithNoTooltip]"
+flavor_mug.15.desc: "The [ShowRegionName('bengal_region')] Sūbah has been on the decline for some time. Having lost our control in the region, [target_character.GetName] now wishes to establish a [ShowLocationRankName('city')] there from which [target_character.GetHerHis] governors will rule. The people there are in support of it, and would be rejoiced by such project, but it would also be costly."
+flavor_mug.15.a: "Let us found it."
+flavor_mug.15.b: "Empowering the governors there is not our priority."
+mug_location_pops_gain_unrest_tt: "All [pops|e] in [target_location.GetName] will lose [ShowNamedValue('pop_satisfaction_severe_penalty')|+=2%] [pop_satisfaction|e]"

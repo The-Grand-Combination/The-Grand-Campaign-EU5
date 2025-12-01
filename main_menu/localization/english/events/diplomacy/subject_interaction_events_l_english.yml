@@ -1,0 +1,191 @@
+﻿l_english:
+ subject_interaction_events.1.title: "Pretender Rises"
+ subject_interaction_events.1.desc: "The former monarch of [ROOT.GetCountry.GetName] had [target_previous_ruler.GetHerHis] supporters, and many them believe they have a better claim to the throne of [ROOT.GetCountry.GetName] than [target_ruler.GetName]. They have managed to gather up a rather large following, and are marching towards [ROOT.GetCountry.GetCapital.GetName], intent to place the 'true' ruler on the throne."
+ subject_interaction_events.1.a: "Ask for help from The [ROOT.GetCountry.GetDiplomacy.GetOverlord.GetLongNameWithNoTooltip]."
+ subject_interaction_events.ask_overlord_for_help: "We will send an envoy to our liege to beg for help!"
+ subject_interaction_events.1.b: "Deal with it ourselves."
+
+ subject_interaction_events.2.title: "[subject_in_need.GetName] asks for help"
+ subject_interaction_events.2.desc: "A rebel army led by a pretender is marching towards [subject_in_need.GetName]'s capital [subject_in_need.GetCapital.GetName]! Family members of the deposed monarch of [subject_in_need.GetName] have managed to gather up a rather large following and are now trying to dethrone [subject_in_need.GetGovernment.GetFullRulerName]."
+ subject_interaction_events.2.a: "Send them gold and soldiers."
+ opinion_sent_help: "Sent Help"
+ subject_interaction_events.2.b: "They will have to deal with it themselves."
+ opinion_refused_send_help: "Refused to send help in our time of need"
+
+ subject_interaction_events.3.title: "Help Arrives?"
+ subject_interaction_events.3.desc: "The pretender rebels are closing in on us, and the messenger sent to [ROOT.GetCountry.GetDiplomacy.GetOverlord.GetName] should return soon. If we are lucky, perhaps the messenger will have soldiers and gold from [ROOT.GetCountry.GetDiplomacy.GetOverlord.GetName] that will help us repel those bastard rebels!"
+ subject_interaction_events.3.a: "[ROOT.GetCountry.GetDiplomacy.GetOverlord.GetGovernment.GetFullRulerName] sent us gold and soldiers!"
+ subject_interaction_events.3.b: "[ROOT.GetCountry.GetDiplomacy.GetOverlord.GetGovernment.GetFullRulerName] refused to send us help!"
+
+ subject_interaction_events.4.title: "Incompetent Relative"
+ subject_interaction_events.4.desc: "Our dearly beloved [subject_target.GetGovernment.GetFullRulerName] that rules over our subject [subject_target.GetName] has proven to be an incompetent buffoon, one that cannot and should not rule over any country."
+  subject_interaction_events.4.a: "Replace them with [better_ruler.GetName]"
+ subject_interaction_events.4.b: "This can only bring disorder to the country. Leave it be."
+
+ subject_interaction_events.5.title: "Competent Relative"
+ subject_interaction_events.5.desc: "Reforms have been taken, useless ministers and advisors fired, the army and navy have never been better... It seems that our [subject_target.GetGovernment.GetFullRulerName] is serving our subject [subject_target.GetName] well, ruling with a firm hand and making competent decisions."
+ subject_interaction_events.5.a: "If we ever had doubts, they are long forgotten now."
+
+ subject_interaction_events.7.title: "Military Support Misused"
+ subject_interaction_events.7.desc: "The support we sent our subject state has been used in ways we could never have foreseen! The men have been forced to build roads and buildings, clean town squares from litter and garbage and not once have they seen battle. Though the roads are broader and better than before, the buildings sturdier and the town squares immaculate, surely this was not how these men were supposed to be used?"
+ subject_interaction_events.7.a: "Tell them how to use them, correctly!"
+ opinion_reprimanded: "Reprimanded for using support wrongly"
+ subject_interaction_events.7.b: "They are being resourceful, good for them!"
+ opinion_resourceful: "Used support in a resourceful way"
+
+ subject_interaction_events.8.title: "Resourceful or Reprimanded"
+ subject_interaction_events.8.desc: "[our_overlord.GetGovernment.GetFullRulerName] of [our_overlord.GetName] sent us resources to improve our army, but in these peaceful times there have been no need for soldiers. Instead of idling around doing nothing than train, eat and sleep, we have put them to use. They have been building roads and buildings, clean town squares from litter and garbage and other meaningful tasks that would otherwise take more time and money that [ROOT.GetCountry.GetName] has not."
+ subject_interaction_events.8.a: "[our_overlord.GetGovernment.GetFullRulerName] thinks we have wasted manpower."
+ subject_interaction_events.8.b: "[our_overlord.GetGovernment.GetFullRulerName] has complimented us for being resourceful."
+
+ subject_interaction_events.9.title: "The Military Menace"
+ subject_interaction_events.9.desc: "We have had no shortage of manpower since our overlord started subsidizing our army, but there's been much trouble among the soldiers since the new ones arrived. Their culture, language, traditions and sometimes even religion differ from our own soldiers, and this causes a lot of trouble for us. They are less disciplined, or just plain refuses to take orders from our own generals."
+ subject_interaction_events.9.a: "Send them back to where they came from."
+ opinion_purged_manpower: "Purged useful but badly disciplined soldiers"
+ subject_interaction_events.9.b: "Try to get them to behave."
+
+ subject_interaction_events.10.title: "Soldiers Causing Mischief in [subject_target.GetName]"
+ subject_interaction_events.10.desc: "There are always trouble when people from different cultures, with different languages, traditions and sometimes even religion come together and must work as an unit even when so many things differ from them. The manpower we send to [subject_target.GetName] has caused more trouble than [subject_target.GetGovernment.GetFullRulerName] was willing to deal with, and so some of the men have been sent back to us."
+ subject_interaction_events.10.a: "Our men can take orders, They did not try hard enough!"
+
+ subject_interaction_events.14.title: "Embargoes and Smugglers"
+ subject_interaction_events.14.desc: "Recent embargoes against our overlord's rivals might be the end of us, financially. Thankfully, there are esteemed individuals in [ROOT.GetCountry.GetName] who would graciously help us with our trading problem. Though it might be silly to call such a small operation 'smuggling', that is exactly what it is and as we might be breaking some of the embargoes our overlord demanded of us, they will probably not be happy with our misconduct."
+ subject_interaction_events.14.a: "An opportunity like this seldom appears, we must accept!"
+ subject_interaction_events.14.ct: "There's a slight chance our overlord might notice this"
+ subject_interaction_events.14.b: "It is not worth risking our overlord's wrath for this."
+
+ subject_interaction_events.15.title: "Our Vassal's Smugglers"
+ subject_interaction_events.15.desc: "Our embargoes against our rivals are not working as well as we had hoped them to, and one reason might be that one of our vassals is still trading with them! They are smuggling goods back and forth and thus interfering with our goals and making us appear weak. The smuggling is very minor, but could become very damaging to us.\nOn the other hand powerful business interests would be willing to pay for ignoring the smuggling."
+ subject_interaction_events.15.a: "Force them to stop the smuggling, now!"
+ opinion_smuggling_hindered: "Hindered from Smuggling"
+ subject_interaction_events.15.b: "They may continue this small endeavor."
+ opinion_small_smuggling_ok: "Small-scale Smuggling OK"
+
+ subject_interaction_events.16.title: "Busted!"
+ subject_interaction_events.16.desc: "Our smuggling operation has been exposed by [From.Country.GetName], the smugglers literally caught in the act while off-loading goods to be taken to one of [From.Country.GetName]'s rivals. The cowards confessed everything, even for how long this operation had been going on."
+ subject_interaction_events.16.a: "They are forcing us to stop this smuggling!"
+ subject_interaction_events.16.b: "As long as we keep it small, we may continue."
+
+ subject_interaction_events.17.title: "War Never Changes"
+ subject_interaction_events.17.desc: "In exchange for some peace and quiet, our vassals are obliged to pay more income to us, their overlord. They are not called into any of our wars, which we believe is a great trade-off - for some gold they are excluded from almost all wars. One of our vassals wonder if it weren't better if they were called into wars instead of paying these - in their meaning - 'ridiculous sums'."
+ subject_interaction_events.17.a: "Ungrateful morons!"
+
+ subject_interaction_events.18.title: "Benefits of Scutage"
+ subject_interaction_events.18.desc: "As our war-ravaged land are slowly being rebuilt, we have noticed a look in our vassal's ambassador's eyes, a look of comprehension and fear mixed with some relief that the land they are looking at is not their own. 'Now,' they say, 'the gold we pay in scutage to avoid being called into war seems like small sum, something we could easily part with in exchange for peace.'"
+ subject_interaction_events.18.a: "We told them this would work!"
+ opinion_scutage_benefits: "Scutage Benefits"
+
+ subject_interaction_events.20.title: "Squandering Loyalists"
+ subject_interaction_events.20.desc: "We pay loyalists to keep the Liberty Desire in our junior partner's country low and manageable, but the latest reports have become more and more desperate in their pleas for money. Money that they must be squandering, not using it to ensure that the relationship between our country and theirs remain in place!"
+ subject_interaction_events.20.a: "Convince them to budget the monthly payments better."
+ subject_interaction_events.20.b: "Send them a small sum to secure their loyalty."
+
+ subject_interaction_events.21.title: "The Loyalist Embarrassment"
+ subject_interaction_events.21.desc: "Though we all appreciate the patriots, the loyalists, the ones who love their country and will protect it to all costs, when they manage to embarrass us in front of the whole court their lovability decreases fiercely. This is not what we pay for, that handsome sum that every month disappears into their greedy pockets! The relationship we try to protect is worth more than their lice-filled heads."
+ subject_interaction_events.21.a: "Off with their heads and put them on the walls of [ROOT.GetCountry.GetCapital.GetName]!"
+ opinion_embarrasing_loyalists: "Loyalist Faux Pas"
+ subject_interaction_events.21.b: "Surely there is something we can do to forget and forgive this unfortunate event?"
+
+ subject_interaction_events.22.title: "Successful Loyalists"
+ subject_interaction_events.22.desc: "The money sent to loyalists in one of the countries that is a subject to us with has been well spent, more than we could ever have imagined and anticipated. The Liberty Desire of their people has lowered well beyond what we thought possible."
+ subject_interaction_events.22.a: "That is a nice surprise!"
+
+ subject_interaction_events.24.title: "The Cruel Behavior of Uncouth Officers"
+ subject_interaction_events.24.desc: "'Many small streams creates a large flood' - a proverb that unfortunately proved true in our protectorate. Small events, barely noticeable to us but great slights to those who witnessed or were exposed to them, together with older complains and bitter memories from when the country became our protectorate became the final straw. The deplorable, no, cruel behavior of the officers we sent, has led to a rift and a bad relationship between us and the protectorate."
+ subject_interaction_events.24.a: "We need to teach our officers how to become gentlemen!"
+ opinion_cruel_officers: "Cruel Officers"
+
+ subject_interaction_events.25.title: "A Gentleman and an Officer"
+ subject_interaction_events.25.desc: "The code of conduct we tried to imprint in every officers' mind before they left our country to work as army instructors in one of our protectorates might not have been time wasted. We have received a message applauding and expressing how impressive the behavior and strict discipline these officers show, and we as a whole country should be proud that we have managed to make gentlemen out of our officers."
+ subject_interaction_events.25.a: "We couldn't be prouder."
+ opinion_excellent_officers: "Excellent Officers"
+
+ subject_interaction_events.26.title: "The more we sell, the more we sow, the more we grow"
+ subject_interaction_events.26.desc: "We control the trade of our protectorate, and the more we manage to export of all the things they grow and produce, the larger the crop! Somehow we have managed to increase both the quality and quantity of their production, and increased our trade power as well."
+ subject_interaction_events.26.a: "Quantity and quality, that's the way."
+ opinion_export_good: "Increased Production Through Export"
+
+ subject_interaction_events.27.title: "Exacerbation of Export Effects"
+ subject_interaction_events.27.desc: "The traders and merchants of our protectorates suffered a major blow to their trade when we decided to take control of their country's trade power. Their complaints about the 'hardships' this mercantile policy has brought upon them reached the ruler of the protectorate, who agrees with them and has made it clear that our relationships with them is suffering because of this."
+ subject_interaction_events.27.a: "As long as all they do is complain, we do not care."
+ opinion_export_bad: "Economy Suffering due to Diverted Trade"
+
+ subject_interaction_events.29.title: "Legitimacy Questioned"
+ subject_interaction_events.29.desc: "Though our grip on the throne of [ROOT.GetCountry.GetName] may be slipping and our legitimacy questioned, our pride and prestige took a hit when one of our subjects spoke up against us in public. They claim that we have no right in trying to govern them too as we can barely manage our own country."
+ subject_interaction_events.29.a: "Berate them for speaking out against us in public."
+ opinion_low_legitimacy: "Low Legitimacy"
+ subject_interaction_events.29.b: "They may be right, and it should not affect their opinion of us."
+
+ subject_interaction_events.30.title: "The Hole Called Bankruptcy"
+ subject_interaction_events.30.desc: "A ruler keen of the very best the country can provide, a treasury governed by greedy and incompetent persons, investments that went wrong and too many loans... That is how you dig the hole called bankruptcy, and it might have been all those or just one that made one of our subjects stumble into the hole and fall all the way to the bottom. We can help them get partially out of that hole with a donation of money, or ignore it and make them help themselves."
+ subject_interaction_events.30.a: "Intervene, send them money and a ladder!"
+ opinion_money_sent: "Sent us money in our time of need"
+ subject_interaction_events.30.b: "They have no one to blame but themselves!"
+ opinion_no_money: "Sent no money in our time of need"
+
+ subject_interaction_events.32.title: "Subject Turns Against Us"
+ subject_interaction_events.32.desc: "Our warmongering, so they say, has caused ire among our subjects. As the rumors go then they think we care little for ruling justly and more about conquering like barbarians. As false and rude as they are it would be unwise to leave this be."
+ subject_interaction_events.32.a: "Make an example out of them."
+ opinion_tyrant_overlord: "Tyrant Overlord"
+ subject_interaction_events.32.b: "We are sure we can smooth things over."
+
+ subject_interaction_events.33.title: "Liege Makes Example of Us"
+ subject_interaction_events.33.desc: "Due to malcontent our liege has seen fit to make an example out of our nation. It is a disgrace."
+ subject_interaction_events.33.a: "An eye for an eye..."
+
+ subject_interaction_events.34.title: "Loyal Subjects"
+ subject_interaction_events.34.desc: "It is well known that our subjects are some of the most content and loyal in the world. To drive a wedge between us and them is thankfully virtually impossible, and as such it does reflect well on our nation."
+ subject_interaction_events.34.a: "This time will be remembered"
+ subject_interaction_events.34.b: "This should be exploited"
+
+ subject_interaction_events.35.title: "Disloyal Subjects"
+ subject_interaction_events.35.desc: "It is no secret that the animosity between us and our subjects are a dire one indeed. In our court the halls runs red with blood and black with secrets as hatreds flourish. Naturally this has to be dealt with."
+ subject_interaction_events.35.a: "Let it be"
+ subject_interaction_events.35.b: "Deal with it"
+
+ subject_interaction_events.36.title: "Cannon Fodder"
+ subject_interaction_events.36.desc: "It appears our country is getting rather empty and lacking in a very important resource: Cannon fodder. Fear not! While we may lack this resource then one of our subjects have plenty of fresh meat for the battlefields. Should we force their servitude they would be less than pleased, but such is the way of things."
+ subject_interaction_events.36.a: "Guns need men to fire them"
+ subject_interaction_events.36.b: "We cannot risk antagonizing our subjects"
+
+ subject_interaction_events.37.title: "Cannon Fodder"
+ subject_interaction_events.37.desc: "It seems our liege has seen fit to force the servitude our subjects to make up for foolish leadership. Our fields grow emptier and will probably remain that way."
+ subject_interaction_events.37.a: "This is an outrage!"
+
+ subject_interaction_events.38.title: "An Extra Tax"
+ subject_interaction_events.38.desc: "It would be an understatement to say our economy is performing 'poorly', in fact some would say this is a disaster. While we struggle to make ends meet our subjects, of all people, are doing more than well. Perhaps we are not taxing them enough."
+ subject_interaction_events.38.a: "An extra tax might help"
+ subject_interaction_events.38.b: "We do not need them"
+
+ subject_interaction_events.39.title: "An Extra Tax"
+ subject_interaction_events.39.desc: "Our liege has required us to pay a large sum of gold to help repair their failing economy."
+ subject_interaction_events.39.a: "Damn them!"
+
+ subject_interaction_events.43.title: "Subject is Tired of War"
+ subject_interaction_events.43.desc: "It would seem that with our wars that one of ours subjects have been destabilized quite a bit. Of course we could just let them handle it, but it would be a show of good faith if we aided them."
+ subject_interaction_events.43.a: "Send aid"
+ opinion_benevolent_overlord: "Benevolent Overlord"
+ subject_interaction_events.43.b: "$common_string_let_them_fend_for_themselves$"
+
+ subject_interaction_events.44.title: "Liege Sends Aid"
+ subject_interaction_events.44.desc: "Our liege has seen fit to send aid so we can rebuild our country after the wars."
+ subject_interaction_events.44.a: "Send thanks"
+
+ subject_interaction_events.45.title: "Economic Freedom"
+ subject_interaction_events.45.desc: "Now that we are no longer subject to another country's whims we can conduct our own trade policies and will not have to live from circumventing trade regulations and smuggling."
+ subject_interaction_events.45.a: "[ROOT.GetCountry.Custom('common_string_ok')]"
+
+ subject_interaction_events.46.title: "Equal Status"
+ subject_interaction_events.46.desc: "The representative from [target.GetName] has delivered to us a draft proposal on the union of our two nations.\n\nThey are prepared to immediately unite with the [ROOT.GetCountry.GetLongName] on the condition that we give [target.GetCulture.GetName] people and their traditions the same protection that we afford to our own."
+ subject_interaction_events.46.a: "So be it."
+ subject_interaction_events.46.b: "They will join us eventually, but not as equals!"
+
+ subject_interaction_events.47.title: "Corrupt Diplomats"
+ subject_interaction_events.47.desc: "Our envoys in [target.GetCapital.GetName] have discovered that a number of key [target.GetAdjective] diplomats would be prepared to push through the union of our countries immediately—for a price."
+ subject_interaction_events.47.a: "It's just business."
+ subject_interaction_events.47.b: "We must do this honestly, or not at all!"
+
+ subject_interaction_events.48.title: "[target.GetAdjectiveWithNoTooltip] Claimant"
+ subject_interaction_events.48.desc: "After much studying of ancient manuscripts, [target.GetAdjective] heralds in [target.GetCapital.GetName] have started to claim that their [target.GetGovernment.GetRulerTitle], [new_king.GetName] has a distant but clear claim to the [ROOT.GetCountry.GetAdjective] throne.\n\nThey say that if we agree to install [new_king.GetHimHer], then our countries will finally be as good as united."
+ subject_interaction_events.48.a: "The problem is solved!"
+ subject_interaction_events.48.b: "This evidence is very shaky..."

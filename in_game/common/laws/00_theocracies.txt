@@ -1,0 +1,286 @@
+﻿theocratic_leadership = {
+	law_category = administrative
+
+	law_gov_group = theocracy 
+	
+	potential = {
+		government_type = government_type:theocracy
+	}
+	locked = {
+		OR = {
+			tag = PAP
+			and = {
+				has_reform = government_reform:military_order_reform 
+				has_policy = monastic_order
+			}
+		}
+	}
+
+
+	clerical_state = {
+		country_modifier = {
+			tax_income_efficiency = medium_tax_income_efficiency_bonus
+		}
+		estate_preferences = {
+			clergy_estate
+		}
+		years = 2
+	}
+	monastic_order = {
+		country_modifier = {
+			monthly_towards_quality = societal_value_monthly_move
+			fort_maintenance_cost = -0.2
+		}
+		estate_preferences = {
+			nobles_estate
+		}
+		years = 2
+	}
+	the_papacy = {
+		potential = { 
+			tag = PAP 
+		}
+		country_modifier = {
+			monthly_religious_influence = 0.1
+			tolerance_own = 1
+		}
+		estate_preferences = {
+			clergy_estate
+		}
+		years = 2
+	}
+	patriarchate_reform = {
+		potential = { 
+			religion = religion:orthodox
+		}
+		allow = {
+			religion = religion:orthodox
+		}
+		country_modifier = {
+			clergy_estate_target_satisfaction = medium_permanent_target_satisfaction
+			tolerance_own = 1
+		}
+		estate_preferences = {
+			clergy_estate
+		}
+		years = 2
+	}
+	caliphate_reform = {
+		potential = { 
+			religion.group = religion_group:muslim
+		}
+		allow = {
+			religion.group = religion_group:muslim
+		}
+		country_modifier = {
+			monthly_devotion = 0.1
+			tolerance_own = 1
+		}
+		estate_preferences = {
+			clergy_estate
+		}
+		years = 2
+	}
+}
+
+
+holy_mission_law = {
+	law_category = religious
+
+	law_gov_group = theocracy 
+
+	potential = {
+		government_type = government_type:theocracy
+	}
+	internal_mission_policy = {
+		country_modifier = {
+			tolerance_own = 1
+			monthly_towards_inward = societal_value_monthly_move
+		}
+		estate_preferences = {
+			peasants_estate
+		}
+		years = 2
+	}
+	external_mission_policy = {
+		country_modifier = {
+			war_on_different_religion_cost_modifier = -0.1
+			monthly_towards_outward = societal_value_monthly_move
+		}
+		estate_preferences = {
+			nobles_estate
+		}
+		years = 2
+	}
+	balanced_mission_policy = {
+		country_modifier = {
+			monthly_devotion = 0.1
+		}
+		estate_preferences = {
+			clergy_estate
+		}
+		years = 2
+	}
+	commercial_mission_policy = {
+		country_modifier = {
+			global_merchant_power = 0.1
+			monthly_towards_free_trade = societal_value_monthly_move
+		}
+		estate_preferences = {
+			burghers_estate
+		}
+		years = 2
+	}
+	mission_of_protection_policy = {
+		country_modifier = {
+			monthly_towards_defensive = societal_value_monthly_move
+			fort_maintenance_cost = -0.2
+		}
+		estate_preferences = {
+			peasants_estate
+			nobles_estate
+		}
+		years = 2
+	}
+	mission_to_civilize_policy = {
+		country_modifier = {
+			monthly_towards_spiritualist = societal_value_monthly_move
+			colonial_migration_size_modifier = 0.25
+		}
+		estate_preferences = {
+			clergy_estate
+		}
+		years = 2
+	}
+	mission_on_the_high_seas_policy = {
+		country_modifier = {
+			monthly_towards_naval = societal_value_monthly_move
+			naval_morale_modifier = 0.1
+		}
+		estate_preferences = {
+			burghers_estate
+		}
+		years = 2
+	}
+}
+
+
+nature_of_our_faith_law = {
+	law_category = religious
+
+	law_gov_group = theocracy 
+
+	potential = {
+		government_type = government_type:theocracy
+	}
+	faith_and_power_policy = {
+		country_modifier = {
+			land_morale_recovery = 0.01
+			naval_morale_recovery = 0.01
+		}
+		estate_preferences = {
+			nobles_estate
+		}
+		years = 2
+	}
+	belief_and_unitiy_policy = {
+		country_modifier = {
+			tolerance_heretic = 1
+			tolerance_heathen = 1
+		}
+		estate_preferences = {
+			clergy_estate
+		}
+		years = 2
+	}
+	church_and_state_policy = {
+		potential = {
+			is_country_religion_pagan = no
+		}
+		country_modifier = {
+			global_crown_estate_power = 0.1
+			monthly_towards_absolutism = societal_value_minor_monthly_move
+		}
+		estate_preferences = {
+			crown_estate
+		}
+		years = 2
+	}
+	god_and_man_policy = {
+		potential = {
+			is_country_religion_pagan = no
+		}
+		country_modifier = {
+			global_pop_conversion_speed_modifier = 0.2
+		}
+		estate_preferences = {
+			peasants_estate
+		}
+		years = 2
+	}
+	organize_our_faith_policy = {
+		potential = {
+			is_country_religion_pagan = yes
+		}
+		country_modifier = {
+			global_crown_estate_power = 0.05
+			tolerance_own = 1
+		}
+		estate_preferences = {
+			crown_estate
+		}
+		years = 2
+	}
+}
+
+divine_cause_law = {
+	law_category = religious
+
+	law_gov_group = theocracy 
+
+	potential = {
+		government_type = government_type:theocracy
+	}
+	safeguard_holy_sites_policy = {
+		country_modifier = {
+			monthly_towards_communalism = societal_value_monthly_move
+			global_defensive = 0.2
+		}
+		estate_preferences = {
+			peasants_estate
+			clergy_estate
+		}
+		years = 2
+	}
+	combat_heresy_policy = {
+		country_modifier = {
+			monthly_towards_belligerent = societal_value_monthly_move
+			land_morale_modifier = 0.1
+		}
+		estate_preferences = {
+			nobles_estate
+			clergy_estate
+		}
+		years = 2
+	}
+	expulsion_of_heathens_policy = {
+		country_modifier = {
+			monthly_towards_traditionalist = societal_value_monthly_move
+			global_pop_assimilation_speed_modifier = 0.2
+		}
+		estate_preferences = {
+			peasants_estate
+		}
+		years = 2
+	}
+	pursuit_of_knowledge_policy = {
+		country_modifier = {
+			global_max_literacy = 5
+			monthly_towards_innovative = societal_value_monthly_move
+		}
+		estate_preferences = {
+			burghers_estate
+		}
+		years = 2
+	}
+}

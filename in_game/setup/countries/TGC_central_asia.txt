@@ -1,0 +1,47 @@
+KAZ = { #Abkhazia
+	color = map_KAZ
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = circassian_culture
+	religion_definition = orthodox
+}
+
+SJZ = { #Abkhazia
+	color = map_SJZ
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = circassian_culture
+	religion_definition = orthodox
+}
+
+MJZ = { #Abkhazia
+	color = map_MJZ
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = circassian_culture
+	religion_definition = orthodox
+}
+
+JJZ = { #Abkhazia
+	color = map_JJZ
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = circassian_culture
+	religion_definition = orthodox
+}
+
+KHI = { #Abkhazia
+	color = map_KHI
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = circassian_culture
+	religion_definition = orthodox
+}
+
+KOK = { #Abkhazia
+	color = map_KOK
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = circassian_culture
+	religion_definition = orthodox
+}

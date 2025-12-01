@@ -1,0 +1,41 @@
+﻿l_english:
+ reformation.1.title: "The Lutheran Reformation"
+ reformation.1.desc: "Thoughts of disapproval against the Roman [GetUniqueInternationalOrganization('catholic_church').GetName] are spreading across [ShowContinentName('europe')] following the increasing practice of indulgences, raising questions concerning the greed of the Church.\n\nWhile these stayed rather broad and general accusations for now, a particular incident in [target_location.GetName] has caused a humble monk by the name of [target_character.GetName] to write and publish a thesis on the nature of true worship and the nature of our faith. [target_character.GetSheHe|U] is specifically targeting the selling of indulgences, defaming them as greedy and unnecessary, as well as disputing the authority of the [GetUniqueInternationalOrganization('catholic_church').GetLeaderTitle] to sell the same forgiveness that only God can grant."
+ reformation.1.a: "Only time will tell what this might bring."
+
+ reformation.2.title: "Bible Translated"
+ reformation.2.desc: "A priest in [ROOT.GetCountry.GetCapital.GetName] has translated the Bible into [ROOT.GetCountry.GetCourtLanguage.GetName], and has started to distribute copies of it to nearby villages throughout [ROOT.GetCountry.GetName]. They claim that translating bibles to other languages than [ROOT.GetCountry.GetLiturgicalLanguage.GetName] gives people the best resource for knowing God in a language that speaks to their minds and hearts. However, the Church opposes this, as this is clearly against the will of God!"
+ reformation.2.a: "Heresy! Burn the priest and his books!"
+ reformation.2.b: "Great news! Spread these Bibles far and wide"
+
+ reformation.3.title: "The Reformer [target_character.GetNameWithNoTooltip]"
+ reformation.3.desc: "The Reformation has set [ShowContinentName('europe')] ablaze! Theologians in every [ShowBuildingTypeName('university')] and every church have no other topic but to comment on the work of [target_luther.GetName].\n\nIn our own territory, in the institutions of [target_location.GetName], a group of reformers emerged, spearheaded by [target_character.GetName]. [target_character.GetSheHe|U] is preaching of the corruption of [ShowReligionName('catholic')] and of the dire need of reform not only in [ROOT.GetCountry.GetName] but in the [GetInternationalOrganization('catholic_church').GetName], with or without the support of the entire Church."
+ reformation.3.a: "[ROOT.GetCountry.Custom('common_string_ok')]"
+
+ reformation.12.title: "The Conviction of [target_character.GetNameWithNoTooltip]"
+ reformation.12.desc: "What once were whispers of gossip in the [ROOT.GetCountry.GetGovernment.GetCourtTitle] has now manifested in a direct confession of [target_character.GetHerHim]. [target_character.GetSheHe|U] seems to no longer be able to proclaim [target_character.GetHerHis] faith in the one true [ROOT.GetCountry.GetReligion.GetGodName] and to be taking a liking to heresies instead."
+ reformation.12.a: "[target_character.GetSheHe|U] is free to chose [target_character.GetHerHis] confession."
+ reformation.12.b: "We should advice [target_character.GetHerHim] to leave the country."
+
+ reformation.13.title: "The Exodus of [target_location.GetNameWithNoTooltip]"
+ reformation.13.desc: "The people of [target_location.GetName] do no longer feel like they have a future in our country, due to our religious differences. The preaching of the local priest of [target_location.GetNameWithNoTooltip] is no longer reaching responsive ears, and some have already started to leave the area for more favorable grounds."
+ reformation.13.a: "Good riddance to these heretics!"
+ reformation.13.b: "Replace the priest to please them."
+
+ reformation.14.title: "A Heretic in Our [ShowBuildingTypeNameWithNoTooltip('university')]"
+ reformation.14.desc: "[target_character.GetName], a fairly important member of our [ShowBuildingTypeName('university')] in [target_location.GetName], is publicly practicing [target_character.GetReligion.GetName] and [target_character.GetHerHis] teachings reflect opinions that are hardly in line with [ROOT.GetCountry.GetReligion.GetAdjective] doctrine. If we do not remove [target_character.GetHerHim] from [target_character.GetHerHis] position, this could propel the [ShowBuildingTypeNameWithNoTooltip('university')] of [target_location.GetNameWithNoTooltip] to be a bastion of heresy in the future."
+ reformation.14.a: "The [ShowBuildingTypeNameWithNoTooltip('university')] has no room for heretics."
+ reformation.14.b: "[target_character.GetSheHe|U] does not pose any threat to our faith."
+
+ reformation.15.title: "[ShowBuildingTypeNameWithNoTooltip('monastery')] Joins the Reformation"
+ reformation.15.desc: "The [ShowBuildingTypeName('monastery')] in [target_location.GetName] has voluntarily joined the Reformation! The monks that previously inhabited the estate repurposed the building as a center of [ShowReligionAdjective('lutheran')] teachings. These [ShowBuildingTypeName('lutheran_preachers')] could tear our country's unity apart with their heresies if nothing is done!"
+ reformation.15.a: "We will just build a new [ShowBuildingTypeNameWithNoTooltip('monastery')]."
+ reformation.15.b: "We are not interested in disturbing them."
+ reformation.15.c: "The Jesuits are always looking for more work!"
+
+ reformation.16.title: "The Worldly Needs of the Reformation"
+ reformation.16.desc: "While we have taken the most radical steps towards embracing the ideas of [target_luther.GetName] and we claim the residence of some of the most important reformers of our age, our work can not be done with that. The reformers, just like [target_luther.GetNameWithNoTooltip] [target_luther.GetHerselfHimself], often struggle for financial funds to continue their work. We should support them, if we are truly invested in the survival of [ShowReligionName('lutheran')]."
+ reformation.16.a: "Give them what they ask for."
+ reformation.16.b: "God will surely provide for them."
+
+

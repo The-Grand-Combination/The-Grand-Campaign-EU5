@@ -1,0 +1,4 @@
+﻿l_english:
+ flavor_sav.1.title: "The Palace of Venaria"
+ flavor_sav.1.desc: "Standing as a testament to grandeur and historical significance, this opulent royal residence in [ShowLocationNameWithNoTooltip('turin')] is surrounded by expansive gardens and boasts intricate Baroque as well as [ShowInstitutionName('renaissance')] design elements. Courtiers around the palace are treated to lavishly adorned rooms, each telling a story of the regal past and promising a glorious tale for the future.\n\nThe sprawling gardens, complemented by impressive fountains and sculptures, provide a serene retreat. The Palace of Venaria serves not only as a cultural treasure but also as a venue for various events and exhibitions, inviting foreign dignitaries to immerse themselves in its rich heritage. Under our watchful and cultured eye, it stands as a splendid example of [ROOT.GetCountry.GetName]'s architectural and cultural legacy."
+ flavor_sav.1.a: "A symbol of our power."

@@ -1,0 +1,193 @@
+﻿l_english:
+ exploration_monthly.1.title: "Ordeal in [ROOT.GetExploration.GetArea.GetNameWithNoTooltip]"
+ exploration_monthly.1.desc: "During our mission to find viable provinces to colonize, we stumbled upon [ROOT.GetExploration.GetLocation.GetName]. Its natives are mostly hostile, but the land is very prosperous. We would gain much from trading with this province. Although we might need to bribe a chief or two..."
+ exploration_monthly.1.a: "Make them a fair deal."
+ exploration_monthly.1.b: "Make them a dishonest deal."
+
+ exploration_monthly.2.title: "Hostile Natives"
+ exploration_monthly.2.desc: "Our expedition encountered hostile natives from [ROOT.GetExploration.GetLocation.GetName] which led them to flee from the location.\n\nA few sailors disembarked to find fresh water and were returning to the ship when five [pop.GetCulture.GetName] canoes with armed men appeared.\n\nThe [ROOT.GetExploration.GetOwner.GetAdjective] crew turned their boat around and raced back to the boat with the canoes just behind. One of the canoes nearly caught up with the boat, but as the men prepared for a fight, the canoe slowed down to wait for the others.\n\nThe ship escaped, but some of the crew were wounded. A poisoned arrow had hit one of the men in the leg, and although the wound was disinfected with urine and olive oil, we do not know if the man will survive."
+ exploration_monthly.2.a: "See if some tawdry trinkets will placate the natives."
+ exploration_monthly.2.b: "Get back there, kill the natives, and take their gold!"
+
+ exploration_monthly.3.title: "Stranger in a Strange Land"
+ exploration_monthly.3.desc: "As our ship approaches [ROOT.GetExploration.GetLocation.GetName], large numbers of gift-laden canoes start to follow it. The canoes' occupants have fearlessly boarded the vessel and two seemingly important fellows are trying to persuade [ROOT.GetExploration.GetCharacter.GetName] to follow them to [tribal_nation.GetCapital.GetName].\n\nTheir intentions seem innocent, and our translators can pick out that we have arrived just in time for some sort of local festival.\n\nOur ship's mast formation, sails, and rigging resemble certain significant artifacts for the natives, and our clockwise route around the island mirrored the path that their processions take during this festival. This has convinced the natives that we are friendly—but one false move and it might change..."
+ exploration_monthly.3.a: "Accept their primitive traditions."
+ opinion_good_first_impression: "Good First Impression"
+ exploration_monthly.3.b: "Stay clear of them and do not make landfall!"
+ 
+ exploration_monthly.4.title: "Glory Road"
+ exploration_monthly.4.desc: "The lookout had reported sporadic dwellings, but no natives, until at long last a coastal village in [ROOT.GetExploration.GetLocation.GetName] was sighted.\n\nA small force disembarked and was hospitably received by [native_pop.GetCulture.GetName] villagers, something that was attributed to their fascination with three [explorers_pop.GetCulture.GetName] sailors who were bearded and tall. The natives were beardless, and with some difficulty, they managed to communicate that their myths and legends foretold of a time when their bearded gods would come from the sea to visit them.\n\nThe natives gifted food and treasures, which indicated to [target_character.GetName] that the province is prosperous and would be of great value to us."
+ exploration_monthly.4.a: "This is a promising land!"
+
+ exploration_monthly.5.title: "The Ship into Summer"
+ exploration_monthly.5.desc: "The words of Christopher Columbus describe the tribe we found in perfectly: 'They traded with us and gave us everything they had, with good will... they took great delight in pleasing us... They are very gentle and without knowledge of what is evil, nor do they murder or steal... Your Highness may believe that in all the world there can be no better people... They love their neighbors as themselves, and they have the sweetest talk in the world, and are gentle and always laughing.'"
+ exploration_monthly.5.a: "Take advantage of them!"
+ angry_natives: "Exploited!"
+ exploration_monthly.5.b: "Make good use of their gentle ways."
+ friendly_natives: "Friendly Encounter"
+
+ exploration_monthly.6.title: "Unwelcome Passenger"
+ exploration_monthly.6.desc: "The village near [ROOT.GetExploration.GetLocation.GetName] had been abandoned for some time, the failing crops spoke of a drought that must have plagued the area for quite some time.\n\nAs the expedition returned to their ship, they got a dreadful shock—one of the largest bears they had ever seen trying to climb aboard the ship!\n\nThe seamen decided to capture the starved beast with the hope of bringing it back to the [ROOT.GetExploration.GetOwner.GetLongName].\n\nIt was leashed and brought aboard the ship, but the bear fought itself free of the ropes and the crew had to kill it. This attack and the devastated state that [ROOT.GetExploration.GetLocation.GetProvince.GetName] is in has made [target_character.GetName] realize that searching this part of [ROOT.GetExploration.GetArea.GetName] is a lost cause."
+ exploration_monthly.6.a: "A real shame."
+
+ exploration_monthly.7.title: "The Green Hills of [ROOT.GetExploration.GetLocation.GetNameWithNoTooltip]"
+ exploration_monthly.7.desc: "The natives in [ROOT.GetExploration.GetLocation.GetName] were enthralled by the glass beads, brass bells, and cloth that [target_character.GetName] traded for fresh fish and venison. There was very little wealth among the people, and they seemed peaceful.\n\nThey deserted their homes one night, leaving the village to be explored by the members of the expedition. Nothing much was found, but a small rattle made of gold buried amongst some fishing nets suggested that [ROOT.GetExploration.GetArea.GetName] might yield some fortune for us yet."
+ exploration_monthly.7.a: "How great!"
+
+ exploration_monthly.8.title: "Beyond This Horizon"
+ exploration_monthly.8.desc: "As our exploration ship idled off the coast of [ROOT.GetExploration.GetLocation.GetName], a couple of curious [ROOT.GetExploration.GetLocation.GetDominantCulture.GetName] natives in canoes paddled out to the ship.\n\nThe crew invited them aboard after gestures were exchanged that expressed peaceful intentions. Food and drink were shared with the natives before they set back into their canoes and returned to shore.\n\nEncouraged by the report of the initial pacific encounter, six more canoes paddled out to the caravel."
+ exploration_monthly.8.a: "They gave us great knowledge!"
+
+ exploration_monthly.9.title: "The Menace from [ROOT.GetExploration.GetLocation.GetNameWithNoTooltip]"
+ exploration_monthly.9.desc: "After a rather turbulent beginning with the natives of [ROOT.GetExploration.GetLocation.GetName], we finally managed to convince them of our good intentions.\n\nAs we made landfall, two men, one old and one young, approached our ship. They were not interested in our gifts, and when we fired a warning shot over their heads, it wounded the older man slightly. [ROOT.GetExploration.GetCharacter.GetHeShe|U] ran to their huts and brought men who threw spears at our crew until they were chased off after two more rounds were fired.\n\nThe adults fled into the woods, leaving their children behind. As a gesture of friendship, some members of the expedition left behind some small trinkets with the children before retreating to the ship."
+ exploration_monthly.9.a: "Make them understand we meant them no harm."
+
+ exploration_monthly.10.title: "The [ROOT.GetExploration.GetLocation.GetNameWithNoTooltip] Beasts"
+ exploration_monthly.10.desc: "Before [ROOT.GetExploration.GetCharacter.GetName] embarked on the expedition, [ROOT.GetExploration.GetCharacter.GetHeShe] had heard tales of a Carthaginian explorer by the name of Hanno who had found an island populated with a 'hirsute and savage people'.\n\nHanno had made attempts to capture the males which failed, but three females were taken. Their ferocious nature forced the explorer to kill them. To bring proof of the beasts, their skins were preserved for transport. These people were called 'Gorillae' by the interpreters traveling with Hanno.\n\nWe assume that the apelike species we found in [ROOT.GetExploration.GetLocation.GetName] must be these Gorillae that Hanno spoke of."
+ exploration_monthly.10.a: "Grab what you can and get out!"
+
+ exploration_monthly.11.title: "[ROOT.GetExploration.GetNameWithNoTooltip]"
+ exploration_monthly.11.desc: "In the long months spent surveying the landscape around [marriage_location.GetName], our explorer [ROOT.GetExploration.GetCharacter.GetName] has grown close to a [bride_pop.GetCulture.GetName] peasant family, and in particular their unmarried daughter, [bride.GetName].\n\nBecoming part of a local family will surely aid the expedition."
+ exploration_monthly.11.a: "The expedition's chaplain officiates the wedding."
+ exploration_monthly.11.b: "Follow the local wedding customs."
+ exploration_monthly.11.c: "This is no time for romance."
+
+ exploration_monthly.12.title: "Drunken Explorer"
+ exploration_monthly.12.desc: "One of our expedition members—[target_character.GetName], of all people!—managed to get [target_character.GetHerselfHimself] into a dreadfully embarrassing situation when [target_character.GetHeShe] overestimated [target_character.GetHisHer] own capability of handling the fruity liquor the natives of [ROOT.GetExploration.GetLocation.GetName] brew.\n\nDisgusting details will not make it into this report, but [target_character.GetHeShe] was sick as a pig for a long time. The natives thought it fun, laughing at [target_character.GetHisHer] misery, but the rumors of this event has reached the ears of the high socialites in [ROOT.GetExploration.GetOwner.GetName] who frown upon such behavior."
+ exploration_monthly.12.a: "Fruity liquor? Did you bring some back?"
+ STATIC_MODIFIER_NAME_drunken_explorer: "Drunken Explorer"
+
+ 
+ exploration_monthly.16.title: "Temple Raider"
+ exploration_monthly.16.desc: "After being invited to a local religious site in [ROOT.GetExploration.GetLocation.GetName], [target_character.GetName]'s greed got the better of [target_character.GetHimHer].\n\nThe moment the [pop.GetReligion.GetName] priests looked away, [target_character.GetHeShe] slid their cherished artifact into [target_character.GetHisHer] jacket, and hurried away before they even knew [target_character.GetHeShe] had gone."
+ exploration_monthly.16.a: "$common_string_it_belongs_in_a_museum$"
+
+ 
+ exploration_monthly.17.title: "Riverboat Ride"
+ exploration_monthly.17.desc: "A kindly group of [pop.GetCulture.GetName] hunters has helped [target_character.GetName]'s expedition of [ROOT.GetExploration.GetArea.GetName] by ferrying [target_character.GetHisHer] party around in curious rowboats up and down the rivers and coastlines."
+ exploration_monthly.17.a: "Sightseeing is always best with locals!"
+
+ 
+ exploration_monthly.18.title: "Becalmed"
+ exploration_monthly.18.desc: "After several days of low winds, the expedition has barely made any progress through [ROOT.GetExploration.GetArea.GetName]. [target_character.GetName] prays that the winds flare up again soon."
+ exploration_monthly.18.a: "We have lost a lot of time..."
+
+ 
+ exploration_monthly.19.title: "Natural Discovery"
+ exploration_monthly.19.desc: "While traveling through [ROOT.GetExploration.GetArea.GetName], our explorer—the natural scientist [target_character.GetName]—claims [target_character.GetHeShe] has made a significant discovery regarding the native flora.\n\nIt is unclear right now exactly what it is, but one thing that is certain is that [target_character.GetHeShe] needs much more time to write a full report."
+ exploration_monthly.19.a: "This will surely advance the natural sciences."
+ exploration_monthly.19.b: "We are subject to the requirements of the service."
+
+ exploration_monthly.20.title: "Voices in the Night"
+ exploration_monthly.20.desc: "While traveling through [ROOT.GetExploration.GetArea.GetName], there were doubts among the expedition members about the ability of explorer [target_character.GetName] to properly find [target_character.GetHisHer] way around. Even the native [pop.GetCulture.GetName] in [ROOT.GetExploration.GetLocation.GetName] claimed that their ancestral spirits warned them against [target_character.GetNameWithNoTooltip]'s current direction.\n\n[target_character.GetHeShe|U] obviously dismissed such nonsensical claims at first, but [target_character.GetHeShe] woke up after last night claiming that the spirits themselves came to visit [target_character.GetHimHer] during the night, as [target_character.GetHeShe] heard voices instructing [target_character.GetHimHer] to change [target_character.GetHisHer] current route. [target_character.GetHeShe|U] says [target_character.GetHeShe] can not deny the signs any longer, but claims that extra funds will be needed to pursue that route, as it is more difficult and will need extra supplies and equipment."
+ exploration_monthly.20.a: "[target_character.GetHisHer|U] instinct has never failed us yet."
+ exploration_monthly.20.b: "Spirits's voices? Preposterous."
+
+ exploration_monthly.21.title: "Gifted Translator"
+ exploration_monthly.21.desc: "The exploration in [ROOT.GetExploration.GetArea.GetName] has been stalled for some time, but recently the camp of [ROOT.GetExploration.GetCharacter.GetName] was approached by a member of the [pop.GetCulture.GetName], speaking in a somewhat broken but understandable [ROOT.GetExploration.GetOwner.GetCulture.GetLanguage.GetName]. [translator.GetHeShe|U] says that a [ROOT.GetExploration.GetOwner.GetCulture.GetName] person visited [translator.GetHisHer] village many years ago when [translator.GetHeShe] was little, and managed to learn the language then. [translator.GetHeShe|U] offers to help establish further contact with [translator.GetHisHer] people, and adds that [translator.GetHeShe] can also help create a dictionary of [translator.GetHisHer] language, claiming that it would be a very useful tool to have."
+ exploration_monthly.21.a: "Fund the dictionary."
+ exploration_monthly.21.b: "There is no need."
+ exploration_monthly.21.c: "That translator could be useful at home."
+ exploration_monthly.21.b.tt: "[translator.GetName] will join our court"
+
+ exploration_monthly.22.title: "Favorable Storm"
+ exploration_monthly.22.desc: "While sailing through [ROOT.GetExploration.GetArea.GetName], the ships of [target_character.GetName] were caught up in a furious storm. What could have ended in tragedy turned instead to be a miraculous stroke of good luck, as when the skies cleared they discovered that not only they had lost no ships in that but also that the winds had pushed them way further ahead in the course than expected. The sails were completely ripped in the process and they were forced to use the replacement ones, but the advancement in the planned schedule was definitely worth it."
+ exploration_monthly.22.a: "Make sail!"
+
+ exploration_monthly.23.title: "Hill of the Wind"
+ exploration_monthly.23.desc: "While exploring [ROOT.GetExploration.GetArea.GetName], [target_leader.GetName] found a nice hill in [target_location.GetName] with a conical top, slightly flattened at the summit. From the top [target_leader.GetHeShe] says there's a very advantageous view over all the surrounding areas. It will be a good spot to establish a camp base and serve both as a vantage point of observation as well as an easily recognizable landmark. [target_leader.GetNameWithNoTooltip] has brought to our attention that if we provide [target_leader.GetHimHer] with the resources necessary [target_leader.GetHeShe] will construct a more permanent structure there to serve as a watchtower. [target_leader.GetHeShe|U] claims that the ability to clearly see far away places from there would greatly improve [target_leader.GetHisHer] logistics."
+ exploration_monthly.23.a: "Let's build the watchtower."
+ exploration_monthly.23.b: "There is no need."
+
+ exploration_monthly.24.title: "A Friendly Dog"
+ exploration_monthly.24.desc: "[explorer.GetName] got a nice surprise while exploring [ROOT.GetExploration.GetArea.GetName]. A dog started appearing recently around [explorer.GetHisHer] camp, and seems quite friendly. The dog barks constantly but seems to be doing it more for grabbing [explorer.GetNameWithNoTooltip]'s attention rather than as a threat, as it can be approached by anyone without a problem. It seems to be trying to guide the expedition through a certain path, but at the end of the day it's just a dog, right?"
+ exploration_monthly.24.a: "The Mutt's Mutters Matter"
+ exploration_monthly.24.a.tt: "[explorer.GetNameWithNoTooltip] will keep the dog as a pet, and follow its directions"
+ exploration_monthly.24.b: "Who's a good boy?"
+ exploration_monthly.24.b.tt: "[explorer.GetNameWithNoTooltip] will pet the dog. Perhaps a bit too much"
+ STATIC_MODIFIER_NAME_friendly_dog: "Friendly Dog"
+
+ exploration_monthly.25.title: "The Calmest Sea"
+ exploration_monthly.25.desc: "[target_explorer.GetName] and [target_explorer.GetHerHis] ship have been stuck in the open sea of [ROOT.GetExploration.GetArea.GetName] for a while, no wind nor current to propel them. Supplies are starting to run low, and the crew is becoming more and more agitated. Some of the animals they got with them have already been either eaten or thrown overboard, to alleviate the strain on water and rations. If nothing is done, who knows how much longer they can survive."
+ exploration_monthly.25.a: "It is beyond human hands, we must trust a higher force."
+ exploration_monthly.25.b: "There must be something we can do, try everything."
+ 
+ exploration_monthly.26.title: "A Guiding Bird"
+ exploration_monthly.26.desc: "The monotonous sailing of [target_explorer.GetName] and [target_explorer.GetHerHis] ship in [ROOT.GetExploration.GetArea.GetName] has remained unchanged for a while. With no weather changes nor any alteration to the appearance of the surrounding sea, the crew is starting to question whether they are actually moving at all. In the last sunrise, those on deck were surprised to see a seagull flying over the vessel, seemingly trying to guide them to the nearest land. Some of the crew say that it is an obvious indication of the presence of land nearby, and want to alter the course of the ship to follow it there, to break boredom at least if not to resupply."
+ exploration_monthly.26.a: "It would be best if we follow it."
+ exploration_monthly.26.b: "Seagulls only go out to sea to die, right?"
+
+ exploration_monthly.27.title: "Mutiny!"
+ exploration_monthly.27.desc: "Tensions between [target_explorer.GetName] and [target_explorer.GetHerHis] crew have been recently on the rise. The general discontent towards [target_explorer.GetShortNameWithNoTooltip]'s leadership has been coagulating more and more, manifesting in sneaky conversations under the deck and piercing glances across it. [target_explorer.GetHerHis|U] apparent disregard of the situation has proven to be [target_explorer.GetHerHis] downfall, as the crew have finally organized themselves and organized a full-blown mutiny."
+ exploration_monthly.27.a: "'Tis the plank for you!"
+ exploration_monthly.27.b: "Improve the crew's conditions."
+ exploration_monthly.27.c: "Resolve the situation diplomatically."
+ exploration_monthly.27.d: "If you want a bloodbath, you will have it."
+
+ exploration_monthly.28.title: "Fishing Game"
+ exploration_monthly.28.desc: "The crew sailing in [ROOT.GetExploration.GetArea.GetName] have recently developed a very curious distraction. It is quite common for sailors to do some fishing while at sea to supply themselves with some extra food, but those accompanying [target_explorer.GetName] have cultivated that to the point of devising a whole game around that activity.\n\nThey keep scores not only depending on the number of fish each one has captured, but also on their sizes, and even the exact type of fish. Different species grant different amounts of points, though not always the bigger fish is the most valuable. They keep a board on deck in which they track the score of each player, and do a full tally at the end of the week. The fisherman with the highest score will get preference when picking rations during the following week.\n\nWhile keeping the crew's morale high is important, it is undeniable that they are dedicating more time than they should to such frivolous activities, and the overall functioning of the expedition may get affected."
+ exploration_monthly.28.a: "Let them have some fun."
+ exploration_monthly.28.b: "As long as they are still doing their work."
+ exploration_monthly.28.c: "Completely forbid any fishing game."
+
+ exploration_monthly.29.title: "Swimming Lessons"
+ exploration_monthly.29.desc: "While exploring the coastline in [ROOT.GetExploration.GetArea.GetName], an issue has been brought up to [target_explorer.GetName]. Despite being at sea a lot, it is not uncommon for sailors to not know how to swim, and on the contrary, they are usually quite familiar with the disgusting sight of drowned corpses. As such, the fear of drowning is almost ever-present in any sailor.\n\nTo be able to manage it, and considering that the beaches of [ROOT.GetExploration.GetArea.GetNameWithNoTooltip] offer a prime opportunity for safe swimming practice, one of the crew members who knows how to swim has offered [target_explorer.GetShortNameWithNoTooltip] the possibility of organizing swimming lessons for the crew. Despite the obvious and expected delays in the progress of the expedition, those lessons would ensure the safety, at least of mind, of the crew."
+ exploration_monthly.29.a: "Have those lessons."
+ exploration_monthly.29.b: "It is a waste of time."
+
+ exploration_monthly.30.title: "Dolphins in [ROOT.GetExploration.GetArea.GetNameWithNoTooltip]"
+ exploration_monthly.30.desc: "The crew exploring [ROOT.GetExploration.GetArea.GetName] has gotten a pleasant surprise. A school of dolphins has started following the wake of the ship, accompanying her as she sails. While it is not uncommon for dolphins to swim along ships, this particular school has been following the expedition for an unusual amount of time, being all around the ship for days long already. The sailors are starting even to be able to identify individual members of the school and to name them."
+ exploration_monthly.30.a: "They will sure bring us luck."
+ exploration_monthly.30.b: "It will be easy to hunt them for meat."
+
+ exploration_monthly.31.title: "Siren Song"
+ exploration_monthly.31.desc: "Unusual rumors have been plaguing [target_explorer.GetName]'s crew for some days, the sailors swear that they have been recently hearing songs in the distance at night. Despite being at open sea far away from shore, these reports keep coming night after night, and even those sailors who had not drunk a drop of alcohol stated having heard the songs. According to them, it is a high-pitched continuous melody, without any discernable words in it but unmistakably feminine in origin. They assure it is caused by sirens that are following the ship in hopes of luring the crew to their certain death. As such, they suggest getting back to port before they can get hold of the ship."
+ exploration_monthly.31.a: "Sirens? That is just nonsense."
+ exploration_monthly.31.b: "We must be careful with those sea creatures."
+ exploration_monthly.31.c: "We must investigate the source."
+ exploration_monthly.31.d: "It is probably just some whales, let's hunt them."
+
+ exploration_monthly.32.title: "Cloudy Night"
+ exploration_monthly.32.desc: "[target_explorer.GetName]'s expedition in [ROOT.GetExploration.GetArea.GetName] has found some difficulties in the past few days. These last nights the sky has been completely covered in a thick layer of clouds, making it impossible to discern any star or even the moon. Although it is quite a common occurrence, the fact that there have been many nights like this in succession makes it difficult for the crew to say for sure if their position is where they think it is. The ship is equipped with the latest navigation technology, but even with that sailing through the night without the help and guidance of the stars is no simple task."
+ exploration_monthly.32.a: "Let us pray that we are still on course."
+ exploration_monthly.32.b: "[target_explorer.GetNameWithNoTooltip] knows exactly where we are."
+
+ exploration_monthly.33.title: "Cartographer on Board"
+ exploration_monthly.33.desc: "[target_explorer.GetName]'s expedition in [ROOT.GetExploration.GetArea.GetName] is proceeding as planned, but [target_explorer.GetSheHe] thinks that [target_explorer.GetHerHis] aptitudes in mapmaking are not being fully utilized. [target_explorer.GetSheHe|U] has sent us a petition to improve [target_explorer.GetHerHis] funding, so that [target_explorer.GetSheHe] can provide us in turn with better and more detailed maps."
+ exploration_monthly.33.a: "Gladly, we will appreciate better maps."
+ exploration_monthly.33.b: "It is too expensive."
+
+ exploration_monthly.34.title: "Dangerous Rocks"
+ exploration_monthly.34.desc: "While exploring [ROOT.GetExploration.GetArea.GetName], [target_explorer.GetName]'s ship has found a section of coastline that is filled with low-lying sharp rocks. Although they could be easily avoided, that would result in having to divert the course quite a bit to sail around them, consequently delaying the expedition. However, it is quite unlikely that the ship would manage to emerge unscathed if forced to sail through such dangerous waters."
+ exploration_monthly.34.a: "Best to go around them."
+ exploration_monthly.34.b: "We sail through it, we can fix any damage afterward."
+
+ exploration_monthly.35.title: "Old Wreck"
+ exploration_monthly.35.desc: "An unexpected sight has appeared before [target_explorer.GetName]'s ship in [ROOT.GetExploration.GetArea.GetName]. Remnants of an old ship lay scattered on the beach, proof of the mercilessness of the sea. Some parts of the hull appear to be still intact, and some of the crew argue it warrants a closer inspection to salvage any goods it may contain. However, it is unlikely that it has anything of actual value, and delaying the whole expedition for that could result in just a tremendous waste of time."
+ exploration_monthly.35.a: "Who knows what we can find there, better investigate."
+ exploration_monthly.35.b: "We do not have time for this."
+
+ exploration_monthly.36.title: "Smoke on the Coast"
+ exploration_monthly.36.desc: "The shores along [ROOT.GetExploration.GetArea.GetName] appeared unremarkable as [target_explorer.GetName]'s was sailing along them, but something grabbed the crew's attention. On what was supposed to be an uninhabited shore, there rises the unmistakable sight of smoke. Where there is smoke, there is fire, so it is clear that this coast is not as uninhabited as expected. A quick inspection of the beach reveals that it is just someone who survived the shipwreck of some previous expedition and has been trying to survive alone on this beach, trying to catch the sight of any other vessel passing through, and obviously alerting them with smoke when it finally happened."
+ exploration_monthly.36.a: "Go ashore and take the survivor on board."
+ exploration_monthly.36.b: "Not our fault, not our problem."
+
+ exploration_monthly.37.title: "Ghost Ship"
+ exploration_monthly.37.desc: "Tales of ghost ships have always been in the mouths and minds of sailors. Stories of spectral apparitions in the middle of the sea, ships sailing even without wind, keeping afloat despite having the hull torn asunder, crews made up of skeletons and bloated corpses. Imagination runs wild in those stories, but there are many sailors who swear to have come across such otherworldly vessels.\n\nSuch stories are present now even in the midst of [target_explorer.GetName]'s expedition in [ROOT.GetExploration.GetArea.GetName]. Some members of the crew mention having seen the ghostly figure of a ship following their own wake, coming into and out of sight and not being able to properly set their gaze on it. Nervousness is running rampant among the crew, who are starting to fear that Death is coming for them."
+ exploration_monthly.37.a: "Ghost stories are just nonsense."
+ exploration_monthly.37.b: "Let us be careful just in case."
+
+ exploration_monthly.38.title: "Discovery of a New World!"
+ exploration_monthly.38.desc: "After a long and difficult journey, one of our expeditions has returned to [target_root_country.GetName] with a miraculous message. They landed on a small island where they encountered people wearing gold ornaments and speaking in a foreign language. According to their reports, this might be an alternative route to the Indies, but some have started to discuss that it might be an entirely unknown continent. We could start establishing outposts on these islands to create a first step towards a colony and further explorations in the area."
+ exploration_monthly.38.a: "[target_root_country.Custom('common_string_positive')]"
+
+ exploration_monthly.39.title: "Hellish Insects"
+ exploration_monthly.39.desc: "The relentless attack of a swarm of black flies has forced our brave expedition to turn back from [ROOT.GetExploration.GetLocation.GetName].\n\nOur explorers found a vast expanse of lowlands filled with many rivers and waterways discharging their water into a massive bay of salty water.\n\nTo their dismay when they came closer to the coast they were assaulted by a never-ending swarm of small black flies that would bite them and drink their blood. After many painful bites, they were forced to retreat and are now asking us to let them search for a different route forward."
+ exploration_monthly.39.a: "[target_root_country.Custom('common_string_positive')]"
+ exploration_monthly.39.b: "Get back there, now!"
+
+ exploration_monthly.40.desc: "Driven by the pursuit of uncharted territories and the mysteries of the unknown, explorers from [target_root_country.GetName] have arrived on distant shores. These lands are inhabited by indigenous peoples, speaking unfamiliar tongues and adorned with striking ornaments. This discovery raises more questions than answers and might alter the course of history in ways we cannot yet foresee. A new world awaits, its full potential and challenges still shrouded in mystery."
+ exploration_monthly.40.a: "What a time to be alive!"
+ exploration_monthly.40.historical_info: "In 1492, Christopher Columbus set sail hoping to find a new route to Asia. Instead, he stumbled upon the Americas, a land already home to millions of indigenous people. This moment marked the beginning of Europe's exploration and colonization of the #italic New World#!, thus changing history forever. It brought new opportunities, but also devastation, as native populations faced conquest, disease, and cultural upheaval. This discovery is due to connect two worlds, reshaping societies and the global balance of power in unprecedented ways."
+
+ 

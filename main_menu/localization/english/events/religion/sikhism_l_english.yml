@@ -1,0 +1,70 @@
+﻿l_english:
+ lots_of_sikhs: "Many [pops|e] in our [country|e] are now following [ShowReligionName('sikhism')]."
+ sikhism.1.title: "The [ShowReligionAdjectiveWithNoTooltip('sikhism')] Faith"
+ sikhism.1.desc: "[target_location.GetName] is situated on the border between adherents of [ShowReligionName('hindu')] and [ShowReligionGroupName('muslim')]. In this area marked by religious tension and differences, a man named [target_character.GetName] has started to preach that there is no [ShowReligionAdjectiveWithNoTooltip('hindu')] or [ShowReligionGroupAdjectiveWithNoTooltip('muslim')], but that the truth is with God, who is neither.\n\nAlthough [target_character.GetHisHer] rejection of ancient customs has outraged devoted [target_religion.GetAdjectiveWithNoTooltip] believers, [target_character.GetNameWithNoTooltip]'s disregard for creed has allowed [target_character.GetHisHer] teachings to take root among the population. [target_character.GetHisHer|U] disciples are known as Sikhs and are spreading this new faith rapidly throughout [target_location.GetNameWithNoTooltip]."
+ sikhism.1.a: "This has no place in the [ROOT.GetCountry.GetLongNameWithNoTooltip]."
+ sikhism.1.b: "We will need to talk to this [target_character.GetShortNameWithNoTooltip] about the [ShowReligionAdjectiveWithNoTooltip('sikhism')] faith."
+ sikhism.1.c: "We wil follow [target_character.GetNameWithNoTooltip]'s teachings to the heart."
+
+ sikhism.2.title: "[target_character.GetNameWithNoTooltip]"
+ sikhism.2.desc: "'Death would not be called bad, O people, if one knew how to truly die.'\n\nThe founder of our faith has passed away. [previous_guru.GetName]'s body is dead, but the spirit of the [ROOT.GetCountry.GetGovernment.GetRulerTitle] lives on in [previous_guru.GetHerHis] successor, [target_character.GetName]. [target_character.GetShortNameWithNoTooltip] was one of [previous_guru.GetShortNameWithNoTooltip]'s most loyal followers and carries on [previous_guru.GetHerHis] legacy in establishing the [ROOT.GetCountry.GetReligion.GetAdjective] community, spreading the use of a new alphabet to promote education of the young."
+ sikhism.2.a: "The light of the [ROOT.GetCountry.GetGovernment.GetRulerTitle] shines on."
+ sikhism.2.tt: "Unlocks [ShowLawName('guru_angad_guruship')] for [GetUniqueInternationalOrganization('sikhism').GetName]"
+
+ sikhism.3.title: "[target_character.GetNameWithNoTooltip]"
+ sikhism.3.desc: "[previous_guru.GetName] has passed on and left the guruship in the care of [previous_guru.GetHerHis] loyal servant [target_character.GetName]. A man of great humility, [target_character.GetShortNameWithNoTooltip] nevertheless has ambitions for the teachings of [ROOT.GetCountry.GetReligion.GetName], strengthening the doctrine of equality that has gained popularity among the common people and establishing religious representatives called the Masand, spreading the word of our faith further than the [ROOT.GetCountry.GetGovernment.GetRulerTitle] alone ever could."
+ sikhism.3.a: "Our [ROOT.GetCountry.GetGovernment.GetRulerTitle] is the strength of the weak and the emancipation of the slave!"
+ sikhism.3.tt: "Unlocks [ShowLawName('guru_amar_das_guruship')] for [GetUniqueInternationalOrganization('sikhism').GetName]"
+
+ sikhism.4.title: "[target_character.GetNameWithNoTooltip]"
+ sikhism.4.desc: "[previous_guru.GetName] has left this world and passed the guruship to [previous_guru.GetHerHis] disciple [target_character.GetName]. [target_character.GetSheHe|U] will oversee the continued construction of our holy city and encourages followers to attain enlightenment not only through solitary meditation, but from actively engaging with the community and their fellow [ROOT.GetCountry.GetReligion.GetAdjective] followers."
+ sikhism.4.a: "Our [ROOT.GetCountry.GetGovernment.GetRulerTitle] is a servant of [ROOT.GetCountry.GetReligion.GetGodName] and we serve [target_character.GetHerHim]."
+ sikhism.4.tt: "Unlocks [ShowLawName('guru_ram_das_guruship')] for [GetUniqueInternationalOrganization('sikhism').GetName]"
+
+ sikhism.5.title: "[target_character.GetNameWithNoTooltip]"
+ sikhism.5.desc: "After the death of [previous_guru.GetName], [target_character.GetName] has been chosen as the next [ROOT.GetCountry.GetGovernment.GetRulerTitle], despite contention from [target_character.GetNameWithNoTooltip] opponents. To preserve the knowledge and hymns of past teachings, [target_character.GetShortNameWithNoTooltip] has begun to compile a volume known as the [ShowPolicyName('adi_granth')]. The spiritual writing collected within come from many great teachers and the [ROOT.GetCountry.GetGovernment.GetRulerTitle] has instructed that anyone may partake of it. [target_character.GetSheHe|U] has also founded a great temple, the Harmandir Sāhib, giving all [ROOT.GetCountry.GetReligion.GetAdjective] faithful a place to meet and worship."
+ sikhism.5.a: "We shall keep the knowledge safe and build upon it."
+ sikhism.5.tt: "Unlocks [ShowLawName('guru_arjan_guruship')] for [GetUniqueInternationalOrganization('sikhism').GetName]"
+
+ sikhism.6.title: "[target_character.GetNameWithNoTooltip]"
+ sikhism.6.desc: "'As I crush these onions you have brought to me, so shall your son crush the heads of his enemies, and be at once a great warrior and exalted $guru$.'\n\nSo has been said about [previous_guru.GetName]'s successor, [target_character.GetName]. The world has changed and the [ROOT.GetCountry.GetReligion.GetAdjective] people can no longer trust their potential enemies to be merciful, but have taken up arms against those who seek to make martyrs out of the [ROOT.GetCountry.GetGovernment.GetRulerTitle] and [target_character.GetHerHis] disciples."
+ sikhism.6.a: "Swords shall replace the crown of the [ROOT.GetCountry.GetGovernment.GetRulerTitle]."
+ sikhism.6.tt: "Unlocks [ShowLawName('guru_hargobind_guruship')] for [GetUniqueInternationalOrganization('sikhism').GetName]"
+
+ sikhism.7.title: "[target_character.GetNameWithNoTooltip]"
+ sikhism.7.desc: "[previous_guru.GetName]'s successor, [target_character.GetName], has been trained in preparation for taking over the guruship, and now that time has come. Although instructed in the ways of combat and maintaining the army built by [target_character.GetHerHis] predecessor, [target_character.GetNameWithNoTooltip] is of a more sensitive disposition and [target_character.GetHerHis] love for all living things compels [target_character.GetHerHim] to seek diplomatic solutions."
+ sikhism.7.a: "Enough of battle; now is the time for healing."
+ sikhism.7.tt: "Unlocks [ShowLawName('guru_har_rai_guruship')] for [GetUniqueInternationalOrganization('sikhism').GetName]"
+
+ sikhism.8.title: "[target_character.GetNameWithNoTooltip]"
+ sikhism.8.desc: "The body of [previous_guru.GetName] passed on, leaving a very young successor to assume the mantle. [target_character.GetName] was deemed a better candidate than the other options, who put diplomatic pragmatism before adherence to the faith. While our new [ROOT.GetCountry.GetGovernment.GetRulerTitle] does not lack piety or kindness, [target_character.GetHerHis] young age limits our diplomatic options."
+ sikhism.8.a: "Our [ROOT.GetCountry.GetGovernment.GetRulerTitle] is still our blessing."
+ sikhism.8.tt: "Unlocks [ShowLawName('guru_har_krishan_guruship')] for [GetUniqueInternationalOrganization('sikhism').GetName]"
+
+ sikhism.9.title: "[target_character.GetNameWithNoTooltip]"
+ sikhism.9.desc: "[previous_guru.GetName] has tragically passed away. After some confusion about who [previous_guru.GetHerHis] successor might be, [target_character.GetName] has been chosen as the new [ROOT.GetCountry.GetGovernment.GetRulerTitle]. Initially a reclusive [target_character.GetWomanMan], [target_character.GetSheHe] has risen to the occasion and proven to be a determined leader. Despite [target_character.GetHerHis] own rejection of rituals and ceremonial practices, [target_character.GetSheHe] has taken on the task of safeguarding not only the religion of [target_character.GetHerHis] own followers, but of [ShowReligionAdjective('hindu')] refugees who flee to our lands from persecution."
+ sikhism.9.a: "Our [ROOT.GetCountry.GetGovernment.GetRulerTitle] is the True King and the shield of the oppressed."
+ sikhism.9.tt: "Unlocks [ShowLawName('guru_tegh_bahadur_guruship')] for [GetUniqueInternationalOrganization('sikhism').GetName]"
+
+ sikhism.10.title: "[target_character.GetNameWithNoTooltip]"
+ sikhism.10.desc: "With the death of [previous_guru.GetName], [ROOT.GetCountry.GetReligion.GetAdjective] faithful have once again had to face hostility from their political and religious enemies. [previous_guru.GetHerHis|U] successor, [target_character.GetName], is determined to unite the people and gather those who are willing to give their lives for their [ROOT.GetCountry.GetGovernment.GetRulerTitle]. The coming decades will build up to the creation of the [ShowLawName('khalsa_law')], those initiated by the [ROOT.GetCountry.GetGovernment.GetRulerTitle]'s ceremonies into our faith, and [target_character.GetNameWithNoTooltip]'s name will last forever in history."
+ sikhism.10.a: "The [ShowLawNameWithNoTooltip('khalsa_law')] belong to [ROOT.GetCountry.GetReligion.GetGodName], Victory belongs to [ROOT.GetCountry.GetReligion.GetGodName]!"
+ sikhism.10.tt: "Unlocks [ShowLawName('guru_gobind_singh_guruship')] for [GetUniqueInternationalOrganization('sikhism').GetName]"
+ sikhism.10.khalsa.tt: "Unlocks [ShowLawName('khalsa_law')] for [GetUniqueInternationalOrganization('sikhism').GetName]"
+
+ sikhism.11.title: "[ShowWorkOfArtNameWithNoTooltip('guru_granth_sahib')]"
+ sikhism.11.desc: "[previous_guru.GetName] is gone, but has passed on the guruship to one who shall never die. The collection of sacred texts known as the [ShowPolicyName('adi_granth')], once created by [GetCharacter('guru_arjan').GetName] and built upon by other [ROOT.GetCountry.GetGovernment.GetRulerTitle] after [GetCharacter('guru_arjan').GetHerHim], was designated by [previous_guru.GetNameWithNoTooltip] as the final successor who will guide the [ROOT.GetCountry.GetReligion.GetAdjective] people: The [ShowWorkOfArtName('guru_granth_sahib')]. Henceforth, whatever questions [ROOT.GetCountry.GetReligion.GetAdjectiveWithNoTooltip] faithful may have for the [ROOT.GetCountry.GetGovernment.GetRulerTitle] shall be answered by the knowledge contained within it."
+ sikhism.11.a: "The [ROOT.GetCountry.GetGovernment.GetRulerTitle] is the Fulfiller of the desires of the mind."
+ sikhism.11.b: "Those who want to meet [ROOT.GetCountry.GetReligion.GetGodName] can find Him in its hymns."
+ sikhism.11.tt: "Unlocks [ShowLawName('guru_granth_sahib_guruship')] for [GetUniqueInternationalOrganization('sikhism').GetName]"
+
+ sikhism.12.title: "$guru$ in [target_location.GetNameWithNoTooltip]"
+ sikhism.12.desc: "Word from a man who some call a $guru$ has arrived in [target_location.GetName]. [target_character.GetSheHe|U] claimed to have received a revelation, being called by Heaven to travel from [target_character.GetHerHis] home to distant lands, spreading the message of the one true God.\n\n[target_character.GetHerHis|U] local disciples insist that this God is revealed through all religions, including [ROOT.GetCountry.GetReligion.GetName], and defend [target_character.GetName] as simply revealing the truths in our own faith. However, there is no question that these teachings reject our rituals and traditions, making people stray from the true path of [ROOT.GetCountry.GetReligion.GetNameWithNoTooltip]."
+ sikhism.12.a: "As long as they pay taxes, they can believe what they want."
+ sikhism.12.b: "We will heed no word from such heathens!"
+ sikhism.12.b.tt: "All [ShowReligionAdjective('hindu')] and [ShowReligionGroupAdjective('muslim')] [pops|e] in [target_location.GetName] will lose [ShowNamedValue('pop_satisfaction_extreme_penalty')|+=2%] [pop_satisfaction|e]"
+
+ sikhism.13.title: "Disappearance of the $character_title_guru$"
+ sikhism.13.desc: "The world of [ShowReligionName('sikhism')] is in disarray after the line of the $character_title_guru$ has been broken. It is in our hand as faithful [ShowReligionAdjectiveWithNoTooltip('sikhism')] believers to restore it in our lands, ensuring that a new line of $character_title_guru$ can be established in [target_location.GetName] with the [guru_country.GetLongName]."
+ sikhism.13.a: "The [ShowReligionAdjectiveWithNoTooltip('sikhism')] $character_title_guru$ may never die."
+ sikhism.13.b: "We shall be the ones to lead this new era."

@@ -1,0 +1,217 @@
+﻿l_english:
+ 
+#Events
+  flavor_ser.10.title: "The Weakness of the Crown"
+  flavor_ser.10.desc: "The conquests and legacy spearheaded by [GetCharacter('ser_stefan_dusan').GetName] gave way to the rise of a powerful new force in the Balkans. However, the passing of our former ruler led to the rise of [target_character.GetName]. Grappling with the loss of our country's most revered head of state, many advisors have begun whispering throughout our halls about the inadequacy of our leadership. Rumors of indecisiveness and impotence have corroded the royal authority, applying pressure and risking the destruction of what we have built. Our fate hangs in the balance, and [target_character.GetNameWithNoTooltip]'s rule risks eradicating our imperial legacy and an uncontrollable descent into chaos."
+  flavor_ser.10.a: "Let [target_parent.GetName] oversee the regency."
+  flavor_ser.10.b: "We will trust [target_dynasty_member_scope.GetName] with the throne."
+  flavor_ser.10.c: "[target_character.GetNameWithNoTooltip] must go!"
+  flavor_ser.10.d: "We are no cowards, we will fight!"
+  flavor_ser.10.e: "They will be brought on their knees."
+  ser_every_conquered_location_gets_tt: "Every [conquered|e] [location|e] will suffer the following:"
+  ser_abdicate_throne_tt: "[target_character.GetNameWithNoTooltip] will abdicate the throne"
+
+  flavor_ser.11.title: "The Bid for Power"
+  flavor_ser.11.desc: "The prominent [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] figures within our domain were silent during the reign of [GetCharacter('ser_stefan_dusan').GetName]. However, with the coming of [target_character.GetName], they feel emboldened in their hubris. Petitioning greater autonomy and a reduction to their obligations, a delegation of nobles has made its way to our court, petitioning to be heard lest the wrath of their masters spill onto the land..."
+  flavor_ser.11.a: "We have to cooperate..."
+  flavor_ser.11.b: "Buy their loyalty for some privileges."
+  flavor_ser.11.c: "They will taste the boot."
+  flavor_ser.11.d: "These threats are beneath us!"
+  flavor_ser.11.e: "They answer to ME!"
+  STATIC_MODIFIER_NAME_ser_reduced_taxation_obligation_modifier: "Reduced Obligations"
+
+  flavor_ser.12.title: "The Fleeting Control of the Crown"
+  flavor_ser.12.desc: "For far too long the machinations of prominent figures in our realm have swayed politics. Shadowy figures in dark rooms control the bidding and execution of central authority under the pretense of allegiance and loyalty. Feeling emboldened due to the weak command of [target_character.GetName], many representatives of powerful groups have demanded dominion and jurisdiction over our borderlands, lest we risk them falling out of our hands..."
+  flavor_ser.12.a: "We must entertain their demands for now..."
+  flavor_ser.12.b: "Very well, entrust control of these domains to them..."
+  flavor_ser.12.c: "If it's a struggle they wish..."
+  ser_every_location_20_control_tt: "Every owned [location|e] will lose [ShowNamedValue('control_severe_penalty')|+=2%] [control|e]"
+  STATIC_MODIFIER_NAME_ser_noble_borderlands_modifier: "Noble Borderlands"
+  STATIC_MODIFIER_NAME_ser_clergy_borderlands_modifier: "Clergy Borderlands"
+  STATIC_MODIFIER_NAME_ser_burgher_borderlands_modifier: "Merchant Borderlands"
+
+  flavor_ser.30.title: "The Dreams of [GetCharacter('ser_stefan_dusan').GetNameWithNoTooltip]"
+  flavor_ser.30.desc: "Many leaders have fashioned themselves the continuation of Rome. Imperial dreams clad in royal purple and the sight of legendary conquests serve as a major appeal to neighboring [ShowReligionGroupAdjectiveWithNoTooltip('christian')] domains. However, unlike other false claimants, [GetCharacter('ser_stefan_dusan').GetName] has the making of a legendary figure. Under [GetCharacter('ser_stefan_dusan').GetHerHis] steady hand we will set forth and take what is rightfully ours!"
+  flavor_ser.30.a: "To the gates of [ShowLocationNameWithNoTooltip('constantinople')], the glory of Rome awaits!"
+  ser_conquest_into_empire: "Should we complete the conquest of these [provinces|e] during the life of [GetCharacter('ser_stefan_dusan').GetShortNameWithNoTooltip], we will become an [ShowCountryRankName('rank_empire')] and gain the ability to proclaim our own #italic Autocephalous#! [patriarch|e]"
+  stefan_uros_conqueror_tt: "[target_character.GetName] will benefit from the [ShowModifier('insatiable_ambition')] [character|e] [modifier|e] for the duration of [target_character.GetHerHis] rule"
+  granted_claims_stefan_uros_tt: "We will be granted [ShowCasusBelliName('cb_conquer_province')] [casus_belli|e] against [ShowProvinceDefinitionName('upper_macedonia_province')], [ShowProvinceDefinitionName('lower_macedonia_province')], [ShowProvinceDefinitionName('chalkidiki_province')] and [ShowProvinceDefinitionName('thessaly_province')]"
+  flavor_ser.30.historical_info: "Stefan Uroš IV Dušan was proclaimed Emperor in 1346, marking the zenith of medieval Serbian power. His reign was defined by military conquests and legal reforms that transformed Serbia into a dominant Balkan empire. Capitalizing on the weakening Byzantine Empire, Dušan expanded his realm to include large parts of Macedonia, Thessaly, and even Epirus. In a grand ecclesiastical assembly held in Skopje, he was crowned Emperor of the Serbs and Greeks, asserting both political supremacy and ecclesiastical independence by elevating the Serbian Archbishopric to a Patriarchate. This imperial proclamation symbolized Serbia's ambition to succeed Byzantium as the leading Orthodox Christian power in the region."
+
+  flavor_ser.31.title: "The Dawn of a New Empire"
+  flavor_ser.31.desc: "Through the embers of a fallen phoenix and with unparalleled strength, [GetCharacter('ser_stefan_dusan').GetName] has lifted our people to unparalleled heights of splendor, glory, and prestige. With the decay of [GetCountry('BYZ').GetName], many of their territories now land steadily in our hands. Despite local unrest and resistance to our administration, this is a mere first step towards the grand plans aimed at elevating us to the status of legends. A new power is rising. Its victory is at hand. It was foretold that the land would be stained with the blood of our foes. March to [ShowLocationName('constantinople')]. Leave none alive. To war!"
+  flavor_ser.31.a: "This is our moment of glory!"
+  flavor_ser.31.b: "Make haste, slowly..."
+  flavor_ser.31.historical_info: "Stefan Dušan, also known as Dušan the Mighty, ascended to the throne as the Emperor of the Greeks and Serbs in 1346, marking a pivotal moment in Balkan history. Born in 1308, he initiated a rebellion against his father, King Stefan Uroš III Dečanski, ultimately becoming the King of Serbia in 1331. His ambitions transcended Serbian borders, leading to a successful campaign against the Byzantine Empire, then ruled by John VI Kantakouzenos. His coronation as Emperor in Skopje cemented his authority over a vast realm that extended from modern Croatia to southern Greece. Dušan furthered his independence by establishing the Serbian Orthodox Church, anchored by the Serbian Patriarch in Peja, and introduced the influential Dušan's Code, a comprehensive legal system drawing from Byzantine and Roman traditions. His reign signified a zenith of Serbian power, cultural influence, and territorial expansion, but after his death in 1355, the empire gradually fragmented and lost its earlier conquests, leaving behind a significant legacy in Serbian history."
+
+  flavor_ser.40.title: "The Flight of [target_character.GetNameWithNoTooltip]"
+  flavor_ser.40.desc: "It is no secret that the court of our foe is full of power-hungry vultures ready to devour the body of their own country at the first sight of weakness. As times of war are upon us, the faltering of the [GetCountry('BYZ').GetName] has become apparent to those with high aspirations. One such individual is [target_character.GetName]. Scorned by [target_character.GetHerHis] peers and having [target_character.GetHerHis] dreams of royalty crushed, [target_character.GetSheHe] has offered [target_character.GetHerHis] sword against our enemies."
+  flavor_ser.40.a: "[target_character.GetSheHe|U] will make a fine addition to our ranks."
+  flavor_ser.40.b: "We have no need for turncoats!"
+  flavor_ser.40_for_byz_tt: "The [GetCountry('BYZ').GetLongNameWithNoTooltip] will be informed of [target_character.GetNameWithNoTooltip]' switch of allegiance"
+
+  flavor_ser.41.title: "A Dagger in the Back"
+  flavor_ser.41.desc: "Word from the front has arrived and it appears that [target_character.GetName] has deserted [target_character.GetHerHis] post, effectively aligning with our foes during our struggle. This offense will not be forgotten and blood must be spilled to right this affront to our legitimacy."
+  flavor_ser.41.a: "The blasted traitor!"
+
+  flavor_ser.50.title: "[target_character.GetNameWithNoTooltip]'s Code"
+  flavor_ser.50.desc: "Conquests and various victories abroad have ushered in an era of prosperity under the capable guidance of [target_character.GetName]. However, destruction must be followed by renewal and as such, we have drafted legislation for the better administration of a newly expanded realm. The new legal framework entails vast changes to our administration and local organization of our provinces throughout the Balkan region."
+  flavor_ser.50.a: "A legal framework befitting a grand nation such as ours!"
+  flavor_ser.50.b: "Let us not disturb the status quo."
+  flavor_ser.50.historical_info: "The legal code, commonly known as the #italic Law of the Pious Emperor Stefan#!, is a significant historical document for the entire region as well as Serbian history. It was introduced during the reign of Dušan, who ruled over the Greeks and Serbs in the mid-14th century. This legal system is formally known as Dušan's Code, named after its primary author, and it played a crucial role in shaping the legal and administrative structure of the newly born Serbian Empire. This code is particularly noteworthy for drawing upon Byzantine and Roman legal traditions, reflecting the empire's diverse cultural influences. Dušan's Code covered various aspects of law, governance, and social organization, offering regulations on issues such as property rights, marriage, criminal justice, and taxation. It significantly contributed to the development of a uniform legal framework within the Serbian Empire during this period, leaving a lasting impact on the legal history of the entire region."
+
+  flavor_ser.60.title: "Growth of Vlasi & Meropsi"
+  flavor_ser.60.desc: "The lands administered under our illustrious realm are vastly populated by a wide range of peasants and commoners. The most prominent classes of these are the #italic Vlasi#! and the #italic Meropsi#!. The former deal with the herding of large cattle and sheep under a feudal lord, whereas the latter are mostly active in the production of wheat and they often found themselves under the jurisdiction of a lord, the head of the state, or the Church. These classes make up the foundation of our material production, raising a vast amount of [ShowGoodsName('livestock')] and [ShowGoodsName('wheat')]. However, recent winters have proven difficult and thus they come to us, asking for support."
+  flavor_ser.60.a: "Provide for both the #italic Vlasi#! and the #italic Meropsi#!."
+  flavor_ser.60.b: "We will assist the #italic Vlasi#!."
+  flavor_ser.60.c: "Fund the #italic Meropsi#! instead."
+  flavor_ser.60.d: "We cannot afford this..."
+  ser_every_livestock_or_wheat_location_tt: "The following will apply to all owned [ShowGoodsName('wheat')] and [ShowGoodsName('livestock')] locations:"
+  ser_every_livestock_location_tt: "The following will apply to all owned [ShowGoodsName('livestock')] locations:"
+  ser_every_wheat_location_tt: "The following will apply to all owned [ShowGoodsName('wheat')] locations:"
+
+  flavor_ser.70.title: "A Capital Befitting an Empire"
+  flavor_ser.70.desc: "Our success throughout the region has only been matched by our ambition to write our name down in the books of history, with golden letters and immeasurable prestige. As our state grows, we must look within and determine a fitting capital for a rising power, the symbol of our authority and grandeur..."
+  flavor_ser.70.a: "Let it be [ShowLocationNameWithNoTooltip('skopje')]!"
+  flavor_ser.70.b: "[ShowLocationNameWithNoTooltip('constantinople')], the shining jewel of Rome!"
+  flavor_ser.70.c: "Our current seat of power will serve us well..."
+
+  flavor_ser.80.title: "Crumbling Shield of the Balkans"
+  flavor_ser.80.desc: "Our wars against the [GetCountry('TUR').GetLongName] have not been favorable to us. Soldiers with broken morale flee from the battlefield, omens and superstitions taking hold back home, unrest and distraught in the streets. These are but a few signs that our society and the fabric of our nation is disintegrating, falling apart, and unraveling, one step at a time. To that end, we have amassed a grand council to determine the course of our actions during the war and attempt to save our people."
+  flavor_ser.80.a: "Petition for formal assistance."
+  flavor_ser.80.b: "Surely our brothers in faith will assist..."
+  flavor_ser.80.c: "It is not over!"
+  ser_target_country_gets_flavor_ser.82_tt: "The event #Y Brotherly Assistance?#! happens for [target_country.GetNameWithNoTooltip]"
+
+  flavor_ser_desc_key: "An emissary from [GetCountry('SER').GetName] has made his way to our court. He speaks of a catastrophe gripping their war against the [GetCountry('TUR').GetLongName]. Noting that their domain currently stands as the shield of Europe against a threat from the East, they humbly ask for our assistance in their ongoing struggle..."
+  flavor_ser.81.title: "[GetCountry('SER').GetNameWithNoTooltip] Requests Aid"
+  flavor_ser.81.desc: "$flavor_ser_desc_key$"
+  flavor_ser.81.a: "Send an alliance and donations, the banners of war will march once more!"
+  flavor_ser.81.b: "Let us share our military expertise."
+  flavor_ser.81.c: "A symbolic donation to assist their struggle."
+  flavor_ser.81.d: "They will receive nothing!"
+
+  flavor_ser.82.title: "Brotherly Assistance?"
+  flavor_ser.82.desc: "$flavor_ser_desc_key$"
+  flavor_ser.82.a: "We are brothers in faith and arms!"
+  flavor_ser.82.b: "Our military expertise will serve their fight."
+  flavor_ser.82.c: "An offer of coin to fund their struggle."
+  flavor_ser.82.d: "We cannot afford any aid..."
+
+  flavor_ser_reply_desc: "After a harsh few days of travel, through rain, storms, and the constant danger of bandits across the roads, our emissary has returned from his mission to request aid in our ongoing war against the [GetCountry('TUR').GetLongName]. Hastily making his way to our courtyard, he brings forth an elegant letter carrying the seal of our correspondents..."
+  flavor_ser.83.title: "The [GetCountry('PAP').GetGovernment.GetRulerTitle]'s Delegate Arrives"
+  flavor_ser.83.desc: "$flavor_ser_reply_desc$"
+  flavor_ser.83.a: "$flavor_ser_response$"
+  flavor_ser.83.b: "$flavor_ser_response$"
+  flavor_ser.83.c: "$flavor_ser_response$"
+  flavor_ser.83.d: "They have forsaken us? How dare they?"
+  flavor_ser_response: "Their assistance is most welcome! We thank them for this."
+
+  flavor_ser.84.title: "The Delegation from [target_country.GetNameWithNoTooltip] Returns"
+  flavor_ser.84.desc: "$flavor_ser_reply_desc$"
+  flavor_ser.84.a: "$flavor_ser_response$"
+  flavor_ser.84.b: "$flavor_ser_response$"
+  flavor_ser.84.c: "$flavor_ser_response$"
+  flavor_ser.84.d: "They have forsaken us? How is this possible?"
+
+  flavor_ser.90.title: "The Monastery of Manasija"
+  flavor_ser.90.desc: "In the heart of our nation, there exists a heavenly ravine that has grabbed the attention of our [GetCountry('SER').GetGovernment.GetRulerTitle]. During the many walks in the area that would lead to the planning of a monastery, [target_character.GetName] dreamed of it serving as a mausoleum in [target_character.GetHerHis] death.\n\nHowever, as time went by, the planning got more and more ambitious, envisioning not only a simple monastery that would house a few monks and nuns but one surrounded by strong walls to defend itself in case of an attack.\n\nShould the plan go ahead, the church of the monastery will be devoted to the Holy Trinity that has protected our nation for so long."
+  flavor_ser.90.a: "This monastery is destined for greatness."
+  flavor_ser.90.b: "Why would we need another monastery?"
+
+  flavor_ser.91.title: "The Resava School"
+  flavor_ser.91.desc: "Only a short period after being founded, the Monastery of Manasija, also known as Resava, has become a cultural center in [ShowProvinceDefinitionName('toplica_province')] and has slowly spread its influence all across our borders and beyond. The best manuscripts and translations are said to be done in what is known as the #italic School of Resava#!.\n\nKnowledge from the past is being copied, absorbed by the copyists and being taught to others. While dangerous knowledge can be discovered in this way and stand against the teachings of the Holy Church, should we stay vigilant, only the good wisdom that emanates directly from God will be taught."
+  flavor_ser.91.a: "We will celebrate our culture."
+
+  flavor_ser.100.title: "The Conquest of Tsarigrad"
+  flavor_ser.100.desc: "For centuries, our people have dreamt of owning the City of World's Desire. Now, our armies have managed to conquer the city and our banners fly, proud, over the most iconic places in it.\n\nOur ruler, [target_character.GetName], can now be considered a true Tsar or Emperor as [target_character.GetSheHe] has the most beautiful and powerful of all cities under [target_character.GetHerHis] grasp.\n\nOne might ask if the city should not change its name to a more fitting one: #Italic The city of the Tsars#!."
+  flavor_ser.100.a: "The city is ours and it will be renamed."
+  flavor_ser.100.b: "We will keep its original name."
+
+  flavor_ser.110.title: "[target_location.GetNameWithNoTooltip] Grows"
+  flavor_ser.110.desc: "The settlement of [ShowLocationName('novo_brdo')] has grown thanks to the rich deposits of glam [ShowGoodsName('silver')] (a type of silver with up to a third of alloy with [ShowGoodsName('goods_gold')]) that surround it and that are being exploited by the diligent descendants of the [ShowCultureName('german_transylvanian')] people that our nation invited a couple of generations ago.\n\nAs the richness flows from the mountains to the streets, more and more people are attracted by the shining brightness of the precious metals to come to the agglomeration, and that is reflected in how rapidly it has grown in the past years.\n\nThe municipal council has sent a delegation to our capital so that we recognize its status as a settlement of importance."
+  flavor_ser.110.a: "Be it blessed!"
+
+  flavor_ser.120.title: "[ShowGoodsNameWithNoTooltip('goods_gold')] found in Lece"
+  flavor_ser.120.desc: "A prospecting band of [ShowCultureName('german_transylvanian')] miners have been walking across the mountains near [ShowLocationName('glubocica')], near the settlement of Lece. They claim to have found hints of the presence of [ShowGoodsName('goods_gold')] under the surface.\n\nOf course, in order to get to the precious ore we have to build a proper mining structure that will cost money. The investment is high, but the returns can make it incredibly profitable as they expect it to be the biggest gold deposit in our realm."
+  flavor_ser.120.a: "Saxon miners will make us rich."
+  flavor_ser.120.b: "Gold in our hands counts more than possible gold."
+
+  flavor_ser.130.title: "The Fortress of [ShowLocationNameWithNoTooltip('smederevo')]"
+  flavor_ser.130.desc: "The confluence formed by the Danube and Jezava rivers is of strategic importance for our nation. Possible invasions from the north can enter through this place and therefore having a proper stronghold in the area can help us defend our nation from these external threats.\n\nRecently, we have received a series of distressing reports from concerned residents residing in the vicinity of [ShowLocationName('smederevo')] demanding we improve the local defenses as they do not feel safe. Their calls for assistance and protection have grown louder, urging us to take immediate action to enhance those fortifications.\n\nShould we invest in bolstering those defenses, we will have another flank of our nation secured. The decision, however, is not one to be taken lightly, as fortification projects demand considerable resources and careful consideration."
+  flavor_ser.130.a: "We need to control the area."
+  flavor_ser.130.b: "Let them handle themselves."
+  STATIC_MODIFIER_NAME_ser_defenses_neglected: "Defenses Neglected"
+  STATIC_MODIFIER_DESC_ser_defenses_neglected: "Our defenses in the north are not receiving the attention the inhabitants of the region are demanding and have started to fall apart. People in the area are feeling left on their own."
+
+  flavor_ser.140.title: "The Father of Modern Serbian Literature"
+  flavor_ser.140.desc: "Born in [target_character.GetBirthDate], [target_character.GetName] is a prominent [ShowCultureName('serbian')] scholar, writer, and educator. [target_character.GetHerHis|U] life's work has significantly impacted not only [ShowCultureNameWithNoTooltip('serbian')] culture but also the broader realm of European Enlightenment.\n\nInspired by Western learning, [target_character.GetLastNameWithNoTooltip] has made it [target_character.GetHerHis] mission to transform [ShowCultureNameWithNoTooltip('serbian')] literature and language to align more closely with the vernacular spoken by ordinary people, distinct from the predominantly ecclesiastical language of [ROOT.GetCountry.GetReligion.GetLanguage.GetName]\n\nSeveral voices in our government are proposing [target_character.GetHerHis] name as a possible minister, while others claim that [target_character.GetSheHe] is not special."
+  flavor_ser.140.a: "[target_character.GetSheHe|U] should work for the government."
+  flavor_ser.140.b: "[target_character.GetSheHe|U] is an inspiration for our people."
+  
+  flavor_ser.150.title: "The Recapture of [target_location.GetNameWithNoTooltip]"
+  flavor_ser.150.desc: "After many decades of longing and struggle, the great [target_location.GetRank.GetName] of [target_location.GetName] has finally returned to [ROOT.GetCountry.GetAdjective] hands. [target_location.GetNameWithNoTooltip], perched strategically at the confluence of the Sava and Danube rivers, holds immense value both as a fortress and as a center of commerce and culture. Its strategic location, offering unrivaled control over the region, makes it a perfect candidate for our capital city.\n\nVoices within our [ROOT.GetCountry.GetGovernment.GetCourtTitle] are growing louder, suggesting that relocating our seat of power to [target_location.GetNameWithNoTooltip] would cement our control and invigorate our nation."
+  flavor_ser.150.a: "Move the capital to [target_location.GetNameWithNoTooltip]!"
+  flavor_ser.150.b: "The [ROOT.GetCountry.GetGovernment.GetCourtTitle] shall stay in [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip]."
+  
+  flavor_ser.160.title: "Battle of [ShowProvinceDefinitionNameWithNoTooltip('kosovo_province')]"
+  flavor_ser.160.desc: "Against all odds, the brave [ROOT.GetCountry.GetAdjective] forces have achieved a monumental victory over the [GetCountry('TUR').GetAdjective] invaders in [ShowProvinceDefinitionName('kosovo_province')]. This triumph is a beacon of hope for all of Christendom, as the relentless [ShowCultureName('turkish_culture')] expansion into the [ShowRegionName('balkan_region')] region has posed a dire threat to the [ShowReligionGroupAdjective('christian')] world, casting a long shadow over our lands and people.\n\nThe courage and valor displayed by our warriors have shown that the [GetCountry('TUR').GetAdjectiveWithNoTooltip] tide can be turned. Now, with renewed vigor, we stand on the brink of a potential liberation of the entire peninsula. Let this victory be the first step towards reclaiming our homeland and securing a future free from [GetCountry('TUR').GetAdjectiveWithNoTooltip] domination."
+  flavor_ser.160.a: "Forward, to victory!"
+  flavor_ser.160.historical_info: "The Battle of Kosovo, fought on June 28th, 1389, was a significant and pivotal conflict between the Serbian-led Christian forces and the expanding Ottoman Empire. This battle took place on the Kosovo Field, near the town of Priština, and is remembered as one of the most crucial battles in the history of the Balkans. One of the most notable aspects of the Battle of Kosovo was the death of the Ottoman Sultan Murad I. According to historical accounts, Murad was assassinated in his tent by the Serbian knight Miloš Obilić, who infiltrated the Ottoman camp under the pretense of defecting. This assassination marked the only time in history that an Ottoman sultan died in battle." 
+  
+  flavor_ser.170.title: "[target_location.GetNameWithNoTooltip] - the White Phoenix"
+  flavor_ser.170.desc: "[target_location.GetName], the heart of our nation, has risen to unparalleled heights, becoming the most populous and vibrant [target_location.GetRank.GetName] in the [ShowRegionName('balkan_region')]. This transformation has earned it a nickname, the White Phoenix. From its strategic position on the confluence of the Sava and Danube rivers, [target_location.GetNameWithNoTooltip] now stands as a beacon of power and splendor, outshining even the venerable [ShowLocationName('constantinople')]."
+  flavor_ser.170.a: "Magnificent!"
+  STATIC_MODIFIER_NAME_ser_the_white_phoenix: "The White Phoenix"
+  
+  flavor_ser.180.title: "Revising the Zakonopravilo"
+  flavor_ser.180.desc: "The #italic Zakonopravilo#!, a monumental legal code compiled by Saint Sava in 1219, has long stood as the bedrock of our laws and ecclesiastical order, and its wisdom and guidance have shaped [ROOT.GetCountry.GetAdjective] society for centuries.\n\nHowever, the passage of time has brought significant changes, and many now argue that the law must be revised to reflect the evolution of our nation and address contemporary issues. This proposal has sparked intense debate. While many see the necessity of updating the law to maintain relevance and efficacy, a sizeable portion of the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] vehemently oppose any alterations to this almost holy script."
+  flavor_ser.180.a: "It is sound to revise it."
+  flavor_ser.180.b: "We must preserve its original form."
+
+  flavor_ser.190.title: "Hilandar Monastery"
+  flavor_ser.190.desc: "[ShowLocationName('mount_athos')] has once again come under [ROOT.GetCountry.GetAdjective] rule. Among its sacred monasteries stands Hilandar - a cornerstone of our national heritage, built by Stefan Nemanja and his son, Saint Sava. However, years of neglect and the passage of time have taken their toll on this venerable site. The walls that once echoed with the prayers of our forefathers now stand in need of restoration."
+  flavor_ser.190.a: "Repair the local complex."
+  flavor_ser.190.b: "We cannot afford this."
+  
+  flavor_ser.200.title: "Institutionalizing the Vidovdan"
+  flavor_ser.200.desc: "The sacrifices and valor of our ancestors in their battles against the [GetCountry('TUR').GetAdjective] oppressors have long been etched into the heart of our nation. Among these commemorations, the day of Vidovdan stands out as a poignant reminder of our struggle for independence and the bravery of those who laid down their lives for [ROOT.GetCountry.GetName]. This sacred day, traditionally observed on June 28th, marks the anniversary of the $flavor_ser.160.title$ and honors the martyrs and heroes who fought to preserve our nation's freedom.\n\nThere is a growing movement to formally institutionalize Vidovdan as an official religious and national holiday. This would ensure that the memory of our fallen heroes is eternally enshrined in our national consciousness, serving as an enduring symbol of unity."
+  flavor_ser.200.a: "Institutionalize it!"
+  flavor_ser.200.b: "We should avoid formal institutionalization."
+  
+  flavor_ser.210.title: "The [ShowLocationNameWithNoTooltip('novo_brdo')] Code"
+  flavor_ser.210.desc: "The bustling mining town of [ShowLocationName('novo_brdo')] has developed its own set of rules and practices to manage the complex operations and rights associated with its lucrative industry. As of late, there has been a growing call to adopt a comprehensive nationwide mining code based on its principles. The proposed [ShowPolicyName('novo_brdo_mining_law')] would standardize the organization of mining towns, delineate the rights and responsibilities of miners, and ensure fair practices and safety measures across [ROOT.GetCountry.GetName]."
+  flavor_ser.210.a: "Implement the mining code nationwide."
+  flavor_ser.210.b: "Maintain the current mining regulations."
+  flavor_ser.210.historical_info: "The Mining Code of Novo Brdo, established in 1412 by Stefan Lazarević, was a comprehensive set of regulations governing mining operations, workers' rights, and the organization of mining towns in medieval Serbia. It provided detailed guidelines on property rights, safety measures, and economic practices, significantly influencing the development and prosperity of mining communities."
+  STATIC_MODIFIER_NAME_ser_novo_brdo_code: "The Novo Brdo Code"
+  flavor_ser.210.tt: "Unlocks the [ShowPolicyName('novo_brdo_mining_law')] Mining Law."
+  has_unlocked_novo_brdo_tt: "Has unlocked the law via the #Y The [ShowLocationNameWithNoTooltip('novo_brdo')] Code#! [event|e]"
+  
+  flavor_ser.220.title: "[target_character.GetNameWithNoTooltip]"
+  flavor_ser.220.desc: "[target_character.GetName] and [target_character.GetHisHer] elite corps of Germanic warriors, called the Allemanic Guard, play a crucial role in safeguarding the [ROOT.GetCountry.GetFlavorRank] and enforcing [GetCharacter('ser_stefan_dusan').GetName]'s will. Under [target_character.GetHisHer] command, the Allemanic Guard has become known for their discipline, valor, and loyalty, and it stands as a symbol of strength and stability during turbulent times."
+  flavor_ser.220.a: "We are indebted to [target_character.GetHimHer]!"
+  
+  flavor_ser.230.title: "Fortifying the Golubac"
+  flavor_ser.230.desc: "The strategic Golubac Fortress, perched on the banks of the mighty Danube in [ShowLocationName('kucevo')], has long been a key defensive bastion and a vital node in our trade network. Its location at the entrance to the Danubian Gorge makes it crucial for controlling the waterways, ensuring the safety of our commerce, and repelling potential invaders. Given its important position, it would be wise to transform it into a formidable castle that would solidify our dominance over the region."
+  flavor_ser.230.a: "Invest in the fortification."
+  flavor_ser.230.b: "Our resources are better spent elsewhere."
+  
+  flavor_ser.240.title: "The Illyrian Movement"
+  flavor_ser.240.desc: "Inspired by the [ShowInstitutionName('enlightenment')] and the spirit of South [ShowCultureGroupName('slavic_group')] unity, the Illyrian Movement advocates for the creation of a unified homeland for all Slavs, free from the yoke of foreign oppressors. The Illyrian thinkers and activists, with their compelling vision of a united and independent [ShowCultureGroupNameWithNoTooltip('slavic_group')] nation, have captured the imagination of our people, spreading their ideals throughout [ROOT.GetCountry.GetName].\n\nThe movement's call for unity and liberation resonates deeply with our national aspirations. However, it also poses significant challenges, as the pursuit of such a vision might provoke the non-[ShowCultureGroupNameWithNoTooltip('slavic_group')] population of our country."
+  flavor_ser.240.a: "South-[ShowCultureGroupNameWithNoTooltip('slavic_group')] unity is our utmost priority!"
+  flavor_ser.240.b: "This could destabilize us."
+  flavor_ser.240.historical_info: "The Illyrian Movement was a 19th-century political and cultural campaign aimed at fostering South Slavic unity and national consciousness among Croats, Slovenes, and Serbs. Inspired by the Enlightenment and Romantic nationalism, it sought to revive and promote Slavic languages and culture, laying the groundwork for future efforts towards political unification and independence from foreign rule."
+  
+  flavor_ser.250.title: "[target_character.GetNameWithNoTooltip]"
+  flavor_ser.250.desc: "[target_character.GetName], appointed as the esteemed head of the [ROOT.GetCountry.GetAdjective] Patriarchate, stands as a pillar of spiritual strength for our nation. Under [target_character.GetHisHer] leadership, [ROOT.GetCountry.GetName] shines brightly as a bastion of Christendom, fostering unity and moral guidance among our people. [target_character.GetHisHer|U] steadfast commitment to religious integrity and wisdom has elevated [ROOT.GetCountry.GetNameWithNoTooltip]'s influence in the [ShowReligionAdjective('orthodox')] world."
+  flavor_ser.250.a: "A true champion of Christ!"
+  flavor_ser.250.historical_info: "Sokolović was historically significant as the Serbian Patriarch during a critical period of Ottoman rule. He played a pivotal role in preserving Serbian Orthodox traditions and identity, providing spiritual guidance and leadership amidst political upheaval. Makarije's tenure laid the foundation for the resilience of Serbian Orthodoxy and contributed to the cultural and religious continuity of the Serbian people under Ottoman domination."
+  
+  
+  
+  
+  
+  
+  
+  

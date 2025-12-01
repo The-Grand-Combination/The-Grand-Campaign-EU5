@@ -1,0 +1,9 @@
+﻿l_english:
+ flavor_orm_oma.1.title: "Nabhan Control of Oman"
+ flavor_orm_oma.1.desc: "The Omani Coastline that our ancestors extended our rule over is unruly and poor; we have very low [control|e] over it, making it a source of problems and rebellions.\n\nTo add to this complicated situation, the [ShowDynastyName('nabhani_dynasty')] have shown their interest in it, growing the tension on the already tenuous border. Luckily, our diplomats are confident they can arrange a treaty that will avoid a potential border conflict and save our finances in the long term."
+ flavor_orm_oma.1.a: "Give it to the Nabhani"
+ flavor_orm_oma.1.b: "Its our land!"
+
+ flavor_orm_oma.2.title: "$flavor_orm_oma.1.title$"
+ flavor_orm_oma.2.desc: "Diplomats from [GetCountry('ORM').GetLongName] have approached our court with a proposal. To avoid any border conflicts between our people, they are willing to give up control over all [ShowCultureName('omani_culture')] land that they possess. They only ask in return that our nations remain friends and that peaceful coexistence can be maintained."
+ flavor_orm_oma.2.a: "We graciously accept"

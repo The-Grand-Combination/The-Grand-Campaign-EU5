@@ -1,0 +1,306 @@
+﻿tribal_legal_basis_law = {
+	law_category = administrative
+    potential = { has_tribal_government = yes }
+    allow = { has_tribal_government = yes }
+    codified_power_policy = {
+        country_modifier = {
+            global_estate_target_satisfaction = small_permanent_target_satisfaction
+        }
+		years = 2
+    }
+    strong_community_customs_policy = {
+        country_modifier = {
+            improve_relation_impact = 0.1
+            monthly_towards_communalism = societal_value_monthly_move
+        }
+        estate_preferences = {
+			peasants_estate
+		}
+		years = 2
+    }
+    yassa_decree_policy = {
+        potential = { government_type = government_type:steppe_horde }
+        country_modifier = {
+            monthly_towards_decentralization = societal_value_monthly_move
+            global_distance_from_capital_cost_modifier = -0.025
+        }
+        estate_preferences = {
+			nobles_estate
+		}
+		years = 2
+    }
+
+    brehon_law_policy = {
+		potential = {
+			OR = {
+				culture.language = language:gaelic_language
+				capital.region = region:ireland_region
+			}
+		}
+		allow = {			
+			has_embraced_institution = institution:legalism
+		}
+		country_modifier = {
+			monthly_towards_free_subjects = societal_value_monthly_move
+			tax_income_efficiency = large_tax_income_efficiency_bonus
+			global_distance_from_capital_cost_modifier = 0.025
+		}
+        estate_preferences = {
+			peasants_estate
+            burghers_estate
+		}
+		years = 2
+	}
+
+}
+
+tribal_organization_law = {
+	law_category = administrative
+    potential = { has_tribal_government = yes }
+    allow = { has_tribal_government = yes }
+
+    centralized_tribe_policy = {
+        country_modifier = {
+            global_monthly_control = 0.001
+        }
+        estate_preferences = {
+			crown_estate
+		}
+		years = 2
+    }
+    federal_tribe_policy = {
+        country_modifier = {
+            global_distance_from_capital_cost_modifier = -0.1
+        }
+        estate_preferences = {
+			peasants_estate
+		}
+		years = 2
+    }
+    clan_council_policy = {
+        country_modifier = {
+            country_cabinet_efficiency = 0.05
+        }
+        estate_preferences = {
+			clergy_estate
+		}
+		years = 2
+    }
+    steppe_warbands_policy = {
+        potential = { government_type = government_type:steppe_horde }
+        country_modifier = {
+            monthly_towards_serfdom = societal_value_monthly_move
+            global_manpower_modifier = 0.1
+        }
+        estate_preferences = {
+			nobles_estate
+		}
+		years = 2
+    }
+
+    jurchen_council = {
+        
+        potential = {
+            has_tribal_government = yes
+            culture = { has_culture_group = culture_group:jurchen_group }
+        }
+        country_modifier = {
+            monthly_towards_centralization = societal_value_minor_monthly_move
+            war_no_cb_cost_modifier = -0.1
+            monthly_tribal_cohesion = -0.03
+            army_cavalry_maintenance_cost_modifier = -0.25
+        }
+        estate_preferences = {
+			nobles_estate
+            crown_estate
+		}
+    
+        years = 2
+    }
+}
+
+tribal_religious_values_law = {
+	law_category = religious
+    potential = { has_tribal_government = yes }
+    allow = { has_tribal_government = yes }
+
+    religious_tribe_policy = {
+        country_modifier = {
+            global_pop_conversion_speed = 0.01
+        }
+        estate_preferences = {
+			clergy_estate
+		}
+		years = 2
+    }
+    lip_service_policy = {
+        country_modifier = {
+            stability_cost = -0.1
+        }
+        estate_preferences = {
+			peasants_estate
+			burghers_estate
+		}
+		years = 2
+    }
+    complete_religious_autonomy_policy = {
+        country_modifier = {
+            army_maintenance_cost = -0.1
+        }
+		estate_preferences = {
+			peasants_estate
+			burghers_estate
+		}
+		years = 2
+    }
+}
+
+tribal_migration_law = {
+	law_category = socioeconomic
+    potential = { has_tribal_government = yes country_type = pop }
+    allow = { has_tribal_government = yes country_type = pop }
+
+    frequent_migration_policy = {
+        country_modifier = {
+            army_movement_speed = 0.1
+            migrate_pop_based_country_cost_modifier = -0.25
+        }
+		estate_preferences = {
+			nobles_estate
+		}
+        years = 2
+    }
+    seasonal_travel_policy = {
+        country_modifier = {
+            migrate_pop_based_country_cost_modifier = -0.5
+        }
+		estate_preferences = {
+			burghers_estate
+		}
+        years = 2
+    }
+    permanent_settlement_policy = {
+        allow = {
+            capital = { OR = { owner = root has_owner = no } }
+        }
+        country_modifier = {
+            stability_decay = 0.001
+            migrate_pop_based_country_cost_modifier = 1
+        }
+		estate_preferences = {
+			clergy_estate
+		}
+        on_fully_activated = {
+            change_country_type = location
+        }
+        years = 5
+    }
+}
+
+tribal_cultural_identity_law = {
+	law_category = socioeconomic
+    potential = { has_tribal_government = yes }
+    allow = { has_tribal_government = yes }
+
+    dynastic_lineage_policy = {
+        country_modifier = {
+            monthly_towards_centralization = societal_value_monthly_move
+            global_crown_estate_power = 0.1
+        }
+		estate_preferences = {
+			crown_estate
+		}
+        years = 20
+    }
+    rule_by_the_public_policy = {
+        country_modifier = {
+            monthly_towards_communalism = societal_value_monthly_move
+            stability_decay = -0.00025
+        }
+		estate_preferences = {
+			peasants_estate
+		}
+        years = 20
+    }
+    state_of_faith_policy = {
+        country_modifier = {
+            monthly_towards_traditionalist = societal_value_monthly_move
+            tolerance_own = 1
+        }
+		estate_preferences = {
+			clergy_estate
+		}
+        years = 20
+    }
+    tribal_identity_policy = {
+        country_modifier = {
+            monthly_towards_traditional_economy = societal_value_monthly_move
+            monthly_tribal_cohesion = 0.5
+        }
+		estate_preferences = {
+			peasants_estate
+			nobles_estate
+		}
+        years = 2
+    }
+}
+
+tribal_modernization_law = {
+	law_category = socioeconomic
+    potential = { has_tribal_government = yes }
+    allow = { 
+        has_tribal_government = yes 
+        NOT = { has_policy = tribal_identity_policy } 
+        country_type = location
+        gold >= 100
+    }
+
+    modernize_into_monarchy_policy = {
+        allow = { has_policy = dynastic_lineage_policy }
+        years = 20
+        country_modifier = {
+            monthly_towards_aristocracy = societal_value_large_monthly_move
+            monthly_tribal_cohesion = -1
+        }
+		estate_preferences = {
+			nobles_estate
+		}
+        on_fully_activated = {
+			add_government_power = government_power_extreme_bonus
+            add_gold = -100
+            change_government_type = government_type:monarchy
+        }
+    }
+    modernize_into_republic_policy = {
+        allow = { has_policy = rule_by_the_public_policy }
+        years = 20
+        country_modifier = {
+            monthly_towards_plutocracy = societal_value_large_monthly_move
+            monthly_tribal_cohesion = -1
+        }
+		estate_preferences = {
+			burghers_estate
+		}
+        on_fully_activated = {
+			add_government_power = government_power_extreme_bonus
+            add_gold = -100
+            change_government_type = government_type:republic
+        }
+    }
+    modernize_into_theocracy_policy = {
+        allow = { has_policy = state_of_faith_policy }
+        years = 20
+        country_modifier = {
+            monthly_towards_spiritualist = societal_value_large_monthly_move
+            monthly_tribal_cohesion = -1
+        }
+		estate_preferences = {
+			clergy_estate
+		}
+        on_fully_activated = {
+			add_government_power = government_power_extreme_bonus
+            add_gold = -100
+            change_government_type = government_type:theocracy
+        }
+    }
+}

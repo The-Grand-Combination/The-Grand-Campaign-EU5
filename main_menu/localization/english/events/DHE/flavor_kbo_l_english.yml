@@ -1,0 +1,88 @@
+﻿l_english:
+ flavor_kbo.2.title: "Founding of [target_location.GetNameWithNoTooltip]"
+ flavor_kbo.2.desc: "While [ShowAreaName('bornu_area')] is a rich area fully worthy to be the capital of our kingdom, defending it has always been a problem. From the east, our old enemies the [target_country.GetName] frequently raid our lands, and frequent succession wars also highlight the need for a more fortified capital.\n\nPlans have been drawn up for the creation of a fortified city past the western shore of Lake Chad in [target_location.GetName] to ensure the future safety of our dynasty."
+ flavor_kbo.2.a: "Build [target_location.GetNameWithNoTooltip]."
+ flavor_kbo.2.b: "Our current capital is fine."
+ 
+  
+ flavor_kbo.3.title: "Enforcing Islamic Orthodoxy"
+ flavor_kbo.3.desc: "While our Islamic [ROOT.GetCountry.GetFlavorRank] is one of the oldest in this region, [ROOT.GetCountry.GetReligion.GetName] is even among the upper classes an unorthodox and syncretic religion. Inspired by the many learned men who come to our capital, we have been considering conducting a purge of the religious syncretism, especially among the aristocracy and the members of the [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetName] dynasty. As its more conflicting lines get some of their support from heathens, we can only hope that this will perhaps also lessen the political instability of our country."
+ flavor_kbo.3.a: "No more syncretism!"
+ flavor_kbo.3.b: "Let us not go overboard with this."
+ 
+ flavor_kbo.6.title: "Reforms of [target_character.GetNameWithNoTooltip]"
+ flavor_kbo.6.desc: "Inspired by what [target_character.GetSheHe] has seen on [target_character.GetHerHis] Ḥajj, [target_character.GetName] decided that the [ROOT.GetCountry.GetLongName] must modernize its army and economy. [target_character.GetSheHe|U] has already begun to take steps to strengthen our cavalry arm, invite [ShowCultureName('turkish_culture')] gunners and adopt the administrative techniques he has seen among our Muslim brothers between here and [ShowLocationName('mecca')]."
+ flavor_kbo.6.a: "Reform both the economy and the army."
+ flavor_kbo.6.b: "Focus on the Army."
+ flavor_kbo.6.c: "Focus on the Economy."
+ flavor_kbo.6.d: "Focus on Administration."
+ flavor_kbo.6.historical_info: "Idris Alooma was the Mai of the Kanem-Bornu Empire from 1564 to 1596. He was excellent in both administrative and military affairs and brought his country to unprecedented heights. He introduced many reforms based on the $sharia$, the Islamic Law, and many military innovations and army reorganization. Maintaining diplomatic relations with both the Ottoman and the Moroccan Sultanates, the routes from Lake Chad to the Mediterranian became flourishing with trade under his reign."
+
+ flavor_kbo.7.title: "Thorns of the [ROOT.GetCountry.GetGovernment.GetAdjective|U] Crown"
+ flavor_kbo.7.desc: "Despite our dominance over our foes, past and present, there are many within our nation who wish to see our great palaces burn and our people perish. Be wary of the jackals amongst us, for they will strike at a moment of weakness, ready to tear apart what we have built. We must seek wise counsel and determine a steady course of action, lest we risk falling pray to these power-hungry vultures."
+ flavor_kbo.7.a: "If it is a civil war they want, let them come!"
+ flavor_kbo.7.b: "Let us not risk open rebellions..."
+ kbo_pop_50_everywhere_tt: "Our [pops|e] everywhere will lose [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] [pop_satisfaction|e]"
+ kbo_location_25_control_everywhere_tt: "Every [location|e] we own will lose [ShowNamedValue('control_severe_penalty')|+=2%] [control|e]"
+
+ flavor_kbo.8.title: "[ROOT.GetCountry.GetGovernment.GetRulerTitle] & Warrior?"
+ flavor_kbo.8.desc: "Our [ROOT.GetCountry.GetGovernment.GetRulerTitle]s lead their troops from the front, a tradition which is deeply rooted in our culture and traditions. This courageous practice showcases our unwavering commitment and inspires our soldiers to fight with utmost bravery. However, doing so exposes our [ROOT.GetCountry.GetGovernment.GetRulerTitle] to immense dangers, placing their lives directly on the line amidst the chaos of battle.\n\nDespite the risks involved, this leadership style is a cherished part of the people's heritage, symbolizing our embodiment of honor, valor, and sacrifice for the greater good of our folk. It serves as a powerful testament to our unyielding dedication to protect and lead the people."
+ flavor_kbo.8.a: "[ROOT.GetCountry.GetGovernment.GetRuler.GetShortNameWithNoTooltip] will cower from no enemy!"
+ flavor_kbo.8.b: "[ROOT.GetCountry.GetGovernment.GetRuler.GetSheHe|U] should strategize!"
+ flavor_kbo.8.c: "[ROOT.GetCountry.GetGovernment.GetRuler.GetShortNameWithNoTooltip] can focus on many things at once."
+
+ flavor_kbo.9.title: "Trade Through the Sahel"
+ flavor_kbo.9.desc: "Merchants from far away, carrying ornate objects and exotic goods, have occasionally made their way into our market. Despite our settlements north into the desert, we have hardly paid any attention to funneling more diverse trade through these corridors. Perhaps it would be wise to shift our mercantile efforts and use the sandy paths that lead to contact with the [ShowRegionName('maghreb_region')]."
+ flavor_kbo.9.a: "Open trade with the Northerners is the way to go."
+ flavor_kbo.9.b: "We cannot risk foreign influence on our own merchants!"
+ kanem_presence_key: "Open Kanembu Markets"
+
+ flavor_kbo.10.title: "Legalism and Islam in [ROOT.GetCountry.GetNameWithNoTooltip]"
+ flavor_kbo.10.desc: "Our great nation was one of the earliest countries in our region to embrace [ShowReligionName('sunni')] and integrate its many facets into every aspect of our society. Despite dissenting voices during that time, the transition has come to greatly benefit our people in the long term, establishing relations with foreign like-minded rulers and opening up lucrative trade opportunities.\n\nOnce again, the time has come to delegate our priorities in embracing the aspects of legalism and choose whether or not we wish to integrate them into our current society."
+ flavor_kbo.10.a: "We would be wise to cultivate this institution."
+ flavor_kbo.10.b: "Let us not interact with the current status quo..."
+
+ flavor_kbo.11.title: "Relocation of the [target_pop.GetCulture.GetNameWithNoTooltip]"
+ flavor_kbo.11.desc: "Our [ROOT.GetCountry.GetLongName] is built upon the previous achievements of the Duguwa dynasty, members of the [target_pop.GetCulture.GetName]. Their kingdom wasn't strong enough and it quickly crumbled under our [ShowCultureName('kanembu_culture')] ancestors coming from the north. They then replaced the Duguwa and established our current [ROOT.GetCountry.GetFlavorRank].\n\nHowever, many of the [target_pop.GetCulture.GetNameWithNoTooltip] live still within our borders, and for some that would question our legitimacy as rulers. It would be wise if we remove this problem before it becomes too big of a risk."
+ flavor_kbo.11.a: "Offer them an 'alternative' place to settle."
+ flavor_kbo.11.b: "Let them be."
+ kbo_zaghawa_angry_tt: "Every [pop|e] of [ShowCultureName('zaghawa_culture')] will lose [ShowNamedValue('pop_satisfaction_mild_penalty')|+=2%] [pop_satisfaction|e]"
+
+ flavor_kbo.12.title: "Legacy of the [ROOT.GetCountry.GetLongNameWithNoTooltip]"
+ flavor_kbo.12.desc: "The recent times have really taken a toll on our glorious people. The constant conflicts with the [ShowCultureName('bilala_culture')] and the [ShowCultureName('sao_culture')] have eroded our country like a pest. The last nail in the coffin was the loss of the province of [target_lost_province.GetName], once an integral part of our territory and identity, which now lies unquestionably beyond our reach. Do we really have the right to keep calling ourselves the [ROOT.GetCountry.GetLongNameWithNoTooltip] if we do not control [target_lost_province.GetName]?"
+ flavor_kbo.12.bad.desc: "Dark times are upon us. The recent crises have taken a toll on the previously glorious [ROOT.GetCountry.GetLongName], and we have not emerged from them unscathed. Some may say that we are but a shell of our former selves, and seeing the recent losses of [ShowProvinceDefinitionName('kanem_province')] and [ShowProvinceDefinitionName('bornu_province')], once an integral part of our territory and identity, those voices may be right. Are we doomed to disappear into obscurity or will we manage to rise from our ashes?"
+ flavor_kbo.12.a: "We must accept our fate."
+ flavor_kbo.12.b: "We are not dead yet."
+ flavor_kbo.12_become_bornu_tt: "We will became the #W $BNU_ADJ$ [GetCountry('KBO').GetFlavorRank]#!"
+
+ flavor_kbo.13.title: "The Reconquest of [ShowProvinceDefinitionName('kanem_province')]"
+ flavor_kbo.13.desc: "After being expelled from our ancestral lands of [ShowProvinceDefinitionName('kanem_province')] and having to suffer the ignominy of being reduced to a shadow of our former glory, we have managed to retake those lands from our enemies. With the province of [ShowProvinceDefinitionName('kanem_province')] and [ShowLocationName('njimi')] once again firmly within our grasp, we can recover our past splendor and become the unquestioned ruler of all the area around Lake Chad."
+ flavor_kbo.13.a: "Glory to us!"
+
+ flavor_kbo.14.title: "Lake Chad and the $kanembu_culture$ Trade"
+ flavor_kbo.14.desc: "For centuries, our people have benefited from being present among bodies of water. Across the deserts within our domain, pockets of life filled with valuable water are important havens for our traveling merchants and locals to profit and get sustenance from. As our grasp around Lake Chad grows, so does our income from various mercantile activities around its shorelines."
+ flavor_kbo.14.a: "We must seize this opportunity."
+ flavor_kbo.14.b: "We cannot abide by the wishes of the merchants..."
+
+ flavor_kbo.15.title: "The Slave Trade in [ROOT.GetCountry.GetNameWithNoTooltip]"
+ flavor_kbo.15.desc: "As it happens in various parts of the continent, so too our economy depends largely on the influx and utility of forced labor. The frequent raids propped up by our army and local warlords supply our markets with fresh manpower to serve in every corner of our society. However, due to our recent advances and investment in these activities, we have accumulated a profound number of these people. Thus, it befalls on us to decide whether we wish to continue investing in these raids and magnify the flow of conquered people within or market or decide to grant them a position within our society and allow them to flourish as part of it."
+ flavor_kbo.15.a: "Let us work to integrate all in our society."
+ flavor_kbo.15.b: "Our economy will greatly benefit from this trade."
+ kbo_pop_promotion_more_potent_tt: "We will gain access to the [ShowCabinetActionName('kbo_pop_promote_action')] unique [cabinet|e] action"
+ 
+ flavor_kbo.16.title: "Azalai & Taghlamt"
+ flavor_kbo.16.desc: "For centuries, after the introduction of the camel in Western and Central Africa, many traders have taken it upon themselves to traverse the adverse environments in search of profits and mercantile adventures using routes such as the Azalai or Taghlamt. Known as the Amenokal, these powerful individuals would oversee and travel across the desert, from oasis to oasis, linking faraway locations and trading valuable [ShowGoodsName('salt')]. In these markets, salt would be sold in slabs or bricks in exchange for food, cattle, and other important commodities. Whether to give such a privileged overseeing position to powerful individuals or not is a delicate matter, and one that would require our most trusted advisors to handle."
+ flavor_kbo.16.a: "Let the Amenokal of each caravan oversee their trade."
+ flavor_kbo.16.b: "This authority is reserved for [ROOT.GetCountry.GetGovernment.GetRuler.GetName]!"
+
+ flavor_kbo.17.title: "$sharia$ in [ROOT.GetCountry.GetNameWithNoTooltip]"
+ flavor_kbo.17.desc: "Our great nation has been one of the oldest and fastest adopters of [ShowReligionAdjective('sunni')] Islam. With a newfound vigor for true belief and armed with relentless energy, we have done our best to consolidate our religious values and defend our people from prying heathens. However, one aspect of our faith that has not taken hold just yet, is the $sharia$. A collection of religious laws that may dictate the efficiency of our administration, as well as the effect it may have on our people. Whilst many of our advisors are in favor of implementing the $sharia$, others caution against intertwining religion and administration."
+ flavor_kbo.17.a: "Implementing the $sharia$ is the next logical step!"
+ flavor_kbo.17.b: "Let us not upset the status quo."
+ kbo_enable_sharia_courts_cabinet_action_tt: "We will gain access to the [ShowCabinetActionName('kbo_sharia_courts')] unique [cabinet|e] action"
+
+ #Tooltips
+ gained_access_to_this_privilege_tt: "Has gained access to this privilege"
+
+ 
+ 

@@ -1,0 +1,30 @@
+﻿l_english:
+
+ flavor_sale_of_lusatia.1000.title: "The Pledge of [GetCountry('SOR').GetNameWithNoTooltip]"
+ flavor_sale_of_lusatia.1000.desc: "The [GetCountry('SOR').GetLongName], which we acquired with our inheritance after the death of [GetCharacter('bra_heinrich_ii_askanier').GetName], has no great value for [target_ruler.GetName] and [target_ruler.GetHerHis] ambitions in [ROOT.GetCountry.GetCapital.GetName]. Previously, we reached an agreement with the [GetCountry('MEI').GetLongName], pledging the rights to [GetCountry('SOR').GetNameWithNoTooltip] to them. As foreign powers eye [GetCountry('SOR').GetNameWithNoTooltip] up as a avenue for their own expansion, it could be more beneficial to renew this agreement, and gaining money from it now instead of being shackled to the burden of defending it from foreign aggression."
+ flavor_sale_of_lusatia.1000.a: "Send a diplomat to [GetCountry('MEI').GetCapital.GetNameWithNoTooltip]!"
+ flavor_sale_of_lusatia.1000.a.tt: "[GetCountry('MEI').GetName] will be able to purchase [GetCountry('SOR').GetName] for a significant amount of money, transferring the [subject|e] relation to them for 10 years. However, [target_ruler.GetName] will remain the [ruler|e] of [GetCountry('SOR').GetNameWithNoTooltip]."
+ flavor_sale_of_lusatia.1000.b: "We can not part ways with it, not even temporarily."
+ flavor_sale_of_lusatia.1000.historical_info: "The Margraviate of Lusatia was pledged to the Margraviate of Meißen in 1353, renewing an old pledge of 1323. The Pledge was agreed upon to run for 10 years, giving Meißen access to the revenue of Lusatia, while the Wittelsbacher remained the nominal rulers."
+
+ flavor_sale_of_lusatia.1001.desc: "The [GetCountry('BRA').GetLongName] has offered us to renew the old pledge of [GetCountry('SOR').GetName] for ten years. While they demand a significant payment, this could be a splendid opportunity to acquire more influence in old [target_ruler_meissen.GetDynasty.GetName] lands."
+ flavor_sale_of_lusatia.1001.a: " [ROOT.GetCountry.Custom('common_string_positive')]"
+ flavor_sale_of_lusatia.1001.b: "We are in no need of that land."
+
+ flavor_sale_of_lusatia.1100.title: "The Matter of [GetCountry('SOR').GetNameWithNoTooltip]"
+ flavor_sale_of_lusatia.1100.desc_normal: "The [GetCountry('SOR').GetLongName] is now supposed to return into our fold, as the pledge has completed.\n\nHowever, it remains a possession that offers us little value and selling the lands could give us necessary financial backing for more important issues. We could explore the option to sell the title altogether, ridding us of the troublesome land. Surely many would be interested in acquiring [GetCountry('SOR').GetName] and our good relations with [target_buyer.GetName] make them a trustworthy option."
+ flavor_sale_of_lusatia.1100.desc_fallback: "The pledge of [GetCountry('SOR').GetName] has run its course but unfortunately it has ceased to exist in the possession of foreign fools. We have few legal options to regain those lands now."
+ flavor_sale_of_lusatia.1100.a: "Approach [target_buyer.GetName] with the offer."
+ flavor_sale_of_lusatia.1100.b: "We are done with selling lands."
+ flavor_sale_of_lusatia.1100.c: "We will get our rightful land back!"
+ flavor_sale_of_lusatia.1100.d: "A lapse of judgement, perhaps."
+ flavor_sale_of_lusatia.1100.historical_info: "After the Pledge of 1353 had run its course, Otto von Wittelsbach sold the title and lands of the Margraviate of Lusatia to the Crown of Bohemia, which accepted the offer. Lusatia entered the domain of Bohemia, unifying Upper and Lower Lusatia once again under one rule."
+
+ flavor_sale_of_lusatia.1101.desc: "With the pledge of [GetCountry('SOR').GetName] to [GetCountry('MEI').GetName] ending, [GetCountry('BRA').GetName] has decided to offer us a full purchase of the [GetCountry('SOR').GetLongNameWithNoTooltip]. While the price is certainly steep, it could be a lucrative investment for us."
+ flavor_sale_of_lusatia.1101.a: "We accept it!"
+ flavor_sale_of_lusatia.1101.b: "This sounds like a bad investment."
+
+ flavor_sale_of_lusatia.1102.title: "Offer Rejected"
+ flavor_sale_of_lusatia.1102.desc: "[target_buyer.GetName] has rejected our offer! [GetCountry('SOR').GetName] will return to our rule as stated in the original pledge and they will pay their vassal fees to us again."
+ flavor_sale_of_lusatia.1102.a: "[ROOT.GetCountry.Custom('common_string_ok')]"
+ 

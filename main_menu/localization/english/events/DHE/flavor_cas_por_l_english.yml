@@ -1,0 +1,11 @@
+﻿l_english:
+ flavor_cas_por.1.title: "Royal Fifth"
+ flavor_cas_por.1.desc_common: "The [ROOT.GetCountry.GetGovernment.GetRulerTitle], as the sole ruler of [ROOT.GetCountry.GetName], is entitled to all the natural goods and wealth that is within the [ROOT.GetCountry.GetFlavorRank]. It is why all of natural resources extracted by the [ROOT.GetCountry.GetAdjectiveWithNoTooltip] citizens rightfully belong to [target_character.GetName]. However, if everybody had to give up their goods to the government, there would be no incentive to actually conduct those mining operations and this is why we have decided to extract the resources in the [ShowPolicyName('royal_fifth_law')]."
+ flavor_cas_por.1.desc: "$flavor_cas_por.1.desc_common$\n\nThe topic of the tax has come up again, as it is about to become a lot more important due to the expanding extraction of [target_goods.GetName] in [target_location.GetName]. Local viceroys have been reluctant to enforce the tax believing it would stifle production."
+ flavor_cas_por.1.a: "Enforce the [ShowPolicyNameWithNoTooltip('royal_fifth_law')]."
+ flavor_cas_por.1.b: "Do not disrupt their operations."
+
+ flavor_cas_por.2.title: "$flavor_cas_por.1.title$"
+ flavor_cas_por.2.desc: "$flavor_cas_por.1.desc_common$\n\nThe recent discovery of [target_goods.GetName] in [target_location.GetName] has brought the topic of this tax back to the table, as the local viceroy is demanding the mine managers follow the tax, which has been largely relevant until now. Several advisors to the [ROOT.GetCountry.GetGovernment.GetRulerTitle] are arguing that it could harm the production of the resource."
+ flavor_cas_por.2.a: "$flavor_cas_por.1.a$"
+ flavor_cas_por.2.b: "Forget about it for now."

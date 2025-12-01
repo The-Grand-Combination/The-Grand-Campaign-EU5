@@ -1,0 +1,722 @@
+﻿nature_tenet = {
+	type = international_organization
+	law_category = religious
+	requires_vote = no
+	potential = {
+		international_organization_type = international_organization_type:autocephalous_patriarchate
+	}
+	allow = {
+		
+	}
+
+	locked = {
+		custom_tooltip = {
+			text = fundamental_law_tt
+			OR = {
+				AND = {
+					var:religion ?= religion:orthodox
+					international_organization_has_policy = policy:dual_nature
+				}
+				AND = {
+					var:religion ?= religion:miaphysite
+					international_organization_has_policy = policy:composite_nature
+				}
+				AND = {
+					var:religion ?= religion:nestorianism
+					international_organization_has_policy = policy:separate_nature
+				}
+			}
+		}
+	}
+
+	single_nature = {
+		years = 1
+		price = christian_tenet_price
+		allow = {
+			var:religion ?= {
+				NOR = {
+					this = religion:orthodox
+					this = religion:miaphysite
+					this = religion:nestorianism
+				}
+			}
+		}
+		on_activate = {
+			custom_tooltip = {
+				text = change_maintenance_tt
+				every_international_organization_member = {
+					set_variable = enable_single_nature_pm_variable
+					if = {
+						limit = { has_variable = enable_composite_nature_pm_variable }
+						remove_variable = enable_composite_nature_pm_variable
+					}
+					if = {
+						limit = { has_variable = enable_dual_nature_pm_variable }
+						remove_variable = enable_dual_nature_pm_variable
+					}
+					if = {
+						limit = { has_variable = enable_separate_nature_pm_variable }
+						remove_variable = enable_separate_nature_pm_variable
+					}
+				}
+			}
+		}
+		country_modifier = {
+			#leader benefits
+			potential_trigger = {
+				is_leader_of_international_organization_of_type = {
+					type = autocephalous_patriarchate
+				}
+			}
+			cultures_capacity_modifier = 0.1
+		}
+		country_modifier = {
+			#benefits for all members
+			potential_trigger = {
+				NOT = {
+					is_leader_of_international_organization_of_type = {
+						type = autocephalous_patriarchate
+					}
+				}
+			}
+			cultures_capacity_modifier = 0.05
+		}
+	}
+
+	composite_nature = {
+		years = 1
+		price = christian_tenet_price
+		allow = {
+			var:religion ?= religion:miaphysite
+		}
+		on_activate = {
+			custom_tooltip = {
+				text = change_maintenance_tt
+				every_international_organization_member = {
+					set_variable = enable_composite_nature_pm_variable
+					if = {
+						limit = { has_variable = enable_single_nature_pm_variable }
+						remove_variable = enable_single_nature_pm_variable
+					}
+					if = {
+						limit = { has_variable = enable_dual_nature_pm_variable }
+						remove_variable = enable_dual_nature_pm_variable
+					}
+					if = {
+						limit = { has_variable = enable_separate_nature_pm_variable }
+						remove_variable = enable_separate_nature_pm_variable
+					}
+				}
+			}
+		}
+		country_modifier = {
+			#leader benefits
+			potential_trigger = {
+				is_leader_of_international_organization_of_type = {
+					type = autocephalous_patriarchate
+				}
+			}
+			diplomatic_capacity = 0.5
+		}
+		country_modifier = {
+			#benefits for all members
+			potential_trigger = {
+				NOT = {
+					is_leader_of_international_organization_of_type = {
+						type = autocephalous_patriarchate
+					}
+				}
+			}
+			diplomatic_capacity = 0.2
+		}
+	}
+
+	dual_nature = {
+		years = 1
+		price = christian_tenet_price
+		allow = {
+			var:religion ?= religion:orthodox
+		}
+		on_activate = {
+			custom_tooltip = {
+				text = change_maintenance_tt
+				every_international_organization_member = {
+					set_variable = enable_dual_nature_pm_variable
+					if = {
+						limit = { has_variable = enable_single_nature_pm_variable }
+						remove_variable = enable_single_nature_pm_variable
+					}
+					if = {
+						limit = { has_variable = enable_composite_nature_pm_variable }
+						remove_variable = enable_composite_nature_pm_variable
+					}
+					if = {
+						limit = { has_variable = enable_separate_nature_pm_variable }
+						remove_variable = enable_separate_nature_pm_variable
+					}
+				}
+			}
+		}
+		country_modifier = {
+			#leader benefits
+			potential_trigger = {
+				is_leader_of_international_organization_of_type = {
+					type = autocephalous_patriarchate
+				}
+			}
+			stability_investment = small_stability_investment
+		}
+		country_modifier = {
+			#benefits for all members
+			potential_trigger = {
+				NOT = {
+					is_leader_of_international_organization_of_type = {
+						type = autocephalous_patriarchate
+					}
+				}
+			}
+			stability_investment = tiny_stability_investment
+		}
+	}
+
+	separate_nature = {
+		years = 1
+		price = christian_tenet_price
+		allow = {
+			var:religion ?= religion:nestorianism
+		}
+		on_activate = {
+			custom_tooltip = {
+				text = change_maintenance_tt
+				every_international_organization_member = {
+					set_variable = enable_separate_nature_pm_variable
+					if = {
+						limit = { has_variable = enable_single_nature_pm_variable }
+						remove_variable = enable_single_nature_pm_variable
+					}
+					if = {
+						limit = { has_variable = enable_dual_nature_pm_variable }
+						remove_variable = enable_dual_nature_pm_variable
+					}
+					if = {
+						limit = { has_variable = enable_composite_nature_pm_variable }
+						remove_variable = enable_composite_nature_pm_variable
+					}
+				}
+			}
+		}
+		country_modifier = {
+			#leader benefits
+			potential_trigger = {
+				is_leader_of_international_organization_of_type = {
+					type = autocephalous_patriarchate
+				}
+			}
+			global_pop_conversion_speed_modifier = 0.1
+		}
+		country_modifier = {
+			#benefits for all members
+			potential_trigger = {
+				NOT = {
+					is_leader_of_international_organization_of_type = {
+						type = autocephalous_patriarchate
+					}
+				}
+			}
+			global_pop_conversion_speed_modifier = 0.05
+		}
+	}
+}
+
+christology = {
+	type = international_organization
+	law_category = religious
+	requires_vote = no
+	potential = {
+		international_organization_type = international_organization_type:autocephalous_patriarchate
+	}
+	allow = {
+		
+	}
+
+	high_christology = {
+		years = 1
+		price = christian_tenet_price
+		country_modifier = {
+			#leader benefits
+			potential_trigger = {
+				is_leader_of_international_organization_of_type = {
+					type = autocephalous_patriarchate
+				}
+			}
+			tolerance_own = 0.5
+		}
+		country_modifier = {
+			#benefits for all members
+			potential_trigger = {
+				NOT = {
+					is_leader_of_international_organization_of_type = {
+						type = autocephalous_patriarchate
+					}
+				}
+			}
+			tolerance_own = 0.25
+		}
+	}
+
+	low_christology = {
+		years = 1
+		price = christian_tenet_price
+		country_modifier = {
+			#leader benefits
+			potential_trigger = {
+				is_leader_of_international_organization_of_type = {
+					type = autocephalous_patriarchate
+				}
+			}
+			clergy_estate_target_satisfaction = medium_permanent_target_satisfaction
+		}
+		country_modifier = {
+			#benefits for all members
+			potential_trigger = {
+				NOT = {
+					is_leader_of_international_organization_of_type = {
+						type = autocephalous_patriarchate
+					}
+				}
+			}
+			clergy_estate_target_satisfaction = small_permanent_target_satisfaction
+		}
+	}
+}
+
+liturgical_practices = {
+	type = international_organization
+	law_category = religious
+	requires_vote = no
+	potential = {
+		international_organization_type = international_organization_type:autocephalous_patriarchate
+	}
+	allow = {
+		
+	}
+
+	byzantine_rites = {
+		years = 1
+		price = christian_tenet_price
+		country_modifier = {
+			#leader benefits
+			potential_trigger = {
+				is_leader_of_international_organization_of_type = {
+					type = autocephalous_patriarchate
+				}
+			}
+			monthly_legitimacy = 0.05
+			monthly_republican_tradition = 0.05
+			monthly_devotion = 0.05
+			monthly_horde_unity = 0.05
+			monthly_tribal_cohesion = 0.05
+		}
+		country_modifier = {
+			#benefits for all members
+			potential_trigger = {
+				NOT = {
+					is_leader_of_international_organization_of_type = {
+						type = autocephalous_patriarchate
+					}
+				}
+			}
+			monthly_legitimacy = 0.02
+			monthly_republican_tradition = 0.02
+			monthly_devotion = 0.02
+			monthly_horde_unity = 0.02
+			monthly_tribal_cohesion = 0.02
+		}
+	}
+
+	local_traditions_and_rites = {
+		years = 1
+		price = christian_tenet_price
+		country_modifier = {
+			#leader benefits
+			potential_trigger = {
+				is_leader_of_international_organization_of_type = {
+					type = autocephalous_patriarchate
+				}
+			}
+			monthly_religious_influence = 0.1
+			cultural_tradition_modifier = 0.1
+		}
+		country_modifier = {
+			#benefits for all members
+			potential_trigger = {
+				NOT = {
+					is_leader_of_international_organization_of_type = {
+						type = autocephalous_patriarchate
+					}
+				}
+			}
+			monthly_religious_influence = 0.05
+			cultural_tradition_modifier = 0.05
+		}
+	}
+
+	catholic_influenced_rites = {
+		years = 1
+		price = christian_tenet_price
+		country_modifier = {
+			#leader benefits
+			potential_trigger = {
+				is_leader_of_international_organization_of_type = {
+					type = autocephalous_patriarchate
+				}
+			}
+			diplomatic_reputation = 1
+		}
+		country_modifier = {
+			#benefits for all members
+			potential_trigger = {
+				NOT = {
+					is_leader_of_international_organization_of_type = {
+						type = autocephalous_patriarchate
+					}
+				}
+			}
+			diplomatic_reputation = 0.5
+		}
+	}
+}
+
+essence_tenet = {
+	type = international_organization
+	law_category = religious
+	requires_vote = no
+	potential = {
+		international_organization_type = international_organization_type:autocephalous_patriarchate
+	}
+	allow = {
+		
+	}
+
+	accept_essence_tenet = {
+		years = 1
+		price = christian_tenet_price
+		country_modifier = {
+			#leader benefits
+			potential_trigger = {
+				is_leader_of_international_organization_of_type = {
+					type = autocephalous_patriarchate
+				}
+			}
+			monthly_religious_influence = 0.1
+			clergy_estate_max_tax = -0.1
+		}
+		country_modifier = {
+			#benefits for all members
+			potential_trigger = {
+				NOT = {
+					is_leader_of_international_organization_of_type = {
+						type = autocephalous_patriarchate
+					}
+				}
+			}
+			monthly_religious_influence = 0.05
+			clergy_estate_max_tax = -0.05
+		}
+	}
+
+	deny_essence_tenet = {
+		years = 1
+		price = christian_tenet_price
+		country_modifier = {
+			#leader benefits
+			potential_trigger = {
+				is_leader_of_international_organization_of_type = {
+					type = autocephalous_patriarchate
+				}
+			}
+			monthly_religious_influence = -0.1
+			clergy_estate_max_tax = 0.1
+		}
+		country_modifier = {
+			#benefits for all members
+			potential_trigger = {
+				NOT = {
+					is_leader_of_international_organization_of_type = {
+						type = autocephalous_patriarchate
+					}
+				}
+			}
+			monthly_religious_influence = -0.05
+			clergy_estate_max_tax = 0.05
+		}
+	}
+}
+
+person_tenet = {
+	type = international_organization
+	law_category = religious
+	requires_vote = no
+	potential = {
+		international_organization_type = international_organization_type:autocephalous_patriarchate
+	}
+	allow = {
+		
+	}
+
+	accept_person_tenet = {
+		years = 1
+		price = christian_tenet_price
+		country_modifier = {
+			#leader benefits
+			potential_trigger = {
+				is_leader_of_international_organization_of_type = {
+					type = autocephalous_patriarchate
+				}
+			}
+			monthly_towards_traditionalist = societal_value_monthly_move
+			add_accepted_culture_cost_modifier = -0.2
+		}
+		country_modifier = {
+			#benefits for all members
+			potential_trigger = {
+				NOT = {
+					is_leader_of_international_organization_of_type = {
+						type = autocephalous_patriarchate
+					}
+				}
+			}
+			monthly_towards_traditionalist = societal_value_minor_monthly_move
+			add_accepted_culture_cost_modifier = -0.1
+		}
+	}
+
+	deny_person_tenet = {
+		years = 1
+		price = christian_tenet_price
+		country_modifier = {
+			#leader benefits
+			potential_trigger = {
+				is_leader_of_international_organization_of_type = {
+					type = autocephalous_patriarchate
+				}
+			}
+			monthly_towards_innovative = societal_value_monthly_move
+			clergy_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+		}
+		country_modifier = {
+			#benefits for all members
+			potential_trigger = {
+				NOT = {
+					is_leader_of_international_organization_of_type = {
+						type = autocephalous_patriarchate
+					}
+				}
+			}
+			monthly_towards_innovative = societal_value_minor_monthly_move
+			clergy_estate_target_satisfaction = small_permanent_target_satisfaction_penalty
+		}
+	}
+}
+
+prosopon_tenet = {
+	type = international_organization
+	law_category = religious
+	requires_vote = no
+	potential = {
+		international_organization_type = international_organization_type:autocephalous_patriarchate
+	}
+	allow = {
+		
+	}
+
+	accept_prosopon_tenet = {
+		years = 1
+		price = christian_tenet_price
+		country_modifier = {
+			#leader benefits
+			potential_trigger = {
+				is_leader_of_international_organization_of_type = {
+					type = autocephalous_patriarchate
+				}
+			}
+			clergy_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+			tolerance_heretic = 1
+		}
+		country_modifier = {
+			#benefits for all members
+			potential_trigger = {
+				NOT = {
+					is_leader_of_international_organization_of_type = {
+						type = autocephalous_patriarchate
+					}
+				}
+			}
+			clergy_estate_target_satisfaction = small_permanent_target_satisfaction_penalty
+			tolerance_heretic = 0.5
+		}
+	}
+
+	deny_prosopon_tenet = {
+		years = 1
+		price = christian_tenet_price
+		country_modifier = {
+			#leader benefits
+			potential_trigger = {
+				is_leader_of_international_organization_of_type = {
+					type = autocephalous_patriarchate
+				}
+			}
+			clergy_estate_target_satisfaction = medium_permanent_target_satisfaction
+			monthly_religious_influence = 0.1
+			tolerance_heretic = -1
+		}
+		country_modifier = {
+			#benefits for all members
+			potential_trigger = {
+				NOT = {
+					is_leader_of_international_organization_of_type = {
+						type = autocephalous_patriarchate
+					}
+				}
+			}
+			clergy_estate_target_satisfaction = small_permanent_target_satisfaction
+			monthly_religious_influence = 0.05
+			tolerance_heretic = -0.5
+		}
+	}
+}
+
+christological_debates_tenet = {
+	type = international_organization
+	law_category = religious
+	requires_vote = no
+	potential = {
+		international_organization_type = international_organization_type:autocephalous_patriarchate
+	}
+	allow = {
+		
+	}
+
+	allow_christological_debates_tenet = {
+		years = 1
+		price = christian_tenet_price
+		country_modifier = {
+			#leader benefits
+			potential_trigger = {
+				is_leader_of_international_organization_of_type = {
+					type = autocephalous_patriarchate
+				}
+			}
+			global_clergy_max_literacy = 5
+			global_clergy_food_consumption = 0.1
+		}
+		country_modifier = {
+			#benefits for all members
+			potential_trigger = {
+				NOT = {
+					is_leader_of_international_organization_of_type = {
+						type = autocephalous_patriarchate
+					}
+				}
+			}
+			global_clergy_max_literacy = 3
+			global_clergy_food_consumption = 0.05
+		}
+	}
+
+	forbid_christological_debates_tenet = {
+		years = 1
+		price = christian_tenet_price
+		country_modifier = {
+			#leader benefits
+			potential_trigger = {
+				is_leader_of_international_organization_of_type = {
+					type = autocephalous_patriarchate
+				}
+			}
+			monthly_towards_spiritualist = societal_value_monthly_move
+			monthly_religious_influence = 0.2
+		}
+		country_modifier = {
+			#benefits for all members
+			potential_trigger = {
+				NOT = {
+					is_leader_of_international_organization_of_type = {
+						type = autocephalous_patriarchate
+					}
+				}
+			}
+			monthly_towards_spiritualist = societal_value_minor_monthly_move
+			monthly_religious_influence = 0.1
+		}
+	}
+}
+
+double_sabbath_tenet = {
+	type = international_organization
+	law_category = religious
+	requires_vote = no
+	potential = {
+		international_organization_type = international_organization_type:autocephalous_patriarchate
+	}
+	allow = {
+		
+	}
+
+	allow_double_sabbath_tenet = {
+		years = 1
+		price = christian_tenet_price
+		country_modifier = {
+			#leader benefits
+			potential_trigger = {
+				is_leader_of_international_organization_of_type = {
+					type = autocephalous_patriarchate
+				}
+			}
+			global_population_growth = 0.0002
+			monthly_religious_influence = 0.1
+			global_clergy_estate_power = 0.1
+		}
+		country_modifier = {
+			#benefits for all members
+			potential_trigger = {
+				NOT = {
+					is_leader_of_international_organization_of_type = {
+						type = autocephalous_patriarchate
+					}
+				}
+			}
+			global_population_growth = 0.0001
+			monthly_religious_influence = 0.05
+			global_clergy_estate_power = 0.05
+		}
+	}
+
+	forbid_double_sabbath_tenet = {
+		years = 1
+		price = christian_tenet_price
+		country_modifier = {
+			#leader benefits
+			potential_trigger = {
+				is_leader_of_international_organization_of_type = {
+					type = autocephalous_patriarchate
+				}
+			}
+			global_production_efficiency = medium_production_efficiency_bonus
+			global_max_literacy = -2
+		}
+		country_modifier = {
+			#benefits for all members
+			potential_trigger = {
+				NOT = {
+					is_leader_of_international_organization_of_type = {
+						type = autocephalous_patriarchate
+					}
+				}
+			}
+			global_production_efficiency = small_production_efficiency_bonus
+			global_max_literacy = -1
+		}
+	}
+}

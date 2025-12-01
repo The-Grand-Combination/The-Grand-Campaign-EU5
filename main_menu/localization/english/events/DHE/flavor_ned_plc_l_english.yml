@@ -1,0 +1,9 @@
+﻿l_english:
+ flavor_ned_plc.1.title: "[target_country.GetAdjectiveWithNoTooltip] Merchants in [target_location.GetNameWithNoTooltip]"
+ flavor_ned_plc.1.desc: "The interests of the [receiving_country.GetLongName] and the [target_country.GetLongName] align in many different ways. Every year, many of their [target_country.GetGovernment.GetEstateName('burghers_estate')] arrive in the ports of the [target_market.GetName] and especially the [target_good.GetName] Entrepôt of [target_location.GetName]. On the other side, the [receiving_country.GetGovernment.GetEstateName('nobles_estate')] of [receiving_country.GetNameWithNoTooltip] are clearly benefitting from this partnership, being able to trade their excess [target_good.GetNameWithNoTooltip] for the luxurious goods brought by the merchants."
+ flavor_ned_plc.1.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+
+ flavor_ned_plc.2.title: "$flavor_ned_plc.1.title$"
+ flavor_ned_plc.2.desc: "$flavor_ned_plc.1.desc$"
+ flavor_ned_plc.2.a: "Pour extra funds into the bulk trades."
+ flavor_ned_plc.2.b: "[ROOT.GetCountry.Custom('common_string_positive')]"

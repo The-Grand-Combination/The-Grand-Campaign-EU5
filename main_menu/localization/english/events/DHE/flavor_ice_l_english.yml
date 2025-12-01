@@ -1,0 +1,12 @@
+﻿l_english:
+ flavor_ice.10.title: "Bishoprics of [ROOT.GetCountry.GetNameWithNoTooltip]"
+ flavor_ice.10.desc: "The [ROOT.GetCountry.GetReligion.GetAdjective] faith has long been an important part of [ROOT.GetCountry.GetAdjective] life. However, there are two distinct bishoprics on the island: [target_location.GetName] and [skalholt.GetName].\n\n[target_location.GetNameWithNoTooltip], in the [target_location.GetProvince.GetName], has a reputation for being more independent and self-sufficient, while [skalholt.GetNameWithNoTooltip] in [skalholt.GetProvince.GetName] is seen as being more closely aligned with the [overlord.GetLongName].\n\nAs [ROOT.GetCountry.GetNameWithNoTooltip] moves forward, it will be important to consider the unique character of each bishopric."
+ flavor_ice.10.a: "Support independent [target_location.GetNameWithNoTooltip]."
+ flavor_ice.10.b: "Ingratiate the [overlord.GetAdjectiveWithNoTooltip] bishop."
+ opinion_opposed_our_bishop: "Opposed Our Bishop"
+ opinion_supported_our_bishop: "Supported Our Bishop"
+ 
+ flavor_ice.11.title: "The Huldufólk"
+ flavor_ice.11.desc: "Stories of the Huldufólk, mystical hidden people, have for centuries captivated the [ROOT.GetCountry.GetCulture.GetName] people. It is believed that these elusive elves dwell within the very rocks and mountains of Iceland.\n\nNow, a new situation has arisen, as plans are being made to construct a [ROOT.GetCountry.GetReligion.GetAdjective] church in an area of [target_location.GetName] said to belong to the Huldufólk.\n\nThe [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] fear that disturbing the rocks where the Huldufólk reside will bring about catastrophic consequences. The [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')], of course, vehemently deny the existence of invisible beings. It falls to the [ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')] to settle this spiritual dispute and determine the fate of the proposed construction."
+ flavor_ice.11.a: "Respect the beliefs and abandon the church."
+ flavor_ice.11.b: "Ignore the superstition and build the church."

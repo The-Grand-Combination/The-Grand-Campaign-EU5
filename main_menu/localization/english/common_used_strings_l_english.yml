@@ -1,0 +1,105 @@
+﻿l_english:
+ 
+#Positive Response
+ common_string_brilliant: "Brilliant!"
+ common_string_excellent: "Excellent." 
+ common_string_excellent_news: "Excellent news!"
+ common_string_good: "Good."
+ common_string_good_news: "Good news!"
+ common_string_great_news: "Great news!"
+ common_string_great: "Great!"
+ common_string_splendid: "Splendid!"
+ common_string_this_is_good: "This is good."
+ common_string_this_is_great: "This is great!"
+ common_string_very_well: "Very well."
+ common_string_well_done: "Well done!"
+ common_string_positive_catalan: "#italic Molt bé!#!"
+ common_string_positive_spanish: "#italic ¡Muy bien!#!"
+ common_string_positive_swedish: "#italic Mycket bra!#!"
+ common_string_positive_italian: "#italic Molto bene!#!"
+ common_string_positive_french: "#italic Très bien!#!"
+ common_string_positive_german: "#italic Sehr gut!#!"
+ common_string_positive_pirate: "#italic Yo ho!#!"
+ 
+
+#Wonder Response
+ common_string_wonderful: "Wonderful!"
+ common_string_marvelous: "Marvelous!"
+ common_string_fantastic: "Fantastic!"
+ common_string_extraordinary: "Extraordinary!"
+ common_string_wonder_german: "#italic Fantastisch!#!"
+
+ # OK response
+ 
+ common_string_ok: "Okay."
+ common_string_alright: "Alright."
+ common_string_ok_spanish: "#italic Vale.#!"
+ common_string_ok_french: "#italic D'accord.#!"
+ common_string_ok_french_2: "#italic Bien.#!"
+ common_string_ok_catalan: "#italic D'acord.#!"
+ common_string_ok_italian: "#italic Va bene.#!"
+
+
+#Neutral Response
+ common_string_leave_them_be: "Leave them be."
+ common_string_let_it_slide: "Let it slide."
+ common_string_let_them_revolt: "Let them revolt."
+ common_string_the_end_is_nigh: "The end is nigh."
+ common_string_what_can_we_do: "What can we do?"
+
+
+#Negative Response
+ common_string_curses: "Curses!"
+ common_string_damn: "Damn!"
+ common_string_this_is_not_good: "This is not good."
+ common_string_unfortunate: "Unfortunate."
+ common_string_what_a_disaster: "What a disaster!"
+ common_string_negative_german: "#italic Verdammt!#!"
+ common_string_negative_german_2: "#italic Verflucht!#!"
+ common_string_negative_french: "#italic Quelle tragédie!#!"
+ common_string_negative_pirate: "#italic Yarrr!#!"
+
+#Disappointing Response
+ common_string_disappointing: "Disappointing."
+ common_string_this_is_disappointing: "This is disappointing..."
+ common_string_how_disappointing: "How disappointing."
+ common_string_truly_disappointing: "Truly disappointing."
+ common_string_this_is_truly_disappointing: "This is truly disappointing."
+ common_string_this_is_rather_disappointing: "This is rather disappointing..."
+ common_string_rather_disappointing: "Rather disappointing."
+
+
+#Nothing We Can Do Response
+ common_string_nothing_we_can_do: "There is nothing we can do."
+ common_string_nothing_we_can_do_about_it: "There is nothing we can do about it."
+ common_string_alas_nothing_we_can_do: "Alas, there is nothing we can do."
+ common_string_alas_nothing_we_can_do_about_it: "Alas, there is nothing we can do about it."
+
+#We Must Do Something Response
+ common_string_we_must_do_something: "We must do something!"
+ common_string_we_must_do_something_about_it: "We must do something about it."
+ common_string_we_must_do_something_about_this: "We must do something about this."
+
+#Suprised
+ common_string_suprised: "Shocking!"
+ common_string_suprised_german: "#italic Alter Schwede!#!"
+ common_string_suprised_german_2: "#italic Mein lieber Schwan!#!"
+
+#Reference Response
+ common_string_it_belongs_in_a_museum: "It belongs in a museum!"
+
+
+
+#Utility
+ common_string_go_to: "Go to"
+ common_string_prefix_article: "the "
+
+#Other
+ common_string_aum: "Oṃ."
+ common_string_let_them_fend_for_themselves: "Let them fend for themselves."
+ common_string_rein_them_in: "Rein them in."
+ common_string_we_shall_do_something: "We shall do something!"
+ common_string_quran: "Qur'ān"
+ common_string_shaikh_al_islam: "Šayḵ al-Islām"
+ genghis_khan_name: "#TOOLTIP:CHARACTER,[GetCharacter('genghis_khan').GetID],X #L [GetCharacter('genghis_khan').GetNicknameWithNoTooltip] $rank_kingdom_horde_ruler_suffix_male$#!#!"
+ genghis_khan_name_no_tooltip: "$name_genghis$ $rank_kingdom_horde_ruler_suffix_male$"

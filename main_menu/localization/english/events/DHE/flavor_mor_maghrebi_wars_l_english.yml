@@ -1,0 +1,32 @@
+﻿l_english:
+ flavor_mor_maghrebi_wars.1000.title: "The Ambitious Brother"
+ flavor_mor_maghrebi_wars.1000.desc: "After the death of the beloved [old_ruler.GetName], his son [new_ruler.GetName] has risen to the throne of [GetCountry('TUN').GetName] following the desires of [old_ruler.GetShortNameWithNoTooltip].\n\nInstead of respectfully recognizing the legitimate position of the new ruler, his brother [usurper_scope.GetName] has launched a coup and seized power for himself. To the horror of the present [ShowEstateTypeName('nobles_estate')] the usurper has executed his brother, removing any chance of restoring the legitimate [ROOT.GetCountry.GetGovernment.GetRulerTitle].\n\nThe only option left for the loyalists is to invite a foreign nation into the country to help them remove the usurper."
+ flavor_mor_maghrebi_wars.1000.historical_info: "After the death of the Hafsid Sultan, Abu Yahya Abu Bakr, a court crisis started with the coronation of the usurper, Abu Hafs Umar, who ordered the assassination of all his brothers, ensuring his sole right to the throne."
+ flavor_mor_maghrebi_wars.1000.a: "Invite the [GetCountry('MOR').GetLongNameWithNoTooltip]"
+ flavor_mor_maghrebi_wars.1000.b: "Invite [ally_scope.GetName]"
+ flavor_mor_maghrebi_wars.1000.c: "Rally behind [usurper_scope.GetNameWithNoTooltip]"
+
+ flavor_mor_maghrebi_wars.1001.title: "The [GetCountry('TUN').GetAdjectiveWithNoTooltip] Succession"
+ flavor_mor_maghrebi_wars.1001.p1: "After the death of [old_ruler.GetName], his son [new_ruler.GetName] should have risen to the throne of [GetCountry('TUN').GetName]. Instead, his brother [usurper_scope.GetName] has assassinated him and seized power for himself to the horror of the present [ShowEstateTypeName('nobles_estate')]."
+ flavor_mor_maghrebi_wars.1001.desc: "$flavor_mor_maghrebi_wars.1001.p1$\n\nNow the surviving loyalists have invited us into the country to help them remove the usurper."
+ flavor_mor_maghrebi_wars.1001.a: "Their distress is a benefit to us."
+ flavor_mor_maghrebi_wars.1001.b: "We will not endanger our alliance."
+
+ flavor_mor_maghrebi_wars.1002.title: "$flavor_mor_maghrebi_wars.1001.title$"
+ flavor_mor_maghrebi_wars.1002.desc: "To the joy of those still loyal to [dead_ruler_scope.GetName] our former ally [ally_scope.GetName], has decided to accept their proposal of annexation and is now preparing their troops to invade us."
+ flavor_mor_maghrebi_wars.1002.a: "[ROOT.GetCountry.Custom('common_string_negative')]."
+
+ flavor_mor_maghrebi_wars.1003.title: "$flavor_mor_maghrebi_wars.1001.title$"
+ flavor_mor_maghrebi_wars.1003.desc: "To the despair of those still loyal to [dead_ruler_scope.GetName] our wise ally [ally_scope.GetName], has decided to reject their proposal of annexation."
+ flavor_mor_maghrebi_wars.1003.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+
+ flavor_mor_maghrebi_wars.1004.title: "The destiny of [ROOT.GetCountry.GetNameWithNoTooltip]"
+ flavor_mor_maghrebi_wars.1004.desc: "$flavor_mor_maghrebi_wars.1001.p1$\n\nThe surviving loyalists have invited us into the country to help them remove the usurper. After pondering this proposal it has become clear to our wise ruler [ruler_scope.GetName] that it is our destiny to unite all the territories in the [ShowRegionName('maghreb_region')] and control the Saharan trade as it was during the time of the Almohads."
+ flavor_mor_maghrebi_wars.1004.a: "We will ride to glory."
+ flavor_mor_maghrebi_wars.1004.b: "No, we will keep to our affairs."
+ flavor_mor_maghrebi_wars.1004.historical_info: "The Marinid dynasty was at the time the guarantor of the Hafsid succession and as so, when the usurper Abu Hafs Umar rose to the throne of Tunis the Marinid army invaded to drive him out. After the capture and execution of the usurper, the Marinid Sultan Abu'l Hasan entered the capital city of Tunis triumphantly and united the realm under his banner."
+
+ flavor_mor_maghrebi_wars.1100.title: "The new ruler of the [ShowRegionNameWithNoTooltip('maghreb_region')]"
+ flavor_mor_maghrebi_wars.1100.desc: "We have finally united the lands of the [ShowRegionName('maghreb_region')] as they once were under the Almohads dynasty. The Saharan trade is finally under our control, a new period of prosperity is upon us and all the [religion_scope.GetAdjective] world."
+ flavor_mor_maghrebi_wars.1100.a: "Our peers send their congratulations."
+ flavor_mor_maghrebi_wars.1100.tt: "All the [religion_scope.GetAdjectiveWithNoTooltip] countries in our [diplomatic_range|e] improve their opinion of us."

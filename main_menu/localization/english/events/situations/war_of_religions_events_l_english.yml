@@ -1,0 +1,107 @@
+﻿l_english:
+ war_of_religions.generals.generic: "A promising general, [target_character.GetName] has served in our army for a few years, rising through the ranks. Born in [target_location.GetName], [target_character.GetSheHe] would be a perfect candidate to lead our armies in the war against our enemies."
+ war_of_religions.1.a: "We need [target_character.GetHerHis] service."
+ war_of_religions.1.c: "[target_character.GetHerHis|U] skills are not needed here."
+
+ war_of_religions.1.title: "[target_character.GetNameWithNoTooltip]"
+ war_of_religions.1.desc: "[target_character.GetNameWithNoTooltip] grew up in [ShowRegionName('italy_region')] and joined our general staff during the ongoing war. [target_character.GetSheHe|U] seems to be talented, but an ambitious [target_character.GetWomanMan] like [target_character.GetHerHim] could cause us trouble eventually."
+ war_of_religions.1.b: "[target_character.GetSheHe|U] will compete with [target_wallenstein.GetNameWithNoTooltip]."
+
+ war_of_religions.2.desc: "$war_of_religions.generals.generic$"
+
+ war_of_religions.3.desc: "A skilled general, famed for [target_character.GetHerHis] ability to fatigue [target_character.GetHerHis] opponents, [target_character.GetName] has already made a name for [target_character.GetHerselfHimself] and is now ready to take full command of our armies and lead us in the current war."
+
+ war_of_religions.4.desc: "$war_of_religions.generals.generic$"
+
+ war_of_religions.5.desc: "$war_of_religions.generals.generic$"
+
+ war_of_religions.6.desc: "$war_of_religions.generals.generic$"
+
+ war_of_religions.7.desc: "$war_of_religions.generals.generic$"
+
+ war_of_religions.8.desc: "$war_of_religions.generals.generic$"
+
+ war_of_religions.9.desc: "$war_of_religions.generals.generic$"
+
+ war_of_religions.10.desc: "$war_of_religions.generals.generic$"
+
+ war_of_religions.11.desc: "$war_of_religions.generals.generic$"
+
+ war_of_religions.12.desc: "$war_of_religions.generals.generic$"
+
+ war_of_religions.13.desc: "$war_of_religions.generals.generic$"
+
+ war_of_religions.14.desc: "$war_of_religions.generals.generic$"
+
+ war_of_religions.15.desc: "$war_of_religions.generals.generic$"
+
+ war_of_religions.16.desc: "$war_of_religions.generals.generic$"
+
+ war_of_religions.17.title: "The Sack of [target_location.GetNameWithNoTooltip]"
+ war_of_religions.17.desc: "The [target_location.GetRank.GetName] of [target_location.GetName] has been a hotbed of resistance against our cause. This bastion of the [ROOT.GetCountry.Custom('GetEnemyReligiousLeagueName')] and their faith has now finally given in to the siege of our forces. Our general has given the drastic order to make an example of the [target_location.GetRank.GetNameWithNoTooltip] and plunder it without any restrictions. While cruel, this could prevent more people from joining the [ROOT.GetCountry.Custom('GetEnemyReligiousLeagueName')] in fear of our retaliation."
+ war_of_religions.17.a: "A necessary evil."
+
+ war_of_religions.18.title: "The Looting of [target_location.GetNameWithNoTooltip]"
+ war_of_religions.18.desc: "The [target_location.GetRank.GetName] of [target_location.GetName] is host to a beautiful [ShowBuildingTypeName('library')], containing several works that are considered among the best the [target_location.GetOwner.GetCulture.GetLanguage] has committed to paper. With [target_location.GetNameWithNoTooltip] now in our control, it is also our right to claim the spoils of war. It just happens that these books would make a beautiful addition to the [target_book_donation.GetOwner.GetCourtTitle] in [target_book_donation.GetName]."
+ war_of_religions.18.a: "Warriors might not read books, but they do know the value of them."
+ opinion_gifted_heidelberg_books: "Gifted Precious Books"
+
+ war_of_religions.19.title: "The Final Charge of [target_ruler.GetNameWithNoTooltip]?"
+ war_of_religions.19.desc: "[target_ruler.GetName] has led [target_unit.GetName] into the battle at [target_location.GetName] in the expectation to strike a decisive blow against our foes of the [ROOT.GetCountry.Custom('GetEnemyReligiousLeagueName')]. Shortly after the battle began however, [target_ruler.GetSheHe] vanished in a dense fog, out of sight of any friendly unit that could assist [target_ruler.GetHerHim]. While [target_ruler.GetHerHis] fate remains uncertain for now, it is likely [target_ruler.GetSheHe] will never emerge again."
+ war_of_religions.19.a: "We will need to find [target_ruler.GetHerHim] at any cost!"
+ war_of_religions.19.a.tt: "In case [target_ruler.GetNameWithNoTooltip] does not resurface, we will gain opinion with our brothers and sisters in faith, for [target_ruler.GetSheHe] has paid the ultimate price for the protection of our faith"
+ defender_of_our_faith: "Defender of our Faith"
+
+ war_of_religions.1000.title: "Cracks in the Religious Peace"
+ war_of_religions.1000.desc: "Ever since the Reformation took ahold of the [GetInternationalOrganization('hre').GetName], the religious peace has been unstable, if not outright broken by the princes. The situation has now reached a breaking point, and both [ShowReligionAdjective('catholic')] and reformed countries started to form factions for the sake of defending their faith. The increasing confessionalization of the imperial princes is a concerning development, which could radicalize their positions fairly quickly. In these times of mistrust and worry, it seems impossible that a confrontation of both sides can be avoided."
+ war_of_religions.1000.a: "The empire must endure!"
+ war_of_religions.1000.a.tt: "In the [ShowSituationName('war_of_religions')] it is possible to align with the interest of the [ShowReligionAdjective('catholic')] powers of the [GetInternationalOrganization('hre').GetName] or the opposing Protestant powers."
+
+ war_of_religions.1001.title: "The Union and the League"
+ war_of_religions.1001.desc: "It has become obvious to us that the [GetInternationalOrganization('hre').GetName] has failed to resolve the religious troubles of the empire in a satisfying way. With each passing year, we hear stories of heretic princes abusing their powers and oppressing the faithful, in and beyond their borders. We need to ensure they can not root out the faithful and rally our brothers and sisters in faith."
+ war_of_religions.1001.a: "We must secure our faith!"
+
+ war_of_religions.1002.title: "Strife in the [GetInternationalOrganization('hre').GetNameWithNoTooltip]"
+ war_of_religions.1002.desc: "The princes of the [GetInternationalOrganization('hre').GetName] have torn themselves apart in the chaotic situation in the wake of the Reformation. Their descent into confessions and religious factions has weakened the empire as a whole and could open the window of opportunity for us... or drag us into a conflict of a scale far beyond our imagination."
+ war_of_religions.1002.a: "We will keep a close eye on it."
+
+ war_of_religions.1200.title: "[target_character.GetLastNameWithNoTooltip]"
+ war_of_religions.1200.desc: "$war_of_religions.generals.generic$ [target_character.GetNameWithNoTooltip] has provided us a generous sum of money to raise an army, if we intend to grant [target_character.GetHerHim] the rank of commander of our armies."
+
+ war_of_religions.1201.title: "[target_character.GetNameWithNoTooltip], a Traitor?"
+ war_of_religions.1201.desc_generic: "provided us with multiple reports concerning the loyalty of [target_character.GetName], suggesting that [target_character.GetSheHe] is no longer loyal to our cause and has negotiated peace-terms with our enemies. The supporting faction urges us to remove [target_character.GetNameWithNoTooltip] from [target_character.GetHisHer] position, strip [target_character.GetHerHim] from any official rank, and order [target_character.GetHerHis] execution."
+ war_of_religions.1201.desc.a: "[target_piccolomini.GetName] and [target_gallas.GetName] have $war_of_religions.1201.desc_generic$"
+ war_of_religions.1201.desc.b: "[target_piccolomini.GetName] has $war_of_religions.1201.desc_generic$"
+ war_of_religions.1201.desc.c: "[target_gallas.GetName] has $war_of_religions.1201.desc_generic$"
+ war_of_religions.1201.desc.d: "Some of our general staff have $war_of_religions.1201.desc_generic$"
+ war_of_religions.1201.a: "They are right, [target_character.GetNameWithNoTooltip] is a danger to our cause."
+ war_of_religions.1201.b: "[target_character.GetNameWithNoTooltip] is irreplaceable!"
+
+ war_of_religions.1202.title: "The Rescue of [target_character.GetNameWithNoTooltip]"
+ war_of_religions.1202.desc: "[target_character.GetName], one of our fiercest opponents, seems to have fallen from grace! We have received reports about [target_character.GetHerHis] imprisonment in [target_location.GetName], where [target_character.GetSheHe] is awaiting [target_character.GetHerHis] execution in six months. If we act fast, and rush towards [target_location.GetNameWithNoTooltip], we could free [target_character.GetHerHim] and potentially convince [target_character.GetHerHim] to join our side. A dangerous task, but a [ShowReligionAdjective('catholic')] general fighting for our cause could prove to be a great asset."
+ war_of_religions.1202.a: "[target_character.GetSheHe|U] would make a valuable ally indeed."
+ war_of_religions.1202.a.tt: "If we occupy [target_location.GetName] within 6 months, we will have the opportunity to employ [target_character.GetName] ourselves"
+
+ war_of_religions.1203.title: "[target_character.GetNameWithNoTooltip] Freed"
+ war_of_religions.1203.desc: "We have freed the famed general [target_character.GetName]. Once our foe and now fallen from grace, [target_character.GetSheHe] will now work for us and bring the war to a swift end."
+ war_of_religions.1203.a: "This will surely turn the tides of the war!"
+
+ war_of_religions.1204.title: "The Execution of [target_character.GetNameWithNoTooltip]"
+ war_of_religions.1204.desc: "[target_character.GetName] has met [target_character.GetHerHis] end as a disgraced, traitorous snake in [target_location.GetName]! Now that we are finally rid of [target_character.GetHerHis] influences, we can fully focus on our war efforts again."
+ war_of_religions.1204.a: "Finally peace of mind for us."
+
+ war_of_religions.1205.desc: "We have failed to rescue [target_character.GetName] from [target_character.GetHerHis] imprisonment in [target_location.GetName] in time to prevent [target_character.GetHerHis] execution. Only time will tell if forsaking the opportunity to free [target_character.GetHerHim] will be the right decision."
+ war_of_religions.1205.a: "A formidable foe has died the worst kind of ways."
+
+ war_of_religions.1300.title: "The Peace of Westphalia"
+ war_of_religions.1300.desc: "After a long and exhausting period of war, the peace negotiations have finally bore fruit and ended in an acceptable state for all participants. The news of peace is rapidly spreading within the [GetInternationalOrganization('hre').GetName], leaving the people of the empire relieved, as their war torn countries can finally start to recover from marauding and plundering armies of any of the factions. Members of both the [GetInternationalOrganization('protestant_union').GetName] and [GetInternationalOrganization('catholic_league').GetName] seem content with the compromise with their initial enthusiasm for victory being spent, achieving at least the status quo and religious freedom for both their own territories and the imperial subjects of their faith."
+ war_of_religions.1300.a: "A victory for diplomacy!"
+
+ war_of_religions.1400.title: "[target_artist.GetNameWithNoTooltip]"
+ war_of_religions.1400.desc: "The fate of young children being separated from their parents has become a regular occurrence during the current war between the [GetInternationalOrganization('protestant_union').GetName] and [GetInternationalOrganization('catholic_league').GetName]. [target_artist.GetName] is one of those poor souls, as [target_artist.GetSheHe] was abducted by a plundering army, and has lived longer in the camps of armies than in [target_artist.GetHerHis] hometown of [ShowLocationName('hanau')]. [target_artist.GetSheHe|U] has now found [target_artist.GetHerHis] way into our country and begun polishing [target_artist.GetHerHis] skill as a writer. Rumor has it, that [target_artist.GetSheHe] is already responsible for multiple published books, but no book is yet carrying [target_artist.GetHerHis] own name."
+ war_of_religions.1400.a: "Let us see what [target_artist.GetSheHe] will publish under [target_artist.GetHerHis] name."
+ war_of_religions.1400.b: "[target_artist.GetSheHe|U] should go back to [target_artist.GetHerHis] vagabond live!"
+
+ war_of_religions.1401.title: "$simplicius_simplicissimus$"
+ war_of_religions.1401.desc: "[target_artist.GetName] has finally published what [target_artist.GetSheHe] calls [target_artist.GetHerHis] magnum opus, #italic Der Abentheuerliche Simplicissimus Teutsch#!, or shortened $simplicius_simplicissimus$.\n\nDetailing an adventurous life of a man, losing his family as a child, serving during the religious war of the [GetInternationalOrganization('hre').GetName], his many exploits during his travels all over [ShowContinentName('europe')], and his eventual embrace of a hermits life. The novel of [target_artist.GetNameWithNoTooltip] is a satirical account of the wars that split the empire previously and we should embellish [target_artist.GetHerHis] efforts for the [ShowLanguageName('german_language')] language."
+ war_of_religions.1401.a: "What a great and ridiculous story!"

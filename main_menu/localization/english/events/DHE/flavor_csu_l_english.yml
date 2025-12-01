@@ -1,0 +1,53 @@
+﻿l_english:
+ flavor_csu.100.title: "The [ShowBuildingTypeNameWithNoTooltip('panaqa_building')] of [ROOT.GetCountry.GetNameWithNoTooltip]"
+ flavor_csu.100.desc: "With the death of our last great monarch, the royal family has distributed our lands to the old [ShowBuildingTypeName('panaqa_building')]. Once again, the cycle has started anew, and the current [ROOT.GetCountry.GetGovernment.GetRulerTitle] has to establish [ROOT.GetCountry.GetGovernment.GetRuler.GetHerHis] own legacy through conquest."
+ flavor_csu.100.a: "As it is our tradition."
+ add_panaqas_to_every_location_tt: "#R Every owned [location|e] gains a [ShowBuildingTypeName('panaqa_building')].#!"
+
+ flavor_csu.200.title: "The Best #italic aqha#! in the Andes"
+ flavor_csu.200.desc: "[concubine_poisoner.GetName], our ruler's wife, is known as one of the best #italic aqha#! brewers of [ShowAreaName('acamama_area')], her ability to turn maize kernels into a delicious beverage was one of the deal sweeteners that helped to sign the royal marriage between [ROOT.GetCountry.GetName] and [GetCountry('AYA').GetName] despite their long history of rivalry and border friction.\n\nToday, [concubine_poisoner.GetShortNameWithNoTooltip] has again prepared her famous #italic aqha#!. Should [ROOT.GetCountry.GetGovernment.GetRuler.GetName] enjoy it as always?"
+ flavor_csu.200.a: "Drink it!"
+ flavor_csu.200.b: "She is up to something! Expel her!"
+ flavor_csu.200.c: "The drink has been poisoned. Seize her!"
+ flavor_csu.200.tt.c: "Make her disappear quietly."
+
+ flavor_csu.201.title: "Betrayal!"
+ flavor_csu_201_desc: "[concubine_poisoner.GetName] has poisoned the #italic aqha#! of our [qusqu_ruler.GetName] and by the time the guards came in to help [qusqu_ruler.GetHerHim], [qusqu_ruler.GetSheHe] already lay dead on the floor of the throne room."
+ flavor_csu.201.desc.a: "$flavor_csu_201_desc$\n\nBut the treachery does not end there, as the warrior [usurper_inka.GetName] has seized the opportunity and instead of punishing the poisoner [usurper_inka.GetSheHe] has stolen the throne for [usurper_inka.GetHerselfHimself] and has started calling [usurper_inka.GetHerselfHimself] #italic Sapa Inka#!" 
+ flavor_csu.201.tt.a: "There is a strange aftertaste in the drink..." 
+ flavor_csu.201.desc.b: "$flavor_csu_201_desc$\n\nThe treacherous woman has been seized by the guards and only her status as princess of [GetCountry('AYA').GetName] has saved her from the knife.\nWhat should be done with her?" 
+ flavor_csu.201.a: "The [ROOT.GetCountry.GetGovernment.GetRulerTitle] is dead, long live the [ROOT.GetCountry.GetGovernment.GetRulerTitle]"
+ flavor_csu.201.b: "Traitors! [old_heir.GetNameWithNoTooltip] is the true [ROOT.GetCountry.GetGovernment.GetRulerTitle]"
+ hanan_qusqu_rebels: "Hanan Qusqu Rebels"
+ hurin_qusqu_rebels: "Hurin Qusqu Rebels"
+ flavor_csu.201.c: "Expel her!"
+ flavor_csu.201.d: "Avenge our [ROOT.GetCountry.GetGovernment.GetRulerTitle]"
+
+ flavor_csu.202.title: "The Aftermath"
+ flavor_csu.202.desc: "After the dust settles and our new [ROOT.GetCountry.GetGovernment.GetRuler.GetName] has secured [ROOT.GetCountry.GetGovernment.GetRuler.GetHerHis] power and the new position of [ROOT.GetCountry.GetGovernment.GetRuler.GetHerHis] dynasty it is time to decide what to do with the [ShowDynastyName('hurin_qusqu_dynasty')] family.\n\nTheir connections and experience as priests and bureaucrats can still be of great utility, but any remaining grudges could become a problem if they keep positions of power in the [ROOT.GetCountry.GetFlavorRank]."
+ flavor_csu.202.a: "They will only keep their duties to #italic Inti#!."
+ flavor_csu.202.b: "Nonsense! Expel them as dogs!"
+ flavor_csu.202.c: "Nobody gets to endanger the [ROOT.GetCountry.GetGovernment.GetRulerTitle]. Kill them all!"
+
+ hurin_qusqu_privilege: "Hurin Qusqu High Priesthood"
+ hurin_qusqu_privilege_desc: "The Hurin Qusqu retain the duty and privilege of serving Inti directly as the #italic Villaq Umu#!, the High Priest of Inti."
+
+ flavor_csu.210.title: "A Devious Plan"
+ flavor_csu.210.desc: "Our advisor [minister.GetName] has presented us an opportunity to strike our hated neighbors of [GetCountry('CSU').GetName]. [minister.GetHeShe|U] has managed to infiltrate an agent in their court and has gained access to the [heir|e] [kidnapped_heir.GetName]. If we decide to move on we could easily take [kidnapped_heir.GetHimHer] into our custody and bring [kidnapped_heir.GetHimHer] to [ROOT.GetCountry.GetCapital.GetName]. Once the deed is done we can ransom [kidnapped_heir.GetHimHer] to [GetCountry('CSU').GetGovernment.GetRuler.GetName]."
+ flavor_csu.210.a: "Go ahead."
+ flavor_csu.210.b: "We are not monsters! Leave the court."
+
+ flavor_csu.211.title: "Kidnapped Heir"
+ flavor_csu.211.desc: "The monster that rules [GetCountry('AYA').GetName] [GetCountry('AYA').GetGovernment.GetRuler.GetName] has sent agents to our capital. They have managed to kidnap our [heir|e] [kidnapped_heir.GetName] and escape with [kidnapped_heir.GetHimHer] back to their lair in [ROOT.GetCountry.GetCapital.GetName]. Now they are asking for a large amount of gold in exchange for returning [kidnapped_heir.GetHimHer] to us."
+ flavor_csu.211.a: "Pay the ransom."
+ flavor_csu.211.b: "We will not give them what they seek."
+
+ flavor_csu.212.title: "The Gold Arrives"
+ flavor_csu.212.desc: "The cowards in [GetCountry('CSU').GetName] have finally buckled and have sent the gold we requested."
+ flavor_csu.212.a: "Return the child."
+ flavor_csu.212.b: "Idiots! We will keep both."
+
+ flavor_csu.213.title: "The Evil Child"
+ flavor_csu.213.desc: "Since the arrival of the [GetCountry('CSU').GetAdjective] child to [ROOT.GetCountry.GetCapital.GetName] the courtiers have been nervous. The child has not stopped crying and whining since [kidnapped_heir.GetHisHer] arrival, to the point that their jailers say that [kidnapped_heir.GetHeShe] has started to cry tears of blood. The servants of the palace believe that the child is possessed by an evil spirit and that the [GetCountry('CSU').GetAdjectiveWithNoTooltip] ruler knew about it and that is the reason they did not try to get it back. "
+ flavor_csu.213.a: "Return this evil child to [kidnapped_heir.GetHisHer] lair before something else happens."
+ flavor_csu.213.b: "Nonsense of superstitious servants."

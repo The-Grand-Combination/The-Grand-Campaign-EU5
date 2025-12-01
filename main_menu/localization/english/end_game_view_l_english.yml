@@ -1,0 +1,16 @@
+﻿l_english:
+ END_GAME_VIEW_LOSING_TITLE: "Game Over"
+ END_GAME_VIEW_LOSING_TEXT: "Our nation has failed to survive the course of events, not being powerful and determined enough compared to our neighbors. In the future, the [COUNTRY.GetAdjective] people will only be remembered in a museum, where the scholars will study our failure."
+  
+ END_GAME_VIEW_SURVIVING_TITLE: "A Minor Addendum to History"
+ END_GAME_VIEW_SURVIVING_TEXT: "Our proud nation has survived centuries of struggle, warfare, and adversity, yet despite this, the [COUNTRY.GetAdjective] people have achieved little of note. In a world filled with behemoths of civilization and battle, we are but a side note."
+  
+ END_GAME_VIEW_GREAT_POWER_TITLE: "A Great Power"
+ END_GAME_VIEW_GREAT_TEXT: "Our glorious nation has achieved being considered a Great Power of the world. Congratulations, the [COUNTRY.GetAdjective] people are among the most prosperous and prestigious of this age, and our rule has been rewarded with the most outstanding success."
+  
+ 
+ CONTINUE_PAST_END_DATE: "Continue playing"
+ CONTINUE_PAST_END_DATE_TOOLTIP: "Continue playing\nAchievements will be disabled going forward"
+ END_GAME_VIEW_QUIT_TOOLTIP: "End game and return to the main menu"
+ END_GAME_VIEW_OBSERVE: "Observe"
+ END_GAME_VIEW_OBSERVE_TOOLTIP: "Continue in Observer Mode"

@@ -1,0 +1,54 @@
+﻿l_english:
+ 
+#Military Order Events
+
+  military_order_events.1.title: "A Request for the [GetCountry('PAP').GetGovernment.GetRulerTitle]"
+  military_order_events.1.desc: "In our fight to protect our faith against infidels, heretics, and heathens, we are not alone. Men of true faith flock to our banner answering a higher call to arms against the tyranny and destruction wrought by our religious foes. At times of war and need we shall turn to our [ShowReligionAdjective('catholic')] brethren and the [GetCountry('PAP').GetGovernment.GetRulerTitle] for aid in our cause."
+  military_order_events.1.a: "We need assistance with our infrastructure."
+  military_order_events.1.b: "Call the banners, we need men for our holy struggle!"
+  military_order_events.1.c: "We need help filling our coffers."
+  gain_a_tt: "Should the Holy Father accept, we will gain the [ShowModifier('infrastructure_funds_modifier')] [modifier|e]"
+  gain_b_tt: "Should the Holy Father accept, we will gain the [ShowModifier('warrior_banners_modifier')] [modifier|e]"
+  gain_c_tt: "Should the Holy Father accept, we will gain the [ShowModifier('foreign_donations_modifier')] [modifier|e]"
+
+  military_order_events.2.title: "A Letter from [target_order.GetNameWithNoTooltip]"
+  military_order_events.2.title_fallback: "A Letter from the Holy Order"
+  military_order_events.2.desc: "It has come to our attention that [target_order.GetName] has become a bastion of our faith and a shining symbol of the enduring strength within the [ShowReligionName('catholic')]. In their efforts to protect the faithful, they have requested aid from our coffers."
+  military_order_events.2.a: "Approve the request."
+  military_order_events.2.b: "They are on their own..."
+
+  military_order_events.3.title: "The [GetCountry('PAP').GetGovernment.GetRulerTitle] Approves our Request"
+  military_order_events.3.desc: "The messenger hands our advisors a letter from the [GetCountry('PAP').GetGovernment.GetRulerTitle]. According to the Holy Father, our struggle is recognized and true, a shining symbol of the resilience displayed by our people. He agreed to donate to our cause!"
+  military_order_events.3.a: "Rejoice!"
+
+  military_order_events.4.title: "The [GetCountry('PAP').GetGovernment.GetRulerTitle] Denies our Request"
+  military_order_events.4.desc: "The mood across our halls sours and greys out as the messenger blurts out the Holy Fathers denial of aid to our cause. It seems that we are left alone against an onslaught of ravenous enemies at our gates. The Holy See has denied our request for aid and has decided not to protect the faith they claim to represent, a pitiful state of affairs..."
+  military_order_events.4.a: "God help us..."
+
+  military_order_events.5.title: "The Conquest of [ShowLocationNameWithNoTooltip('antioch')]"
+  military_order_events.5.desc: "It has been so long since Crusader boots set foot in the Holy Land. Our knights, resolute and unwavering, have concluded a most prestigious campaign, the reclamation of the ancient city of [ShowLocationName('antioch')]. This storied city, perched on the shores of the Mediterranean, stands as a testament to centuries of diverse cultures and turbulent history. Its narrow, winding streets whisper tales of empires risen and fallen, from the Seleucids to the Byzantines. [ShowLocationNameWithNoTooltip('antioch')]'s strategic importance is unwavering, as it guards the eastern gateway to the Mediterranean and is a vital hub for trade and military control.\n\nAs a Military Order, we are driven by our relentless dedication to the defense of Christianity, determined to restore the city to its rightful hands. In the present moment, under the clear Syrian skies, our men march forth, their crimson cross banners fluttering in the wind, resolute in their quest to reclaim the rest of the Holy Land from the clutches of time, heathens and turmoil."
+  military_order_events.5.a: "Our banners fly high over the city once again."
+
+  military_order_events.6.title: "The Conquest of [ShowLocationNameWithNoTooltip('urfa')]"
+  military_order_events.6.desc: "Our elders do not recall the last time they laid their eyes on such a beautiful city. [ShowLocationName('urfa')], under the command of Crusaders, embodies the fervor and resilience of our order. Nestled amidst the arid plains of Mesopotamia, it boasts a rich history that resonates with the echoes of the First Crusade, as the first Crusader state established in the East. Our predecessors had fortified its walls and woven a tapestry of Christian devotion into the very fabric of this ancient land. Its streets bear the scars of countless battles, yet they remain a testament to the enduring spirit of our forefathers.\n\nToday, we stand united, driven by our unwavering commitment to protect the city from the encroaching forces that threaten our Christian brethren. Under the blazing sun, our crimson cross banners rise high as we advance, determined to restore the entire region to its rightful place in the annals of Crusader history."
+  military_order_events.6.a: "Let it not fall to heathen hands again!"
+
+  military_order_events.7.title: "The Conquest of [ShowLocationNameWithNoTooltip('damascus')]"
+  military_order_events.7.desc: "One of the most prized cities in the Levant, [ShowLocationName('damascus')] now lays under Crusader command as she stands, a jewel in the heart of the Holy Land. Its ancient walls and bustling bazaars reflect the legacy of both Islamic and Christian rule. Under our watchful eye, [ShowLocationNameWithNoTooltip('damascus')] shall thrive as a beacon of of our great victory and mercy, where Christian and Muslim communities coexist in relative harmony.\n\nAgainst those who wish to see the city in heathen hands, we will raise our sword and protect it and its inhabitants, lest they besmirch the legacy of this magnificent settlement. Our resolve is unwavering, our faith steadfast, as we march forth with crimson crosses emblazoned on our armor, determined to safeguard this bastion of Christian influence and ensure that the vibrant history of [ShowLocationNameWithNoTooltip('damascus')] continues to flourish under Crusader rule."
+  military_order_events.7.a: "An important milestone in our military campaigns."
+
+  military_order_events.8.title: "The Conquest of [ShowLocationNameWithNoTooltip('jerusalem')]"
+  military_order_events.8.desc: "Many across the halls of [ShowReligionName('catholic')] nations have voiced their concerns in our ability to retake the Holy Land's most prized city, [ShowLocationName('jerusalem')]. Let our victory silence all these voices as the momentous task of reclaiming this revered city is proclaimed an absolute success. Under our command, the city shall blossom into a testament of Christian devotion, a place where history and faith intertwine. Its majestic ramparts encircle a city imbued with sacred significance, where the echoes of Christ's footsteps reverberate through the cobblestone streets.\n\nWithin these ancient walls, the grandeur of the Church of the Holy Sepulchre stands as a beacon of unwavering faith, drawing pilgrims from all corners of the world. Yet, the great peril never ceases, as hostile forces seek to extinguish the Christian presence within these cherished confines. With unwavering resolve and the emblematic crimson cross etched upon our armor, we advance, bound by a solemn duty to protect the heart of Christendom and ensure that [ShowLocationNameWithNoTooltip('jerusalem')] remains a timeless symbol of Christian reverence for generations to come."
+  military_order_events.8.a: "Let it be our new capital!"
+  military_order_events.8.b: "Rejoice!"
+
+  military_order_events.9.title: "The Banners of Outremer"
+  military_order_events.9.desc: "The realm of Outremer, under the vigilant command of the Crusaders, represents a bastion of Christian influence in the East. Its vibrant cities, like [ShowLocationName('jerusalem')] and [ShowLocationName('antioch')], thrive as bustling centers of commerce and culture, where diverse communities coexist, forging a unique tapestry of religious tolerance. Within these walls, cathedrals and fortresses bear witness to our enduring faith, with every stone a testament to our unshaken dedication.\n\nHowever, the specter of adversity looms large, as hostile forces threaten to unravel the very fabric of what we have accomplished. Our successive victories across the Levant have left many heathens frozen in terror, as our banners approach their borders, eager to restore what is rightfully ours."
+  military_order_events.9.a: "We are victorious!"
+  forming_koj_easier_tt: "Forming the Kingdom of Jerusalem will increase our [stability|e], [government_power|e] and grant us the [ShowModifier('jerusalem_resurgent_modifier')] for #Y 20#! years"
+  military_order_events.9.b: "The land belongs to our Order!"
+  military_order_events.9.c: "Restore the territories of [ShowLocationName('jerusalem')] to the rightful owner."
+
+#Tooltips
+
+  because_we_opted_inwards_tt: "Because we opted for '#italic Look inwards, we must develop our stronghold.#!' in the '#Y Aftermath of the Crusade Era#!' event, this option has been amplified"

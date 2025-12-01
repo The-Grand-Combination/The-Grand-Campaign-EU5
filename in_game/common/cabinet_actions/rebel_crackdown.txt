@@ -1,0 +1,103 @@
+﻿rebel_crackdown = {
+	ability = mil
+
+	allow_multiple = yes
+	
+	potential = {
+	}
+
+	allow = {
+		num_rebels > 0
+	}	
+	
+	select_trigger = {
+		looking_for_a = rebels
+		source = actor
+		interaction_source_list = {
+			scope:actor = {
+				every_rebel = {
+					add_to_list = source
+				}
+			}
+		}
+		target_flag = target
+		name = "rebel_crackdown_select_rebel"
+		none_available_msg_key = "rebel_crackdown_no_rebels"
+		column = {
+			data = name
+		}
+		column = {
+			data = rebel_progress
+		}
+		column = {
+			data = monthly_progress
+		}
+		column = {
+			data = rebel_size
+		}
+		visible = {
+			scope:actor = {
+				not = {
+					any_cabinet = {
+						has_cabinet_action = yes
+						cabinet_action = cabinet_action:rebel_crackdown
+						interaction_target:target ?= root
+					}
+				}
+			}
+		}
+	}
+
+	on_activate = {
+		scope:target ?= {
+			add_rebel_modifier = {
+				modifier = cracking_down_on_rebels
+				size = {
+					desc = "[country_cabinet_efficiency|e]"
+					value = 1
+					if = {
+						limit = {
+							exists = scope:cabinet
+						}
+						add = "scope:cabinet.effective_skill"
+					}
+				}
+				mode = add_and_extend
+			}
+		}
+	}
+
+	on_deactivate = {
+		scope:target ?= {
+			remove_rebel_modifier = cracking_down_on_rebels
+		}
+	}
+
+	progress = {
+		scope:target ?= {
+			value = rebel_progress
+		}
+	}
+
+	map_marker = {
+		show_for_owner = yes
+	}
+
+	ai_will_do = {
+		#screw those guys
+		value = 1
+
+		add = {
+			scope:target ?= {
+				value = rebel_size
+				multiply = 150
+				multiply = rebel_progress
+
+				if = {
+					limit = { scope:actor.total_population > 0 }
+					divide = scope:actor.total_population
+				}
+			} 
+		}
+	}
+}

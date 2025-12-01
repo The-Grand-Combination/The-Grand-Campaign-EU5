@@ -1,0 +1,35 @@
+﻿l_english:
+ king_in_prussia.1.title: "A [target_country.GetAdjectiveWithNoTooltip] Crown"
+ king_in_prussia.1.desc: "As our great nation rises to ever loftier heights, [target_character.GetName] has made it known that [target_character.GetSheHe] intends to elevate [target_country.GetName] to the rank of [ShowCountryRankName('rank_kingdom')] and [target_character.GetHerselfHimself] to the rank of [target_character.Custom('GetQueenKing')]. As a [target_character.Custom('GetPrincessPrince')] of the [GetUniqueInternationalOrganization('hre').GetName] it would be untoward if we did not consult the [emperor_character.Custom('GetEmpressEmperor')] in this matter, and so we have written a proposal that he would be wise to consider carefully."
+ king_in_prussia.1.desc.emperor: "Our nation rises to ever loftier heights. While the Imperial grace is upon [target_character.GetName], [target_character.GetHerHis] private state of [target_country.GetName] has reached to a new height of power. It is time to shed the old, petty title of [target_character.Custom('GetPrincessPrince')], and claim the proper rank of a [target_character.Custom('GetQueenKing')]!"
+ king_in_prussia.1.a: "We shall be Kings!"
+ king_in_prussia_request_tt: "The decision will be decided by [emperor_country.GetLongName]"
+ 
+ king_in_prussia.2.title: "The [target_character.Custom('GetQueenKing')] in [target_country.GetNameWithNoTooltip]"
+ king_in_prussia.2.desc: "[target_country.GetName] is a rising power in the [GetUniqueInternationalOrganization('hre').GetName], becoming ever more dominant in Imperial politics and consolidating itself as a contender on the world stage. [target_character.GetName] has announced [target_character.GetHerHis] intention to create a [ShowCountryRankName('rank_kingdom')] of Prussia, elevating the nation from its status as a mere [target_country.GetFlavorRank]. This is almost unprecedented within the [GetUniqueInternationalOrganization('hre').GetNameWithNoTooltip], and [emperor_character.GetName] must consider how to handle this matter."
+ king_in_prussia.2.a: "Let [target_character.GetHerHim] call [target_character.GetHerselfHimself] the [target_character.Custom('GetQueenKing')] in [target_country.GetNameWithNoTooltip]."
+ king_in_prussia_compromise_tt: "[target_country.GetName] will become a [ShowCountryRankName('rank_kingdom')] within the [GetUniqueInternationalOrganization('hre').GetName] through a legal compromise tolerated by the [emperor_character.Custom('GetEmpressEmperor')]"
+ opinion_king_in_prussia: "King in Prussia"
+ king_in_prussia.2.b: "Elevate [target_country.GetNameWithNoTooltip] to an Imperial [ShowCountryRankNameWithNoTooltip('rank_kingdom')]."
+ king_in_prussia_elevated_tt: "[target_country.GetName] will become a [ShowCountryRankName('rank_kingdom')] within the [GetUniqueInternationalOrganization('hre').GetName] through the sponsorship of the [emperor_character.Custom('GetEmpressEmperor')]"
+ elevated_prussia: "Elevated Prussia"
+ king_in_prussia.2.c: "We will not recognize this self-appointed monarch."
+ king_in_prussia_rejection_tt: "[target_country.GetName] must choose between their false crown and their status as an Imperial Prince"
+ opinion_prussia_not_recognized: "Denies Prussian Legitimacy"
+  
+ king_in_prussia.3.title: "The King in [target_country.GetNameWithNoTooltip]"
+ king_in_prussia.3.desc: "Our close friend and ally, [emperor_character.GetName], has graciously decided to elevate [target_country.GetName] to the rank of Imperial [ShowCountryRankName('rank_kingdom')]! Such a privilege has not been granted since the rise of the Kings of [GetCountry('BOH').GetName]. The Kings of [target_country.GetNameWithNoTooltip] shall wear their crown with pride, always remembering the favor granted to them by the [emperor_character.Custom('GetEmpressEmperor')]."
+ king_in_prussia.3.a: "Thank God and the [emperor_character.Custom('GetEmpressEmperor')]!"
+
+ king_in_prussia.4.title: "The [target_character.Custom('GetQueenKing')] in [target_country.GetNameWithNoTooltip]"
+ king_in_prussia.4.desc: "Imperial tradition dictates that the only Kings in the Empire should be the King of the Romans, that being the [emperor_character.Custom('GetEmpressEmperor')] [emperor_character.GetHerselfHimself], and the King of [GetCountry('BOH').GetName]. We have however reached an intriguing legal compromise with [emperor_character.GetName]: our monarchs shall use the title of '[target_character.Custom('GetQueenKing')] in [target_country.GetNameWithNoTooltip]'. As [target_country.GetName] lies outside the bounds of the [GetUniqueInternationalOrganization('hre').GetName], we can name ourselves Kings without any need for the [emperor_character.Custom('GetEmpressEmperor')] to break Imperial traditions."
+ king_in_prussia.4.a: "A satisfying compromise."
+
+ king_in_prussia.5.title: "The [target_character.Custom('GetQueenKing')] in [target_country.GetNameWithNoTooltip]"
+ king_in_prussia.5.desc: "[emperor_character.GetName], that honorless cur, has refused to acknowledge our right to call ourselves Kings no matter what reasonable compromises we proposed. We shall pay [emperor_character.GetHerHim] no heed of course, and title ourselves as Kings regardless."
+ king_in_prussia.5.a: "We do not need the [emperor_character.Custom('GetEmpressEmperor')]'s permission."
+ king_in_prussia.5.b: "Accept the [emperor_character.Custom('GetEmpressEmperor')]'s decision gracefully."
+
+ king_in_prussia.6.title: "[ROOT.GetCountry.GetRulerOrRegent.Custom('GetQueenKing')] in and of [ROOT.GetCountry.GetNameWithNoTooltip]"
+ king_in_prussia.6.desc: "Ever since the compromise of the title '[target_character.Custom('GetQueenKing')] in [ROOT.GetCountry.GetNameWithNoTooltip]', the idea of an official elevation of [ROOT.GetCountry.GetName] as [ShowCountryRankName('rank_kingdom')] within the [GetUniqueInternationalOrganization('hre').GetName] has never been mentioned again. However, the most recent issue in the [GetUniqueInternationalOrganization('hre').GetParliament.GetName] has forced [emperor_character.GetName] to reconsider this compromise. In order to win [target_character.GetName]'s vote for the pressing issue dealing with [GetUniqueInternationalOrganization('hre').GetParliament.GetCurrentDebate.GetName], the decision has been to grant the title of [ShowCountryRankNameWithNoTooltip('rank_kingdom')] to [ROOT.GetCountry.GetNameWithNoTooltip]."
+ king_in_prussia.6.a: "Patience does pay out after all!"

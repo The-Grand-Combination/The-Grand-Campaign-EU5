@@ -1,0 +1,14 @@
+﻿bironovshchina = {
+	ability = adm
+	allow_multiple = yes
+	icon = diplomatic_endeavors
+	potential = {
+		has_unlocked_cabinet_action_trigger = { type = bironovshchina }
+	}
+	country_modifier = {
+		estate_power_from_cabinet = -0.25
+		diplomatic_reputation = diplomatic_reputation_mild_bonus
+		monthly_towards_outward = societal_value_minor_monthly_move
+		stability_decay = -0.00025
+	}
+}

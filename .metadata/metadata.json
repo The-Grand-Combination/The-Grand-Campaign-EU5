@@ -1,0 +1,30 @@
+﻿{
+	"name":	"The Grand Combination",
+	"id":	"tgc.euv",
+	"version":	"0.0.2",
+	"supported_game_version":	"1.0.*",
+	"short_description":	"silly cat",
+	"tags":	["Diplomacy", "Gameplay", "Government and Estates", "Historical", "Overhaul"],
+	"relationships":	[],
+	"game_custom_data":	{
+		"replace_paths" : [
+ 			"events",
+ 			"events/character",
+			"events/colonization",
+			"events/culture",
+			"events/debug",
+			"events/DHE",
+			"events/diplomacy",
+			"events/disaster",
+			"events/economy",
+			"events/estates",
+			"events/exploration",
+			"events/government",
+			"events/missionevents",
+			"events/religion",
+			"events/situations",
+			"common/goods",
+			"common/building_types"
+ 		]
+	}
+}

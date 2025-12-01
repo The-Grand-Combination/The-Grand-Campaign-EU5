@@ -1,0 +1,12 @@
+﻿streltsy = {
+	ability = mil
+	icon = byz_extensive_conscription
+	potential = {
+		has_reform = government_reform:prikazi_reform
+	}
+	
+	country_modifier = {
+		monthly_army_tradition = 0.05
+		counter_espionage = 0.2
+	}
+}

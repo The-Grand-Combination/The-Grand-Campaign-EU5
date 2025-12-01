@@ -1,0 +1,42 @@
+﻿BIA = {
+	color = rgb { 36  157  123 }
+   culture_definition = moldovan
+   religion_definition = orthodox
+}
+
+BLD = {
+	color = rgb { 236  57  123 }
+   culture_definition = moldovan
+   religion_definition = orthodox
+}
+
+HTN = {
+	color = rgb { 236  57  223 }
+   culture_definition = moldovan
+   religion_definition = orthodox
+}
+
+HSC = {
+	color = rgb { 136  57  223 }
+   culture_definition = moldovan
+   religion_definition = orthodox
+}
+
+IAS = {
+	color = rgb { 36  57  123 }
+   culture_definition = moldovan
+   religion_definition = orthodox
+}
+
+SRC = {
+	color = rgb { 136  157  223 }
+   culture_definition = moldovan
+   religion_definition = orthodox
+}
+
+SSI = {
+	color = rgb { 36  57  223 }
+   culture_definition = moldovan
+   religion_definition = orthodox
+}
+

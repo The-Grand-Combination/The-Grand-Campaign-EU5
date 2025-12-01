@@ -1,0 +1,20 @@
+﻿l_english:
+ privilege_events.100.title: "Invite German Settlers"
+ privilege_events.100.desc: "Due to plague and war, our country is mostly depopulated and the small number of peasants are spread very thin over our vast territories, making activities that require huge amounts of workers, like reaping the harvest or clearing new lands, very difficult to accomplish.\n\nWe can invite new settlers and artisans from the German lands to come and create new towns in our holdings by providing them with help and special privileges, like the right to be ruled by their own laws and lower taxes."
+ privilege_events.100.desc.kulm_law: "The rather overcrowded [german_province.GetName] has become too competitive of an environment to live in. That is why, many from [german_province.GetNameWithNoTooltip] and the surroundings have chosen to seek a better life in [target_province.GetName], enticed by our generous privileges provided as part of the [ShowEstatePrivilegeName('kulm_law')]."
+ privilege_events.100.a: "Welcome them."
+ privilege_events.100.b: "Help them settle directly."
+ privilege_events.100.c: "We do not need more foreigners."
+ privilege_events.100.d: "We can not find more people willing to migrate."
+ enough_migrants_tt: "There are enough migrants"
+ not_enough_migrants_tt: "There are no more migrants"
+
+ privilege_events.101.title: "Migration to [target_province.GetNameWithNoTooltip]"
+ privilege_events.101.desc: "Inspired by the privileges granted out by the [migration_destination_country.GetLongName], many settlers from [scope_german_location.GetProvinceDefinition.GetName] have abandoned their families in hopes of forging a better life in [target_province.GetName]. Though such population drifts are permitted under our laws, many such migrations could lead to depletion of our population."
+ privilege_events.101.a: "Is there nothing we can do?"
+ privilege_events.101.tt: "This [event|e] has fired due to [german_province.GetName] fulfilling:\n[ShowTriggerConditionsForScope('privilege_events_100_is_in_bad_shape', SCOPE.sProvince('german_province').GetProvince.MakeScope.Self)]"
+
+ privilege_events.110.title: "A Rising New Family for the Book"
+ privilege_events.110.desc: "The newly rich [target_dynasty.GetName] family has grown very influential in their home of [location_scope.GetName], but their lowborn origins will bar them from reaching offices of real power in the [ROOT.GetCountry.GetName].\n\nThey have sent an envoy to our court requesting that we would allow the addition of their family in the #italic Libro d'Oro#! which would ennoble them and make them #italic Patricians#! of [ROOT.GetCountry.GetNameWithNoTooltip].\n\nAdding a new family in this way to the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] would surely displease the other members but the [target_dynasty.GetNameWithNoTooltip] family has also sent a large coffer full of gold to help us make a decision."
+ privilege_events.110.a: "Accept and invite one of them to court."
+ privilege_events.110.b: "Reject these lowborn wannabes."

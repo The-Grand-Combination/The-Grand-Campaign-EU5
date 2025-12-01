@@ -1,0 +1,90 @@
+﻿MLL = {
+	color = map_MLL
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = catalan
+	religion_definition = catholic
+
+	
+}
+
+CAS = {
+	color = map_CAS
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = castilian
+	religion_definition = catholic
+	
+	unit_color0 = rgb { 201 163 9 }
+	unit_color1 = rgb { 188 28 13 }
+	unit_color2 = rgb { 200 200 210 }
+
+	description_category = military
+	difficulty = 2
+
+	
+}
+
+LON = {
+	color = map_LON
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = leonese
+	religion_definition = catholic
+	
+	unit_color0 = purple
+	unit_color1 = white
+	unit_color2 = red
+
+	
+}
+
+GRA = {
+	color = map_GRA
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = andalusi
+	religion_definition = sunni
+
+	
+}
+
+#CTV = {
+#	color = map_CTV
+#	color2 = rgb { 16 41 202 }
+#
+#	culture_definition = castilian
+#	religion_definition = catholic
+#}
+
+#STO = {
+#	color = map_STO
+#	color2 = rgb { 16 41 202 }
+#
+#	culture_definition = castilian
+#	religion_definition = catholic
+#}
+
+#ACT = {
+#	color = map_ACT
+#	color2 = rgb { 16 41 202 }
+#
+#	culture_definition = castilian
+#	religion_definition = catholic
+#}
+
+#MTS = {
+#	color = map_MTS
+#	color2 = rgb { 16 41 202 }
+#
+#	culture_definition = aragonese
+#	religion_definition = catholic
+#}
+
+#OPX = {
+#	color = map_OPX
+#	color2 = rgb { 16 41 202 }
+#
+#	culture_definition = portuguese
+#	religion_definition = catholic
+#}

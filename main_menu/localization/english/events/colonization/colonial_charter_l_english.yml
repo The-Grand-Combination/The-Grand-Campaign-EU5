@@ -1,0 +1,59 @@
+﻿l_english:
+ colonial_charter.1.title: "The [SCOPE.sLocation('new_colony').GetNameWithNoTooltip] Company"
+ colonial_charter.1.desc: "Our nation is surrounded by territories as yet unclaimed by any of our rivals. Our ambition to expand the lands belonging to the crown has taken root amongst our people as nationalistic fervor, and a new private company has established itself with the intention of bringing settlers to the lands of [SCOPE.sLocation('new_colony').GetName] to claim the territory for Glory, Gold, [ROOT.GetCountry.GetGovernment.GetRulerTitle], and their Company. Should we permit their expansion, they will bring a great deal of settlers to the province and rapidly expand [ROOT.GetCountry.GetAdjective] influence in the area."
+ colonial_charter.1.a: "This can only be good for us. Leave them be."
+ colonial_charter.1.b: "Charge them additional fees!"
+ 
+ colonial_charter.3.title: "Wave of Immigration"
+ colonial_charter.3.desc: "One of our colonies, [target.GetName], has received a surge of immigrants seeking their fortune in our colonies. It will soon become a self-supporting city providing much wealth to our realm."
+ colonial_charter.3.a: "This is good to see."
+
+ colonial_charter.4.title: "Colonial Disaster"
+ colonial_charter.4.desc: "A disaster has struck one of our colonies. Many settlers have died and yet more have returned home. This is a disaster and we may even lose our colony."
+ colonial_charter.4.a: "It cannot be helped."
+ colonial_charter.4.b: "Spare no effort in aiding the colony."
+
+
+ colonial_charter.5.title: "Friendship with the Natives"
+ colonial_charter.5.desc: "Our Colonists have managed to reach out to the Natives and arrive at an understanding with them. This agreement has allowed [SCOPE.sColonialCharter('target').GetName] greater scope for growth without the natives getting upset."
+ colonial_charter.5.a: "This is worth a thanksgiving!"
+ 
+ colonial_charter.6.title: "Bringing In Marriageable Women"
+ colonial_charter.6.desc: "A pioneer colony is very much a man's place, but, as a colony develops, we seek to grow less by emigration and more by the births of children. The colonial company responsible for [SCOPE.sColonialCharter('target').GetName] has arranged for a number of marriageable women, mostly widows, to travel to the colony to ensure that families are started."
+ colonial_charter.6.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+ 
+ colonial_charter.7.title: "Encourage the Encomienda System"
+ colonial_charter.7.desc: "The matter of the native population is of key concern to us. We must ensure that natives under our care are protected from hostile neighbors, become properly civilized, and practice the true faith. Our plan is to charge our colonists with this duty, wherein each colonist will be given a number of natives to tutor and protect. This is obviously not something that people will do for free, so the natives will provide a number of days of labor to our colonists in return."
+ colonial_charter.7.a: "This is an excellent development!"
+ STATIC_MODIFIER_NAME_encomienda_system: "Encomienda System"
+ STATIC_MODIFIER_DESC_encomienda_system: "The Encomienda System gives each colonist a number of natives to tutor and protect and, in return, the natives will provide a number of days of labor to our colonists."
+ 
+ colonial_charter.8.title: "Evangelical Mission"
+ colonial_charter.8.desc: "Hoping to do good works, men of faith have been spreading the true faith amongst the population of [SCOPE.sLocation('missionary_location').GetName]. Our investment in a mission there has truly paid off."
+ colonial_charter.8.a: "Spread the Good News"
+ 
+ colonial_charter.9.title: "Colony in Trouble!"
+ colonial_charter.9.desc: "Our colonial efforts are spread thin. One of our colonies has run into trouble, as food has become difficult to find. Many have died and yet more have left the colony and returned home."
+ colonial_charter.9.a: "[ROOT.GetCountry.Custom('common_string_negative')]"
+ colonial_charter.9.b: "We must help them!"
+ 
+ colonial_charter.10.title: "Poor Harvest"
+ colonial_charter.10.desc: "[SCOPE.sColonialCharter('target').GetName] has suffered a run of poor harvests, leading to food shortages. The colony is looking less attractive to new immigrants while others are leaving to return home. This is harming the colony's prospects."
+ colonial_charter.10.a: "We cannot abandon them."
+ colonial_charter.10.b: "They can manage on their own."
+
+
+ #
+ colonial_charter.100.title: "The Colony of [SCOPE.sProvince('target').GetNameWithNoTooltip]"
+ colonial_charter.100.desc: "The charter we founded to colonize [SCOPE.sProvince('target').GetName] has now fulfilled its role, and it has become a fully functional colony. Now we need to decide how we wish to handle this territory!"
+ colonial_charter.100.a: "Form a new Colonial Subject."
+ colonial_charter.100.b: "Let it join [SCOPE.sCountry('potential_join_1').GetNameWithNoTooltip]."
+ colonial_charter.100.c: "Let it join [SCOPE.sCountry('potential_join_2').GetNameWithNoTooltip]."
+ colonial_charter.100.d: "Keep it as part of [ROOT.GetCountry.GetNameWithNoTooltip] for now!"
+ colonial_charter.100.e: "Why not start a new life in the colonies?"
+ colonial_charter.100.f: "Let it join [SCOPE.sCountry('potential_join_big_regional_subject').GetNameWithNoTooltip]."
+ colonial_charter.100.e.tt: "Switch to Playing the New Colonial Subject."
+
+ colonial_charter.200.title: "The Failed Colony of [target.GetNameWithNoTooltip]"
+ colonial_charter.200.desc: "The charter we founded to colonize [target.GetNameWithNoTooltip] has completely failed; the [attacker.GetLongName] has been more successful and beaten back all of our attempts!"
+ colonial_charter.200.a: "This is a disaster!"

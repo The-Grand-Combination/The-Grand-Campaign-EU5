@@ -1,0 +1,31 @@
+﻿l_english:
+
+ muscovite_succession_war.17.title: "The Muscovite War of Succession"
+ muscovite_succession_war.17.desc: "In a surprise attack, an army loyal to [pretender.GetName] enters the gates of [target_location.GetName] unopposed and seizes control over its fortifications. We now face the challenge of retaking it whilst fighting off further rebellions who no doubt have been emboldened by this blunder.\n\n[pretender.GetSheHe|U] has declared himself [ROOT.GetCountry.GetGovernment.GetRulerTitle] of [ROOT.GetCountry.GetName] and executed any disloyal soldiers remaining in the city."
+ muscovite_succession_war.17.a: "An epic catastrophe!"
+ STATIC_MODIFIER_NAME_demoralised_by_loss_of_capital: "Demoralised by Loss of Capital"
+ muscovite_succession_war.17.b: "Offer coin in exchange for relinquished control."
+ muscovite_succession_war.17.c: "Downplay its strategic value."
+ muscovite_succession_war.17.tt1: "The martial skills and boldness displayed by [target_root_country.GetGovernment.GetRuler.GetName] rallies the army"
+ muscovite_succession_war.17.historical_info: "The capture of Moscow by forces loyal to Yury Dmitrievich, the uncle of Prince Vasily II, was a major blow for the young ruler, who was captured in the unsuspecting attack. The new prince did not, however, prove himself an efficient ruler and quickly allienated the support of both his family members and the boyars."
+
+ muscovite_succession_war.18.title: "An eye-gauging Experience"
+ muscovite_succession_war.18.desc_captured_during_siege: "The ongoing attempt to retake [target_location.GetName] saw the capture of [ROOT.GetCountry.GetGovernment.GetRuler.GetName] by a serving general, despite him being under the oath of allegiance. Before being set free, [ROOT.GetCountry.GetGovernment.GetRuler.GetShortNameWithNoTooltip] was blinded on both eyes and left to wander back to camp."
+ muscovite_succession_war.18.desc_captured_by_cousin: "During a visit to a nearby monastery, [ROOT.GetCountry.GetGovernment.GetRuler.GetName] was captured by [ROOT.GetCountry.GetGovernment.GetRuler.GetHisHer] cousin, [target_cousin.GetName] who was under the oath of allegiance. Before being set free, [ROOT.GetCountry.GetGovernment.GetRuler.GetShortNameWithNoTooltip] was blinded on both eyes and thereafter returned to [target_location.GetName]."
+ muscovite_succession_war.18.a: "A barbarous act."
+ muscovite_succession_war.18.historical_info: "Vasily II was captured by his cousin Dmitry Shemyaka, son of Yury Dmitrievich, during a visit to the Trinity Lavra of St. Sergius. He was brought to Moscow, where he was blinded and exiled as his cousin briefly seized power over the principality."
+
+ muscovite_succession_war.19.title: "The Betrayal"
+ muscovite_succession_war.19.desc_common: "The additional support should help strengthen the claim of [ROOT.GetCountry.GetGovernment.GetRuler.GetName], or at least saw a seed of discord between our enemies."
+ muscovite_succession_war.19.desc_child_defecting: "There are reports of infighting within the family of [pretender.GetName] because of dissatisfaction with the current leadership. This may be an opportunity to persuade [target_child.GetName] to join our ranks, in exchange for a hefty sum and certain guarantees.\n\n$muscovite_succession_war.19.desc_common$"
+ muscovite_succession_war.19.desc_sibling_defecting: "There are reports of infighting within the family of [pretender.GetName] due to sibling rivalry and lack of strong leadership. This may be an opportunity to persuade [target_sibling.GetName], the brother of [pretender.GetNameWithNoTooltip] to join our ranks, in exchange for a hefty sum and certain guarantees.\n\n$muscovite_succession_war.19.desc_common$"
+ muscovite_succession_war.19.a: "But of course!"
+ muscovite_succession_war.19.b: "There is no redemption for such treasury."
+ muscovite_succession_war.19.tt1: "The [pops|e] of [target_location.GetName], grown accustomed to rebel rule, start to side with [pretender.GetNameWithNoTooltip]"
+ muscovite_succession_war.19.historical_info: "Following the death of Yury Dmitrievich, his son, Vasily Yuryevich, continued to claim the title of Prince over Muscovy. His two brothers, however, anticipated that he would not be able to retain control over Moscow, and sided with Vasily II in exchange for territorial concessions. Vasily Yuryevich was expelled from Moscow and was forced to flee the principality."
+
+ muscovite_succession_war.20.title: "The Conclusion"
+ muscovite_succession_war.20.desc: "The internal strife which has brought havoc to our country has finally come to an end with the recapture of rebel strongholds along with the death of any dynasty members who openly sided against us. Let us pray that this chain of events is never repeated."
+ muscovite_succession_war.20.a: "Pardon any remaining sympathizers."
+ muscovite_succession_war.20.b: "Publicly shame those who dared to opposed us."
+ muscovite_succession_war.20.historical_info: "The Muscovite War of Succession came to an end when the last son of Yury Dmitrievich was defeated in battle and subsequently poisoned by the order of Vasily II. The high mortality rate within the ruling family made it challenging for the dynasty to sustain itself, but ultimately it managed to cling on to power and rule Russia until the end of the sixteenth century."

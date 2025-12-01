@@ -1,0 +1,31 @@
+﻿l_english:
+ witch_trials.1.title: "Witchcraft"
+ witch_trials.1.desc: "The people of the war-torn city of [target_location.GetName] are looking for reasons for the misfortunes that have befallen them. Fortunately, they have not found them to be related to our rulership, but unfortunately, what they have found has caused quite a stir. The prolonged effects of the war and how they seem to affect some more than others, they claim, can only be the work of those practicing witchcraft and sorcery.\n\nAccusations have been leveled generously, and there are local authorities willing to organize proper trials for these crimes. As proper as trials for magic get in [ROOT.GetCountry.GetName], anyway."
+ witch_trials.1.a: "Allow them to proceed with the local trials."
+ witch_trials.1.b: "Our inquisitor can see to these matters in a more organized fashion."
+ witch_trials.1.c: "Such foolish superstitions have no place in [ROOT.GetCountry.GetNameWithNoTooltip]!"
+
+ witch_trials.1000.title: "Witch Trials in [target_location.GetNameWithNoTooltip]"
+ witch_trials.1000.desc: "People in provinces suffering from famine, disease, and unfortunate events claim that sorcery and witchcraft are behind their misery. Women, children, and men have been accused of being witches, of worshiping the Devil, and of being a threat to Christendom. It has gone so far that people in [target_location.GetName] have lynched alleged witches without a proper trial!"
+ witch_trials.1000.a: "There are no such things as sorcery and witches!"
+ witch_trials.1000.b: "We will not interfere, not now."
+ witch_trials.1000.c: "Send a messenger to the [GetCountry('PAP').GetGovernment.GetRulerTitle], to ask for advice."
+ witch_trials.1000.d: "The Dominican Inquisition will take care of them."
+
+ witch_trials.1001.title: "A Cry for Help"
+ witch_trials.1001.desc: "[target_ruler.GetName] is asking the [ROOT.GetCountry.GetGovernment.GetRulerTitle] for advice about the recent witch hunts and trials. The people of [target_ruler.GetHerHis] country are blaming their misfortune and suffering on sorcery and witchcraft. Their anger has led to women, children, and men being accused of worshiping the Devil, being a threat to Christendom, and to the wellbeing of the faithful. Should they be banned, these witch hunts and trials, or should the people be allowed to hunt, pursue, lay blame, and punish people that might be innocent or not of witchcraft?"
+ witch_trials.1001.a: "Condemn the witch hunts and trials!"
+ witch_trials.1001.b: "The people should be allowed to continue this practice."
+
+ witch_trials.1002.title: "The [GetCountry('PAP').GetGovernment.GetRulerTitle] condemns the Witch Trials"
+ witch_trials.1002.desc: "After asking [GetCountry('PAP').GetGovernment.GetRuler.GetName] for advice on the whole witch situation, about whether or not we should continue with our witch hunts and trials, we waited long for the answer. It finally arrived, with the [GetCountry('PAP').GetGovernment.GetRulerTitle]'s signature at the end of the official document. 'Cease with the witch hunts and trials immediately!'"
+ witch_trials.1002.a: "We obey."
+ witch_trials.1002.b: "We decline."
+ opinion_witchtrials_good: "Followed the Doctrine."
+ opinion_witchtrials_bad: "Disobeyed the Doctrine."
+
+ witch_trials.1003.title: "The [GetCountry('PAP').GetGovernment.GetRulerTitle] permits the Witch Trials"
+ witch_trials.1003.desc: "The message from [GetCountry('PAP').GetGovernment.GetRuler.GetName] was very clear, sorcery and witchcraft should be pursued, the accused ones tried and the guilty ones punished for their sinful deeds. All who worship the Devil, attend witches' Sabbaths, and threaten Christendom will burn in Hell!"
+ witch_trials.1003.a: "We understand, and we accept."
+ witch_trials.1003.b: "No, we refuse to let superstition tear our land!"
+ witch_trials.remove_modifiers.tt: "The Witch Trials are interrupted!"

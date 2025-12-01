@@ -1,0 +1,23 @@
+﻿byz_extensive_conscription = {
+	ability = mil
+	potential = {
+		modifier:allow_extensive_conscription_cabinet_action = yes
+		at_war = yes
+	}
+	allow = {
+		any_country_at_war_with = {
+			religion.group != root.religion.group
+		}
+	}
+	is_finished = {
+		NOT = { 
+			any_country_at_war_with = {
+				religion.group != root.religion.group
+			}
+		}
+	}
+	country_modifier = {
+		global_manpower_modifier = 0.1
+		army_reinforce_cost = -0.2
+	}
+}

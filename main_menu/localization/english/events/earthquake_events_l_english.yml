@@ -1,0 +1,51 @@
+﻿l_english:
+
+ STATIC_MODIFIER_NAME_minor_recovery_effort: "Minor Recovery Efforts"
+ STATIC_MODIFIER_NAME_major_recovery_effort: "Major Recovery Efforts"
+ earthquake_events.1.title: "Earthquake in [target_location.GetNameWithNoTooltip]"
+ earthquake_events.1.desc: "Alas, a great disaster has struck [target_location.GetName]. It was as if the sky and the earth split, creating huge seismic activity that resulted in the displacement of many of our citizens and the general destruction of many buildings across the city. Most of all, our great [ShowWorkOfArtName('hagia_sophia')] has suffered extensive damage that may take years and coin to repair..."
+ earthquake_events.1.a: "[ROOT.GetCountry.Custom('common_string_nothing_we_can_do')]"
+ earthquake_events.1.b: "Fund its repairs immediately!"
+
+ earthquake_events.title: "The [target_location.GetNameWithNoTooltip] Earthquake of [GetCurrentYear]"
+
+ earthquake_events_minor.desc: "The area around [target_location.GetName] has reported a sequence of earthquakes during the last few days. While the population was in panic and significant damage occurred both during the earthquake and the following fires breaking out, thankfully the damage seems to be in a manageable state. Our advisors also pointed out that we could use the destruction caused as a convenient opportunity to re-invest into [target_location.GetNameWithNoTooltip] and shape it to our desires."
+ earthquake_events_minor.a: "[target_location.GetOwner.Custom('common_string_negative')]"
+ earthquake_events_minor.a.tt: "[target_location.GetName] and neighboring [locations|E] will lose a minor amount of [prosperity|e], lose [pops|e] and some [buildings|e] will be destroyed by the disaster."
+ earthquake_events_minor.b: "Support [target_location.GetNameWithNoTooltip] with some money"
+ earthquake_events_minor.b.tt: "[target_location.GetName] and neighboring [locations|E] will lose a minor amount of [prosperity|e], lose [pops|e] and some [buildings|e] will be destroyed by the disaster. With our investment in the [location|E] we will have an easier time rebuilding."
+
+ earthquake_events_major.desc: "An earthquake has hit [target_location.GetName]! Severe Shocks during the last few days have destroyed [target_location.GetNameWithNoTooltip] and the surrounding area to a vast degree. While a lot of the damage has not yet been fully accounted for, it is clear that the destruction caused by this event will impact the area for a long time, unless we immediately act and send help to those affected!"
+ earthquake_events_major.a: "[target_location.GetOwner.Custom('common_string_negative')]"
+ earthquake_events_major.a.tt: "[target_location.GetName] and neighboring [locations|E] will lose a major amount of [prosperity|e], lose [pops|e] and some [buildings|e] will be destroyed by the disaster."
+ earthquake_events_major.b: "Reinvestment is necessary to help [target_location.GetNameWithNoTooltip] recover"
+ earthquake_events_major.b.tt: "[target_location.GetName] and neighboring [locations|E] will lose a major amount of [prosperity|e], lose [pops|e] and some [buildings|e] will be destroyed by the disaster. With our investment in the [location|E] we will have an easier time rebuilding."
+
+ earthquake_events_catastrophic.desc: "During the last few days an earthquake beyond comparison has struck [target_location.GetName]! The force with which this event struck was far greater than what we are used to experiencing and the citizens of [target_location.GetNameWithNoTooltip] have suffered greatly under the disaster. Many are buried in the rubble of buildings, with even more losing their home and shelter. Without reinvestment [target_location.GetNameWithNoTooltip] would certainly take decades to recover properly and we should take proper care of the affected area."
+ earthquake_events_catastrophic.a: "[target_location.GetOwner.Custom('common_string_negative')]"
+ earthquake_events_catastrophic.a.tt: "[target_location.GetName] and neighboring [locations|E] will lose a severe amount of [prosperity|e], lose [pops|e] and some [buildings|e] will be destroyed by the disaster."
+ earthquake_events_catastrophy.b: "We need to help the poor souls!"
+ earthquake_events_catastrophy.b.tt: "[target_location.GetName] and neighboring [locations|E] will lose a severe amount of [prosperity|e], lose [pops|e] and some [buildings|e] will be destroyed by the disaster. With our investment in the [location|E] we will have an easier time rebuilding."
+
+ #specific earthquake loc
+ earthquake_events.79.historical_info: "The Earthquake that destroyed Lisbon was a catastrophe of huge proportions that resounded all across Europe and even into the New World. On the 1st of November 1755, the ground suddenly started to shake and the buildings started caving in. For those that survived it was far from over as fires flared up in the city, supported by heavy winds. Thousands of people would fall victim to the grand tidal wave reaching land just a few minutes later. The death count was estimated between 20,000 and 40,000 people at the time and given all elements the explanation #italic punishment by God#! was a view widely spread both in Portugal and elsewhere."
+
+ earthquake_events.7.historical_info: "The 1531 Lisbon Earthquake occurred on the morning of the 26th of January 1531. The Intensity of the shaking earth combined with the following flooding of the Tagus River and a tsunami hitting the shores of Portugal caused severe damage to the city and caused the death of approximately 30,000 people."
+
+ earthquake_events.1000.title: "The [target_location.GetNameWithNoTooltip] Earthquake"
+ earthquake_events.1000.desc: "As if there was no end to our misfortunes, a devastating earthquake has struck [target_location.GetName] and its surrounding areas. Nearly every building in the city has been destroyed, causing thousands of inhabitants to flee in search of new homes elsewhere. But not only is this a terrible blow to the once-vibrant economy of [target_location.GetNameWithNoTooltip] — it might also pave the way for our enemies to invade!"
+ earthquake_events.1000.a: "May God have mercy on us!"
+ earthquake_events.1000.b: "We must send soldiers to fortify the area at once."
+ earthquake_events.1000.tt: "[target_location.GetName] and neighboring coastal [locations|E] will lose [prosperity|e], lose [pops|e] and some [buildings|e] will be affected by the disaster"
+ earthquake_events.1000.historical_info: "The earthquake of 2 March 1354 devastated Gallipoli. The Ottomans quickly seized the opportunity to cross the Dardanelles and capture the city, and thus gained their first foothold in Europe."
+
+ earthquake_events.1001.title: "$earthquake_events.1000.title$"
+ earthquake_events.1001.desc: "The [target_country.GetAdjectiveWithNoTooltip] city of [target_location.GetName] has been hit by a devastating earthquake, and now lies in chaos and ruins. The people have scattered to the four winds and the defenses are in disarray. This seems like a God-given opportunity to try to wrest the city from [target_country.GetName], and resettle it with our loyal subjects. But a more cautious approach would be to invite some of the skilled townsfolk to settle in [capital_location.GetName]." 
+ earthquake_events.1001.a: "A sign from God! Plan the attack!"
+ earthquake_events.1001.b: "Entice the affected to move to [capital_location.GetNameWithNoTooltip]."
+ earthquake_events.1001.historical_info: "$earthquake_events.1000.historical_info$"
+
+ earthquake_events.1100.title: "The Fate of [target_location.GetNameWithNoTooltip]"
+ earthquake_events.1100.desc: "[target_location.GetName] lies in ruins after the earthquake, and our conquest has not made it better. But the depopulated city provides a great opportunity for resettlement, and [ShowCultureName('turkish_culture')] Anatolians of both urban and nomadic backgrounds have already begun to move in - encouraged by us, of course. This will become an important foothold in Rumelia!" 
+ earthquake_events.1100.a: "It was God's will."
+ earthquake_events.1100.historical_info: "After the Ottoman commander Süleyman Pasha conquered Gallipoli, the depopulated city was resettled by Turkish migrants from Anatolia, and became the Turks' first stronghold in Europe. This caused much fear in Constantinople, and eventually triggered the Savoyard Crusade of 1366—67."

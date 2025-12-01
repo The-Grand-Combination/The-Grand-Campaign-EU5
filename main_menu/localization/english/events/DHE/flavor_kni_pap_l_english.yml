@@ -1,0 +1,37 @@
+﻿l_english:
+ flavor_kni_pap.1.title: "Smyrniote Crusade"
+ flavor_kni_pap.1.desc: "The widespread [crusade_target.GetCulture.GetName] piracy, with the [crusade_target.GetLongName] at its helm, has caused much dismay to the [ROOT.GetCountry.GetReligion.GetGroup.GetAdjective] shipping. Such a state of matters cannot stand. Christendom will not be humiliated by lowly [crusade_target.GetReligion.GetAdjective] pirates! To curb this misery, we could call a crusade on [crusade_target.GetNameWithNoTooltip], to end their treachery once and for all."
+ flavor_kni_pap.1.historical_info: "The two Smyrniote Crusades took place between 1343 and 1351. During the first crusade, the Christians managed to capture the Smyrniote citadel and port but failed to secure the acropolis. To celebrate the successes, a mass was held in the city during which the Turks swept in and massacred the praying leadership. After that, a second crusade was organized to help the struggling Christian side of the city."
+ flavor_kni_pap.1.a: "No one shall threaten [ROOT.GetCountry.GetReligion.GetGroup.GetAdjectiveWithNoTooltip] shipping!"
+ flavor_kni_pap.1.b: "Oh the misery."
+
+ flavor_kni_pap.2.title: "$flavor_kni_pap.1.title$"
+ flavor_kni_pap.2.desc: "An envoy has arrived from the [papal_state.GetLongName], inviting us to a crusade against [crusade_target.GetName]. Those [crusade_target.GetReligion.GetAdjective] pirates have been the scourge of the [ShowProvinceDefinitionName('aegean_sea_province')] for a few decades now, recently ramping up their efforts to raid [papal_state.GetReligion.GetGroup.GetAdjective] shipping. It is about time they were taught a lesson."
+ flavor_kni_pap.2.historical_info: "$flavor_kni_pap.1.historical_info$"
+ flavor_kni_pap.2.a: "Heed the call."
+ flavor_kni_pap.2.b: "We cannot participate at this point in time."
+ STATIC_MODIFIER_NAME_kni_smyrniote_crusade: "Crusader Fervor"
+ kni_joined_crusade: "Joined the Smyrniote Crusade"
+
+ flavor_kni_pap.3.title: "Crusade against Us!"
+ flavor_kni_pap.3.desc: "The vile [papal_state.GetReligion.GetAdjective] scum in [papal_state.GetName] have called a Holy War against us. Apparently, our recent piracy has been too much for their liking. Let us meet them on the seas and teach them a lesson or two about who the real admirals of the [ShowProvinceDefinitionName('aegean_sea_province')] are."
+ flavor_kni_pap.3.historical_info: "$flavor_kni_pap.1.historical_info$"
+ flavor_kni_pap.3.a: "More ships to raid!"
+
+ flavor_kni_pap.4.title: "Cession to [target_country.GetNameWithNoTooltip]"
+ flavor_kni_pap.4.desc: "Our recent acquisitions in [ShowAreaName('west_anatolia_area')] are the results of our valiant efforts in our recent crusade. With that being said, it must be said that our ability to hold onto this land is disputable at best. As such, perhaps passing on those territories to the [target_country.GetLongName] would be ideal."
+ flavor_kni_pap.4.a: "Pass it on."
+ flavor_kni_pap.4.b: "We fought valiantly for this land."
+ STATIC_MODIFIER_NAME_kni_cession_of_anatolia_to_holy_order: "Grant to a Holy Military Order"
+
+ flavor_kni_pap.5.title: "[the_from.GetNameWithNoTooltip]'s Grant"
+ flavor_kni_pap.5.desc: "The [the_from.GetLongName] is offering us their recent land acquisitions citing their inability to hold onto those territories in the face of foreign rebellion. As we are on the frontier of Christendom, we would be more suited to hold that territory."
+ flavor_kni_pap.5.a: "This grant will serve Christendom."
+ flavor_kni_pap.5.b: "We are overextended already."
+
+ flavor_kni_pap.6.title: "Response from [target_country.GetNameWithNoTooltip]"
+ flavor_kni_pap.6.desc_common: "The envoy from [target_country.GetName] has arrived, bearing news of their response to our offer of grant."
+ flavor_kni_pap.6.desc_accept: "$flavor_kni_pap.6.desc_common$ They thanked us for our gift and our piety and declared full dedication to holding onto the territory in the name of our Lord."
+ flavor_kni_pap.6.desc_deny: "$flavor_kni_pap.6.desc_common$ Unfortunately, they declared their inability to take further territories. In such case, we will have to establish local bailiffs to exert proper control over the territories."
+ flavor_kni_pap.6.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+ flavor_kni_pap.6.b: "Then we hold it justly."

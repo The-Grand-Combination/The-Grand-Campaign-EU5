@@ -1,0 +1,22 @@
+﻿l_english:
+ flavor_hun_ser.1000.title: "An Offer for [target_location.GetNameWithNoTooltip]"
+ flavor_hun_ser.1000.desc: "Over centuries, [target_location.GetName] has changed hands many times. Multiple countries have at times controlled this strategically important [target_location.GetRank.GetName], which allowed them to tighten their grip over the wider region around the Danube. [ROOT.GetCountry.GetAdjective] control of [target_location.GetNameWithNoTooltip] came to an end in 1319, when the [target_location.GetRank.GetNameWithNoTooltip] was seized by [target_country.GetName]. As we now have forged an alliance with them, perhaps we could send [target_country.GetNameWithNoTooltip] an offer - gold in exchange for [target_location.GetNameWithNoTooltip]. Many are hoping that there is a chance to negotiate the return of [target_location.GetNameWithNoTooltip], since ceding it to an ally will not compromise the security of [target_country.GetNameWithNoTooltip]."
+ flavor_hun_ser.1000.a: "We have nothing to lose."
+ flavor_hun_ser.1000.b: "Let us not do this."
+ flavor_hun_ser.1000.a.tt: "We will send an offer to [target_country.GetNameWithNoTooltip], requesting [target_location.GetNameWithNoTooltip] in exchange for gold. Should they accept, the following will happen:"
+ 
+ flavor_hun_ser.1001.title: "An Offer for [target_location.GetNameWithNoTooltip]"
+ flavor_hun_ser.1001.desc: "An interesting offer from our [from_country.GetAdjective] allies has just reached our [ROOT.GetCountry.GetGovernment.GetCourtTitle]. [from_country.GetNameWithNoTooltip] requests that the [target_location.GetRank.GetName] of [target_location.GetName] and the surrounding area is transfered back to [from_country.GetNameWithNoTooltip], since the [target_location.GetRank.GetNameWithNoTooltip] had belonged to them before 1319, and they still see themselves as its rightful owners. They argue that ceding the [target_location.GetRank.GetNameWithNoTooltip] to an ally will not compromise our nation's security."
+ flavor_hun_ser.1001.a: "Sounds like a good deal."
+ flavor_hun_ser.1001.b: "Out of the question!"
+ flavor_hun_ser.1001.a.tt: "We will transfer the control of [target_location.GetNameWithNoTooltip] to [from_country.GetNameWithNoTooltip]."
+ 
+ flavor_hun_ser_response_common: "A response to our offer of trading [target_location.GetName] for gold has just reached our [ROOT.GetCountry.GetGovernment.GetCourtTitle] at [ROOT.GetCountry.GetCapital.GetName]."
+ flavor_hun_ser.1002.title: "[target_country.GetNameWithNoTooltip] Agrees to Return [target_location.GetNameWithNoTooltip]"
+ flavor_hun_ser.1002.desc: "$flavor_hun_ser_response_common$ Our [target_country.GetAdjective] allies have fortunately accepted the offer, and so [target_location.GetNameWithNoTooltip] is once again under [ROOT.GetCountry.GetAdjective] control."
+ flavor_hun_ser.1002.a: "Wonderful!"
+ 
+ flavor_hun_ser.1003.title: "[target_country.GetNameWithNoTooltip] Refuses to Return [target_location.GetNameWithNoTooltip]"
+ flavor_hun_ser.1003.desc: "$flavor_hun_ser_response_common$ Our [target_country.GetAdjective] allies have unfortunately rejected the offer, and so [target_location.GetNameWithNoTooltip] remains under their control."
+ flavor_hun_ser.1003.a: "At least we have tried..."
+ flavor_hun_ser.1003.b: "We will take [target_location.GetNameWithNoTooltip] by force!"

@@ -1,0 +1,63 @@
+naval_supplies = { #All things required for ships to run
+	category = produced
+	color = goods_naval_supplies
+	default_market_price = 3
+}
+
+firearms = { #Guns, Gunpowder, Grenades
+	category = produced
+	color = goods_firearms
+	default_market_price = 3
+	transport_cost = 1.0
+	
+	demand_add = {
+		nobles = 0.2
+		soldiers = 0.001
+	}
+
+}
+
+cannons = { #Cannons, Cannon Ammunition
+	category = produced
+	color = goods_cannons
+	default_market_price = 4
+	transport_cost = 1.5
+}
+
+weaponry = { #Swords, clubs, spears, halberds, bows, crossbows, etc
+	category = produced
+	color = goods_weaponry
+	default_market_price = 3	
+	
+	demand_add = {
+		nobles = 0.1
+		soldiers = 0.0025
+	}
+}
+
+ammunition = { #Guns, Gunpowder, Grenades
+	category = produced
+	color = goods_firearms
+	default_market_price = 3
+	transport_cost = 1.0
+	
+	demand_add = {
+		nobles = 0.2
+		soldiers = 0.001
+	}
+
+}
+
+tanks = {
+	category = produced
+	color = goods_firearms
+	default_market_price = 3
+	transport_cost = 1.0
+	
+	demand_add = {
+		nobles = 0.2
+		soldiers = 0.001
+	}
+
+}
+

@@ -1,0 +1,141 @@
+﻿l_english:
+flavor_iro.1.title: "Legacy of the Great Peacemaker"
+flavor_iro.1.desc: "Once a divided people, the [ShowCultureGroupName('haudenosaunee_group')] Confederation came together through the works of the Great Peacemaker, Deganawida, who united the once rivaling tribes into a familial union. While in the time since the founding of the confederation the tribes of the [ShowCultureGroupNameWithNoTooltip('haudenosaunee_group')] have remained united and coexisted, some whispers have begun to grow that a dominant tribe should emerge to serve as the principal leader. However, such a feat would risk jeopardizing the very founding principles that Deganawida founded the [ShowCultureGroupNameWithNoTooltip('haudenosaunee_group')] Confederation on."
+flavor_iro.1.a: "Times are changing."
+may_unify_haudenosaunee_confederation: "Unlocks the [ShowCountryInteractionName('form_closer_bond_iroquois')] and [ShowCountryInteractionName('merge_tribe_iroquois')] interactions against fellow [ShowCultureGroupName('haudenosaunee_group')] nations. Uniting [ShowCultureGroupNameWithNoTooltip('haudenosaunee_group')] territories will allow us to reform into a united [ShowCultureGroupNameWithNoTooltip('haudenosaunee_group')] Confederacy."
+
+flavor_iro.2.title: "Right to Leadership"
+flavor_iro.2.desc: "While the [ShowCultureGroupName('haudenosaunee_group')] Confederation has operated as a cooperative tribal union, each tribe has been left to maintain its own autonomy and warbands. However, seeing the growth of rival tribes, some around [our_ruler.GetName] have suggested that [our_ruler.GetHeShe] pursues a campaign to lead the [ShowCultureGroupNameWithNoTooltip('haudenosaunee_group')] as a central leader.\n\nWhile some will see this as a betrayal to the Great Peacemaker's vision for the confederation, a strong leader may be needed to safeguard the confederation from outside tribal threats."
+flavor_iro.2.a: "Pursue a campaign to persuade the other [ShowCultureGroupNameWithNoTooltip('haudenosaunee_group')] nations." 
+flavor_iro.2.b: "Refuse to disrupt the original vision for the confederation." 
+
+flavor_iro.3.title: "Tribal Chiefs Irated by [our_ruler.GetNameWithNoTooltip]"
+flavor_iro.3.desc: "While some tribal leaders within the confederation have taken to accepting [our_ruler.GetNameWithNoTooltip]'s pleas for a central leader, others have reacted strongly against it, seeing it as a betrayal of the Great Peacemaker's vision. Though these tribal leaders remain committed to the confederation, they have made it clear that attempts to unite behind a singular leader will not be an easy task."
+flavor_iro.3.a: "We will need to regain their trust."
+
+flavor_iro.10.title: "The Tale of Jigonsaseh"
+flavor_iro.10.desc: "Passing the tale of Jigonsaseh to the next generation, [target_character.GetName] recounts the impact the Mother of Nations had on the founding of the [ShowCultureGroupName('haudenosaunee_group')] confederation. Upon encountering the Great Peacemaker, Jigonsaseh would become one of his most important followers, ensuring the health of his followers while also serving as an important mediator between tribes. For her efforts, the Great Peacemaker awarded her the title #italic Mother of Nations#! to recognize her contributions."
+flavor_iro.10.a: "Jigonsaseh is undoubtedly a matriarch of our confederation." 
+
+flavor_iro.13.title: "The Legend of Hiawatha"
+flavor_iro.13.desc: "Hosting a local festival within [ROOT.GetCountry.GetCapital.GetName], [our_ruler.GetName] has encouraged [target_character.GetName] to tell the tale of Hiawatha, one of the founding members of the [ShowCultureGroupName('haudenosaunee_group')] confederation.\n\nHiawatha was once a wild man who roamed the lands of [ShowAreaName('haudenosaunee_area')] until his encounter with the Great Peacemaker. Through their meeting at his cabin, the Great Peacemaker Deganawida convinced the wild man to adopt his ideas espoused by the Great Law of Peace. Seeking to now carry out the Great Peacemaker vision, Deganawida rewarded the wild man with the name 'Hiawatha' and sent him out into the world to spread the promise of the Great Law of Peace."
+flavor_iro.13.a: "Hiawatha is one of our most important ancestors." 
+
+flavor_iro.15.title: "The Cleansing of Tadodaho"
+flavor_iro.15.desc: "Though the tales of the co-founders of the confederation such as Jigonsaseh and Hiawatha were instrumental in the establishment of the [ShowCultureGroupName('haudenosaunee_group')] confederation, the climax of the tale with Tadodaho symbolizes the completion of the tale as shown on the Wampum belt.\n\nDetailing the final part of our founding, [target_character.GetName] recounts the importance of the cleansing of the tyrant, Tadodaho. The last major holdout in the journey to establish the Great Law of Peace, Tadodaho had previously refused attempts by Hiawatha to convince his people to adopt the Great Law, and according to the tale, used terrible magics to kill Hiawatha's daughters for his attempts at negotiations. Following the fleeing of Hiawatha, he would soon return with the Great Peacemaker, and together through ceremonial hymns calmed the evil spirit within Tadodaho. Despite his earlier tyrannical acts, Deganawida bestowed Tadodaho and his tribe the honor of being the keepers of the council fire, allowing his tribe to maintain an influential role in the eventual confederation."
+flavor_iro.15.a: "Though once a tyrant, Tadodaho teaches us all are redeemable." 
+
+flavor_iro.20.title: "Reforging of the Great Law of Peace"
+flavor_iro.20.desc: "While the initial vision of the Great Peacemaker saw the [ShowCultureGroupName('haudenosaunee_group')] unite into a cooperative confederation, with no tribe being superior to another, the times have instead been marked with change.\n\nNow the undisputed central leader of the confederation, [our_ruler.GetName] has pledged to uphold the teachings of the Great Peacemaker and will now lead the five nations as its main leader."
+flavor_iro.20.a: "The [ShowCultureGroupNameWithNoTooltip('haudenosaunee_group')] confederation will be strengthened by our leadership." 
+
+flavor_iro.30.title: "Chief [target_character.GetNameWithNoTooltip]"
+flavor_iro.30.desc: "Throughout [ROOT.GetCountry.GetAdjective] expansion into [ShowAreaName('pennsylvania_area')], the tribal chief [target_character.GetName] has grown to be an instrumental individual in managing the region. Through [target_character.GetHisHer] experience with negotiating with the [ShowCultureName('carantouan_culture')] and [ShowCultureName('atrakwaye_culture')] people, our settlements in [ShowAreaNameWithNoTooltip('pennsylvania_area')] have remained relatively unharmed. For [target_character.GetHisHer] contribution, some within [our_ruler.GetName]'s inner circle have called for [target_character.GetNameWithNoTooltip] to be promoted."
+flavor_iro.30.a: "Promote [target_character.GetHimHer]!" 
+flavor_iro.30.b: "[ShowAreaNameWithNoTooltip('pennsylvania_area')] would be better served by another chief." 
+
+flavor_iro.31.title: "The Walking Purchase"
+flavor_iro.31.desc: "As the leading chief of [ShowAreaName('pennsylvania_area')], [target_character.GetName] has been a principal negotiator in both affairs relating to the local tribes as well as the [colonial_nation_target.GetAdjective] settlers. However, in recent times [target_character.GetNameWithNoTooltip] has participated in negotiating a treaty with [colonial_nation_target.GetNameWithNoTooltip], seeking to sell the lands around [ShowProvinceDefinitionName('delaware_province')]. With [ROOT.GetCountry.GetName] holding no direct lands within [ShowProvinceDefinitionNameWithNoTooltip('delaware_province')] and instead maintaining influence, the sale would earn more influence with [colonial_nation_target.GetNameWithNoTooltip], though it may exacerbate our relations with tribes in the area."
+flavor_iro.31.a: "Agree to the sale." 
+flavor_iro.31.b: "Refuse to agree to [target_character.GetNameWithNoTooltip]'s proposal." 
+
+flavor_iro.32.title: "Arrival of the Missionaries"
+flavor_iro.32.desc: "Having grown a reputation of friendly relations with the nearby [colonial_nation_target.GetAdjective] settlers, [target_character.GetName] has approved the welcoming of missionaries into the lands of [ShowAreaName('pennsylvania_area')]. Though these individuals have been largely peaceful, some other regional chiefs within [ROOT.GetCountry.GetName] have cautioned against allowing these individuals to convert the local [ROOT.GetCountry.GetAdjectiveWithNoTooltip]."
+flavor_iro.32.a: "Allow [target_character.GetNameWithNoTooltip] to continue welcoming the missionaries."
+flavor_iro.32.b: "Forbid any further missionaries."
+
+flavor_iro.33.title: "Conversion of [target_character.GetNameWithNoTooltip]"
+flavor_iro.33.desc: "While [target_character.GetName] has maintained a close relation with the missionaries, some of the chiefs were caught off guard by [target_character.GetHisHer] sudden conversion to [ShowReligionName('lutheran')]. While [target_character.GetNameWithNoTooltip] has remained loyal, [target_character.GetHisHer] adoption of the faith has been met with controversy amongst [our_ruler.GetName]'s inner circle, with some suggesting [target_character.GetShortNameWithNoTooltip] be forced to give up [target_character.GetHisHer] position."
+flavor_iro.33.a: "Allow [target_character.GetNameWithNoTooltip] to continue administering [ShowAreaNameWithNoTooltip('pennsylvania_area')]."
+flavor_iro.33.b: "Force [target_character.GetShortNameWithNoTooltip] to forfeit [target_character.GetHisHer] post."
+
+flavor_iro.40.title: "Strong Intertribal Unity"
+flavor_iro.40.desc: "Despite initial resistance to the unifying behind a central leader, the warriors of [ROOT.GetCountry.GetName] have seen a rekindling of tribal unity. While individual warbands would unite in times of war for the confederation, the consolidation of the warband during times of peace has seen stronger bonds formed."
+flavor_iro.40.a: "Our enemies should be wary of our unquestionable unity."
+
+flavor_iro.41.title: "Trading in Firearms"
+flavor_iro.41.desc: "While the arrival of [neighbor_country.GetName] saw a disruption for the [ROOT.GetCountry.GetAdjective] people, through peace efforts by [our_ruler.GetName], the [ROOT.GetCountry.GetLongNameWithNoTooltip] has grown to form a cordial relationship with [neighbor_country.GetNameWithNoTooltip]. Through the trade has been established, these strange individuals bring with them a weapon of destruction known as a flintlock rifle. While a limited supply of these weapons have been acquired for now for [ROOT.GetCountry.GetAdjectiveWithNoTooltip] warriors to learn, [neighbor_country.GetAdjectiveWithNoTooltip] traders seemed willing to trade more to [ROOT.GetCountry.GetNameWithNoTooltip] in the future."
+flavor_iro.41.a: "These weapons of war must be mastered."
+flavor_iro.41.b: "We do not need these weapons to win conflicts."
+
+flavor_iro.42.title: "[neighbor_country.GetNameWithNoTooltip] Impressed by Tribal Unity"
+flavor_iro.42.desc: "Hailing from a nearby [neighbor_country.GetAdjective] village, [colonial_settler.GetName] has expressed [colonial_settler.GetHisHer] surprise with the unity displayed by the [ROOT.GetCountry.GetAdjective] people, suggesting our unity is like an unbreakable bond. Along with tales of conflicts beyond the waters, [our_ruler.GetName] has requested that [colonial_settler.GetNameWithNoTooltip] return to [colonial_settler.GetHisHer] village and spread word that should a tribe achieve the unity like the [ROOT.GetCountry.GetAdjectiveWithNoTooltip] people, they too can accomplish great feats."
+flavor_iro.42.a: "Invite [colonial_settler.GetNameWithNoTooltip] to return anytime."
+flavor_iro.42.b: "Forbid any further [neighbor_country.GetAdjectiveWithNoTooltip] settlers from entering our lands."
+
+flavor_iro.43.title: "Adoption of Prisoners"
+flavor_iro.43.desc: "Our recent conflict with [prisoner_origin_country.GetName] has seen us come to possess many [prisoner_origin_country.GetAdjectiveWithNoTooltip] prisoners. Despite being prisoners, some see the [prisoner_origin_country.GetAdjectiveWithNoTooltip] people as cultural siblings to the [ROOT.GetCountry.GetAdjective] people. Some have urged [our_ruler.GetName] to welcome these prisoners to [ROOT.GetCountry.GetCapital.GetName] and formally adopt them as members of [ROOT.GetCountry.GetNameWithNoTooltip], although others have warned [our_ruler.GetNameWithNoTooltip] that these individuals must be returned at war's end." 
+flavor_iro.43.a: "Adopt the prisoners as members of the confederation."
+flavor_iro.43.b: "We must return these prisoners at the end of the war."
+
+flavor_iro.44.title: "Shared Brotherhood"
+flavor_iro.44.desc: "Once a divided sect of tribes, under the campaign for the Great Law of Peace by the Great Peacemaker, the five nations formed the united league of the [ShowCultureGroupName('haudenosaunee_group')]. Born in hopes of establishing a permanent peace and cooperation between the tribes, the league has grown to see each of the tribes, despite differing cultural background to form a close sense of brotherhood."
+flavor_iro.44.a: "Our Unity is our Strength."
+
+flavor_iro.45.title: "Arrival of the [ShowCultureNameWithNoTooltip('skarureh_culture')] People"
+flavor_iro.45.desc: "Since its founding, the [ROOT.GetCountry.GetAdjective] confederation has consisted of only five nations, each joined together due to the promise of the Great Peacemaker's Great Law of Peace despite having their own differences. However, this has not prevented members from each of the five tribes from adopting individuals outside the confederation as members of their tribes.\n\nHowever, facing persecution in their homeland of [ShowAreaName('north_carolina_area')], the remaining members of the [ShowCultureName('skarureh_culture')] people have migrated to our borders. Distraught by the tales of the downfall of the [ShowCultureNameWithNoTooltip('skarureh_culture')] people, [our_ruler.GetName] has requested the grand council to allow the [ShowCultureNameWithNoTooltip('skarureh_culture')] people to join as the sixth nation."
+flavor_iro.45.a: "Adopt the [ShowCultureNameWithNoTooltip('skarureh_culture')] people into the confederation."
+flavor_iro.45.b: "We shall remain strictly as the five nations."
+
+flavor_iro.46.title: "Benefits of [ShowAdvanceNameWithNoTooltip('three_sisters')]"
+flavor_iro.46.desc: "An agricultural practice long used by the tribes of the [ShowCultureGroupName('haudenosaunee_group')], the [ShowAdvanceName('three_sisters')] consists of three crops: corn, beans, and squash. By using these three crops through companion planting, they form a symbiotic relationship, allowing each of the crops to return bountiful yields.\n\nHowever, this year has seen the practice of the [ShowAdvanceNameWithNoTooltip('three_sisters')] yield a larger than expect crop yield, and the inner circle of [our_ruler.GetName] is indecisive in how to handle the extra yields."
+flavor_iro.46.a: "Host a major festival in [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip] to celebrate the yields."
+flavor_iro.46.b: "Disperse it across the villages of [ROOT.GetCountry.GetNameWithNoTooltip]"
+
+flavor_iro.47.title: "Matriarchal Agriculture"
+flavor_iro.47.desc: "While most of the men within [ROOT.GetCountry.GetName] handle warfare, the [ROOT.GetCountry.GetAdjectiveWithNoTooltip] women handle all aspects of farming and agriculture. In many ways, the plants that form the [ShowAdvanceName('three_sisters')]: corn, beans, and squash, are synonymous with the role [ROOT.GetCountry.GetAdjectiveWithNoTooltip] women play, with each 'sister' plant assisting and nurturing the other in its growth."
+flavor_iro.47.a: "The [ROOT.GetCountry.GetAdjectiveWithNoTooltip] women form the backbone of the confederation." 
+
+flavor_iro.50.title: "Exchange of [ShowGoodsNameWithNoTooltip('fur')]"
+flavor_iro.50.desc: "Through our trade with with [neighbor_country.GetName], we have managed to acquire goods such as firearms and ironware goods, shifting aspects of [ROOT.GetCountry.GetAdjective] life. However, in recent times, [neighbor_country.GetNameWithNoTooltip] has taken a greater interest in receiving [ShowGoodsName('fur')] from our people, seeing it as a prized good.\n\nWith the growing need for more [ShowGoodsNameWithNoTooltip('fur')], hunters have been more aggressive in their hunting of beavers and other animals, though some within [ROOT.GetCountry.GetNameWithNoTooltip] are increasingly growing concerned that the population may be severely affected should demand for [ShowGoodsNameWithNoTooltip('fur')] continue to rise."
+flavor_iro.50.a: "Permit the hunting of [ShowGoodsNameWithNoTooltip('fur')] for now."
+flavor_iro.50.b: "Clamp down on the hunting of beavers, we cannot risk damaging the ecosystem."
+
+flavor_iro.51.title: "The Beaver Wars"
+flavor_iro.51.desc: "With the ever increasing demand for [ShowGoodsName('fur')], many [ROOT.GetCountry.GetAdjective] hunters have taken to hunting outside the traditional bounds of the tribe, venturing into the territories of nearby tribes to hunt. However, some of these tribes have taken to this as a violation of their territory and recently injured several hunters who ventured into their lands.\n\n[our_ruler.GetName] has begun holding meetings with members of the tribes of [ROOT.GetCountry.GetNameWithNoTooltip] in hopes of reaching a solution to the growing increase of hunters venturing outside of [ROOT.GetCountry.GetAdjectiveWithNoTooltip] lands. However, some of these members have instead expressed interest in seizing territory from our neighbors to expand our hunting grounds, noting trade with [neighbor_colonial.GetName] has benefited the [ROOT.GetCountry.GetAdjectiveWithNoTooltip] people immensely. Others, however, have stated expansion through war violates a key principle governed by the Great Law of Peace."
+flavor_iro.51.a: "The demand for [ShowGoodsNameWithNoTooltip('fur')] must be met, permit the expansion."
+flavor_iro.51.b: "We cannot risk betraying the ideals of the Great Law of Peace."
+enables_beaver_wars_cb: "Enables the [ShowCasusBelliName('cb_beaver_wars')] [casus_belli|e] against tribal nations with [ShowGoodsName('fur')]."
+flavor_iro.52.title: "Decline of the Beaver Population"
+flavor_iro.52.desc: "Though trade with [neighbor_colonial.GetName] has benefited us immensely in the past, it has also brought ruin to our ecosystem. Many [ROOT.GetCountry.GetAdjective] hunters now have difficulties locating beavers, our primary source of [ShowGoodsName('fur')] and trade with [neighbor_colonial.GetNameWithNoTooltip]. With them seemingly becoming rare, our trade with [neighbor_colonial.GetNameWithNoTooltip] has largely diminished, although some traders have taken to hunting animals of lesser quality."
+flavor_iro.52.a: "This is a great tragedy."
+disables_beaver_wars_cb: "Loses access to the [ShowCasusBelliName('cb_beaver_wars')] [casus_belli|e]."
+
+flavor_iro.60.title: "The Grand Council"
+flavor_iro.60.desc: "Following its founding by the Great Peacemaker Deganawida, the [ShowCultureGroupName('haudenosaunee_group')] confederation have been governed by [ShowGovernmentReformName('iro_council_of_the_fifty')], a collection of fifty chiefs. Though in recent times under [our_ruler.GetName], a singular figure has wielded great power within the confederation, [ShowGovernmentReformNameWithNoTooltip('iro_council_of_the_fifty')] has maintained a large influence over the governance of [ROOT.GetCountry.GetName]."
+flavor_iro.60.a: "[our_ruler.GetShortNameWithNoTooltip] must adhere to [ShowGovernmentReformNameWithNoTooltip('iro_council_of_the_fifty')]."
+flavor_iro.60.b: "Disobey the guidance of the council."
+
+flavor_iro.61.title: "The Grand Council and [neighbor_country.GetAdjectiveWithNoTooltip] Diplomacy"
+flavor_iro.61.desc: "While [our_ruler.GetName] and [our_ruler.GetHisHer] inner circle have maintained a close relationship with [neighbor_country.GetName], some within [ShowGovernmentReformName('iro_council_of_the_fifty')] have cautioned [our_ruler.GetNameWithNoTooltip] to not be overly cordial with [neighbor_country.GetNameWithNoTooltip]. With their growing expansion, [ShowGovernmentReformNameWithNoTooltip('iro_council_of_the_fifty')] fears that there may soon come a time where [neighbor_country.GetNameWithNoTooltip] sees [ROOT.GetCountry.GetName] as more foe than friend."
+flavor_iro.61.a: "Adhere to the caution of [ShowGovernmentReformNameWithNoTooltip('iro_council_of_the_fifty')]."
+flavor_iro.61.b: "Refute the advice of [ShowGovernmentReformNameWithNoTooltip('iro_council_of_the_fifty')] and continue dealing with [neighbor_country.GetNameWithNoTooltip]."
+
+flavor_iro.62.title: "[target_character.GetNameWithNoTooltip] Assists [ShowLanguageNameWithNoTooltip('wendat_language')] Tribes"
+flavor_iro.62.desc: "Though [ROOT.GetCountry.GetName] has remained a largely peaceful confederation since its inception, warbands from several tribes within the confederation have acted autonomously in venturing into neighboring lands. However, one such warband has brought reports that [ShowLanguageName('wendat_language')] tribes have received assistance from [target_character.GetName], providing them with flintlock weapons. Seeing [ShowLanguageNameWithNoTooltip('wendat_language')] as one of the more threatening tribes, members of the warband have urged [our_ruler.GetName] to prepare the confederation for potential incursions."
+flavor_iro.62.a: "We will need to take more caution against [ShowLanguageNameWithNoTooltip('wendat_language')] tribes."
+
+flavor_iro.63.title: "Destruction of [ShowProvinceDefinitionNameWithNoTooltip('wendake_province')]"
+flavor_iro.63.desc: "Once a region known to host one of the many great rivals of [ROOT.GetCountry.GetName], the [ShowCultureName('attignawantan_culture')] people, we have now come to own the region of [ShowProvinceDefinitionName('wendake_province')]. Though the [ShowCultureNameWithNoTooltip('attignawantan_culture')] tribes have largely been crippled to no longer being a threat to [ROOT.GetCountry.GetNameWithNoTooltip], some warband members have taken to razing villages within [ShowProvinceDefinitionNameWithNoTooltip('wendake_province')], hoping to send a message that [ROOT.GetCountry.GetAdjectiveWithNoTooltip] warriors are not to be taken lightly. While some within the tribe approve of these actions, [our_ruler.GetName] has suggested it would be best to spare the lands of [ShowProvinceDefinitionNameWithNoTooltip('wendake_province')] with [ROOT.GetCountry.GetNameWithNoTooltip] now in possession of it."
+flavor_iro.63.a: "Allow the warbands to continue razing [ShowProvinceDefinitionNameWithNoTooltip('wendake_province')]."
+flavor_iro.63.b: "Put an end to the razing at once! We need these conserve lands."
+
+flavor_iro.64.title: "Growth of Settlements Along [ShowProvinceDefinitionNameWithNoTooltip('lake_ontario_province')]"
+flavor_iro.64.desc: "While most [ROOT.GetCountry.GetAdjective] settlements have largely resided within the inner regions of [ShowAreaName('haudenosaunee_area')], recent expeditions have seen the expansion of new settlements along [ShowProvinceDefinitionName('lake_ontario_province')]. Comprising mostly of [ShowCultureNameWithNoTooltip('kanienkehaka_culture')], [ShowCultureNameWithNoTooltip('gayogohono_culture')], and [ShowCultureNameWithNoTooltip('onondagega_culture')] settlers, these newly established settlements have the potential to grow into fruitful villages."
+flavor_iro.64.a: "Permit the new settlements."
+flavor_iro.64.b: "Prevent the new settlements to preserve the inland population."
+
+flavor_iro.65.title: "Expedition of [target_character.GetNameWithNoTooltip]"
+flavor_iro.65.desc: "Hailing from [GetCountry('FRA').GetName], [target_character.GetName] has arrived at [ROOT.GetCountry.GetCapital.GetName] in hopes of spreading the word of [ShowReligionName('catholic')] along with fostering relations between [GetCountry('FRA').GetNameWithNoTooltip] and [ROOT.GetCountry.GetName]. Past hostilities have seen some fighting break out between [ROOT.GetCountry.GetAdjectiveWithNoTooltip] warbands and [GetCountry('FRA').GetAdjectiveWithNoTooltip] expeditions.\n\nSome have cautioned against allowing [target_character.GetNameWithNoTooltip], fearing his peaceful mission to proselytize may be a facade."
+flavor_iro.65.a: "Allow the Jesuit to stay."
+flavor_iro.65.b: "Forbid the Jesuit from preaching within our lands!"
+
+flavor_iro.66.title: "Smallpox Outbreak in [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip]"
+flavor_iro.66.desc: "Though initially a suspicious arrival, [target_character.GetName]'s venture into our lands has remained largely peaceful. Though some of the chiefs have expressed concern about the conversion of [ROOT.GetCountry.GetAdjective] people, [target_character.GetShortNameWithNoTooltip] has so far proven to a man of peace.\n\nHowever, the warm relations quickly soured, with many [ROOT.GetCountry.GetAdjectiveWithNoTooltip] tribesmen quickly succumbing to smallpox. Outraged, many of the discontent population within [ROOT.GetCountry.GetCapital.GetName] turned their anger to the mission, demanding [target_character.GetNameWithNoTooltip] and [target_character.GetHisHer] followers leave at once."
+flavor_iro.66.a: "[target_character.GetNameWithNoTooltip] and [target_character.GetHisHer] mission must leave at once."
+flavor_iro.66.b: "Perhaps [target_character.GetHeShe] knows how to treat the disease, request [target_character.GetHeShe] stay."
+
+flavor_iro.70.title: "Forming a New Delegation"
+flavor_iro.70.desc: "Though [our_ruler.GetName] has remained a rather competent [ROOT.GetCountry.GetGovernment.GetRulerTitle] for [ROOT.GetCountry.GetName], [our_ruler.GetHeShe] has been criticized by some within the council of fifty for displaying favoritism to members of the [our_ruler.GetCulture.GetName] tribe. Hoping to appease these concerns within the council, members of [our_ruler.GetNameWithNoTooltip]'s inner circle have suggested forming a new delegation, consisting of members from the other [ShowCultureGroupName('haudenosaunee_group')] tribes."
+flavor_iro.70.a: "Welcome the new members to the inner circle!" 
+flavor_iro.70.b: "There is no need to welcome an expanded delegation." 

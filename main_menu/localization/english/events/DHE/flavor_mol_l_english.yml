@@ -1,0 +1,32 @@
+﻿l_english:
+ flavor_mol.1000.title: "[target_character.GetShortNameWithNoTooltip] [target_character.GetNicknameWithNoTooltip]"
+ flavor_mol.1000.desc: "Since the establishment of the [target_country.GetLongName], [root_country.GetName] has been in constant conflict with the marauding, [target_country.GetCulture.GetName] raiders. [target_character.GetShortName] of [target_location.GetName] intends to unite [target_area.GetName] under [target_character.GetHerHis] and our banners. [target_character.GetShortNameWithNoTooltip] has sworn loyalty towards [root_character.GetName], and promises us to settle the borderlands and serve the [root_country.GetFlavorRank] as a loyal [ShowSubjectTypeName('march')]."
+ flavor_mol.1000.historical_info: "Dragoș Vodă, also known as Dragoș the Founder, was the first Voivode of Moldavia and vassal to the Hungarian Crown. After the resounding victory against the Golden Horde in 1345, Dragoș and other men from Maramureş made their way to the Moldova River to settle the land. Though the 'Dismounting' on the banks of the said river is shrouded in myth and as such the founding of Moldavia itself is a debated topic."
+ flavor_mol.1000.a: "Let [target_character.GetHerHim] found the [ShowSubjectTypeNameWithNoTooltip('march')]."
+ flavor_mol.1000.a.at: "[target_character.GetName] will venture into [target_area.GetName] to establish the $MOL_ADJ$ [ShowSubjectTypeName('march')]"
+ flavor_mol.1000.a.bt: "#R This might cause a conflict with [target_country.GetName]#!"
+ flavor_mol.1000.b: "We cannot risk the wrath of [target_country.GetNameWithNoTooltip]"
+
+ flavor_mol.1001.title: "The [ShowSubjectTypeNameWithNoTooltip('march')] of [GetCountry('MOL').GetNameWithNoTooltip]"
+ flavor_mol.1001.desc: "[target_character.GetName] of [root_country.GetName] and a token force of [root_country.GetAdjectiveWithNoTooltip] soldiers have marched into [target_area.GetName]. With no respect for our authority, these men have settled in [target_location.GetName] and established the state [release_country.GetName] directly under our very nose!"
+ flavor_mol.1001.historical_info: "After the crucial defeat against Hungary in 1345, Dragoș Vodă, also known as Dragoș the Founder, and his followers moved to Moldavia to establish a march for the Hungarian king. Though the 'Dismounting' on the banks of the said river is shrouded in myth and as such the founding of Moldavia itself is a debated topic, it is often noted as the origin story of the Voivodship of Moldavia."
+ flavor_mol.1001.a: "We cannot afford a conflict with [root_country.GetNameWithNoTooltip] over it."
+ flavor_mol.1001.b: "This is a declaration of war!"
+
+ flavor_mol.1002.title: "The [target_country.GetAdjective] Raid"
+ flavor_mol.1002.desc: "With the establishment of [release_country.GetName], our influence is bordering the [ShowRegionName('steppes_region')]. However, the [target_country.GetGovernment.GetRulerTitle] of the [target_country.GetLongName], [target_character.GetName], sees this expansion as a threat to their barbaric government. [target_country.GetCulture.GetName] raiders have already breached into our territory, starting a war between [target_country.GetNameWithNoTooltip] and [root_country.GetNameWithNoTooltip]."
+ flavor_mol.1002.a: "To arms!"
+
+ flavor_mol.1003.title: "$flavor_mol.1000.title$"
+ flavor_mol.1003.desc: "[target_character.GetName] has marched into our lands in the hope to settle [target_area.GetName] and establish a secure border against [target_country.GetName]. Many [ShowCultureName('moldovan')] people are tired of the yoke under the [target_country.GetCulture.GetName] reign, and align themselves with [target_character.GetShortNameWithNoTooltip]."
+ flavor_mol.1003.a: "Seek the protection of [root_country.GetNameWithNoTooltip]"
+ flavor_mol.1003.a.tt: "All other countries in [target_area.GetName] get the option to join us"
+ flavor_mol.1003.b: "We will not switch one master for another."
+
+ flavor_mol.1004.title: "The Foundation of [release_country.GetNameWithNoTooltip]"
+ flavor_mol.1004.title_default: "The Foundation of $MOL$"
+ flavor_mol.1004.desc: "$flavor_mol.1003.desc$\n\n[target_character.GetHerHis|U] men have now come to us in hopes to persuade us to join [release_country.GetName] as well."
+ flavor_mol.1004.a: "The lands of [target_area.GetNameWithNoTooltip] shall stand united!"
+ flavor_mol.1004.b: "We cannot turn our back to the [target_country.GetLongNameWithNoTooltip]."
+ opinion_hun_moldavian_push: "Moldavian Push"
+ become_moldavia_tt: "Form #Y $MOL$#! and become a [ShowSubjectTypeName('march')] [subject|e] of [root_country.GetName]"

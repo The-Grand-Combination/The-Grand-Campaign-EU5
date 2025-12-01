@@ -1,0 +1,27 @@
+﻿l_english:
+ regency_estate_events.1.title: "Estate's Leadership Challenged"
+ regency_estate_events.1.desc: "During the last few months, a faction in our realm has been gaining strength, and they believe thatthey should rule during the regency.\n\nTheir demands started as gossip; someone whispers that this or that person are not happy with the direction of the nation, another says that the leading faction is not as strong as this other, or that they are not as represented in the regency as they should and so on.\n\n[target_regent.GetName] is worried, for obvious reasons, and sees that [target_regent.GetHerHis] own faction's power has been weakened to the point of doubting that it can fight back. It is the moment to make a decision that will change our nation."
+ regency_estate_events.1.a: "Accept a change of leadership."
+ regency_estate_events.1.b: "Support the regent."
+
+
+ regency_estate_events.3.title: "Tyrant Regent"
+ regency_estate_events.3.desc: "Blood feuds are the kind of things that make realms collapse, but they are as old as the human being itself. Our [ROOT.GetCountry.GetGovernment.GetActiveRegentTitle], [target_regent.GetName], thinks being in power is a golden opportunity to get rid of some political adversaries.\n\n[target_regent.GetSheHe|U] is using [target_regent.GetHerHis] influence as a regent to mercilessly attack any voice that speaks against [target_regent.GetHerHim] even when they do not, just because [target_regent.GetSheHe] can.\n\nOf course, the other factions are not especially happy with how things are being done, and might try to retaliate. We are at a crossroads where we have to decide what to do: should we intervene?"
+ regency_estate_events.3.a: "We must trust in [ROOT.GetCountry.GetGovernment.GetActiveRegent.GetShortNameWithNoTooltip]."
+ regency_estate_events.3.b: "We must not abide tyranny."
+
+
+ regency_estate_events.5.title: "[ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')] Causing Problems"
+ regency_estate_events.5.desc: "It is said that [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] only care about money. As long as money is abundant, they are happy and will not cause many problems. At least, that is what we thought.\n\n[target_regent.GetName] and [target_regent.GetHerHis] faction have used their power to further advance some shady business while they have been in power. It would not be the first time we turn a blind eye to smuggling, but these illicit moves have irritated another nation and they might use this incident as an excuse to declare war on us and get some compensations. Unfortunately, they are not willing to negotiate."
+ regency_estate_events.5.a: "We can only wait."
+
+
+ regency_estate_events.6.title: "Intolerance Rises"
+ regency_estate_events.6.desc: "Nobody will be surprised if it is said that every religious power will always try to perpetuate their power or assert their domination over the rest when they rule. And this is exactly the situation that the [ROOT.GetCountry.GetLongName] is facing.\n\nThe [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] are using their power to remove the influence of other religions in our realm, and their power is too big to refuse. A timid protest is all we have been able to elevate. We will change this policy in the future, no doubt, but for now we will need to live with it."
+ regency_estate_events.6.a: "One problem at a time."
+
+
+ regency_estate_events.9.title: "Regent is a Good Influence"
+ regency_estate_events.9.desc: "When good men and women are more devoted to the good of the nation than to their own interests, great things happen. For months, [target_regent.GetName] has taken a lot of time to share [target_regent.GetHerHis] wisdom to [target_heir.GetName], and both have enjoyed this time greatly.\n\nThe preparation to be a ruler is never easy, but [target_regent.GetShortNameWithNoTooltip] has done great work. Lessons about sciences, etiquette, history, and military tactiques have been going up and down the palace, following the regent and the heir wherever they went."
+ regency_estate_events.9.a: "[target_heir.GetShortNameWithNoTooltip] has learnt so much!"
+ 

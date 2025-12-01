@@ -1,0 +1,12 @@
+﻿l_english:
+ flavor_loi.10.title: "The Norse Isles"
+ flavor_loi.10.desc: "The people of the [ROOT.GetCountry.GetLongName] have long lived under the shadow of their [ROOT.GetCountry.GetCulture.GetName] heritage, but now, in the face of changing times, we consider embracing our Nordic roots once again. As we find ourselves drawn closer and closer to the old kingdoms of [scandinavia.GetName], there is much to be gained by rediscovering this ancient heritage and forging new alliances.\n\nIf we consider this path, we must be willing to let go of some of our Gaelic traditions and practices, but the rewards of this journey may be great. By embracing our Nordic roots, we can establish a new and powerful [nordic_culture.GetName] identity for the people of these islands, and take our place amongst the Lions of the North.\n\nWill we embark upon this journey of rediscovery?"
+ flavor_loi.10.a: "Embrace our Nordic roots."
+ flavor_loi.10.b: "Resist the call of the North."
+ opinion_loi_10_adopted_our_culture: "Adopted Nordic Culture"
+
+ flavor_loi.20.title: "Shipbuilding Contest"
+ flavor_loi.20.desc: "The winds of the [target_location.GetProvinceDefinition.GetName] province carry the sound of hammers striking against oak and pine, as master shipwrights from across the [target_location.GetArea.GetName] region gather to compete in the Great [ROOT.GetCountry.GetAdjective] Shipbuilding Contest in [target_location.GetName].\n\nTraditional shipbuilding is vital to our way of life, and needs to be encouraged. As representatives of the [ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')], we have a duty to oversee this competition."
+ flavor_loi.20.a: "Commission a galley to enter ourselves."
+ flavor_loi.20.b: "Sponsor a favored contestant."
+ flavor_loi.20.c: "Pay no heed to the contest."

@@ -1,0 +1,64 @@
+﻿l_english:
+
+ nanban_trade.1.title: "Nanban Bōeki"
+ nanban_trade.1.desc: "Foreigners with crude manners, lacking hygiene, and an inability to understand [ROOT.GetCountry.GetCulture.GetLanguage.GetName] writing have landed in the land of [ROOT.GetCountry.GetName] from places they claim are called such ridiculous names as [target_nanban.GetName]. These foreigners bring with them explorers, missionaries, and merchants, and their presence has already started to affect our people."
+ nanban_trade.1.a: "Welcome these traders."
+ nanban_trade.1.b: "Who knows what their presence will bring."
+ enable_kirishitan_monks.tt: "We now have access to the $kirishitan_monks$ [religious_faction|e]"
+
+ nanban_trade.2.title: "$nanban_trade.1.title$"
+ nanban_trade.2.desc: "We have received news that some strange foreigners have landed in the shores of [target_country.GetName]. They claim to be from the land of [target_nanban.GetName], and apparently promise profitable trade to all who interact with them. However, their manners and culture are clearly lacking, and they may be a bad influence to the whole [GetUniqueInternationalOrganization('japanese_shogunate').GetName]."
+ nanban_trade.2.a: "$nanban_trade.1.a$"
+ nanban_trade.2.b: "$nanban_trade.1.b$"
+
+ nanban_trade.3.title: "Arrival of European Traders"
+ nanban_trade.3.desc: "With the arrival of ships from the west, we are seeing an influx of highly sought-after goods, not only from [ShowContinentName('europe')] but also from the various corners of [ShowContinentName('asia')] that western traders frequent. Great ships are becoming an increasingly common sight along our coastlines and, for anyone that welcomes them, they promise great riches.\n\nThe captain of such a ship recently arrived in [nanban_traders_here.GetName], asking that we allow them to dock periodically in a nearby harbor to market western goods."
+ nanban_trade.3.a: "Encourage them to make it a permanent stop."
+ nanban_trade.3.b: "We will accept their goods but offer no guarantees in the future."
+ nanban_trade.3.c: "We will enforce strict rules for who they can meet or do business with."
+
+ nanban_trade.4.title: "Duplicity among European Traders"
+ nanban_trade.4.desc: "Ever since the arrival of the westerners, some have regarded them with distrust. Their pockets are deep, their weapons powerful and, to some, their culture seems fascinating. Those that deal with these traders, however, report that the Europeans are constantly plotting against each other. Scarcely a meeting with foreign emissaries goes by in which they do not warn us of some plot or scheme by their adversaries. It is clear we are not dealing with men that can be trusted.\n\nAs a new group of traders request that we increase their privileges, our advisors caution us to consider the offer carefully."
+ nanban_trade.4.a: "We will allow them to expand their presence."
+ nanban_trade.4.b: "Limit their influence to a few more ports."
+ nanban_trade.4.c: "Their business must be kept limited to [nanban_traders_here.GetNameWithNoTooltip]."
+
+ nanban_trade.5.title: "Western Knowledge"
+ nanban_trade.5.desc: "After the arrival of the westerners, the port in [nanban_traders_here.GetName] has started to attract not only merchants but also scholars and intellectuals. To these men, the books that the foreigners bring are far more valuable than the goods they wish to sell. The study of western science and culture is growing into its own discipline, and according to the adherents we have much to learn. Many among the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] are skeptical, however, as are some traditionalist scholars."
+ nanban_trade.5.a: "We must do our best to encourage dissemination of western science."
+ nanban_trade.5.b: "We have nothing to learn from them."
+
+ nanban_trade.6.title: "Foreign Influence"
+ nanban_trade.6.desc: "Some argue that we are making ourselves too dependent on the foreign traders. Our own artisans are surely no less gifted than those abroad, and instead of spending a fortune importing manufactured goods from the outside world we might produce many of them. We could then profit from their resale ourselves.\n\nThe time is not right to stop the trade entirely, but if we put our greatest craftsmen at work, we may in time no longer need to await the arrival of the next trade ship quite so anxiously."
+ nanban_trade.6.a: "There is no need to attempt what others do better."
+ nanban_trade.6.b: "An excellent investment!"
+
+ nanban_trade.7.title: "Tanegashima Teppō"
+ nanban_trade.7.desc: "The foreigners arriving in our lands bring with them some peculiar weapons. Recently, when two western adventurers riding on a [ShowCultureGroupName('chinese_group')] ship were forced by a storm to moor on the island of Tanegashima in [target_location.GetName], the local fisherman were startled when one of the westerners fired his gun in the air surprised at the sight of them. The local authorities have managed to purchase those weapons from the westerners before they sailed back, and blacksmiths are already studying their production.\n\nAlthough gunpowder and firearms have long been known to us, the matchlock firing mechanism of this western design is a great improvement over the [ShowCultureGroupNameWithNoTooltip('chinese_group')] hand cannons, and it will prove much more convenient to use."
+ nanban_trade.7.a: "Let us try to reproduce it."
+
+ nanban_trade.8.title: "$nanban_trade.7.title$"
+ nanban_trade.8.desc: "$nanban_trade.7.desc$"
+ nanban_trade.8.a: "We must try to acquire them too."
+ nanban_trade.8.b: "Surely they are not as good as our own weapons."
+
+ nanban_trade.9.title: "Access to Firearms"
+ nanban_trade.9.desc: "With the arrival of western traders, their matchlock arquebuses have come to our [ROOT.GetCountry.GetFlavorRank]. These weapons are a big improvement upon the gunpowder weapons previously known here, and they promise to revolutionize warfare should they become widespread. Acquiring enough of them is not as straightforward as it might seem, however. The arquebuses are in great demand among those that have seen their power, but the prospect of what they could do in the hands of our enemies, or even an unruly peasant community, is also quite disturbing.\n\nAs we start to produce and instruct our soldiers in the use of these arms, we will need to decide who will have access to them and how many we will make."
+ nanban_trade.9.a: "Strength in numbers! Produce as many as we can."
+ nanban_trade.9.b: "We will make just enough for a small force of trusted men."
+
+ nanban_trade.10.title: "Dissemination of Firearms"
+ nanban_trade.10.desc: "The matchlock arquebuses brought to us by the foreigners have proven easier to mass produce than we could have hoped. As more and more of our troops can be equipped with these guns, it is clear that we will not be able to limit their spread to either our enemies or the common man very effectively. If we really do wish to decrease the firearms in circulation, we will have to take very firm action soon."
+ nanban_trade.10.a: "Doing so would only weaken our armies."
+ nanban_trade.10.b: "Ban the use of guns entirely for commoners."
+
+ nanban_trade.11.title: "Evolution of Arms"
+ nanban_trade.11.desc: "With the firearms steadily becoming increasingly in use, it has become clear that constant improvement is needed if we are to stay on top. Through training, we might surely increase their efficiency, and some of our smiths have also suggested ways to improve the weapons themselves. Others would argue that we should spend the time of both our smiths and our soldiers on more traditional arms. Spears and bows have not completely phased out of the battlefields, and we would perhaps do well to keep our troops well trained in them too."
+ nanban_trade.11.a: "We need better guns!"
+ nanban_trade.11.b: "Our armies are still effective with spears."
+
+ nanban_trade.12.title: "A Military Revolution"
+ nanban_trade.12.desc: "Since the first matchlocks started appearing in our lands, they have gone from being a novelty to one of the more common weapons in use. Some even claim we make more and better weapons than their originating countries do. This has placed a dangerous weapon in the hands of anyone who would oppose our rule, but the rapid adoption of the guns has also made our armies a more respected force than many others.\n\nSome new tactics have also started being implemented, like combining archers and arquebusiers in the same regiment so that they can protect one another and operate at different ranges."
+ nanban_trade.12.a: "Our armies will be unstoppable!"
+
+

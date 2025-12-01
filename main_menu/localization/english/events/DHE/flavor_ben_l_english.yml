@@ -1,0 +1,33 @@
+﻿l_english:
+ flavor_ben.1.title: "$walls_of_benin$"
+ flavor_ben.1.desc: "The prosperity of [target_location.GetName] depends on its walls. For that reason, [target_character.GetName] has decided that it is time that they are expanded. Such project though will be costly, but it will allow the [target_location.GetRank.GetName] to be brought to new heights."
+ flavor_ben.1.a: "Let us construct these walls."
+ flavor_ben.1.b: "The ditches are enough to protect [target_location.GetNameWithNoTooltip]."
+
+ flavor_ben.2.title: "Administration in Towns"
+ flavor_ben.2.desc: "[ROOT.GetCountry.GetName] has been centralized in [ROOT.GetCountry.GetCapital.GetName] instead of the numerous locations within it. Rather than merely offering them protection, we can establish an administration that directly obeys [target_character.GetName]. They will be instead ruled through the [GetBuildingName('eghabho_nore_mansion')], where government officials that directly obey [target_character.GetNameWithNoTooltip] reside in."
+ flavor_ben.2.a: "[ROOT.GetCountry.GetNameWithNoTooltip] will be centralized!"
+ flavor_ben.2.b: "The current system is fine."
+
+ flavor_ben.3.title: "Curtailing the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]"
+ flavor_ben.3.desc: "The [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] have been deciding the succession in [ROOT.GetCountry.GetName] for far too long. Their influence disturb the stability of the [ROOT.GetCountry.GetFlavorRank] for their own interests. [target_character.GetName] and [target_character.GetHerHis] loyalists have had enough of this oligarchy, and wish to undo it. They plan to arrange a few assassinations for these influential people that prevent the rule of the [ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')]. However, such actions may lead to them revolting."
+ flavor_ben.3.a: "A few 'accidents' can be arranged."
+ flavor_ben.3.b: "This is no way to treat the subjects!"
+ ben_purge_non_innocent_nobles_tt: "#Y 5%#! of the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] [pops|e] within [ROOT.GetCountry.GetCapital.GetName] will be #R killed#!"
+
+ flavor_ben.4.title: "The [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] Revolt!"
+ flavor_ben.4.desc: "Due to our actions against the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')], they have banded together and risen up in opposition to [target_character.GetName]. They now wish to rid themselves of [target_character.GetHerHis] influence, shifting the [ROOT.GetCountry.GetFlavorRank] back to their hands. This has truly turned into a crisis, but should the supporters of [target_character.GetNameWithNoTooltip] stand up, or should they bend the knee to the demands of the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]?"
+ flavor_ben.4.a: "To arms!"
+ flavor_ben.4.b: "Perhaps they have a point..."
+ ben_all_nobles_join_revolt: "All [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] will join [target_rebel.GetName]"
+ uzama_revolt: "Uzama Revolt"
+
+ flavor_ben.5.title: "Civil Unrest in [ROOT.GetCountry.GetNameWithNoTooltip]"
+ flavor_ben.5.desc: "The increasing unrest within [ROOT.GetCountry.GetName] has led to the country slowly being torn apart from the inside. The people have seen the decline the [ROOT.GetCountry.GetFlavorRank] during the rule of [target_character.GetName], and are now siding with the promises that members of the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] as well as [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] are making. This is a crucial moment in the history of [ROOT.GetCountry.GetNameWithNoTooltip], and the crisis must be averted."
+ flavor_ben.5.a: "[ROOT.GetCountry.GetNameWithNoTooltip] will be restored."
+
+ flavor_ben.6.title: "Sponsoring the Slave Trade"
+ flavor_ben.6.desc: "The practice of slavery has brought much profit to [ROOT.GetCountry.GetName]. It is a practice that the entire [ROOT.GetCountry.GetFlavorRank] has benefited from, exxcept the few unfortunate. Now, with our contacts outside of [ShowRegionName('guinea_region')], there have been debates to expand this practice. Primarily, to focus on expanding our [ShowBuildingTypeName('slave_market')]. Although the [ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')] may not be able to intervene directly, it can at the very least grant the rights to expand it.."
+ flavor_ben.6.a: "The profits of such practice must be expanded."
+ flavor_ben.6.b: "The practice of slavery must slowly be abolished."
+ ben_slave_building_upgrade_tt: "The maximum [building|e] level of [ShowBuildingTypeName('slave_market')] will be #G Doubled#!"

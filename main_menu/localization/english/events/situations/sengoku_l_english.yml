@@ -1,0 +1,106 @@
+﻿l_english:
+ sengoku.1.title: "Ōnin War"
+ sengoku.1.desc.shogun: "The tensions between the different clans and ourselves have spiraled out of control, and now war has broken out. The ramifications of this are felt throughout the Japanese islands, as our fellow $daimyo$ begin to take sides, and alliances are brought into play.\n\nWhoever may win this current civil war, however, it is clear that the current [ROOT.GetCountry.GetLongName] was too weak to prevent it. We are not the only ones who have noticed this, and it is quite likely that this great war of the Ōnin period will result in a prolonged period of strife and warfare between the different Japanese states."
+ sengoku.1.desc: "The [GetUniqueInternationalOrganization('japanese_shogunate').GetLeaderTitle] has proved to be unable to manage the clans. The gradual lenience and delegation of authority towards the local rulers has become the Shogunate's downfall, and the many conflicts that have been brewing for centuries are now in the open. Virtually independent from any central authority, many $daimyo$ rule supreme in their own domains. We can not fall behind, lest we risk being extinguished by the flames of war that will soon engulf the whole country."
+ sengoku.1.a: "The Sengoku Jidai will see us victorious!"
+ sengoku.1.b: "We shall bide our time."
+ turn_japanese_clan_into_normal_tag.tt: "We will gain autonomy as a territorial $daimyo$"
+
+ sengoku.2.title: "The End of the Sengoku Jidai"
+ sengoku.2.desc.common: "The conflicts of the Sengoku Jidai are a thing of the past. After many years of constant war, the islands of [ShowRegionName('japan_region')] are once again united under"
+ sengoku.2.desc.absolute: "$sengoku.2.desc.common$ our banner. No clan will be able to question our leadership anymore, and we will lead the country into an era of peace and prosperity like never seen before. All [ShowRegionNameWithNoTooltip('japan_region')] bows to us!"
+ sengoku.2.desc: "$sengoku.2.desc.common$ the authority of a central [GetUniqueInternationalOrganization('japanese_shogunate').GetLeaderTitle]. The petty struggles of the different clans will never again diminish the rule of the central government."
+ sengoku.2.a: "We are victorious!"
+ sengoku.2.b: "Not even the Imperial Family can defy our authority."
+
+ sengoku.3.title: "Expansion of the [ROOT.GetCountry.GetFlavorRank]"
+ sengoku.3.desc: "The country is in a time of upheaval. Many of the clans have started to establish their rule independently of the authority of the [GetUniqueInternationalOrganization('japanese_shogunate').GetLeaderTitle]. It is clear that the court at [GetUniqueInternationalOrganization('japanese_shogunate').GetLeaderCountry.GetCapital] has not enough power to force the clans to bow to them. We may take advantage of this situation and expand our [ROOT.GetCountry.GetFlavorRank] autonomy, effectively becoming our own masters, but we risk incurring the ire of the [GetUniqueInternationalOrganization('japanese_shogunate').GetLeaderTitle]."
+ sengoku.3.a: "We will carve our own path."
+ sengoku.3.b: "We can not risk the ire of the [GetUniqueInternationalOrganization('japanese_shogunate').GetLeaderTitle]."
+
+ sengoku.4.title: "A Moment of Weakness"
+ sengoku.4.desc: "It is a time of constant conflict. The [target_enemy.GetLongName] have recently been trying to expand their influence at the expense of other clans, but they have also been showing their own fair share of weakness. We could take advantage of such weakness and exploit it for our benefit while expanding our own territory. In such times of the whole country at war, who would complain if we start yet another one?"
+ sengoku.4.a: "They are weak, and they must fall."
+
+ sengoku.5.title: "The Moment of Truth"
+ sengoku.5.desc: "The [target_enemy.GetLongName] have proven a nuisance time and time again. We should deal with them already and expand our own territory at their expense. In the constant state of war of the $sengoku$, it is natural for the weak to die and feed the strong. Only by emerging victorious over all we can ensure our survival, so we shall always pry on the weak."
+ sengoku.5.a: "They will fall before us."
+ sengoku.5.b: "We will gain nothing from going against them."
+
+ sengoku.6.title: "The [actor.GetLongNameWithNoTooltip] Asks for Peace"
+ sengoku.6.desc: "Our conflict in the [target_war.GetName] has grasp the attention of the [actor.GetGovernment.GetRulerTitle] in [actor.GetCapital.GetName]. We have received an official [actor.GetGovernment.GetAdjective] missive urging us to stop all fighting, arguing to maintain peace and stability in the land. Although the authority of the [actor.GetGovernment.GetRulerTitle] is unquestionable, we still hope to gain from this conflict."
+ sengoku.6.a: "We cannot do but oblige."
+ sengoku.6.b: "Tell them we need time to consider the petition."
+
+ sengoku.7.title: "The [target_country.GetLongNameWithNoTooltip] Accepted Our Petition"
+ sengoku.7.desc: "The [target_country.GetLongName] have proven themselves to be true defenders of the [ROOT.GetCountry.GetGovernment.GetRulerTitle] by having accepted our [ROOT.GetCountry.GetGovernment.GetAdjective] missive and heeded to our petition of stopping their pointless bloodshed."
+ sengoku.7.a: "As it should be."
+
+ sengoku.8.title: "The [target_country.GetLongNameWithNoTooltip] Refused Our Petition"
+ sengoku.8.desc: "The [target_country.GetLongName] have proven themselves as traitors to the [ROOT.GetCountry.GetGovernment.GetRulerTitle]'s authority. They claim to be carefully considering our [ROOT.GetCountry.GetGovernment.GetAdjective] petition for stopping their conflict, but that is clearly a ruse to just blatantly ignore it."
+ sengoku.8.a: "We are surrounded by traitors."
+
+ sengoku.9.title: "Petition for [target_location.GetNameWithNoTooltip]"
+ sengoku.9.desc: "The [actor.GetLongNameWithNoTooltip] has come to us with the most daring request. Arguing it with their authority as the rulers of the [GetUniqueInternationalOrganization('japanese_shogunate').GetName], we have been asked to return our rights to the land of [target_location.GetName] to the hands of [actor.GetNameWithNoTooltip]. This is clearly an overstepping of the [actor.GetGovernment.GetAdjective] authority, and we should do well to consider how to answer it."
+ sengoku.9.a: "We must obey the [actor.GetFlavorRank]."
+ sengoku.9.b: "These lands are rightfully ours!"
+
+ sengoku.10.title: "$sengoku.7.title$"
+ sengoku.10.desc: "[target_country.GetName] have proven to have sound reasoning, and have accepted our demand for some of their land to be returned to our authority, and they bow to our leadership."
+ sengoku.10.a: "As they should."
+
+ sengoku.11.title: "$sengoku.8.title$"
+ sengoku.11.desc: "The brazen [target_country.GetName] have contested our petition for land, arguing that they have the proper rights over it and refuse to give it over. Such a clear disrespect of our [ROOT.GetCountry.GetGovernment.GetAdjective] authority can not be ignored."
+ sengoku.11.a: "We will have to put them in place by force."
+
+ sengoku.12.title: "The [actor.GetLongNameWithNoTooltip] Demands Subjugation"
+ sengoku.12.desc: "The authorities of the [actor.GetLongNameWithNoTooltip] have come to us with an extreme petition. We are to relinquish our autonomy and all our lands would go back to being owned by the [actor.GetFlavorRank] directly, with us being only their appointed officials under their leadership. This would curb all our individual [ROOT.GetCountry.GetFlavorRank] achievements, but it would definitely contribute to the stability of the land."
+ sengoku.12.a: "$sengoku.9.a$"
+ sengoku.12.b: "$sengoku.9.b$"
+
+ sengoku.13.title: "Offer of a Hostage"
+ sengoku.13.desc: "Envoys from the [actor.GetLongNameWithNoTooltip] have approach us, offering [target_character.GetName] as a hostage. Having [target_character.GetHerHim] in our care would serve to garner closer relations and trust between both our clans as long as [target_character.GetSheHe] lives among us, but that may also prove to be a double-edge sword in the end."
+ sengoku.13.a: "[target_character.GetNameWithNoTooltip] will be in our care."
+ sengoku.13.b: "Unfortunately, we cannot host [target_character.GetHerHim]."
+
+ sengoku.14.title: "[target_country.GetNameWithNoTooltip] Accept [target_character.GetNameWithNoTooltip]"
+ sengoku.14.desc: "The [target_country.GetLongName] agree to foster closer bonds between our clans, and have accepted to host [target_character.GetName] among themselves. As long as [target_character.GetSheHe] is in their care, both clans will share close ties of trust and friendship."
+ sengoku.14.a: "A joyous occasion."
+
+ sengoku.15.title: "[target_country.GetNameWithNoTooltip] Refuse [target_character.GetNameWithNoTooltip]"
+ sengoku.15.desc: "The [target_country.GetAdjective] envoys return to us with sore news, as they have declined the offer of hosting [target_character.GetName] among themselves. Arguing that they do not have the means to house [target_character.GetHerHim] at the moment, their refusal clearly means that they are unwilling to establish close ties with us."
+ sengoku.15.a: "That is their loss."
+
+ sengoku.16.title: "Petition for a Hostage"
+ sengoku.16.desc: "Envoys from the [actor.GetLongNameWithNoTooltip] have approach us, asking if they could do us the honor of hosting [target_character.GetName] in their midst. They say that they want to offer [target_character.GetHerHim] hospitality and entertainment as a show of respect and appreciation for our [ROOT.GetCountry.GetFlavorRank]. Of course, they ensure us of [target_character.GetHerHis] safety and assure this would serve to establish closer relationships and trust among both our clans."
+ sengoku.16.a: "Send [target_character.GetNameWithNoTooltip] to them."
+ sengoku.16.b: "How dare they ask such a thing from us?"
+
+ sengoku.17.title: "[target_country.GetNameWithNoTooltip] Accept our Petition"
+ sengoku.17.desc: "The [target_country.GetLongNameWithNoTooltip] have accepted to establish closer relations among our clans, and have thus acceded to send [target_character.GetName] to be in our care. This will increase the trust between our families and will bring us together, as long as [target_character.GetSheHe] is safe in our midst."
+ sengoku.17.a: "$sengoku.14.a$"
+
+ sengoku.18.title: "[target_country.GetNameWithNoTooltip] Refuse our Petition"
+ sengoku.18.desc: "The [target_country.GetLongName] have received our petition of hosting [target_character.GetName] in our [ROOT.GetCountry.GetFlavorRank] and have taken it as a ruse on our part to gain advantage over them. Alas, our sincere attempts to foster closer relations and trust between our clans seem to have caused more harm than good."
+ sengoku.18.a: "$sengoku.15.a$"
+
+ sengoku.19.title: "[actor.GetGovernment.GetAdjective] [actor.GetGovernment.GetCourtTitle] Summons"
+ sengoku.19.desc: "It is clear that the [actor.GetLongName] grip over the land is slipping, as more and more clans are acting independently of their authority. In an attempt to keep the clans contained, the [actor.GetFlavorRank] has no other option but to summon clan leaders to the capital to ask for concrete justifications of their actions. Such summon has come now for [target_ruler.GetName], asking [target_ruler.GetHerHim] to appear before the [actor.GetGovernment.GetAdjective] [actor.GetGovernment.GetCourtTitle]. It is our duty to obey, but that would definitely put a black mark on our own authority."
+ sengoku.19.a: "We have no other choice but to obey."
+ sengoku.19.b: "Yes... we will go, eventually..."
+
+ sengoku.20.title: "[target_country.GetNameWithNoTooltip] Accept the Summons"
+ sengoku.20.desc: "[target_ruler.GetName] of the [target_country.GetLongName] has heeded our summons and has come before us to explain the actions of [target_ruler.GetHerHis] [target_country.GetFlavorRank]. This makes it clear that our authority still extends to the clans, despite them attempting to act independently."
+ sengoku.20.a: "We are still their ruler nonetheless."
+
+ sengoku.21.title: "[target_country.GetNameWithNoTooltip] Refuse the Summons"
+ sengoku.21.desc: "[target_ruler.GetName] of the [target_country.GetLongName] has proved [target_ruler.GetHerHis] foolishness and treasonous demeanor by refusing to comply to our summons for [target_ruler.GetHerHim] presence before the [ROOT.GetCountry.GetGovernment.GetCourtTitle]. Although [target_ruler.GetSheHe] assures us that [target_ruler.GetSheHe] is definitely preparing for the trip but that the preparations will take a bit, [target_ruler.GetHerHis] delay clearly indicates [target_ruler.GetHerHis] unwillingness and rebelliousness. Such obvious disregard for our authority must not be allowed."
+ sengoku.21.a: "We will have to put [target_country.GetNameWithNoTooltip] in their place."
+
+ sengoku.22.title: "The [actor.GetLongNameWithNoTooltip] Rebels against the [GetUniqueInternationalOrganization('japanese_shogunate').GetLeaderTitle]"
+ sengoku.22.desc: "The role of the [GetUniqueInternationalOrganization('japanese_shogunate').GetLeaderTitle] is to rule the land in the name of the [ShowSpecialStatusName('japanese_emperor')], relieving the Chrysanthemum Throne from the hassle of direct governorship. However, the [actor.GetLongName] has taken advantage of these turbulent times and has gathered enough support to condemn our authority and attempt to restore direct power under the Imperial line. We have been branded as traitors and rebels against the true ruler of [ShowRegionName('japan_region')]."
+ sengoku.22.a: "Are we the evil ones?"
+
+ sengoku.23.title: "$sengoku.22.title$"
+ sengoku.23.desc: "These are truly turbulent times. Even though we are supposed to be the beacon of order for all [ShowRegionName('japan_region')], more and more clans are doubting our authority. The latest affront is that of [actor.GetName], who have presented themselves in open defiance against our rule, and have declared their lands as independent from it. This cannot be tolerated, as we must put in their place any clan that thinks they are not owed to us, lest we see ourselves and our country descent into even greater chaos."
+ sengoku.23.a: "The nail that sticks out must be hammered down."

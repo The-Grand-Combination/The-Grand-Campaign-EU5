@@ -1,0 +1,76 @@
+﻿l_english:
+ 
+  coup_attempt.1.title: "Iron and Treason"
+  coup_attempt.1.desc: "The air is thick with whispers of betrayal. A conspiracy has taken root within our [ROOT.GetCountry.GetGovernment.GetCourtTitle], aiming to unseat the rule of [target_character.GetName]. Courtiers whisper behind closed doors, and the very foundations of our [ROOT.GetCountry.GetFlavorRank] shake. We must act swiftly and decisively before treason turns bloody. If we do not mobilize our trustees, the conspirators will only grow bolder, striking when we are most vulnerable, causing prolongued instability."
+  coup_attempt.1.a: "Flush out the conspirators and crush them!"
+  explain_coup_attempt_tt: "Grants access to the [ShowGenericActionName('conduct_investigation')], [ShowGenericActionName('call_private_council')], and [ShowGenericActionName('execute_court_member')] [disaster|e] [actions|e]\n"
+  explain_coup_attempt_2tt: "We can emerge victorious in this [disaster|e] through either increasing our [legitimacy|e] or eliminating all conspirators within #Y 5#! years or before they succeed in assassinating [target_character.GetNameWithNoTooltip]"
+
+  coup_attempt.2.title: "The Conspiracy Grows"
+  coup_attempt.2.desc: "Reports of treason multiply, and our [ROOT.GetCountry.GetGovernment.GetCourtTitle] is becoming a den of vipers. Each day brings rumors of new defectors and hidden alliances. Those who once swore loyalty now conspire in shadowed halls. The crisis is deepening, and soon it may spiral beyond our control. It is time to act and oust those who seek to spread their poison!"
+  coup_attempt.2.a: "The vultures are circling the throne."
+  conspiracy_grows_tt: "One of our [characters|e] has joined the [ShowDisasterName('coup_attempt')] against us"
+
+  coup_attempt.3.title: "Conspirator Exposed"
+  coup_attempt.3.desc: "A spy within our ranks has uncovered a key figure in the conspiracy against [target_character_2.GetName]. The traitor, [target_character_1.GetName], has been secretly working to undermine our rule, but [target_character_1.GetHerHis] fate is now in our hands. Do we make an example of [target_character_1.GetHerHim], hoping to deter others, or do we extract more information? We may yet uncover the deeper roots of this treason."
+  coup_attempt.3.a: "Execute [target_character_1.GetHerHim]!"
+  coup_attempt.3.b: "Spare [target_character_1.GetHerHis] life."
+  coup_attempt.3.c: "Force [target_character_1.GetHerHim] to reveal potential co-conspirators!"
+  coup_attempts_3_b_tt: "[target_character_1.GetShortNameWithNoTooltip] will cease [target_character_1.GetHerHis] support for the coup and will lead to the execution of two #Y potential#! co-conspirator [characters|e] within our [ROOT.GetCountry.GetGovernment.GetCourtTitle]"
+  conspirators_exposed_tt: "An investigation will be conducted to discover potential conspirators"
+  target_character_1_flees: "[target_character_1.GetSheHe|U] flees abroad"
+  cease_activities_and_stay: "\n[target_character_1.GetSheHe|U] remains in our [ROOT.GetCountry.GetGovernment.GetCourtTitle] and ceases [target_character_1.GetHerHis] conspiratorial activities"
+
+  coup_attempt.4.title: "Investigation in the [SCOPE.sCountry('actor').GetGovernment.GetCourtTitle]"
+  coup_attempt.4.desc: "Our agents, under the watchful eye of [target_character_2.GetName], have begun a deep and dangerous investigation. They scour the halls elegantly, listening to whispered secrets and watching for the smallest slip of the tongue. Every interaction is scrutinized, and no one is above suspicion. But the deeper they dig, the more enemies we make. Their latest findings are indeed astounding, painting [target_character_1.GetName] as an important member of the conspiracy!"
+  target_character_1_ends_support_tt: "[target_character_1.GetNameWithNoTooltip] will cease [target_character_1.GetHerHis] support for the coup peacefully"
+
+  coup_attempt.5.title: "[ROOT.GetCountry.GetGovernment.GetAdjective|U] Betrayal"
+  coup_attempt.5.desc: "A shocking revelation has shaken the [ROOT.GetCountry.GetGovernment.GetCourtTitle]! It appears that our own [target_character_2.GetName], is among the conspirators. The bloodline itself has been poisoned with treason. Can we risk exposing [target_character_2.GetHerHis] underhanded dealings, or will [target_character_2.GetHerHis] execution tear the [ROOT.GetCountry.GetFlavorRank] apart?"
+  coup_attempt.5.a: "Expose [target_character_2.GetHerHis] schemes."
+  coup_attempt.5.b: "Off with [target_character_2.GetHerHis] head!"
+  coup_attempt.5.c: "We cannot risk the [ROOT.GetCountry.GetGovernment.GetAdjective] line."
+
+
+  coup_attempt.6.title: "The Private Council of [GetCurrentYear]"
+  coup_attempt.6.desc: "A clandestine meeting of most influential members of the estates has been arranged, where secret deals and hushed negotiations may determine the fate of our [ROOT.GetCountry.GetFlavorRank]. Some demand coin and privileges, others offer compromise. Whatever decision we make, we must balance our internal stability and our grasp on power. Choosing to rely on this council will certainly deliver some of the conspirators' names whilst consolidating the power of the estates in the long-term."
+  coup_attempt.6.a: "Very well, the price is worth to pay."
+  coup_attempt.6.b: "On second thought..."
+  conspirator_names_exposed_tt: "The names of some of the conspirators will be revealed in a subsequent [event|e]"
+
+  coup_attempt.7.title: "Conspirator Names Exposed"
+  coup_attempt.7.desc: "Through the machinations of the private council, in combination with bribery and keen investigation, we have obtained the names of those who plotted against us. Their fates are now ours to decide. Some of our advisors support the idea of a swift purge of conspirators such as [target_character_2.GetName] and [target_character_2.GetHerHis] peers. However, others suggest the way of clemency, keeping these dangerous figures close to manipulate them later?"
+  coup_attempt.7.desc_b: "Thanks to the efforts of the private council we have uncovered the identity of a traitor plotting against us. [target_character_2.GetName] now stands at our mercy. Some advisors urge immediate execution, arguing that leaving such a threat alive is too dangerous. Others, however, suggest a more measured approach, believing that sparing [target_character_2.GetHisHer] life could allow us to manipulate [target_character_2.GetHerHim] to our advantage."
+  coup_attempt.7.a: "Kill them. Kill them all!"
+  coup_attempt.7.b: "Grant them clemency, we need them."
+  coup_attempt.7.c: "Kill [target_character_2.GetHerHim]!"
+  coup_attempt.7.d: "Grant [target_character_2.GetHerHim] clemency."
+  conspirators_will_stick_around_absolved_tt: "The aforementioned conspirators will be absolved of their crimes, their heads will remain on their shoulders, for now..."
+  conspirators_will_stick_around_absolved_2_tt: "[target_character_2.GetNameWithNoTooltip] will be absolved of [target_character_2.GetHisHer] crimes, [target_character_2.GetHisHer] head will remain on [target_character_2.GetHisHer] shoulders, for now..."
+
+  coup_attempt.8.title: "Assassination Attempt"
+  coup_attempt.8.desc: "A band of assassins, no doubt funded by the shadowy conspirators, has made a daring attempt on the life of [target_character_1.GetName]! Acting as the culmination of months of efforts, these rogues aim to destabilize our rule and end the reign of [target_character_1.GetShortNameWithNoTooltip]!"
+  coup_attempt.8.a: "Scoundrels!"
+  this_will_end_the_coup_disaster_tt: "This will conclude the [ShowDisasterName('coup_attempt')] [disaster|e] #R negatively#!"
+
+
+  coup_attempt.9.title: "Execution of a Conspirator?"
+  coup_attempt.9.desc.conspirator: "[target_character_2.GetName] has been put to death. The people rejoice at the punishment of a known traitor, and our [ROOT.GetCountry.GetGovernment.GetCourtTitle] breathes easier now that justice has been done. This is likely not the final head that must roll for the throne to be safe under [target_character.GetName], but it is nevertheless a step in a good direction."
+  coup_attempt.9.desc.innocent: "Alas! The executioner was all too happy to bring down the axe on an innocent neck and thus a grievous error has been made! It appears that [target_character_2.GetName] was innocent, but [target_character_2.GetHerHis] head now lies at our feet. The [ROOT.GetCountry.GetGovernment.GetCourtTitle] murmurs in fear, and trust on the rule of [target_character.GetName] is shaken."
+  coup_attempt.9.a: "What have we done? [target_character_2.GetSheHe|U] was innocent!"
+  coup_attempt.9.b: "The traitor's head will adorn our wall!"
+  because_they_are_consort_or_heir_tt: "Due to the importance of the innocent [target_character_2.GetShortNameWithNoTooltip]:"
+
+  coup_attempt.100.title: "Lingering Shadows"
+  coup_attempt.100.desc: "The coup has not been crushed, and discontent continues to thrive and fester in the shadows. The conspirators may be dormant, but their ideas linger, poisoning the minds of those who remain. If we do not remain vigilant, history may yet repeat itself."
+  coup_attempt.100.a: "We will have to prepare for their next attempt."
+  inconclusive_end_5_years_tt: "The conspirators were not eliminated in time, yet they have not acted against [target_character.GetName] either. The [disaster|e] ends #R inconclusively#! and may trigger again in #Y 5#! years"
+  murdered_ending_tt: "The conspirators were successful in assassinating [target_character_2.GetName]. Only time will tell if [target_character.GetName] is a puppet of the conspirators"
+
+  coup_attempt.101.title: "End of the Conspiracy"
+  coup_attempt.101.desc: "With the restoration of legitimacy, the rule of [target_character.GetName] stands firm. The people rally behind us, and no one dares challenge our right. We have emerged from the darkness stronger than before!"
+  coup_attempt.101.a: "None dares challenge our name!"
+
+  coup_attempt.200.title: "Dawn of a New Era"
+  coup_attempt.200.desc: "The old order has crumbled, and from the ashes rises a new vision for our [ROOT.GetCountry.GetGovernment.GetCourtTitle]. The conspiracy, though bloody, has reshaped the path ahead, sheding the power and influence of the old monarchy. Now, we must seize this moment and chart our course into an uncertain tomorrow, surprising and appealing as it may seem!"
+  coup_attempt.200.a: "The future is uncharted!"

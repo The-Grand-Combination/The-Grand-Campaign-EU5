@@ -1,0 +1,148 @@
+SRP = {
+	color = map_SRP_SAV
+	color2 = rgb { 16 41 202 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = piedmontese
+	religion_definition = catholic
+
+	description_category = administrative
+	difficulty = 3
+}
+
+SAR = {
+	color = map_SAR
+	color2 = rgb { 16 41 202 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = piedmontese
+	religion_definition = catholic
+
+	description_category = administrative
+	difficulty = 3
+}
+
+TUS = {
+	color = map_TUS
+	color2 = rgb { 16 41 202 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = tuscan
+	religion_definition = catholic
+
+	description_category = administrative
+	difficulty = 3
+}
+
+TSC = {
+	color = map_TSC
+	color2 = rgb { 16 41 202 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = neapolitan
+	religion_definition = catholic
+
+	description_category = administrative
+	difficulty = 3
+}
+
+PAP	= { #papalstates
+	color = map_PAP
+
+	culture_definition = median
+	religion_definition = catholic
+
+	description_category = diplomatic
+	difficulty = 3
+}
+
+SIC	= { #sicily
+	color = map_SCI
+
+	culture_definition = sicilian
+	religion_definition = catholic
+}
+
+VEN	= { #venice
+	color = map_venice
+
+	culture_definition = venetian
+	religion_definition = catholic
+
+	description_category = administrative
+	difficulty = 3
+}
+
+COR	= { #corsica
+	color = rgb { 106 178 46 }
+
+	culture_definition = corsican
+	religion_definition = catholic
+}
+
+FER	= { #ferrara
+	color = rgb { 97 136 37 }
+
+	culture_definition = emilian
+	religion_definition = catholic
+}
+
+GEN	= { #genoa
+	color = rgb { 218 215 56 }
+
+	culture_definition = ligurian
+	religion_definition = catholic
+
+	description_category = administrative
+	difficulty = 3
+}
+
+LUC = { #lucca
+	color = map_LUC
+
+	culture_definition = tuscan
+	religion_definition = catholic
+}
+
+MOD	= { #modena
+	color = map_MOD
+
+	culture_definition = emilian
+	religion_definition = catholic
+}
+
+NAP	= { #naples
+	color = map_NAP
+
+	culture_definition = neapolitan
+	religion_definition = catholic
+
+	description_category = diplomatic
+	difficulty = 2
+}
+
+PAR	= { #parma
+	color = map_PAR
+
+	culture_definition = emilian
+	religion_definition = catholic
+}
+
+SAV	= { #savoy
+	color = map_SRP_SAV
+
+	culture_definition = arpitan
+	religion_definition = catholic
+}

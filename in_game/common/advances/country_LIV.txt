@@ -1,0 +1,17 @@
+﻿LIV_crusader_forts = {
+	potential = { has_or_had_tag = LIV }
+
+	age = age_1_traditions
+	requires = castle_advance
+	
+	fort_limit_modifier = 0.20
+}
+
+LIV_a_order_knights = {
+	age = age_1_traditions
+	unlock_unit = a_order_knights
+	
+	potential = { has_or_had_tag = LIV }
+	
+	requires = LIV_crusader_forts
+}

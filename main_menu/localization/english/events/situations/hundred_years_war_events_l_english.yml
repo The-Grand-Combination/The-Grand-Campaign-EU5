@@ -1,0 +1,206 @@
+﻿l_english:
+ hundred_years_war.1.title: "The [ShowSituationNameWithNoTooltip('hundred_years_war')]"
+ hundred_years_war.1.desc: "In the year of [GetCurrentYear], tensions between the [GetCountry('ENG').GetLongName] and the [GetCountry('FRA').GetLongName] have reached a breaking point. The longstanding disputes over territory and claims to the [GetCountry('FRA').GetAdjectiveWithNoTooltip] throne have erupted into open hostilities, marking the beginning of the [ShowSituationName('hundred_years_war')].\n\nBoth nations are now preparing for a protracted conflict that will shape the destiny of [ShowSubContinentName('western_europe')]. The world watches as these two great powers prepare for their inevitable clash on the battlefield."
+ hundred_years_war.1.a: "This will hopefully be over quickly."
+ hundred_years_war_tt: "The [ShowSituationName('hundred_years_war')] [situation|e] has started. We may side with either the [GetCountry('FRA').GetLongName] the [GetCountry('ENG').GetLongName], or remain neutral"
+ explain_subject_interactions_tt: "As a [subject|e] of [GetCountry('FRA').GetNameWithNoTooltip], our [subject_loyalty|e] will determine whether or not we will be called to arms in the defense of our overlord. For the duration of the [situation|e], we may gain access to unique [actions|e] such as [ShowGenericActionName('demand_autonomy')] and [ShowGenericActionName('demand_appanage_promotion')] through the [situation|e] panel"
+ hundred_years_war_historical_info: "The Hundred Years' War was a long and brutal conflict between England and France that lasted from 1337 to 1453. It started when the English king claimed the French crown, arguing his right through his mother's bloodline, while the French rejected this under their own laws. Both sides already had overlapping territories in France, which only fueled the fire. What followed was a prolonged, on-and-off war filled with battles, betrayals, and shifting alliances that dragged on for over a century and shifted the geopolitical landscape of all of Western Europe forever."
+
+ hundred_years_war.2.title: "The Crown of [GetCountry('FRA').GetNameWithNoTooltip]"
+ hundred_years_war.2.desc: "We can no longer disregard the fact that the [GetCountry('FRA').GetAdjective] claims that their [ShowHeirSelectionName('salic_law')] makes [GetCharacter('fra_philip_vi_valois').GetName] the [GetCountry('FRA').GetGovernment.GetRulerTitle] of [GetCountry('FRA').GetNameWithNoTooltip], when it clearly should be [GetCharacter('eng_edward_iii').GetName], as [GetCharacter('eng_edward_iii').GetHerHis] mother [GetCharacter('eng_isabella_of_france').GetName] was the sister of [GetCharacter('fra_charles_iv_capet').GetName]."
+ hundred_years_war.2.a: "We are the rightful [GetCountry('FRA').GetGovernment.GetRulerTitle] of [GetCountry('FRA').GetNameWithNoTooltip]"
+ explain_eng_interactions_tt: "We will gain access to unique [actions|e] such as [ShowGenericActionName('fra_diplomacy_with_subjects')] and [ShowGenericActionName('request_papal_delegates')] through the [situation|e] panel"
+
+ hundred_years_war.3.title: "The Crown of [GetCountry('FRA').GetNameWithNoTooltip]"
+ hundred_years_war.3.desc: "[target_eng_ruler.GetName], the [GetCountry('ENG').GetGovernment.GetRulerTitle] of [GetCountry('ENG').GetName] rejects the claim that the throne of the [GetCountry('FRA').GetLongName] should be decided by [ShowHeirSelectionName('salic_law')]. Under [target_eng_ruler.GetHerHis] instruction, the [GetCountry('ENG').GetAdjectiveWithNoTooltip] argue that [target_eng_ruler.GetSheHe] holds the stronger right, as the heir to the estates of [GetCharacter('eng_isabella_of_france').GetName], sister to the late [GetCharacter('fra_charles_iv_capet').GetName]. In contrast, [GetCharacter('fra_philip_vi_valois').GetName] is a more distant relative and thus the [GetCountry('ENG').GetAdjectiveWithNoTooltip] [GetCountry('ENG').GetGovernment.GetCourtTitle] sees this succession as an affront to justice and a cause for war!"
+ hundred_years_war.3.a: "The [GetCountry('ENG').GetAdjectiveWithNoTooltip] are fools!"
+ explain_fra_interactions_tt: "We will gain access to unique [actions|e] such as [ShowGenericActionName('influence_french_subject')] and [ShowGenericActionName('request_papal_delegates')] through the [situation|e] panel"
+
+ hundred_years_war.10.title: "The Issue is not Settled"
+ hundred_years_war.10.desc: "We still do not agree with the [GetCountry('FRA').GetAdjective] position about who should rule [ShowRegionName('france_region')]. Our claims are strong, and our armies will clearly show our righteousness."
+ hundred_years_war.10.a: "We are the rightful [GetCountry('FRA').GetGovernment.GetRulerTitle] of [GetCountry('FRA').GetNameWithNoTooltip]"
+ 
+ hundred_years_war.11.title: "Perfidious Albion!"
+ hundred_years_war.11.desc: "The [GetCountry('ENG').GetAdjective] still control parts of [ShowRegionName('france_region')]. This is clearly not what God intended, and we shall drive them away from our country!"
+ hundred_years_war.11.a: "The [GetCountry('ENG').GetAdjectiveWithNoTooltip] are fools!"
+  
+ hundred_years_war.20.title: "It is Time for War"
+ hundred_years_war.20.desc: "We have a a claim to the throne of [GetCountry('FRA').GetName], and we are currently in a position to assert our dominance in the region.\nIt is time to renew hostilities in the Hundred Years' War. Tensions with the [GetCountry('FRA').GetLongNameWithNoTooltip] have once again escalated, and we are now ready for another phase of this long-standing conflict."
+ hundred_years_war.20.a: "And War it shall be!"
+ hundred_years_war.20.b: "Now is not the time"
+
+ hundred_years_war.21.title: "It is Time for War"
+ hundred_years_war.21.desc: "We need to remove the [GetCountry('ENG').GetAdjective] presence from [ShowRegionName('france_region')], and we are currently in a position to renew hostilities in the Hundred Years' War. Tensions with the [GetCountry('ENG').GetLongNameWithNoTooltip] have once again escalated, and we are now ready for another phase of this long-standing conflict."
+ hundred_years_war.21.a: "And War it shall be!"
+ hundred_years_war.21.b: "Now is not the time"
+
+ hundred_years_war.100.title: "[GetCountry('ENG').GetNameWithNoTooltip] Wins the [ShowSituationNameWithNoTooltip('hundred_years_war')]"
+ hundred_years_war.100.desc: "In a remarkable turn of events, the [GetCountry('ENG').GetLongName] has emerged victorious in the long and bitter conflict known as the Hundred Years' War. The [GetCountry('FRA').GetAdjective] crown has been forced to acknowledge the [GetCountry('ENG').GetAdjectiveWithNoTooltip] territorial claims and make substantial concessions. This victory has brought newfound prestige and influence to the [GetCountry('ENG').GetAdjectiveWithNoTooltip] throne.\n\n[GetCountry('ENG').GetNameWithNoTooltip] now has the chance to establish a more substantial presence in [ShowRegionName('france_region')] and secure its territorial gains. The world watches to see how [GetCountry('ENG').GetNameWithNoTooltip] will wield its newfound power in the region."
+ hundred_years_war.100.a: "This was expected."
+ 
+ 
+ hundred_years_war.101.title: "[GetCountry('FRA').GetNameWithNoTooltip] Wins the [ShowSituationNameWithNoTooltip('hundred_years_war')]"
+ hundred_years_war.101.desc: "In a momentous turn of events, the [GetCountry('FRA').GetLongName] has emerged victorious in the arduous and protracted [ShowSituationName('hundred_years_war')]. The [GetCountry('ENG').GetLongName] has been forced to recognize [GetCountry('FRA').GetAdjectiveWithNoTooltip] territorial integrity and make substantial concessions. This triumph has greatly enhanced the prestige and influence of [GetCountry('FRA').GetNameWithNoTooltip] on the stage of [ShowContinentName('europe')].\n\n[target_char.GetName] has the chance to consolidate [target_char.GetHerHis] reclaimed territories, strengthen [target_char.GetHerHis] royal authority, and establish [target_char.GetHerselfHimself] as a preeminent power in the region."
+ hundred_years_war.101.a: "This was expected."
+ hundred_years_war.101.b: "Who wants [ShowContinentNameWithNoTooltip('europe')] anyway?"
+ hundred_years_war.101_tt: "This concludes the [ShowSituationName('hundred_years_war')] [situation|e]"
+ 
+ # Flavor
+ hundred_years_war.200.title: "[fugitive_robert_de_artois.GetNameWithNoTooltip] Flees to [GetCountry('ENG').GetNameWithNoTooltip]"
+ hundred_years_war.200.desc: "[GetCountry('ENG').GetGovernment.GetRuler.GetName] of [GetCountry('ENG').GetName] has granted the disgraced Lord [SCOPE.sCharacter('fugitive_robert_de_artois').GetShortName] refuge. For the last few years, [SCOPE.sCharacter('fugitive_robert_de_artois').GetShortNameWithNoTooltip] has avoided the summons of [ROOT.GetCountry.GetGovernment.GetRuler.GetName] for [fugitive_robert_de_artois.GetHerHis] crimes of forgery in an attempt to seize the [GetCountry('ARS').GetLongName]. While [GetCountry('ENG').GetGovernment.GetRuler.GetShortNameWithNoTooltip] is ruler of [GetCountry('ENG').GetNameWithNoTooltip], [fugitive_robert_de_artois.GetSheHe] is also our vassal through [fugitive_robert_de_artois.GetHerHis] rule over [GetCountry('AQN').GetName]. As such the harboring of the fugitive [SCOPE.sCharacter('fugitive_robert_de_artois').GetNameWithNoTooltip] would create a justification to seize the [GetCountry('AQN').GetLongNameWithNoTooltip] should [GetCountry('ENG').GetGovernment.GetRuler.GetShortNameWithNoTooltip] refuse to comply in surrendering [SCOPE.sCharacter('fugitive_robert_de_artois').GetHerHim]. However, such a veiled threat towards the [GetCountry('ENG').GetAdjectiveWithNoTooltip] [GetCountry('ENG').GetGovernment.GetCourtTitle] runs the risk of starting conflict."
+ 
+ 
+ hundred_years_war.200.a: "Demand [GetCountry('ENG').GetGovernment.GetRuler.GetShortNameWithNoTooltip] surrender the fugitive Lord."
+ hundred_years_war.200.b: "Provoking the [GetCountry('ENG').GetAdjectiveWithNoTooltip] [GetCountry('ENG').GetGovernment.GetCourtTitle] would be ill-advised."
+
+ hundred_years_war.201.title: "[GetCountry('FRA').GetNameWithNoTooltip] Demands [fugitive_robert_de_artois.GetNameWithNoTooltip]"
+ hundred_years_war.201.desc: "The [GetCountry('FRA').GetGovernment.GetRulerTitle] of [GetCountry('FRA').GetName] has demanded that we return [SCOPE.sCharacter('fugitive_robert_de_artois').GetName] who has taken refuge in our [ROOT.GetCountry.GetGovernment.GetCourtTitle] and has lately become a trusted advisor for [ROOT.GetCountry.GetGovernment.GetRuler.GetName]. Should we act in defiance of the [GetCountry('FRA').GetAdjectiveWithNoTooltip] [GetCountry('FRA').GetGovernment.GetRulerTitle], they may move to confiscate the [GetCountry('AQN').GetLongName].\n\nDuring [fugitive_robert_de_artois.GetHerHis] time in the [GetCountry('ENG').GetAdjectiveWithNoTooltip] [GetCountry('ENG').GetGovernment.GetCourtTitle], [SCOPE.sCharacter('fugitive_robert_de_artois').GetShortNameWithNoTooltip] has argued that [ROOT.GetCountry.GetGovernment.GetRuler.GetNameWithNoTooltip] should be the rightful ruler of [GetCountry('FRA').GetNameWithNoTooltip], with [target_character.GetHerHis] Capetian lineage through [target_character.GetHerHis] mother, [GetCharacter('eng_isabella_of_france').GetName], and that the previous declaration of [ShowHeirSelectionName('salic_law')] to enthrone [GetCharacter('fra_philip_vi_valois').GetName] was illegitimate. As such, this may serve as an opportunity to claim the throne of [GetCountry('FRA').GetNameWithNoTooltip] for ourselves."
+
+ hundred_years_war.201.a: "Defy the [GetCountry('FRA').GetAdjectiveWithNoTooltip] [GetCountry('FRA').GetGovernment.GetRulerTitle] and make preparation to invade [GetCountry('FRA').GetNameWithNoTooltip]."
+ hundred_years_war.201.b: "The current Status Quo must be respected, surrender [SCOPE.sCharacter('fugitive_robert_de_artois').GetShortNameWithNoTooltip]."
+ 
+ hundred_years_war.202.title: "[GetCountry('ENG').GetNameWithNoTooltip] Refuses to Surrender of [fugitive_robert_de_artois.GetNameWithNoTooltip]"
+ hundred_years_war.202.desc: "The [GetCountry('ENG').GetGovernment.GetCourtTitle] of [GetCountry('ENG').GetName] has refused our request to extradite the criminal [SCOPE.sCharacter('fugitive_robert_de_artois').GetName] despite our warnings that disobedience would see the [GetCountry('AQN').GetLongName] forfeited. It would be best to assume that the Lords of [GetCountry('ENG').GetNameWithNoTooltip] are preparing for war with [GetCountry('FRA').GetNameWithNoTooltip] to fend off any attempts to seize [GetCountry('AQN').GetNameWithNoTooltip] or even attempt to claim the [GetCountry('FRA').GetAdjectiveWithNoTooltip] throne!"
+ 
+ hundred_years_war.202.a: "[GetCountry('ENG').GetGovernment.GetRuler.GetShortNameWithNoTooltip] has refused us, raise the banners!"
+ hundred_years_war.202.b: "Halt any further aggression towards [GetCountry('ENG').GetNameWithNoTooltip]"
+ 
+ hundred_years_war.203.title: "[GetCountry('ENG').GetNameWithNoTooltip] Surrenders [fugitive_robert_de_artois.GetNameWithNoTooltip]"
+ hundred_years_war.203.desc: "The [GetCountry('ENG').GetAdjective] [GetCountry('ENG').GetGovernment.GetCourtTitle] has accepted our request to return the fugitive [SCOPE.sCharacter('fugitive_robert_de_artois').GetName] to [GetCountry('FRA').GetName]. With nowhere left to run, [SCOPE.sCharacter('fugitive_robert_de_artois').GetShortNameWithNoTooltip] now stands before [GetCountry('FRA').GetGovernment.GetRulerTitle] [GetCharacter('fra_philip_vi_valois').GetName] to be judged for his crimes and attempts to illegally seize the [GetCountry('ARS').GetLongName]."
+ 
+ 
+ hundred_years_war.203.a: "[SCOPE.sCharacter('fugitive_robert_de_artois').GetShortNameWithNoTooltip] shall be in Imprisoned"
+ hundred_years_war.203.b: "Such crimes are unforgivable. Execute [SCOPE.sCharacter('fugitive_robert_de_artois').GetHimHer]!"
+ hundred_years_war.203.c: "[SCOPE.sCharacter('fugitive_robert_de_artois').GetShortNameWithNoTooltip] shall redeem [fugitive_robert_de_artois.GetHerselfHimself] by serving us in the [ROOT.GetCountry.GetGovernment.GetCabinetTitle]"
+ hundred_years_war.203.d: "The decisions of [fugitive_robert_de_artois.GetShortName] were justified, grant [fugitive_robert_de_artois.GetHerHim] the [GetCountry('ARS').GetLongNameWithNoTooltip]!"
+
+
+ hundred_years_war.204.title: "[fugitive_robert_de_artois.GetNameWithNoTooltip] and the [GetCountry('FRA').GetAdjectiveWithNoTooltip] Crown"
+ hundred_years_war.204.desc: "Ever since [SCOPE.sCharacter('fugitive_robert_de_artois').GetHisHer] arrival to [GetCountry('ENG').GetName], [SCOPE.sCharacter('fugitive_robert_de_artois').GetName] has served as a faithful advisor and close friend towards [GetCountry('ENG').GetGovernment.GetRuler.GetShortName]. However, in recent months [SCOPE.sCharacter('fugitive_robert_de_artois').GetShortNameWithNoTooltip] has increasingly brought up the issue of the succession in [GetCountry('FRA').GetName], where in 1328 [GetCharacter('fra_philip_vi_valois').GetName] was crowned as successor over [GetCountry('ENG').GetGovernment.GetRuler.GetShortNameWithNoTooltip], citing ancient [ShowHeirSelectionName('salic_law')]. While at the time, [GetCountry('ENG').GetGovernment.GetRuler.GetShortNameWithNoTooltip] initially forfeited [GetCountry('ENG').GetGovernment.GetRuler.GetHerHis] claim, relations since then between the [GetCountry('FRA').GetAdjectiveWithNoTooltip] and [GetCountry('ENG').GetAdjectiveWithNoTooltip] courts have since soured. Now [SCOPE.sCharacter('fugitive_robert_de_artois').GetShortNameWithNoTooltip] seeks to justify that the [GetCountry('FRA').GetAdjectiveWithNoTooltip] nobles stole the throne from [GetCountry('ENG').GetGovernment.GetRuler.GetShortNameWithNoTooltip] and the citing of [ShowHeirSelectionNameWithNoTooltip('salic_law')] was illegitimate. [SCOPE.sCharacter('fugitive_robert_de_artois').GetShortNameWithNoTooltip] also holds claim to the [GetCountry('ARS').GetLongName] in [GetCountry('FRA').GetNameWithNoTooltip], and would serve as a valuable ally should attempt to follow through with [fugitive_robert_de_artois.GetHerHis] plan to seize the [GetCountry('FRA').GetAdjectiveWithNoTooltip] throne."
+ hundred_years_war.204.a: "The [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetName] will rule the throne of [GetCountry('FRA').GetNameWithNoTooltip]!"
+ hundred_years_war.204.b: "[SCOPE.sCharacter('fugitive_robert_de_artois').GetShortNameWithNoTooltip] case is fair, though war with [GetCountry('FRA').GetNameWithNoTooltip] would be foolish."
+ hundred_years_war.204.c: "[SCOPE.sCharacter('fugitive_robert_de_artois').GetShortNameWithNoTooltip]'s ambition will bring war to [GetCountry('ENG').GetNameWithNoTooltip], execute [SCOPE.sCharacter('fugitive_robert_de_artois').GetHimHer]!"
+
+
+ hundred_years_war.205.title: "The Lord of [GetCountry('ARS').GetNameWithNoTooltip]"
+ hundred_years_war.205.desc: "With our recent war with [GetCountry('FRA').GetName], we were able to secure portions of the [GetCountry('ARS').GetLongName], lands disputed by [SCOPE.sCharacter('fugitive_robert_de_artois').GetName]. As [fugitive_robert_de_artois.GetSheHe] has proven an invaluable ally thus far, perhaps we should grant [SCOPE.sCharacter('fugitive_robert_de_artois').GetShortNameWithNoTooltip] these recently conquered territories."
+ hundred_years_war.205.a: "It is [SCOPE.sCharacter('fugitive_robert_de_artois').GetShortNameWithNoTooltip] Birthright."
+ hundred_years_war.205.b: "[SCOPE.sCharacter('fugitive_robert_de_artois').GetShortNameWithNoTooltip] shall rule, but we shall retain control of [ShowLocationNameWithNoTooltip('calais')]"
+ hundred_years_war.205.c: "These lands would be better directly managed by us."
+
+ hundred_years_war.206.title: "The Demands of [actor.GetNameWithNoTooltip]"
+ hundred_years_war.206.desc: "It is time for us to seek special privileges from the [GetCountry('FRA').GetLongName], in our effort to secure greater autonomy and influence for our estates. Whether for political, economic, or military advantage, these demands will certainly put pressure on our overlord. It will ultimately depend on how [target_character2.GetName] decides to respond to this challenge. Can [target_character2.GetSheHe] risk us falling under [GetCountry('ENG').GetAdjective] influence?"
+ hundred_years_war.206.a: "Demand reduced payments and a symbolic gift!"
+ hundred_years_war.206.b: "We must be allowed to expand our lands against other subjects."
+ hundred_years_war.206.c: "Request exemption from future offensive wars."
+ hundred_years_war.206.d: "Nevermind."
+
+ hundred_years_war.207.title: "[actor.GetNameWithNoTooltip] Demands [GetCountry('PAP').GetAdjectiveWithNoTooltip] Mediation"
+ hundred_years_war.207.desc: "For too long, the war between [GetCountry('ENG').GetName] and [GetCountry('FRA').GetName] has brought devastation upon [ShowReligionGroupName('christian')]. As the heralds of [ShowReligionName('catholic')], we cannot allow this bloodshed to continue. We have to issue a solemn decree, calling upon both realms to lay down their arms and seek peace in the name of faith and unity. It remains to be seen if these rulers heed our holy counsel, or if their pride will lead them further into ruin should we decide to demand an end to hostilities."
+ hundred_years_war.207.a: "Let us end the senseless violence with a powerful decree!"
+ hundred_years_war.207.b: "We cannot risk meddling further into this conflict."
+ 
+ hundred_years_war.208.desc: "[actor.GetName] seeks special privileges from us, hoping to secure greater autonomy and influence. Whether for political, economic, or military advantage, these demands challenge the authority of [GetCountry('FRA').GetName]. [target_character1.GetName] is leading this push for concessions, while our ruler, [target_character2.GetName], must decide how to respond. If we concede too much, could they slip into the grasp of [GetCountry('ENG').GetName]?"
+ hundred_years_war.208.a: "Grant them a symbolic gift."
+ hundred_years_war.208.b: "We must tolerate their expansionist tendencies."
+ hundred_years_war.208.c: "We must accept."
+ hundred_years_war.208.d: "Never!"
+ scope_actor_allowed_to_attack_other_subjects_of_fra_tt: "[actor.GetName] will be allowed to declare war against our other subjects without us intervening for #Y 20 years#!"
+ scope_actor_exempted_from_offensive_wars_tt: "[actor.GetNameWithNoTooltip] will be exempted from any offensive wars that [GetCountry('FRA').GetNameWithNoTooltip] may conduct in the next 20 #Y years#!"
+
+ hundred_years_war.209.title: "[actor.GetNameWithNoTooltip] Approaches [target_subject.GetName]"
+ hundred_years_war.209.desc: "[GetCountry('ENG').GetName] has approached us, a subject of [GetCountry('FRA').GetName], seeking to sway us away from our overlord. They offer compensation in exchange for our neutrality, ensuring that we do not take up arms in any future defensive wars that [GetCountry('FRA').GetNameWithNoTooltip] may find itself in. Accepting could bring security and wealth — but at what cost to our loyalties?"
+ hundred_years_war.209.a: "Their donation is welcome."
+ hundred_years_war.209.b: "We can never betray our true allegiance!"
+
+ hundred_years_war.210.title: "The Influence of [actor.GetNameWithNoTooltip]"
+ hundred_years_war.210.desc: "[actor.GetName] has formally petitioned us, the [GetCountry('FRA').GetLongName], demanding recognition as an [ShowSubjectTypeName('appanage')]. [target_character1.GetName] seeks to rule [target_character1.GetHerHis] lands with greater independence while maintaining [target_character1.GetHerHis] ties to our banners. Granting such status may stabilize relations but could also set a dangerous precedent for others seeking the same." 
+ hundred_years_war.210.a: "Accept their demands."
+ hundred_years_war.210.b: "We must respectfully decline."
+ inherit_in_case_of_no_heir_tt: "Should their [ruler|e] dies without an [heir|e] of our [dynasty|e], we will inherit [actor.GetName] instantly"
+
+ hundred_years_war.211.title: "Mercenaries in the [ShowSituationNameWithNoTooltip('hundred_years_war')]"
+ hundred_years_war.211.desc: "The mercenary company [target_merc.GetName] has gathered in [target_location.GetName], drawn by the bloodshed between [GetCountry('FRA').GetName] and [GetCountry('ENG').GetName]. Sensing an opportunity to profit from the chaos, they offer their services to the highest bidder. With skilled warriors at their command, their allegiance could tip the scales in this prolonged conflict."
+ hundred_years_war.211.a: "Let them fight for our coin."
+ hundred_years_war.211.b: "Dismiss them."
+ merc_company: "Mercenary Company"
+ root_mercenaries_name: "Small $merc_company$"
+ larger_root_mercenaries_name: "Large $merc_company$"
+ root_mercenaries_cav_name: "Mixed $merc_company$"
+ genoese_mercs_name: "$ligurian$ $merc_company$"
+ catalan_mercs_name: "$catalan$ $merc_company$"
+
+ hundred_years_war.212.title: "The [GetCountry('PAP').GetGovernment.GetRulerTitle] Ends the Conflict"
+ hundred_years_war.212.desc: "A messenger from [GetCountry('PAP').GetCapital.GetName] has arrived, bearing a decree from [GetCountry('PAP').GetGovernment.GetRulerOrRegent.GetName]. By the authority of the $papacy_reform$, all hostilities between [GetCountry('FRA').GetName] and [GetCountry('ENG').GetName] must cease immediately. The war that has ravaged our lands and people is to be halted immediately."
+ hundred_years_war.212.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+ hundred_years_war.212.b: "The [GetCountry('PAP').GetGovernment.GetRulerTitle] be damned, the war shall continue!"
+ armies_demoralized_tt: "The [morale|e] of our [armies|e] will suffer"
+
+ hundred_years_war.213.title: "[actor.GetNameWithNoTooltip] Demands [target_location.GetNameWithNoTooltip]"
+ hundred_years_war.213.desc: "Tensions rise within the [GetCountry('FRA').GetAdjectiveWithNoTooltip] sphere as [target_character1.GetName] has issued a formal demand for the return of [target_location.GetName], currently held by us. They claim the territory is a historical and cultural part of their rightful [actor.GetGovernment.GetGovernmentType.GetName] and accuse [target_character2.GetName] of illegitimately occupying it. Though no open conflict has erupted, the demand carries weight and may force us to make a difficult decision — comply or bring the matter to [GetCountry('FRA').GetName]."
+ hundred_years_war.213.a: "Very well, we must accept."
+ hundred_years_war.213.b: "We dispute the claim, let [GetCountry('FRA').GetNameWithNoTooltip] decide!"
+
+ hundred_years_war.214.title: "Border Clash in [target_location.GetNameWithNoTooltip]"
+ hundred_years_war.214.desc: "[target_character2.GetName], our subject, has appealed to us regarding the demand of [target_character1.GetName] to be granted [target_location.GetName]. [target_character2.GetShortNameWithNoTooltip] asserts the territory is a rightful part of [target_character2.GetHerHis] domain and asks that we intervene rather than allow coercion between our subjects. The dispute threatens internal stability, and our response may shape the future balance of power in the area."
+ hundred_years_war.214.a: "Grant the land to [actor.GetNameWithNoTooltip]."
+ hundred_years_war.214.b: "This land is an indisputable part of [target_loser_country.GetNameWithNoTooltip]!"
+
+ hundred_years_war.215.title: "Shifting Allegiances"
+ hundred_years_war.215.desc: "For quite some time now, the status of the [target_war.GetName] has left us very displeased. Despite assurances from [scuffed_side_country.GetName], many of our advisors support the idea of turning against them. The tide of war may yet change, and we would do well to be ready. By dispatching a proposal to [potential_new_ally.GetName], maybe we can bridge our differences and shift the balance of power?"
+ hundred_years_war.215.a: "It would be wise to remove ourselves from this conflict."
+ hundred_years_war.215.b: "We cannot afford another hostile neighbor!"
+ subject_100_yw_215_effect_tt: "Should they accept, we will gain a [white_peace|e] in the ongoing war"
+ sovereign_100_yw_215_effect_tt: "Should they accept, we will join their side against [scuffed_side_country.GetName] in the ongoing war"
+ hundred_years_war.215.b.tt: "The [ShowGenericActionName('betray_our_allegiance')] [action|e] will be available again in #Y 2#! years"
+
+ hundred_years_war.216.title: "[wormtongue_country.GetAdjectiveWithNoTooltip] Turncoats"
+ hundred_years_war.216.desc: "A letter has arrived, sealed and under protection. It appears that [wormtongue_country.GetName] are reassesing their options in the ongoing [target_war.GetName]. According to their envoys, they are ready to betray [scuffed_side_country.GetName] in favor of us, during this conflict. Whether we accept or not, this is an important shift in the geopolitical situation that surrounds the [ShowSituationName('hundred_years_war')]. As such, this matter is of utter importance and requires our full attention, for now."
+ hundred_years_war.216.a: "We welcome their change of heart."
+ hundred_years_war.216.b: "Our ranks have no place for scheming fools!"
+ hundred_years_war.216.b.tt: "We will crush their traitorous skulls on the battlefield!"
+ 
+ # Tooltips
+ hundred_years_war.200.tt.a: "Should [GetCountry('ENG').GetGovernment.GetRuler.GetShortNameWithNoTooltip] refuse, we can assert our claim to [GetCountry('AQN').GetNameWithNoTooltip], granting us Cores.\nThis will draw us closer with war against [GetCountry('ENG').GetNameWithNoTooltip]!"
+ hundred_years_war.200.tt.b: "[SCOPE.sCharacter('fugitive_robert_de_artois').GetShortNameWithNoTooltip] may encourage [GetCountry('ENG').GetGovernment.GetRuler.GetShortNameWithNoTooltip] to press his claim to [GetCountry('FRA').GetNameWithNoTooltip] through [GetCharacter('eng_isabella_of_france').GetName] against our [ShowHeirSelectionName('salic_law')]!"
+ hundred_years_war.201.tt.a: "The [GetCountry('FRA').GetAdjectiveWithNoTooltip] Court will see this as a violation of Edward's III vassal obligations, and may move to confiscate the [GetCountry('AQN').GetLongName], granting them Cores on all [GetCountry('AQN').GetAdjectiveWithNoTooltip] locations."
+ hundred_years_war.201.tt.b: "Relations between the [GetCountry('ENG').GetAdjectiveWithNoTooltip] and [GetCountry('FRA').GetAdjectiveWithNoTooltip] courts will stabilize, for now."
+ hundred_years_war.202.tt.a: "This will cause the #W Hundred Years' War#! situation to fire sooner!\nWe will gain cores on all locations owned by the [GetCountry('AQN').GetLongName]."
+ hundred_years_war.203.tt.a: "[SCOPE.sCharacter('fugitive_robert_de_artois').GetShortNameWithNoTooltip] status as a noble will be respected, and will not be executed."
+ hundred_years_war.203.tt.d: "[SCOPE.sCharacter('fugitive_robert_de_artois').GetShortNameWithNoTooltip] will become Lord of [GetCountry('ARS').GetLongNameWithNoTooltip], creating a new Vassal from [GetCountry('BUR').GetAdjective] lands!"
+ may_grant_robert_artois_tt: "We will gain cores on [SCOPE.sCharacter('fugitive_robert_de_artois').GetShortNameWithNoTooltip]'s claims in [GetCountry('ARS').GetLongName] in the province of Arras, along with the Province of Amiens.\nShould we conquer portions of Artois, we may grant [SCOPE.sCharacter('fugitive_robert_de_artois').GetShortNameWithNoTooltip] those territories and make [SCOPE.sCharacter('fugitive_robert_de_artois').GetHimHer] a vassal"
+ may_still_trigger_hyw_tt: "The #W Hundred Years' War#! situation may still fire." 
+
+ hundred_years_war.217.title: "A Call to Arms"
+ hundred_years_war.217.desc: "As the fires of war consume the fields of [GetCountry('ENG').GetAdjective] and [GetCountry('FRA').GetAdjective] lands, a messenger from [actor.GetName] arrives at our court. With carefully chosen words and veiled urgency, they speak of shared enemies, righteous causes, and noble bonds.\n\nBehind the rhetoric lies a clear request. Indeed they seek our support in their struggle, offering coin in exchange for our banners. Whether out of loyalty, opportunity, or ambition, the choice now falls to us."
+ hundred_years_war.217.a: "We shall fight alongside them."
+ hundred_years_war.217.b: "Their war is not our concern."
+
+
+ hundred_years_war.218.title: "A Pact of Caution"
+ hundred_years_war.218.desc: "The [target_asker.GetGovernment.GetCourtTitle] of [target_asker.GetName] has approached us with a formal proposal: a truce, not born of battle, but of foresight. Though our nations are not presently at war, the tides of the ongoing conflict in [ShowRegionName('france_region')] threaten to drag us into its current. To prevent such a fate, they offer gold and the promise of peace.Their message is clear, they seek no quarrel, only distance from entanglements that might yet unfold. The question before us is whether we value caution over opportunity. Our advisors support the notion that such a gesture may yet be a form of diplomatic play! Indeed, [target_character1.GetName] could possibly wish to secure [target_character1.GetHerHis] border against [target_character2.GetName] in preparation for a military campaign elsewhere..."
+ hundred_years_war.218.a: "Let us tend to the peace, for now."
+ hundred_years_war.218.b: "We cannot make such a promise."
+
+ hundred_years_war.219.title: "Our Status Under the [GetCountry('FRA').GetAdjectiveWithNoTooltip] Crown"
+ hundred_years_war.219.desc: "Though decades have passed since the [ShowDynastyName('plantagenet_dynasty')] kings last ruled from [ShowLocationName('rouen')], the shadow of their legacy lingers over [ROOT.GetCountry.GetName]. Once the heartland of cross-Channel kings, the [ROOT.GetCountry.GetFlavorRank] now stands as a prize and a provocation — claimed by one crown, desired by another.\n\nWith tensions rising between [GetCountry('FRA').GetName] and [GetCountry('ENG').GetName], the question of our future returns to the fore. The [GetCountry('FRA').GetAdjectiveWithNoTooltip] heir, [target_character.GetName], newly vested with authority, must now either reaffirm [target_character.GetHerHis] claim to [GetCountry('FRA').GetFlavorRank] or signal a new direction — one that may embolden the very rival who threatens them most. [ROOT.GetCountry.GetNameWithNoTooltip] is more than land. It is memory, ambition, and inheritance. And as war looms, its fate is no longer merely symbolic."
+ hundred_years_war.219.historical_info: "Normandy was once the cornerstone of the Anglo-Norman realm, ruled by English monarchs ever since William the Conqueror claimed the English throne from these very lands. Its strategic and economic importance made it a constant point of friction between England and France. Though reconquered by the French crown under Philip II in the early 13th century, the English never fully relinquished their claims. At the outbreak of the Hundred Years' War, these old grievances resurfaced, with English kings asserting their right not just to the French throne, but to territories long lost — Normandy foremost among them. The region's dual heritage placed it at the center of dynastic rivalry and made it a flashpoint in the conflict to come."
+
+ hundred_years_war.219.a: "We stand with [GetCountry('FRA').GetNameWithNoTooltip]!"
+ hundred_years_war.219.b: "Cast out weakness, reach out to [GetCountry('ENG').GetNameWithNoTooltip] instead."
+
+ hundred_years_war.220.title: "The Brewer of [ShowLocationNameWithNoTooltip('ghent')]"
+ hundred_years_war.220.desc: "While [GetCountry('FRA').GetName] and [GetCountry('ENG').GetName] prepare to plunge much of [ShowSubContinentName('western_europe')] into war, the cities of [ROOT.GetCountry.GetName] stand at the edge of a political reckoning. Though nominally bound to our [GetCountry('FRA').GetAdjective] overlord, the prosperity of [ShowLocationName('ghent')], [ShowLocationName('bruges')], and [ShowLocationName('ypres')] rests on a far more distant power: the [GetCountry('ENG').GetAdjective] [ShowGoodsName('wool')], without which our looms would fall silent and our markets collapse. Among the [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')], one voice rises above the rest: [target_character2.GetName], a charismatic brewer who commands the respect of both craftsmen and [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')] alike. With war on the horizon, [target_character2.GetHerHis] calls to realign our [ROOT.GetCountry.GetFlavorRank] and the policy of [target_character.GetName] with the [GetCountry('ENG').GetAdjectiveWithNoTooltip] [GetCountry('ENG').GetFlavorRank] grow louder by the day."
+ hundred_years_war.220.historical_info: "Jacob van Artevelde, a wealthy merchant and brewer from Ghent, emerged as a political leader during the early stages of the Hundred Years' War. Flanders, though a vassal of the French crown, relied heavily on English wool to sustain its powerful textile economy. As tensions between France and England escalated, van Artevelde championed a pro-English stance, securing trade and internal autonomy while resisting direct French control. His leadership briefly stabilized Flemish cities, but his growing power made him a target. In 1345, he would be murdered by a mob in Ghent, accused of attempting to impose English rule too directly."
+ hundred_years_war.220.a: "[target_character2.GetShortNameWithNoTooltip] is right, we must protect our industry first."
+ hundred_years_war.220.b: "This is a looming disaster..."
+
+ hundred_years_war.1537.title: "Stalemate in the [ShowSituationNameWithNoTooltip('hundred_years_war')]"
+ hundred_years_war.1537.desc: "For hundreds of years the armies of [GetCountry('ENG').GetName] and [GetCountry('FRA').GetName] clashed in battlefields across [ShowSubContinentName('western_europe')]. While at times it seemed the conflict would come to an end, no side managed to utterly eradicate the other. Now, hundreds of years later, even [target_character1.GetName] and [target_character2.GetName] have forgotten the original cause of the war. The brutality of the many wars between them is slowly fading from memory."
+ war_what_is_it_good_for_tt: "The [ShowSituationName('hundred_years_war')] has concluded in a stalemate"
+ based_on_current_relative_strength_with_our_opponent_in_hyw_tt: "Based on the [country_strength|e] between us and our opponent in the [situation|e]:"
+
+
+ 
+ 
+ 

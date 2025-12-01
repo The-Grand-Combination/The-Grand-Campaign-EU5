@@ -1,0 +1,1017 @@
+﻿cc_indulgences = { #Stance on the commercial nature of Indulgences
+	type = international_organization
+	law_category = socioeconomic
+	requires_vote = yes
+	potential = {
+		international_organization_type = international_organization_type:catholic_church
+	}
+	locked = {
+		NOT = { is_situation_active = situation:council_of_trent }
+		international_organization_has_locked_law = { law = cc_indulgences }
+	}
+
+	limited_indulgences = { #starting point limited_indulgences_religion
+		years = 1
+		#benefits for the leader
+		country_modifier = {
+			potential_trigger = {
+				is_leader_of_international_organization = international_organization:catholic_church
+			}
+			monthly_religious_influence = 0.1
+			monthly_gold_income = 2
+		}
+		#benefits for all members
+		country_modifier = {
+			potential_trigger = {
+				NOT = {
+					is_leader_of_international_organization = international_organization:catholic_church
+				}
+			}
+			monthly_religious_influence = 0.05
+		}
+		wants_this_policy_bias = {
+			add = {
+				desc = "VOTE_BASE_VALUE"
+				value = -20
+			}
+			add = {
+				desc = "IO_LEADER_DIP_REP"
+				value = scope:recipient.leader_country.modifier:diplomatic_reputation
+			}
+			add = {
+				desc = "POLICY_BIAS_REFORM_DESIRE"
+				value = religion:catholic.reform_desire
+				multiply = 10
+			}
+			add = {
+				desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+				value = "opinion(scope:recipient.leader_country)"
+				multiply = 0.5
+			}
+		}
+	}
+
+	unlimited_indulgences = { #unlimited_sale_indulgences_religion
+		years = 1
+		#benefits for the leader
+		country_modifier = {
+			potential_trigger = {
+				is_leader_of_international_organization = international_organization:catholic_church
+			}
+			monthly_religious_influence = 0.2
+			monthly_gold_income = 5
+		}
+		#benefits for all members
+		country_modifier = {
+			potential_trigger = {
+				NOT = {
+					is_leader_of_international_organization = international_organization:catholic_church
+				}
+			}
+			monthly_religious_influence = 0.1
+			monthly_gold_income = 1
+		}
+		wants_this_policy_bias = {
+			add = {
+				desc = "IO_LEADER_DIP_REP"
+				value = scope:recipient.leader_country.modifier:diplomatic_reputation
+			}
+			add = {
+				desc = "POLICY_BIAS_REFORM_DESIRE"
+				value = religion:catholic.reform_desire
+				multiply = -10
+			}
+			add = {
+				desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+				value = "opinion(scope:recipient.leader_country)"
+				multiply = 0.5
+			}
+			if = {
+				limit = {
+					is_leader_of_international_organization = international_organization:catholic_church
+				}
+				add = {
+					desc = "VOTE_BASE_VALUE"
+					value = 20
+				}
+			}
+			else = {
+				add = {
+					desc = "VOTE_BASE_VALUE"
+					value = 10
+				}
+			}
+		}
+	}
+
+	no_financial_indulgences = { #no_financial_indulgences_religion
+		years = 1
+		#benefits for the leader
+		country_modifier = {
+			potential_trigger = {
+				is_leader_of_international_organization = international_organization:catholic_church
+			}
+			monthly_religious_influence = 0.05
+		}
+		#benefits for all members
+		country_modifier = {
+			potential_trigger = {
+				NOT = {
+					is_leader_of_international_organization = international_organization:catholic_church
+				}
+			}
+			stability_investment = tiny_stability_investment
+		}
+		on_fully_activated = {
+			unlock_resolution_effect = { type = benedictus_deus }
+		}
+		on_deactivate = {
+			lock_resolution_effect = { type = benedictus_deus }
+		}
+		wants_this_policy_bias = {
+			add = {
+				desc = "IO_LEADER_DIP_REP"
+				value = scope:recipient.leader_country.modifier:diplomatic_reputation
+			}
+			add = {
+				desc = "POLICY_BIAS_REFORM_DESIRE"
+				value = religion:catholic.reform_desire
+				multiply = 20
+			}
+			add = {
+				desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+				value = "opinion(scope:recipient.leader_country)"
+				multiply = 0.5
+			}
+			if = {
+				limit = {
+					is_leader_of_international_organization = international_organization:catholic_church
+				}
+				add = {
+					desc = "VOTE_BASE_VALUE"
+					value = -30
+				}
+			}
+			else = {
+				add = {
+					desc = "VOTE_BASE_VALUE"
+					value = -10
+				}
+			}
+		}
+	}
+}
+
+cc_papal_authority = { #Stance on the nature of papal primacy
+	type = international_organization
+	law_category = administrative
+	requires_vote = yes
+	potential = {
+		international_organization_type = international_organization_type:catholic_church
+	}
+	locked = {
+		NOT = { is_situation_active = situation:council_of_trent }
+		international_organization_has_locked_law = { law = cc_papal_authority }
+	}
+
+	ultramontanism = { #starting point
+		years = 1
+		#benefits for the leader
+		country_modifier = {
+			potential_trigger = {
+				is_leader_of_international_organization = international_organization:catholic_church
+			}
+			monthly_religious_influence = 0.2
+			monthly_devotion = 0.2
+		}
+		#benefits for all members
+		country_modifier = {
+			potential_trigger = {
+				NOT = {
+					is_leader_of_international_organization = international_organization:catholic_church
+				}
+			}
+			#no modifiers
+		}
+		international_organization_modifier = {
+			direct_excommunication_allowed = yes
+		}
+		wants_this_policy_bias = {
+			add = {
+				desc = "IO_LEADER_DIP_REP"
+				value = scope:recipient.leader_country.modifier:diplomatic_reputation
+			}
+			add = {
+				desc = "POLICY_BIAS_REFORM_DESIRE"
+				value = religion:catholic.reform_desire
+				multiply = -10
+			}
+			add = {
+				desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+				value = "opinion(scope:recipient.leader_country)"
+				multiply = 0.5
+			}
+			if = {
+				limit = {
+					is_leader_of_international_organization = international_organization:catholic_church
+				}
+				add = {
+					desc = "VOTE_BASE_VALUE"
+					value = 40
+				}
+			}
+			else = {
+				add = {
+					desc = "VOTE_BASE_VALUE"
+					value = 20
+				}
+			}
+		}
+	}
+
+	gallicanism = { #Council of Siena 1423 Idea abandond quickly - https://en.wikipedia.org/wiki/Gallicanism
+		years = 1
+		#benefits for the leader
+		country_modifier = {
+			potential_trigger = {
+				is_leader_of_international_organization = international_organization:catholic_church
+			}
+			monthly_devotion = 0.2
+		}
+		#benefits for all members
+		country_modifier = {
+			potential_trigger = {
+				NOT = {
+					is_leader_of_international_organization = international_organization:catholic_church
+				}
+			}
+			monthly_religious_influence = 0.1
+		}
+		wants_this_policy_bias = {
+			add = {
+				desc = "IO_LEADER_DIP_REP"
+				value = scope:recipient.leader_country.modifier:diplomatic_reputation
+			}
+			add = {
+				desc = "POLICY_BIAS_REFORM_DESIRE"
+				value = religion:catholic.reform_desire
+				multiply = 10
+			}
+			add = {
+				desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+				value = "opinion(scope:recipient.leader_country)"
+				multiply = 0.5
+			}
+			if = {
+				limit = {
+					is_leader_of_international_organization = international_organization:catholic_church
+				}
+				add = {
+					desc = "VOTE_BASE_VALUE"
+					value = -20
+				}
+			}
+			else = {
+				add = {
+					desc = "VOTE_BASE_VALUE"
+					value = -10
+				}
+			}
+		}
+	}
+
+	conciliarism = { #Council of Trent
+		years = 1
+		#benefits for the leader
+		country_modifier = {
+			potential_trigger = {
+				is_leader_of_international_organization = international_organization:catholic_church
+			}
+			#no modifier
+		}
+		#benefits for all members
+		country_modifier = {
+			potential_trigger = {
+				NOT = {
+					is_leader_of_international_organization = international_organization:catholic_church
+				}
+			}
+			monthly_religious_influence = 0.2
+		}
+		wants_this_policy_bias = {
+			add = {
+				desc = "IO_LEADER_DIP_REP"
+				value = scope:recipient.leader_country.modifier:diplomatic_reputation
+			}
+			add = {
+				desc = "POLICY_BIAS_REFORM_DESIRE"
+				value = religion:catholic.reform_desire
+				multiply = 20
+			}
+			add = {
+				desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+				value = "opinion(scope:recipient.leader_country)"
+				multiply = 0.5
+			}
+			if = {
+				limit = {
+					is_leader_of_international_organization = international_organization:catholic_church
+				}
+				add = {
+					desc = "VOTE_BASE_VALUE"
+					value = -5
+				}
+			}
+			else = {
+				add = {
+					desc = "VOTE_BASE_VALUE"
+					value = 5
+				}
+			}
+		}
+	}
+
+	invisible_church = { #big maybe would be a huge deviation pope always opposes https://en.wikipedia.org/wiki/Church_invisible
+		years = 1
+		#benefits for the leader
+		country_modifier = {
+			potential_trigger = {
+				is_leader_of_international_organization = international_organization:catholic_church
+			}
+			monthly_religious_influence = -0.1
+		}
+		#benefits for all members
+		country_modifier = {
+			potential_trigger = {
+				NOT = {
+					is_leader_of_international_organization = international_organization:catholic_church
+				}
+			}
+			excluded_from_paying_tithe = yes
+		}
+		international_organization_modifier = {
+			excommunication_disabled = yes
+		}
+		wants_this_policy_bias = {
+			add = {
+				desc = "IO_LEADER_DIP_REP"
+				value = scope:recipient.leader_country.modifier:diplomatic_reputation
+			}
+			add = {
+				desc = "POLICY_BIAS_REFORM_DESIRE"
+				value = religion:catholic.reform_desire
+				multiply = 20
+			}
+			add = {
+				desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+				value = "opinion(scope:recipient.leader_country)"
+				multiply = 0.5
+			}
+			if = {
+				limit = {
+					is_leader_of_international_organization = international_organization:catholic_church
+				}
+				add = {
+					desc = "VOTE_BASE_VALUE"
+					value = -1000
+				}
+			}
+			else = {
+				add = {
+					desc = "VOTE_BASE_VALUE"
+					value = -50
+				}
+			}
+		}
+	}
+}
+
+cc_veneration_of_saints_and_reliquaries = { #Stance on veneration of saints and reliquaries
+	type = international_organization
+	law_category = religious
+	requires_vote = yes
+	potential = {
+		international_organization_type = international_organization_type:catholic_church
+	}
+	locked = {
+		NOT = { is_situation_active = situation:council_of_trent }
+		international_organization_has_locked_law = { law = cc_veneration_of_saints_and_reliquaries }
+	}
+
+	unlimited_veneration = { #starting point
+		years = 1
+		#benefits for the leader
+		country_modifier = {
+			potential_trigger = {
+				is_leader_of_international_organization = international_organization:catholic_church
+			}
+			monthly_towards_traditionalist = societal_value_monthly_move
+		}
+		#benefits for all members
+		country_modifier = {
+			potential_trigger = {
+				NOT = {
+					is_leader_of_international_organization = international_organization:catholic_church
+				}
+			}
+			monthly_towards_traditionalist = societal_value_minor_monthly_move
+			tithe_cost_modifier = 0.2
+		}
+		wants_this_policy_bias = {
+			add = {
+				desc = "IO_LEADER_DIP_REP"
+				value = scope:recipient.leader_country.modifier:diplomatic_reputation
+			}
+			add = {
+				desc = "POLICY_BIAS_REFORM_DESIRE"
+				value = religion:catholic.reform_desire
+				multiply = 20
+			}
+			add = {
+				desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+				value = "opinion(scope:recipient.leader_country)"
+				multiply = 0.5
+			}
+			add = {
+				desc = "VOTE_BASE_VALUE"
+				value = 30
+			}
+		}
+	}
+
+	limited_veneration = {
+		years = 1
+		#benefits for the leader
+		country_modifier = {
+			potential_trigger = {
+				is_leader_of_international_organization = international_organization:catholic_church
+			}
+			monthly_devotion = 0.1
+		}
+		#benefits for all members
+		country_modifier = {
+			potential_trigger = {
+				NOT = {
+					is_leader_of_international_organization = international_organization:catholic_church
+				}
+			}
+			tithe_cost_modifier = 0.1
+		}
+		wants_this_policy_bias = {
+			add = {
+				desc = "IO_LEADER_DIP_REP"
+				value = scope:recipient.leader_country.modifier:diplomatic_reputation
+			}
+			add = {
+				desc = "POLICY_BIAS_REFORM_DESIRE"
+				value = religion:catholic.reform_desire
+				multiply = 10
+			}
+			add = {
+				desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+				value = "opinion(scope:recipient.leader_country)"
+				multiply = 0.5
+			}
+			add = {
+				desc = "VOTE_BASE_VALUE"
+				value = -10
+			}
+		}
+	}
+
+	no_veneration = {
+		years = 1
+		#benefits for the leader
+		country_modifier = {
+			potential_trigger = {
+				is_leader_of_international_organization = international_organization:catholic_church
+			}
+			monthly_towards_innovative = societal_value_monthly_move
+		}
+		#benefits for all members
+		country_modifier = {
+			potential_trigger = {
+				NOT = {
+					is_leader_of_international_organization = international_organization:catholic_church
+				}
+			}
+			tithe_cost_modifier = -0.1
+			monthly_towards_innovative = societal_value_minor_monthly_move
+		}
+		on_fully_activated = {
+			unlock_resolution_effect = { type = benedictus_deus }
+		}
+		on_deactivate = {
+			lock_resolution_effect = { type = benedictus_deus }
+		}
+		wants_this_policy_bias = {
+			add = {
+				desc = "IO_LEADER_DIP_REP"
+				value = scope:recipient.leader_country.modifier:diplomatic_reputation
+			}
+			add = {
+				desc = "POLICY_BIAS_REFORM_DESIRE"
+				value = religion:catholic.reform_desire
+				multiply = 10
+			}
+			add = {
+				desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+				value = "opinion(scope:recipient.leader_country)"
+				multiply = 0.5
+			}
+			add = {
+				desc = "VOTE_BASE_VALUE"
+				value = -30
+			}
+		}
+	}
+}
+
+cc_simony = { #Stance on simony
+	type = international_organization
+	law_category = socioeconomic
+	requires_vote = yes
+	potential = {
+		international_organization_type = international_organization_type:catholic_church
+	}
+	locked = {
+		NOT = { is_situation_active = situation:council_of_trent }
+		international_organization_has_locked_law = { law = cc_simony }
+	}
+
+	tolerated_simony = { #starting point tolerated_simony_religion
+		years = 1
+		#benefits for the leader
+		country_modifier = {
+			potential_trigger = {
+				is_leader_of_international_organization = international_organization:catholic_church
+			}
+			monthly_gold_income = 2
+		}
+		#benefits for all members
+		country_modifier = {
+			potential_trigger = {
+				NOT = {
+					is_leader_of_international_organization = international_organization:catholic_church
+				}
+			}
+			monthly_religious_influence = 0.1
+		}
+		wants_this_policy_bias = {
+			add = {
+				desc = "IO_LEADER_DIP_REP"
+				value = scope:recipient.leader_country.modifier:diplomatic_reputation
+			}
+			add = {
+				desc = "POLICY_BIAS_REFORM_DESIRE"
+				value = religion:catholic.reform_desire
+				multiply = -20
+			}
+			add = {
+				desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+				value = "opinion(scope:recipient.leader_country)"
+				multiply = 0.5
+			}
+			add = {
+				desc = "VOTE_BASE_VALUE"
+				value = 10
+			}
+		}
+	}
+
+	endorsed_simony = { #endorsed_simony_religion
+		years = 1
+		#benefits for the leader
+		country_modifier = {
+			potential_trigger = {
+				is_leader_of_international_organization = international_organization:catholic_church
+			}
+			monthly_gold_income = 5
+		}
+		#benefits for all members
+		country_modifier = {
+			potential_trigger = {
+				NOT = {
+					is_leader_of_international_organization = international_organization:catholic_church
+				}
+			}
+			monthly_religious_influence = 0.2
+		}
+		wants_this_policy_bias = {
+			add = {
+				desc = "IO_LEADER_DIP_REP"
+				value = scope:recipient.leader_country.modifier:diplomatic_reputation
+				multiply = 2
+			}
+			add = {
+				desc = "POLICY_BIAS_REFORM_DESIRE"
+				value = religion:catholic.reform_desire
+				multiply = -40
+			}
+			add = {
+				desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+				value = "opinion(scope:recipient.leader_country)"
+				multiply = 0.5
+			}
+			add = {
+				desc = "VOTE_BASE_VALUE"
+				value = 20
+			}
+		}
+	}
+
+	banned_simony = { #banned_simony_religion
+		years = 1
+		#benefits for the leader
+		country_modifier = {
+			potential_trigger = {
+				is_leader_of_international_organization = international_organization:catholic_church
+			}
+			monthly_gold_expense = 5
+		}
+		#benefits for all members
+		country_modifier = {
+			potential_trigger = {
+				NOT = {
+					is_leader_of_international_organization = international_organization:catholic_church
+				}
+			}
+			monthly_religious_influence = -0.1
+		}
+		on_fully_activated = {
+			unlock_resolution_effect = { type = inter_gravissimas }
+		}
+		on_deactivate = {
+			lock_resolution_effect = { type = inter_gravissimas }
+		}
+		wants_this_policy_bias = {
+			add = {
+				desc = "POLICY_BIAS_REFORM_DESIRE"
+				value = religion:catholic.reform_desire
+				multiply = 40
+			}
+			add = {
+				desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+				value = "opinion(scope:recipient.leader_country)"
+				multiply = 0.5
+			}
+			if = {
+				limit = {
+					is_leader_of_international_organization = international_organization:catholic_church
+				}
+				add = {
+					desc = "VOTE_BASE_VALUE"
+					value = -10
+				}
+			}
+			else = {
+				add = {
+					desc = "VOTE_BASE_VALUE"
+					value = 20
+				}
+			}
+		}
+	}
+}
+
+cc_society_of_jesus = { #Society of Jesus
+	type = international_organization
+	law_category = religious
+	requires_vote = yes
+	potential = {
+		international_organization_type = international_organization_type:catholic_church
+	}
+	allow = {
+		custom_tooltip = {
+			text = cc_society_of_jesus_tt
+			has_variable = society_of_jesus_founded
+		}
+	}
+	locked = {
+		NOT = { is_situation_active = situation:council_of_trent }
+		international_organization_has_locked_law = { law = cc_society_of_jesus }
+	}
+
+	society_of_jesus_not_allowed = { #starting point
+		years = 1
+
+		on_activate = {
+			international_organization_lock_global_law_effect = { type = society_of_jesus }
+		}
+		#benefits for the leader
+		country_modifier = {
+			potential_trigger = {
+				is_leader_of_international_organization = international_organization:catholic_church
+			}
+		}
+		#benefits for all members
+		country_modifier = {
+			potential_trigger = {
+				NOT = {
+					is_leader_of_international_organization = international_organization:catholic_church
+				}
+			}
+		}
+		wants_this_policy_bias = {
+			add = {
+				desc = "IO_LEADER_DIP_REP"
+				value = scope:recipient.leader_country.modifier:diplomatic_reputation
+			}
+			add = {
+				desc = "POLICY_BIAS_REFORM_DESIRE"
+				value = religion:catholic.reform_desire
+				multiply = 20
+			}
+			add = {
+				desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+				value = "opinion(scope:recipient.leader_country)"
+				multiply = 0.5
+			}
+			add = {
+				desc = "VOTE_BASE_VALUE"
+				value = 10
+			}
+		}
+	}
+
+	society_of_jesus_allowed = { #
+		years = 1
+
+		on_activate = {
+			international_organization_unlock_global_law_effect = { type = society_of_jesus }
+		}
+		#benefits for the leader
+		country_modifier = {
+			potential_trigger = {
+				is_leader_of_international_organization = international_organization:catholic_church
+			}
+		}
+		#benefits for all members
+		country_modifier = {
+			potential_trigger = {
+				NOT = {
+					is_leader_of_international_organization = international_organization:catholic_church
+				}
+			}
+		}
+		wants_this_policy_bias = {
+			add = {
+				desc = "IO_LEADER_DIP_REP"
+				value = scope:recipient.leader_country.modifier:diplomatic_reputation
+				multiply = -3
+			}
+			add = {
+				desc = "POLICY_BIAS_REFORM_DESIRE"
+				value = religion:catholic.reform_desire
+				multiply = -10
+			}
+			add = {
+				desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+				value = "opinion(scope:recipient.leader_country)"
+				multiply = 0.5
+			}
+			add = {
+				desc = "VOTE_BASE_VALUE"
+				value = 20
+			}
+		}
+	}
+}
+
+cc_witchcraft = { #Stance on Witchcraft
+	type = international_organization
+	law_category = religious
+	requires_vote = yes
+	potential = {
+		international_organization_type = international_organization_type:catholic_church
+	}
+	allow = {
+		custom_tooltip = {
+			text = cc_witchcraft_tt
+			has_variable = witchcraft_discussed
+		}
+	}
+	locked = {
+		NOT = { is_situation_active = situation:council_of_trent }
+		international_organization_has_locked_law = { law = cc_witchcraft }
+	}
+
+	witchcraft_not_aknowledged = { #starting point
+		years = 1
+		#benefits for the leader
+		country_modifier = {
+			potential_trigger = {
+				is_leader_of_international_organization = international_organization:catholic_church
+			}
+			monthly_towards_humanist = societal_value_monthly_move
+		}
+		#benefits for all members
+		country_modifier = {
+			potential_trigger = {
+				NOT = {
+					is_leader_of_international_organization = international_organization:catholic_church
+				}
+			}
+			pop_join_rebel_threshold = -0.02
+			monthly_towards_humanist = societal_value_minor_monthly_move
+		}
+		wants_this_policy_bias = {
+			add = {
+				desc = "IO_LEADER_DIP_REP"
+				value = scope:recipient.leader_country.modifier:diplomatic_reputation
+				multiply = 2
+			}
+			add = {
+				desc = "POLICY_BIAS_REFORM_DESIRE"
+				value = religion:catholic.reform_desire
+				multiply = -20
+			}
+			add = {
+				desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+				value = "opinion(scope:recipient.leader_country)"
+				multiply = 0.5
+			}
+			add = {
+				desc = "VOTE_BASE_VALUE"
+				value = 10
+			}
+		}
+	}
+
+	witchcraft_aknowledged = { #post catholic_flavor.8
+		years = 1
+		#benefits for the leader
+		country_modifier = {
+			potential_trigger = {
+				is_leader_of_international_organization = international_organization:catholic_church
+			}
+			monthly_towards_spiritualist = societal_value_monthly_move
+		}
+		#benefits for all members
+		country_modifier = {
+			potential_trigger = {
+				NOT = {
+					is_leader_of_international_organization = international_organization:catholic_church
+				}
+			}
+			monthly_rebel_growth = -0.0001
+			monthly_towards_spiritualist = societal_value_minor_monthly_move
+		}
+		wants_this_policy_bias = {
+			add = {
+				desc = "IO_LEADER_DIP_REP"
+				value = scope:recipient.leader_country.modifier:diplomatic_reputation
+				multiply = 2
+			}
+			add = {
+				desc = "POLICY_BIAS_REFORM_DESIRE"
+				value = religion:catholic.reform_desire
+				multiply = 20
+			}
+			add = {
+				desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+				value = "opinion(scope:recipient.leader_country)"
+				multiply = 0.5
+			}
+			add = {
+				desc = "VOTE_BASE_VALUE"
+				value = -10
+			}
+		}
+	}
+}
+
+cc_marriage_of_priest = { #priest Marriage
+	type = international_organization
+	law_category = estates
+	requires_vote = yes
+	potential = {
+		international_organization_type = international_organization_type:catholic_church
+	}
+	locked = {
+		NOT = { is_situation_active = situation:council_of_trent }
+		international_organization_has_locked_law = { law = cc_marriage_of_priest }
+	}
+
+	priest_marriage_not_allowed = { #starting point
+		years = 1
+		#benefits for the leader
+		country_modifier = {
+			potential_trigger = {
+				is_leader_of_international_organization = international_organization:catholic_church
+			}
+			clergy_estate_cannot_marry = yes
+			monthly_towards_communalism = societal_value_monthly_move
+		}
+		#benefits for all members
+		country_modifier = {
+			potential_trigger = {
+				NOT = {
+					is_leader_of_international_organization = international_organization:catholic_church
+				}
+			}
+			clergy_estate_cannot_marry = yes
+			monthly_towards_communalism = societal_value_minor_monthly_move
+		}
+		wants_this_policy_bias = {
+			add = {
+				desc = "IO_LEADER_DIP_REP"
+				value = scope:recipient.leader_country.modifier:diplomatic_reputation
+				multiply = 2
+			}
+			add = {
+				desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+				value = "opinion(scope:recipient.leader_country)"
+				multiply = 0.5
+			}
+			add = {
+				desc = "VOTE_BASE_VALUE"
+				value = 20
+			}
+		}
+	}
+
+	priest_marriage_partially_allowed = { #Members can marry but not the pope
+		years = 1
+		#benefits for the leader
+		country_modifier = {
+			potential_trigger = {
+				is_leader_of_international_organization = international_organization:catholic_church
+			}
+			clergy_estate_cannot_marry = yes
+		}
+		#benefits for all members
+		country_modifier = {
+			potential_trigger = {
+				NOT = {
+					is_leader_of_international_organization = international_organization:catholic_church
+				}
+			}
+			clergy_estate_cannot_marry = no
+		}
+		wants_this_policy_bias = {
+			add = {
+				desc = "IO_LEADER_DIP_REP"
+				value = scope:recipient.leader_country.modifier:diplomatic_reputation
+				multiply = -2
+			}
+			add = {
+				desc = "POLICY_BIAS_REFORM_DESIRE"
+				value = religion:catholic.reform_desire
+				multiply = 20
+			}
+			add = {
+				desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+				value = "opinion(scope:recipient.leader_country)"
+				multiply = 0.5
+			}
+			add = {
+				desc = "VOTE_BASE_VALUE"
+				value = -50
+			}
+		}
+	}
+
+	priest_marriage_allowed = { #Everyone can marry
+		years = 1
+		#benefits for the leader
+		country_modifier = {
+			potential_trigger = {
+				is_leader_of_international_organization = international_organization:catholic_church
+			}
+			clergy_estate_cannot_marry = no
+			monthly_towards_individualism = societal_value_monthly_move
+		}
+		#benefits for all members
+		country_modifier = {
+			potential_trigger = {
+				NOT = {
+					is_leader_of_international_organization = international_organization:catholic_church
+				}
+			}
+			clergy_estate_cannot_marry = no
+			monthly_towards_individualism = societal_value_minor_monthly_move
+		}
+		wants_this_policy_bias = {
+			add = {
+				desc = "IO_LEADER_DIP_REP"
+				value = scope:recipient.leader_country.modifier:diplomatic_reputation
+				multiply = -1
+			}
+			add = {
+				desc = "POLICY_BIAS_REFORM_DESIRE"
+				value = religion:catholic.reform_desire
+				multiply = 20
+			}
+			add = {
+				desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+				value = "opinion(scope:recipient.leader_country)"
+				multiply = 0.5
+			}
+			add = {
+				desc = "POLICY_BIAS_GOOD_IDEA"
+				value = -75
+			}
+		}
+	}
+}

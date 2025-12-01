@@ -1,0 +1,4 @@
+﻿l_english:
+ diseases.1.title: "A New Outbreak"
+ diseases.1.desc: "The people of [location_scope.GetName] despair as their families and neighbors succumb to the relentless outbreak of [disease.GetName] currently spreading throughout the area. Neighborhoods once bustling with activity now echo with worry and uncertainty.\n\nUnfortunately, there is little we can do to stop the spread of the disease into our territory."
+ diseases.1.a: "[ROOT.GetCountry.Custom('common_string_negative')]"

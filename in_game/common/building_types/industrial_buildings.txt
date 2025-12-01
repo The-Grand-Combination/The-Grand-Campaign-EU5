@@ -1,0 +1,585 @@
+tools_guild = {
+	is_foreign = no
+	pop_type = burghers
+	max_levels = guild_max_level
+	
+	category = basic_industry_category
+	
+	employment_size = guild_employment
+
+	
+	town = yes
+	city = yes
+
+	
+
+	build_time = guild_build_time
+	
+	unique_production_methods = {
+		metalwork_guild_maintenance = {
+			iron = 0.75
+			produced = tools
+			output = 1
+			
+			debug_max_profit = 0.4
+			category = guild_input
+		}
+		stone_tools_guild_maintenance = {
+			stone = 0.70
+			produced = tools
+			output = 0.25
+			debug_max_profit = 0.1
+
+			category = guild_input
+		}
+		
+		bronze_tools_guild_maintenance = {
+			copper = 0.5
+			tin = 0.04
+			produced = tools
+			output = 0.6
+			debug_max_profit = 0.2
+
+			category = guild_input
+		}
+	}
+
+	construction_demand = guild_construction
+
+}
+
+tools_workshop = {
+	is_foreign = no
+	pop_type = burghers
+	max_levels = workshop_max_level
+	
+	category = basic_industry_category
+	
+	employment_size = workshop_employment
+
+	
+	town = yes
+	city = yes
+
+	
+
+	build_time = workshop_build_time
+	
+	unique_production_methods = {
+		metalwork_workshop_maintenance = {
+			iron = 0.8
+			produced = tools
+			output = 1.1
+			debug_max_profit = 0.5
+			category = workshop_input
+		}
+		
+	}
+
+	construction_demand = workshop_construction
+	
+	obsolete = tools_guild
+	
+}
+
+iron_foundry = {
+	is_foreign = no
+	pop_type = laborers		#unique
+	max_levels = manufactory_max_level
+	
+	employment_size = manufactory_employment
+
+	
+	category = basic_industry_category
+	town = yes
+	city = yes
+	build_time = manufactory_build_time
+	
+	unique_production_methods = {
+		
+		iron_foundry_maintenance = {
+			iron = 1.0
+			coal = 0.25
+			
+			category = manufactory_input
+			produced = tools
+			output = 2
+			
+			debug_max_profit = 0.75
+		}
+	}
+	
+	obsolete = tools_workshop
+
+	construction_demand = manufactory_construction
+}
+
+iron_mill = {
+	is_foreign = no
+	pop_type = laborers		#unique
+	max_levels = mills_max_level
+	
+	employment_size = mills_employment
+
+	
+	category = basic_industry_category
+	town = yes
+	city = yes
+
+	
+
+	build_time = mills_build_time
+	
+	unique_production_methods = {
+		
+		iron_mill_maintenance = {
+			iron = 2.0
+			coal = 0.5
+			
+			category = mills_input
+			produced = tools
+			output = 4
+			
+			debug_max_profit = 1.0
+		}
+		
+		steel_tools = {
+			steel = 1.25
+			
+			category = mills_input
+			produced = tools
+			output = 4
+			
+			debug_max_profit = 1.0
+		}
+	}
+	
+	obsolete = iron_foundry
+
+	construction_demand = mill_construction
+}
+
+steel_guild = {
+	is_foreign = no
+	pop_type = burghers
+	max_levels = guild_max_level
+	
+	employment_size = guild_employment
+
+	category = basic_industry_category
+	town = yes
+	city = yes
+
+	
+
+	build_time = guild_build_time
+	
+	unique_production_methods = {
+		steel_guild_maintenance = {
+			iron = 2.0
+			coal = 2.0
+			produced = steel
+			output = 4
+			
+			debug_max_profit = 1.0
+			category = guild_input	
+		}
+
+	}
+
+	construction_demand = mill_construction
+}
+
+steel_workshop = {
+	is_foreign = no
+	pop_type = burghers
+	max_levels = workshop_max_level
+	
+	employment_size = workshop_employment
+
+	category = basic_industry_category
+	town = yes
+	city = yes
+
+	
+
+	build_time = workshop_build_time
+	
+	unique_production_methods = {
+		steel_guild_maintenance = {
+			iron = 2.0
+			coal = 2.0
+			produced = steel
+			output = 4
+			
+			debug_max_profit = 1.0
+			category = workshop_input	
+		}
+
+	}
+
+	obsolete = steel_guild
+
+	construction_demand = workshop_construction
+}
+
+steel_manufactory = {
+	is_foreign = no
+	pop_type = burghers
+	max_levels = manufactory_max_level
+	
+	employment_size = manufactory_employment
+
+	category = basic_industry_category
+	town = yes
+	city = yes
+
+	
+
+	build_time = manufactory_build_time
+	
+	unique_production_methods = {
+		steel_guild_maintenance = {
+			iron = 2.0
+			coal = 2.0
+			produced = steel
+			output = 4
+			
+			debug_max_profit = 1.0
+			category = manufactory_input	
+		}
+
+	}
+
+	obsolete = steel_workshop
+
+	construction_demand = manufactory_construction
+}
+
+steel_mill = {
+	is_foreign = no
+	pop_type = laborers
+	max_levels = mills_max_level
+	
+	employment_size = mills_employment
+
+	category = basic_industry_category
+	town = yes
+	city = yes
+
+	
+
+	build_time = mills_build_time
+	
+	unique_production_methods = {
+		steel_mill_maintenance = {
+			iron = 2.0
+			coal = 2.0
+			produced = steel
+			output = 4
+			
+			debug_max_profit = 1.0
+			category = mills_input	
+		}
+
+	}
+
+	obsolete = steel_manufactory
+
+	construction_demand = mill_construction
+}
+
+machine_parts_factory = {
+	is_foreign = no
+	pop_type = laborers
+	max_levels = mills_max_level
+	
+	employment_size = mills_employment
+
+	category = basic_industry_category
+	town = yes
+	city = yes
+
+	
+
+	build_time = mills_build_time
+	
+	unique_production_methods = {
+		machine_parts_factory_maintenance = {
+			steel = 2.0
+			coal = 2.0
+			produced = machine_parts
+			output = 4
+			
+			debug_max_profit = 1.0
+			category = mills_input	
+		}
+
+	}
+
+
+	construction_demand = mill_construction
+}
+
+cement_factory = {
+	is_foreign = no
+	pop_type = laborers
+	max_levels = mills_max_level
+	
+	employment_size = mills_employment
+
+	category = basic_industry_category
+	town = yes
+	city = yes
+
+	build_time = mills_build_time
+	
+	unique_production_methods = {
+		cement_factory_maintenance = {
+			limestone = 5.0
+			produced = cement
+			output = 4
+			
+			debug_max_profit = 1.0
+			category = mills_input	
+		}
+
+	}
+
+	construction_demand = mill_construction
+}
+
+cement_factory = {
+	is_foreign = no
+	pop_type = laborers
+	max_levels = mills_max_level
+	
+	employment_size = mills_employment
+
+	category = basic_industry_category
+	town = yes
+	city = yes
+
+	build_time = mills_build_time
+	
+	unique_production_methods = {
+		cement_factory_maintenance = {
+			limestone = 5.0
+			produced = cement
+			output = 4
+			
+			debug_max_profit = 1.0
+			category = mills_input	
+		}
+
+	}
+
+	construction_demand = mill_construction
+}
+
+concrete_factory = {
+	is_foreign = no
+	pop_type = laborers
+	max_levels = mills_max_level
+	
+	employment_size = mills_employment
+
+	category = basic_industry_category
+	town = yes
+	city = yes
+
+	build_time = mills_build_time
+	
+	unique_production_methods = {
+		concrete_factory_maintenance = {
+			cement = 1.0
+			sand = 2.0
+			gravel = 4.0
+			produced = concrete
+			output = 7
+			
+			debug_max_profit = 1.0
+			category = mills_input	
+		}
+
+	}
+
+	construction_demand = mill_construction
+}
+
+fuel_refinery = {
+	is_foreign = no
+	pop_type = laborers
+	max_levels = mills_max_level
+	
+	employment_size = mills_employment
+
+	category = basic_industry_category
+	town = yes
+	city = yes
+
+	build_time = mills_build_time
+	
+	unique_production_methods = {
+		fuel_refinery_maintenance = {
+			oil = 2.0
+			produced = fuel
+			output = 1
+			
+			debug_max_profit = 1.0
+			category = mills_input	
+		}
+
+	}
+
+	construction_demand = mill_construction
+}
+
+electronic_part_factory = {
+	is_foreign = no
+	pop_type = laborers
+	max_levels = mills_max_level
+	
+	employment_size = mills_employment
+
+	category = basic_industry_category
+	town = yes
+	city = yes
+
+	build_time = mills_build_time
+	
+	unique_production_methods = {
+		electronic_part_factory_maintenance = {
+			rubber = 2.0
+			steel = 5.0
+			produced = electronic_parts
+			output = 1
+			
+			debug_max_profit = 1.0
+			category = mills_input	
+		}
+
+	}
+
+	construction_demand = mill_construction
+}
+
+telephone_factory = {
+	is_foreign = no
+	pop_type = laborers
+	max_levels = mills_max_level
+	
+	employment_size = mills_employment
+
+	category = basic_industry_category
+	town = yes
+	city = yes
+
+	build_time = mills_build_time
+	
+	unique_production_methods = {
+		telephone_factory_maintenance = {
+			electronic_parts = 7.5
+			glass = 7.5
+			produced = telephones
+			output = 3
+			
+			debug_max_profit = 1.0
+			category = mills_input	
+		}
+
+	}
+
+	construction_demand = mill_construction
+}
+
+radio_factory = {
+	is_foreign = no
+	pop_type = laborers
+	max_levels = mills_max_level
+	
+	employment_size = mills_employment
+
+	category = basic_industry_category
+	town = yes
+	city = yes
+
+	build_time = mills_build_time
+	
+	unique_production_methods = {
+		radio_factory_maintenance = {
+			electronic_parts = 7.5
+			glass = 1.0
+			produced = radios
+			output = 3
+			
+			debug_max_profit = 1.0
+			category = mills_input	
+		}
+
+	}
+
+	construction_demand = mill_construction
+}
+
+automobile_factory = {
+	is_foreign = no
+	pop_type = laborers
+	max_levels = mills_max_level
+	
+	employment_size = mills_employment
+
+	category = basic_industry_category
+	town = yes
+	city = yes
+
+	build_time = mills_build_time
+	
+	unique_production_methods = {
+		automobile_factory_maintenance = {
+			electronic_parts = 0.8
+			machine_parts = 0.8
+			rubber = 0.3
+			steel = 1.1
+			produced = automobiles
+			output = 0.7
+			
+			debug_max_profit = 1.0
+			category = mills_input	
+		}
+
+	}
+
+	construction_demand = mill_construction
+}
+
+aeroplane_factory = {
+	is_foreign = no
+	pop_type = laborers
+	max_levels = mills_max_level
+	
+	employment_size = mills_employment
+
+	category = basic_industry_category
+	town = yes
+	city = yes
+
+	build_time = mills_build_time
+	
+	unique_production_methods = {
+		aeroplane_factory_maintenance = {
+			electronic_parts = 1.0
+			machine_parts = 0.6
+			rubber = 0.3
+			lumber = 1.7
+			produced = aeroplane
+			output = 0.5
+			
+			debug_max_profit = 1.0
+			category = mills_input	
+		}
+
+	}
+
+	construction_demand = mill_construction
+}

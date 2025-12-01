@@ -1,0 +1,17 @@
+﻿l_english:
+ flavor_khm.1000.title: "The [ShowBuildingTypeNameWithNoTooltip('khmer_baray')] of [target_location.GetNameWithNoTooltip]"
+ flavor_khm.1000.desc: "The [ShowBuildingTypeName('khmer_baray')] of [target_location.GetName] supplies the [target_location.GetRank.GetName] with a crucial supply of water. During the troubles of the last decades and the succession of [target_old_ruler.GetName], it did not receive the attention and care it would have needed and it is slowly losing its efficiency. If we do not act now, the great water resevoir could be rendered useless in the future."
+ flavor_khm.1000.a: "This is too costly."
+ flavor_khm.1000.b: "Make the necessary repairs."
+
+ flavor_khm.1001.title: "The Plight of [ShowLocationNameWithNoTooltip('angkor')]"
+ flavor_khm.1001.desc: "The [ShowBuildingTypeName('khmer_baray')] has now reached such a miserable state of disrepair that we will no longer be able to use its huge water reserve to supply our people."
+ flavor_khm.1001.a: "[ROOT.GetCountry.Custom('common_string_negative')]"
+
+ flavor_khm.1100.title: "The Loss of the [target_art.GetNameWithNoTooltip]"
+ flavor_khm.1100.desc: "During the siege of [target_location.GetName] the troops of [siege_leader.GetName] have stolen one of our most precious treasures in the [target_art.GetName]. There is little we can do except mourn the loss of this beautiful statue that displayed our religious dedication."
+ flavor_khm.1100.a: "[ROOT.GetCountry.Custom('common_string_disappointing')]"
+
+ flavor_khm.1101.title: "Capture of the [target_art.GetNameWithNoTooltip]"
+ flavor_khm.1101.desc: "In our siege of [target_location.GetName], we have captured a beautiful work of art, the [target_art.GetName]. The famed statue is on its way to our capital and will take its place in its new home in [ROOT.GetCountry.GetCapital.GetName]."
+ flavor_khm.1101.a: "[ROOT.GetCountry.Custom('common_string_positive')]"

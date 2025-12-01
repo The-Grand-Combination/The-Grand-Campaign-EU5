@@ -1,0 +1,67 @@
+﻿l_english:
+ kirishitan.1.title: "A New Buddha?"
+ kirishitan.1.desc: "With the arrival of Europeans, we have come into contact with a new culture and a new religion. In some ways it seems similar to ours, but in others it is completely alien. A group of men has arrived in [ROOT.GetCountry.GetCapital.GetName], trying to preach the gospel of their Kirishitan god. Their message appears to be very odd, however, likely due to incompetent or ill-willed translators.\n\nIn their eagerness to secure the patronage of [target_ruler.GetName] the missionaries have appeared bearing no gifts and spouting nonsense. This is a grave disrespect to our [ROOT.GetCountry.GetGovernment.GetRulerTitle], yet some would caution that these blunders mean that they are in desperate need of our help."
+ kirishitan.1.a: "Preposterous! They have no place here!"
+ kirishitan.1.b: "We will allow them to stay as long as they behave."
+ kirishitan.1.c: "Let us hear what their God can teach us."
+
+ kirishitan.2.title: "Missions in [target_location.GetNameWithNoTooltip]"
+ kirishitan.2.desc: "A group of the Kirishitan have arrived at [ROOT.GetCountry.GetGovernment.GetCourtTitle] in [ROOT.GetCountry.GetCapital.GetName] today, asking that they be allowed to create a small community of faithful in our great [target_location.GetRank.GetName]. They would then see to the poor and teach those who would listen about their god.\n\nThe missionaries also offer to tutor [target_heir.GetName] in the ways of God, as well as the disciplines of [ShowReligionGroupAdjective('christian')] science. The [ROOT.GetCountry.GetReligion.GetAdjective] [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')], as well as some of our [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')], are cautioning us, as they feel this is an affront to our ancient traditions while the traders in our [ROOT.GetCountry.GetFlavorRank] hope to secure valuable trade deals with the westerners if we let them stay."
+ kirishitan.2.a: "[target_heir.GetNameWithNoTooltip] will be happy to learn of their god."
+ kirishitan.2.b: "We can allow them to spread their faith here."
+ kirishitan.2.c: "We must defend the faith of our ancestors!"
+ catholic_pop_conversion.tt: "They will convert some of the [pops|e] of [target_location.GetName] to [ShowReligionName('catholic')]"
+
+ kirishitan.3.title: "Trade Privileges"
+ kirishitan.3.desc: "A group of Kirishitan missionaries have approached [target_ruler.GetName] with an offer to divert the great trade ships of their homeland to our ports, if we allow them to create a seaside community for Kirishitan converts. This is an offer that carries considerable worth to our merchants."
+ kirishitan.3.a: "Let them come!"
+ kirishitan.3.b: "We cannot allow this."
+
+ kirishitan.4.title: "Letter of Recommendation"
+ kirishitan.4.desc: "The Kirishitan preachers in our land have behaved well since they came to settle here. They respect the laws and an increasing number of men and women have begun to see the light of their god. Their leader, [target_character.GetName] has gained a reputation as an excellent mediator and would likely make a fine minister. [target_character.GetSheHe|U] even comes with a letter of recommendation to do so from [target_character.GetHerHis] own country of origin.\n\nOf course, our more traditionalist vassals would see [target_character.GetHerHis] appointment as an offense both to tradition and to themselves."
+ kirishitan.4.a: "Accept [target_character.GetNameWithNoTooltip] into our service."
+ kirishitan.4.b: "We cannot do that."
+
+ kirishitan.5.title: "[ShowReligionGroupNameWithNoTooltip('christian')] on Trial"
+ kirishitan.5.desc: "We have been approached by a great number of our most valued [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] as well as dignitaries of the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] from the temple communities in our lands. They all demand that we look into the subversive qualities of [ShowReligionGroupName('christian')]. They feel this alien religion is destroying our traditions and insulting our ancestors, and they demand that we put the faith on trial, allowing trusted men of honor and quality to look into this."
+ kirishitan.5.a: "An inquisition they will have, then."
+ kirishitan.5.a.tt: "Results may vary depending on what the inquisition finds."
+ kirishitan.5.b: "It is not their place. Mind cannot reason over faith."
+
+ kirishitan.6.title: "The Nature of God"
+ kirishitan.6.desc: "The inquisition into the nature of [ShowReligionGroupName('christian')] has taken a most shocking turn, as the judges themselves have returned demanding to be baptized. As these men were selected as pillars of society, this is an unexpected development to us all."
+ kirishitan.6.a: "We shall have to allow it, then."
+ kirishitan.6.b: "Preposterous!"
+
+ kirishitan.7.title: "[ShowReligionGroupNameWithNoTooltip('christian')] Derided"
+ kirishitan.7.desc: "The inquisition of the nature of [ShowReligionGroupName('christian')] has, not surprisingly, resulted in the religion being found lacking in terms of respect and adherence to the traditions of our culture. The learned and honorable men we put in charge of the investigation have declared that while the religion may seem tempting, it is in reality a danger to our society."
+ kirishitan.7.a: "This is the land of [ROOT.GetCountry.GetReligion.GetNameWithNoTooltip]!"
+ kirishitan.7.b: "While we respect their judgment, the westerners must stay."
+
+ kirishitan.8.title: "Kirishitan Community Attacked"
+ kirishitan.8.desc: "The warehouses of the Kirishitan merchants in [christian_port_event_target.GetName] have caught fire more than once this month, and while the local [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] claim that this has been a series of unfortunate accidents, it seems clear not everyone is as favorably inclined as we are to the arrival of the westerners to our shores."
+ kirishitan.8.a: "Conduct an investigation to punish the perpetrators."
+ kirishitan.8.b: "There is little we can do about accidents."
+
+ kirishitan.9.title: "A Break with Tradition?"
+ kirishitan.9.desc: "It is no secret that [target_ruler.GetName] and [target_ruler.GetHerHis] line have become personally involved with the [ShowReligionGroupAdjective('christian')] faith. Over time, [ShowReligionGroupAdjectiveWithNoTooltip('christian')] has come to overtake the [ROOT.GetCountry.GetReligion.GetAdjective] traditions of [ROOT.GetCountry.GetName], and it is the guiding ideology for our state. Now that we are a more united and ordered society, perhaps the time has come to complete the transition and adopt [ShowReligionName('catholic')] as the religion of our state?"
+ kirishitan.9.a: "No, we could never turn our back on tradition entirely!"
+ kirishitan.9.b: "The time has come for change."
+
+ kirishitan.10.title: "A Kirishitan Realm"
+ kirishitan.10.desc: "We have taken the followers of the [ShowReligionGroupAdjective('christian')] god under our wing and have allowed them the protection of our state. Wherever they go in our [ROOT.GetCountry.GetFlavorRank], everyone knows that these Kirishitan have the right to live, work, and proselytize. [ShowReligionGroupAdjectiveWithNoTooltip('christian')] merchants are a common sight in our cities, and at [ROOT.GetCountry.GetGovernment.GetCourtTitle] it has become an increasingly common religion among our ministers and retainers."
+ kirishitan.10.a: "#italic Gloria Deo#!."
+
+ kirishitan.11.title: "[ShowReligionGroupNameWithNoTooltip('christian')] Repelled"
+ kirishitan.11.desc: "Despite the Nanban foreigners trying to spread their Kirishitan faith, We have managed to subvert its dangerous influences in our society. We have kept their missionaries at arm's length and closed our [ROOT.GetCountry.GetFlavorRank] to their followers, going as far as tracking down any suspected adherents within our borders. As a result, we are lauded by both our retainers and the [ROOT.GetCountry.GetReligion.GetAdjective] [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] in our [ROOT.GetCountry.GetFlavorRank] as the defender of the way of our ancestors."
+ kirishitan.11.a: "[ROOT.GetCountry.GetReligion.GetNameWithNoTooltip] will prevail!"
+
+ kirishitan.12.title: "Baptize [target_ruler.GetNameWithNoTooltip]"
+ kirishitan.12.desc: "In their interest to spread their faith, the Kirishitan preachers have approached [target_ruler.GetName]. While [target_ruler.GetSheHe] was interested in knowing about their faith, the preachers took it as a sign that [target_ruler.GetSheHe] was open to renounce [target_ruler.GetReligion.GetName] and accept [ShowReligionName('catholic')], and thus have offered [target_ruler.GetHerHim] the ritual of baptism. Doing so would obviously help increase their interaction with us, but the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] will not be happy with such decision."
+ kirishitan.12.a: "Baptize [target_ruler.GetHerHim]."
+ kirishitan.12.b: "We will not accept a foreign faith."
+
+ kirishitan.13.title: "$kirishitan_monks$"
+ kirishitan.13.desc: "With the arrival of the foreign traders in the [target_country.GetAdjective] lands, monks of their foreign faith have come with them. We will have to decide how we want to interact with them, as this foreign faith may be the key that opens the foreigner's purses to us, or ours to them."
+ kirishitan.13.a: "Let us observe these monks carefully."
+ kirishitan_enabled.tt: "We now have access to the $kirishitan_monks$ [religious_faction|e]"

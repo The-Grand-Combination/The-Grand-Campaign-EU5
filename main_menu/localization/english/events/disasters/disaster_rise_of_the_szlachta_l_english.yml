@@ -1,0 +1,45 @@
+﻿l_english:
+  rise_of_the_szlachta.1.title: "Rise of the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]"
+  rise_of_the_szlachta.1.desc: "The machinations of internal politics are often interwoven with an ever-lasting quest for power. The [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] have always styled themselves to be the prime protectors of our realm, always keen on keeping [ROOT.GetCountry.GetName] and her interests at the forefront.\n\nHowever, it appears that absolute power corrupts absolutely and they too have fallen victim to their naive ambitions. Not only have they rejected our primacy but have outright questioned the very legitimacy of our foundations!"
+  rise_of_the_szlachta.1.a: "How dare they?"
+
+  rise_of_the_szlachta.2.title: "Privileged Demands"
+  rise_of_the_szlachta.2.desc: "Hungry vultures like the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] and the [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] are always looking for ways to sink their greedy claws under the succulent flesh of power and influence. Due to our current weakened status towards the various influential figureheads of our realm, representatives from both of these estates have once again found themselves in our court, seeking an extension of their already entrenched authority."
+  rise_of_the_szlachta.2.a: "The [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] shall have them."
+  rise_of_the_szlachta.2.b: "Better to support the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')]."
+  rise_of_the_szlachta.2.c: "We do not heed the howls of mad dogs!"
+
+  rise_of_the_szlachta.3.title: "Estate Disputes"
+  rise_of_the_szlachta.3.desc: "Struggles of power are never a quiet matter. More often than not clashes between the most prominent estates escalate into open conflict. Such is the unfortunate case as members of the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] and [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')] threaten open rebellion should their mutually exclusive demands be met, in [target_location.GetName]."
+  rise_of_the_szlachta.3.a: "We will favor the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')]."
+  rise_of_the_szlachta.3.b: "Let us side with the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]."
+  based_on_burghers_estate_power_tt: "Based on the [estate_power|e] of the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')]:"
+  based_on_burghers_estate_satisfaction_tt: "Based on the current [estate_satisfaction|e] of the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')]:"
+  based_on_nobles_estate_power_tt: "Based on the current [estate_power|e] of the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]:"
+  estate_satisfaction_burghers_tt: "Impacted by the estate's current satisfaction"
+
+  rise_of_the_szlachta.4.title: "Popular Backing"
+  rise_of_the_szlachta.4.desc: "Debates are a spirited sport between the various estates that toy with the fate of our people. As we strive to push through vital reforms under the greedy watch of those present through deliberations, we cannot help but notice that proceedings would be noticeably smoother should we choose to pursue some of the agendas brought to us by these influential men."
+  rise_of_the_szlachta.4.a: "Let us rely on the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]."
+  rise_of_the_szlachta.4.b: "The [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')] will help us."
+  rise_of_the_szlachta.4.c: "We need no crutches."
+
+  rise_of_the_szlachta.5.title: "Estates Demand a [ROOT.GetCountry.GetGovernment.GetParliament.GetName] Session"
+  rise_of_the_szlachta.5.desc: "Politics across the courts of various influential figures within our borders depend largely on the deliberations of our [ROOT.GetCountry.GetGovernment.GetParliament.GetName]. The fact that we have not had a session in quite some time, has started garnering the displeasure of various [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] and [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')]."
+  rise_of_the_szlachta.5.a: "Very well, we will hear them."
+  rise_of_the_szlachta.5.b: "A session, yes, but not for the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]!"
+  rise_of_the_szlachta.5.c: "We do not take orders from petty courtesans."
+  based_on_crown_estate_power_tt: "Based on the [estate_power|e] of the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('crown_estate')]:"
+
+  rise_of_the_szlachta.6.title: "Triumph of the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]"
+  rise_of_the_szlachta.6.desc: "Years of infighting have led to the straining of the [ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')], a shadow of its former self. Through machinations, backroom dealing and unkempt corruption, the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] have succeeding in establishing themselves as the sole and ultimate power in our country."
+  rise_of_the_szlachta.6.a: "What does this mean for our people?"
+
+  rise_of_the_szlachta.7.title: "Triumph of the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')]"
+  rise_of_the_szlachta.7.desc: "What began as a coup at the expense of the [ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')] on the behest of the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')], quickly revealed that many members of the [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] reveled in the shadows. With a fell swoop and unstoppable influence, the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')] have usurped the power of the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] and installed themselves as the prime authority of our lands, for better or worse."
+  rise_of_the_szlachta.7.a: "A curious twist of events..."
+
+  rise_of_the_szlachta.8.title: "Triumph of the Crown"
+  rise_of_the_szlachta.8.desc: "Few expected the [ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')] to come out unscathed through this ordeal. However, against all odds and in a dramatic twist of events, [target_character.GetName] has not only staved off the influences of the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] and [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] but also restored faith in our central authority, ushering in a new era for [ROOT.GetCountry.GetName] and her people."
+  rise_of_the_szlachta.8.a: "At last!"
+  has_had_struggle_for_royal_power_disaster_tt: "Has successfully concluded the #Y Struggle for Royal Power#! [disaster|e]"

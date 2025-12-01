@@ -1,0 +1,1641 @@
+﻿##swiss_confederation laws
+#Policy Proposal Frequency
+sc_policy_proposal_frequency = {
+	type = international_organization
+	law_category = election
+	potential = { international_organization_type = international_organization_type:swiss_confederation }
+	sc_frequent_policy_proposals = {
+		international_organization_modifier = {
+			policy_vote_delay = 4
+		}
+		wants_this_policy_bias = {
+			if = {
+				limit = { scope:recipient = { international_organization_has_leader = yes } }
+				#opinion of the leader country
+				add = {
+					desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+					value = "opinion(scope:recipient.leader_country)"
+				}
+				#diplomatic rep of the leader country
+				add = {
+					desc = "IO_LEADER_DIP_REP"
+					value = scope:recipient.leader_country.modifier:diplomatic_reputation
+				}
+			}
+			else = {
+				add = {
+					desc = "VOTE_BASE_VALUE"
+					value = -20
+				}
+			}
+		}
+	}
+	sc_moderate_policy_proposals = {
+		international_organization_modifier = {
+			policy_vote_delay = 8
+		}
+		wants_this_policy_bias = {
+			if = {
+				limit = { scope:recipient = { international_organization_has_leader = yes } }
+				#opinion of the leader country
+				add = {
+					desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+					value = "opinion(scope:recipient.leader_country)"
+				}
+				#diplomatic rep of the leader country
+				add = {
+					desc = "IO_LEADER_DIP_REP"
+					value = scope:recipient.leader_country.modifier:diplomatic_reputation
+				}
+			}
+			else = {
+				add = {
+					desc = "VOTE_BASE_VALUE"
+					value = -20
+				}
+			}
+		}
+	}
+}
+
+#Representative of the SC
+sc_representative = {
+	type = international_organization
+	law_category = election
+	potential = { international_organization_type = international_organization_type:swiss_confederation }
+	sc_canton_representative = {
+		leader_type = country
+		on_activate = {
+			hidden_effect = {
+				if = {
+					limit = { NOT = { international_organization_has_law = law:sc_power_of_the_sovereign } }
+					add_policy_to_international_organization = policy:sc_sovereign_representative_power
+				}
+				if = {
+					limit = { NOT = { international_organization_has_law = law:sc_election_method } }
+					add_policy_to_international_organization = policy:sc_lottery
+				}
+				if = {
+					limit = { NOT = { international_organization_has_law = law:sc_ruling_period } }
+					add_policy_to_international_organization = policy:sc_timed
+				}
+				if = {
+					limit = { AND = { international_organization_has_law = law:sc_ruling_period NOT = { international_organization_has_law = law:sc_election_frequency } } }
+					add_policy_to_international_organization = policy:sc_four_yearly_elections
+				}
+				international_organization_chooses_new_leader = this
+			}
+		}
+		on_deactivate = {
+			hidden_effect = {
+				remove_law_from_international_organization = law:sc_power_of_the_sovereign
+				remove_law_from_international_organization = law:sc_election_method
+				remove_law_from_international_organization = law:sc_ruling_period
+				remove_law_from_international_organization = law:sc_election_frequency
+			}
+		}
+		wants_this_policy_bias = {
+			if = {
+				limit = { scope:recipient = { international_organization_has_leader = yes } }
+				#opinion of the leader country
+				add = {
+					desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+					value = "opinion(scope:recipient.leader_country)"
+				}
+				#diplomatic rep of the leader country
+				add = {
+					desc = "IO_LEADER_DIP_REP"
+					value = scope:recipient.leader_country.modifier:diplomatic_reputation
+				}
+			}
+			else = {
+				add = {
+					desc = "VOTE_BASE_VALUE"
+					value = 10
+				}
+				#our own dip rep in hope we get it
+				add = {
+					desc = "game_concept_diplomatic_reputation"
+					value = modifier:diplomatic_reputation
+				}
+				add = io_members_and_potential_members_opinion_value
+			}
+			if = {
+				limit = { modifier:bias_for_militarist_policies > 0 }
+				add = {
+					desc = "PROVIDES_POWER_OPPORTUNITY"
+					value = {
+						value = modifier:bias_for_militarist_policies
+						multiply = {
+							value = great_power_score
+							subtract = io_get_average_great_power_score
+						}
+					}
+				}
+			}
+		}
+	}
+	sc_councillor_representative = {
+		leader_type = character
+		on_activate = {
+			hidden_effect = {
+				if = {
+					limit = { NOT = { international_organization_has_law = law:sc_power_of_the_sovereign } }
+					add_policy_to_international_organization = policy:sc_sovereign_representative_power
+				}
+				if = {
+					limit = { NOT = { international_organization_has_law = law:sc_election_method } }
+					add_policy_to_international_organization = policy:sc_lottery
+				}
+				if = {
+					limit = { NOT = { international_organization_has_law = law:sc_ruling_period } }
+					add_policy_to_international_organization = policy:sc_timed
+				}
+				if = {
+					limit = { AND = { international_organization_has_law = law:sc_ruling_period NOT = { international_organization_has_law = law:sc_election_frequency } } }
+					add_policy_to_international_organization = policy:sc_four_yearly_elections
+				}
+				international_organization_chooses_new_leader = this
+			}
+		}
+		on_deactivate = {
+			hidden_effect = {
+				remove_law_from_international_organization = law:sc_power_of_the_sovereign
+				remove_law_from_international_organization = law:sc_election_method
+				remove_law_from_international_organization = law:sc_ruling_period
+				remove_law_from_international_organization = law:sc_election_frequency
+			}
+		}
+		wants_this_policy_bias = {
+			if = {
+				limit = { scope:recipient = { international_organization_has_leader = yes } }
+				#opinion of the leader country
+				add = {
+					desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+					value = "opinion(scope:recipient.leader_country)"
+				}
+				#diplomatic rep of the leader country
+				add = {
+					desc = "IO_LEADER_DIP_REP"
+					value = scope:recipient.leader_country.modifier:diplomatic_reputation
+				}
+			}
+			else = {
+				add = {
+					desc = "VOTE_BASE_VALUE"
+					value = 10
+				}
+				#our own dip rep in hope we get it
+				add = {
+					desc = "game_concept_diplomatic_reputation"
+					value = modifier:diplomatic_reputation
+				}
+				add = io_members_and_potential_members_opinion_value
+			}
+			if = {
+				limit = { modifier:bias_for_militarist_policies > 0 }
+				add = {
+					desc = "PROVIDES_POWER_OPPORTUNITY"
+					value = {
+						value = modifier:bias_for_militarist_policies
+						multiply = {
+							value = great_power_score
+							subtract = io_get_average_great_power_score
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#Power of the Sovereign
+sc_power_of_the_sovereign = {
+	type = international_organization
+	law_category = leadership
+	potential = {
+		international_organization_type = international_organization_type:swiss_confederation
+		international_organization_has_law = law:sc_representative
+	}
+	sc_sovereign_representative_power = {
+		leader_modifier = {
+			diplomatic_reputation = 1
+		}
+	}
+	sc_sovereign_religious_power = {
+		allow = {
+			trigger_if = {
+				limit = { law_visible_to_international_organization = law:sc_religious_affairs }
+				international_organization_has_policy = policy:sc_mending_schism
+			}
+			international_organization_has_policy = policy:sc_lifelong
+		}
+		on_activate = {
+		}
+		leader_modifier = {
+			diplomatic_reputation = 1
+			global_pop_conversion_speed_modifier = 0.2
+			monthly_religious_influence = 0.5
+		}
+	}
+	sc_sovereign_absolute_power = {
+		allow = {
+			trigger_if = {
+				limit = { law_visible_to_international_organization = law:sc_relations_with_hre }
+				international_organization_has_law = law:sc_relations_with_hre
+			}
+			international_organization_has_policy = policy:sc_lifelong
+		}
+		on_activate = {
+		}
+		leader_modifier = {
+			diplomatic_reputation = 2
+			improve_relation_impact = 0.25
+			global_crown_estate_power = 0.25
+		}
+	}
+}
+
+#Election Method
+sc_election_method = {
+	type = international_organization
+	law_category = election
+	potential = {
+		international_organization_type = international_organization_type:swiss_confederation
+		international_organization_has_law = law:sc_representative
+	}
+	sc_direct_vote = {
+		leader_change_method = vote
+		leadership_election_resolution = resolution:swiss_election
+		wants_this_policy_bias = {
+			if = {
+				limit = { scope:recipient = { international_organization_has_leader = yes } }
+				#opinion of the leader country
+				add = {
+					desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+					value = "opinion(scope:recipient.leader_country)"
+				}
+				#diplomatic rep of the leader country
+				add = {
+					desc = "IO_LEADER_DIP_REP"
+					value = scope:recipient.leader_country.modifier:diplomatic_reputation
+				}
+			}
+			else = {
+				add = {
+					desc = "VOTE_BASE_VALUE"
+					value = 10
+				}
+				#our own dip rep in hope we get it
+				add = {
+					desc = "game_concept_diplomatic_reputation"
+					value = modifier:diplomatic_reputation
+				}
+				add = io_members_and_potential_members_opinion_value
+			}
+			if = {
+				limit = { modifier:bias_for_militarist_policies > 0 }
+				add = {
+					desc = "PROVIDES_POWER_OPPORTUNITY"
+					value = {
+						value = modifier:bias_for_militarist_policies
+						multiply = {
+							value = great_power_score
+							subtract = io_get_average_great_power_score
+						}
+					}
+				}
+			}
+			if = {
+				limit = { is_leader_of_international_organization = scope:recipient }
+				add = {
+					desc = "BENEFITS_US"
+					value = 1000
+				}
+			}
+		}
+	}
+	sc_lottery = {
+		leader_change_method = lottery
+		wants_this_policy_bias = {
+			if = {
+				limit = { scope:recipient = { international_organization_has_leader = yes } }
+				#opinion of the leader country
+				add = {
+					desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+					value = "opinion(scope:recipient.leader_country)"
+				}
+				#diplomatic rep of the leader country
+				add = {
+					desc = "IO_LEADER_DIP_REP"
+					value = scope:recipient.leader_country.modifier:diplomatic_reputation
+				}
+			}
+			else = {
+				add = {
+					desc = "VOTE_BASE_VALUE"
+					value = 10
+				}
+				#our own dip rep in hope we get it
+				add = {
+					desc = "game_concept_diplomatic_reputation"
+					value = modifier:diplomatic_reputation
+				}
+				add = io_members_and_potential_members_opinion_value
+			}
+			if = {
+				limit = { modifier:bias_for_militarist_policies > 0 }
+				add = {
+					desc = "PROVIDES_POWER_OPPORTUNITY"
+					value = {
+						value = modifier:bias_for_militarist_policies
+						multiply = {
+							value = great_power_score
+							subtract = io_get_average_great_power_score
+						}
+					}
+				}
+			}
+			if = {
+				limit = { is_leader_of_international_organization = scope:recipient }
+				add = {
+					desc = "DOES_NOT_BENEFITS_US"
+					value = -100
+				}
+			}
+			if = {
+				limit = { NOT = { is_leader_of_international_organization = scope:recipient } }
+				add = {
+					desc = "BENEFITS_US"
+					value = 50
+				}
+			}
+		}
+	}
+	sc_rotation = {
+		leader_change_method = rotation
+		wants_this_policy_bias = {
+			if = {
+				limit = { scope:recipient = { international_organization_has_leader = yes } }
+				#opinion of the leader country
+				add = {
+					desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+					value = "opinion(scope:recipient.leader_country)"
+				}
+				#diplomatic rep of the leader country
+				add = {
+					desc = "IO_LEADER_DIP_REP"
+					value = scope:recipient.leader_country.modifier:diplomatic_reputation
+				}
+			}
+			else = {
+				add = {
+					desc = "VOTE_BASE_VALUE"
+					value = 10
+				}
+				#our own dip rep in hope we get it
+				add = {
+					desc = "game_concept_diplomatic_reputation"
+					value = modifier:diplomatic_reputation
+				}
+				add = io_members_and_potential_members_opinion_value
+			}
+			if = {
+				limit = { modifier:bias_for_militarist_policies > 0 }
+				add = {
+					desc = "PROVIDES_POWER_OPPORTUNITY"
+					value = {
+						value = modifier:bias_for_militarist_policies
+						multiply = {
+							value = great_power_score
+							subtract = io_get_average_great_power_score
+						}
+					}
+				}
+			}
+			if = {
+				limit = { is_leader_of_international_organization = scope:recipient }
+				add = {
+					desc = "DOES_NOT_BENEFITS_US"
+					value = -100
+				}
+			}
+			if = {
+				limit = { NOT = { is_leader_of_international_organization = scope:recipient } }
+				add = {
+					desc = "BENEFITS_US"
+					value = 50
+				}
+			}
+		}
+	}
+}
+
+#Ruling Period
+sc_ruling_period = {
+	type = international_organization
+	law_category = election
+	potential = {
+		international_organization_type = international_organization_type:swiss_confederation
+		international_organization_has_law = law:sc_representative
+	}
+	sc_timed = {
+		leader_change_trigger_type = timed
+		on_deactivate = {
+			if = {
+				limit = { international_organization_has_law = law:sc_representative }
+				add_policy_to_international_organization = policy:sc_lifelong
+			}
+		}
+		wants_this_policy_bias = {
+			if = {
+				limit = { scope:recipient = { international_organization_has_leader = yes } }
+				#opinion of the leader country
+				add = {
+					desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+					value = "opinion(scope:recipient.leader_country)"
+				}
+				#diplomatic rep of the leader country
+				add = {
+					desc = "IO_LEADER_DIP_REP"
+					value = scope:recipient.leader_country.modifier:diplomatic_reputation
+				}
+			}
+			else = {
+				add = {
+					desc = "VOTE_BASE_VALUE"
+					value = 10
+				}
+				#our own dip rep in hope we get it
+				add = {
+					desc = "game_concept_diplomatic_reputation"
+					value = modifier:diplomatic_reputation
+				}
+				add = io_members_and_potential_members_opinion_value
+			}
+			if = {
+				limit = { modifier:bias_for_militarist_policies > 0 }
+				add = {
+					desc = "PROVIDES_POWER_OPPORTUNITY"
+					value = {
+						value = modifier:bias_for_militarist_policies
+						multiply = {
+							value = great_power_score
+							subtract = io_get_average_great_power_score
+						}
+					}
+				}
+			}
+			if = {
+				limit = { is_leader_of_international_organization = scope:recipient }
+				add = {
+					desc = "DOES_NOT_BENEFITS_US"
+					value = -100
+				}
+			}
+			if = {
+				limit = { NOT = { is_leader_of_international_organization = scope:recipient } }
+				add = {
+					desc = "BENEFITS_US"
+					value = 50
+				}
+			}
+		}
+	}
+	sc_lifelong = {
+		leader_change_trigger_type = rulerchange
+		on_deactivate = {	#So even if we vote for no policy, the IO will always end up with a policy
+			if = {
+				limit = { international_organization_has_law = law:sc_representative }
+				add_policy_to_international_organization = policy:sc_timed
+				add_policy_to_international_organization = policy:sc_four_yearly_elections
+			}
+		}
+		wants_this_policy_bias = {
+			if = {
+				limit = { scope:recipient = { international_organization_has_leader = yes } }
+				#opinion of the leader country
+				add = {
+					desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+					value = "opinion(scope:recipient.leader_country)"
+				}
+				#diplomatic rep of the leader country
+				add = {
+					desc = "IO_LEADER_DIP_REP"
+					value = scope:recipient.leader_country.modifier:diplomatic_reputation
+				}
+			}
+			else = {
+				add = {
+					desc = "VOTE_BASE_VALUE"
+					value = 10
+				}
+				#our own dip rep in hope we get it
+				add = {
+					desc = "game_concept_diplomatic_reputation"
+					value = modifier:diplomatic_reputation
+				}
+				add = io_members_and_potential_members_opinion_value
+			}
+			if = {
+				limit = { modifier:bias_for_militarist_policies > 0 }
+				add = {
+					desc = "PROVIDES_POWER_OPPORTUNITY"
+					value = {
+						value = modifier:bias_for_militarist_policies
+						multiply = {
+							value = great_power_score
+							subtract = io_get_average_great_power_score
+						}
+					}
+				}
+			}
+			if = {
+				limit = { NOT = { is_leader_of_international_organization = scope:recipient } }
+				add = {
+					desc = "DOES_NOT_BENEFITS_US"
+					value = -50
+				}
+			}
+			if = {
+				limit = { is_leader_of_international_organization = scope:recipient }
+				add = {
+					desc = "BENEFITS_US"
+					value = 100
+				}
+			}
+		}
+	}
+}
+
+#Election Frequency
+sc_election_frequency = {
+	type = international_organization
+	law_category = election
+	potential = {
+		international_organization_type = international_organization_type:swiss_confederation
+		international_organization_has_law = law:sc_representative
+		international_organization_has_policy = policy:sc_timed
+	}
+	sc_biyearly_elections = {
+		months_between_leader_changes = 24
+		wants_this_policy_bias = {
+			if = {
+				limit = { scope:recipient = { international_organization_has_leader = yes } }
+				#opinion of the leader country
+				add = {
+					desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+					value = "opinion(scope:recipient.leader_country)"
+				}
+				#diplomatic rep of the leader country
+				add = {
+					desc = "IO_LEADER_DIP_REP"
+					value = scope:recipient.leader_country.modifier:diplomatic_reputation
+				}
+			}
+			else = {
+				add = {
+					desc = "VOTE_BASE_VALUE"
+					value = 10
+				}
+				#our own dip rep in hope we get it
+				add = {
+					desc = "game_concept_diplomatic_reputation"
+					value = modifier:diplomatic_reputation
+				}
+				add = io_members_and_potential_members_opinion_value
+			}
+		}
+	}
+	sc_four_yearly_elections = {
+		months_between_leader_changes = 48
+		wants_this_policy_bias = {
+			if = {
+				limit = { scope:recipient = { international_organization_has_leader = yes } }
+				#opinion of the leader country
+				add = {
+					desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+					value = "opinion(scope:recipient.leader_country)"
+				}
+				#diplomatic rep of the leader country
+				add = {
+					desc = "IO_LEADER_DIP_REP"
+					value = scope:recipient.leader_country.modifier:diplomatic_reputation
+				}
+			}
+			else = {
+				add = {
+					desc = "VOTE_BASE_VALUE"
+					value = 10
+				}
+				#our own dip rep in hope we get it
+				add = {
+					desc = "game_concept_diplomatic_reputation"
+					value = modifier:diplomatic_reputation
+				}
+				add = io_members_and_potential_members_opinion_value
+			}
+		}
+	}
+	sc_eight_yearly_elections = {
+		months_between_leader_changes = 96
+		wants_this_policy_bias = {
+			if = {
+				limit = { scope:recipient = { international_organization_has_leader = yes } }
+				#opinion of the leader country
+				add = {
+					desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+					value = "opinion(scope:recipient.leader_country)"
+				}
+				#diplomatic rep of the leader country
+				add = {
+					desc = "IO_LEADER_DIP_REP"
+					value = scope:recipient.leader_country.modifier:diplomatic_reputation
+				}
+			}
+			else = {
+				add = {
+					desc = "VOTE_BASE_VALUE"
+					value = 10
+				}
+				#our own dip rep in hope we get it
+				add = {
+					desc = "game_concept_diplomatic_reputation"
+					value = modifier:diplomatic_reputation
+				}
+				add = io_members_and_potential_members_opinion_value
+			}
+		}
+	}
+}
+
+#Internal Politics
+sc_internal_politics = {
+	type = international_organization
+	law_category = administrative
+	potential = { international_organization_type = international_organization_type:swiss_confederation }
+	sc_forbid_internal_wars = {
+		on_activate = {
+			if = {
+				limit = {
+					NOT = { has_variable = sc_religious_chaos  }
+					NOT = { international_organization_has_policy = policy:sc_enforcing_religious_unity }
+				}
+				custom_tooltip = sc_forbid_internal_wars_tt
+			}
+			else = {
+				custom_tooltip = sc_forbid_same_religion_internal_wars_tt
+			}
+		}
+
+		can_declare_war = {
+			trigger_if = {
+				limit = {
+					exists = scope:attacker
+					exists = scope:defender
+					exists = scope:recipient
+					scope:attacker ?= { is_member_of_international_organization = scope:recipient }
+					scope:defender ?= { is_member_of_international_organization = scope:recipient }
+					trigger_if = {
+						limit = {
+							scope:recipient = {
+								OR = {
+									has_variable = sc_religious_chaos 
+									international_organization_has_policy = policy:sc_enforcing_religious_unity
+								}
+							}
+						}
+						scope:attacker.religion = scope:defender.religion
+					}
+				}
+				always = no
+			}
+			trigger_else = {
+				always = yes
+			}
+		}
+		wants_this_policy_bias = {
+			if = {
+				limit = { scope:recipient = { international_organization_has_leader = yes } }
+				#opinion of the leader country
+				add = {
+					desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+					value = "opinion(scope:recipient.leader_country)"
+				}
+				#diplomatic rep of the leader country
+				add = {
+					desc = "IO_LEADER_DIP_REP"
+					value = scope:recipient.leader_country.modifier:diplomatic_reputation
+				}
+			}
+			else = {
+				add = {
+					desc = "VOTE_BASE_VALUE"
+					value = 10
+				}
+				add = io_members_and_potential_members_opinion_value
+			}
+			add = {
+				desc = "BIAS_FROM_RULER_TRAITS"
+				value = modifier:bias_for_diplomat_policies
+			}
+			add = {
+				desc = "OPPOSES_RULER_TRAITS"
+				value = modifier:bias_for_militarist_policies
+				multiply = -1
+			}
+			add = {
+				desc = "BENEFITS_US"
+				value = io_get_average_great_power_score
+				subtract = great_power_score
+			}
+		}
+	}
+
+	sc_allow_internal_wars = {
+		can_declare_war = {
+			always = yes
+		}
+
+		modifier = {
+			monthly_army_tradition = 0.05
+		}
+
+		wants_this_policy_bias = {
+			if = {
+				limit = { scope:recipient = { international_organization_has_leader = yes } }
+				#opinion of the leader country
+				add = {
+					desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+					value = "opinion(scope:recipient.leader_country)"
+				}
+				#diplomatic rep of the leader country
+				add = {
+					desc = "IO_LEADER_DIP_REP"
+					value = scope:recipient.leader_country.modifier:diplomatic_reputation
+				}
+			}
+			else = {
+				add = {
+					desc = "VOTE_BASE_VALUE"
+					value = 10
+				}
+				add = io_members_and_potential_members_opinion_value
+			}
+			add = {
+				desc = "BIAS_FROM_RULER_TRAITS"
+				value = modifier:bias_for_diplomat_policies
+			}
+			add = {
+				desc = "OPPOSES_RULER_TRAITS"
+				value = modifier:bias_for_militarist_policies
+				multiply = -1
+			}
+			add = {
+				desc = "BENEFITS_US"
+				value = io_get_average_great_power_score
+				subtract = great_power_score
+			}
+		}
+	}
+}
+
+#Membership Regulation
+sc_membership_regulation = {
+	type = international_organization
+	law_category = administrative
+	potential = { international_organization_type = international_organization_type:swiss_confederation }
+	allow = {
+	}
+	sc_swiss_culture_and_geography = {
+		on_activate = { custom_tooltip = sc_swiss_culture_and_geography_tt }
+		wants_this_policy_bias = {
+			if = {
+				limit = { scope:recipient = { international_organization_has_leader = yes } }
+				#opinion of the leader country
+				add = {
+					desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+					value = "opinion(scope:recipient.leader_country)"
+				}
+				#diplomatic rep of the leader country
+				add = {
+					desc = "IO_LEADER_DIP_REP"
+					value = scope:recipient.leader_country.modifier:diplomatic_reputation
+				}
+			}
+			else = {
+				add = {
+					desc = "VOTE_BASE_VALUE"
+					value = 10
+				}
+				#our own dip rep in hope we get it
+				add = {
+					desc = "game_concept_diplomatic_reputation"
+					value = modifier:diplomatic_reputation
+				}
+				add = io_members_and_potential_members_opinion_value
+			}
+			add = {
+				desc = "BIAS_FROM_RULER_TRAITS"
+				value = modifier:bias_for_militarist_policies
+			}
+			add = {
+				desc = "OPPOSES_RULER_TRAITS"
+				value = modifier:bias_for_diplomat_policies
+				multiply = -1
+			}
+		}
+	}
+	sc_just_swiss_culture = {
+		on_activate = { custom_tooltip = sc_just_swiss_culture_tt }
+		wants_this_policy_bias = {
+			if = {
+				limit = { scope:recipient = { international_organization_has_leader = yes } }
+				#opinion of the leader country
+				add = {
+					desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+					value = "opinion(scope:recipient.leader_country)"
+				}
+				#diplomatic rep of the leader country
+				add = {
+					desc = "IO_LEADER_DIP_REP"
+					value = scope:recipient.leader_country.modifier:diplomatic_reputation
+				}
+			}
+			else = {
+				add = {
+					desc = "VOTE_BASE_VALUE"
+					value = 10
+				}
+				#our own dip rep in hope we get it
+				add = {
+					desc = "game_concept_diplomatic_reputation"
+					value = modifier:diplomatic_reputation
+				}
+				add = io_members_and_potential_members_opinion_value
+			}
+			add = {
+				desc = "BIAS_FROM_RULER_TRAITS"
+				value = modifier:bias_for_balanced_policies
+			}
+			add = {
+				desc = "OPPOSES_RULER_TRAITS"
+				value = modifier:bias_for_diplomat_policies
+				add = modifier:bias_for_militarist_policies
+				multiply = -0.5
+			}
+		}
+	}
+	sc_swiss_or_swiss_relative = {
+		on_activate = { custom_tooltip = sc_swiss_or_swiss_relative_tt }
+		wants_this_policy_bias = {
+			if = {
+				limit = { scope:recipient = { international_organization_has_leader = yes } }
+				#opinion of the leader country
+				add = {
+					desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+					value = "opinion(scope:recipient.leader_country)"
+				}
+				#diplomatic rep of the leader country
+				add = {
+					desc = "IO_LEADER_DIP_REP"
+					value = scope:recipient.leader_country.modifier:diplomatic_reputation
+				}
+			}
+			else = {
+				add = {
+					desc = "VOTE_BASE_VALUE"
+					value = 10
+				}
+				#our own dip rep in hope we get it
+				add = {
+					desc = "game_concept_diplomatic_reputation"
+					value = modifier:diplomatic_reputation
+				}
+				add = io_members_and_potential_members_opinion_value
+			}
+			add = {
+				desc = "BIAS_FROM_RULER_TRAITS"
+				value = modifier:bias_for_diplomat_policies
+			}
+			add = {
+				desc = "OPPOSES_RULER_TRAITS"
+				value = modifier:bias_for_militarist_policies
+				multiply = -1
+			}
+		}
+	}
+}
+
+#War Politics
+sc_war_politics = {
+	type = international_organization
+	law_category = military
+	potential = { international_organization_type = international_organization_type:swiss_confederation }
+	sc_defensive_pact = {
+		join_defensive_wars_always = {
+			custom_tooltip = {
+				text = sc_call_to_arms_conditions_tt
+				scope:target ?= { NOT = { is_member_of_international_organization = root } }
+				trigger_if = {
+					limit = {
+						OR = {
+							international_organization_has_policy = policy:sc_enforcing_religious_unity
+							has_variable = sc_religious_chaos
+						}
+					}
+					scope:actor.religion = scope:recipient.religion
+				}
+			}
+		}
+		wants_this_policy_bias = {
+			add = {
+				desc = "POLICY_BIAS_GOOD_IDEA"
+				value = 100
+			}
+		}
+	}
+	sc_alliance = {
+		join_defensive_wars_always = {
+			custom_tooltip = {
+				text = sc_call_to_arms_conditions_tt
+				scope:target ?= { NOT = { is_member_of_international_organization = root } }
+				trigger_if = {
+					limit = {
+						OR = {
+							international_organization_has_policy = policy:sc_enforcing_religious_unity
+							has_variable = sc_religious_chaos
+						}
+					}
+					scope:actor.religion = scope:recipient.religion
+				}
+			}
+		}
+
+		join_offensive_wars_auto_call = {
+			custom_tooltip = {
+				text = sc_call_to_arms_conditions_tt
+				scope:target ?= { NOT = { is_member_of_international_organization = root } }
+				trigger_if = {
+					limit = {
+						OR = {
+							international_organization_has_policy = policy:sc_enforcing_religious_unity
+							has_variable = sc_religious_chaos
+						}
+					}
+					scope:actor.religion = scope:recipient.religion
+				}
+			}
+		}
+		wants_this_policy_bias = {
+			if = {
+				limit = { scope:recipient = { international_organization_has_leader = yes } }
+				#opinion of the leader country
+				add = {
+					desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+					value = "opinion(scope:recipient.leader_country)"
+				}
+				#diplomatic rep of the leader country
+				add = {
+					desc = "IO_LEADER_DIP_REP"
+					value = scope:recipient.leader_country.modifier:diplomatic_reputation
+				}
+			}
+			else = {
+				add = {
+					desc = "VOTE_BASE_VALUE"
+					value = 10
+				}
+				#our own dip rep in hope we get it
+				add = {
+					desc = "game_concept_diplomatic_reputation"
+					value = modifier:diplomatic_reputation
+				}
+				add = io_members_and_potential_members_opinion_value
+			}
+			add = {
+				desc = "BIAS_FROM_RULER_TRAITS"
+				value = modifier:bias_for_diplomat_policies
+				add = modifier:bias_for_militarist_policies
+			}
+			add = {
+				desc = "OPPOSES_RULER_TRAITS"
+				value = modifier:bias_for_capitalist_policies
+				multiply = -1
+			}
+			add = {
+				desc = "BENEFITS_US"
+				value = io_get_average_great_power_score
+				subtract = great_power_score
+			}
+		}
+	}
+	sc_united_war_efforts = {
+		join_defensive_wars_always = {
+			custom_tooltip = {
+				text = sc_call_to_arms_conditions_tt
+				scope:target ?= { NOT = { is_member_of_international_organization = root } }
+				trigger_if = {
+					limit = {
+						OR = {
+							international_organization_has_policy = policy:sc_enforcing_religious_unity
+							has_variable = sc_religious_chaos
+						}
+					}
+					scope:actor.religion = scope:recipient.religion
+				}
+			}
+		}
+
+		join_offensive_wars_always = {
+			custom_tooltip = {
+				text = sc_call_to_arms_conditions_tt
+				scope:target ?= { NOT = { is_member_of_international_organization = root } }
+				trigger_if = {
+					limit = {
+						OR = {
+							international_organization_has_policy = policy:sc_enforcing_religious_unity
+							has_variable = sc_religious_chaos
+						}
+					}
+					scope:actor.religion = scope:recipient.religion
+				}
+			}
+		}
+		wants_this_policy_bias = {
+			if = {
+				limit = { scope:recipient = { international_organization_has_leader = yes } }
+				#opinion of the leader country
+				add = {
+					desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+					value = "opinion(scope:recipient.leader_country)"
+				}
+				#diplomatic rep of the leader country
+				add = {
+					desc = "IO_LEADER_DIP_REP"
+					value = scope:recipient.leader_country.modifier:diplomatic_reputation
+				}
+			}
+			else = {
+				add = {
+					desc = "VOTE_BASE_VALUE"
+					value = 10
+				}
+				#our own dip rep in hope we get it
+				add = {
+					desc = "game_concept_diplomatic_reputation"
+					value = modifier:diplomatic_reputation
+				}
+				add = io_members_and_potential_members_opinion_value
+			}
+			add = {
+				desc = "BIAS_FROM_RULER_TRAITS"
+				value = modifier:bias_for_diplomat_policies
+				add = modifier:bias_for_militarist_policies
+			}
+			add = {
+				desc = "OPPOSES_RULER_TRAITS"
+				value = modifier:bias_for_capitalist_policies
+				multiply = -1
+			}
+			add = {
+				desc = "BENEFITS_US"
+				value = io_get_average_great_power_score
+				subtract = great_power_score
+			}
+		}
+	}
+}
+
+#Religious Affairs
+sc_religious_affairs = {
+	type = international_organization
+	law_category = religious
+	potential = {
+		international_organization_type = international_organization_type:swiss_confederation
+		international_organization_has_unlocked_law_trigger = { type = sc_religious_affairs }
+		reformation_is_enabled = yes
+	}
+	sc_mending_schism = {
+		on_activate = {
+			custom_tooltip = {
+				text = sc_clear_religious_chaos_tt
+				remove_variable = sc_religious_chaos
+				remove_variable = sc_blocked_votes_on_non_religious_policies
+			}
+		}
+		on_deactivate = {
+			hidden_effect = {
+				set_variable = sc_religious_chaos
+			}
+		}
+		wants_this_policy_bias = {
+			if = {
+				limit = { scope:recipient = { international_organization_has_leader = yes } }
+				#opinion of the leader country
+				add = {
+					desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+					value = "opinion(scope:recipient.leader_country)"
+				}
+				#diplomatic rep of the leader country
+				add = {
+					desc = "IO_LEADER_DIP_REP"
+					value = scope:recipient.leader_country.modifier:diplomatic_reputation
+				}
+			}
+			else = {
+				add = {
+					desc = "VOTE_BASE_VALUE"
+					value = 10
+				}
+				#our own dip rep in hope we get it
+				add = {
+					desc = "game_concept_diplomatic_reputation"
+					value = modifier:diplomatic_reputation
+				}
+				add = io_members_and_potential_members_opinion_value
+			}
+			add = {
+				desc = "BIAS_FROM_RULER_TRAITS"
+				value = modifier:bias_for_tolerant_policies
+			}
+			add = {
+				desc = "OPPOSES_RULER_TRAITS"
+				value = modifier:bias_for_spiritualist_policies
+				multiply = -1
+			}
+		}
+	}
+	sc_enforcing_religious_unity = {
+		on_activate = {
+			custom_tooltip = {
+				text = sc_only_defending_same_religion_allies_tt
+				remove_variable = sc_religious_chaos
+				remove_variable = sc_blocked_votes_on_non_religious_policies
+			}
+		}
+		on_deactivate = {
+			hidden_effect = {
+				set_variable = sc_religious_chaos
+			}
+		}
+		wants_this_policy_bias = {
+			if = {
+				limit = { scope:recipient = { international_organization_has_leader = yes } }
+				#opinion of the leader country
+				add = {
+					desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+					value = "opinion(scope:recipient.leader_country)"
+				}
+				#diplomatic rep of the leader country
+				add = {
+					desc = "IO_LEADER_DIP_REP"
+					value = scope:recipient.leader_country.modifier:diplomatic_reputation
+				}
+			}
+			else = {
+				add = {
+					desc = "VOTE_BASE_VALUE"
+					value = 10
+				}
+				#our own dip rep in hope we get it
+				add = {
+					desc = "game_concept_diplomatic_reputation"
+					value = modifier:diplomatic_reputation
+				}
+				add = io_members_and_potential_members_opinion_value
+			}
+			add = {
+				desc = "BIAS_FROM_RULER_TRAITS"
+				value = modifier:bias_for_spiritualist_policies
+			}
+			add = {
+				desc = "OPPOSES_RULER_TRAITS"
+				value = modifier:bias_for_tolerant_policies
+				multiply = -1
+			}
+		}
+	}
+}
+
+#Matters of the HRE
+sc_relations_with_hre = {
+	type = international_organization
+	law_category = foreign_policy
+	potential = {
+		international_organization_type = international_organization_type:swiss_confederation
+		exists = international_organization:hre
+		international_organization_has_unlocked_law_trigger = { type = sc_relations_with_hre }
+	}
+	locked = { international_organization_has_law = law:sc_relations_with_hre }
+	sc_remain_in_the_hre = {
+		on_activate = {
+			custom_tooltip = sc_remain_in_the_hre_tt
+			custom_tooltip = {
+				text = sc_prestige_malus_tt
+				every_international_organization_member = {
+					limit = { is_member_of_international_organization = international_organization:hre }
+					add_prestige = prestige_extreme_penalty
+				}
+			}
+		}
+		wants_this_policy_bias = {
+			if = {
+				limit = { scope:recipient = { international_organization_has_leader = yes } }
+				#opinion of the leader country
+				add = {
+					desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+					value = "opinion(scope:recipient.leader_country)"
+				}
+				#diplomatic rep of the leader country
+				add = {
+					desc = "IO_LEADER_DIP_REP"
+					value = scope:recipient.leader_country.modifier:diplomatic_reputation
+				}
+			}
+			else = {
+				add = {
+					desc = "VOTE_BASE_VALUE"
+					value = 10
+				}
+				#our own dip rep in hope we get it
+				add = {
+					desc = "game_concept_diplomatic_reputation"
+					value = modifier:diplomatic_reputation
+				}
+				add = io_members_and_potential_members_opinion_value
+			}
+			add = {
+				desc = "BIAS_FROM_RULER_TRAITS"
+				value = modifier:bias_for_diplomat_policies
+			}
+			add = {
+				desc = "OPPOSES_RULER_TRAITS"
+				value = modifier:bias_for_isolationist_policies
+				multiply = -1
+			}
+		}
+	}
+	sc_leave_the_hre = {
+		on_activate = {
+			custom_tooltip = sc_leave_the_hre_tt
+			custom_tooltip = {
+				text = sc_every_member_leaves_hre_tt
+				every_international_organization_member = {
+					limit = { is_member_of_international_organization = international_organization:hre }
+					international_organization:hre = { remove_country_from_international_organization = prev }
+					every_owned_location = {
+						limit = { is_owned_by_international_organization = international_organization:hre }
+						remove_from_international_organization = international_organization:hre
+					}
+				}
+			}
+			if = {
+				limit = { international_organization:hre = { international_organization_has_leader = yes } }
+				international_organization:hre = {
+					leader_country = { trigger_event_non_silently = flavor_swi.121 }
+				}
+			}
+		}
+		wants_this_policy_bias = {
+			if = {
+				limit = { scope:recipient = { international_organization_has_leader = yes } }
+				#opinion of the leader country
+				add = {
+					desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+					value = "opinion(scope:recipient.leader_country)"
+				}
+				#diplomatic rep of the leader country
+				add = {
+					desc = "IO_LEADER_DIP_REP"
+					value = scope:recipient.leader_country.modifier:diplomatic_reputation
+				}
+			}
+			else = {
+				add = {
+					desc = "VOTE_BASE_VALUE"
+					value = 10
+				}
+				#our own dip rep in hope we get it
+				add = {
+					desc = "game_concept_diplomatic_reputation"
+					value = modifier:diplomatic_reputation
+				}
+				add = io_members_and_potential_members_opinion_value
+			}
+			add = {
+				desc = "BIAS_FROM_RULER_TRAITS"
+				value = modifier:bias_for_isolationist_policies
+			}
+			add = {
+				desc = "OPPOSES_RULER_TRAITS"
+				value = modifier:bias_for_diplomat_policies
+				multiply = -1
+			}
+		}
+	}
+}
+
+#Unification
+sc_unification = {
+	type = international_organization
+	law_category = centralization
+	potential = { international_organization_type = international_organization_type:swiss_confederation }
+	allow = {
+		trigger_if = {
+			limit = { NOT = { has_global_variable = sc_unification_movement_event_happened } }
+			custom_tooltip = {
+				text = sc_unification_movement_event_happened_tt
+				has_global_variable = sc_unification_movement_event_happened
+			}
+		}
+		international_organization_has_policy = policy:sc_forbid_internal_wars
+		trigger_if = {
+			limit = { 
+				NOT = {
+					OR = {
+						international_organization_has_policy = policy:sc_alliance
+						international_organization_has_policy = policy:sc_united_war_efforts
+					}
+				}
+			}
+			OR = {
+				international_organization_has_policy = policy:sc_alliance
+				international_organization_has_policy = policy:sc_united_war_efforts
+			}
+		}
+		
+		trigger_if = {
+			limit = {
+				international_organization_has_unlocked_law_trigger = { type = sc_religious_affairs }
+				NOR = {
+					international_organization_has_policy = policy:sc_mending_schism
+					AND = {
+						international_organization_has_policy = policy:sc_enforcing_religious_unity
+						OR = {
+							any_international_organization_member = { religion = religion:catholic count = all }
+							any_international_organization_member = { religion = religion:lutheran count = all }
+							any_international_organization_member = { religion = religion:calvinist count = all }
+						}
+					}
+				}
+			}
+			OR = {
+				international_organization_has_policy = policy:sc_mending_schism
+				AND = {
+					international_organization_has_policy = policy:sc_enforcing_religious_unity
+					custom_tooltip = {
+						text = sc_unification_same_religion_tt
+						OR = {
+							any_international_organization_member = { religion = religion:catholic count = all }
+							any_international_organization_member = { religion = religion:lutheran count = all }
+							any_international_organization_member = { religion = religion:calvinist count = all }
+						}
+					}
+				}
+			}
+		}
+		trigger_if = {
+			limit = {
+				exists = international_organization:hre
+				international_organization_has_unlocked_law_trigger = { type = sc_relations_with_hre }
+				NOT = { international_organization_has_law = law:sc_relations_with_hre }
+			}
+			international_organization_has_law = law:sc_relations_with_hre
+		}
+	}
+	sc_found_swiss_republic = {
+		allow = {
+			trigger_if = {
+				limit = { international_organization_has_law = law:sc_representative }
+			}
+		}
+		on_activate = {
+			hidden_effect = { remove_global_variable = sc_unification_movement_event_happened }
+			if = {
+				limit = { has_valid_policy_vote_proposer = yes }
+				var:io_law_proposer ?= {
+					custom_tooltip = {
+						text = sc_found_swiss_republic_specific_tt
+						set_variable = swi_picked_gov_type_republic
+						trigger_event_silently = flavor_swi.100
+					}
+				}
+			}
+			else_if = {
+				limit = { international_organization_has_leader = yes }
+				leader_country ?= {
+					custom_tooltip = {
+						text = sc_found_swiss_republic_specific_tt
+						set_variable = swi_picked_gov_type_republic
+						trigger_event_silently = flavor_swi.100
+					}
+				}
+			}
+			else = {
+				custom_tooltip = sc_found_swiss_republic_tt
+				hidden_effect = {
+					if = {
+						limit = { any_international_organization_member = { is_ai = no } }
+						#Player with the most pops in the IO gets to become Switzerland
+						#Other players will lose their locations instead
+						ordered_international_organization_member = {
+							limit = { is_ai = no }
+							order_by = total_population
+							max = 1
+							check_range_bounds = no
+							set_variable = swi_picked_gov_type_republic
+							trigger_event_silently = flavor_swi.100
+						}
+					}
+					else = {
+						#AI unifies Switzerland, no check needed for players in the IO
+						ordered_international_organization_member = {
+							order_by = total_population
+							max = 1
+							check_range_bounds = no
+							set_variable = swi_picked_gov_type_republic
+							trigger_event_silently = flavor_swi.100
+						}
+					}
+				}
+			}
+		}
+		wants_this_policy_bias = {
+			if = {
+				limit = { scope:recipient = { international_organization_has_leader = yes } }
+				#opinion of the leader country
+				add = {
+					desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+					value = "opinion(scope:recipient.leader_country)"
+				}
+				#diplomatic rep of the leader country
+				add = {
+					desc = "IO_LEADER_DIP_REP"
+					value = scope:recipient.leader_country.modifier:diplomatic_reputation
+				}
+			}
+			else = {
+				add = {
+					desc = "VOTE_BASE_VALUE"
+					value = 10
+				}
+				#our own dip rep in hope we get it
+				add = {
+					desc = "game_concept_diplomatic_reputation"
+					value = modifier:diplomatic_reputation
+				}
+				add = io_members_and_potential_members_opinion_value
+			}
+			add = {
+				desc = "BIAS_FROM_RULER_TRAITS"
+				value = modifier:bias_for_diplomat_policies
+			}
+		}
+	}
+	sc_found_swiss_monarchy = {
+		allow = {
+			OR = {
+				international_organization_has_leader = yes
+				has_valid_policy_vote_proposer = yes
+			}
+			trigger_if = { 
+				limit = { NOT = { international_organization_has_law = law:sc_representative } }
+				international_organization_has_law = law:sc_representative
+			}
+			trigger_else = {
+				international_organization_has_policy = policy:sc_lifelong
+				international_organization_has_policy = policy:sc_sovereign_absolute_power
+			}
+		}
+		on_activate = {
+			hidden_effect = { remove_global_variable = sc_unification_movement_event_happened }
+			if = {
+				limit = { has_valid_policy_vote_proposer = yes }
+				var:io_law_proposer ?= {
+					custom_tooltip = {
+						text = sc_found_swiss_monarchy_specific_tt
+						set_variable = swi_picked_gov_type_monarchy
+						trigger_event_silently = flavor_swi.100
+					}
+				}
+			}
+			else_if = {
+				limit = { international_organization_has_leader = yes }
+				leader_country ?= {
+					custom_tooltip = {
+						text = sc_found_swiss_monarchy_specific_tt
+						set_variable = swi_picked_gov_type_monarchy
+						trigger_event_silently = flavor_swi.100
+					}
+				}
+			}
+			else = {
+				custom_tooltip = sc_found_swiss_monarchy_tt
+			}
+		}
+		wants_this_policy_bias = {
+			if = {
+				limit = { scope:recipient = { international_organization_has_leader = yes } }
+				#opinion of the leader country
+				add = {
+					desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+					value = "opinion(scope:recipient.leader_country)"
+				}
+				#diplomatic rep of the leader country
+				add = {
+					desc = "IO_LEADER_DIP_REP"
+					value = scope:recipient.leader_country.modifier:diplomatic_reputation
+				}
+			}
+			else = {
+				add = {
+					desc = "VOTE_BASE_VALUE"
+					value = 10
+				}
+				#our own dip rep in hope we get it
+				add = {
+					desc = "game_concept_diplomatic_reputation"
+					value = modifier:diplomatic_reputation
+				}
+				add = io_members_and_potential_members_opinion_value
+			}
+			add = {
+				desc = "BIAS_FROM_RULER_TRAITS"
+				value = modifier:bias_for_diplomat_policies
+			}
+		}
+	}
+	sc_found_swiss_theocracy = {
+		allow = {
+			OR = {
+				international_organization_has_leader = yes
+				has_valid_policy_vote_proposer = yes
+			}
+			trigger_if = { 
+				limit = { NOT = { international_organization_has_law = law:sc_representative } }
+				international_organization_has_law = law:sc_representative
+			}
+			trigger_else = {
+				international_organization_has_policy = policy:sc_sovereign_religious_power
+			}
+		}
+		on_activate = {
+			hidden_effect = { remove_global_variable = sc_unification_movement_event_happened }
+			if = {
+				limit = { has_valid_policy_vote_proposer = yes }
+				var:io_law_proposer ?= {
+					custom_tooltip = {
+						text = sc_found_swiss_theocracy_specific_tt
+						set_variable = swi_picked_gov_type_theocracy
+						trigger_event_silently = flavor_swi.100
+					}
+				}
+			}
+			else_if = {
+				limit = { international_organization_has_leader = yes }
+				leader_country ?= {
+					custom_tooltip = {
+						text = sc_found_swiss_theocracy_specific_tt
+						set_variable = swi_picked_gov_type_theocracy
+						trigger_event_silently = flavor_swi.100
+					}
+				}
+			}
+			else = {
+				custom_tooltip = sc_found_swiss_theocracy_tt
+			}
+		}
+		wants_this_policy_bias = {
+			if = {
+				limit = { scope:recipient = { international_organization_has_leader = yes } }
+				#opinion of the leader country
+				add = {
+					desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+					value = "opinion(scope:recipient.leader_country)"
+				}
+				#diplomatic rep of the leader country
+				add = {
+					desc = "IO_LEADER_DIP_REP"
+					value = scope:recipient.leader_country.modifier:diplomatic_reputation
+				}
+			}
+			else = {
+				add = {
+					desc = "VOTE_BASE_VALUE"
+					value = 10
+				}
+				#our own dip rep in hope we get it
+				add = {
+					desc = "game_concept_diplomatic_reputation"
+					value = modifier:diplomatic_reputation
+				}
+				add = io_members_and_potential_members_opinion_value
+			}
+			add = {
+				desc = "BIAS_FROM_RULER_TRAITS"
+				value = modifier:bias_for_diplomat_policies
+			}
+		}
+	}
+}

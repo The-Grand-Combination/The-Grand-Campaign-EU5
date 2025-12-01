@@ -1,0 +1,159 @@
+﻿l_english:
+
+ STATIC_MODIFIER_NAME_arrested_character: "Imprisoned"
+
+ court_flavor_events.1.title: "Liaising Advisor"
+ court_flavor_events.1.desc: "[advisor.GetName] has impressed many in the country with [advisor.GetHerHis] proactivity and capable leadership skills, as well as [advisor.GetHerHis] efforts to fit in in the [ROOT.GetCountry.GetAdjective] court. However, it would seem that [advisor.GetSheHe] has not cut all ties to [advisor.GetHerHis] countrymen in [advisor_liaisons_target_country.GetLongName]. [advisor.GetSheHe|U] has been pushing for better relations with [advisor.GetHerHis] homeland, [advisor_liaisons_target_country.GetLongNameWithNoTooltip], and has offered to leverage [advisor.GetHerHis] contacts in the [advisor_liaisons_target_country.GetAdjectiveWithNoTooltip] court to push the [advisor_liaisons_target_country.GetGovernment.GetRulerTitle] to adopt a more friendly position towards us."
+ court_flavor_events.1.a: "Let's do it."
+ court_flavor_events.1.A.tooltip: "[advisor.GetName] will approach [advisor_liaisons_target_country.GetLongName] to seek better relations."
+ court_flavor_events.1.b: "We have no need for better relations with them."
+
+ court_flavor_events.2.title: "Rapprochement with [from.GetLongNameWithNoTooltip]?"
+ court_flavor_events.2.desc: "[advisor.GetName], a skilled [advisor.GetCulture.GetName] [from.GetGovernment.GetCabinetMemberTitle] who is employed in the [from.GetAdjective] [from.GetGovernment.GetCourtTitle], has approached [advisor.GetHerHis] old associates in our country, with a plan to push for better relations between the [from.GetLongNameWithNoTooltip] and [ROOT.GetCountry.GetLongName]. A [ROOT.GetCountry.GetGovernment.GetCabinetMemberTitle] has approached [ROOT.GetCountry.GetGovernment.GetRuler.GetName] with the [from.GetAdjectiveWithNoTooltip] message, which speaks of their desire for friendship between our peoples."
+ court_flavor_events.2.a: "Better relations could indeed be of benefit to us."
+ opinion_court_events_accept: "Rapprochement"
+ court_flavor_events.2.b: "Better relations are not in our interest."
+ opinion_court_events_rebuke_1: "Rapprochement Rebuffed"
+ court_flavor_events.2.c: "Friendship? Get out of my sight!"
+ opinion_court_events_rebuke: "Rapprochement Rebuffed"
+ 
+ court_flavor_events.3.title: "Rapprochement Successful"
+ court_flavor_events.3.desc: "[advisor.GetName]'s contacts in [advisor_liaisons_target_country.GetLongName] have presented our case to [advisor_liaisons_target_country.GetGovernment.GetRulerTitle] [advisor_liaisons_target_country.GetGovernment.GetRuler.GetName] and have received a favorable response. The [advisor_liaisons_target_country.GetGovernment.GetRulerTitle] says [advisor_liaisons_target_country.GetGovernment.GetRuler.GetSheHe] looks forward to a new era of friendship between our countries."
+ court_flavor_events.3.a: "$common_string_good$"
+ 
+ court_flavor_events.4.title: "Rapprochement Unsuccessful"
+ court_flavor_events.4.desc: "[advisor.GetName]'s contacts do not seem to have been able to gain much traction in the [advisor_liaisons_target_country.GetAdjectiveWithNoTooltip] court. [advisor_liaisons_target_country.GetGovernment.GetRulerTitle] [advisor_liaisons_target_country.GetGovernment.GetRuler.GetName] informed them that [advisor_liaisons_target_country.GetLongName] is not interested in better relations with [ROOT.GetCountry.GetLongName]."
+ court_flavor_events.4.a: "$common_string_this_is_not_good$"
+ 
+ court_flavor_events.5.title: "Rapprochement Forcefully Rebuffed"
+ court_flavor_events.5.desc: "[advisor.GetName]'s contacts were unable to gain traction in the [advisor_liaisons_target_country.GetAdjective] court. Indeed, the response they received was openly hostile. Not only were they unambiguously told that [advisor_liaisons_target_country.GetLongName] is not interested in better relations with [advisor_liaisons_target_country.GetLongName], but [advisor.GetName] has been given to understand that [advisor.GetSheHe] is henceforth not welcome in [advisor_liaisons_target_country.GetLongName]. Amid the anti-[ROOT.GetCountry.GetAdjective] sentiment, [advisor_liaisons_target_country.GetGovernment.GetRulerTitle] [advisor_liaisons_target_country.GetGovernment.GetRuler.GetName] even went so far as to banish several of our advisor's associates from [advisor_liaisons_target_country.GetGovernment.GetRuler.GetHerHis] court."
+ court_flavor_events.5.a: "So be it."
+ 
+ court_flavor_events.10.title: "Allegations of Disloyalty"
+ court_flavor_events.10.desc: "Not everyone is pleased with the plan to entrust [advisor.GetName] with seeking better relations with [advisor_liaisons_target_country.GetLongName]. With dissent mounting in the [ROOT.GetCountry.GetAdjective] court, another [ROOT.GetCountry.GetGovernment.GetCabinetMemberTitle], who has previously maintained a friendly rivalry with [advisor.GetHerHim] for [ROOT.GetCountry.GetGovernment.GetRuler.GetName]'s attention, has come forward with allegations of disloyalty. He claims to have investigated [advisor.GetNameWithNoTooltip]'s activities and found out that they amount to little more than [advisor.GetHerHim] sifting off state secrets to [advisor_liaisons_target_country.GetLongNameWithNoTooltip] under the guise of seeking rapprochement.\n\nFor [advisor.GetHerHis] part, [advisor.GetNameWithNoTooltip] protests that the evidence brought against [advisor.GetHerHim] is a fabrication inspired by his rival's jealousy at [advisor.GetHerHis] success. [advisor.GetSheHe|U] swears [advisor.GetSheHe] is loyal and will deliver positive results if [advisor.GetSheHe] is given our full trust."
+ court_flavor_events.10.a: "[advisor.GetSheHe|U] has our full trust."
+ court_flavor_events.10.A.tt1: "[advisor.GetName] stays loyal."
+ court_flavor_events.10.A.tt2: "[advisor.GetName] betrays our trust."
+ court_flavor_events.10.b: "Best not to risk it. Arrest them!"
+ court_flavor_events.10.B.tt: "[advisor_liaisons_target_country.GetLongName] may protest at this course of action."
+ 
+ court_flavor_events.11.title: "Betrayal"
+ court_flavor_events.11.desc: "[advisor.GetName] has betrayed us! One of this rivals has uncovered irrefutable proof that [advisor.GetSheHe] has revealed a variety of state secrets to [advisor_liaisons_target_country.GetLongName] while pretending to be representing our interests. Unfortunately, [advisor.GetSheHe] fled across the border before we could arrest [advisor.GetHerHim]."
+ court_flavor_events.11.a: "$common_string_this_is_not_good$"
+ 
+ court_flavor_events.12.title: "[from.GetAdjectiveWithNoTooltip] Defector!"
+ court_flavor_events.12.desc: "An individual has come before the [ROOT.GetCountry.GetGovernment.GetRulerTitle], insisting that he must be heard. According to him, he was employed in service to the [from.GetAdjectiveWithNoTooltip] [from.GetGovernment.GetRulerTitle] and has learnt information of vital interest to both us and [from.GetLongName]. Claiming to be [ROOT.GetCountry.GetAdjective] patriot, he now offers us his services along with information, which according to him was expertly gleaned from the innermost circles of the [from.GetAdjectiveWithNoTooltip] court and brought to us at considerable risk to his life."
+ court_flavor_events.12.a: "His services will be remembered - and rewarded."
+ opinion_court_events_annoyed: "Took in Traitor"
+ court_flavor_events.12.b: "We have no need of traitors."
+ opinion_court_events_grateful: "Turned Away Traitor"
+ 
+ court_flavor_events.13.title: "Caught in the Act"
+ court_flavor_events.13.desc: "The [advisor_liaisons_target_country.GetAdjective] ambassador reports that the [advisor_liaisons_target_country.GetAdjective] authorities have arrested the miscreant, [advisor.GetName], as [advisor.GetSheHe] sought to betray our trust and defect to [advisor_liaisons_target_country.GetLongName]. He assures us that our secrets are safe, and that our [ROOT.GetCountry.GetGovernment.GetCabinetMemberTitle] was acting without [advisor_liaisons_target_country.GetAdjective] knowledge or approval."
+ court_flavor_events.13.a: "Our gratitude shall be eternal."
+ 
+ court_flavor_events.15.title: "Imprisoned Countryman in [from.GetLongNameWithNoTooltip]"
+ court_flavor_events.15.desc: "It has come to our attention that [advisor.GetName], one of our countrymen who had been employed in the [from.GetAdjective] court, is being held in custody for allegedly planning to leak state secrets to us. Although these allegations appear to be true, an [ROOT.GetCountry.GetGovernment.GetCabinetMemberTitle] has taken up their case and is petitioning the [ROOT.GetCountry.GetGovernment.GetRulerTitle]: 'Why should a loyal subject be prisoner in foreign halls?' [ROOT.GetCountry.GetGovernment.GetCabinetMemberTitle] asks. 'We must protest this action vigorously and demand their restitution to us.'"
+ court_flavor_events.15.a: "We cannot abandon them."
+ opinion_court_events_interfered: "Interfered in Our Affairs"
+ court_flavor_events.15.b: "We will not interfere."
+ 
+ court_flavor_events.16.title: "[advisor_liaisons_target_country.GetAdjectiveWithNoTooltip] Demands"
+ court_flavor_events.16.desc: "The [advisor_liaisons_target_country.GetAdjective] [advisor_liaisons_target_country.GetGovernment.GetRulerTitle] has sent us an angry missive demanding an explanation for having arrested the traitor: 'We have heard that you are holding one of our countrymen prisoner for allegedly betraying your interests at our behest. We can assure you that this is not the case. We demand that you release [advisor.GetHerHim] immediately!'"
+ court_flavor_events.16.a: "Fine. So be it."
+ opinion_court_events_released_compatriot: "Released Compatriot"
+ court_flavor_events.16.b: "We shall not act in defiance of justice."
+ opinion_court_events_held_compatriot: "Held Compatriot Prisoner"
+ 
+ court_flavor_events.17.title: "The [from.GetAdjective] Response"
+ court_flavor_events.17.desc: "The [from.GetAdjectiveWithNoTooltip] [from.GetGovernment.GetRulerTitle] has responded to our demands: 'As a show of goodwill, in spite of considerable incriminating evidence against their person, we have released [advisor.GetName]. We hope that you will look favorably on us for this act.'"
+ court_flavor_events.17.a: "It was only just."
+ 
+ court_flavor_events.18.title: "The [from.GetAdjective] Response"
+ court_flavor_events.18.desc: "The [from.GetAdjectiveWithNoTooltip] [from.GetGovernment.GetRulerTitle] has responded to our demands: 'We do not release those guilty of treason. [advisor.GetName] shall remain in custody.'"
+ court_flavor_events.18.a: "You will regret this."
+ 
+ court_flavor_events.20.title: "Dubious Spending Practices"
+ court_flavor_events.20.desc: "[advisor.GetName]'s spending habits have raised some eyebrows. [advisor.GetSheHe|U] has been spending large amounts of money - far larger than one in [advisor.GetHerHis] position should have access to - distributing gifts to the local [advisor.GetEstateType.GetName] in [advisor.GetHerHis] home region and improving the local infrastructure. An investigation has revealed the facts: Rather than serving the [ROOT.GetCountry.GetGovernment.GetRulerTitle] to the best of [advisor.GetHerHis] abilities, [advisor.GetNameWithNoTooltip] has been funneling state funds to [corrupt_advisor_location.GetName] in order to boost [advisor.GetHerHis] popularity there. While this has been a boon to the local economy, such practices could prove damaging to the state as a whole if tolerated."
+ court_flavor_events.20.a: "Turn a blind eye."
+ court_flavor_events.20.b: "Arrest [advisor.GetHerHim]!"
+ 
+ court_flavor_events.21.title: "A Departure of Conscience"
+ court_flavor_events.21.desc: "A note from [advisor.GetName], has been found among the [ROOT.GetCountry.GetGovernment.GetRulerTitle]'s papers.\n\n#F My [ROOT.GetCountry.GetGovernment.GetRulerTitle],\nI have always served you and [ROOT.GetCountry.GetLongName] to the best of my ability. However, it is with a heavy heart that I must announce my resignation as your [ROOT.GetCountry.GetGovernment.GetCabinetMemberTitle]. The declaration of war on [religious_enemy_country.GetLongName] has crossed a line - I cannot remain silent in the face of your crimes against my religious brethren any longer.\n\nYours sincerely,\n[advisor.GetNameWithNoTooltip]#!\n\n\nAttempts to locate [advisor.GetHerHim] have so far proven unsuccessful. It appears that [advisor.GetSheHe] has fled the country."
+ court_flavor_events.21.a: "$common_string_this_is_not_good$"
+ 
+ court_flavor_events.22.title: "Foreign Wisdom"
+ court_flavor_events.22.desc: "While the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] is somewhat perturbed at the idea of a foreigner working for their [ROOT.GetCountry.GetGovernment.GetRulerTitle], our [advisor.GetCulture.GetName] [ROOT.GetCountry.GetGovernment.GetCabinetMemberTitle], [advisor.GetName], has been widely praised for bringing fresh ideas and practices to the court. It seems that we can still learn a thing or two from foreign learning!"
+ court_flavor_events.22.a: "$common_string_good$"
+ 
+ court_flavor_events.25.title: "Blood is Thicker than Water?"
+ court_flavor_events.25.desc: "The current war with [advisor_enemy_country.GetLongName] has triggered a round of intrigues in the [ROOT.GetCountry.GetAdjective] court. On the one hand, [advisor.GetName], our [advisor.GetCulture.GetName] [ROOT.GetCountry.GetGovernment.GetCabinetMemberTitle], has offered to draw information from [advisor.GetHerHis] network of contacts in [advisor_enemy_country.GetLongNameWithNoTooltip] - a considerable network, [advisor.GetSheHe] claims, including several contacts close to the [advisor_enemy_country.GetGovernment.GetRulerTitle] - to aid the war effort.\n\nOn the other hand, [advisor.GetHerHis] political opponents have raised doubts about [advisor.GetHerHis] loyalty. They argue that, in spite of [advisor.GetHerHis] previously exemplary service, we simply cannot trust a [advisor.GetCulture.GetNameWithNoTooltip] to participate in deliberations of national importance at this time. They therefore demand that [advisor.GetSheHe] be banished from the court."
+ court_flavor_events.25.a: "They are right - banish [advisor.GetHerHim]!"
+ court_flavor_events.25.b: "Keep [advisor.GetHerHim] - [advisor.GetHerHis] information will be useful."
+ 
+ court_flavor_events.26.title: "Reports on the [advisor_enemy_country.GetAdjectiveWithNoTooltip] War Plans"
+ court_flavor_events.26.desc: "Despite questions surrounding [advisor.GetHerHis] loyalty, [advisor.GetName] appears to have been true to [advisor.GetHerHis] word. The first reports from [advisor.GetHerHis] network of contacts have come in, providing us with considerable information regarding the [advisor_enemy_country.GetAdjective] war plans."
+ court_flavor_events.26.a: "$common_string_good$"
+ 
+ court_flavor_events.27.title: "[from.GetAdjectiveWithNoTooltip] Defector!"
+ court_flavor_events.27.desc: "An individual has come before the [ROOT.GetCountry.GetGovernment.GetRulerTitle], insisting that he must be heard. He claims to have been employed in service to the [from.GetAdjectiveWithNoTooltip] [from.GetGovernment.GetRulerTitle] and has learnt details of the [from.GetAdjective] war plans against [ROOT.GetCountry.GetLongName], his homeland. As a self-professed [ROOT.GetCountry.GetAdjectiveWithNoTooltip] patriot, he now offers us his services along this information, which according to him was expertly gleaned from the innermost circles of the [from.GetAdjectiveWithNoTooltip] court and brought to us at considerable risk to his life."
+ court_flavor_events.27.a: "His services will be remembered - and rewarded."
+
+ court_flavor_events.28.title: "Betrayal"
+ court_flavor_events.28.desc: "[advisor.GetName] has betrayed us! Despite the watchful eyes of [advisor.GetHerHis] enemies, [advisor.GetSheHe] was able to slip across the border with copies of important documents pertaining to our war plans!"
+ court_flavor_events.28.a: "$common_string_this_is_not_good$"
+
+ court_flavor_events.30.title: "A Change in Policy?"
+ court_flavor_events.30.desc: "[advisor.GetName] has earned many friends in the [ROOT.GetCountry.GetAdjective] court thanks to [advisor.GetHerHis] dedicated service as the [ROOT.GetCountry.GetGovernment.GetRulerTitle]'s [ROOT.GetCountry.GetGovernment.GetCabinetMemberTitle]. However, it seems that the reverse is equally the case among [advisor.GetHerHis] countrymen in the service of the [advisor_antiliaisons_target_country.GetAdjective] [advisor_antiliaisons_target_country.GetGovernment.GetGovernmentType.GetName]: Envious of [advisor.GetHerHis] position, they reproach [advisor.GetHerHim] for taking up employment among [advisor.GetHerHis] people's enemies and have begun spreading rumors casting doubt on [advisor.GetHerHis] trustworthiness\nWorried about [advisor.GetHerHis] standing in the [ROOT.GetCountry.GetAdjectiveWithNoTooltip] court, [advisor.GetNameWithNoTooltip] has become a strident opponent of the [advisor_antiliaisons_target_country.GetAdjectiveWithNoTooltip] [advisor_antiliaisons_target_country.GetGovernment.GetRulerTitle]. [advisor.GetSheHe|U] made common cause with several like-minded individuals to call for a harsher stance against [advisor_antiliaisons_target_country.GetLongNameWithNoTooltip]."
+ court_flavor_events.30.a: "[advisor.GetSheHe|U] is right - a change in policy is called for."
+ advisor_antiliaisons: "Harsh Stance"
+ advisor_spurious_accusations: "Spurious Accusations"
+ court_flavor_events.30.b: "Worse relations would not be in our interest."
+ 
+ court_flavor_events.31.title: "Meddlesome Advisor"
+ court_flavor_events.31.desc: "Our eyes and ears in [from.GetLongName] report that the [from.GetAdjectiveWithNoTooltip] [from.GetGovernment.GetRulerTitle] has recently taken a harsher stand towards [ROOT.GetCountry.GetLongName]. It appears that this change in policy was brought about largely by [advisor.GetName], a [from.GetAdjectiveWithNoTooltip] [from.GetGovernment.GetCabinetMemberTitle] who, worried about [advisor.GetHerHis] standing in the [from.GetAdjectiveWithNoTooltip] court, has been making a variety of accusations against us and agitating for a strong response to our supposed aggressions."
+ court_flavor_events.31.a: "Why the little...!"
+ 
+ court_flavor_events.32.title: "Meddlesome Advisor"
+ court_flavor_events.32.desc: "In spite of our lack of support for [advisor.GetHerHis] project to sow discord between us and [advisor_antiliaisons_target_country.GetLongName], [advisor.GetName] has not desisted in [advisor.GetHerHis] efforts. It seems that [advisor.GetSheHe] has attracted a large following of influential individuals that support [advisor.GetHerHis] position and are urgently calling for a change in policy. They are spreading their message, which appears to resonate strongly among the common folk, by every means in their power. Going against their will could prove risky."
+ court_flavor_events.32.a: "Maybe [advisor.GetSheHe] is right after all."
+ court_flavor_events.32.b: "No means no."
+ 
+ court_flavor_events.35.title: "[exile_country.GetAdjectiveWithNoTooltip] Exile"
+ court_flavor_events.35.desc: "[advisor.GetName], a political exile from [exile_country.GetLongName], has appeared at our court. He is offering his services to the [ROOT.GetCountry.GetAdjective] [ROOT.GetCountry.GetGovernment.GetGovernmentType.GetNameWithNoTooltip] in return for protection from the [exile_country.GetAdjectiveWithNoTooltip] [exile_country.GetGovernment.GetRulerTitle]. Should we take him in?"
+ court_flavor_events.35.a: "His services will be useful."
+ opinion_took_in_exiles: "Took in Exiles"
+ court_flavor_events.35.b: "We have no room for him."
+ opinion_turned_away_exiles: "Turned away Exiles"
+ 
+ court_flavor_events.36.title: "[exile_country.GetAdjectiveWithNoTooltip] Exiles"
+ court_flavor_events.36.desc: "[advisor.GetName] is thankful for being granted asylum in the [ROOT.GetCountry.GetAdjective] court. However, [advisor.GetSheHe] has recently drawn attention to the fact that there are many other [exile_country.GetAdjective] notables in [advisor.GetHerHis] position - men of great wisdom and influence, [advisor.GetSheHe] insists. It could be useful to allow them to join our court, should we wish to step up our opposition to [exile_country.GetAdjectiveWithNoTooltip] ambitions."
+ court_flavor_events.36.a: "We will take them in."
+ court_flavor_events.36.b: "We have no room for more exiles."
+ 
+ court_flavor_events.37.title: "Exiles in [from.GetLongNameWithNoTooltip]"
+ court_flavor_events.37.desc: "Our eyes and ears in [from.GetLongName] report that they have taken in many of our [ROOT.GetCountry.GetGovernment.GetRulerTitle]'s political enemies who had previously been exiled from the [ROOT.GetCountry.GetAdjective] court or chose to seek opportunities elsewhere. They are now pushing for strong action against the current [ROOT.GetCountry.GetAdjectiveWithNoTooltip] "regime" and are providing active assistance to the [from.GetAdjectiveWithNoTooltip] [from.GetGovernment.GetRulerTitle] towards the achievement of that aim."
+ court_flavor_events.37.a: "How dare they!"
+ opinion_hosting_exiles: "Hosting Exiles"
+ 
+ 
+ court_flavor_events.39.title: "Heresy in [heathen_advisor_country.GetLongNameWithNoTooltip]"
+ court_flavor_events.39.desc: "It has come to our attention that the [heathen_advisor_country.GetAdjective] [heathen_advisor_country.GetGovernment.GetRulerTitle] is harboring a heretic in [heathen_advisor_country.GetGovernment.GetRuler.GetHerHis] court. [heathen_advisor_country.GetGovernment.GetRuler.GetHerHis|U] [heathen_advisor_country.GetGovernment.GetCabinetMemberTitle], [advisor.GetName], has turned from the teachings of the Pope and is openly professing adherence to the [advisor.GetReligion.GetName] faith - in the process spreading vicious lies against His Holiness."
+ court_flavor_events.39.a: "Intolerable! We must lodge a protest."
+ opinion_interfering_pope: "Interfering Pope"
+ court_flavor_events.39.b: "We shall turn a blind eye."
+ 
+ court_flavor_events.40.title: "The Papal Demands"
+ court_flavor_events.40.desc: "A [GetCountry('PAP').GetAdjective] delegation has arrived. With a grave expression on their faces, they inform us that it has come to the attention of [target_pope.GetHisHerFormal] [target_pope.GetName] that we are harboring a heretic in our [ROOT.GetCountry.GetGovernment.GetFlavorRank]. They demand that we hand [advisor.GetHerHim] over to the inquisition. Failing this, [target_pope.GetShortNameWithNoTooltip] shall consider us to have abandoned the True Way and will be forced to take all necessary measures against us."
+ court_flavor_events.40.a: "Hand [advisor.GetHerHim] over."
+ opinion_bowed_to_papal_demand_advisor: "Bowed to Papal Demands"
+ court_flavor_events.40.b: "We will not bow to Papal pressure."
+ 
+ opinion_rejected_papal_demand_advisor: "Hosting a Heretic"
+ court_flavor_events.41.title: "[heathen_advisor_country.GetLongNameWithNoTooltip] Complies"
+ court_flavor_events.41.desc: "The [heathen_advisor_country.GetAdjective] [heathen_advisor_country.GetGovernment.GetRulerTitle] apologises for having hired the heretic, who shall be brought to us in chains, their lies silenced forever more!"
+ court_flavor_events.41.a: "$common_string_good$"
+ 
+ court_flavor_events.42.title: "[heathen_advisor_country.GetLongNameWithNoTooltip] Defies our Authority"
+ court_flavor_events.42.desc: "The [heathen_advisor_country.GetAdjective] [heathen_advisor_country.GetGovernment.GetRulerTitle] expresses anger at our request, which [heathen_advisor_country.GetGovernment.GetRuler.GetSheHe] has the temerity to claim oversteps our authority - as if the Pope weren't the arbiter of all things spiritual in the Christian world. Evil truly has taken hold in [heathen_advisor_country.GetLongName]."
+ court_flavor_events.42.a: "They have been led astray."

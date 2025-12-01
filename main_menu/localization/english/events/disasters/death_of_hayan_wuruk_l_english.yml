@@ -1,0 +1,34 @@
+﻿l_english:
+ death_of_hayan_wuruk.1.title: "Death of [target_hayan.GetNameWithNoTooltip]"
+ death_of_hayan_wuruk.1.desc: "One of the greatest rulers in the history of the [target_country.GetLongName], [target_hayan.GetName] has passed away. Whispers in the dark and amongst our subjects have given way to demands of autonomy at the face of our waning authority. At such a pivotal moment, we must exert strength and keep our neighbors, as well as our people, in line!"
+ death_of_hayan_wuruk.1.a: "We have lost a great leader..."
+ death_of_hayan_wuruk.1.historical_info: "Hayam Wuruk, ruler of the Majapahit Empire from 1350 to 1389, led the empire to its height of power, expanding its influence across Southeast Asia with the help of his prime minister, Gajah Mada. His death in 1389 led to a power struggle over succession. This conflict culminated in the Paregreg War, weakening the empire from within. The internal strife, along with the rise of Islamic sultanates, gradually led to the decline of Majapahit in the following centuries."
+
+ death_of_hayan_wuruk.2.title: "Autonomy Demands"
+ death_of_hayan_wuruk.2.desc: "Reports have arrived from our subjects in [target_location.GetName] about independence movements brewing against our authority. Having been informed about the passing of [target_hayan.GetName], it appears aspirations for autonomy have been relit. Regardless of the validity of these reports, and the extent at which the [target_subject.GetAdjective] people are ready to take up arms against us, we must take steps to maintain order!"
+ death_of_hayan_wuruk.2.a: "Demand they profess their allegiance."
+ death_of_hayan_wuruk.2.b: "We cannot contest them, grant them some autonomy."
+ 
+ death_of_hayan_wuruk.3.title: "[target_overlord.GetNameWithNoTooltip] Demands our Allegiance"
+ death_of_hayan_wuruk.3.desc: "Not long since the passing of the great [target_hayan.GetName], the so-called [target_overlord.GetLongName] is slowly descending into madness and chaos. In the midst of their turbulent succession, they have come to demand from us a show of allegiance. This is an aggressive move, clearly an insulting display of power at our expense from a decayed [target_overlord.GetGovernment.GetAdjective] house that desperately clenches onto power."
+ death_of_hayan_wuruk.3.a: "We will conform."
+ death_of_hayan_wuruk.3.b: "It is time for them to follow [target_hayan.GetShortNameWithNoTooltip] to the grave!"
+
+ death_of_hayan_wuruk.4.title: "[target_subject.GetNameWithNoTooltip] Disputes our Authority"
+ death_of_hayan_wuruk.4.desc: "In an unprecedented move, the people of [target_subject.GetName] have spat at our face, refusing our demands! Despite our relationship and benevolence as their overlords, the death of our late ruler [target_hayan.GetName] has sowed seeds of independence and desires of liberty against us!"
+ death_of_hayan_wuruk.4.a: "They will pay for this."
+ maj_scope_subject_country_will_fight_for_their_freedom_tt: "[target_subject.GetNameWithNoTooltip] will fight for their independence"
+
+ death_of_hayan_wuruk.5.title: "[target_subject.GetNameWithNoTooltip] Shows their Allegiance"
+ death_of_hayan_wuruk.5.desc: "In a masterful diplomatic move, our ambassadors in [target_location.GetName] have successfully forced [target_subject.GetName] into bending the knee, and recognizing our authority over their affairs!"
+ death_of_hayan_wuruk.5.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+
+ death_of_hayan_wuruk.6.title: "Spread of [ShowReligionGroupNameWithNoTooltip('muslim')] in [GetCountry('MAJ').GetNameWithNoTooltip]"
+ death_of_hayan_wuruk.6.desc: "Faraway merchants and the waning of our central authority have led to our people in [target_province.GetName] being converted to [ShowReligionName('sunni')]. The spread of different teachings has never been an issue. However, the cultivation of faiths that do not coexist with ours, at a time of turbulence and instability, is a dangerous precedent."
+ death_of_hayan_wuruk.6.a: "An interesting development."
+
+ death_of_hayan_wuruk.7.title: "The [GetCountry('MAJ').GetLongNameWithNoTooltip] Crisis Ends"
+ death_of_hayan_wuruk.7.desc.a: "It has been decades since the passing of our great leader, [target_hayan.GetName]. Despite our best efforts to mitigate the crisis and project strength externally, we have been unable to restore the rule of law. What this means for our people, only time will tell..."
+ death_of_hayan_wuruk.7.desc.b: "Despite the attempts of external and internal destabilizing factors, we have managed to restore order after the passing of the great [target_hayan.GetName]. Instability and rumors of revolt are but memories of the past, as we look onwards to a new age."
+ death_of_hayan_wuruk.7.a: "Alas, this may be the end."
+ death_of_hayan_wuruk.7.b: "Was there ever any doubt?"

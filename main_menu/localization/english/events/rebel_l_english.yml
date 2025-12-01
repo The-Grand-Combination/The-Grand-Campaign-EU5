@@ -1,0 +1,7 @@
+﻿l_english:
+ rebel.1.title: "Cola di Rienzo"
+ rebel.1.desc: "The once great city of [target_location.GetName] lays decadent and disheveled. Years of mismanagement by the local nobles have transformed it into a terrible shadow of what it once was, beggars fill every corner and alleys are full of robbers.\n\nIt is no surprise then that eventually, a rebellion had to rise, in this case, the rebels are led by a man called [target_character.GetName]. He is well known as a notary whose brother was killed in an incident with a noble of the city and who was sent to speak with the [GetCountry('PAP').GetGovernment.GetRulerTitle] and impressed him enough to get assigned to an official position at his court for a short period.\n\nOur sources say that this man has gathered his followers and rallied the people of [target_location.GetNameWithNoTooltip]. Together they have taken the Capitol without shedding a drop of blood due to the cowardice of the ruling nobles, who just fled at the sight of the mob and surrendered the city."
+ rebel.1.a: "Allow him to keep the city from the nobles."
+ rebel.1.b: "Give him extraordinary powers and the leadership of the city."
+ rebel.1.c: "We will not allow such anarchy, retake the city!"
+ cola_rebels: "Cola di Rienzo Supporters"

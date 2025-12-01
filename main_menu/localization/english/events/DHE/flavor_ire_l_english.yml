@@ -1,0 +1,32 @@
+﻿l_english:
+ ireland.10.title: "Scathing Satire"
+ ireland.10.desc: "Bardic poetry is traditionally considered to be a reliable chronicle of [bard_country.GetCulture.GetName] history; as such it can be exploited for political gain.\n\nOne of the bards in the employ of [bard_ruler.GetName] has written a particularly damning satire of [neighbor_ruler.GetName], ruler of [neighbor_ruler.GetCountry.GetName].\n\nAs well as some humorous and well-aimed insults, it also brings [neighbor_ruler.GetHisHer] bloodline into question."
+ ireland.10.a: "This will ruin [neighbor_ruler.GetShortNameWithNoTooltip]'s reputation!"
+ ireland.10.b: "Sing of [bard_ruler.GetShortNameWithNoTooltip]'s glory instead."
+ #
+ ireland.11.title: "Scathing Satire"
+ ireland.11.desc: "Bardic poetry is traditionally considered to be a reliable chronicle of [bard_country.GetCulture.GetName] history; as such it can be exploited for political gain.\n\nOne of the bards in the employ of [bard_ruler.GetName], ruler of [bard_country.GetName], has written a particularly damning satire of our ruler, [neighbor_ruler.GetName].\n\nAs well as some humorous and well-aimed insults, it also brings [neighbor_ruler.GetHisHer] bloodline into question."
+ ireland.11.a: "[neighbor_ruler.GetShortNameWithNoTooltip]'s reputation is ruined!"
+ opinion_scathing_bardic_satire: "Scathing Bardic Satire"
+ #
+ ireland.20.title: "[ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] Demand Reform"
+ ireland.20.desc: "The [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] has been playing second-fiddle to the Bardic caste in our society; coronations and marriages are officiated by learned poets, and genealogies are recorded by traditional historians in archaic [ROOT.GetCountry.GetCourtLanguage.GetName].\n\nThe priestly class – used to being the pre-eminent societal figures in other countries – are now publicly complaining (in [ROOT.GetCountry.GetReligion.GetLanguage.GetName], of course) that the old ways are outmoded and un-[ROOT.GetCountry.GetReligion.GetGroup.GetName]."
+ ireland.20.a: "Dismantle the Bardic class entirely."
+ ireland.20.b: "Pay the Clergy off."
+ ireland.20.c: "This way of life predates Catholicism."
+ # 
+ ireland.30.title: "[ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] Abolishes Brehon Law"
+ ireland.30.desc: "For too long have the traditional Celtic ways plagued [ROOT.GetCountry.GetName]. Since the priestly class have been in control of the regency, they have made it their primary objective to remove the Bards and Brehons from public life."
+ ireland.30.a: "We trust the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] to modernize [ROOT.GetCountry.GetNameWithNoTooltip]."
+ ireland.30.b: "The [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] should stick to praying."
+ # 
+ ireland.40.title: "More [native_culture.GetNameWithNoTooltip] than the [native_culture.GetNameWithNoTooltip] Themselves"
+ ireland.40.desc: "Generations of living amongst the [native_culture.GetName] has led to a gradual but definite change in our way of life. The [judgmental_culture.GetName] no longer think of us as [judgmental_culture.GetNameWithNoTooltip], while the [native_culture.GetNameWithNoTooltip] no longer think of us as newcomers…"
+ ireland.40.a: "We have become more [native_culture.GetNameWithNoTooltip] than the [native_culture.GetNameWithNoTooltip] themselves!"
+ ireland.40.b: "We must maintain our heritage in this wild land!"
+ opinion_gone_native: "Gone Native"
+ #
+ ireland.50.title: "The Gallowglass"
+ ireland.50.desc: "A flotilla of [origin_pop.GetCulture.GetName] galleys led by Captain [captain.GetName] has sailed into the port of [target_location.GetName].\n\n[captain.GetShortNameWithNoTooltip] claims that his clan has been dispossessed of their homelands in [origin_location.GetName], and that his warriors stand ready to serve our [ROOT.GetCountry.GetLongName] as loyal subjects if we allow them to settle in [target_location.GetName]."
+ ireland.50.a: "Let them stay!"
+ ireland.50.b: "We'll have no trouble here!"

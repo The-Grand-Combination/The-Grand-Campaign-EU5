@@ -1,0 +1,109 @@
+﻿l_english:
+ industrialization_events.1.title: "The Atmospheric Engine"
+ industrialization_events.1.desc: "Although the use of steam as power for a moving engine is known since ancient antiquity, recent developments are harnessing it for more practical applications. Building on older experimental air pumps, [target_scientist.GetName] has created in [invention_province.GetName] a new type of engine that uses steam pressure to move a cylinder and pump water out of wet mines. The atmospheric engine now enables mining where it was previously not possible and its adoption will greatly increase the efficiency of mines in our country."
+ industrialization_events.1.a: "We can smell the airs of progress."
+
+ industrialization_events.2.title: "Steam Powered Blast"
+ industrialization_events.2.desc: "Although the [ShowAdvanceName('coke_blast_furnace')] was a great improvement in the metallurgy process, the impurities of coke make it cause usually more problems than benefits. Recently, some studies have been made in [invention_province.GetName] to solve these issues, and the use of steam engines to blast air into the furnace has showed great potential. Although many of our brightest minds agree that there is still much room for improvements, these new techniques have already greatly improved our metallurgy processes."
+ industrialization_events.2.a: "It is a blast into the future."
+
+ industrialization_events.3.title: "Improved Steam Engine"
+ industrialization_events.3.desc: "Improving upon the design for earlier atmospheric engines, the entrepreneur and inventor [target_scientist.GetName] has managed to create in [invention_province.GetName] a new type of machine that makes use of a separate condenser and a rotary motion instead of the oscillating one of previous engines. Operating at just above the atmospheric pressure, the [target_scientist.GetLastNameWithNoTooltip] Steam Engine promises to be twice as productive as earlier models and will prove invaluable as a means to drive machinery in all types of industrial enterprises."
+ industrialization_events.3.a: "The perfect engine to propel us forward."
+
+ industrialization_events.4.title: "Self-Sharpening Plows"
+ industrialization_events.4.desc: "The [ShowAdvanceName('rotherham_plough')] improved a key tool for agriculture that had remained basically unchanged since the times of the Roman Empire. Now, plows can be lighter and cause less burden on the animals pulling them. This new model has not only spread all over our country, but has also sparked the interest for finding ways of improving tools, no matter how established their designs are.\n\nAlready, improvements have been made in [invention_province.GetName], where through the process of putting into contact molten and cool metal, a process called chilled casting, plows become so sharp that they are called to be self-sharpening."
+ industrialization_events.4.a: "This will cleave new paths for our economy."
+
+ industrialization_events.5.title: "The Flying Shuttle"
+ industrialization_events.5.desc: "[target_scientist.GetName], a local inventor working in [invention_province.GetName], has patented a new design for a 'wheeled' shuttle that [target_scientist.GetSheHe] promises will revolutionize weaving by eliminating the need for a second person to catch the shuttle as it passes through the warp threads. Although productivity is still limited by the rate at which thread can be spun, this new model of shuttle is quickly spreading to weavers all over the country, already improving a major bottleneck in textile production"
+ industrialization_events.5.a: "Productivity will rise to the sky."
+
+ industrialization_events.6.title: "Spinning Jenny"
+ industrialization_events.6.desc: "A major limitation for weaving productivity has long been the rate at which thread can be spun. Even before the introduction of the flying shuttle, one weaver required four spinners to service the loom. To overcome this hurdle, [target_scientist.GetName], has devised in [invention_province.GetName] a machine allowing one worker to do the work of many spinners. Together with the flying shuttle, this machine promises to greatly improve the efficiency of weaving in the near future."
+ industrialization_events.6.a: "The threads of our fate look golden."
+
+ industrialization_events.7.title: "The Flow of Goods"
+ industrialization_events.7.desc: "Recent advances and inventions have allowed us to greatly improve our productivity. However, no matter how much people produce, it will not return into actual benefits if goods are not allowed to flow sufficiently due to inadequate infrastructure. In [industrial_province.GetName], some people have already begun to take initiative to maintain and expand themselves the road network, and they have even started to introduce toll roads to pay for such improvements and maintenance. There are also far gone plans of building potential transportation canals and specialized roads to further ease the local flow of goods."
+ industrialization_events.7.a: "A worthy goal, they will have our patronage!"
+ industrialization_events.7.tt_common: "Every [location|e] in [target_area.GetName] gets [ShowModifier('improved_flow_of_goods')]"
+ industrialization_events.7.a.tt: "$industrialization_events.7.tt_common$ for #Y 20#! years"
+ industrialization_events.7.b: "Great initiative but nothing for the state to engage in."
+ industrialization_events.7.b.tt: "$industrialization_events.7.tt_common$ for #Y 10#! years"
+
+ industrialization_events.8.title: "The Seeds of Greatness"
+ industrialization_events.8.desc: "Taking the lessons of [ShowInstitutionName('industrialization')] to heart, a group of wealthy landowners have begun to work at improving the efficiency of agriculture. Pioneering inventions in how to use machinery for seed distribution, new crops, new forms of land rotation and breeding, the local landowners of [agricultural_province.GetName] have been able to greatly improve the local output of food."
+ industrialization_events.8.a: "Benefits will sprout everywhere."
+ industrialization_events.8.a.tt: "Every [location|e] in [target_area.GetName] gets [ShowModifier('agricultural_revolution')] for #Y 10#! years"
+
+ industrialization_events.9.title: "Economic Development"
+ industrialization_events.9.desc: "By employing recent technological innovations in the field of machinery, local entrepreneurs have plans to greatly improve their output in [industrialization_province.GetName]. As a result, many now wish to travel there from other parts of our country, eager to seek new work in the potential growing sea of opportunities."
+ industrialization_events.9.a: "[industrialization_province.GetNameWithNoTooltip] will be a great home for them."
+ industrialization_events.9.a.tt: "Every [location|e] in [target_area.GetName] gets [ShowModifier('economic_urbanization_modifier')] for #Y 10#! years"
+ industrialization_events.9.b: "Why try to change what already works?"
+
+ industrialization_events.10.title: "Growth of the Textile Industry in [target_location.GetNameWithNoTooltip]"
+ industrialization_events.10.common_start: "Through the use of modern machinery and working methods, the local weaving business of [target_location.GetName]"
+ industrialization_events.10.common_ending: "However, this has also raised some eyebrows, as many fear the increase of low quality products that they believe will be flooding the market."
+ industrialization_events.10.desc: "$industrialization_events.10.common_start$ has grown into a much more large scale business. Where once only simple fabric was exported, there is now a thriving cloth production sector, greatly helping the local economy. $industrialization_events.10.common_ending$"
+ industrialization_events.10.rural.desc: "$industrialization_events.10.common_start$ has been able to improve its previously limited possibilities. Local and familiar workshops are being supplied with the latest inventions even in the most remote of villages, making it possible the establishment of more specialized business enterprises. $industrialization_events.10.common_ending$"
+ industrialization_events.10.a: "Time waits for no man."
+
+ industrialization_events.11.title: "Growth of the [ShowGoodsNameWithNoTooltip('paper')] Industry"
+ industrialization_events.11.desc: "For some time, local [ShowGoodsName('paper')] production has been present in [industrialization_province.GetName]. Using new production techniques, some entrepreneurs have seen the opportunity of this industry and some facilities for the production of [ShowGoodsNameWithNoTooltip('paper')] there are already being established and expanded. Soon, they might even rise to become the main export of [industrialization_province.GetNameWithNoTooltip]!"
+ industrialization_events.11.a: "The written word endures."
+
+ industrialization_events.12.title: "Growth of the [ShowGoodsNameWithNoTooltip('glass')] Industry"
+ industrialization_events.12.desc: "[industrialization_province.GetName] has always had some local production of forest glass, but with the advances in [ShowGoodsName('glass')] production of late, this province has caught the interest of many businessmen. Attempting to ride on the movement of these changing times, many new [ShowGoodsNameWithNoTooltip('glass')] industries are starting to be established in [industrialization_province.GetNameWithNoTooltip]."
+ industrialization_events.12.a: "Their future is crystal clear."
+
+ industrialization_events.13.title: "Industrial Urbanization"
+ industrialization_events.13.desc: "The recent changes in production and industrial techniques have made the economy of [urbanization_province.GetName] to start attracting people from the entire [ROOT.GetCountry.GetFlavorRank] in search of potential work opportunities. A steady trickle of people are leaving the countryside to seek out new work opportunities and a new life in the [urbanization_province.GetRank.GetName] of [urbanization_province.GetNameWithNoTooltip]."
+ industrialization_events.13.a: "Come one, come all!"
+ industrialization_events.13.b: "[urbanization_province.GetNameWithNoTooltip] already has enough people."
+
+ industrialization_events.14.title: "The Metalworks of [iron_province.GetNameWithNoTooltip]"
+ industrialization_events.14.desc: "The introduction of modern industrial machinery such as coke, steam powered railways, and pumps have contributed greatly to the growth of the local economy in [iron_province.GetName]. The local Metalworks are now among the finer in the region, and many people want to move there to bask in the prosperity of the industry."
+ industrialization_events.14.a: "This is the dawn of a new era."
+ industrialization_events.14.b: "Industry is fine, but we need people in other places too."
+
+ industrialization_events.15.title: "Textile Mills of [textile_province.GetNameWithNoTooltip]"
+ industrialization_events.15.desc: "Rising demand for textiles and the adoption of new methods and machinery has allowed the textile sector in [textile_province.GetName] to grow and thrive in the last few years. This has in turn resulted in an economic upturn for the entire region, and many are now willing to move from the countryside to the new factories."
+ industrialization_events.15.a: "These looms will clothe the nation."
+ industrialization_events.15.b: "They are weaving too nice of a picture."
+
+ industrialization_events.16.title: "Shipyards of [ship_province.GetNameWithNoTooltip]"
+ industrialization_events.16.desc: "New advances in work organization, as well as technical innovations, has led to rapid growth for the shipyards of [ship_province.GetName]. Ships and naval supplies are now produced more efficiently, and as a result of this economic upswing, the province is attracting more people to work in the local shipyards."
+ industrialization_events.16.a: "[ROOT.GetCountry.GetNameWithNoTooltip] rules the waves."
+ industrialization_events.16.b: "No need to drown the place in people."
+
+ industrialization_events.17.title: "Hostility to New Production Techniques"
+ industrialization_events.17.desc: "The changes in production methods that technological progress has brought have not been welcomed by everyone. Some feel that their livelihood is threatened by the growing mechanization and are causing trouble through protests and sabotage. In [luddite_province.GetName], things are threatening to escalate into a full blown uprising among the artisans."
+ industrialization_events.17.a: "Luddites!"
+ industrialization_events.17.a.tt: "Every [pop|e] loses [ShowNamedValue('pop_satisfaction_severe_penalty')|+=2%] [pop_satisfaction|e]"
+ industrialization_events.17.b: "We will have to negotiate."
+
+ industrialization_events.18.title: "Impoverished Artisans"
+ industrialization_events.18.desc: "New production methods have led to the rise of a promising industry in our country, but this growth has left many old artisan families behind. Many are now poor and have to seek a much less profitable job in the growing industry."
+ industrialization_events.18.a: "Such is the way of things."
+ industrialization_events.18.b: "Let us do what we can to support these people."
+
+ industrialization_events.19.title: "Spread of Disease in [disease_province.GetNameWithNoTooltip]"
+ industrialization_events.19.desc: "The [disease_province.GetRank.GetName] of [disease_province.GetName] has seen immense growth over the last few years and the once so ambitious plan for the [disease_province.GetRank.GetNameWithNoTooltip] has been entirely subverted. Many live in shanty towns with very poor sanitation, which is causing disease to be now spreading rapidly in the [disease_province.GetRank.GetNameWithNoTooltip]."
+ industrialization_events.19.a: "[ROOT.GetCountry.Custom('common_string_we_must_do_something')]"
+ industrialization_events.19.b: "[ROOT.GetCountry.Custom('common_string_nothing_we_can_do')]"
+
+ industrialization_events.20.title: "Mining Accident in [mining_province.GetNameWithNoTooltip]"
+ industrialization_events.20.desc: "New technology has allowed the mines of [mining_province.GetName] to be greatly expanded and they now operate at an efficiency that would have shocked our ancestors. The new machinery is not without its risks, however. An explosion in a local mine has led to a cave-in that trapped many miners as well as causing a major production set back."
+ industrialization_events.20.a: "[ROOT.GetCountry.Custom('common_string_negative')]"
+
+ industrialization_events.21.title: "Fire of [fire_province.GetNameWithNoTooltip]"
+ industrialization_events.21.desc: "A fire that started in a local factory has quickly spread among the cramped houses of [fire_province.GetName] and devastated the [fire_province.GetRank.GetName]. Some see this as yet another problem with the growing urbanization and industrialization of our time."
+ industrialization_events.21.a: "Factory owners must contribute to rebuilding the [fire_province.GetRank.GetNameWithNoTooltip]."
+ industrialization_events.21.a.tt: "Every [location|e] in [target_area.GetName] gets [ShowModifier('fire_compensation')] for #Y 10#! years"
+ industrialization_events.21.b: "We must help these poor people."
+
+ industrialization_events.22.title: "Local Production Crushed"
+ industrialization_events.22.desc: "Our policy of extracting raw materials from our far-away provinces to fuel the industrialization in our homeland has resulted in a crushing economic development in [overseas_production_province.GetName]. Despite a proud history of productivity there, the region has now been reduced to exporting unrefined products, little more than raw material for others to rework."
+ industrialization_events.22.a: "We must support local artisans."
+ industrialization_events.22.b: "This is the way of progress."

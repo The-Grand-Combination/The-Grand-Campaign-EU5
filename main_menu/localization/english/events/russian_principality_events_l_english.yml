@@ -1,0 +1,41 @@
+﻿l_english:
+ 
+ russian_principality_events.2.title: "Agricultural Intensification"
+ russian_principality_events.2.desc: "An unusually prolonged period of peace and stability has allowed the peasants in large Monastic and Boyar estates to begin to adopt more modern farming techniques. Slash-and-burn remains the norm across large parts of our realm but with the spread of crop rotation the population in parts of our realm is growing significantly."
+ russian_principality_events.2.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+ 
+ russian_principality_events.3.title: "Minor Lords"
+ russian_principality_events.3.desc: "With the Tatar Yoke an increasingly distant memory and the expansion of land directly administered by the [ROOT.GetCountry.GetGovernment.GetRulerTitle] it is becoming increasingly clear that we need more minor landholders. Traditionally the landed aristocracy would be the primary candidates to be given this privilege, even for smaller patches of land, but greater internal stability means that we could likely promote men of other qualities to take care of these matters of economy and agriculture."
+ russian_principality_events.3.a: "Let us continue to favor the Boyars."
+ russian_principality_events.3.b: "Let us distribute the land among smaller landholders."
+ 
+ russian_principality_events.4.title: "Land Acquisition"
+ russian_principality_events.4.desc: "The Central power of the [ROOT.GetCountry.GetGovernment.GetGovernmentType.GetName] is growing steadily and with no tribute to send to the Khans of Central Asia, so is our disposable income. An unusually rich harvest has left us with a considerable surplus. We could use this to boost our coffers for a rainy day, but we might also invest it to acquire the lands of minor princes and Monastic Estates."
+ russian_principality_events.4.a: "Land is true wealth."
+ russian_principality_events.4.b: "We need gold for the royal treasury."
+ russian_principality_events.4.c: "We must use this as leverage in state affairs."
+ 
+ russian_principality_events.5.title: "Famine of [famine_province.GetNameWithNoTooltip]"
+ russian_principality_events.5.desc: "A combination of disease and harsh weather has completely ruined the harvest in parts of the [ROOT.GetCountry.GetAdjective] Realm. In times like these many turn to the state or the Church for support, others leave their lands or seek protection from powerful Boyars, Monastic Estates or even join the Cossacks in the wild fields."
+ russian_principality_events.5.a: "We will leave this to the Boyars."
+ STATIC_MODIFIER_NAME_russian_famine: "Famine"
+ russian_principality_events.5.b: "We will let the Church handle this."
+ russian_principality_events.5.c: "The [ROOT.GetCountry.GetGovernment.GetRulerTitle] [ROOT.GetCountry.GetGovernment.GetRuler.GetHerselfHimself] will help them."
+ 
+
+ 
+ russian_principality_events.7.title: "St George's Day"
+ russian_principality_events.7.desc: "Traditionally peasants have had the right to move from one area to another under controlled forms on the day of St George. This ensures some degree of mobility while also safeguarding that year's crop.\nLately, however, many landlords complain that peasants are abusing this privilege to seek a better life. The landlords have today sought an audience, imploring that we revoke this right for their peasants. Otherwise they claim they will not be able to render the military service the state requires."
+ russian_principality_events.7.a: "Restrict their Movement."
+ russian_principality_events.7.b: "We will not exempt these lands from our laws."
+
+ russian_principality_events.8.title: "Appanage Holder Dies"
+ russian_principality_events.8.desc: "A Prince of [ROOT.GetCountry.GetName] has died and [ROOT.GetCountry.GetGovernment.GetRuler.GetName] mourns the loss of a brother. As the current [ROOT.GetCountry.GetGovernment.GetRulerTitle] we should now redistribute the lands the deceased held as appanage. Our remaining brothers will no doubt expect to get a part of the land but we could try to use this opportunity to increase the size of our own lands..."
+ russian_principality_events.8.a: "Let us confiscate the land for ourselves."
+ russian_principality_events.8.b: "We must assure ourselves of the support of our brothers."
+ 
+ russian_principality_events.9.title: "Tatar Feudatories"
+ russian_principality_events.9.desc: "With the acquisition of Tatar lands we have become the overlord of the peoples to whom we were subjected for such a long time. While this is a victory for the [ROOT.GetCountry.GetAdjective] people it is also an opportunity.\nAs we have been so painfully aware for centuries the Tatars are excellent horsemen and know the steppes better than any other. If we should allow the local leaders to keep ruling their people, but in our name, they may well be open to the idea of serving in our armies."
+ russian_principality_events.9.a: "An excellent idea!"
+ russian_principality_events.9.b: "We cannot allow the Muslims such rights within our borders."
+ 

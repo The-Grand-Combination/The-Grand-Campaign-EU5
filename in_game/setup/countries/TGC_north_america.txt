@@ -1,0 +1,249 @@
+# USA + friends
+USA = {
+	color = map_USA
+	color2 = rgb { 16 41 202 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = english
+	religion_definition = catholic
+
+	description_category = administrative
+	difficulty = 3
+}
+
+CSA = {
+	color = map_CSA
+	color2 = rgb { 16 41 202 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = english
+	religion_definition = catholic
+
+	description_category = administrative
+	difficulty = 3
+}
+
+UOR = { # Oregon (state)
+	color = map_OGC_UOR
+	color2 = rgb { 16 41 202 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = english
+	religion_definition = catholic
+
+	description_category = administrative
+	difficulty = 3
+}
+
+TEX = {
+	color = map_TEX
+	color2 = rgb { 16 41 202 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = english
+	religion_definition = catholic
+
+	description_category = administrative
+	difficulty = 3
+}
+
+# Canada + friends
+CAN = {
+	color = map_CAN
+	color2 = rgb { 16 41 202 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = english
+	religion_definition = catholic
+
+	description_category = administrative
+	difficulty = 3
+}
+
+# Settler Territories
+
+OGC = { # Oregon County
+	color = map_OGC_UOR
+	color2 = rgb { 16 41 202 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = english
+	religion_definition = catholic
+
+	description_category = administrative
+	difficulty = 3
+}
+
+# Mexico + friends
+MEX = {
+	color = map_MEX
+	color2 = rgb { 16 41 202 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = english
+	religion_definition = catholic
+
+	description_category = administrative
+	difficulty = 3
+}
+
+# Russia + Alyaska
+
+RAC = {
+	color = map_RAC_dominion0_1
+	color2 = rgb { 16 41 202 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = english
+	religion_definition = catholic
+
+	description_category = administrative
+	difficulty = 3
+}
+
+# Central America 
+UCA = {
+	color = map_UCA
+	color2 = rgb { 16 41 202 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = english
+	religion_definition = catholic
+
+	description_category = administrative
+	difficulty = 3
+}
+
+GUA = {
+	color = map_GUA
+	color2 = rgb { 16 41 202 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = english
+	religion_definition = catholic
+
+	description_category = administrative
+	difficulty = 3
+}
+
+HON = {
+	color = map_HON
+	color2 = rgb { 16 41 202 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = english
+	religion_definition = catholic
+
+	description_category = administrative
+	difficulty = 3
+}
+
+ELS = {
+	color = map_ELS
+	color2 = rgb { 16 41 202 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = english
+	religion_definition = catholic
+
+	description_category = administrative
+	difficulty = 3
+}
+
+NIC = {
+	color = map_NIC
+	color2 = rgb { 16 41 202 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = english
+	religion_definition = catholic
+
+	description_category = administrative
+	difficulty = 3
+}
+
+CRC = {
+	color = map_CRC
+	color2 = rgb { 16 41 202 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = english
+	religion_definition = catholic
+
+	description_category = administrative
+	difficulty = 3
+}
+
+PNM = {
+	color = map_PNM
+	color2 = rgb { 16 41 202 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = english
+	religion_definition = catholic
+
+	description_category = administrative
+	difficulty = 3
+}
+
+MQT = {
+	color = map_MQT
+	color2 = rgb { 16 41 202 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = english
+	religion_definition = catholic
+
+	description_category = administrative
+	difficulty = 3
+}
+
+# Caribbean

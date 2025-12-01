@@ -1,0 +1,56 @@
+﻿expel_people = {
+	ability = mil
+	
+	potential = {
+		num_locations > 0 
+	}
+
+	select_trigger = {
+		looking_for_a = province
+		source = actor
+		target_flag = target
+		name = "expel_people_select_province"
+		none_available_msg_key = "expel_people_no_provinces"
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			any_location_in_province = {
+				local_control > 0
+				count = all
+			}
+			scope:actor = {
+				not = {
+					any_cabinet = {
+						has_cabinet_action = yes
+						cabinet_action = cabinet_action:expel_people
+						interaction_target:target ?= root
+					}
+				}
+			}
+		}
+		map_color = {
+			lerp = {
+				min_color = define:NMapColors|MAP_COLOR_LOW
+				max_color = define:NMapColors|MAP_COLOR_HIGH
+				factor = migration_attraction
+			}
+		}
+	}
+
+	location_modifier = {
+		local_migration_attraction = -2.0
+		local_migration_speed = 0.01
+		local_migration_speed_modifier = 0.5
+		local_peasants_migration_allowed = yes
+		local_laborers_migration_allowed = yes
+		local_tribesmen_migration_allowed = yes
+	}
+
+	map_marker = {
+		show_for_owner = yes
+	}
+}

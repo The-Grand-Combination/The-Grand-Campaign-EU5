@@ -1,0 +1,912 @@
+﻿
+weapon_guild = {
+	is_foreign = no
+	pop_type = burghers
+	max_levels = guild_max_level
+	
+	category = weapons_industry_category
+	
+	employment_size = guild_employment
+	
+
+	
+	town = yes
+	city = yes
+
+	
+
+	build_time = guild_build_time
+	
+	unique_production_methods = {
+		pre_columbian_weapon_smith_maintenance = {
+			lumber = 0.07
+			stone = 1.0
+			produced = weaponry
+			output = 0.4
+			category = guild_input
+			
+			debug_max_profit = 0.1
+		}
+		weapon_smith_maintenance = {
+			lumber = 0.25
+			coal = 0.3
+			tools = 0.5
+			category = guild_input
+			produced = weaponry
+			output = 1
+		}
+		weapon_guild_obsidian_maintenance = {
+			lumber = 0.12
+			stone = 0.5
+			gems = 0.1
+			produced = weaponry
+			output = 0.4
+			category = guild_input
+			
+			debug_max_profit = 0.2
+		}
+	}
+
+	custom_tags = { guild }
+	construction_demand = guild_construction
+}
+
+
+weapon_workshop = {
+	is_foreign = no
+	pop_type = burghers
+	max_levels = workshop_max_level
+	
+	category = weapons_industry_category
+	
+	employment_size = workshop_employment
+	
+
+	
+	town = yes
+	city = yes
+
+	
+
+	build_time = workshop_build_time
+	
+	unique_production_methods = {
+		weapon_workshop_maintenance = {
+			lumber = 0.3
+			coal = 0.3
+			iron = 0.25
+			tools = 0.2
+			category = workshop_input
+			produced = weaponry
+			output = 1.1
+			
+			debug_max_profit = 0.5
+		}
+
+	}
+	
+	obsolete = weapon_guild
+
+	custom_tags = { workshop }
+	construction_demand = workshop_construction
+}
+
+weapon_manufactory = {
+	is_foreign = no
+	pop_type = burghers
+	max_levels = manufactory_max_level 
+	
+	category = weapons_industry_category
+	
+	employment_size = manufactory_employment
+	
+	
+	town = yes
+	city = yes
+
+	
+	
+	obsolete = weapon_workshop
+
+	build_time = manufactory_build_time
+	
+	unique_production_methods = {
+		weapon_manufactory_maintenance = {
+			lumber = 0.5
+			coal = 0.5
+			iron = 0.4
+			tools = 0.4
+			category = manufactory_input
+			produced = weaponry
+			output = 2.0
+			debug_max_profit = 0.75
+		}
+	}
+
+	custom_tags = { midgame_manufactory }
+	construction_demand = manufactory_construction
+}
+
+
+weapon_factory = {
+	is_foreign = no
+	pop_type = laborers
+	max_levels = mills_max_level
+	
+	category = weapons_industry_category
+	employment_size = mills_employment
+	
+	
+	town = yes
+	city = yes
+
+	
+	
+	obsolete = weapon_manufactory
+
+	build_time = mills_build_time
+
+	unique_production_methods = {
+		weapon_factory_maintenance = {
+			steel = 1.0
+			coal = 0.3
+			lumber = 0.3
+			category = mills_input
+			produced = weaponry
+			output = 4.0
+			
+			debug_max_profit = 1.0
+		}
+	}
+
+	custom_tags = { lategame_manufactory }
+	construction_demand = mill_construction
+}
+cannon_maker = {
+	is_foreign = no
+	pop_type = burghers
+	max_levels = guild_max_level
+	
+	category = weapons_industry_category
+	
+	employment_size = guild_employment
+	
+	
+	town = yes
+	city = yes
+
+	
+
+	build_time = guild_build_time
+	
+	unique_production_methods = {
+		
+		cannon_maker_lumber_maintenance = {			
+			# Wood
+			lumber = 0.12
+			iron = 0.045
+			tools = 0.02
+			
+			produced = cannons
+			output = 0.1
+			
+			category = guild_input
+
+			
+			debug_max_profit = 0.1
+		}
+		
+		cannon_maker_bronze_maintenance = {			
+			# Bronze
+			copper = 0.5
+			tin = 0.1
+			tools = 0.5
+			
+			produced = cannons
+			output = 1
+			
+			category = guild_input
+		}
+		
+		cannon_maker_iron_maintenance = {			
+			# Wrought Iron
+			iron = 0.6
+			tools = 0.5
+			
+			produced = cannons
+			output = 1
+			
+			category = guild_input
+		}
+	}
+
+	unique_production_methods = {
+		cannon_maker_ammunition_stone_maintenance = {
+			stone = 0.1
+			saltpeter = 0.1
+			produced = cannons
+			output = 0.087
+			
+			category = guild_input
+		}
+		cannon_maker_ammunition_lead_maintenance = {
+			lead = 0.1
+			saltpeter = 0.1
+			produced = cannons
+			output = 0.12
+			
+			category = guild_input
+		}
+		cannon_maker_ammunition_iron_maintenance = {
+			iron = 0.1
+			saltpeter = 0.1
+			produced = cannons
+			output = 0.16
+			
+			category = guild_input
+		}
+	}
+
+	
+	construction_demand = guild_construction
+	
+}
+
+
+cannon_workshop = {
+	is_foreign = no
+	pop_type = burghers
+	max_levels = workshop_max_level
+	
+	category = weapons_industry_category
+	
+	employment_size = workshop_employment
+	
+	obsolete = cannon_maker
+	
+	town = yes
+	city = yes
+
+	
+
+	build_time = workshop_build_time
+	
+	unique_production_methods = {
+
+		cannon_workshop_bronze_maintenance = {			
+			# Bronze
+			copper = 0.8
+			tin = 0.2
+			tools = 0.1
+			
+			produced = cannons
+			output = 1.1
+			
+			debug_max_profit = 0.5
+			
+			category = workshop_input
+		}
+		
+		cannon_workshop_iron_maintenance = {			
+			# Wrought Iron
+			iron = 0.9
+			tools = 0.1
+			
+			
+			
+			
+			produced = cannons
+			output = 1.1
+			
+			debug_max_profit = 0.5
+			
+			category = workshop_input
+		}
+		
+		
+	}
+
+	unique_production_methods = {
+		cannon_workshop_ammunition_stone_maintenance = {
+			stone = 0.1
+			saltpeter = 0.1
+			produced = cannons
+			output = 0.1
+			
+			
+			debug_max_profit = 0.5
+			
+			category = workshop_input
+		}
+		cannon_workshop_ammunition_lead_maintenance = {
+			lead = 0.1
+			saltpeter = 0.1
+			produced = cannons
+			output = 0.15
+			
+			
+			debug_max_profit = 0.5
+			
+			category = workshop_input
+		}
+		cannon_workshop_ammunition_iron_maintenance = {
+			iron = 0.12
+			saltpeter = 0.1
+			produced = cannons
+			output = 0.2
+			
+			debug_max_profit = 0.5
+			
+			category = workshop_input
+		}
+	}
+
+	
+	custom_tags = { workshop }
+	construction_demand = workshop_construction
+	
+}
+
+
+
+cannon_foundry = {
+	is_foreign = no
+	pop_type = burghers
+	max_levels = manufactory_max_level #Mass Production
+	
+	category = weapons_industry_category
+	
+	employment_size = manufactory_employment
+	
+	
+	town = yes
+	city = yes
+
+	
+
+	build_time = manufactory_build_time
+	
+	obsolete = cannon_workshop
+
+	unique_production_methods = {
+		cannon_foundry_maintenance = {
+			tools = 0.4
+			lead = 0.3
+			
+			#Gunpowder
+			saltpeter = 0.5
+			
+			#Bronze
+			copper = 0.5
+			tin = 0.25
+			
+			produced = cannons
+			output = 2.0
+			
+			debug_max_profit = 0.75
+			category = manufactory_input
+		}
+	}
+
+	custom_tags = { midgame_manufactory }
+	construction_demand = mill_construction
+}
+
+cannons_factory = {
+	is_foreign = no
+	pop_type = laborers
+	max_levels = manufactory_max_level
+	
+	category = weapons_industry_category
+	employment_size = mills_employment
+
+	
+	town = yes
+	city = yes
+
+	
+
+	build_time = mills_build_time
+	
+	obsolete = cannon_foundry
+	
+	unique_production_methods = {
+		
+		gun_factory_maintenance = {
+			steel = 1.5
+			
+			lead = 0.3 #Ammunition
+			
+			#Gunpowder
+			saltpeter = 0.5
+			
+			
+			produced = cannons
+			output = 4
+			
+			debug_max_profit = 1.0
+			
+			category = mills_input
+		}
+
+	}
+
+	custom_tags = { lategame_manufactory }
+	construction_demand = mill_construction
+}
+
+hand_cannon_guild = {
+	is_foreign = no
+	pop_type = burghers
+	max_levels = 1
+	category = weapons_industry_category
+	employment_size = manufactory_employment		#yes.. its early and require more
+	town = yes
+	city = yes
+	
+	build_time = guild_build_time
+	unique_production_methods = {
+		hand_cannon_guild_maintenance = {
+			tools = 0.05
+			lead = 0.01
+			
+			#Gunpowder
+			saltpeter = 0.1
+			alum = 0.005
+			
+			#Bronze
+			copper = 0.1
+			tin = 0.02
+			
+			produced = firearms
+			output = 0.30
+			
+			category = guild_input
+		}
+	}
+	construction_demand = guild_construction
+	modifier = {}
+}
+
+
+gun_smith = {
+	is_foreign = no
+	pop_type = burghers
+	max_levels = guild_max_level
+	
+	category = weapons_industry_category
+	
+	employment_size = guild_employment
+	
+	
+	town = yes
+	city = yes
+	
+	obsolete = hand_cannon_guild
+
+	
+
+	build_time = guild_build_time
+	
+	unique_production_methods = {
+		
+		guns_guild_lumber_maintenance = {			
+			# Wood
+			lumber = 0.15
+			iron = 0.045
+			tools = 0.02
+			
+			produced = firearms
+			output = 0.15
+			
+			category = guild_input
+
+			
+			debug_max_profit = 0.1
+		}
+		
+		guns_guild_bronze_maintenance = {			
+			# Bronze
+			copper = 0.5
+			tin = 0.1
+			tools = 0.3
+			
+			produced = firearms
+			output = 1
+			
+			category = guild_input
+		}
+		
+		guns_guild_iron_maintenance = {			
+			# Wrought Iron
+			iron = 0.5
+			tools = 0.3
+			
+			produced = firearms
+			output = 1
+			
+			category = guild_input
+		}
+		
+	
+	}
+
+	unique_production_methods = {
+		guns_guild_ammunition_lead_maintenance = {
+			lead = 0.1
+			saltpeter = 0.1
+			produced = firearms
+			output = 0.16
+			category = guild_input
+		}
+		guns_guild_ammunition_iron_maintenance = {
+			iron = 0.1
+			saltpeter = 0.1
+			produced = firearms
+			output = 0.20
+			
+			category = guild_input
+		}
+	}
+
+	
+	construction_demand = guild_construction
+	
+	modifier = {
+	}
+}
+
+
+
+guns_workshop = {
+	is_foreign = no
+	pop_type = burghers
+	max_levels = workshop_max_level
+	
+	category = weapons_industry_category
+	
+	employment_size = workshop_employment
+	
+	
+	town = yes
+	city = yes
+
+	
+
+	build_time = workshop_build_time
+	
+	unique_production_methods = {
+
+		guns_workshop_bronze_maintenance = {			
+			# Bronze
+			copper = 0.4
+			tin = 0.08
+			tools = 0.25
+			
+			produced = firearms
+			output = 1.1
+			debug_max_profit = 0.6
+			
+			category = workshop_input
+		}
+		
+		guns_workshop_iron_maintenance = {			
+			# Wrought Iron
+			iron = 0.4
+			tools = 0.25
+			
+			produced = firearms
+			output = 1
+			debug_max_profit = 0.6
+			
+			category = workshop_input
+		}
+		
+	
+	}
+
+	unique_production_methods = {
+		guns_workshop_ammunition_lead_maintenance = {
+			lead = 0.1
+			saltpeter = 0.1
+			produced = firearms
+			output = 0.2
+			debug_max_profit = 0.6
+			category = workshop_input
+		}
+		guns_workshop_ammunition_iron_maintenance = {
+			iron = 0.1
+			saltpeter = 0.1
+			produced = firearms
+			output = 0.25
+			debug_max_profit = 0.6
+			category = workshop_input
+		}
+	}
+
+	obsolete = gun_smith
+	
+	construction_demand = workshop_construction
+	
+	modifier = {
+	}
+	custom_tags = { workshop }
+}
+
+
+
+firearms_manufactory = {
+	is_foreign = no
+	pop_type = burghers
+	max_levels = manufactory_max_level #Mass Production
+	
+	category = weapons_industry_category
+	
+	employment_size = manufactory_employment
+	
+	
+	town = yes
+	city = yes
+
+	
+	
+	obsolete = guns_workshop
+
+	build_time = manufactory_build_time
+	
+	unique_production_methods = {
+		firearms_manufactory_maintenance = {
+			lumber = 0.3
+			coal = 0.3
+			iron = 0.8
+			
+			lead = 0.1
+			saltpeter = 0.2
+			
+			category = manufactory_input
+			produced = firearms
+			output = 2
+			debug_max_profit = 0.75
+		}
+	}
+
+	custom_tags = { midgame_manufactory }
+	construction_demand = manufactory_construction
+}
+
+
+firearms_factory = {
+	is_foreign = no
+	pop_type = laborers
+	max_levels = mills_max_level
+	
+	category = weapons_industry_category
+	employment_size = mills_employment
+
+	
+	town = yes
+	city = yes
+
+	
+
+	build_time = mills_build_time
+	
+	obsolete = firearms_manufactory
+	
+	unique_production_methods = {
+		
+		firearms_factory_maintenance = {
+			steel = 1
+			
+			lead = 0.3 #Ammunition
+			
+			#Gunpowder
+			saltpeter = 0.5
+			
+			
+			produced = firearms
+			output = 4
+			
+			debug_max_profit = 1.0
+			
+			category = mills_input
+		}
+
+	}
+
+	custom_tags = { lategame_manufactory }
+	construction_demand = mill_construction
+}
+naval_supplies_guild = {
+	is_foreign = no
+	pop_type = burghers
+	max_levels = guild_max_level
+	
+	category = weapons_industry_category
+	
+	employment_size = guild_employment
+	
+	
+	town = yes
+	city = yes
+
+	
+
+	build_time = guild_build_time
+	
+	unique_production_methods = {
+		naval_supplies_guild_maintenance = {
+			lumber = 0.15
+			fiber_crops = 0.5
+			tar = 0.5
+			copper = 0.1
+			tin = 0.02
+			
+			produced = naval_supplies
+			output = 1
+			
+			category = guild_input
+		}
+	}
+
+	custom_tags = { guild }
+	construction_demand = guild_construction
+}
+
+
+
+naval_supplies_workshop = {
+	is_foreign = no
+	pop_type = burghers
+	max_levels = workshop_max_level
+	
+	category = weapons_industry_category
+	
+	employment_size = workshop_employment
+	
+	
+	town = yes
+	city = yes
+
+	
+
+	build_time = workshop_build_time
+	
+	unique_production_methods = {
+		naval_supplies_workshop_maintenance = {
+			lumber = 0.1
+			fiber_crops = 0.4
+			tar = 0.5
+			copper = 0.1
+			tin = 0.02
+			
+			produced = naval_supplies
+			output = 1.1
+			
+			debug_max_profit = 0.6
+			
+			category = workshop_input
+		}
+	}
+	
+	obsolete = naval_supplies_guild
+
+	custom_tags = { workshop }
+	construction_demand = workshop_construction
+}
+
+
+
+
+naval_supplies_manufactory = {
+	is_foreign = no
+	pop_type = burghers
+	max_levels = manufactory_max_level
+	
+	category = weapons_industry_category
+	
+	employment_size = manufactory_employment
+	
+	
+	town = yes
+	city = yes
+
+	
+
+	build_time = manufactory_build_time
+	
+	obsolete = naval_supplies_workshop
+
+	unique_production_methods = {
+		naval_supplies_manufactory_maintenance = {
+			lumber = 0.6
+			fiber_crops = 0.6
+			tar = 0.6
+			copper = 0.2
+			tin = 0.04
+			produced = naval_supplies
+			output = 2
+			
+			debug_max_profit = 0.75
+			
+			category = manufactory_input
+		}
+
+	}
+
+
+	custom_tags = { midgame_manufactory }
+	construction_demand = manufactory_construction
+}
+
+
+
+naval_supplies_mill = {
+	is_foreign = no
+	pop_type = laborers
+	max_levels = mills_max_level
+	
+	category = weapons_industry_category
+	
+	employment_size = mills_employment
+	
+	
+	town = yes
+	city = yes
+
+	
+
+	build_time = mills_build_time
+	
+	obsolete = naval_supplies_manufactory
+
+	unique_production_methods = {
+		naval_supplies_mill_maintenance = {
+			lumber = 1.2
+			fiber_crops = 1.2
+			tar = 1.2
+			copper = 0.3
+			tin = 0.06
+			produced = naval_supplies
+			output = 4
+			
+			debug_max_profit = 1.0
+			
+			category = mills_input
+		}
+
+	}
+
+
+	custom_tags = { lategame_manufactory }
+	construction_demand = mill_construction
+}
+
+tank_factory = {
+	is_foreign = no
+	pop_type = laborers
+	max_levels = mills_max_level
+	
+	employment_size = mills_employment
+
+	category = basic_industry_category
+	town = yes
+	city = yes
+
+	build_time = mills_build_time
+	
+	unique_production_methods = {
+		electronic_part_factory_maintenance = {
+			electronic_parts = 7.5
+			glass = 1.0
+			produced = tanks
+			output = 3
+			
+			debug_max_profit = 1.0
+			category = mills_input	
+		}
+
+	}
+
+	construction_demand = mill_construction
+}

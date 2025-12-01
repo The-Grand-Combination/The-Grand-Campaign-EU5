@@ -1,0 +1,282 @@
+﻿l_english:
+ flavor_eth.10.title: "[pero_covilha.GetNameWithNoTooltip]"
+ flavor_eth.10.desc: "A strange man has come onto our shores, but not by the [ShowAreaName('red_sea_area')] route by which foreigners usually travel to us. He claims he is part of a voyage from the south, a voyage that, to our knowledge, has never been attempted before. He brings greetings from fellow Christian monarchs, though his prayer is unlike that which we have seen before. How should we treat this man?"
+ flavor_eth.10.a: "Honor him and bar him from leaving!"
+ flavor_eth.10.a.desc: "More visitors will soon come from [GetCountry('POR').GetName]."
+ flavor_eth.10.b: "Banish him!"
+
+ flavor_eth.20.title: "An Embassy Is Here!"
+ flavor_eth.20.desc: "[francisco_alvares.GetName], representing the same country that sent the previous emissary, wishes to discuss what our two regimes can do together. He says he was looking for a #italic Prester John#!, and we are apparently the country he seeks. Should we begin an exchange?"
+ flavor_eth.20.a: "Seek aid against the [GetCountry('MAM').GetName]!"
+ flavor_eth.20.tt: "[GetCountry('POR').GetName] will be asked for military aid"
+ flavor_eth.20.b: "Ask for a cultural exchange?"
+ flavor_eth.20.c: "Maybe a trade deal is in order?"
+
+ flavor_eth.21.title: "Prester John?"
+ flavor_eth.21.desc: "The [GetCountry('ETH').GetGovernment.GetRulerTitle] of [GetCountry('ETH').GetName], who may or may not be the legendary Prester John, has apparently fallen on hard times and is pleading with us to help [GetCountry('ETH').GetGovernment.GetRuler.GetHerHim] restore [GetCountry('ETH').GetGovernment.GetRuler.GetHerHis] lands. [GetCountry('ETH').GetGovernment.GetRuler.GetSheHe] has sent an ambassador named [scope_mattheus.GetName]. [scope_mattheus.GetNameWithNoTooltip] is a Christian, albeit of a kind we have never seen before, and begs us to restore his master's rightful dominions, but [GetCountry('MAM').GetAdjective] power is still threatening and it seems to be a big risk for questionable gain. Should we aid [scope_mattheus.GetNameWithNoTooltip]?"
+ flavor_eth.21.a: "Deus Vult!"
+ opinion_military_aid: "Military Aid"
+ flavor_eth.21.b: " I thought Prester John was supposed to help us, not the other way around?"
+ opinion_refused_military_aid: "Refused giving aid"
+
+ flavor_eth.22.title: "Help from the West"
+ flavor_eth.22.desc: "A small fleet, carrying weapons and troops, has arrived at our shores. The leader of these [GetCountry('POR').GetAdjective] soldiers brings a letter from their monarch, saying 'We are both Christian Monarchs, united in our struggles against the infidels."
+ flavor_eth.22.a: "God is good!"
+ STATIC_MODIFIER_NAME_eth_mil_aid_from_portugal: "Military Aid from Portugal"
+ STATIC_MODIFIER_DESC_eth_mil_aid_from_portugal: "Military Aid from our brothers in the faith, against the infidels we share as enemies"
+
+ flavor_eth.23.title: "We have been neglected"
+ flavor_eth.23.desc: "There are no more embassies from [GetCountry('POR').GetName], no more traders coming, and no reply to our request for help."
+ flavor_eth.23.a: "We are alone!"
+
+ flavor_eth.30.title: "Centralization reforms of [ROOT.GetCountry.GetGovernment.GetRuler.GetShortNameWithNoTooltip]"
+ flavor_eth.30.desc: "Under the care of the [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetName] dynasty, [ROOT.GetCountry.GetName] has grown into a great realm. However, the diverse regions under our rule lack a common language, religion, or administrative system.\n\n[ROOT.GetCountry.GetGovernment.GetRuler.GetName], the ablest ruler [ROOT.GetCountry.GetNameWithNoTooltip] has seen in a long time, prepared several reforms that went a long way towards creating a more unified state."
+ flavor_eth.30.a: "We must centralize the state."
+ flavor_eth.30.b: "We can centralize later."
+
+ flavor_eth.40.title: "The Itinerant Capital"
+ flavor_eth.40.desc: "In order to control the diverse [ROOT.GetCountry.GetLongName], the [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetName] have never established a permanent capital. Instead, the royal court travels from chief to chief every few months.\n\nWhile it is hard to establish an administrative continuity under such circumstances, the traveling court does have its benefits. The frequent visits of the royal courts to all corners of the Empire are contributing to the growth of a common elite culture in our lands."
+ flavor_eth.40.a: "This is how it has always been."
+ flavor_eth.40.b: "Actively encourage the cultural conversion of the countryside."
+
+ flavor_eth.50.title: "[ShowLocationNameWithNoTooltip('debra_berhan')] - The Mountain of Light"
+ flavor_eth.50.desc: "[ROOT.GetCountry.GetGovernment.GetRuler.GetName] has had a vision in which [ROOT.GetCountry.GetGovernment.GetRulerSheHe] has been shown a shining mountain on which to build the new capital of [ROOT.GetCountry.GetName]. A [ShowBuildingTypeName('temple')] has already been constructed at the site and now it is up to the state to realize the dream of our [ROOT.GetCountry.GetGovernment.GetRulerTitle]."
+ flavor_eth.50.a: "The time has come for a permanent Capital."
+ flavor_eth.50.b: "Let us not break with Tradition."
+
+ flavor_eth.60.title: "[ShowLocationName('debra_berhan')] Plundered"
+ flavor_eth.60.desc: "Old traditions die hard and as the countryside of [ShowLocationName('debra_berhan')] is being plundered, the new capital is being abandoned by everyone from our courtiers to the lowliest stable boy. We have no choice but to resume the custom of having an itinerant court."
+ flavor_eth.60.a: "We must move to the provinces."
+
+ flavor_eth.70.title: "[ShowLocationNameWithNoTooltip('gonder')] - A new Capital"
+ flavor_eth.70.desc: "[target_character.GetName] finds [target_character.GetHerselfHimself] spending more and more time by the monasteries at [ShowLocationName('lake_tana')]. Due to this continued patronage of the [ROOT.GetCountry.GetGovernment.GetRulerTitle], a small market town has begun to spring up in the area and some have started to name the city as a secondary capital of our [ROOT.GetCountry.GetFlavorRank].\n\nThis idea has grown on those who believe a permanent capital here might allow us to start a new spiritual and architectural legacy."
+ flavor_eth.70.a: "Let us build our capital here."
+ flavor_eth.70.b: "We must not bind ourselves to one place."
+
+ flavor_eth.80.title: "The fate of the [ShowCultureNameWithNoTooltip('lower_egyptian_culture')] [ShowReligionAdjectiveWithNoTooltip('miaphysite')] people"
+ flavor_eth.80.desc: "Word has reached us from [ShowRegionName('egypt_region')] that the [GetCountry('MAM').GetAdjective] [GetCountry('MAM').GetGovernment.GetRulerTitle] is persecuting the [ShowReligionAdjective('miaphysite')] people in his lands. As a fellow realm under the Patriarchate of [ShowLocationName('alexandria')], it is our duty to act. The fact that the patriarch himself is in [GetCountry('MAM').GetAdjectiveWithNoTooltip] hands complicates things somewhat however, a direct attack might place the foundation of our Church at risk."
+ flavor_eth.80.a: "Send a strongly worded letter to the [GetCountry('MAM').GetGovernment.GetRulerTitle]."
+ flavor_eth.80.b: "Avoid the risk of angering the [GetCountry('MAM').GetNameWithNoTooltip]."
+ flavor_eth.80.c: "This is cause for war!"
+
+ flavor_eth.81.title: "A letter arrives from [target_from_country.GetNameWithNoTooltip]"
+ flavor_eth.81.desc: "We have received a letter from the [target_ruler.GetName] from the [target_from_country.GetLongName] today. The message is a detailed account of the many perceived misdeeds of our [ROOT.GetCountry.GetFlavorRank] against the [ShowReligionAdjective('miaphysite')] people that reside within our borders.\n\nThere is likely little reason for concern, however, as the patriarch of both the [ShowReligionAdjectiveWithNoTooltip('miaphysite')] people in [ShowRegionName('egypt_region')] and [ShowRegionName('ethiopia_region')] is our hostage. It seems very unlikely that [target_ruler.GetNameWithNoTooltip] would risk the safety of [target_ruler.GetHerHis] patriarch over a matter such as this."
+ flavor_eth.81.a: "Send a sarcastic reply."
+ flavor_eth.81.b: "Attempt to apologize and repair relations."
+ opinion_improved_relations: "Improved Relations"
+
+ flavor_eth.82.title: "A letter has arrived from [target_from_country.GetNameWithNoTooltip]"
+ flavor_eth.82.desc: "We have received word that [target_ruler.GetName] of [target_from_country.GetName] feels we are mistreating the [ShowReligionAdjective('miaphysite')] population in our lands. [target_ruler.GetSheHe|U] clearly sees this as a cause for war and there is much speculation that an attack from [target_from_country.GetNameWithNoTooltip] might be imminent."
+ flavor_eth.82.a: "They would not dare."
+
+ flavor_eth.83.title: "An ambassador from the [target_mam.GetLongNameWithNoTooltip]"
+ flavor_eth.83.desc: "Today a messenger from [target_mam.GetName] arrived at our [ROOT.GetCountry.GetGovernment.GetCourtTitle] bearing the reply of [target_mam_ruler.GetName] to our concerns about the [ShowReligionAdjective('miaphysite')] people in [target_mam_ruler.GetHerHis] lands.\n\nThe reply is far from the apology we had expected however. The [target_mam.GetGovernment.GetRulerTitle] has chosen to show [target_mam_ruler.GetHerHis] contempt for the [ROOT.GetCountry.GetAdjective] [ROOT.GetCountry.GetGovernment.GetCourtTitle] and [target_mam_ruler.GetSheHe] ridicules any form of retribution that we might attempt."
+ flavor_eth.83.a: "Imprison the Ambassador."
+ flavor_eth.83.b: "This is cause for war!"
+ flavor_eth.83.c: "Let's just drop it."
+
+ flavor_eth.84.title: "[target_mam.GetNameWithNoTooltip] Apologize"
+ flavor_eth.84.desc: "The [target_mam.GetAdjective] [target_mam.GetGovernment.GetRulerTitle] has sent word that [target_mam_ruler.GetSheHe] is looking into the situation of [ShowReligionAdjective('miaphysite')] people in [target_mam_ruler.GetHerHis] lands. [target_mam_ruler.GetSheHe|U] assures us that [target_mam_ruler.GetSheHe] has nothing but feelings of friendship towards the [ROOT.GetCountry.GetAdjective] people and the [ShowReligionAdjectiveWithNoTooltip('miaphysite')] Church."
+ flavor_eth.84.a: "[ROOT.GetCountry.Custom('common_string_ok')]"
+
+ flavor_eth.85.title: "Ambassador Detained"
+ flavor_eth.85.desc: "The [target_from_country.GetAdjective] [target_from_country.GetGovernment.GetRulerTitle] was so displeased by our reply to [target_ruler.GetHerHis] letter that [target_ruler.GetSheHe] had our messenger detained."
+ flavor_eth.85.a: "[ROOT.GetCountry.Custom('common_string_ok')]"
+
+ flavor_eth.90.title: "Death of a Bishop"
+ flavor_eth.90.desc.a: "The Bishop of [target_country.GetName] has died and the [target_country.GetAdjectiveWithNoTooltip] Church has requested a successor from the [ShowReligionAdjective('miaphysite')] Patriarch of [ShowLocationName('alexandria')].\n\nWhile a successor has been chosen by the Patriarch, this would be a good opportunity to show the [target_country.GetAdjectiveWithNoTooltip] people who is in charge. [target_ruler.GetName] of [target_country.GetNameWithNoTooltip] has actively pursued a policy of conversion against [target_ruler.GetHerHis] [ShowReligionName('sunni')] subjects and [target_ruler.GetSheHe] still detains the ambassador we sent to chastise [target_ruler.GetHerHis] last time."
+ flavor_eth.90.desc.b: "The Bishop of [target_country.GetName] has died and the [target_country.GetAdjectiveWithNoTooltip] Church has requested a successor from the [ShowReligionAdjective('miaphysite')] Patriarch of [ShowLocationName('alexandria')].\n\nWhile a successor has been chosen by the Patriarch, this would be a good opportunity to send a message and make it clear to the [target_country.GetAdjectiveWithNoTooltip] people who is truly in charge."
+ flavor_eth.90.a: "Prevent the appointment of a new Bishop."
+ flavor_eth.90.b: "We must not interfere in these matters."
+
+ flavor_eth.91.title: "Bishop Missing"
+ flavor_eth.91.desc: "It has been a long while now since the last bishop of [ROOT.GetCountry.GetName] died and we requested a successor from [ShowLocationName('alexandria')]. Could the [GetCountry('MAM').GetName] be interfering?"
+ flavor_eth.91.a: "[ROOT.GetCountry.Custom('common_string_ok')]"
+
+ flavor_eth.100.title: "The Monastic Orders"
+ flavor_eth.100.desc: "One of the greatest strengths of the [ROOT.GetCountry.GetAdjective] Church is the great number of successful monasteries that dot the landscape of our state. The Monastic orders have contributed to the success of our state by founding new monasteries in newly conquered areas and by spreading the word of the true faith there. The monasteries of [ROOT.GetCountry.GetNameWithNoTooltip] are also the source of the education of the [ROOT.GetCountry.GetAdjectiveWithNoTooltip] [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')], its [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')], and its administrators, and as such have contributed greatly to the revitalization of the [ROOT.GetCountry.GetAdjectiveWithNoTooltip] Church in the years past.\n\nThe other side of this coin, however, is that the monasteries and the orders that run them have grown both rich and autonomous."
+ flavor_eth.100.a: "Attempt to rein them in."
+ flavor_eth.100.b: "Safeguard the privileges of the orders."
+
+ flavor_eth.110.title: "Independence from the Patriarchate"
+ flavor_eth.110.desc: "The dependency of the [ROOT.GetCountry.GetAdjective] Church on the Patriarchate of [ShowLocationName('alexandria')] has always been a liability for our country. Perhaps there was once a practical need for bishops, clergy, and spiritual guidance from abroad, but the expansion of the [ROOT.GetFlavorRank] Church over the last centuries, however, means that our [ShowCountryRankName('ETH')] is now already training its [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] and there is a strong religious infrastructure in the form of churches and monasteries throughout our lands.\n\nWith the Egyptian Patriarchate held hostage by [ShowReligionName('muslim')] conquerors, we often have to wait a long time between the death of one bishop and the appointment of the next. It would be far more efficient to appoint our religious leadership from the ranks of our [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')]."
+ flavor_eth.110.a: "We cannot dishonor our Patriarch."
+ flavor_eth.110.b: "Our Church should be free of foreign influence."
+
+ flavor_eth.120.title: "The Kebra Nagast"
+ flavor_eth.120.desc: "The #italic Kebra Nagast#!, also known as The Glory of the Kings, is the national epic from [ROOT.GetCountry.GetName]. It was written by Nebure Id Ishaq of Axum, under the supervision of bishop Abba Giyorgis. This work serves as a repository of our national and religious sentiments, carrying immense historical and cultural significance.\n\nThe text of the #italic Kebra Nagast#! is believed to be centuries old and it holds a special place within [ROOT.GetCountry.GetAdjectiveWithNoTooltip] literature and culture, intricately weaving together history, religion, and the origins of the [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetName] dynasty, which holds great importance within the [ROOT.GetCountry.GetAdjectiveWithNoTooltip] [ShowReligionAdjective('miaphysite')] Church.\n\nThe #italic Kebra Nagast#! unfolds the captivating account of the encounter between the Queen of Sheba and King Solomon. It also narrates the fascinating story of how their son, Menelik I (Menyelek), brought the revered Ark of the Covenant to [ShowRegionName('ethiopia_region')]. In addition to these remarkable tales, the epic explores the profound shift in religious beliefs among our people, as they transitioned from the worship of celestial bodies to embracing the faith in the #italic Lord God of Israel#!."
+ flavor_eth.120.a: "Learn how our ancestors administered their realms."
+ flavor_eth.120.b: "Study the ways to deal with subjects."
+ flavor_eth.120.c: "Adopt older tactics shown in it to nowadays issues."
+
+ flavor_eth.130.title: "The $lalibela_cross$"
+ flavor_eth.130.desc: "The $lalibela_cross$, one of our nation's most cherished religious and historical treasures, is a large and intricately adorned processional cross which is housed within the Bet Medhane Alem in [ShowLocationName('lalibela')]. Priests often use the cross to bless or heal believers by gently rubbing it against them.\n\nCrafted from a single piece of metal, it is made of bronze and gold with its central cross featuring an elongated descending arm and gracefully flared ends, all adorned with intricate ornamentation. A distinctive characteristic of the Cross is the portrayal of #italic Adam's arms#! at the base, adorned during festive occasions with vibrant and colorful pieces of cloth, adding to the cross's grandeur and significance."
+ flavor_eth.130.a: "We should move it to our capital."
+ flavor_eth.130.b: "We will start the pilgrimage as we should."
+ flavor_eth.130.c: "Make the church containing the relic even more majestic."
+ flavor_eth.130.a.tt: "Our subjects of the [ShowCultureName('agaw_culture')] origin will be greatly unpleased"
+
+ flavor_eth.140.title: "The Justice of the Kings"
+ flavor_eth.140.desc: "The #italic Fetha Negest#!, also known as the #italic Justice of the Kings#!, is a theocratic legal code compiled around 1240 in Arabic by Abu'l-Fada'il ibn al-Assal, an Egyptian Christian writer. He drew his laws from apostolic writings and previous law codes of Byzantine rulers.\n\nThe textual history of the #italic Fetha Negest#! reveals its two distinct parts. The first part primarily focuses on ecclesiastical matters, detailing the structure of the Church hierarchy and sacraments. It incorporates elements from the Bible, works of early Church fathers like St. Basil and St. Hippolytus, as well as canons established at councils such as the Council of Nicaea and the Council of Antioch.\n\nThe second part of the #italic Fetha Negest#! addresses issues pertaining to the laity, including family law, debt, and civil administration. While drawing from the same sources as the first part, it is largely attributed to four books collectively known as the #italic Canons of the Emperors#!. These books include the #italic Procheiron#! (also known as #italic Procheiros Nomos#!), the Arabic version of the #italic Syro-Roman Law Book#!, the Arabic version of the #italic Ecloga#!, and the #italic Precepts of the Old Testament#!.\n\nFor centuries, the #italic Fetha Negest#! has served as an authoritative legal guide for the [ShowReligionAdjective('miaphysite')] Christians of [ShowRegionName('egypt_region')]. It has now been translated to [ROOT.GetCountry.GetCulture.GetLanguage.GetName] in [ShowRegionName('ethiopia_region')] and expanded upon with additional local laws. Some judges in our realm wonder if we should adopt it and most among the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] support this action."
+ flavor_eth.140.a: "We should adapt it."
+ flavor_eth.140.b: "It is not the time."
+
+ flavor_eth.150.title: "$the_book_of_the_mysteries_of_the_heavens_and_the_earth$"
+ flavor_eth.150.desc: "With theology rising in popularity within [ROOT.GetCountry.GetName], more monks have been inspired to write about their knowledge. One such monk is [target_artist.GetName], a prominent member of the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')], who wishes to write about the creation of mankind and how everything in this world came to be."
+ flavor_eth.150.a: "Let us sponsor [target_artist.GetHerHim]."
+ flavor_eth.150.b: "We are not able to afford it."
+
+ flavor_eth.151.title: "Return of the Exiled Monks"
+ flavor_eth.151.desc: "During the reign of [target_character3.GetName], [target_character3.GetSheHe] led an unorthodox life, one that invoked the hatred of monks such as [target_character.GetName], criticizing [target_character3.GetHerHim] for such lifestyle. Due to that, [target_character.GetSheHe] was exiled with a few other monks. Now that [target_character3.GetNameWithNoTooltip] is dead, maybe [target_character2.GetName] can lift their exile."
+ flavor_eth.151.a: "[target_character.GetHerHis|U] exile was unjust. Let [target_character.GetHerHim] return."
+ flavor_eth.151.b: "[target_character.GetSheHe|U] will not return as long as [target_character.GetSheHe] is alive."
+
+ flavor_eth.153.title: "Debre Igziabher"
+ flavor_eth.153.desc: "Debre Igziabher is an ancient church of [ROOT.GetCountry.GetName], but history has forgotten it. Overlooking the lake of [target_location.GetName], [target_character.GetName] has been thinking of rebuilding it to strengthen the [ROOT.GetCountry.GetReligion.GetAdjective] faith within the [ROOT.GetCountry.GetFlavorRank]."
+ flavor_eth.153.a: "Let us rebuild this church."
+ flavor_eth.153.b: "We refuse, even if it angers the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')]."
+ flavor_eth.153.c: "It shall be one of the grandest chuches in [ROOT.GetCountry.GetNameWithNoTooltip]."
+
+ flavor_eth.155.title: "Curtailing the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')]"
+ flavor_eth.155.desc: "Ever since the ascension of [target_character.GetName] to the throne of [ROOT.GetCountry.GetName], the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] have controlled most of the lands. [target_character2.GetName] wishes to undo this, reducing their power significantly. This, however, might upset them."
+ flavor_eth.155.a: "The lands belong to [ROOT.GetCountry.GetNameWithNoTooltip]."
+ flavor_eth.155.b: "We are not going to upset the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')]."
+
+ flavor_eth.156.title: "Revolt of [rebels_scope.GetNameWithNoTooltip]"
+ flavor_eth.156.desc: "The [ShowReligionAdjective('judaism')] communities in [ROOT.GetCountry.GetName] have become rebellious. They rally behind a movement called [rebels_scope.GetName], wishing to rid themselves of our [ROOT.GetCountry.GetReligion.GetAdjective] ways."
+ flavor_eth.156.a: "We need to prepare."
+ flavor_eth.156.b: "They are right. Let us give them some religious rights."
+ eth_make_all_jewish_pops_unhappy_tt: "All [ShowReligionAdjective('judaism')] [pops|e] will lose [ShowNamedValue('pop_satisfaction_ultimate_penalty')|-=2%] [pop_satisfaction|e]"
+ eth_make_all_jewish_pops_happier_tt: "All [ShowReligionAdjective('judaism')] [pops|e] will gain [ShowNamedValue('pop_satisfaction_mild_bonus')|-=2%] [pop_satisfaction|e]"
+ beta_israel: "Beta Israel"
+
+ flavor_eth.157.title: "A Wandering Court"
+ flavor_eth.157.desc: "Although the capital of [ROOT.GetCountry.GetName] has changed over the years due to military needs, it has never been made tradition for rulers to move the courts to different locations. Being closer to where our armies are and making a distinction between villages and cities by allowing [target_character.GetName] and any future ruler to select their place of governorship, as well as ensuring that each part of the country is cared by the [ROOT.GetCountry.GetGovernment.GetRulerTitle], we can justify this as a viable practice for [ROOT.GetCountry.GetNameWithNoTooltip]."
+ flavor_eth.157.a: "Let us allow this change."
+ flavor_eth.157.b: "A stationary capital is best."
+
+ flavor_eth.160.title: "$book_of_light$"
+ flavor_eth.160.desc: "Due to the scholarly nature of [target_character.GetName], [target_character.GetSheHe] has been inspired by several other treatises, specifically ones in [ShowContinentName('europe')], and wishes to spend [target_character.GetHerHis] time on writing a number a books, starting with $book_of_light$. [target_character.GetSheHe|U] hopes they will promote [ROOT.GetCountry.GetReligion.GetName] in [ROOT.GetCountry.GetName]. However, such practice will not allow [target_character.GetHerHim] to govern as effectively."
+ flavor_eth.160.a: "[target_character.GetSheHe|U] shall make a masterpiece!"
+ flavor_eth.160.b: "[target_character.GetNameWithNoTooltip] shall rule, not write."
+
+ flavor_eth.161.title: "$book_of_nativity$"
+ flavor_eth.161.desc: "After months of writing, [target_character.GetName] has produced yet another book for our collection. Dubbing it $book_of_nativity$, calling for reform in the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] and defending [target_character.GetHerHis] beliefs on the matter."
+ flavor_eth.161.a: "Another masterpiece."
+
+ flavor_eth.162.title: "$books_of_trinity$"
+ flavor_eth.162.desc: "With the remaining time [target_character.GetName] had dedicated to writing, [target_character.GetSheHe] produced [target_character.GetHerHis] final masterpiece. Calling it $books_of_trinity$, it serves as the conclusion of [target_character.GetHerHis] religious beliefs within [ROOT.GetCountry.GetName] that have been written in the $book_of_light$ and the $book_of_nativity$."
+ flavor_eth.162.a: "Maybe [target_character.GetNameWithNoTooltip] can reform the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')]?"
+
+ flavor_eth.163.title: "[ShowBuildingTypeNameWithNoTooltip('debere_meshwae')]"
+ flavor_eth.163.desc: "Due to the successful reign of [target_character.GetName], [target_character.GetSheHe] has been inspired to create [ShowBuildingTypeName('debere_meshwae')], a church greater than the rest. It may be costly to do so, but trying to contain [target_character.GetHerHim] on this project may result in the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] turning against us."
+ flavor_eth.163.a: "Let us construct it."
+ flavor_eth.163.b: "How many churches does [ROOT.GetCountry.GetNameWithNoTooltip] need?"
+
+ flavor_eth.164.title: "Foreign Inspirations"
+ flavor_eth.164.desc: "Although [ROOT.GetCountry.GetCulture.GetName] has been the dominant force in our [ROOT.GetCountry.GetGovernment.GetCourtTitle], there have been several debates to instead look outward and reshape it in ways that are inspired by foreign nations. Doing so will surely hit [ROOT.GetCountry.GetName] negatively, but it is a worthwhile endeavor if we are to invite more scholars."
+ flavor_eth.164.a: "It is worthwhile."
+ flavor_eth.164.b: "[ROOT.GetCountry.GetCulture.GetNameWithNoTooltip] shall always lead the [ROOT.GetCountry.GetGovernment.GetCourtTitle]."
+
+ flavor_eth.165.title: "$confession_of_faith$"
+ flavor_eth.165.desc: "Wishing to defend the [ShowReligionAdjective('miaphysite')] faith, [target_character.GetName] wishes to write a treatise called $confession_of_faith$. [target_character.GetSheHe|U] says it will reinforce the ideas that every believer already follows, such as Sabbath observance and prohibition against pork. Perhaps we can allow [target_character.GetHerHim] to write it, but it will cost [ROOT.GetCountry.GetName] part of its treasury."
+ flavor_eth.165.a: "Anything for [ShowReligionNameWithNoTooltip('miaphysite')]."
+ flavor_eth.165.b: "We are past the age of religious debates."
+ 
+
+ flavor_eth.200.title: "[ewostatewos.GetNameWithNoTooltip] the Monk" #senafe Debre Mariam https://en.wikipedia.org/wiki/Debre_Mariam
+ flavor_eth.200.desc: "During our travels around our country to visit our chiefs, we have encountered a wise man teaching to the common folk. [ewostatewos.GetName] is a monk and religious leader from the north of our [ROOT.GetCountry.GetFlavorRank], [ewostatewos.GetSheHe] has a monastery and a small following of disciples, but after just a few minutes of listening to [ewostatewos.GetHerHis] lesson, our bishop quickly became irritated with [ewostatewos.GetHimHer].\n\n[ewostatewos.GetNameWithNoTooltip] proclaims to defend the ancient custom of the [GetCountry('ETH').GetAdjective] [ShowReligionName('miaphysite')] commonfolk to observe both Saturday and Sunday as Holy Days. Our bishop instead says that that doctrine goes against the mandate of our patriarch in [ShowLocationName('alexandria')] and may lead to all kinds of problems. In his mind, the only way is to punish [ewostatewos.GetNameWithNoTooltip] for teaching it, so it sets an example and nobody follows [ewostatewos.GetHerHis] misguided step."
+ flavor_eth.200.a: "Follow the bishop's advice."
+ flavor_eth.200.b: "There is no need for punishment, [ewostatewos.GetSheHe] can go somewhere else."
+ flavor_eth.200.c: "[ewostatewos.GetShortNameWithNoTooltip] seems wiser than our Bishop, [ewostatewos.GetSheHe] may get the position."
+ flavor_eth.200.d: "Actually we are also interested in what [ewostatewos.GetSheHe] has to teach."
+ 
+ flavor_eth.201.title: "[ewostatewos.GetNameWithNoTooltip], the [GetCountry('ETH').GetAdjectiveWithNoTooltip] Monk"
+ flavor_eth.201.desc: "[ewostatewos.GetName] is a [ShowReligionAdjective('miaphysite')] monk from the north of [GetCountry('ETH').GetName]. We are being told that he has come to our [ROOT.GetCountry.GetFlavorRank] fleeing from persecution for his unorthodox teachings and is searching for the acceptance of the [ShowReligionAdjectiveWithNoTooltip('miaphysite')] leaders in our capital."
+ flavor_eth.201.descB: "[ewostatewos.GetName] was a [ShowReligionAdjective('miaphysite')] monk from the north of [GetCountry('ETH').GetName]. We are being told that he arrived to our [ROOT.GetCountry.GetFlavorRank] fleeing from persecution for his unorthodox teachings and had the intention of searching for the acceptance of the [ShowReligionAdjectiveWithNoTooltip('miaphysite')] leaders in our capital.\n\nBut luck was not on his side, and we are told he has perished on his way here."
+ flavor_eth.201.a: "He might be useful, let him be."
+ flavor_eth.201.b: "We do not need more troublemakers. Kick him out."
+ flavor_eth.201.c: "His theology is backed by the Old Testament. Let's hear him out."
+ flavor_eth.201.d: "Great, we do not have to deal with him now."
+
+ flavor_eth.202.title: "Seven Disciples of [ewostatewos.GetNameWithNoTooltip]"
+ flavor_eth.202.desc: "The followers of [ewostatewos.GetName], the disgruntled monk, have all but vanished during the absence of their teacher and we had almost forgotten him, to the point that their return has gone unnoticed to us.\n\nIn the meantime, they have rebuilt his old monastery and started building others of their own. This new monastic faction has started to call itself the #italic House of [ewostatewos.GetNameWithNoTooltip]#!"
+ house_of_ewostatewos_name: "House of Ewostatewos"
+ flavor_eth.202.a: "Send a clergyman [anorewos.GetName], to talk to them."
+ flavor_eth.202.b: "They dared to disobey the [ROOT.GetCountry.GetGovernment.GetRulerTitle]! No second chances!"
+ flavor_eth.202.c: "We still do not care."
+
+ flavor_eth.203.title: "The Breach Widens"
+ flavor_eth.203.desc: "Disaster! Sending [anorewos.GetName] to discuss the tense situation with [ewostatewos.GetName] was a terrible mistake. We have been informed that the talks quickly degraded into a heated theological argument that bordered the confrontation with the monks. Luckily our [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] were kicked out of the monastery before the situation escalated further."
+ flavor_eth.203.a: "[anorewos.GetShortNameWithNoTooltip] will divide our [ROOT.GetCountry.GetFlavorRank] with his religious disputes."
+ flavor_eth.203.a.tt: "[anorewos.GetNameWithNoTooltip] will be punished publicly"
+ flavor_eth.203.a.tt2: "The monk's influence extends only to lands surrounding their monasteries."
+ flavor_eth.203.b: "Those who wrong my representatives, wrong me. Burn it to the ground!"
+ flavor_eth.203.b.tt: "[ewostatewos.GetNameWithNoTooltip] becomes a martyr and his ideas extend beyond the monasteries"
+
+ flavor_eth.204.title: "The House of [ewostatewos.GetNameWithNoTooltip]"
+ flavor_eth.204.desc: "The influence of the monasteries that belong to the #italic House of [ewostatewos.GetNameWithNoTooltip]#! has continued to grow larger and larger as their teachings resonate better with the traditions of the [ROOT.GetCountry.GetAdjective] people than the doctrine imposed from the Patriarchate of [ShowLocationName('alexandria')], and their work of education and charity of those on the fringes of society has given them a positive image in the mind of the people.\n\nOur Abun brings our attention to the unsustainability of the situation, if we allow this heresy to continue to grow we might be excommunicated by the Patriarch or in the worst case the [ROOT.GetCountry.GetFlavorRank] could be plunged into civil war."
+ flavor_eth.204.a: "Let's put an end to this. Burn the monasteries."
+ flavor_eth.204.a.tt: "The followers of the #italic House of [ewostatewos.GetNameWithNoTooltip]#! rise in anger"
+ flavor_eth.204.b: "No civil war will take place, we are with our people."
+
+ flavor_eth.210.title: "The Stele of the New [ROOT.GetCountry.GetGovernment.GetRulerTitle]"
+ flavor_eth.210.desc: "For a thousand years the Steles of the old kings of [ShowLocationName('axum')] have looked over the [ROOT.GetCountry.GetFlavorRank] and served as magnificent proof of the power of those that are entombed under them.\n\nOur people look at those steles with awe and respect, by building a new one that honors [ROOT.GetCountry.GetGovernment.GetRuler.GetName], we might connect that prestige from the past to our new ruler."
+ flavor_eth.210.a: "This is a pagan tradition, it was good to abandon it."
+ flavor_eth.210.b: "We will build an even grander monument!"
+
+ flavor_eth.220.title: "Saint George Church at [target_location.GetNameWithNoTooltip]"
+ flavor_eth.220.desc: "Several generations ago King Gebre Mesqel Lalibela had a vision for the city that bears his name, to be a mirror image of the Holy City of [ShowLocationName('jerusalem')] and to attract pilgrims from all around the Christendom. The churches he created are magnificent centers of faith but there is still much work to be done to reach Lalibela's dreams."
+ flavor_eth.220.a: "Let's spare no expense."
+ flavor_eth.220.b: "We cannot afford the investment."
+
+ flavor_eth.230.title: "Codifying the [ShowLawNameWithNoTooltip('double_sabbath_tenet')]"
+ flavor_eth.230.desc: "Now that we have broken the shackles that tied us to the Patriarchate of [ShowLocationName('alexandria')], it is time to codify the tenets that are going to define the life of the [ROOT.GetCountry.GetAdjective] people under our new Patriarchate."
+ flavor_eth.230.a: "Let us create this doctrine."
+ flavor_eth.230.b: "No, we would keep our traditions as they are."
+
+ flavor_eth.240.title: "A Bright New Light in the Sky"
+ flavor_eth.240.desc: "While visiting [ROOT.GetCountry.GetGovernment.GetRuler.GetHerHis] domains at [ShowLocationName('debra_berhan')] [ROOT.GetCountry.GetGovernment.GetRuler.GetName] has been witness to a new star appearing in the heavens. While the changes in the celestial sphere have made the [ROOT.GetCountry.GetAdjective] people nervous, our [ROOT.GetCountry.GetGovernment.GetRulerTitle] sees it as a sign from God that He is favoring [ROOT.GetCountry.GetNameWithNoTooltip]."
+ flavor_eth.240.a: "Let's celebrate a feast to celebrate this good omen."
+ flavor_eth.240.b: "At this place we will build a new church in His honor."
+ flavor_eth.240.c: "At this place we will establish a new city."
+ flavor_eth.240.d: "Here we rise a new city and in it a church worthy of Him."
+ can_revoke_double_sabbath_tt: "The Clergy estate is twice as powerful as the Peasant estate or the Peasant estate has less than 10% estate power"
+
+ flavor_eth_250_shared: "Requesting Artisans"
+
+ flavor_eth.250.title: "$flavor_eth_250_shared$"
+ flavor_eth.250.desc: "Although the [ROOT.GetCountry.GetCulture.GetName] culture has led to many great projects in [ROOT.GetCountry.GetName], sometimes asking for outside help is needed. The [ROOT.GetCountry.GetGovernment.GetCourtTitle] has suggested that we request artisans from [target_country.GetName]."
+ flavor_eth.250.a: "Even if it hurts the [ROOT.GetCountry.GetCulture.GetNameWithNoTooltip] culture, progress is more important."
+ flavor_eth.250.b: "We can do without them."
+ eth_target_country_must_accept_tt: "[target_country.GetName] must accept for the effects to take place"
+
+ flavor_eth.251.title: "$flavor_eth_250_shared$"
+ flavor_eth.251.desc: "Envoys from [target_country2.GetName] have come to our [ROOT.GetCountry.GetGovernment.GetCourtTitle] requesting some artisans to serve in their [target_country2.GetFlavorRank]."
+ flavor_eth.251.a: "Let us send them some."
+ flavor_eth.251.b: "Send these beggars back."
+
+ flavor_eth_260_shared: "The Secret of the Naft"
+
+ flavor_eth.260.title: "$flavor_eth_260_shared$"
+ flavor_eth.260.desc: "Although we have been in conflict with the [ShowReligionGroupAdjective('muslim')] countries many times, it does not mean we are not able to learn from them. One rare invention of theirs, the naft, has caught the interest of our [ROOT.GetCountry.GetGovernment.GetCourtTitle]. They now wish to employ advisors from [target_country.GetName] that will teach us the secret, allowing us to use it in our army."
+ flavor_eth.260.a: "Let us ask them."
+ flavor_eth.260.b: "We do not need their inventions."
+ eth_no_offer_tt: "No offer will be sent to [target_country.GetName]"
+
+ flavor_eth.261.title: "$flavor_eth_260_shared$"
+ flavor_eth.261.desc: "[target_country2.GetName] has offered us a sum of money if we are to sell them some of our weaponry, specifically the nafts. We can accept, but that will allow them to potentially use them against us."
+ flavor_eth.261.a: "It will never backfire."
+ flavor_eth.261.b: "They will not have our weapons!"
+ 
+ flavor_eth_270_title_common: "[target_character2.GetNameWithNoTooltip] Revolts"
+
+ flavor_eth.270.title: "$flavor_eth_270_title_common$"
+ flavor_eth.270.desc: "Due to our increasing [ShowReligionGroupAdjective('muslim')] population within [ROOT.GetCountry.GetName], the governor of these lands, [target_character2.GetName], a follower of [ShowReligionGroupNameWithNoTooltip('muslim')], wants to rise up against [GetCountry('ETH').GetName]. [target_character2.GetSheHe|U] is ready to yield the sword against [target_character2.GetHerHis] enemies."
+ flavor_eth.270.a: "We shall break free."
+ flavor_eth.270.b: "It is not a worthwhile endeavor."
+
+ flavor_eth.271.title: "$flavor_eth_270_title_common$"
+ flavor_eth.271.desc: "[target_character2.GetName] of [target_country.GetName] has declared [target_character2.GetHerHis] lands independent from ours, proclaiming [ShowReligionGroupName('muslim')] the official religion of the area."
+ flavor_eth.271.a: "We shall never let them break free!"
+ flavor_eth.271.b: "[ROOT.GetCountry.Custom('common_string_nothing_we_can_do')]"

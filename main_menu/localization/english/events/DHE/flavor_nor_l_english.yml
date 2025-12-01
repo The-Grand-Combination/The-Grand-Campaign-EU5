@@ -1,0 +1,70 @@
+﻿l_english:
+ flavor_nor.1.title: "Sigurd Jonsson"
+ flavor_nor.1.desc: "The Norwegian nobleman and knight, Sigurd Jonsson, is a former drottsete, a man who could rule the country in the King's name, and regent of Norway. He is a direct descendant of the old Norwegian royal family and the commander of Akershus Fortress from 1440 to 1445. Sigurd Jonsson is one of the leading proponents of the anti-Hanseatic policies in Norway."
+ flavor_nor.1.a: "He could be of use to the realm"
+ flavor_nor.1.b: "We do not want to antagonize the Hansa"
+ 
+ hanseatic_conflict: "Hanseatic-Scandinavian Conflict"
+
+
+ flavor_nor.2.title: "Gyldenløve"
+ flavor_nor.2.desc: "The son of National Counselor Henrik Jensson, [niels.GetName], has recently married Ingerd Ottesdatter and consolidated his possession of the Austrått estates. He is now one of Norway's largest landowners, with properties in Bergen, Vardøhus, Hålogaland, Fosen, Frosta, Stjørdal, Sunnmøre, Romsdal, Edøy, Selbu and Herjedalen. He has been suggested to the post of National Counselor."
+ flavor_nor.2.a: "Let him become an advisor"
+ 
+ flavor_nor.3.title: "Vardøhus Fortress"
+ flavor_nor.3.desc: "The first fortification in Vardø Municipality in Finnmark county was built in 1306 and was called Varghøya. The second fortification was built in Østervågen, erected between 1450 and 1500, a rectangular fortification with two corner bastions."
+ flavor_nor.3.a: "Fortify the fortress further"
+ flavor_nor.3.b: "Increase defenses in the whole of Norway"
+ flavor_nor.3.c: "Do nothing"
+ 
+ 
+ flavor_nor.5.title: "A Strategic Marriage"
+ flavor_nor.5.desc: "Ever since the 13th century treaty of Perth, [GetCountry('SCO').GetName] has been obligated to pay a yearly sum to the [ROOT.GetCountry.GetLongName] in exchange for control of the Hebrides. These payments are by now long overdue, however, and this has been the cause for tensions on and off. Regardless of our ancestral claims, however, our ability to project power in the [ShowAreaName('scottish_highlands')] is not what it was, and we have bigger issues closer to home to handle. It has been suggested that this conflict be settled once and for all. The Jarldom of [ShowLocationName('orkney')] will be pawned and then transferred to the Scots.\n\n[ShowLocationNameWithNoTooltip('orkney')] remains one of the highest ranked titles in the [ROOT.GetCountry.GetLongNameWithNoTooltip] however, one that has at times been a stepping stone to the [ROOT.GetCountry.GetAdjectiveWithNoTooltip] throne. While they remain a weak factor, the [ROOT.GetCountry.GetAdjectiveWithNoTooltip] [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] are very wary of this deal."
+ flavor_nor.5.historical_info: "In 1468, the impoverished Christian I, King of Denmark, Norway, and Sweden, married his only daughter Margaret to James III of Scotland. As he could not come up with the promised dowry, he instead pawned off Orkney Isles to James III of Scotland in lieu of a royal dowry for 50,000 florins. The Shetlands were pawned for a further 8,000 florins. "
+ flavor_nor.5.a: "Let us end this conflict."
+ flavor_nor.5.a.tt: "#flavor Should [GetCountry('SCO').GetName] accept the following will happen:#!"
+ nor_gave_away_orkney: "Gave Away Orkney"
+ nor_strategic_marriage: "Strategic Marriage"
+ flavor_nor.5.b: "We will never give up our claim to these lands!"
+ nor_taxation_conflict_over_hebrides: "Tensions Over the Hebrides"
+  
+ flavor_nor.6.title: "Earldom of Orkney"
+ flavor_nor.6.desc: "Ever since the 13th century treaty of Perth, Scotland has been obligated to pay a yearly sum to the Norwegian Kingdom in exchange for control of the Norwegian Hebrides. These payments are by now long overdue, however, and this has been the cause for tensions on and off. [GetCountry('NOR').GetName] has now suggested settling this conflict once and for all."
+ flavor_nor.6.a: "Make the deal!"
+ flavor_nor.6.b: "We would rather settle this with swords in hand."
+ 
+ 
+ flavor_nor.8.title: "Scotland Accepts"
+ flavor_nor.8.desc: "We have foregone the ancestral Norwegian claims to the Hebrides, Orkney Islands and any other part of the Highlands. Relations with the Scots have never been better."
+ flavor_nor.8.a: "It is done."
+ 
+ flavor_nor.9.title: "Scotland Refuses"
+ flavor_nor.9.desc: "The Scots have refused our deal to settle the conflicting claims in the Hebrides and Orkney Islands. As a result tension is on the rise again."
+ flavor_nor.9.a: "We will never surrender!"
+
+ 
+
+ flavor_nor.16.title: "Hollendertiden"
+ flavor_nor.16.desc: "Timber has always been a major export of the Norwegian economy and trade ships from the Low Countries have become an increasingly common sight along the Norwegian coastline. Unlike the Hanseatic traders who have dominated our economy for centuries the Dutch are content to trade without meddling in local businesses or breaking the laws of the land.\nWith an ever growing demand from the Dutch shipbuilders the timber industry in Norway could well grow to be the biggest in Europe. As a seafaring and shipbuilding people we can undoubtedly learn a lot from the Dutch entrepreneurs by aligning with them against the Germans."
+ flavor_nor.16.a: "The time of the Dutch has come."
+ STATIC_MODIFIER_NAME_nor_hollendertiden: "Hollendertiden"
+ 
+
+ 
+ flavor_nor.21.title: "[tordenskiold.GetNameWithNoTooltip]"
+ flavor_nor.21.desc: "Through daring attacks and skillful maneuvers,[tordenskiold.GetName] has been making a name for himself as a promising captain in the Norwegian navy. His unwillingness to ever back down from an engagement, regardless of the sizes of the involved ships or any other circumstance has catapulted him through the ranks. Today he stands before [ROOT.GetCountry.GetGovernment.GetRuler.GetName] to be ennobled for his great exploits on the open seas."
+ flavor_nor.21.a: "Henceforth he shall be known as 'Tordenskiold' - Thundershield."
+ 
+ flavor_nor.22.title: "[cort_adeler.GetNameWithNoTooltip]"
+ flavor_nor.22.desc: "At the age of 15 young skipper's son [cort_adeler.GetName] left Norway behind for the open seas and he has since made a career as a successful merchant captain in the lowlands, the Mediterranean and even as far away as the Coromandel Coast in India. Having also acted as captain in times of war in Dutch, English, Venetian and Turkish naval engagements, Adeler is in possession of experience and contacts that few in his generation posses. Through his various mercantile enterprises he has acquired a considerable personal fortune, some of which he has invested in his home country, especially the estates he has begun to develop outside the Norwegian city of Skien.\nA man of Adelers caliber could surely be put to good use in the service of the state."
+ flavor_nor.22.a: "A remarkable man!"
+ 
+ flavor_nor.23.title: "Great Fire of Oslo"
+ flavor_nor.23.desc: "For three days fires have ravaged the timber city of Oslo and now all but a few buildings in our country's capital lie in ashes. While fire has haunted Oslo before the destruction we face now is so final that it has been suggested we should relocate the city entirely as we rebuild. Instead of building in timber and awaiting the next catastrophe it has been suggested that we rebuild closer to Akershus fortress, using sounder techniques of construction and city planning as befits a capital of our age.\nRebuilding closer to Akershus will also allow us to properly fortify the city, which can be of great benefit in these times. In practice previous rulers have found it hard to prevent the citizens of Oslo to rebuild in whichever materials and mode they wish however, so a proper renovation is likely to be very costly."
+ flavor_nor.23.a: "We must found a new city!"
+ STATIC_MODIFIER_NAME_nor_rebuilding_oslo: "Rebuilding Oslo"
+ flavor_nor.23.b: "What was lost is gone, let people rebuild as they please."
+ 
+ flavor_nor.24.title: "Dutch-Norwegian ties Strengthen"
+ flavor_nor.24.desc: "Over time the extensive integration of Norway into the economy of the rich cities in the Low Countries have led to a growing shipbuilding industry at home. Norwegian cities strongly tied to the timber trade are quickly growing bigger than ever before, with Norwegian, Dutch, Danish, Scottish, English and Swedish merchants blending together to create a cosmopolitan maritime environment.\nYoung Norwegian men have also begun to migrate in increasing numbers to the Low Countries. Some settle there while others continue onto the open seas. The growing number of Norwegian expatriates and those who eventually return to our lands are together immersing our country ever more deeply into the emerging global economy."
+ flavor_nor.24.a: "The sea is our future and our past."

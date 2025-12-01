@@ -1,0 +1,62 @@
+﻿l_english:
+ ikko_ikki.1.title: "$ikko_ikki$ Uprising!"
+ ikko_ikki.1.desc: "Discontent with the endless warfare has caused a band of peasant farmers, monks, and small landowners, following the [target_io.GetName] sect of [ShowReligionGroupName('buddhist')], to openly speak out and resist [target_character.GetName]'s rule. If we do not act resolutely and quickly repress this rag-tag band, the unrest may spread and destabilize our lands even further."
+ ikko_ikki.1.a: "Put them in place!"
+ ikko_ikki.1.b: "Avoid aggravating the situation."
+
+ ikko_ikki.2.title: "$ikko_ikki$ Spread to [ROOT.GetCountry.GetNameWithNoTooltip]!"
+ ikko_ikki.2.desc: "Our neighboring [target_country.GetFlavorRank]'s increasing trouble with the $ikko_ikki$ has come to a head and led to military confrontations. The brutality of the fighting has caused survivors of the sect of the Single-Minded to spill into our [ROOT.GetCountry.GetFlavorRank], and these bands of peasants, monks, and small landowners have already strengthened their numbers with followers from among our own people. They will surely only cause more and more trouble for us if we do not act swiftly and decisively."
+ ikko_ikki.2.a: "$ikko_ikki.1.a$"
+ ikko_ikki.2.b: "$ikko_ikki.1.b$"
+ 
+ ikko_ikki.3.title: "[target_io.GetNameWithNoTooltip]"
+ ikko_ikki.3.desc: "In this time of turmoil, an increasing number of people are turning to religion for guidance and safety. [ShowReligionGroupName('buddhist')] has permeated our society for a long time, but recently the number of adherents has been growing quickly and more [ShowReligionGroupAdjectiveWithNoTooltip('buddhist')] traditions are also finding their way into the everyday life of the [ROOT.GetCountry.GetAdjective] people.\n\nOne of these new traditions is that of the [target_io.GetName], branch of the [ShowPolicyName('pure_land_school_policy')] that emerged from the teachings of the [ShowPolicyName('tiantai_policy')]. The apparent promise of salvation and social mobility among its followers is attracting a great number, and all over our [ROOT.GetCountry.GetFlavorRank] its message is spreading, with people organizing themselves in groups called $ikko_ikki$."
+ ikko_ikki.3.a: "This fervor is inspiring! Let us patronize this movement."
+ sect_gains_favor_tt: "[target_io.GetName] will gain #Y 10#! $sect_favor$"
+ ikko_ikki.3.b: "It is hard to have something against the strong convictions of the faithful."
+ ikko_ikki.3.c: "Let us be very restrictive against anything that empowers the poor."
+
+ ikko_ikki.4.title: "Jinaichō"
+ ikko_ikki.4.desc: "Communities of faithful of the [target_io.GetName] school have started growing into small towns around major [ShowReligionGroupName('buddhist')] temples in the [ROOT.GetCountry.GetFlavorRank]. These settlements, called #italic Jinaichō#! or #italic Jinaimachi#! due to them being inside the [ShowBuildingTypeName('temple')] grounds, are not only influential in a spiritual sense, but they also muster their own defense forces composed of anything from low-level landholders called Jizamurai, to armed farmers and monks. These communes, with their form of self-government, represent a threat to the authority of the [ROOT.GetCountry.GetFlavorRank] controlling the surrounding lands.\n\nOne such commune has sprung up around a [ShowBuildingTypeNameWithNoTooltip('temple')] in [target_location.GetName], and while we might be able to benefit from their support, this potent mix of religious fervor, weapons, and autonomy may pose a threat to the stability of our [ROOT.GetCountry.GetFlavorRank]."
+ ikko_ikki.4.a: "We must undercut these hornet nests."
+ ikko_ikki.4.b: "Let us strive to work together with these armies of the faithful."
+ ikko_ikki.4.c: "Authorize more temple towns to be built."
+
+ ikko_ikki.5.title: "Social Tensions"
+ ikko_ikki.5.desc: "The $ikko_ikki$ in our [ROOT.GetCountry.GetFlavorRank] have been growing stronger, more numerous, and above all, bolder. Our officials report that sometimes a tax collector from the [target_io.GetName] sect has collected already when they arrive in a village, and traders are no longer feeling safe as they pass these communities. The $ikko_ikki$ are now so strong that many have started to question their privileges."
+ ikko_ikki.5.a: "This is only their right."
+ ikko_ikki.5.b: "They cannot spread beyond their current borders."
+ ikko_ikki.5.c: "Their gall shall not be allowed to continue!"
+
+ ikko_ikki.6.title: "The End of Religious Self-Government"
+ ikko_ikki.6.desc: "The $ikko_ikki$ have been curtailed, and towns under their command have been dismantled. Their followers have been disarmed and our deputies are now the only ones with authority to take up tolls, taxes, and mount defenses against outsiders."
+ ikko_ikki.6.a: "Order is Restored."
+ ikko_ikki_no_longer_available.tt: "We will no longer have access to the $ikko_ikki$ [religious_faction|e]"
+ ikko_ikki.6.b: "Take solace on the [target_io.GetNameWithNoTooltip] faith once more."
+
+ ikko_ikki.7.title: "Parallel Authority"
+ ikko_ikki.7.desc: "The $ikko_ikki$ communities seem to be here to stay. While we have tried to safeguard our own authority, we have also ceded considerable rights and privileges to their Jinaichō, and it seems likely that they will continue to play a considerable role in our society."
+ ikko_ikki.7.a: "They will serve our purposes."
+ ikko_ikki.7.b: "Their influence is growing too much."
+
+ ikko_ikki.8.title: "Support of the $ikko_ikki$"
+ ikko_ikki.8.desc: "We have for a while patronized the growth of temple communities of the [target_io.GetName] and therefore we have come to be associated with the $ikko_ikki$. The leaders of the [ShowReligionGroupAdjective('buddhist')] temple communities may hold a lot of sway in our society but they are also the ardent supporters of our [ROOT.GetCountry.GetFlavorRank]."
+ ikko_ikki.8.a: "Keep supporting them, they are useful."
+ ikko_ikki.8.b: "Maybe we are giving them too much support."
+
+ ikko_ikki.9.title: "The Buddha Amida"
+ ikko_ikki.9.desc: "Our long-standing support of the [target_io.GetName] has not been without friction and in many situations it would seem there are two parallel authorities in [ROOT.GetCountry.GetName]. Still, the $ikko_ikki$ would arguably not have come as far as they have without our protection, according to many in our [ROOT.GetCountry.GetFlavorRank].\n\nWith the recent religious developments, many expect us to elevate the leaders of the $ikko_ikki$ to high positions and make their faith more officially sponsored by our [ROOT.GetCountry.GetFlavorRank]. To many others, however, this would be a grave insult to our old traditions."
+ ikko_ikki.9.a: "We cannot turn our back on the traditions of our ancestors entirely."
+ ikko_ikki.9.b: "#italic Namu Amida Butsu#!. We must embrace their beliefs and enshrine them."
+ ikko_ikki.9.c: "#italic Namu Amida Butsu#!. Their communes shall be given full authority."
+ ikko_ikki.9.d: "#italic Namu Amida Butsu#!, but we cannot allow them to rule."
+ ikko_ikki_lots_of_mahayana.tt: "Many of our [pops|e] will convert to [ShowReligionName('mahayana')]"
+
+ ikko_ikki.10.title: "$ikko_ikki$"
+ ikko_ikki.10.desc: "The recent rise of the [target_io.GetName] faith in the [target_origin_country.GetLongName] heralds an important change for all [ShowReligionAdjective('shinto')] countries, which will have to decide how they interact with this new emergent faction. Whereas they decide to support this new faith or shun their followers, it is undeniable that its influence will be felt everywhere."
+ ikko_ikki.10.a: "Interesting times are ahead."
+ ikko_ikki_enabled.tt: "We now have access to the $ikko_ikki$ [religious_faction|e]"
+
+ ikko_ikki.11.title: "$ikko_ikki.6.title$"
+ ikko_ikki.11.desc: "The bands of the $ikko_ikki$ have been completely dismantled, and there is no one that follows their faith anymore. Long gone are the times where our lands would suffer the ravages of religious upheaval at their hand, as the [target_origin_country.GetLongName] have just openly announced the $ikko_ikki$ followers to be extinguished, to the relief of many."
+ ikko_ikki.11.a: "Their faith was not strong enough."

@@ -1,0 +1,38 @@
+﻿l_english:
+ flavor_chi_mon.1.title: "Victory at [target_location.GetNameWithNoTooltip]"
+ flavor_chi_mon.1.desc: "Glorious news has arrived at our [ROOT.GetCountry.GetGovernment.GetCourtTitle] in [ROOT.GetCountry.GetCapital.GetName]. Not only have we won the battle at [target_location.GetName], as we expected, but our victory was so absolute that we managed to take hold of [captured_emperor.GetName], the leader at the helm of the [GetInternationalOrganizationType('middle_kingdom').GetName]. If we push our advantage, we might be able to rake in great concessions from the [target_war.GetName]."
+ flavor_chi_mon.1.a: "Push our advantage."
+ flavor_chi_mon.1.b: "Offer [target_country.GetNameWithNoTooltip] ransom for [captured_emperor.GetNameWithNoTooltip]."
+
+ mon_pushing_advantage: "[ShowModifier('chi_tumu_crisis_benefit')] will last as long as [captured_emperor.GetName] remains imprisoned in [ROOT.GetCountry.GetName] and alive.\nIf we capture [location_for_capture.GetName], we will receive the following benefits:"
+ mon_offer_ransom: "Offer [target_country.GetName] ransom for [captured_emperor.GetName] for the cost of [SCOPE.GetLocalVariable('ransom_value')|=+]"
+ 
+ flavor_chi_mon.2.title: "[ROOT.GetCountry.GetGovernment.GetRulerTitle] is Captured!"
+ flavor_chi_mon.2.desc: "The battle in [target_location.GetName] turned out to be a disastrous defeat for our forces. Worse yet, [captured_emperor.GetName], our beloved [ROOT.GetCountry.GetGovernment.GetRulerTitle], was captured in the midst of the [capturing_country.GetAdjective] rout, plunging our [ROOT.GetCountry.GetGovernment.GetCourtTitle] into panic. It is not certain who will lead the [GetInternationalOrganizationType('middle_kingdom').GetName] from now on."
+ flavor_chi_mon.2.a: "Maintain the status quo."
+ flavor_chi_mon.2.b: "The [sibling_candidate.GetSisterBrother] of [captured_emperor.GetNameWithNoTooltip] can rule the [ROOT.GetCountry.GetFlavorRank]."
+ flavor_chi_mon.2.c: "A child of the [ROOT.GetCountry.GetGovernment.GetRulerTitle] is ideal."
+ flavor_chi_mon.2.d: "[dynasty_candidate.GetNameWithNoTooltip] is an ideal option."
+ chi_recapture_emperor_tt: "[captured_emperor.GetName] must be retaken via the [ShowPeaceTreatyTypeName('chi_recapture_emperor')] [peace_treaty|e]. If [captured_emperor.GetName] dies in captivity, we will receive the following penalties:"
+
+ flavor_chi_mon.3.title: "[target.GetNameWithNoTooltip] Dies in Prison"
+ flavor_chi_mon.3.desc: "Our greatest asset, [target.GetName], former ruler of [target_country.GetName] has perished while in our captivity. We have truly lost a great [target.GetManWoman], who will forever be remembered as our ticket to greatness."
+ flavor_chi_mon.3.a: "Damnation!"
+
+ flavor_chi_mon.4.title: "The Death of [target.GetNameWithNoTooltip]"
+ flavor_chi_mon.4.desc: "[ROOT.GetCountry.GetName] has just been struck with a calamity. Our beloved ruler, the [target.GetSonDaughter] of heaven, [target.GetName], is reported to have died in captivity of the [target.GetOwner.GetAdjective] fiends. It is tragic that [target.GetShortNameWithNoTooltip] never lived to be recaptured and returned to [target.GetHerHis] precious country."
+ flavor_chi_mon.4.a: "[target.GetShortNameWithNoTooltip] was not worthy of such a death."
+ 
+ flavor_chi_mon.5.title: "Offer of Ransom"
+ flavor_chi_mon.5.desc: "Surprisingly, the fiends in [capturing_country.GetName] have given us a proposition of ransom. A large sum of gold for the safe return of our beloved captured [captured_emperor.GetName]. We must also admit that, even though we consider the [captured_emperor.GetHerHis] life to be priceless, we are pleased to know that our foes undervalue it so much."
+ flavor_chi_mon.5.a: "Accept the proposal."
+ flavor_chi_mon.5.b: "It is a trick! Send no reply."
+
+ flavor_chi_mon.6.title: "Capture of [target_location.GetNameWithNoTooltip]"
+ flavor_chi_mon.6.desc: "The [target_location.GetRank.GetName] of [target_location.GetName] has finally fallen into our grasp. The demoralized garrison could not stand the onslaught of the [ROOT.GetCountry.GetAdjective] forces and yielded the control over our target. Moreover, their [target_character.GetName] still remains in our custody, putting the [target_location.GetOwner.GetAdjective] [target_location.GetOwner.GetGovernment.GetCourtTitle] in panic."
+ flavor_chi_mon.6.a: "This will be in the history books."
+
+ flavor_chi_mon.7.title: "Return of [target_emperor.GetNameWithNoTooltip]"
+ flavor_chi_mon.7.desc: "[target_emperor.GetName], the former ruler of [ROOT.GetCountry.GetName], has finally been brought back to the [ROOT.GetCountry.GetFlavorRank]. Having been received warmly by the citizens of [ROOT.GetCountry.GetCapital.GetName], not everyone is pleased with [target_emperor.GetHerHis] return. Factions have formed in the [ROOT.GetCountry.GetGovernment.GetCourtTitle], some of whom prefer [target_emperor.GetNameWithNoTooltip] to abdicate."
+ flavor_chi_mon.7.a: "The rightful ruler has returned."
+ flavor_chi_mon.7.b: "[ROOT.GetCountry.GetGovernment.GetRulerOrHeirIfRegent.GetNameWithNoTooltip] should rule instead."

@@ -1,0 +1,208 @@
+﻿l_english:
+ flavor_ned.1.title: "[target_location.GetNameWithNoTooltip] up in Flames"
+ flavor_ned.1.desc: "Tragedy has hit the [target_location.GetRank.GetName] of [target_location.GetName]! A great fire has started, engulfing parts of the [target_location.GetRank.GetNameWithNoTooltip], such as the #italic Council Hall#! and the #italic Archive#!. The citizens there had tried to put it out, but some of them were caught in it and perished."
+ flavor_ned.1.a: "A tragedy for [target_location.GetNameWithNoTooltip]..."
+
+ flavor_ned.2.title: "Strengthening [target_location.GetNameWithNoTooltip]"
+ flavor_ned.2.desc: "Since our explorers have arrived in [ShowRegionName('indonesia_region')], much of the land there has come under our control either by war or the pen. [target_character.GetName] and [target_character.GetHerHis] advisors have been planning out a new city in the area, a fort where [ROOT.GetCountry.GetCulture.GetName] settlers can flock in without having to worry about the native people."
+ flavor_ned.2.historical_info: "When the Dutch settlers arrived in the East Indies, one of their first objectives was fortifying their colonized land. One of these forts was Batavia, which later on became the capital of the Dutch East Indies. During the rule of the VOC, the city became the most important one in the region."
+ flavor_ned.2.a: "Let us make [target_location.GetNameWithNoTooltip] a fort."
+ flavor_ned.2.b: "This is too costly. Let us appease the locals instead."
+ flavor_ned.2.c: "[target_location.GetNameWithNoTooltip] shall be the greatest place in the area."
+ flavor_ned.2.d: "[target_location.GetNameWithNoTooltip] MUST be built!"
+ 
+ flavor_ned.3.title: "[target_character2.GetNameWithNoTooltip]"
+ flavor_ned.3.desc: "With the rise of our trade empire, many great figures, be it they are part of the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] or the [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')], are joining our cause. One of them is [target_character2.GetName], a [ShowCultureName('swedish')] citizen, who is making a name for himself in [target_country2.GetName], wishing to one day become the governor of one of our colonial possessions."
+ flavor_ned.3.historical_info: "Born in Stockholm, Frederick Coyett was the first Swede to explore East Asia, spending most of his time as a diplomat for the VOC in Dejima, he was successful at dealing with the #italic Nanbu Affair#!, which saw the release of several Dutch prisoners from the Shogunate. After many successful negotiations, he was appointed the governor of Formosa. However, when the Míng dynasty fell he lost his governorship and the entire island to #italic Zhèng Chénggōng#!. His remaining years were spent in Batavia, where he collected tons of Hindu statues."
+ flavor_ned.3.a: "We will allow him to serve us."
+ flavor_ned.3.b: "He is not allowed in this country."
+ 
+ flavor_ned.4.title: "[target_character.GetNameWithNoTooltip]"
+ flavor_ned.4.desc: "With our golden age of culture and architecture, our population has started to shift towards matters outside of war and trade. One of them is [target_character.GetName], a pioneer of the #italic Dutch Baroque Architecture#! style. Should we subsidize him, he may be able to bring our nation's culture to new heights."
+ flavor_ned.4.historical_info: "During the 17th century, the Netherlands saw the rise of its Dutch Baroque style of architecture. Pieter Post, alongside his collaborator, Jacob van Campen, were the main pioneers behind this style, designing many new palaces and museums." 
+ flavor_ned.4.a: "He has our support."
+ flavor_ned.4.b: "Better buildings? Our money is needed elsewhere."
+ 
+ flavor_ned.5.title: "Trade in [ShowRegionNameWithNoTooltip('japan_region')]"
+ flavor_ned.5.desc: "The lands of [ShowRegionName('japan_region')], although foreign to us, seem to be a great place for our merchants to trade in. Their silvers, as well as their luxury goods, have a big appeal to our population. If we can establish our traders there, then we can start bringing these goods back to [ROOT.GetCountry.GetName]."
+ flavor_ned.5.a: "Let us establish a new outpost there."
+ flavor_ned.5.b: "A waste of time."
+ NED_UNLOCK_DUTCH_OUTPOSTS_IN_JAPAN: "We will be able to build [ShowBuildingTypeName('dutch_trade_outpost')] in [target_location.GetName]."
+ 
+ flavor_ned.6.title: "Kaapkolonie"
+ flavor_ned.6.desc: "With our settlers in the lands of [ShowRegionName('southern_africa_region')], many of them have been constructing new cities and ports, ready to secure the surrounding seas and in turn the entirety of the Asian trade. One of the cities is the [target_location.GetName]. Perhaps we can subsidize the construction of this port."
+ flavor_ned.6.historical_info: "The Cape was one of the most important colonies of the Dutch Empire. Being the crossroad for maritime trade between Asia and Europe, it served as a vital port for the VOC."
+ flavor_ned.6.a: "The Cape shall bring us good hope."
+ flavor_ned.6.b: "It is not a new port we need, but a bigger fleet."
+ 
+ flavor_ned.7.title: "[target_location.GetNameWithNoTooltip]"
+ flavor_ned.7.desc: "With many European nations joining the colonial race, so too have we. Instead of claiming huge amounts of land, we have chosen to create more concentrated cities in the Americas. One of them is [target_location.GetName], where many new settlers have joined in the effort to fortify it against any threats. We can choose to offer subsidies to the colonists there, or let them build up the port by themselves."
+ flavor_ned.7.a: "We have one [ShowLocationNameWithNoTooltip('amsterdam')], but how about two?"
+ flavor_ned.7.b: "Let the settlers there handle it by themselves."
+ 
+ flavor_ned.8.title: "The Sea Beggars"
+ flavor_ned.8.desc: "If we are to secure our independence, we must secure our lands and our seas. To accomplish the latter, [target_character.GetName] wishes to grant letters of marque to any armed vessel that wishes to serve [target_country.GetName]."
+ flavor_ned.8.historical_info: "During the 80 Years War, William of Orange granted to any armed vessel letters of marque, bringing in eighteen ships under the Dutch flag. These privateers would slowly increase in size, and harass Spanish ports. Many great heroes were also part of the Sea Beggars."
+ flavor_ned.8.a: "For the defense of [target_country.GetNameWithNoTooltip], this is needed."
+ flavor_ned.8.b: "Promote piracy? What happened to safeguarding our waters?"
+ 
+ flavor_ned.9.title: "Interests in [ShowAreaNameWithNoTooltip('sailan_area')]"
+ flavor_ned.9.desc: "The island of [ShowAreaName('sailan_area')] serves as a strategic region for any merchant in $india$. [target_country.GetName] controls [ShowLocationName('kurunegala')], and the only way to take it is by force."
+ flavor_ned.9.a: "[ShowAreaNameWithNoTooltip('sailan_area')] belongs to us."
+ flavor_ned.9.b: "A war there would not be wise."
+
+ flavor_ned.10.title: "Five [ROOT.GetCountry.GetAdjectiveWithNoTooltip] Admiralties"
+ flavor_ned.10.desc: "Our lands may be ruled by [target_character.GetName], but the differences between our provinces have divided our [ShowBuildingTypeName('admiralty')] up. This factionalism between [ShowLocationName('groningen')], [ShowLocationName('hoorn')], [ShowLocationName('rotterdam')], [ShowLocationName('middelburg')], and [ShowLocationName('amsterdam')] prevents us from unifying our navies. However, allowing them to pursue their interest may allow for a higher commitment from each of them."
+ flavor_ned.10.a: "Let us allow these admiralties to exist on their own."
+ flavor_ned.10.b: "Unify them into one."
+ NED_UNLOCKS_UNIFIED_ADMIRALTIES_GOV_REFORM: "Unlocks the [ShowGovernmentReformName('unified_admiralty_reform')] [government_reform|e]."
+ 
+ flavor_ned.11.title: "Settling [ShowAreaNameWithNoTooltip('taiwan_area')]"
+ flavor_ned.11.desc: "With our explorers and settlers reaching as far as the lands of $china$, they have claimed and colonized [ShowAreaName('taiwan_area')]. However, [ROOT.GetCountry.GetCulture.GetName] influence there is lacking. Perhaps we can try to populate it with people from [ROOT.GetCountry.GetCapital.GetName]."
+ flavor_ned.11.a: "The [ROOT.GetCountry.GetCulture.GetNameWithNoTooltip] shall be dominant in [ShowAreaNameWithNoTooltip('taiwan_area')]."
+ flavor_ned.11.b: "Let us keep [ShowAreaNameWithNoTooltip('taiwan_area')] as it is."
+ 
+ flavor_ned.12.title: "[target_artist.GetNameWithNoTooltip]"
+ flavor_ned.12.desc: "With the increasing threat of the seas ready to engulf the Low Countries slowly, many architects are trying to find new ways to contain this issue. One of them is [target_artist.GetName], who has already planned many [ShowBuildingTypeName('polders')] across our lands."
+ flavor_ned.12.historical_info: "Jan Adriaenszoon Leeghwater was the first person to create a polder from a lake by draining the water using a windmill. He also led the construction of many other polders in Purmer, Schermer and Heerhugowaard."
+ flavor_ned.12.a: "Let us hire him to make even more [ShowBuildingTypeNameWithNoTooltip('polders')]."
+ flavor_ned.12.b: "His works are not welcome here."
+ 
+ flavor_ned.13.title: "Father of Microbiology"
+ flavor_ned.13.desc: "As science develops, so does our knowledge of our surroundings. Many wish to pursue further this knowledge and have started studying at numerous universities. One of them is [target_artist.GetName], a microbiologist from [ShowLocationName('the_hague')]. Although his work is not recognized, we can try to aid him in this endeavor."
+ flavor_ned_13.historical_info: "Known for his breakthroughs in the field of microbiology, Antonie Philips van Leeuwenhoek was dubbed as the Father of Microbiology by many historians and scientists alike. Being self-taught, he managed to establish microbiology as an official scientific field. His experiments on himself allowed him to examine his blood, leading to the discovery of the red blood cells."
+ flavor_ned.13.a: "We will spare the funds to aid in the field of microbiology."
+ flavor_ned.13.b: "He does not belong in [target_country2.GetNameWithNoTooltip]."
+ 
+ flavor_ned.14.title: "The Eating of [target_character.GetNameWithNoTooltip]"
+ flavor_ned.14.desc: "War and misfortune have plagued [ROOT.GetCountry.GetName]. With the forces of [target_country.GetName] having taken control of [ROOT.GetCountry.GetCapital.GetName], much of the [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] see [target_character.GetName] and [target_character.GetHisHer] ambitions as the sole reason for all of this. An angry mob has now gathered outside of [target_character.GetNameWithNoTooltip]'s residence to execute [target_character.GetHimHer]. Despite [target_character.GetHisHer] captivating speech, the mob did not stop. Like animals, they attacked [target_character.GetHimHer], leading to [target_character.GetHisHer] death. In the aftermath, parts of the body were missing, being cannibalized by the relentless mob that went after [target_character.GetHimHer] in the first place."
+ flavor_ned.14.a: "Even now, [ROOT.GetCountry.GetNameWithNoTooltip] is not safe..."
+ 
+ flavor_ned.15.title: "The Seven Provinces"
+ flavor_ned.15.desc: "Although the Low Countries have been unified with a common cause, they are still divided thanks to de-jure claims and cultural differences. However, we can use this disunity to our advantage. By creating a confederation where each province has its laws and rights, whilst still having them obey the central government, we can properly ensure that each one of them is protected and can prosper on their own, allowing us to look outwards instead."
+ flavor_ned.15.historical_info: "During the Dutch Revolt against the Habsburgs, the Dutch people created a confederation in which each province was allowed to retain its own interests. This confederation, though, was still plagued with factionalism, as the Statists and Orangists fought for control over the numerous provinces. It was not until the Napoleonic Era and the Batavian Republic that this whole system was abolished, leading to the Kingdom of the Netherlands as we know it."
+ flavor_ned.15.a: "Let us create this confederation."
+ flavor_ned.15.b: "Decentralizing is not the solution."
+ 
+ flavor_ned.16.title: "Golden Age of [target_country.GetCulture.GetNameWithNoTooltip] Culture"
+ flavor_ned.16.desc: "With our ascension in global politics, our culture is experiencing its zenith, with many new artists flocking to our [ROOT.GetCountry.GetGovernment.GetCourtTitle]. With their help, the [target_country.GetCulture.GetName] culture is spread far and wide, in a Golden Age."
+ flavor_ned.16.a: "The [target_country.GetCulture.GetNameWithNoTooltip] culture will be known in every corner."
+ 
+ flavor_ned.17.title: "Cloth Industries of [target_location.GetNameWithNoTooltip] and [target_location2.GetNameWithNoTooltip]"
+ flavor_ned.17.desc: "The lands of [target_country.GetName] are vast with dyes, allowing us to produce all types of cloth. Two of the most renowned guilds are the ones in [target_location.GetName] and [target_location2.GetName], both really valuable for [target_country.GetNameWithNoTooltip]. [target_character.GetName] has plans to aid both guilds, however favoring one over the other may allow us to further specialize our cloth industry."
+ flavor_ned.17.a: "The [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')] of [target_location.GetNameWithNoTooltip] will have our aid."
+ flavor_ned.17.b: "Aiding the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')] of [target_location2.GetNameWithNoTooltip] will yield is more benefits."
+ flavor_ned.17.c: "Let us support both guilds."
+ flavor_ned.17.d: "We do not have the funds for this."
+ 
+ flavor_ned.18.title: "The Lust for Spice"
+ flavor_ned.18.desc: "With the routes to $india$ blocked by the [ShowReligionGroupAdjective('muslim')] traders, our people have been starved of their luxury goods. The [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] of [target_market.GetName] have been eyeing down new sea routes to once again secure the Spice Trade. Whatever the case, [target_character.GetName] needs to find a way to $india$."
+ flavor_ned.18.a: "Let us set sail for the Indies."
+ NED_SECURE_SPICE_FOR_BONUSES: "Should we be able to import [ShowGoodsName('pepper')] into the [target_market.GetName] [market|e], we will gain benefits."
+ 
+ flavor_ned.19.title: "Freedom of Thought"
+ flavor_ned.19.desc: "With the rise of the [ShowReligionAdjective('lutheran')] Reformation, many new extremist religious views have arisen in the [ShowReligionGroupAdjective('christian')] world. [ROOT.GetCountry.GetName] though has been promoting more and more humanist ideas, favoring freedom of thought and ideals, as long as one serves the nation. [target_character.GetName] has taken note of this, and is now planning the future of this new wave of humanism."
+ flavor_ned.19.a: "It is a free country after all."
+ flavor_ned.19.b: "Let us use their ideas for ourselves."
+ flavor_ned.19.c: "Let us not upset the [ROOT.GetCountry.GetReligion.GetAdjectiveWithNoTooltip] authorities."
+ 
+ flavor_ned.20.title: "The Spice Flows"
+ flavor_ned.20.desc: "Our merchants have finally managed to gain a supply of [ShowGoodsName('pepper')]. The [target_country.GetAdjective] people can now finally use this new good in their cookings."
+ flavor_ned.20.a: "As long as we have a navy, the [ShowGoodsNameWithNoTooltip('pepper')] will flow."
+ 
+ flavor_ned.21.title: "[target_character.GetNameWithNoTooltip]'s Philosophies"
+ flavor_ned.21.desc: "Inspired by the writings of Muḥammad bin Ṭufayl, [target_character.GetName] has arrived at our [ROOT.GetCountry.GetGovernment.GetCourtTitle] seeking employment. Born in [ShowLocationName('paris')] as a [ShowCultureName('french')] citizen, he has since then left his home to pursue his philosophical studies. He wishes to write a biographical dictionary, labelled as #italic Dictionnaire Historique et Critique#!."
+ flavor_ned.21.historical_info: "Pierre Bayle was a Huguenot born in Paris during the reign of Louis XIV. After studying in Puylaurens, Paris, and Sedan, he fled to the Dutch Republic due to the religious persecution in the country. During his stay there, he was appointed as a professor of philosophy and history in Rotterdam. Much of his works paved the way for the Enlightenment, as well as other philosophies that directly contracted his teachings, like Theodicy."
+ flavor_ned.21.a: "Let us sponsor his writings."
+ flavor_ned.21.b: "Away with him, no [ShowCultureNameWithNoTooltip('french')] philosopher allowed in [ROOT.GetCountry.GetNameWithNoTooltip]."
+ 
+ flavor_ned.22.title: "The Tale of [target_character2.GetNameWithNoTooltip]"
+ flavor_ned.22.desc: "Born as a commoner in [ShowLocationName('middelburg')], [target_character2.GetName] has shown much talent from a very young age. Working as a boatswain's apprentice from the age of 11, and joining the [ROOT.GetCountry.GetAdjective] army as an early adult. Now, he serves the [ROOT.GetCountry.GetAdjectiveWithNoTooltip] Merchant Fleet. Although young, he is experienced, and we can use him to either strengthen our army or our navy."
+ flavor_ned.22.a: "We [ROOT.GetCountry.GetCulture.GetNameWithNoTooltip] have always been proud seafarers."
+ flavor_ned.22.b: "We must protect the land of [ROOT.GetCountry.GetNameWithNoTooltip] with a stronger army."
+ flavor_ned.22.c: "Instead of asking [target_character2.GetNameWithNoTooltip], let us fully employ him."
+ 
+ flavor_ned.23.title: "Freedom of the Seas"
+ flavor_ned.23.desc: "Whilst the idea of [ShowSocietyDirectionName('free_trade')] is no stranger in [ROOT.GetCountry.GetName], the debates between protectionism and [ShowSocietyDirectionNameWithNoTooltip('free_trade')] become more heated. One of the philosophers partaking in these talks is [target_character.GetName], having served as an overseas merchant for the [ROOT.GetCountry.GetFlavorRank]. Having already started writing his new treatise, he might be able to swing the scales on the side of [ShowSocietyDirectionNameWithNoTooltip('free_trade')]."
+ flavor_ned.23.a: "Let him finish it, freedom of trade is welcome here."
+ flavor_ned.23.b: "He is not allowed in [ROOT.GetCountry.GetNameWithNoTooltip]."
+ 
+ flavor_ned_paper_industry_title: "The [target_location.GetNameWithNoTooltip] [ShowGoodsNameWithNoTooltip('paper')] Industry"
+ 
+ flavor_ned.24.title: "$flavor_ned_paper_industry_title$"
+ flavor_ned.24.desc: "[target_location.GetName] and its [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] are the most renowned guilds in the Southern Netherlands. Recently, they have made plans to expand their production of [ShowGoodsName('paper')], believing that it will allow [ROOT.GetCountry.GetName] to further strengthen its self-reliance."
+ flavor_ned.24.a: "Let us establish this southern section of [ShowGoodsNameWithNoTooltip('paper')] production."
+ flavor_ned.24.b: "We do not have the funds for such endeavors."
+
+ flavor_ned.25.title: "$flavor_ned_paper_industry_title$"
+ flavor_ned.25.desc: "The [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] of [target_location.GetName] have made progress in their [ShowGoodsNameWithNoTooltip('paper')]-producing efforts. Having laid plans for a new [ShowBuildingTypeName('paper_workshop')], they now ask [target_character.GetName] for financial aid."
+ flavor_ned.25.a: "They shall have their aid."
+ flavor_ned.25.b: "We do not have the funds to spare for them."
+
+ flavor_ned.26.title: "[ROOT.GetCountry.GetAdjectiveWithNoTooltip] Humanism"
+ flavor_ned.26.desc: "This world is filled with many different faiths, many different traditions, and many different ideas. Instead of enforcing ours wherever we go, we should instead tolerate such beliefs, as long as they do not cause trouble for [ROOT.GetCountry.GetName]."
+ flavor_ned.26.a: "Everyone is free to think in [ROOT.GetCountry.GetNameWithNoTooltip]."
+ flavor_ned.26.b: "The [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')] need to be satisfied instead."
+ NED_ALL_NON_TRUE_FAITH_POP_BECOME_HAPPIER: "All our non-[ROOT.GetCountry.GetReligion.GetAdjective] [pop|e] will gain [ShowNamedValue('pop_satisfaction_severe_bonus')|+=2%] [pop_satisfaction|e]"
+ NED_ALL_CLERGY_BECOME_HAPPIER: "All our [ROOT.GetCountry.GetReligion.GetAdjective] [ShowPopTypeName('clergy')] [pop|e] will gain [ShowNamedValue('pop_satisfaction_ultimate_bonus')|+=2%] [pop_satisfaction|e]"
+
+ flavor_ned.27.title: "[target_character.GetNameWithNoTooltip]"
+ flavor_ned.27.desc: "Born in [ShowLocationName('leiden')], [target_character.GetName] has shown quite the talent as an artist. [target_character.GetHeShe] has already created minor works of art, all depicting a different style. Maybe [target_character.GetHeShe] will make a fine addition to our [ROOT.GetCountry.GetGovernment.GetCourtTitle]."
+ flavor_ned.27.historical_info: "Rembrandt Harmenszoon van Rijn, simply known as Rembrandt, is considered one of the greatest artists in history. Despite never going abroad to study other forms of art, his works were inspired by Italian old masters as well as the Bentvueghels, an artist society in Rome. Despite producing hundreds of paintings in his youth, the latter half of his life was plagued with financial issues and personal tragedies, such as his oil painting The #italic Conspiracy of Claudius Civilis#! being rejected, or his house being sold due to his debts, forcing him and his family to move to a more modest place at Rozengracht."
+ flavor_ned.27.a: "Let us hire [target_character.GetHimHer]."
+ flavor_ned.27.b: "[target_character.GetHeShe|U] is not allowed here."
+ NED_WE_WILL_FUND_REMBRANDT: "[target_character.GetName] will serve our [ROOT.GetCountry.GetGovernment.GetCourtTitle]."
+
+ flavor_ned.28.title: "[target_character.GetNameWithNoTooltip]"
+ flavor_ned.28.desc: "Siege warfare is perhaps the most costly part of war. Many theorists have drafted new ideas, but none of them come close to those of [target_character.GetName]. Having served as an officer in our army, he has gained experience of the conditions that the average soldier would be in such a situation. His plans comprise constructing new forts inside [ROOT.GetCountry.GetName], and the usage of multiple lines of defense, as well as an active form of defensive warfare, where our forces should harass the enemy."
+ flavor_ned.28.a: "Let us use those ideas for when we lay siege."
+ flavor_ned.28.b: "Protecting [ROOT.GetCountry.GetNameWithNoTooltip] is our biggest priority."
+ flavor_ned.28.c: "We will not listen to his ideas."
+
+ flavor_ned.29.title: "[target_character.GetNameWithNoTooltip]"
+ flavor_ned.29.desc: "Many explorers and cartographers have always dreamed of mapping out the Arctic fully. One of these men is [target_character.GetName], born in a village inside [ShowLocationName('harlingen')]. He has approached the [ROOT.GetCountry.GetGovernment.GetCourtTitle] with a reason as to why he should embark on this expedition: although the ice of the Northeast Passage prevents us from sailing to $china$, the midnight sun will melt the ice, allowing for a reliable route."
+ flavor_ned.29.a: "He is allowed to serve us."
+ flavor_ned.29.b: "Is he mad? Let us banish him."
+
+ flavor_ned.30.title: "Fixed Fort System"
+ flavor_ned.30.desc: "Our lands in the Low Countries may be prosperous, but they are also vulnerable during war. By creating several lines of fortification in an in-depth defensive plan, we can ensure that our lands are protected even in the worst of situations."
+ flavor_ned.30.historical_info: "During the 17th century, when siege warfare was most dominant, two military theorists would dominate in that department. Marshal Vauban of the Kingdom of France and Menno van Coehoorn, the famous Dutch engineer, would push these theories to their limit. In the case of the Netherlands, their densely populated cities ensured that several fortifications were built around the country to discourage enemy armies from trying to conquer the nation. These fortresses could easily hold back entire armies on their own, leading to the enemy having to plan a lengthy siege or prepare a costly attack."
+ flavor_ned.30.a: "Let us encourage this new line of fortifications."
+ flavor_ned.30.b: "The best defense is a good attack."
+
+ flavor_ned.31.title: "[ROOT.GetCountry.GetAdjectiveWithNoTooltip] Baroque Architecture"
+ flavor_ned.31.desc: "With the [ROOT.GetCountry.GetAdjective] architecture reaching its zenith, and new styles have emerged. One of them is the #italic Baroque Style#! focusing on decorating the exterior in a manner that promotes seriousness, whilst the interior is decorated with noble materials. Maybe we can promote this style."
+ flavor_ned.31.a: "We must promote this new style!"
+ flavor_ned.31.b: "We do not have the funds for this."
+
+ flavor_ned.32.title: "Patriottentijd"
+ flavor_ned.32.desc: "Although the [ShowGovernmentReformName('seven_provinces')] has served us well, a band of rebels have formed, calling themselves the #italic Patriotten#! who wish to see this system fall. They oppose [target_character.GetName] and [target_character.GetHerHis] supporters, ready to engulf [ROOT.GetCountry.GetName] into a revolution."
+ flavor_ned.32.a: "Come out you patriots!"
+ ned_all_peasants_in_capital_become_disloyal: "All [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] [pops|e] in [target_area.GetName] will lose [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] [pop_satisfaction|e]."
+
+ flavor_ned.33.title: "Urbanization of the Low Countries"
+ flavor_ned.33.desc: "The Low Countries have recently seen many of their locations filled with many kinds of people, noble or commoner alike. Locations such as [target_location.GetName], [target_location2.GetName], as well as [target_location3.GetName] are the most populated, and could use our help to urbanize even more."
+ flavor_ned.33.a: "They will have our aid."
+ flavor_ned.33.b: "They can develop on their own."
+ 
+ flavor_ned.1000.title: "A Glorious Plot?"
+ flavor_ned.1000.desc: "Although [target_character.GetName] is the rightful ruler of [ROOT.GetCountry.GetName], [target_character.GetHisHer] public image has slowly been deteriorating, seen as nothing more than an oppressor. There have been murmurs, many murmurs in fact, of a plot to invite [target_character2.GetName] to rule over the lands instead."
+ flavor_ned.1000.a: "A plot against [target_character.GetNameWithNoTooltip]? We must stop them!"
+ NED_UNLESS_IF_WE_SECURE_LEGITIMACY_ENGLISH_NOBLES_WILL_INVITE_DUTCH_RULER: "As long as our [legitimacy|e] is below #Y 80#!, there is a chance the [ROOT.GetCountry.GetCulture.GetName] [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] will invite [target_character2.GetName] to rule over them."
+
+ flavor_ned.1001.title: "The Immortal Seven"
+ flavor_ned.1001.desc: "With the situation in [target_country.GetName] worsening and [target_character2.GetName] seen as a fake [target_country.GetGovernment.GetRulerTitle], part of their [target_country.GetGovernment.GetEstateName('nobles_estate')] have approached [target_character.GetName] and have offered [target_character.GetHerHim] the [target_country.GetAdjectiveWithNoTooltip] crown should [target_character.GetHeShe] accept."
+ flavor_ned.1001.a: "Let us set sail for [target_country.GetNameWithNoTooltip]."
+ flavor_ned.1001.b: "Wait, we never agreed to any of this!"
+ 
+ flavor_ned.1002.title: "The Glorious Revolution"
+ flavor_ned.1002.desc: "With the old government of [target_country.GetName] overthrown, [target_character.GetName] is now the rightful ruler of all [target_country.GetAdjectiveWithNoTooltip] land. [target_character.GetHeShe|U] and [target_character.GetHisHer] [ROOT.GetCountry.GetGovernment.GetParliament.GetName] are now ready to discuss the matter of [target_country.GetNameWithNoTooltip]."
+ flavor_ned.1002.a: "They shall be subjects to the [ROOT.GetCountry.GetAdjectiveWithNoTooltip] [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('crown_estate')]."
+
+ flavor_ned.1003.title: "Integration of Britain"
+ flavor_ned.1003.desc: "Whilst the lands of Britain are now under the [ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')], some of the populace is still resisting our rule. We should discuss with the [ROOT.GetCountry.GetGovernment.GetParliament.GetName] about this issue and try to find a solution."
+ flavor_ned.1003.a: "They shall bend the knee one way or another."
+ 
+ #Goods demands:
+ dutch_spice_lust: "Spice Lust"
+ ned_increased_grain_demands: "Increased Grain Demands"

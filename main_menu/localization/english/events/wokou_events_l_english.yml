@@ -1,0 +1,64 @@
+﻿l_english:
+ wokou_name_wako: "Wakō"
+ wokou_name_waegu: "Waegu"
+ wokou_name_wokou: "Wōkòu"
+
+ wokou_events.1.title: "[ROOT.GetCountry.Custom('GetWokouName')|U] Raid!"
+ wokou_events.1.desc: "The fearsome [ROOT.GetCountry.Custom('GetWokouName')] have just launched an attack on our province of [target_province.GetName], and especially on the port of [target_location.GetName]. Though we wish we could say that we have repulsed those invaders, the truth is much more dire. Unfortunately, our local garrison was simply unable to respond in time, leading to much destruction in [target_province.GetNameWithNoTooltip]. Burned homes, enslaved families, stolen goods, all of that misery has been unleashed on the poor [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')]. We must make those pirates pay."
+ wokou_events.1.a: "[ROOT.GetCountry.Custom('common_string_negative')]"
+
+ wokou_events.2.title: "Our Raid on [target_province.GetNameWithNoTooltip]"
+ wokou_events.2.desc: "Our subtle invasion of [target_province.GetName] has been a resounding success! Over the course of several days, we were able to seize much wealth from the coastal settlements and we have captured many slaves alongside it. Moreover, we have seized vast quantities of goods, especially [ShowGoodsName('silk')], which we will surely pawn off for a worthwhile price."
+ wokou_events.2.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+ wokou_amount_of_slaves_gained: "A total of [SCOPE.GetLocalVariable('slaves_amount').GetValue|0] [ShowPopTypeName('slaves')] have been gained in [ROOT.GetCountry.GetCapital.GetName]."
+
+ wokou_events.3.title: "[ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('peasants_estate')] Flee to [target_country.GetNameWithNoTooltip]"
+ wokou_events.3.desc: "Not all of the [ROOT.GetCountry.GetAdjective] citizens are as fortunate as our courtiers or the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] who all live very fulfilling lives. Many, especially the [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] of [target_location.GetName], live in deplorable or even pitiful conditions. It is no surprise then, that many of them turn to crime to escape the poverty. Many of the [target_pop.GetName], for example, seem to have fled their homes to join the [target_country.GetLongName]."
+ wokou_events.3.a: "Their lives are good enough! Their flight is true cowardice."
+
+ wokou_events.4.title: "Plight of [target_location.GetNameWithNoTooltip]"
+ wokou_events.4.desc: "A flurry of [target_pop.GetName] has been arriving in [ROOT.GetCountry.GetCapital.GetName] over the last couple of months. They flee from [target_location.GetName], where they faced absolute poverty and misery. It is why they have taken the extremely difficult decision to leave their past lives behind and to take their families to [ROOT.GetCountry.GetName] where they will take on a new life of crime, but a righteous crime."
+ wokou_events.4.a: "They have made the right decision."
+
+ wokou_events.5.title: "Raid on [target_country.GetAdjectiveWithNoTooltip] Fleet"
+ wokou_events.5.desc: "As it stands, a flotilla of [target_country.GetAdjective] ships is currently returning home from an overseas mission bearing many goods and riches that we could certainly make better use of. Unlike many trade ships, they are not exactly lightly guarded and we are bound to suffer some casualties. However, the potential gain is well worth the risks involved."
+ wokou_events.5.a: "Launch the attack."
+ wokou_events.5.b: "We cannot risk the ire of the [target_country.GetNameWithNoTooltip]."
+
+ wokou_events.6.title: "Raid on our Fleet!"
+ wokou_events.6.desc: "The bastards [ROOT.GetCountry.Custom('GetWokouName')] of [prev_country.GetName] have launched an attack on our fleets which was in the process of returning from a governmental mission. Though we did give them hell in the process, they were able to capture and loot several ships, costing us much of valuable tonnage."
+ wokou_events.6.a: "Bastards!"
+
+ wokou_events.100.title: "A Band of Pirates"
+ wokou_events.100.desc: "Horrible standards of living and misery is how the islands of western [ShowRegionName('japan_region')] are best characterized. Despite our noble efforts, our control there is weak at best and the local clans are not always able to stop the locals from engaging in crime, leading to rampant piracy that impacts not just our internal waters in the [ShowProvinceDefinitionName('seto_sea')] but also the international waters that surround [ShowRegionName('korea_region')] and $china$.\n\nThis problem, present until now, has become more serious as a certain warlord has managed to centralize power and has banded together to form the [target_country.GetLongName] who have established base in [target_location.GetName]."
+ wokou_events.100.a: "Let us hope we will not be targeted." 
+ wokou_events.100.b: "We wish we could live such lives too."
+ wokou_warning_tt: "[ROOT.GetCountry.Custom('GetWokouName')] nations have the [ShowGovernmentReformName('pirate_brethren_reform')] [government_reform|e] and their existence in our vicinity will cause negative [events|e] to happen."
+
+ wokou_events.101.title: "Enforcing the [ShowPolicyNameWithNoTooltip('haijin_policy')]"
+ wokou_events.101.desc: "Though for many years we have had the [ShowPolicyName('haijin_policy')] policy, it is only recently, during the rule of [target_character.GetShortName] that it has become harshly enforced. After a recent edict, we have taken to properly policing the coasts of [ROOT.GetCountry.GetName] and in the process we have put to death many smugglers and dissidents alike. Hopefully that will serve as an example not to defy the [ROOT.GetCountry.GetAdjective] policies."
+ wokou_events.101.a: "Hopefully this will not have any negative repercussions."
+ later_era_of_wokou_tt: "New [ROOT.GetCountry.Custom('GetWokouName')] nations will begin to appear in and around [ShowAreaName('taiwan_area')], north [ShowAreaName('luzon_area')] and [ShowAreaName('ryuukyuu_area')]."
+
+ wokou_events.102.title: "Family Turns to Piracy"
+ wokou_events.102.desc: "Following our harsher enforcement of the Hǎijìn, one of the families that used to engage in smuggling has now turned towards a lifetime of piracy, seeing no prospects to live by the book. They have taken their ships and their associates and set sail for the higher seas, establishing a [ShowBuildingTypeName('pirate_stronghold')] in [target_location.GetName] under the banner of the [target_country.GetLongName]."
+ wokou_events.102.a: "We will punish them severely."
+ wokou_events.102.b: "$wokou_events.100.b$"
+ 
+ wokou_events.200.title: "Relentless [ROOT.GetCountry.Custom('GetWokouName')|U] Raids"
+ wokou_events.200.desc: "The vile pirates of [pirate_country.GetName] have been relentlessly raiding our coasts the past few years. Though [ROOT.GetCountry.Custom('GetWokouName')|l] activity is no stranger to us, this time it is different, as those bastards have managed to secure themselves the backing of a patron, [target_country.GetName]. We must take action and exert pressure on the [target_country.GetAdjectiveWithNoTooltip] [target_country.GetGovernment.GetRulerTitle] so that piracy will never plague the waters of [ROOT.GetCountry.GetNameWithNoTooltip] ever again."
+ wokou_events.200.a: "Threaten the [target_country.GetLongNameWithNoTooltip] with retribution."
+ wokou_events.200.b: "We are in no position to make such demands."
+ 
+ wokou_events.201.title: "Demands from [prev_country.GetNameWithNoTooltip]"
+ wokou_events.201.desc: "Outraged by our tacit approval of the [pirate_country.GetAdjective] raids, the [prev_country.GetLongName] is demanding we cease with our sponsorship of the [ROOT.GetCountry.Custom('GetWokouName')|l]. Under those demands, we are to extradite members of the [pirate_country.GetAdjectiveWithNoTooltip] leadership to [prev_country.GetNameWithNoTooltip], effectively shutting down their operations. If we fail to do so, [prev_country.GetNameWithNoTooltip] will see this as a pretext for war and it is not just [pirate_country.GetNameWithNoTooltip] that might be targeted but [ROOT.GetCountry.GetName] too."
+ wokou_events.201.a: "Comply, at least for now."
+ wokou_events.201.b: "The [ROOT.GetCountry.Custom('GetWokouName')|l] are not our problem."
+ 
+ wokou_events.202.title: "Punished Pirates"
+ wokou_events.202.desc: "[target_country.GetName] has responded to our demands positively, not only ceasing their sponsorship over [pirate_country.GetName] but also sending us one of the pirate leaders to be tried in [ROOT.GetCountry.GetName]. As is stands, the vile pirate [target_character.GetName] has already been given the death penalty and has been boiled alive in [target_location.GetName] as is deserved."
+ wokou_events.202.a: "Hopefully, this will deter others."
+ 
+ wokou_events.203.title: "[target_country.GetNameWithNoTooltip] Defiant"
+ wokou_events.203.desc: "[target_country.GetName] has refused to comply with our requests to extradite the [ROOT.GetCountry.Custom('GetWokouName')|l] leaders. Do they not realize that this means war with [pirate_country.GetName] and perhaps even their [target_country.GetFlavorRank] as well?"
+ wokou_events.203.a: "We will have to clean the seas ourselves."

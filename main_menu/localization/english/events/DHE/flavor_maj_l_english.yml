@@ -1,0 +1,168 @@
+﻿l_english:
+ 
+ flavor_maj.1.title: "The Book of Kings"
+ flavor_maj.1.desc: "The culmination of our history and the roots of our very civilization are very well-documented. Recently, [target_artist.GetName] has approached [target_character.GetName] with a proposition. Under [target_artist.GetHerHis] hand, a chronicle will be penned. This literary work will detail the rulers that have led the [ROOT.GetCountry.GetLongName] to greatness. In an effort to exalt the past and honor those upon whose shoulders we built this great [ROOT.GetCountry.GetFlavorRank], we must strive to remember where we came from."
+ flavor_maj.1.a: "Commission the work."
+ flavor_maj.1.b: "It is best to not spend our coin..."
+ flavor_maj.1.historical_info: "A most illustrious chronicle that blends history and myth, #italic Pararaton#! is an account of the rise of the Singhasari and Majapahit kingdoms in East Java."
+
+ flavor_maj.2.title: "[target_character.GetNameWithNoTooltip]'s $maj_sumpah_palapa$"
+ flavor_maj.2.desc: "In a move that has been mocked by [target_character.GetHerHis] political rivals, [target_character.GetName] has proclaimed [target_character.GetHerHis] official oath to cease the consumption of luxurious sustenance and the enjoyment of culture and entertainment until [target_character.GetSheHe] successfully subjugates the entirety of [ShowRegionName('indonesia_region')]. Our armies are moved by such a display of conviction and feel confident to follow this great person to the ends of the Earth."
+ flavor_maj.2.a: "[target_character.GetHerHis|U] success will reflect upon the reign of [target_character2.GetNameWithNoTooltip]!"
+
+ flavor_maj.3.title: "The $maj_nagarakretagama_woa$"
+ flavor_maj.3.desc: "The need to affirm our commitment to the religious roots of our [ROOT.GetCountry.GetFlavorRank] has given rise to many literary works that praise the architecture of our temples as well as our intricate and illustrious ceremonies. None other than [target_character.GetName] has stepped forth and volunteered to pen a beautiful eulogy, a poem to honor the very essence of our people under the guidance of [target_character2.GetName]."
+ flavor_maj.3.a: "Sponsor the work."
+ flavor_maj.3.b: "A misuse of our coin, for certain!"
+
+ flavor_maj.4.title: "Rise of [target_character.GetNameWithNoTooltip]"
+ flavor_maj.4.desc: "At the cusp of our golden era and the joyous prestige that shines from our powerful position across [ShowRegionName('indonesia_region')] and our many subjects, a glimmer of immortality in the history books shines upon the face of [target_character.GetName].\n\nThat glimmer is none other than [target_character.GetHerHis] own heir, who has shown great promise as [target_character.GetSheHe] has excelled in every aspect of [target_character.GetHerHis] education. A peaceful transfer of power would undoubtedly reinforce our stability, as well."
+ flavor_maj.4.a: "Let the boy have [target_character.GetHerHis] crown."
+ flavor_maj.4.b: "[target_character2.GetShortNameWithNoTooltip] shall not let go of power just yet!"
+
+ flavor_maj.5.title: "Securing the Western Borders"
+ flavor_maj.5.desc: "To our West lies the [target_country2.GetLongName], ruled by [target_character2.GetName]. As we strive to expand our influence and authority across [ShowRegionName('indonesia_region')], the matter of securing our western border has once again come up amidst our advisors. They support the idea that a political marriage between [target_character3.GetName] and the [target_country2.GetAdjectiveWithNoTooltip] princess [target_character.GetName] would solve the matter peacefully.\n\nHowever, a faction of our council members is in favor of a more violent solution. They speak of the weakness that [target_character2.GetNameWithNoTooltip] has displayed. Thus, they wish for the marriage to be a lie, a reason to demand their immediate subjugation."
+ flavor_maj.5.a: "This is a great opportunity to secure their allegiance."
+ flavor_maj.5.b: "We need not resort to tricks, establish a proper marriage!"
+ flavor_maj.5.c: "We have no time for petty intrigue."
+ press_for_subjugation_tt: "Should they accept, we will press our demand for their subjugation."
+ do_not_press_for_subjugation_tt: "Should they accept, we will #R not#! press our demand for their subjugation."
+
+ flavor_maj.6.title: "Peace Through Marriage?"
+ flavor_maj.6.desc: "For quite some time now, it has come to our attention that the ruler of [target_country.GetName] has grown formidable as their influence spreads across [ShowRegionName('indonesia_region')]. In an effort to secure our common borders, they have requested the hand of [target_character.GetName] in marriage with [target_character3.GetName]. Is this a ploy to mount a legitimate subjugation claim or a genuine sign of peace and tranquility for the future?"
+ flavor_maj.6.a: "Very well, we will trust them."
+ flavor_maj.6.b: "We cannot, in good conscience, allow this."
+ they_may_demand_subjugation_tt: "#italic They may demand our subjugation#!"
+
+ flavor_maj.7.title: "[target_country2.GetNameWithNoTooltip]'s Response"
+ flavor_maj.7.desc: "After a prolonged wait for the [target_country2.GetAdjective] diplomatic delegation to arrive, news has finally reached about their decision in regards to the marriage proposal between [target_character2.GetName] and [target_character3.GetName]. It appears they have finally mustered the courage to respond to our gesture!"
+ flavor_maj.7.a: "They will bend the knee!"
+ flavor_maj.7.b: "Let this union grow into friendship between our people."
+ flavor_maj.7.c: "They declined? We expected better..."
+ explain_options_flavor_maj.8: "If they accept, they will become our direct [subject|e] but if they decline, we will gain a [casus_belli|e] against them"
+
+ flavor_maj.8.title: "The Demands of [target_country.GetNameWithNoTooltip]"
+ flavor_maj.8.desc: "Not long after the newly wed couple of [target_character.GetName] and [target_character3.GetName] tied their fortunes, [target_character.GetShortNameWithNoTooltip] has made an egregious demand! It appears that the marriage was a ploy to demand our subjugation, referencing their growing influence and power over us. What a horrible turn of events!"
+ flavor_maj.8.a: "Alas, we must bend the knee for the good of our people."
+ flavor_maj.8.b: "How dare they?"
+ flavor_maj.8.historical_info: "The marriage between King Hayam Wuruk and Princess Dyah Pitaloka of the Sudanese Kingdom came to a horrid end when Gajah Mada, then #italic mahapatih#! of the Majapahit Empire, saw the arrival of the princess as an opportunity to demand the immediate subjugation of the Sudanese Kingdom. The ensuing battles after such a betrayal eventually led to the death of the Sudanese royal family and the fall of their Kingdom."
+
+ flavor_maj.9.title: "History of the [GetCountry('SUN').GetAdjectiveWithNoTooltip] Realm"
+ flavor_maj.9.desc: "Our island is home to some of the most elaborate and advanced cultures and civilizations known to us. To honor the past and the kings of a once-great Kingdom, [target_artist.GetName] has proposed the creation of an illustrious chronicle, detailing the history of this bygone Kingdom, focusing on preserving the cultural and [ROOT.GetCountry.GetGovernment.GetAdjective] roots of our house."
+ flavor_maj.9.a: "Excellent idea."
+ flavor_maj.9.b: "We need no written praise of failed Kingdoms!"
+ flavor_maj.9.historical_info: "Largely regarded as a vital Sudanese manuscript, the #italic Carita Parahyangan#! recounts the history of the Kingdom of Sunda, including the legendary rulers of the western part of Java, particularly during the time of the Sunda Kingdom, predecessor to the later Kingdom of Pajajaran."
+
+ flavor_maj.10.title: "Popularization of the Kakawin Poems"
+ flavor_maj.10.desc: "Amidst the cultural and social flourishing that our people are currently experiencing, a new prominent form of literature has surfaced. These new poems originated from the spreading influence of [ShowCultureGroupName('indian_group')] epics such as #italic $ramayana$#! and #italic $mahabarata$#!. The spread of foreign faiths and, as a side-effect, the cultural exchanges, have led to new forms of literary expressions.\n\nDespite being heavily influenced by their [ShowCultureGroupNameWithNoTooltip('indian_group')] counterparts, Kakawin poems are not mere imitations or even translations, as they successfully blend local and foreign cultural richness to create epic mythology and story-telling. Such artistic expression is surely the sign of our golden age, facilitated by the pen of people such as [target_artist.GetName]!"
+ flavor_maj.10.a: "Very well, finance these endeavors."
+ flavor_maj.10.b: "Let us not spend valuable coin."
+ flavor_maj.10.historical_info: "The popularization of long narrative poems, written in verse form with rhythms and meters inspired by Sanksrit literature, played an essential role in shaping the identity and culture of Majapahit society."
+
+ flavor_maj.11.title: "The Dream of Nusantara"
+ flavor_maj.11.desc: "Decades of conquest and unrivaled dominance of our region have led to many of our advisors proclaiming our divine right to lands farther than our eyes can see.\n\nTruly, recent successes can only be attributed to divine favor, and who are we to question such will? The people of [ROOT.GetCountry.GetName] are destined for greatness, under the leadership of [target_character.GetName]!"
+ flavor_maj.11.a: "We will seize this opportunity."
+ flavor_maj.11.b: "It is best to not rush."
+ such_a_proclamation_will_incur_the_following_penalty_tt: "Such a belligerent proclamation will incur the following penalty:"
+
+ flavor_maj.12.title: "New Temples"
+ flavor_maj.12.desc: "Great prosperity, expansion, and the rising tide of our fortune are naught but rewards for our people's piety and robust social fabric. A society made up of affluent merchants that donate their coin, noblemen that care for their folk and clerics that abide by their practices is surely to progress.\n\nIn an effort to proclaim our fervor and glorify the divine nature that holds us together, many advisors have suggested that [target_character.GetName] personally oversees the funding, expansion, and restoration of several temples across the [ROOT.GetCountry.GetLongName]."
+ flavor_maj.12.a: "Proceed with the funding."
+ flavor_maj.12.b: "We will not allow foreign spiritual influences!"
+ flavor_maj.12.historical_info: "Between the 13th and 15th century, an era of construction swept the Majapahit Empire. Temples decorated with elaborate arches, dedications, and golden elements were erected, dedicated to Hindu-Buddhist deities. These architectural marvels were largely used for ceremonial or commemorative purposes."
+ maj_receive_events_about_important_temples_tt: "#italic We may receive special events tied to the erection of various important temples across our core territory#!"
+
+ flavor_maj.13.title: "Candi Tikus"
+ flavor_maj.13.desc: "Our piety is in display all across the streets in [target_location.GetName], as temples and ceremony halls spring into life, a testament of our affluence and wealth. The latest complex to request funding is a peculiar concept, indeed. The [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] in [target_location.GetNameWithNoTooltip] have come forth with plans to erect a ritual purification site, a special temple.\n\nThese extravagant constructs have drawn the ire of the common folk, however, and in turn they wish for the site to operate freely for them, as a bathing and water management facility."
+ flavor_maj.13.a: "Let it be a place of worship!"
+ flavor_maj.13.b: "Water for the people."
+ flavor_maj.13.c: "This is but a frivolous expense, we do not need it."
+ flavor_maj.13.historical_info: "Featuring a sunken pool with shrines and water channels, the complex symbolizes Mount Meru and the cosmic ocean in Hindu-Buddhist cosmology. It is used for ritual purification and reflects the Majapahit Empire's emphasis on the sacredness of water."
+
+ flavor_maj.14.title: "Candi Surawana"
+ flavor_maj.14.desc: "A marvel of architectural prowess, the plans for a construction of an expanded temple complex in [target_location.GetName] are well underway. According to our advisors, the building will blend different styles of elements, glorifying past rulers and accommodating our ritual needs. Dedicated to the past deeds of our greatest rulers, this religious complex is a testament to our superior culture and celebrated history!"
+ flavor_maj.14.a: "Very well, proceed!"
+ flavor_maj.14.b: "It is best to save our coin..."
+ flavor_maj.14.historical_info: "Built during the height of the Majapahit Empire, it was dedicated to King Bhre Wengker, who was deified after his death. The temple features intricate stone reliefs depicting scenes from the $ramayana$ and Javanese legends. Though now in ruins, Candi Surawana showcases the syncretic religious and artistic traditions of the Majapahit period, blending Hindu and Buddhist elements."
+
+ flavor_maj.15.title: "The Eastern Campaign"
+ flavor_maj.15.desc: "Having taken the [ShowModifier('maj_sumpah_palapa_modifier')], the minister [target_character.GetName] is wholly committed to fulfilling [target_character.GetHerHis] great ambitions of forging an [ShowCountryRankName('rank_empire')] out of the [ROOT.GetCountry.GetLongName]. The next target of [target_character.GetHerHis] exploits is the [target_country.GetLongName], a state on the island of [ShowProvinceDefinitionName('bali_province')]. Should they fall, more island kingdoms will surely follow in their suit, creating a cascading effect and giving substantial returns on the campaign."
+ flavor_maj.15.a: "We must attack immediately."
+ flavor_maj.15.b: "Time is not yet right."
+ flavor_maj.15.c: "We must foster peace and diplomacy!"
+
+ flavor_maj.16.title: "Landfall of [target_religion.GetGroup.GetNameWithNoTooltip]"
+ flavor_maj.16.desc: "[target_religion.GetName] is a religion that has been gaining more and more influence all throughout [ShowRegionName('indonesia_region')]. For decades now, it has been slowly entrenching itself in Sumatra and on the [ShowAreaName('malay_peninsula_area')]. Now, it has spread to [ShowAreaName('java_area')] itself, with the first sizeable community of [target_religion.GetGroup.GetAdjective] traders settling in [target_location.GetName]. Though our ports are visited by many merchants of different faiths, many believe that the spread of [target_religion.GetNameWithNoTooltip] could prove disruptive to our ambitions."
+ flavor_maj.16.a: "They are welcome in [ROOT.GetCountry.GetNameWithNoTooltip]"
+ flavor_maj.16.b: "We must stop this."
+
+ flavor_maj.17.title: "[target_character.GetNameWithNoTooltip]"
+ flavor_maj.17.desc: "A truly exceptional character has made [target_character.GetHisHer] way to our country. [target_character.GetName], as [target_character.GetSheHe] is known, is a [target_religion.GetAdjective] preacher from all the way in [birth_location.GetArea.GetName]. Before arriving in [ROOT.GetCountry.GetName], [target_character.GetShortNameWithNoTooltip] was also proselytizing in [ShowAreaName('champa_area')] and has now moved onto building a new [target_religion.GetGroup.GetAdjective] community in our [ROOT.GetCountry.GetFlavorRank]."
+ flavor_maj.17.a: "This is fine."
+ wali_songo_tt: "When [THIS.GetCharacter.GetName] will die, a [ShowBuildingTypeName('wali_songo_shrine')] will be built in a prominent [owned|e] [ShowReligionAdjective('sunni')] [location|e]."
+
+ flavor_maj.18.title: "Death of a Wālī"
+ flavor_maj.18.desc: "We have received news of the death of [target_character.GetName]. During [target_character.GetHerHis] lifetime, [target_character.GetSheHe] was revered as a great [ShowReligionAdjective('sunni')] teacher and a [target_character.GetWomanMan] truly dedicated to spreading [target_character.GetHerHis] faith. Whether this is good or not remains to be soon. One thing is certain however, there will be more like [target_character.GetHerHim]."
+ flavor_maj.18.a: "It is what it is."
+
+ flavor_maj.19.title: "A New [target_religion.GetGroup.GetAdjectiveWithNoTooltip] Preacher"
+ flavor_maj.19.desc: "A certain [target_religion.GetAdjective] preacher has become active in the [ROOT.GetCountry.GetLongName]. [target_character.GetHerHis|U] name is [target_character.GetName] and [target_character.GetSheHe] has managed to gain a large following to the extent that [target_character.GetSheHe] had a [target_religion.GetAdjectiveWithNoTooltip] school founded to facilitate [target_character.GetHerHis] conversion work. [target_character.GetSheHe|U] is a highly respected member and has become identified one of the leaders of the [target_religion.GetGroup.GetAdjectiveWithNoTooltip] community within the [ROOT.GetCountry.GetName]."
+ flavor_maj.19.a: "This can only benefit us."
+ flavor_maj.19.b: "We shall not tolerate this."
+
+ flavor_maj.20.title: "A Hero Emerges"
+ flavor_maj.20.desc: "A [target_character.GetDaughterSon] of a member of the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] has arrived at our [ROOT.GetCountry.GetGovernment.GetCourtTitle] not long ago, everything about him was completely unknown but [target_character.GetHerHis] name - Damarwulan. [target_character.GetSheHe|U] served us as a stable servant, but soon the rumors of [target_character.GetHerHis] natural beauty reached the prime minister's daughter and there are few fires harder to extinguish than young love.\n\nThe fate that awaits [target_character.GetHerHim] for [target_character.GetHerHis] affront should be clear as a summer day, however, [target_character.GetSheHe] has won favor of the [ROOT.GetCountry.GetGovernment.GetCourtTitle] and many see [target_character.GetHerHim] as a prophesized savior of the [ROOT.GetCountry.GetFlavorRank]."
+ flavor_maj.20.a: "Perhaps [target_character.GetSheHe] is our savior."
+ flavor_maj.20.b: "This would make for a good story!"
+ maj_winning_10_battles_with_damarwulan: "When [target_character.GetName] wins at least 10 [battles|e], [target_character.GetSheHe] will receive #g +15#! [mil|e] and [ROOT.GetCountry.GetName] will receive #g +25#! [legitimacy|e]."
+
+ flavor_maj.21.title: "Victory of [target_character.GetNameWithNoTooltip]"
+ flavor_maj.21.desc: "It never gets any easier. Rotten blood still reeks as one's own, the enemies' eyes are still human eyes, the night before the battle still keeps [target_character.GetName] wide awake.\n\nThe battle ends victoriously, like any other battle has before for [target_character.GetHerHim]. This is the tenth battle, and [target_character.GetSheHe] wishes ten is the final number. When [target_character.GetSheHe] returns to [ROOT.GetCountry.GetGovernment.GetCourtTitle], [target_character.GetSheHe] is received with the greatest of honors, [target_character.GetHerHis] name repeated so many times that [target_character.GetSheHe] forgets it is [target_character.GetHerHis] name and thinks it is just another word for 'victory'. [ROOT.GetCountry.GetGovernment.GetRuler.GetName] approaches [target_character.GetHerHim], [ROOT.GetCountry.GetGovernment.GetRuler.GetHerHis] heart filled with joy."
+ flavor_maj.21.a: "A glorious victor indeed!"
+
+ flavor_maj.22.title: "The Demise of [target_location.GetNameWithNoTooltip]"
+ flavor_maj.22.desc: "[target_character.GetName] has fallen out of grace in [target_country.GetName]. Having blatantly gone against the policies of [ROOT.GetCountry.GetName], [target_character.GetSheHe] was promptly attacked by one of our loyal contingents in the area, with [target_character.GetHerHis] capital being put under siege. In such a desparate situation, [target_character.GetNameWithNoTooltip] has chosen to flee with few members of [target_character.GetHerHis] [ROOT.GetCountry.GetGovernment.GetCourtTitle] from [target_location.GetName]. Much is not known about [target_character.GetHerHis] future plans, but one thing is for certain, whatever [target_character.GetHerHis] next move is, it will not be to our benefit."
+ flavor_maj.22.a: "Good riddance!"
+ flavor_maj.22.b: "We do wonder where that might get [target_character.GetHerHim]."
+
+ flavor_maj.23_24.common_desc: "Having fled the [target_country.GetAdjective] court, [target_character.GetName] traveled northwards along the coast of the [ShowAreaName('malay_peninsula_area')] in the hopes of founding a new settlement to rule. Only at the mouth of the Bentam river did [target_character.GetSheHe] find a suitable location for such an undertaking."
+
+ flavor_maj.23.title: "The Founding of $MLC$"
+ flavor_maj.23.desc: "$flavor_maj.23_24.common_desc$\n\nThe location that [target_character.GetSheHe] has chosen, however, happens to lie in our boundaries and the foundation of such a state could serve to be problematic in the future. Perhaps it would be fitting to utilize our resources in order to drive away such vagrant."
+ flavor_maj.23.a: "Permit the establishment."
+ flavor_maj.23.b: "[target_character.GetSheHe|U] is welcome here!"
+ flavor_maj.23.c: "We will not tolerate such upstarts."
+
+ maj_get_trust_with_malacca: "[ShowFormableCountryName('MLC_f')] will gain mutual [ShowBiasValue('maj_mutual_trust_malacca')] [opinion|e] with [ROOT.GetCountry.GetName]."
+
+ flavor_maj.24.title: "Birth of a New [ROOT.GetCountry.GetFlavorRank]"
+ flavor_maj.24.desc: "$flavor_maj.23_24.common_desc$\n\nIndeed, our humble [ROOT.GetCountry.GetGovernment.GetRulerTitle] was sitting under a Malacca tree, when [target_character.GetSheHe] spotted a mouse deer outsmart a hunting dog. It is that location that was chosen to be the cornerstone of [target_character.GetHerHis] new dominion in the west."
+ flavor_maj.24.a: "We will bring a revolution to Nusantara."
+
+ flavor_maj.25.title: "Fulfilling the Dream"
+ flavor_maj.25.desc: "[target_character.GetName] has vowed to place all of [ShowRegionName('indonesia_region')] under the watchful rule of the [ROOT.GetCountry.GetLongName], lest [target_character.GetSheHe] shall never taste any spice ever again.\n\nIn order to bring our glorious [ROOT.GetCountry.GetFlavorRank] closer to this noble goal, [target_character.GetShortNameWithNoTooltip] and other ministers are planning to go into conflict with [target_country.GetName], who they view as a prime target for subjugation."
+ flavor_maj.25.a: "They had better submit to us sooner than later."
+ flavor_maj.25.b: "We will find another way."
+
+ flavor_maj.26.title: "An Uparaja for [target_country.GetNameWithNoTooltip]"
+ flavor_maj.26.desc: "We have been approached by a certain high-ranking minister, the [target_character.GetName] of the [target_country.GetLongName]. [target_character.GetSheHe|U] has served us in the past and has offered to lead an expedition into [ShowAreaName('south_sumatra_area')] in order to strengthen our grip on our subjects as well as to subdue [target_country2.GetName]."
+ flavor_maj.26.a: "[target_character.GetNameWithNoTooltip] would be a good leader."
+ flavor_maj.26.b: "We cannot fund such expeditions."
+ maj_fire_will_event_if_target_character_lives: "If [target_character.GetName] dies before the end of the expedition, the [event|e] will not fire."
+
+ flavor_maj.27.title: "The $PGR$"
+ flavor_maj.27.desc: "Following the expedition of [target_character.GetName], [target_character.GetSheHe] took control over the [ROOT.GetCountry.GetLongName] and established [target_character.GetHerHis] own state. As the [ROOT.GetCountry.GetGovernment.GetRulerTitle] of $PGR$, [target_character.GetNameWithNoTooltip] is set out to control the famous [ShowGoodsName('goods_gold')] trade."
+ flavor_maj.27.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+
+ flavor_maj.28.title: "Splendor of [target_location.GetNameWithNoTooltip]"
+ flavor_maj.28.desc: "Few are cities on [ShowAreaName('java_area')] that can be compared to the glorious [target_location.GetName]. Surrounded by thick walls made out of marvelous red brick, the [target_location.GetRank.GetName] is truly the essence of the [ROOT.GetCountry.GetAdjective] [ROOT.GetCountry.GetFlavorRank].\n\nAnd in the middle of it is the [ROOT.GetCountry.GetGovernment.GetAdjective] palace, the envy of the entire world, with floor made out of golden and silver tiles. The seat of the [ROOT.GetCountry.GetGovernment.GetRulerTitle], it is the truly the centerpiece of the world."
+ flavor_maj.28.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+
+ flavor_maj.29.title: "Golden Age of [ROOT.GetCountry.GetAdjectiveWithNoTooltip] Art"
+ flavor_maj.29.desc: "With our [ROOT.GetCountry.GetFlavorRank] on the rise, the [ROOT.GetCountry.GetCulture.GetName] culture is experiencing a golden age, with all aspects of our cultural heritage experiencing a true rebirth. New #italic kakawin#! poems are being written while the populace is enjoying traditional puppet theater plays. The [ROOT.GetCountry.GetGovernment.GetRulerTitle] travels across the country regularly, admiring and giving patronage to grand new establishments created by our artists. Let this time of prosperity last."
+ flavor_maj.29.a: "[ROOT.GetCountry.GetNameWithNoTooltip] is truly the center of the world."
+ flavor_maj.29.b: "And we must strive to export it to our subjects!"
+
+ MAJ_we_will_play_as_malacca: "We will continue playing as [ShowFormableCountryName('MLC_f')]."
+
+ demak_progress_at_least_20: "Sunni Dominance is at least #r 20.0%#!"

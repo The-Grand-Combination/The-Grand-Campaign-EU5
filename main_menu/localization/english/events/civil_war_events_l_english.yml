@@ -1,0 +1,6 @@
+﻿l_english:
+ civil_war.1.title: "Civil War Lost"
+ civil_war.1.desc: "The [loser.GetAdjective] Civil War is over. We have lost. Luckily for us, this is not the end, but maybe an opportunity."
+ civil_war.1.a: "From the ashes comes new life!"
+ civil_war.1.b: "It is time to pay the piper"
+ civil_war_game_over: "This will end our game!\n\n@trigger_no! #R GAME OVER !#! @trigger_no!"

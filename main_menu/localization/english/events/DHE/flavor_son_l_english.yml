@@ -1,0 +1,115 @@
+﻿l_english:
+ flavor_son.1.title: "The [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')] of [ShowLocationNameWithNoTooltip('timbuktu')]"
+ flavor_son.1.desc: "The [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] are dismayed at the lack of faith of [target_character.GetName]. Already, they are spreading word that [target_character.GetSheHe] is closer to the pagans than to a true [ShowReligionGroupAdjective('muslim')] ruler and that [target_character.GetHerHis] lack of faith will condemn us all. The [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')] are already threatening that unless [target_character.GetSheHe] adapts to the requirements of the [ShowReligionGroupAdjectiveWithNoTooltip('muslim')] faith, they will seek a new ruler who does."
+ flavor_son.1.a: "Give up alcohol and parties with these people? Never!"
+ flavor_son.1.b: "[target_character.GetNameWithNoTooltip] needs to become more devout."
+ 
+ flavor_son.2.title: "Golden Age in [ShowLocationNameWithNoTooltip('timbuktu')]"
+ flavor_son.2.desc: "Our rule over [ShowLocationName('timbuktu')] has allowed it to prosper. Many great scholars and members of the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] are flooding in, ready to learn from its many schools."
+ flavor_son.2.historical_info: "During the reign of Askia 'the Great', Timbuktu prospered. He made sure to open religious schools and astronomical observatories. That, alongside the trade and the bureaucracy he established for people living there, led many in the city to believe that he was a gifted administrator, able to maintain the prosperity of Songhai for the years to come."
+ flavor_son.2.a: "This will last forever..."
+ 
+
+ flavor_son.3.title: "$tarikh_al_sudan$"
+ flavor_son.3.desc: "In order to preserve the history of [ROOT.GetCountry.GetName], [target_character.GetName] has started recording its history in the chronicle dubbed as $tarikh_al_sudan$. We can try to fund [target_character.GetHerHim], but [target_character.GetSheHe] is fixated on completing it even without help."
+ flavor_son.3.historical_info: "The most important chronicle of the Songhai Empire, $tarikh_al_sudan$, was written around 1655 by 'Abd al-Raḥmān al-Sa'dī. It gives brief histories about the early history of Mali, Songhai, and Tuareg, but the main part of the chronicle depicts the history of the 15th and 16th century Songhai. It also contains biographies of scholars and holy men of Djenné and Timbuktu."
+ flavor_son.3.a: "Let us sponsor this work."
+ flavor_son.3.b: "It will be written even without our help."
+
+flavor_son.4.title: "Corp of Warriors"
+flavor_son.4.desc: "Although [ROOT.GetCountry.GetName] has proven to be capable of defending itself from any external threats, the militarism within the [ROOT.GetCountry.GetFlavorRank] has allowed new ideas to rise. One of them is that of a professional army, re-organizing the provinces in a manner that would make it much easier to distribute our manpower all around the [ROOT.GetCountry.GetFlavorRank]. [target_character.GetName] has overseen this project, already having found a small army of full-time warriors, [target_character.GetSheHe] may be able to create a standing army to dominate the rest of [ShowRegionName('guinea_region')]."
+flavor_son.4.historical_info: "During the reign of Muḥammad Askia 'the Great', the Songhai army was reorganized, creating a distinction between a soldier and a peasant. This corp of warriors is regarded as the first standing army in Western Africa. Each governor could create their own armies, as long as it served the ruler of Songhai, allowing for easier centralization of the realm."
+flavor_son.4.a: "Let [ROOT.GetCountry.GetNameWithNoTooltip] rise with this new army."
+flavor_son.4.b: "A soldier profession? It is better if everyone was armed instead."
+
+flavor_son.5.title: "Rise of [target_character2.GetNameWithNoTooltip]"
+flavor_son.5.desc: "With turmoil in [ROOT.GetCountry.GetName], new men have risen against us, ready to claim the throne. One of them is [target_character2.GetName], an ambitious and intelligent noble, who stands in direct opposition to [target_character.GetName]. [target_character2.GetSheHe|U] has amassed several supporters and now demands the throne."
+flavor_son.5.historical_info: "The reign of Askia 'the Great' is regarded as the start of the Songhai Empire. While serving as a general of Sonni Ali, he frequently clashed against him, most likely due to their religious differences, and their treatment of the 'Ulamā' in Timbuktu. After Sonni Ali's death though, he launched a successful coup against his son, using the influence of those that were persecuted in Songhai to create his power base."
+flavor_son.5.a: "Let [target_character.GetNameWithNoTooltip] step down."
+flavor_son.5.b: "The throne belongs to [target_character.GetNameWithNoTooltip]!"
+askia_rebels: "Muḥammad Askia's Rebellion"
+
+flavor_son.6.title: "[target_location.GetRank.GetNameWithNoTooltip] of [target_location.GetNameWithNoTooltip]"
+flavor_son.6.desc: "With our rise to power in [ShowRegionName('sahel_region')], the [target_location.GetRank.GetName] of [target_location.GetName] has seen newfound prosperity. Specifically, the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] there have been enjoying a luxurious life, slowly turning the location into a center of learning. Perhaps we can provide our aid to accelerate this process."
+flavor_son.6.historical_info: "After its fall in a six-month siege against the Songhai Empire, Djenné was brought into the fold. Due to its location, it served as a key trade hub for the entirety of the Empire. Leo Africanus mentioned that it had an abundance of many goods and that its merchants imported from the Europeans regularly."
+flavor_son.6.a: "The [target_location.GetRank.GetNameWithNoTooltip] will see new levels of prosperity!"
+flavor_son.6.b: "Aiding the [ShowReligionGroupAdjectiveWithNoTooltip('muslim')] people there? Never."
+son_all_clergy_pops_in_location_gain_satisfaction_tt: "All [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] [pops|e] will gain [ShowNamedValue('pop_satisfaction_ultimate_bonus')|+=2%] [pop_satisfaction|e]"
+
+flavor_son.7.title: "The [ShowPolicyNameWithNoTooltip('sharia_law_policy')]"
+flavor_son.7.desc: "With the split between [ShowReligionGroupAdjective('muslim')] people and the unbelievers in [ShowRegionName('guinea_region')], [target_character.GetName] has proposed enforcing [ShowPolicyName('sharia_law_policy')] onto any heathen. Its purpose is to better allow us to control the citizens of our nation."
+flavor_son.7.a: "It is [ShowReligionGroupNameWithNoTooltip('muslim')] that will lead [ROOT.GetCountry.GetNameWithNoTooltip]."
+flavor_son.7.b: "Let us respect the laws of the unbelievers."
+son_all_non_muslim_pops_gain_satisfaction_tt: "Every [pop|e] that is not [ShowReligionGroupAdjective('muslim')] will gain [ShowNamedValue('pop_satisfaction_ultimate_bonus')|+=2%] [pop_satisfaction|e]"
+
+flavor_son.8.title: "Converting the [ShowReligionGroupAdjectiveWithNoTooltip('folk_african_group')] Nations"
+flavor_son.8.desc: "Although we are the strongest power in [ShowRegionName('guinea_region')], there are still nations that do not follow [ShowReligionGroupName('muslim')]. While we could use force to convert them, [target_character.GetName] wants to pursue a more peaceful strategy. [target_character.GetSheHe|U] wishes to use diplomacy to spread [ShowReligionGroupNameWithNoTooltip('muslim')] rather than using the sword to stir up more unrest."
+flavor_son.8.a: "That sounds like a good idea."
+flavor_son.8.b: "Using force is the better option."
+son_unlock_diplo_action_to_demand_conversion_tt: "We will unlock the [ShowCountryInteractionName('demand_conversion_to_islam')] [country_interaction|E] against the unbelievers of [ShowRegionName('guinea_region')]"
+
+flavor_son.9.title: "[target_location.GetRank.GetNameWithNoTooltip] of [target_location.GetNameWithNoTooltip]"
+flavor_son.9.desc: "The [target_location.GetRank.GetName] of [target_location.GetName] ever since it fell into our fold has been one of the most important centers of learning. It hosts several mosques and scholars that have led to the [target_location.GetRank.GetNameWithNoTooltip] becoming a cultural pride in all of [ShowRegionName('guinea_region')]. Some have started calling it the second capital of [ROOT.GetCountry.GetName]."
+flavor_son.9.a: "Time to focus more on [target_location.GetNameWithNoTooltip]."
+flavor_son.9.b: "[target_location2.GetNameWithNoTooltip] is the capital, it should be the focus instead."
+flavor_son.9.c: "A second capital? [target_location.GetNameWithNoTooltip] is the new capital."
+
+flavor_son.10.title: "Flourishment of the Trans-Saharan Trade"
+flavor_son.10.desc: "The Trans-Saharan Trade has reached new levels since we dominated the routes. Instead of sitting idly, we can try to expand our outposts in the destinations where our caravans arrive. [ShowLocationName('alexandria')], [ShowLocationName('tunis')], and [ShowLocationName('fez')] specifically, they are the main destinations that should be aided."
+flavor_son.10.a: "Let these caravan stops flourish."
+flavor_son.10.b: "Instead of the locations, let us reinforce the entire trade."
+flavor_son.10.c: "Investing money into this is not worth it."
+son_unlock_unique_buildings_in_alexandria_tunis_and_fez_tt: "Unlocks the construction of [ShowBuildingTypeName('trans_saharan_trade_outposts')] in [ShowLocationName('fez')], [ShowLocationName('tunis')], and [ShowLocationName('alexandria')]"
+
+flavor_son.11.title: "Invitation of [ShowReligionGroupNameWithNoTooltip('muslim')] Scholars"
+flavor_son.11.desc: "With our rise as the prominent power in [ShowRegionName('guinea_region')], many [ShowReligionGroupAdjective('muslim')] scholars have started taking an interest in [ROOT.GetCountry.GetName]. [target_character.GetName] and [target_character.GetHerHis] [ROOT.GetCountry.GetGovernment.GetCourtTitle] have been planning on inviting some of these scholars, setting [ROOT.GetCountry.GetNameWithNoTooltip] as one of the strongest members of [ShowReligionGroupNameWithNoTooltip('muslim')]."
+flavor_son.11.a: "Let us promote them in our [ROOT.GetCountry.GetGovernment.GetCourtTitle]."
+flavor_son.11.b: "We have no need for scholars like that."
+
+flavor_son.1000.title: "The Ḥajj of [target_character.GetNameWithNoTooltip]"
+flavor_son.1000.desc: "Every devout [ShowReligionGroupAdjective('muslim')] is required to perform a Ḥajj to [ShowLocationName('mecca')] at least once in their life. While it is mainly a religious practice, many great rulers such as [target_character2.GetName] have gone on this pilgrimage to spread their nation's glory to everyone they may meet. Whatever the case, we need to choose if we shall embark for [ShowLocationNameWithNoTooltip('mecca')]."
+flavor_son.1000.historical_info: "During the reign of Askia the Great of Songhai, he wished to imitate the Ḥajj of Mansa Mūsā. Devout as he was, he brought as many riches with him. Although it was not as grand, it still included many charitable donations, including the creation of a place for West African pilgrims to reside in Mecca."
+flavor_son.1000.a: "We shall go to [ShowLocationNameWithNoTooltip('mecca')] with all our riches!"
+flavor_son.1000.b: "Let us bring a modest amount of gold with us."
+flavor_son.1000.c: "We only need to perform the Ḥajj, not show off our wealth."
+flavor_son.1000.d: "There is no need to go to [ShowLocationNameWithNoTooltip('mecca')]."
+son_begin_hajj_tt: "The Ḥajj to [ShowLocationName('mecca')] will begin. The [gold|e] spent will be part of the #Y Caravan#!"
+son_no_hajj_tt: "We will not embark in the Ḥajj to [ShowLocationName('mecca')]"
+
+flavor_son.1001.title: "The Scholars of [ShowRegionNameWithNoTooltip('maghreb_region')]"
+flavor_son.1001.desc: "As our Ḥajj arrives in [target_location.GetName], words all around [ShowRegionName('maghreb_region')] herald the arrival of [target_character.GetName] and [target_character.GetHerHis] caravan. Many scholars, such as [target_character2.GetName], have appeared, offering to join our [ROOT.GetCountry.GetGovernment.GetCourtTitle]. Perhaps we can use a few more golden coins to attract even more..."
+flavor_son.1001.a: "They will make a fine addition in the [ROOT.GetCountry.GetGovernment.GetCourtTitle]."
+flavor_son.1001.b: "We are here on a holy mission, not to hire scholars."
+
+flavor_son.1002.title: "Donations in [ShowRegionNameWithNoTooltip('maghreb_region')]"
+flavor_son.1002.desc: "After spending days in [target_location.GetName], the caravan of [target_character.GetName] is preparing to depart to [ShowRegionName('egypt_region')]. Before that though, the [target_location.GetRank.GetName] has left an impression on[target_character.GetHimHer]. Before fully departing, perhaps a donation can be made to help it thrive even more."
+flavor_son.1002.a: "Let us toss a few coins in [target_location.GetNameWithNoTooltip]."
+flavor_son.1002.b: "The caravan needs to move, not to donate."
+
+flavor_son.1003.title: "The Scholars of [target_location.GetNameWithNoTooltip]"
+flavor_son.1003.desc: "[target_location.GetName] stands as the greatest location in all of [ShowRegionName('egypt_region')]. Like when [target_character3.GetName] and [target_character3.GetHisHer] Ḥajj was met with open arms, so are we. Scholars have started flooding to our side, ready to join us. We could try to convince their stay to be permanent, with a few golden bars."
+flavor_son.1003.a: "We have gold to spare for them."
+flavor_son.1003.b: "We have no time to waste in [target_location.GetNameWithNoTooltip]."
+
+flavor_son.1004.title: "Following the Footsteps of [target_character3.GetNameWithNoTooltip]"
+flavor_son.1004.desc: "With our temporary stay in [target_location.GetName], [target_character.GetName] wishes to follow in the footsteps of the Ḥajj that [target_character3.GetName] had embarked on long ago. One of the most memorable feats of it was the luxurious donations [target_character3.GetSheHe] made in [ShowRegionName('egypt_region')]. Perhaps though we should ensure it does not destroy the local economy..."
+flavor_son.1004.a: "[target_location.GetNameWithNoTooltip] shall remember us."
+flavor_son.1004.b: "Let us not forget what this journey is all about."
+
+flavor_son.1005.title: "The Holiest of All Places"
+flavor_son.1005.desc: "After months of traveling, [target_character.GetName] and [target_character.GetHerHis] caravan have arrived at [ShowLocationName('mecca')]. Although the pilgrimage is meant to be a holy one, there are several options for us to do. We could either show the world our wealth, make generous donations to show them that we are a pious bunch, or stay for a few days, completing the pilgrimage."
+flavor_son.1005.a: "This Ḥajj will be the grandest one!"
+flavor_son.1005.b: "Let us establish ties with the people there."
+flavor_son.1005.c: "It is a holy duty, let us show them that."
+flavor_son.1005.d: "Humility is the way of a servant."
+
+flavor_son.1006.title: "End of the Ḥajj"
+flavor_son.1006.desc: "After months of traveling to [ShowLocationName('mecca')] and performing the duties of a [ShowReligionGroupAdjective('muslim')] follower, we have finally returned home, ready to administrate [ROOT.GetCountry.GetName] yet again."
+flavor_son.1006.a: "Let us see what remains of the caravan..."
+
+son_show_hajj_money_tt: "Current [gold|e] in #Y Caravan#!: @gold! #G [THIS.GetVariable('hajj_money').GetValue]#!"
+
+son_continue_hajj_tt: "We will continue the #Y Ḥajj#!"
+
+
+son_all_remaining_gold_will_return_to_treasury_tt: "All of the remaining [gold|e] from the #Y Ḥajj#! will return to our [treasury|e]"

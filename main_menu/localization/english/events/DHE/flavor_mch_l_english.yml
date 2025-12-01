@@ -1,0 +1,100 @@
+﻿l_english:
+ flavor_mch.1.title: "[target_character.GetShortNameWithNoTooltip]'s Reforms"
+ flavor_mch.1.desc: "In [GetCurrentYear], [target_character.GetShortName] managed to unite all the [ShowCultureName('jurchen_culture')] tribes. [target_character.GetSheHe|U] also reformed government, administration, and the judicial system with $china$ as model."
+ flavor_mch.1.a: "We choose Innovative Reforms."
+ flavor_mch.1.b: "Conservative Reforms are preferred."
+ 
+ flavor_mch.2.title: "The Seven Grievances"
+ flavor_mch.2.desc: "For centuries, our people have lived under the boot of the dynasty ruling [target_country.GetName]. For centuries, we have been subjected to their power and humiliated with dictates from distant courts that go against what we are.\n\nOur people are united now and we are ready to turn the scales around. A manifesto containing the seven grievances our people have suffered has been read in loud voice by our [ROOT.GetCountry.GetGovernment.GetRulerTitle] in front of our [ROOT.GetCountry.GetGovernment.GetCourtTitle], declaring that we will be at war with [target_country.GetNameWithNoTooltip] soon.\n\nIt is us or it is them."
+ flavor_mch.2.a: "We are ready to attack."
+ 
+ flavor_mch.3.title: "The [ROOT.GetCountry.GetAdjectiveWithNoTooltip] Army Reforms"
+ flavor_mch.3.desc: "Now that we are firmly in control of [ShowRegionName('north_china_region')], it may now be time to use our military expertise to reform the old [ShowCultureGroupName('chinese_group')] army.\n\nHowever, this will likely be expensive and many in the military will resent such an attempt. What shall we do?"
+ flavor_mch.3.a: "Yes, reform the military, as the old [ShowCultureGroupNameWithNoTooltip('chinese_group')] ways are inferior."
+ flavor_mch.3.b: "Bah! What could barbarians teach the nation of Sun Tzu?"
+
+ flavor_mch.4.title: "The Appointment of [target_character.GetShortNameWithNoTooltip]"
+ flavor_mch.4.desc: "An up-and-coming minister has recently come to our attention. [target_character.GetHerHis|U] name is [target_character.GetShortName], and [target_character.GetSheHe] is certainly wise in the ways of diplomacy and administration.\n\nNonetheless, rumor has it that [target_character.GetSheHe] is also grossly corrupt, mixing [target_character.GetHerHis] political excellence with greed and favoritism. Should we make [target_character.GetHerHim] our chief minister?"
+ flavor_mch.4.a: "Appoint [target_character.GetHerHim] despite [target_character.GetHerHis] faults!"
+ flavor_mch.4.b: "No, such corruption could ruin the state!"
+
+ flavor_mch.5.title: "The Later Jīn"
+ flavor_mch.5.desc: "A few centuries ago, a dynasty of [ShowCultureName('jurchen_culture')] origins, the Jīn dynasty, managed to achieve great success by their vast conquests of [ShowRegionName('north_china_region')]. Though they were unable to fully claim the custodianship over the [GetInternationalOrganization('middle_kingdom').GetName], they were, nevertheless, able to fend off invasions from the southern Sòng dynasty, and perhaps could have achieved major success if not for the invasion of the [GetCountry('MGE').GetLongName]. Perhaps, as a powerful [ROOT.GetCountry.GetAdjective] state of [ShowCultureNameWithNoTooltip('jurchen_culture')] origins, we could take on their name."
+ flavor_mch.5.a: "Proclaim the Later Jīn."
+ flavor_mch.5.b: "We are the [ROOT.GetCountry.GetAdjectiveWithNoTooltip] first and foremost."
+ mch_warring_state_modifier_trigger: "[location|e] belongs to the [ShowCultureGroupName('chinese_group')] [culture_group|e] and [owner|e] has succeeded in subduing [GetCountry('KOR').GetName] through the $flavor_mch.10.title$ [event|e] chain."
+ mch_lifan_yuan_modifier_trigger: "[location|e] has a [dominant_culture|e] which is neither accepted nor belongs to the [ShowCultureGroupName('chinese_group')] or [ShowCultureGroupName('jurchen_group')] [culture_group|e]."
+ unlocked_warring_state: "Unlocked $warring_state$"
+
+ map_QNG: "$QNG$ Yellow"
+
+ flavor_mch.6.title: "[ShowLawNameWithNoTooltip('mch_queue_hair')]"
+ flavor_mch.6.desc: "With the [ROOT.GetCountry.GetAdjective] elite at the helm of the [GetInternationalOrganization('middle_kingdom').GetName], it is now a minority of [ShowCultureName('jurchen_culture')] that is presiding over a [ShowCultureGroupName('chinese_group')] majority. This troublesome situation deeply worries [target_character.GetName], who believes that the fall of the [GetCountry('YUA').GetName] and Jīn dynasties was due to their assimilation. As such, [target_character.GetSheHe] is a proponent of the [ShowPolicyName('enforce_queue_hair')] policy, though much of [target_character.GetHerHis] [ROOT.GetCountry.GetGovernment.GetCourtTitle] is advising [target_character.GetHerHim] to pursue the notion of [ShowPolicyName('queue_hair_status_quo')]."
+ flavor_mch.6.a: "Enact the [ShowLawNameWithNoTooltip('mch_queue_hair')]."
+ flavor_mch.6.b: "Those were no mistakes, but adapting to circumstances!"
+
+ flavor_mch.7.title: "[target_character.GetNameWithNoTooltip] the Dragon-Tiger"
+ flavor_mch.7.desc: "The innumerable amount of battles won by [target_character.GetName] have conferred [target_character.GetHerHim] the title of a [ShowTraitName('dragon_tiger')]. With such a great leader at its helm, the [ROOT.GetCountry.GetLongName] sure has a golden age ahead of itself." 
+ flavor_mch.7.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+
+ flavor_mch.8.title: "Eight Banners of [ShowRegionNameWithNoTooltip('mongolia_region')]"
+ flavor_mch.8.desc: "As [ROOT.GetCountry.GetName] expands beyond [ShowRegionName('manchuria_region')], towards the rich courts of $china$, many nationalities serving in the [ShowCultureGroupName('chinese_group')] armies are defecting to ours. Though at first we were able to integrate them within our current military structure, it is becoming apparent that we will have to extend our concept of banners to include the [target_location.GetDominantCulture.GetName] militarymen as well. As such, we have formed the $flavor_mch.8.title$ in [target_location.GetName] under the leadership of [target_character.GetName]."
+ flavor_mch.8.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+
+ flavor_mch.9.title: "Eight Banners of $china$"
+ flavor_mch.9.desc: "Actions speak louder than words and the defections of the [ShowCultureGroupName('chinese_group')] generals say a lot about the fate of the pretenders that set up their headquarters in $china$. Indeed, as our conquest progresses, more and more [ShowCultureGroupNameWithNoTooltip('chinese_group')] nationals join our armies, so much so that the standard banner system is not able to accommodate them all. As such, we have created the $flavor_mch.9.title$, who have been organized in [target_location.GetName] under the leadership of [target_character.GetName]."
+ flavor_mch.9.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+
+ flavor_mch.10.title: "Fate of [ShowRegionNameWithNoTooltip('korea_region')]"
+ flavor_mch.10.desc: "The [target_country.GetLongName] was, for many centuries, a faithful subject of the [GetInternationalOrganization('middle_kingdom').GetName]. However, it seems that for the [target_country.GetAdjectiveWithNoTooltip] state, our claim to the Mandate of Heaven is of little substance, as they refuse to become a loyal [ShowSubjectTypeName('tributary')] of [ROOT.GetCountry.GetName]. Shall we fail to rein them in, our claim may be questioned."
+ flavor_mch.10.a: "We demand a kowtow!"
+ flavor_mch.10.b: "They will be subdued in due time."
+ mch_benefits_of_subjugating_korea: "We have 25 years to make [target_country.GetName] into our [subject|e]. If we succeed, [ShowGovernmentReformName('warring_state')] will provide us with additional benefits."
+
+ flavor_mch.11.success_title: "Fall of [target_country.GetNameWithNoTooltip]"
+ flavor_mch.11.failure_title: "[target_country.GetNameWithNoTooltip] Stands Tall"
+ flavor_mch.11.success_desc: "The campaign to subdue [target_country.GetName] was a resounding success. We have established ourselves as true holders of the [GetInternationalOrganization('middle_kingdom').GetName], and with such a show of power, other defiant monarchs are bending their knee to our [ROOT.GetCountry.GetGovernment.GetRulerTitle]."
+ flavor_mch.11.failure_desc: "We failed to prove to the [target_country.GetAdjective] how powerful we truly are. In the eyes of the [ShowCultureGroupName('chinese_group')] people, we are but a laughing stock and the bureaucrats of [target_country.GetNameWithNoTooltip] still stand firm in [target_country.GetCapital.GetName]."
+ flavor_mch.11.a: "This will go down in history."
+ mch_improve_warring_state_gov_reform: "[ShowGovernmentReformName('warring_state')] will provide us with additional benefits."
+
+ flavor_mch.12.title: "[ShowGovernmentReformNameWithNoTooltip('lifan_yuan')]"
+ flavor_mch.12.desc: "The administration of the territories outside the core jurisdiction of [ShowCultureGroupName('chinese_group')] and [ShowCultureName('jurchen_culture')] people has become quite the hassle. As such, a proposal has been made to establish the [ShowGovernmentReformName('lifan_yuan')], an agency designed to let us get more out of these territories, as well as to ease the separatist sentiment of the local populace."
+ flavor_mch.12.a: "Excellent proposal!"
+ flavor_mch.12.b: "We cannot sustain the costs as of now."
+
+ flavor_mch.13.title: "Growing [target_location.GetNameWithNoTooltip]"
+ flavor_mch.13.desc: "The ambitions of [target_character.GetName] lie at the heart of the [GetInternationalOrganization('middle_kingdom').GetName]. However, those goals are still distant, as [ROOT.GetCountry.GetName] is yet too weak to take over $china$. Instead, it would be wiser to strengthen [target_character.GetHerHis] [ROOT.GetCountry.GetFlavorRank] by constructing a new city from the ground-up, and the location for that has been chosen to be in [target_location.GetName]."
+ flavor_mch.13.a: "Build it up."
+ flavor_mch.13.b: "It is but a temporary concern."
+
+ flavor_mch.14.title: "Capital Worthy of the [GetInternationalOrganization('middle_kingdom').GetNameWithNoTooltip]"
+ flavor_mch.14.desc: "Our recent acquisition of [target_location.GetName] has spurred much enthusiasm, as it is no ordinary [target_location.GetRank.GetName], for it has been the capital of many prominent dynasties. If [ROOT.GetCountry.GetName] is to be a new Emperor of $china$, it would be most befitting to move our capital to [target_location.GetNameWithNoTooltip]."
+ flavor_mch.14.a: "So it shall be done."
+ flavor_mch.14.b: "We will redefine that standard."
+
+ flavor_mch.15.title: "[ShowPolicyNameWithNoTooltip('mch_green_standard_army')]"
+ flavor_mch.15.desc: "As our conquest of $china$ progresses, the Eight [ShowCultureGroupName('chinese_group')] Banners are not able to maintain the amount of new recruits that are trying to enter the [ROOT.GetCountry.GetAdjective] army. We shall not turn them away at the conscription offices, for it would only send the same men towards the direction of the many rebels that plague our nation. Instead, let us establish the [ShowPolicyName('mch_green_standard_army')], which shall hold those recruits and help us police our conquests in $china$."
+ flavor_mch.15.a: "Have it established at once!"
+ flavor_mch.15.b: "We cannot afford it at the moment."
+
+ flavor_mch.16.title: "Adopting the Old Regime"
+ flavor_mch.16.desc: "We are but another line in the lineage of the divine emperors of $china$. The various dynasties before us have already established efficient bureaucracies that were able to hold the massive [GetInternationalOrganization('middle_kingdom').GetName] together. Why should we not adopt those policies? Such action would make us more [ShowSocietyDirectionName('sinicized')], but would also preserve continuity and bolster our authority in eyes of the commons."
+ flavor_mch.16.a: "We shall adopt those institutions."
+ flavor_mch.16.b: "Favor the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('tribes_estate')]."
+ unlock_chinese_language_reforms: "This will unlock the [ShowGovernmentReformName('three_departments_system')] [government_reform|e]."
+ MCH_conditional_benefit: "If we do not embrace [ShowGovernmentReformName('three_departments_system')] [government_reform|e], [ShowEstatePrivilegeName('mch_tribal_favor')] will give additional benefits."
+
+ flavor_mch.17.title: "Proclamation of the $QNG$"
+ flavor_mch.17.desc: "At last, we have finally managed to take control over the Mandate of Heaven and the [GetInternationalOrganization('middle_kingdom').GetName]. As is the custom, we shall adopt a name for the new Dynasty and [target_character.GetName] shall be vested as the Son of Heaven. As for the name of the Dynasty, the name of $QNG$ has been chosen, meaning 'clear' and 'pure'. However, the symbolism of gold does not disappear with this proclamation, as our flag will still remain golden."
+ flavor_mch.17.a: "The Golden wind blows."
+ flavor_mch.17.b: "We do not need any of that!"
+
+ flavor_mch.18.title: "The [GetCountry('MCH').GetAdjectiveWithNoTooltip] Script"
+ flavor_mch.18.desc: "In ages past, the [ShowLanguageName('jurchen_language')] language used to be written down in a specifically-tailored script that was created during the Jīn and adapted from the Khitan script. However, after the fall of that dynasty, it has fallen into disuse, forcing us to have our history recorded in ways much foreign to us. As such, [target_character.GetName] made a decree to have the [ShowLanguageName('mongolian_language')] script adapted to fit our needs and to make it the new [ROOT.GetCountry.GetAdjective] script."
+ flavor_mch.18.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+
+ flavor_mch.19.title: "Adopting a New Identity"
+ flavor_mch.19.desc: "Though for many of us, our [ShowCultureName('jurchen_culture')] ancestry is our pride, it cannot be disputed that for the establishment of the [ROOT.GetCountry.GetAdjective] [GetInternationalOrganization('middle_kingdom').GetName], our past as [ShowCultureGroupName('chinese_group')] subjects is one of much shame. As such, it has been proposed to do away with that history, instead adopting a new identity as the $MCH$."
+ flavor_mch.19.a: "Our [ShowCultureNameWithNoTooltip('jurchen_culture')] ancestry is a threat to our legitimacy."
+ flavor_mch.19.b: "We will not let our tradition be shamed."

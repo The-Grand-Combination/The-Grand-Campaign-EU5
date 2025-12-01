@@ -1,0 +1,29 @@
+﻿l_english:
+ flavor_ven_tur_conflict.1000.title: "The Brewing of a Conflict"
+ flavor_ven_tur_conflict.1000.desc: "The fall of the city of [ShowLocationName('constantinople')] in the hands of the [rising_power.GetLongName] even if it caused us no grief, has gravely affected our trade routes into the [ShowAreaName('black_sea_area')|U]. Their tariffs and mercantile intervention are angering our many merchants, who are demanding that we act in their defense at any cost.\n\nWe could request [rising_power.GetNameWithNoTooltip] to transfer a different trade port in the East Mediterranean to us to compensate our losses."
+ flavor_ven_tur_conflict.1000.historical_info: "Since the capture of [ShowLocationNameWithNoTooltip('constantinople')] by the Turks on May 29th, 1453, [ROOT.GetCountry.GetName] had seen its commercial positions in the [ShowAreaNameWithNoTooltip('black_sea_area')|U] deteriorate. Numerous wars had been fought between 1456 and 1490, pitching the [ROOT.GetCountry.GetGovernment.GetGovernmentType.GetName] against the [rising_power.GetNameWithNoTooltip], with the consequence of [ROOT.GetCountry.GetNameWithNoTooltip] losing more pieces of her commercial empire (inherited from the Fourth Crusade in 1204) in the [ShowProvinceDefinitionName('aegean_sea_province')] and Greece ([ShowLocationName('athens')] in 1460, [ShowLocationName('negroponte')] in 1470). A war erupted again in 1499, [ROOT.GetCountry.GetNameWithNoTooltip] losing fortresses in [ShowAreaName('morea_area')|U] such as [ShowLocationName('modon')], Coron and Navarrin."
+ flavor_ven_tur_conflict.1000.a: "Demand [ShowLocationNameWithNoTooltip('alexandria')] as compensation!"
+ flavor_ven_tur_conflict.1000.b: "Accept their expansion"
+
+ flavor_ven_tur_conflict.1001.title: "The Brewing of a Conflict"
+ flavor_ven_tur_conflict.1001.desc: "The cackle of infidel merchants that call themselves the [origin_tag.GetLongName] are complaining to our great [ROOT.GetCountry.GetGovernment.GetRulerTitle] that since our conquest of the city of [ShowLocationName('constantinople')] their trade routes have been taxed and have lost benefits. They are demanding that we give them the port city of [ShowLocationName('alexandria')] to cover their losses."
+ flavor_ven_tur_conflict.1001.historical_info: "Since the capture of [ShowLocationNameWithNoTooltip('constantinople')] by the Turks on May 29th, 1453, [GetCountry('VEN').GetName] had seen its commercial positions in the [ShowAreaName('black_sea_area')|U] deteriorate. Numerous wars had been fought between 1456 and 1490, pitching the [GetCountry('VEN').GetGovernment.GetGovernmentType.GetName] against the [ROOT.GetCountry.GetName], with the consequence of [GetCountry('VEN').GetNameWithNoTooltip] losing more pieces of her commercial empire (inherited from the Fourth Crusade in 1204) in the [ShowProvinceDefinitionName('aegean_sea_province')] and Greece ([ShowLocationName('athens')] in 1460, [ShowLocationName('negroponte')] in 1470). A war erupted again in 1499, [GetCountry('VEN').GetNameWithNoTooltip] losing fortresses in [ShowAreaName('morea_area')|U] such as [ShowLocationName('modon')], Coron and Navarrin."
+ flavor_ven_tur_conflict.1001.a: "Refuse to discuss compensation"
+ flavor_ven_tur_conflict.1001.b: "Give [ShowLocationNameWithNoTooltip('alexandria')] as compensation"
+
+ flavor_ven_tur_conflict.1002.title: "Compensation Denied"
+ flavor_ven_tur_conflict.1002.desc: "The Turks refuse even to discuss compensation for our losses in trade!"
+ flavor_ven_tur_conflict.1002.a: "At least we now have a claim on it"
+
+ flavor_ven_tur_conflict.1003.title: "[ShowLocationNameWithNoTooltip('alexandria')] Acquired"
+ flavor_ven_tur_conflict.1003.desc: "The Turks have agreed to compensate our trade losses with the city of [ShowLocationName('alexandria')]."
+ flavor_ven_tur_conflict.1003.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+
+ flavor_ven_tur_conflict.1100.title: "[GetCountry('TUR').GetAdjectiveWithNoTooltip] control of [ShowAreaNameWithNoTooltip('morea_area')|U]"
+ flavor_ven_tur_conflict.1100.desc: "After the fall of [ShowLocationName('constantinople')], the Turks turned south and in 1461 the last fortress in [ShowAreaName('morea_area')|U] fell to the [GetCountry('TUR').GetName]. This peninsula was simply too important for the [ROOT.GetCountry.GetAdjective] trade lanes to be neglected, and it was the cause of many wars between [ROOT.GetCountry.GetNameWithNoTooltip] and the [GetCountry('TUR').GetNameWithNoTooltip], as [ROOT.GetCountry.GetNameWithNoTooltip] laid claims to [ShowAreaNameWithNoTooltip('morea_area')|U].\nWhat shall we do?"
+ flavor_ven_tur_conflict.1100.a: "Today is a good day for the [GetCountry('TUR').GetNameWithNoTooltip] to die!"
+ ven_opinion_morean_confrontation: "Morean Confrontation"
+ flavor_ven_tur_conflict.1100.b: "We cannot risk a war"
+ flavor_ven_tur_conflict.1101.title: "[origin_tag.GetAdjectiveWithNoTooltip] claims on [ShowAreaNameWithNoTooltip('morea_area')|U]"
+ flavor_ven_tur_conflict.1101.desc: "An ambassador from [origin_tag.GetName] has just informed us that they have laid claim to the [ShowAreaName('morea_area')|U] Peninsula. This is not acceptable, and they must be punished."
+ flavor_ven_tur_conflict.1101.a: "This means war!"

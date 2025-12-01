@@ -1,0 +1,10 @@
+﻿l_english:
+ flavor_jap_kor.1.title: "Celestial Ambition"
+ flavor_jap_kor.1.desc: "The reunification of [ShowRegionName('japan_region')] is finally complete under the watchful gaze of [ROOT.GetCountry.GetName]. With no more foes to fight, our [ShowGovernmentReformName('daimyo')] might turn to internal struggles, or, worse yet, unify against us to break free from our reign. We cannot let that happen and it is therefore imperative we find a new conflict to pursue, and what other conflict than to conquer $china$ and oust the [target_country2.GetAdjective]. In order to do that though, we will need to conquer [target_country.GetName]."
+ flavor_jap_kor.1.a: "To war!"
+ flavor_jap_kor.1.b: "We must prepare for the conflict."
+ flavor_jap_kor.1.c: "We shall not pick fights with our neighbors."
+
+ flavor_jap_kor.2.title: "War is Upon Us"
+ flavor_jap_kor.2.desc: "If the reunification of [ShowRegionName('japan_region')] was not troubling enough in of itself, our worst fears have played out - the militant [from_country.GetAdjective] state has declared a war on us! We must ready the troops and the navy for their inevitable landing in [ShowRegionName('korea_region')]. Though their motivations are not clear, one thing we do know is that they are treating us as nothing but an obstacle for their true goal - the [GetInternationalOrganization('middle_kingdom').GetName]."
+ flavor_jap_kor.2.a: "We will not let them pass!"

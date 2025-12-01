@@ -1,0 +1,100 @@
+﻿l_english:
+ colonial_revolution.1.title: "No Taxation Without Representation"
+ colonial_revolution.1.desc: "Ever since our territory was established, we have only existed for the enrichment of [target_country.GetName] overseas. Unfortunately, we have not received an equal amount of representation either on [target_country.GetAdjectiveWithNoTooltip] affairs or in the matters of our own lands. Some of our most esteemed countrymen, inspired by the [ShowInstitutionName('enlightenment')], are talking about possible options to pressure our suzerain into rescinding power, which could escalate into a conflict."
+ colonial_revolution.1.a: "The ideas of the [ShowInstitutionNameWithNoTooltip('enlightenment')] will prevail!"
+ colonial_revolution.1.a.tt: "In this situation, it is possible for a colonial [subject|e] to form an [international_organization|e] of like-minded colonies, trying to pressure their overlord into rescinding control over them or achieving independence directly."
+
+ colonial_revolution.2.title: "The Unruly Colonies"
+ colonial_revolution.2.desc: "With the ideas of the [ShowInstitutionName('enlightenment')] spreading like a wildfire all over the world, we have received unsettling news from our colonial possessions. They seem to be discussing disturbing ideas such as representation and self-determination. While we are not sure where these ideas sprung from, as we always acted in their best interest, it seems likely that this will not be easy to ignore. We should anticipate significantly more trouble in dealing with our colonial possessions in the future."
+ colonial_revolution.2.a: "We can only pity those people rejecting our rule."
+
+ colonial_revolution.3.title: "Looking for Freedom"
+ colonial_revolution.3.desc: "After a prolonged period of colonial mismanagement, we have reached a state of divergence. Cultural, social, and political dissimilarities and the ongoing exploitation have made the settlers lose faith in [target_overlord.GetName]. The differences between the groups supporting the [target_overlord.Custom('GetMotherlandFatherland')] and the settlers preferring governance free from oversea influence are becoming more stark and entrenched by the day and conflict seems nearly unavoidable."
+ colonial_revolution.3.a: "This is a serious matter."
+ colonial_revolution.3.b: "Loyalty to the [target_overlord.Custom('GetMotherlandFatherland')] will serve us well."
+
+ colonial_revolution.4.title: "Trade Restrictions"
+ colonial_revolution.4.desc: "The relation with our colonies have been on shaky grounds for a while. The economic needs of [ROOT.GetCountry.GetName] can not be ignored and demand an ever-flowing stream of goods from overseas. However, our attempt to assert rigid economic control over our subjects has met fierce resistance. Some colonists have petitioned us to loosen our strict control over goods leaving and entering their markets and giving them more local control."
+ colonial_revolution.4.a: "They should bring this up in the [ROOT.GetCountry.GetGovernment.GetParliament.GetName]."
+ colonial_revolution.4.b: "Give in to their demands."
+
+ colonial_revolution.5.title: "Rumors of Rebellion"
+ colonial_revolution.5.desc: "Despite their lower status, our colonies are home to many bright and charismatic individuals. We have now received several reports about these people meeting in so called colonial assemblies, discussing the politics of their status as subject and, allegedly, the possibility of declaring independence without our consent. Although these are just rumors, not acting now could leave us in a weaker position later."
+ colonial_revolution.5.a: "Attempt to find a diplomatic solution."
+ colonial_revolution.5.b: "They can not decide that!"
+
+ colonial_revolution.6.title: "The Voice of [target_character.GetNameWithNoTooltip]"
+ colonial_revolution.6.desc: "[target_character.GetName], a fiery speaker and influential figure, has begun to stir unrest in [target_country.GetName]. Through speeches, letters, and instigations of the public to demand more representation, [target_character.GetSheHe] questions our authority and rallies others to seek independence from the [target_overlord.GetLongName]. Though [target_character.GetSheHe] has yet to openly call for revolt, [target_character.GetHerHis] influence grows with each passing day."
+ colonial_revolution.6.a: "Demand [target_character.GetHerHis] extradition from the colonial authorities."
+ colonial_revolution.6.b: "Let [target_character.GetHerHim] speak. Words alone cannot topple us."
+ colonial_revolution.6.c: "Arrange a discreet assassination."
+ assassination_of_target_character_tt: "We will attempt to assassinate [target_character.GetName]"
+
+ 
+ colonial_revolution.7.title: "[target_overlord.GetNameWithNoTooltip] Demands the Extradition of [target_character.GetLastNameWithNoTooltip]"
+ colonial_revolution.7.desc: "A formal demand has arrived from [target_overlord.GetName]. They seek the immediate extradition of [target_character.GetName], citing sedition and incitement against the [target_overlord.GetFlavorRank]. Rumors suggest the real purpose is to execute [target_character.GetHerHim] swiftly and publicly. Our advisors are divided, some see [target_character.GetHerHim] as a dangerous agitator, others as a voice of liberty."
+ colonial_revolution.7.a: "We have to agree, for now."
+ colonial_revolution.7.b: "Never!"
+ 
+ colonial_revolution.8.title: "[target_overlord.GetNameWithNoTooltip] Acts Against Our Sovereignty"
+ colonial_revolution.8.desc: "[target_character.GetName] is dead, struck down in what appeared at first to be a random act of violence. But evidence has surfaced linking the plot to agents at the behest of [target_overlord.GetName]. The revelation has sent shockwaves through our [target_country.GetFlavorRank], where [target_character.GetSheHe] had become a symbol of prominence in the [ROOT.GetCountry.GetGovernment.GetCabinetTitle|U]. Martyrdom now fuels the very movement they sought to silence."
+ colonial_revolution.8.a: "Those blasted fools in [target_overlord.GetNameWithNoTooltip]!"
+ 
+ colonial_revolution.9.title: "The Failed Assasination of [target_character.GetLastNameWithNoTooltip]"
+ colonial_revolution.9.desc: "An attempt has been made on the life of [target_character.GetName], but [target_character.GetSheHe] narrowly escaped. The would-be assassin was captured and, under interrogation, confessed ties to agents of [target_overlord.GetName], our overlord! The plot has only strengthened the influence of [target_character.GetShortNameWithNoTooltip], turning [target_character.GetHerHim] into a living legend while casting [target_overlord.GetNameWithNoTooltip] as a villain in the eyes of many within the [target_country.GetFlavorRank]."
+
+ colonial_revolution.10.title: "Demand for Removal"
+ colonial_revolution.10.desc: "A growing faction within our [ROOT.GetCountry.GetFlavorRank] has called for the removal of [target_character.GetName], a member of the [ROOT.GetCountry.GetGovernment.GetCabinetTitle] seen as overly loyal to [target_overlord.GetName] and hostile to local autonomy. Accusations range from corruption to outright espionage. The demand is clear: [target_character.GetSheHe] must be dismissed and handed over to [target_overlord.GetName]."
+ colonial_revolution.10.a: "Send a letter with our request."
+ colonial_revolution.10.b: "We will settle this matter internally."
+
+ colonial_revolution.11.title: "[target_country.GetNameWithNoTooltip] Demands the Extradition of [target_character.GetLastNameWithNoTooltip]"
+ colonial_revolution.11.desc: "A formal demand has arrived from [target_country.GetName]. They seek the immediate extradition of [target_character.GetName], citing sedition and incitement against the [target_country.GetFlavorRank]. Rumors suggest the real purpose is to rid [target_character.GetHerHim] swiftly in an effort to spread revolutionary sentiment. Our advisors are divided, some see [target_character.GetHerHim] as an important governor, others seek to appease our colonial subject."
+ colonial_revolution.11.a: "Have [target_character.GetHerHim] extradited."
+ colonial_revolution.11.b: "We will not entertain the demands of a mere colony!"
+ scales_with_character_abilities_tt: "The loss of [government_power|e] will scale according to the influence and [total_ability|e] of [target_character.GetName]"
+
+ colonial_revolution.12.title: "Popular Rule"
+ colonial_revolution.12.desc: "While the world is grasped with the desire for colonies to separate from their overlords, the steady and firm rule of [ROOT.GetCountry.GetGovernment.GetRuler.GetName] has not gone unnoticed by our subjects. The admiration sparked by [ROOT.GetCountry.GetGovernment.GetRuler.GetHerHim] in our subjects leads to many being content with our rule."
+ colonial_revolution.12.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+
+ colonial_revolution.13.title: "Without a Leader"
+ colonial_revolution.13.desc: "Usually, our subjects can rally behind the unifying figure of our ruler. Unfortunately, ever since the death of [ROOT.GetCountry.GetGovernment.GetPreviousRuler.GetName] we have been left without clear leadership and our subjects might get dangerous ideas about liberty and sovereignty."
+ colonial_revolution.13.a: "[ROOT.GetCountry.Custom('common_string_negative')]"
+
+ colonial_revolution.14.title: "A Peaceful Path Forward"
+ colonial_revolution.14.desc: "In the age of the [ShowSituationName('colonial_revolution')], conflicts between overlord and subjects are common and threaten to spark new bloodshed at every opportunity. A group of people, consiting both of settlers in [target_colony.GetName] and in our own lands, has come forward with a proposal to spare both of our countries from this dreadful future. By releasing [target_colony.GetNameWithNoTooltip] from their obligations and signing an official declaration for an alliance, we can secure a prospering future for both us and [target_colony.GetNameWithNoTooltip]."
+ colonial_revolution.14.a: "We will face the future together."
+ colonial_revolution.14.b: "We would rather keep our relations as is."
+
+ colonial_revolution.15.desc.generic: "In a recent meeting of the [ROOT.GetCountry.GetGovernment.GetCabinetTitle] a vicious argument broke out between [target_character.GetName] and [target_character_2.GetName]."
+ colonial_revolution.15.desc.generic_2: "It is clear that we can no longer support both in our [ROOT.GetCountry.GetGovernment.GetCabinetTitle] and will have to commit to punishing either of them."
+ colonial_revolution.15.title: "Factionalism in the [ROOT.GetCountry.GetGovernment.GetCabinetTitle]"
+ colonial_revolution.15.desc.subject: "$colonial_revolution.15.desc.generic$ [target_character.GetNameWithNoTooltip], a staunch supporter of our overlord, has accused [target_character_2.GetNameWithNoTooltip] of disloyalty and sabotaging our common relations. [target_character_2.GetNameWithNoTooltip] in turn responded with accusations of exploiting our common people for foreign interests. $colonial_revolution.15.desc.generic_2$"
+ colonial_revolution.15.desc.overlord: "$colonial_revolution.15.desc.generic$ [target_character.GetNameWithNoTooltip] has voiced very conciliatory views on our colonies before and argued for changing our stance to be less exploitative. For this, [target_character.GetSheHe] received a strong resistance from [target_character_2.GetNameWithNoTooltip], who argued for the necessity of exploitation for our own prosperity. $colonial_revolution.15.desc.generic_2$"
+ colonial_revolution.15.a: "[target_character.GetNameWithNoTooltip] has the better arguments."
+ colonial_revolution.15.b: "We are convinced by the position of [target_character_2.GetNameWithNoTooltip]."
+
+ colonial_revolution.1000.title: "Freedom Needs Support"
+ colonial_revolution.1000.desc: "Our fight for freedom can not be achieved on its own and needs significant funds. Fortunately, the vile [target_overlord.GetLongName] have made many enemies on their own. One of their enemies, [target_rival.GetName], is hopefully ready to invest in the demise of their rivals. With a bit of convincing, we could receive significant funds for our interests."
+ colonial_revolution.1000.a: "Money is the most important resource we need."
+ colonial_revolution.1000.b: "We need more troops to fight for our freedom."
+ colonial_revolution.1000.c: "They should join our war effort."
+ colonial_revolution.1000.d: "On second thought, we do not need their help."
+ ar_gain_money_tt: "Should they accept, we will receive a portion of their income"
+ ar_gain_manpower_tt: "Should they accept, we will receive a portion of their manpower"
+ ar_gain_alliance_tt: "Should they accept, we will enter an alliance with them"
+
+ colonial_revolution.1001.title: "[target_colony.GetNameWithNoTooltip] Asks for Aid"
+ colonial_revolution.1001.desc: "The poor people of [target_colony.GetName] are suffering under the tyrannical rule of [target_overlord.GetName]. A diplomatic delegation of [target_colony.GetNameWithNoTooltip] has now petitioned us to support their efforts for independence, but they are asking for a large contribution and we are not sure if we are able to support them yet."
+ colonial_revolution.1001.a: "Everything to weaken our rivals."
+ colonial_revolution.1001.b: "No, we would not want their ideas of freedom spreading to us."
+
+ colonial_revolution.1002.title: "The Response of [target_rival.GetNameWithNoTooltip]"
+ colonial_revolution.1002.desc.common: "The diplomats of [target_rival.GetNameWithNoTooltip] have a response for us about our request for support."
+ colonial_revolution.1002.accepted.desc: "$colonial_revolution.1002.desc.common$ They have promised to stand besides us in our struggle against [target_overlord.GetName]. Together, we shall destroy the shackles of oppression that bind us to our overlord."
+ colonial_revolution.1002.desc: "$colonial_revolution.1002.desc.common$ The cowards refuse to give us their support and have left us to our own means in our struggle against [target_overlord.GetAdjective] oppression."
+ colonial_revolution.1002.a: "They are a valuable ally to our cause."
+ colonial_revolution.1002.b: "We do not need them anyway."
+ got_aid_tt: "We got aid"
+ not_got_aid_tt: "We did not get aid"

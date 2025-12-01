@@ -1,0 +1,24 @@
+namespace = worldfairs
+
+worldfairs.1 = {
+	type = country_event
+	title = worldfairs.1.title
+	desc = worldfairs.1.desc
+
+	trigger = {
+		is_subject = no
+		gold >= 100
+	}
+
+	option = {
+		name = worldfairs.1.a
+
+		add_gold = -100
+		add_prestige = 10
+	}
+
+	option = {
+		name = worldfairs.1.b
+		add_prestige = -1
+	}
+}

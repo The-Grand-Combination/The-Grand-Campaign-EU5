@@ -1,0 +1,72 @@
+﻿l_english:
+
+  #Events for the disaster
+  court_and_country.1.title: "Conflict of Court and Country"
+  court_and_country.1.desc: "The encroachment of the [ROOT.GetCountry.GetAdjective] state on domains that have traditionally been dominated by regional aristocrats, local courts or other interest groups has led to a widespread resentment of the [ROOT.GetCountry.GetGovernment.GetRulerTitle] and the [target_location.GetName] [ROOT.GetCountry.GetGovernment.GetCourtTitle].\n\nThese groups have now united and formed alliances to combat central authority. Today we have received a number of objections to our latest tax decree, citing ancient rights and immoral conduct by the representatives of these upstrats. It is clear that continued attempts to strengthen our power will be obstructed at every opportunity."
+  court_and_country.1.a: "They will bend the knee to central authority!"
+  court_and_country.1.b: "Attempt to negotiate with these Frondeurs."
+
+  court_and_country.2.title: "An End to Hostilities between Court and Country"
+  court_and_country.2.desc: "The period of widespread obstruction of authority in the provinces has finally come to an end. The way we have handled this crisis will shape the way local power structures interact with the government in [target_location.GetName] for the foreseeble future."
+  court_and_country.2.a: "The state is triumphant!"
+  court_and_country.2.b: "Perhaps we can now finally work together."
+  court_and_country.2.c: "The [target_location.GetNameWithNoTooltip] [ROOT.GetCountry.GetGovernment.GetCourtTitle] is devastated."
+  legitimacy_yields_more_crown_power_tt: "[legitimacy|e] will now grant more [crown_power|e] due to our success in the [ShowDisasterName('court_and_country')] [disaster|e]"
+
+  court_and_country.3.title: "The Power of the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]"
+  court_and_country.3.desc: "As we seek to consolidate our power within, it has become apparent that we need to check the influence of the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')]. The era of absolutism is shaping up to mark a great shift from feudal power structures, where [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] held significant regional authority, to our dream of a centralized and powerful institution under the undisputed jursdiction of [target_character.GetName]."
+  court_and_country.3.a: "Revoke their privileges!"
+  court_and_country.3.b: "Intervene on a local level."
+  court_and_country.3.c: "Strip them of their seats in the [ROOT.GetCountry.GetGovernment.GetParliament.GetName]."
+
+  court_and_country.4.title: "The Power of the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')]"
+  court_and_country.4.desc: "Over the years, our [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] class has gained a lot of influence in our political affairs. Through commerce and sponsorship of local politics, they have often challenged our authority. In order to improve our standing at the top of the pecking order, we will look to establish their proper position under our banner."
+
+  court_and_country.5.title: "The Power of the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')]"
+  court_and_country.5.desc: "Power over the divine spirit throughout our communities, as well as matters of our faith, have given tremendous influence to the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')]. Their word often rivals that of [target_character.GetName] as they once held substantial parts of our land. Through the seizing of clerical assets and enforcing the supremacy of the state in religious affairs, we aim at controlling their power."
+
+  court_and_country.6.title: "The Power of the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('peasants_estate')]"
+  court_and_country.6.desc: "The backbone of our great society is none other than the [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')]. These vast lower class populations are central to our economy, but their local loyalties and traditional rights sometimes conflict with centralized authority. In order to secure our rule and establish a firm hand over the people, it is prudent to take active steps towards curbing their power."
+
+  court_and_country.7.title: "Province Refuses to Pay Taxes"
+  court_and_country.7.desc: "Tensions are rising in [target_province.GetName] as local leaders steadfastly refuse to comply with a series of recent ordinances and taxes vetted by [target_character.GetName]. Rather than submit quietly, these leaders have united to send an official appeal to [target_capital.GetName], calling for the immediate replacement of several tax collectors stationed in their province. They argue that these [ROOT.GetCountry.GetGovernment.GetAdjective] agents have overstepped their bounds, abusing their authority and disregarding the ancient rights and privileges that have long been respected in the region.\n\nThe grievances are as numerous as they are grave; tales of undue levies imposed on already strained farmers, sudden seizures of goods without lawful cause, and an almost blatant disregard for local customs. Such acts, they argue, have not only sown resentment but threaten to disrupt the delicate balance of order and loyalty in the entire province. The people see this as an affront to their dignity, and without swift action, the murmurs of dissent may yet grow into a force much harder to quell."
+  court_and_country.7.a: "Arrest their leaders!"
+  court_and_country.7.b: "We can negotiate."
+  gain_modifier_loc_key: "Every [location|e] in the [province|e] will gain the"
+  every_pop_in_target_province_loses_20_satisfaction_tt: "Our [pops|e] in the [province|e] will lose [ShowNamedValue('pop_satisfaction_severe_penalty')|+=2%] [pop_satisfaction|e]"
+  every_location_in_target_province_gets_cnc_local_authority_asserted_tt: "$gain_modifier_loc_key$ [ShowModifier('cnc_local_authority_asserted')] [modifier|e]"
+  every_pop_in_target_province_gains_20_satisfaction_tt: "Our [pops|e] in the [province|e] will gain [ShowNamedValue('pop_satisfaction_severe_bonus')|+=2%] [pop_satisfaction|e]"
+  every_location_in_target_province_gets_cnc_refused_to_pay_taxes_tt: "$gain_modifier_loc_key$ [ShowModifier('cnc_refused_to_pay_taxes')] [modifier|e]"
+
+  court_and_country.8.title: "Brewing Dissent"
+  court_and_country.8.desc: "The attempts of [target_character.GetName] to unify the legal traditions, taxes and obligations of the provinces in the [ROOT.GetCountry.GetLongName] has led to the leaders of the [target_rebel.GetName] to call their compatriots to arms. They claim we have violated the rules we swore to uphold when their lands came under our control and that they have no choice but to once again raise the rebellious banners.\n\nOur local representatives implore us to strike a deal, from our seat of power in [target_location.GetName], before it is too late. If we guarantee to uphold some of their autonomy, they may yet be convinced the abolition of others."
+  court_and_country.8.a: "This rebellion must be crushed!"
+  court_and_country.8.b: "We will buy their loyalty."
+  rebel_pops_in_target_province_lose_10_satisfaction_tt: "[pops|e] that support a [rebellion|e] in [target_province.GetNameWithNoTooltip] will lose [ShowNamedValue('pop_satisfaction_mild_penalty')|+=2%] [pop_satisfaction|e]"
+  non_rebel_pops_in_target_province_lose_5_satisfaction_tt: "[pops|e] that #Y do not#! support a [rebellion|e] in [target_province.GetNameWithNoTooltip] will lose [ShowNamedValue('pop_satisfaction_weak_penalty')|+=2%] [pop_satisfaction|e]"
+  rebel_pops_in_target_province_gain_10_satisfaction_tt: "[pops|e] that support a [rebellion|e] in [target_province.GetNameWithNoTooltip] will gain [ShowNamedValue('pop_satisfaction_mild_bonus')|+=2%] [pop_satisfaction|e]"
+  non_rebel_pops_in_target_province_gain_5_satisfaction_tt: "[pops|e] that #Y do not#! support a [rebellion|e] in [target_province.GetNameWithNoTooltip] will gain [ShowNamedValue('pop_satisfaction_weak_bonus')|+=2%] [pop_satisfaction|e]"
+
+  court_and_country.9.title: "Quarrelsome [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]"
+  court_and_country.9.desc: "Some members of the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] have come to resent the new ideals of nobility. They have lost influence and power in [target_location.GetName] but they still command considerable local influence, with vast estates to their name and deep pockets. Longing for the time when they were the pillars of the realm instead of the servants of the [ROOT.GetCountry.GetGovernment.GetRulerTitle] and [target_character.GetHerHis] ministers, they have grown increasingly quarrelsome and obstinate.\n\nIt seems one such group has been preparing a plot to restore their old privileges and bring tradition and dignity back to the [target_location.GetNameWithNoTooltip] [ROOT.GetCountry.GetGovernment.GetCourtTitle]. Using their countryside holdings as a base they have assembled an army to force their will upon us."
+  court_and_country.9.a: "We will meet them with sword in hand."
+  court_and_country.9.b: "Let us see try to meet their demands."
+  every_supporter_pop_loses_5_satisfaction_tt: "[pops|e] that support a [rebellion|e] will lose [ShowNamedValue('pop_satisfaction_weak_penalty')|+=2%] [pop_satisfaction|e]"
+
+  court_and_country.10.title: "[ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')] League Resists"
+  court_and_country.10.desc: "In recent years, the cities and guilds made up of [target_rebel_pop.GetName] have struggled under the weight of rising taxes and obligations, complying despite growing discontent. However, the situation has reached a boiling point in [target_location.GetName], where the leading [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')], rallying under the local leaders, now openly defy the [ROOT.GetCountry.GetGovernment.GetAdjective] mandate.\n\nUnited by powerful guilds and common grievances, they demand the right to levy their own taxes, enforce their own laws, and govern with unprecedented autonomy. Driven by their cause, they have forcefully expelled our officials from the province. With unrest simmering across the land, we are faced with a pivotal choice: either yield to their demands or impose our will to restore control."
+  court_and_country.10.a: "Let us crush these troublemakers!"
+  court_and_country.10.b: "We can make some exceptions."
+  every_pop_in_location_loses_5_satisfaction_tt: "[pops|e] in [target_location.GetName] will lose [ShowNamedValue('pop_satisfaction_weak_penalty')|+=2%] [pop_satisfaction|e]"
+  every_pop_in_target_location_10_satisfaction_tt: "[pops|e] in [target_location.GetName] will gain [ShowNamedValue('pop_satisfaction_mild_bonus')|+=2%] [pop_satisfaction|e]"
+
+  court_and_country.11.title: "Disloyal Officers"
+  court_and_country.11.desc: "In times of war, the army offers unique opportunities for advancement. Yet, in this period of internal strife, we must remember that many capable soldiers still have ties to disaffected and disloyal factions within the [ROOT.GetCountry.GetFlavorRank].\n\nMinisters close to the [ROOT.GetCountry.GetGovernment.GetRulerTitle] now question the loyalty of our armed forces, urging us to purge all men connected to groups and families that oppose us."
+  court_and_country.11.a: "We need loyal soldiers."
+  court_and_country.11.b: "This is a purge we cannot afford."
+
+  court_and_country.12.title: "Supporters of the [ROOT.GetCountry.GetGovernment.GetRulerTitle]"
+  court_and_country.12.desc: "Not everyone stands to lose from the new order within the [ROOT.GetCountry.GetFlavorRank]! Some can now make a salaried career out of military service or as a functionary in one of the many new institutions of the state. Others yet remain loyal to the [ROOT.GetCountry.GetGovernment.GetRulerTitle] out of their sense of honor and tradition. While the resistance to the increasingly ironclad rule of the [target_location.GetName] [ROOT.GetCountry.GetGovernment.GetCourtTitle] is widespread in our country we have recently seen a surge of supporters."
+  court_and_country.12.a: "An excellent opportunity to strengthen our ranks!"
+  court_and_country.12.b: "Their loyalty will be rewarded."
+  court_and_country.12.c: "Excercise power with respect to the old institutions."

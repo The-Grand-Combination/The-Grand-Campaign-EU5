@@ -1,0 +1,993 @@
+﻿l_english:
+ TAB_TOOLTIP_HINTS_TITLE: "Hints"
+ TAB_TOOLTIP_HINTS: "#T Hints#!\nThis panel contains hints that are relevant to your current game position."
+ OPEN_HINTS: "Open Hints"
+ OPEN_HINT: "Open Hint"
+ EXPAND_HINT: "Click to expand hint"
+ COLLAPSE_HINT: "Click to collapse hint"
+ EMPTY_HINT_SCREEN_TEXT: "Our nation is running smoothly, and we have no advice to impart!"
+ OPEN_HINT_TEXT: "View Hint @hint!"
+ ALERT_HINT: "Open with Hint"
+ ALERT_ADVANCES_HINT: "Open Advances Panel with Hint"
+ HINT_TITLE: "Hint @hint!"
+ RECOMMENDED_ACTIONS_TITLE: "@hint! Recommended Actions"
+ SCRIPTABLE_HINT_DEFINITION_TEXT: "$MAIN_HINT$ $CONTEXT_HINT$"
+ HINT_DIVIDER: "\n\n---\n\n"
+ HINT_SORT_BY_PRIORITY: "Sort by Priority"
+
+ hint_advisor_salute_diplomatic: "\n\"Greetings, your Highness. I am [Player.GetGovernment.CalcBestRepresentativeForPlaystyle('diplomatic').GetName], your political advisor and most humble servant.\""
+ hint_advisor_salute_administrative: "\n\"Yours truly bears the name of [Player.GetGovernment.CalcBestRepresentativeForPlaystyle('administrative').GetName], loyal counselor of your excellency on all things economics.\""
+ hint_advisor_salute_military: "\n\"My name is [Player.GetGovernment.CalcBestRepresentativeForPlaystyle('military').GetName], your expert on military matters. At your service.\""
+
+ # Hints
+ HINTS_AND_SUGGESTIONS: "Hints and suggestions"
+ MANPOWER_HINT: "Low on Manpower!"
+ manpower_topbar_hint: "We primarily gain more [manpower|e] from constructing certain types of [building|e]."
+ MANPOWER_HINT_EXTRA: "We could build the following buildings to gain more [manpower|E]:"
+ MANPOWER_HINT_NONE: "Sadly, there are no buildings that we could build that would give us manpower."
+ MANPOWER_HINT_BUILDING: "$BULLET_WITH_TAB$[BUILDING_TYPE.GetName]"
+
+ SAILORS_HINT: "Low on sailors!"
+ sailors_topbar_hint: "We primarily gain more [sailors|e] from building specific type of [buildings|e] in coastal [locations|e]."
+ SAILOR_HINT_EXTRA: "We could build the following buildings to gain more sailors:"
+ SAILOR_HINT_NONE: "Sadly, there are no buildings that we could build that would give us sailors."
+ SAILOR_HINT_BUILDING: "$BULLET_WITH_TAB$[BUILDING_TYPE.GetName]"
+ INVALID_MODIFIER_TYPE: "Looking for invalid modifier type!"
+ EMPTY_RESEARCH_HINT: "We may select a research!"
+ empty_research_topbar_hint: "@trigger_no! There is no downside to having an active [research|e] and we currently lose progress that could be made otherwise."
+ NO_BUILDINGS_WITH_MODIFIER: "None"
+ 
+ GOLD_HINT: "Running a deficit!"
+ gold_topbar_hint: "If we are running a deficit, we can reduce our [expenses|e], increase [taxes|e], or [mint|e] more coins. If we run out of [gold|e], we will be forced to take [loans|e], and eventually may become [bankrupt|e]."
+
+ STABILITY_HINT: "Our country is unstable!"
+ stability_topbar_hint: "Actions we can take to increase stability include:\n$BULLET_WITH_TAB$Increasing the amount of [GetPlayer.GetReligion.GetAdjective] [ShowPopTypeName('clergy')].\n$BULLET_WITH_TAB$Investing more of the [budget|e] on stability.\n$BULLET_WITH_TAB$Instructing the [cabinet|e] to [ShowCabinetActionName('stabilize_country')]."
+
+ LEGITIMACY_HINT: "[Localize( GetPlayer.GetGovernment.GetGovernmentType.GetPowerKey )] is low!"
+ legitimacy_topbar_hint: "There are several ways we can address this:\n$BULLET_WITH_TAB$Increase the [budget|e] on [court_maintenance|e].\n$BULLET_WITH_TAB$Instruct the [cabinet|e] to [ShowCabinetActionName('strengthen_government')]."
+ devotion_topbar_hint: "$legitimacy_topbar_hint$"
+ republican_tradition_topbar_hint: "$legitimacy_topbar_hint$"
+ horde_unity_topbar_hint: "$legitimacy_topbar_hint$"
+ tribal_cohesion_topbar_hint: "$legitimacy_topbar_hint$"
+ GOLD_VIEW_HINT: "View advice on deficit"
+ ###
+ hint_in_deficit: "Negative Balance"
+ hint_in_deficit_hint_text: "$hint_in_deficit_hint_text_1$\n\n$hint_in_deficit_hint_text_2$\n\n$hint_in_deficit_hint_text_3$"
+ hint_in_deficit_hint_text_1: "We have a negative balance. If we are not careful, this could lead to debt or even bankruptcy."
+ hint_in_deficit_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! Go to the @economy_panel![Link('finances', '', 'lateralview_economy_entry_name')] to see our [income|e] and [expenses]. You can move the sliders to raise [taxes|e] or lower costs.\n@arrow_bonus_tier_2! Ensure that all our [buildings|E] are profitable, or build more if we can support them. You can do this in the @production_panel![Link('production', '', 'lateralview_production_entry_name')].\n@arrow_bonus_tier_2! Managing or leveraging your [estates|E] can also provide significant gains in the short or long term. Be aware that the estates can also hold significant political might, and relying too heavily on them may be risky. You will find them in the @government_panel![Link('government', 'tabcontent = estates', 'lateralview_government_entry_name')]\n@arrow_bonus_tier_1! Setting up profitable [trades|E] is also a great source of income. Browse existing or potential trade routes in the @economy_panel![Link('trade', '', 'lateralview_trade_entry_name')]"
+ hint_in_deficit_hint_text_3: "#T Extra Hints:#!\n@hint! [laws|E], [reforms|E], [diplomacy|E], and more can also give you options to solve a negative balance."
+ hint_in_deficit_military: "\"War might be costly in the short term, but if we are successful we can make our enemies pay for it. Taking land might give us long-term gains, and extorting our enemies can provide a short-term influx of wealth.\""
+ hint_in_deficit_explorer: "\"The great unknown is sure to be full of wealth, ripe for development and plunder.\""
+ hint_in_deficit_administrative: "\"Establishing dominance in our domestic markets would be a fine way to develop our wealth. If we are feeling even more ambitious, establishing footholds in foreign markets can drive growth even further.\""
+ hint_in_deficit_diplomatic: "\"As the saying goes, we need to spend money to make money! Ensuring that our buildings and pops are profitable is the best way to turn the ship around.\""
+ ###
+ hint_cultural_capacity: "Exceeding Cultural Capacity"
+ hint_cultural_capacity_hint_text: "$hint_cultural_capacity_hint_text_1$\n\n$hint_cultural_capacity_hint_text_2$\n\n$hint_cultural_capacity_hint_text_3$"
+ hint_cultural_capacity_hint_text_1: "While multiculturalism can offer many benefits, nations that are unready for the administrative burdens and lack [cultural_capacity|E] will suffer penalties. [pops|E] belonging to [cultures|E] other than our [primary_culture|E] will ordinarily begin as [non_accepted_culture_short|E], but can be [tolerated_culture_short|E] or [accepted_culture_short|E] for a cost."
+ hint_cultural_capacity_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! Consider demoting a less strategically important culture to reduce the costs.\n@arrow_bonus_tier_2! There are sources of [ShowModifierTypeName('cultures_capacity')], commonly found in [government_reforms|E] and [advances|E]."
+ hint_cultural_capacity_hint_text_3: "#T Extra Hints:#!\n@hint! [assimilation|e] can also help reduce the amount of cultures in a country."
+ hint_cultural_capacity_military: "\"Making the most of our cultures is vital for generating cultural tradition and influence - giving us the upper hand in the event of cultural conflict. Increasing the rights of foreign cultures will also grant us additional levies and soldiers.\""
+ hint_cultural_capacity_administrative: "\"Our culture can also be expressed by wondrous works of art produced by our nation's artists. After all, what is a nation if not the sum of its influence on the world?\""
+ hint_cultural_capacity_diplomatic: "\"Over time, foreign cultures might assimilate to be closer to our primary culture in [GetPlayer.GetNameWithNoTooltip]! Who would not want to be [GetPlayer.GetCulture.GetNameWithNoTooltip]?\""
+ ###
+ hint_unhappy_estates: "Unhappy Estates"
+ hint_unhappy_estates_hint_text: "$hint_unhappy_estates_hint_text_1$\n\n$hint_unhappy_estates_hint_text_2$\n\n$hint_unhappy_estates_hint_text_3$"
+ hint_unhappy_estates_hint_text_1: "Keeping the [estates_with_icon|e] content is an important, day-to-day part of running a country. Between them, they represent a significant share of the country's economic and military might.\n\nEvery disloyal [estate] will inflict penalties on your [country], and will make its constituent [pops_with_icon|e] very likely to join [rebellions_with_icon|e]."
+ hint_unhappy_estates_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! Their output and [estate_satisfaction_short|E] can be managed by granting or revoking privileges in the @government_panel![Link('government', 'tabcontent = estates', 'lateralview_government_entry_name')].\n@arrow_bonus_tier_2! Raising and lowering taxes in the @economy_panel![Link('finances', '', 'lateralview_economy_entry_name')] will also affect their satisfaction."
+ hint_unhappy_estates_hint_text_3: "#T Extra Hints:#!\n@hint! The [parliament|e] can also be used to help manage [estate_satisfaction|e].\n@hint! Learn more about [rebel_movements_with_icon] in the [Link('hints', 'selected_hint = hint_rebels_growing', 'Rebels Hint')]."
+ hint_unhappy_estates_administrative: "\"Estates are positively vital to a healthy trading empire. Yes, we might have to give up some authority in the long run, but think of the economy!\""
+ hint_unhappy_estates_diplomatic: "\"Our estates may even have opinions on diplomatic matters. It can be worthwhile considering their assessment of a foreign power when evaluating alliances or pacts.\""
+ hint_unhappy_estates_military: "\"Our estates provide all-important levies to fuel expansion. If we do not keep them on our side, we may find a deficit of recruits just when we need them.\""
+ ESTATE_CONTEXT_TEXT: "In your country, the $LIST$ are discontent.\n\n$TEXT$"
+ HINT_UNHAPPY_ESTATE: "[ESTATE.GetName]"
+ ###
+ hint_manpower: "Manpower"
+ hint_manpower_hint_text: "$hint_manpower_hint_text_1$\n\n$hint_manpower_hint_text_2$\n\n$hint_manpower_hint_text_3$"
+ hint_manpower_hint_text_1: "Our [manpower|e] is our reserve of men ready to be recruited as [regulars|e] for our [armies|e]. Regulars are vastly superior to [levies|e] in [battle|e], but they are expensive, so not every [country|e] can afford them at the beginning of the game."
+ hint_manpower_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! If we are relying on [regulars] to wage war, having low [manpower] severely limits our ability to replenish our [armies|e], so it is not wise to declare [war|E] while we have low manpower\n@arrow_bonus_tier_2! If we are running out of manpower while at war, think about making greater use of [levies|E], hiring [mercenaries|E], or even consider suing for [peace|E]."
+ hint_manpower_hint_text_3: "#T Extra Hints:#!\n@hint! We can develop our nation's maximum manpower and ability to recruit a standing army with various [buildings|E].\n@hint! [estate_privileges|E] and [laws|E] can also impact our manpower potential."
+ hint_manpower_diplomatic: "\"An elite, standing army manned by good [GetPlayer.GetAdjectiveWithNoTooltip] men and boys is likely to be the most effective fighting force, man-for-man.\""
+ hint_manpower_military: "\"Conquest should use every tool at our disposal. A wide-reaching military should utilize mercenaries, levies, and standing army alike.\"" 
+ hint_manpower_administrative: "\"Just remember that every soldier who dies on the battlefield is one fewer farmhand to toil in the fields. War is expensive.\""
+ ###
+ hint_low_stability: "Low Stability"
+ hint_low_stability_hint_text: "$hint_low_stability_hint_text_1$\n\n$hint_low_stability_hint_text_2$\n\n$hint_low_stability_hint_text_3$"
+ hint_low_stability_hint_text_1: "If our [stability|E] is low, we run an increasing risk of [pops|E] joining a [rebellion|E], [estate|E] dissatisfaction leading to [civil_war|E], and a general state of turmoil in our nation."
+ stability_raise_actions: "@arrow_bonus_tier_3! Investing more of the [budget|e] on stability.\n@arrow_bonus_tier_2! Instructing the [cabinet|e] to [ShowCabinetActionName('stabilize_country')]\n@arrow_bonus_tier_1! Increasing the amount of [GetPlayer.GetReligion.GetAdjective] [ShowPopTypeName('clergy')]."
+ hint_low_stability_hint_text_2: "#T Recommended Actions:#!\n$stability_raise_actions$"
+ hint_low_stability_hint_text_3: "#T Extra Hints:#!\n@hint! There are some other sources of stability, like [advances|e] or [policies|e].\n@hint! Remember that stability is also consumed by some important actions such as declaring [wars|E] without a proper [casus_belli|e] or changing a [law|e]."
+ hint_low_stability_administrative: "\"A nation with high stability is, of course, a nation in a state of prosperity! When harvests are plentiful, so too is the flow of wealth into our coffers.\""
+ hint_low_stability_military: "\"A nation cannot safely exert dominance without first ensuring the pacification of its populace. The common folk do so love their pitchforks...\""
+ hint_low_stability_diplomatic: "\"Our neighbors will begin to look on smugly if we plunge our country into ruin. Could we perhaps do something about that?\""
+ ###
+ hint_very_low_stability: "Very Low Stability"
+ hint_very_low_stability_hint_text: "$hint_very_low_stability_hint_text_1$\n\n$hint_very_low_stability_hint_text_2$\n\n$hint_very_low_stability_hint_text_3$"
+ hint_very_low_stability_hint_text_1: "Our [stability|E] is extremely low, and we run a dire risk of [pops|E] joining a [rebellion|E], [estate|E] dissatisfaction leading to [civil_war|E], and our enemies seizing the opportunity to strike while we are weak."
+ hint_very_low_stability_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! We should increase stability as soon as possible, and avoid declaring any more [wars|E] or taking further actions that reduce stability.\n$stability_raise_actions$"
+ hint_very_low_stability_hint_text_3: "$hint_low_stability_hint_text_3$"
+ hint_very_low_stability_administrative: "\"How can anyone be expected to do business in an economy like this? Someone please help us budget this, our cattle are starving.\""
+ hint_very_low_stability_military: "\"Any enemy of [GetPlayer.GetNameWithNoTooltip] would be absolutely thrilled at how weak we look right now. We should expect that our rivals and enemies are beginning to plot against us.\""
+ hint_very_low_stability_diplomatic: "\"While a nation in a period of high stability experiences excellent social mobility, we seem to have invented some kind of social demobilization.\""
+ ###
+ hint_low_legitimacy: "Low Legitimacy"
+ hint_low_legitimacy_hint_text: "$hint_low_legitimacy_hint_text_1$\n\n$hint_low_legitimacy_hint_text_2$\n\n$hint_low_legitimacy_hint_text_3$"
+ hint_low_legitimacy_hint_text_1: "[legitimacy|E] represents the world's view of our [GetPlayer.GetGovernment.GetRulerTitle]'s entitlement to rule. If it falls too low, not only will we forgo any benefits to [crown_power|E] and reduced chance of [rebellion|E], but we will start receiving penalties to [estate|E] satisfaction and [righteousness|E]."
+ hint_low_legitimacy_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! We should aim to keep our legitimacy as high as possible, to minimize any potential penalties.\n@arrow_bonus_tier_2! Increasing our [court_maintenance|e] will help keep the [legitimacy|e] high.\n@arrow_bonus_tier_2! We can also get other sources of [legitimacy|e] like [advances|e] or [policies|e].\n@arrow_bonus_tier_1! Pick the [cabinet_action_with_icon|e] named [ShowCabinetActionName('strengthen_government')]."
+ hint_low_legitimacy_hint_text_3: "#T Extra Hints:#!\n@hint! Like most important values, it will take time to create a favorable view of your [dynasty|E], so make sure to think long term."
+ hint_low_legitimacy_administrative: "\"Anyone that checks the registers of our ancestry and the magnificence of our court will be unable to deny our right to rule.\""
+ hint_low_legitimacy_military: "\"How can we expect our armies to be feared if our own soldiers doubt our leadership?\""
+ hint_low_legitimacy_diplomatic: "\"Sometimes, inner strength can come from how others perceive us, and our allies can also help us in times of trouble.\""
+ ###
+ hint_low_republican_tradition: "Low Republican Tradition"
+ hint_low_republican_tradition_hint_text: "$hint_low_republican_tradition_hint_text_1$\n\n$hint_low_republican_tradition_hint_text_2$\n\n$hint_low_republican_tradition_hint_text_3$"
+ hint_low_republican_tradition_hint_text_1: "[republican_tradition|E] represents the foothold of Republicanism within our [GetPlayer.GetGovernment.GetGovernmentType.GetName]. If it falls too low, not only will we forgo any benefits to [legislative_efficiency|E] and reduced chance of [rebellion|E], but we will start receiving severe penalties to the cost of increasing [stability|E]."
+ hint_low_republican_tradition_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! We should aim to keep our tradition as high as possible to minimize any potential penalties.\n@arrow_bonus_tier_2! Increasing our [court_maintenance|e] will help keep the [republican_tradition|e] high.\n@arrow_bonus_tier_2! We can also get other sources of [republican_tradition|e] like [advances|e] or [policies|e].\n@arrow_bonus_tier_1! Changing [ruler|e] during an [election|e] will also hep keep the [republican_tradition|e] high."
+ hint_low_republican_tradition_hint_text_3: "#T Extra Hints:#!\n@hint! Like most important values, teaching the population the values of Republicanism is a long term endeavor - so think ahead."
+ hint_low_republican_tradition_administrative: "\"Elections are a natural process of any healthy republic.\""
+ hint_low_republican_tradition_military: "\"Even mercenaries will not be willing to fight for us is we appear to be tyrants.\""
+ hint_low_republican_tradition_diplomatic: "\"No nation that prides itself in strength will willingly align itself to a country that blatantly disregards the principles of its foundation.\""
+ ###
+ hint_low_devotion: "Low Devotion"
+ hint_low_devotion_hint_text: "$hint_low_devotion_hint_text_1$\n\n$hint_low_devotion_hint_text_2$\n\n$hint_low_devotion_hint_text_3$"
+ hint_low_devotion_hint_text_1: "$game_concept_devotion_desc$ If it falls too low, not only will we forgo any benefits to [religious_influence|E] and reduced chance of [rebellion|E], but we will start receiving penalties to [estate|E] satisfaction."
+ hint_low_devotion_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! We should aim to keep our devotion as high as possible in order to minimize any potential penalties.\n@arrow_bonus_tier_2! Increasing our [court_maintenance|e] will help keep the [devotion|e] high.\n@arrow_bonus_tier_2! We can also get other sources of [devotion|e] like [advances|e] or [policies|e]."
+ hint_low_devotion_hint_text_3: "#T Extra Hints:#!\n@hint! Like most important values, promoting religious zeal is not an overnight affair, so make sure to think long term."
+ hint_low_devotion_administrative: "\"It is not enough for us to represent the faith and pose as its defenders, we also need to look the part ourselves.\""
+ hint_low_devotion_military: "\"If our armies are to represent the sword and shield of the faithful, we need to be the beacon for which they fight.\""
+ hint_low_devotion_diplomatic: "\"It should be our objective to spread our faith as far and wide as possible, but nobody will be willing to believe our words if we do not appear pious.\""
+ ###
+ hint_low_horde_unity: "Low Horde Unity"
+ hint_low_horde_unity_hint_text: "$hint_low_horde_unity_hint_text_1$\n\n$hint_low_horde_unity_hint_text_2$\n\n$hint_low_horde_unity_hint_text_3$"
+ hint_low_horde_unity_hint_text_1: "$game_concept_horde_unity_desc$"
+ hint_low_horde_unity_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! Driving our enemies before us is by far the most effective method of unifying a horde\n@arrow_bonus_tier_2! Increasing our [court_maintenance|e] will help keep the [horde_unity|e] high.\n@arrow_bonus_tier_2! We can also get other sources of [horde_unity|e] like [advances|e] or [policies|e]."
+ hint_low_horde_unity_hint_text_3: "#T Extra Hints:#!\n@hint! There may be some devastating consequences if we have too low unity, so we should better keep it high."
+ hint_low_horde_unity_administrative: "\"To divide and conquer is a well-known strategy. If we are not united, we will be the ones to be conquered.\""
+ hint_low_horde_unity_military: "\"As our saying goes: good things come to those who seize them from the weak. Power unites us, and with power we shall be united!\""
+ hint_low_horde_unity_diplomatic: "\"The strength of our combat prowess is directly impacted by how united we are as a tribe. Success in war and conquest is a self-fulfilling prophecy.\""
+ ###
+ hint_low_tribal_cohesion: "Low Tribal Cohesion"
+ hint_low_tribal_cohesion_hint_text: "$hint_low_tribal_cohesion_hint_text_1$\n\n$hint_low_tribal_cohesion_hint_text_2$\n\n$hint_low_tribal_cohesion_hint_text_3$"
+ hint_low_tribal_cohesion_hint_text_1: "$game_concept_tribal_cohesion_desc$ Unlike other [government_types|E], tribal governments benefit from significantly increased levy sizes as cohesion increases. If we want to make effective military decisions, we will need to keep the tribes on board."
+ hint_low_tribal_cohesion_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_2! Increasing our [court_maintenance|e] will help keep the [tribal_cohesion|e] high.\n@arrow_bonus_tier_2! We can also get other sources of [tribal_cohesion|e] like [advances|e] or [policies|e]."
+ hint_low_tribal_cohesion_hint_text_3: "#T Extra Hints:#!\n@hint! There may be some devastating consequences if we have too low cohesion, so we should better keep it high."
+ hint_low_tribal_cohesion_administrative: "\"If we simply ignore it, our cohesion will fall. Running a country requires attention to detail.\""
+ hint_low_tribal_cohesion_military: "\"Poor tribal cohesion makes us weak. Weakness fractures us further. Do not go further down that path, or we may find ourselves conquered and enslaved.\""
+ hint_low_tribal_cohesion_diplomatic: "\"Estates are ingrained in so many aspects of a country that almost any action we take can have consequences down the line. Strategy requires long-term planning.\""
+ ###
+ hint_war_exhaustion: "High War Exhaustion"
+ hint_war_exhaustion_hint_text: "$hint_war_exhaustion_hint_text_1$\n\n$hint_war_exhaustion_hint_text_2$\n\n$hint_war_exhaustion_hint_text_3$"
+ hint_war_exhaustion_hint_text_1: "[war_exhaustion|E] is a value that represents the overall weariness our population is feeling from being at war. High levels of war exhaustion can be extremely dangerous to any country. As war exhaustion increases, it will reduce the combat efficacy of our [army|E] and [levies|E], the growth of our [pops|E], and ruin our economy."
+ hint_war_exhaustion_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! The most effective and guaranteed method is being at peace.\n@arrow_bonus_tier_2! Some [laws|E] and [estate_privileges|E] can help reduce war exhaustion over time."
+ hint_war_exhaustion_hint_text_3: "#T Extra Hints:#!\n@hint! We should pace our conquests and not declare [wars|E] if we are already at high war exhaustion."
+ hint_war_exhaustion_administrative: "\"Decisive wars can yield benefits, but a population weary of war can only be a bad thing. Production goes down, consumption goes down, frankly - everything goes down!\""
+ hint_war_exhaustion_military: "\"War weariness may be dangerous, but it is primarily a result of poor tactics. Huge losses and significant defeats will quickly turn our people against us.\""
+ hint_war_exhaustion_diplomatic: "\"Losing a war is never a good thing, but suffering a bitter defeat can also put our people in a mood for revenge. Revanchism is a powerful opiate.\""
+ ###
+ hint_low_sailors: "Sailors"
+ hint_low_sailors_hint_text: "$hint_low_sailors_hint_text_1$\n\n$hint_low_sailors_hint_text_2$\n\n$hint_low_sailors_hint_text_3$"
+ hint_low_sailors_hint_text_1: "$game_concept_sailors_desc$"
+ hint_low_sailors_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! If we are relying on [ships|e] to wage war, having low Sailors severely limits our ability to replenish our [navies|e], so it is not wise to declare [war|E] while we have low sailors\n@arrow_bonus_tier_2! [explorations|e] also require sailors, so we should plan them accordingly."
+ hint_low_sailors_hint_text_3: "#T Extra Hints:#!\n@hint! We can develop our nation's sailor production with various [buildings|E].\n@hint! [estate_privileges|E] and [laws|E] can also impact our sailor potential."
+ hint_low_sailors_administrative: "\"He who controls the sea, controls the wealth of the world. A strong naval and seafaring tradition goes hand-in-hand with trade dominance.\""
+ hint_low_sailors_military: "\"A strong navy with sailors to man it enables both the exploitation of far flung lands as well as domestic. Even soldiers operating overseas can benefit from protected supply lines.\""
+ hint_low_sailors_diplomatic: "\"Naval buildings often have direct benefits to our trade potential. It is worth considering the synergies between these domains.\""
+ ###
+ hint_low_diplomats: "Few Diplomats"
+ hint_low_diplomats_hint_text: "$hint_low_diplomats_hint_text_1$\n\n$hint_low_diplomats_hint_text_2$\n\n$hint_low_diplomats_hint_text_3$"
+ hint_low_diplomats_hint_text_1: "[diplomats|E] are required to manage your diplomatic relations with other countries. Many actions such as Improving Relations will cost us diplomats over time, whereas sending one-off actions is more likely to have a fixed cost."
+ hint_low_diplomats_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! Cancelling improving relations with some countries will free some of our diplomats if we do not have enough.\n@arrow_bonus_tier_2! We can also get more diplomats from other sources like [advances|e]."
+ hint_low_diplomats_hint_text_3: "#T Extra Hints:#!\n@hint! While it is good to keep a reserve of diplomats for opportunistic actions, budgeting our diplomats for long-term plans is also vital to success."
+ hint_low_diplomats_administrative: "\"Maintaining good relations is key to a profitable empire! Access to more and greater markets is bound to follow a friendship with our neighbors.\""
+ hint_low_diplomats_military: "\"Diplomats can also be used to assert our dominance over weaker countries. By method of friendship or threat, the stronger we are, the more likely others are to submit.\""
+ hint_low_diplomats_diplomatic: "\"Reforming and advancing our government is a surefire way to improve our capacity for extra diplomacy. Of course, some cultures are simply more attuned to the arts of persuasion than others.\""
+ LOW_DIPLOMATS_HINT: "Low on Diplomats!"
+ 
+
+ ### Low Food in Market
+ hint_low_food_in_market: "Low Food in Market"
+ hint_low_food_in_market_hint_text: "$hint_low_food_in_market_hint_text_1$\n\n$hint_low_food_in_market_hint_text_2$\n\n$hint_low_food_in_market_hint_text_3$"
+ hint_low_food_in_market_hint_text_1: "Markets require enough stored [food|E] to provide for their constituent [provinces|E] that demand it. Without this, locations belonging to those provinces may end up [starving|E]."
+ hint_low_food_in_market_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! Improving the [rgo|e] that produce food will increase its supply.\n@arrow_bonus_tier_2! We can [import|e] food by establishing [trades|e] of [goods|e] that produce food."
+ hint_low_food_in_market_hint_text_3: "#T Extra Hints:#!\n@hint! Reducing the amount of [buildings|e] in a [location|e] will also make the [pops|e] go back to [subsistence_agriculture|e]."
+ HINT_MARKET_ENTRY: "[MARKET.GetName]"
+ HINT_BUILDING_ENTRY: "[BUILDING_TYPE.GetName]"
+ LOW_FOOD_CAP_TEXT: "[SelectLocalization( StringIsEmpty( GetListOfAvailableBuildingsWithModifier('merchant_capacity_from_building') ), Localize('LOW_FOOD_NO'), Localize( 'LOW_FOOD_YES' ) )]"
+ LOW_FOOD_YES: "\n@arrow_bonus_tier_1! If we have [merchant_capacity|E], we could create an import of food from another market that has a surplus.\n\nIf we have no capacity, constructing a building such as the [GetListOfAvailableBuildingsWithModifier('merchant_capacity_from_building')] can increase our trade potential."
+ LOW_FOOD_NO: "\n\nIf we have [merchant_capacity|E], we could create an import of food from another market that has a surplus."
+ LOW_MARKET_FOOD_TEXT: "The stockpile of [food|E] in $LIST$ has reached critical levels.$LOW_FOOD_CAP_TEXT$"
+ LOW_MARKET_FOOD_TEXT_BUILDINGS: "The stockpile of [food|E] in the $LIST$ has reached critical levels.\n\nThere are several layers to handling low food in a market. The more food a location produces, the less of a drain it will exert on the province and market it belongs to, potentially even helping other locations if it generates a surplus.\n\n\n@arrow_bonus_tier_3! [rgo|e] are the main source of [food], especially in locations with high [food_productivity|e]. We should seek to expand those first and foremost if our [market] is short on [food].\n@arrow_bonus_tier_2! [buildings|E] such as $BUILDING_LIST$ could also boost food production if the [goods|E] production matches.$LOW_FOOD_CAP_TEXT$"
+ hint_low_food_in_market_administrative: "\"Markets with locations that specialize in the production of food will offer both security and an extreme potential for profit. If others must come to us to survive, we command almost limitless leverage.\""
+ hint_low_food_in_market_military: "\"While our capacity for trade is limited by infrastructure, an import economy must usually be backed up by a strong naval presence. Without this, we put ourselves at the mercy of anyone who dares challenge our trade routes.\""
+ hint_low_food_in_market_diplomatic: "\"A self-sustaining economy of comestibles is a fine goal, but operating an import economy to feed the [GetPlayer.GetAdjectiveWithNoTooltip] people could give us the strength to focus on more financially rewarding production.\""
+
+ ###
+ hint_over_diplo_capacity: "Over Diplomatic Capacity"
+ hint_over_diplo_capacity_hint_text: "$hint_over_diplo_capacity_hint_text_1$\n\n$hint_over_diplo_capacity_hint_text_2$\n\n$hint_over_diplo_capacity_hint_text_3$"
+ hint_over_diplo_capacity_hint_text_1: "$game_concept_diplomatic_capacity_desc$"
+ hint_over_diplo_capacity_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! Stopping our [diplomats|E] from improving relations will free our capacity\n@arrow_bonus_tier_2! Evaluating whether we may want to end some of our [alliances|E] or [treaties|E]\n@arrow_bonus_tier_1! Leaving any [international_organizations|E] we no longer need to be part of is also another way of freeing capacity."
+ hint_over_diplo_capacity_hint_text_3: "#T Extra Hints:#!\n@hint! [estate_privileges|E], [laws|E], and [advances|E] can sometimes grant additional diplomatic capacity."
+ hint_over_diplo_capacity_military: "\"Perhaps we should consider alliances as a means to an end, not a permanent friendship. After all, our own allies would surely look at us hungrily should we display weakness...\""
+ hint_over_diplo_capacity_administrative: "\"Overworking our diplomats has the unfortunate side effect of reducing their effectiveness in nearly all their tasks. While it might be tempting to leave them overtaxed, it is not a good long-term solution.\""
+ hint_over_diplo_capacity_diplomatic: "\"If we are to prioritize our internal development, strong alliances will more than make up for any perceived military weaknesses. Perhaps we should drop other relations first?\""
+
+ ###
+ hint_rebels_growing: "$game_concept_rebel_movements$"
+ hint_rebels_growing_hint_text: "$hint_rebels_growing_hint_text_1$\n\n$hint_rebels_growing_hint_text_2$\n\n$hint_rebels_growing_hint_text_3$"
+ hint_rebels_growing_hint_text_1: "Your [pops_with_icon|e] will join [rebel_movements_with_icon|e] when their [pop_satisfaction_with_icon|e] falls below their falls below their [ShowModifierTypeName('pop_join_rebel_threshold')].\n\n[rebel_movements] will gain progress towards open revolt every month, depending on their support. When reaching #W 100%#! support, they will start a [revolt_with_icon|e], or a [civil_war_with_icon|e].\n\nThe most frequent reasons for rebel support are low [stability_with_icon|e], discriminated [cultures_with_icon|e] and [religions_with_icon|e], and angry [estates_with_icon|e]."
+ 
+ hint_rebels_growing_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! Keep [stability_with_icon|e] and [legitimacy_with_icon|e] as high as possible.\n@arrow_bonus_tier_2! Use the [ShowCabinetActionName('rebel_crackdown')] [cabinet_action_with_icon|e] to stop the progress of an impending [rebellion].\n@arrow_bonus_tier_1! Move an [army_with_icon|e] to a [province_with_icon|e] with unhappy [pops]. The presence of your troops will make them more… #italic understanding#!.\n\nUltimately, increasing the [pop_satisfaction_icon] Satisfaction of rebellious [pops] is what matter most:\n@arrow_bonus_tier_2! Make sure the most numerous [cultures] in your [country] are [accepted_culture_short_with_icon|e] or [tolerated_culture_short|e].\n@arrow_bonus_tier_1! Ensure the rebelling [pops] are able to buy as many of their [pop_needs_with_icon|e] as possible from their [market_with_icon|e].\n@arrow_bonus_tier_3! Keep [estate_icon] [estate_satisfaction|e] high, since it severely impacts the satisfaction of all its constituent [pops]:\n$TAB$@arrow_bonus_tier_2! Grant a [privilege_with_icon|e]\n$TAB$@arrow_bonus_tier_2! Bribe the [estate]\n$TAB$@arrow_bonus_tier_2! Lower [taxes_with_icon|e]"
+
+ hint_rebels_growing_hint_text_3: "#T Extra Hints:#!\n@hint! [societal_values|E] such as [ShowSocietyDirectionName('communalism')] and [ShowSocietyDirectionName('decentralization')] can also influence likelihood of rebellion growth.\n@hint! Rebellious [pops] will join to different [rebel_movements] depending on various factors. For instance, [pops] of a discriminated [culture] will tend to join [nationalist_rebels_with_icon|e]."
+
+ hint_rebels_growing_military: "\"They may look tough, but with common folk the bark is usually worse than the bite. What they often lack in discipline however, they more than make up for in numbers.\""
+ hint_rebels_growing_administrative: "\"While rebels are certainly bad for business, they are usually reactionary - if you solve the cause of their unrest you will not only stand to pacify them, but also to improve our country.\""
+ hint_rebels_growing_diplomatic: "\"Our population hold all sorts of different identities and allegiances. Conquered peoples are far more likely to want to break away and form their own government or even to join up with a foreign power.\""
+
+ ###
+ hint_call_for_peace: "Call for Peace"
+ hint_call_for_peace_hint_text: "$hint_call_for_peace_hint_text_1$\n\n$hint_call_for_peace_hint_text_2$\n\n$hint_call_for_peace_hint_text_3$"
+ hint_call_for_peace_hint_text_1: "This status can be encountered if a particular [war|E] drags on for long enough, or if we refuse to sign a [peace_treaty|E] despite a total victory or defeat."
+ hint_call_for_peace_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! We should cut our losses and sign a treaty before our [war_exhaustion|E] reaches critical levels.\n@arrow_bonus_tier_2! It may mean accepting less than we initially intended to demand, or even losing the [war|e]."
+ hint_call_for_peace_hint_text_3: "#T Extra Hints:#!\n@hint! Anything lost due to having to sing a premature [peace_treaty|e] can be regained in the future in another [war|e]."
+ hint_call_for_peace_diplomatic: "\"Frustrating the rules of war can have truly devastating consequences for our internal stability and for our reputation abroad. Why would anyone listen to what we have to say if we prove ourselves unreasonable?\""
+ hint_call_for_peace_military: "\"War is just a continuation of policy by different means. Perhaps we should write that down before someone else does?\""
+ hint_call_for_peace_administrative: "\"A call for peace will get worse and worse as time goes on. The people can be placated, but not ignored forever.\""
+ ###
+ hint_unprofitable_buildings: "Unprofitable Buildings"
+ hint_unprofitable_buildings_hint_text: "$hint_unprofitable_buildings_hint_text_1$\n\n$hint_unprofitable_buildings_hint_text_2$\n\n$hint_unprofitable_buildings_hint_text_3$"
+ hint_unprofitable_buildings_hint_text_1: "Buildings will become unprofitable if the cost of their combined input [goods|E] exceeds the value of their [produced_goods|E]."
+ hint_unprofitable_buildings_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! Make sure that input goods are cheaper by producing or [importing|E] more to ensuring their abundant supply.\n@arrow_bonus_tier_3! Creating or securing additional demand for goods will raise their price.\n@arrow_bonus_tier_3! [buildings|E] can be closed @building_open! or even destroyed, if their purpose no longer fits our aims.\n@arrow_bonus_tier_3! A [market_owner|E] could embargo countries exporting goods that they produce in order to drive up the price of their own exports."
+ hint_unprofitable_buildings_hint_text_3: "#T Extra Hints:#!\n@hint! Some buildings can be [subsidized|E] @subsidy!. This can be useful if the [import|E] costs of goods required for [pop_needs|E] or maintaining an army are high, for example."
+ hint_unprofitable_buildings_diplomatic: "\"Managing the profitability of an entire country's industry can be a difficult task. You can engage the assistance of your country's bureaucracy if you do not wish to bother yourself with the details!\""
+ hint_unprofitable_buildings_military: "\"The stronger we are, the greater our ability to engage in a healthy degree of protectionism. Embargoes and trade disputes are always more effective when backed up by cannons.\""
+ hint_unprofitable_buildings_administrative: "\"The strategy of price manipulation has many layers. With enough cunning we can not only create a demand in a market, but also be the ones to fulfill it.\""
+ NO_HINTS_AVAILABLE: "No hints available!"
+ hint_trade: "Trade"
+ hint_trade_hint_text: "$hint_trade_hint_text_1$\n\n$hint_trade_hint_text_2$\n\n$hint_trade_hint_text_3$"
+ hint_trade_hint_text_1: "[trade|E] involves moving [goods|E] between [markets|E], and selling and buying at those [markets|E]."
+ hint_trade_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! Establish new [trade|E] Routes to acquire [goods|e].\n@arrow_bonus_tier_2! Increase the production of [goods|e] to have more of them available for trade."
+ hint_trade_hint_text_3: "#T Extra Hints:#!\n@hint! A [trade|E] Route may be profitable or unprofitable depending on the price difference between the [export|E] (source) and [import|E] (destination) [markets|E].\n@hint! Each [country|E] present in a [market|E] has a maximum [merchant_capacity|E] it can use up to create [trade|E] Routes, and a [merchant_power|E] that determines the priority it has to export [goods|E] along its [trade|E] Routes when there is a shortage.\n@hint! Trade can be automated in each individual [market|E] by default by clicking its related Cog wheel."
+ hint_trade_military: "\"Trade is for wimps. Nonetheless, we will be be in a position to enforce the flow of goods by dominating the land and the sea.\""
+ hint_trade_administrative: "\"Core to our strategy: Predict the next wave in price through the roll of the dice and the heavenly alignment of the stars.\""
+ hint_trade_diplomatic: "\"One of the indispensable pillars of a fully grown empire, trade has the potential to fill our coffers at a faster rate than anything else.\""
+
+ ### Unused Trade Capacity
+ hint_unused_trade_capacity: "Unused Trade Capacity"
+ hint_unused_trade_capacity_hint_text: "$hint_unused_trade_capacity_hint_text_1$\n\n$hint_unused_trade_capacity_hint_text_2$\n\n$hint_unused_trade_capacity_hint_text_3$"
+ hint_unused_trade_capacity_hint_text_1: "[merchant_capacity_with_icon|e] is used to move [goods_with_icon|e] between [markets_with_icon|e], hopefully generating a profit in the process. We should always use all of our [merchant_capacity]."
+ hint_unused_trade_capacity_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_1! Click on the Alert to see the affected Market in the @economy_panel![Link('trade', 'subtab = markets', 'Markets Panel')]. From there you can allocate Trade Capacity to suggested Trades.\n@arrow_bonus_tier_1! You can also click on the Market Header to go to the Market Panel, where you will see the list of [goods|e] relevant to that Market. Click the Export/Import buttons for each [good] to start a Trade.\n@automation! It is recommended that you Automate Trade in all your Markets, by pressing the cog button in the Market Card. You can always manually create and lock Trades, even when Trade is automated."
+ hint_unused_trade_capacity_hint_text_3: "#T Extra Hints:#!\n@hint! The profit from [trade] is divided among the [estates_with_icon|e], including the [ShowEstateTypeName('crown_estate')], according to their [estate_power_with_icon|e]."
+
+ hint_unused_trade_capacity_military: "\"Concerning the possibility of dimwitted usage of our resources, I am absolutely against it.\""
+ hint_unused_trade_capacity_administrative: "\"We must return to the efficient frontier as soon as possible.\""
+ hint_unused_trade_capacity_diplomatic: "\"One might liken unused trade capacity to a fallow field well overdue for the next seed.\""
+
+ ### Unprofitable Trade Route
+ hint_unprofitable_trade_route: "Unprofitable Trade Route"
+ hint_unprofitable_trade_route_hint_text: "$hint_unprofitable_trade_route_hint_text_1$\n\n$hint_unprofitable_trade_route_hint_text_2$\n\n$hint_unprofitable_trade_route_hint_text_3$"
+ hint_unprofitable_trade_route_hint_text_1: "In most cases, when you have an unprofitable [trade|E] Route you will want to cancel it and replace it with a profitable route, or turn on automation for that [market|E]."
+ hint_unprofitable_trade_route_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_1! Sometimes, it makes sense to lose money on a [trade|E] Route if the [goods|E] moved are of strategic importance.\n@arrow_bonus_tier_1! An example would be acquiring Lumber to be able to finalize a [building|E]. Another would be ensuring that our [pops|E] are fed."
+ hint_unprofitable_trade_route_hint_text_3: "#T Extra Hints:#!\n@hint! You can indirectly impact the profitability of an existing [trade|E] Route by impacting the prices (and hence the price difference for the traded [good|E]) of the involved [markets|E]. You can do this by altering [supply|E] and [demand|E] for the [good|E]. "
+ hint_unprofitable_trade_route_military: "\"Perhaps we should take their goods instead of paying for them?\""
+ hint_unprofitable_trade_route_administrative: "\"Cut your losses as fast as possible. A trade is not charity.\""
+ hint_unprofitable_trade_route_diplomatic: "\"Imperfection arises in nature's order and it up to us to trim it back.\""
+
+
+ hint_market_out_of_supply: "Market Out of Supply"
+ hint_market_out_of_supply_hint_text: "$hint_market_out_of_supply_hint_text_1$\n\n$hint_market_out_of_supply_hint_text_2$\n\n$hint_market_out_of_supply_hint_text_3$"
+ hint_market_out_of_supply_hint_text_1: "If a [market|e] has too high total [demand|E] compared to the finite [supply|E], we may not receive the [goods|E] that we are attempting to [export|E] or [import|E], resulting in a lack of goods."
+ hint_market_out_of_supply_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! We can immediately cancel the unprofitable [trade|E] Routes and use that [merchant_capacity|E] for other types of [goods|E].\n@arrow_bonus_tier_1! Increase our [merchant_power|E] in the affected [market|E] may allow us more access to its goods."
+ hint_market_out_of_supply_hint_text_3: "#T Extra Hints:#!\n@hint! We can get [merchant_power|e] from a variety of sources like [advances|e], [privileges|e], [policies|e], etc.\n@hint! We may also attempt to increase [supply|E], but this can be hard to do with short notice and is usually subject to long term strategic attention."
+ hint_market_out_of_supply_military: "\"From to time to there will be insufficient goods available for export to drive our war machine. It has to swiftly be dealt with.\""
+ hint_market_out_of_supply_administrative: "\"Consider increasing our totally fair trade advantage by whatever means are expendable.\""
+ hint_market_out_of_supply_diplomatic: "\"Perhaps we must take steps to diversify our trade operations away from monoculture.\""
+ hint_increasing_trade_capacity: "Increasing Trade Capacity"
+ hint_increasing_trade_capacity_hint_text: "$hint_increasing_trade_capacity_hint_text_1$\n\n$hint_increasing_trade_capacity_hint_text_2$\n\n$hint_increasing_trade_capacity_hint_text_3$"
+ hint_increasing_trade_capacity_hint_text_1: "[merchant_capacity|e] determines the amount of [trade|e] that a [country|e] can perform."
+ hint_increasing_trade_capacity_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! Build more [buildings|e] increasing capacity, for example a [ShowBuildingTypeName('marketplace')] or a [ShowBuildingTypeName('market_village')].\n@arrow_bonus_tier_2! Some [advances|e] or [laws|e] can also increase our [merchant_capacity|e]."
+ hint_increasing_trade_capacity_hint_text_3: "#T Extra Hints:#!\n@hint! Having more [merchant_capacity|e] allows for more items being traded, resulting in a higher [income|e]."
+ hint_increasing_trade_capacity_military: "\"The bigger our empire gets, the greater capacity for trade we will have. It is almost tautological.\""
+ hint_increasing_trade_capacity_administrative: "\"The solution to trade capacity, much like all of humankind's problems, is having more markets.\""
+ hint_increasing_trade_capacity_diplomatic: "\"Ensure an increasing flow of trade by plowing the foundations for mercantile exchange wherever possible.\""
+
+ hint_increasing_trade_advantage: "$game_concept_merchant_power$"
+ hint_increasing_trade_advantage_hint_text: "$hint_increasing_trade_advantage_hint_text_1$\n\n$hint_increasing_trade_advantage_hint_text_2$\n\n$hint_increasing_trade_advantage_hint_text_3$"
+ hint_increasing_trade_advantage_hint_text_1: "[merchant_power_with_icon|e] determines what [country_with_icon|e] has access to the [goods_with_icon|e] of a [market_with_icon|e] first for the purposes of [trade_with_icon|e].\n\nIf two trading [countries] are trying to buy a [good] and there is not enough for both, the one with the highest [merchant_power] in that [market] will buy it first.\n\nNote that [merchant_power] only applies to [trade]. Instead, [locations|e] follow [market_access|e] order when buying [goods] for [constructions|e] or [pop_needs|e]."
+ hint_increasing_trade_advantage_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! Own more [locations_with_icon|e] belonging to that [market].\n@arrow_bonus_tier_2! Increase [maritime_presence_with_icon|e] on coastal waters of a [market].\n@arrow_bonus_tier_1! Some [buildings_with_icon|e], like the [ShowBuildingTypeName('marketplace')], also increase [merchant_power]."
+ hint_increasing_trade_advantage_hint_text_3: "#T Extra Hints:#!\n@hint! #italic To learn more you can check the [Link('hints', 'selected_hint = hint_trade', 'Trade')] and the [Link('hints', 'selected_hint = hint_trade', 'Maritime Presence')] Hints#!"
+ hint_increasing_trade_advantage_military: "\"Since trade is a competitive rather than cooperative enterprise, establishing an advantage in trade is the natural order of things.\""
+ hint_increasing_trade_advantage_administrative: "\"Core to our strategy: Predict the next wave in price through the roll of the dice and the heavenly alignment of the stars.\""
+ hint_increasing_trade_advantage_diplomatic: "\"One of the indispensable pillars of a fully grown empire, trade has the potential to fill our coffers at a faster rate than anything else.\""
+
+ ######## ALERT HINTS ########
+ 
+ ### Pops demanding Goods
+ hint_pops_with_needs_yellow: "Pops demanding Goods"
+ hint_pops_with_needs_yellow_hint_text: "$hint_pops_with_needs_yellow_hint_text_1$\n\n$hint_pops_with_needs_yellow_hint_text_2$\n\n$hint_pops_with_needs_yellow_hint_text_3$"
+ hint_pops_with_needs_yellow_hint_text_1: "[pops_with_icon|e] will try to buy the [goods_with_icon|e] they need for their daily life from the [market_with_icon|e] of their [location_with_icon|e]. If [pops|e] are not able to buy all the [goods] they demand, their [pop_satisfaction|e] will decrease accordingly. If their [pop_satisfaction] falls below their [ShowModifierTypeName('pop_join_rebel_threshold')], be it for want of [goods] or else, [pops] might start to support a [rebellion_with_icon|e] against the [government]." 
+ hint_pops_with_needs_yellow_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! Keep [stability_with_icon|e], [legitimacy_with_icon|e], and [estate_satisfaction|e] high to prevent [rebellions].\n@arrow_bonus_tier_1! Expand your production of the demanded [goods|e] by building [rgo_with_icon|e] and [buildings_with_icon|e] from the @production_panel![Link('goods_production', '', 'lateralview_goods_production_entry_name')].\n@arrow_bonus_tier_1! Import the [goods] from other [markets] spending [merchant_capacity_with_icon|e]."
+ hint_pops_with_needs_yellow_hint_text_3: "#T Extra Hints:#!\n@hint! Having unsatisfied Pop demands is not necessarily worrying, as long as [pops] are not rebelling. But it does provide an overview of the health of a [market].\n@hint! Pop demands are only one of the factors influencing [pop_satisfaction]. Even if all their needs satisfied, people could still rebel for other reasons.\n@hint! Learn more about [rebel_movements_with_icon] in the [Link('hints', 'selected_hint = hint_rebels_growing', 'Rebels Hint')]."
+
+ hint_pops_with_needs_yellow_military: "\"A mighty ruler should not concern himself with the whims the humble.\""
+ hint_pops_with_needs_yellow_administrative: "\"Where the unkeen eye sees a deprived populace, I see a marvelous occasion for profit.\""
+ hint_pops_with_needs_yellow_diplomatic: "\"Men will always demand more than their lot. But be careful. Scarcities, left unchecked, might incite your subjects to rebellion.\""
+
+
+ ### Rebelling Pops demanding Goods
+ hint_pops_with_needs_red: "Rebelling Pops demanding Goods"
+ hint_pops_with_needs_red_hint_text: "$hint_pops_with_needs_yellow_hint_text_1$\n\n$hint_pops_with_needs_red_hint_text_1$\n\n$hint_pops_with_needs_red_hint_text_2$\n\n$hint_pops_with_needs_red_hint_text_3$"
+ hint_pops_with_needs_red_hint_text_1: "Some of our [pops] are currently joining [rebel_movements]. Increasing the supply of demanded [goods] might convince some of them to leave the [rebellions]."
+ hint_pops_with_needs_red_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! Increase [stability|e], [legitimacy|e], and [estate_satisfaction|e].\n@arrow_bonus_tier_1! Expand the production of the demanded [goods|e] by building [rgo|e] and [buildings|e] from the @production_panel![Link('goods_production', '', 'lateralview_goods_production_entry_name')].\n@arrow_bonus_tier_1! Import the [goods] from other [markets] spending [merchant_capacity|e]\n@arrow_bonus_tier_1! If all else fails, have our [armies|e] ready to deal with the insurgents."
+ hint_pops_with_needs_red_hint_text_3: "#T Extra Hints:#!\n@hint! Pop demands are only one of the factors influencing [pop_satisfaction]. Even if all their needs satisfied, people could still rebel for other reasons.\n@hint! Learn more about [rebel_movements_with_icon] in the [Link('hints', 'selected_hint = hint_rebels_growing', 'Rebels Hint')]."
+
+ hint_pops_with_needs_red_diplomatic: "\"Guaranteeing the supply of critical goods may be sufficient to quench the discordant voices among our people.\""
+ hint_pops_with_needs_red_administrative: "\"A Rebellion would bring ruin to our merchants. Let us increase our production before our people decide to take arms against us!\""
+ hint_pops_with_needs_red_military: "\"A hungry mob? Our Army will deal with this threat.\""
+
+
+ ### Possible Reforms
+ hint_has_possible_reform: "Possible Reforms"
+ hint_has_possible_reform_hint_text: "$hint_has_possible_reform_hint_text_1$\n\n$hint_has_possible_reform_hint_text_2$\n\n$hint_has_possible_reform_hint_text_3$"
+ hint_has_possible_reform_hint_text_1: "[government_reforms_with_icon|e] are one of the most defining characteristics of our [country_with_icon|e]. We should always have all our possible [reforms] enacted."
+ hint_has_possible_reform_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! Press the plus button under the [ShowEstateTypeName('crown_estate')] card in the @government_panel![Link('government', 'tabcontent = estates', 'lateralview_government_entry_name')] to enact a new [reform]."
+ hint_has_possible_reform_hint_text_3: "#T Extra Hints:#!\n@hint! As the game progresses, more [government_reforms] will become available via [advances_with_icon|e] and [events|e].\n@hint! [government_reforms] cost [stability_with_icon|e] to revoke, and take a long time to implement. Choose them with care.\n@hint! Some [government_reforms] require your [country] to tilt towards one particular [societal_value_with_icon|e]."
+
+ hint_has_possible_reform_diplomatic: "\"A well-defined government is a symbol of a healthy administration.\""
+ hint_has_possible_reform_administrative: "\"We need to be clear in the definition of our government, so that foreign countries can learn how to refer to us.\""
+ hint_has_possible_reform_military: "\"How can we expect to be able to defend ourselves against our enemies if we cannot even know who we are?\""
+
+
+ ### Non-integrated Provinces
+ hint_has_conquered_provinces: "Non-integrated Provinces"
+ hint_has_conquered_provinces_hint_text: "$hint_has_conquered_provinces_hint_text_1$\n\n$hint_has_conquered_provinces_hint_text_2$\n\n$hint_has_conquered_provinces_hint_text_3$"
+ hint_has_conquered_provinces_hint_text_1: "[conquered_with_icon|e] [locations_with_icon|e] need to be [integrated|e] into our administration in order to contribute to the wealth of our realm. We should strive to [integrate] all our [locations|e] as soon as possible."
+ hint_has_conquered_provinces_hint_text_2: "#T Recommended Actions #!:\n@arrow_bonus_tier_3! Instruct the [cabinet_with_icon|e] to [ShowCabinetActionName('integrate_province')] from the @government_panel![Link('government', 'tabcontent = cabinet', 'lateralview_government_entry_name')].\n@arrow_bonus_tier_1! If our [cabinet] cannot keep up with our conquests, consider creating a [subject_with_icon|e] to rule the land in your stead. You do that from the @diplomacy_panel![Link('diplomacy', 'relations_tab = current_relations', 'lateralview_diplomacy_entry_name')]."
+ hint_has_conquered_provinces_hint_text_3: "#T Extra Hints:#!\n@hint! Integration is usually one of the main responsibilities of the [cabinet|e] in expansionist [countries|e].\n@hint! [pop_satisfaction|e] will be much lower in [conquered] [locations], potentially triggering [rebellions_with_icon|e].\n@hint! You can increase the speed of the integration by appointing more talented [characters|e] to the [cabinet_members|e], and also by increasing the global [cabinet_efficiency|e] of our [country].\n@hint! Integration will be much faster if our [primary_culture|e] is the [dominant_culture|e] of the Location, or if our [cultural_influence|e] is higher than the [cultural_tradition|e] of the [dominant_culture]."
+
+ hint_has_conquered_provinces_diplomatic: "\"Newly... #italic acquired #! subjects will not submit to our rule immediately. Integration is a long and arduous process, but one essential to the stability of the realm.\""
+ hint_has_conquered_provinces_administrative: "\"Businesses cannot thrive when the land is in turmoil. The rule of law is paramount to prosperity.\""
+ hint_has_conquered_provinces_military: "\"Bureaucrats are not always useless. We could not possibly levy the populace without the proper administrative cadres in place.\""
+
+
+ ### Possible Cabinet Actions
+ hint_has_possible_cabinet_action: "Possible Cabinet Actions"
+ hint_has_possible_cabinet_action_hint_text: "$hint_has_possible_cabinet_action_hint_text_1$\n\n$hint_has_possible_cabinet_action_hint_text_2$\n\n$hint_has_possible_cabinet_action_hint_text_3$"
+ hint_has_possible_cabinet_action_hint_text_1: "[cabinet_actions_with_icon|e] are among the most powerful tools we have to rule our nation. We should be using all our available [cabinet_seats_with_icon|e] at all times."
+ hint_has_possible_cabinet_action_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! Go to the @government_panel![Link('government', 'tabcontent = cabinet', 'lateralview_government_entry_name')] to see the Cabinet Actions available to us.\n@arrow_bonus_tier_3! [ShowCabinetActionName('integrate_province')] if we have newly [conquered|e] territory.\n@arrow_bonus_tier_2! [ShowCabinetActionName('stabilize_country')] if [stability|e] is low.\n@arrow_bonus_tier_2! [ShowCabinetActionName('strengthen_government')] if [legitimacy_with_icon|e] is low.\n@arrow_bonus_tier_2! [ShowCabinetActionName('diplomatic_endeavors')] for easier [diplomacy|e].\n@arrow_bonus_tier_1! [ShowCabinetActionName('change_societal_values')] if there is a particular [societal_value|e] you want to pursue.\n@arrow_bonus_tier_1! [ShowCabinetActionName('develop_province')] to increase [development_with_icon|e] in our most valuable [provinces_with_icon|e].\n@arrow_bonus_tier_1! [cabinet_actions] can also be used to [convert_with_icon|e] other [religions_with_icon|e] or [assimilate_with_icon|e] other [cultures_with_icon|e].\n@automation! You can also Automate the Cabinet from the @automation![Link('automation', '', 'lateralview_automation_entry_name')]."
+ hint_has_possible_cabinet_action_hint_text_3: "#T Extra Hints:#!\n@hint! [characters|e] appointed to the [cabinet|e] will increase the [estate_power|e] of their [estate|e].\n@hint! New [cabinet_actions] will unlock in later [ages|e]."
+
+ hint_has_possible_cabinet_action_diplomatic: "\"Bureaucracy is the lifeblood of any country... if used wisely.\""
+ hint_has_possible_cabinet_action_administrative: "\"Through the Cabinet, the State has the power to turn barren deserts into thriving metropolis.\""
+ hint_has_possible_cabinet_action_military: "\"A powerful Cabinet can be used to tame the most discordant members of our society.\nGive the orders, and it will be done.\""
+
+
+ ### Laws not codified
+ hint_has_possible_law: "Laws not codified"
+ hint_has_possible_law_hint_text: "$hint_has_possible_law_hint_text_1$\n\n$hint_has_possible_law_hint_text_2$\n\n$hint_has_possible_law_hint_text_3$"
+ hint_has_possible_law_hint_text_1: "It is advisable to always have a [policy|e] active for all our [laws|e]. Otherwise our [country|e] might be missing out on some useful benefits."
+ hint_has_possible_law_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! Click on the Alert to cycle through our [laws] without an enacted [policy], and choose carefully.\n@arrow_bonus_tier_3! You can go to the @government_panel![Link('government', 'tabcontent = politics', 'lateralview_government_entry_name')] to see our current [laws].\n@automation! You can also Automate our Laws from the @automation![Link('automation', '', 'lateralview_automation_entry_name')]."
+ hint_has_possible_law_hint_text_3: "#T Extra Hints:#!\n@hint! [policies] have an implementation time depending on our [legislative_efficiency|e]. Their full effects will not be active immediately.\n@hint! You can always change a [policy] later spending some [gold|e] and [stability|e]. The cost will depend on our [crown_power|e].\n@hint! Many new [laws] and [policies] will unlock in later [ages|e]."
+
+ hint_has_possible_law_diplomatic: "\"A State without Laws is a a building without pillars, a body without limbs. Better too many, than too few.\""
+ hint_has_possible_law_administrative: "\"The Laws of our country should ensure the growth of our cities, the protection of our merchants, and the orderly exaction of our taxes.\""
+ hint_has_possible_law_military: "\"Passing Laws is important; enforcing them is crucial.\""
+
+
+ ### Lack of commander
+ hint_has_army_without_leader: "Lack of Commander"
+ hint_has_army_without_leader_hint_text: "$hint_has_army_without_leader_hint_text_1$\n\n$hint_has_army_without_leader_hint_text_2$\n\n$hint_has_army_without_leader_hint_text_3$"
+ hint_has_army_without_leader_hint_text_1: "Our [units|e] need to have a [commander|e] appointed in order to perform adequately in [battle|e]. [generals|e] lead [armies], [admirals] lead [navies]."
+ hint_has_army_without_leader_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! Click on the #W Alert#! to select a suitable [character|e] for your [unit]. You should generally pick the ones with higher [abilities|e].\n@arrow_bonus_tier_2! You can also select your [unit] from the map, or from the #W Outliner#!.\n@arrow_bonus_tier_2! If we do not have any good [character] available, try training one from the @military_panel![Link('unit_overview', '', 'lateralview_unit_overview_entry_name')].\n@automation! You can automate the appointment of [generals] and [admirals] from the @automation![Link('automation', '', 'lateralview_automation_entry_name')]."
+ hint_has_army_without_leader_hint_text_3: "#T Extra Hints:#!\n@hint! Do not start a [battle] without a capable [commander|e] in charge!\n@hint! Some [characters|e] have [traits|e] that make them even more suitable for a specific task.\n@hint! Some [laws|e] might put restrictions on which [characters|e] are eligible for command."
+
+ hint_has_army_without_leader_diplomatic: "\"An army should always have a leader. But we should exercise caution, for commanders will use their influence to increase the power of their Estate.\""
+ hint_has_army_without_leader_administrative: "\"Prithee do not ask me. I entrust the brutish matters of war to your less... #italic sophisticated #! advisors.\""
+ hint_has_army_without_leader_military: "\"Engaging the enemy without proper leadership is suicide.\nDo so under no circumstance.\""
+
+
+ ### Underage Heir
+ hint_is_heir_underage: "Underage Heir"
+ hint_is_heir_underage_hint_text: "$hint_is_heir_underage_hint_text_1$\n\n$hint_is_heir_underage_hint_text_2$"
+ hint_is_heir_underage_hint_text_1: "If our [ruler|e] were to die before our [heir|e] comes of age, we would find ourselves under a [regency|e]. Depending on circumstances, a member of the most powerful [estate|e] will assume the reins of the Government, significantly increasing their [estate_power|e] for the duration of the interregnum."
+ hint_is_heir_underage_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_1! There is little you can do about it other than letting time pass, and mayhap avoiding risking the life of our [ruler] in needless pursuits. Unless, of course, our [ruler] happened to be of the particularly incompetent kind..."
+ hint_is_heir_underage_hint_text_3: "#T Extra Hints:#!\n@hint! A [regency|e] may not be that bad if we have a particularly good [character|e] that can be the regent."
+
+ hint_is_heir_underage_diplomatic: "\"To ensure the succession is to secure the future of the realm.\""
+ hint_is_heir_underage_administrative: "\"Marriages and dynastic ties are the best way to get two countries together.\""
+ hint_is_heir_underage_military: "\"It is when they are young that heirs can be forged into the best rulers.\""
+
+
+ ### Unmarried Ruler
+ hint_has_unmarried_adult_ruler: "Unmarried Ruler"
+ hint_has_unmarried_adult_ruler_hint_text: "$hint_has_unmarried_adult_ruler_hint_text_1$\n\n$hint_has_unmarried_adult_ruler_hint_text_2$\n\n$hint_has_unmarried_adult_ruler_hint_text_3$"
+ hint_has_unmarried_adult_ruler_hint_text_1: "We should try to marry off our [ruler|e] to a suitable candidate, in order to grow the size and power of our [dynasty|e]. Not only does a prolific royal offspring help ensure a peaceful and stable succession, but princes can also constitute a valuable reserve of available [characters|e] for the offices of Government."
+ hint_has_unmarried_adult_ruler_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! Click on the Alert to search for candidates for a [royal_marriage|e]. Monarchies can form Royal Marriages between them to cement their [opinion], laying the groundwork for an [alliance|e]. [royal_marriages|e] can also open the door to a potential [personal_union|e].\n@arrow_bonus_tier_2! You can wed your [ruler] or [heir] to a suitable [character|e] in your Court via the [ShowCharacterInteractionName('marry_noble')] character interaction, by right-clicking on the character's portrait.\n@arrow_bonus_tier_1! In absence of better alternatives, [ShowCharacterInteractionName('marry_lowborn')] is always an option, unpopular as it may be."
+ hint_has_unmarried_adult_ruler_hint_text_3: "#T Extra Hints:#!\n@hint! [characters] of the ruling [dynasty] belong to the [ShowEstateTypeName('crown_estate')], so they do not empower the other [estates|e] of our realm when appointed to influential [roles|e]."
+
+ hint_has_unmarried_adult_ruler_diplomatic: "\"$hint_is_heir_underage_diplomatic$\""
+ hint_has_unmarried_adult_ruler_administrative: "\"$hint_is_heir_underage_administrative$\""
+ hint_has_unmarried_adult_ruler_military: "\"Every sword needs a sheath.\""
+
+
+ ### No current Research
+ hint_can_do_more_research: "Research"
+ hint_can_do_more_research_hint_text: "$hint_can_do_more_research_hint_text_1$\n\n$hint_can_do_more_research_hint_text_2$\n\n$hint_can_do_more_research_hint_text_3$"
+ hint_can_do_more_research_hint_text_1: "We should make sure our [country|e] is researching new [advances|e] at all times."
+ hint_can_do_more_research_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! Go to the @advances_panel![Link('advances', 'subtab = research', 'lateralview_advances_entry_name')], and choose the Advance that suits your needs.\n@arrow_bonus_tier_2! You can also click on the empty flask icon to the top right to open the whole @advances_panel![Link('technology_view', '', 'lateralview_technology_view_entry_name')].\n@automation! If you do not feel prepared to dive into the depths of the [advances] just yet, you can automate our Research from the @automation![Link('automation', '', 'lateralview_automation_entry_name')]. You will still be duly notified when our Country has discovered a new [advance|e]."
+ hint_can_do_more_research_hint_text_3: "#T Extra Hints: #!\n@hint! Unused Research points will be stored up to a point, after which they will go to waste.\n@hint! You can increase our [research_progress|e] speed by increasing our average [literacy|e], and the [estate_satisfaction|e] of our [ShowEstateTypeName('clergy_estate')]."
+
+ hint_can_do_more_research_diplomatic: "\"Technology offers ample opportunities to ease the management of our domains.\""
+ hint_can_do_more_research_administrative: "\"With due investment we could greatly improve the efficiency of our economy.\""
+ hint_can_do_more_research_military: "\"The constant bettering of our professional armies is of paramount importance, lest our might fall behind that of our enemies.\""
+
+
+ ### Cabinet lacks member
+ hint_lack_cabinet_for_cabinet_action: "Cabinet lacks member"
+ hint_lack_cabinet_for_cabinet_action_hint_text: "$hint_lack_cabinet_for_cabinet_action_hint_text_1$\n\n$hint_lack_cabinet_for_cabinet_action_hint_text_2$\n\n$hint_lack_cabinet_for_cabinet_action_hint_text_3$"
+ hint_lack_cabinet_for_cabinet_action_hint_text_1: "A [cabinet_action|e] will not be very efficient without a capable [character|e] assigned to it. Always assign [characters] to all our [cabinet_seats|e]."
+ hint_lack_cabinet_for_cabinet_action_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! Click on the #W Alert#! to go to the @government_panel![Link('government', 'tabcontent = cabinet', 'lateralview_government_entry_name')], and appoint the [character|e] with the highest related [ability|e] to the empty [cabinet_seat].\n@arrow_bonus_tier_1! Consider hiring a new [courtier|e] if we do not have good [characters] available.\n@automation! You can Automate the Cabinet from the @automation![Link('automation', '', 'lateralview_automation_entry_name')]."
+ hint_lack_cabinet_for_cabinet_action_hint_text_3: "#T Extra Hints: #!\n@hint! Each [cabinet_action|e] uses one of the three character [abilities|e], so you need to choose your members carefully depending on the task you plan to assign to them.\n@hint! [cabinet_members|e] will increase the [estate_power|e] of the [estate|e] they belong to."
+
+ hint_lack_cabinet_for_cabinet_action_diplomatic: "\"The best administration will always use the best people.\""
+ hint_lack_cabinet_for_cabinet_action_administrative: "\"The better our country functions, the better external image we will present.\""
+ hint_lack_cabinet_for_cabinet_action_military: "\"Only with an efficient administration will we able to clearly project our strength.\""
+
+
+ ### Inflation
+ hint_inflation: "Inflation"
+ hint_inflation_hint_text: "$hint_inflation_hint_text_1$\n\n$hint_inflation_hint_text_2$"
+ hint_inflation_hint_text_1: "Inflation simply increases all expenses for our [country|e], so it should always be avoided. It grows fairly quickly from [minting|e], but it can be deceptively difficult to reduce."
+ hint_inflation_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! If Inflation is growing, adjust the [minting] slider in the @economy_panel![Link('finances', '', 'lateralview_economy_entry_name')] to keep [inflation] from growing.\n@arrow_bonus_tier_2! If we have some inflation already, setting the slider to the minimum will prompt it to decrease."
+ hint_inflation_hint_text_3: "#T Extra Hints:#!\n@hint! We can get other sources of inflation reduction, for example from [advances|e]."
+
+ hint_inflation_diplomatic: "\"May we be spared from this invisible malady of the economy.\""
+ hint_inflation_administrative: "\"Minting can be a tempting remedy to a budget in distress, but also the source of protracted misfortunes.\""
+ hint_inflation_military: "\"Inflation is a slow and insidious killer.\""
+
+
+ ### Disloyal Subjects
+ hint_has_disloyal_subjects: "Disloyal Subjects"
+ hint_has_disloyal_subjects_hint_text: "$hint_has_disloyal_subjects_hint_text_1$\n\n$hint_has_disloyal_subjects_hint_text_2$\n\n$hint_has_disloyal_subjects_hint_text_3$"
+ hint_has_disloyal_subjects_hint_text_1: "Our [subjects|e] are [countries|e] that are subordinated to us in one way or another. They usually pay [subject_taxation|e] to us, and are called to our [wars|e].\n\nIf their [subject_loyalty|e] drops below #W 50#!, they will be considered disloyal and will not help us in our [wars]. Our disloyal Subjects may band together to form an [GetInternationalOrganizationType('independence_movement').GetName], potentially starting a [war] against us if they feel strong enough."
+ hint_has_disloyal_subjects_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! Make sure our Subject's [opinion|e] of us remains high. You can increase it using the $IMPROVE_RELATIONTITLE$ [diplomatic_action|e].\n@arrow_bonus_tier_1! You can consider [annexing|e] other loyal Subjects. Increasing our relative power compared to all our Subjects will increase their loyalty.\n@arrow_bonus_tier_1! Increasing the size of our [armies|e] will intimidate our Subjects, raising their loyalty."
+ hint_has_disloyal_subjects_hint_text_3: "#T Extra Hints:#!\n@hint! You can get an overview of our Subjects in the Subject panel, inside the @diplomacy_panel![Link('diplomacy', 'relations_tab = current_relations', 'lateralview_diplomacy_entry_name')].\n@hint! The more and more powerful [subjects] we have in relation with our own power, the harder it will become to keep their [subject_loyalty] high.\n@hint! Different types of [subjects] have different characteristics and limitations." ##
+
+ hint_has_disloyal_subjects_diplomatic: "\"We should nurture good relations with our Subjects at all times, lest they begin to think themselves masters of their own destiny.\""
+ hint_has_disloyal_subjects_administrative: "\"Subjects are a profitable addition to our Treasury.\nDo not let them realize it.\""
+ hint_has_disloyal_subjects_military: "\"The sheep will stray away at the first opportunity. We better be ready to let slip the dogs of war!\""
+
+ ### Buildings missing inputs
+ hint_has_buildings_missing_input: "Buildings Missing Inputs"
+ hint_has_buildings_missing_input_hint_text: "$hint_has_buildings_missing_input_hint_text_1$\n\n$hint_has_buildings_missing_input_hint_text_2$\n\n$hint_has_buildings_missing_input_hint_text_3$"
+ hint_has_buildings_missing_input_hint_text_1: "[buildings|e] need access to [goods|e] from their [markets] to work properly. If they cannot buy all the [goods] they need, their output will be appropriately reduced."
+ hint_has_buildings_missing_input_hint_text_2: "#T Recommended Actions:#!\n$hint_address_shortage_text$"
+ hint_has_buildings_missing_input_hint_text_3: "#T Extra Hints:#!\n@hint! Not all Building shortages pose a critical problem to our Country. However, we may want to ensure the proper functioning of some particularly strategic production chains.\n@hint! For example, we might not be able to recruit [ShowUnitDefinitionName('a_footmen')] if our [ShowBuildingTypeName('weapon_guild')] cannot buy enough [ShowGoodsName('lumber')] from their [market]."
+
+ hint_has_buildings_missing_input_diplomatic: "\"Some Buildings are particularly necessary to the proper functioning of our realm.\""
+ hint_has_buildings_missing_input_administrative: "\"Our merchants should seek to address any shortages in our Markets. But on occasion the invisible hand of the Market requires... a little push.\""
+ hint_has_buildings_missing_input_military: "\"We should ensure a steady supply of weapons and military supplies before committing to any military operation.\""
+
+ hint_address_shortage_text: "Clicking on the #W Alert#! will take you to the @production_panel![Link('goods_production', '', 'lateralview_goods_production_entry_name')] filtered with the missing [goods] in the affected [market].\nYou can increase the [supply|e] of a [good|e] in our [markets|e] in three key ways:\n\n@arrow_bonus_tier_3! Click on the @rgo! [rgo|e] button to see a list of our [locations] in this [market] with the relevant [rgo]. Remember only [raw_materials|e] can be produced in [rgo]\n@arrow_bonus_tier_2! Click on the @building! [building|e] button to see a list of all available [buildings] that can produce that specific [good].\n@arrow_bonus_tier_2! Click on the @import! [import|e] button to import the [good] from another Market using [merchant_capacity|e].\n@automation! You can automate our [buildings] and [rgo] construction, as well as our [trade|e], from the @automation![Link('automation', '', 'lateralview_automation_entry_name')]."
+
+ ### Construction missing input
+ hint_has_constructions_missing_input: "Construction Missing Input"
+ hint_has_constructions_missing_input_hint_text: "$hint_has_constructions_missing_input_hint_text_1$\n\n$hint_has_constructions_missing_input_hint_text_2$\n\n$hint_has_constructions_missing_input_hint_text_3$"
+ hint_has_constructions_missing_input_hint_text_1: "All [constructions|e] need access to certain [goods|e] from the [market|e] of the [location|e]. If there are not enough [goods] available, [construction] will stall."
+ hint_has_constructions_missing_input_hint_text_2: "#T Recommended Actions:#!\n$hint_address_shortage_text$"
+ hint_has_constructions_missing_input_hint_text_3: "#T Extra Hints:#!\n@hint! All [locations] in a [market] access the [goods] they need for all purposes in order of their [market_access|e], regardless of who produced the good originally.\n@hint! This means that [locations] that are closer to [market_centers|e] will have an easier time accessing the goods they need."
+
+ hint_has_constructions_missing_input_diplomatic: "\"An accurate control of all resources and needs is crucial for any enterprise.\""
+ hint_has_constructions_missing_input_administrative: "\"Diplomacy and trade will be able to supply us with anything we cannot produce ourselves.\""
+ hint_has_constructions_missing_input_military: "\"We need to be able to fulfill all our supply needs and demands if we want to avoid others exploiting our weaknesses.\""
+
+ ### Construction missing input
+ hint_lack_pop_promotion_to_fill_buildings: "Buildings or [rgo] missing employees"
+ hint_lack_pop_promotion_to_fill_buildings_hint_text: "$hint_lack_pop_promotion_to_fill_buildings_hint_text_1$\n\n$hint_lack_pop_promotion_to_fill_buildings_hint_text_2$\n\n$hint_lack_pop_promotion_to_fill_buildings_hint_text_3$"
+ hint_lack_pop_promotion_to_fill_buildings_hint_text_1: "Different [buildings|e] employ different [pop_types|e]. If there are not enough free [pops|e] available of the required [pop_type] when a new [building] is finished, [ShowPopTypeName('peasants')] will start to [promote|e] according to the [ShowModifierTypeName('local_pop_promotion_speed')] of the [location|e].\n\nBuildings can also lose employees when [pops] die due to [diseases|e], [sieges|e], or [starvation|e]."
+ hint_lack_pop_promotion_to_fill_buildings_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! Do not build in [locations] that are already missing too many employees.\n@arrow_bonus_tier_2! Increase important sources of promotion speed for the [location]: [stability|e], [literacy|e], and [control|e].\n@arrow_bonus_tier_1! Build a [ShowBuildingTypeName('library')] and a [ShowBuildingTypeName('university')] in our most important [locations].\n@arrow_bonus_tier_1! Consider destroying the less useful [buildings] to free up some workforce."
+ hint_lack_pop_promotion_to_fill_buildings_hint_text_3: "#T Extra Hints:#!\n@hint! [urban_locations|e] have a higher base amount of available [upper_class|e] [pops].\n@hint! Remember a [location] needs to have at least some [available|e] [ShowPopTypeName('peasants')] for [promotion] to occur.\n@hint! You can check the [ShowModifierTypeName('local_pop_promotion_speed')] of a [location] in the #W Demography Tab#! of the #W Location Panel#!."
+
+ hint_lack_pop_promotion_to_fill_buildings_diplomatic: "\"What is an industry without the people to work in it?\""
+ hint_lack_pop_promotion_to_fill_buildings_administrative: "\"If our people will not work, other countries may call us lazy.\""
+ hint_lack_pop_promotion_to_fill_buildings_military: "\"It is the duty of the populace to work and produce the needs of the country.\""
+
+ ### Casus Belli
+ hint_casus_belli: "Casus Belli"
+ hint_casus_belli_hint_text: "$hint_casus_belli_hint_text_1$\n\n$hint_casus_belli_hint_text_2$\n\n$hint_casus_belli_hint_text_3$"
+ hint_casus_belli_hint_text_1: "A [casus_belli|e] is a legitimate reason to start a [war|e]. Going to war without a proper Casus Belli is still possible, but enforcing our demands in a [peace_treaty|e] will be harder, and our neighbors will react with increased hostility to our actions."
+ hint_casus_belli_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! The best way to obtain a Casus Belli is requesting one from our [parliament|e]. You can call a Parliament session from the @government_panel![Link('government', 'tabcontent = parliament', 'lateralview_government_entry_name')].\n@arrow_bonus_tier_2! Creating a [spy_network|e] in foreign [countries] will allow us to fabricate a Casus Belli against them, if we have [cores|e] in their land, or if they are our [rivals|e]."
+ hint_casus_belli_hint_text_3: "#T Extra Hints:#!\n@hint! Remember not all [wars] are just, and we can go to war without a Casus Belli. A good Casus Belli is a useful asset, but more often than not, might makes right.\n@hint! Every Casus Belli has a specific [war_goal|e]. Fulfilling the [war_goal] during the [war] will grant us [war_score|e], which is essential to victory.\n@hint! [events|e] and [situations|e] can grant special Casus Belli."
+
+ hint_casus_belli_diplomatic: "\"Even in war there are rules that must be abode.\""
+ hint_casus_belli_administrative: "\"A good Casus Belli would allow us to declare a war without incurring in the wrath of our neighbors.\""
+ hint_casus_belli_military: "\"The best Casus Belli, my Lord, is no Casus Belli.\""
+
+ ### Levies
+ hint_has_unraised_levies_in_war: "Levies"
+ hint_has_unraised_levies_in_war_hint_text: "$hint_has_unraised_levies_in_war_hint_text_1$\n\n$hint_has_unraised_levies_in_war_hint_text_2$\n\n$hint_has_unraised_levies_in_war_hint_text_3$"
+ hint_has_unraised_levies_in_war_hint_text_1: "[levies_with_icon|e] constitute the bulk of the military of any [country_with_icon|e] in the first centuries of the game, before they are replaced by professional soldiers, known as [regulars_with_icon|e]. Until then, it is advisable to always raise our [levies] during [war_with_icon|e]."
+ hint_has_unraised_levies_in_war_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! When war starts, click on the #W Alert#! to go to #W Raise Levy#! in the @military_panel![Link('unit_overview', '', 'lateralview_unit_overview_entry_name')]. From there you can raise all [levies] at once, or select the specific [provinces_with_icon|e] you wish to draft.\n@arrow_bonus_tier_2! It's a good idea to reduce our reliance on [levies] with the superior but expensive [regular_regiments]. For that you will need to buid a [ShowBuildingTypeName('sergeantry')].\n@arrow_bonus_tier_1! In times of need, [mercenaries_with_icon|e] can be a good complement, or even substitute, to our [levies], if we have the coin to spare. You can hire [mercenaries] from the @military_panel![Link('unit_overview', '', 'lateralview_unit_overview_entry_name')]."
+ hint_has_unraised_levies_in_war_hint_text_3: "#T Extra Hints:#!\n@hint! [levies] come primarily from [pops_with_icon|e] of your [primary_culture_with_icon|e] and [accepted_cultures_with_icon|e], but the amount you can levy from each [location] will depend on its [control_with_icon|e].\n@hint! Keep in mind that [food_with_icon|e] and [rgo_with_icon|e] production will decrease in levied [locations] until the men return home.\n@hint! Be careful: every peasant who dies in battle is one less peasant to work in the fields."
+
+ hint_has_unraised_levies_in_war_diplomatic: "\"People need to work, but they also need to defend their homes if attacked.\""
+ hint_has_unraised_levies_in_war_administrative: "\"If people trust us, they will come to our aid if called.\""
+ hint_has_unraised_levies_in_war_military: "\"Having a field to plow is no excuse when there is a war to be won.\""
+
+
+ ### No allies
+ hint_no_allies: "No allies"
+ hint_no_allies_hint_text: "$hint_no_allies_hint_text_1$\n\n$hint_no_allies_hint_text_2$\n\n$hint_no_allies_hint_text_3$"
+ hint_no_allies_hint_text_1: "An [alliance|e] is a [treaty|e] between two [countries|e] that allows them to enter each other's [wars|e]. If we are attacked, our [allies] will receive a [call_to_arms|e] to enter the war on our side. Conversely, we should always take our enemy's allies into account when declaring a [war] ourselves, as they will likely get involved against us."
+ hint_no_allies_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! Go to the @diplomacy_panel![Link('diplomacy_macrobuilder', '', 'lateralview_diplomacy_macrobuilder_entry_name')], and click on $offer_alliance$, under #W $CATEGORY_FRIENDLY_ACTIONS$#!. You will see a list of all [countries] willing to sign an [alliance|e] with us.\n@arrow_bonus_tier_2! Some [countries] might need some convincing. Using the #W $IMPROVE_RELATIONTITLE$#! [diplomatic_action|e] will slowly gain them over."
+ hint_no_allies_hint_text_3: "#T Extra Hints:#!\n@hint! Beware: our Allies might also call us into their own wars. Do not ally countries that are looking too vulnerable, or we might find ourselves in the losing side of a foreign war.\n@hint! You can always dismiss a [call_to_arms] from our ally. But doing so will spell the end of our friendship, and tarnish our diplomatic reputation for years to come."
+
+ hint_no_allies_diplomatic: "\"No one can survive alone in this world.\""
+ hint_no_allies_administrative: "\"Even if we do not plan to attack, entering an alliance with one of our neighbors might dissuade our enemies from attacking us.\""
+ hint_no_allies_military: "\"A strong ally would cover our rear when we go on the offensive.\""
+
+##### Situation Hints #####
+### The Black Death
+ hint_black_death: "The Black Death"
+ hint_black_death_hint_text: "$hint_black_death_hint_text_1$\n\n$hint_black_death_hint_text_2$\n\n$hint_black_death_hint_text_3$"
+ hint_black_death_hint_text_1: "The Black Death is a [situation|e] that will ravage the Old World, following the trails of trade and civilization. It will be most deadly in our densely populated [locations|e], and will fade away once enough survivors have built up [disease_resistance|e] to it.\n\nPeople of every [pop_type|e] will die of the disease, leaving our [buildings|E] empty until new [ShowPopTypeName('peasants')] [promote|e]. This means our [tax_base|e] will likely shrink, as the output of our [buildings] collapses, and [ShowModifierTypeName('local_pop_promotion_speed')] will be very important to recover the lost [employment|e]."
+ hint_black_death_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! Build [ShowBuildingTypeName('hospital')] [buildings] in our biggest [urban_locations|e], before the disease reaches our [country|e].\n@arrow_bonus_tier_2! Click on the [situation] banner to have a look at the special interactions at our disposal. Perhaps they help mitigate the catastrophe?\n@arrow_bonus_tier_2! Keep our [stability|e] high. Not only does it help with [rebellions|e], but it is also essential to [ShowModifierTypeName('local_pop_promotion_speed')].\n@arrow_bonus_tier_1! Do not build new buildings in depopulating [locations], since they will struggle to hire new workers.\n@arrow_bonus_tier_1! Keep an eye on our [ShowModifierTypeName('local_pop_promotion_speed')], as most of our [buildings] and [rgo|e] will need [ShowPopTypeName('peasants')] to [promote|e] to the upper [pop_types]."
+ hint_black_death_hint_text_3: "#T Extra Hints:#!\n@hint! It might take years, but as long as there are enough peasants in our [locations], people will eventually [promote|e] to fill the vacancies left by the disease.\n@hint! You can use the lessons from this disaster to address other calamities during your campaign: [starvation|e], [diseases|e] and [loot|e] will have similar effects on our locations."
+
+ hint_black_death_diplomatic: "\"Death rides forth. Ruin and turmoil follow.\""
+ hint_black_death_administrative: "\"Pale Death knocks with impartial foot at the towers of the kings and the huts of the poor.\""
+ hint_black_death_military: "\"The fourth Rider is upon us. No Hint will save us now.\""
+
+
+###Fall of Delhi
+ hint_fall_of_delhi: "[GetSituationByKey('fall_of_delhi').GetNameWithNoTooltip]"
+ hint_fall_of_delhi_hint_text: "$hint_fall_of_delhi_hint_text_1$\n\n$hint_fall_of_delhi_hint_text_2$\n\n$hint_fall_of_delhi_hint_text_3$\n\n$hint_fall_of_delhi_hint_text_4$"
+ hint_fall_of_delhi_hint_text_1: "The [GetSituationByKey('fall_of_delhi').GetName] is a [situation|e] that may bring about the destruction of a once-great [GetCountry('DLH').GetFlavorRank]. Around them, vultures and potential conquerors gather around a weakened border, as the authority of [GetCountry('DLH').GetGovernment.GetRulerOrRegent.GetName] decays..."
+ hint_fall_of_delhi_hint_text_2: "#T Recommended Actions as Delhi:#!\n@arrow_bonus_tier_3! As [GetCountry('DLH').GetName], consider utilizing the many new [actions|e] such as [ShowGenericActionName('strengthen_neighbor_relations')] or [ShowGenericActionName('fall_of_delhi_appoint_governors')]. \n@arrow_bonus_tier_2! During various [events|e] associated with this [situation|e] we must seek to increase our [share_of_power_gc|e] at the expense of our foes, lest our people meet their demise."
+ hint_fall_of_delhi_hint_text_3: "#T Extra Hints for Delhi:#!\n@hint! One clear advantage over our foes is our mighty standing [army|e]. Unlike [levies|e], our salaried soldiers replenish their ranks and are considerably more powerful. A bedrock of power, helping to keep our regime in control."
+ hint_fall_of_delhi_hint_text_4: "#T Recommended Actions as Opposer:#!\n@arrow_bonus_tier_3! The strongest [country|e] in $india$ will be the premier Opposer at the start of the [situation|e], but we may gain that position by declaring war and claiming primacy. We can do so either by being the strongest [country|e] in $india$ at the start of the [situation|e] or by defeating the current leader and seizing primacy through the [ShowPeaceTreatyTypeNameWithNoTooltip('peace_seize_opposition_leadership')] [peace_treaty|e]."
+
+ hint_fall_of_delhi_diplomatic: "\"Whether defending the throne of [GetCountry('DLH').GetName] or rising as its rival, it is wise to maintain careful relations with neighbors. Friendship may buy time, while hostility can justify new conquests.\""
+ hint_fall_of_delhi_administrative: "\"Lands gained in chaos are fragile prizes. Consider granting [subjects|e] or improving [control|e] where possible, so that newly acquired territories do not slip away as quickly as they were taken.\""
+ hint_fall_of_delhi_military: "\"The sword decides much in this struggle. A strong [army|e] can defend Delhi from collapse or allow Opposers to strike down the giant. Yet even victory brings risks! Beware rebellions and overstretched lines.\""
+
+
+###Rise of the Turks
+ hint_rise_of_the_ottomans: "[GetSituationByKey('rise_of_the_ottomans').GetNameWithNoTooltip] Hints"
+ hint_rise_of_the_ottomans_hint_text: "$hint_rise_of_the_ottomans_hint_text_1$\n\n$hint_rise_of_the_ottomans_hint_text_2$"
+ hint_rise_of_the_ottomans_hint_text_1: "This [situation|e] marks the rise of the #italic Strongest Beylik#!, destined to forge one of history's greatest empires. Through unique [events|e] and [actions|e], we must secure dominance over the other Beyliks, cross the [ShowProvinceDefinitionName('marmara_sea_province')], and claim the riches of [ShowLocationName('constantinople')]. Eternal glory awaits!"
+ hint_rise_of_the_ottomans_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_2! Our time of ascension has arrived. By wielding powerful [actions|e] like [ShowGenericActionName('press_claims')] and benefiting from [events|e] that hasten [integration|e], our rise will be written among the ages.\n@arrow_bonus_tier_1! If we hold #Y 120#! [locations|e] and secure a foothold in the [ShowRegionName('balkan_region')], we may extend the [ShowGenericActionNameWithNoTooltip('press_claims')] [action|e] to that [region|e] as well."
+
+ hint_rise_of_the_ottomans_diplomatic: "\"Early on in the [situation|e] it is wise to use the [actions|e] provided, such as [ShowGenericActionName('seek_relations_with_the_byzantines')]. Using their waning prestige as the last bastion of $ROM$, we will build upon our legacy.\""
+ hint_rise_of_the_ottomans_administrative: "\"While we will certainly excel at conquest, we must be mindful of our interior and the core of our realm. Do not neglect our internal affairs in the pursuit of glory abroad!\""
+ hint_rise_of_the_ottomans_military: "\"We must seek to conquer the [towns_and_cities|e] of our foes. These campaigns will be the foundation of generational power.\""
+
+####Council of Trent
+ hint_council_of_trent: "[GetSituationByKey('council_of_trent').GetNameWithNoTooltip]"
+ hint_council_of_trent_hint_text: "$hint_council_of_trent_hint_text_1$\n\n$hint_council_of_trent_hint_text_2$"
+ hint_council_of_trent_hint_text_1: "During the [ShowSituationName('council_of_trent')], the [GetUniqueInternationalOrganization('catholic_church').GetName] is able to change its current [laws|e] and introduce new [policies|e] to the [international_organization|e]."
+ hint_council_of_trent_hint_text_2: "#T Possible Interactions:#!\n@arrow_bonus_tier_3! As a [member|e] of the [GetUniqueInternationalOrganization('catholic_church').GetName], you may propose a [ShowResolutionName('policy_vote')] using the list of [laws] below or the Doctrines Panel in the [GetUniqueInternationalOrganization('catholic_church').GetName]\n@arrow_bonus_tier_2! As a [member|e] of the [GetUniqueInternationalOrganization('catholic_church').GetName], you may vote on a proposed [ShowResolutionName('policy_vote')]"
+
+###Golden Age of Piracy
+ hint_golden_age_of_piracy: "[GetSituationByKey('golden_age_of_piracy').GetNameWithNoTooltip]"
+ hint_golden_age_of_piracy_hint_text: "$hint_golden_age_of_piracy_hint_text_1$\n\n$hint_golden_age_of_piracy_hint_text_2$\n\n$hint_golden_age_of_piracy_hint_text_3$\n\n$hint_golden_age_of_piracy_hint_text_4$"
+ hint_golden_age_of_piracy_hint_text_1: "The [GetSituationByKey('golden_age_of_piracy').GetName] is a [situation|e] that may give rise to new pirates. Free men, disgruntled sailors and those who defy centralized authority, empower the black sails under which they now conduct their illicit activities."
+ hint_golden_age_of_piracy_hint_text_2: "#T Recommended Actions to combat Pirates:#!\n@arrow_bonus_tier_3! Consider eradicating any Pirates near our coasts, we cannot afford to have them roam our seas. \n@arrow_bonus_tier_2! Each [event|e] associated with this [situation|e] may herald  the rise of a new pirate republic."
+ hint_golden_age_of_piracy_hint_text_3: "#T Extra Hints:#!\n@hint! We may be able to utilize new [actions|e] in the [situation|e] whether we sail the black flag or not."
+ hint_golden_age_of_piracy_hint_text_4: "#T Recommended Actions as a Pirate:#!\n@arrow_bonus_tier_3! It is wise to secure the coast and build a mighty [navy|e]. By utilizing [actions|e] such as [ShowGenericActionName('attract_sailors')] or [ShowGenericActionName('migrate_to_new_waters')], we can maintain a versatile fleet and presence."
+
+ hint_golden_age_of_piracy_diplomatic: "\"Smiles and rum work better than threats, at least until the cannons start talking. Perhaps it would be wise to maintain steady relations with scallywags. Not all treasure is silver and gold, sir.\""
+ hint_golden_age_of_piracy_administrative: "\"Managing our maritime possessions is delicate business at the age of piracy. Wether defending against them or rogue competition, maintaining a tight administration is key!\""
+ hint_golden_age_of_piracy_military: "\"The pirates acknowledge no country, having sold their own. And as they are sure to be hanged if taken, they shall have no scruple in murdering and destroying if their demands are not granted.\""
+
+###Hundred Years War
+ hint_hundred_years_war: "[GetSituationByKey('hundred_years_war').GetNameWithNoTooltip]"
+ hint_hundred_years_war_hint_text: "$hint_hundred_years_war_hint_text_1$\n\n$hint_hundred_years_war_hint_text_2$\n\n$hint_hundred_years_war_hint_text_3$\n\n$hint_hundred_years_war_hint_text_4$"
+ hint_hundred_years_war_hint_text_1: "The [GetSituationByKey('hundred_years_war').GetName] plunges [ShowSubContinentName('western_europe')] in turmoil! This period will test alliances and new powers will certainly emerge from the rubbles."
+ hint_hundred_years_war_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! Both [GetCountry('FRA').GetName] and [GetCountry('ENG').GetName] have access to [ShowGenericActionName('request_war_entry')], [ShowGenericActionName('hyw_sign_truce')] and [ShowGenericActionName('request_papal_delegates')]. These are unique ways to manipulate the status quo of the conflict or even tilt it in either country's favor."
+ hint_hundred_years_war_hint_text_3: "#T Extra Hints:#!\n@hint! As a participant in the conflict, we may be able to gain land or powerful alliances."
+ hint_hundred_years_war_hint_text_4: "#T Recommended Actions as [subject|e] of [GetCountry('FRA').GetName]:#!\n@arrow_bonus_tier_3! It would be wise to secure [ShowGenericActionName('demand_autonomy')]. Each [ShowSubjectTypeName('appanage')] may demand a certain degree of autonomy and greatly benefit, by leveraging its importance as a defender of the [GetCountry('FRA').GetAdjectiveWithNoTooltip] crown."
+
+ hint_hundred_years_war_diplomatic: "\"Give war a chance!\""
+ hint_hundred_years_war_administrative: "\"Overseas territories will likely suffer in terms of [control|e]. Be mindful of each newly conquered location's [proximity|e] to our [capital|e].\""
+ hint_hundred_years_war_military: "\"Waging war with our foes in the South as either [GetCountry('FRA').GetName] or [GetCountry('ENG').GetName]? Consider the [ShowGenericActionName('hyw_sign_truce')] [action|e] with a powerful neighbor elsewhere.\""
+
+###Hussite Wars
+ hint_hussite_wars: "[GetSituationByKey('hussite_wars').GetNameWithNoTooltip]"
+ hint_hussite_wars_hint_text: "$hint_hussite_wars_hint_text_1$\n\n$hint_hussite_wars_hint_text_2$\n\n$hint_hussite_wars_hint_text_3$\n\n$hint_hussite_wars_hint_text_4$"
+ hint_hussite_wars_hint_text_1: "The [GetSituationByKey('hussite_wars').GetName] bring about a deep rift in [GetReligionByKey('catholic').GetName]. On their end, many [GetReligionByKey('catholic').GetAdjectiveWithNoTooltip] monarchs fear that if this heresy is not extinguished quickly, it may envelop substantial parts of [ShowContinentName('europe')] and threaten the spiritual authority of the [GetCountry('PAP').GetGovernment.GetRulerTitle]."
+ hint_hussite_wars_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! The [GetCountry('PAP').GetGovernment.GetRulerTitle] will seek to wage [war|e] against [GetCountry('BOH').GetName]. Neighboring [ShowReligionGroupAdjective('christian')] countries may opt to join either side, effectively deciding the fate of an entire [continent|e]."
+ hint_hussite_wars_hint_text_3: "#T Extra Hints:#!\n@hint! [GetCountry('BOH').GetName] has access to numerous unique [actions|e] such as [ShowGenericActionName('convert_heretics_hw_action')] and [ShowGenericActionName('prepare_defenses_hw_action')], among others."
+ hint_hussite_wars_hint_text_4: "#T Recommended Actions as the [GetCountry('PAP').GetName]:#!\n@arrow_bonus_tier_3! Good relations with fellow [GetReligionByKey('catholic').GetAdjective] countries may enable us to call them in our struggle. The unique [ShowPeaceTreatyTypeName('supress_hussite_faith')] [peace_treaty|e] is available during the [situation|e]. It will reduce the cost of using the #Y Force Convert#! [peace_treaty|e]."
+
+ hint_hussite_wars_diplomatic: "\"Faith should motivate us to seek like-minded allies and persevere through this troublesome period.\""
+ hint_hussite_wars_administrative: "\"We should look into maintaining [religious_unity|e].\""
+ hint_hussite_wars_military: "\"It is likely we will need to defend our faith through violent means.\""
+
+###Italian Wars
+ hint_italian_wars: "[GetSituationByKey('italian_wars').GetNameWithNoTooltip]"
+ hint_italian_wars_hint_text: "$hint_italian_wars_hint_text_1$\n\n$hint_italian_wars_hint_text_2$\n\n$hint_italian_wars_hint_text_3$\n\n$hint_italian_wars_hint_text_4$"
+ hint_italian_wars_hint_text_1: "The [GetSituationByKey('italian_wars').GetName] envelop [ShowRegionName('italy_region')]. As outsider [countries|e] strive to invade the region, the formation of the Italian Leagues heralds an era of division and resistance, protecting the affluence of the region."
+ hint_italian_wars_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! The leaders of each league may invite other [countries|e] to bolster their grip on [ShowRegionName('italy_region')]."
+ hint_italian_wars_hint_text_3: "#T Extra Hints:#!\n@hint! Rivals or enemies of league leaders may [ShowGenericActionName('iw_send_aid')] and tilt the balance of an important war."
+ hint_italian_wars_hint_text_4: "#T Recommended Actions as the leader of an [ShowCultureGroupName('italian_group')] League:#!\n@arrow_bonus_tier_3! Good relations with fellow neighor countries, will grow the power of our [international_organization|e]."
+
+ hint_italian_wars_diplomatic: "\"[ShowRegionName('italy_region')] must be controlled by us and our likeminded allies.\""
+ hint_italian_wars_administrative: "\"The establishment of [subjects|e] in [ShowRegionName('italy_region')] will further our influence in the [region|e].\""
+ hint_italian_wars_military: "\"We must crush the competition, there is too much wealth and power on the line.\""
+
+###Little Ice Age
+ hint_little_ice_age: "[GetSituationByKey('little_ice_age').GetNameWithNoTooltip]"
+ hint_little_ice_age_hint_text: "$hint_little_ice_age_hint_text_1$\n\n$hint_little_ice_age_hint_text_2$\n\n$hint_little_ice_age_hint_text_3$"
+ hint_little_ice_age_hint_text_1: "The [GetSituationByKey('little_ice_age').GetName] is upon us! Frost covers the lands. We must do our best to protect crops, animals, and ensure the survival of our people!"
+ hint_little_ice_age_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! Consider expanding [buildings|e] that produce or enhance the production of [food|e]."
+ hint_little_ice_age_hint_text_3: "#T Extra Hints:#!\n@hint! We may utilize many unique [actions|e] to help bolster and redistribute [food|e] across our [provinces|e]."
+
+ hint_little_ice_age_diplomatic: "\"Winter is coming.\""
+ hint_little_ice_age_administrative: "\"Proper production and distribution of [food|e] will safeguard our [pops|e] from prematurely greeting the reaper.\""
+ hint_little_ice_age_military: "\"Frozen bodies of water may be briefly passable, but [armies|e] trapped in winter mountains risk being stranded far longer.\""
+
+###Revolution
+ hint_the_revolution: "[GetSituationByKey('the_revolution').GetNameWithNoTooltip]"
+ hint_the_revolution_hint_text: "$hint_the_revolution_hint_text_1$\n\n$hint_the_revolution_hint_text_2$\n\n$hint_the_revolution_hint_text_3$"
+ hint_the_revolution_hint_text_1: "The [GetSituationByKey('the_revolution').GetName] has erupted! Monarchies tremble as ideas of liberty, equality, and fraternity spread like wildfire. Will we embrace the flames of change, or defend the old order?"
+ hint_the_revolution_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! We can become [revolutionary|e] by siding with the [revolutionary|e] rebels during the [ShowDisasterName('revolution_disaster')] [disaster|e].\n@arrow_bonus_tier_2! The [situation|e] enables #Y 2#! unique [peace_treaties|e]: [ShowPeaceTreatyTypeName('reinstate_the_monarchy')] and [ShowPeaceTreatyTypeName('force_revolution')].\n@arrow_bonus_tier_1! The [situation|e] offers access to new [actions|e] such as [ShowGenericActionName('suppress_foreign_revolutionaries')] and [ShowGenericActionName('assist_foreign_revolutionaries')]."
+ hint_the_revolution_hint_text_3: "#T Extra Hints:#!\n@hint! The strongest revolutionary country may claim the mantle of [revolutionary_target|e] by having the highest [great_power_score|e]."
+ 
+ hint_the_revolution_diplomatic: "\"Across the political landscape, it appears that many monarchs have lost their heads in the pursuit of squashing these revolutions.\""
+ hint_the_revolution_administrative: "\"We would be mindful to pick a side, and quickly. The survival of our realm hinges upon swift decision-making. Should the revolution come knocking on our door, let us be prepared.\""
+ hint_the_revolution_military: "\"Whether we crush or support revolutionary sentiment, our influence must extend beyond our borders.\""
+
+###Western Schism
+ hint_western_schism: "[GetSituationByKey('western_schism').GetNameWithNoTooltip]"
+ hint_western_schism_hint_text: "$hint_western_schism_text_1$\n\n$hint_western_schism_text_2$\n\n$hint_western_schism_text_3$\n\n$hint_western_schism_text_4$"
+ hint_western_schism_text_1: "During the [ShowSituationNameWithNoTooltip('western_schism')] [situation|e], the [international_organization_with_icon|e] [GetUniqueInternationalOrganization('catholic_church').GetName] is split between two candidates for the Papacy, disallowing all interaction with the Curia.\n\nTo influence the outcome of the [situation] the following steps could be taken depending on your role within the Church:"
+ hint_western_schism_text_2: "#T [countries] in the possession of a [cardinal_with_icon|e]:#!\n@arrow_bonus_tier_3! Vote for one of the candidates"
+ hint_western_schism_text_3: "#T [countries] without a [cardinal_with_icon|e]:#!\n@arrow_bonus_tier_3! Use the [situation] [action|e] #V $schism_show_support_for_one_pope$#! to grant a chosen candidate progress\n@arrow_bonus_tier_2! Use the religion [action] $request_cardinal_seat$ to gain a [cardinal]\n@arrow_bonus_tier_1! Use the [situation] [action] #V $schism_demand_support_from_one_pope$#! to profit from the [situation]"
+ hint_western_schism_text_4: "During the [situation] heresies will spread throughout the Catholic world.\n\n#T Recommended Actions:#!\n@arrow_bonus_tier_3! Consider using the [situation|e] [action] #V $schism_show_unity_of_faith$#! to keep your [religious_unity|e] high"
+ 
+###Reformation
+ hint_reformation: "[GetSituationByKey('reformation').GetNameWithNoTooltip]"
+ hint_reformation_hint_text: "$hint_reformation_hint_text_1$\n\n$hint_reformation_hint_text_2$\n\n$hint_reformation_hint_text_3$"
+ hint_reformation_hint_text_1: "During the [ShowSituationNameWithNoTooltip('reformation')] [situation|e], [ShowBuildingTypeName('lutheran_preachers')] and [ShowBuildingTypeName('calvinist_preachers')] will spread their new [religions|e] throughout the [ShowReligionGroupAdjective('christian')] world."
+ hint_reformation_hint_text_2: "#T Combat the Reformers:#!\n@arrow_bonus_tier_3! Remove the [ShowBuildingTypeName('lutheran_preachers')] and [ShowBuildingTypeName('calvinist_preachers')] [buildings|e] which will cost you [stability|e]\n@arrow_bonus_tier_3! Once enabled, construct and maintain [ShowBuildingTypeName('jesuit_college')] to combat the spread of [ShowReligionName('lutheran')] and [ShowReligionName('calvinist')]"
+ hint_reformation_hint_text_3: "#T Join the Reformers:#!\n@arrow_bonus_tier_3! Once one of the new faiths has spread to your country, embrace it and convert to it with the #V $embrace_the_reformation$#! action\n@arrow_bonus_tier_2! Use the @religion_panel![Link('country_religion', '', '@society_panel! Religion Tab')] to convert to a new [religion]"
+
+###Treaty of Tordesillas
+ hint_treaty_of_tordesillas: "[GetSituationByKey('treaty_of_tordesillas').GetNameWithNoTooltip]"
+ hint_treaty_of_tordesillas_hint_text: "$hint_treaty_of_tordesillas_hint_text_1$\n\n$hint_treaty_of_tordesillas_hint_text_2$"
+ hint_treaty_of_tordesillas_hint_text_1: "The [GetSituationByKey('treaty_of_tordesillas').GetName] has commenced! [GetSituationByKey('treaty_of_tordesillas').MakeScope.GetVariable('var_west_country').GetCountry.GetName] and [GetSituationByKey('treaty_of_tordesillas').MakeScope.GetVariable('var_east_country').GetCountry.GetName] seek to split the New World among themselves!"
+ hint_treaty_of_tordesillas_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! We may utilize any of the unique [actions|e] through the [situation|e] panel to shape our colonial ambitions.\n@arrow_bonus_tier_2! The [situation|e] will eventually enter a #Y Second#! phase, once it is ratified. Once it does, more [countries|e] will be able to participate in it and lay their claims."
+ 
+ hint_treaty_of_tordesillas_diplomatic: "\"This is a good opportunity for us to carve a piece of newly discovered lands, under the guise of religious and superior authority.\""
+ hint_treaty_of_tordesillas_administrative: "\"The new world offers many commercial opportunities. Let us take advantage of them.\""
+ hint_treaty_of_tordesillas_military: "\"We cannot let our foes cease that land before us!\""
+
+###Great Pestilence
+ hint_great_pestilence: "[GetSituationByKey('great_pestilence').GetNameWithNoTooltip]"
+ hint_great_pestilence_hint_text: "$hint_black_death_hint_text_2$\n\n$hint_black_death_hint_text_3$"
+ 
+ hint_great_pestilence_diplomatic: "\"Our allies have deserted us. Leadership has betrayed us. Abandon your posts! Flee, flee for your lives!\""
+ hint_great_pestilence_administrative: "\"Do not lose hope, there are many measures we can take to mitigate the deaths, however meager and ineffective they may be...\""
+ hint_great_pestilence_military: "\"Be mindful of moving our [armies|e] around [locations|e] with the disease. We cannot afford to lose soldiers.\""
+
+###Columbian Exchange
+ hint_columbian_exchange: "[GetSituationByKey('columbian_exchange').GetNameWithNoTooltip]"
+ hint_columbian_exchange_hint_text: "$hint_columbian_exchange_hint_text_1$\n\n$hint_columbian_exchange_hint_text_2$"
+ hint_columbian_exchange_hint_text_1: "The [GetSituationByKey('columbian_exchange').GetName] has commenced! [trade|e] and [goods|e] will henceforth flow between the Old and the New World!"
+ hint_columbian_exchange_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! We may utilize any of the unique [actions|e] through the [situation|e] panel to bolster our profit by introducing new goods in our [market|e]."
+ 
+ hint_columbian_exchange_diplomatic: "\"Trade profit makes the world go around!\""
+ hint_columbian_exchange_administrative: "$hint_treaty_of_tordesillas_administrative$"
+ hint_columbian_exchange_military: "\"We must do our best to secure profitable sources and new goods, before our competitors!\""
+
+###War of Religions
+ hint_war_of_religions: "[GetSituationByKey('war_of_religions').GetNameWithNoTooltip]"
+ hint_war_of_religions_hint_text: "$hint_war_of_religions_hint_text_1$\n\n$hint_war_of_religions_hint_text_2$\n\n$hint_war_of_religions_hint_text_3$\n\n$hint_war_of_religions_hint_text_4$"
+ hint_war_of_religions_hint_text_1: "During the [ShowSituationNameWithNoTooltip('war_of_religions')] [situation|e], two [international_organizations_with_icon|e] try to ensure the survival of their [religions|e] within the [GetUniqueInternationalOrganization('hre').GetName]. The [GetUniqueInternationalOrganization('protestant_union').GetName] and the [GetUniqueInternationalOrganization('catholic_league').GetName] will offer protection to [countries|e] of the empire. With rising tensions, both will be able to try establishing religious supremacy, altering the [laws|e] of the [GetUniqueInternationalOrganization('hre').GetNameWithNoTooltip] to their preference."
+ hint_war_of_religions_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! Join the [international_organization] you want to support\n@arrow_bonus_tier_2! Seek new [alliances|e] with outside countries"
+ hint_war_of_religions_hint_text_3: "#T If you are a Leader of a Religious League:#!\n@arrow_bonus_tier_3! Use the [situation] [action|e] #V $prepare_military_escalation$#! to gain the [ShowCasusBelliName('cb_religious_superiority')]\n@hint! Once you used it, you can enforce the [ShowPeaceTreatyTypeName('religious_supremacy')] to enforce your factions demands\n@arrow_bonus_tier_2! Use the [situation] [action] #V $demand_member_removal$#! to remove dangerous countries from the other [international_organization] before the [war] breaks out"
+ hint_war_of_religions_hint_text_4: "#T Extra Hints:#!\n@hint! During the [war] of [ShowCasusBelliName('cb_religious_superiority')] [countries] will acquire [war_exhaustion]\n@hint! If #Y 80%#! of all participants desire [peace|e] the #Y Peace of Westphalia#! is achieved instead\n@hint! This will force the [war] to an end and achieve religious peace within the [GetUniqueInternationalOrganization('hre').GetNameWithNoTooltip]"
+
+###Guelphs and Ghibellines
+ hint_guelphs_and_ghibellines: "[GetSituationByKey('guelphs_and_ghibellines').GetNameWithNoTooltip]"
+ hint_guelphs_and_ghibellines_hint_text: "$hint_guelphs_and_ghibellines_hint_text_1$\n\n$hint_guelphs_and_ghibellines_hint_text_2$"
+ hint_guelphs_and_ghibellines_hint_text_1: "During the [ShowSituationNameWithNoTooltip('guelphs_and_ghibellines')] [situation|e], the [international_organizations_with_icon|e] [GetUniqueInternationalOrganization('guelphs_io').GetName] and [GetUniqueInternationalOrganization('ghibellines_io').GetName] compete for influence over the [region|e] of [ShowRegionName('italy_region')] in the name of the [GetUniqueInternationalOrganization('catholic_church').GetLeaderTitle] ([GetUniqueInternationalOrganization('guelphs_io').GetName]) or the [GetUniqueInternationalOrganization('hre').GetLeaderTitle] ([GetUniqueInternationalOrganization('ghibellines_io').GetName])."
+ hint_guelphs_and_ghibellines_hint_text_2: "#T If you are a member of either side:#!\n@arrow_bonus_tier_3! Force a [country|e] into your faction with the help of the [ShowCasusBelliName('cb_gag_force_country_into_faction')] [casus_belli_with_icon|e]\n@arrow_bonus_tier_2! Assist the members of your faction to keep hold of their [tax_base|e] with diplomatic relations like [alliances_with_icon|e] or [guarantee_with_icon|e]\n@arrow_bonus_tier_2! Increase the [tax_base_with_icon|e] of your [country]"
+
+###Colonial Revolution
+ hint_colonial_revolution: "[GetSituationByKey('colonial_revolution').GetNameWithNoTooltip]"
+ hint_colonial_revolution_hint_text: "$hint_colonial_revolution_hint_text_1$\n\n$hint_colonial_revolution_text_2$\n\n$hint_colonial_revolution_text_3$"
+ hint_colonial_revolution_hint_text_1: "During the [ShowSituationNameWithNoTooltip('colonial_revolution')] [situation|e], colonial [subjects|e] of the world struggle for their independence against their [overlords|e]."
+ hint_colonial_revolution_text_2: "#T If you are a colonial nation :#!\n@arrow_bonus_tier_3! Create a colonial federation [international_organization|e]\n@arrow_bonus_tier_2! Use the [situation] [action|e] #V $seek_alliance_with_overlord_rival$#! to receive help from other [countries|e]\n@arrow_bonus_tier_1! If a colonial federation exists, consider joining it"
+ hint_colonial_revolution_text_3: "#T If you are an [overlord] :#!\n@arrow_bonus_tier_3! Use the [situation] [action] #V $establish_goods_act$#! to gain additional funds\n@arrow_bonus_tier_2! Consider to use the [situation] [action] #V $give_colony_representation$#!, if a colony becomes disloyal"
+
+###Red Turban Rebellion
+ hint_red_turban_rebellions: "[GetSituationByKey('red_turban_rebellions').GetNameWithNoTooltip]"
+ hint_red_turban_rebellions_hint_text: "$hint_red_turban_rebellions_hint_text_1$\n\n$hint_red_turban_rebellions_hint_text_2$\n\n$hint_red_turban_rebellions_hint_text_3$"
+ hint_red_turban_rebellions_hint_text_1: "The [GetSituationByKey('red_turban_rebellions').GetName] have broken out across the whole of $china$! [GetCountry('CHI').GetName] have lost the favor of the heavens, instability now rules their [GetCountry('CHI').GetFlavorRank]!"
+ hint_red_turban_rebellions_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! [GetCountry('CHI').GetName] must look to force [ShowPeaceTreatyTypeName('rtr_rein_in_rebellion')] upon those who seek to break away from their rule.\n@arrow_bonus_tier_2! The [GetInternationalOrganizationType('red_turban_rebels').GetName] can [ShowPeaceTreatyTypeName('rtr_demand_occupied_territories')] against [GetCountry('CHI').GetNameWithNoTooltip].\n@arrow_bonus_tier_1! The [GetCountry('CHI').GetLongName] will suffer many unique [events|e] as their land is usurped by prospecting conquerors."
+ hint_red_turban_rebellions_hint_text_3: "#T Extra Hints:#!\n@hint! We may utilize many unique [actions|e] in the [situation|e] panel to help [integrate|e] conquests and maintain high [control|e]."
+
+ hint_red_turban_rebellions_diplomatic: "\"Unending warfare leaves little room for idle talk and diplomacy...\""
+ hint_red_turban_rebellions_administrative: "\"It would be wise to properly utilize the actions of the situation. They are valuable tools that will help us emerge victorious.\""
+ hint_red_turban_rebellions_military: "\"Now all of $china$ knows we are here!\""
+
+###Rise of Timur
+ hint_rise_of_timur: "[GetSituationByKey('rise_of_timur').GetNameWithNoTooltip]"
+ hint_rise_of_timur_hint_text: "$hint_rise_of_timur_hint_text_1$\n\n$hint_rise_of_timur_hint_text_2$\n\n$hint_rise_of_timur_hint_text_3$"
+ hint_rise_of_timur_hint_text_1: "From the depths of [ShowSubContinentName('central_asia')] comes the pale visage of death in the form of [GetCharacter('chg_timur_lame_borjigin').GetName] and [GetCharacter('chg_timur_lame_borjigin').GetHerHis] [GetCountry('TIM').GetFlavorRank]. Woe upon those who resist [GetCharacter('chg_timur_lame_borjigin').GetHerHis] conquests!"
+ hint_rise_of_timur_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! As long as [GetCharacter('chg_timur_lame_borjigin').GetName] lives, [GetCharacter('chg_timur_lame_borjigin').GetHerHis] [GetCountry('TIM').GetFlavorRank] will benefit from the [ShowModifier('timmy_wants_to_play')] [modifier|e].\n@arrow_bonus_tier_2! The aforementioned [modifier|e] will allow [GetCharacter('chg_timur_lame_borjigin').GetShortNameWithNoTooltip] to automatically annex besieged [locations|e].\n@arrow_bonus_tier_1! The [GetCountry('TIM').GetLongName] gains access to unique [casus_belli|e]."
+ hint_rise_of_timur_hint_text_3: "#T Extra Hints:#!\n@hint! [GetCountry('TIM').GetName] may utilize many powerful [actions|e] in the [situation|e] panel."
+
+ hint_rise_of_timur_diplomatic: "\"Perhaps the horde can be reasoned with?\""
+ hint_rise_of_timur_administrative: "\"Let us consider building fortifications to protect our borders.\""
+ hint_rise_of_timur_military: "\"[GetCountry('TIM').GetName] are dependent on a powerful army of hellish riders, a history of conquest and a hunger to unhinge their jaws and swallow all of [ShowContinentName('asia')]!\""
+
+### Nanbokuchou
+ hint_nanbokuchou: "[GetSituationByKey('nanbokuchou').GetNameWithNoTooltip]"
+ hint_nanbokuchou_hint_text: "$hint_nanbokuchou_hint_text_1$\n\n$hint_nanbokuchou_hint_text_2$\n\n$hint_nanbokuchou_hint_text_3$"
+ hint_nanbokuchou_hint_text_1: "The [GetSituationByKey('nanbokuchou').GetName] is a [situation|e] that divides [ShowRegionName('japan_region')] into competing Imperial Courts, the Northern and Southern lines, each seeking legitimacy. Clans must choose sides, as this conflict will reshape the entire island nation."
+ hint_nanbokuchou_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! Use the unique [ShowCasusBelliName('cb_nanbokuchou')] [casus_belli|e] to wage war for your chosen Imperial claimant.\n@arrow_bonus_tier_2! Expand your Clan influence with [ShowPeaceTreatyTypeName('peace_expand_clan_influence')] to seize enemy [locations|e].\n@arrow_bonus_tier_1! If victorious, force the rival court to abdicate using [ShowPeaceTreatyTypeNameWithNoTooltip('peace_nanbokuchou_force_imperial_abdication')] and secure supremacy for your preferred Emperor."
+ hint_nanbokuchou_hint_text_3: "#T Extra Hints:#!\n@hint! Careful timing is crucial. Smaller Clans can use the conflict to gain leverage over rivals.\n@hint! Consider the balance of power before committing to a side."
+
+ hint_nanbokuchou_diplomatic: "\"This is more than a war of swords. Our choice of claimant will define our legacy.\""
+ hint_nanbokuchou_administrative: "\"Maintaining order while siding with one court or the other is a challenge, but it may grant us unmatched influence over the Imperial institution.\""
+ hint_nanbokuchou_military: "\"Strike decisively and claim the mantle of legitimacy before our rivals can consolidate their power.\""
+
+### Sengoku
+ hint_sengoku: "[GetSituationByKey('sengoku').GetNameWithNoTooltip]"
+ hint_sengoku_hint_text: "$hint_sengoku_hint_text_1$\n\n$hint_sengoku_hint_text_2$\n\n$hint_sengoku_hint_text_3$"
+ hint_sengoku_hint_text_1: "The [GetSituationByKey('sengoku').GetName] is a [situation|e] that engulfs [ShowRegionName('japan_region')] in near constant war. Clans fight for supremacy while the $JAPANESE_SHOGUNATE_LEADER_MALE$ struggles to maintain control over the country."
+ hint_sengoku_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! Wage war with the unique [ShowCasusBelliName('cb_sengoku')] [casus_belli|e] to expand your Clan.\n@arrow_bonus_tier_2! As $JAPANESE_SHOGUNATE_LEADER_MALE$, use [ShowGenericActionName('sengoku_revoke_clans_land')] to weaken overgrown Clans and [ShowGenericActionName('sengoku_limit_clans_autonomy')] to turn them into [building_based|e] countries.\n@arrow_bonus_tier_1! If you are a [building_based|e], you may proclaim independence and become a [location_based|e] [country|e] with [ShowGenericActionName('sengoku_proclaim_clan_independence')]."
+ hint_sengoku_hint_text_3: "#T Extra Hints:#!\n@hint! The balance of power shifts constantly. Look for opportunities to strike weakened Clans.\n@hint! As $JAPANESE_SHOGUNATE_LEADER_MALE$, consolidating control early will make unifying [ShowRegionName('japan_region')] much easier.\n@hint! Small Clans can benefit by playing larger rivals against one another until the right moment to break free."
+
+ hint_sengoku_diplomatic: "\"Alliances will change quickly. Choose friends carefully, for they may be tomorrow's enemies.\""
+ hint_sengoku_administrative: "\"Strong governance is needed to keep the realm from collapsing into chaos.\""
+ hint_sengoku_military: "\"This is the age of the sword. Strike quickly and strike hard or be consumed by others.\""
+
+
+
+##### Disaster Hints #####
+ swift_end_string: "As with any disaster, a swift end is often most desirable, as lingering loose ends may lead to unfortunate outcomes."
+ disaster_war_hint: "It is best to keep in mind that some of our neighbors do not wish for a truce or alliance during our turbulent times, as they seek expansionist opportunities on our expense."
+
+###Coup
+ hint_coup_attempt: "$coup_attempt$ Hints"
+ hint_coup_attempt_hint_text: "$hint_coup_attempt_hint_text_1$\n\n$hint_coup_attempt_hint_text_2$\n\n$hint_coup_attempt_hint_text_3$"
+ hint_coup_attempt_hint_text_1: "Within our [court|e], ambitious men and women seek power beyond their means, using illicit methods to place puppets on our throne, dictate [laws|e], and secure [privileges|e] for themselves. This [disaster|e] will persist until the conspirators are gone, their leader seizes the throne, or we attain sufficient [legitimacy|e]. $swift_end_string$"
+ hint_coup_attempt_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! We may opt to [ShowGenericActionName('conduct_investigation')]. This may take some time but it will uncover some of the conspirators, leading us close to purging their ranks.\n@arrow_bonus_tier_2!Keep our [stability|e] high. The higher it is, the lower the threshold of necessary [legitimacy|e] will be, for the conclusion of this [disaster|e].\n@arrow_bonus_tier_1! Should times become more desperate, we may choose to either [ShowGenericActionName('call_private_council')] or [ShowGenericActionName('execute_court_member')]. The former will allow us to depend on our [estates|e] to flush out the conspirators in exchange for [privileges|e] or [gold|e]. The latter [action|e] will allow us to execute any [character|e] in our [court|e] should we suspect them of being a member of the conspiracy."
+ hint_coup_attempt_hint_text_3: "#T Extra Hints:#!\n@hint! We may receive random [events|e] during this [disaster|e] that will point towards potential conspirators. It would be wise to examine each one and make an informed decision. It would be suboptimal for our best [cabinet_member|e] to lose their head for no reason."
+
+ hint_coup_attempt_diplomatic: "\"Now is the time to reaffirm our relations with our neighbor [countries|e] and establish a strong border. The last thing we need is danger on the exterior, as well as the interior.\""
+ hint_coup_attempt_administrative: "\"One of the other advisors could be a conspirator. We may never know!\""
+ hint_coup_attempt_military: "\"$disaster_war_hint$ Remember, a pre-emptive strike is just a #italic surprise peace treaty#! delivered very forcefully.\""
+
+###Crisis of the Chinese Dynasty
+ hint_crisis_of_the_chinese_dynasty: "$crisis_of_the_chinese_dynasty$ Hints"
+ hint_crisis_of_the_chinese_dynasty_hint_text: "$hint_crisis_of_the_chinese_dynasty_hint_text_1$\n\n$hint_crisis_of_the_chinese_dynasty_hint_text_2$"
+ hint_crisis_of_the_chinese_dynasty_hint_text_1: "The heavens once graced us with light and prosperity. However, recent events, famines, and devastation have led to the introduction of a dark era for our reign over $china$. This [disaster|e] will persist until we either rise above it through persistent reformation of our administration or we lose our seat at the head of the [GetUniqueInternationalOrganization('middle_kingdom').GetName]. $swift_end_string$"
+ hint_crisis_of_the_chinese_dynasty_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! We may opt to [ShowCabinetActionName('reform_taxation_system')] through our [cabinet|e]. This may take some time but it will set us on a good path to ending this [disaster|e].\n@arrow_bonus_tier_2!Keep our [celestial_authority_gc|e] high. Should it reach a value of #G 90#! or higher, the [disaster|e] will conclude peacefully.\n@arrow_bonus_tier_1! The [disaster|e] enables many new [actions|e] such as [ShowGenericActionName('cmd_reform_the_cabinet')], [ShowGenericActionName('cmd_restore_stability')], and [ShowGenericActionName('cmd_strengthen_crown')]. All of these offer an alternative way to positively end this turbulent period, in case we cannot raise our [celestial_authority_gc|e] high enough."
+
+ hint_crisis_of_the_chinese_dynasty_diplomatic: "\"Now is the time to reaffirm our relations with [countries|e] that are part of the [GetUniqueInternationalOrganization('middle_kingdom').GetName], so as to ensure the survival of this great institution.\n\nWithout feelings of respect, what is there to distinguish men from beasts?\""
+ hint_crisis_of_the_chinese_dynasty_administrative: "\"Should we decide to end this [disaster|e] through reforming our administration, it is wise to assign these monumental tasks to capable [cabinet_members|e].\n\nHe who will not economize will have to agonize.\""
+ hint_crisis_of_the_chinese_dynasty_military: "\"$disaster_war_hint$\n\nIn the midst of chaos, there is also opportunity!\""
+
+
+ ### Construction missing input
+ hint_war: "War"
+ hint_war_hint_text: "$hint_war_hint_text_1$\n\n$hint_war_hint_text_2$\n\n$hint_war_hint_text_3$"
+ hint_war_hint_text_1: "[war|e] starts when a [country|e] issues a declaration of war, and ends when the two sides agree to a [peace_treaty|e]. Every [war] has two [war_leaders|e], but there can also be other [war_allies|e]. The [war] will end when the two [war_leaders] sign a [peace_treaty], but secondary participants can sign separate [peace_treaties] with the enemy [war_leader]."
+ hint_war_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! Consider getting a [casus_belli_with_icon|e] before declaring a [war]. We can ask for one during [parliament|e], or fabricate one against our [rivals|e].\n@arrow_bonus_tier_3! Once a [war] starts, pay attention to the [casus_belli] and its [war_goal|e], as it is essential for earning [war_score_with_icon|e] and securing a favorable [peace_treaty_with_icon|e].\n@arrow_bonus_tier_3! Depending on the Casus belli, we will earn [war_score_with_icon|e] in different ways. Here are the most common sources of [war_score]:\n @arrow_bonus_tier_1! Occupy the enemy [capital_with_icon|e].\n @arrow_bonus_tier_1! Control claimed [locations_with_icon].\n @arrow_bonus_tier_1! Occupy the enemy's [forts_with_icon|e].\n @arrow_bonus_tier_1! Defeat enemy [armies|e] in [battle].\n @arrow_bonus_tier_1! [blockade|e] enemy [ports|e].\n@arrow_bonus_tier_3! Keep an eye on our [war_exhaustion_with_icon|e], as it can really hinder both our economy and our ability to wage war."
+ hint_war_hint_text_3: "#T Extra Hints:#!\n@hint! During [war], both sides may [occupy|e] enemy [locations|e], but territory does not really change hands until a [peace_treaty|e] ratifies the conquest.\n@hint! The longer a war drags on, the more willing the parties involved will be to accept a peace offer."
+
+ hint_war_diplomatic: "\"War can be a most profitable enterprise, but also a quick path to disaster\""
+ hint_war_administrative: "\"When trade cannot ensure the supply of vital resources, war becomes all but inevitable.\""
+ hint_war_military: "\"The only way to guarantee our security is to outgrow our neighbors.\""
+
+
+ ### Construction missing input
+ hint_battle: "Battles"
+ hint_battle_hint_text: "$hint_battle_hint_text_1$\n\n$hint_battle_hint_text_2$\n\n$hint_battle_hint_text_3$"
+ hint_battle_hint_text_1: "When an [army|e] finds itself in the same [location|e] as an enemy [army], a [battle|e] will start. Whichever [army] was first in the [location] will be the [defender|e], and as such will benefit from terrain modifiers. The battle ends one side loses all of their [morale|e] or all of their [regiments|e], whatever happens first."
+ hint_battle_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! You can bring neighboring armies to reinforce ongoing battles. If they arrive in time, they will join the fight as fresh reserves.\n@arrow_bonus_tier_2! Make sure our [armies|e] have a good [commander|e] before committing them to [battle].\n@arrow_bonus_tier_2! Always pay heed to the terrain of the [location]. The [attacker|e] will suffer penalties to their dice rolls depending on the topography and vegetation of the location. Choose your battlegrounds carefully!\n@arrow_bonus_tier_1! Sometimes it is wise to order a timely [retreat|e] before our troops are annihilated by an overwhelming enemy force."
+ hint_battle_hint_text_3: "#T Extra Hints:#!\n@hint! Losing a battle does not necessarily spell the end of the [war|e]. After a defeat, you can [retreat] to safety, regain morale, perhaps hire mercenaries, and try again in more favorable conditions (and so can your enemy! Do not be too soon to celebrate victory)\n@hint! If the [location] has a [fort|e], the fort controller will always be the [defender] in that location, regardless of who arrives first."
+
+ hint_battle_diplomatic: "\"Let our enemies perish to attrition and famine before engaging them.\""
+ hint_battle_administrative: "\"A swift victory on the battlefield would allow us to go on the offensive without exposing our towns and cities to enemy razing.\""
+ hint_battle_military: "\"A good general can determine the outcome of a battle.\""
+
+
+ ### Construction missing input
+ hint_siege_and_occupation: "Occupation and Sieges"
+ hint_siege_and_occupation_hint_text: "$hint_siege_and_occupation_hint_text_1$\n\n$hint_siege_and_occupation_hint_text_2$\n\n$hint_siege_and_occupation_hint_text_3$"
+ hint_siege_and_occupation_hint_text_1: "When an [army|e] sets foot in an [enemy|e] [location|e], it will try to [occupy|e] it. If the [location] does not have a [fort|e], it will be occupied in a matter of days. However, in the presence of a fort, a [siege|e] will begin.\n\nSieges can last months, or even years, depending on many factors, such as the level of the fortifications, the presence of artillery, the [ability|e] of the besieging [general|e], and more.\n\nWhen the garrison surrenders, the [location] will become [occupied], and the [fort] will stay under the control of the victor.\n\nOccupied locations are shown on the map with crossing bars, and are not owned by the occupier until the conquest has been ratified in a peace treaty."
+ hint_siege_and_occupation_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! Make sure that an [army|e] can survive a siege before starting it.\n@arrow_bonus_tier_1! Do not be afraid to retreat from a siege if there is a dangerous enemy army approaching."
+ hint_siege_and_occupation_hint_text_3: "#T Extra Hints:#!\n@hint! Keep an eye on your armies during a siege, even if there are currently no enemy armies around."
+
+ hint_siege_and_occupation_diplomatic: "\"A protracted siege can prove fatal for the local population and prosperity.\""
+ hint_siege_and_occupation_administrative: "\"We should arrange our forts in such a way that our main cities are defended from invaders, and can be quickly liberated in the event of an enemy siege.\""
+ hint_siege_and_occupation_military: "\"Sieging and defending key positions, like mountainous choke points, can be decisive in winning a war.\""
+
+
+ ### Construction missing input
+ hint_lacks_of_rivals: "Possible Rivals"
+ hint_lacks_of_rivals_hint_text: "$hint_lacks_of_rivals_hint_text_1$\n\n$hint_lacks_of_rivals_hint_text_2$\n\n$hint_lacks_of_rivals_hint_text_3$"
+ hint_lacks_of_rivals_hint_text_1: "[rivals|e] are [countries|e] that we publicly declare as hostile to our interests. The purpose of Rivals is twofold: As a diplomatic tool, declaring rivals helps us make friends with their own enemies. As an offensive tool, we can fabricate [casus_belli|e] against our [rivals], and intervene in [war|e] against them."
+ hint_lacks_of_rivals_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! Observe the Rivalries and [alliances|e] of our neighbors, and pick the same rivals as the country you want to ally. But beware of making too powerful enemies in the process.\n@arrow_bonus_tier_2! You can wait until other [countries] have declared their [rivals] before making your move. That way you will avoid angering the wrong [countries].\n@arrow_bonus_tier_2! Build a [spy_network|e] in our [rivals] in order to fabricate a [casus_belli|e] against them."
+ hint_lacks_of_rivals_hint_text_3: "#T Extra Hints:#!\n@hint! You do not need to declare all our available rivals. Remember you can right-click the #W Alert#! to discard it.\n@hint! Having Rivals will also allow you to be called to their wars in the opposite side. But be cautious: our [rival_enemies|e] will be able to intervene in ours as well."
+
+ hint_lacks_of_rivals_diplomatic: "\"Making unnecessary enemies is never advisable, but declaring the same Rivals as our neighbors might help us secure an alliance with them.\""
+ hint_lacks_of_rivals_administrative: "\"The enemies of our rivals should be our friends.\""
+ hint_lacks_of_rivals_military: "\"Having the proper Rivals offers abundant opportunities for those bold enough to take them.\""
+
+
+ ### Construction missing input
+ hint_control: "Proximity and Control"
+ hint_control_hint_text: "$hint_control_hint_text_1$\n\n$hint_control_hint_text_2$\n\n$hint_control_hint_text_3$"
+ hint_control_hint_text_1: "[control_icon] [control|e] is one of the most important attributes of our [location_icon] [locations|e]. It determines the percentage of [taxes_icon] [tax_base|e] and [levies_icon] [levies|e] that is effectively usable by us or our [estates_icon] [estates|e]. A [location] may have many [building_icon] [buildings|e] and high [population_icon] [population|e], but they will not benefit anyone unless there is some [control] in the [location].\n\nThe Control of a Location changes monthly towards the [max_control|e]. A [siege|e] or other events may lower it temporarily, but the Location will eventually return to its max value.\n\nThe main source of [max_control] is [proximity_icon] [proximity|e]. Our [capital_icon] [capital|e] will always have #W 100%#! Proximity, and all other Locations calculate their proximity depending on the distance to the Capital. Proximity can propagate through land and sea, and it does so more efficiently along [road_icon] [roads|e], open terrain and [seazones_icon] [seazones|e] with high [maritime_presence_icon] [maritime_presence|e]; and less efficiently through mountains, forests and [seazones] infested with [pirates|e]. There are other factors that also affect Max Control, like [pop_satisfaction|e], [integration_status|e], or some special [buildings]."
+ hint_control_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! Concentrate your building efforts in our [capital] and surrounding [locations], as they will be naturally enjoy the highest [control] from the beginning of the game.\n@arrow_bonus_tier_2! Build [road_icon] [roads|e] from the #W Location Panel#! in order to connect our [capital] to our wealthiest cities.\n@arrow_bonus_tier_2! Locations with a [port_icon] [port|e] might have an easier time reaching the [capital] through sea, especially if they have high [harbor_capacity|e]. You can increase it in our key coastal [locations] with [buildings] like a [ShowBuildingTypeName('wharf')] or a [ShowBuildingTypeName('dock')].\n@arrow_bonus_tier_1! Newly [conquered|e] [locations] will start at #W 0%#! [control], and might take a long time to reach their Maximum. You can speed up the process by placing an [army|e] in the [location], or using a [ShowCabinetActionName('increase_control_province')] [cabinet_action_icon] [cabinet_action|e]."
+ hint_control_hint_text_3: "#T Extra Hints:#!\n@hint! A [location] with #W 0%#! [control] will not generate any [gold_icon] [gold|e], but the [goods|e] it produces will still reach the [market_icon] [market|e], so we might still want to build up important resources there to ensure sufficient [supply|e].\n@hint! [ShowPopTypeName('peasants')] will [promote|e] much faster in [locations] with high [control], and therefore new [buildings] will fulfill their [employment|e] sooner.\n@hint! Plan our [road] network carefully: A single, well-placed [road] crossing a mountain chain can improve the [proximity] of many [locations] on the other side."
+
+ hint_control_diplomatic: "\"High Control helps converting and assimilating the most... #italic disorderly#! members of our society.\""
+ hint_control_administrative: "\"A Location beyond our control will hardly provide any taxes.\""
+ hint_control_military: "\"We need to control our land if we want to levy our population.\""
+
+
+ ### Crown Power
+ hint_crown_power: "Crown Power"
+ hint_crown_power_hint_text: "$hint_crown_power_hint_text_1$\n\n$hint_crown_power_hint_text_2$\n\n$hint_crown_power_hint_text_3$"
+ hint_crown_power_hint_text_1: "Our [crown_power_with_icon|e] represents the influence of our Government within our own borders. As the [ShowEstateTypeName('crown_estate')], we share the resources of our Country with our [estates_with_icon|e], whose interests might not always align with ours.\n\nA higher Crown Power will make enacting new [laws_with_icon|e] easier, improve the efficiency of our [cabinet_with_icon|e], and increase our base support in the [parliament_with_icon|e]. Perhaps more importantly, the Crown Power determines to what extent the State shares the profits and costs of [trade_with_icon|e] and [food_with_icon|e] with the [estates].\n\nOur Crown Power will primarily depend on the amount of [privileges_with_icon|e] granted to the [estates], and the [control_with_icon|e] of our most populated [locations_with_icon|e]." 
+ hint_crown_power_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! Increase Control in our [locations] by building [roads_with_icon|e] from the [capital_with_icon|e]. \n@arrow_bonus_tier_2! Revoke [privileges] from our most powerful [estates] when we have high [stability_with_icon|e], but keep an eye on their [estate_satisfaction|e]. An angry [estate] might spell trouble in the horizon.\n@arrow_bonus_tier_1! Increase [Localize(Player.GetGovernment.GetGovernmentType.GetPowerConcept)] with the [ShowCabinetActionName('strengthen_government')] [cabinet_action_with_icon|e].\n@arrow_bonus_tier_1! Build a [ShowBuildingTypeName('royal_court')] or a [ShowBuildingTypeName('sergeantry')] in the [capital]."
+ hint_crown_power_hint_text_3: "#T Extra Hints:#!\n@hint! At 50% Crown Power, half of the expenses and profits for [trade] and [food] will go directly into the [treasury_with_icon|e], while the other half will be distributed among the [estates], according to their respective [estate_power_with_icon|e].\n@hint! Crown Power is usually very low at the beginning of the game, especially for bigger [countries].\n@hint! Future [advances_with_icon|e] will unlock additional [buildings] and other bonuses to your [crown_power]."
+
+ hint_crown_power_diplomatic: "\"Whilst our Crown Power is low, we remain at the mercy of our Estates.\""
+ hint_crown_power_administrative: "\"Increasing our Crown Power would help us reap the benefits of Trade.\""
+ hint_crown_power_military: "\"A centralized State can punch well above its weight.\""
+
+
+ ### Estates
+ hint_estates: "Estates"
+ hint_estates_hint_text: "$hint_estates_hint_text_1$\n\n$hint_estates_hint_text_2$\n\n$hint_estates_hint_text_3$"
+ hint_estates_hint_text_1: "Estates are a representation of particular interests within our borders. Each Estate has a percentage of [estate_power_with_icon|e] that measures their power compared to other Estates and the [ShowEstateTypeName('crown_estate')] in a zero-sum distribution.\n\nEstates derive their power primarily from [population_with_icon|e], with each [pop_type|e] supporting one specific [estate]. Estate Power is further modified by existing [laws_with_icon|e] and [privileges_with_icon|e].\n\nEstate Power determines their power in [parliament_with_icon|e], it influences how much you can [tax|e] them, and it dictates how profits and costs from [trade_with_icon|e] and [food_with_icon|e] are distributed.\n\nEstates also have a level of [estate_satisfaction_with_icon|e] that measures their compliance with our Government. Each Estate provides a different positive modifier when their satisfaction is high, and a penalty when under #W 50%#!. When the [estate_satisfaction] of a Estate is too low, their constituent [pops|e] might start fuelling [rebellions_with_icon|e]. Most worryingly, a Estate under #W 25%#! Satisfaction will stop providing [levies_with_icon|e]."
+ hint_estates_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! [taxes|e] collected from the [estates] are the main source of [income|e] for most [countries]. You can set or automate taxes from the @economy_panel! #W Budget panel#!.\n@arrow_bonus_tier_2! Any power the Estates hold comes at the expense of our [crown_power_with_icon|e]. You can erode their power by revoking their [privileges_with_icon|e] from the @government_panel! #W Estates Tab#!.\n@arrow_bonus_tier_1! You can placate a rebellious Estate by lowering [taxes], granting a [privilege], or bribing them from the @government_panel! #W Estates Tab#!."
+ hint_estates_hint_text_3: "#T Extra Hints:#!\n@hint! The Estates collect all the [tax_base_with_icon|e] from our [locations|e], and we only get as much as we [tax] out of them.\n@hint! [countries] in the early game are very reliant on [levies_with_icon|e] provided by the [estates] to wage their [wars_with_icon|e], until they start to be replaced by more modern [regular_regiments_with_icon|e]."
+
+ hint_estates_diplomatic: "\"A strong Clergy improves the stability of the realm.\""
+ hint_estates_administrative: "\"A strong Burghers Estate adds to the wealth of our nation and the volume of our trade.\""
+ hint_estates_military: "\"A strong Nobility increases the size and might of our armies.\""
+
+
+ ### Markets
+ hint_markets: "Markets"
+ hint_markets_hint_text: "$hint_markets_hint_text_1$\n\n$hint_markets_hint_text_2$\n\n$hint_markets_hint_text_3$"
+ hint_markets_hint_text_1: "[markets_with_icon|e] are the heart of the economy in #italic Europa Universalis V#!. All Locations belong to a Market where they sell and buy the goods needed for [pop_needs|e], [buildings|e], and [constructions|e]. By selling goods to their Market, Location generate [tax_base_with_icon|e] for the [estates|e], which can in turn be collected by the Government in the form of [taxes|e]."
+ hint_markets_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! Go to the @economy_panel![Link('trade', 'subtab = markets', 'Markets Panel')] to see our relevant Markets. Markets with a #G Green#! header contain our [owned|e], whereas Markets with Blue headers are Markets where we have [merchant_capacity|e], but do not [own] any [location].\n@arrow_bonus_tier_3! You are advised to automate each individual [market] by clicking on the @automation! #W Cog Icon#!. This will keep all our [merchant_capacity_with_icon|e] used up on the most interesting [merchants_with_icon|e] at all times.\n@arrow_bonus_tier_2! Construct [buildings_with_icon|e] like [ShowBuildingTypeName('marketplace')] and [ShowBuildingTypeName('trade_office')] to increase our [merchant_capacity_with_icon|e] in a Market."
+ hint_markets_hint_text_3: "#T Extra Hints:#!\n@hint! The borders of Markets are dynamic: [locations] will fall under the [market] with the highest [market_attraction_with_icon|e] in their territory, even if it is a foreign Market. The [market_attraction] of foreign Markets can be negated by [protectionism_with_icon|e]."
+
+ hint_markets_diplomatic: "\"The Invisible Hand is a wise master, but sometimes requires a little guidance.\""
+ hint_markets_administrative: "\"It doeth be the economy, thou fool!\""
+ hint_markets_military: "\"Growing our Markets is a fine thing.\nConquering neighboring Markets is even better.\""
+
+
+ ### Food
+ hint_food: "Food"
+ hint_food_hint_text: "$hint_food_hint_text_1$\n\n$hint_food_hint_text_2$\n\n$hint_food_hint_text_3$"
+ hint_food_hint_text_1: "[pops|e] need [food_with_icon|e] to live, and [armies|e] need [food] to march. They both get the [food] they need from the Stockpile of the [province_with_icon|e] they are in (and not from the [location]!). If there is not enough [food], [pops] will suffer [starvation|e], and [armies] will suffer [attrition|e].\n\nThere are 3 layers involved in the production and distribution of $game_concept_food$:\n\n@location! [local_food|e]:\n$game_concept_food$ is produced primarily in those [locations|e] with [food_raw_materials|e] as their [rgo_with_icon|e], like [ShowGoodsName('livestock')]. Any surplus or deficit the [location] may have is added to the $game_concept_provincial_food$.\n\n@province! [provincial_food|e]:\nThe $game_concept_provincial_food$ is the most important layer. If a [province|e] does not produce enough $game_concept_food$ to sustain the consumption of all its $game_concept_locations$, the Provincial storage will decrease. When it depletes, all $game_concept_locations$ inside a $game_concept_province$ will suffer [starvation|e]. But before that happens, the $game_concept_province$ will try to [buy_food|e] from its $game_concept_market$.\n\n@market! [market_food|e]:\nAll $game_concept_provinces$ in a [market|e] will try to [sell_food|e] when their storage is full, and try to [buy_food] when it is low. As long as there is enough $game_concept_food$ inside a $game_concept_market$, no one will starve."
+ hint_food_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! Go to the @economy_panel![Link('trade', 'subtab = markets', 'Markets Panel')] to see our relevant Markets. Markets with a #G Green#! header contain our [owned|e] [locations], so we need to make sure their [food] balance stays positive. If [food] is decreasing rapidly in any of our Markets, you will see a Yellow Banner. If there are starving [locations], you will see a Red banner.\n@arrow_bonus_tier_3! In order to increase food production in any of our Markets, click on the Food button to go to the @production_panel![Link('food_production', '', 'lateralview_food_production_entry_name')]. From there you can see which of our [provinces] is in danger of [starvation], and expand their [rgo].\n@arrow_bonus_tier_3! Expand [rgo_with_icon|e] in Locations with the best [food_raw_materials], like [ShowGoodsName('rice')] or [ShowGoodsName('wheat')], and high [food_productivity_with_icon|e].\n@arrow_bonus_tier_1! We can also use [merchant_capacity_with_icon|e] to import [food_raw_materials|e] from other [markets], which will also move an equivalent amount of [food]. You can do that from the @economy_panel![Link('trade', 'subtab = trades', 'lateralview_trade_entry_name')]."
+ hint_food_hint_text_3: "#T Extra Hints:#!\n@hint! Food production decreases during [winter_with_icon|e]. Do not panic if you see all our Markets go in the negative for some months.\n@hint! [provinces|U] in deficit will buy the surplus of your most productive Provinces, as long as they belong to the same Market, so it is usually best to expand food goods in [locations] with the highest [food_productivity].\n@hint! [town_or_city|e] are usually less efficient than [rural_locations|e] at producing [food]."
+
+ hint_food_diplomatic: "\"Protracted hunger can spell the destruction of our population, and the downfall of our nation.\""
+ hint_food_administrative: "\"Hunger is mostly a matter of perspective. It is not that bad if you are the one selling the food.\""
+ hint_food_military: "\"An army marches on its stomach.\""
+
+ ### Maritime Presence
+ hint_maritime: "Maritime Presence"
+ hint_maritime_hint_text: "$hint_maritime_hint_text_1$\n\n$hint_maritime_hint_text_2$\n\n$hint_maritime_hint_text_3$"
+ hint_maritime_hint_text_1: "[maritime_presence_with_icon|e] is a very important metric found in coastal [seazones_with_icon|e]. It has the ability to help exert [proximity_with_icon|e] along our coasts or islands.\n\nAdditionally, it provides [merchant_power_with_icon|e] to the [market_with_icon|e] that the [seazones] belongs to.\n\n[maritime_presence] is gained passively through buildings and through [navy_with_icon|e] presence, it has a decaying effect but it can also be lost due to [privateers_with_icon|e] or [blockade_with_icon|e]."
+ hint_maritime_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! Create specialized [navies] with ships that have high [maritime_presence] gain. You can then put them at one of your coastal [seazones] and they will spread their [maritime_presence] equally to all [seazones] that belong to that same [province_with_icon|e].\n@arrow_bonus_tier_3! Alternatively, you can set them on [military_objective_with_icon|e] #V $MILITARY_OBJECTIVE_TYPE_NAME_patrol_the_seas$#!, which will do the same thing but will also automatically dock the ships to be repaired if needed.\n@arrow_bonus_tier_1! [ShowBuildingTypeName('coastal_fort')] is a very good building to use!"
+ hint_maritime_hint_text_3: "#T Extra Hints:#!\n@hint! [maritime_presence] is only spread to the [province] they are on, even if the objective is set to more than 1 [provinces]. #V $MILITARY_OBJECTIVE_TYPE_NAME_patrol_the_seas$#! will move the [navy] once the [seazone] location has reached 100 [maritime_presence].\n@hint! [privateers] work on [area_with_icon|e] level compared to [maritime_presence]."
+
+ hint_maritime_diplomatic: "\"We need to take advantege of our coast to improve our trades.\""
+ hint_maritime_administrative: "\"The safer the seafaring, the better the communication with our populace.\""
+ hint_maritime_military: "\"With a strong naval presence, pirates will not dare to touch our trade routes.\""
+
+ hint_slaves: "Slaves"
+ hint_slaves_hint_text: "$hint_slaves_hint_text_1$\n\n$hint_slaves_hint_text_2$\n\n$hint_slaves_hint_text_3$"
+ hint_slaves_hint_text_1: "@slaves_goods! [ShowGoodsName('slaves_goods')] are a most special kind of [good_with_icon|e]. Like any other [good], they are bought and sold in [markets_with_icon|e], and their price depends on [supply|e] and [demand|e]. Unlike any other [good], it represents actual [pops_with_icon|e], who are moved along whenever the [good] is traded.\n\nAs a [pop_type_with_icon|e], @slaves! [ShowPopTypeName('slaves')] can be used as workforce in [rgo_with_icon|e] and Slave [buildings_with_icon|e], such as the [ShowBuildingTypeName('sugar_plantation')].\n\n[buildings] like the [ShowBuildingTypeName('slave_market')] can transform existing @slaves! [ShowPopTypeName('slaves')] into @slaves_goods![ShowGoodsName('slaves_goods')] [goods], which are in turn sold in the [market]. The [good] is then traded away like any other [good], and [buildings] can demand it as input. When that happens, @slaves! [ShowPopTypeName('slaves')] will be moved to the [location] to work in the [building]."
+ hint_slaves_hint_text_2: "#T Recommended Actions:#! \n@arrow_bonus_tier_3! When establishing [colonies_with_icon|e] in another [continent|e], you can [trade_with_icon|e] Slaves into your colonial [markets] to work in your plantations.\n@arrow_bonus_tier_2! You can build [ShowBuildingTypeName('slave_center')] [buildings] in foreign [locations] within your [trade_range_with_icon|e] to ensure a steady supply of Slaves to trade away."
+ hint_slaves_hint_text_3: "#T Extra Hints:#!\n@hint! [pops|e] are usually enslaved by [buildings] like the [ShowBuildingTypeName('slave_market')], although some [countries] have special mechanics that allow the enslavement of [pops] during [war_with_icon|e].\n@hint! [ShowReligionGroupName('christian')] only allows Slaves in Plantation [buildings], which are unlocked in the #V Age of Discovery#! and can only be built overseas."
+
+ hint_slaves_diplomatic: "\"All men are created equal, except for some.\""
+ hint_slaves_administrative: "\"Nothing of note was ever achieved without the sacrifice of the many.\""
+ hint_slaves_military: "\"If free labor is ever scarce, heathens can provide.\""
+
+#### ECO tutorial
+hint_eco: "Advanced Economy Advice"
+hint_eco_hint_text: "$hint_eco_hint_text_1$\n\n$hint_eco_hint_text_2$\n\n$hint_eco_hint_text_3$"
+hint_eco_hint_text_1: "Even if you can automate many aspects of your economy, there are still some actions that you need to do directly in order to move your [country] forward."
+hint_eco_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! The best advice is always to try and reduce your [expenses_with_icon|e].\n\n@arrow_bonus_tier_3! As the player, you should concentrate on planning [towns_and_cities_with_icon|e] and [roads_with_icon|e]\n    Since [towns_and_cities_with_icon|e] reduce the amount of [rgo_with_icon|e] you can build, you want to urbanize the least valuable of your [rural_locations]. Those usually are:\n@sand![ShowGoodsName('sand')] @clay![ShowGoodsName('clay')] @horses![ShowGoodsName('horses')] @medicaments![ShowGoodsName('medicaments')] @wine![ShowGoodsName('wine')] @olives![ShowGoodsName('olives')] @millet![ShowGoodsName('millet')] @legumes![ShowGoodsName('legumes')] @fruit![ShowGoodsName('fruit')] @wild_game![ShowGoodsName('wild_game')] @beeswax![ShowGoodsName('beeswax')] \n\n@arrow_bonus_tier_3! Release [subjects_with_icon|e] on lands with low [control_with_icon|e], as they will propagate their own $game_concept_control$.\n    [annex_with_icon|e] your subjects once you have built up your infrastructure in the area.\n    [annexation_with_icon|e] speed is scaled by relative $game_concept_country$ size and [cultural_influence|e].\n\n@arrow_bonus_tier_2! Valuable [rgo_with_icon|e] are very good investment, especially if you also build up your [merchant_capacity_with_icon|e] to [export_with_icon|e] them.\n@goods_gold![ShowGoodsName('goods_gold')] @silver![ShowGoodsName('silver')] @gems![ShowGoodsName('gems')] @pearls![ShowGoodsName('pearls')] @amber![ShowGoodsName('amber')] @ivory![ShowGoodsName('ivory')] @pepper![ShowGoodsName('pepper')] @saffron![ShowGoodsName('saffron')] @chili![ShowGoodsName('chili')]\n\n@arrow_bonus_tier_2! [trade_income_with_icon|e] scales with [Link('hints', 'selected_hint = hint_crown_power', '@hint! Crown Power')] and is always good to increase by expanding [Link('hints', 'selected_hint = hint_increasing_trade_capacity', '@hint! Trade Capacity')], which contrary to [tax_base] does not scale down with [control]\n\n@arrow_bonus_tier_1! Keep industrial $game_concept_goods$ $game_concept_prices$ low! They will boost the profitability of $game_concept_towns_or_cities$ and make [buildings_with_icon|e] cheaper to maintain.\n@lumber![ShowGoodsName('lumber')] @masonry![ShowGoodsName('masonry')] @glass![ShowGoodsName('glass')] @iron![ShowGoodsName('iron')] @mercury![ShowGoodsName('mercury')] @steel![ShowGoodsName('steel')]\n\n@arrow_bonus_tier_1! $game_concept_buildings$ that do not have [production_method_with_icon|e] will have a[maintenance_with_icon|e] cost. It will fluctuate based on the $game_concept_price$ of the input $game_concept_goods$. Remember that [demand|e] from [buildings] will also stimulate the growth of your economy!"
+hint_eco_hint_text_3: "#T Extra Hints:#!\n[Link('hints', 'selected_hint = hint_inflation', '@hint! Reducing inflation')]\n[Link('hints', 'selected_hint = hint_increasing_trade_capacity', '@hint! Increasing trade capacity')]\n[Link('hints', 'selected_hint = hint_control', '@hint! Increasing control')]"
+hint_eco_diplomatic: "\"Sometimes coins offer the best laverage.\""
+hint_eco_administrative: "\"Gold is the blood of nations.\""
+hint_eco_military: "\"Income taken from others is the best kind of income.\""
+
+#### POL tutorial
+hint_pol: "Advanced Politics Advice"
+hint_pol_hint_text: "$hint_pol_hint_text_1$\n\n$hint_pol_hint_text_2$\n\n$hint_pol_hint_text_3$"
+hint_pol_hint_text_1: "All [countries_with_icon|e] start with some disadvantages. Make sure to check [Link('government', 'tabcontent = estates', '@government_panel! $lateralview_government_entry_name$')] for [privileges_with_icon|e] and [laws_with_icon|e]. Those macro-changes can be tremendously helpful in the long term.\n\nDo not fear to change things up!"
+hint_pol_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! Make sure that [estate_satisfaction_equilibrium_with_icon|e] is enough to [tax|e] [ShowEstateTypeName('burghers_estate')] and [ShowEstateTypeName('peasants_estate')] at max level without it going below #W 50%#!.\n\n@arrow_bonus_tier_3! Check [Link('societal_values', '', '@government_panel! Government Panel > Values')] to find out what [societal_values_with_icon|e] are worth pursuing. In general most advantegous are:\n$BULLET_WITH_TAB$[ShowSocietyDirectionName('capital_economy')]\n$BULLET_WITH_TAB$[ShowSocietyDirectionName('centralization')]\n\n@arrow_bonus_tier_3! Go through [laws_with_icon|e] to check what should be changed.\n    [parliament_with_icon|e] will allow for easy $game_concept_law$ changes and should be one of priorities early game\n    $game_concept_laws$ to watch out for at game start:\n    $BULLET_WITH_TAB$[ShowLawName('mining_law')]\n    $BULLET_WITH_TAB$[ShowLawName('precious_metal_distribution_law')]\n    $BULLET_WITH_TAB$[ShowLawName('distribution_of_power_law')]\n    $BULLET_WITH_TAB$[ShowLawName('administrative_system')]\n\n@arrow_bonus_tier_3! Go through assigned and available [privileges_with_icon|e] for every [estate_with_icon|e]. They are a tool to modify $game_concept_estate_satisfaction_equilibrium$ and $game_concept_societal_values$ drift.\n   [ShowEstateTypeName('nobles_estate')] should be given only enough to be loyal. Taking away $game_concept_estate_power$ from them is beneficial in the long term.\n    $BULLET_WITH_TAB$[ShowEstatePrivilegeName('nobles_land_rights')]\n    $BULLET_WITH_TAB$[ShowEstatePrivilegeName('nobility_council')]\n    $BULLET_WITH_TAB$[ShowEstatePrivilegeName('noble_serfdom_rights')]\n    $BULLET_WITH_TAB$[ShowEstatePrivilegeName('noble_sponsored_navy')]\n\n   [ShowEstateTypeName('clergy_estate')] should be given every positive $game_concept_privilege$ even if they cannot be taxed - each point of their $game_concept_estate_satisfaction$ beyond #W 50%#! provides bonus to [research_progress_with_icon|e]\n    $BULLET_WITH_TAB$[ShowEstatePrivilegeName('embellish_great_works_of_faith')]\n    $BULLET_WITH_TAB$[ShowEstatePrivilegeName('clergy_in_administration')]\n    $BULLET_WITH_TAB$[ShowEstatePrivilegeName('clergy_religious_state')]\n    $BULLET_WITH_TAB$[ShowEstatePrivilegeName('clerical_advisory_council')]\n\n   [ShowEstateTypeName('burghers_estate')] should be actively given as much positive $game_concept_privileges$ as possible. They are mostly positive, meanwhile increasing burghers [estate_power_with_icon|e] will lower it for other $game_concept_estates$. Furthermore each point of $game_concept_estate_satisfaction$ will raise [production_efficiency_with_icon|e]\n    $BULLET_WITH_TAB$[ShowEstatePrivilegeName('building_roads_rights')]\n    $BULLET_WITH_TAB$[ShowEstatePrivilegeName('market_fairs')]\n    $BULLET_WITH_TAB$[ShowEstatePrivilegeName('building_rights')]\n    $BULLET_WITH_TAB$[ShowEstatePrivilegeName('allow_trade_center_sponsorship')]\n    $BULLET_WITH_TAB$[ShowEstatePrivilegeName('commercial_advisory_council')]\n    $BULLET_WITH_TAB$[ShowEstatePrivilegeName('control_over_the_coinage')]\n    $BULLET_WITH_TAB$[ShowEstatePrivilegeName('guild_investments')]\n    $BULLET_WITH_TAB$[ShowEstatePrivilegeName('land_of_commerce')]\n    $BULLET_WITH_TAB$[ShowEstatePrivilegeName('urban_development_grants')]\n\n   [ShowEstateTypeName('peasants_estate')] $game_concept_privileges$ should give enough $game_concept_estate_satisfaction_equilibrium$ to allow for maximum $game_concept_tax$. It's important to keep in mind their drift towards [ShowSocietyDirectionName('decentralization')] as it's not ideal. Nevertheless Commoners will have low $game_concept_estate_power$ throughout the game, so cost for revocation will be low compared to other $game_concept_estates$\n    $BULLET_WITH_TAB$[ShowEstatePrivilegeName('peasants_allowed_weapons_privilege')]\n    $BULLET_WITH_TAB$[ShowEstatePrivilegeName('allow_hunting')]\n    $BULLET_WITH_TAB$[ShowEstatePrivilegeName('no_labor_sunday')]\n    $BULLET_WITH_TAB$[ShowEstatePrivilegeName('peasants_represented_in_parliament')]\n    $BULLET_WITH_TAB$[ShowEstatePrivilegeName('peasants_fewer_levies')]\n\n@arrow_bonus_tier_2! Look for [government_reforms_with_icon|e] that would fit the $game_concept_societal_values$ you seek. Keep in mind that some bonuses, like [diplomatic_capacity|e], could allow to lower [diplomatic_maintenance|e].\n\n@arrow_bonus_tier_2! Some [cabinet_actions_with_icon|e] like [ShowCabinetActionName('stabilize_country')] or [ShowCabinetActionName('strengthen_government')] can allow lowering expenses, leaving you with more $game_concept_income$ leftover!"
+hint_pol_hint_text_3: "#T Extra Hints:#!\n[Link('hints', 'selected_hint = hint_crown_power', '@hint! Crown power')]\n[Link('hints', 'selected_hint = hint_estates', '@hint! Estates')]"
+hint_pol_diplomatic: "\"A shrewd ruler can make the most of every contingency\""
+hint_pol_administrative: "\"Prosperous politics means prosperous businesses\""
+hint_pol_military: "\"Our Estates are often worse than our enemies.\""
+
+#### MIL tutorial
+hint_mil: "Advanced Expansion Advice"
+hint_mil_hint_text: "$hint_mil_hint_text_1$\n\n$hint_mil_hint_text_2$\n\n$hint_mil_hint_text_3$"
+hint_mil_hint_text_1: "Two general advices: professional [armies_with_icon|e] (including [mercenaries|e]) will always beat similarly sized [levies_with_icon|e], and the best way to grow your $game_concept_army$ is to grow the economy."
+hint_mil_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_3! Get the [ShowInstitutionName('professional_armies')] [institution|e] as soon as possible: getting [ShowAdvanceName('armory_advance')] quickly will allow to win previously impossible [wars_with_icon|e].\n\n@arrow_bonus_tier_3! [war_score_with_icon|e] from [battles|e] scales down with [ages|e]. At the beginning it's up to #W 50%#! making it easy to win [wars|e] with $game_concept_battles$ alone!\n\n@arrow_bonus_tier_3! Make sure to have access to strategic [goods_with_icon|e]. They are not needed in big amounts, but they are necessary to build up your [army|e] and [navy|e]: @tin![ShowGoodsName('tin')] @lead![ShowGoodsName('lead')] @copper![ShowGoodsName('copper')]\n\n@arrow_bonus_tier_3! $game_concept_armies$ only [reinforce_with_icon|e] in ally territory.\n\n@arrow_bonus_tier_3! [ShowUnitCategoryName('army_infantry')] is the main [battle|e] line. It's cheap and effective at absorbing [damage_taken|e], meanwhile [ShowUnitCategoryName('army_artillery')] cause vast damage to the frontline -  it's important that the frontline survives [bombard_phase_with_icon|e]\n\n@arrow_bonus_tier_2! Tracing a clear logistic line for your $game_concept_armies$ in [enemy_with_icon|e] territory is crucial. If your line gets cut the whole $game_concept_army$ could disappear due to [attrition|e]. You can use [ShowUnitCategoryName('army_auxiliary')] units to transport [food|e] to the frontline, or place [supply_depots|e] to help with logistics.\n\n@arrow_bonus_tier_1! [manpower_with_icon|e] [buildings|e] have the highest [maintenance_with_icon|e] cost in the game, so it is best to build those in [locations|e] with high [control|e].\n\n@arrow_bonus_tier_1! $game_concept_battles$ tipically last only a few days, so before pushing far be sure you can always $game_concept_reinforce$ in time."
+hint_mil_hint_text_3: "#T Extra Hints:#!\n[Link('hints', 'selected_hint = hint_manpower', '@hint! Manpower')]\n[Link('hints', 'selected_hint = hint_sailors', '@hint! Sailors')]\n[Link('hints', 'selected_hint = hint_war', '@hint! War')]\n[Link('hints', 'selected_hint = hint_battle', '@hint! Battles')]\n[Link('hints', 'selected_hint = hint_siege_and_occupation', '@hint! Occupation and Sieges')]"
+hint_mil_diplomatic: "\"Make other countries win your wars\""
+hint_mil_administrative: "\"Attrition could lead to the decimation of any army\""
+hint_mil_military: "\"Do not bring a knife to a gun fight\""
+
+hint_holland: "Starting Advice for Holland"
+hint_holland_hint_text: "The highly urbanized [locations] of the Low Countries make the [Player.GetLongName] a prime candidate to become a commercial powerhouse in Northern Europe.\n\n@hint! #T Build [ShowBuildingTypeName('marketplace')] buildings in every [ShowLocationRankName('town')]#!\nThe Trade Automation will use their [merchant_capacity_with_icon|e] to [import_with_icon|e] the [raw_materials_with_icon|e] that the [market_icon][Player.GetCapital.GetMarket.GetName] lacks, as well as to [export_with_icon|e] the surplus of [produced_goods_with_icon|e] from our Towns.\n\n@hint! #T Expand the textile industry#!\nThere is much profit to be made from exporting [ShowGoodsName('fine_cloth')]. Build the [ShowBuildingTypeName('cloth_guild')] and [ShowBuildingTypeName('fine_cloth_guild')] buildings, and consider importing [ShowGoodsName('wool')] from the [ShowLocationName('london')] Market if need be.\n\n@hint! #T Increase our [crown_power]#!\n[trade_income_with_icon|e] is divided among the [ShowEstateTypeName('crown_estate')] and the [estates_with_icon|e] according to their relative power. Keeping our [crown_power_with_icon|e] high will ensure a steady flow of [trade_income] into the [treasury|e]. You can learn more about [crown_power] in the [Link('hints', 'selected_hint = hint_crown_power', 'Crown Power Hint')].\n\n@hint! #T Mind the [food] supply#!\n[urban_locations|e] produce less [food_with_icon|e] than [rural_locations|e]. Keep an eye on the [food_stockpile_with_icon|e] of the [Player.GetCapital.GetMarket.GetName], and expand our [ShowGoodsName('fish')] and [ShowGoodsName('livestock')] [rgo_with_icon|e] if necessary. Our [budget] will suffer if [food] becomes too expensive.\n\n@hint! #T Placate our neighbors#!\nWe may be rich, but our modest size renders us vulnerable to foreign aggression. Use the $IMPROVE_RELATIONTITLE$ [diplomatic_action_with_icon|e] with our most threatening neighbors, especially [GetCountry('FRA').GetName] and [GetCountry('ENG').GetName]."
+
+hint_holland_diplomatic: "$hint_advisor_salute_diplomatic$"
+hint_holland_administrative: "$hint_advisor_salute_administrative$"
+hint_holland_military: "$hint_advisor_salute_military$"
+
+
+hint_hungary: "Starting Advice for Hungary"
+hint_hungary_hint_text: "The [Player.GetLongName] starts in a privileged position as one of the main powers in the [region|e]. We have an [alliance_with_icon|e] with #W Poland#!, #W Bosnia#! is our [subject_with_icon|e], and #W Croatia#! is in a [personal_union_with_icon|e] under our [ruler_with_icon|e] [Player.GetGovernment.GetRuler.GetName]. That means we can focus on developing our [country|e] without worrying about external threats... at least for the time being.\n\n@hint! #T Build [roads] towards your mines#!\nThere are rich deposits of [ShowGoodsName('goods_gold')] and [ShowGoodsName('silver')] to the north of [capital_icon] [Player.GetCapital.GetName]. However, they are underbuilt, and in [locations] with low [control_with_icon|e]. We should seek to build [roads_with_icon|e] from [Player.GetCapital.GetNameWithNoTooltip] to those valuable mines, in order to increase our [proximity_with_icon|e], and therefore our [control].\n\n@hint!  #T Build Jewelry Guilds around your [capital]#!\nDue to the high supply, the price of [ShowGoodsNameWithNoTooltip('goods_gold')] and [ShowGoodsNameWithNoTooltip('silver')] inside the [market_icon] [Player.GetCapital.GetMarket.GetName] is extremely low. A [ShowBuildingTypeName('jewelry_guild')] will use [ShowGoodsNameWithNoTooltip('goods_gold')] and [ShowGoodsNameWithNoTooltip('silver')] to produce [ShowGoodsName('jewelry')], a very profitable crafted good, adding even more value to our mines in the process.\n\n@hint! #T Build [ShowBuildingTypeName('marketplace')] to export your surplus#!\nThe Automated [trade_with_icon|e] will [export_with_icon|e] any surplus of [goods_with_icon|e], such as [ShowGoodsNameWithNoTooltip('jewelry')], to other [markets_with_icon|e], which will create [trade_income_with_icon|e] and keep the entire production chain profitable.\n\n@hint! #T Revoke the [ShowPolicyName('gold_export_ban')]#!\nEurope craves our [ShowGoodsNameWithNoTooltip('goods_gold')], and exporting it directly would be a very profitable endeavor, but our current [ShowLawName('precious_metal_distribution_law')] [law|e] forbids it. Consider changing the [policy] during the next [parliament_with_icon|e]." 
+
+hint_hungary_diplomatic: "$hint_advisor_salute_diplomatic$"
+hint_hungary_administrative: "$hint_advisor_salute_administrative$"
+hint_hungary_military: "$hint_advisor_salute_military$"
+
+
+hint_norway: "Starting Advice for Norway"
+hint_norway_hint_text: "The [Player.GetLongName] is a vast [country|e], but our [control|e] outside our [capital|e] is nominal at best. We should expand our infrastructure, both maritime and landborne, to increase our [proximity|e] and harness the resources of the north.\n\n@hint! #T Build [roads] from our [capital] #!\nWe should aim to lay [roads_with_icon|e] from [capital_icon] [Player.GetCapital.GetName] to every nearby [ShowLocationRankName('town')] and valuable [rgo_with_icon|e], in order to increase our [proximity_with_icon|e] and [control_with_icon|e]. The [ShowGoodsName('silver')] mines west of [Player.GetCapital.GetNameWithNoTooltip] should be particularly profitable, with due investment. Check the [proximity] Map Mode frequently!\n\n@hint! #T Increase [maritime_presence] #!\nCarving [roads] through our mountainous hearthland can become a vain and expensive pursuit. With good [maritime_presence_with_icon|e] along our coastline, [proximity] could propagate much more efficiently by sea. Build [ShowBuildingTypeName('wharf')] and [ShowBuildingTypeName('dock')] in our Towns, and have fleets of [ShowUnitCategoryName('navy_light_ship')] patrolling our coasts, once we have researched the appropriate [advance_with_icon|e].\n\n@hint! #T Found Towns in good harbors close to our [capital]#!\nThe [proximity] of coastal [locations] is much improved by [natural_harbor_suitability_with_icon|e]. Check the $mapmode_natural_harbor_suitability_name$ Mapmode to look for our best natural ports.\n\n@hint! #T Expand our industries#!\nBuild [ShowBuildingTypeName('fine_cloth_guild')], [ShowBuildingTypeName('furniture_guild')], and [ShowBuildingTypeName('scriptorium')] in our Towns to process our natural resources, and build [ShowBuildingTypeName('marketplace')] to [export_with_icon|e] them to other [markets_with_icon|e].\n\n@hint! #T Strengthen the Union with Sweden #!\nOur [personal_union_with_icon|e] with [GetCountry('SWE').GetName] guarantees peace in our borders. We could strive for deeper integration with their country by enacting common [laws] in the [international_organization|e] Panel."
+
+hint_norway_diplomatic: "$hint_advisor_salute_diplomatic$"
+hint_norway_administrative: "$hint_advisor_salute_administrative$"
+hint_norway_military: "$hint_advisor_salute_military$"
+
+
+hint_naples: "Starting Advice for Naples"
+hint_naples_hint_text: "As the biggest power in the [region|e], the [Player.GetLongName] is poised to dominate Italian trade and politics, while our [subjects|e] in Greece constitute a convenient foothold for external expansion.\n\n@hint! #T Build [roads] from our [capital] #!\nWe should aim to lay [roads_with_icon|e] from [capital_icon] [Player.GetCapital.GetName] to every nearby [ShowLocationRankName('town')] and valuable [rgo_with_icon|e], in order to increase our [proximity_with_icon|e], and therefore our [control_with_icon|e].\n\n@hint! #T Expand our extraction of [raw_materials]#!\nOur [country] contains valuable [raw_materials_with_icon|e] in abundance. [ShowGoodsName('wool')], [ShowGoodsName('fiber_crops')], and [ShowGoodsName('silk')] are not only very valuable by themselves, but they can also be used by our textile industries in [urban_locations|e]. Expand those [rgo_with_icon|e] as soon as possible, and prioritize increasing [control] there.\n\n@hint! #T Develop the textile industry #!\nBuild [ShowBuildingTypeName('cloth_guild')] and [ShowBuildingTypeName('fine_cloth_guild')] [buildings] in our [urban_locations]. They will use our [raw_materials] to produce expensive [produced_goods_with_icon|e], while the added demand will make our [rgo] even more profitable.\n\n@hint! #T Build [ShowBuildingTypeName('marketplace')] to export our surplus#!\nThe Automated [trade_with_icon|e] will [export_with_icon|e] any surplus of [goods|e], such as [ShowGoodsNameWithNoTooltip('fine_cloth')], to other [markets_with_icon|e], which will create [trade_income_with_icon|e] and keep the entire production chain profitable."
+
+hint_naples_diplomatic: "$hint_advisor_salute_diplomatic$"
+hint_naples_administrative: "$hint_advisor_salute_administrative$"
+hint_naples_military: "$hint_advisor_salute_military$"
+
+
+hint_castile: "Starting Advice for Castile"
+hint_castile_hint_text: "As the dominant power of the [region|e], the [Player.GetLongName] stands on privileged grounds for unifying Iberia under one throne. However, our administration is already stretched thin, and our [control] in the south is so low it barely contributes to our [budget|e]. It would be wise to consolidate our [control] over our current territory before we embark on futher conquests.\n\n@hint! #T Build [roads] from our [capital] #!\n[locations] without [control_with_icon|e] are virtually useless to our administration. Build [roads_with_icon|e] and [ShowBuildingTypeName('bridge_infrastructure')] [buildings] from our [capital_with_icon|e] in order to increase our [proximity_with_icon|e], and therefore our [control]. Check the [proximity] Map Mode frequently!\n\n@hint! #T Subjugate [GetCountry('GRA').GetName]#!\nEven if we are not in a position to [own|e] their land very effectively, we could make [GetCountry('GRA').GetName] our [subject_with_icon|e]. They would rule the land on our behalf and pay monthly tribute into our [treasury]. We can consider [annexing_with_icon|e] them once our infrastructure and technology have develop enough to allow owning the land directly. In order to [annex] a [subject] we will need to have ruled over them for more than #Y 10#! years, and enjoy good relations with them.\n\n@hint! #T Plus Ultra#!\n[explorers_with_icon|e] tell of wealth beyond measure from their expeditions to India. However, embarking in such enterprises without the most modern [advances_with_icon|e] may prove a ludicrously expensive endeavor."
+
+hint_castile_diplomatic: "$hint_advisor_salute_diplomatic$"
+hint_castile_administrative: "$hint_advisor_salute_administrative$"
+hint_castile_military: "$hint_advisor_salute_military$"
+
+
+hint_ottomans: "Starting Advice for the Ottomans"
+hint_ottomans_hint_text: "The impending Rise of the Turks [situation|e] will offer a unique opportunity for rapid expansion into Greece and Anatolia. Use the Situation [actions|e] to get a [casus_belli_with_icon|e] on our neighbors, and unleash our might upon them.\n\n@hint! #T Integrate our conquests #!\nNewly [conquered_with_icon|e] [locations] need to be [integrated_with_icon|e] into our administration via the [cabinet_with_icon|e] before we can reap any fruit from our conquests.\n\n@hint! #T Build [roads] from our [capital] #!\n[locations] without [control_with_icon|e] are virtually useless to our administration. Lay [roads_with_icon|e] from our [capital_with_icon|e] in order to increase our [proximity_with_icon|e], and therefore our [control]. Check the [proximity] Map Mode frequently!\n\n@hint! #T Create [subjects] to rule the conquered land#!\nAs you expand, you will come to conquer territories that lie far beyond the reach of our [proximity]. You are adviced to create [subjects_with_icon|e] to rule the land on our behalf until you can afford to administer it directly.\n\n@hint! #T Annex our [subjects] as [proximity] improves #!\nAs we develop our infrastructure and grow our [proximity], lands that were once barren to us become worth owning directly. In order to [annex_with_icon|e] a [subject] we will need to have ruled over them for more than #Y 10#! years, and enjoy good relations with them.\n\n@hint! #T Increase [maritime_presence] #!\nThe rough terrain of Greece and Anatolia makes projecting [proximity] by land difficult. With good [maritime_presence_with_icon|e] along our coastline, [proximity] could propagate much more efficiently by sea. Build [ShowBuildingTypeName('wharf')] and [ShowBuildingTypeName('dock')] in our Towns, and have [navies_with_icon|e] patrolling our coasts. This would be particularly important if we were to move our [capital] to [ShowLocationName('constantinople')]..."
+
+hint_ottomans_diplomatic: "$hint_advisor_salute_diplomatic$"
+hint_ottomans_administrative: "$hint_advisor_salute_administrative$"
+hint_ottomans_military: "$hint_advisor_salute_military$"
+
+
+
+# TEMPLATE FOR COPY-PASTE ####
+
+# hint_name: "ABC"
+# hint_name_hint_text: "$hint_name_hint_text_1$\n\n$hint_name_hint_text_2$\n\n$hint_name_hint_text_3$"
+# hint_name_hint_text_1: ""
+# hint_name_hint_text_2: "#T Recommended Actions:#!\n@arrow_bonus_tier_1! \n@arrow_bonus_tier_1! \n@arrow_bonus_tier_1! "
+# hint_name_hint_text_3: "#T Extra Hints:#!\n@hint! \n@hint! \n@hint! "
+
+# hint_name_diplomatic: "\"ABC\""
+# hint_name_administrative: "\"ABC\""
+# hint_name_military: "\"ABC\""

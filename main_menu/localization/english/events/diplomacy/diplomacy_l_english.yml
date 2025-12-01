@@ -1,0 +1,19 @@
+﻿l_english:
+ diplomatic_annex.1.title: "Annexing [target.GetNameWithNoTooltip]"
+ diplomatic_annex.1.desc: "Our integration of [target.GetLongName] has taken a fair bit of time, but now that [target.GetCapital.GetName] is a [ROOT.GetCountry.GetAdjective] [target.GetCapital.GetRank.GetNameWithNoTooltip] it will reach its full potential and make our nation prosper even more.\n\nThere are other countries that has not appreciated this expansion of our territory though."
+ diplomatic_annex.1.a: "Oderint dum metuant!"
+ every_subject_hates_us_tt: "Our [subjects|e] change their [opinion|e] of the [ROOT.GetCountry.GetLongName] by [ShowBiasValue('opinion_annexed_other_subject')|+=0]"
+ every_annex_target_neighbor_hates_us_tt: "Every neigbhor [country|e] of [target.GetName] changes their [opinion|e] of the [ROOT.GetCountry.GetLongName] by [ShowBiasValue('opinion_annexed_neighbor')|+=0]"
+
+ opinion_annexed_neighbor: "Annexed neighbor"
+ opinion_annexed_other_subject: "Annexed another [subject|e]"
+
+ historical_rival_events.1.title: "[rivalling_country.GetAdjectiveWithNoTooltip]-[target_country.GetAdjectiveWithNoTooltip] Rivalry"
+ historical_rival_events.1.desc: "Years of conflict, rivalry, and hostile competition have led to the inevitable development of permanent grudge of the [rivalling_country.GetLongName] against [target_country.GetName]. Only time will tell if the [rivalling_country.GetAdjectiveWithNoTooltip]-[target_country.GetAdjectiveWithNoTooltip] relations will ever heal, or worsen on the battlefield..."
+ historical_rival_events.1.a: "Eye for an eye, tooth for a tooth!"
+ historical_rival_events.1.b: "An unfortunate development..."
+
+ historical_rival_events.2.title: "End of the [rivalling_country.GetAdjectiveWithNoTooltip]-[target_country.GetAdjectiveWithNoTooltip] Rivalry"
+ historical_rival_events.2.desc: "Many years ago, the [rivalling_country.GetAdjective] and the [target_country.GetAdjective] rulers could only communicate in insults and threats to each other while their respective nations clashed on battlefields, markets, embassies, and whatnot. Nowadays though, these conflicts have lost their significance, and [rivalling_country.GetNameWithNoTooltip] has dropped the grudges of old against us."
+ historical_rival_events.2.a: "It is time to move on."
+ historical_rival_events.2.b: "Never forget. Never forgive."

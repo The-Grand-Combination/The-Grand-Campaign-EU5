@@ -1,0 +1,23 @@
+﻿l_english:
+ flavor_bah.1.title: "[ShowBuildingTypeNameWithNoTooltip('mahmud_gawan_madrasa')]"
+ flavor_bah.1.desc: "In order to re-affirm the [ShowReligionName('shia')] influence in [ShowRegionName('deccan_region')], [target_character.GetName] has opted to constructing a new madrasa inspired by the architecture in [ShowSubContinentName('central_asia')]. Dubbing it the [ShowBuildingTypeName('mahmud_gawan_madrasa')], it is meant to serve as one of the grandest [ShowReligionGroupName('muslim')] colleges in all of $india$, hosting classes for roughly 500 students all over the world. Its library is also planned to host volumes from every corner of the earth, hoping to turn [target_location.GetName] as one of the greatest places there has ever been."
+ flavor_bah.1.historical_info: "The Mahmud Gawan Madrasa in Bidar was built in 1472. A mixture of Indian and Arabic architectures, it was commissioned by Mahmud Gawan, and designed by a local noble of the Bahmani Sultanate. In order to reaffirm the Shia faith, it was designed with the idea that it would attract scholars from all around the world, where they would be provided with free boarding, lodging and education. Over time, it amassed roughly 3000 volumes."
+ flavor_bah.1.a: "We shall construct it."
+ flavor_bah.1.b: "Gold is better spent on other things than mere buildings."
+
+ flavor_bah_1000_shared: "A Throne for Peace"
+ flavor_bah_100_historical_info_shared: "The Takht-i-Fīrozā was the throne of the Bahmani Sultans, symbolizing the royalty of the court. It was, however, not built by its subjects. Instead, it was a gift by Musunuri Kapaya Nayaka of Warangal. Originally, the throne was meant to be given to Muhammad bin Tughluq of Delhi, but the dynasty lost control of Warangal before it was completed."
+
+ flavor_bah.1000.title: "$flavor_bah_1000_shared$"
+ flavor_bah.1000.desc: "[target_country.GetName] possess a most valuable art. Known as the $takht_i_firoza$, it now serves no use for any ruler that may reside in [ShowLocationName('warangal')]. We could demand this artifact, and promise them to establish a truce, as well as carve the borders between our two realms. That offer will suit [target_character.GetName] and [target_character.GetHerHis] subjects in [target_country.GetNameWithNoTooltip]."
+ flavor_bah.1000.historical_info: "$flavor_bah_100_historical_info_shared$"
+ flavor_bah.1000.a: "Quite the offer indeed. Let us send it."
+ flavor_bah.1000.b: "No need to buy it off them when we can conquer it for ourselves."
+ bah_target_must_accept_tt: "[target_country.GetName] must accept our offer for the effects to take place"
+ bah_no_deal_tt: "No deal will be sent to [target_country.GetName]"
+
+ flavor_bah.1001.title: "$flavor_bah_1000_shared$"
+ flavor_bah.1001.desc: "[target_character2.GetName] of [target_country2.GetName] has demanded from us that we hand over $takht_i_firoza$ and in exchange, we will establish a truce between our two realms, as well as cement the borders that we will share."
+ flavor_bah.1001.historical_info: "$flavor_bah_100_historical_info_shared$"
+ flavor_bah.1001.a: "A throne for peace? Quite the offer. We accept."
+ flavor_bah.1001.b: "We will not give up our artifacts to empty promises."

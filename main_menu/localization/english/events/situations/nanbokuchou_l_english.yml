@@ -1,0 +1,50 @@
+﻿l_english:
+ nanbokuchou.1.title: "$nanbokuchou$"
+ nanbokuchou.1.desc.common: "Times of uncertainty are upon us as the Imperial line is divided. Both [target_koumyou.GetName] of the [GetCountry('NTC').GetAdjective] line in [GetCountry('NTC').GetCapital.GetName] and [target_go_daigo.GetName] of the [GetCountry('STC').GetAdjective] line in [GetCountry('STC').GetCapital.GetName] claim to be the rightful rulers of the Chrysanthemum Throne."
+ nanbokuchou.1.desc.north: "$nanbokuchou.1.desc.common$\n\nEver since [target_go_daigo.GetNameWithNoTooltip] fled from [target_ashikaga.GetName] and secluded [target_go_daigo.GetHerselfHimself] in [ShowLocationNameWithNoTooltip('yoshino')], [target_go_daigo.GetSheHe] has been a thorn in the side of the [GetUniqueInternationalOrganization('japanese_shogunate').GetName] authority."
+ nanbokuchou.1.desc.south: "$nanbokuchou.1.desc.common$\n\nThe Emperor, [target_go_daigo.GetNameWithNoTooltip], was forced to flee from [target_ashikaga.GetName] and [target_koumyou.GetNameWithNoTooltip] was enthroned in [target_go_daigo.GetHerHis] stead."
+ nanbokuchou.1.desc.neutral: "$nanbokuchou.1.desc.common$\n\nBoth Emperors have their own set of supporters, and the clash between both sides is unavoidable. Some small changes in allegiances could be enough to tip the scales towards one side or the other. We have maintained our neutrality, without swearing allegiance to either of the sides, but we could easily change that."
+ nanbokuchou.1.a: "We stand firm on our position."
+ nanbokuchou.1.b: "Actually, they seem to be more promising."
+ nanbokuchou.1.c: "Better to not commit to any side."
+ nanbokuchou.1.d: "We will support the [GetCountry('NTC').GetLongNameWithNoTooltip] in [GetCountry('NTC').GetCapital.GetNameWithNoTooltip]."
+ nanbokuchou.1.e: "We will support the [GetCountry('STC').GetLongNameWithNoTooltip] in [GetCountry('STC').GetCapital.GetNameWithNoTooltip]."
+ nanbokucho_neutrality: "We will declare neutrality, supporting neither Court."
+
+ nanbokuchou.2.title: "End of the $nanbokuchou$"
+ nanbokuchou.2.desc: "The turbulent times of a divided court are at an end. The constant squabbles initiated by [GetCharacter('jap_go_daigo_tenno').GetName] have been resolved by the unification under the [target_emperor.GetLongName]. No longer will our country see itself divided due to multiple conflicting loyalties. The legitimacy of [target_emperor.GetGovernment.GetRuler.GetName] is unquestioned and people will rally together under [target_emperor.GetGovernment.GetRuler.GetHerHis] authority and that of the [GetUniqueInternationalOrganization('japanese_shogunate').GetLeaderTitle]. There will be no more internal struggles and division, and all clans will be unified towards a common goal."
+ nanbokuchou.2.a: "Peace and stability at last."
+
+ nanbokuchou.3.title: "Window of Opportunity"
+ nanbokuchou.3.desc: "The current conflict between the [target_supported_court.GetLongName] and the [target_enemy_court.GetLongName] has been shaking the [GetUniqueInternationalOrganization('japanese_shogunate').GetName] for a while. [target_shogun.GetGovernment.GetRuler.GetName] and [GetCountry('NTC').GetGovernment.GetRuler.GetName] continue to oppose the claim to the throne of [GetCountry('STC').GetGovernment.GetRuler.GetName]. We have been until now also giving our loyal support to the [target_supported_court.GetLongNameWithNoTooltip], but winds of change are on the horizon.\n\nWeary of so much struggle, both sides seem to take their support for granted, and that does not sit well with many among our [ROOT.GetCountry.GetFlavorRank]. Envoys from the [target_enemy_court.GetLongNameWithNoTooltip] has approached us and [target_enemy_court.GetGovernment.GetRuler.GetNameWithNoTooltip] promises better rewards if we offer our loyalty to [target_enemy_court.GetGovernment.GetRuler.GetHerHim]."
+ nanbokuchou.3.a: "We will never betray our word."
+ nanbokuchou.3.b: "We must seize this opportunity."
+ refused_changing_court_support: "Refused to support our [ROOT.GetCountry.GetFlavorRank]"
+ betrayed_court_support: "Betrayed their loyalty towards us"
+
+ nanbokuchou.4.title: "Betrayal"
+ nanbokuchou.4.desc: "The vile rats of the [target_betrayer.GetLongName] are just animals without honor. Seeing our constant struggles with the [target_enemy_court.GetLongName], they have abandoned their ties of loyalty towards us and have run towards their side, seduced by the false promises of [target_enemy_court.GetGovernment.GetRuler.GetName]. They no doubt see our position as weak and think they may take advantage of the situation, but we will prove them otherwise. Now we will meet on the battlefield."
+ nanbokuchou.4.a: "Traitors!"
+
+ nanbokuchou.5.title: "The Cost of War"
+ nanbokuchou.5.desc: "The constant squabble between the [GetCountry('NTC').GetLongName] and the [GetCountry('STC').GetLongName] has been engulfing all the clans for a while. Blood has been shed and skillful warriors have been lost, and yet the fight continues. This division of the Imperial Line is a scar on our nation that will take time to heal, if it ever does. For now, the conflict continues, but maybe it would be beneficial if we found an alternate way of resolving it."
+ nanbokuchou.5.a: "Nonsense, we fight on!"
+ nanbokuchou.5.b: "Prudence is a better strategy."
+
+ nanbokuchou.6.title: "A Time of Conflict"
+ nanbokuchou.6.desc: "The entire country is engulfed in conflict due to the [GetCountry('NTC').GetName] and the [GetCountry('STC').GetName] lines of the Imperial Throne. In this time of strife, it is not uncommon for clans to take the opportunity to expand their own interests. One of our enemies, the [target_enemy.GetLongName], would surely be a way for us to expand ours."
+ nanbokuchou.6.a: "Their clan should be ours."
+
+ nanbokuchou.7.title: "Time to Strike"
+ nanbokuchou.7.desc: "The [target_enemy.GetLongName] have been opposing us for too long, but the constant struggles of the $nanbokuchou$ bring us the best opportunity to retaliate. It is time we turn our attention towards them and show them the consequences of defying our clan, using them for our own expansion."
+ nanbokuchou.7.a: "Their territories will be ours."
+ nanbokuchou.7.b: "Now it is not the time."
+
+ nanbokuchou.8.title: "A New Imperial Line"
+ nanbokuchou.8.common: "The struggle between the lines of [GetCountry('NTC').GetName] and [GetCountry('STC').GetName] has turned a new page, as a new line has surfaced."
+ nanbokuchou.8.imperial.desc: "$nanbokuchou.8.common$ Being [target_new_emperor_ruler.GetName] also of the [target_new_emperor_ruler.GetDynasty.GetName], we are also contendents for the Chrysanthemum Throne. If we gain enough support, we could push our claim for it."
+ nanbokuchou.8.desc: "$nanbokuchou.8.common$ A clear new contender for the Chrysanthemum Throne, [target_new_emperor_ruler.GetName] of the [target_new_emperor.GetLongName], could easily get the throne if [target_new_emperor_ruler.GetSheHe] gets enough support."
+ nanbokuchou.8.a: "We will rally behind this new line."
+ nanbokuchou.8.b: "We do not recognize even another line."
+ nanbokuchou.8.tt: "We will support the new line of the Imperial Family"
+ 

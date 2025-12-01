@@ -1,0 +1,7 @@
+﻿l_english:
+  
+  flavor_grm.1.title: "The Death of [target_character.GetNameWithNoTooltip]"
+  flavor_grm.1.desc: "One of our most celebrated men and the founder of our [target_country.GetFlavorRank] has passed away. [target_character.GetHerHis|U] reign has thus far marked the apogee of our influence across [ShowRegionName('anatolia_region')], successfully subjugating many of our neighbors. Alas, [target_character.GetHerHis] passing has sowed discontent and acts of rebellion as our subjects look to feast on the wealth of our people."
+  flavor_grm.1.a: "[ROOT.GetCountry.Custom('common_string_nothing_we_can_do')]"
+  flavor_grm.1.b: "We will not succumb without a fight!"
+  flavor_grm.1.historical_info: "One of the most powerful emerging Beyliks of the early 14th century, the Germiyanids were founded by Yakub I, whose conquests brought many lands under his jurisdiction. His forty-year rule caused him to clash with many of his neighbors, subjugating the Aydinids, Saruhanids, and Karasids in the West as well as engaging in open conflicts with the Ottomans. Upon his death, his many vassals seized the opportunity and declared their independence."

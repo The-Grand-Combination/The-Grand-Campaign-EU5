@@ -1,0 +1,124 @@
+﻿l_english:
+ western_schism.1.title: "A Schism in the Catholic Church"
+ western_schism.1.desc: "A Schism has struck [ShowReligionName('catholic')] and has thrown the $curia$ in petty factionalism!\n\nEven if the Church has been divided before, this Schism seems to be of a different nature. After the death of the last [GetInternationalOrganization('catholic_church').GetLeaderTitle] A faction of [ShowCultureGroupName('italian_group')] cardinals is pushing for the return of the Holy See into their own control, something they have desired ever since the Papacy fell under [ShowCultureGroupName('french_group')] control. Opposing them, the [ShowCultureGroupNameWithNoTooltip('french_group')] faction insists on the new [GetInternationalOrganization('catholic_church').GetLeaderTitle] remaining under their control. The demands of both factions seems irreconcilable and [ShowReligionAdjectiveWithNoTooltip('catholic')] world is swiftly descending into factionalism, leaving the good [ShowReligionAdjectiveWithNoTooltip('catholic')] people of the [GetInternationalOrganization('catholic_church').GetName] without their shepherds. As long as this division persists, they will have to navigate a world without their usual authority and decide for their own who the true representative of divine will is."
+ western_schism.1.a: "This is not good.."
+
+ western_schism.3.title: "[ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')] Unhappy with the Schism"
+ western_schism.3.desc: "We still have not picked a side in the Schism between [target_schism_pope_cardinal.GetName] and [target_schism_opponent_cardinal.GetName]. Our cardinals are urging us to make an official decision of whom to back."
+ western_schism.3.a: "This decision can wait further..."
+ 
+ western_schism.4.title: "[jan_hus.GetNameWithNoTooltip]"
+ western_schism.4.desc: "In the heartland of [ROOT.GetCountry.GetCapital.GetArea.GetName], a flame of religious dissent ignites, fanned by the powerful winds of change. [jan_hus.GetName], a charismatic [ShowCultureName('czech')] priest and scholar, has taken a stand against the perceived corruption of the [GetInternationalOrganization('catholic_church').GetName]. [jan_hus.GetHerHis|U] words resonate with the common folk, and a new faith, the [ShowReligionAdjective('hussite')] faith, begins to take root.\n\n[jan_hus.GetNameWithNoTooltip] preaches against the opulence and excesses of the [GetInternationalOrganization('catholic_church').GetNameWithNoTooltip], calling for a return to the simplicity and purity of early Christianity. [jan_hus.GetHerHis|U] followers, known as [ShowReligionAdjectiveWithNoTooltip('hussite')], embrace [jan_hus.GetHerHis] teachings, their fervor growing with each passing day. The established order trembles, for [jan_hus.GetLastNameWithNoTooltip]'s words challenge the authority of the [GetInternationalOrganization('catholic_church').GetNameWithNoTooltip] and the [GetInternationalOrganization('hre').GetName]."
+ western_schism.4.historical_info: "Jan Hus, also known as Johannes Hus, was a theologian and philosopher who became one of the first reformers of Catholicism. He was the inspiration for the Hussite faith, a predecessor to Lutheranism. He was born to poor parents but was trained for priesthood in an attempt to escape poverty. Serving as a priest, he opposed many aspects of the Catholic Church in Bohemia. When Alexander V was elected Pope he issued a papal bull to excommunicate him and during the Council of Konstanz, when the Western Schism ended, Jan Hus attended to present his views on the dissension with the Church but was immediately arrested and put in prison. He refused to recant his view, and on July 6th, 1415, he was burned at the stake for heresy. His followers formed a new religion and fought against five different crusades during the next few decades. The Hussite faith lasted for almost two centuries in Bohemia."
+ western_schism.4.a: "He has some interesting teachings..."
+ lots_of_hussites_tt: "Many [pops|e] in the [ROOT.GetCountry.GetCapital.GetArea.GetName] [area|e] will convert to [ShowReligionName('hussite')]"
+
+ western_schism.5.title: "Erosion of Faith"
+ western_schism.5.desc: "The confusion caused by the conflict between [target_schism_pope_cardinal.GetName] and [target_schism_opponent_cardinal.GetName] has severely impacted the stability of our [ROOT.GetCountry.GetFlavorRank]. The uncertainty about the occupation of the Holy See is spreading doubts about proper church service and is slowly eroding the faith of the people."
+ western_schism.5.a: "We will pray for a swift end to their squabbles."
+ western_schism.5.b: "Maybe our people should explore some alternatives."
+
+ western_schism.6.title: "Clash between [opponent_support_location.GetNameWithNoTooltip] and [pope_support_location.GetNameWithNoTooltip]"
+ western_schism.6.desc: "The people of [opponent_support_location.GetName], staunch supporters of the [target_schism_opponent_cardinal.GetName] have recently clashed with [pope_support_location.GetName], avid followers of [target_schism_pope_cardinal.GetName]. Both factions have now petitioned [target_ruler.GetName] to take a clear stance on either side."
+ western_schism.6.a: "[opponent_support_location.GetNameWithNoTooltip] is clearly in the right."
+ western_schism.6.b: "Support the people of [pope_support_location.GetNameWithNoTooltip]."
+ western_schism.6.c: "They can resolve these petty squabbles among themselves."
+ western_schism_resolution_impact_positive.tt: "The chosen side will gain some support in the $western_schism$"
+ western_schism_resolution_impact_negative.tt: "The chosen side will lose some support in the $western_schism$"
+
+ western_schism.7.title: "The Flourishing Trade of [ShowRegionNameWithNoTooltip('italy_region')]"
+ western_schism.7.desc: "With the efforts of the [target_schism_pope_cardinal.GetName] in [ShowRegionName('italy_region')] the trade with the region is flourishing. Our [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] are very happy with this state of affairs and their secured interests in the region."
+ western_schism.7.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+ italian_trade: "Ties to [ShowRegionNameWithNoTooltip('italy_region')]"
+
+ western_schism_8_10_common_string: "Our position in the [GetSituationByKey('western_schism').GetName] has created a popular outcry in parts of our country. The people of [target_location.GetName] have started to arm themselves and demand that we support the faction of"
+
+ western_schism.8.title: "Popular Support for [target_schism_opponent_cardinal.GetNameWithNoTooltip]"
+ western_schism.8.desc: "$western_schism_8_10_common_string$ [target_schism_opponent_cardinal.GetName] instead."
+ western_schism.8.a: "We will not give in to such petty demands."
+ western_schism.8.b: "[target_schism_opponent_cardinal.GetNameWithNoTooltip] might be the best choice for us after all."
+
+ western_schism.9.title: "[target_schism_opponent_cardinal.GetNameWithNoTooltip] Rewards Loyalty"
+ western_schism.9.desc: "[target_schism_opponent_cardinal.GetName], the one and true [GetInternationalOrganization('catholic_church').GetLeaderTitle] has rewarded our loyalty with a special grant, allowing us greater rights within the [GetInternationalOrganization('catholic_church').GetName]."
+ western_schism.9.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+
+ western_schism.10.title: "Popular Support for [target_schism_pope_cardinal.GetNameWithNoTooltip]"
+ western_schism.10.desc: "$western_schism_8_10_common_string$ [target_schism_pope_cardinal.GetName] instead."
+ western_schism.10.a: "Let them try."
+ western_schism.10.b: "They make a strong case."
+
+ western_schism_11_12_common_string: "in the ongoing struggle for leadership of the [GetInternationalOrganization('catholic_church').GetName], [target_country.GetName] praised our people! They laud the resilience of [ROOT.GetCountry.GetName] and the strong faith we display in such unstable times.\n\nWhile their sweet words are an obvious ploy to secure our support, it could still prove beneficial for us, no matter if we openly display our support for"
+
+ western_schism_11_12_common_string_2: "or use this praise for our own agenda within the [GetInternationalOrganization('catholic_church').GetNameWithNoTooltip]."
+
+ western_schism.11.title: "[target_country.GetNameWithNoTooltip] Praises our Conviction"
+ western_schism.11.desc: "A strong supporter of [target_schism_pope_cardinal.GetName], $western_schism_11_12_common_string$ [target_schism_pope_cardinal.GetNameWithNoTooltip], $western_schism_11_12_common_string_2$"
+ western_schism.11.a: "[target_schism_pope_cardinal.GetNameWithNoTooltip] is our [GetInternationalOrganization('catholic_church').GetLeaderTitle]!"
+ western_schism.11.b: "Leverage this praise within the Church."
+
+ western_schism.12.desc: "A strong supporter of [target_schism_opponent_cardinal.GetName], $western_schism_11_12_common_string$ [target_schism_opponent_cardinal.GetNameWithNoTooltip], $western_schism_11_12_common_string_2$"
+ western_schism.12.a: "[target_schism_opponent_cardinal.GetNameWithNoTooltip] is our [GetInternationalOrganization('catholic_church').GetLeaderTitle]!"
+
+ western_schism_13_14_common_string: "and in opposition to the rest of the estates. This internal split, caused by the split running through the [GetInternationalOrganization('catholic_church').GetName] itself, is threatening to splinter our country into multiple factions if we do not act careful."
+
+ western_schism.13.title: "Against All Odds"
+ western_schism.13.desc: "The [target_estate.GetName], composed of [ROOT.GetCountry.GetReligion.GetGodName]-fearing people, has found itself supporting [target_schism_pope_cardinal.GetName] $western_schism_13_14_common_string$"
+ western_schism.13.a: "Side with the [target_estate.GetNameWithNoTooltip]."
+ western_schism.13.b: "We will stand with the majority."
+
+ western_schism.14.desc: "The [target_estate.GetName], composed of [ROOT.GetCountry.GetReligion.GetGodName]-fearing people, has found itself supporting [target_schism_opponent_cardinal.GetName] $western_schism_13_14_common_string$"
+
+ western_schism.15.title: "A Traveling Preacher"
+ western_schism.15.desc: "The erosion of our faith caused by the [ShowSituationName('western_schism')] has cut deep into the trust of the people of [unrest_province.GetName]. Into this vacuum of trust and stability has come [target_character.GetName] with [target_character.GetHerHis] sermons of heresy and accusations of corruption. While [target_character.GetSheHe] claims to be a true [ROOT.GetCountry.GetReligion.GetAdjective], [target_character.GetHerHis] lectures have encouraged some in [unrest_province.GetNameWithNoTooltip] to turn to dangerous ideas and we might want to act swiftly to not let this heresy spread further."
+ western_schism.15.a: "[target_character.GetHerHis|U] ideas do not sound that bad."
+ western_schism.15.b: "We can not allow [target_character.GetNameWithNoTooltip] to continue."
+
+ western_schism.1000.title: "The Price of #italic Oboedientia#!"
+ western_schism_action_event_tt: "We will ask one of the candidates to aid us financially."
+ western_schism.1001.desc: "[target.GetName] has rewarded our loyalty in a manner that befits an important and prestigious [ROOT.GetCountry.GetFlavorRank] such as ourselves. With our support, everyone will surely accept [target.GetNameWithNoTooltip] as the true [GetInternationalOrganization('catholic_church').GetLeaderTitle]."
+ western_schism.1001.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+
+ western_schism.1002.desc: "[target.GetName] has scorned our support and refused to treat us with due respect. This outrageous affront can not stand and we should seriously reconsider our allegiances, as we are clearly not valued by them."
+ western_schism.1002.a: "[ROOT.GetCountry.Custom('common_string_negative')]"
+
+ western_schism.1100.title: "The False Support of [target_country.GetNameWithNoTooltip]"
+ western_schism.1100.desc: "Our relation with [target_country.GetName] is strained and it has suffered even more during the [ShowSituationName('western_schism')]. While our influence within the [GetInternationalOrganization('catholic_church').GetName] is not endless, we could leverage it to shift the balance to our side."
+ western_schism.1100.a: "We will have the influence we deserve!"
+ western_schism.1100.b: "We should try to not increase the hostilities."
+
+ western_schism.1101.title: "A Grave Insult"
+ western_schism.1101.desc: "The morally corrupt diplomats of [origin_country.GetName] have worked toward reducing our influence over the [GetInternationalOrganization('catholic_church').GetName]. This insult can not stand, and we should treat this as a justification to show them their place."
+ western_schism.1101.a: "[ROOT.GetCountry.Custom('common_string_we_must_do_something')]"
+
+ western_schism.1200.title: "[target_country.GetNameWithNoTooltip] Raises Suspicion"
+ western_schism.1200.desc: "The ongoing [ShowSituationName('western_schism')] has caused instability within the [GetInternationalOrganization('catholic_church').GetName] and the existence of a false [GetInternationalOrganization('catholic_church').GetLeaderTitle] brought uncertainty within the faithful. Recently, [target_ruler.GetName] of the [target_country.GetLongName] has caught our attention with a diplomatic incident that implies [target_ruler.GetHerHis] allegiance lies with the pretender, and not with us. We should send a delegation to question [target_ruler.GetHerHis] intentions and ensure [target_ruler.GetSheHe] is on the righteous path."
+ western_schism.1200.a: "Send the delegation to [target_country.GetNameWithNoTooltip]."
+ western_schism.1200.b: "We have better things to do."
+
+ western_schism.1201.title: "A Papal Delegation"
+ western_schism.1201.desc: "A diplomat of [target_schism_pope_cardinal.GetName] has arrived in our [ROOT.GetCountry.GetGovernment.GetCourtTitle]. While we are not yet sure what their stated purpose is, it is likely that they want to be treated as an official delegation of the [GetInternationalOrganization('catholic_church').GetLeaderTitle] and want to investigate our own allegiances within the [ShowSituationName('western_schism')]. While we can not turn them away directly, we will still be able to display our allegiances without doubt."
+ western_schism.1201.a: "Of course [target_schism_pope_cardinal.GetNameWithNoTooltip] is the true [GetInternationalOrganization('catholic_church').GetLeaderTitle]"
+ western_schism.1201.b: "We are loyal to [target_schism_opponent_cardinal.GetNameWithNoTooltip]."
+
+ western_schism.1300.title: "The Call for a Council"
+ western_schism.1300.desc: "With our current advantageous position within the Curia, we have gathered enough support to call for a council in [target_location.GetName]. While the legitimacy of the council will surely be questioned by many within the [GetInternationalOrganization('catholic_church').GetName], it will be heeded by our supporters, demonstrating both our power and support of the majority of the Cardinals. Although we can not end the [ShowSituationName('western_schism')], we will prove the authority of our [GetInternationalOrganization('catholic_church').GetLeaderTitle] and take an important step to resolve this conflict in our favor."
+ western_schism.1300.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+ western_schism.1300.a.tt: "Every member of the [THIS.GetReligion.GetName] faith changes their opinion of [ROOT.GetCountry.GetName] by [ShowBiasValue('schism_called_council')|+=0]"
+
+ western_schism.1301.title: "The Council of [target_location.GetNameWithNoTooltip]"
+ western_schism.1301.desc: "Diplomats of [council_country.GetName] have arrived in our [ROOT.GetCountry.GetGovernment.GetCourtTitle], summoning representatives of our [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] to attend a council in [target_location.GetName]. Although the legitimacy of the council is already called into question by their opponents, it could be an important milestone in resolving the [ShowSituationName('western_schism')]."
+ western_schism.1301.a: "Let us attend the council in support."
+ western_schism.1301.b: "We must recognize the authority of the council."
+ western_schism.1301.c: "We reject these pretenders' audacity."
+
+ western_schism.2000.title: "The Catholic Church United Again!"
+ western_schism.2000.desc: "After the Council, the Church has been united again with the efforts of [winner_country.GetName], under a new [GetInternationalOrganization('catholic_church').GetLeaderTitle]. The [GetInternationalOrganization('catholic_church').GetName] remains whole and unbroken, but the authority of the [GetInternationalOrganization('catholic_church').GetLeaderTitle] has significantly weakened during this period. Hopefully this has not damaged our faith permanently. Let us hope that [target_character.GetName] is a capable [GetInternationalOrganization('catholic_church').GetLeaderTitle]."
+ western_schism.2000.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+
+ western_schism.2100.title: "A New [GetInternationalOrganization('catholic_church').GetLeaderTitle] for the Church"
+ western_schism.2100.desc.common: "With our repeated efforts to resolve the [ShowSituationName('western_schism')] during a council, it has become clear that our candidate is truly the legitimate [GetInternationalOrganization('catholic_church').GetLeaderTitle]. While some still cling to the heretical pretender, we have gathered an overwhelming majority of support to declare the [ShowSituationName('western_schism')] mended."
+ western_schism.2100.desc.a: "$western_schism.2100.desc.common$\n\nTogether with the support we have accumulated, it will be easy to select a suitable candidate from our own ranks, returning the papal authority to the eternal city of [ShowLocationName('rome')]."
+ western_schism.2100.desc.b: "$western_schism.2100.desc.common$\n\nThanks to our influence on the curia, we will be able to retain the established custom of the [ShowLocationName('avignon')] Papacy."
+ western_schism.2100.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+
+ western_schism.2200.desc: "With a final effort, we have found a simple, yet elegant solution to the problems raised by the [ShowSituationName('western_schism')]. By forcing both sides to renounce their claim to the Holy See and force a new election, we can establish a legitimate [GetInternationalOrganization('catholic_church').GetLeaderTitle] yet again and focus on mending the wounds caused by this period of strife. The new [GetInternationalOrganization('catholic_church').GetLeaderTitle] will surely excel at the task, reuniting estranged priests and reaffirming the true doctrine of the faith."

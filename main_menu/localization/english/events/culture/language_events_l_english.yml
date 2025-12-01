@@ -1,0 +1,30 @@
+﻿l_english:
+ language.1.title: "The Enemy's Tongue"
+ language.1.desc: "Our continued usage of [enemy_dialect.GetLanguage.GetName] as the preferred language in our court has raised some eyebrows due to the present conflict with the [enemy_country.GetLongName]. [ROOT.GetCountry.GetGovernment.GetRuler.GetName]'s advisors have suggested we put a solution to this apparent contradiction."
+ language.1.a: "Promote official use of our native tongue."
+ language.1.a.subject: "Our [subjects|E] may choose to follow our lead."
+ language.1.b: "Adopt our Liturgical Language."
+ language.1.c: "Adopt [ROOT.GetCountry.GetGovernment.GetRuler.GetNameWithNoTooltip]'s [ruler_language.GetNameWithNoTooltip] language."
+ language.1.d: "Our use of [enemy_dialect.GetNameWithNoTooltip] predates this petty squabble."
+ language.1.e: "We should continue to rule in the language of scripture."
+
+ language.2.title: "$language.1.title$"
+ language.2.desc: "The [overlord.GetLongName]'s continued usage of [enemy_dialect.GetName] as the preferred language in their court has gained them some controversy due to the present conflict with the [enemy_country.GetLongName].\n\nAs a solution, they have instead decided to adopt [new_language.GetName] as their Court Language. Should we follow their lead?"
+ language.2.a: "We too should promote official use of our native [common_dialect.GetNameWithNoTooltip] language."
+ language.2.b: "We too should adopt [new_language.GetNameWithNoTooltip]."
+ language.2.c: "No, but it is time to adopt the [common_dialect.GetName] speech ourselves."
+ language.2.d: "No, there is nothing wrong with [enemy_dialect.GetNameWithNoTooltip]."
+
+ language.10.title: "The [country.GetGovernment.GetRulerTitle|U]'s Speech"
+ language.10.desc: "Yet another council meeting, yet another official document, and it is clear that [ruler.GetShortName] is not able to properly handle [ruler.GetHerselfHimself] at court.\n\nDue to [ruler.GetHisHer] [ruler_culture.GetName] upbringing, [ruler.GetHisHer] mastery of [court_language.GetName] leaves much to be desired. [ruler.GetHisHer|U] marked foreign accent is unbearable to native ears and a constant reminder that [ruler.GetSheHe] is not truly someone that should be in charge of a [court_language.GetNameWithNoTooltip] court."
+ language.10.a: "We should adopt [ruler.GetHisHer] [ruler_language.GetNameWithNoTooltip] language."
+ language.10.b: "[ruler.GetHisHer|U] lack understanding might be beneficial."
+ 
+ language.20.title: "The Pleading in [common_language.GetNameWithNoTooltip] Act"
+ language.20.desc: "Ordinary [primary_culture.GetName] folk are being forced to have their legal trials heard in [court_language.GetName], a language that they do not understand.\n\nThere is growing clamor for the judicial system to adopt common [common_language.GetNameWithNoTooltip], so that pleas and sentences are more widely understood."
+ language.20.desc_ENG: "Since the Norman conquest in 1066, ordinary [primary_culture.GetName] folk have been forced to have their legal trials heard in [court_language.GetName], a language that they do not understand.\n\nThere is growing clamor for the judicial system to adopt common [common_language.GetNameWithNoTooltip], so that pleas and sentences are more widely understood."
+ language.20.desc_IRE: "The Cambro-Norman conquest many generations ago brought the [court_language.GetName] language to [ireland_region.GetName], but direct [norman_culture.GetName] influence has since waned in the [ROOT.GetCountry.GetLongName]. Now [primary_culture.GetName] magistrates occupy the castles and build the towns.\n\nHowever, ordinary folk are still forced to have their legal trials heard in [court_language.GetNameWithNoTooltip], a language that they do not understand.\n\nThere is growing clamor for the judicial system to adopt common [common_language.GetNameWithNoTooltip], so that pleas and sentences are more widely understood."
+ language.20.a: "Completely abolish the use of [court_language.GetNameWithNoTooltip] in our government."
+ language.20.b: "Allow [common_language.GetNameWithNoTooltip] to be used in the common courts."
+ language.20.c: "Retain [court_language.GetNameWithNoTooltip] as the universal language of law."
+

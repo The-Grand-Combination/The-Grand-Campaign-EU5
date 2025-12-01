@@ -1,0 +1,204 @@
+﻿l_english:
+ ACHIEVEMENTS_LABEL: "Achievements"
+ ACHIEVEMENT_GROUP_TOOLTIP_TITLE: "Achievement Difficulty"
+ ACHIEVEMENT_LOCKED_TEXT: "Achievement not yet gained in current campaign"
+ ACHIEVEMENT_NOT_POSSIBLE_TITLE: "Achievement Unavailable"
+ IRONMAN_LABEL: "Ironman"
+ IRONMAN_SAVEGAME_NAME: "$COUNTRY$'s Ironman"
+ IRONMAN_SAVELABEL_NAME: "Ironman Saved Game"
+ IRONMAN_PAUSE_MENU_TOOLTIP: "#T $IRONMAN_LABEL$"
+ ENABLE_IRONMAN: "Enable"
+ DISABLE_IRONMAN: "Disable"
+ GAME_RULE_BLOCKS_ACHIEVEMENTS: "This game rule disables Achievements"
+ GAME_BLOCKS_ACHIEVEMENTS: "This preset disables Achievements"
+ GAME_ALLOW_ACHIEVEMENTS: "This preset allows Achievements"
+ GAME_RULE_BLOCKS_IRONMAN: "This game rule disables Ironman"
+ GAME_RULE_BLOCKS_ACHIEVEMENTS_IRONMAN: "This game rule disables both Achievements and Ironman"
+ IRONMAN_ENABLED_NO_HEADER: "#P Enabled#!"
+ IRONMAN_DISABLED_NO_HEADER: "#N Disabled#!"
+ ACHIEVEMENTS_ENABLED_NO_HEADER: "#P Available#!"
+ ACHIEVEMENTS_DISABLED_NO_HEADER: "#N Not Available#!"
+ ACHIEVEMENTS_DISABLED_NO_HEADER_PLAY_BUTTON: "#N Not Available#!\n\nAchievements cannot currently be unlocked while playing the game.\n$ACHIEVEMENTS_EXPLANATION$"
+ ACHIEVEMENTS_EXPLANATION: "#indent_newline:2 Achievements are only unlockable if:\n$EFFECT_LIST_BULLET$You play Single Player\n$EFFECT_LIST_BULLET$Ironman mode is enabled\n$EFFECT_LIST_BULLET$Game files that affect gameplay are unmodified, and you are not using any special launch options. (i.e. the checksum is unmodified)"
+ ACHIEVEMENTS_ENABLED: "#T Achievements Available\n#!Achievements can currently be unlocked while playing the game."
+ ACHIEVEMENTS_DISABLED: "#T Achievements Not Available#!\nAchievements cannot currently be unlocked while playing the game.\n\n$ACHIEVEMENTS_EXPLANATION$"
+
+ # Achievements Very Easy
+ ACHIEVEMENT_until_death_do_us_apart: "Till Death Do Us Part"
+ ACHIEVEMENT_DESC_until_death_do_us_apart: "Secure a Royal Marriage with another country."
+
+ ACHIEVEMENT_that_is_mine: "That is Mine!"
+ ACHIEVEMENT_DESC_that_is_mine: "Conquer a location."
+
+ ACHIEVEMENT_victorious: "Victorious!"
+ ACHIEVEMENT_DESC_victorious: "Win a war."
+
+ ACHIEVEMENT_its_just_business: "It's just Business"
+ ACHIEVEMENT_DESC_its_just_business: "Create a Market."
+
+ ACHIEVEMENT_all_in_favor: "All in Favor"
+ ACHIEVEMENT_DESC_all_in_favor: "Pass a Parliament Issue."
+
+ ACHIEVEMENT_patron_of_the_arts: "Patron of the Arts"
+ ACHIEVEMENT_DESC_patron_of_the_arts: "Invite an artist."
+
+ ACHIEVEMENT_combined_arms: "Combined Arms"
+ ACHIEVEMENT_DESC_combined_arms: "Have levies, an army, and mercenaries at the same time."
+
+ ACHIEVEMENT_rule_of_law: "Rule of Law"
+ ACHIEVEMENT_DESC_rule_of_law: "Change a policy."
+  
+ ACHIEVEMENT_brothers_in_arms: "Brothers in Arms"
+ ACHIEVEMENT_DESC_brothers_in_arms: "Be in a war with over 90% warscore as a secondary participant."
+
+ ACHIEVEMENT_city_of_cities: "City of Cities"
+ ACHIEVEMENT_DESC_city_of_cities: "Own a core province with at least 100 development."
+
+ ACHIEVEMENT_cold_war: "Cold War"
+ ACHIEVEMENT_DESC_cold_war: "Have a war without any ongoing conflict for 3 years."
+
+ ACHIEVEMENT_for_the_glory: "For the Glory"
+ ACHIEVEMENT_DESC_for_the_glory: "Diplomatically annex a subject."
+
+
+ # Achievements Easy
+ ACHIEVEMENT_a_pile_of_gold: "A Pile of Gold"
+ ACHIEVEMENT_DESC_a_pile_of_gold: "Own 25 locations which produce gold or silver."
+
+ ACHIEVEMENT_at_every_continent: "At Every Continent"
+ ACHIEVEMENT_DESC_at_every_continent: "Own one location on each continent."
+
+ ACHIEVEMENT_grand_coalition: "Grand Coalition"
+ ACHIEVEMENT_DESC_grand_coalition: "Join a Coalition of more than 5 countries."
+
+ ACHIEVEMENT_it_belongs_in_a_museum: "It Belongs in a Museum!"
+ ACHIEVEMENT_DESC_it_belongs_in_a_museum: "Gain a new Work of Art."
+
+ ACHIEVEMENT_a_cabinet_of_curiosities: "A Cabinet of Curiosities"
+ ACHIEVEMENT_DESC_a_cabinet_of_curiosities: "Have a Cabinet Action of all three categories active at the same time."
+
+ ACHIEVEMENT_hearts_and_minds: "Hearts and Minds"
+ ACHIEVEMENT_DESC_hearts_and_minds: "Improve the cultural opinion with another country."
+
+ ACHIEVEMENT_a_brave_new_world: "A Brave New World"
+ ACHIEVEMENT_DESC_a_brave_new_world: "Discover the New World."
+
+ ACHIEVEMENT_three_mountains: "The Three Mountains"
+ ACHIEVEMENT_DESC_three_mountains: "Form Ryūkyū."
+
+ ACHIEVEMENT_rule_britannia: "Rule Britannia"
+ ACHIEVEMENT_DESC_rule_britannia: "Starting as England, form Great Britain and be the Naval Hegemon."
+
+ ACHIEVEMENT_plus_ultra: "Plus Ultra"
+ ACHIEVEMENT_DESC_plus_ultra: "As Castile or Spain, have presence in Iberia, Maghreb, the Caribbean, Mesoamerica and Peru."
+
+
+ # Achievements Medium
+
+ ACHIEVEMENT_here_i_stand: "Here I Stand"
+ ACHIEVEMENT_DESC_here_i_stand: "Convert to Lutheranism and unlock 3 Aspects of Faith."
+
+ ACHIEVEMENT_just_a_little_bit_more_patience: "Just a Little Bit More Patience"
+ ACHIEVEMENT_DESC_just_a_little_bit_more_patience: "Play a campaign from 1337 until 1836."
+
+ ACHIEVEMENT_potato_potato: "Potato Potato"
+ ACHIEVEMENT_DESC_potato_potato: "Starting as a European country, produce potatoes."
+
+ ACHIEVEMENT_the_spice_must_flow: "The Spice Must Flow"
+ ACHIEVEMENT_DESC_the_spice_must_flow: "Starting as a European country, trade in cloves."
+
+ ACHIEVEMENT_scientific_victory: "Scientific Victory"
+ ACHIEVEMENT_DESC_scientific_victory: "Have at least 450 Advances researched."
+
+ ACHIEVEMENT_cities_skyline: "Cities Skylines"
+ ACHIEVEMENT_DESC_cities_skyline: "Have 200 total building levels in one location."
+
+ ACHIEVEMENT_moneytalks: "Moneytalks"
+ ACHIEVEMENT_DESC_moneytalks: "Become the Economic Hegemon."
+
+ ACHIEVEMENT_doge_coins: "Doge Coins"
+ ACHIEVEMENT_DESC_doge_coins: "Starting as Venice, become the Economic Hegemon."
+
+ ACHIEVEMENT_je_maintiendrai: "Je Maintiendrai"
+ ACHIEVEMENT_DESC_je_maintiendrai: "Form the Netherlands as a minor nation starting with Dutch culture."
+
+ ACHIEVEMENT_lion_of_the_north: "Lion of the North"
+ ACHIEVEMENT_DESC_lion_of_the_north: "Start as Sweden, ensure the victory of the Protestant League."
+
+ ACHIEVEMENT_the_navigator: "The Navigator"
+ ACHIEVEMENT_DESC_the_navigator: "As Portugal, have presence in Africa, America, India and Indonesia before the Age of Reformation."
+
+ ACHIEVEMENT_true_heir_of_timur: "True Heir of Timur"
+ ACHIEVEMENT_DESC_true_heir_of_timur: "Having had Timur as the ruler of your country, form the Mughal Empire."
+
+ ACHIEVEMENT_city_of_mans_desire: "City of Man's Desire"
+ ACHIEVEMENT_DESC_city_of_mans_desire: "Starting as the Ottomans, conquer Constantinople and end the Rise of the Turks situation as the strongest Beylik."
+
+ ACHIEVEMENT_felix_austria: "Felix Austria"
+ ACHIEVEMENT_DESC_felix_austria: "Starting as Austria, become Emperor of the HRE and be a Great Power."
+
+ ACHIEVEMENT_hongwu_di: "Hóngwǔ Dì"
+ ACHIEVEMENT_DESC_hongwu_di: "As Míng, own the entirety of China and be the leader of the Middle Kingdom."
+
+ ACHIEVEMENT_break_the_yoke: "Break the Yoke"
+ ACHIEVEMENT_DESC_break_the_yoke: "Break the Tatar Yoke as a Russian country."
+ 
+ ACHIEVEMENT_lingua_franca: "Lingua Franca"
+ ACHIEVEMENT_DESC_lingua_franca: "As France, be the Cultural Hegemon."
+ 
+ ACHIEVEMENT_crusader_kings: "Crusader Kings"
+ ACHIEVEMENT_DESC_crusader_kings: "Win a Crusade or a Jihād."
+
+
+ # Achievements Hard
+ ACHIEVEMENT_respected: "Respected"
+ ACHIEVEMENT_DESC_respected: "Have 100 Prestige, 100 Legitimacy, and 100 Stability."
+
+ ACHIEVEMENT_letat_cest_moi: "L'État, C'est Moi"
+ ACHIEVEMENT_DESC_letat_cest_moi: "Reach 100 Value for both Centralization and Absolutism."
+
+ ACHIEVEMENT_manchurian_candidate: "A Manchurian Candidate"
+ ACHIEVEMENT_DESC_manchurian_candidate: "Start as a country with the Jurchen culture, become Emperor of China."
+
+ ACHIEVEMENT_house_of_hus: "House for Hus"
+ ACHIEVEMENT_DESC_house_of_hus: "Starting as Bohemia, win the Hussite Wars situation as Hussite."
+
+ ACHIEVEMENT_what_a_great_guy: "What a Great Guy"
+ ACHIEVEMENT_DESC_what_a_great_guy: "Be present on every subcontinent."
+
+ ACHIEVEMENT_total_control: "Total Control"
+ ACHIEVEMENT_DESC_total_control: "Have 20 Locations with 100% control."
+
+ ACHIEVEMENT_be_in_all_the_clubs: "Be In All The Clubs"
+ ACHIEVEMENT_DESC_be_in_all_the_clubs: "Belong to 6 International Organizations."
+
+ ACHIEVEMENT_what_the_lord_giveth: "What the Lord Giveth"
+ ACHIEVEMENT_DESC_what_the_lord_giveth: "Start with 8 privileges enacted for the Nobility, then remove all of them."
+
+ ACHIEVEMENT_welfare_state: "Welfare State"
+ ACHIEVEMENT_DESC_welfare_state: "Have a market of your country with a full stockpile of at least 20.000 food."
+
+ ACHIEVEMENT_five_hundred_miles: "500 Miles"
+ ACHIEVEMENT_DESC_five_hundred_miles: "Own at least 100 locations with 5 roads each."
+
+
+ # Achievements Very Hard
+
+ # Template
+# ACHIEVEMENT_name: ""
+# ACHIEVEMENT_DESC_name: ""
+
+ #Achievement Groups
+ ACHIEVEMENT_GROUP_very_easy_achievements: "Very Easy"
+ ACHIEVEMENT_GROUP_easy_achievements: "Easy"
+ ACHIEVEMENT_GROUP_medium_achievements: "Medium"
+ ACHIEVEMENT_GROUP_hard_achievements: "Hard"
+ ACHIEVEMENT_GROUP_very_hard_achievements: "Very Hard"
+ PLAY_BUTTON_IRONMAN_MODE_TOOLTIP: "Ironman Mode\n[SelectLocalization(GameIsIronman, 'IRONMAN_ENABLED_NO_HEADER', 'IRONMAN_DISABLED_NO_HEADER')]"
+ PLAY_BUTTON_ACHIEVEMENTS_TOOLTIP: "Achievements [SelectLocalization(CanGetAchievements, 'ACHIEVEMENTS_ENABLED_NO_HEADER', 'ACHIEVEMENTS_DISABLED_NO_HEADER_PLAY_BUTTON')]"
+
+#Tooltips
+
+ has_emerged_victorious_during_rise_of_ottomans_situation_tt: "We emerged victorious during the [ShowSituationName('rise_of_the_ottomans')] [situation|e] as the strongest Beylik"
+ had_timur_as_past_ruler_tt: "One of our previous [rulers|e] is [GetCharacter('chg_timur_lame_borjigin').GetName]"
+ hussites_won_hussite_wars_situation_tt: "[ShowReligionName('hussite')] was victorious during the [ShowSituationName('hussite_wars')] [situation|e]"

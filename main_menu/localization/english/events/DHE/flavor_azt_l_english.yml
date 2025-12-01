@@ -1,0 +1,107 @@
+﻿l_english:
+
+#Events
+ flavor_azt.70.title: "The Great Pyramid of [ShowLocationNameWithNoTooltip('tenochtitlan')]"
+ flavor_azt.70.desc: "It has now been some years since our ancestors shook off the yoke of our former overlords in [ShowLocationName('azcapotzalco')] and instead expanded their influence throughout the neighboring city-states. Since then the power of our people has grown significantly and by now our state controls key locations in the valley of Mexico. The city-states under our rule still remember that we were all equals not so long ago and it is uncertain how far we can trust their loyalties.\n\nAs it is every ruler's task to build a new stage of the Great Pyramid of [ShowLocationName('tenochtitlan')] we have an excellent opportunity to try the loyalty of our subjects. Any subject city that contributes to the project will be too preoccupied to revolt and any that refuses will have shown its worth and can be punished."
+ flavor_azt.70.a: "All must contribute to the Pyramid!"
+ flavor_azt.70.b: "Let our subjects contribute their fair due."
+ flavor_azt.70.c: "A project for another time, perhaps."
+ we_will_be_able_to_construct_the_building_later_tt: "We will be able to construct this [building|e] later"
+ flavor_azt.70.historical_info: "At the center of Tenochtitlan, the Huēyi Teōcalli stands as a towering symbol of Mexica devotion and power. Constructed in stages from the 14th century onward, it features dual stairways leading to separate temples: one for Huitzilopochtli, the god of war, the other for Tlaloc, the god of rain and fertility. Nearby stands a shrine to Ehecatl, the wind god. The temple would go on to become an imposing feature of the city's sacred heart, where priests perform sacrifices and ceremonies to sustain cosmic order."
+ flavor_azt.80.title: "[target_character.GetNameWithNoTooltip]"
+ flavor_azt.80.desc: "[target_character.GetName], the foremost architect of the [ROOT.GetCountry.GetAdjective] Triple Alliance and the first person to be named its Cihuacōātl, prime minister, is an indispensable force within our state. Having served a number of Tlahtoāni, [target_character.GetNameWithNoTooltip] is by now involved in the running of almost every part of our state. He is the one who organizes our military campaigns, he handles our finances and when our Tlahtoāni is in the field he acts in his stead.\n\nAbove all, however, [target_character.GetNameWithNoTooltip] is a great champion for the worship of [ShowGodNameWithNoTooltip('huitzilopochtli_god')] and has taken a number of measures to ensure that our deity and the martial traditions that surround him is given the proper respect."
+ flavor_azt.80.a: "Elevate [ShowGodNameWithNoTooltip('huitzilopochtli_god')] as our patron deity."
+ flavor_azt.80.b: "It is time for [ShowGodNameWithNoTooltip('quetzalcoatl_god')] to lead the pantheon."
+ flavor_azt.80.c: "Let us turn to [ShowGodNameWithNoTooltip('tezcatlipoca_god')], instead."
+ flavor_azt.80.historical_info: "Tlacaelel was a key architect of the Aztec Empire, wielding immense influence behind the throne during the reigns of several emperors. As high priest and chief advisor, he redefined Aztec religion by placing Huitzilopochtli at its center and institutionalized human sacrifice as a sacred duty. He initiated the Flower Wars to ensure a steady flow of captives and erased older histories to create a more unified, mythic identity for Tenochtitlan. Though never a ruler, his vision laid the foundations of Aztec imperial power."
+
+ flavor_azt.90.title: "The Famine Year of the One Rabbit"
+ flavor_azt.90.desc: "Time is a cycle and what has been will always come again. The year of the one rabbit is upon us and so are the snows, the frost and later on the droughts associated with it.\n\nThe weather will not be kind to us this year and a great famine is tearing up our society. As desperate men sell their children into slavery to feed their remaining families some demand that our [ROOT.GetCountry.GetGovernment.GetRulerTitle] should release them of servitude to him and allow them to seek new lives elsewhere."
+ flavor_azt.90.a: "We just have to allow people to resettle"
+
+ flavor_azt.110.title: "The Power Balance of the Triple Alliance"
+ flavor_azt.110.desc: "While the [ROOT.GetCountry.GetAdjective] Empire can be seen as a unified state in many ways it is still technically an alliance of the three cities of [ShowLocationName('tenochtitlan')], [ShowLocationName('tetzcoco')] and [ShowLocationName('tlacopan')], situated near [ShowLocationNameWithNoTooltip('tenochtitlan')]. When the alliance was created the first two could be said to have been of equal strength with [ShowLocationNameWithNoTooltip('tenochtitlan')] being the center of a stronger military culture while [ShowLocationNameWithNoTooltip('tetzcoco')] was the center of law, engineering and the arts. These roles have only become more pronounced as our empire has grown. [ShowLocationNameWithNoTooltip('tenochtitlan')], as the dominant city in all military matters has therefore come to rise to a position above the others and many of our subservient chiefs now send their tribute directly to [ShowLocationNameWithNoTooltip('tenochtitlan')]."
+ flavor_azt.110.a: "Continue to centralize power in [ShowLocationNameWithNoTooltip('tenochtitlan')]."
+ flavor_azt.110.b: "Attempt to empower [ShowLocationNameWithNoTooltip('tetzcoco')] to a greater degree."
+
+ flavor_azt.120.title: "Legal Reform of Nezahualcoyōtl"
+ flavor_azt.120.desc: "Traditionally legal matters in Mesoamerican states are left to the respective judges of the subject cities. As the [ROOT.GetCountry.GetAdjective] state has grown, however, this has led to considerable differences within its borders. Nezahualcoyōtl, the leader of [ShowLocationName('tetzcoco')], has therefore created a new collection of laws with strict rules and specified punishments for every crime. The plan is for these new laws to be implemented all over the [ROOT.GetCountry.GetAdjectiveWithNoTooltip] domain resulting in a more unified [ROOT.GetCountry.GetAdjectiveWithNoTooltip] legal system.\n\nTo be sure that the local judges actually do make use of these new laws a number of them also deal with the punishment of judges that do not perform their duties in accordance with the laws."
+ flavor_azt.120.a: "Let us implement these laws immediately!"
+ flavor_azt.120.b: "Why meddle with that which has worked for generations?"
+ 
+ flavor_azt.130.title: "European Diseases"
+ flavor_azt.130.desc: "Since the arrival of the Europeans strange diseases and deadly are spreading rapidly among our people. As more and more people lay sick with fever and blisters our society is shaking at its core. Have we brought forth the wrath of the divine? What peril awaits our folk as these terrible times envelop our society."
+ flavor_azt.130.a: "Have the gods forsaken us?"
+
+ flavor_azt.140.title: "Cocoliztli"
+ flavor_azt.140.desc: "A new strange fever has begun to spread in our lands. It is far worse than any disease we have ever seen either before or after the arrival of the Europeans. The fever and the bleeding that comes along with it leads to death in just a few days and its rapid spread among our people has led to widespread panic in our society. The superstitious among us have foretold the displeasure and wrath of the gods..."
+ flavor_azt.140.a: "May the gods have mercy on us."
+
+ flavor_azt.150.title: "Smallpox Epidemic"
+ flavor_azt.150.desc: "Since the arrival of the Europeans strange diseases and deadly are spreading rapidly among our people. As more and more people lay sick with fever and blisters our society is shaking at its core."
+ flavor_azt.150.a: "Horrible!"
+ many_pops_will_perish_tt: "Many of our [pops|e] will #R perish#! across our [locations|e]"
+
+ flavor_azt.160.title: "The Carving of a New Dynasty"
+ flavor_azt.160.desc: "Many across our halls have attempted to link our descent with the reign of the [ShowCultureName('toltec_culture')], who came before us. Famed for their architectural endeavors and the beauty of their capital Tula, near [ShowLocationName('tenochtitlan')], they inscribed their legacy in history with golden letters. Many have suggested that we have a legitimate link to these people and could use their name as a stepping stone towards claiming our seat in the sun..."
+ flavor_azt.160.a: "We are the descendants of the great [ShowCultureNameWithNoTooltip('toltec_culture')]!"
+ flavor_azt.160.b: "Let us make our own history, atop a pyramid of glory and conquest."
+
+ 52_year_cycle_title: "New Fire Ceremony"
+ 52_year_cycle_desc: "In [GetCurrentYear], the [ROOT.GetCountry.GetCulture.GetName] people gather in the heart of our great city of [target_location.GetName] to conduct the sacred New Fire ceremony. The anticipation is palpable while the priests meticulously prepare the sacrificial pyre. As the sun dips below the horizon, voices hush, our hearts beating in unison. The air is charged with reverence as our religious heads, clad in intricate feathered headdresses and vibrant ceremonial garbs, ignite the flames using only the friction of their divine tools. Witnesses hold their collective breath, knowing that the fate of our world rests on this sacred act.\n\nThe flames erupt, casting a warm, orange glow across the faces of our people. In this moment, we are united in our faith, bound by tradition, and connected to the cosmos. The ceremony reminds us of our eternal duty to maintain the cosmic order, and as we watch the fire dance against the darkening sky, we seek reassurance that our civilization will continue to thrive, by humbly offering our dues to our gods."
+ 52_year_cycle_a: "Line up the sacrifices, the sun shall return!"
+ 52_year_cycle_b: "A modest ceremony is in order."
+ 52_year_cycle_c: "The sun will be engulfed by a thousand shadows."
+ 52_year_cycle_d: "Ample wealth to showcase our prosperity!"
+
+ flavor_azt.170.title: "$52_year_cycle_title$"
+ flavor_azt.170.desc: "$52_year_cycle_desc$"
+ flavor_azt.170.a: "$52_year_cycle_a$"
+ flavor_azt.170.b: "$52_year_cycle_b$"
+ flavor_azt.170.c: "$52_year_cycle_c$"
+ flavor_azt.170.d: "$52_year_cycle_d$"
+ STATIC_MODIFIER_NAME_renewal_of_life: "Renewal of Life"
+
+ flavor_azt.180.title: "$52_year_cycle_title$"
+ flavor_azt.180.desc: "$52_year_cycle_desc$"
+ flavor_azt.180.a: "$52_year_cycle_a$"
+ flavor_azt.180.b: "$52_year_cycle_b$"
+ flavor_azt.180.c: "$52_year_cycle_c$"
+ flavor_azt.180.d: "$52_year_cycle_d$"
+
+ flavor_azt.190.title: "$52_year_cycle_title$"
+ flavor_azt.190.desc: "$52_year_cycle_desc$"
+ flavor_azt.190.a: "$52_year_cycle_a$"
+ flavor_azt.190.b: "$52_year_cycle_b$"
+ flavor_azt.190.c: "$52_year_cycle_c$"
+ flavor_azt.190.d: "$52_year_cycle_d$"
+
+ flavor_azt.200.title: "The Reconstruction of the [ShowBuildingTypeNameWithNoTooltip('great_temple_of_tenochtitlan')]"
+ flavor_azt.200.desc: "For years, the [ShowBuildingTypeName('great_temple_of_tenochtitlan')] has stood proudly in [target_location.GetName]. With every iteration of the temple, our greatness grows accordingly as we offer fresh sacrifices to appease the divine. If we are to continue prospering, we must plan ahead and potentially order one more expansion of the temple, in accordance with our customs and calendar."
+ flavor_azt.200.a: "Let the expansion begin!"
+ flavor_azt.200.b: "We cannot afford this..."
+
+ flavor_azt.210.title: "The Coronation Ceremonies of [ROOT.GetCountry.GetGovernment.GetRuler.GetNameWithNoTooltip]"
+ flavor_azt.210.desc: "The light across the horizon dims as priests light fires across the entirety of [ROOT.GetCountry.GetCapital.GetName]. Dressed in elaborate clothing, royal regalia, and a headdress, [ROOT.GetCountry.GetGovernment.GetRuler.GetName] prepares to receive blessings as [ROOT.GetCountry.GetGovernment.GetRuler.GetHerHis] reign begins.\n\nThe most important portion of the ceremonies is the offering of sacrifices of captured warriors. The many altars throughout the city must run red in an attempt to earn the favor of the gods, ensuring a prosperous reign."
+ flavor_azt.210.a: "Let this blood mark the start of a prosperous reign!"
+ flavor_azt.210.b: "We cannot spare the sacrifices."
+ flavor_azt.210.c: "The gods will receive their dues..."
+ coronation_sacrifice_tt: "Instead of sacrificing enemy captives, we will offer the blood of our own royals as a way to appease the gods, the streets of [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip] will run red with noble blood"
+
+ flavor_azt.220.title: "The Wrath of [target_lake.GetNameWithNoTooltip]"
+ flavor_azt.220.desc: "It is without a doubt that [target_lake.GetName] has treated our people with gentle care, offering an abundance of sustenance and assisting our prosperous society. However, the gods work in mysterious ways and may, at times, wish to remind us of our humble place in the cosmos. Such is the case with recent major floods across the entire lake. Unfortunately, many of our people have perished and our priests speak of divine wrath and punishment."
+ flavor_azt.220.a: "We are at the mercy of the elements..."
+ flavor_azt.220.b: "Let us finance reconstruction efforts."
+
+ flavor_azt.230.title: "The Tzompantli of [target_location.GetNameWithNoTooltip]"
+ flavor_azt.230.desc: "Victories against our foes come at a steep price. For years we have fought to preserve our domain and ensure our people expand and prosper. The gods have been kind to us, providing ample warrior flesh for sacrifices while protecting our fighters.\n\nAs a result, we have come to erect a great banner of skulls, also known as a #italic Tzompantli#!, taken from our enemies and those who sought out to curb our expansion. Their heads now adorn our skull banner, a reminder of the warpath we are set upon, a grim reality awaiting all those who oppose us."
+ flavor_azt.230.a: "None shall question our rule!"
+ flavor_azt.230.b: "Our foes will crumble, like dust in the wind..."
+
+ flavor_azt.240.title: "The Rise of [moctezuma_scope.GetShortNameWithNoTooltip]"
+ flavor_azt.240.desc: "Our [ROOT.GetCountry.GetGovernment.GetCourtTitle] has no shortage of capable administrators and sharp leaders. However, it comes as a surprise that one member of our family, [moctezuma_scope.GetName], has excelled brilliantly in [moctezuma_scope.GetHerHis] performance at the [ROOT.GetCountry.GetGovernment.GetCourtTitle] as well as during religious festivities. According to [moctezuma_scope.GetHerHis] tutors, as a young [moctezuma_scope.GetWomanMan], [moctezuma_scope.GetSheHe] was immersed in the rich cultural and religious traditions of our people, receiving a comprehensive education in history, warfare, and governance.\n\nRecently, [moctezuma_scope.GetSheHe] has proved to be an exceptionally talented scholar, demonstrating a profound understanding of our complex calendar and religious rituals. However, the prowess of [moctezuma_scope.GetShortNameWithNoTooltip] extends beyond [moctezuma_scope.GetHerHis] intellectual pursuits: [moctezuma_scope.GetSheHe] has proven [moctezuma_scope.GetHerselfHimself] many times in the battlefield."
+ flavor_azt.240.a: "[moctezuma_scope.GetHerHis|U] reign will be legendary!"
+ flavor_azt.240.b: "[moctezuma_scope.GetHerHis|U] time will come soon."
+ flavor_azt.240.historical_info: "Moctezuma's reign lasted for about 20 years between 1502 and 1520. His tenure saw the empire reach its greatest territorial extent, but also marked the beginning of its downfall. He centralized power and expanded tribute demands, causing unrest through the disruption of traditional relations between himself and various local lords as well as councils. When Spanish conquistadors led by Hernán Cortés arrived in 1519, the emperor hesitated, possibly believing Cortés was the earthly manifestation of the god Quetzalcoatl. Moctezuma was eventually taken hostage, weakening Aztec authority. His reign ended with the collapse of Aztec resistance and the beginning of Spanish conquest. As the last emperor of the Aztecs, Moctezuma was said to have been troubled by vicious dreams of comets, fires, and strange figures, foreshadowing the end of his empire."
+
+  

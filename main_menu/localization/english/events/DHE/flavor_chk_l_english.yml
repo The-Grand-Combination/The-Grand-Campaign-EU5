@@ -1,0 +1,114 @@
+﻿l_english:
+
+flavor_chk.1.title: "The Sunset of [ShowLocationNameWithNoTooltip('cahokia')]"
+flavor_chk.1.desc: "Though [ShowLocationName('cahokia')] has long served as the central capital for our people, the recent centuries have brought great decline to it. Sprawling dwellings across the woodlands and large scale construction projects have slowly faded into obscurity in recent centuries, and the main central population of [ShowLocationNameWithNoTooltip('cahokia')] is all that remains.\n\nIn recent years, as more of the population of [ShowLocationNameWithNoTooltip('cahokia')] have taken to leaving, some have encouraged [our_ruler.GetName] to officially call for a mass migration to resettle elsewhere, although others feel that, with considerable effort, [ShowLocationNameWithNoTooltip('cahokia')]'s old glory can be restored."
+flavor_chk.1.a: "It is time we moved on from the remains of this once great city."
+flavor_chk.1.b: "Our Golden Age has not yet ended, we can resurrect ailing [ShowLocationNameWithNoTooltip('cahokia')]!"
+events_to_weaken_cahokia_downfall: "Enables additional [events|e] to lessen the downfall of [ShowLocationName('cahokia')]."
+events_to_strengthen_cahokia: "Enables additional [events|e] to stabilize [ShowLocationName('cahokia')] and make it a sprawling [ShowLocationRankName('city')] once more!"
+
+flavor_chk.2.title: "Partial Rebuilding of the Woodhenges"
+flavor_chk.2.desc: "Though largely abandoned in recent decades, within [ShowLocationName('cahokia')] remains one of the centers used by great minds of the past, a collection of woodhenges. Though the practice has ceased in recent times, our ancestors used a completed circle to map the direction in which the sun would rise and fall.\n\nShould we take efforts to rebuild the woodhenges, great minded individuals may take to the practice once more."
+flavor_chk.2.a: "Supply the necessities to restore the Woodhenges."
+flavor_chk.2.b: "It would be a wasted effort."
+
+flavor_chk.3.title: "Expansion of the Restored Woodhenges"
+flavor_chk.3.desc: "Following the restoration of the woodhenges, some within [ShowLocationName('cahokia')] have taken to studying the sky once more. Although the return of the practice has amazed others within the [ROOT.GetCountry.GetFlavorRank], along with the alignment of the woodhenge now affecting planned dates for ceremonies, researchers have brought forth a request for [our_ruler.GetName]. Though the rebuilding has enabled renewed study of the sky, some feel that the current capacity is insufficient, and have requested [ROOT.GetCountry.GetGovernment.GetAdjective] support to greatly expand the existing woodhenges."
+flavor_chk.3.a: "Grant their request and expand the Woodhenges."
+flavor_chk.3.b: "The size of the restoration is more than sufficient!"
+
+flavor_chk.4.title: "Flooding in the [ROOT.GetCountry.GetAdjectiveWithNoTooltip] Woodlands"
+flavor_chk.4.desc: "Recent shifts in the seasons have brought with them terrible rains not seen within generations, and a great flood has affected the woodlands of [ShowLocationName('cahokia')]. Though much of inner [ShowLocationNameWithNoTooltip('cahokia')] has been spared, the outer portions have been greatly damaged, with many of the remaining populace pointing to this event as another sign that [ShowLocationNameWithNoTooltip('cahokia')] is growing to be a less than hospitable place to live."
+flavor_chk.4.a: "[ROOT.GetCountry.Custom('common_string_negative')]"
+
+flavor_chk.5.title: "In Preparation of Future Floods"
+flavor_chk.5.desc: "The recent catastrophic flooding to take place in [ShowLocationName('cahokia')] has once again reignited debate to protect the [target_location.GetRank.GetName] from future floods. Though much of the inner portions were spared, the outer reaches of [ShowLocationNameWithNoTooltip('cahokia')] were greatly damaged, leaving many who lived in the outer regions forced to move inwards. Two warring factions within [our_ruler.GetName]'s inner circle have proposed doubling efforts to fortify the inner portions for the remaining population, though others have suggested great efforts be taken to erect stronger barricades in the affected regions, allowing for the gradual settlement of the outer portions of [ShowLocationNameWithNoTooltip('cahokia')]."
+flavor_chk.5.a: "We should take steps to fortify the center against future floods!"
+flavor_chk.5.b: "Commit to erecting the outer barricades in hopes of resettling outer [ShowLocationNameWithNoTooltip('cahokia')]."
+
+flavor_chk.6.title: "Revitalization of the [ROOT.GetCountry.GetAdjectiveWithNoTooltip] Elite"
+flavor_chk.6.desc: "While [our_ruler.GetName] has maintained a close grip on the power structure of [ShowLocationName('cahokia')], many of the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] and [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] factions that have assisted the [ROOT.GetCountry.GetGovernment.GetRulerTitle] in the past have largely faded away in recent times.\n\nHowever, the recent growth of [ShowLocationNameWithNoTooltip('cahokia')] has seen a revitalization of these faded [ROOT.GetCountry.GetGovernment.GetAdjective] elites, who now seek to work with [our_ruler.GetNameWithNoTooltip] to usher in a new [ROOT.GetCountry.GetAdjectiveWithNoTooltip] age."
+flavor_chk.6.a: "A strengthened elite is a sign of a stronger future."
+
+flavor_chk.7.title: "Worsening Food Conditions"
+flavor_chk.7.desc: "Though [ShowLocationName('cahokia')] has maintained a relatively sizable population, recent shifts in agricultural yields have steadily led to a decrease in the overall food production, along with some crops such as [ShowGoodsName('maize')] becoming too prevalent, leading to a decline of the nutritional health of the populace. Such shifts have led to a noticeable decline in the health of the populace, along with the starvation of others.\n\nMany of the populace have urged [our_ruler.GetName] to dispatch warbands to venture into the wilds to raid other tribes for food, although such actions would undoubtedly bring repercussions."
+flavor_chk.7.a: "Dispatch the warbands to raid nearby tribes for food."
+flavor_chk.7.b: "This food scarcity will blow over by next season."
+chk_stealing_of_foods: "Stolen Food Supply"
+
+flavor_chk.8.title: "Neglect of the Woodlands Rivers"
+flavor_chk.8.desc: "The rivers that flow in the woodlands around [ShowLocationName('cahokia')] have long benefited our people. However, as the [target_location.GetRank.GetName] has grown, so has neglect towards those very sources of water. With the main source of water for [ShowLocationNameWithNoTooltip('cahokia')] now sickening our populace, [our_ruler.GetName] has delegated multiple scouting parties to search for a more healthier source of water, although transportation of the new source will be difficult."
+flavor_chk.8.a: "We will have to look for a new source of water."
+
+flavor_chk.9.title: "[ROOT.GetCountry.GetAdjectiveWithNoTooltip] Reliance on [ShowGoodsNameWithNoTooltip('maize')]"
+flavor_chk.9.desc: "Throughout the generations of our people, [ShowGoodsName('maize')] has grown to become one of our staple foods. However, in recent times, the people of [ShowLocationName('cahokia')] have grown to abandon the process of nixtamalization of [ShowGoodsNameWithNoTooltip('maize')] in favor of simpler consumption, which while easier to maintain, has severely affected the health of the population.\n\nSeeking to readopt the practice of nixtamalization of [ShowGoodsNameWithNoTooltip('maize')], [our_ruler.GetName] has requested support from [our_ruler.GetHisHer] inner circle to determine the viability of a return to such a practice."
+flavor_chk.9.a: "[ShowGoodsNameWithNoTooltip('maize')] serves as our primary food, we cannot risk a longer process!"
+flavor_chk.9.b: "Strive for a return to this practice."
+chk_reliance_on_maize: "Populace Reliant on Maize"
+
+flavor_chk.10.title: "Reintroduction of Nixtamalized [ShowGoodsNameWithNoTooltip('maize')]"
+flavor_chk.10.desc: "Despite some initial resistance from the population of [ShowLocationName('cahokia')], the reintroduction of nixtamalized [ShowGoodsName('maize')] has proven to be quite successful, with growing signs of improved health across the populace. However, some within the populace have also expressed resentment, as the process has led to a noticeable decrease in the amount of available [ShowGoodsNameWithNoTooltip('maize')]."
+flavor_chk.10.a: "This should hopefully lead to a reinvigorated population."
+chk_nixtamalized_maize_demand: "Nixtamalized Maize"
+
+flavor_chk.11.title: "Renewed Rejection of Nixtamalized [ShowGoodsNameWithNoTooltip('maize')]"
+flavor_chk.11.desc: "While the reintroduction of nixtamalized [ShowGoodsName('maize')] proved an improvement for the overall wellbeing of the populace of [ShowLocationName('cahokia')], resentment towards the forceful adoption of the process has now led to a surge of unrest throughout the [target_location.GetRank.GetName]. Though the process has improved the health of those who adopted the process, the reduction in the availability of [ShowGoodsNameWithNoTooltip('maize')] has reached a boiling point."
+flavor_chk.11.a: "Refuse to give up the practice."
+flavor_chk.11.b: "Concede to the populace demands, and forbid further nixtamalized [ShowGoodsNameWithNoTooltip('maize')]."
+chk_maize_cravings: "Maize Cravings"
+
+flavor_chk.12.title: "Veneration of [our_ruler.GetName]"
+flavor_chk.12.desc: "Throughout [our_ruler.GetHisHer] rule, [our_ruler.GetName] has grown to have a religious-like following amongst the people of [ShowLocationName('cahokia')]. Through [our_ruler.GetHisHer] efforts to restore portions of the [target_location.GetRank.GetName], while also laying the foundation to facilitate the return of lost trading ties, [our_ruler.GetNameWithNoTooltip] has only seen [our_ruler.GetHisHer] following grow. Praising the sudden resurgence of the [target_location.GetRank.GetNameWithNoTooltip] that had been on a steep decline has caused many to see [our_ruler.GetNameWithNoTooltip] as its savior."
+flavor_chk.12.a: "Accept the acts of worship."
+flavor_chk.12.b: "[our_ruler.GetNameWithNoTooltip] did not save [ShowLocationNameWithNoTooltip('cahokia')], but instead her people."
+
+flavor_chk.20.title: "Repopulation of Outer [ShowLocationNameWithNoTooltip('cahokia')]"
+flavor_chk.20.desc: "The resurgence of growth within [ShowLocationName('cahokia')] has led to the emergence of a new discussion within [our_ruler.GetName]'s inner circle, about repopulating the outer regions of [ShowLocationNameWithNoTooltip('cahokia')]. Though these regions were home to a sprawling [target_location.GetRank.GetName] in the past, in recent generations they have grown to be little more than an extension of the [target_location.GetRank.GetNameWithNoTooltip] limit. While encouraging the resettlement of outer [ShowLocationNameWithNoTooltip('cahokia')] may lead the [target_location.GetRank.GetNameWithNoTooltip] reclaiming fragments of its old glory, it may also prove an expensive task."
+flavor_chk.20.a: "Encourage the resettling into outer [ShowLocationNameWithNoTooltip('cahokia')]."
+flavor_chk.20.b: "Concentrate the population into the main [target_location.GetRank.GetNameWithNoTooltip]."
+
+flavor_chk.21.title: "Rebuilding the Outer Region of [ShowLocationNameWithNoTooltip('cahokia')]"
+flavor_chk.21.desc: "With the regrowth of [ShowLocationName('cahokia')] reaching new levels, the existing settlements on the outer reaches of [ShowLocationNameWithNoTooltip('cahokia')] have now largely been repopulated. While the region has been prone to environmental hazards, such as flooding in the past, many have requested to [our_ruler.GetName] that the growing resurgence of [ShowLocationNameWithNoTooltip('cahokia')]'s population has laid the groundwork for rebuilding the outer [target_location.GetRank.GetName]."
+flavor_chk.21.a: "Begin the reconstruction of the outer region."
+flavor_chk.21.b: "Spare the resources for other projects."
+
+flavor_chk.22.title: "A Center of Tribal Cultures"
+flavor_chk.22.desc: "While the decline of [ShowLocationName('cahokia')] saw large swathes of its diverse population overtime leave, the growing resurgence of the [target_location.GetRank.GetName] has now seen peoples from neighboring tribes return to settle once again. The return of traders from [target_migration_source.GetName] to [ShowLocationNameWithNoTooltip('cahokia')] suggests the [target_location.GetRank.GetNameWithNoTooltip] may once again be resurging as a major center within the Eastern Woodlands."
+flavor_chk.22.a: "A prosperous society once more!"
+
+flavor_chk.23.title: "Reemergence of [ROOT.GetCountry.GetAdjectiveWithNoTooltip] Trade"
+flavor_chk.23.desc: "Though recent generations saw the growing decline of [ShowLocationName('cahokia')] as the main hub of trade throughout the Eastern Woodlands, in recent times that decline has shifted to a gradual resurgence. Through the efforts of [our_ruler.GetName], [ShowLocationNameWithNoTooltip('cahokia')] with its resurging population and infrastructure projects, has attracted peoples from varying distant tribes to once again return to [ShowLocationNameWithNoTooltip('cahokia')] to engage in regional trade."
+flavor_chk.23.a: "[ShowLocationNameWithNoTooltip('cahokia')] once again sits as a major center of trade!"
+chk_center_of_trade: "Regional Center of Trade"
+
+flavor_chk.24.title: "A New [ROOT.GetCountry.GetAdjectiveWithNoTooltip] Golden Age"
+flavor_chk.24.desc: "Once thought to be believed as a [target_location.GetRank.GetName] in its final days, through the efforts of [our_ruler.GetName] and [our_ruler.GetHisHer] followers, [ShowLocationName('cahokia')] now stands as a beacon of the North American world. Though the last few generations have been a dark age for [ShowLocationNameWithNoTooltip('cahokia')], it has now entered a new golden era of innovation and stability!"
+flavor_chk.24.a: "[ShowLocationNameWithNoTooltip('cahokia')] will never again falter!"
+
+flavor_chk.30.title: "Fortifying the Center"
+flavor_chk.30.desc: "Following recent raids by [cahokia_raider.GetName], much of the outer regions of [ShowLocationName('cahokia')] have been greatly damaged, with more of the remaining population retreating inwards. In order to combat the growing rise of raiders by other neighboring tribes, some have suggested to [our_ruler.GetName] that the center of the [target_location.GetRank.GetName] be fortified, though such a project would lead to an ever-increasing abandonment of the outer region of [ShowLocationNameWithNoTooltip('cahokia')]."
+flavor_chk.30.a: "Fortify the center of [ShowLocationNameWithNoTooltip('cahokia')] to protect against tribal raids."
+flavor_chk.30.b: "We should instead take the fight to [cahokia_raider.GetNameWithNoTooltip]!"
+
+flavor_chk.31.title: "Selective Construction"
+flavor_chk.31.desc: "While the generations of past [ROOT.GetCountry.GetAdjective] people were prominent mound builders, with extensive construction projects, [ShowLocationName('cahokia')]'s declining populace has made such projects unfeasible. Though projects still continue, [our_ruler.GetName] has been encouraged by [our_ruler.GetHisHer] inner circle to pursue more selective projects as needed to maintain the wellbeing of the [target_location.GetRank.GetName]."
+flavor_chk.31.a: "Limit construction projects to preserve income."
+flavor_chk.31.b: "Recommit to expansion of [ShowLocationNameWithNoTooltip('cahokia')]!"
+
+flavor_chk.32.title: "Plight of [ShowLocationNameWithNoTooltip('cahokia')]"
+flavor_chk.32.desc: "Following the increased worsening conditions within [ShowLocationName('cahokia')], a growing size of the populace have taken to leaving the [target_location.GetRank.GetName] for good, choosing [cahokia_migration.GetName] to settle and establish a new village. With the increasing size of this exodus from [ShowLocationNameWithNoTooltip('cahokia')] including some of its most skilled populace, those within [our_ruler.GetName]'s inner circle fear this may be the final days of [ShowLocationNameWithNoTooltip('cahokia')]'s glory."
+flavor_chk.32.a: "A troubling sign of things to come."
+
+flavor_chk.33.title: "Decline of Old Trading Glory"
+flavor_chk.33.desc: "Following generations of increased decline in trade activity, the various tribal groups that would arrive to [ShowLocationName('cahokia')] to share the goods of their tribe have largely ceased entirely. With the belief that these traders will never return to [ShowLocationNameWithNoTooltip('cahokia')], several members of the populace have taken to scavenging the remains of trading houses once used by these traders. Some have urged [our_ruler.GetName] to take a stance on the matter, as should the traders one day return, the looting of their goods would likely spark outrage."
+flavor_chk.33.a: "Permit the scavenging of the abandoned trade houses."
+flavor_chk.33.b: "It would be best to leave these houses undisturbed in hopes they return."
+
+flavor_chk.34.title: "Lost of Shared Cultural Ties"
+flavor_chk.34.desc: "With the increasing decline of [ShowLocationName('cahokia')]'s glory of being a settlement to which many distant tribes would arrive to trade and share practices, the [target_location.GetRank.GetName] has begun to lose one of its core identities as a center of cultural ties. With many within [ShowLocationNameWithNoTooltip('cahokia')] maintaining a bleak view to the future, some are questioning if it would be best to focus on our own identity before it too is lost with the [target_location.GetRank.GetNameWithNoTooltip]"
+flavor_chk.34.a: "We should instead focus on our preservation."
+flavor_chk.34.b: "In time, these communities ties will return to [ShowLocationNameWithNoTooltip('cahokia')]."
+
+flavor_chk.35.title: "The Shadow Over [ShowLocationNameWithNoTooltip('cahokia')]"
+flavor_chk.35.desc: "Though attempts have been made by [our_ruler.GetName] and many others within [ShowLocationName('cahokia')], the increasing instability of the region along with the growing inhospitable nature with failed crops yields and worsening river conditions, many have taken to leaving [ShowLocationNameWithNoTooltip('cahokia')] for good. While [our_ruler.GetNameWithNoTooltip] and a portion of the [ROOT.GetCountry.GetAdjective] elite have chose to remain for now, the glory days of the [target_location.GetRank.GetName] are long gone."
+flavor_chk.35.a: "Our glory days are but a shadow of the past."

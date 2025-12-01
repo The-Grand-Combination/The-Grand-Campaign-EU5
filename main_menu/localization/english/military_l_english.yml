@@ -1,0 +1,30 @@
+﻿l_english:
+ HAS_PROP_FORTS_IN_LOC: "Has $NUM|Y$ levels of fortifications, which propagate a [zone_of_control|e] over adjacent [locations|e]."
+ HAS_FORTS_IN_LOC: "Has $NUM|Y$ levels of simple fortifications."
+ INFLUENCE_FORT_ENTRY: "In the [zone_of_control|e] of [LOCATION.GetName]."
+ FORT_FLIPPING: "#T Controller Change#!\nThe [controller] of @location!$PROV|Y$ is changing to $FLIPPER|Y$ due to the [fort|e] in $FLIPPINGLOCATION|Y$.\nProgress is $PERCENT|Y2%$."
+ CAPITAL_FLIPPING: "#T Controller Change#!\nThe [controller] of @location!$PROV|Y$ is changing to $FLIPPER|Y$ due to them controlling the [province_capital|e] in @location! $FLIPPINGLOCATION|Y$.\nProgress is $PERCENT|Y2%$."
+ FORT_FLIPPING_SLIPPING: "@location!$PROV$ is slipping away from $FLIPPER$ again. Progress is $PERCENT|Y%$."
+ HAS_NO_FORTS: "Has no [forts|e], and is not in a [zone_of_control|e]."
+
+ APPLY_MILITARY_STANCE_TO_ALL: "Select Military Stance for all our Subjects"
+
+ normal_military_stance: "Normal"
+ normal_military_stance_desc: "The [subject|e] will take a balanced approach to military tactics."
+ normal_military_stance_desc_all: "All our [subjects|e] will take a balanced approach to military tactics."
+
+ aggressive_military_stance: "Aggressive"
+ aggressive_military_stance_desc: "The [subject|e] will take an aggressive approach to military tactics, looking to start sieges and chase units in enemy territory."
+ aggressive_military_stance_desc_all: "All our [subjects|e] will take an aggressive approach to military tactics, looking to start sieges and chase units in enemy territory."
+
+ supportive_military_stance: "Supportive"
+ supportive_military_stance_desc: "The [subject|e] will take a supportive approach to military tactics, helping our units."
+ supportive_military_stance_desc_all: "All our [subjects|e] will take a supportive approach to military tactics, helping our units."
+
+ passive_military_stance: "Passive"
+ passive_military_stance_desc: "The [subject|e] will take a passive approach to military tactics, doing low-risk actions like blockading as well as defending friendly territory."
+ passive_military_stance_desc_all: "All our [subjects|e] will take a passive approach to military tactics, doing low-risk actions like blockading as well as defending friendly territory."
+
+ defensive_military_stance: "Defensive"
+ defensive_military_stance_desc: "The [subject|e] will take a defensive approach to military tactics, looking to stop enemies from doing anything in allied lands only."
+ defensive_military_stance_desc_all: "All our [subjects|e] will take a defensive approach to military tactics, looking to stop enemies from doing anything in allied lands only."

@@ -1,0 +1,35 @@
+﻿l_english:
+ flavor_dan_skane_war.1.title: "The Rebellion of [target_character.GetNameWithNoTooltip]"
+ flavor_dan_skane_war.1.desc: "[target_character.GetName], one of the most esteemed members of our [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')], has been discovered plotting against the [GetCountry('SWE').GetAdjective] Overlordship of [ROOT.GetCountry.GetName]. His reasons for discontent with our Overlords are not without truth, since [target_ruler.GetName] is frequently neglecting the matters of our state in favor of the [GetCountry('SWE').GetCulture.GetNameWithNoTooltip] [GetCountry('SWE').GetGovernment.GetEstateName('nobles_estate')]. With the recent developments in [GetCountry('DAN').GetName], it might be beneficial for us to once again proclaim our loyalty to the [GetCountry('DAN').GetAdjectiveWithNoTooltip] state."
+ flavor_dan_skane_war.1.a: "Exile him to [GetCountry('DAN').GetNameWithNoTooltip]."
+ flavor_dan_skane_war.1.b: "Support his rebellion."
+ flavor_dan_skane_war.1.b.tt: "This might lead to our country being annexed by [GetCountry('DAN').GetName]"
+
+ flavor_dan_skane_war.2.title: "[target_character.GetNameWithNoTooltip] Offers his Services"
+ flavor_dan_skane_war.2.desc: "[target_character.GetName] has arrived from [GetCountry('SKE').GetName], where he championed the cause to once again proclaim the rightful [ROOT.GetCountry.GetAdjective] rule over [ShowAreaName('skaneland_area')]. With him in our court, we would be able to foster contact with cordial [ShowCultureName('danish')] members of the [GetCountry('SKE').GetAdjective] [GetCountry('SKE').GetGovernment.GetEstateName('nobles_estate')]."
+ flavor_dan_skane_war.2.a: "He is more than welcome!"
+ flavor_dan_skane_war.2.a.tt: "When the time is right, we will be able to count on [GetCountry('SKE').GetAdjectiveWithNoTooltip] support"
+ flavor_dan_skane_war.2.b: "We do not need any help."
+
+ flavor_dan_skane_war.3.title: "[GetCountry('SKE').GetNameWithNoTooltip] Returns to the Fold"
+ flavor_dan_skane_war.3.desc: "The [GetCountry('SKE').GetGovernment.GetEstateName('nobles_estate')] of [GetCountry('SKE').GetName] has once again seen reason and decided to elect our [ROOT.GetCountry.GetGovernment.GetRulerTitle] as their rightful ruler. While this will surely anger the [GetCountry('SWE').GetLongName], there is little reason to decline the coronation."
+ flavor_dan_skane_war.3.a: "A glorious day!"
+ flavor_dan_skane_war.3.b: "That crown is worthless."
+
+ flavor_dan_skane_war.4.title: "[GetCountry('SKE').GetNameWithNoTooltip] Joins [GetCountry('DAN').GetNameWithNoTooltip]"
+ flavor_dan_skane_war.4.desc: "The treacherous [GetCountry('SKE').GetGovernment.GetEstateName('nobles_estate')] of [GetCountry('SKE').GetName] have conspired with [GetCountry('DAN').GetName] to end our rulership in [ShowAreaName('skaneland_area')]. If we do not act fast, the area will slip out of our domain, maybe forever."
+ flavor_dan_skane_war.4.a: "Outrageous!"
+
+ flavor_dan_skane_war.5.title: "Offer to Purchase [GetCountry('SKE').GetNameWithNoTooltip]"
+ flavor_dan_skane_war.5.desc: "Although open rebellion has been rare in [GetCountry('SKE').GetName], the strife between the country and [GetCountry('SWE').GetName] has not disappeared since the revolt of [target_character.GetName].\n\nWe should make an offer to buy the land back from [GetCountry('SWE').GetNameWithNoTooltip], which would avoid bloodshed in [ShowRegionName('scandinavian_region')] and ensure the peace."
+ flavor_dan_skane_war.5.a: "Make the offer."
+ flavor_dan_skane_war.5.a.tt: "We will offer 6 months of our income as payment for [GetCountry('SKE').GetNameWithNoTooltip], which will vassalize them in case [GetCountry('SWE').GetNameWithNoTooltip] accepts"
+ flavor_dan_skane_war.5.b: "This no longer benefits us."
+
+ flavor_dan_skane_war.6.title: "[GetCountry('DAN').GetNameWithNoTooltip] Offers to Purchase [GetCountry('SKE').GetNameWithNoTooltip]"
+ flavor_dan_skane_war.6.desc: "[GetCountry('DAN').GetName] has sent us a proposal to purchase the rights to overlordship over [GetCountry('SKE').GetName]. Accepting the offer would bring us an influx of gold that could be put to great use, but it would also cost us immediate access to the [ShowLocationName('oresund')]."
+ flavor_dan_skane_war.6.a: "We accept!"
+ flavor_dan_skane_war.6.b: "Reject the proposal!"
+ flavor_dan_skane_war.7.title: "[GetCountry('SWE').GetNameWithNoTooltip] Accepts our Offer"
+ flavor_dan_skane_war.7.desc: "[GetCountry('SWE').GetName] has accepted our offer to purchase the overlordship over [GetCountry('SKE').GetName]. While some formalities are still in progress of being carried out, the treaty is ratified and already in effect."
+ flavor_dan_skane_war.7.a: "[ROOT.GetCountry.Custom('common_string_positive')]"

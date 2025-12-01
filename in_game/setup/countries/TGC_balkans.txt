@@ -1,0 +1,61 @@
+MOL = {
+	color = map_MOL
+	color2 = rgb { 16 41 202 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = moldovan
+	religion_definition = orthodox
+
+	description_category = administrative
+	difficulty = 3
+}
+
+HUN = {
+	color = map_hungarian
+	color2 = rgb { 152  85  92 }
+
+	unit_color0 = hsv360 {	7 87 50 }
+	unit_color1 = hsv360 {	130 53 38 }
+	unit_color2 = rgb {	239 239 242 }
+
+	culture_definition = hungarian
+	religion_definition = catholic
+
+	description_category = diplomatic
+	difficulty = 1
+}
+
+WAL = {
+	color = map_WAL
+	color2 = rgb { 82 160 242 }
+
+	culture_definition = wallachian
+	religion_definition = orthodox
+}
+
+TRA = {
+	color = map_transylvanian
+	color2 = rgb { 211  207  173 }
+
+	culture_definition = hungarian
+	religion_definition = catholic
+}
+
+GRE = {
+	color = map_GRE
+	color2 = rgb { 211  207  173 }
+
+	culture_definition = hungarian
+	religion_definition = catholic
+}
+
+ION = {
+	color = map_ION
+	color2 = rgb { 211  207  173 }
+
+	culture_definition = hungarian
+	religion_definition = catholic
+}

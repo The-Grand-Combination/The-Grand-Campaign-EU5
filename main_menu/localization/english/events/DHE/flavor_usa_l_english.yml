@@ -1,0 +1,125 @@
+﻿l_english:
+ flavor_usa.1.title: "Assembly of the Delegates"
+ flavor_usa.1.desc: "The delegates of our [ROOT.GetCountry.GetGovernment.GetParliament.GetName] have gathered to discuss the important matters of the day. Among the most urgent matters is the question of administration and if we should support local authority or push towards a centralized state. While most of our delegates favor decentralization, we enjoy a strong support among the majority of representatives and could surely convince them to support more centralization."
+ flavor_usa.1.a: "Local autonomy must remain our focus."
+ flavor_usa.1.b: "Leverage our position for centralization."
+
+ flavor_usa.2.title: "Articles of Confederation"
+ flavor_usa.2.desc: "The States that established the [ROOT.GetCountry.GetLongName] as a confederation of sovereign countries have approved a document, which will serve our country as a legal framework for both internal stability and foreign affairs."
+ flavor_usa.2.a: "Ratify the Articles"
+
+ flavor_usa.3.title: "Northwest Ordinance"
+ flavor_usa.3.desc: "The areas between the Mississippi River, the [ShowAreaName('great_lakes_sea_zones_area')], and the Ohio River, also know as the Northwest Ordinance, have existed on the periphery of our country for a while now. A particular question is their administrative standing within our territory and if they shall be governed from our capital or they should become new states within [ROOT.GetCountry.GetName]. We should settle this conflict now, so a stable rule of these lands can begin."
+ flavor_usa.3.a: "They will be separate states."
+ flavor_usa.3.a.tt: "Every owned [location|e] in the Northwest Ordinance will gain [ShowNamedValue('development_weak_bonus')|+=] [development|e] and lose [ShowNamedValue('control_mild_penalty')|+=2%] [control|e]"
+ flavor_usa.3.b: "Enforce our rule on these provinces."
+ flavor_usa.3.b.tt: "Every owned [location|e] in the Northwest Ordinance will lose [ShowNamedValue('development_weak_penalty')|+=] [development|e] and gain [ShowNamedValue('control_mild_bonus')|+=2%] [control|e]"
+
+ flavor_usa.4.title: "Declaration of Independence"
+ flavor_usa.4.desc: "Multiple voices in our country, especially those who advocated for our independence before, are calling for an official act to cement the [ROOT.GetCountry.GetLongName] as a legitimate nation. They argue that without a Declaration of Independence, we would be considered outlaws by the countries of [ShowContinentName('europe')], rebels against a legitimate sovereign and government. To transform us into a legitimate nation, we need international recognition for our cause and foreign allies to support it."
+ flavor_usa.4.a: "Sign the Declaration of Independence"
+
+ flavor_usa.5.title: "[target_character.GetNameWithNoTooltip]"
+ flavor_usa.5.desc: "[target_character.GetName] has been well recognized for [target_character.GetHerHis] work in the service of [ROOT.GetCountry.GetName]. [target_character.GetHerHis|U] campaigning for national unity has in many ways stabilized our country and solidified our independence. Without [target_character.GetHerHis] endless work and energy, the [ROOT.GetCountry.GetLongName] might still be ruled by foreign tyrants."
+ flavor_usa.5.a: "[target_character.GetSheHe|U] will continue to serve us well."
+
+ flavor_usa.6.title: "The [ShowGoodsNameWithNoTooltip('fur')] Trade"
+ flavor_usa.6.desc: "The vast space of [ShowSubContinentName('north_america')] is renowned for its high quality [ShowGoodsName('fur')]. With the ever-increasing demand of [ShowContinentName('europe')], we should refocus our economy on the acquisition and trade of [ShowGoodsNameWithNoTooltip('fur')] to profit from it continuously."
+ flavor_usa.6.a: "Invest in more trappers."
+ flavor_usa.6.a.tt: "This will improve all [ShowGoodsNameWithNoTooltip('fur')] Extractions in our country."
+ flavor_usa.6.b: "Our focus is needed elsewhere."
+
+ flavor_usa.7.title: "Assimilation of Natives"
+ flavor_usa.7.desc: "The land claimed by us also is inhabited by a significant amount of natives, which are forced to live in an uncertain legal status. Some members of our government have proposed a policy of assimilation, encouraging these people to adapt better into the [ROOT.GetCountry.GetCulture.GetName] culture."
+ flavor_usa.7.a: "Adopt the policy of [ShowPolicyNameWithNoTooltip('native_integration')]."
+ flavor_usa.7.b: "Leave them be."
+
+ flavor_usa.8.title: "The [ShowBuildingTypeNameWithNoTooltip('usa_academy_of_arts_and_sciences')]"
+ flavor_usa.8.desc: "Previously, we had to rely on foreign countries to educate our people. With the changes in recent times, this can no longer be an acceptable state. We will need our own institution to educate our people and foster the cultural fabric of [ROOT.GetCountry.GetName]."
+ flavor_usa.8.a: "Sponsor the institution."
+ flavor_usa.8.b: "Ignore it."
+
+ flavor_usa.9.title: "Unjust Taxation"
+ flavor_usa.9.desc: "The heavy taxes we are laying upon the [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] have caused unrest in [unrest_location.GetName]. Not only the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('peasants_estate')] themselves are in uproar about this injustice, but so are most of their countrymen in [unrest_location.GetProvince.GetName]. If we do not address their concern, this could spiral into a larger issue."
+ flavor_usa.9.a: "What do they know about just taxes?"
+ flavor_usa.9.a.tt: "All [pops|e] in the province of [unrest_location.GetProvince.GetName] lose [ShowNamedValue('pop_satisfaction_severe_penalty')|+=2%] [pop_satisfaction|e] but the locations also gain [ShowNamedValue('control_weak_bonus')|+=2%] [control|e]"
+ flavor_usa.9.b: "Give them more autonomy."
+ flavor_usa.9.b.tt: "All [pops|e] in the province of [unrest_location.GetProvince.GetName] gain [ShowNamedValue('pop_satisfaction_mild_bonus')|+=2%] [pop_satisfaction|e] but the locations also lose [ShowNamedValue('control_mild_penalty')|+=2%] [control|e]"
+
+ flavor_usa.10.title: "[unrest_location.GetNameWithNoTooltip] Post Road"
+ flavor_usa.10.desc: "The countryside of [ROOT.GetCountry.GetName] is poorly connected to our urban centers, and investment into our road network has been requested several times. Better roads would not only benefit our people, but increase the time it takes for our army to react to any foreign aggression, so investment seems wise."
+ flavor_usa.10.a: "The administration should organize it."
+ flavor_usa.10.b: "This would be a waste of time."
+
+ flavor_usa.11.title: "The [ShowBuildingTypeNameWithNoTooltip('usa_philosophical_society')]"
+ flavor_usa.11.a: "Sounds impressive, let us sponsor it!"
+
+ flavor_usa.12.title: "Great Fire of [target_location.GetNameWithNoTooltip]"
+ flavor_usa.12.desc: "The [target_location.GetRank.GetName] of [target_location.GetName] is set ablaze by fire!\n\nWhile the hungry flames still burn through the houses, some representatives from [target_location.GetNameWithNoTooltip] have already started to organize a relief and re-construction plan for the [target_location.GetRank.GetNameWithNoTooltip]. It would be an expensive undertaking, but it could prove to be a good long-term investment for a valuable piece of land."
+ flavor_usa.12.a.tt: "[target_location.GetName] will lose [prosperity|e], lose [pops|e] and some [buildings|e] will be affected by the fire"
+ flavor_usa.12.a: "Go with the ambitious plan!"
+ flavor_usa.12.b.tt: "[target_location.GetName] will lose [prosperity|e], lose [development|e], lose [pops|e] and some [buildings|e] will be affected by the fire"
+ flavor_usa.12.b: "Do only what is necessary!"
+
+ flavor_usa.13.title: "The Expedition of [target_character.GetNameWithNoTooltip] and [target_character_2.GetNameWithNoTooltip]"
+ flavor_usa.13.desc: "[target_character.GetName] and [target_character.GetHerHis] close friend [target_character_2.GetName] are proposing an expedition of the [ROOT.GetCountry.GetAdjective] people to cross the Western portion of [ShowSubContinent('north_america')], to find the most direct and practicable water communication across the continent. Together with a small group of volunteers, the two will cross the continent and explore the Missouri River, to find if any river may offer a waterway across this continent for the purpose of commerce."
+ flavor_usa.13.a: "Fund their expedition."
+ flavor_usa.13.b: "They need more preparation."
+
+ flavor_usa.14.title: "The [ShowBuildingTypeNameWithNoTooltip('usa_national_bank')]"
+ flavor_usa.14.desc_generic: "Establishing such an institution in [target_location.GetName] could be the first step in establishing [ROOT.GetCountry.GetName] as a reliable trading partner with a stable currency for foreign powers."
+ flavor_usa.14.desc: "To combat economic uncertainty and stabilize our own treasury, the formation of the [ShowBuildingTypeName('usa_national_bank')] has been proposed. $flavor_usa.14.desc_generic$"
+ flavor_usa.14.a: "Found the [ShowBuildingTypeNameWithNoTooltip('usa_national_bank')]."
+ flavor_usa.14.b: "This sounds expensive."
+
+ flavor_usa.15.title: "The Invention of the [ShowModifierWithNoTooltip('cotton_gin')]"
+ flavor_usa.15.desc: "A new machine which separates [ShowGoodsName('cotton')] fibers from their seeds in a quick and easy way is currently being developed, and could significantly improve the output of our [ShowGoodsNameWithNoTooltip('cotton')] production. The machine is a wooden drum with small wire hooks that pulls the [ShowGoodsNameWithNoTooltip('cotton')] fibers through a mesh to separate the seeds from the rest of the plant while brushes removes the loose lint to prevent jams."
+ flavor_usa.15.a: "We will need this machine!"
+ flavor_usa.15.a.tt: "Every [location|e] with a [ShowGoodsNameWithNoTooltip('cotton')] [raw_material|e] gains [ShowModifier('cotton_gin')]."
+ flavor_usa.15.b: "The old ways are just fine."
+
+ flavor_usa.16.title: "The [ShowBuildingTypeNameWithNoTooltip('usa_national_mint')]"
+ flavor_usa.16.desc: "Our currency is regretfully not up to the standard set by foreign powers, due to the lack of a minting office in the hand of our government. $flavor_usa.14.desc_generic$"
+ flavor_usa.16.a: "Establish the [ShowBuildingTypeNameWithNoTooltip('usa_national_mint')]"
+ flavor_usa.16.b: "We will get to this later."
+
+ flavor_usa.17.title: "Tension with Natives"
+ flavor_usa.17.desc: "The slow and steady expansion of [ROOT.GetCountry.GetAdjective] settlers in [ShowContinentName('america')] has caused new conflicts with the natives of the lands. Our presence in lands they consider their homes has caused many to unify and organize resistance against us."
+ flavor_usa.17.a: "We must prevail!"
+
+ flavor_usa.18.title: "[target_shays_rebellion.GetName]."
+ flavor_usa.18.desc: "Our high taxation and bad financial status has caused an uproar among the [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')]. A charismatic farmer, [target_character.GetName], has rallied against the taxation of central government and wants to preserve the autonomy of the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('peasants_estate')]. If we do not navigate this situation carefully, [target_character.GetHerHis] influence might spread and cause widespread unrest."
+ flavor_usa.18.a: "We will manage."
+ shays_rebellion: "Shays' Rebellion"
+
+ flavor_usa.19.title: "The Future of the Army"
+ flavor_usa.19.desc: "Now that we are the masters of our own fate within [ShowContinentName('america')], we should determine the composition and recruitment of our army. There are strong arguments for both [ShowPolicyName('elite_training_policy')] and [ShowPolicyName('levee_en_masse_policy')], but it now has to be decided what kind of army we want to pursue for the new future."
+ flavor_usa.19.a: "Adopt the [ShowPolicyNameWithNoTooltip('elite_training_policy')]."
+ flavor_usa.19.b: "Rely on [ShowPolicyNameWithNoTooltip('levee_en_masse_policy')]."
+
+ flavor_usa.20.title: "The People have Buns"
+ flavor_usa.20.desc: "In the old times, a common complaint of the people was the scarcity of buns. Fortunately, we now live in times of abundance and luxury, and all [ROOT.GetCountry.GetAdjective] citizens can enjoy their buns in the way they prefer."
+ flavor_usa.20.a: "Delicious buns!"
+
+ flavor_usa.1000.title: "Constitutional Convention"
+ flavor_usa.1000.desc: "Time has exposed certain flaws in the governance of our [GetInternationalOrganizationType('colonial_federation').GetName]. As the leader of the [target_io.GetName], we could call upon all members to come together and discuss necessary reforms. Reform is a difficult undertaking and the outcome is not assured to please every member of the [target_io.GetNameWithNoTooltip], but letting the current issues fester might cause more even trouble in the future."
+ flavor_usa.1000.a: "Let us call for the representatives."
+ flavor_usa.100.b: "There is nothing wrong with our current administration."
+
+ flavor_usa.1001.title: "Legal Reform"
+ flavor_usa.1001.desc: "With all representatives assembled in [ROOT.GetCountry.GetCapital.GetName], we can finally start to discuss the important matters of the day. First we should discuss the matter of our legal code and the laws of every member of [target_io.GetName]. Should every state be the master of their own laws, or should we establish a centralized authority to decree over all?"
+ flavor_usa.1001.a: "Local Authorities will be granted more rights."
+ flavor_usa.1001.b: "The central administration will exercise their power."
+
+ flavor_usa.1002.title: "The Slave Trade"
+ flavor_usa.1002.desc: "With the issues of law resolved, a minority of delegates is now pushing for a discussion about the issue of slavery. While they accuse the institution as inhumane, many of the members of [target_io.GetName] heavily rely on the labor of [ShowPopTypeName('slaves')] in their plantations. Banning the practice for all members could destabilize us heavily, and might cause major harm to the relations with certain states and risk them leaving the Constitutional Convention all together."
+ flavor_usa.1002.a: "Let every member decide for themselves."
+ flavor_usa.1002.b: "Abolish it for everyone."
+ flavor_usa.1002.b.tt: "All [ShowPopTypeName('peasants')] and former [ShowPopTypeName('slaves')] [pops|e] in our country gain [ShowNamedValue('pop_satisfaction_mild_bonus')|+=2%] [pop_satisfaction|e]."
+
+ flavor_usa.1003.title: "Impeachable Offenses"
+ flavor_usa.1003.desc: "Having maintained the Convention over the issue of slavery, we can now move towards the discussion among the specific [ShowLawName('legal_code_law')] we should follow. Not only need we to decide if all states of [target_io.GetName] shall follow the same [ShowLawNameWithNoTooltip('legal_code_law')], but also which legal code we should base it on."
+ flavor_usa.1003.a: "Adopt the [ShowPolicyNameWithNoTooltip('civil_law_policy')]."
+ flavor_usa.1003.b: "We prefer the [ShowPolicyNameWithNoTooltip('common_law_policy')]."
+ flavor_usa.1003.c: "[ShowPolicyNameWithNoTooltip('traditional_law_policy')] should be the law."
+ flavor_usa.1003.d: "There is no need to dictate this for everyone."

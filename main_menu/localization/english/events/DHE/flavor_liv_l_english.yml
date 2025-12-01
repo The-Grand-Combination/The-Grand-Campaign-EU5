@@ -1,0 +1,16 @@
+﻿l_english:
+ flavor_liv.1.title: "[target_government_reform.GetNameWithNoTooltip]"
+ flavor_liv.1.desc: "The power of the [ROOT.GetCountry.GetGovernment.GetRulerTitle] is constantly waning and the influence of the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] and subservient [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] is stronger than it has ever been before. In such a case, a previously unpalatable suggestion has now become an acceptable solution to this crisis. The [target_government_reform.GetName], as it is called, would unite [ROOT.GetCountry.GetName] and its subjects into a confederation, bestowing many powers into the various landed bishops and other vassal figures, which would have more vested power in the [ROOT.GetCountry.GetGovernment.GetParliament.GetName] of the [ROOT.GetCountry.GetNameWithNoTooltip]."
+ flavor_liv.1.historical_info: "After the Battle of Ukmergė in 1435, the Livonian Order's leadership was left decimated due to excruciating losses sustained in the battle. Soon after, an agreement was signed on 4th December same year, creating the Livonian Confederation and bestowing many privileges to the various bishops and other vassals in the process."
+ flavor_liv.1.a: "Give in to the pressures."
+ flavor_liv.1.b: "Why do they not find a different [ROOT.GetCountry.GetFlavorRank] to rule?"
+
+ flavor_liv.2.title: "[target_character.GetNameWithNoTooltip]"
+ flavor_liv.2.desc: "Word has reached us of a certain cleric named [target_character.GetName], an illustrious [target_character.GetWomanMan] of many qualities. Born in [target_character.GetBirthLocation.GetName], [target_character.GetSheHe] is a [target_character.GetArtistType.GetName] of [target_character.GetCulture.GetName] origin who, alongside everyday preaching, would be most capable of producing a [ShowWorkOfArtTypeName('chronicle')] of the history of the [ShowAreaName('baltic_area')] area."
+ flavor_liv.2.a: "Commission the [ShowWorkOfArtTypeNameWithNoTooltip('chronicle')]."
+ flavor_liv.2.b: "We do not need [target_character.GetHerHis] services."
+
+ flavor_liv.3.title: "$chronica_provinz_lyfflandt$ is Finished"
+ flavor_liv.3.desc: "The [ShowWorkOfArtTypeName('chronicle')] of [target_character.GetName] has finally been published. [target_work_of_art.GetName], as it is called, covers the history of the [ShowAreaName('baltic_area')] from the rise of the [GetCountry('LIV').GetLongName] to its present day status under the watchful influence of [ROOT.GetCountry.GetName]. However, the work is not at all objective in terms of [ROOT.GetCountry.GetAdjectiveWithNoTooltip] rule, casting much shadow on our legitimacy and the goodwill of our [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] which is in possession of those territories."
+ flavor_liv.3.a: "Such criticism is acceptable."
+ flavor_liv.3.b: "Banish [target_character.GetHerHim] and [target_character.GetHerHis] works!"

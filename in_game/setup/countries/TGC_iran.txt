@@ -1,0 +1,14 @@
+IRA = {
+	color = map_IRA
+	color2 = rgb { 16 41 202 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = farsi_culture
+	religion_definition = shia
+
+	description_category = administrative
+	difficulty = 3
+}

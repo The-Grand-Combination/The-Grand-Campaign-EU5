@@ -1,0 +1,48 @@
+﻿l_english:
+  reform_society.1.title: "Reforms of the [ROOT.GetCountry.GetAdjectiveWithNoTooltip] Society"
+  reform_society.1.desc: "For far too long have we become subjects to the whims of petty local rulers in other city-states. With our growing influence in the region and military might to back up our claims, we will pioneer a new type of government and unite our domain under one banner, eliminating dissent and urges of decentralization."
+  reform_society.1.a: "We will persevere..."
+  has_completed_all_religious_focuses_tt: "Has completed every possible [religious_focus|e]"
+
+  reform_society.2.title: "A New Era for [ROOT.GetCountry.GetNameWithNoTooltip]"
+  reform_society.2.desc: "Despite pushback from various sources such as our foes and even prominent members of the estates within our country, our reforms centered around centralizing our realm have been a marvelous success. This will certainly result in unprecedented control and a new era of authority as our nation sheds the old ways and embraces new, innovative forms of government. Our future shall only be bright, moving forward..."
+  reform_society.2.a: "This is our time."
+
+  reform_society.3.title: "Protests from Within"
+  reform_society.3.desc: "Many prominent voices from within our realm have vocally protested against the centralization and legislative reforms that were recently introduced. Inferring nothing short of mutiny and revolt against our authority, they demand to be placated should we wish to move forward with passing vital legal frameworks to realize our goals."
+  reform_society.3.a: "They dare threaten us?"
+  reform_society.3.b: "We can negotiate and appease them."
+  reform_society.3.c: "The time for reforms is now!"
+  annex_all_altepetls_tt: "All our subjects with the [ShowGovernmentReformName('altepetl')] government type will be annexed"
+
+  reform_society.4.title: "Fire in the Night Sky"
+  reform_society.4.desc: "Every night, for a span lasting just over a year, a blazing fire ignites in the night sky above [target_location.GetName]. It's an awe-inspiring spectacle, with a wide base tapering to a pointed tip, as if it were bleeding fire across the heavens. Some describe this celestial phenomenon as resembling an ear of corn aflame in the firmament. Most historians, in their interpretation, consider this an appearance of a comet. This fiery display unfolds against a backdrop of society contemplating radical reforms, perhaps a sign of divine disapproval? As people gaze skyward, they can not help but feel the weight of uncertainty, wondering whether this cosmic event is an omen of impending change or a sign from the universe, igniting conversations and sparking fervent discussions about the future."
+  reform_society.4.a: "Have we angered the gods?"
+  reform_society.4.b: "Do not look at the sky!"
+  reform_society.4.c: "The gods must be appeased..."
+
+  reform_society.5.title: "The Destruction of [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip]"
+  reform_society.5.desc: "It started as a whisper, a thrashing of the leaves as the atmposphere around our capital grew heavy, almost as if the thumb of the gods was pressing upon us. [target_location.GetName], a once-thriving city, dressed with grand temples and bustling markets, now witnesses its doom. The heavens themselves seem to weep as torrential rains pour down upon the sacred metropolis, filling its streets with a relentless flood.\n\nThunder roars like the angered voice of Huītzilōpōchtli, while flames devour buildings like the wrathful fire of Xiuhtēcuhtli. The ground trembles beneath the feet of the terrified inhabitants, as if Tlaloc demands retribution. [target_location.GetNameWithNoTooltip]'s end feels like a dreadful curse from the gods, a final judgment that obliterates our once-mighty people and leaves us in ruins."
+  reform_society.5.a: "Flee for your lives!"
+  reform_society.5.b: "We can alleviate some of the destruction..."
+  reform_society.5.c: "Reverence and piety will deliver us."
+
+  reform_society.6.title: "Great Fire in Daylight"
+  reform_society.6.desc: "In the heart of [target_location.GetName], the grand temple of Huītzilōpōchtli stands tall and revered, a symbol of our devotion to the gods. But one fateful day, a strange omen casts a shadow over the city. A streak of fire ignites the sky, blazing brilliantly in broad daylight, its origin in the distant western horizon. As if guided by divine hands, the fiery streak splits into three, each fragment trailing sparks of untamed energy. Panic has gripped out people as they witness this celestial spectacle, fearing it to be an ominous sign from Huītzilōpōchtli himself.\n\nWhispers spread through the streets, tales of impending doom as the temple's sacred flames flicker uncertainly. Despite our efforts, the flames within the temple cannot be quelled, and the temple of our revered god succumbs to an unexplained inferno, leaving us in mourning, questioning the will of the sun and war deity."
+  reform_society.6.a: "Are the gods disapproving of our reforms?"
+  reform_society.6.b: "We will trust the interpretations of the priests."
+  reform_society.6.c: "The only way is forward!"
+
+  reform_society.7.title: "Cries in the Darkness"
+  reform_society.7.desc: "Beneath the serene moonlight, a sorrowful sound emerges, sending shivers through the streets in [target_location.GetName]. Night after night, a woman's voice pierces the darkness, her cries filled with an urgent plea for action. She beseeches them, saying, "My children, we must leave," and, "My children, where will you go?" These haunting phrases echo relentlessly, evoking fear and bewilderment among the people who question our meddling and attempts to reform our society, as if the gods themselves indicate their displeasure. Driven by both curiosity and dread, they gather to decipher the mysterious voice's message, grappling with the enigmatic origin of this spectral presence, a voice unlike any they have heard before.\n\nAs the nights continue, the cries persist, growing increasingly intense and desperate, convincing them that this is a divine message, an ominous prophecy that cannot be ignored. Their destiny becomes intertwined with the haunting calls, forcing them to confront a critical decision: to follow the spectral woman's urging and embark on an uncertain journey, or to remain in their homeland, facing the shadow of impending doom that looms in the night.\n\nWith each passing night, the mysterious cries grow louder and more desperate. The people, now convinced of a divine message, begin to heed the spectral woman's warning, understanding that their fate is entwined with her haunting pleas. A decision looms on the horizon—whether to heed her words and embark on an uncertain journey or to remain, risking the unknown and the impending doom that seems to linger in the night."
+  reform_society.7.a: "Shield your ears, we will endure!"
+  reform_society.7.b: "We are doomed!"
+  reform_society.7.c: "The people will not lend an ear to urban legends!"
+
+  reform_society.8.title: "Reflections of the Stars"
+  reform_society.8.desc: "In the wetlands surrounding [target_location.GetName], a skilled hunter's net ensnared a curious gray bird, its feathers resembling the somber hues of an overcast sky. This avian marvel bore a distinctive feature: a dark, mirror-like adornment nestled upon its forehead. When the hunters dared to peer into this magical mirror, astonishment overcame them as they witnessed the stars and the boundless expanse of the night sky reflected within.\n\nAcknowledging the profound significance of this cryptic discovery, the bird was presented to [ROOT.GetCountry.GetGovernment.GetRuler.GetName]. As [ROOT.GetCountry.GetGovernment.GetRuler.GetSheHe] gazed into the mirror, an enchanting spectacle unfolded before his eyes. [ROOT.GetCountry.GetGovernment.GetRuler.GetSheHe|U] witnessed a multitude of warriors astride magnificent creatures reminiscent of colossal deer, a sight both perplexing and captivating. Determined to decipher the hidden meaning behind this mystical encounter, [ROOT.GetCountry.GetGovernment.GetRuler.GetShortNameWithNoTooltip] entrusted the bird and its mirror to the revered high priests, with the solemn task of unraveling this celestial enigma.\n\nYet, as the high priests took turns peering into the mirror, their earnest efforts yielded only frustration and bewilderment. To their dismay, the mirror remained stubbornly vacant, withholding the celestial vision that had enthralled their leader. Despite their profound wisdom and unwavering devotion, the high priests found themselves incapable of offering counsel or unraveling the enigma that had seized the imagination of [ROOT.GetCountry.GetGovernment.GetRuler.GetShortNameWithNoTooltip], attributing it to a bad omen associated with the radical reforms that have recently gripped our people."
+  reform_society.8.a: "Have we lost our grip on power?"
+  reform_society.8.b: "This must be a sign..."
+  reform_society.8.c: "Steel yourselves!"
+  all_subjects_20_ld_tt: "All our [ShowGovernmentReformName('altepetl')] subjects will gain [ShowNamedValue('liberty_desire_severe_plus')|+=2%] [liberty_desire|e]"
+  every_location_10_control_reduction_tt: "Every owned [location|e] will lose [ShowNamedValue('control_mild_penalty')|+=2%] [control|e]"

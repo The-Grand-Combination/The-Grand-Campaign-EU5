@@ -1,0 +1,20 @@
+﻿l_english:
+ 
+ flavor_lub.1.title: "The Gate of [target_location.GetNameWithNoTooltip]"
+ flavor_lub.1.desc: "The best engineers across our domain have gathered in [target_location.GetName] to push forward their agenda of a new gate for our beloved [target_location.GetRank.GetNameWithNoTooltip]. According to their plans, they wish to erect a [ShowBuildingTypeName('hsa_burgtor')] to serve as our capital's primary gate.\n\nSimultaneously, the construct will be adorned with beautiful architecture. Its strategic location along our existing fortifications will easily allow guards to monitor and regulate traffic entering and exiting."
+ flavor_lub.1.a: "We will finance it!"
+ flavor_lub.1.b: "Perhaps [target_country.GetNameWithNoTooltip] can pay for its construction?"
+ flavor_lub.1.c: "We care not for such expenditures."
+
+ flavor_lub.2.title: "Financial Assitance for [target_country2.GetNameWithNoTooltip]"
+ flavor_lub.2.desc: "Messengers from the municipal court of [target_country2.GetName] have recently approached our merchants. They propose a closer cooperation between our diplomats through our financing of their latest engineering project. They wish to erect a [ShowBuildingTypeName('hsa_burgtor')] that may serve as the [target_location.GetRank.GetNameWithNoTooltip]'s main gate and all they ask for is a modest contribution..."
+ flavor_lub.2.a: "Very well..."
+ flavor_lub.2.b: "Do they take us for fools?"
+ opinion_financed_burgtor_modifier: "Financed the $hsa_burgtor$"
+ opinion_refused_to_finance_burgtor_modifier: "Refused to Finance the $hsa_burgtor$"
+
+ flavor_lub.3.title: "The Response of [target_country.GetNameWithNoTooltip]"
+ flavor_lub.3.desc: "A messenger from the association of [target_country.GetName] has arrived, carrying a sealed letter bearing the response of the merchants with regards to our financing issue. Their communication paints the picture of the continued cooperation between our people, within the sphere of aligning interest. The correspondence ends with the League's decision on the matter..."
+ flavor_lub.3.a: "...they will finance it!"
+ flavor_lub.3.b: "...they have decided not to finance it!"
+ 

@@ -1,0 +1,8 @@
+﻿l_english:
+ flavor_ven_papal_interdicts.1000.title: "[ROOT.GetCountry.GetAdjectiveWithNoTooltip] Interdict"
+ flavor_ven_papal_interdicts.1000.desc: "The [GetCountry('PAP').GetGovernment.GetRulerTitle] has placed [ROOT.GetCountry.GetName] under interdict, ostensibly as a response to the freedom of religious fanaticism that exists in the city, which is apparently a constant affront to the [GetCountry('PAP').GetName]. However, it is obvious to us that this is simply a ruse they are using to further their ambitions."
+ flavor_ven_papal_interdicts.1000.a: "[ROOT.GetCountry.GetNameWithNoTooltip] is [ROOT.GetCountry.GetNameWithNoTooltip]!"
+ flavor_ven_papal_interdicts.1000.b: "Kneel before the Holy Father"
+ flavor_ven_papal_interdicts.1001.title: "The Town of Sin"
+ flavor_ven_papal_interdicts.1001.desc: "The men of [target_sinner_country.GetName] are wicked and sinners before the Lord exceedingly. There is not a single righteous man living in that city of commerce, and it is filled with the kind of people that the Son of God drove out of the Temple. As God's representatives on earth, we must act!"
+ flavor_ven_papal_interdicts.1001.a: "[venice_target.GetNameWithNoTooltip] will fall like Sodom and Gomorrah!"

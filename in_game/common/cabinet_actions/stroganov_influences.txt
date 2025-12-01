@@ -1,0 +1,18 @@
+﻿stroganov_influences = {
+	ability = adm
+	allow_multiple = no
+	potential = {
+		has_variable = stroganov_influences
+	}
+	allow = {
+		dynasty_exists = stroganov_dynasty
+		any_cabinet_character = {
+			dynasty = dynasty:stroganov_dynasty
+		}
+	}
+	country_modifier = {
+		global_salt_output_modifier = 0.25
+		monthly_legitimacy = 0.1
+		monthly_towards_plutocracy = societal_value_minor_monthly_move
+	}
+}

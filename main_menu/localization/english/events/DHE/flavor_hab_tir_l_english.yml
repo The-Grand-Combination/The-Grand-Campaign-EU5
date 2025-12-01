@@ -1,0 +1,51 @@
+﻿l_english:
+
+ flavor_hab_tir.1.title: "The [GetCountry('BOH').GetAdjectiveWithNoTooltip] Influence"
+ flavor_hab_tir.1.desc: "[target_spouse.GetName], the young husband of [target_ruler.GetName] brings with him influences from his home country [GetCountry('BOH').GetName]. Not only his own manners are a bit foreign to our [ROOT.GetCountry.GetGovernment.GetCourtTitle] but also his retinue of [GetCountry('BOH').GetAdjective] [GetCountry('BOH').GetGovernment.GetEstateName('nobles_estate')] try to accumulate power inside of the [ROOT.GetCountry.GetAdjective] lands. Our own [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] grow more concerned by the day about the impact this could have on our [ROOT.GetCountry.GetFlavorRank], should an heir of the [target_spouse.GetDynasty.GetName] be born."
+ flavor_hab_tir.1.a: "Restrict their influence as much as possible."
+ flavor_hab_tir.1.b: "Let them continue undisturbed."
+
+ flavor_hab_tir.2.title: "A New Husband for [target_ruler.GetShortNameWithNoTooltip]"
+ flavor_hab_tir.2.desc: "With [target_ruler.GetName] now freed from her previous marriage, we will have to hurry to secure a new husband for [target_ruler.GetHerHim]. [ROOT.GetCountry.GetName] is still in a precarious position and desperately needs stability. Multiple dynasties eye up our [ROOT.GetCountry.GetFlavorRank] as a price and a strong bond with one could fend off the others. Especially the [GetDynasty('wittelsbach_dynasty').GetName] and [GetDynasty('habsburg_dynasty').GetName] have an interest in securing our lands and could serve as great allies... or be the downfall of our [ROOT.GetCountry.GetFlavorRank]."
+ flavor_hab_tir.2.a: "We need to find a suitable husband soon."
+ flavor_hab_tir.2.a.tt: "Without papal approval, we will struggle to arrange a royal marriage on our own. However, interested suitors will request a marriage soon."
+ flavor_hab_tir.2.b: "No need to be hasty."
+
+ flavor_hab_tir.3.title: "The Husband of [target_ruler.GetShortNameWithNoTooltip]"
+ flavor_hab_tir.3.desc: "An acceptable candidate has been found, and we could formulate the new marriage of [target_ruler.GetName]. This will decide the fate of our dynasty for the near future."
+ flavor_hab_tir.3.a: "The [GetDynasty('wittelsbach_dynasty').GetNameWithNoTooltip] is perfect."
+ flavor_hab_tir.3.b: "We prefer the [GetDynasty('habsburg_dynasty').GetNameWithNoTooltip] candidate."
+
+ flavor_hab_tir.4.title: "A New Dynasty for the [ROOT.GetCountry.GetLongNameWithNoTooltip]"
+ flavor_hab_tir.4.desc: "The [target_ruler.GetDynasty.GetName] has now ascended to the throne of [ROOT.GetCountry.GetName]! While many still mourn the days of the beloved [GetCharacter('tir_margarete_von_tirol').GetShortName], we will have to now move on and orientate ourselves in this new political situation. With our relatives ready to help our young reign, we will be able to secure it and secure our rightful position in the [target_ruler.GetDynasty.GetNameWithNoTooltip] Dynasty."
+ flavor_hab_tir.4.a: "The [target_ruler.GetDynasty.GetNameWithNoTooltip] are trustworthy!"
+ flavor_hab_tir.4.b: "Glory to the [target_ruler.GetDynasty.GetNameWithNoTooltip]!"
+ flavor_hab_tir.4.c: "The [target_ruler.GetDynasty.GetNameWithNoTooltip] will be loved eventually!"
+
+ flavor_hab_tir.5.title: "A New Dynasty for the [ROOT.GetCountry.GetLongNameWithNoTooltip]"
+ flavor_hab_tir.5.desc: "The duplicitous [target_ruler.GetDynasty.GetName] have now seized the throne of [GetCountry('TIR').GetName]! By the right of our laws, the [GetCountry('TIR').GetLongName] would have fallen into our hands, if it was not for the interference of the [target_ruler.GetDynasty.GetNameWithNoTooltip]. The circumstances leave us no choice but to immediately rush and secure the lands for ourselves before the [target_ruler.GetDynasty.GetNameWithNoTooltip] have time to establish their rule."
+ flavor_hab_tir.5.a: "We will not be denied our share!"
+ flavor_hab_tir.5.b: "We can not risk war with the [target_ruler.GetDynasty.GetNameWithNoTooltip]."
+
+ flavor_hab_tir.1000.title: "The Complicated Marriage of [target_ruler.GetShortNameWithNoTooltip]"
+ flavor_hab_tir.1000.desc: "Our beloved [target_ruler.GetName] has been cursed with the marriage to the brash [target_spouse.GetName]. Their mutual dislike of each other has been known for multiple years now, but by now it has evolved beyond a simple dislike into open hatred. [target_spouse.GetNameWithNoTooltip] has displayed an open desire to act as the official ruler of our [ROOT.GetCountry.GetFlavorRank]. It seems more and more likely that their marriage will remain childless, which could pose a significant threat to [ROOT.GetCountry.GetName]. However, it is unlikely that we would receive papal consent for a divorce due to the political situation the [GetUniqueInternationalOrganization('hre').GetName] is currently in.\n\nWith the support of [GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName] we could force a divorce, but we would fall further into their own sphere of interest."
+ flavor_hab_tir.1000.a: "We need a divorce, papal consent be damned!"
+ flavor_hab_tir.1000.b: "We can not betray this marriage."
+
+ flavor_hab_tir.1001.title: "[target_ruler.GetNameWithNoTooltip] rejects [target_spouse.GetNameWithNoTooltip]"
+ flavor_hab_tir.1001.desc: "When [target_spouse.GetName] returned from a long hunting trip to [target_spouse.GetHisHer] spouse waiting in [GetCountry('TIR').GetName], [target_spouse.GetHeShe] found the gates closed to [target_spouse.GetHimHer]. Disregarding [target_spouse.GetHisHer] angry shouts demanding entry, the [GetCountry('TIR').GetAdjectiveWithNoTooltip] guards refused [target_spouse.GetHimHer]. Frustrated, [target_spouse.GetHeShe] had to move on to find shelter in another castle. To his surprise, every castle in [GetCountry('TIR').GetNameWithNoTooltip] denied [target_spouse.GetHimHer] entry, forcing [target_spouse.GetHimHer] to leave the county and return to [ROOT.GetCountry.GetName], after briefly being sheltered in northern [ShowRegionName('italy_region')]. Shortly after [target_spouse.GetHisHer] own arrival in our [ROOT.GetCountry.GetGovernment.GetCourtTitle], we received news from [GetCountry('TIR').GetNameWithNoTooltip] that [target_ruler.GetNameWithNoTooltip] has divorced [target_spouse.GetHimHer] with the approval of the [GetUniqueInternationalOrganization('hre').GetLeaderTitle]."
+ flavor_hab_tir.1001.a: "Outrageous!"
+
+ flavor_hab_tir.1100.title: "The Matter of [GetCountry('TIR').GetNameWithNoTooltip]"
+ flavor_hab_tir.1100.desc: "[GetCountry('TIR').GetName], the country controlling the vital passes of the Alps, is facing an uncertain future over the succession of [target_ruler.GetName]. Due to our familiar relationship, we should offer [target_ruler.GetHerHim] our help and pressure [target_ruler.GetHerHim] into designating us as the rightful inheritors of [GetCountry('TIR').GetNameWithNoTooltip].\n\nIf [target_ruler.GetSheHe] would agree to these terms, we could take control over both the trade routes of the alpine region and of the rich mines located in their territory."
+ flavor_hab_tir.1100.a: "There is no harm in a simple request."
+ flavor_hab_tir.1100.b: "This is not worth the effort."
+
+ flavor_hab_tir.1101.title: "The Future of [ROOT.GetCountry.GetNameWithNoTooltip]"
+ flavor_hab_tir.1101.desc: "[target_ruler.GetName] has struggled for a long time to preserve the independence of [target_ruler.GetHerHis] beloved [ROOT.GetCountry.GetLongNameWithNoTooltip]. With [target_ruler.GetHerHis] advanced age and the lack of a direct heir, we will have to face the grim reality of [target_ruler.GetHerHis] inheritance eventually. The close relatives of [target_ruler.GetHerHis] in Austria have provided an offer that we can hardly refuse. To ensure a stable succession and the safety of [target_ruler.GetHerHis] beloved [ROOT.GetCountry.GetAdjective] subjects we should entertain their idea."
+ flavor_hab_tir.1101.a: "We need to join their dynasty."
+ flavor_hab_tir.1101.b: "We will face this crisis on our own!"
+
+ flavor_hab_tir.1102.title: "[GetCountry('TIR').GetNameWithNoTooltip] Accepts"
+ flavor_hab_tir.1102.desc: "[target_ruler.GetName] has agreed to our proposal and has granted us direct succession to [target_ruler.GetHerHis] titles. To prevent any misgivings or alterations to these documents, we should escort [target_ruler.GetHerHis] to our capital and grant her a peaceful life in [ROOT.GetCountry.GetCapital.GetName]."
+ flavor_hab_tir.1102.a: "Glory to the [target_habsburg_ruler.GetDynasty.GetNameWithNoTooltip]!"

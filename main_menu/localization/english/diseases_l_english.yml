@@ -1,0 +1,24 @@
+﻿l_english:
+ bubonic_plague: "Bubonic Plague"
+ bubonic_plague_desc: "A great pestilence that sweeps through busy trade routes, sparing neither low nor high. Those infected suffer black swellings in the groin and armpits, terrible fever, and death. Some believe it is carried by the vermin that scurry in our streets and fields, spreading foul sickness from one poor soul to another."
+
+ malaria: "Malaria"
+ malaria_desc: "The ancient bane of humankind, Malaria, is an infectious disease transmitted from person to person by the bite of an infected mosquito. This illness produces chills, headaches, sweating, and a very intense fever that repeats every three to four days."
+
+ typhus: "Typhus"
+ typhus_desc: "This deathly sickness creates on those stricken by it a great deal of fever, a big red rash that might extend over the entire body, and a confusion of the mind that might get worse, to the point of full-on delirium. Those poor souls that reach that point would develop gangrenous lesions and invariably die."
+ local_typhus_impact_modifier: "Typhus location modifier"
+
+ influenza: "Influenza"
+ influenza_desc: "Know by the common folk as the Flu, it is a widely spread sickness with usually mild symptoms like a runny nose or a fever in healthy individuals, but that might be extremely dangerous for those that are too young or too old or already weakened by injury or another malady."
+ influenza_location_modifier: "Influenza location modifier"
+
+ measles: "Measles"
+ measles_desc: "Measles, also known as morbili, rubeola, and red measles, is a plague that spreads extremely fast from person to person, causing fever, coughs, sneezes, and a great flat rash that eventually covers the entire body. It preys most eagerly on children, who are at great risk of death if they fall on its claws."
+ measles_location_modifier: "Measles location modifier"
+
+ smallpox: "Smallpox"
+ smallpox_desc: "Smallpox is a terrible disease that inflicts fever, vomiting and finally an enormous amount of liquid-filled blisters that cover the entire body of the unfortunate victim. The outbreaks of this plague are very deadly and those that survive are commonly blinded for life."
+ smallpox_location_modifier: "Smallpox location modifier"
+
+ great_pestilence_location_modifier: "Great Pestilence location modifier"

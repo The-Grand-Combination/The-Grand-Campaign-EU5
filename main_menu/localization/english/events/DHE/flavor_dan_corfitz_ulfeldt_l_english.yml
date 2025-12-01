@@ -1,0 +1,33 @@
+﻿l_english:
+ flavor_dan_corfitz_ulfeldt.1.title: "[target_character.GetNameWithNoTooltip]"
+ flavor_dan_corfitz_ulfeldt.1.desc: "[target_character.GetName] has returned to [ROOT.GetCountry.GetName], after having studied abroad at [ShowLocationName('padova')], and in doing so [target_character.GetSheHe] has quickly presented [target_character.GetHerselfHimself] before our good [target_ruler.GetName]. [target_character.GetSheHe|U] offers [target_character.GetHerHis] services to the [ROOT.GetCountry.GetFlavorRank], which [target_character.GetSheHe] promises will be plenty."
+ flavor_dan_corfitz_ulfeldt.1.marriage.desc: "$flavor_dan_corfitz_ulfeldt.1.desc$\n\nAdditionally, [target_character.GetSheHe] has also started courting the [ROOT.GetCountry.GetGovernment.GetRulerTitle]'s daughter, [target_princess.GetName], and promises of a marriage are on the horizon."
+ flavor_dan_corfitz_ulfeldt.1.a: "A wedding, what a wonderful idea."
+ flavor_dan_corfitz_ulfeldt.1.b: "[target_character.GetSheHe|U] is indeed a talented individual."
+
+ flavor_dan_corfitz_ulfeldt.2.title: "The Growing Influence of [target_character.GetNameWithNoTooltip]"
+ flavor_dan_corfitz_ulfeldt.2.desc: "[target_character.GetName] has been continuously extending [target_character.GetHerHis] tendrils around all aspects of politics and affairs at court. [target_character.GetHerHis|U] influence and contacts with powerful members of the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] have started to become not just a nuisance but a threat to the [ROOT.GetCountry.GetGovernment.GetAdjective] authority itself. If we do not curb [target_character.GetHerHis] ambition, [target_character.GetSheHe] is sure to eventually wrestle control of the whole [ROOT.GetCountry.GetLongName] for [target_character.GetHerselfHimself]. There have also started to be allegations even of [target_character.GetHerHis] plans to assassinate members of the [ROOT.GetCountry.GetGovernment.GetAdjective] family."
+ flavor_dan_corfitz_ulfeldt.2.a: "Let us come to an agreement with [target_character.GetHerHim]."
+ flavor_dan_corfitz_ulfeldt.2.b: "Enough of this, [target_character.GetSheHe] is an enemy of [ROOT.GetCountry.GetNameWithNoTooltip]!"
+
+ flavor_dan_corfitz_ulfeldt.3.title: "[target_character.GetNameWithNoTooltip] Offers a Fortune"
+ flavor_dan_corfitz_ulfeldt_flight_common: "[target_character.GetName] had to flee [target_character.GetHerHis] native [GetCountry('DAN').GetLongName] due to accusations of subterfuge and assassinations, and of conspiring to take control of the country. Accusations, of course, that [target_character.GetSheHe] claims to be completely false and unfounded."
+ flavor_dan_corfitz_ulfeldt.3.desc: "$flavor_dan_corfitz_ulfeldt_flight_common$ Now, to prove [target_character.GetHerHis] good faith, [target_character.GetSheHe] has offered a vast amount of money to [target_ruler.GetName].\n\nIt is quite probable that this money has been taken from [GetCountry('DAN').GetAdjectiveWithNoTooltip] coffers, but at the same time it will come in very handy to fund a war against them."
+ flavor_dan_corfitz_ulfeldt.3.a: "A surprise to be sure, but a welcome one."
+ flavor_dan_corfitz_ulfeldt.3.b: "We cannot accept money from turncoats."
+ 
+ flavor_dan_corfitz_ulfeldt.4.title: "[target_character.GetNameWithNoTooltip]'s Insight"
+ flavor_dan_corfitz_ulfeldt.4.desc: "$flavor_dan_corfitz_ulfeldt_flight_common$\n\n[target_character.GetHerHis|U] knowledge of the land has proved to be very useful now that we find ourselves at war with [GetCountry('DAN').GetNameWithNoTooltip]. The information [target_character.GetSheHe] provided has resulted in the quick capture and capitulation of the defenders at [target_location.GetName], and it could be the difference between victory and defeat in this war."
+ flavor_dan_corfitz_ulfeldt.4.a: "A most wonderful outcome."
+
+ flavor_dan_corfitz_ulfeldt.5.title: "[target_character.GetNameWithNoTooltip] is Becoming a Nuisance"
+ flavor_dan_corfitz_ulfeldt.5.desc: "[target_character.GetName] proved to be very useful giving us an advantage against the [GetCountry('DAN').GetLongName], but [target_character.GetSheHe] has increasingly since become more problematic. It seems like the accusations of [target_character.GetHerHim] conspiring in [GetCountry('DAN').GetNameWithNoTooltip] were not as unfounded in the end, as proof has surfaced of [target_character.GetHerHim] trying to do the same here. If left to [target_character.GetHerHis] own devices, [target_character.GetSheHe] is sure to attempt to take the [ROOT.GetCountry.GetFlavorRank] for [target_character.GetHerselfHimself]."
+
+ flavor_dan_corfitz_ulfeldt.6.title: "[target_character.GetNameWithNoTooltip] Arrives with a Proposal"
+ flavor_dan_corfitz_ulfeldt.6.desc: "[target_character.GetName] has arrived at our court, after having to flee both [GetCountry('DAN').GetName] and [origin_country.GetName] due to accusations of [target_character.GetHerHim] scheming to take control of those respective countries. Now, [target_character.GetSheHe] has come to us, in [target_character.GetHerHis] endless quest for revenge, and has offered to us the rulership of the [GetCountry('DAN').GetLongNameWithNoTooltip] in exchange for our help in taking it."
+ flavor_dan_corfitz_ulfeldt.6.a: "An interesting proposition indeed."
+ flavor_dan_corfitz_ulfeldt.6.b: "We cannot trust such a snake."
+
+ flavor_dan_corfitz_ulfeldt.7.title: "The End of [target_character.GetNameWithNoTooltip]'s Schemes"
+ flavor_dan_corfitz_ulfeldt.7.desc: "[target_character.GetName] has been a thorn in our side for a while, scheming to take control of the country both from inside and outside of it. Fortunately, the sensible [target_ruler.GetName] of the [origin_country.GetLongName] have put an end to [target_character.GetHerHis] machinations by refusing to listen to them. Now, [target_character.GetShortNameWithNoTooltip]'s authority has vanished, and [target_character.GetHerHis] days are counted."
+ flavor_dan_corfitz_ulfeldt.7.a: "A fitting end for a snake."

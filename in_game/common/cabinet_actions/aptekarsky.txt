@@ -1,0 +1,12 @@
+﻿aptekarsky = {
+	ability = adm
+	potential = {
+		has_reform = government_reform:prikazi_reform
+		has_variable = aptekarsky_prikaz_established
+	}
+	
+	country_modifier = {
+		global_disease_resistance = 0.2
+	}
+
+}

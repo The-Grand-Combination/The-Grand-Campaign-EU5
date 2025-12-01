@@ -1,0 +1,375 @@
+PRU = {
+	color = map_PRU
+	color2 = rgb { 16 41 202 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = brandenburgish
+	religion_definition = catholic
+
+	description_category = administrative
+	difficulty = 3
+}
+
+BAV = {
+	color = map_BAV
+	color2 = rgb { 16 41 202 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = english
+	religion_definition = catholic
+
+	description_category = administrative
+	difficulty = 3
+}
+
+HAN = {
+	color = map_HAN
+	color2 = rgb { 16 41 202 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = english
+	religion_definition = catholic
+
+	description_category = administrative
+	difficulty = 3
+}
+
+SHL = {
+	color = map_SHL
+	color2 = rgb { 16 41 202 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = english
+	religion_definition = catholic
+
+	description_category = administrative
+	difficulty = 3
+}
+
+SWH = {
+	color = map_SWH_dominion0_1
+	color2 = rgb { 16 41 202 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = english
+	religion_definition = catholic
+
+	description_category = administrative
+	difficulty = 3
+}
+
+SAX = {
+	color = map_SAX
+	color2 = rgb { 16 41 202 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = english
+	religion_definition = catholic
+
+	description_category = administrative
+	difficulty = 3
+}
+
+HOS = { # Hohenzollern-Sigmaringen
+	color = map_HOS
+	color2 = rgb { 16 41 202 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = english
+	religion_definition = catholic
+
+	description_category = administrative
+	difficulty = 3
+}
+
+MST = { # Mecklenburg-Strelitz
+	color = map_MST
+	color2 = rgb { 16 41 202 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = english
+	religion_definition = catholic
+
+	description_category = administrative
+	difficulty = 3
+}
+
+WUR = {
+	color = map_WUR
+	
+	culture_definition = swabian
+	religion_definition = catholic
+}
+
+BDE = {
+	color = map_BDE
+	
+	culture_definition = rhine_franconian
+	religion_definition = catholic
+}
+
+HOH = { # Hohenzollern-Hechingen
+    color = map_HOH
+    culture_definition = swabian
+    religion_definition = catholic
+}
+
+LTB = { # Lichtenburg - for 1815 - eaten by Prussia 1834
+	color = map_LTB
+	
+	culture_definition = swabian
+	religion_definition = catholic
+}
+
+HEH = { # Hesse-Homburg
+	color = map_HEH
+	
+	culture_definition = swabian
+	religion_definition = catholic
+}
+
+SML = { # Schaumburg-Lippe
+	color = map_SML
+	
+	culture_definition = swabian
+	religion_definition = catholic
+}
+
+HSK = { # Hesse-Kassel
+	color = map_HSK
+
+	culture_definition = rhine_franconian
+	religion_definition = catholic
+}
+
+HSD = { # Hesse-Darmstadt
+	color = map_HSD
+
+	culture_definition = rhine_franconian
+	religion_definition = catholic
+}
+
+NAS = { # Nassau
+	color = map_NAS
+
+	culture_definition = rhine_franconian
+	religion_definition = catholic
+}
+
+FRN = { # Frankfurt
+	color = map_FRN
+
+	culture_definition = rhine_franconian
+	religion_definition = catholic
+}
+
+LPP = { # Lippe
+	color = map_LPP
+
+	culture_definition = angrian
+	religion_definition = catholic
+}
+
+WDE = { # Waldeck und Pyrmont
+    color = map_WDE
+    culture_definition = rhine_franconian
+    religion_definition = catholic
+}
+
+BSW = { # Braunschweig
+    color = map_BSW
+    culture_definition = rhine_franconian
+    religion_definition = catholic
+}
+
+ANH = { #Anhalt
+	color = map_ANH
+	color2 = rgb { 203 93 124 }
+
+	culture_definition = saxon
+	religion_definition = catholic
+}
+
+AHD = { #Anhalt-Dessau
+	color = map_AHD
+	color2 = rgb { 203 93 124 }
+
+	culture_definition = saxon
+	religion_definition = catholic
+}
+
+AHB = { #Anhalt-Bernburg
+	color = map_AHB
+	color2 = rgb { 203 93 124 }
+
+	culture_definition = saxon
+	religion_definition = catholic
+}
+
+AHK = { #Anhalt-Koethen
+	color = map_AHK
+	color2 = rgb { 203 93 124 }
+
+	culture_definition = saxon
+	religion_definition = catholic
+}
+
+SZS = { # Schwarzburg-Sonderhausen
+	color = map_SZS
+	color2 = rgb { 203 93 124 }
+
+	culture_definition = saxon
+	religion_definition = catholic
+}
+
+SZR = { # Schwarzburg-Rudolstadt
+	color = map_SZR
+	color2 = rgb { 203 93 124 }
+
+	culture_definition = saxon
+	religion_definition = catholic
+}
+
+RAL = { # Reuss älterer Linie - Reuss-Greiz
+	color = map_RAL
+	color2 = rgb { 203 93 124 }
+
+	culture_definition = saxon
+	religion_definition = catholic
+}
+
+RJL = { # Reuss jüngerer Linie
+	color = map_RJL
+	color2 = rgb { 203 93 124 }
+
+	culture_definition = saxon
+	religion_definition = catholic
+}
+
+RSZ = { # Reuss-Schleiz
+	color = map_RSZ
+	color2 = rgb { 203 93 124 }
+
+	culture_definition = saxon
+	religion_definition = catholic
+}
+
+RLE = { # Reuss-Lobenstein-Ebersdorf
+	color = map_RLE
+	color2 = rgb { 203 93 124 }
+
+	culture_definition = saxon
+	religion_definition = catholic
+}
+
+RLB = { # Reuss-Lobenstein
+	color = map_RLB
+	color2 = rgb { 203 93 124 }
+
+	culture_definition = saxon
+	religion_definition = catholic
+}
+
+REF = { # Reuss-Ebersdorf
+	color = map_REF
+	color2 = rgb { 203 93 124 }
+
+	culture_definition = saxon
+	religion_definition = catholic
+}
+
+RGR = { # Reuss-Gera
+	color = map_RGR
+	color2 = rgb { 203 93 124 }
+
+	culture_definition = saxon
+	religion_definition = catholic
+}
+
+SCS = { # Saxe-Gotha-Saalfeld
+	color = map_SCS
+	color2 = rgb { 203 93 124 }
+
+	culture_definition = saxon
+	religion_definition = catholic
+}
+
+SCG = { # Saxe-Coburg and Gotha
+	color = map_SCG
+	color2 = rgb { 203 93 124 }
+
+	culture_definition = saxon
+	religion_definition = catholic
+}
+
+SWM = { # Saxe-Weimar-Eisenach
+	color = map_SWM
+	color2 = rgb { 203 93 124 }
+
+	culture_definition = saxon
+	religion_definition = catholic
+}
+
+SHH = { # Saxe-Hildburghausen
+	color = map_SHH
+	color2 = rgb { 203 93 124 }
+
+	culture_definition = saxon
+	religion_definition = catholic
+}
+
+SAB = { # Saxe-Altenburg
+	color = map_SAB
+	color2 = rgb { 203 93 124 }
+
+	culture_definition = saxon
+	religion_definition = catholic
+}
+
+SMN = { # Saxe-Meiningen
+	color = map_SMN
+	color2 = rgb { 203 93 124 }
+
+	culture_definition = saxon
+	religion_definition = catholic
+}
+
+SGA = { # Saxe-Gotha-Altenburg
+	color = map_SGA
+	color2 = rgb { 203 93 124 }
+
+	culture_definition = saxon
+	religion_definition = catholic
+}
+
+LTS = { # Lichtenstein
+	color = map_LTS
+	color2 = rgb { 203 93 124 }
+
+	culture_definition = saxon
+	religion_definition = catholic
+}

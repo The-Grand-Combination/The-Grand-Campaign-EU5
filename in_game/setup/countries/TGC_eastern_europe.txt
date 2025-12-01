@@ -1,0 +1,165 @@
+# Poland
+CPL = {
+	color = map_ENG
+	color2 = rgb { 16 41 202 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = mazovian
+	religion_definition = catholic
+
+	description_category = administrative
+	difficulty = 3
+}
+
+KRA = {
+	color = map_KRA
+	color2 = rgb { 16 41 202 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = lesser_polish
+	religion_definition = catholic
+
+	description_category = administrative
+	difficulty = 3
+}
+
+# Baltics
+EST = { # Estonia
+	color = map_ENG
+	color2 = rgb { 16 41 202 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = estonian
+	religion_definition = lutheran
+
+	description_category = administrative
+	difficulty = 3
+}
+
+LTV = { # Latvia
+	color = map_ENG
+	color2 = rgb { 16 41 202 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = latvian
+	religion_definition = lutheran
+
+	description_category = administrative
+	difficulty = 3
+}
+
+LIT = { # Lithuania
+	color = map_LIT
+	color2 = rgb { 154 69 116 }
+
+	culture_definition = aukstaitian
+	religion_definition = romuva
+
+	description_category = military
+	difficulty = 3
+}
+
+ESH = { # Estland Governate
+	color = map_ENG
+	color2 = rgb { 16 41 202 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = muscovite
+	religion_definition = orthodox
+
+	description_category = administrative
+	difficulty = 3
+}
+
+LIV = { # Livland Governate
+	color = map_livonian_order
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = german_baltic
+	religion_definition = catholic
+
+	description_category = military
+	difficulty = 4
+	
+	unit_color0 = white
+	unit_color1 = red
+	unit_color2 = white
+}
+
+KUR = { # Kurland Governate
+	color = map_kurland
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = german_baltic
+	religion_definition = catholic
+}
+
+# Russian Empire
+
+RUS = {
+	color = map_RUS
+	color2 = rgb { 16 41 202 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = muscovite
+	religion_definition = orthodox
+
+	description_category = administrative
+	difficulty = 3
+}
+
+UKR = {
+	color = map_UKR
+	color2 = rgb { 16 41 202 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = muscovite
+	religion_definition = orthodox
+
+	description_category = administrative
+	difficulty = 3
+}
+
+BLR = {
+	color = map_BLR
+	color2 = rgb { 16 41 202 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = muscovite
+	religion_definition = orthodox
+
+	description_category = administrative
+	difficulty = 3
+}
+
+KRL = {
+	color = map_KLR
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = karelian
+	religion_definition = muinaisusko
+}

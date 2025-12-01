@@ -1,0 +1,18 @@
+﻿l_english:
+ revolution_disaster.1.title: "Insurrection in [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip]"
+ revolution_disaster.1.desc: "Decades of feudal oppression, religious intolerance, and unjust taxation have all contributed to the revolutionary movements beginning to surface across our lands. [target_ruler.GetName] has desperately been seeking resolutions to the ever-increasing problems as our country finds itself at the mercy of the increasingly ambitious [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] supported by the outraged [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')].\n\nThe [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('peasants_estate')] and [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')] of [ROOT.GetCountry.GetCapital.GetArea.GetName] have joined the [target_rebel.GetName] of [ROOT.GetCountry.GetCapital.GetProvince.GetName]. In a swift strike, the insurgents stormed the local prison of [ROOT.GetCountry.GetCapital.GetName], arming themselves in the process and declared an active state of [ShowDisasterName('revolution_disaster')] against the Ancien Régime!"
+ revolution_disaster.1.a: "Dire times are ahead of us."
+ revolution_disaster.1.a.tt: "Approximately [ROOT.GetVariable('rev_rebelling_num_pops_var').GetValue|V0]#Y K#! of our [pops|e] across #Y [ROOT.GetVariable('rev_rebelling_num_provinces_var').GetValue]#! [provinces|e] will join the cause of [target_rebel.GetName]"
+
+ revolution_disaster.2.title: "The [ROOT.GetCountry.GetAdjectiveWithNoTooltip] Revolution"
+ revolution_disaster.2.desc: "After the storm and fall of [ROOT.GetCountry.GetCapital.GetName], the [rebel.GetName] have declared a civil war against [target_ruler.GetName] and the [ROOT.GetCountry.GetFlavorRank] as a whole. The [target.GetLongName] might be nothing but a provisional assembly, but its very presence is a very real threat to the [ROOT.GetCountry.GetLongName]. If not dealt with swiftly, our entire state might collapse..."
+ revolution_disaster.2.a: "We must show these upstarts their place!"
+ revolution_disaster.2.b: "Perhaps they are right..."
+
+ revolution_disaster.3.title: "The End of the [ROOT.GetCountry.GetAdjectiveWithNoTooltip] Revolution"
+ revolution_disaster.3.desc: "We have crushed the revolutionary upstarts! No longer shall the rule of [target_character.GetName] be disputed, and the revolutionary rebels have been put to the sword for treason against the [ROOT.GetCountry.GetLongName]."
+ revolution_disaster.3.a: "Order is restored."
+
+ revolution_disaster.4.title: "Rise of the [ROOT.GetCountry.GetAdjectiveWithNoTooltip] Revolutionary State"
+ revolution_disaster.4.desc: "With the victory of our revolutionary forces, the old government is no more. Whatever semblance of unity and protection it once provided is a long-gone memory while its horrors and mismanagement over the [ROOT.GetCountry.GetAdjective] people still linger to this day.\n\nUnder the elected leadership of [target_character.GetName], the newly forged [ROOT.GetCountry.GetLongNameWithNoTooltip] shall bring prosperity, dissolve the ancient shakles which bound the [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] to their masters, and shall make the old world order tremble!"
+ revolution_disaster.4.a: "Long live the Revolution!"

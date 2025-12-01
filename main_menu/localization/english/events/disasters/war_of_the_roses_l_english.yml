@@ -1,0 +1,113 @@
+﻿l_english:
+ war_of_the_roses.1.title: "War of the Roses"
+ war_of_the_roses.1.desc: "Two junior branches of the House of Plantagenet, the House of Lancaster and the House of York, both claim to be the rightful heir to the throne of England. Sporadic fights between their supporters have already broken out in a number of provinces around the country.\n\nTheir heraldic symbols, a red rose and a white rose, have already become synonymous with the conflict now commonly known as the War of the Roses."
+ war_of_the_roses.1.a: "Support the House of Lancaster."
+ york_rebels_joining: "All [pops|e] in [ShowProvinceDefinitionName('north_riding_province')] will join [york_rebel.GetName]"
+ war_of_the_roses.1.b: "Support the House of York."
+ york_rebel_name: "The York Pretenders"
+ lancaster_rebel_name: "The Lancaster Pretenders"
+ lancaster_rebels_joining: "All [pops|e] in [ShowProvinceDefinitionName('lancashire_province')] will join [lancaster_rebel.GetName]"
+
+ war_of_the_roses.2.title: "Support for the Crown"
+ war_of_the_roses.2.desc: "Local support for the Crown in the War of the Roses keeps growing among the people as [target_pop.GetName] rally to our banner!"
+ war_of_the_roses.2.a: "This is most welcome."
+ 
+ 
+ wotr_support_for_pretenders: "Declaration for Pretenders"
+ 
+ war_of_the_roses.3.title: "Declaration for the Lancaster Pretenders!"
+ war_of_the_roses.3.desc: "The nobility of [disloyal_target.GetName] has long been divided over the War of the Roses, but now the faction favoring the House of Lancaster has won out and is openly proclaiming its support for the rebels."
+ war_of_the_roses.3.a: "Dire news."
+ 
+ war_of_the_roses.4.title: "Declaration for the York Pretenders!"
+ war_of_the_roses.4.desc: "The nobility of [disloyal_target.GetName] has long been divided over the War of the Roses, but now the faction favoring the House of York has won out and is openly proclaiming its support for the rebels."
+ war_of_the_roses.4.a: "Dire news."
+ 
+ war_of_the_roses.5.title: "Nobles Disgruntled"
+ war_of_the_roses.5.desc: "The nobles have so far stood by the crown during the War of the Roses, expecting to be generously rewarded. But there is a growing opinion among many of them that there has so far been little recognition of their loyalty."
+ war_of_the_roses.5.a: "These gifts should show our gratitude."
+ war_of_the_roses.5.b: "It is nothing but their duty."
+ 
+ war_of_the_roses.6.title: "The Kingmaker"
+ war_of_the_roses.6.desc: "Powerful nobles play key roles in the Wars of the Roses, supporting either The House of [ShowDynastyName('york_dynasty')] or The House of [ShowDynastyName('lancaster_dynasty')] at different times. Now [kingmaker.GetName] is attempting to play Kingmaker, potentially shifting the balance of power in England."
+ war_of_the_roses.6.a: "He is a despicable traitor!"
+ war_of_the_roses.6.b: "He is a loyal servant of the crown!"
+
+ war_of_the_roses.8.title: "Legitimacy Questioned"
+ war_of_the_roses.8.desc: "Even our own commanders and soldiers are starting to question the legitimacy of the current rulership."
+ war_of_the_roses.8.a: "Buy their continued support."
+ war_of_the_roses.8.b: "How dare they question me?"
+ 
+ 
+ war_of_the_roses.9.title: "Rumors of Large Revolt on the Continent"
+ war_of_the_roses.9.desc: "Many of those who have been forced to flee the country during the War of the Roses have sought refuge on the continent and the local authorities report rumors that an armed rising might be imminent. If we do not stop this, they will be able to build a stronghold there that can provide support for further insurrection."
+ war_of_the_roses.9.a: "Send money to help the local authorities."
+ war_of_the_roses.9.b: "The money is needed more closer to home."
+ 
+ 
+ wotr_foreign_power_intervenes: "A Foreign [country|e] Intervenes"
+ 
+ wotr_lan_rebels_will_progress: "[lancaster_rebel.GetName] will gain [ShowNamedValue('rebel_progress_weak_bonus')|-=2%] progress"
+ wotr_yor_rebels_will_progress: "[york_rebel.GetName] will gain [ShowNamedValue('rebel_progress_weak_bonus')|-=2%] progress"
+ 
+ war_of_the_roses.12.title: "Support for the House of Lancaster"
+ war_of_the_roses.12.desc: "A civil war over the succession to the throne is raging in England, a conflict that has become known as the War of the Roses. The revolting House of Lancaster is seeking foreign aid and has sent us an envoy requesting troops. Should they succeed in claiming the throne, our help would surely be remembered, improving our relations with England."
+ war_of_the_roses.12.a: "Send them a token force."
+ war_of_the_roses.12.b: "Send them some money."
+ war_of_the_roses.12.c: "We will not support rebels."
+ 
+ war_of_the_roses.13.title: "Support for the House of York"
+ war_of_the_roses.13.desc: "A civil war over the succession to the throne is raging in England, a conflict that has become known as the War of the Roses. The revolting House of York is seeking foreign aid and has sent us an envoy requesting troops. Some support might be a way to prevent a strong and unified England from waging war on us, and should the rebels succeed in claiming the throne, our help would surely be remembered, improving our relations with England."
+ war_of_the_roses.13.a: "Send them a token force."
+ war_of_the_roses.13.b: "Send them some money."
+ war_of_the_roses.13.c: "We will not support rebels."
+ 
+ war_of_the_roses.14.title: "[from.GetNameWithNoTooltip] Intervenes!"
+ war_of_the_roses.14.desc: "The rebels have sought foreign support for their revolt and have managed to convince [from.GetLongName] to aid them!\n\nThis is not ideal, but we will prevail!"
+ war_of_the_roses.14.a: "How dare they!"
+ 
+ 
+ wotr_support_for_pretender_deeepens: "Support for Pretenders grow"
+ 
+ war_of_the_roses.15.title: "Lancaster Support grows in [disloyal_target.GetNameWithNoTooltip]!"
+ war_of_the_roses.15.title.fallback: "Growing Lancaster Support!"
+ war_of_the_roses.15.desc: "The entire population of [disloyal_target.GetName] has now come out in support of [lancaster_rebel.GetName].\n\nThe royal army will definitely need to be expanded!"
+ war_of_the_roses.15.a: "Dire news."
+
+ war_of_the_roses.16.title: "York Support grows in [disloyal_target.GetNameWithNoTooltip]!"
+ war_of_the_roses.16.title.fallback: "Growing York Support!"
+ war_of_the_roses.16.desc: "The entire population of [disloyal_target.GetName] has now come out in support of [york_rebel.GetName].\n\nThe royal army will definitely need to be expanded!"
+ war_of_the_roses.16.a: "Dire news."
+ 
+ war_of_the_roses.17.title: "The Defenders of [target_siege.GetNameWithNoTooltip]"
+ war_of_the_roses.17.desc: "The ravages of the ongoing civil war have taken a great toll on our [ROOT.GetCountry.GetFlavorRank]. Desolate streets, famine, and devastation have become close companions of the people in [target_siege.GetName]. After careful negotiations, the garrison accepted our terms and intends to march out, leaving the local fort unmanned for our armies to capture."
+ war_of_the_roses.17.a: "Another step forward."
+
+ war_of_the_roses.18.title: "The Conflict of the [ShowDisasterNameWithNoTooltip('war_of_the_roses')]"
+ war_of_the_roses.18.desc: "The pretenders have been bidding their time for a while now, amassing support across disloyal provinces throughout the [ROOT.GetCountry.GetFlavorRank]. Alas, they have now openly rebelled against our authority, denying the legitimacy of [target_character.GetName], posing a threat to the [target_dynasty.GetName] line."
+ war_of_the_roses.18.a: "Crush them!"
+ wotr_explain_action_tt: "During the [civil_war|e] phase of the [ShowDisasterName('war_of_the_roses')], we will gain access to the [ShowGenericActionName('wotr_bribe_garrison')] [disaster|e] [action|e]"
+ 
+ war_of_the_roses.100.title: "The End of the War of the Roses"
+ war_of_the_roses.100.desc: "The armed conflict over the succession to the English throne is finally over as [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetName] defeats the rivals! "
+ war_of_the_roses.100.a: "Order has finally been restored."
+ 
+ 
+ war_of_the_roses.103.title: "Improved Relations with [GetCountry('ENG').GetNameWithNoTooltip]"
+ war_of_the_roses.103.desc: "The new ruler of England, [GetCountry('ENG').GetGovernment.GetRuler.GetName], has not forgotten our help during the War of the Roses. As expected, the relations between our countries have greatly improved."
+ war_of_the_roses.103.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+ eng_support_during_war_of_the_roses: "Support During War of the Roses"
+ 
+ war_of_the_roses.104.title: "Relations Deteriorate with England"
+ war_of_the_roses.104.desc: "With the rebellion of the House of Lancaster finally crushed, [GetCountry('ENG').GetGovernment.GetRuler.GetName] has now turned his attention to those who supported the revolt, both internally and externally."
+ war_of_the_roses.104.a: "Oh..."
+ eng_supported_rebels_during_war_of_the_roses: "Supported Rebels During War of the Roses"
+ war_of_the_roses.104.b: "Good thing we didn't!"
+ eng_didnt_support_rebels: "Did not Support Rebels During War of the Roses"
+ war_of_the_roses.105.title: "Relations Deteriorate with England"
+ war_of_the_roses.105.desc: "With the rebellion of the House of York finally crushed, [GetCountry('ENG').GetGovernment.GetRuler.GetName] has now turned his attention to those who supported the revolt, both internally and externally."
+ war_of_the_roses.105.a: "Oh..."
+ war_of_the_roses.105.b: "Good thing we didn't!"
+
+ 
+ 

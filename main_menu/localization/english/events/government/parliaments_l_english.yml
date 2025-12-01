@@ -1,0 +1,133 @@
+﻿l_english:
+ parliaments.1.title: "[target_city.GetRank.GetNameWithNoTooltip] Demands Seat in [ROOT.GetCountry.GetGovernment.GetParliament.GetName]"
+ parliaments.1.desc: "The [target_city.GetRank.GetName] of [target_city.GetName] has grown rich and prosperous and the people there are disappointed that they have not been chosen as the seat of the current [ROOT.GetCountry.GetGovernment.GetParliament.GetName]. The representatives of [target_city.GetNameWithNoTooltip] demand compensation and a guarantee from us, securing their interests for the future. They are threatening to leave if their demands are not granted."
+ parliaments.1.a: "Grant them!"
+ parliaments.1.b: "Refuse them!"
+
+ parliaments.2.title: "Rotten Boroughs"
+ parliaments.2.desc: "Due to its important position in the [ROOT.GetCountry.GetGovernment.GetParliament.GetName], [target_location.GetName] can boast that it has quite some influence on the politics of our country. The citizens of [envious.GetName], however, feel underrepresented in the [ROOT.GetCountry.GetGovernment.GetParliament.GetName]. The people of [envious.GetNameWithNoTooltip] desire their own [ShowBuildingTypeName('urban_parliament_seat')], with all of the rights attached to it. While their demand in isolation seems reasonable, it also comes with the revocation of the seat of [target_location.GetNameWithNoTooltip], which our [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] would surely take as a grave insult."
+ parliaments.2.a: "Unfair or not, that seat is the right of [target_location.GetNameWithNoTooltip]!"
+ parliaments.2.b: "We must reassign the seat."
+
+ parliaments.3.desc_generic: "Apart from being an important member of the [ROOT.GetCountry.GetGovernment.GetParliament.GetName], [target_location.GetName] is also the center of a number of influential businesses with a stake in overseas trade."
+ parliaments.3.title: "The Economic Power of [target_location.GetNameWithNoTooltip]"
+ parliaments.3.desc: "$parliaments.3.desc_generic$ It appears that many of these businesses have decided that they would not benefit from the currently debated proposal's implementation and have exerted pressure on their members of the [ROOT.GetCountry.GetGovernment.GetParliament.GetName] to weaken the proposal."
+ parliaments.3.a: "[ROOT.GetCountry.Custom('common_string_negative')]"
+ parliaments.3.b: "If it is money they want, then they can have it."
+
+ parliaments.4.title: "Corruption of Vote"
+ parliaments.4.desc: "The [ROOT.GetCountry.GetGovernment.GetParliament.GetName] members of the rotten boroughs in [target_location.GetName] have chosen to oppose our proposal in the [ROOT.GetCountry.GetGovernment.GetParliament.GetName]. It seems that the landowner who controls the area has been persuaded that the proposal is not in his best interest."
+ parliaments.4.a: "Rotten luck!"
+ parliaments.4.b: "We must bribe the landowner then."
+
+ parliaments.5.title: "[target_location.GetNameWithNoTooltip] Wins Debate"
+ parliaments.5.desc: "The influential [ShowBuildingTypeName('university')] of [target_location.GetName] has managed to sway the Members of the [ROOT.GetCountry.GetGovernment.GetParliament.GetName] of [ROOT.GetCountry.GetName] to come out in favor of increasing [ShowBuildingTypeNameWithNoTooltip('university')] funding."
+ parliaments.5.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+ parliaments.5.b: "They should focus solely on their research."
+
+ parliaments.6.desc: "$parliaments.3.desc_generic$ It appears that many of these businesses have decided that they would benefit from the currently debated proposition's implementation and have exerted pressure on their members of the [ROOT.GetCountry.GetGovernment.GetParliament.GetName] to make it pass."
+ parliaments.6.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+
+ parliaments.7.title: "Military Support in [target_location.GetNameWithNoTooltip]"
+ parliaments.7.desc: "The army is in many ways the most influential internal force in [target_location.GetName] and the members of the [ROOT.GetCountry.GetGovernment.GetParliament.GetName] who come from and are loyal to this influential organization have been persuaded to vote in favor of the current proposition."
+ parliaments.7.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+ parliaments.7.b: "Their support alone is enough for us."
+
+ parliaments.8.title: "The Influence of [target_location.GetNameWithNoTooltip]"
+ parliaments.8.desc: "The current debate in the [ROOT.GetCountry.GetGovernment.GetParliament.GetName] on how to best protect domestic production has attracted the attention of many in [target_location.GetName]. This important position in the [ROOT.GetCountry.GetGovernment.GetParliament.GetName] has come to support us in the debate, in the hope that it will benefit from the suggested policy."
+ parliaments.8.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+ parliaments.8.b: "We should invest in [target_location.GetNameWithNoTooltip] regardless of the result."
+
+ parliaments.9.title: "The Power of [target_location.GetNameWithNoTooltip]"
+ parliaments.9.desc: "As the seat of our capital, [target_location.GetName] stands to benefit greatly from the currently proposed reforms. Luckily, enough people have realized this to ensure that their representative is now voting in our favor."
+ parliaments.9.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+
+ parliaments.10.title: "[target_location.GetNameWithNoTooltip] Changes Stance in Debate!"
+ parliaments.10.desc: "It seems that the [ROOT.GetCountry.GetGovernment.GetParliament.GetName] members of [target_location.GetName] have finally realized how beneficial the currently debated proposal would be to them if it passed. Their support for our cause is most welcome."
+ parliaments.10.desc_b: "It seems that the [ROOT.GetCountry.GetGovernment.GetParliament.GetName] members of [target_location.GetName] have realized how detrimental the currently debated proposal would be to them if it passed. Their support to our opposition is of great value."
+ parliaments.10.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+
+ parliaments.11.desc: "It seems that the [ROOT.GetCountry.GetGovernment.GetParliament.GetName] members of [target_location.GetName], though staunch supporters of our cause just a little while ago, have come to change their stance on the currently debated issue entirely. We cannot know for sure how this happened, but it is clear that we can no longer rely on their vote."
+ parliaments.11.a: "Perhaps their greed got the better of them..."
+
+ parliaments.12.title: "No Support for the Peasantry"
+ parliaments.12.desc: "While we do permit the [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] to petition our [ROOT.GetCountry.GetGovernment.GetParliament.GetName], this right does not translate into the same power other estates have over this institution. During a recent discussion, it has become clear that the common people of [ROOT.GetCountry.GetName] do not enjoy the same privileges as the dominant upper class, which happens to oppose the proposal of the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('peasants_estate')]."
+ parliaments.12.a: "[ROOT.GetCountry.Custom('common_string_negative')]"
+ parliaments.12.b: "What a terrible injustice!"
+
+ parliaments.13.title: "[ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('peasants_estate')] Dominate Debate"
+ parliaments.13.desc: "A determined campaign by members of the [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] has swayed the [ROOT.GetCountry.GetGovernment.GetParliament.GetName] in favor of the currently debated issue. Despite their lower social status, their voice is accepted as equal in discussions of the state."
+ parliaments.13.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+ parliaments.13.b: "The people's demands will be heard."
+
+ parliaments.14.desc_common: "The [ROOT.GetCountry.GetGovernment.GetParliament.GetName] members of [target_location.GetName] hold an influential position within the [ROOT.GetCountry.GetGovernment.GetParliament.GetName], as they represent one of our economic centers."
+ parliaments.14.title: "The [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')] of [target_location.GetNameWithNoTooltip]"
+ parliaments.14.desc: "$parliaments.14.desc_common$ Their wealth holds much sway in the [ROOT.GetCountry.GetGovernment.GetParliament.GetName], but fortunately for us, the proposition being discussed will benefit them if it passes, so their money is being spent buying support instead of obstructing it."
+ parliaments.14.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+
+ parliaments.15.title: "The Burden of [target_location.GetNameWithNoTooltip]"
+ parliaments.15.desc: "Many in [target_location.GetName] have been quite disappointed by the proposal to increase our focus on maritime infrastructure. They feel that their region already contributes much to the armed forces of our country and had rather expected the [ROOT.GetCountry.GetGovernment.GetParliament.GetName] to authorize more funds for their discretion, instead of asking for more money for the navy."
+ parliaments.15.a: "[ROOT.GetCountry.Custom('common_string_negative')]"
+ parliaments.15.a.tt: "Our [pops|e] in [target_location.GetName] will lose [ShowNamedValue('pop_satisfaction_weak_penalty')|+=2%] [pop_satisfaction|e]"
+
+ parliaments.16.title: "Maritime Dominance in [target_location.GetNameWithNoTooltip]"
+ parliaments.16.desc: "The dominance of the navy in [target_location.GetName] has meant that the proposed increased spending on the army in the [ROOT.GetCountry.GetGovernment.GetParliament.GetName] has been rather coldly received there. Despite having been initially amenable to the proposition, the members of the [ROOT.GetCountry.GetGovernment.GetParliament.GetName] from this area now see no choice but to vote against it."
+ parliaments.16.a: "[ROOT.GetCountry.Custom('common_string_negative')]"
+
+ parliaments.17.desc_common: "The people of [target_location.GetName] tend to follow a different faith from our own, and the members of the [ROOT.GetCountry.GetGovernment.GetParliament.GetName] which are responsible for [target_location.GetNameWithNoTooltip] have been accused of representing their interests over those of our own faith."
+ parliaments.17.title: "The Faith of [target_location.GetNameWithNoTooltip]"
+ parliaments.17.desc_tolerance: "$parliaments.17.desc_common$ However, these accusations usually spark nothing but laughter from the rest of the [ROOT.GetCountry.GetGovernment.GetParliament.GetName], as it is not uncommon for us to value those who follow a different faith from that of our state."
+ parliaments.17.desc_intolerance: "$parliaments.17.desc_common$ These drastic accusations have damaged the reputation of [target_location.GetNameWithNoTooltip] and hurt support for the current proposal in the [ROOT.GetCountry.GetGovernment.GetParliament.GetName]."
+ parliaments.17.a: "It was the will of [ROOT.GetCountry.GetReligion.GetGodName]."
+
+ parliaments.18.title: "The Expectations of [target_location.GetNameWithNoTooltip]"
+ parliaments.18.desc: "The [ROOT.GetCountry.GetGovernment.GetParliament.GetName] members of [target_location.GetName] are surprisingly receptive of our proposal in the parliamentary debate. It appears that the university in [target_location.GetNameWithNoTooltip] is convinced that it will be involved in the counting and measuring that the current proposal entails and scholars are delighted by the opportunity to take part in the gathering of new, raw data regarding our country."
+ parliaments.18.a: "[ROOT.GetCountry.Custom('common_string_ok')]"
+
+ parliaments.19.title: "The Incompetence of [target_character.GetNameWithNoTooltip]"
+ parliaments.19.desc: "With our current [ROOT.GetCountry.GetGovernment.GetParliament.GetName] debate focusing on the composition of our [ROOT.GetCountry.GetGovernment.GetCabinetTitle], a serious error committed by [target_character.GetName] has come to light. Over the course of [target_character.GetHerHis] appointment, [target_character.GetHerHis] skill seems to have degraded rapidly and we might need to consider replacing [target_character.GetHerHim] entirely."
+ parliaments.19.a: "[ROOT.GetCountry.Custom('common_string_negative')]"
+
+ parliaments.20.title: "Life in [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip]"
+ parliaments.20.desc: "As representatives of areas that are sometimes quite distant from [ROOT.GetCountry.GetCapital.GetName], many [ROOT.GetCountry.GetGovernment.GetParliament.GetName] members often find that life in [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip] during their visits is very different from what they are used to. Some find it both cramped and filthy, and many seem quite relieved when they get to return home.\n\nThis year has proven even harder than usual for the delicate sensibilities of our [ROOT.GetCountry.GetGovernment.GetParliament.GetName] members to endure. The hot months have been unusually hot, the wet months unusually wet, and the cold months unusually cold. A number of [ROOT.GetCountry.GetGovernment.GetParliament.GetName] members have now decided that they have had enough and have approached us asking for help to make their stays more pleasant."
+ parliaments.20.a: "We must do what we can."
+ parliaments.20.b: "They will have to endure like the rest of us."
+
+ parliaments.21.title: "[ROOT.GetCountry.GetGovernment.GetParliament.GetName] Members in Scandal"
+ parliaments.21.desc: "A minor scandal has occurred in [ROOT.GetCountry.GetCapital.GetName] during the current debate. It seems that, rather than attending the sessions personally, some members of the [ROOT.GetCountry.GetGovernment.GetParliament.GetName] were out disturbing the peace and harassing their fellow countrymen. The outrage is great, both among their peers and in the streets, and this incident is likely to haunt future parliaments for years."
+ parliaments.21.a: "$common_string_let_it_slide$"
+ parliaments.21.b: "Arrest the [ROOT.GetCountry.GetGovernment.GetParliament.GetName] members."
+
+ parliaments.22.title: "Absenteeism"
+ parliaments.22.desc: "Given its great influence over the politics of our country, it would be easy to assume that all [ROOT.GetCountry.GetGovernment.GetParliament.GetName] members attended parliamentary sessions with great enthusiasm, eager to do the most they can with the power that they have been entrusted with. This is, however, far from the case. In any given [ROOT.GetCountry.GetGovernment.GetParliament.GetName], there will be some that never show up, either because they are still enjoying their estates in the countryside or because they decided to partake in the many joys of the capital. The problem has grown more and more lately, and we fear that foreign dignitaries are laughing at us behind our backs. We could fine those who are absent during the debates to increase attendance, but of course these members of the [ROOT.GetCountry.GetGovernment.GetParliament.GetName] would not take very kindly to that."
+ parliaments.22.a: "Fine the worst offenders."
+ parliaments.22.b: "[ROOT.GetCountry.Custom('common_string_nothing_we_can_do')]"
+
+ parliaments.23.title: "Demands for Representation"
+ parliaments.23.desc: "A number of hostile publications have begun to circulate in the cities of [ROOT.GetCountry.GetName]. Anonymous, yet very critical, authors claim that our government is autocratic and does not rule with fair consideration for the situations of all [ROOT.GetCountry.GetAdjectiveWithNoTooltip] people, along with other such ludicrous accusations. They demand both a written constitution and a parliament where the various parts of our country can be represented."
+ parliaments.23.a: "Ban the Publications."
+ parliaments.23.b: "Make vague promises of Reform."
+
+ parliaments.24.title: "Financial Aid"
+ parliaments.24.desc: "It seems that our government's currently poor finances and our desperate attempts to locate any kinds of funds have become public knowledge. While this surely will hurt our reputation both in [ROOT.GetCountry.GetName] and abroad, it has come with some benefits, as several members of the [ROOT.GetCountry.GetGovernment.GetParliament.GetName], representing [target_location.GetName], have approached us offering their help. Their price, however, is greater representation in the government in general as well as formalized channels through which the state can ask for their help in the future."
+ parliaments.24.a: "Grant them Greater Representation."
+ parliaments.24.b: "Refuse their money."
+ parliaments.24.c: "Promise to take their views into consideration."
+
+ parliaments.25.desc: "$parliaments.14.desc_common$ Their wealth holds much sway in the [ROOT.GetCountry.GetGovernment.GetParliament.GetName] and, unfortunately, they use it to lobby against our current efforts."
+ parliaments.25.a: "[ROOT.GetCountry.Custom('common_string_negative')]"
+
+ parliaments.27.title: "Parliamentary Traditions"
+ parliaments.27.desc: "One of the more difficult things about being a parliamentarian has less to do with the debates in [ROOT.GetCountry.GetCapital.GetName], but more with how to sell the debates and compromises to the people back home. Still, a local [ROOT.GetCountry.GetGovernment.GetParliament.GetName] member will often have an easier time explaining a new tax than would a collector sent by the central government in less representative systems.\n\nIt seems that the [ROOT.GetCountry.GetGovernment.GetParliament.GetName] members in general, and the ones from [target_location.GetName] in particular, have become so adept at defending policies that we have seen a resulting rise in the support of the central government as a whole."
+ parliaments.27.a: "They finally understand us!"
+
+ parliaments.26.title: "An Agreeable [ROOT.GetCountry.GetGovernment.GetParliament.GetName]"
+ parliaments.26.desc: "The members of our [ROOT.GetCountry.GetGovernment.GetParliament.GetName] have been especially agreeable in recent times. With their loyalist leanings, we could easily sway them in our favor or extract some extra resources from their regions."
+ parliaments.26.a: "Leveraging their loyalties is most important."
+ parliaments.26.b: "We need hard currency!"
+
+ parliaments.28.title: "Clashing Authority"
+ parliaments.28.desc: "A rare and unexpected sight has emerged in [ROOT.GetCountry.GetCapital.GetName], as [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')], [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')], and other members of the middle and lower strata have convened their own makeshift [ROOT.GetCountry.GetGovernment.GetParliament.GetName]. United in their discontent, they are pushing forward the [target_debate.GetName] debate, demanding changes that directly challenge the will of [target_character.GetName]. Many of their members, fueled by frustrations with the ruling class, have decided that they can no longer endure the status quo and are making their voices heard, despite the strong opposition of [target_character.GetShortNameWithNoTooltip]."
+ parliaments.28.a: "Our whips have grown ineffective!"
+
+

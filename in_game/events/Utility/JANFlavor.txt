@@ -1,0 +1,2 @@
+namespace = janmayen
+#NOTE: likely to be deprecated due to EU5's increased moddability

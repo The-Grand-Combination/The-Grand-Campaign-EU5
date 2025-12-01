@@ -1,0 +1,65 @@
+﻿l_english:
+ savonarola.1.title: "An Upstart Preacher"
+ savonarola.1.desc: "$savonarola_disaster_desc$\n\nA proposition has come to us to invite this preacher, [GetCharacter('flo_savonarola').GetName], to [ROOT.GetCountry.GetCapital.GetName], arguing that we could gain much from his presence in the city. At the very least, we would be sure to benefit from the pull his words have among the masses."
+ savonarola.1.a: "Invite him in."
+ savonarola.1.b: "Send him away."
+
+ savonarola.2.title: "Savonarola Preaches"
+ savonarola.2.desc: "Fueled by his convictions, [GetCharacter('flo_savonarola').GetName] is unwavering in his preaching. He can constantly be seen in the main square making his message heard. The longer he preaches, the larger the crowd that gathers around him. Albeit not all of them are his supporters, the influence his message is getting is undeniable.\n\nEncouraged by his growing support, his sermons are becoming bolder. Always focusing on repentance and reform, his attacks against the abuses of authority and the depravity of the rulers of Europe and the Church itself are becoming less veiled."
+ savonarola.2.a: "Let him preach."
+ savonarola.2.b: "Curtail him."
+
+ savonarola.3.title: "Formation of the Piagnoni"
+ savonarola.3.desc: "With the ever-increasingly growing influence of [GetCharacter('flo_savonarola').GetName], his followers have begun to coalesce into groups called Piagnoni, meaning 'weepers' or 'wailers'. These groups follow him wherever he goes, paying close attention to his every word and etching his message into their hearts.\n\nLet to their own devices, these Piagnoni will soon turn into an unstoppable wave of support for Savonarola."
+ savonarola.3.a: "Let them be."
+ savonarola.3.b: "Ban them."
+
+ savonarola.4.title: "Savonarola's Fame Grows"
+ savonarola.4.desc: "[GetCharacter('flo_savonarola').GetName] is becoming a bigger figure than originally anticipated. While he is preaching mainly in [ROOT.GetCountry.GetCapital.GetName], news of his message is spreading throughout our country and even further beyond. Reports have come indicating his growing support among the population of [target_location.GetName], where people have started assembling to discuss his message, and even coming to the capital to hear him in person.\n\nWe can't deny the power of his preaching and the influence he is getting among the populace, as every day more and more people are expressing their open support towards his message. If this continues, he may become a thorn in our side too hard to remove."
+ savonarola.4.a: "He is harmless."
+ savonarola.4.b: "He is becoming a nuisance."
+ 
+ savonarola.5.title: "Savonarola Takes Control"
+ savonarola.5.desc: "[GetCharacter('flo_savonarola').GetName]'s influence is greater than ever. As more and more people gather around him by the day and the situation in [ROOT.GetCountry.GetName] is becoming direr, his attacks against the Church and the [ROOT.GetCountry.GetGovernment.GetRulerTitle] [target_character.GetName] are becoming ever more intense. He is naming himself the 'Reformer of the Church', and people are calling for the expulsion of [target_character.GetNameWithNoTooltip] and the installment of [GetCharacter('flo_savonarola').GetNameWithNoTooltip] as the leader of [ROOT.GetCountry.GetNameWithNoTooltip] under the guidance of God.\n\nAlthough our capable [ROOT.GetCountry.GetGovernment.GetRulerTitle] is for sure able to get our country out of this predicament on our own merits, it is undeniable that a big part of our population is demanding a change."
+ savonarola.5.a: "Allow him to take control."
+ savonarola.5.b: "His ideology is fine, but he's no ruler."
+ savonarola.5.c: "We are done with him."
+
+ savonarola.6.title: "Savonarola's Laws"
+ savonarola.6.desc: "With his recent installment as the ruler of the [ROOT.GetCountry.GetLongName], [GetCharacter('flo_savonarola').GetName] is starting to put into effect the reforms for which he had been preaching. Being organized with his followers into a political party, he now dominates [ROOT.GetCountry.GetAdjectiveWithNoTooltip] politics and his reforms are passing unopposed. New laws are being proposed to come into effect, condemning vice and excesses. Any moral transgression will now be deemed illegal, and street patrols will be organized to make sure the city is free of any shameless behavior or clothing.\n\nFollowing through with these reforms will ensure that our nation is God's favorite, but it will involve huge changes for our people's way of life."
+ savonarola.6.a: "Adopt these reforms."
+ savonarola.6.b: "This is a bit extreme."
+ 
+ savonarola.7.title: "Savonarola Summoned to Rome"
+ savonarola.7.desc: "[GetCharacter('flo_savonarola').GetName] has caused a great impact by preaching to the people of the [ROOT.GetCountry.GetLongName], and he has introduced many changes to our society since he was chosen to lead it. Albeit at the beginning the Holy See was a bit set back by his criticisms of the Church, it remained supportive of his policies. However, his constant disagreements with the [GetCountry('PAP').GetGovernment.GetRulerTitle] paired with his ever-increasing overzealousness have strained their relations to an alarming degree.\n\nHe tried to maintain the division from tearing even further by sending letters to the [GetCountry('PAP').GetGovernment.GetRulerTitle], but those attempts have eventually proved to be unsuccessful. [GetCountry('PAP').GetGovernment.GetRulerTitle] [GetCountry('PAP').GetGovernment.GetRuler.GetName] has finally decided to summon him to Rome to end this debate once and for all."
+ savonarola.7.a: "Obey the [GetCountry('PAP').GetGovernment.GetRulerTitle]."
+ savonarola.7.b: "Ignore the [GetCountry('PAP').GetGovernment.GetRulerTitle]."
+
+ savonarola.8.title: "Savonarola's Bonfire of the Vanities"
+ savonarola.8.desc: "Bonfires of the vanities are not an unusual occurrence around Europe. Zealous priests are constantly eager to condemn excesses and vice, and to prove their point they are not afraid to put up a show as spectacularly as possible. The burning of cosmetics, mirrors, dresses and anything deemed susceptible to tempt people into sin is one of the most noticeable ways they have to condemn vanity. Those items are in constant danger of falling victim to the cleansing fire of the faith.\n\n[GetCharacter('flo_savonarola').GetName] has taken it into his hands to make one such bonfire to rid the good people of [ROOT.GetCountry.GetName] of sin. A huge bonfire will be set in the main square of [ROOT.GetCountry.GetCapital.GetName], and an example will be set for all to follow."
+ savonarola.8.a: "Burn them all!"
+ savonarola.8.b: "This has gone too far."
+ 
+ savonarola.9.title: "Excommunication of Savonarola"
+ savonarola.9.desc: "The disagreements between [GetCharacter('flo_savonarola').GetName] and [GetCountry('PAP').GetGovernment.GetRulerTitle] [GetCountry('PAP').GetGovernment.GetRuler.GetName] have come to a point of no return. The increasing overzealousness of Savonarola and his constant attacks against the Church's authority have been cause of concern for the Holy See. The [GetCountry('PAP').GetGovernment.GetRulerTitle]'s demands have been repeatedly ignored and accusations of heresy and sedition are piling up.\n\nIn the end, the [GetCountry('PAP').GetGovernment.GetRulerTitle] has decided to take extreme measures and has excommunicated him, threatening anyone that may harbor him."
+ savonarola.9.a: "It is he who is wrong!"
+ 
+ savonarola.10.title: "Trial by Fire"
+ savonarola.10.desc: "The zealousness of [GetCharacter('flo_savonarola').GetName] has reached unprecedented levels. His accusations against the Church have gone way beyond simple veiled attacks and instead turned into openly expressed defamation. His latest publications have also become more radical, trying to refute the accusations of heresy in them. He even started making allegations about his ability to perform miracles, which would undoubtedly show that he is being guided by God if they were true. To prove these alleged miracles, he was challenged to pass the trial of fire, a test in which he would have to walk through burning fire. If he is indeed capable of miracles and guided by God, fire would not be able to burn him and he would pass through it unscathed.\n\nOn the date assigned for the trial, a huge crowd assembled in the main square, eager to see the outcome. Expectation and nervousness could be felt in the air, and as time went on without anything starting the mood of the crowd went increasingly sour. Finally, the whole trial had to be canceled due to sudden rainfall, and people had to return home angry, blaming Savonarola for the failed test."
+ savonarola.10.a: "He is clearly a heretic, arrest and execute him."
+ savonarola.10.b: "He didn't burn, so God is clearly on his side."
+
+ savonarola.11.title: "Savonarola's Legacy"
+ savonarola.11.desc: "The death of [GetCharacter('flo_savonarola').GetName] has shaken our country as much as his life did. Whether they agreed with his preachings or not, it's undeniable that he left an impact on all the people of the [ROOT.GetCountry.GetLongName]. His passing marks the end of all the agitation he caused, and albeit many of his followers are still spreading the same message, they do not represent the same force of change he was.\n\nThe [ROOT.GetCountry.GetFlavorRank] has endured the earthquake that [GetCharacter('flo_savonarola').GetNameWithNoTooltip] was and has emerged from it stronger than it was."
+ savonarola.11.theocracy.desc: "[GetCharacter('flo_savonarola').GetName] has completely shaken our country. His God-guided path has brought the blessings of the Almighty to shine upon our glorious country. We shall follow in his wake to make the [ROOT.GetCountry.GetLongName] into God's chosen.\n\nUnder His guidance, the glorious nation of [ROOT.GetCountry.GetNameWithNoTooltip] will become the light of Heaven on Earth, a beacon of salvation for all souls and an example for them to follow."
+ savonarola.11.a: "Let's restore the order of the [ROOT.GetCountry.GetFlavorRank]."
+ savonarola.11.b: "We will follow his divine path."
+
+ savonarola.12.title: "The Medici Strike Back"
+ savonarola.12.desc: "After the execution of [GetCharacter('flo_savonarola').GetName], [GetCharacter('flo_piero_soderini').GetName] was put in charge of the [ROOT.GetCountry.GetLongName] to reestablish order. Although his rule has been until now quite successful, it has not been free of hurdles either, and there are some people among the population that are not satisfied with him being in charge. One such group of people is the [ShowDynastyName('medici_dynasty')] family. Previously one of the most influential families that led the government of [ROOT.GetCountry.GetNameWithNoTooltip], they saw themselves displaced when Savonarola took control.\n\nNow that order has been restored under [GetCharacter('flo_piero_soderini').GetNameWithNoTooltip], they see their chance to take back control of the [ROOT.GetCountry.GetFlavorRank]'s government. They have enough support to make it happen and be accepted without much complaints from the populace."
+ savonarola.12.a: "Bring them back."
+ savonarola.12.b: "This is fine."
+
+ savonarola.13.title: "Savonarola Comes Back"
+ savonarola.13.desc: "We thought that we had rid ourselves of [GetCharacter('flo_savonarola').GetName] by exiling it from [ROOT.GetCountry.GetName], but it seems that his preaching is not yet over. Not satisfied with the stir that he has already caused, he has decided to come back and continue spreading his doctrine in our country. He has been seen once again in the middle of [ROOT.GetCountry.GetCapital.GetName] surrounded by a huge crowd listening to his every word."
+ savonarola.13.a: "Pesky individual."

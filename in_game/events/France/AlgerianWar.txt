@@ -1,0 +1,1 @@
+namespace = algerian_war

@@ -1,0 +1,58 @@
+﻿l_english:
+ DAI_NGU: "Đại Ngu"
+ DAI_NGU_ADJ: "$DAI_NGU$"
+
+ flavor_chi_dai.1.title: "[target_character.GetNameWithNoTooltip]"
+ flavor_chi_dai.1.desc: "Through careful political maneuvering and deep connections, a certain personage named [target_character.GetName] has managed to weave [target_character.GetHerHis] way into the [ROOT.GetCountry.GetGovernment.GetCourtTitle] of [ROOT.GetCountry.GetName]. [target_character.GetHeShe|U] is considered to be an able general, but [target_character.GetHerHis] ambition is something to be wary of. Many believe that [target_character.GetSheHe] could become a threat to the [ROOT.GetCountry.GetAdjectiveWithNoTooltip] stability. Let us hope that is but a gossip."
+ flavor_chi_dai.ho_quy_ly_historical_info: "Turn of the 15th century saw the fall of the $tran_dynasty$ to the hands of one of their ministers, $ho_dynasty$ $name_quy$ $name_ly$. The coup was followed by a war with the $MNG$, where the Chinese were able to establish rule in Vietnam under the province of $jiaozhi_province$. This occupation lasted until 1428, when the Chinese army was forced to withdraw after years of struggle with Vietnamese Uprisings."
+ flavor_chi_dai.1.a: "Interesting."
+
+ flavor_chi_dai.2.title: "An Unexpected Coup"
+ flavor_chi_dai.2.desc: "One of our ambitious courtiers, [target_character.GetName], has launched an unprecedented coup against [ousted_character.GetName] and the [ousted_character.GetDynasty.GetName] House. If our information is correct, [ousted_character.GetShortNameWithNoTooltip] was invited by [target_character.GetShortNameWithNoTooltip] to inspect a proposed site of a new capital. It is then that [ousted_character.GetSheHe] was suddenly attacked by the rebel, narrowly escaping imprisonment.\n\nHaving taken the throne, [target_character.GetNameWithNoTooltip] wishes to reform the [ROOT.GetCountry.GetFlavorRank] and has decided to rename the state to $DAI_NGU$. All the while, the hunt for [ousted_character.GetNameWithNoTooltip] continues."
+ flavor_chi_dai.2.a: "[target_character.GetNameWithNoTooltip] will reform this country!"
+ flavor_chi_dai.2.b: "We must ensure [ousted_character.GetNameWithNoTooltip] escapes capture."
+
+ flavor_chi_dai.3.title: "Coup in [target_country.GetNameWithNoTooltip]"
+ flavor_chi_dai.3.desc: "One of our tributaries, the [target_country.GetLongName], has recently suffered a sudden and disastrous coup. One of their courtiers, [target_character.GetName], has taken over the [target_country.GetFlavorRank] and established a new dynasty. We have been rather oblivious to this fact until one of the throne claimaints from the former dynasty, [claimant_character.GetName], has arrived in our [ROOT.GetCountry.GetGovernment.GetCourtTitle] seeking support for restoration of the old order."
+ flavor_chi_dai.3.a: "Demand the restoration."
+ flavor_chi_dai.3.b: "It is not our problem."
+
+ flavor_chi_dai.4.title: "Demand of the [china_side.GetAdjectiveWithNoTooltip] Side"
+ flavor_chi_dai.4.desc: "The [china_side.GetLongName] have received one of the [ShowDynastyName('tran_dynasty')] princes, [claimant_character.GetName], who has fed them lies and deceit about the so-called throne usurpation of [target_character.GetName]. Deceived, they subsequently decided to demand from us that [claimant_character.GetShortNameWithNoTooltip] is put back on the throne, reverting the progress we have made on reforming [ROOT.GetCountry.GetName] in the process.\n\nBelieving our response to be positive, they have set on their way to [ROOT.GetCountry.GetNameWithNoTooltip]. Currently, [claimant_character.GetNameWithNoTooltip] is being escorted by a contingent of [china_side.GetAdjectiveWithNoTooltip] troops to [ROOT.GetCountry.GetCapital.GetName]."
+ flavor_chi_dai.4.a: "Ambush the envoy."
+ flavor_chi_dai.4.b: "Heed their demands."
+
+ flavor_chi_dai.5.title: "Disrespect of [target_country.GetNameWithNoTooltip]"
+ flavor_chi_dai.5.desc: "We have received troublesome news from [target_country.GetName]. Not only were our demands for the restoration of the [ShowDynastyName('tran_dynasty')] dynasty ignored but our envoys were ambushed while escorting [claimant_character.GetName]. Such a disrespect to [ROOT.GetCountry.GetName] shall not be tolerated."
+ flavor_chi_dai.5.a: "If we do not destroy them, what are armies for?"
+ flavor_chi_dai.5.b: "As long as they pay tribute, we shall not intervene."
+
+ jiaozhi_province: "Jiāozhǐ"
+ flavor_chi_dai.6.title: "Province of $jiaozhi_province$"
+ flavor_chi_dai.6.desc: "One of our generals from the campaign in [ShowAreaName('red_river_delta_area')], [target_character.GetName], is reporting on the vicious resistance that was met from the local [ShowCultureName('vietnamese_culture')] populace. In order to deal with this unrest, [target_character.GetSheHe] has taken to the historical records and found out that Vietnam used to be once ruled by [ShowCultureGroupName('chinese_group')] dynasties. [target_character.GetSheHe|U] now argues that [ShowAreaNameWithNoTooltip('red_river_delta_area')] should be permanently integrated into [ROOT.GetCountry.GetName] as the province of $jiaozhi_province$."
+ flavor_chi_dai.6.a: "Let us strive to integrate these territories, then."
+ flavor_chi_dai.6.b: "The past shall serve as no precedent."
+
+ flavor_chi_dai.7.title: "Fate of $jiaozhi_province$"
+ flavor_chi_dai.7.desc: "The resistance in $jiaozhi_province$ is significant, greatly angering the [ROOT.GetCountry.GetGovernment.GetCourtTitle] back in [ROOT.GetCountry.GetCapital.GetName]. To further integration of the province, the ministers wish to enact policies which would aid the assimilation and sinicization of the [ShowCultureName('vietnamese_culture')] people while also bringing many talented laborers to the capital."
+ flavor_chi_dai.7.a: "Enact the policies."
+ flavor_chi_dai.7.b: "They will be integrated in due time."
+
+ flavor_chi_dai.8.title: "Rebellion of [target_character.GetNameWithNoTooltip]"
+ flavor_chi_dai.8.desc: "After many years of trying to integrate the [ShowCultureName('vietnamese_culture')] culture, we must conclude that this effort has not been as successful as we had hoped. Recently, another rebellion has been launched, this time by an upstart called [target_character.GetName]. Unfortunately, the rebellion has found great success in defeating our local garrisons. Perhaps we might want to put this occupation to an end."
+ flavor_chi_dai.8.a: "Holding $jiaozhi_province$ is a pointless endeavor."
+ flavor_chi_dai.8.b: "Defeat this upstart!"
+
+ flavor_chi_dai.9.title: "[ShowDynastyNameWithNoTooltip('tran_dynasty')] Loyalist Revolts"
+ flavor_chi_dai.9.desc: "Our rule in the $jiaozhi_province$ province is not appreciated by the local population which much preferred home rule under the [ShowDynastyName('tran_dynasty')] dynasty. Many of them have therefore rallied under the banner of [target_character.GetName], who promises them a return to the traditional $DAI_ADJ$ rulership."
+ flavor_chi_dai.9.a: "[ROOT.GetCountry.Custom('common_string_negative')]"
+
+ flavor_chi_dai.10.title: "Intervention in [target_country.GetNameWithNoTooltip]"
+ flavor_chi_dai.10.desc: "[target_country.GetName] has recently fallen victim to a coup which put them at odds with their [china_side.GetAdjective] overlords. Diplomatic conflict ensued and the two countries have now ended up at war, the [target_war.GetName]. With the [target_country.GetLongNameWithNoTooltip] threatened by [china_side.GetAdjectiveWithNoTooltip] forces, it might be our chance to reclaim [ShowProvinceDefinitionName('hue_province')]."
+ flavor_chi_dai.10.a: "To war!"
+ flavor_chi_dai.10.b: "We have enough issues as is."
+
+ flavor_chi_dai.11.title: "Breaking the [ShowCultureNameWithNoTooltip('vietnamese_culture')] Will"
+ flavor_chi_dai.11.desc: "A decree has reached our forces in [ShowAreaName('red_river_delta_area')]. [target_character.GetName] decrees that our soldiers should seek out [ShowCultureName('vietnamese_culture')] scriptures in order to have them burnt with the only exception to this being [ShowReligionGroupAdjective('buddhist')] and Daoist books. Despite this, many soldiers still hesitate and tend to read those before eventually letting the flames engulf the texts."
+ flavor_chi_dai.11.a: "We must increase discipline!"
+ flavor_chi_dai.11.b: "Reverse the decree!"

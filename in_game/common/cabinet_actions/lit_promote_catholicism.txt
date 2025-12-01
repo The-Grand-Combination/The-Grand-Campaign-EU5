@@ -1,0 +1,116 @@
+﻿lit_promote_catholicism = {
+	ability = mil
+	
+	allow_multiple = yes
+	
+	potential = {
+		num_locations > 0 
+		has_variable = lit_enable_conversion_to_catholicism_variable
+	}
+	
+	allow = {
+		religious_unity < 1.0
+		OR = {
+			modifier:global_nobles_conversion_blocked = no
+			modifier:global_burghers_conversion_blocked = no
+			modifier:global_clergy_conversion_blocked = no
+			modifier:global_peasants_conversion_blocked = no
+		}
+	}
+	
+	select_trigger = {
+		looking_for_a = religion
+		target_flag = target
+		#for the AI we have an optimisation to only look through religions that are present. Human can look at all...but will have some disabled
+		source_ai_override = actor
+		source_flags_ai_override = include_any_present
+		name = "convert_religion_select_religion"
+		none_available_msg_key = "convert_religion_no_religions"
+		column = {
+			data = name
+		}
+		column = {
+			data = religion_percentage_in_country
+		}
+		default_sort = religion_percentage_in_country
+		visible = {
+			root = religion:catholic
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = province
+		source = actor
+		target_flag = target_1
+		name = "promote_religion_select_province"
+		none_available_msg_key = "promote_religion_no_provinces"
+		column = {
+			data = name
+		}
+		column = {
+			data = province_religion_percentage
+		}
+		column = {
+			data = population
+		}
+		default_sort = province_religion_percentage
+		visible = {
+			any_location_in_province = {
+				OR = {
+					NOT = { dominant_religion = religion:catholic }
+					local_religious_unity < 1.0
+				}
+			}
+			scope:actor = {
+				not = {
+					any_cabinet = {
+						has_cabinet_action = yes
+						cabinet_action = cabinet_action:promote_religion
+						interaction_target:target_1 ?= root
+					}
+				}
+			}
+		}
+		map_color = {
+			lerp = {
+				min_color = define:NMapColors|MAP_COLOR_LOW
+				max_color = define:NMapColors|MAP_COLOR_HIGH
+				factor = "province.religion_percentage(religion:catholic)"
+			}
+		}
+	}
+
+	is_finished = {
+		scope:target_1 = {
+			"religion_percentage(religion:catholic)" = 1.0
+		}
+	}
+
+	on_activate = {
+		if = {
+			limit = {
+				exists = scope:target_1
+			}
+			scope:target_1 = {
+				set_variable = {
+					name = promoting_religion
+					value = religion:catholic
+				}
+			}
+		}
+	}
+
+	location_modifier = {
+		local_pop_conversion_speed = 0.1
+	}
+
+	progress = {
+		scope:target_1 = {
+			value = "religion_percentage(religion:catholic)"
+		}
+	}
+
+	map_marker = {
+		show_for_owner = yes
+	}
+}

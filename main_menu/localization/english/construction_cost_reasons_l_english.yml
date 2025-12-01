@@ -1,0 +1,26 @@
+﻿l_english:
+ academic_cheap_sponsorship: "Academic Sponsorship"
+ academic_expensive_sponsorship: "Magnificent new [ShowBuildingTypeName('university')]"
+
+ military_cheap_sponsorship: "Military Sponsorship"
+ military_expensive_sponsorship: "Cutting-edge Defenses"
+
+ palace_cheap_sponsorship: "Palace Funding"
+ palace_expensive_sponsorship: "Expensive Architects"
+
+ royal_sponsorship: "Royal Sponsorship"
+
+ nobles_cheap_sponsorship: "[ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] Funding"
+ nobles_expensive_sponsorship: "[ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] obstruct Construction"
+
+ clergy_cheap_sponsorship: "[ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')] Funding"
+ clergy_expensive_sponsorship: "[ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')] obstruct Construction"
+
+ burghers_cheap_sponsorship: "[ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')] Funding"
+ burghers_expensive_sponsorship: "[ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')] obstruct Construction"
+
+ peasants_cheap_sponsorship: "[ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('peasants_estate')] Funding"
+ peasants_expensive_sponsorship: "[ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('peasants_estate')] obstruct Construction"
+
+ need_for_expensive_tools: "Need for expensive tools"
+ confederation_funding_key: "Confederation Funding"

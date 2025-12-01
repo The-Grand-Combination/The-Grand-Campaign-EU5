@@ -1,0 +1,37 @@
+﻿l_english:
+ great_pestilence.1.title: "[ShowSituationNameWithNoTooltip('great_pestilence')]"
+ great_pestilence.1.repeatedText: "The disease is unpredictable and deathly, sometimes producing fevers and rashes, sometimes vomiting or delirium and almost always ending in death."
+ great_pestilence.1.desc: "A mysterious plague is ravaging our people in [diseased_location_scope.GetName]. It is infecting everybody, independently of their class, piety, or spiritual protection. $great_pestilence.1.repeatedText$\n\nAll known remedies are failing when applied to this diabolical condition and no praying nor sacrifice seems to move [ROOT.GetCountry.GetReligion.GetGodName] to send their protections on our people."
+ great_pestilence.1.descB: "A mysterious plague is ravaging the natives in [diseased_location_scope.GetName]. It is infecting the indigenous population at an alarming rate, independently of their class or piety. $great_pestilence.1.repeatedText$\n\nThe speed of the contagion and morbidity of the symptoms is leaving our doctors perplexed and impotent.\n\nThere is little else we can do besides deliver last rites and dig graves."
+ great_pestilence.1.a: "This is the end of the world!"
+ great_pestilence.1.a2: "Poor Souls!"
+
+ great_pestilence.2.title: "At Death's Door"
+ great_pestilence.2.desc: "[ShowSituationName('great_pestilence')] has run its course unhampered. It has brought dead and devastation to an entire continent without any care for morals or frontiers.\n\nNow, many once lush and vibrant cities lie deserted and decadent, kingdoms and empires are tumbling into disaster ready to be killed by their enemies, if there are any still standing."
+ great_pestilence.2.a: "It will not become any better for us..."
+ 
+ great_pestilence.3.title: "Somebody is to Blame!"
+ great_pestilence.3.desc: "The cruelty of the [ShowSituationName('great_pestilence')] is killing our people and driving those who live into insanity from pure sorrow.\n\nA surviving group of peasants from [location_scope.GetName] have completely lost their minds and attacked and killed a group of members of our [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] for not preventing this disaster by appeasing [ROOT.GetCountry.GetReligion.GetGodName] in time.\n\nAnother group of the most pious of their neighbors have attacked them in retribution to ensure that we have not attracted the ire of [ROOT.GetCountry.GetReligion.GetGodName] with this display of violence against their envoys and chaos has ensued."
+ great_pestilence.3.a: "Send guards to punish the attackers."
+ great_pestilence.3.b: "Best we do not intervene."
+
+ great_pestilence.4.title: "Crumbling Unity"
+ great_pestilence.4.desc: "As the [ShowSituationName('great_pestilence')] takes hold of our population in [infected_location.GetName], our efforts to curtail its advance are proving futile and many scared families all over our country have decided to abandon settlements and towns and isolate themselves in hills and forests, disregarding their duties to their farms and to the government.\n\nThis spreading of the peasants will make it very difficult for our representatives to assert the will of the state over them."
+ great_pestilence.4.a: "Force them back to work!"
+ great_pestilence.4.b: "Let them do as they please."
+
+ great_pestilence.5.t: "In Hunt for a Cause"
+ great_pestilence.5.desc: "The anger and fear in the population of [target_location.GetName] have reached the point at which it can no longer be contained, and must be projected outward onto others. Someone needs to become the cause for the plague, and that someone must pay.\n\nBe it the poor, the ugly, or any number of minorities, the masses demand that a group be hunted and prosecuted for bringing this plague on us. We can either help organize this event and control it, or try to stop violence across castes only for it to be directed at us."
+ great_pestilence.5.a: "Organize a hunt!"
+ great_pestilence.5.b: "Do not blame our destiny on others!"
+
+ great_pestilence.6.t: "The Need for Coin"
+ great_pestilence.6.desc: "The devastating situation caused by the [ShowSituationName('great_pestilence')] in many villages in [target_location.GetName] has led them to stop paying their taxes.\n\nMany have already perished or fallen ill and those that have not yet succumbed to the plague struggle to meet their own needs, let alone the demands of the [ROOT.GetCountry.GetFlavorRank].\n\nNonetheless, the damage that a lack of funds could do to the people as a whole goes far beyond the penuries of a small set of villages, so our tax collectors have been quite aggressive in reminding the locals to pay their dues. Unfortunately, this was responded in kind."
+ great_pestilence.6.a: "Angry mob or not, payment is due!"
+ great_pestilence.6.b: "During hard times, taxes should be lowered..."
+ great_pestilence.6.c: "No taxes for anyone suffering!"
+
+ great_pestilence.7.t: "Forever Lost"
+ great_pestilence.7.desc: "The wrath of the [ShowSituationName('great_pestilence')] is decimating all castes in [target_location.GetName], even the holy men of our [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] are not being protected form the disease.\n\nTheir loss is felt twice, as many villages no longer have anybody that can officiate proper burial rites, dooming the newly dead to wander lost as vengeful spirits and unable to cross to the great beyond."
+ great_pestilence.7.a: "We will help the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')]."
+ great_pestilence.7.b: "There is nothing we can do."

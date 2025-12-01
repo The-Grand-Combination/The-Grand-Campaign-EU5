@@ -1,0 +1,12 @@
+﻿l_english:
+ banking.1.title: "The Rise of the Fuggers"
+ banking.1.desc: "A family named Fugger, from the mercantile patriciate of Augsburg became one of the most prominent group of European Bankers during the 15th and 16th century. Much of the European economy was controlled by them, and they ended up with a near monopoly of the copper market. Historically they were very well connected with the House of Habsburg whose rise to world power they financed."
+ banking.1.a: "This is a boon to Augsburg!"
+ banking.2.a: "This might benefit... Us?"
+ the_fuggers_appear_in_augsburg_tt: "[the_fuggers.GetName] are now open for business in [ShowLocationName('augsburg')]"
+ banking.3.title: "The Welser Family"
+ banking.3.desc: "Welser was a German merchant and banking family from Nuremberg and Augsburg, that claimed descent from the Byzantine general Belisarius. They provided a lot of the banking services to the growth of the Habsburg Empire, making them extremely wealthy. By the Age of Discovery, they had trading posts in Antwerp, Madrid, Lisbon, Rome, Lyon and many other cities."
+ banking.3.a: "This will put Nuremberg on the map!"
+ banking.4.a: "This might benefit... Us?"
+ the_welsers_appear_in_augsburg_tt: "[the_welsers.GetName] are now open for business in [ShowLocationName('nuremberg')]"
+

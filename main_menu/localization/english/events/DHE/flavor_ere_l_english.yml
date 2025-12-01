@@ -1,0 +1,36 @@
+﻿l_english:
+ flavor_ere.1.title: "Bid for Independence"
+ flavor_ere.1.desc: "For far too long have our masters in the East imposed themselves upon our people. With the destruction of the old regime and the reign of the Ilkhanids, many warlords have sought to extend their territory throughout [ShowRegionName('persia_region')] and even as far as [ShowRegionName('anatolia_region')]. However, as our domain is quite large, the question of our independence becomes a pressing one..."
+ flavor_ere.1.a: "It is time to rid ourselves of our [target_country.GetAdjectiveWithNoTooltip] shackles!"
+ flavor_ere.1.b: "Not yet."
+ declare_indep_war_tt: "This may lead to an #italic Independence War#! against them!"
+
+ flavor_ere.2.title: "Trouble in [ShowRegionNameWithNoTooltip('anatolia_region')]"
+ flavor_ere.2.desc: "Despite our best attempts to control the decayed chaos after the fall of the Ilkhanids, it appears that our subjects under the rule of [target_character.GetName] have chosen to present us with an ultimatum. They are prepared to take up arms unless we grant them their unequivocal liberty and release them from under our authority!"
+ flavor_ere.2.a: "War it shall be!"
+ flavor_ere.2.b: "We cannot risk open hostilities, very well..."
+ flavor_ere.2.historical_info: "By the middle of the 14th century, the Eretnids had become increasingly autonomous and aimed to strengthen their hold over Anatolia. This led to clashes with the Jalayirids, who were attempting to exert control over the territories once governed by the Ilkhanate. Under the leadership of Ḥasan Buzurg and later his successor, Shaykh Uways, the Jalayirids sought to expand their influence into Anatolia and retain authority over the Turkic and Mongol factions in the area."
+
+ flavor_ere.3.title: "The Beardless Prophet"
+ flavor_ere.3.desc: "A brutal war of independence against our former overlords, the [target_country.GetName], has concluded and so our struggle is resolved with a resounding victory! Parading in the streets, the people celebrate the name of [target_character.GetName] and sing praises to the might and resilience of our ruler in the face of danger. Such a development is surely a sign of divine favor and will certainly pave the way to the rise of a powerful Beylik in [ShowRegionName('anatolia_region')]."
+ flavor_ere.3.a: "Long may [target_character.GetSheHe] live!"
+ beardless_prophet: "Beardless Prophet"
+ flavor_ere.3.historical_info: "Gaining power in Central Anatolia following Hasan Kuchak's death, Eretna proclaimed himself sultan and issued coins bearing his name. He expanded his territory significantly, controlling regions from Konya to Erzurum, including cities like Ankara, Kayseri, and Sivas, which served as his capitals at different times. As a capable administrator, Eretna exploited the political chaos in $mamluk$ Egypt and the deaths of rival leaders to consolidate and grow his domain. While he secured the support of Mongol tribes known as Qara Tatars and highlighted his Mongol heritage through his coinage, he strategically appointed mamluks and local Turks to key positions to avoid a Mongol resurgence. A learned and respected ruler, Eretna maintained order and stability during his reign."
+
+ flavor_ere.4.title: "A Promising Commander"
+ flavor_ere.4.desc: "In the battlefield, quick action and decisiveness may hold the line between a crushing defeat and a prestigious victory. To make the hardest decisions and maintain tactical advantage is but one of [target_character.GetName] many strengths. A proven soldier, [target_character.GetSheHe] has fought in many clashes as a footman and has recently rose through the ranks of our military."
+ flavor_ere.4.a: "Grant him command of a unit."
+ flavor_ere.4.b: "We have no room for peasants!"
+ target_character_will_make_fine_general_tt: "[target_character.GetShortNameWithNoTooltip] will be able to serve as a general"
+
+ flavor_ere.5.title: "[target_character2.GetNameWithNoTooltip] Demands the Crown"
+ flavor_ere.5.desc: "Throughout his years, [target_character2.GetName] has served faithfully under our banner. However, recent turbulent times in the sphere of foreign diplomacy and internal affairs have given rise to many misfortunes. The latest and greatest of these is none other than [target_character2.GetShortNameWithNoTooltip] who fancies himself to be a successor by the sword against [target_character.GetName].\n\nHis populist message to resurrect our people and restore our strength has resonated with many and trouble steers for us in every corner..."
+ flavor_ere.5.a: "The fool will spell doom for the people!"
+ impacted_locations_var_tt: "Approximately [ROOT.GetVariable('num_rebelling_locations').GetValue] [locations|e] will join the cause of [target_character2.GetNameWithNoTooltip]"
+ burhan_al_din_pretenders: "[GetCharacter('ere_burhan_al_din').GetShortNameWithNoTooltip] Pretenders"
+
+ flavor_ere.6.title: "Köşkmedrese"
+ flavor_ere.6.desc: "The unfortunate passing of [ere_suli_scope.GetName] has been a terrible hit for the morale of our dear ruler [ruler_scope.GetName] to the point that the usual funerary rituals feel insufficient to honor her memory.\n\nA prominent [ShowCultureName('armenian_culture')] architect named [ere_kaluyan_scope.GetName] has proposed the building of a new [ShowBuildingTypeName('madrasa')] in [ShowLocationName('kayseri')] in the name of [ere_suli_scope.GetShortNameWithNoTooltip] as a way to immortalize her for all eternity."
+ flavor_ere.6.a: "Hire the man and build it."
+ flavor_ere.6.b: "We can not afford it."
+ 

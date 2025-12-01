@@ -1,0 +1,47 @@
+﻿l_english:
+ war_of_the_aragonese_union_disaster.1.title: "The Union Reignites"
+ war_of_the_aragonese_union_disaster.1.desc: "[ruler_brother.GetName] has been expelled from [target_location.GetName] and barred from entry into [ShowAreaName('catalonia_area')] and [ShowLocationName('zaragoza')] to prevent the spread of his poison to other nobles. Instead, he has made a mockery of our King's orders and has called his coconspirators to meet him outside the city of [ShowLocationNameWithNoTooltip('zaragoza')] and together they have reignited the rebellion that humiliated [scope_alfons_iii.GetName], the #italic Union of Aragon#!.\n\nThe lies of [ruler_brother.GetNameWithNoTooltip] are mixing with the old grievances that the [GetCountry('ARA').GetAdjective] nobility and cities hold against the Crown to create a bonfire that is quickly spreading all over [ShowLocationNameWithNoTooltip('zaragoza')]."
+ war_of_the_aragonese_union_disaster.1.a: "Let's hear their demands, maybe the issue can be resolved peacefully."
+ war_of_the_aragonese_union_disaster.1.b: "We would give no hearing to rebels and traitors."
+ war_of_the_aragonese_union_disaster.1.b.tt: "All [pops|e] in [ShowProvinceDefinitionName('zaragoza_province')] will join [union_of_aragon.GetName]"
+
+ union_of_aragon_name: "Union of Aragon"
+ war_of_the_aragonese_union_disaster.2.title: "Old Demands"
+ war_of_the_aragonese_union_disaster.2.desc: "The leaders of the #italic Union of Aragon#! have answered to the invitation of the King and have arrived at the court peacefully. They have dropped all demands about the succession of the realm but will not cede at all in their fight for extended rights. Only by accepting their remaining demands, we will stop the conflict."
+ war_of_the_aragonese_union_disaster.2.a: "How they dare to insult the Crown like this?; kick them out!"
+ war_of_the_aragonese_union_disaster.2.b: "There is no other way to end this, I accept their request."
+
+ war_of_the_aragonese_union_disaster.3.title.a: "The Humiliated [GetCountry('ARA').GetGovernment.GetRulerTitle]"
+ war_of_the_aragonese_union_disaster.3.desc.a: "The rebellion of the Unions has come to an end, [aragon_ruler.GetName] has been forced to recognize that [aragon_ruler.GetHisHer] vassals once united under the same banner are stronger than the [GetCountry('ARA').GetFlavorRank] itself.\n\nThe new privilege will protect the rights of the nobles and burghers from the whims of the [GetCountry('ARA').GetFlavorRank] and codify their relation of equals forever more."
+ war_of_the_aragonese_union_disaster.3.title.b: "To Arms!"
+ war_of_the_aragonese_union_disaster.3.desc.b: "Diplomacy has failed. The traitors of the #italic Union of Aragon#! have risen in arms and are taking control of their cities and fortresses, betraying their oaths and killing our loyal subjects. Our only option left is to meet them in the field of battle and punish their betrayal with the sword."
+ war_of_the_aragonese_union_disaster.3.title.c: "The Wise [GetCountry('ARA').GetGovernment.GetRulerTitle]"
+ war_of_the_aragonese_union_disaster.3.desc.c: "Diplomacy has triumphed. Against all odds, our cunning ruler has managed to deal with the rebels of the #italic Union of Aragon#! without ceding any rights but at the same time balancing factions and pretenders to avoid the start of Civil War."
+ war_of_the_aragonese_union_disaster.3.a: "These are dark days for the [GetCountry('ARA').GetFlavorRank]."
+ war_of_the_aragonese_union_disaster.3.b: "Long Live the [GetCountry('ARA').GetGovernment.GetRulerTitle]."
+
+ war_of_the_aragonese_union_disaster.4.title: "A Chance for Peace"
+ war_of_the_aragonese_union_disaster.4.desc: "A messenger dispatched by the rebel forces of the #italic Union of Aragon#! has arrived at our gate. Before the situation escalates any further, they are open to having an audience with the [GetCountry('ARA').GetGovernment.GetRulerTitle] and discussing their grievances, on the condition that [GetCountry('ARA').GetGovernment.GetRuler.GetHeShe] is willing to invite them to [GetCountry('ARA').GetGovernment.GetRuler.GetHisHer] court and ensure their safety throughout this parley."
+ war_of_the_aragonese_union_disaster.4.a: "Let them come in peace and talk."
+ war_of_the_aragonese_union_disaster.4.b: "Kick this man out. We will meet the traitors on the field of battle."
+ war_of_the_aragonese_union_disaster.4.b.tt: "The discontent extends further"
+
+ war_of_the_aragonese_union_disaster.5.title: "The Union Expands"
+ war_of_the_aragonese_union_disaster.5.desc: "The #italic Union of Aragon#! continues to extend its tendrils on the lands of [ShowAreaName('aragon')] and [ShowAreaName('valencia')] as the accusations of the unionists dig deep into the past of every city and town bringing to the light old grievances and jealousies against the [GetCountry('ARA').GetFlavorRank]."
+ war_of_the_aragonese_union_disaster.5.a: "Send a messenger. We will parley with their leaders."
+ war_of_the_aragonese_union_disaster.5.b: "There are more important matters to attend."
+
+ war_of_the_aragonese_union_disaster.6.title: "The Lion's Den"
+ war_of_the_aragonese_union_disaster.6.desc: "The leaders of the #italic Union of Aragon#! have sent a messenger to us strongly suggesting to the [GetCountry('ARA').GetGovernment.GetRulerTitle] the celebration of an extraordinary parliament in the venerable capital of [ShowLocationName('zaragoza')]. They express their conviction that a consensus might be reached and their combined grievances solved, but the city is under their de facto control and only God knows what might happen if the negotiation does not go well."
+ war_of_the_aragonese_union_disaster.6.a: "They will not dare to raise their voices against their [GetCountry('ARA').GetGovernment.GetRulerTitle]"
+ war_of_the_aragonese_union_disaster.6.b: "It is an obvious trap, better to avoid that city."
+
+ war_of_the_aragonese_union_disaster.7.title: "A Parliament of Threats"
+ war_of_the_aragonese_union_disaster.7.desc: "The forces of the #italic Union of Aragon#! and the [GetCountry('ARA').GetGovernment.GetRulerTitle] keep a tense peace in the street of the ancient city of [ShowLocationName('zaragoza')] while the chaos reigned at the Parliament.\n\nFrom the very beginning of the discussions the unionists have taken control and aggressively demand from the [GetCountry('ARA').GetGovernment.GetRulerTitle] to swear long lists of new rights and privileges into law. The situation is extremely dangerous as many of the lords are armed and the threat of electing a new [GetCountry('ARA').GetGovernment.GetRulerTitle] is already looming over our heads."
+ war_of_the_aragonese_union_disaster.7.a: "Forced by fear for our lives, we approve of this unjust privilege."
+ war_of_the_aragonese_union_disaster.7.b: "We will not bend nor we would yield."
+ war_of_the_aragonese_union_disaster.7.c: "The guard to us, open us a path out of this trap."
+
+ war_of_the_aragonese_union_disaster.8.title: "Valencia Rises"
+ war_of_the_aragonese_union_disaster.8.desc: "The fires of the rebellion spread to the lands of the Turia river and reignite the #italic Union of Valencia#!. The difference in status and rights between the Crowns move the people of [ShowAreaName('valencia')] to join the rebellion with the hope of getting the desired privileges."
+ war_of_the_aragonese_union_disaster.8.a: "Damnation!."

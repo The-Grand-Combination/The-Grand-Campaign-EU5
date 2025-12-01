@@ -1,0 +1,70 @@
+﻿l_english:
+ 
+ flavor_zan.1.title: "The [ShowBuildingTypeNameWithNoTooltip('husuni_kubwa')]"
+ flavor_zan.1.desc: "[GetCharacter('zan_abu_al_mawahib_al_hasan_ibn_suleiman').GetName] originally commissioned a [ROOT.GetCountry.GetGovernment.GetAdjective] residence at the heart of [target_location.GetName], intended to be the most impressive palace. However, misfortunes, the redirection of funds, and personal illness all sought to stall and outright end the project. Despite these troubles, our architects have presented an updated plan for the palace, bolstered with warehouses and chambers especially made for merchant exchanges, accompanied by an illustrious throne room. Their only obstacle, right now, is coin."
+ flavor_zan.1.a: "Commission the construction."
+ flavor_zan.1.b: "It is too expensive, for now..."
+ flavor_zan.1.historical_info: "Husuni Kubwa stands as a testament to the architectural and political prowess of the Kilwa Sultanate during its 14th-century zenith. Built under Sultan al-Ḥasan ibn Sulaymān in Kilwa Kisiwani, this sprawling palace complex, covering 1.6 hectares, was constructed primarily from coral stone and featured a blend of Swahili, Islamic, and Persian architectural influences. It included luxurious private chambers, large courtyards, sophisticated bathhouses, and storage rooms, highlighting its multifaceted role as a royal residence, commercial hub, and fortification."
+ construct_the_building_at_another_time_tt: "We may choose to construct the [ShowBuildingTypeNameWithNoTooltip('husuni_kubwa')] at another time..."
+
+ flavor_zan.2.title: "The Coinage of [target_character2.GetNameWithNoTooltip]"
+ flavor_zan.2.desc: "The great [target_character2.GetName] served as a beacon of virtue and prudent administration. [target_character2.GetHerHis|U] wise reforms and decisions have led our [GetCountry('ZAN').GetFlavorRank] to an established period of prosperity, with commerce flowing to faraway lands, bringing back necessary valuables for trade.\n\nTo facilitate this system, [target_character2.GetSheHe] ordered the introduction of a unified coin that would assist in bartering. Commemorating [target_character2.GetHerHis] passing, we have been reminded that we will eventually need to decide whether to mint new coins with the name and visage of [target_character.GetName] or continue using the existing ones..."
+ flavor_zan.2.a: "Mint new coins."
+ flavor_zan.2.b: "Continue using existing coins."
+ flavor_zan.2.c: "Let the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')] decide on matters of currency."
+ zan_gold_coinage: "Demand for [ShowGoodsNameWithNoTooltip('goods_gold')] Coinage"
+
+ flavor_zan.3.title: "The Shadow of [target_character2.GetNameWithNoTooltip]"
+ flavor_zan.3.desc: "[target_character2.GetName] was known for [target_character2.GetHerHis] boundless generosity and helpful demeanor. When this virtuous and important [GetCountry('ZAN').GetGovernment.GetRulerTitle] died, [target_character2.GetSheHe] was succeeded by [target_character2.GetHerHis] brother, [target_character.GetName]. Unlike [target_character.GetHerHis] predecessor, [target_character.GetShortNameWithNoTooltip] held great lack of virtue in terms of helping our people.\n\nIt is said that once a poor man came upon [target_character.GetShortNameWithNoTooltip], the [GetCountry('ZAN').GetGovernment.GetRulerTitle] responded by saying that '#italic He who gave is dead, and left nothing behind him to be given#!'. Recent visits from foreign dignitaries have lessened in frequency as well, in account of the lack of generosity and hospitality that we have recently displayed."
+ flavor_zan.3.a: "We must emulate [target_character2.GetShortNameWithNoTooltip]!"
+ flavor_zan.3.b: "Direct generous contributions to push for our agenda."
+ flavor_zan.3.c: "The [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('peasants_estate')] can starve."
+ flavor_zan.3.historical_info: "When Ibn Baṭṭūṭa visited the region, Al-Ḥasan ibn Sulaymān was in power. During his stay, Ibn Baṭṭūṭa observed the Sultan's remarkable generosity, particularly towards guests. One instance that left a lasting impression was when the Sultan, in a display of kindness, offered his own robes to a poor man."
+
+ flavor_zan.4.title: "The Golden Age of [GetCountry('ZAN').GetNameWithNoTooltip]"
+ flavor_zan.4.desc: "Ever since the royal dynasties of [GetCountry('ZAN').GetName] introduced foreign Islamic influences to the local [ShowCultureName('swahili_culture')] people, a unique fusion of indigenous traditions and external wisdom has given way to the betterment of our society in nearly every aspect.\n\nThe recent uptick in craftsmen and scholars as well as the emergence of a new architectural style are signs that we are well and truly crossing the height of our golden era!"
+ flavor_zan.4.a: "We must fund our literary institutions."
+ flavor_zan.4.b: "What better way to bask in our glory than art?"
+ flavor_zan.4.c: "Such wealth deserves a befitting capital."
+ flavor_zan.4.d: "Let us not be hasty..."
+
+ flavor_zan.5.title: "Local Customs in [target_location.GetNameWithNoTooltip]"
+ flavor_zan.5.desc: "The introduction of cultural norms and habits from the [ShowSubContinentName('middle_east')] and $india$ have created a divide between the ruling elite and [ShowCultureName('swahili_culture')] people. Most of the cultural traditions of the local populace, both in informal and formal settings, do not match those of the [ROOT.GetCountry.GetGovernment.GetCourtTitle], and some of the dress codes and behaviors have already raised some eyebrows when interacting between both.\n\nOf course, it would be well within our right to prohibit this display and force locals to adhere to our customs, however that will not be taken kindly..."
+ flavor_zan.5.a: "Their culture is to be respected."
+ flavor_zan.5.b: "They will conform."
+
+ flavor_zan.6.title: "The Rise of [target_country.GetNameWithNoTooltip]"
+ flavor_zan.6.desc: "Travelers of unknown origin, united with local shepherds and farmers in [target_location.GetName], have established a grand and prosperous series of settlements. Supported by an intricate irrigation system and their farming knowledge, [target_location.GetNameWithNoTooltip] has grown into a most prosperous location.\n\nIts residents and local administration have gone as far as to set standards to prevent soil erosion and promote plot fertility. Their presence constitutes no threat to us, but they are a peculiar and interesting sight to observe..."
+ flavor_zan.6.historical_info: "Sometime during the 15th century, a farming community built a large village at the base of the Rift Valley escarpment, creating a sophisticated irrigation system with stone canals and terraced fields. The largest settlement among them, known as Engaruka, was home to thousands and used cattle manure to enrich the soil."
+ flavor_zan.6.a: "Fascinating."
+ engaruka_people_interesting_tt: "The people of [target_country.GetName] are pioneering farmers, [target_location.GetNameWithNoTooltip] will prosper..."
+
+ flavor_zan.7.title: "The Wealth of [ShowProvinceDefinitionNameWithNoTooltip('upper_save_province')]"
+ flavor_zan.7.desc: "Our recent annexation of [target_location.GetName] has raised many eyebrows and words of caution from our neighbors to the West. It appears they have become aware of our intentions to secure a steady and direct supply of [ShowGoodsName('goods_gold')], as opposed to purchasing it from them.\n\nTheir complains are irrelevant, they will all bow down to our might, when the time comes..."
+ flavor_zan.7.a: "All according to plan..."
+
+ flavor_zan.8.title: "Shirazi [ShowReligionGroupNameWithNoTooltip('muslim')] and the Patricians of [target_country2.GetNameWithNoTooltip]"
+ flavor_zan.8.desc: "Most of the [ShowCultureName('swahili_culture')] states are to this day ruled by dynasties that claim to be descended from the first Islamic migration into this region. The [ShowReligionGroupName('muslim')] practiced by these 'Shirazis', as they call themselves, is, however, not the most orthodox form of the religion. Many older local ceremonies are performed daily in our [ROOT.GetCountry.GetGovernment.GetCourtTitle] and the Shirazi lineages are considered to have magical abilities that give them the right to rule these cities.\n\nAs the wealth of [target_country2.GetName] and the other [ShowCultureNameWithNoTooltip('swahili_culture')] states grows, however, new waves of foreigners continue to arrive in great numbers. Traders from [ShowAreaName('oman_area')], [ShowRegionName('persia_region')], and other faraway lands have made our cities their home and a rising class of indigenous merchants has made these groups their partners.\n\nMany of the newcomers are abhorred by our traditions. If we would adopt a more orthodox form of [ShowReligionGroupNameWithNoTooltip('muslim')] this would certainly help our relations with the other states of the [ShowRegionName('indian_ocean_region')], but there is a very real risk that it would undermine our own rule and hurt relations with the other [ShowCultureNameWithNoTooltip('swahili_culture')] states."
+ flavor_zan.8.a: "We must follow the ways of our ancestors."
+ flavor_zan.8.b: "Let us purge our [ROOT.GetCountry.GetFlavorRank] of pagan beliefs and ceremonies."
+ countries_with_positive_piety_reduced_relations_tt: "[ShowReligionGroupNameWithNoTooltip('muslim')] [countries|e] within our [diplomatic_range|e] that do not support our practices (such as [target_country.GetName]) will lose [ShowBiasValue('opinion_shirazi_islam')|-=0] [opinion|e] of us"
+ countries_with_positive_piety_increased_relations_tt: "[ShowReligionGroupNameWithNoTooltip('muslim')] [countries|e] within our [diplomatic_range|e] that do not support our practices (such as [target_country.GetName]) will gain [ShowBiasValue('opinion_adopted_our_religious_views')|+=0] [opinion|e] of us"
+
+ flavor_zan.9.title: "The [target_country.GetNameWithNoTooltip] Chronicle"
+ flavor_zan.9.desc: "With more and more foreign traders arriving in the [ShowRegionName('swahili_coast_region')] from orthodox [ShowReligionGroupAdjective('muslim')] states, our old Shirazi ways have come more and more under fire. We have watched with disgust as some of the old Shirazi dynasties of the [ShowRegionNameWithNoTooltip('swahili_coast_region')] have been overthrown by a rising class of indigenous traders allied with the newcomers.\n\nAs one of the oldest and most powerful Shirazi dynasties, however, we still stand strong. In order to suitably impress foreigners and domestic troublemakers alike, it might be best if we assigned our scribes to create a chronicle over our famous lineage, so that none may doubt our Shirazi origin and the old Islamic roots of our dynasty."
+ flavor_zan.9.a: "Let us create such a Chronicle."
+ flavor_zan.9.b: "We have more important matters to attend."
+
+ flavor_zan.10.title: "Arrival of the [target_country.GetAdjectiveWithNoTooltip]"
+ flavor_zan.10.desc: "Our dominance across our coastline has been largely undisputed for over a century now. However, reports of foreign traders and large fleets serve as an indication of an unknown country. Talks of powerful vessels manned by men and armed with mighty cannons the size of which we have never witnessed, are more than enough to crumble the feeble courtiers and advisors in our employment. At the face of imminent invasion, many have abandoned their posts and have taken refuge inland, weary of a war breaking out."
+ flavor_zan.10.a: "They stand no chance, surely."
+
+ flavor_zan.11.title: "The Discovery of the [target_country2.GetLongNameWithNoTooltip]"
+ flavor_zan.11.desc: "Reports from beyond the [ShowProvinceDefinitionName('good_hope_cape_coast_province')] allege the presence of a powerful country whose traders hold great wealth in their purses. With networks that span beyond the known seas, the merchants of [target_country2.GetName] have propelled their people to new heights of prosperity. It would be prudent to secure their lands one way or another, lest we risk them siding or falling under the influence of our competitors..."
+ flavor_zan.11.a: "They will bend the knee."
+ flavor_zan.11.b: "Send gifts and a peaceful delegation."
+ flavor_zan.11.c: "Ignore them."
+
+ flavor_zan.12.title: "A [target_country.GetAdjectiveWithNoTooltip] Delegation"
+ flavor_zan.12.desc: "It appears that the mighty fleets of [target_country.GetName] have visited us for no other reason but to showcase their appreciation of our culture and wish for tranquil cooperation. All those who spelled the doom of our people are now ashamed for their unnecessary frivolities."
+ flavor_zan.12.a: "False alarm!"

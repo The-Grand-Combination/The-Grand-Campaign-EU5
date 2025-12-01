@@ -1,0 +1,154 @@
+﻿l_english:
+ lutheranism_events.1.title: "Reformer Seeks Safe Haven"
+ lutheranism_events.1.desc: "[reformer.GetName], one of the great theologians of our age, has had to leave his homeland, [reformer_fleeing_from_here.GetLongName], as they fear for their safety. As a [ShowReligionAdjective('lutheran')] country, it is our duty to offer a safe haven for this man while doing so would undoubtedly strengthen the position of our State Church, at least as long as this reformer agrees with our policies."
+ lutheranism_events.1.a: "Let us welcome this great man!"
+ lutheranism_events.1.a.tt: "For as long as the Reformer lives within our borders, he may choose to criticize or condone the policies of our State Church."
+ protected_reformer: "Gave Refuge to Reformer"
+ lutheranism_events.1.b: "Turn him away."
+ did_not_protect_reformer: "Refused Refuge to Reformer"
+ 
+ lutheranism_events.2.title: "Reformer seeks refuge in [from.GetLongNameWithNoTooltip]"
+ lutheranism_events.2.desc: "One of the most prominent proponents of the Reformation in our country, [reformer.GetName], has left for [from.GetLongName], claiming to fear persecution from the [ShowReligionAdjective('catholic')] authorities here. Not content to simply leave, however, the man now spends his time producing pamphlets to deride not only the Catholic Church, but also his old homeland."
+ lutheranism_events.2.a: "Outrageous!"
+ 
+ lutheranism_events.3.title: "[reformer.GetNameWithNoTooltip] seen to criticize State Church"
+ lutheranism_events.3.desc: "Having a strong-willed reformer like [reformer.GetName] within our borders has caused a bit of friction. It would seem that a man who has already forsaken his old country can be quite unwilling to moderate his views to fit the policies of his new home."
+ lutheranism_events.3.a: "Living under our protection means supporting the Church!"
+ lutheranism_events.3.b: "Well, if you feel that strongly about it..."
+ 
+ lutheranism_events.6.title: "The Fear of Crypto-Catholics"
+ lutheranism_events.6.desc: "Ever present in our state is the fear that some individuals who profess to believe in all aspects of our state Church are still secretly [ShowReligionName('catholic')] sympathizers. One noble family in particular, though firmly entrenched in the machinery of the state, is said to have Papist inclinations. As the years drag on, these rumors refuse to die and now seem almost impossible for us to ignore."
+ lutheranism_events.6.a: "Restrict this family from holding offices."
+ lutheranism_events.6.b: "They must be put on trial."
+ lutheranism_events.6.c: "Ignore these vile rumors."
+ 
+ lutheranism_events.7.title: "'The Last Days of [ROOT.GetCountry.GetNameWithNoTooltip]"
+ lutheranism_events.7.desc: "Religious fervor has gripped [ROOT.GetCountry.GetName], as the populace has become convinced that the end of days is drawing near. Peasants are claiming to see signs in the sky and, contrary to the doctrine of the State Church, local priests are giving sermons on the apocalypse. As Millenarianism sweeps the province, blame is being put on the State and the State Church itself, which professes to be Lutheran, yet clearly is not living up to its name.\n\nOfficial reactions to this unrest have so far been very weak, as even some among the clergy of [ROOT.GetCountry.GetCapital.GetName] feel that these fears are justified."
+ lutheranism_events.7.a: "Try to calm the situation down."
+ lutheranism_events.7.b: "Act forcefully."
+ lutheranism_events.7.c: "They are right to be afraid. Repent, for the end is nigh!"
+
+ lutheranism_events.9.title: "Message for the Faithful"
+ lutheranism_events.9.desc: "One of the greatest strengths of having a State Church is the ability to reach out to all of the faithful in our country at once. A national day of prayer is coming up and it is customary for the sermon on this day to be partly dictated by the central State Church. What should the sermon focus on, as we look to the years ahead?"
+ lutheranism_events.9.a: "Gratefulness for the Peace we now enjoy."
+ lutheranism_events.9.b: "Justification for our Wars."
+ lutheranism_events.9.c: "Purity of Faith."
+ lutheranism_events.9.d: "The unity of Christianity itself."
+ lutheranism_events.9.e: "Avoid meddling on the local level."
+ 
+ lutheranism_events.10.title: "Resistance to the Reformation in [ROOT.GetCountry.GetNameWithNoTooltip]"
+ lutheranism_events.10.desc: "There are still those, especially in the countryside, who oppose the State Church of [ROOT.GetCountry.GetLongName] and who long to return to the embrace of the Roman Church. There is, however, a big difference between religious doubts and open rebellion, though so far things have been quiet in [ROOT.GetCountry.GetName]. The State Church has thus been content to leave most of these dissidents alone, as long as they continue to attend services and pay their taxes.\n\nIt seems this peace was not meant to last, however. The recent appropriation of Church silver in the area has been regarded as an open declaration of war by the locals and they are now taking up arms to protect their churches from the greedy hands of [ROOT.GetCountry.GetCapital.GetName]."
+ lutheranism_events.10.a: "Time for some forceful persuasion."
+ lutheranism_events.10.b: "Exempt this area from collection for now."
+ 
+ lutheranism_events.11.title: "Theologians denounce the Church of [ROOT.GetCountry.GetNameWithNoTooltip]"
+ lutheranism_events.11.desc: "Many theologians had promising careers long before the Reformation reached our country and the State Church of [ROOT.GetCountry.GetLongName] was created. Influential people with firmly grounded ideas, these individuals have been difficult to convince to embrace the new nature of the Church. This resistance to change has only grown stronger over the years and now these theologians are perceived to be openly opposed to the Church. Our people cannot be seen in blatant opposition to [ROOT.GetCountry.GetGovernment.GetRuler.GetName] like this; something must be done!"
+ lutheranism_events.11.a: "Banish them!"
+ lutheranism_events.11.b: "Try them for blasphemy and order their execution."
+ lutheranism_events.11.c: "How unfortunate…"
+ 
+ lutheranism_events.12.title: "Catholic Thinker at Court"
+ lutheranism_events.12.desc: "[target_character.GetName] is famous for their sharp intellect and their presence in our court lends a certain grandeur to our name. [target_character.GetNameWithNoTooltip] is, however, also a stalwart [ShowReligionName('catholic')] and has been allowed to practice their faith as they wish in order to keep them here. It would be unthinkable for the Church of [ROOT.GetCountry.GetName] itself to criticize [ROOT.GetCountry.GetGovernment.GetRuler.GetName], but, in the streets of [ROOT.GetCountry.GetCapital.GetName], there is talk of [target_character.GetNameWithNoTooltip] trying to plant subversive Catholic ideas [ROOT.GetCountry.GetGovernment.GetRuler.GetNameWithNoTooltip]'s head."
+ lutheranism_events.12.a: "Let them talk."
+ lutheranism_events.12.b: "Dismiss them from court."
+ 
+ lutheranism_events.13.title: "Influence of Calvinism"
+ lutheranism_events.13.desc: "It is rumored that [minister.GetName], a close advisor of [ROOT.GetCountry.GetGovernment.GetRuler.GetName], is in fact harboring hidden [ShowReligionAdjective('calvinist')] beliefs. A number of recent laws proposed by this advisor have been cited as attempts to secretly try to bring our country closer to the ideals of the Reformed churches."
+ lutheranism_events.13.a: "Dismiss these rumors as nonsense."
+ lutheranism_events.13.b: "Publicly distance yourself from [minister.GetNameWithNoTooltip]"
+ 
+ lutheranism_events.14.title: "The Education of [ROOT.GetCountry.GetGovernment.GetHeir.GetName]"
+ lutheranism_events.14.desc: "The teachers of [ROOT.GetCountry.GetGovernment.GetHeir.GetName] all find [ROOT.GetCountry.GetGovernment.GetHeir.GetHerHim] to be an exceptionally promising future ruler. In all things relating to statecraft, [ROOT.GetCountry.GetGovernment.GetHeir.GetName] has shown [ROOT.GetCountry.GetGovernment.GetHeir.GetHerselfHimself] to be both interested and talented. However, religious authorities have come to worry that [ROOT.GetCountry.GetGovernment.GetHeir.GetSheHe] has taken much too great an interest in the Catholic faith that we have left behind."
+ lutheranism_events.14.a: "It will make [ROOT.GetCountry.GetGovernment.GetHeir.GetHerHim] a better ruler."
+ lutheranism_events.14.b: "Forbid all study of Papist Teachings."
+
+
+ lutheranism_events.15.title: "Catholic Leanings of [ROOT.GetCountry.GetGovernment.GetRuler.GetName]"
+ lutheranism_events.15.desc: "It is no secret that [ROOT.GetCountry.GetGovernment.GetRuler.GetName] has a great understanding of the Catholic faith, perhaps much more so than the clergy in our State Church would wish. Nonetheless, [ROOT.GetCountry.GetGovernment.GetRuler.GetHerHis] coronation has been a popular event and the people seem to be behind our new ruler. An understanding of foreign faiths will undoubtedly be of good use to a ruler of a Lutheran Kingdom, and few would dare accuse [ROOT.GetCountry.GetGovernment.GetRuler.GetName] of Crypto-Catholicism."
+ lutheranism_events.15.a: "Long live [ROOT.GetCountry.GetGovernment.GetRuler.GetName]!"
+ STATIC_MODIFIER_NAME_tolerant_monarch: "Tolerant Monarch"
+ STATIC_MODIFIER_DESC_tolerant_monarch: "Our ruler is known for their great understanding of other faiths, and religious minorities under our reign enjoy privileges they otherwise would not because of it."
+ 
+ lutheranism_events.16.title: "Conscience of [ROOT.GetCountry.GetGovernment.GetRuler.GetName]"
+ lutheranism_events.16.desc: "Years have passed and [ROOT.GetCountry.GetGovernment.GetRuler.GetName] has proven to be a fair and just ruler. The clergy no longer fear a sudden Catholic coup and their hatred of Papism has been tempered by [ROOT.GetCountry.GetGovernment.GetRuler.GetName]'s understanding of the religion.\n\n[ROOT.GetCountry.GetGovernment.GetRuler.GetName] [ROOT.GetCountry.GetGovernment.GetRuler.GetHerselfHimself], however, is troubled. As the years have gone by, [ROOT.GetCountry.GetGovernment.GetRuler.GetSheHe] has come to realize that [ROOT.GetCountry.GetGovernment.GetRuler.GetHerHis] personal faith lies much closer to that of the Catholics that [ROOT.GetCountry.GetGovernment.GetRuler.GetSheHe] has done so much to protect and not with the dogmatic State Church of [ROOT.GetCountry.GetName]."
+ lutheranism_events.16.a: "Personal Abdication is the only Solution."
+ lutheranism_events.16.b: "[ROOT.GetCountry.GetGovernment.GetRuler.GetName] will have to carry on with a plagued conscience."
+ STATIC_MODIFIER_NAME_plagued_conscience: "Plagued Conscience"
+ STATIC_MODIFIER_DESC_plagued_conscience: "Our ruler is far from an ardent believer in the teachings of our State Church. While this does not directly influence our policies, it means that the running of the Church itself has become a low priority."
+ 
+ lutheranism_events.17.title: "Frictions between [ROOT.GetCountry.GetGovernment.GetHeir.GetName] and [ROOT.GetCountry.GetGovernment.GetRuler.GetName]"
+ lutheranism_events.17.desc: "[ROOT.GetCountry.GetGovernment.GetHeir.GetName]'s interest in Catholicism seems only to have grown over the years and [ROOT.GetCountry.GetGovernment.GetHeir.GetSheHe] now surrounds [ROOT.GetCountry.GetGovernment.GetHeir.GetHerselfHimself] with philosophers, scientists, and artists from the Catholic world. This has grown into something of an embarrassment. As the head of the [ROOT.GetCountry.GetName] Church, it is the duty of [ROOT.GetCountry.GetGovernment.GetRuler.GetName] to uphold the values of the Reformation. Unless [ROOT.GetCountry.GetGovernment.GetHeir.GetName] can be convinced to change, [ROOT.GetCountry.GetGovernment.GetHeir.GetHerHis] authority over our Church may suffer."
+ lutheranism_events.17.a: "Try to force [ROOT.GetCountry.GetGovernment.GetHeir.GetName] to change [ROOT.GetCountry.GetGovernment.GetHeir.GetHerHis] ways."
+ lutheranism_events.17.b: "Agree to disagree."
+ 
+ lutheranism_events.18.title: "[ROOT.GetCountry.GetGovernment.GetHeir.GetName] sees the error of [ROOT.GetCountry.GetGovernment.GetHeir.GetHerHis] ways"
+ lutheranism_events.18.desc: "After it has been made entirely clear to [ROOT.GetCountry.GetGovernment.GetHeir.GetHerHim] what is expected of [ROOT.GetCountry.GetGovernment.GetHeir.GetHerHim], [ROOT.GetCountry.GetGovernment.GetHeir.GetName] has agreed to more clearly distance [ROOT.GetCountry.GetGovernment.GetHeir.GetHerselfHimself] from Catholics and their beliefs."
+ lutheranism_events.18.a: "Praise God!"
+ 
+ 
+ lutheranism_events.20.title: "[ROOT.GetCountry.GetGovernment.GetHeir.GetName] Unwilling to Compromise"
+ lutheranism_events.20.desc: "Despite trying to make as clear as possible what the expectations for the royal Heir are, [ROOT.GetCountry.GetGovernment.GetHeir.GetName] insists on maintaining [ROOT.GetCountry.GetGovernment.GetHeir.GetHerHis] harmful fascination with the Catholic Church. In the capital, propagandists and satirists have already begun distributing pamphlets about the fact that [ROOT.GetCountry.GetGovernment.GetRuler.GetName] cannot seem to control his own kin, let alone protect the faithful of the kingdom."
+ lutheranism_events.20.a: "There is nothing to be done."
+ lutheranism_events.20.b: "We have no choice but to disinherit [ROOT.GetCountry.GetGovernment.GetHeir.GetName]!"
+ STATIC_MODIFIER_NAME_disinherited: "Disinherited"
+ 
+ lutheranism_events.22.title: "The Lingering Hope of Reconciliation"
+ lutheranism_events.22.desc: "There are still those who long for the time when the Christian faith was united. While they see the Reformation and the birth of Lutheranism as necessary, they also lament that it could not be done without a schism.\n\nWhile well intentioned, these kinds of leanings can be very harmful to a State Church such as ours. It is therefore a matter of some concern that a number of the officials in our Church as well as some at our Seminar seem to be entertaining such ideas."
+ lutheranism_events.22.a: "A reprimand will be enough."
+ STATIC_MODIFIER_NAME_phillipists: "Philippists"
+ lutheranism_events.22.b: "Round up the prominent ones and try them for treason."
+ 
+ 
+ lutheranism_events.23.title: "Lutheran Diaspora"
+ lutheranism_events.23.desc: "As Christendom grows ever more divided, the trickle of religious refugees into our country has grown into a steady stream. Religious conflicts in major Catholic states have caused many Lutherans to leave their old home countries. As a Lutheran country with our own Church, we would be able to offer them protection and we could also make good use of their skills and assets.\n\nLutheranism is, however, far from a unified faith and it is not very likely that all those who come to us will find the Church of [ROOT.GetCountry.GetName] to match their own beliefs fully. While it would be admirable for us to receive all Lutheran immigrants, it might be more prudent to hand pick those who possess skills that we could make good use of."
+ lutheranism_events.23.a: "Open our borders to all Lutherans."
+ lutheranism_events.23.c: "Offer them land in the New World."
+ lutheranism_events.23.d: "Turn them away."
+ welcomed_fleeing_lutherans: "Welcomed Refugees"
+ turned_away_fleeing_lutherans: "Turned away Refugees"
+ 
+ lutheranism_events.27.title: "Stern Theologian"
+ lutheranism_events.27.desc: "An exceptional man has recently emerged from the education system of the Church of [ROOT.GetCountry.GetName]. He is a priest of singular charisma and conviction, yet, instead of desiring to change the Church in accordance to his own convictions, he is determined to instill into his followers the value of keeping with the Lutheran traditions and dogmas of the State Church.\n\nHe is a remarkable man in times like these, and we could undoubtedly put him to good use."
+ lutheranism_events.27.a: "Let him educate our priests."
+ lutheranism_events.27.b: "Let us use him to battle heresy."
+ 
+ lutheranism_events.29.title: "Reformer Praises the Church of [ROOT.GetCountry.GetNameWithNoTooltip]"
+ lutheranism_events.29.desc: "One of the great thinkers at the forefront of the Reformation has recently held up our country as a paragon for others to follow in one of his publications as well as during a disputation. This will surely both strengthen our international reputation and lend further weight to the authority of our Church itself."
+ lutheranism_events.29.a: "Make use of this in our internal propaganda."
+ lutheranism_events.29.b: "This will help bring us closer to other Lutherans."
+ beacon_of_lutheranism: "Ideal Lutheran Country"
+ lutheran_ideal: "Ideal Lutheran Country"
+ 
+ lutheranism_events.30.title: "Witch Trials in [witch_location.GetNameWithNoTooltip]"
+ lutheranism_events.30.desc: "The transition from being part of the wider Roman Catholic Church to the local Church of [ROOT.GetCountry.GetLongName] has generally worked well, but in some areas, such as [witch_location.GetName], it has become unclear where religious authority lies. When there was suspicion of witchcraft in the old days, the Catholic Church would often become involved and might temper the outrage of the local population. The Reformation, on the other hand, has done much to strengthen the belief in popular versions of Christianity outside of the Roman Church.\n\nA number of women stand accused of witchcraft in [ROOT.GetCountry.GetNameWithNoTooltip] and a search has already begun to find more. Local priests and magistrates have become enmeshed in the trials, but so far the state has not been involved. As the number of women awaiting trial grows larger and larger, it may become necessary for us to act."
+ lutheranism_events.30.a: "Condone the Trials."
+ lutheranism_events.30.b: "Ignore the Trials."
+ lutheranism_events.30.c: "We must stop these Trials."
+
+ lutheranism_events.40.title: "State Seen to Protect Witches"
+ lutheranism_events.40.desc: "Our attempts to temper the increasingly paranoid witch hunt in [witch_location.GetName] have been entirely misunderstood by the local population there. Our emissaries have themselves been accused of witchcraft and parts of the population have grown hostile toward any outside power that is perceived as protecting the witches that supposedly haunt the region."
+ lutheranism_events.40.a: "[ROOT.GetCountry.Custom('common_string_ok')]"
+
+ lutheranism_events.31.title: "Circulation of Hostile Publications"
+ lutheranism_events.31.desc: "A great number of Pamphlets, woodcuts, and other minor publications have begun to circulate recently, no doubt funded by our enemies. In these vile texts, it is claimed that many aspects of the Church of [ROOT.GetCountry.GetName] have been devised as a matter of convenience for the state.\n\nWhile it is doubtful that this critique will leave a permanent mark on the reputation of our State Church, its image has been harmed in the short term."
+ lutheranism_events.31.a: "Regrettable."
+
+ lutheranism_events.32.title: "Incorporation of new regions"
+ lutheranism_events.32.desc: "As our country expands into new regions with Lutheran populations, we have begun the process of incorporating these people into the State Church. The introduction of Church Parish registries to some recently acquired lands has brought about a surprising revelation: The area is much more densely populated than its former masters seem to have realized."
+ lutheranism_events.32.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+ 
+ lutheranism_events.33.title: "Pietism"
+ lutheranism_events.33.desc: "A new kind of Lutheran movement known as Pietism has begun to take hold in our country. Pietists are concerned with inner salvation and show little interest in either theological study or the dogma of the State Church."
+ lutheranism_events.33.a: "Attempt to limit its influence."
+ lutheranism_events.33.b: "Let us approach the Pietists with interest."
+
+ lutheranism_events.34.title: "Iconoclast Riots in [target_province.GetNameWithNoTooltip]"
+ lutheranism_events.34.desc: "Hatred of the icons and images of the old Catholic Church is a thing that many Lutherans have in common and the policy of allowing these images in the Church of [ROOT.GetOwner.GetLongName] has therefore never been entirely unproblematic.\n\nEnraged at what they see as idolatry, the population of [target_province.GetName] has stormed many churches in the province, smashing painted windows and destroying icons and altars."
+ lutheranism_events.34.a: "Punish the perpetrators."
+ lutheranism_events.34.b: "Repair and restore the damaged churches."
+ 
+ lutheranism_events.35.title: "Charismatic Patriot Preacher in [target_province.GetNameWithNoTooltip]"
+ lutheranism_events.35.desc: "[target_province.GetName] is a region full of small Lutheran churches that all reject the idea of a centralized, dogmatic Church.\n\nA charismatic preacher has gained prominence here and while his sermons bind the communities here together, they also keep the people determined to retain their autonomy from the Church of their old homeland."
+ lutheranism_events.35.a: "It is too much effort to do anything."
+ lutheranism_events.35.b: "Let us do what we can to lessen his influence."
+ 

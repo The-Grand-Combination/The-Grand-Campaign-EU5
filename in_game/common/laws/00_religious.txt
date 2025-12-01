@@ -1,0 +1,444 @@
+﻿
+iqta_law = {
+	law_category = religious
+	law_religion_group = {
+		sunni
+		ibadi
+		shia
+	} 
+	
+	potential = {
+		religion ?= {
+			group ?= religion_group:muslim
+		}
+	}
+
+	efficient_tax_farming = {
+		potential = {
+			NOR = {
+				tag = MUG
+				culture = { has_culture_group = culture_group:indian_group }
+			}
+		}
+		country_modifier = {
+			global_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+			tax_income_efficiency = medium_tax_income_efficiency_bonus
+			monthly_towards_capital_economy = societal_value_monthly_move
+		}
+		estate_preferences = {
+			clergy_estate
+		}
+		years = 2
+	}
+	jagir_taxation = {
+		potential = {
+			OR = {
+				tag = MUG
+				culture = { has_culture_group = culture_group:indian_group }
+			}
+		}
+		country_modifier = {
+			peasants_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+			tax_income_efficiency = large_tax_income_efficiency_bonus
+			monthly_towards_capital_economy = societal_value_monthly_move
+		}
+		estate_preferences = {
+			nobles_estate
+		}
+		years = 2
+	}
+	land_acquisition = {
+		country_modifier = {
+			global_rgo_build_time = -0.1
+			global_max_rgo_size_modifier = 0.1
+			monthly_towards_centralization = societal_value_minor_monthly_move
+		}
+		estate_preferences = {
+			crown_estate
+		}
+		years = 2
+	}
+	lenient_taxation = {
+		country_modifier = {
+			global_estate_target_satisfaction = small_permanent_target_satisfaction
+			tax_income_efficiency = medium_tax_income_efficiency_penalty
+			global_monthly_prosperity = 0.001
+			monthly_towards_traditional_economy = societal_value_monthly_move
+		}
+		estate_preferences = {
+			peasants_estate
+		}
+		years = 2
+	}
+}
+
+
+inquisition_law = {
+	law_category = religious
+	law_religion_group = {
+		catholic
+	} 
+
+	potential = {
+		religion = religion:catholic
+	}
+
+	papal_control = {
+		country_modifier = {
+			global_pop_conversion_speed_modifier = 0.1
+			global_estate_target_satisfaction = tiny_permanent_target_satisfaction
+		}
+		estate_preferences = {
+			clergy_estate
+		}
+		years = 2
+	}
+	local_courts = {
+		country_modifier = {
+			global_pop_conversion_speed_modifier = 0.2
+			tolerance_heretic = -1
+			tolerance_heathen = -1
+		}
+		estate_preferences = {
+			peasants_estate
+		}
+		years = 2
+	}
+	state_inquisitors = {
+		potential = {
+			NOT = { tag = PAP }
+			OR = {
+				culture = culture:venetian
+				culture = { has_culture_group = culture_group:iberian_group }
+			}
+		}
+		country_modifier = {
+			potential_trigger = {
+				culture = culture:venetian
+			}
+			global_monthly_control = 0.001
+		}
+		country_modifier = {
+			potential_trigger = {
+				culture = { has_culture_group = culture_group:iberian_group }
+			}
+			country_cabinet_efficiency = 0.05
+		}
+		country_modifier = {
+			spy_network_construction = 0.1
+			global_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+			monthly_towards_innovative = societal_value_monthly_move
+		}
+		estate_preferences = {
+			nobles_estate
+		}
+		years = 2
+	}
+	council_of_three_lands_policy = {
+		potential = { has_advance = council_of_three_lands_advance }
+		allow = { "religion_percentage_in_country(religion:judaism)" > 0 }
+		country_modifier = {
+			cultures_capacity = 1
+			tolerance_heathen = 1
+		}
+		estate_preferences = {
+			peasants_estate
+		}
+		years = 2
+	}
+	spa_inquisition_policy = { #Spanish Inquisition
+		potential = {
+			OR = {
+				tag = CAS
+				tag = SPA
+				culture = culture:castilian
+			}
+			has_unlocked_policy_trigger = { type = spa_inquisition_policy }
+		}
+	
+		country_modifier = {
+			global_pop_conversion_speed_modifier = 0.2
+			counter_espionage = 0.2
+			tolerance_heathen = -2
+			tolerance_heretic = -2
+		}
+		estate_preferences = {
+			clergy_estate
+		}
+		years = 2
+	}
+}
+
+
+society_of_jesus = {
+	law_category = religious
+	law_religion_group = {
+		catholic
+	}
+
+	potential = {
+		has_unlocked_global_law_trigger = { type = society_of_jesus }
+		religion = religion:catholic
+	}
+
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = society_of_jesus
+		}
+	}
+
+	jesuits_allowed = {
+		on_activate = {
+			unlock_building_effect = { type = jesuit_college }
+		}
+		country_modifier = {
+			global_pop_conversion_speed_modifier = 0.05
+			monthly_religious_influence = 0.1
+			tolerance_heretic = -1
+			monthly_towards_innovative = societal_value_monthly_move
+		}
+		estate_preferences = {
+			clergy_estate
+		}
+		years = 2
+	}
+	jesuits_not_allowed = {
+		country_modifier = {
+			tolerance_heretic = 1
+		}
+		estate_preferences = {
+			peasants_estate
+		}
+		years = 2
+	}
+}
+
+patriarchate_law = {
+	law_category = religious
+	law_religion_group = {
+		orthodox
+		strigolniki
+		miaphysite
+	} 
+
+	potential = {
+		OR = {
+			religion = religion:orthodox
+			religion = religion:strigolniki
+			religion = religion:miaphysite
+		}
+		NOT = { has_policy = separate_clergy_from_state_policy }
+	}
+	separated_patriarchate_policy = {
+		country_modifier = {
+			join_autocephalous_patriarchate_cost_modifier = 0.2
+			create_autocephalous_patriarchate_cost_modifier = 0.2
+			third_rome_cost_modifier = 0.2
+			clergy_estate_max_tax = 0.5
+		}
+		estate_preferences = {
+			clergy_estate
+		}
+		years = 2
+	}
+	state_patriarchate_policy = {
+		country_modifier = {
+			monthly_religious_influence = 0.1
+		}
+		estate_preferences = {
+			nobles_estate
+		}
+		years = 2
+	}
+	combined_patriarchate_policy = {
+		country_modifier = {
+			monthly_religious_influence = 0.15
+			join_autocephalous_patriarchate_cost_modifier = -0.2
+			create_autocephalous_patriarchate_cost_modifier = -0.2
+			third_rome_cost_modifier = -0.2
+			global_clergy_estate_power = 0.5
+		}
+		estate_preferences = {
+			crown_estate
+		}
+		years = 2
+	}
+	most_holy_synod_policy = {
+		potential = {
+			culture = { has_culture_group = culture_group:russian_group }
+			country_rank_level > 2
+		}
+		country_modifier = {
+			monthly_religious_influence = 0.2
+			third_rome_cost_modifier = -0.33
+			global_clergy_estate_power = -0.1
+		}
+		estate_preferences = {
+			nobles_estate
+			crown_estate
+		}
+		years = 2
+	}
+}
+
+censorship = {
+	law_category = religious
+	potential = {
+		#"estate_power(estate_type:clergy_estate)" > 0
+	}
+
+	locked = {
+		OR = {
+			AND = {
+				has_policy = de_heretico_comburendo
+				legitimacy < 100
+				"estate_power(estate_type:clergy_estate)" >= 0.1
+			}
+			AND = {
+				has_policy = doktrinalnaya_ohrana
+				has_policy = oprichnik_policy
+			}
+		}
+
+	}
+
+	no_censorship = {
+		country_modifier = {
+			clergy_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+			tolerance_heretic = 1
+			tolerance_heathen = 1
+			cultural_influence = 0.25
+			monthly_towards_humanist = societal_value_minor_monthly_move
+			monthly_towards_innovative = societal_value_monthly_move
+			monthly_towards_individualism = societal_value_minor_monthly_move
+			monthly_towards_liberalism = societal_value_monthly_move
+
+		}
+		estate_preferences = {
+			burghers_estate
+		}
+		years = 2
+	}
+	limited_censorship = {
+		country_modifier = {
+			clergy_estate_target_satisfaction = small_permanent_target_satisfaction
+			stability_decay = -0.00025
+		}
+		estate_preferences = {
+			nobles_estate
+		}
+		years = 2
+	}
+	strict_censorship = {
+		country_modifier = {
+			clergy_estate_target_satisfaction = medium_permanent_target_satisfaction
+			tolerance_own = 1
+			cultural_tradition = 0.25
+			global_clergy_estate_power = 0.25
+			monthly_towards_spiritualist = societal_value_monthly_move
+			monthly_towards_absolutism = societal_value_monthly_move
+		}
+		estate_preferences = {
+			clergy_estate
+		}
+		years = 2
+	}
+	de_heretico_comburendo = {
+		country_modifier = {
+			clergy_estate_target_satisfaction = large_permanent_target_satisfaction
+			global_pop_conversion_speed_modifier = 0.05
+			monthly_towards_spiritualist = societal_value_monthly_move
+			global_clergy_estate_power = 0.5
+		}
+		estate_preferences = {
+			clergy_estate
+		}
+		years = 2
+		allow = {
+			culture = culture:english
+		}
+		potential = {
+			has_unlocked_policy_trigger = { type = de_heretico_comburendo }
+		}
+	}
+	doktrinalnaya_ohrana = {
+		country_modifier = {
+			monthly_religious_influence = 0.2
+			clergy_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+			global_clergy_estate_power = -0.25
+			tolerance_heretic = -3
+		}
+		estate_preferences = {
+			crown_estate
+		}
+		years = 2
+		allow = {
+			culture = { has_culture_group = culture_group:russian_group }
+		}
+		potential = {
+			has_unlocked_policy_trigger = { type = doktrinalnaya_ohrana }
+		}
+	}
+	mandate_of_ofen = {
+		country_modifier = {
+			global_pop_conversion_speed_modifier = 0.1
+			monthly_towards_spiritualist = societal_value_monthly_move
+			global_clergy_estate_power = 0.2
+			tolerance_heretic = -2
+		}
+		estate_preferences = {
+			clergy_estate
+			crown_estate
+		}
+		years = 2
+		allow = {
+			religion = religion:catholic
+		}
+		potential = {
+			has_unlocked_policy_trigger = { type = mandate_of_ofen }
+		}
+	}
+}
+
+slave_conversion = {
+	law_category = religious
+	potential = {
+		NOT = { has_policy = slavery_outlawed }
+		pop_type_population_in_country = {
+			pop_type = pop_type:slaves
+			value > 0
+		}
+	}
+
+	allow_slave_religion = {
+		country_modifier = {
+			global_slaves_goods_output_modifier = 0.1
+			global_slaves_max_literacy = 1
+			global_slaves_food_consumption = 0.02
+			clergy_estate_target_satisfaction = small_permanent_target_satisfaction_penalty
+			monthly_towards_humanist = societal_value_monthly_move
+		}
+		estate_preferences = {
+			peasants_estate
+		}
+		years = 2
+	}
+
+	force_slave_conversion = {
+		allow = {
+			NOT = { has_policy = heir_any_religion }
+		}
+		country_modifier = {
+			allow_slave_conversion = yes
+			unemployed_slave_promotion = 0.001
+			monthly_slave_rebel_growth = 0.0005
+			monthly_towards_spiritualist = societal_value_monthly_move
+		}
+		estate_preferences = {
+			clergy_estate
+		}
+		years = 2
+	}
+
+}

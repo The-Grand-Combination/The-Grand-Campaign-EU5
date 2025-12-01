@@ -1,0 +1,46 @@
+﻿encourage_migration = {
+	ability = adm
+
+	# its too slow for AI to evaluate multiple
+	potential = {
+		num_locations > 0 
+	}
+
+
+	select_trigger = {
+		looking_for_a = location
+		source = actor
+		target_flag = target
+		name = "encourage_migration_select_province"
+		none_available_msg_key = "encourage_migration_no_provinces"
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+		}
+		map_color = {
+			lerp = {
+				min_color = define:NMapColors|MAP_COLOR_LOW
+				max_color = define:NMapColors|MAP_COLOR_HIGH
+				factor = migration_attraction
+			}
+		}
+	}
+
+	#to encourage our people to move
+	country_modifier = {
+		global_migration_speed_modifier = 0.5
+	}
+
+	#to make the destination more attractive
+	location_modifier = {
+		local_migration_attraction = 1
+	}
+
+	map_marker = {
+		show_for_owner = yes
+	}
+}

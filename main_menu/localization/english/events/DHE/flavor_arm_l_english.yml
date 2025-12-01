@@ -1,0 +1,11 @@
+﻿l_english:
+ 
+ flavor_arm.1.title: "The Loss of Knowledge"
+ flavor_arm.1.desc: "For centuries, the [ShowBuildingTypeName('university')] of [target_location.GetName] has served our people as a center of culture and sciences. Having flourished under the patronage of famous noble families, the recent years have brought great misfortunes to the patrons of this establishment. The loss of wealth has resulted in many subjects being dropped, and many lecturers losing their positions. If the [ShowBuildingTypeNameWithNoTooltip('university')] does not receive aid, people are afraid it might close down..."
+ flavor_arm.1.a: "Let it decay."
+ flavor_arm.1.b: "Fund it!"
+
+ flavor_arm.2.title: "The University of Tatev"
+ flavor_arm.2.desc: "Centered around a lively community in [target_location.GetName], the local monastery has grown to contain many series of contracts, official documents, and valuable manuscripts. As a result, it now serves as the beating heart of knowledge, and its lecturers have come to petition for an expansion of the facilities. They wish to establish new departments that offer classes in scriptural art and the study of music."
+ flavor_arm.2.a: "Fund the expansion."
+ flavor_arm.2.b: "Better not."

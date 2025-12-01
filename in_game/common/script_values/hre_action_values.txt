@@ -1,0 +1,155 @@
+﻿grant_county_privileges_cost = {
+	desc = "grant_county_privileges_cost"
+	value = 25
+	international_organization:hre ?= {
+		every_international_organization_member = {
+			add = country_tax_base
+		}
+		add = "total_payment_contribution(this|imperial_treasury_contribution)"
+		if = {
+			limit = { total_members > 0 }
+			divide = total_members
+		}
+	}
+}
+
+bestow_kingdom_title_cost = {
+	desc = "bestow_kingdom_title_cost"
+	value = 150
+	international_organization:hre ?= {
+		every_international_organization_member = {
+			add = country_tax_base
+		}
+		add = "total_payment_contribution(this|imperial_treasury_contribution)"
+		if = {
+			limit = { total_members > 0 }
+			divide = total_members
+		}
+	}
+}
+
+enforce_religious_unity_cost = {
+	desc = "enforce_religious_unity_cost"
+	value = 50
+	international_organization:hre ?= {
+		every_international_organization_member = {
+			add = country_tax_base
+		}
+		add = "total_payment_contribution(this|imperial_treasury_contribution)"
+		if = {
+			limit = { total_members > 0 }
+			divide = total_members
+		}
+	}
+}
+
+demand_unlawful_territory_cost = {
+	desc = "demand_unlawful_territory_cost"
+	value = 75
+	international_organization:hre ?= {
+		every_international_organization_member = {
+			add = country_tax_base
+		}
+		add = "total_payment_contribution(this|imperial_treasury_contribution)"
+		if = {
+			limit = { total_members > 0 }
+			divide = total_members
+		}
+	}
+}
+
+enforce_landfriede_cost = {
+	desc = "enforce_landfriede_cost"
+	value = 50
+	international_organization:hre ?= {
+		every_international_organization_member = {
+			add = country_tax_base
+		}
+		add = "total_payment_contribution(this|imperial_treasury_contribution)"
+		if = {
+			limit = { total_members > 0 }
+			divide = total_members
+		}
+	}
+}
+
+bolster_imperial_army_cost = {
+	desc = "bolster_imperial_army_cost"
+	value = root.country_tax_base
+	multiply = 6
+}
+
+enforce_landfriede_ia_cost_trigger = {
+	value = 10
+	subtract = scope:actor.modifier:landfriede_flat_cost
+}
+
+enforce_landfriede_ia_cost_effect = {
+	value = -10
+	add = scope:actor.modifier:landfriede_flat_cost
+}
+
+hre_default_diplo_action_acceptance = {
+	if = {
+		limit = { scope:actor = { is_allied_with = { target = scope:recipient } } }
+		add = {
+			desc = "game_concept_alliance"
+			value = 20
+		}
+	}
+	if = {
+		limit = {
+			scope:recipient = {
+				is_rival_of = scope:actor
+			}
+		}
+		add = {
+			desc = "game_concept_rival"
+			value = -1000
+		}
+	}
+	if = {
+		limit = {
+			scope:recipient = {
+				is_enemy_of = scope:actor
+			}
+		}
+		add = {
+			desc = "game_concept_enemy"
+			value = -100
+		}
+	}
+	add = {
+		desc = "DIPLOMATIC_REPUTATION"
+		value = {
+			value = scope:actor.modifier:diplomatic_reputation
+			multiply = 3
+		}
+	}
+	add = {
+		desc = "CURRENT_PRESTIGE"
+		value = scope:actor.prestige
+	}
+	add = {
+		desc = "OUR_OPINION_TOOLTIP"
+		value = "scope:actor.opinion(scope:actor)"
+	}
+	add = {
+		desc = "THEIR_OPINION_TOOLTIP"
+		value = "scope:actor.opinion(scope:recipient)"
+	}
+	if = {
+		limit = { scope:actor.culture.language = scope:recipient.culture.language }
+		add = {
+			desc = "UPKEEP_SAME_LANGUAGE"
+			value = 25
+		}
+	}
+	add = {
+		desc = "game_concept_trust"
+		scope:actor = {
+			value = "trust(scope:recipient)"
+			divide = 5
+		}
+	}
+}

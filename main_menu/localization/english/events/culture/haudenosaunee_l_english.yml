@@ -1,0 +1,20 @@
+﻿l_english:
+ haudenosaunee.1.title: "An Unforgivable Affront"
+ haudenosaunee.1.desc: "They came at night. Their faces were scarcely lit by the moon, their weapons shining brightly near the torches. They came in silence. Their footsteps were soft and swift like a summer breeze, almost impossible to hear. Then, the silence was over, and so was the night.\n\nThey raided our village, burning tents, stealing food, and taking captives. Many of our warriors woke up immediately and tried to stop them, but they were not prepared for the attack, so many were killed in the fight. They killed us. Fathers, brothers, sons. They killed us all.\nMay they not rest as long as we live."
+ haudenosaunee.1.a: "Our hearts will forever weep over their losses."
+ opinion_haudenosaunee_affront: "An Unforgivable Affront"
+ 
+ haudenosaunee.2.title: "The Mourning Wars"
+ haudenosaunee.2.desc: "It has been a tradition among our people to raid neighboring villages in search of captives to replace those who have left us. The clan mothers have demanded a "mourning war" to provide consolation for the recent death of their children, and it is our duty to accept such a sensible petition.\n\nThis night. A blue night. The night after this part of the night. Our warriors have successfully attacked [target_location.GetName] and, amid the chaos, have managed to ambush a fair amount of locals."
+ haudenosaunee.2.a: "We should take some captives."
+ haudenosaunee.2.b: "Just let them know we could have taken them."
+ 
+ haudenosaunee.3.title: "A New Captive"
+ haudenosaunee.3.desc: "Our warriors have returned with some captives from their previous raid in [target_location.GetName]. Victoriously, they have come upon [target_character.GetName]'s presence and laid a child's body before [target_character.GetHerHim]. "In return for your loss," could be heard, and tears appeared again."
+ haudenosaunee.3.a: "Reject him."
+ haudenosaunee.3.b: "Adopt him."
+
+ haudenosaunee.4.title: "[target_child_character.GetNameWithNoTooltip]'s Upbringing"
+ haudenosaunee.4.desc: "It seems like yesterday that [target_child_character.GetName] was brought to [target_child_character.GetHerHis] father from a foreign land. [target_child_character.GetSheHe|U] was just but a baby then, but since then [target_child_character.GetSheHe] has been growing up as one more of our [ROOT.GetCountry.GetFlavorRank]. [target_child_character.GetSheHe|U] barely remembers [target_child_character.GetHerHis] [target_child_character.GetCulture.GetName] origins, but vague memories remain and make [target_child_character.GetHerHim] want to ask questions."
+ haudenosaunee.4.a: "[target_child_character.GetSheHe|U] is one of us and can no longer call [target_child_character.GetHerselfHimself] [target_child_character.GetCulture.GetNameWithNoTooltip]."
+ haudenosaunee.4.b: "[target_child_character.GetSheHe|U] will be one of us or [target_child_character.GetSheHe] will die."

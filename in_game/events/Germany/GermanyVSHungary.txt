@@ -1,0 +1,1 @@
+namespace = german_hungarian_game

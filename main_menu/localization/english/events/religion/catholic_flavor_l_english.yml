@@ -1,0 +1,125 @@
+﻿l_english:
+ catholic_flavor.1.title: "Influential Preacher"
+ catholic_flavor.1.desc: "A devout young preacher by the name of [target_character.GetName] has spoken out recently about how great our adherence to the teachings of the Holy Father in [pope_capital_scope.GetName] is. This can only be good for our future."
+ catholic_flavor.1.a: "Send him to [pope_capital_scope.GetNameWithNoTooltip]."
+ catholic_flavor.1.b: "He will make a fine bishop."
+
+ catholic_flavor.2.title: "A Prospering [ShowBuildingTypeNameWithNoTooltip('monastery')]"
+ catholic_flavor.2.desc: "The [ShowBuildingTypeName('monastery')] in [target_location.GetName] has enjoyed an era of prosperity, during which they have also attracted recognized [ShowReligionAdjective('catholic')] scholars. This success affects the rest of [target_location.GetNameWithNoTooltip] and is helping to bring new wealth to the area. A visit from [target_ruler.GetName] could be advisable and would be a great honor for the [ShowBuildingTypeNameWithNoTooltip('monastery')]."
+ catholic_flavor.2.a: "[target_ruler.GetNameWithNoTooltip] should visit [target_location.GetNameWithNoTooltip] [target_ruler.GetHerselfHimself]."
+ catholic_flavor.2.b: "We will leave them to their own business."
+
+ catholic_flavor.3.title: "A [ShowBuildingTypeNameWithNoTooltip('monastery')] in Trouble"
+ catholic_flavor.3.desc: "A [ShowBuildingTypeName('monastery')] inhabited by our monks has fallen on hard times. Due to a lack of both funding and new followers, the monastery has declined into a sad state of its former self. The monks are now begging us for help in the form of a generous donation, without which they will be unable to support the local population as they have in the past."
+ catholic_flavor.3.a: "We will donate some money."
+ catholic_flavor.3.b: "This is not our problem."
+
+ catholic_flavor.4.title: "Simony?"
+ catholic_flavor.4.desc: "We have a vacancy in a high position in the Church administration of [ROOT.GetCountry.GetName]. There is a churchman from a rich family by the name of [target_character.GetName] who has made an enticing offer: If we approve and back [target_character.GetHerHis] election to the position, we will gain a large contribution to our coffers. Some more devout people claim that this practice is a sin called Simony, but what do they know?"
+ catholic_flavor.4.a: "We need the money!"
+ catholic_flavor.4.b: "Simony is a sin!"
+
+ catholic_flavor.5.title: "Selling of Indulgences"
+ catholic_flavor.5.desc: "$flavor_pap.1701.a$\n\nThe practice of promising absolution from earthly sins in return for money has been highly favored among [ShowReligionAdjective('catholic')] followers, or at least among those with money to spare. They are forgiven for all of their sins and are not even required to give up their vices! However, this practice has raised eyebrows among the [ROOT.GetCountry.GetAdjective] [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')], who are uncomfortable with the idea of the [GetCountry('PAP').GetGovernment.GetRulerTitle] enriching the [GetInternationalOrganization('catholic_church').GetName] in such a manner. Instead, they claim that [ShowReligionGroupAdjective('christian')] must show true repentance if their sins are to be forgiven.\n\nAs [target_ruler.GetName] grows older, the disputes on the matter grow more personal. [target_ruler.GetSheHe|U] has sinned, just as every [ROOT.GetCountry.GetGovernment.GetRulerTitle] must to keep their rule secure. How best, then, should [target_ruler.GetSheHe] acquire forgiveness?"
+ catholic_flavor.5.a: "A donation to the [GetCountry('PAP').GetGovernment.GetRulerTitle] shall be arranged."
+ catholic_flavor.5.b: "Indulgences are the easy option; repentance is better."
+ catholic_obstructing_church: "Refused to pay Indulgences"
+
+ catholic_flavor.6.title: "Veneration of Relics"
+ catholic_flavor.6.desc: "From the highest noble to the lowest peasant, people believe that the veneration of relics allows the supplicant to reduce their time in purgatory. However, a treatise opposing this practice has been found in [unrest_province.GetName] nailed to the door of one of our churches, which has a very substantial relic collection. Is there any truth to this treatise's complaints, or are they merely the words of naysayers and heretics seeking to harm the unity of the [GetInternationalOrganization('catholic_church').GetName], our one true path to salvation?"
+ catholic_flavor.6.a: "But we just bought a vial of the milk of the Virgin Mary!"
+ catholic_flavor.6.b: "Forgiveness can only come from [ROOT.GetCountry.GetReligion.GetGodName]."
+ catholic_flavor.6.b.tt: "This will make our population in [unrest_province.GetName] following [ShowReligionName('catholic')] unhappy."
+
+ catholic_flavor.7.title: "Veneration of the Virgin Mary"
+ catholic_flavor.7.desc: "The Blessed Virgin Mary, mother of our Lord Jesus Christ, is the Queen of Heaven and mediator of many graces. As the most perfect woman, her holy motherhood grants her a seat at the right hand of [ROOT.GetCountry.GetReligion.GetGodName]. Or does it? Recently, radical theologians have been arguing that there is no need for such intercessions. Are they right, or is the Holy Mother Church in danger from their borderline heretical utterings?"
+ catholic_flavor.7.a: "May the Madonna forgive them."
+ catholic_flavor.7.b: "She is a special woman, but still just a woman."
+ opinion_denying_the_holy_mother: "Denying the Holy Mother"
+
+ catholic_flavor.8.title: "The Doctrine of Particular Judgment"
+ catholic_flavor.8.desc: "As we know, when we die, [ROOT.GetCountry.GetReligion.GetGodName] judges us immediately and decides what each soul's fate is to be as it awaits the final judgment.\n\nHowever, a monk in [unrest_province.GetName] has started a doctrinal dispute that verges on heresy, claiming that there is no purgatory and saying that prayers for the dead do not assist their passage into heaven.\n\nThese disputes are threatening the very unity of the [GetInternationalOrganization('catholic_church').GetName]."
+ catholic_flavor.8.a: "He is probably a heretic."
+ catholic_flavor.8.b: "The dead cannot be helped."
+
+ catholic_flavor.9.title: "A New Confession of Faith"
+ catholic_flavor.9.desc: "Reformers have put forward a new confession of faith that has some minor, but still serious, differences with [ShowReligionAdjective('catholic')] teachings. The [GetInternationalOrganization('catholic_church').GetName] claims it borders on the heretical, while there are those who suggest that this new confession would bring the [GetInternationalOrganization('catholic_church').GetNameWithNoTooltip] and its administrative apparatus under tighter control."
+ catholic_flavor.9.a: "Promote it, even if some of our subjects stray too far."
+ catholic_flavor.9.b: "Nay, it will damn everyone."
+
+ catholic_flavor.10.title: "A Promise of Safe Passage?"
+ catholic_flavor.10.desc: "A group of the so-called reforming monks has recently appeared at our [ROOT.GetCountry.GetGovernment.GetCourtTitle] under our most solemn promise of safe passage so that they might argue the justness of their cause. Like [jan_hus_scope.GetName] before them, their heresy is manifest, but our word has been given."
+ catholic_flavor.10.a: "Our honor is our word."
+ catholic_flavor.10.b: "We are not bound by promises to these heretics."
+
+ catholic_flavor.11.title: "Saint Proclaimed"
+ catholic_flavor.11.desc: "[pope_scope.GetName] has just announced that one of our ruler's most esteemed and revered ancestors, [ancestor_saint.GetName], was a holy saint of our esteemed Church, and that the time has finally arrived to revere them appropriately. This is a cause for great celebration!"
+ catholic_flavor.11.a: "Te Deum!"
+
+ catholic_flavor.12.title: "Sublimis Deus"
+ catholic_flavor.12.desc: "[pope_scope.GetName] decrees that the native peoples of the Colonies shall not be made into slaves. The belief that they are lesser brutes incapable of receiving [ROOT.GetCountry.GetReligion.GetGodName]'s grace, [pope_scope.GetSheHe] writes, is a vile lie spread by the enemy of the human race himself. Instead, His Holiness insists that, like all ensouled human beings, these people yearn for [ROOT.GetCountry.GetReligion.GetGodName]'s light, and that therefore all pious princes should make haste to spread the [ShowReligionAdjective('catholic')] faith among them."
+ catholic_flavor.12.a: "Enforce the [GetCountry('PAP').GetGovernment.GetRulerTitle]'s will."
+ opinion_sublimis_deus: "Sublimis Deus"
+ catholic_flavor.12.b: "What the [GetCountry('PAP').GetGovernment.GetRulerTitle] does not know cannot hurt him."
+
+ catholic_flavor.13.title: "[ShowBuildingTypeNameWithNoTooltip('scriptorium')] Spreads Heresy"
+ catholic_flavor.13.desc: "The [ShowBuildingTypeNameWithNoTooltip('scriptorium')] in [target_location.GetName] has made a crucial mistake in the copying of some religious texts, implying an interpretation most heretical. If we do not act quickly, these texts could destabilize the trust of our people in the true faith."
+ catholic_flavor.13.a: "Stop the spread at any cost."
+ catholic_flavor.13.b: "It will sort itself out in time."
+
+ catholic_flavor.14.title: "The [target_country.GetLongNameWithNoTooltip] Heals The Schism"
+ catholic_flavor.14.desc: "The Bishop of [ShowLocationName('rome')], [target_character.GetName], has declared the Great Schism over, a declaration backed by [target_character.GetHerHis] pliant new ecclesiastic puppets in [ShowLocationName('constantinople')] and [ShowLocationName('moscow')]. While we could continue in our old ways, the victories of [target_country.GetName] suggest that [ROOT.GetCountry.GetReligion.GetGodName] may truly be on the [ShowReligionAdjective('catholic')] side."
+ catholic_flavor.14.a: "We shall embrace [ShowReligionNameWithNoTooltip('catholic')]."
+ catholic_flavor.14.a.tt: "A large part of our population will convert to [ShowReligionName('catholic')]."
+ catholic_flavor.14.b: "For as long as they say 'Filioque', we shall follow [ShowReligionNameWithNoTooltip('orthodox')]!"
+ catholic_flavor.14.b.tt: "A small part of our population will convert to [ShowReligionName('catholic')]."
+
+ catholic_flavor.15.title: "The Feast of Fools"
+ catholic_flavor.15.desc: "The Feast of Fools is upon us!\n\nDressed in devilish clothes, a new 'bishop' has been elected. People drink, laugh, and dance as the false bishop makes a mockery of ecclesiastical rituals, a burlesque of [ShowReligionGroupName('christian')] worship that is fondly enjoyed by all except the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')], who are rather insistent that the festivities ought to be suspended at once for the sake of [ROOT.GetCountry.GetGovernment.GetRulerTitle] and country."
+ catholic_flavor.15.a: "Allow the festivities to continue."
+ catholic_flavor.15.b: "Mockery of our holy institutions must not be tolerated!"
+ catholic_flavor.15.c: "Appoint a horse to the papacy in jest."
+ catholic_flavor.15.d: "Appoint the bell-ringer of [ShowLocationNameWithNoTooltip('paris')]."
+
+ catholic_flavor.16.title: "In Praise of Scribes"
+ catholic_flavor.16.desc: "The craft of transcribing texts is a difficult and usually thankless task. However, the [ShowBuildingTypeNameWithNoTooltip('scriptorium')] in [target_location.GetName] has received praise from an abbot, who lauds the scribes with the following praise: #italic The dedicated scribe, the object of our treatise, will never fail to praise God, give pleasure to angels, strengthen the just, convert sinners, commend the humble, confirm the good, confound the proud, and rebuke the stubborn.#!"
+ catholic_flavor.16.a: "This is an excellent example of our devotion."
+ catholic_flavor.16.b: "The scribes have done well to deserve such praise."
+
+ catholic_flavor.100.title: "Cardinal-Nephew"
+ catholic_flavor.100.desc: "There is a long [ROOT.GetCountry.GetAdjective] tradition of appointing relatives of the [ROOT.GetCountry.GetGovernment.GetRulerTitle] to the College of Cardinals. While some call this nepotism, Cardinal-Nephews have an established place within the Curia."
+ catholic_flavor.100.desc.a: "$catholic_flavor.100.desc$ Now that it is time to appoint a new cardinal in [cardinal_nephew_country.GetName], [ROOT.GetCountry.GetGovernment.GetRuler.GetName] must decide whether a relative would be suitable to take up residence in [cardinal_nephew_province.GetName]."
+ catholic_flavor.100.desc.b: "$catholic_flavor.100.desc$ Now that it is time to appoint a new cardinal in [cardinal_nephew_country.GetName], [ROOT.GetCountry.GetGovernment.GetRuler.GetName] must decide whether a relative would be suitable for the tasks at hand."
+ catholic_flavor.100.a: "No, this is a tradition that we should end."
+ catholic_flavor.100.b: "The [ROOT.GetCountry.GetGovernment.GetRulerTitle]'s nephew will make a fine Cardinal."
+
+ catholic_flavor.101.title: "A Cardinal-Nephew from the [GetCountry('PAP').GetGovernment.GetRulerTitle]"
+ catholic_flavor.101.desc: "[target_character.GetName] is asking us to appoint [target_character.GetHerHis] relative to [cardinal_nephew_province.GetName] as Cardinal. Though doing such is a common practice, many see it as blatant nepotism."
+ catholic_flavor.101.a: "Accept the [GetCountry('PAP').GetGovernment.GetRulerTitle]'s Cardinal-Nephew."
+ catholic_flavor.101.a.tt: "Every country with a [cardinal|e] gains [ShowBiasValue('opinion_popes_pet')|+=0] [opinion|e] of [cardinal_nephew_country.GetName]"
+ opinion_popes_pet: "Pope's Pet"
+ catholic_flavor.101.b: "We will not facilitate nepotism in the Church."
+
+ catholic_flavor.102.title: "Accepted Cardinal-Nephew"
+ catholic_flavor.102.desc: "[cardinal_nephew_country.GetName] has accepted the [ROOT.GetCountry.GetGovernment.GetRulerTitle]'s nephew as the new cardinal in [cardinal_nephew_province.GetName]."
+ catholic_flavor.102.a: "Perfect!"
+ opinion_cardinal_nephew: "Cardinal Nephew"
+
+ catholic_flavor.103.title: "Refused Cardinal-Nephew"
+ catholic_flavor.103.desc: "[cardinal_nephew_country.GetName] has refused to appoint the [ROOT.GetCountry.GetGovernment.GetRulerTitle]'s nephew to Cardinal in [cardinal_nephew_province.GetName]."
+ catholic_flavor.103.a: "[ROOT.GetCountry.Custom('common_string_disappointing')]"
+
+ catholic_flavor.1000.title: "A [ShowBuildingTypeNameWithNoTooltip('seat_of_cardinal')] for [SCOPE.sCountry('actor').GetNameWithNoTooltip]"
+ catholic_flavor.1000.desc: "We have been asked by [SCOPE.sCountry('actor').GetName] to grant them a new [ShowBuildingTypeName('seat_of_cardinal')]. The cardinal would take residence in [target_location.GetName], should we accept."
+ catholic_flavor.1000.a: "Grant them the request."
+ catholic_flavor.1000.b: "We must reject them."
+
+ catholic_flavor.1001.desc: "The [GetInternationalOrganization('catholic_church').GetLeaderTitle] has graciously granted our request to receive a new cardinal in [target_location.GetName]. The construction of adequate accommodations for such a position has already begun."
+ catholic_flavor.1001.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+
+ catholic_flavor.1002.desc: "The [GetInternationalOrganization('catholic_church').GetLeaderTitle] has unfortunately rejected our request to grant us a [ShowBuildingTypeName('seat_of_cardinal')]. There is nothing we can do but to hope that they will be more agreeable in the future."
+ catholic_flavor.1002.a: "[ROOT.GetCountry.Custom('common_string_disappointing')]"
+
+ catholic_flavor.9000.title: "The [ShowGovernmentReformNameWithNoTooltip('papacy_reform')]"
+ catholic_flavor.9000.desc: "Due to circumstances beyond our control, we have lost the [ShowGovernmentReformName('papacy_reform')]. This situation is unacceptable and we must immediately reinstate the [GetInternationalOrganization('catholic_church').GetLeaderTitle] as our ruler."
+ catholic_flavor.9000.a: "[ROOT.GetCountry.Custom('common_string_positive')]"

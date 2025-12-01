@@ -1,0 +1,285 @@
+﻿union = {
+	has_target = no
+	disband_if_no_leader = no
+	expel_members_who_are_targets_of_other_members = no
+	custom_name = union_name
+
+	leader_change_trigger_type = rulerchange
+	leader_type = character
+	leader = {
+		every_international_organization_member = {
+			ruler_or_heir_if_regent ?= {
+				add_to_list = leaders
+			}
+		}
+	}
+
+	laws = {
+		union_foundation_law = union_maintain_federal_status_policy
+		union_codified_inheritance_law = union_sovereign_succession_law
+	}
+	special_statuses_implemented = { senior_partner junior_partner }
+
+	annexation_min_years_before = {
+		value = 50
+		add = scope:recipient.modifier:years_to_annex_members
+	}
+	can_annex_members = {
+		custom_tooltip = {
+			text = union_annexation_rule_tt
+			has_special_status_in_international_organization = {
+				type = special_status:senior_partner
+				international_organization = scope:recipient
+			}
+			is_subject = no
+			scope:recipient.modifier:enable_annexation_of_members = yes
+			scope:target ?= {
+				modifier:is_senior_partner = no
+				trigger_if = {
+					limit = {
+						has_variable = integrated_in_union
+						scope:recipient = { modifier:union_integration_level > 0 }
+					}
+					var:integrated_in_union >= scope:recipient.modifier:union_integration_level
+				}
+				trigger_else = {
+					has_variable = integrated_in_union
+					scope:recipient = { modifier:union_integration_level > 0 }
+				}
+				is_subject = no
+			}
+		}
+	}
+
+	#Baseline of a union, will never change
+	join_defensive_wars_always = {
+		always = yes
+	}
+
+	can_initiate_policy_votes = {
+		scope:recipient = {
+			has_member = root
+			OR = {
+				NOT = { international_organization_has_policy = policy:union_establish_seniority_policy }
+				country_is_senior_partner = { country = root }
+			}
+		}
+	}
+
+	can_declare_war = {
+		trigger_if = {
+			limit = { scope:defender = { is_member_of_international_organization = scope:recipient } }
+			trigger_if = {
+				limit = { scope:recipient = { international_organization_has_policy = policy:union_establish_seniority_policy } }
+				OR = {
+					scope:attacker = { NOT = { is_member_of_international_organization = scope:recipient } }
+					scope:recipient = {
+						country_has_special_status = {
+							type = special_status:senior_partner
+							country = scope:defender
+						}
+					}
+				}
+			}
+			trigger_else = {
+				scope:attacker = { NOT = { is_member_of_international_organization = scope:recipient } }
+			}
+		}
+		trigger_else = {
+			scope:defender = {
+				OR = {
+					is_subject = no
+					overlord = { NOT = { is_member_of_international_organization = scope:recipient } }
+				}
+			}
+		}
+		trigger_if = {
+			limit = { scope:attacker = { NOT = { is_member_of_international_organization = scope:recipient } } }
+			NOT = {
+				scope:recipient = {
+					any_international_organization_member = {
+						is_allied_with = { target = scope:attacker }
+					}
+				}
+			}
+		}
+	}
+	
+	modifier = {
+	}
+
+	fog_of_war_lifted = yes
+	show_on_diplomatic_map = yes
+	#leader_color = define:NMapColors|DIPLOMACY_UNION_COLOR
+	#member_color = define:NMapColors|DIPLOMACY_UNION_COLOR
+	
+	create_visible_trigger = {
+		always = no
+	}
+
+	invite_visible_trigger = {
+		always = no
+	}
+
+	can_join_trigger = {
+		#these aren't things you can just join
+		always = no
+	}
+
+	can_leave_trigger = {
+		#these aren't things you can just leave
+		always = no
+	}
+
+	auto_leave_trigger = {
+		#happens in code
+		always = no
+	}
+	
+	auto_disband_trigger = {
+		total_members < 2
+	}
+
+	on_joined = {
+		recalculate_union_parliament_issue_support = yes
+		#ensure that new union members do not carry the old integration level over
+		#yes, if the individual integration level is lower than the union progress then they can keep it
+		#as a nice treat
+		if = {
+			limit = {
+				has_variable = integrated_in_union
+				var:integrated_in_union > scope:recipient.modifier:union_integration_level
+				NOT = { has_variable = union_no_integration_reset }
+			}
+			set_individual_integration_level = {
+				international_organization = scope:recipient
+				value = 0
+			}
+		}
+		else_if = {
+			limit = { has_variable = union_no_integration_reset }
+			remove_variable = union_no_integration_reset
+		}
+	}
+
+	on_left = {
+		recalculate_union_parliament_issue_support = yes
+	}
+
+	monthly_effect = {
+		if = {
+			limit = {
+				has_active_senior_partner = yes
+				OR = {
+					NOT = { has_variable = union_senior_partner }
+					NOT = { country_exists = var:union_senior_partner }
+					var:union_senior_partner = {
+						NOT = { is_member_of_international_organization = root }
+					}
+				}
+			}
+			ordered_country_with_special_status_of_type = {
+				type = senior_partner
+				order_by = great_power_score
+				check_range_bounds = no
+				max = 1
+				save_scope_as = target_country
+			}
+			if = {
+				limit = { exists = scope:target_country }
+				set_variable = {
+					name = union_senior_partner
+					value = scope:target_country
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_active_senior_partner = no
+			}
+			remove_variable = union_senior_partner
+			remove_variable = union_ruler_character
+			remove_variable = union_heir_character
+		}
+		if = {
+			limit = {
+				has_variable = union_senior_partner
+				var:union_senior_partner = { has_ruler = yes }
+				OR = {
+					NOT = { has_variable = union_ruler_character }
+					NOT = { var:union_ruler_character = var:union_senior_partner.ruler }
+				}
+			}
+			set_variable = {
+				name = union_ruler_character
+				value = var:union_senior_partner.ruler
+			}
+		}
+		if = {
+			limit = {
+				has_variable = union_senior_partner
+				var:union_senior_partner = { has_heir = yes }
+				OR = {
+					NOT = { has_variable = union_heir_character }
+					NOT = { var:union_heir_character = var:union_senior_partner.heir }
+				}
+			}
+			set_variable = {
+				name = union_heir_character
+				value = var:union_senior_partner.heir
+			}
+		}
+		#make sure to keep ruler and heir in the senior partner..
+		if = {
+			limit = { has_variable = union_senior_partner }
+			if = {
+				limit = { has_variable = union_ruler_character }
+				#move the ruler always to the senior partner
+				if = {
+					limit = { var:union_ruler_character = { NOT = { owner = root.var:union_senior_partner } } }
+					var:union_ruler_character = { move_country = root.var:union_senior_partner }
+				}
+				#kick every other member who has a different ruler (or heir) from the union
+				every_international_organization_member = {
+					limit = {
+						OR = {
+							has_ruler = no
+							ruler != root.var:union_ruler_character
+						}
+					}
+					if = {
+						limit = {
+							OR = {
+								root = { not = { has_variable = union_heir_character } }
+								has_heir = no
+								heir != root.var:union_heir_character
+							}
+						}
+						root = { remove_country_from_international_organization = prev }
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_variable = union_heir_character
+					var:union_heir_character = { NOT = { owner = root.var:union_senior_partner } }
+				}
+				var:union_heir_character = {
+					move_country = root.var:union_senior_partner
+				}
+			}
+		}
+	}
+	
+	variables = {
+	}
+
+	ai_desire_to_join = {}
+	
+	ai_desire_to_allow_new_member = {
+		add = {
+			desc = "WE_WANT_THE_ORGANIZATION_TO_GROW"
+			value = 20
+		}
+	}
+}

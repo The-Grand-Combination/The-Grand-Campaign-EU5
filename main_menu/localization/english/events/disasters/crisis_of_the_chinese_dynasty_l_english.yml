@@ -1,0 +1,57 @@
+﻿l_english:
+
+#Events
+  crisis_of_the_chinese_dynasty.1.title: "Crumbling Authority of the [GetCountry('CHI').GetLongNameWithNoTooltip]"
+  crisis_of_the_chinese_dynasty.1.desc: "The [ROOT.GetCountry.GetLongName] faces a terrible crisis. We have failed to rule in accordance with the Mandate of Heaven, and have lost the blessings and good fame that the Mandate affords.\n\nMismanagement and strife are rampant in $china$ and discontent is spreading rapidly among the people; already great masses have risen in revolt. We must think of our ancestors and strive to cultivate virtue, for the great Mandate is not easy to keep."
+  crisis_of_the_chinese_dynasty.1.a: "May the Mandate not end with us."
+  every_member_of_mkio_loses_20_opinion_tt: "Every [member|e] of the [GetUniqueInternationalOrganization('middle_kingdom').GetName] will lose [ShowBiasValue('opinion_internal_crisis')|+=0] [opinion|e] with us"
+
+  crisis_of_the_chinese_dynasty.2.title: "A Bitter End"
+  crisis_of_the_chinese_dynasty.2.desc: "We have failed to restore authority across our lands, our people are now shattered and demoralized. Whatever attempts were made to make amends were far from effective, resulting in the loss of our prestige and our place as the masters of our great [ROOT.GetCountry.GetFlavorRank]. This is a new low for us, as we try to realize the reality of our dire situation."
+  crisis_of_the_chinese_dynasty.2.a: "What darkness awaits us?"
+
+  crisis_of_the_chinese_dynasty.3.title: "Favor of the Heavens"
+  crisis_of_the_chinese_dynasty.3.desc: "The period of instability is over! Those who once conspired our demise and found joy in our fall, now flee back into the shadows! Times of troubles have forged our people to be hardened and survive even divine challenges.\n\nA smile while watching the sunset, greeting the next day with the same hunger that once placed us on top of a great [ROOT.GetCountry.GetFlavorRank]."
+  crisis_of_the_chinese_dynasty.3.a: "We have survived!"
+  based_on_current_celestial_authority_tt: "Based on our current value of [celestial_authority_gc|e]:"
+
+  crisis_of_the_chinese_dynasty.4.title: "Peasants Refuse Taxation"
+  crisis_of_the_chinese_dynasty.4.desc: "Even at the best of times, the people of [target_province.GetName] have struggled to make do. The recent upheaval that has gripped the [ROOT.GetCountry.GetGovernment.GetCourtTitle] has spread to nearly every province across our [ROOT.GetCountry.GetFlavorRank]. As a result, those who once bent the knee to [target_character.GetName] now refuse even the softest form of taxation and tributes of food."
+  crisis_of_the_chinese_dynasty.4.a: "Extract food tributes forcefully."
+  crisis_of_the_chinese_dynasty.4.b: "The Heavens are graceful."
+  pops_in_target_province_lose_10_satisfaction_tt: "Our [pops|e] in [target_province.GetName] will lose [ShowNamedValue('pop_satisfaction_mild_penalty')|+=2%] [pop_satisfaction|e]"
+  every_pop_in_target_province_gains_5_satisfaction_tt: "Our [pops|e] in the [target_province.GetName] [province|e] will gain [ShowNamedValue('pop_satisfaction_weak_bonus')|+=2%] [pop_satisfaction|e]"
+  every_location_in_target_province_suffers_10_devastation_tt: "Our [locations|e] in [target_province.GetName] lose [ShowNamedValue('prosperity_weak_penalty')|+=2%] [prosperity|e]"
+
+  crisis_of_the_chinese_dynasty.5.title: "The Spread of Devastation"
+  crisis_of_the_chinese_dynasty.5.desc: "The times have not been kind to our people in [target_province.GetName]. Once a vibrant center of bustling markets and bountiful fields, the province has recently fallen a victim to rampant banditry, looting, empty grain stores, and burning homes. The locals cry out for help to [target_character.GetName] during this turbulent period.\n\nAs harvests lay unatended, and canals fall in disrepair, the future looks ever darker. This latest news of devastation spreading is a worrying sign of our slipping control, shaking public confidence across our [ROOT.GetCountry.GetFlavorRank]."
+  crisis_of_the_chinese_dynasty.5.a: "We can pay to restore their food supply."
+  every_location_in_target_province_5_prosperity_tt: "[locations|e] in [target_province.GetNameWithNoTooltip] gain [ShowNamedValue('prosperity_very_weak_bonus')|+=2%] [prosperity|e]"
+  crisis_of_the_chinese_dynasty.5.b: "Send [target_character_1.GetNameWithNoTooltip]!"
+  every_location_in_target_province_scales_with_character_tt: "[target_character_1.GetName] will travel to [target_province.GetNameWithNoTooltip] to oversee recovery efforts. During that time, [target_character_1.GetSheHe] will not be part of our [cabinet|e].\n\nDue to [target_character_1.GetHerHis] [total_ability|e], every [location|e] we own in [target_province.GetNameWithNoTooltip] will gain #G [ROOT.GetVariable('display_character_ability_variable').GetValue]%#! [prosperity|e]"
+  crisis_of_the_chinese_dynasty.5.c: "Reimburse the locals."
+  crisis_of_the_chinese_dynasty.5.d: "We care not for the plight of these peasants!"
+
+  crisis_of_the_chinese_dynasty.6.title: "Rebel Negotiations"
+  crisis_of_the_chinese_dynasty.6.desc: "As our great people traverse the tumultuous period known as the $crisis_of_the_chinese_dynasty$, it has become apparent that the burden of an entire [actor.GetFlavorRank] is heavy on the shoulders of [target_character.GetName]. Recent developments have led to the movement of [target_rebel.GetName] gaining much traction, forcing us onto the negotiation table."
+  pops_supporting_target_rebel_will_gain_30_satisfaction_and_cease_their_support_tt: "[pops|e] that support the [target_rebel.GetNameWithNoTooltip] will gain [ShowNamedValue('pop_satisfaction_extreme_bonus')|+=2%] [pop_satisfaction|e] and will likely shift their allegiance back to us"
+  locations_with_rebel_pops_lose_20_control_tt: "Every [location|e] that supports the [target_rebel.GetNameWithNoTooltip] [rebellion|e] will have their [control|e] reduced by [ShowNamedValue('control_extreme_penalty')|+=2%]"
+  refund_the_cost_of_the_action_tt: "The cost of this [action|e] will be refunded."
+  crisis_of_the_chinese_dynasty.6.a: "Very well, reduce their taxation."
+  crisis_of_the_chinese_dynasty.6.b: "Let us make some concessions."
+  crisis_of_the_chinese_dynasty.6.c: "Grant them some temporary autonomy."
+  crisis_of_the_chinese_dynasty.6.d: "We will listen to their demands."
+  crisis_of_the_chinese_dynasty.6.e: "On second thought..."
+
+  crisis_of_the_chinese_dynasty.7.title: "Tax Reformation of [GetCurrentYear]"
+  crisis_of_the_chinese_dynasty.7.desc: "The recent crisis has had a profound impact both in the financial as well as the political world within our borders. This turbulent time has tested the strength of our institutions, and our bureaucracy has finally emerged victorious!\n\nAfter a strained five years, we have concluded a census of our people as well as a revised tax code that looks very promising. Various aristocrats and officials that once laid in decadence used to find loopholes to avoid paying their taxes, which eventually led to the erosion of the central government.\n\nThe bold measures put in place under [target_character.GetName] have resulted to renewed income reaching the treasury from various corners that now recognize our authority."
+  crisis_of_the_chinese_dynasty.7.a: "One step closer to averting disaster!"
+  we_can_now_complete_reform_tax_action_tt: "We can now complete the [ShowGenericActionName('cmd_revise_the_tax_code')] [action|e] through the [disaster|e] interface"
+
+  crisis_of_the_chinese_dynasty.8.title: "Stable Affairs in the [GetCountry('CHI').GetFlavorRank]"
+  crisis_of_the_chinese_dynasty.8.desc: "Our great [ROOT.GetCountry.GetFlavorRank] is no stranger to pushing back those who covet our wealth. Those who seek to destabilize our grip on $china$ are many, their shadows cast doubt and decay on our affairs. Succession disputes, corruption within the bureaucracy, economic inequality, and the constant threat of northern invasions created an atmosphere of uncertainty.\n\nHowever, the triumphant rise of [target_character.GetName] has shed light into the darkest shadows, expelling many destabilizing factors from our government."
+  crisis_of_the_chinese_dynasty.8.a: "We are stable, for now."
+
+  crisis_of_the_chinese_dynasty.9.title: "A Strong $china$"
+  crisis_of_the_chinese_dynasty.9.desc: "Our authority has been questioned time and time again, during this turbulent period that we are facing. Ineffective leadership as well as mounting unrest have long since eroded public trust in the throne. Fueled by a series of malevolent bureaucrats and powerful [ROOT.GetCountry.GetGovernment.GetCourtTitle] officials, the cycle of decay had truly set within our ranks.\n\nThrough the policies and under the guidance of [target_character.GetName], we have successfully nagivated this perilous situation. The re-establishment of legitimacy and faith now leads to fair governance and our renewed ability to address the various issues that plague our [ROOT.GetCountry.GetFlavorRank]."
+  crisis_of_the_chinese_dynasty.9.a: "The throne is strong once again, for now."

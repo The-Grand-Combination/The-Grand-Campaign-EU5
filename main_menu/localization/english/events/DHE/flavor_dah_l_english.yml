@@ -1,0 +1,14 @@
+﻿l_english:
+ flavor_dah_released_desc_common: "The [ShowCultureName('fon')] people within [ShowAreaName('gold_coast_area')] have organized themselves under [GetCountry('DAH').GetName], ruled by [target_character.GetName]. They speak of militaristic ambitions, ready to expand further in [ShowRegionName('guinea_region')]."
+ flavor_dah_released_title_common: "Founding of [GetCountry('DAH').GetNameWithNoTooltip]"
+ flavor_dah_variable_tt: "[ShowProvinceDefinitionName('fon_province')] was uncolonized"
+
+ flavor_dah.1.title: "$flavor_dah_released_title_common$"
+ flavor_dah.1.desc: "$flavor_dah_released_desc_common$"
+ flavor_dah.1.a: "[GetCountry('DAH').GetNameWithNoTooltip] shall be conquered!"
+ flavor_dah.1.b: "Perhaps it is time for a new realm to rise."
+ flavor_dah.1.c: "Good for them."
+
+ flavor_dah.2.title: "$flavor_dah_released_title_common$"
+ flavor_dah.2.desc: "$flavor_dah_released_desc_common$"
+ flavor_dah.2.a: "New neighbors?"

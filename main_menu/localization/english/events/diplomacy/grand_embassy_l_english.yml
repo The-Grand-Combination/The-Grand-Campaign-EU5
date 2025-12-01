@@ -1,0 +1,54 @@
+﻿l_english:
+ grand_embassy.1.title: "Grand Embassy"
+ grand_embassy.1.desc: "An idea has been put forth at court to send [ROOT.GetCountry.GetGovernment.GetRuler.GetName] on a journey through Europe together with a large delegation - a Grand Embassy - in order to seek better relations with other European leaders - especially those who share common enemies with us. Another benefit could be the chance to study the technological advancements made in [ShowSubContinentName('western_europe')] in order to help us to modernize."
+ grand_embassy.1.a: "Embark on a journey through Europe"
+ grand_embassy.1.b: "Our country holds the knowledge we need"
+ 
+ grand_embassy.2.title: "Grand Embassy Arrives in [ROOT.GetCountry.GetCapital.GetName]"
+ grand_embassy.2.desc: "A grand embassy has arrived from [from.GetName] led by [from.GetGovernment.GetRuler.GetName] [from.GetGovernment.GetRuler.GetHerselfHimself]. [from.GetGovernment.GetRuler.GetSheHeCap] is traveling the continent in order to secure better relations with other European states - especially those who share a common enemies. How should we great [from.GetGovernment.GetRuler.GetHerHim]?"
+ grand_embassy.2.a: "Invite [from.GetGovernment.GetRuler.GetHerHim] to stay"
+ received_grand_embassy: "Received Grand Embassy"
+ grand_embassy.2.b: "Politely turn [from.GetGovernment.GetRuler.GetHerHim] away"
+ rejected_grand_embassy: "Rejected Grand Embassy"
+ grand_embassy.2.c: "Send [from.GetGovernment.GetRuler.GetHerHim] packing!"
+ 
+ 
+ grand_embassy.3.title: "Grand Embassy in [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip]"
+ grand_embassy.3.desc: "Overwhelmed by our warm welcome, [from.GetGovernment.GetRuler.GetName] has informed us that he wishes to extend his visit in [ROOT.GetCountry.GetCapital.GetName]. In [from.GetGovernment.GetRuler.GetHerHis] quest to modernize [from.GetLongName], [from.GetGovernment.GetRuler.GetSheHe] is most eager to get a chance to study the technological advancements of [ShowSubContinentName('western_europe')]."
+ grand_embassy.3.a: "Invite [from.GetGovernment.GetRuler.GetHerHim] to stay and study our governmental institutions"
+ grand_embassy.3.a.tt: "[from.GetGovernment.GetRuler.GetName] will learn about our government institutions"
+ invited_to_study_institutions: "Invited to Study Institutions"
+ grand_embassy.3.b: "Invite [from.GetGovernment.GetRuler.GetHerHim] to stay and study our army"
+ grand_embassy.3.b.tt: "[from.GetGovernment.GetRuler.GetName] will learn about our army organization"
+ grand_embassy.3.c: "Invite [from.GetGovernment.GetRuler.GetHerHim] to stay and study our navy"
+ grand_embassy.3.c.tt: "[from.GetGovernment.GetRuler.GetName] will learn about our naval organization"
+ grand_embassy.3.d: "[from.GetGovernment.GetRuler.GetSheHe|U] has overstayed [from.GetGovernment.GetRuler.GetHerHis] welcome..."
+ 
+ 
+ 
+ grand_embassy.4.title: "Generous Offer to Stay"
+ grand_embassy.4.desc: "Hearing of [ROOT.GetCountry.GetGovernment.GetRuler.GetName]'s reforms to modernize the [ROOT.GetCountry.GetLongName], [embassy_country.GetName] has graciously invited us to extend our stay in [embassy_country.GetCapital.GetName] to take the opportunity to study their technological advancements."
+ grand_embassy.4.a: "Let us stay and study [target_institution.GetNameWithNoTooltip]"
+ grand_embassy.4.b: "Let us stay and study their army"
+ grand_embassy.4.c: "Let us stay and study their navy"
+ grand_embassy.4.d: "No, we have other countries to visit"
+ grand_embassy.4.e: "The time has come to return home"
+ 
+ 
+ grand_embassy.5.title: "Request to Stay Turned Down"
+ grand_embassy.5.desc: "In our attempts to modernize [ROOT.GetCountry.GetName], the study of technological advancements in [ShowSubContinentName('western_europe')] could be valuable. Unfortunately, a request to prolong our stay in [embassy_country.GetCapital.GetName] in order to do so has been denied."
+ grand_embassy.5.a: "Very well, we have other countries to visit"
+ grand_embassy.5.b: "The time has come to return home"
+ 
+ 
+ grand_embassy.6.title: "Extended Visit Pays Off"
+ grand_embassy.6.desc: "[ROOT.GetCountry.GetGovernment.GetRuler.GetName]'s extended visit to [embassy_country.GetCapital.GetName] to personally study their technological advancements seems to have been worth the while."
+ grand_embassy.6.a: "Our governmental institutions will benefit from this!"
+ grand_embassy.6.b: "Our armed forces will benefit from this!"
+ grand_embassy.6.c: "Our navy will benefit from this!"
+ 
+ 
+ grand_embassy.7.title: "Grand Embassy Successful"
+ grand_embassy.7.desc: "Our visit to [embassy_country.GetCapital.GetCapitalName] has been a success but the time has come to move on. The question is where to?"
+ grand_embassy.7.a: "We still have other countries to visit"
+ grand_embassy.7.b: "The time has come to return home"

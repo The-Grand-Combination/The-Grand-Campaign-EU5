@@ -1,0 +1,57 @@
+﻿l_english:
+ papal_conclave_events.1.title: "Disagreeing Cardinals"
+ papal_conclave_events.1.desc: "During the Conclave to decide the next [ROOT.GetCountry.GetGovernment.GetRulerTitle], two cardinals have been engaging in a heated discussion that escalated into an open confrontation about each other's values rather than a simple exchange about the election itself.\n\nOn one side of the argument, there is the idea that God's work should be based on contemplation, regardless of the ebbs and flows of popular opinion. This view is shared by many of the most senior members of the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')], which hold that the [ROOT.GetCountry.GetGovernment.GetRulerTitle] should not alter his judgment to cater to those concerned only with earthly rewards, regardless of how much earthly power they might hold.\n\nOn the other side stand those that have gained their support mainly from the most influential and rich families among the [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')], arguing that a [ROOT.GetCountry.GetGovernment.GetRulerTitle] that completely disregards the concerns and interests of the people is a failure as God's shepherd, and that having the support of the people can only bring but benefits."
+ papal_conclave_events.1.a: "God will know their own."
+ papal_conclave_events.1.b: "Shepherds must indeed care for their flocks."
+ papal_conclave_events.1.c: "We must remain neutral."
+
+ papal_conclave_events.2.title: "Influencing the Vote"
+ papal_conclave_events.2.desc: "The Conclave has gathered to decide who will be the next [ROOT.GetCountry.GetGovernment.GetRulerTitle], and diplomacies and negotiations are rampant trying to influence that decision. With so many influential nations circling around such an important decision, we could perhaps try to tip the scales to get favor with some of them.\n\nIt will obviously not be a cheap endeavor, nor one guaranteed to succeed, but the benefits we can get from it if we can get the support of any nation behind a cardinal could give us great benefits."
+ papal_conclave_events.2.a: "Let us give them an incentive."
+ papal_conclave_events.2.b: "This is blasphemy!"
+ papal_conclave_events.2.tt: "[target_country.GetName] will receive our proposal. If they accept:"
+
+ papal_conclave_events.3.title: "A Proposal from the Conclave"
+ papal_conclave_events.3.desc: "A message has arrived from the [GetCountry('PAP').GetLongName], currently in the middle of the Conclave to elect the new [GetCountry('PAP').GetGovernment.GetRulerTitle]. They argue that the suitability of the next [GetCountry('PAP').GetGovernment.GetRulerTitle] is a matter that is as much political as is theological. As such, they have come to ask for our support in the current election, promising great benefits from our mutual cooperation."
+ papal_conclave_events.3.a: "Accept the proposal."
+ papal_conclave_events.3.b: "We will not interfere in the Holy See."
+
+ papal_conclave_events.4.title: "Offer Accepted"
+ papal_conclave_events.4.desc: "Our messenger to the [target_country.GetLongName] has come back with great news. The magnificent [target_country.GetGovernment.GetRulerTitle] of [target_country.GetNameWithNoTooltip] has decided to accept our proposition and offers us their support in the current Conclave election. Our diplomatic ties have been strengthened."
+ papal_conclave_events.4.a: "May the Lord bless them."
+
+ papal_conclave_events.5.title: "Offer Refused"
+ papal_conclave_events.5.desc: "The vile [target_country.GetGovernment.GetRulerTitle] of the [target_country.GetLongName] has decided to refuse our generous offer and has turned our backs on us. We are thus left without their support, but going against the wishes of the Holy See is not something that can be without consequences, and such insult will not soon be forgotten."
+ papal_conclave_events.5.a: "Damned be them to hell."
+
+ papal_conclave_events.6.title: "A Special Mass"
+ papal_conclave_events.6.desc: "While the Conclave is gathered to decide on the issue of the next [ROOT.GetCountry.GetGovernment.GetRulerTitle], concerns are starting to be heard among the populace. The inability of the Conclave to quickly decide on a candidate and the fear of it dragging for a long time without resolution are starting to generate unease in the heart of our faithful, who without the shepherd of [ShowReligionName('catholic')] to lead them feel lost and without course. A proposal has been raised to celebrate a special mass in [ROOT.GetCountry.GetCapital.GetName] to appease those concerns and show the people that the leadership of the Holy Church is still strong."
+ papal_conclave_events.6.a: "#italic Gloria in Excelsis Deo.#!"
+ papal_conclave_events.6.b: "We have more concerning matters."
+ papal_conclave_events.6.tt: "Every [pop|e] will gain [ShowNamedValue('pop_satisfaction_ultimate_bonus')|+=2%] [pop_satisfaction|e]. [pops|U] in our [capital|e] will gain an extra [ShowNamedValue('pop_satisfaction_ultimate_bonus')|+=2%] [pop_satisfaction]"
+
+ papal_conclave_events.7.title: "Disqualification of a Cardinal"
+ papal_conclave_events.7.desc: "During the current Conclave to decide the next [ROOT.GetCountry.GetGovernment.GetRulerTitle], the cardinals were already starting to get to an agreement on who to elect. However, new information surfaced concerning the favorite candidate and his past excesses both inside and outside the Church. Strong accusations were made, involving several vices such as debauchery, lechery, and other immoral practices.\n\nAlthough these past sins are not deserving of excommunication, and despite him having since then properly repented and atoned for them, he has seen his support quickly withdrawn. Thus, the Conclave is at risk of having to start their discussions from the beginning once again, dragging the decision even longer."
+ papal_conclave_events.7.a: "He is clearly not fit to be [ROOT.GetCountry.GetGovernment.GetRulerTitle]."
+ papal_conclave_events.7.b: "To err is human."
+
+ papal_conclave_events.8.title: "A Holy Bird"
+ papal_conclave_events.8.desc: "The Conclave is gathered to elect the new [ROOT.GetCountry.GetGovernment.GetRulerTitle], but its lack of celerity is starting to make people nervous. In the midst of this, news has arrived of a mysterious sighting in [ROOT.GetCountry.GetCapital.GetName]. Above its church's highest tower, there perched a bird loftily for a whole day without moving.\n\nThe exact nature of the bird is debated. Although one would think such happenings would be commonly associated with a dove, the reality is that popular descriptions of the bird include it being a hawk, an owl, a duck, a chicken, or even a crow. Regardless of its exact nature, this Holy bird, as some have started to call it, gathered admirers all over the city, and people came often to watch it.\n\nWe could use it as a symbol of God's hand moving in approval of the current Conclave, which would certainly calm people's nervousness."
+ papal_conclave_events.8.a: "A Holy life indeed."
+ papal_conclave_events.8.b: "Sometimes a bird is just a bird."
+
+ papal_conclave_events.9.title: "Election Confusion"
+ papal_conclave_events.9.desc: "The Conclave has the holy duty ordained by God to elect the next [ROOT.GetCountry.GetGovernment.GetRulerTitle]. The procedure usually goes without any major incident, albeit in some cases the difficulty in reaching an agreement may stall it for a while. However, the current Conclave has experienced a very unusual situation. Despite the election not being concluded, there is news spreading around [ROOT.GetCountry.GetCapital.GetName] that a new [ROOT.GetCountry.GetGovernment.GetRulerTitle] has already been chosen, as a name of the alleged new [ROOT.GetCountry.GetGovernment.GetRulerTitle] is already circulating among the populace.\n\nWe do not know the source of such false news, nor the intent behind it, but it is clear that the population is being misled. If not addressed, such confusion could lead not only to distrust from our populace but also a decrease in the authority and credibility of the actual next [ROOT.GetCountry.GetGovernment.GetRulerTitle] when he is finally elected."
+ papal_conclave_events.9.a: "Suppress this false news."
+ papal_conclave_events.9.b: "God's truth will triumph over the Devil's lies."
+
+ papal_conclave_events.10.title: "The Elected Candidate Refuses"
+ papal_conclave_events.10.desc: "The Conclave procedure is always an arduous one, and the relief of the cardinals once a candidate has been chosen is apparent. However, this time their faces quickly turned to disgust once the voting had concluded and the elected candidate had the gall to refuse the position.\n\nAlthough candidates have the right to refuse their election, that is not usually put into effect, or at least they have the decency and courtesy to express their intentions before the voting is made. Now the Conclave is forced to start the procedure once again."
+ papal_conclave_events.10.a: "How can one refuse God's calling?"
+ papal_conclave_events.10.b: "We can't force him to accept."
+
+ papal_conclave_events.11.title: "Papal Conclave Concluded"
+ papal_conclave_events.11.desc: "The papal conclave has finished debating on which Cardinal should be elected as the new [ROOT.GetCountry.GetGovernment.GetRulerTitle]. There were three major candidates, but which one won the election?"
+ papal_conclave_events.11.a: "The Cardinal of [first_candidate.GetNameWithNoTooltip]"
+ papal_conclave_events.11.b: "The Cardinal of [second_candidate.GetNameWithNoTooltip]"
+ papal_conclave_events.11.c: "The Cardinal of [third_candidate.GetNameWithNoTooltip]"

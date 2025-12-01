@@ -1,0 +1,92 @@
+﻿l_english:
+ hussite_flavor.1.title: "A Man of Culture"
+ hussite_flavor.1.desc: "It is widely accepted that our adherence to the teachings of [GetCharacter('boh_jan_hus').GetName] has inspired new places of worship and devotion, where pious expressions of art and theological debates are encouraged, in an effort to depict the divine and capture the essence of belief and prayer.\n\nOne such individual is [target_artist.GetName], who eagerly wishes to offer [target_artist.GetHerHis] services to help further our splendor, prestige, and acumen for art."
+ hussite_flavor.1.a: "[target_artist.GetHerHis|U] services will be of use."
+ hussite_flavor.1.b: "We cannot spare the coin."
+
+ hussite_flavor.2.title: "Prominent Members of the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')] Disagree with our Policies"
+ hussite_flavor.2.desc: "The guidance of our people is no easy task. As such, many members of the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] have attempted to climb our administrative hierarchy to correct the course of our actions, according to them. It is widely believed that several of our policies are either not enforced properly or outright go against [ShowReligionAdjective('hussite')] tenets."
+ hussite_flavor.2.a: "We must correct our course."
+ hussite_flavor.2.b: "They will be silent."
+
+ hussite_flavor.3.title: "Friends Beyond our Borders"
+ hussite_flavor.3.desc: "Despite our clashes with heretic faiths, at times bloody and all-encompassing, we do not wish to harm those who maintain good relations with us and respect our beliefs. One such case is [target_country.GetName], whose clerical authorities have recently engaged in cultural and literary exchanges across our borders. Should we utilize this in an intelligent manner, this might turn out to be a profound milestone in our diplomatic efforts abroad and secure us new allies."
+ hussite_flavor.3.a: "Reach out to them."
+ hussite_flavor.3.b: "Solitude is the path we walk upon..."
+ trust_religious_comprehension: "Religious Comprehension"
+
+ hussite_flavor.4.title: "Out of Tune with the Divine"
+ hussite_flavor.4.desc: "Have we not prayed enough lately? Has communion become a frivolous task attended by our people as a mere chore? It appears that we have trivialized the rituals around practicing the teachings of [GetCharacter('boh_jan_hus').GetName] and in the process lost the essence of what makes our piety an intimate connection with the divine. As a result, many commoners in [target_location.GetName] have taken up arms against the decadence that has gripped our clerical affairs..."
+ hussite_flavor.4.a: "Nought to blame but ourselves..."
+ hussite_flavor.4.b: "Blame weak [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')] leadership."
+ target_character_dies_very_violently_tt: "[target_character.GetName] will suffer a violent death at the hands of the mob"
+
+#New Events
+
+ hussite_flavor.5.title: "[target_location.GetNameWithNoTooltip] Strays Away"
+ hussite_flavor.5.desc: "Our people are famed for their tampering and sampling of foreign religions. There is truth in the belief that kindred faiths share many aspects in common. However, recent developments in [target_location.GetName] have taken this modest affair to new lengths, with many of our own peasants taking an interest in alien liturgical matters and sampling scripture from another faith!"
+ hussite_flavor.5.a: "They may sample the free expression of their devoutness!"
+ hussite_flavor.5.b: "We must gently intervene."
+ hussite_flavor.5.c: "How about they sample the whip?"
+ hussite_flavor.5.d: "Allow the flourishing of their beliefs."
+ hussite_flavor.5.e: "We will not allow this."
+
+ hussite_flavor.6.title: "Interfaith Cooperation"
+ hussite_flavor.6.desc: "There have been many whispers and discussions across our domain concerning the employment of heretic advisors, especially in influential spots within our cabinet. Despite the idle gossip, however, [target_character.GetName] has time and time again proved an indispensable part of our government. [target_character.GetHerHis|U] policies have assisted us in carving our domain and having a firm grip in both domestic and foreign affairs."
+ hussite_flavor.6.a: "[target_character.GetSheHe|U] must be banned from the cabinet!"
+ hussite_flavor.6.b: "Let the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')] bemoan [target_character.GetHerHis] appointment."
+ hussite_flavor.6.c: "Cooperation is key for our prosperity!"
+
+ hussite_flavor.7.title: "Humming Sermons in [target_location.GetNameWithNoTooltip]"
+ hussite_flavor.7.desc: "A golden dusk on a soft morning and the angelic voices of the early sermon playfully fill the air across the neighborhoods in [target_location.GetName]. Songs of plea and devotion, an elegant display of divinity are a regular display across our holy places. Today's sermon however was delivered with newfound love and expertise. As a result, the local folk wish to dedicate it as a sign of love recognition."
+ hussite_flavor.7.a: "Let them be dedicated to the faith!"
+ hussite_flavor.7.b: "They will sing the praise of [target_character.GetNameWithNoTooltip]."
+ hussite_flavor.7.c: "Sing the resilience and prosperity of our people."
+
+ hussite_flavor.8.title: "Religious Uproar in [target_location.GetNameWithNoTooltip]"
+ hussite_flavor.8.desc: "The debate around the matters concerning faith are no strangers to heated moments and rage. A recent discussion between minorities in [target_location.GetName] and representatives of the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] has led to the latter fleeing their posts in fear of their lives. As a result, we have received angry demands on their behalf to intervene in [target_location.GetNameWithNoTooltip] and put an end to a dangerous rebellion that may be brewing..."
+ hussite_flavor.8.a: "We must intervene."
+ hussite_flavor.8.b: "[ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')] matters are beneath us."
+ 
+ hussite_flavor.9.title: "The Teaching of Jan Hus Spreads"
+ hussite_flavor.9.desc: "A wind of change sweeps across the lands, carrying with it the revolutionary teachings of Jan Hus and the Hussite faith. The oppressed and disenchanted find solace and inspiration in these transformative beliefs, as they gather in defiance of the established order.\n\nThe fervor of the Hussite movement spreads like wildfire, engulfing the hearts and minds of the common people. The simplicity and directness of Hus's teachings resonate deeply, offering an alternative to the opulence and corruption of the Catholic Church. It is a time of upheaval, as individuals cast aside the shackles of tradition and embrace a new vision of spirituality."
+ hussite_flavor.9.a: "Inside our borders."
+ hussite_flavor.9.b: "To our neighbors."
+
+ hussite_flavor.10.title: "War Wagons & Military Tactics"
+ hussite_flavor.10.desc: "During the [ShowSituationName('hussite_wars')], the use of war wagons proved instrumental in the survival of the [ShowReligionAdjective('hussite')] armies. These heavily fortified and mobile defensive structures allowed largely peasant infantry to repel the devastating cavalry charges of their better-equipped enemies. The innovation was not only a response to the lack of traditional cavalry but a brilliant adaptation of available resources to overcome technological and tactical disadvantages.\n\nHowever, times have changed and the introduction of gunpowder, alongside new tactics have changed the playing field. Armies now depend on powerful barrages and agile formations, introducing new factors that we must become aware of. Many of our military theorists support the induction of new offensive techniques in our army, at the expense of traditional defense."
+ hussite_flavor.10.a: "We cannot betray our traditions!"
+ hussite_flavor.10.b: "Let us not depend on obsolete tactics, we need a reform!"
+ reform_hussite_army_tt: "As long as the [ShowModifier('hussite_military_reform_modifier')] [modifier|e] is active, we will have access to the [ShowParliamentIssueType('hussite_army_reform')] [parliament_issue|e]"
+ stability_loss_depends_on_defensive_sv_tt: "The loss of [stability|e] depends on our [ShowSocietyDirectionName('defensive')] [societal_value|e]"
+ event_may_reoccur_after_20_years_tt: "This [event|e] may reoccur after #Y 20#! years if we still follow [ShowReligionName('hussite')]"
+
+ hussite_flavor.12.title: "[ShowReligionAdjectiveWithNoTooltip('hussite')] Fanatics in [target_province.GetNameWithNoTooltip]"
+ hussite_flavor.12.desc: "Despite our best attempts to balance the needs and demands of the faithful within our [ROOT.GetCountry.GetFlavorRank], there are always those who demand more, those whose hunger for persecution will not cease. Such is the case of the [ShowReligionAdjective('hussite')] fanatics of [target_province.GetName], whose demands of heretic persecution has brought nothing but sacrilege and instability in the province. Their demands can easily be described as nonsensical, however we should handle this matter with utter care lest we risk turning them into martyrs!"
+ hussite_flavor.12.a: "Entertain their demands, for now."
+ every_hussite_in_target_province_10_sat_tt: "Every [ShowReligionAdjectiveWithNoTooltip('hussite')] [pop|e] in [target_province.GetNameWithNoTooltip] will gain [ShowNamedValue('pop_satisfaction_mild_bonus')|+=2%] [pop_satisfaction|e]"
+ hussite_flavor.12.b: "We do not negotiate with fools!"
+
+ hussite_flavor.11.title: "Hymns of the Faithful"
+ hussite_flavor.11.desc: "The believers gather to sing hymns that embody the spirit of our [ShowReligionAdjective('hussite')] movement. These songs not only inspire devotion but also shine a light upon our culture and ideas for the wider population. The melodies are inspired by the strength of our belief and praise the tenacity and prowess of the [ROOT.GetCountry.GetLongName]."
+ hussite_flavor.11.a: "Music to our ears!"
+
+ hussite_flavor.13.title: "An Exemplary Preacher"
+ hussite_flavor.13.desc: "A charismatic preacher within the [ShowReligionAdjective('hussite')] ranks in [target_location.GetName] has begun espousing views that diverge further than usual from our teachings. While some see [target_character.GetHerHim] as a visionary, others fear [target_character.GetSheHe] could cause a schism within our ranks. Members of the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] have been quite vocal about their stance on this ongoing matter, but there are valid concerns that locals may stir dissatisfaction should we move against such an influential figure."
+ hussite_flavor.13.a: "[target_character.GetHerHis|U] oratory skills may be of use to us."
+ hussite_flavor.13.b: "Make [target_character.GetHerHim] go away."
+ hussite_flavor.13.c: "It is time to purge these heretics in [target_location.GetNameWithNoTooltip]"
+ target_character_disappears: "[target_character.GetName] will disappear"
+
+ hussite_flavor.14.title: "The [ShowReligionAdjectiveWithNoTooltip('hussite')] Bible"
+ hussite_flavor.14.desc: "Efforts are underway to create the newest version of a complete [ShowReligionAdjective('hussite')] translation of the Bible, written in the vernacular to make scripture accessible to all. This undertaking has been met with enthusiasm from the faithful. Prominent religious figures, such as [target_character_1.GetName], [target_character_2.GetName], or [target_character_3.GetName], are offering to translate the publication, each with their own set of abilities and approach. Such a project would certainly not come cheap, but they argue in favor of financing such enlightened endeavors."
+ hussite_flavor.14.a: "[target_character_1.GetShortNameWithNoTooltip] is the [target_character_1.GetWomanMan] for the job."
+ hussite_flavor.14.b: "Assign the work to [target_character_2.GetNameWithNoTooltip]."
+ hussite_flavor.14.c: "Let [target_character_3.GetNameWithNoTooltip] oversee the translation."
+ hussite_flavor.14.d: "We cannot afford such expenses at the moment."
+
+ hussite_flavor.15.title: "Defenders of [ShowReligionAdjectiveWithNoTooltip('hussite')]"
+ hussite_flavor.15.desc: "As war rages on and enemies of the [ShowReligionAdjective('hussite')] faith draw ever closer, the call to defend our beliefs has stirred the hearts of men across the [ROOT.GetCountry.GetFlavorRank]. Inspired by sermons and the memory of [GetCharacter('boh_jan_hus').GetName], countless farmers, craftsmen, and townsfolk are ready to take up arms to protect their faith and homeland. Some leaders suggest organizing these men into militias and sending them to reinforce our armies on the frontlines. Others argue that they would be better suited to fortifying their towns and preparing barricades, ensuring a stubborn defense against any invader."
+ hussite_flavor.15.a: "They will dispense peace by force!"
+ hussite_flavor.15.b: "Send them to barricade our territories, instead."
+ scales_with_tolerance_own_tt: "The [manpower|e] gained scales with our [tolerance|e] of the [ShowReligionAdjectiveWithNoTooltip('hussite')] [religion|e]"

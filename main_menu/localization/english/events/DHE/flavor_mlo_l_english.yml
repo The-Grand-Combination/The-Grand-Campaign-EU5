@@ -1,0 +1,298 @@
+﻿l_english:
+ flavor_mlo.1.title: "The Ambrosian Republic"
+ flavor_mlo.1.desc.no_ally: "The city of [ROOT.GetCountry.GetCapital.GetName] was thrown into confusion by the sudden death of the [ROOT.GetCountry.GetGovernment.GetRulerTitle] without a respected adult [ROOT.GetCountry.GetGovernment.GetHeirTitle]. Influential citizens believed that the old republic that our country once had could be restored. Learned bodies, such as the College of Jurisprudence in [ShowLocationName('pavia')], painted the days of the old republic as a golden age. The merchants, viewing the prosperity of other Italian republics, were behind the idea.\n\nA proposal for declaring a republic was thus set, the claimants to the throne to be driven out of the city. The new republic would be named the Golden Ambrosian Republic, named after the 4th century Bishop of [ShowLocationNameWithNoTooltip('milano')]."
+ flavor_mlo.1.desc: "$flavor_mlo.1.desc.no_ally$\n\nOn the other hand, we could invite some other [ROOT.GetCountry.GetGovernment.GetGovernmentType.GetName] allied to us to take us under their wing and rule us together with their own country."
+ flavor_mlo.1.a: "For Saint Ambrose!"
+ flavor_mlo.1.b: "We will not go back to a republic."
+ mlo_against_ambrosian: "Against Saint Ambrose Republic"
+ establish_union_with_target_country_tt: "This option will end the [ShowDisasterName('ambrosian_republic_disaster')] [disaster|e] and create a [union|e] between us and the [target_country.GetLongName]"
+
+ flavor_mlo.2.title: "Guelph-Ghibelline Feud in Milano"
+ flavor_mlo.2.desc: "Internal dissent is prominent in Milan. The populace is severely divided between various factions. Guelph aristocrats being elected over Ghibellines weakens the Republic and makes it less democratic. However, some stability is needed!"
+ flavor_mlo.2.a: "Side with the Guelph"
+ flavor_mlo.2.b: "Favor the Ghibelline"
+
+ flavor_mlo.3.title: "The Ospedale Maggiore"
+ flavor_mlo.3.desc: "On [ROOT.GetCountry.GetGovernment.GetRuler.GetName]'s request, the renowned architect Antonio Filarete has drawn up plans for the new Ca'Granda Hospital, which once complete will be one of the first community hospitals in Italy. Dedicated to the people of Annunciata (who have been hesitant to recognize the [ROOT.GetCountry.GetGovernment.GetRulerTitle]'s authority), it shall be built in the new, fashionable Renaissance style."
+ flavor_mlo.3.a: "Let it be built!"
+
+ flavor_mlo.4.title: "Treaty of Lodi"
+ flavor_mlo.4.desc: "Our diplomats have negotiated a peace between ourselves, Naples, Florence, and Venice! Putting an end to the long struggles between Milan and Venice, it sets up a balance of power in northern Italy including the four great states of Italy. With luck, it will provide us with the security to consolidate our position."
+ flavor_mlo.4.a: "Peace in our time!"
+ mlo_peace_of_lodi: "Treaty of Lodi"
+ flavor_mlo.4.b: "This will get in the way of our ambitions..."
+
+ flavor_mlo.5.title: "Treaty of Lodi"
+ flavor_mlo.5.desc: "The Milanese have agreed to sign a peace treaty between themselves, Naples, Florence, and Venice! Putting an end to the long struggles between Milan and Venice, it sets up a balance of power in northern Italy including the four great states of Italy. With luck, it will provide us with the security to consolidate our position."
+ flavor_mlo.5.a: "Peace in our time!"
+
+ flavor_mlo.6.title: "[target_artist.GetNameWithNoTooltip]'s #italic $last_supper$#!"
+ flavor_mlo.6.desc: "There is truth in the statement that our most vibrant and glorious works of art are but mere symbols of our strength and resilience. However, humankind has value precisely in their ability for art and expression. The most direct way of channeling our cultural advancement and displaying our prestige is the creation of tremendous works of art, and one such chance has arisen recently, as the legendary artist [target_artist.GetName] has recently started seeking sponsorship funds for his next great work, #italic $last_supper$#!."
+ flavor_mlo.6.a: "We shall sponsor [target_artist.GetHerHim]!"
+ flavor_mlo.6.b: "We cannot afford this commission..."
+
+ flavor_mlo.9.title: "[target_artist.GetNameWithNoTooltip] visits [target_location.GetNameWithNoTooltip]"
+ flavor_mlo.9.desc: "One of the most legendary painters, a true Renaissance man has blessed our court with his presence. [target_artist.GetName] is known for his abilities far and wide and is sought after as he is famed for being an incredible painter, engineer, architect and so much more!"
+ flavor_mlo.9.a: "Leonardo, you are most welcome to stay!"
+ flavor_mlo.9.b: "We cannot afford his salary."
+ flo_target_artist_joins_our_court_tt: "[target_artist.GetName] joins our [ROOT.GetCountry.GetGovernment.GetCourtTitle]."
+ flavor_mlo.10.title: "The Center of Fashion"
+ flavor_mlo.10.desc: "The city of [target_location.GetName] became a center of fashion during the late middle ages, with the making of luxury goods so important that other languages used the word for the city itself to describe fine wares. In the early 16th century, over twenty thousand workers were employed in the silk industry, working hard at making the court the most splendid in Italy."
+ flavor_mlo.10.a: "This looks good..."
+
+ flavor_mlo.11.title: "A Growing Power in Northern Italy"
+ flavor_mlo.11.desc: "During our century, [ROOT.GetCountry.GetName] is experiencing significant growth and development, establishing ourselves as a thriving city-state in Northern Italy. The city's strategic location along major trade routes contributes greatly to its prosperity. [ROOT.GetCountry.GetNameWithNoTooltip] has become a center of commerce, attracting merchants and artisans from across Europe.\n\nIts population grows with leaps and bounds, and the urban landscape is adorned with the construction of impressive Gothic and Renaissance architecture, including iconic constructs of splendor and magnificence. The ruling [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetName] play a crucial role in fostering cultural and artistic patronage, transforming [ROOT.GetCountry.GetNameWithNoTooltip] into a vibrant hub of creativity.\n\nOur city's growing wealth and influence also fuels advancements in science, technology, and education, making [ROOT.GetCountry.GetNameWithNoTooltip] a beacon of progress during this dynamic period in history."
+ flavor_mlo.11.a: "We must concentrate around our central power."
+ flavor_mlo.11.b: "Let us reach out to the noble heads of our cities."
+
+ flavor_mlo.12.title: "The [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetNameWithNoTooltip] Family of [ROOT.GetCountry.GetNameWithNoTooltip]"
+ flavor_mlo.12.desc: "During the reign of [ROOT.GetCountry.GetGovernment.GetRuler.GetName] as the head of the [ROOT.GetCountry.GetLongName], the political situation is in the process of undergoing a significant transformation. [ROOT.GetCountry.GetGovernment.GetRuler.GetName], known for [ROOT.GetCountry.GetGovernment.GetRuler.GetHerHis] ambition and political acumen, has dreams of attempting the true unification of our splintered cities, many of which are spearheaded by disloyal families.\n\nIn a masterful diplomatic move to seize power, our advisors recommend we bide our time and use it to make plans that involve the expansion of the territories of [ROOT.GetCountry.GetNameWithNoTooltip] through military conquests and strategic alliances, as a way to consolidate the control over the region and unite the fractured city-states of the [ROOT.GetCountry.GetFlavorRank].\n\nThis would clear a path to implement effective administrative reforms and foster a flourishing cultural and artistic environment, eventually making [ROOT.GetCountry.GetNameWithNoTooltip] a prominent center of Renaissance culture but not before those among our family with royal ambitions are forced back in line."
+ flavor_mlo.12.a: "Patience, our time will come..."
+ flavor_mlo.12.b: "[ROOT.GetCountry.GetGovernment.GetRuler.GetNameWithNoTooltip] will prevail over [ROOT.GetCountry.GetGovernment.GetRuler.GetHerHis] scheming family at once!"
+
+ flavor_mlo.13.title: "A United Realm"
+ flavor_mlo.13.desc: "One pivotal event that exemplifies the evolution of [ROOT.GetCountry.GetName] from a loose association of city-states controlled by the [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetName] family to a more centralized entity is the ascension to power of [ROOT.GetCountry.GetGovernment.GetRuler.GetName] as the recognized ruler of [ROOT.GetCountry.GetNameWithNoTooltip] in [GetCurrentYear].\n\n[ROOT.GetCountry.GetGovernment.GetRuler.GetNameWithNoTooltip]'s ascension to the title of [ROOT.GetCountry.GetGovernment.GetRulerTitle], marks a shift towards a unified and centralized governance structure. The ascension solidifies the [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetNameWithNoTooltip] family's control over [ROOT.GetCountry.GetNameWithNoTooltip] and will soon pave the way for subsequent [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetNameWithNoTooltip] rulers."
+ flavor_mlo.13.a: "It is time for us to become a [ShowGovernmentTypeNameWithNoTooltip('monarchy')]!"
+ flavor_mlo.13.c: "The time has come for a more centralized authority."
+ flavor_mlo.13.b: "They may hold onto their decaying privileges for a while longer..."
+
+ flavor_mlo.14.title: "[target_character.GetNameWithNoTooltip] Completes the #italic Cronica Universalis#!"
+ flavor_mlo.14.desc: "[target_character.GetName], an Italian historian and chronicler, has authored the #italic Cronica Universalis#!, a significant historical work. Completed in [GetCurrentYear], the chronicle provides a comprehensive account of events spanning various regions and epochs, making it a valuable source for understanding medieval history.\n\n[target_character.GetNameWithNoTooltip]'s meticulous research and attention to detail are evident in the extensive documentation and chronology found within his latest work.$cronica_universalis_desc$\n\n[target_character.GetNameWithNoTooltip]'s contribution to historical scholarship through his publications will certainly leave a lasting impact on the study of medieval history and further our political and cultural influence."
+ flavor_mlo.14.a: "[target_location.GetName] is the center of scholarly innovation!"
+ flavor_mlo.14.b: "These publications will bring nothing but damnation upon us..."
+ 
+ flavor_mlo.15.title: "The Plight of [target_character.GetNameWithNoTooltip]"
+ flavor_mlo.15.desc: "[target_character.GetName], fueled by a burning desire for justice, has charged into the halls of [ROOT.GetCountry.GetCapital.GetName], intending to confront [ROOT.GetCountry.GetGovernment.GetRuler.GetName], the [ROOT.GetCountry.GetGovernment.GetRulerTitle] of [ROOT.GetCountry.GetName], demanding the truth about his father's killers.\n\nOur city is no stranger to plots of assassinations between brethren, and as fate would have it, it is [target_character.GetNameWithNoTooltip] who is caught up in a web of conspiracies, imagining shadows where there are none. For whatever purpose, he seems convinced that our dear [ROOT.GetCountry.GetGovernment.GetRuler.GetNameWithNoTooltip] had a hand in the assassination, surely a mere preposterous rumor..."
+ flavor_mlo.15.a: "All is just in the pursuit of power, [target_character.GetShortNameWithNoTooltip]!"
+ flavor_mlo.15.b: "Investigate and blame the other family members for the murder."
+ flavor_mlo.15.c: "We have ways to make you disappear..."
+
+ flavor_mlo.16.title: "[target_character.GetNameWithNoTooltip] Approaches our Court"
+ flavor_mlo.16.desc: "[target_character.GetName], seeking revenge for his father's death, approaches the court of [ROOT.GetCountry.GetCapital.GetName]. With a calculated proposition, he offers his military prowess and resources to aid in conquering [target_rival.GetName].\n\n[target_character.GetNameWithNoTooltip]'s burning desire for justice fuels his determination as he presents himself as a formidable ally against the ruler who took his father's life. Tension fills the air as his proposition hangs in the balance, awaiting our decision. Will his vendetta and offer of assistance prove irresistible, leading to an alliance that could change the course of [ROOT.GetCountry.GetName]'s history?"
+ flavor_mlo.16.a: "Shower him with coins, his struggle is now ours!"
+ flavor_mlo.16.b: "This is a valuable opportunity, with caution..."
+ flavor_mlo.16.c: "We do not negotiate with men who flee their court!"
+ 
+ flavor_mlo.17.title: "[target_character.GetNameWithNoTooltip] Assembles an Army"
+ flavor_mlo.17.desc: "In the bustling capital of [ROOT.GetCountry.GetName], [target_character.GetName], driven by ambition and a thirst for adventure, assembles the renowned mercenary company, Compagnia di Santo Giorgio. Armed with their swords and clad in sturdy armor, the mercenaries gather, ready to embark on daring exploits under [target_character.GetNameWithNoTooltip]'s command.\n\nWith a reputation for their skill and discipline, the company of men becomes a formidable force, attracting brave warriors from near and far. [target_character.GetNameWithNoTooltip], as a condottiero commander, intends to lead his company into the unknown, seeking fame, fortune, and glory on the battlefields of Europe. The streets of [target_location.GetName] buzz with anticipation as this audacious band of mercenaries wishes to set off on their perilous and exhilarating adventures."
+ flavor_mlo.17.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+ flavor_mlo.17.b: "We are done appeasing his musings, away with you vile beggar!"
+
+ flavor_mlo.18.title: "[target_character.GetNameWithNoTooltip] Presents the Liber Gestorum in Lombardy"
+ flavor_mlo.18.desc: "In the year [GetCurrentYear], [target_character.GetName], a skilled chronicler, has diligently finished and presents the #italic Liber Gestorum in Lombardy#!, a comprehensive chronicle documenting the rich history of Northern Italy. Under the patronage of [ROOT.GetCountry.GetGovernment.GetRuler.GetName], the ruler of the [ROOT.GetCountry.GetLongName], [target_character.GetNameWithNoTooltip] meticulously recorded the events, struggles, and triumphs that have shaped the region.\n\nWith a steady hand and a keen eye for detail, his vivid descriptions bring the past to life, captivating readers and preserving the collective memory of Lombardy. His work serves as a testament to the power of historical narratives and the enduring legacy of the [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetName] dynasty. In the halls of [target_location.GetName], [target_character.GetNameWithNoTooltip]'s presentation captivates the audience, leaving them with a profound appreciation for the history and heritage of their beloved domain."
+ flavor_mlo.18.a: "This will make a fine addition to our collection..."
+ flavor_mlo.18.b: "Why display it when we can sell it? To the highest bidder!"
+ 
+ flavor_mlo.19.title: "The [ROOT.GetCountry.GetGovernment.GetRuler.GetNameWithNoTooltip] Bridge"
+ flavor_mlo.19.desc: "In the ever-prosperous [ROOT.GetCountry.GetLongName], the [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] ardently request the swift completion of the [ShowBuildingTypeName('bridge_infrastructure')] in [target_location.GetName]. They firmly believe that its construction will foster prosperity, as it promises to facilitate the exchange of goods and people, enhancing trade routes across the region.\n\nThe bridge represents a tangible link between the merchants and [ROOT.GetCountry.GetGovernment.GetRuler.GetName], forging stronger relations and fostering mutual benefits. With each passing day, their anticipation grows, and the demands for the bridge's completion are growing louder."
+ flavor_mlo.19.a: "Very well, we will finance the construction."
+ flavor_mlo.19.b: "We cannot afford this."
+
+ flavor_mlo.20.title: "[target_character.GetNameWithNoTooltip]'s Arca di san Pietro Martire"
+ flavor_mlo.20.desc: "At an age where our people are conquering new heights in Renaissance arts, the talented sculptor [target_character.GetName] approaches [ROOT.GetCountry.GetGovernment.GetRuler.GetName] with a humble request. He seeks funding to bring his visionary creation, the Ark of Saint Peter the Martyr, to life.\n\nWith unwavering passion and conviction, [target_character.GetNameWithNoTooltip] passionately describes his masterpiece, envisioning it as a symbol of religious devotion and a testament to [ROOT.GetCountry.GetName]'s cultural greatness. Our advisors, captivated by [target_character.GetNameWithNoTooltip]'s passion and talent, have recognized the potential significance of the project and urge us to approve the funding."
+ flavor_mlo.20.a: "Money isn't an issue..."
+ flavor_mlo.20.b: "...but it isn't infinite either."
+
+ flavor_mlo.21.title: "Public Water Statutes of [GetCurrentYear]"
+ flavor_mlo.21.desc: "[target_location.GetName] is a city built on the marvels of water. For centuries, this crucial good has been acting as the primary force behind not only our citizens' primary needs and their sanitation but also as a key factor behind the growth of our industry, from paper mills to cloth shops and lumber mills.\n\nThus, it would be wise for us to appropriately ensure the continued health of our water supply, the maintenance of our canals, and the continued flow of this liquid gold."
+ flavor_mlo.21.a: "We will gladly foot such a bill."
+ flavor_mlo.21.b: "Let the estates maintain the waterways."
+ flavor_mlo.21.c: "We cannot afford this..."
+ 
+ flavor_mlo.22.title: "The University of [target_location.GetNameWithNoTooltip]"
+ flavor_mlo.22.desc: "By [GetCurrentYear], the university of [target_location.GetName] has made quite the name for itself within our borders. Praised for its highly capable instructors and its captivating lectures on the sciences, it enjoys an air of prominence and prestige.\n\nWith a clear vision of advancing knowledge and nurturing intellectual pursuits, our advisors and men of wealth have established the intellectual facilities as beacons of learning. Scholars and students alike flock to [target_location.GetNameWithNoTooltip], drawn by the promise of academic excellence and a vibrant intellectual community.\n\nThe university's foundations are laid, buildings rise, and lectures echo through its halls, fostering a thriving academic environment. Our dedication to education ensures that the university becomes a renowned center of learning, leaving an enduring legacy in the annals of intellectual history."
+ flavor_mlo.22.a: "What a brilliant institution!"
+ flavor_mlo.22.b: "We will make sure their funding is more than enough!"
+ flavor_mlo.22.c: "This is now our top priority!"
+
+ flavor_mlo.23.title: "The Cloth Industry of [ROOT.GetCountry.GetNameWithNoTooltip]"
+ flavor_mlo.23.desc: "In [GetCurrentYear], the cloth industry in [ROOT.GetCountry.GetName] thrives! Skilled artisans weave fine fabrics, including silk and fine cloth, renowned for their quality and craftsmanship. Northern Italian cities, such as [target_location.GetName], serve as centers of textile production, attracting merchants and buyers from far and wide.\n\nThe industry has come to play a vital role in the region's economy, generating wealth and employment opportunities. The exquisite textiles produced in Northern Italy are highly sought after, and have come to establish the region's reputation as a leading hub for the cloth industry."
+ flavor_mlo.23.a: "Let us further invest in this profitable venture!"
+ flavor_mlo.23.b: "We cannot afford this."
+ 
+ flavor_mlo.24.title: "The Cathedral of [target_location.GetNameWithNoTooltip]"
+ flavor_mlo.24.desc: "The construction of the [ShowBuildingTypeName('cathedral')] has reached its completion! Skilled craftsmen and architects have worked diligently to create the magnificent cathedral.\n\n$milan_cathedral_desc$"
+ flavor_mlo.24.a: "This is a declaration of the superiority of our culture!"
+ flavor_mlo.24.b: "We cannot afford such frivolous expenses."
+
+ flavor_mlo.25.title: "The Most Sovereign Master of Painting"
+ flavor_mlo.25.desc: "In [GetCurrentYear], the recent passing of the renowned artist Giotto reverberates through the art world. His legacy as a master painter and architect lives on, inspiring future generations through many of his works such as the #italic Scrovegni Chapel#! and the #italic Lives of Christ and the Virgin#!.\n\nThe question arises between our advisory councils regarding what to do with his prized artworks: whether to sell them or preserve them for posterity. Collectors and patrons appreciate the immense value of Giotto's art, making it a coveted asset. Ultimately, the decision lies in the hands of [target_character.GetName]. We would do well to carefully consider the preservation of his artistic legacy."
+ flavor_mlo.25.a: "He would want us to profit from his works one last time..."
+ flavor_mlo.25.b: "His works must be preserved!"
+
+ flavor_mlo.26.title: "Aspirations of Greatness"
+ flavor_mlo.26.desc: "Our recent advances in consolidating our power at home and abroad have led us to a very crucial crossroads in our historical position within Italy. For the very first time in centuries, we have the ability to pursue the ambitions of the Kingdom of Lombardy and solidify northern Italy under our grasp.\n\nHowever, many advisors within our court advocate against such aggressive maneuvers and suggest instead focusing our resources and time internally, for the benefit of our people. We must weigh the options carefully and consistently consider the needs and aspirations of our subjects.\n\nAs we strive to maintain a balance between external pursuits and internal welfare, we must engage in consultations with advisors and the prominent members of our society to make informed decisions that benefit both our people and our legacy as a whole."
+ flavor_mlo.26.a: "Lombardy is ours!"
+ flavor_mlo.26.b: "Let us take care of our people, instead."
+ 
+ flavor_mlo.27.title: "The Legitimization of Power"
+ flavor_mlo.27.desc: "The prominent nobles of [target_country.GetName] spearheaded by the great [target_character.GetName] have come to us with a delicate proposal. They demand the recognition of their dynasty as the legitimate crown holders of [target_country.GetNameWithNoTooltip].\n\nShould we engage with them in this diplomatic ceremony, we are sure to gain prestige and in turn legitimize our own domestic presence as the holders of the imperial crown. However, we should also be wary of a rising power in the peninsula..."
+ flavor_mlo.27.a: "Very well, [target_character.GetNameWithNoTooltip] will have [target_character.GetHerHis] crown."
+ flavor_mlo.27.b: "Their grasp for power will not have our seal on it!"
+
+ flavor_mlo.28.title: "The Emperor Refuses our Title"
+ flavor_mlo.28.desc: "Dire news is upon us. The snake [target_character.GetName] has denied to recognize our bid as the monarchical ruling dynasty of [target_country.GetName]! [target_character.GetSheHe|U] even went so far as to forcibly escort our diplomats out, denying them their stay after their long journey. This is a grave insult to us and our name, and we shall not forget it!"
+ flavor_mlo.28.a: "Emperor be damned, we will seize our title ourselves!"
+ flavor_mlo.28.b: "We cannot risk [target_character.GetHerHis] ire..."
+ flavor_mlo.29.title: "[target_character.GetNameWithNoTooltip] visits [target_location.GetNameWithNoTooltip]"
+ flavor_mlo.29.desc: "[target_character.GetName], also known as #Y Petrarch#!, the renowned poet and scholar, is widely celebrated for his exceptional contributions to Italian literature. His profound influence on the development of the sonnet form and his lyrical expressions of love and nature have changed literature forever.\nIn his contemplative musings, he has often expressed his fervent desire to relocate to the illustrious court of [target_location.GetName], where he believes his talents will be nurtured and his works will find greater appreciation.\n\nWith unwavering determination, Petrarch seeks to immerse himself in the vibrant cultural atmosphere of [target_location.GetNameWithNoTooltip], yearning for the opportunity to collaborate with fellow intellectuals and broaden his artistic horizons. Through his timeless writings and aspirations, [target_character.GetNameWithNoTooltip] embodies the enduring spirit of artistic pursuit and creative excellence."
+ flavor_mlo.29.a: "He is most welcome to stay!"
+ flavor_mlo.29.b: "We have other plans for our coin..."
+ 
+ flavor_mlo.30.title: "The Metallurgical Centers of [target_location.GetNameWithNoTooltip]"
+ flavor_mlo.30.desc: "In [GetCurrentYear], the metallurgical industry in Milan is experiencing significant development. Skilled artisans and craftsmen employ advanced techniques to extract and refine metals, resulting in a flourishing production of quality iron. The city has become an unforeseen hub for metallurgical innovation, attracting workers and entrepreneurs who seek growth opportunities.\n\nAs demand for metal products increases, we must decide whether to establish [target_location.GetName] as a prominent center for metalworking, by shifting our major centers of production from grain to iron. According to prominent merchants who reside in the city, the industry's expansion in [target_location.GetNameWithNoTooltip] during this period will foster economic prosperity and contribute to the city's reputation as a leading center of craftsmanship, armor, and weapons."
+ flavor_mlo.30.a: "Iron for our armies and workers!"
+ flavor_mlo.30.b: "We should not abandon our precious grain..."
+ 
+ flavor_mlo.31.title: "[target_province.GetNameWithNoTooltip] Demands Autonomy"
+ flavor_mlo.31.title.fallback: "Province Demands Autonomy"
+ flavor_mlo.31.desc: "In [GetCurrentYear], and during a most turbulent time, one of our provinces, [target_province.GetName], has demanded we hand them more autonomy on the basis of our weakened state and internal strife. They seek freedom from taxation and obligations to our crown, asserting their own governance and legal framework. The province may be experiencing various challenges and conflicts in its pursuit of independence, but its people remain determined to defend their sovereignty against our rule.\n\nThis is irrefutable evidence that prominent individuals in our domain have been biding their time, waiting to strike when we are most vulnerable! Alas, this offense will not be forgotten. We must rein in these unruly elements and rally the men in defense of the crown!"
+ flavor_mlo.31.a: "We must suppress their dissent."
+ flavor_mlo.31.b: "It's better to appease them..."
+ flavor_mlo.31.c: "Freedom? How about the whip?"
+ 
+ flavor_mlo.32.title: "A Man of Force and Determination"
+ flavor_mlo.32.desc: "[target_character.GetName] has recently risen to prominence as a skilled mercenary commander, known for his tactical brilliance and unwavering loyalty. His name carries weight on the battlefield, as he has led several of his troops with precision and fearlessness. With each victorious campaign, [target_character.GetLastNameWithNoTooltip]'s reputation grows, attracting the attention of the court of [ROOT.GetCountry.GetName]. He now stands before the influential figures of our court, impressing them with his charisma and military expertise, making a lasting impression as he navigates the intricate world of politics and power."
+ flavor_mlo.32.a: "He will make a fine addition to our court."
+ flavor_mlo.32.b: "We are not short of ambitious men of war..."
+ 
+ flavor_mlo.33.title: "Renovating the Palazzo Ducale"
+ flavor_mlo.33.desc: "During [GetCurrentYear], the Palazzo Ducale in [target_location.GetName] is planned to undergo a grand renovation, showcasing the city's wealth and artistic prowess. Originally a fortification rather than a palace and serving as the fortified residence of the [ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetName] dynasty, it is time to turn it into a palace worthy of the name. Skilled craftsmen meticulously make plans to restore its intricate frescoes and ornate sculptures, wishing to bring new life to the palace's interior. Various architects have been gathered to carefully design and implement structural improvements and subsequently ensure the stability and grandeur of the building. Artisans are set to adorn the halls with sumptuous tapestries and elegant furnishings, creating a regal atmosphere fit for royalty. The requested renovation project is slated to attract admiration and awe from visitors, solidifying the Palazzo Ducale's status as a cultural and architectural gem in [target_location.GetNameWithNoTooltip]."
+ flavor_mlo.33.a: "Begin posthaste!"
+ flavor_mlo.33.b: "We cannot afford this."
+
+ flavor_mlo.34.title: "The Equestrian Statue of [target_character.GetNameWithNoTooltip]"
+ flavor_mlo.34.desc: "[target_character.GetName] has approached our advisors with an interesting proposal. He assesses that the measure of a dynasty's splendor and prestige is measured only by the artistic and social print it leaves behind. Thus, to assist in solidifying our presence, he proposes to construct an #italic Equestrian Statue#! in [target_location.GetName] to honor our residing dynastic head. His vision for the grand sculpture captivates the court, as [target_character.GetNameWithNoTooltip] passionately describes his design and the significance it would hold for our city's prestige.\n\nOur most trusted men of the court strongly urge us to take him up on his proposal, recognizing his genius and the opportunity to leave a lasting legacy. The project may soon commence, with da Vinci meticulously working on every detail, infusing the statue with artistic brilliance and reverence for our country's reign. The people of [target_location.GetNameWithNoTooltip] eagerly await the completion of this magnificent tribute, knowing it will forever stand as a symbol of power and admiration."
+ flavor_mlo.34.a: "We will fund this endeavor."
+ flavor_mlo.34.b: "We cannot afford this."
+ 
+ flavor_mlo.35.title: "The Emperor's Response"
+ flavor_mlo.35.desc: "A messenger from the royal court of [target_character.GetName] has arrived! According to the news bearer, the Holy Roman Emperor has decided to recognize our bid for the Milanese crown. This recognition solidifies our state's authority and strengthens our position within the Empire.\n\nThe Emperor's declaration brings a sense of validation and prestige to our ruler's reign, fostering a renewed sense of pride and loyalty among the people of [ROOT.GetCountry.GetName]. With this official recognition, we can now govern with confidence and establish [target_location.GetName] as a prominent city within the realm of the Holy Roman Empire."
+ flavor_mlo.35.a: "We shall weave our own story!"
+ 
+ flavor_mlo.36.title: "Palazzo Reale di [target_location.GetNameWithNoTooltip]"
+ flavor_mlo.36.desc: "The Palazzo of [target_location.GetName] is a magnificent structure that encapsulates the grandeur of medieval architecture and has been the seat of our capital's government for generations. With proper funding, it shall stand as a testament to the power and opulence of the ruling elite. Its towering stone walls, adorned with intricate carvings and fortified towers, will evoke a sense of awe and reverence among all who approach it. Within its hallowed halls, resplendent tapestries will hang from vaulted ceilings, while nobles clad in regal garments engage in courtly affairs. The palace gardens, a verdant paradise, will offer respite from the bustling city, serving as a sanctuary for contemplation and leisure. A structure truly worthy of the name Palazzo Reale."
+ flavor_mlo.36.a: "A wonderful display of our house!"
+ flavor_mlo.36.b: "We cannot afford this"
+
+ flavor_mlo.37.title: "A Marriage Proposal for [target_character.GetLastNameWithNoTooltip]"
+ flavor_mlo.37.desc: "[target_character.GetName] is an ambitious individual, and [target_character.GetHerHis] military achievements are remarkable. Having someone like [target_character.GetHerHim] in our country is a double-edged sword, for as soon [target_character.GetSheHe] can help us reach greater highs as [target_character.GetSheHe] can decide [target_character.GetSheHe] wants the whole country for [target_character.GetHerselfHimself].\n\nPerhaps it would be best if we keep [target_character.GetHerHim] appeased for now. We could offer [target_character.GetHerHim] an offer to marry the [target_spouse.GetDaughterSon] of [ROOT.GetCountry.GetGovernment.GetRuler.GetName], [target_spouse.GetName], to keep [target_character.GetHerHim] satisfied and controlled at the same time."
+ flavor_mlo.37.a: "[target_character.GetNameWithNoTooltip] and [target_spouse.GetNameWithNoTooltip] shall marry."
+ flavor_mlo.37.b: "We do not want [target_character.GetHerHim] close to us."
+ flavor_mlo.37.tt: "[target_character.GetNameWithNoTooltip] will expect to receive the [ROOT.GetCountry.GetName] in the future"
+
+ flavor_mlo.40.title: "Integration of [target_location.GetNameWithNoTooltip] and [target_location2.GetNameWithNoTooltip]"
+ flavor_mlo.40.desc: "The strengthening grip of the [target_character.GetDynasty.GetName] can be felt like a tremor across all of northern [ShowRegionName('italy_region')] and especially [ShowAreaName('lombardy_area')]. The hegemony of the dynasty is certainly undisputed, and many dissidents are finally beginning to bend the knee to us. We could exploit this trend to incorporate the two lowly communes in [target_location.GetName] and [target_location2.GetName]."
+ flavor_mlo.40.historical_info: "In years 1347-1348, the expansionist Signoria of Milan invaded and integrated the two neighboring cities of Alessandria and Tortona alongside their holdings. The campaigns were led by the condottiero Luchino Visconti, one of the lords of Milan at the time."
+ flavor_mlo.40.a: "Make a move."
+ flavor_mlo.40.b: "Leave them be."
+
+ flavor_mlo.41.title: "#italic Navigliaccio#!"
+ flavor_mlo.41.desc: "There is a brand new proposal to link the two most significant cities of [ShowAreaName('lombardy_area')], the great settlements of [target_location.GetName] and [target_location2.GetName]. As per the suggestion, an artificial canal would be built between the two cities with a road running alongside them. Such an enhancement could be greatly beneficial for the cohesion of the entire province."
+ flavor_mlo.41.historical_info: "The #italic Navigliaccio#! was a canal constructed between Milan and Pavia intending to link the two cities closer together as well as to serve as irrigation for the #italic Visconti Park#! north of Pavia."
+ flavor_mlo.41.a: "Proceed with the plan."
+ flavor_mlo.41.b: "The funds are not there for such a process."
+ STATIC_MODIFIER_NAME_mlo_naviglaccio: "Canal Connection"
+
+ flavor_mlo.42.title: "Acquiring Land for Visconti Park"
+ flavor_mlo.42.desc: "Our estate in [target_location.GetName] is growing steadily. The architects are doing a splendid job and it seems like the palace will be cherished for years to come. However, [target_ruler.GetName] found it insufficient and has decided that no good [ROOT.GetCountry.GetGovernment.GetAdjective] residence is complete without hunting grounds. For that, [target_ruler.GetSheHe] intends to have land acquired for the purpose of creating a park. The intended land, however, is owned by the city dwellers."
+ flavor_mlo.42.historical_info: "The Visconti Park was a tract of land acquired by the Visconti Lord of Milan to enhance the splendor of their estate in Pavia. To acquire the land for the hunting grounds, Galeazzo II Visconti had to seize territories from the local city dwellers, causing wide unrest. One of the citizens that got their lands confiscated was Bertolino de' Sisti, whose lost income led him to have an attempt on Galeazzo's life."
+ flavor_mlo.42.a: "Force them to give up the land."
+ flavor_mlo.42.b: "Purchase it, no matter the cost."
+ flavor_mlo.42.c: "We need no vanities!"
+ STATIC_MODIFIER_NAME_mlo_royal_park: "Royal Park"
+
+ flavor_mlo.43.title: "Attempted Assassination"
+ flavor_mlo.43.desc: "The decision to seize land from the city dwellers has upset the population of [target_location.GetName]. During one of the parades in the city, a disgruntled citizen made an attempt on [target_ruler.GetName]'s life. We need to react promptly."
+ flavor_mlo.43.historical_info: "$flavor_mlo.42.historical_info$"
+ flavor_mlo.43.a: "Tell the guards to engage."
+ flavor_mlo.43.b: "Exercise caution."
+
+ flavor_mlo.44.title: "[mlo_dal_verme_scope.GetNameWithNoTooltip]"
+ flavor_mlo.44.desc: "Word has reached us of an exceptional condottiero in the service of our rivals. [mlo_dal_verme_scope.GetHerHis|U] name is [mlo_dal_verme_scope.GetName] and [mlo_dal_verme_scope.GetSheHe] could be a great asset for our military. Moreover, our foes would be much weaker if we were to 'poach' [mlo_dal_verme_scope.GetHerHim] from their hands."
+ flavor_mlo.44.historical_info: "Jacopo dal Verme was an Italian condottiero from the Veronese noble family of dal Verme. As most condottieri, he was hired by many different parties, but became distinguished for his work for the Milanese lords Galeazzo II and Gian Galeazzo, the latter appointing him as a captain general."
+ flavor_mlo.44.a: "We need [mlo_dal_verme_scope.GetHimHer] in our [ROOT.GetCountry.GetGovernment.GetCourtTitle]!"
+ flavor_mlo.44.b: "Nobody exceptional, honestly."
+
+ flavor_mlo.45.title: "[mlo_bernardino_corio_scope.GetNameWithNoTooltip]"
+ flavor_mlo.45.desc: "An exceptional writer, [mlo_bernardino_corio_scope.GetName], wishes to join our [ROOT.GetCountry.GetGovernment.GetCourtTitle] as a chief chronicler. If we are to believe [mlo_bernardino_corio_scope.GetHerHis] ambitions, [mlo_bernardino_corio_scope.GetSheHe] aims to create a complete work that would contain the history of our great city from its founding to the present day."
+ flavor_mlo.45.a: "Have [mlo_bernardino_corio_scope .GetHimHer] join us."
+ flavor_mlo.45.b: "We do not have the funds."
+
+ flavor_mlo.46.title: "#italic $mlo_historia_patria$#!"
+ flavor_mlo.46.desc: "Investing vast amounts of gold into [target_character.GetName] finally paid off. Though [target_character.GetHerHis] promises may have seemed ambitious at first, it seems the trust we professed in [target_character.GetHerHim] has actually brought us great benefits. Today, [target_character.GetHerHis] work is finally done and is consistently updated with the new annals that [target_character.GetSheHe] lives through."
+ flavor_mlo.46.a: "Continue funding this chronicle!"
+ flavor_mlo.46.b: "We would rather have a new palace built."
+
+ flavor_mlo.47.title: "[target_location.GetNameWithNoTooltip] in Trouble"
+ flavor_mlo.47.desc: "The [target_location.GetRank.GetName] of [target_location.GetName] is in danger. Surrounded by powerful enemies, they have been abandoned by their overlords, who intend to sell them off to us or another bidder. Powerless and exposed, their [target_location.GetRank.GetName] is ripe for the taking. Let us take it over."
+ flavor_mlo.47.a: "Exploit this opportunity."
+ flavor_mlo.47.b: "Focus on internal affairs."
+ STATIC_MODIFIER_NAME_MLO_recent_diplomatic_play: "Recent Diplomatic Play"
+
+ flavor_mlo.48.title: "League Against [target_dynasty.GetNameWithNoTooltip]"
+ flavor_mlo.48.desc: "The arrogant moves of the [target_dynasty.GetName] dynasty on the chessboard of [ShowRegionName('italy_region')] have alienated every other player participating, prompting opponents to start scheming. Their recent actions have only made matters worse, leading to the formation of a coalition against them involving many prominent dynasties and states in the north of the region. The [ROOT.GetCountry.GetLongName] is but one of the states aiming to defeat this rising hegemon. Alongside several other major players, we have been trying to contain the expansion of the dynasty, but to little result so far. Though the hostilities may have ceased for the time being, we cannot fret from continuing the fight."
+ flavor_mlo.48.historical_info: "The expansion of the Della Scala in the early 14th century spurred a coalition to form against them. The conflict against this 'Anti-scaligeri' league was sparked by the Veronese moves against the Republic of Venice in 1336. Not so long after its formation, many more powerful Northern Italian dynasties joined in and after 3 years of conflict, the domains of the Della Scala family were reduced to just the cities of Verona and Vicenza."
+ flavor_mlo.48.a: "Truly, we must contain them."
+ should_at_least_2_accept_we_will_declare_war_within_a_year_tt: "Should at least #Y 2#! of the following [countries|e] accept to join the front against [target_dynasty.GetName], a war will break out #R within a year#!"
+
+ flavor_mlo.49.title: "$flavor_mlo.48.title$"
+ flavor_mlo.49.desc: "$flavor_mlo.48.desc$"
+ flavor_mlo.49.a: "We will contain them!"
+ flavor_mlo.49.b: "We cannot afford powerful enemies."
+ flavor_mlo.49.historical_info: "$flavor_mlo.48.historical_info$"
+ should_we_accept_we_will_automatically_join_the_upcoming_war_within_next_year_tt: "Should we accept, we will join the upcoming war within the #R next year#!"
+
+ flavor_mlo.50.title: "$flavor_mlo.48.title$"
+ flavor_mlo.50.desc: "Our vast holdings across northern [ShowRegionName('italy_region')] have led to the creation of a coalition against us. Fools! So far, their limited campaigns have provided them with little results. Let us hope they have learned their lesson and will not return. Should they though, we will spare no expense in showing them the might of [target_dynasty.GetName]."
+ flavor_mlo.50.historical_info: "$flavor_mlo.48.historical_info$"
+ flavor_mlo.50.a: "Let them come!"
+
+ flavor_mlo.51.title: "[ROOT.GetCountry.GetGovernment.GetRuler.GetDynasty.GetNameWithNoTooltip] Palace"
+ flavor_mlo.51.desc: "Our pivot towards a more central capital and the formation of a unified state in [ShowAreaName('lombardy_area')] has severed our close connections with [milan_location.GetName]. With our focus on the [target_location.GetRank.GetName] of [target_location.GetName], it is certain that we need a grand residence to go on with it. As such, members of our [ROOT.GetCountry.GetGovernment.GetCourtTitle] have proposed the foundation of a new palace to signify the start of a new era."
+ flavor_mlo.51.historical_info: "After the conquest of Pavia in 1359, the Visconti decided to found a palace there. The site was chosen due to its centrality and role as a capital of the Lombard Kingdom - the residence was to be a symbol of the Milanese hegemony and spiritual successorship to the Kingdom." 
+ flavor_mlo.51.a: "Fund this development."
+ flavor_mlo.51.b: "It is but a vanity."
+ 
+ flavor_mlo.52.title: "[target_character.GetDynasty.GetNameWithNoTooltip] Library"
+ flavor_mlo.52.desc: "To bolster the prestige of the [target_location.GetName] and the glorious [target_character.GetDynasty.GetName] dynasty ruling it, a proposal has been made to compile the finest works of [ROOT.GetCountry.GetName] in a library created within the constructed #italic palazzo#!. The plan has already been approved; we are, however, yet to decide what we should focus on."
+ flavor_mlo.52.a: "Focus on storing knowledge."
+ flavor_mlo.52.b: "Preserve our glory days."
+ STATIC_MODIFIER_NAME_MLO_library_arts: "Library of Arts"
+ STATIC_MODIFIER_NAME_MLO_library_research: "Library of Sciences"
+ MLO_can_be_seized_and_must_be_protected: "The Library can be seized by any nation occupying the location of [target_location.GetName], removing the modifiers."
+ 
+ flavor_mlo.53.title: "Library of [target_location.GetNameWithNoTooltip]"
+ flavor_mlo.53.desc: "Having entered the city of [target_location.GetName] and taken control of the province, the famous local palace, and its treasure trove which is its library, have also fallen into our laps. Though we could choose to spare the library, we find little reason not to do so, other than trying to prevent further straining our relations with its owners."
+ flavor_mlo.53.a: "Loot it!"
+ flavor_mlo.53.b: "Focus on looting the city instead."
+ 
+ flavor_mlo.54.title: "Our Library Ruined!"
+ flavor_mlo.54.desc: "Those bastards in [library_ruiner.GetName] have violated the sanctity of our treasure trove. Though such actions are to be expected from a hostile army, we will not look for any excuses to justify their affront to scholarly traditions."
+ flavor_mlo.54.a: "They will pay for it!"
+
+ flavor_mlo.55.title: "The End of the [target_dynasty.GetNameWithNoTooltip]"
+ flavor_mlo.55.desc: "The pieces are in place, and our brothers-in-arms from [target_country_1.GetName] to the [target_country_2.GetLongName] are ready to strike immediately. [target_location.GetName] will run red with the blood of [target_character2.GetName]!"
+ flavor_mlo.55.a: "$delhi_situation.12.a$"
+ those_who_pledged_will_join_tt: "Those who pledged to join our war effort, will join our side against [target_enemy_country.GetName]"
+
+ #Tooltips
+ mlo_lodrisio_visconti_appeased_tt: "[target_character.GetName] will be appeased at the expense of other members of our ruling family"
+ mlo_lodrisio_visconti_scorned_tt: "[target_character.GetName] will flee our court"
+ mlo_visconti_struggle: "For as long as we remain fractured under the Visconti City-States Noble Privilege, our legitimacy and control over our territories will suffer"
+ mlo_waterways_estates_pay_tt: "Representatives of the [GetCountry('MLO').GetGovernment.GetEstateName('burghers_estate')], the [GetCountry('MLO').GetGovernment.GetEstateName('clergy_estate')] and the [GetCountry('MLO').GetGovernment.GetEstateName('nobles_estate')] will pay for the maintenance while suffering #R -20%#! [estate_satisfaction|e]"
+ mlo_access_restore_kingdom_lombardy_cabinet_action_tt: "We will gain access to the [ShowCabinetActionName('mlo_restore_kingdom_lombardy')] unique [cabinet|e] action for #Y 30#! years.\n\nThis action can integrate territories in [ShowAreaName('lombardy_area')], [ShowAreaName('emilia_area')], [ShowAreaName('piemonte_area')], [ShowAreaName('liguria_area')], [ShowAreaName('veneto_area')], and [ShowAreaName('tuscany_area')] [areas|e] much faster."
+ mlo_every_location_italy_5_control_tt: "Our locations in the Italian [region|e] will gain [ShowNamedValue('control_weak_bonus')|+=2%] [control|e]"
+ mlo_every_province_scope_province_tt: "Every owned [location|e] in the affected [province|e] will suffer the following:"
+ mlo_sforza_given_influence_tt: "[target_character.GetName] is given control of our armed forces"
+ mlo_sforza_joins_tt: "[target_character.GetName] will join our court" 
+ produce_any_fine_cloth_or_silk_tt: "We produce any [ShowGoodsName('fine_cloth')] or [ShowGoodsName('silk')]"
+
+ #Demands
+ italian_cloth: "Demand for Italian Cloth"
+
+ 
+ 
+ 
+ 
+ 

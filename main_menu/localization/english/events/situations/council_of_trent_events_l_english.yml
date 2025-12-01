@@ -1,0 +1,27 @@
+﻿l_english:
+ council_of_trent.2.title: "The $council_of_trent$ Ends"
+ council_of_trent.2.desc: "The $council_of_trent$ was convened in the hopes of reconciling the various schismatic churches that have emerged in the wake of the [ShowReligionAdjective('lutheran')] Reformation, but after a seemingly endless series of debates and negotiations, the results have been inconclusive. The decision has finally been made to disband the Council. May God have mercy on the souls of those who were not returned to the Church."
+ council_of_trent.2.a: "Reconciliation was a pipe dream."
+ council_of_trent.2.b: "Reconversion is a Reconciliation in its own right."
+ council_of_trent.2.c: "We are not so different after all."
+
+ council_of_trent.3.title: "The Fate of the Feast of Fools"
+ council_of_trent.3.desc: "The traditional practice of the Feast of Fools, where regular people elect a mock-bishop to parade through the street, has been heavily criticized by our [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')]. They accuse it as a subversion of our authority and claim that abuse of swapped roles is rampant. Peculiarly, this is also a stance taken by some [ShowReligionAdjective('lutheran')] reformers. If we would condemn the practice with an official degree signed by the [GetUniqueInternationalOrganization('catholic_church').GetLeaderTitle], we could show our willingness to adapt to the reformist movement gripping [ShowContinentName('europe')], while appeasing our own [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')]"
+ council_of_trent.3.a: "Forbid the practice."
+ disables_feast_of_fools: "This disables the event 'Feast of Fools' for [ShowReligionAdjective('catholic')] [countries|e]"
+ council_of_trent.3.b: "It is just harmless fun, let it continue!"
+
+ council_of_trent.1000.title: "The Reformation of the [ShowReligionAdjectiveWithNoTooltip('catholic')] Faith"
+ council_of_trent.1000.desc: "The successes of the [ShowReligionAdjective('lutheran')] movement can no longer go unchallenged. [target_character.GetHeSheFormal|U] has tasked a commission of cardinals with addressing the challenges posed by it - while the [ShowReligionAdjective('catholic')] faith itself must not be compromised, [target_character.GetHeSheFormal] and most cardinals are willing to admit that some [ShowReligionAdjectiveWithNoTooltip('lutheran')] complaints are valid. For instance, there can be no dispute that the frequent absenteeism of bishops and the worldly excesses of the clergy are a stain on the Church's reputation. Therefore, a Council will be convened in Trent to discuss how best to reform the Church to meet the challenge of the reformers and begin the process of Counter-Reformation."
+ council_of_trent.1000.a: "Convene the $council_of_trent$"
+ council_of_trent.1000.tt: "An invitation will be sent out to all [ShowReligionAdjectiveWithNoTooltip('catholic')] [countries|e]"
+ allow_law_changes_tt: "[laws|e] of the [THIS.GetInternationalOrganization.GetName] can now be changed and every [member|e] can propose [ShowResolutionName('policy_vote')]"
+
+ council_of_trent.1001.title: "The $council_of_trent$"
+ council_of_trent.1001.desc: "[target_character.GetHeSheFormal|U] has invited us to attend the $council_of_trent$ to debate the required reforms to remedy the corruption and other afflictions of the Church. The Council will discuss what constitutes [ShowReligionAdjective('lutheran')] heresy and consider the definition of Church teachings in the areas of Scripture and Tradition, Original Sin, Justification, Sacraments, the Eucharist in Holy Mass, and the veneration of saints. It will also try to answer [ShowReligionAdjectiveWithNoTooltip('lutheran')] disputes by considering curbs on practices that have become a stain on the Church's reputation, for instance, the frequent absenteeism of bishops and various worldly excesses of the clergy."
+ council_of_trent.1001.a: "We must deliberate on our position."
+
+ council_of_trent.1002.title: "A [ShowReligionAdjectiveWithNoTooltip('catholic')] Council"
+ council_of_trent.1002.desc: "The [GetCountry('PAP').GetGovernment.GetRulerTitle] has convened a council in an attempt to address the issues laid bare by the Reformation. While the intentions of some [ShowReligionAdjective('catholic')] members to reform the [GetInternationalOrganization('catholic_church').GetName] seem sincere, there are doubts whether they will take our concerns seriously and prevent the permanent split of the Church."
+ council_of_trent.1002.a: "We will have to see how far their efforts will go."
+ council_of_trent.1002.b: "A pathetic attempt at reconciliation."

@@ -1,0 +1,47 @@
+﻿aid_constantinople = {
+	ability = adm
+	allow_multiple = no
+	icon = develop_province
+	potential = {
+	has_variable = byz_unlocked_constantinople_cabinet_action
+		location:constantinople = {
+			is_capital = yes
+			owner = root
+		}
+	}
+	allow = {
+		has_variable = byz_unlocked_constantinople_cabinet_action
+		location:constantinople = {
+			is_capital = yes
+			owner = root
+		}
+	}
+	
+	select_trigger = {
+		looking_for_a = province
+		source = actor
+		target_flag = target
+		name = "byz_aid_constantinople_action_select_province"
+		none_available_msg_key = "byz_aid_constantinople_action_no_provinces"
+		column = {
+			data = name
+		}
+		column = {
+			data = primary_culture_percentage
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			any_location_in_province = {
+				is_capital = yes
+			}
+		}
+	}
+	
+	location_modifier = {
+		local_monthly_development = 0.02
+		local_population_growth = 0.0005
+		local_pop_promotion_speed = 0.05
+	}
+}

@@ -1,0 +1,164 @@
+﻿l_english:
+ church_aspects.1.title: "Pacifists Object to the War"
+ church_aspects.1.desc: "A growing pacifist movement is taking hold among the [ROOT.GetCountry.GetAdjective] people and has even been endorsed to some extent by the state. Despite this we find ourselves in a war of aggression. While we surely had excellent reasons to attack, the pacifists take issue with the war and are refusing to fight."
+ church_aspects.1.a: "We will respect their beliefs."
+ church_aspects.1.b: "All who are called must serve."
+
+ church_aspects.2.title: "Blessed are the Peacemakers"
+ church_aspects.2.desc: "Years of peace have fostered the growth of a pacifist movement within the [ROOT.GetCountry.GetReligion.GetAdjective] faith in [ROOT.GetCountry.GetName]. A respected pacifist theologian has spoken out to the people in support of our benevolent regime and urges all true Christians to follow the righteous example of the [ROOT.GetCountry.GetGovernment.GetRulerTitle]."
+ church_aspects.2.a: "We are all children of God."
+ 
+ church_aspects.3.title: "Vows of Poverty"
+ church_aspects.3.desc: "Many [ROOT.GetCountry.GetReligion.GetAdjective] sects reject the hoarding of clerical wealth, associating it with the sinful decadence of the Catholic Church. Vows of poverty among priests are becoming common and the [ROOT.GetCountry.GetAdjective] Church is increasingly confining itself to spiritual matters and refraining from interfering in temporal matters of state or land."
+ church_aspects.3.a: "Encourage clerical vows."
+ church_aspects.3.b: "There are merits to a powerful Church."
+ 
+ church_aspects.4.title: "Sinful Noble"
+ church_aspects.4.desc: "The [ROOT.GetCountry.GetAdjective] Church believes that nobody, regardless of wealth or status, is beyond the laws of god. All who sin must be punished accordingly.\n\n[sinful_noble.GetName] has publicly and shamelessly committed the sin of greed, grievously offending the clergy and prompting calls for punishment."
+ church_aspects.4.a: "None are above the laws of God."
+ church_aspects.4.b: "Make the punishment purely symbolic."
+
+ church_aspects.5.title: "Avarice"
+ church_aspects.5.desc: "Some members of our State Church have suffered dearly due to excessively high-interest rates, voices are being raised and pamphlets circulated condemning 'Usury and Fraud' and claiming that petty brokers are to be seen in every street.\n\nIt is the view of our State and its Church that charging interest is compatible with being a good Christian yet in some cases it seems it can lead to excesses. Perhaps it would be best to further decrease the allowed amount of interest to curb the worst cases."
+ church_aspects.5.a: "Ignore the naysayers."
+ church_aspects.5.b: "Let us decrease the interest limit for a while."
+  
+ church_aspects.6.title: "Criticism of Official Bible"
+ church_aspects.6.desc: "Having a Bible Translation sanctioned by the state has done much to unify the [ROOT.GetCountry.GetReligion.GetAdjective] faith in our country and it is the opinion of both the general public and most theologians that our translation has resulted in a book far more true to the origins of our religion.\n\nThere are, however, also some who find the official Bible translation very lacking. While one group claims that it is simply outdated and in need of modernization, others think that it is too favorable to the ruling state and that we have attempted to make use of it to pacify our subjects. Others again simply see it as not going far enough and still maintaining many of the errors that have accumulated over the years in previous versions of the Bible."
+ church_aspects.6.a: "Stand by the existing version."
+ church_aspects.6.b: "Order a new translation."
+ 
+ church_aspects.7.title: "[ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')] Invest their Earnings"
+ church_aspects.7.desc: "Our bold deviation of the general [ShowReligionGroupAdjective('christian')] doctrine to allow usury has paid off greatly. Our [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] are wealthier than ever before and they are thriving upon the interests they are allowed to charge. As a sign of gratitude towards [target_ruler.GetName], they have decided to sponsor a project in [target_location.GetName]."
+ church_aspects.7.a: "A new [ShowBuildingTypeNameWithNoTooltip('university')] will be a welcome addition."
+ church_aspects.7.b: "Building a new [ShowBuildingTypeNameWithNoTooltip('cathedral')] will surely please [ROOT.GetCountry.GetReligion.GetGodName]."
+
+ church_aspects.8.title: "Preaching in Poverty"
+ church_aspects.8.desc: "Ever since [ShowReligiousAspectName('clerical_poverty')] has become common among our [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')], our preachers have had an easier time conveying their message to the common folk of our lands. Living in poverty seems to have made our clergymen more relatable and makes our subjects more approachable." 
+ church_aspects.8.a: "We are all the same in the eyes of God."
+ church_aspects.8.b: "Praise these preachers for their work."
+
+ church_aspects.9.title: "Equal Punishment" 
+ church_aspects.9.desc: "Punishment of all sinners, regardless of their social standing, has lauded the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] much praise and due to our church service the people of [ROOT.GetCountry.GetName] feel equal before God. With a bit of guidance, this sentiment might lead to a decrease of barriers in our social structure."
+ church_aspects.9.a: "We can benefit from this situation."
+ church_aspects.9.b: "This will stabilize [ROOT.GetCountry.GetNameWithNoTooltip]."
+
+ church_aspects.10.title: "Local [ShowGoodsNameWithNoTooltip('wine')] for our Services" 
+ church_aspects.10.desc: "The harvests in [ROOT.GetCountry.GetCapital.GetMarket.GetName] have been plentiful and therefore our stockpiles of [ShowGoodsName('wine')] are full. This means that in the foreseeable future our Church will be able to perform the Lords Supper widespread and without any fear of depleting the [ShowGoodsNameWithNoTooltip('wine')] Cellars."
+ church_aspects.10.a: "The [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('peasants_estate')] will be overjoyed." 
+ church_aspects.10.b: "The [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')] should be happy."
+
+ church_aspects.11.title: "[ROOT.GetCountry.GetAdjectiveWithNoTooltip] Churches Plead for Help"
+ church_aspects.11.desc: "We received several reports from our [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] about the dire state of the supply of communion [ShowGoodsName('wine')]. Due to the recent bad harvests, churches all over the countryside struggle to reliably perform the Communion under both kinds."
+ church_aspects.11.a: "Try to help with a generous donation."
+ church_aspects.11.b: "They will manage without help."
+
+ church_aspects.12.title: "Sufficiency of the Scripture"
+ church_aspects.12.desc: "Our Church believes that study of the Bible is all one person has to do to lead a true [ShowReligionGroupAdjective('christian')] life. With advancements in printing techniques and the subsequent availability of Bibles, this goal seems to be more achievable than ever for our people. These devoted studies ensure us stability and a content population."
+ church_aspects.12.a: "Let them study." 
+ church_aspects.12.b: "Further the stability of the realm."
+
+ church_aspects.13.title: "Failure of the Scripture"
+ church_aspects.13.desc: "Our doctrine of [ShowReligiousAspectName('sola_scriptura')] does no good if our population is not able to study the Bible to reach Salvation. Without proper instruction on how to read and write, our people will not be able to rely on the Holy Book for reassurance. As the sovereign we need to tackle this issue."
+ church_aspects.13.a: "Blame the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')]."
+ church_aspects.13.b: "Invest into our education."
+
+ church_aspects.14.title: "Adamites in Society"
+ church_aspects.14.desc: "Under the myriad of sects in the reformist movements, the Adamites are considered among the most radical ones. Even beyond the rejection of clothing, their refusal of the communion and priesthood as a whole has the potential to stir a lot of conflicts with both their countrymen and foreign powers. Yet, boldly embracing this doctrine comes with some benefits for us. Their naked church services and living erode the status of the individual and foster a common understanding."
+ church_aspects.14.a: "For the greater good."
+ church_aspects.14.b: "We will form a welcoming community" 
+
+ church_aspects.15.title: "Decline of Productivity"
+ church_aspects.15.desc: "Our broad acceptance of the Adamite Communities in [ROOT.GetCountry.GetName] has led to a decline of our capital economy and the entrenchment of a more traditional approach of production. " 
+ church_aspects.15.a: "We have to accept this."
+ church_aspects.15.b: "Push this trend back."
+
+ church_aspects.16.title: "Adamites Disturb the Supper"
+ church_aspects.16.desc: "The Adamite doctrine commands us to reject the Lord's Supper that is usually administered during our gatherings. Since the [ROOT.GetCountry.GetAdjective] Church elevated both the Adamites and the communion of bread and wine, these views now led to violent clashes between Adamites and regular believers during services." 
+ church_aspects.16.a: "We should have seen this coming."
+
+ church_aspects.17.title: "A Bright Priest" 
+ church_aspects.17.desc: "Having the freedom to share theological views certainly has its perks. Our people are not afraid of persecution for their beliefs and are able to conduct their endeavors without fear. Recently, reports of small scientific breakthroughs reached us, made by a local priest and researcher who would have been deemed a heretic under the old religious order." 
+ church_aspects.17.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+ church_aspects.17.b: "What an exceptional individual."
+
+ church_aspects.18.title: "Dissenters Obstruct our Preachers"
+ church_aspects.18.desc: "Our decision to allow every person to freely share and carry their version of the true faith does not only garner sympathies among our established [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')]. Multiple churches are complaining about contrarian preachers obstructing their efforts to establish a cohesive Church doctrine for our country."
+ church_aspects.18.a: "This is only natural."
+ church_aspects.18.b: "Appease the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')] with a Donation."
+
+ church_aspects.19.title: "Ascetic Work Ethic"
+ church_aspects.19.desc: "While having turned our back on most of the old practices, [ShowReligiousAspectName('asceticism')] remains at the center of our faith. Our [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] have adapted these teachings into their everyday life and work zealously and rigorously." 
+ church_aspects.19.a: "This will surely shape our Society." 
+ church_aspects.19.b: "The [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')] will entrench abstinence in our society."
+
+ church_aspects.20.title: "Backlash Against Ascetic Communities" 
+ church_aspects.20.desc: "Since the Establishment of [ShowReligiousAspectName('asceticism')] in the [ROOT.GetCountry.GetAdjective] Church, minor conflicts have arisen between ascetic sects and other communities of our faith. Groups of [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] are clashing, accusing each other of wrong worship. We should act fast if we do not want to appear weak in front of our subjects." 
+ church_aspects.20.a: "Punish these [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('peasants_estate')]." 
+ church_aspects.20.b: "The [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('crown_estate')] will take responsibility."
+
+ church_aspects.21.title: "[location_monastery.GetNameWithNoTooltip] Benefits from [ShowBuildingTypeNameWithNoTooltip('monastery')]" 
+ church_aspects.21.desc: "Our local administration in [location_monastery.GetName] reported a growth of their local industry. The re-establishment of monasteries in our country seems to facilitate our output of raw materials and helps the local economy flourish."
+ church_aspects.21.a: "Let these Monks continue at home."
+ church_aspects.21.b: "People should follow their example."
+
+ church_aspects.22.title: "Fear of Crypto-Catholics"
+ church_aspects.22.desc: "The establishment of a new [ShowBuildingTypeName('monastery')] is seen as an unusual act by our Church. These institutions could lead to a reversal of the reformist efforts in [ROOT.GetCountry.GetName] and a resurgence of [ShowReligionAdjective('catholic')] beliefs. If we do not tread carefully and keep a close eye on these communities this could escalate further."
+ church_aspects.22.a: "Restrict the rights of the [ShowBuildingTypeNameWithNoTooltip('monastery')]."
+ church_aspects.22.b: "There is no need to worry."
+
+ church_aspects.23.title: "[target_country.GetNameWithNoTooltip] Follows our Example"
+ church_aspects.23.desc: "A printer in [target_country.GetName] has published his own version of the bible. For this arduous work, he used our bible as a basis, translating from our previous achievement. This is a high honor to receive for our own translators and highlights our status within the movement of the Reformation."
+ church_aspects.23.a: "Leverage this for worldly affairs."
+ church_aspects.23.b: "Let it speak for itself, no need to be prideful."
+ source_of_translation: "Pioneers of Translation"
+
+ church_aspects.24.title: "Mass Conversions in [target_province.GetNameWithNoTooltip]"
+ church_aspects.24.desc: "Our practice of adult baptism seems to have driven more people in [target_province.GetName] to take the final step in converting to [ROOT.GetCountry.GetReligion.GetName]. It seems like our insistence in only baptizing those who are accountable of their own profession of faith makes it far easier to convince people peacefully to join our Church."
+ church_aspects.24.a: "Promote it even further in [target_province.GetNameWithNoTooltip]."
+ church_aspects.24.b: "[ROOT.GetCountry.Custom('common_string_positive')]"
+
+ church_aspects.25.title: "Outcast in the [ROOT.GetCountry.GetReligion.GetAdjectiveWithNoTooltip] Reformation"
+ church_aspects.25.desc: "Our position on the believers' baptism seems to be very unpopular in other areas of the [ROOT.GetCountry.GetReligion.GetAdjective] Reformation. Other countries turn hostile once they hear of our refusal to baptize infants and take a stance that they would not even take against the accursed [ShowReligionAdjective('catholic')] fools."
+ church_aspects.25.a: "Always forward, never backward!"
+ church_aspects.25.b: "We will need to accommodate them."
+ too_radical_reformation: "Radical Reformers"
+
+ church_aspects.26.title: "A United Faith Under [target_ruler.GetNameWithNoTooltip]"
+ church_aspects.26.desc: "In the role of head of faith, [target_ruler.GetName] has unified the true believers into a strong union. Our beloved [ROOT.GetCountry.GetGovernment.GetRulerTitle] has worked day and night to clarify our doctrine and to seek only the best theologians as [target_ruler.GetHerHis] advisors on the matter."
+ church_aspects.26.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+ church_aspects.26.b: "We can not stop the work now."
+
+ church_aspects.27.title: "A Faith Without a Leader"
+ church_aspects.27.desc: "Our country's lack of a leader is severely impacting the ability of our Church to function. The strong centralization of our clerical matters under [ROOT.GetCountry.GetGovernment.GetRulerTitle] is now haunting us as our country is leaderless. Without any investment, the faith of the people might crumble, unless we strengthen their resolve."
+ church_aspects.27.a: "We need to act."
+ church_aspects.27.b: "It will sort itself out."
+
+ church_aspects.28.title: "A Creed against [target_ruler.GetNameWithNoTooltip]"
+ church_aspects.28.desc: "A group of people in [target_location.GetName] has published a new creed, which ends with a declaration of nonconformity with the decree of the [ROOT.GetCountry.GetGovernment.GetRulerTitle] in religious matters. If we do not act, their creed could spread within [target_location.GetNameWithNoTooltip] and undermine our control."
+ church_aspects.28.a: "Let them have their way."
+ church_aspects.28.b: "Remove them from [target_location.GetNameWithNoTooltip]."
+
+ church_aspects.29.title: "A Creed Catches On"
+ church_aspects.29.desc: "Our grant to let every faithful believer choose their creed has produced a truly impressive confession. Coming from [target_location.GetName], a new profession of faith quickly caught on and inspired our people. Although we promote the freedom of the individual, this confession strengthened the faith of [ROOT.GetCountry.GetName] like little else before."
+ church_aspects.29.a: "Let us celebrate the achievement of our people."
+ church_aspects.29.b: "[ROOT.GetCountry.Custom('common_string_positive')]"
+
+ church_aspects.30.title: "A New Source of Faith"
+ church_aspects.30.desc: "A community of faithful worshippers in [target_location.GetName] claim a new source of divine revelation. This new tradition, that likely emerged from our promotion of [ShowReligiousAspectName('prima_scriptura')] doctrine has formed a strong core of believers in [target_location.GetNameWithNoTooltip], leading to a peaceful and thriving community."
+ church_aspects.30.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+
+ church_aspects.31.title: "Tradition Defies [target_ruler.GetNameWithNoTooltip]"
+ church_aspects.31.desc: "One of our pastors in [target_location.GetName] seems to have strayed far from our designated doctrine. While we do promote other sources of divine truth other than the Bible itself, [target_character.GetSheHe] seems to discard it entirely in [target_character.GetHerHis] sermons, focusing on other topics instead. Unless we want to risk heresy to spread, we should probably remove [target_character.GetHerHim] from [target_character.GetHerHis] position."
+ church_aspects.31.a: "[target_character.GetSheHe|U] is clearly a heretic!"
+ church_aspects.31.b: "[target_character.GetSheHe|U] might turn out to be useful."
+
+ church_aspects.32.title: "Pietist Praise Our Church"
+ church_aspects.32.desc: "A notable pietist, who has settled in our country, is praising our defiance of the orthodox doctrine of our faith and our embrace of new forms of the faith. [target_character.GetSheHe|U] is offering us [target_character.GetHerHis] advice and continuous preaching, if we want [target_character.GetHerHim] in our [ROOT.GetCountry.GetGovernment.GetCourtTitle]."
+ church_aspects.32.a: "Employ [target_character.GetHerHim]."
+ church_aspects.32.b: "Reap the praise."
+
+ church_aspects.33.title: "A New Pietist Movement"
+ church_aspects.33.desc: "A group of pietist preachers and educators has published an accusatory document, proclaiming the flaws of our Church. They renounce parts of our doctrine as misguided and plead for a change in course."
+ church_aspects.33.a: "Concede to their points."
+ church_aspects.33.b: "Push back against their preaching."

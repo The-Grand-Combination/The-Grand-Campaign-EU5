@@ -1,0 +1,5 @@
+﻿l_english:
+ flavor_oyo.1.title: "[ShowUnitDefinitionNameWithNoTooltip('a_esho_cavalry_oyo')]"
+ flavor_oyo.1.desc: "With cavalry being the dominant force within [ROOT.GetCountry.GetName], [target_character.GetName] has decided to create an elite force, called [ShowUnitDefinitionName('a_esho_cavalry_oyo')]. We can use them as specialized regiments, or we can integrate them with the rest of the army."
+ flavor_oyo.1.a: "They will be separated from the rest of the army."
+ flavor_oyo.1.b: "Let them be with the rest of the regiments."

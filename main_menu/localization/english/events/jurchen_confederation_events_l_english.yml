@@ -1,0 +1,90 @@
+﻿l_english:
+
+ #Jurchen Confederation Events
+
+  jurchen_confederation_events.1.title: "Times are Changing"
+  jurchen_confederation_events.1.desc: "Not long ago, our forefathers and their fathers before them, hunted and fed our people with the horse, battled our foes and lived a free life. Now, emissaries from [target_jc_leader.GetName] wish to neuter us, dull our edge and do away with our proud traditions as tribal lords of our lands. They insist that adopting the ways of our Southern neighbors is the way, getting rid of our identity in the process."
+  jurchen_confederation_events.1.a: "Get off that high horse and listen, they are correct!"
+  jurchen_confederation_events.1.b: "Neigh! Away with you!"
+
+  jurchen_confederation_events.2.title: "A Worthy Horsemaster"
+  jurchen_confederation_events.2.desc: "Not many have distinguished themselves on the horse as [target_character.GetName]. [target_character.GetHerHis|U] archery skills have won us many a prestigious contests, proving our battlefield prowess to our belligerent neighbors. However, our advisors across our court have touted that [target_character.GetHeSheFormal] would make for a fine diplomatic gift to the leaders of our Confederation in [target_jc_leader.GetName]."
+  jurchen_confederation_events.2.a: "Bah! [target_character.GetShortNameWithNoTooltip]'s home is here!"
+  jurchen_confederation_events.2.b: "Very well, let us hope they accept [target_character.GetHerHim]..."
+
+  jurchen_confederation_events.3.title: "A Gift from [target_member.GetNameWithNoTooltip]"
+  jurchen_confederation_events.3.desc: "Emissaries from our confederation members in [target_member.GetName] have arrived bringing gifts to befriend our people. Among them, an able-bodied individual, touted to have won several archery and riding tournaments across the lands back home. [target_character.GetShortName] is eager to begin a new adventure in a new court and excitedly awaits [target_character.GetHerHis] introductory ceremony."
+  jurchen_confederation_events.3.a: "[target_character.GetSheHe|U] will make a great addition to our ranks, welcome!"
+  jurchen_confederation_events.3.b: "Away with you, vile beggar."
+
+  jurchen_confederation_events.4.title: "The Foundation of our Society"
+  jurchen_confederation_events.4.desc: "Our people have survived the turbulence of hundreds of years. Wars, famine and prospecting conquerors have failed to douse the fire that burns brightly within our hearts. However, our recent rivalry with [target_jurchen_country_2.GetName] has started to become quite the bother. Their horsemen have often crossed our borders, riding all the way to our farmlands only to allegedly steal and pillage our crops, endangering our folk in the process. This behavior cannot be tolerated, nor shall it be enabled!"
+  jurchen_confederation_events.4.a: "[ROOT.GetCountry.Custom('common_string_nothing_we_can_do')]"
+  jurchen_confederation_events.4.b: "Escalate the complaint to our confederation leader immediately!"
+
+  jurchen_confederation_events.5.title: "Rivalry Between [target_jurchen_country_1.GetNameWithNoTooltip] & [target_jurchen_country_2.GetNameWithNoTooltip]"
+  jurchen_confederation_events.5.desc: "There is no shame in having hot blood, on any other day it would be a quality applauded by our people. However, the recent rivalry between the leaders of [target_jurchen_country_1.GetName] and [target_jurchen_country_2.GetName] is dangerously escalating to an all-out war. Allegedly, their patrols often stray away and subsequently end up pillaging each other's crops. They have forgotten who started this and have sought our guidance to settle their dispute."
+  jurchen_confederation_events.5.a: "Rule in favor of [target_jurchen_country_1.GetNameWithNoTooltip]."
+  jurchen_confederation_events.5.b: "The people of [target_jurchen_country_2.GetNameWithNoTooltip] are right!"
+  jurchen_confederation_events.5.c: "How about you both abandon your uncivilized ways?"
+
+  jurchen_confederation_events.6.title: "The Troubles of a Civilized Society"
+  jurchen_confederation_events.6.desc: "What has happened to our people? We used to be free, wild and in love with nature and life itself. Our forefathers were famed for their trapping and riding skills as they spread the Jīn banners across all of $china$, subduing scores of people under their heels.\n\nNowadays, all we do is worry about budgets, financial balances, our obligations to our confederation and court etiquette. What has happened to our once-proud warriors?"
+  jurchen_confederation_events.6.a: "Alas, this is our life now..."
+  jurchen_confederation_events.6.b: "We must resist and protect our traditional ways!"
+
+  jurchen_confederation_events.7.title: "Our Warriors are Trying to Read Books"
+  jurchen_confederation_events.7.desc: "Attempts to centralize our society and adopt the ways of our Southern neighbors have born fruit. Many of our warriors have taken up tomes of literature in an attempt to learn scripture and adjust to these new times. However, many individuals in higher positions insist on preserving the old ways..."
+  jurchen_confederation_events.7.a: "Perhaps they require more drilling!"
+  jurchen_confederation_events.7.b: "Reading is the future."
+
+  jurchen_confederation_events.8.title: "The People's Demands"
+  jurchen_confederation_events.8.desc: "Our folk yearn for access to the goods coming from foreign lands. Illustrious items and exotic goods have always fascinated our people. Many within our administration support the idea of promoting the trade of goods that are most adjacent to our tribal ways, emphasizing a protectionist stance against the winds of change. However, perhaps it would be wise to consider the voices that support an openminded approach towards the future..."
+  jurchen_confederation_events.8.a: "We are proud warriors, we need horses and leather!"
+  jurchen_confederation_events.8.b: "Let us not shy away from embracing the future!"
+
+  jurchen_confederation_events.9.title: "A Lesson in Life"
+  jurchen_confederation_events.9.desc: "Few of our riders have mastered the art of galloping at unraveled speed with grace. Therefore, it should not come as a surprise that yet again, [target_heir.GetName] has fallen off [target_heir.GetHerHis] horse. The injury is severe and our beloved heir is currently receiving urgent medical care. Worthy of attention is the fact that [target_heir.GetShortNameWithNoTooltip]'s horse has not left its master's side. Bystanders that witnessed the accident said that the horse even tried to shield its rider, dampening the impact of the fall..."
+  jurchen_confederation_events.9.a: "I could kiss that horse!"
+  jurchen_confederation_events.9.b: "Hah, that fall must have looked hilarious!"
+
+  jurchen_confederation_events.10.title: "A Brawl Too Far"
+  jurchen_confederation_events.10.desc: "Hotheadedness and fiery tempers are no strangers to our people. Many rough exchanges have taken place in taverns over nigh-infinite amounts of booze and debauchery. However, a recent argument between powerful chieftains in [target_capital.GetName] has spiraled out of control. Fires have usurped a good portion of the district and the air is filled with a putrid mixture of screams, fire, and blood, with arguments having escalated into open warfare over the honor of rivaling families..."
+  jurchen_confederation_events.10.a: "The sign of weak leadership, unfortunately..."
+  jurchen_confederation_events.10.b: "We will cover the damages, this was a great display of strength!"
+
+  jurchen_confederation_events.11.title: "The Next Generations"
+  jurchen_confederation_events.11.desc: "Our scholars and advisors have meticulously planned the future plans for the next generation of warriors and staffers for our great nation. Whilst our cabinet and ministers support the flourishing of our culture, the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] staunchly support the idea of a perfected military."
+  jurchen_confederation_events.11.a: "We will support our culture."
+  jurchen_confederation_events.11.b: "What is a people without a proper army?"
+
+  jurchen_confederation_events.12.title: "Resistance to New Ways"
+  jurchen_confederation_events.12.desc: "It is no secret that our attempts to codify laws across our confederation has given birth to enemies and spies in every corner. Be it usurpers or rivals, those who wish to harm us conspire behind closed doors, planning our demise. Recently, a vocal majority of our advisors have stepped forth, issuing an ultimatum to us. They demand the immediate stop of our centralization attempts, threatening rebellion and instability should we proceed..."
+  jurchen_confederation_events.12.a: "Very well, we are wild riders at heart..."
+  jurchen_confederation_events.12.b: "We will not be threatened by pettiness!"
+  jurchen_sinicization_tt: "Henceforth, passing any legislation within our #G Confederation#! for the rest of [target_ruler.GetName]'s reign will incur #R -10#! [stability|e] and #R -10#! [tribal_cohesion|e]"
+
+  jurchen_confederation_events.13.title: "Study Thy Neighbors"
+  jurchen_confederation_events.13.desc: "It is no secret that our Southern neighbors hold great knowledge hidden in tomes and libraries across their illustrious domain. The idea of establishing a link of communication as a means to study their ways is a lucrative yet somewhat divisive idea..."
+  jurchen_confederation_events.13.a: "The dissemination of knowledge comes first."
+  jurchen_confederation_events.13.b: "We cannot risk alienating our people."
+
+  jurchen_confederation_events.14.title: "The Epitome of Happiness"
+  jurchen_confederation_events.14.desc: "Few have attained happiness in this dark and grey life. Troubled with disease, loss and the monotony of daily routine, most lead sad and dull lives. The same cannot be said about members of our tribe as we ride free, pillaging and warring our inferior neighbors. However, representatives of the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] have come forth, noting that they deserve a generous portion of our newfound wealth..."
+  jurchen_confederation_events.14.a: "Sharing is caring."
+  jurchen_confederation_events.14.b: "How about they share the tips of our weapons?"
+
+  jurchen_confederation_events.15.title: "A Good Day's Hunt"
+  jurchen_confederation_events.15.desc: "The smell of dirt and dust spread across the air as our hunters gallop, the barking of the dogs and the heartfelt anticipation of the perfect shot that secures the prey... These are some of the elements that build the mythos of a good hunt, a tradition carried on by us from the time of our forefathers. Recently, a party of hunters returned home with a bountiful catch, presenting them as token gifts to the court..."
+  jurchen_confederation_events.15.a: "That is best in life!"
+  jurchen_confederation_events.15.b: "These practices belong to the past."
+
+  jurchen_confederation_events.16.title: "[target_jc_leader.GetNameWithNoTooltip]'s Bid for Unification"
+  jurchen_confederation_events.16.desc: "Our time under the protective embrace of our Confederation seems to be coming to an end. Our leader has made a blatant powerplay in favor of restricting our independence, in favor of uniting under their banner."
+  jurchen_confederation_events.16.a: "United we shall ascend!"
+  jurchen_confederation_events.16.b: "We cannot abandon our independence..."
+
+  jurchen_confederation_events.17.title: "Era of the Great Unification"
+  jurchen_confederation_events.17.desc: "The many chieftains that make up our confederation have enjoyed relative autonomy and substantial influence within their respective domains. However, if we are to ascend and challenge those who wish our continued subjugation, we must unite under one banner. Today marks the day that we have succeeded in imposing our will upon the other members of the [target_io.GetName]."
+  jurchen_confederation_events.17.a: "Our time is now!"
+  jurchen_confederation_unification_effort_tt: "Members of the [target_io.GetNameWithNoTooltip] will be given a choice to become a [subject|e] under our command or risk granting us a [casus_belli|e] against them"

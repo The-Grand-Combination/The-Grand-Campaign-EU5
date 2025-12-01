@@ -1,0 +1,16 @@
+﻿l_english:
+ flavor_pal.1.title: "A good choice"
+ flavor_pal.1.desc: "Our support of the real [GetCountry('PAP').GetGovernment.GetRulerTitle] in the [ShowSituationName('western_schism')] has placed us in the good graces of [ShowLocationName('rome')], which has moved the glorious [pope_ruler.GetName] to grant us a new papal bull allowing for the construction of a new [ShowBuildingTypeName('university')] in [ShowLocationName('heidelberg')] following the model of the university of [ShowLocationName('paris')]."
+ flavor_pal.1.a: "Start the construction."
+ flavor_pal.1.b: "We can not afford the expense."
+
+ flavor_pal.2.title: "The Persecution of [target_character.GetNameWithNoTooltip]"
+ flavor_pal.2.desc: "[target_character.GetName], while being a respected scholar and humanist, also has a talent for clashing with other [ShowReligionAdjective('catholic')] theologian. [target_character.GetSheHe|U] recently had to leave his previous employee due to a personal clash with other advisors.\n\nFortunately for us, [target_character.GetSheHe] is very interested in serving us and is already on [target_character.GetHerHis] journey into [ROOT.GetCountry.GetCapital.GetName]. Due to his humanist nature he could greatly benefit the reputation of our [ROOT.GetCountry.GetGovernment.GetCourtTitle]."
+ flavor_pal.2.a: "[target_character.GetSheHe|U] will have a new place to call home."
+ flavor_pal.2.b: "[target_character.GetSheHe|U] should turn around and go somewhere else."
+
+ flavor_pal.3.title: "Relocation of the $game_concept_capital$"
+ flavor_pal.3.desc: "Due to ongoing religious tensions in [ShowLocationName('heidelberg')], [target_ruler.GetName] considers relocating the $game_concept_capital$ to the closely located $mannheim$. This move could provide a fresh start and reduce conflicts but may unsettle the populace and strain resources."
+ flavor_pal.3.a: "Move the capital to $mannheim$."
+ flavor_pal.3.b: "Retain [ShowLocationNameWithNoTooltip('heidelberg')] as the $game_concept_capital$."
+ flavor_pal.3.historical_info: "In 1720, Elector Palatine Charles III Philip faced significant religious conflicts in Heidelberg, stemming from tensions between his Catholic administration and the city's Protestant majority. Seeking to mitigate these issues and establish a more harmonious seat of power, he decided to relocate the capital to Mannheim. Construction of the Mannheim Palace commenced that same year on the site of the former Friedrichsburg fortress, symbolizing the dawn of a new era for the Electorate. This strategic move not only aimed to ease religious strife but also positioned Mannheim as a burgeoning center of political and cultural significance in the region."

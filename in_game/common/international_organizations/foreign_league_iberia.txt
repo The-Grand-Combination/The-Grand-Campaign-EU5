@@ -1,0 +1,383 @@
+﻿foreign_league_iberia = {
+	has_target = no
+	unique = yes
+	show_on_diplomatic_map = yes
+	expel_members_who_are_targets_of_other_members = yes
+	expel_members_who_are_attackers_at_war_with_other_members = yes
+	expel_members_who_are_defenders_at_war_with_other_members = yes
+
+	leader_color = define:NMapColors|INTERNATIONAL_ORGANIZATION_LEADER_COLOR
+	#member_color = rgb { 251 229 172 }
+
+	has_leader_country = yes
+	leader_type = country
+	disband_if_no_leader = yes
+	land_ownership_rule = italian_wars_land_ownership
+	non_leader_modifier = {
+		block_from_change_to_empire_rank = yes
+	}
+
+	laws = {
+		mutual_defense_law = possible_defense_policy
+	}
+
+	on_creation = {
+		add_to_global_variable_list = {
+			name = iw_foreign_leagues_list
+			target = root 
+		}
+	}
+
+	create_visible_trigger = {
+		always = no
+	}
+
+	invite_visible_trigger = {
+		always = yes
+	}
+
+	on_disband = {   
+		remove_list_global_variable = { name = iw_foreign_leagues_list target = root }
+	}
+	
+	#Yes. but you will be removed from the League
+	can_declare_war = {
+		always = yes
+	}
+	
+	has_military_access = {
+		scope:recipient ?= {
+			is_member_of_international_organization = root
+		}
+		scope:actor ?= {
+			is_member_of_international_organization = root
+		}
+	}
+
+	#Even if the leader is not an Empire, they will have access to these actions
+	leader_modifier = {
+		allowed_intervene_in_war = yes
+		allowed_enforce_peace = yes
+	}
+	
+	can_join_trigger = {
+		NOR = {
+			is_leader_of_international_organization = international_organization:foreign_league_france
+			is_leader_of_international_organization = international_organization:foreign_league_hre
+			is_leader_of_international_organization = international_organization:italian_league_1
+			is_leader_of_international_organization = international_organization:italian_league_3
+			is_leader_of_international_organization = international_organization:italian_league_2
+		}
+		at_war = no
+		is_rebel_country = no
+		religion.group = religion_group:christian
+		trigger_if = {
+			limit = {
+				NOT = { tag = PAP }
+			}
+			capital.region = region:italy_region
+			country_rank_level < 4
+		}
+		trigger_if = {
+			limit = { is_subject = no }
+			NOT = { has_cooldown = join_a_league }	
+		}
+		trigger_else = {
+			scope:recipient ?= {
+				any_international_organization_member = {
+					root = { is_subject_or_below_of = prev }
+				}
+			}
+		}
+	}
+
+	on_joined = {
+		if = {
+			limit = { is_member_of_international_organization = international_organization:foreign_league_france }
+			international_organization:foreign_league_france = {
+				remove_country_from_international_organization = root
+			}
+		}
+		if = {
+			limit = { is_member_of_international_organization = international_organization:foreign_league_hre }
+			international_organization:foreign_league_hre = {
+				remove_country_from_international_organization = root
+			}
+		}
+		if = {
+			limit = { is_member_of_international_organization = international_organization:italian_league_1 }
+			international_organization:italian_league_1 = {
+				remove_country_from_international_organization = root
+			}
+		}
+		if = {
+			limit = { is_member_of_international_organization = international_organization:italian_league_2 }
+			international_organization:italian_league_2 = {
+				remove_country_from_international_organization = root
+			}
+		}
+		if = {
+			limit = { is_member_of_international_organization = international_organization:italian_league_3 }
+			international_organization:italian_league_3 = {
+				remove_country_from_international_organization = root
+			}
+		}
+
+		every_owned_location = {
+			limit = { region = region:italy_region }
+			scope:recipient = {
+				add_location_to_international_organization = prev
+			}
+		}
+
+		add_cooldown = {
+			type = join_a_league
+			years = 2
+		}
+	}
+
+	on_left = {
+		every_owned_location = {
+			limit = { region = region:italy_region }
+			scope:recipient = {
+				remove_location_from_international_organization = prev
+			}
+		}
+	}
+	
+	#You cannot leave it while locked in a war next to a fellow League member
+	can_leave_trigger = {
+		OR = {
+			NOT = { is_subject_of = scope:recipient.leader_country }
+			AND = {
+				is_subject = yes
+				subject_loyalty < 50
+			}
+		}
+	}
+	
+	auto_leave_trigger = {
+		OR = {
+			is_at_war_with = scope:recipient.leader_country
+			AND = {
+				is_subject = yes 
+				exists = top_overlord
+				NOT = { 
+					top_overlord = { is_member_of_international_organization = scope:recipient }
+				}
+			}
+		}
+	}
+	
+	auto_disband_trigger = {
+		total_members < 1
+	}
+	
+	monthly_effect = {
+		every_international_organization_member = {
+			limit = {
+				any_subject = {
+					NOT = { is_member_of_international_organization = root }
+					can_join_international_organization = root
+					subject_loyalty >= 50
+				}
+			}
+			every_subject = {
+				limit = {
+					NOT = { is_member_of_international_organization = root }
+					can_join_international_organization = root
+					subject_loyalty >= 50
+				}
+				if = {
+					limit = { is_member_of_international_organization = international_organization:foreign_league_france }
+					international_organization:foreign_league_france = {
+						remove_country_from_international_organization = prev
+					}
+				}
+				if = {
+					limit = { is_member_of_international_organization = international_organization:foreign_league_hre }
+					international_organization:foreign_league_hre = {
+						remove_country_from_international_organization = prev
+					}
+				}
+				if = {
+					limit = { is_member_of_international_organization = international_organization:italian_league_1 }
+					international_organization:italian_league_1 = {
+						remove_country_from_international_organization = prev
+					}
+				}
+				if = {
+					limit = { is_member_of_international_organization = international_organization:italian_league_2 }
+					international_organization:italian_league_2 = {
+						remove_country_from_international_organization = prev
+					}
+				}
+				if = {
+					limit = { is_member_of_international_organization = international_organization:italian_league_3 }
+					international_organization:italian_league_3 = {
+						remove_country_from_international_organization = prev
+					}
+				}
+
+				every_owned_location = {
+					limit = { region = region:italy_region }
+					root = {
+						add_location_to_international_organization = prev
+					}
+				}
+
+				add_cooldown = {
+					type = join_a_league
+					years = 2
+				}
+				root = { add_country_to_international_organization = prev }
+			}
+		}
+	}
+
+	ai_desire_to_join = {
+		add = {
+			desc = "VOTE_BASE_VALUE"
+			value = -50
+		}
+		add = {
+            desc = "RELATIVE_STRENGTH_ROOT"
+            value = 100
+            multiply = "scope:actor.relative_strength(root)"
+            divide = 10
+        }
+		if = {
+			limit = {
+				scope:recipient = {
+					OR = {
+						this = international_organization:foreign_league_france
+						this = international_organization:foreign_league_hre
+						this = international_organization:foreign_league_iberia
+					}
+				}
+			}
+			add = {
+				desc = "STRENGTH_OF_FOREIGN_LEAGUE"
+				value = scope:recipient.total_members
+				multiply = -1.5
+			}
+		}
+		if = {
+			limit = {
+				NOT = { is_neighbor_of = scope:actor }
+			}
+			add = {
+				desc = "NOT_NEIGHBORS_AI_WEIGHT"
+				value = -5
+				multiply = scope:actor.country_rank_level
+			}
+		}
+		if = {
+			limit = {
+				has_positive_opinion = scope:actor
+			}
+			add = {
+				desc = "OPINION_OF_FRANCE_LEADER"
+				value = {
+					scope:recipient = {
+						leader_country = {
+							root = {
+								value = this_opinion_of_prev
+								multiply = 0.4
+							}
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				opinion = {
+					target = scope:recipient.leader_country
+					value < -20
+				}
+			}
+			add = {
+				desc = "POOR_RELATIONS"
+				value = -1000
+			}
+		}
+		add = {
+			desc = "IO_LEADER_DIP_REP"
+			scope:recipient = {
+				value = leader_country.modifier:diplomatic_reputation
+				multiply = 2
+			}
+		}
+		if = {
+			limit = {
+				NOT = { within_diplomatic_range = scope:actor }
+			}
+			add = {
+				desc = "OUTSIDE_OF_DIP_RANGE"
+				value = -1000
+			}
+		}
+		add = {
+			desc = "DISTANCE_FROM_FRANCE_LEADER"
+			value = "border_distance_to(scope:recipient.leader_country)"
+			multiply = -0.2
+			min = -1000
+		}
+		if = {
+			limit = { at_war = yes }
+			add = {
+				desc = "IS_AT_WAR"
+				value = -1000
+			}
+		}
+		if = {
+			limit = { 
+				is_subject_of = scope:actor 
+				is_disloyal_subject = yes
+			}
+			add = { 
+				desc = "[disloyal_subject|e]"
+				value = -1000
+			}
+		}
+		else_if = {
+			limit = {
+				is_subject = yes
+				NOT = { top_overlord ?= scope:actor }
+			}
+			add = { 
+				desc = "[subject|e]"
+				value = -1000
+			}
+		}
+	}
+	
+	ai_desire_to_allow_new_member = {
+		add = {
+			desc = "WE_WANT_THE_ORGANIZATION_TO_GROW"
+			value = 20
+		}
+		if = {
+			limit = {
+				root.leader_country = { is_during_bankruptcy = yes }
+			}
+			add = {
+				desc = "WE_EXPERIENCE_BANKRUPTCY"
+				value = -1000
+			}
+		}
+		if = {
+			limit = {
+				leader_country = { modifier:aggressiveness_modifier > 0 }
+			}
+			add = {
+				desc = "CURRENT_APPETITE_FOR_EXPANSION"
+				root.leader_country = { 
+					value = modifier:aggressiveness_modifier 
+					multiply = 100
+				}
+			}
+		}
+	}
+}

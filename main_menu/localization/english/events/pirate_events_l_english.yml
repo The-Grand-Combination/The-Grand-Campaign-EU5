@@ -1,0 +1,58 @@
+﻿l_english:
+
+ pirate_events.1.title: "[target_character.GetNameWithNoTooltip] the Pirate"
+ pirate_events.1.desc: "[ROOT.GetCountry.GetName], once the heart of the great Srivijaya Empire, has long been in contest of our region against foreign rivals. The status of the [GetCountry('MAJ').GetLongName] left our [ROOT.GetCountry.GetFlavorRank] vulnerable, and for decades, it served as a haven for lawless pirates. However, the tides have shifted once more as our maritime presence expands. New groups of privateers have appeared, and among them rises a cunning and ruthless leader, [target_character.GetName]. Granted a position within our navy, [target_character.GetSheHe] may prove a valuable candidate for the position of admiral."
+ pirate_events.1.a: "We will pursue our luck in the open seas!"
+ pirate_events.1.b: "Let [target_character.GetHerHim] serve in the fleet."
+ pirate_events.1.c: "Send [target_character.GetHerHim] away."
+ government_implements_several_policies_relevant_to_pirates_tt: "Our government will implement several [policies|e] to support pirate activities across our coasts"
+
+ pirate_events.2.title: "The [target_character.GetNameWithNoTooltip] Band"
+ pirate_events.2.desc: "The notorious [target_culture.GetName] pirate [target_character.GetName] and [target_character.GetHerHis] ruthless band of cutthroats have made port in [target_location.GetName], where [target_character.GetSheHe] seeks an audience with [target_character_2.GetName]. [target_character.GetShortNameWithNoTooltip] is renowned for [target_character.GetHerHis] brutality, scoring dangerous prizes and sinking many foes just this year. It is said that in [ShowAreaNameWithNoTooltip('taiwan_area')], [target_character.GetSheHe] massacred the native people and used their blood as caulk to seal a leak in [target_character.GetHerHis] ship.\n\n[target_character.GetSheHe] states that [target_character.GetHerHis] purpose in [target_location.GetNameWithNoTooltip] is to offer [target_character.GetHerHis] services to the [ROOT.GetCountry.GetFlavorRank] in exchange for sanctuary from [target_culture.GetNameWithNoTooltip] authorities. By [target_character.GetHerHis] reputation and the size of [target_character.GetHerHis] fleet however, it is likely that [target_character.GetHerHis] true ambitions in the [target_location.GetRank.GetNameWithNoTooltip] extend beyond what [target_character.GetSheHe] claims."
+ build_galleys_to_navy_size_percentage_tt: "A fleet of galley [ships|e] will be constructed in [target_location.GetName]"
+
+ pirate_events.4.title: "The Tyranny of [target_character.GetNameWithNoTooltip]"
+ pirate_events.4.desc: "When a pirate captain flies the black flag, he must invoke terror in the hearts of all who lay eyes upon it. But he must also command the respect of his crew, and at least in theory command the ship with their consent.\n\n[target_character.GetShortName] has gained for [target_character.GetHerselfHimself] a cruel and tyrannical reputation. The punishments [target_character.GetSheHe] metes out for even the most minor and unsubstantiated offenses are excessive even by the standards of lawless men. Unrest is growing, and it is only a matter of time before the crew take matters into their own hands."
+ pirate_events.4.a: "Mutiny!"
+ pirate_events.4.b: "The captain's word is law."
+
+ pirate_events.5.title: "Division of Plunder"
+ pirate_events.5.desc: "Our latest prize from [target_privateer.GetName] turned out to be carrying a much more valuable cargo than expected. This fact has not yet been revealed to the crews, who would expect and demand that the additional plunder be added to their share.\n\nThe [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] of the involved ships wish to sequester the money to refit their ships and purchase additional cannons, while the representative of the [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] argues that it is best spent on bribing officials in legitimate ports."
+ pirate_events.5.a: "Divide it evenly amongst the crew."
+ pirate_events.5.b: "The [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')] will take their cut."
+ pirate_events.5.c: "The [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] will receive an extra share."
+
+ pirate_events.6.title: "Forged Shipping Manifests"
+ pirate_events.6.desc: "Piracy is a dangerous business, but smuggling can carry just as much risk if the proper precautions are not taken. Our smugglers make their profits by purchasing stolen goods from pirate crews and selling them on for profit in legitimate markets.\n\nTo sell these illegally acquired goods, the smugglers must bribe port officials to ignore their origin or else present passable documents that proclaim their legitimacy. [target_character.GetName], a skilled forger, has recently entered our service and procured for us a number of documents that should be accepted in almost any port, ensuring that our operations will continue to run smoothly."
+ pirate_events.6.a: "This is good for business."
+
+ pirate_events.7.title: "Privateer Defects"
+ pirate_events.7.desc: "The captain of the [target_navy.GetName] fleet, [target_character.GetName], has made quite a name for [target_character.GetHerselfHimself] in the service of the [target_country.GetAdjective] Navy. The payment [target_character.GetSheHe] has been receiving for [target_character.GetHerHis] ventures, however, is much less than the full value of the ventures themselves.\n\nLike many savvy captains, [target_character.GetSheHe] has realized that [target_character.GetSheHe] could make a greater profit by turning pirate. [target_character.GetSheHe|U] has tossed [target_character.GetHerHis] letter of marque overboard and charted a course for our coasts. As a pirate of the [ROOT.GetCountry.GetLongName], [target_character.GetSheHe] will be free to plunder to [target_character.GetHerHis] heart's content and keep the spoils [target_character.GetSheHe] has rightfully stolen."
+ pirate_events.7.a: "To profit and plunder!"
+
+ pirate_events.8.title: "Slave Ship Captured"
+ pirate_events.8.desc: "After boarding our latest prize from [target_privateer.GetName], we discovered the cargo holds to be packed with captive slaves. Many among our crews have experienced the horrors of slavery for themselves, and naturally their first instinct was to demand that the slaves be freed and either incorporated into the crew or sent to [target_location.GetName].\n\nThe less scrupulous crewmen with a particular lust for gold would prefer to instead treat these people as cargo and sell them on to the fence as such. There will be nothing in the way of moneyed compensation for their efforts to take this prize, they argue, if we refuse to profit from trading in slaves."
+ pirate_events.8.a: "Liberate them! Let them live free in [target_location.GetNameWithNoTooltip]."
+ pirate_events.8.b: "They are just cargo to be sold for profit."
+
+ pirate_events.9.title: "Careening"
+ pirate_events.9.desc: "It is time once again to careen the ships. This arduous process requires the crews to drag the ships onto a secure beach at high tide and safely lower them onto their sides to expose the hull for repairs.\n\nIt is a task dreaded by every pirate, not only because the risk of damage to the ship and injury to the crew is high but because of the backbreaking labor they must perform to see the job done right. Several advocates among our [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] feel that a more relaxed approach should be taken to careening, despite the insistence of [target_character.GetShortName] that failing to make the proper repairs will cause far more problems down the line."
+ pirate_events.9.a: "Ensure the crews do a thorough job."
+ pirate_events.9.b: "Let the crews relax."
+
+ pirate_events.10.title: "Smugglers Struggling"
+ pirate_events.10.desc: "Even at the best of times, it is difficult to smuggle contraband into foreign ports. These are most certainly not the best of times. Many of our smugglers are returning to [target_location.GetName] having had their goods confiscated. Some do not return at all and await the gallows."
+ pirate_events.10.a: "[ROOT.GetCountry.Custom('common_string_negative')]"
+
+ pirate_events.11.title: "The Position of [ROOT.GetCountry.Custom('GetHeadOfCabinetName')]"
+ pirate_events.11.desc: "As the previous [ROOT.GetCountry.Custom('GetHeadOfCabinetName')] of the [ROOT.GetCountry.GetLongName] appears to have taken a long walk off a short plank, we find ourselves in need of a new candidate for the role. The position of [ROOT.GetCountry.Custom('GetHeadOfCabinetName')] has unique jurisdiction and accountability within our [ROOT.GetCountry.GetFlavorRank]. Elected by the crew, he is expected to be their representative and to champion their needs against the often arbitrary authority of the captain.\n\nTwo candidates immediately present themselves. [target_character_1.GetName] is a true advocate for the crew; [target_character_1.GetSheHe] has both the humility to listen to their concerns and the fortitude to stand up to the captain. Meanwhile, [target_character_2.GetName] is firmly in any captain's pocket; [target_character_2.GetSheHe] is skilled at manipulating the crew into believing that our wishes are also their own. Who will win the hearts and minds of the assembled pirates?"
+ pirate_events.11.a: "Promote [target_character_1.GetNameWithNoTooltip]."
+ pirate_events.11.b: "Entrust the post to [target_character_2.GetNameWithNoTooltip]"
+ pirate_events.11.c: "There can be no favoritism!"
+ as_long_as_cabinet_tt: "as long as this [character|e] works in the [cabinet|e]"
+
+ pirate_events.12.title: "Crew Blacklisted"
+ pirate_events.12.desc: "The crew of our prime fleet are a menace. Though they have an excellent record of delivering prizes, as soon as they make port their drunkenness and violence cause so much damage and disruption in [target_location.GetName] that many wonder if they are worth the trouble they cause. After a particularly destructive episode, the local [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] have decided to blacklist the entire crew, making them unable to sell their plunder anywhere in the [ROOT.GetCountry.GetFlavorRank].\n\nThis has caused upset among the pirates that call [target_location.GetNameWithNoTooltip] home; they believe their natural rights to live as they please are being violated, and several rabble-rousers compare the smugglers to snobbish aristocrats."
+ pirate_events.12.a: "None dares to challenge our code!"
+ pirate_events.12.b: "Maintain the ban."
+ pirate_events.12.c: "Lift the ban."

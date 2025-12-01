@@ -1,0 +1,44 @@
+ABK = { #Abkhazia
+	color = map_ABK
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = circassian_culture
+	religion_definition = orthodox
+	is_historic = yes
+}
+
+TCA = { #Transcaucasia
+	color = map_TCA_dominion0
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = circassian_culture
+	religion_definition = orthodox
+	is_historic = yes
+}
+
+SVN = { #Svaneti
+	color = map_SVN
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = circassian_culture
+	religion_definition = orthodox
+	is_historic = yes
+}
+
+MGL = { #Mingrelia
+	color = map_MGL
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = circassian_culture
+	religion_definition = orthodox
+	is_historic = yes
+}
+
+DAG = { #Dagestan
+	color = map_DAG
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = circassian_culture
+	religion_definition = orthodox
+	is_historic = yes
+}

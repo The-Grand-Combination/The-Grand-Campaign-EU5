@@ -1,0 +1,88 @@
+﻿l_english:
+ flavor_bng.1.title: "The Influence of [target_artist.GetNameWithNoTooltip]"
+ flavor_bng.1.desc: "[target_artist.GetName], coming from an influential family, has received popular acclaim as a scholar and writer, preserving the teachings of the Sufi Chishti Order in [ROOT.GetCountry.GetName]. With his rising fame among the [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] and [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')], we could increase our own standing with our population by inviting him to court and sponsoring him. This would increase the influence of the order in our country even further, entrenching their values into our society."
+ flavor_bng.1.a: "Patronize him!"
+ flavor_bng.1.b: "We do not need him."
+ flavor_bng.1.historical_info: "Nur Qutb Alam was a leader of the Sufi Chishti order in Bengal in the late 14th Century and early 15th Century. The Chishti Order enjoyed long-lasting patronage under the Muslim rulers of Bengal. Under his leadership, the Order preserved the Muslim presence during the reign of Raja Ganesha, a Hindu."
+ 
+ flavor_bng.2.title: "[target_artist.GetNameWithNoTooltip]'s Literary Endeavors"
+ flavor_bng.2.desc: "Under our continued patronage, the [ROOT.GetCountry.GetCulture.GetName] culture is prospering, and multiple artists have made [ROOT.GetCountry.GetCapital.GetName] their permanent residence. [target_artist.GetName] has worked on an epic about the prophets of [ShowReligionGroupName('muslim')]. The work is a translation of the #italic Qaṣaṣ al-anbiyā'#! into the [ShowLanguageName('bengali_language')] language, and if we sponsor the publication it could elevate our native literary works to new heights."
+ flavor_bng.2.a: "This will mark the beginning of a new literary age!"
+ flavor_bng.2.b: "We should not spend money on this."
+ 
+ flavor_bng.3.title: "[target_character.GetNameWithNoTooltip]'s City of Mosques"
+ flavor_bng.3.desc: "Coming from our regional [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')], [target_character.GetName] transformed the area around [ShowLocationName('khalifatabad')] into a beautiful city of mosques and bridges. With the city being situated in the Ganges Delta, this was not an easy task. Regardless of that, in his capable hands, [ShowLocationNameWithNoTooltip('khalifatabad')] is quickly rising to a prominent center among our mint towns."
+ flavor_bng.3.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+
+ flavor_bng.4.title: "Minting Towns of [ShowAreaNameWithNoTooltip('bengal_area')] Prosper"
+ flavor_bng.4.desc: "With our implementation of new mints in the area of [ShowAreaName('bengal_area')], there comes great economic growth. The stable supply of coins is leading not only to a famously solid currency but also a preference of foreign merchants to trade in our ports and cities."
+ flavor_bng.4.a: "We are rich!"
+
+ flavor_bng.5.title: "The Adina Mosque in [ShowLocationNameWithNoTooltip('pandua')]"
+ flavor_bng.5.desc: "[target_character.GetName] wants to celebrate our hard-fought independence from the tyrannical rule of [GetCountry('DLH').GetName] via the embellishment of the recently-commissioned [ShowBuildingTypeName('cathedral')] in [ShowLocationName('pandua')]. For this monumental undertaking, we should hire only the finest architects, versed in the styles of [ShowRegionName('persia_region')] and [ShowRegionName('crescent_region')]. While this would be quite costly, it would show our splendor and cement our legacy for centuries to come."
+ flavor_bng.5.historical_info: "The Adina Mosque was commissioned by Sikandar Shah in 1373. Placed in the imperial capital of Pandua, the Mosque imitated the design of Sasanian Persian architecture with further inspiration for the building coming from the Great Mosque of Damascus. It was designed to validate the imperial ambitions of the Bengal Sultanate and to praise the victories over the Delhi Sultanate in the 14th Century, securing the independence of the young country."
+ flavor_bng.5.a: "A wonderful plan."
+ flavor_bng.5.b: "We have no money for such lavish buildings."
+
+ flavor_bng.6.title: "The Neighboring States"
+ flavor_bng.6.desc: "With [target_character.GetName] wishing to unify [ShowRegionName('bengal_region')], [target_character.GetHeShe] has started assembling an army and causing border conflicts with the surrounding states, hoping to provoke them into war."
+ flavor_bng.6.a: "Let us unify [ShowRegionNameWithNoTooltip('bengal_region')]!"
+ flavor_bng.6.b: "Maintaining stability is preferable."
+
+ flavor_bng.7.title: "[target_location.GetNameWithNoTooltip]"
+ flavor_bng.7.desc: "The [target_location.GetRank.GetName] of [target_location.GetName] has been the center of Sufi scholars within [ShowRegionName('bengal_region')], allowing its streets and populace to thrive. With it under our control, we can perhaps make it the capital of [ROOT.GetCountry.GetName]."
+ flavor_bng.7.a: "Let [target_location.GetNameWithNoTooltip] prosper!"
+ flavor_bng.7.b: "[target_character.GetNameWithNoTooltip] prefers the seat of [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip]."
+
+ flavor_bng.8.title: "A [ShowReligionAdjectiveWithNoTooltip('hindu')] Pretender"
+ flavor_bng.8.desc: "The [ShowReligionAdjective('hindu')] populace within [ROOT.GetCountry.GetName] have rallied up to a local governor. [target_character.GetHerHis|U] name is [target_character.GetName], a lowborn of humble origins who is sick of the [ShowReligionGroupAdjective('muslim')] rule in [ROOT.GetCountry.GetNameWithNoTooltip], wishing to usurp the throne of [ROOT.GetCountry.GetNameWithNoTooltip] from [target_character2.GetName]."
+ flavor_bng.8.a: "Maybe it is time for a new management..."
+ flavor_bng.8.b: "To arms!"
+ bng_muslim_nobles_become_disloyal_tt: "All of our non-[ShowReligionAdjective('hindu')] [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] [pops|e] will lose [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] [pop_satisfaction|e]"
+ bng_hindus_become_disloyal_tt: "All [ShowReligionAdjective('hindu')] [pops|e] will lose [ShowNamedValue('pop_satisfaction_extreme_penalty')|+=2%] [pop_satisfaction|e]"
+
+ flavor_bng.9.title: "Promotion of Sufism"
+ flavor_bng.9.desc: "Sufi practices have been popularized within [ROOT.GetCountry.GetName]. Many shrines have been dedicated to them, and even a few people within the [ROOT.GetCountry.GetGovernment.GetCourtTitle] are following their ideas. Perhaps we can sponsor them even more."
+ flavor_bng.9.a: "We will promote the Sufi practices."
+ flavor_bng.9.b: "No need to spend resources for this."
+
+ flavor_bng.10.title: "Prioritizing [ShowRegionNameWithNoTooltip('bengal_region')]"
+ flavor_bng.10.desc: "The lands of the [ShowRegionName('bengal_region')] region are rich with resources. [target_character.GetName] and [target_character.GetHerHis] [ROOT.GetCountry.GetGovernment.GetCourtTitle] wish to exploit those resources, creating new cities and establishing [ROOT.GetCountry.GetName] as an economic hegemon."
+ flavor_bng.10.a: "Let us start an inwards expansion."
+ flavor_bng.10.b: "We are already in a good economic position."
+
+ flavor_bng.11.title: "Shipbuilding Traditions"
+ flavor_bng.11.desc: "The [ROOT.GetCountry.GetCulture.GetName] people have had a major presence within [ShowProvinceDefinitionName('bengal_high_sea_zones_province')] in the past, ensuring that the coast as well as the trade routes there were under their control. We bolstered one of the strongest navies within $india$ and had a legacy of shipbuilding within the region. We should promote this tradition as well, bolstering our port in [target_location.GetName]."
+ flavor_bng.11.a: "Our navy shall thrive."
+ flavor_bng.11.b: "Bolstering our land is more important."
+ bng_buff_naval_parliament_debate_tt: "For #Y 20#! years, the [ShowParliamentIssueType('increase_naval_spending')] will now grant #G +5%#! [societal_values|e] towards [ShowSocietyDirectionName('naval')]"
+
+ flavor_bng.12.title: "$firoz_minar$"
+ flavor_bng.12.desc: "With the obsession [target_character.GetName] has over architecture, [target_character.GetSheHe] has decided to create a tower inspired by the [ShowDynastyName('tughlaq_dynasty')] architecture. Named $firoz_minar$, it is meant to commemorate the victories of [target_character.GetNameWithNoTooltip]."
+ flavor_bng.12.a: "The chief architect will make it the tallest tower!"
+ flavor_bng.12.b: "What purpose does a mere tower serve?"
+
+ flavor_bng.13.title: "$dakhil_darwaza$"
+ flavor_bng.13.desc: "To fortify the citadel of [target_location.GetName], [target_character.GetName] wishes to create a new main entrance for the [target_location.GetRank.GetName], naming it $dakhil_darwaza$. [target_character.GetSheHe|U] wants to turn it into the most elegant and largest gates within $india$. It would be costly, but it would be glorious."
+ flavor_bng.13.a: "Let these gates be built."
+ flavor_bng.13.b: "[target_location.GetNameWithNoTooltip] is already fortified."
+
+ flavor_bng.14.title: "$kusumba_mosque$"
+ flavor_bng.14.desc: "Several mosques within [ShowRegionName('bengal_region')] have followed the [target_character.GetDynasty.GetName] architecture, with many of them already being constructed in that style. [target_character.GetName] has been obsessed with creating a new one, with a completely different style. Calling it $kusumba_mosque$, [target_character.GetSheHe] claims it will be the black gem of [ShowRegionNameWithNoTooltip('bengal_region')]."
+ flavor_bng.14.historical_info: "During the height of the Suri rule over Bengal, several mosques were constructed by these rulers all over the realm. Although most of them followed the same style, the Kusumba Mosque followed the style of older ones, independent from the style of the Afghani rulers."
+ flavor_bng.14.a: "It shall be a grand mosque."
+ flavor_bng.14.b: "$india$ does not need more of these."
+ flavor_bng.14.c: "It shall be the grandest in all of [ShowReligionGroupNameWithNoTooltip('muslim')]."
+
+ flavor_bng_1000_shared: "Relations With $china$"
+ flavor_bng.1000.title: "$flavor_bng_1000_shared$"
+ flavor_bng.1000.desc: "The [GetInternationalOrganization('middle_kingdom').GetName] led by [target_country.GetName] may prove to be valuable allies. Although it is not entirely sure if we can convince them to support us in any conflict, we can, at the very least, send emissaries to them to strengthen the relations between both realms."
+ flavor_bng.1000.a: "It is worth the effort."
+ flavor_bng.1000.b: "No need to make them our allies"
+ bng_no_diplomatic_ties_tt: "We will not send any embassy to [target_country.GetName]"
+
+ flavor_bng.1001.title: "$flavor_bng_1000_shared$"
+ flavor_bng.1001.desc: "[target_country2.GetName] has sent an embassy in [ROOT.GetCountry.GetCapital.GetName] hoping to establish better relations, and possibly learn of the ways of our governance. Although we could increase our influence there, sharing our ways with outsiders may not be the best idea."
+ flavor_bng.1001.a: "Let us welcome them!"
+ flavor_bng.1001.b: "They are not accepted here."
+ bng_rejected_agreement_tt: "[target_country2.GetName] will not receive any bonuses"

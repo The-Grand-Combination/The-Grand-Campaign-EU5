@@ -1,0 +1,32 @@
+﻿colonial_representation_law = {
+	law_category = estates
+	potential = {
+		is_colonial_subject = yes
+	}
+
+	colonial_representation_law_no = { #Colonial Nation has no representation
+		country_modifier = {
+			parliament_abolished = yes
+			loyalty_to_overlord = -20
+		}
+		on_activate = {
+			set_parliament_active = no
+		}
+		years = 2
+	}
+	
+	colonial_representation_law_yes = { #Colonial Nation has representation
+		potential = { #this is granted through give_colony_representation
+			always = no
+		}
+		country_modifier = {
+			overlord_blocked_from_recruiting_regiments = yes
+			overlord_blocked_from_building_ships = yes
+			overlord_blocked_from_building_rgos = yes
+			overlord_blocked_from_building_roads = yes
+			overlord_blocked_from_building_buildings = yes
+			loyalty_to_overlord = 20
+		}
+		years = 2
+	}
+}

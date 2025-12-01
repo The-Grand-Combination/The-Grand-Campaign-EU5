@@ -1,0 +1,79 @@
+﻿l_english:
+ anglican_events.1.title: "The Display of Royal Arms"
+ anglican_events.1.desc: "Following the destruction and removal of Papist symbols, Anglican churches were left somewhat bare of decoration. It has been decreed that in place of these blasphemous icons, the Royal Arms of [ROOT.GetCountry.GetGovernment.GetRuler.GetName] is to be displayed. The presence of the Royal Arms cements in the public consciousness the reality of the new order; that [ROOT.GetCountry.GetGovernment.GetRuler.GetName] is appointed by God not only as [ROOT.GetCountry.GetGovernment.GetRulerTitle] of [ROOT.GetCountry.GetName], but also as Supreme Governor of the Church."
+ anglican_events.1.a: "Display the Royal Arms proudly in every church."
+
+ anglican_events.2.title: "Recusancy"
+ anglican_events.2.desc: "Attending Anglican services is mandatory in the [ROOT.GetCountry.GetGovernment.GetGovernmentType.GetName] of [ROOT.GetCountry.GetName]. Recusancy is punishable by harsh fines. A person found guilty must forfeit all their goods and chattels, their lands, tenements, and hereditaments, and all of their rents and annuities. Enforcement, however, is difficult due to the sheer number of potential recusants, and so we should focus our efforts on the most concerning offenders.\n\nPopery is a particularly heinous crime. As the Pope denies the legitimacy of the [ROOT.GetCountry.GetGovernment.GetRulerTitle], so too must faithful Catholics, and thus all Catholics may be considered traitors to the state.\n\nRadical nonconformists such as the Puritans may also be targeted by these laws should they stray too far from the established doctrines of the Church.\n\nThe law enforces the uniformity of religious belief in [ROOT.GetCountry.GetName], but it might also be used to discourage factionalism within the court. The mere suggestion of recusancy can destroy one's reputation at court."
+ anglican_events.2.a: "Target Catholics."
+ anglican_events.2.b: "Target Puritans."
+ anglican_events.2.a.tt: "All [ShowReligionName('catholic')] [pops|e] will lose [ShowNamedValue('pop_satisfaction_mild_penalty')|+=2%] [pop_satisfaction|e]"
+ 
+ anglican_events.3.title: "Prophesying and Sermons"
+ anglican_events.3.desc: "The Anglican Church does not require that its clergy devote much time to preaching. A monthly or even quarterly sermon is adequate according to the law, which is usually lifted directly from the Book of Homilies.\n\nMany parishioners desire a more personal and involved approach to religious services, and have taken matters into their own hands by pooling money to pay for educated lecturers to preach in their towns. These lecturers however do not always have the most orthodox of theological views. It is often the case that the most eager to preach are those with the most radical ideas, and so these private sermons have become associated with the Puritan movement.\n\nWhile there are advantages to a more religiously literate populace, cracking down on Puritanism would increase the authority of the Church."
+ anglican_events.3.a: "Ban these nonconformist sermons."
+ anglican_events.3.b: "Let them preach as they wish."
+
+ anglican_events.4.title: "Parliamentary Debate on Doctrine"
+ anglican_events.4.desc: "The [ROOT.GetCountry.GetAdjective] [ROOT.GetCountry.GetGovernment.GetParliament.GetName] is often called upon to debate matters of religion. Typically, the [ROOT.GetCountry.GetGovernment.GetRulerTitle] will propose a new wave of reforms for the Anglican Church and [ROOT.GetCountry.GetGovernment.GetParliament.GetName] will take a stance along established factional lines; the Members in the Commons more likely to support radical or even Puritan measures, the Lords temporal more likely to favor a more conservative approach. Rarely does the [ROOT.GetCountry.GetGovernment.GetRulerTitle] get [ROOT.GetCountry.GetGovernment.GetRuler.GetHerHis] way precisely, and when [ROOT.GetCountry.GetGovernment.GetRuler.GetSheHe] does, coercive measures are often involved."
+ anglican_events.4.a: "Pass the reforms exactly as the [ROOT.GetCountry.GetGovernment.GetRulerTitle] proposed."
+ anglican_events.4.b: "The Lords win the day."
+ anglican_events.4.c: "The Commons have their way."
+
+ anglican_events.5.title: "The Marprelate Tracts"
+ anglican_events.5.desc: "Dissatisfied with the conservative establishment of the Anglican Church, a group of Puritans writing under the pseudonym 'Martin Marprelate' began publishing a series of scathing pamphlets directed at the Church leadership. The Bishops of [ROOT.GetCountry.GetName], according to these writers, are proud, popish, presumptuous, profane, paltry, pestilent, and pernicious prelates who usurp authority from God.\n\nThese tracts have garnered public attention and risk making a mockery of the Establishment lest something be done about them."
+ anglican_events.5.a: "Ignore this nonsense."
+ anglican_events.5.b: "Respond in kind, this is a war of pamphlets!"
+ anglican_events.5.c: "Find and arrest the authors."
+  
+ anglican_events.6.title: "Prayer Book Rebellions"
+ anglican_events.6.desc: "The doctrines of the Anglican Church are contained within the Book of Common Prayer. It is a book that needs periodic revisions to accord with changes in Anglican thought, as it shifts between more radical and more traditional theology. The most recent edition contains material that has greatly angered the people of [prayer_book_province.GetName], many of whom still cling to Catholic dogmas and practices. They have risen up in revolt, demanding that the Book be reverted to its previous edition."
+ anglican_events.6.a: "Repeal the new edition and make traditionalist concessions."
+ anglican_events.6.b: "We will not tolerate papist treason!"
+ 
+ anglican_events.7.title: "Crypto-[ShowReligionAdjectiveWithNoTooltip('catholic')] Statesman"
+ anglican_events.7.desc: "The [ROOT.GetCountry.GetAdjective] Reformation did not sway the hearts and minds of the entire population. Many continue to harbor [ShowReligionAdjective('catholic')] sympathies, even among the [ROOT.GetCountry.GetGovernment.GetCourtTitle]. It has been discovered that [minister.GetName] has been secretly attending a [ShowReligionAdjectiveWithNoTooltip('catholic')] mass, a practice strictly forbidden by law. If exposed, [minister.GetSheHe] stands to lose all of [minister.GetHerHis] land and property, and will no longer be eligible for public office."
+ anglican_events.7.a: "They are too useful, for now."
+ anglican_events.7.b: "No [ShowReligionAdjectiveWithNoTooltip('catholic')] believers in the [ROOT.GetCountry.GetGovernment.GetCourtTitle]!"
+ anglican_events.7.c: "Off with [minister.GetHerHis] head!"
+ 
+ anglican_events.8.title: "Prayers to Saints"
+ anglican_events.8.desc: "When [ROOT.GetCountry.GetName] broke with Rome, we did away with the superstitious notion that prayers should be directed to the Saints rather than to God himself. As our new theology has no place for the papist concept of Purgatory, there is no need for Saints to intercede on behalf of our souls. Despite this, many people continue the practice of praying to Saints, and many churches give excessive reverence to their patron."
+ anglican_events.8.a: "It's harmless, we can allow this."
+ anglican_events.8.b: "Uniformity must be enforced"
+ 
+ anglican_events.9.title: "Abolition of Feast Days"
+ anglican_events.9.desc: "The Catholic liturgical calendar is filled with feast days that function as public holidays and occasions for celebration. No longer under Papal authority, our own Church must decide how far this practice ought to continue. Those most fervent reformers argue that superfluous holidays encourage sinful temptation and distract from gainful labor. This has been met with broad agreement in terms of theology, but abolishing feast days is likely to upset the populace who do so enjoy the occasional day off."
+ anglican_events.9.a: "Abolish more feast days."
+ anglican_events.9.b: "Let them have their fun."
+ 
+ anglican_events.10.title: "Puritans Leaving for the Colonies"
+ anglican_events.10.desc: "The Puritans have for some time criticized the hierarchy and doctrines of the Church of [ROOT.GetCountry.GetName]. The Reformation has to their eyes merely replaced the Pope with the [ROOT.GetCountry.GetGovernment.GetRulerTitle] and they openly denounce the state�s slothful attitude to reform. Theological disputes aside, Puritans have also been persecuted as nonconformists, depending on the leanings of the current [ROOT.GetCountry.GetGovernment.GetRulerTitle]. Finally exhausted by the religious affairs of Europe, many Puritans have decided to migrate in the New World. They have organized themselves into a colonial company an requested a charter to establish new settlements in the Americas."
+ anglican_events.10.a: "Let them build their own settlement."
+ anglican_events.10.b: "Integrate them into an established colony."
+  
+ anglican_events.11.title: "Controversy over Vestments"
+ anglican_events.11.desc: "The matter of clerical vestments remains a contentious issue in the Anglican Church. The extravagant and superstitious rags of the papists are surely to be done away with, but the degree of austerity required of the clergy continues to inflame debate and protest.\n\nConservative Anglicans wish to reinstate some of the elaborate trappings of the old Catholic priesthood, while moderates argue that a simple surplice is sufficient. Radical reformers insist that vestments are not merely lacking scriptural support, but deface and corrupt the ordinances which God has instituted."
+ anglican_events.11.a: "Allow traditional vestments."
+ anglican_vestments_tt: "This will increase the demand for [ShowGoodsName('fine_cloth')] by our [ShowPopTypeName('clergy')]"
+ anglican_events.11.b: "Surplices only."
+ anglican_events.11.c: "Denounce all vestments."
+
+ anglican_events.12.title: "Smashing Altars"
+ anglican_events.12.desc: "The early years of the English Reformation are a time of fervent iconoclasm. Any adornment or relic that even suggests Papism, the existence of Purgatory, or the divinity of saints is being ruthlessly stripped from the churches. Anything that could lead the laity astray must be destroyed; altars are smashed, paintings painted over, shrines ruined.\n\nA perpetual issue for the new Anglican Church is the matter of how far this iconoclasm should be taken. Some more radical reformers push for an end to roods, candlesticks, and crucifixes, while others seek the restoration of some of the more harmless ornaments."
+ anglican_events.12.a: "Smash the altars and imprison papist protesters!"
+ anglican_events.12.a.tt: "All [ShowReligionName('catholic')] [pops|e] will lose [ShowNamedValue('pop_satisfaction_severe_penalty')|+=2%] [pop_satisfaction|e]"
+ anglican_events.12.b: "Destroy only what is undeniably papist."
+ anglican_events.12.b.tt: "All [ShowReligionName('catholic')] [pops|e] will lose [ShowNamedValue('pop_satisfaction_weak_penalty')|+=2%] [pop_satisfaction|e]"
+ anglican_events.12.c: "Put an end to this iconoclasm."
+ 
+ anglican_events.13.title: "Catholic Instigators"
+ anglican_events.13.desc: "Though [ROOT.GetCountry.GetName] has formally split from the Rome, the Pope continues to meddle in our affairs by orchestrating plots against [ROOT.GetCountry.GetGovernment.GetRuler.GetName]. Jesuits and priests number among his agents, sheltered by traitorous recusants.\n\nThese crypto-Catholics employ cunning methods of hiding Papist agents from the law, deviously building secret areas behind walls, under the floorboards, and even in concealed underground passageways. Hiding in these 'priest holes' can injure or even suffocate their occupants, so they are at least unlikely to be able to make a quick escape once located."
+ anglican_events.13.a: "Conduct a national priest-hunt. Search every house!"
+ anglican_events.13.b: "Find out where they're coming from"
+ 
+ anglican_events.15.title: "Nonconformist Monarch"
+ anglican_events.15.desc: "[ROOT.GetCountry.GetGovernment.GetRuler.GetName] has landed in the unenviable position of being both a religious nonconformist and the Supreme Governor of the Church of [ROOT.GetCountry.GetName]. The Anglicans of [ROOT.GetCountry.GetName] struggle to tolerate this state of affairs, and the legitimacy of the Church is dramatically weakened."
+ anglican_events.15.a: "This will be a difficult adjustment."
+ anglican_events.15.b: "The monarch must be Anglican."
+ 

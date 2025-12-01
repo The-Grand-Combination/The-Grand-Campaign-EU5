@@ -1,0 +1,77 @@
+﻿l_english:
+ cossack_estate_events.1.title: "Colonization of the Steppes"
+ cossack_estate_events.1.desc: "The [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] complain that an increasing number of serfs are deserting the safe homes provided to them to seek their fortune among the [ROOT.GetCountry.GetGovernment.GetEstateName('cossacks_estate')] of the steppes. They feel we are to blame as we have allowed the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('cossacks_estate')] to grow too powerful and that is inspiring the serfs to abandon their rightful masters.\n\nRepresentatives of the major families of the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] now demand that we limit the power of the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('cossacks_estate')] so that the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] themselves instead can expand their latifundia in the regions bordering the steppe. This way, they argue, the wild fields can be tamed and the laws of the realm upheld."
+ cossack_estate_events.1.a: "These serfs must be brought back."
+ cossack_estate_events.1.b: "We cannot afford to anger the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('cossacks_estate')]."
+
+ cossack_estate_events.2.title: "Growth of [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('cossacks_estate')] Power"
+ cossack_estate_events.2.desc: "While few would dispute their influence on the steppes, the [ROOT.GetCountry.GetGovernment.GetEstateName('cossacks_estate')] have many things working against them when it comes to gaining influence in the halls of power. The [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] despise them and would see them all brought to work as serfs on their latifundia and their manners have not brought them many friends in [ROOT.GetCountry.GetCapital.GetName].\n\nLately, however, things have been going their way. They have managed to defend their settlements and their services to the state as raiders are indisputable."
+ cossack_estate_events.2.a: "[ROOT.GetCountry.Custom('common_string_ok')]"
+
+ cossack_estate_events.3.title: "Decline of [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('cossacks_estate')] Power"
+ cossack_estate_events.3.desc: "The free nature of the [ROOT.GetCountry.GetGovernment.GetEstateName('cossacks_estate')] and the distance between them and the halls of power in [ROOT.GetCountry.GetCapital.GetName] has always been a problem for them. Lacking hereditary privileges, the number of [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('cossacks_estate')] with enough influence to affect the happenings of the [ROOT.GetCountry.GetGovernment.GetCourtTitle] have been decreasing steadily."
+ cossack_estate_events.3.a: "[ROOT.GetCountry.Custom('common_string_ok')]"
+
+ cossack_estate_events.4.title: "Petition for Privileges"
+ cossack_estate_events.4.desc: "Not all [ROOT.GetCountry.GetGovernment.GetEstateName('cossacks_estate')] are awarded the same privileges by the state. Traditionally, rights are awarded to specific [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('cossacks_estate')] that are willing to perform great services to the state in times of war. As these rights are not transferable upon death, this means that the influence of the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('cossacks_estate')] can vary greatly over time. According to the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('cossacks_estate')], it is high time we grant them further privileges to bolster our numbers."
+ cossack_estate_events.4.a: "We need more [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('cossacks_estate')] in the army!"
+ cossack_estate_events.4.b: "We need more registered [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('cossacks_estate')]!"
+ cossack_estate_events.4.c: "Let them tend to their steppes."
+
+ cossack_estate_events.5.title: "Supplies for the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('cossacks_estate')]"
+ cossack_estate_events.5.desc: "Life on the frontier can be harsh and while the [ROOT.GetCountry.GetGovernment.GetEstateName('cossacks_estate')] are used to fighting their own battles, a little help from the central treasury could probably be put to good use. Last season was unusually harsh and together with an increasing number of raiders and bandit incursions, many [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('cossacks_estate')] now have an urgent shortage of food for the coming months. If we were to supply the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('cossacks_estate')] with food as well as military supplies such as arms and uniforms, we would not only be strengthening our defenders on the steppes directly but we would likely also tie them closer to our state."
+ cossack_estate_events.5.a: "Send them what they need."
+ cossack_estate_events.5.b: "They will have to make do themselves."
+
+ cossack_estate_events.6.title: "Trade Disturbances"
+ cossack_estate_events.6.desc: "There has always been tension between the [ROOT.GetCountry.GetGovernment.GetEstateName('cossacks_estate')] and the other estates, if nothing else because of their uncommon manners and diverse backgrounds. Lately, however, these have increased considerably. The [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] are alarmed at the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('cossacks_estate')] raids and claim that they are targeting shipments of their goods. The [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('cossacks_estate')] themselves claim that they are only attacking the bandits and brigands in the area and that the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')] are simply mistaken.\n\nAs there is little in the way of government representation in the area, it is difficult to ascertain the truth but there is clearly friction between these two groups and we are expected to either reprimand or sanction one side in this conflict."
+ cossack_estate_events.6.a: "Support the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('cossacks_estate')]."
+ cossack_estate_events.6.b: "Support the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')]."
+
+ cossack_estate_events.7.title: "[ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('cossacks_estate')] Settlers in [target_cossacks_destination.GetNameWithNoTooltip]"
+ cossack_estate_events.7.desc: "The life of the steppes has made the [ROOT.GetCountry.GetGovernment.GetEstateName('cossacks_estate')] used to a frontier living. Constant threats from both a harsh climate in an unsettled land and foreign raiders have made the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('cossacks_estate')] both feared warriors and hardy settlers.\n\nAs we turn our sights on the land of [target_cossacks_destination.GetName], it is becoming apparent that life on the frontier is not that different from that of the steppes we already control."
+ cossack_estate_events.7.a: "Enlist [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('cossacks_estate')] Settlers."
+ cossack_estate_events.7.b: "We cannot trust the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('cossacks_estate')]."
+
+ cossack_estate_events.8.title: "Unrest among the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('cossacks_estate')]"
+ cossack_estate_events.8.desc: "The deep distrust of the [ROOT.GetCountry.GetGovernment.GetEstateName('cossacks_estate')] for the state in general and our [ROOT.GetCountry.GetGovernment.GetCourtTitle] in particular has culminated in a total breakdown of authority on their territories. The communities of the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('cossacks_estate')] are openly hostile to our emissaries and de facto now act entirely independent from the central authority."
+ cossack_estate_events.8.a: "Leave them alone, relations will improve in due time."
+ cossack_estate_events.8.b: "Crush the dissenters."
+
+ cossack_estate_events.9.title: "[ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('cossacks_estate')] Expansion in [target_location.GetNameWithNoTooltip]"
+ cossack_estate_events.9.desc: "Borders can often be theoretical things, especially in the wild fields. It seems the [ROOT.GetCountry.GetGovernment.GetEstateName('cossacks_estate')] have expanded rapidly into [target_location.GetName], and now their own authority there is more respected than ours. We could attempt to reverse this development but the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('cossacks_estate')] would likely not take kindly to being removed from land they have worked hard to settle."
+ cossack_estate_events.9.a: "Accept the new Status Quo."
+ cossack_estate_events.9.b: "Reclaim the land from the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('cossacks_estate')]."
+
+ cossack_estate_events.10.title: "Demands for Extended Privileges"
+ cossack_estate_events.10.desc: "The old dream of the [ROOT.GetCountry.GetGovernment.GetEstateName('cossacks_estate')] has always been to be accepted as the equals to the established estates such as the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] or [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')]. Never has this dream been closer to realization than now. The [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('cossacks_estate')] have achieved great influence in our state and we rely on their support in many ways.\n\nGiven the favorable circumstances, many among the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('cossacks_estate')] are now voicing their old demands for official recognition and privileges."
+ cossack_estate_events.10.a: "Preposterous."
+ cossack_estate_events.10.b: "Give in to their demands."
+
+ cossack_estate_events.11.title: "People Relocating to the Steppes"
+ cossack_estate_events.11.desc: "With such swathe of steppe lands within our borders, there are many among our people thinking about the opportunities those lands can bring. Of course, the [ShowCultureGroupName('tatar_group')] people have been living there since they came from the East, but their way of life is quite different than that of our populace. Nevertheless, the region around [target_migration_province.GetName] seems to have caught the attention of many, as there is already a perceptible amount of people within our [ROOT.GetCountry.GetFlavorRank] determined to relocate there and seek their fortune in this new land."
+ cossack_estate_events.11.a: "A bold move indeed."
+ cossack_estate_events.11.b: "Nonsense, no one moves unless we allow it."
+
+ cossack_estate_events.12.title: "Emerging of the [ShowCultureNameWithNoTooltip('cossack_culture')] Culture"
+ cossack_estate_events.12.desc: "Since our people have been settling the steppe regions within our borders, they have had to adapt to the harsh conditions there. Inheriting from the [ShowCultureGroupName('tatar_group')] that roamed those lands, they have been slowly changing their traditions and way of life, to the point of becoming something new and distinct. As such, the people in [target_cossack_conversion.GetName] have started to refer to themselves as [ShowCultureName('cossack_culture')]"
+ cossack_estate_events.12.a: "An interesting development."
+ cossack_estate_events.12.tt: "Many of our [pops|e] in [target_cossack_conversion.GetName] will become [ShowCultureName('cossack_culture')] [ShowPopTypeName('tribesmen')]"
+
+ cossack_estate_events.1000.title: "[cossack_origin_country.GetGovernment.GetEstateNameWithNoTooltip('cossacks_estate')] Aggression"
+ cossack_estate_events.1000.desc: "Moving quickly by boat or on horseback, the [cossack_origin_country.GetGovernment.GetEstateName('cossacks_estate')] of the steppes are very adept raiders. Several such raids have lately laid waste to our countryside and even settlements some way from our borders, devastating the [cossack_target_location.GetRank.GetName] of [cossack_target_location.GetName]. Once the raids have been executed, these plunderers retreat back behind the borders of [cossack_origin_country.GetName] as quickly as they came.\n\nBoth the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] and the [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] have interests in the affected areas and both groups now demand that we do something."
+ cossack_estate_events.1000.a: "Demand that these [cossack_origin_country.GetGovernment.GetEstateNameWithNoTooltip('cossacks_estate')] be brought to Justice!"
+ cossack_estate_events.1000.b: "We will just have to let this slide."
+
+ cossack_estate_events.1001.title: "$cossack_estate_events.1000.title$"
+ cossack_estate_events.1001.desc: "It is no secret that our [ROOT.GetCountry.GetGovernment.GetEstateName('cossacks_estate')] roam freely and have adopted some pillaging and looting tactics. There have been some recent reports that some of these raids have taken beyond our borders and they have laid waste to the [target_root_country.GetAdjective] countryside in [cossack_target_location.GetName].\n\nAs the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('cossacks_estate')] responsible are based inside our borders, the [target_root_country.GetLongNameWithNoTooltip] have now demanded both compensation and for the culprits to be brought to justice."
+ cossack_estate_events.1001.a: "This matter is beyond our control."
+ cossack_estate_events.1001.b: "Bring them to justice!"
+
+ cossack_estate_events.1002.title: "The [cossack_origin_country.GetAdjectiveWithNoTooltip] Response"
+ cossack_estate_events.1002.desc: "The [cossack_origin_country.GetAdjective] response is that they refuse to take responsibility for the raids into our country, claiming that they are unable to control the [cossack_origin_country.GetGovernment.GetEstateName('cossacks_estate')] themselves."
+ cossack_estate_events.1002.a: "We care little for such excuses."
+
+ cossack_estate_events.1003.title: "$cossack_estate_events.1002.title$"
+ cossack_estate_events.1003.desc: "The [cossack_origin_country.GetAdjective] response has been to send some monetary compensation for the raids of their [cossack_origin_country.GetGovernment.GetEstateName('cossacks_estate')], which has made up for the damage to property. They also claim that they have brought the guilty parties to justice."
+ cossack_estate_events.1003.a: "If we could only believe that."

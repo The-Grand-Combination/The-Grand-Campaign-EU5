@@ -1,0 +1,20 @@
+﻿gaituguiliu_policy = {
+	ability = adm
+	
+	allow_multiple = no
+	
+	potential = {
+		exists = international_organization:middle_kingdom
+		international_organization:middle_kingdom = {
+			international_organization_has_leader = yes
+			leader_country = root
+			international_organization_has_policy = policy:introduce_gaituguiliu_policy
+		}
+	}
+
+	country_modifier = {
+		global_pop_assimilation_speed_modifier = 0.1
+		monthly_celestial_authority = 0.01
+		diplomatic_annexation_cost = -0.1
+	}
+}

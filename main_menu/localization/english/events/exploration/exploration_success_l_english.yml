@@ -1,0 +1,5 @@
+﻿l_english: 
+ exploration_success.1.title: "Distinguished Midshipman"
+ exploration_success.1.desc: "Upon the successful return of the expedition to [target.GetName], we hear that [actor.GetName] gives much credit to a promising young officer, who served the expedition with great distinction."
+ exploration_success.1.a: "Give him command of his own expeditions."
+ exploration_success.1.b: "We need good midshipmen."

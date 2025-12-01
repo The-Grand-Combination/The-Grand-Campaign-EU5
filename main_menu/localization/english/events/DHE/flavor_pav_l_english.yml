@@ -1,0 +1,12 @@
+﻿l_english:
+ flavor_pav.1.title: "Expulsion of the [expelled_ruler.GetDynasty.GetNameWithNoTooltip]"
+ flavor_pav.1.desc: "The city of [ROOT.GetCountry.GetCapital.GetName] is up in flames as yet another revolt against the [expelled_ruler.GetDynasty.GetName] breaks out. This time, it is led by the charismatic cleric [pav_iacopo_bussolari_scope.GetName], who has united the city against its [ROOT.GetCountry.GetGovernment.GetRulerTitle]. If nothing is done, [expelled_ruler.GetName] will have to flee, perhaps into the vice of the [ShowDynastyName('visconti_dynasty')]."
+ flavor_pav.1.historical_info: "In 1356, the Beccaria were expelled from Pavia by a popular revolt led by the friar Iacopo Bussolari, who afterwards helped save the city from falling in a siege led by the Visconti. The expelled would ally themselves and the city would fall to Milan in 1359, after which the Beccaria had some privileges restored but the city remained under control of the Milanese."
+ flavor_pav.1.a: "Follow his preachings!"
+ flavor_pav.1.b: "We must resist this unrest."
+
+ flavor_pav.2.title: "$flavor_pav.1.title$"
+ flavor_pav.2.desc: "Word has reached us of a popular revolt in [target_country.GetName] led by the charismatic [pav_iacopo_bussolari_scope.GetName]. Under [pav_iacopo_bussolari_scope.GetHisHer] guise, the population of [target_country.GetCapital.GetNameWithNoTooltip] managed to expel the [expelled_ruler.GetDynasty.GetName] dynasty from ruling their city, including [expelled_ruler.GetName], who has turned to our side for help. While we did previously feud with the [expelled_ruler.GetDynasty.GetNameWithNoTooltip], we could use this as an opportunity to finally claim this city for good."
+ flavor_pav.2.historical_info: "$flavor_pav.1.historical_info$"
+ flavor_pav.2.a: "Exploit the chaos."
+ flavor_pav.2.b: "Not our concern."

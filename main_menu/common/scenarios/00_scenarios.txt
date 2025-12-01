@@ -1,0 +1,29 @@
+﻿# You can use the "coa" console command to get the flag for a particular country.
+
+TUR_scenario = {
+	country = TEU
+	flag = TEU_simple
+	player_playstyle = MILITARY
+	player_proficiency = NOVICE
+}
+
+CAS_scenario = {
+	country = FRA
+	flag = FRA_republic
+	player_playstyle = MILITARY
+	player_proficiency = EXPERIENCED
+}
+
+FRA_scenario = {
+	country = HAB
+	flag = HAB_IMPERIAL
+	player_playstyle = MILITARY
+	player_proficiency = EXPERIENCED
+}
+
+HUN_scenario = {
+  	country = ENG
+	flag = ENG_monarchy
+	player_playstyle = ADMINISTRATIVE
+	player_proficiency = NOVICE
+}

@@ -1,0 +1,171 @@
+﻿l_english:
+ #
+ # If you really wanted you could manually write out each ordinal just by omitting the $NUM$
+ # ordinal_numeral.english_language.000000001: "First"
+ # ordinal_numeral.english_language.000000002: "Second"
+ # ordinal_numeral.english_language.000000003: "Third"
+ #
+ ordinal_numeral: "$NUM$."
+ #
+ ordinal_numeral.english_language.1: "$NUM$ˢᵗ"
+ ordinal_numeral.english_language.2: "$NUM$ⁿᵈ"
+ ordinal_numeral.english_language.3: "$NUM$ʳᵈ"
+ ordinal_numeral.english_language.11: "$NUM$ᵗʰ"
+ ordinal_numeral.english_language.12: "$NUM$ᵗʰ"
+ ordinal_numeral.english_language.13: "$NUM$ᵗʰ"
+ ordinal_numeral.english_language: "$NUM$ᵗʰ"
+ #
+ ordinal_numeral.french_language.000000001: "$NUM$ᵉʳ"
+ ordinal_numeral.french_language: "$NUM$ᵉ"
+ #
+ ordinal_numeral.gaelic_language: "$NUM$ú"
+ ordinal_numeral.scottish_gaelic_dialect: "$NUM$ᵃᵐʰ"
+ #
+ ordinal_numeral.north_italian_language: "$NUM$º"
+ ordinal_numeral.south_italian_language: "$NUM$º"
+ #
+ ordinal_numeral.ruthenian_language: "$NUM$-й"
+ ordinal_numeral.east_slavic_language: "$NUM$-й"
+ ordinal_numeral.bulgarian_language: "$NUM$-й"
+ #
+ ordinal_numeral.spanish_language.000000001: "$NUM$ᵉʳ"
+ ordinal_numeral.spanish_language.000000003: "$NUM$ᵉʳ"
+ ordinal_numeral.spanish_language: "$NUM$º"
+ #
+ ordinal_numeral.occitan_dialect.000000001: "$NUM$ᵉʳ"
+ ordinal_numeral.occitan_dialect.000000002: "$NUM$ᵉⁿ"
+ ordinal_numeral.occitan_dialect.000000003: "$NUM$ᵉⁿ"
+ ordinal_numeral.occitan_dialect: "$NUM$ᵉⁿ" # èn
+ #
+ ordinal_numeral.catalan_dialect.000000001: "$NUM$r"
+ ordinal_numeral.catalan_dialect.000000002: "$NUM$n"
+ ordinal_numeral.catalan_dialect: "$NUM$è" #è
+ #
+ ordinal_numeral.portuguese_language: "$NUM$º"
+ # 
+ ordinal_numeral.greek_language: "$NUM$o"
+ #
+ ordinal_numeral.swedish_dialect: "$NUM$:e"
+ #
+ ordinal_numeral.mandarin_language: "Dì $NUM$"
+ ordinal_numeral.shu_language: "Dì $NUM$"
+ ordinal_numeral.xiang_language: "Di $NUM$"
+ ordinal_numeral.gan_language: "Ti $NUM$"
+ ordinal_numeral.ping_language: "Dai $NUM$"
+ ordinal_numeral.yue_language: "Daih $NUM$"
+ ordinal_numeral.min_language: "Dâ̤ $NUM$"
+ ordinal_numeral.wu_language: "Di $NUM$"
+ ordinal_numeral.huizhou_language: "Di $NUM$"
+ ordinal_numeral.kejia_language: "Thi $NUM$"
+ ordinal_numeral.jin_language: "Di $NUM$"
+ #
+ ordinal_numeral.japanese_language: "Dai $NUM$"
+ #
+ ordinal_numeral.korean_language: "Je $NUM$"
+ #
+ ordinal_numeral.mongolian_language: "$NUM$-р"
+ #
+ ordinal_numeral.breton_dialect: "$NUM$ᵛᵉᵗ"
+ ordinal_numeral.breton_dialect.01: "$NUM$ᵃⁿ" # añ
+ ordinal_numeral.breton_dialect.02: "$NUM$ⁱˡ"
+ ordinal_numeral.breton_dialect.03: "$NUM$ᵉ"
+ ordinal_numeral.breton_dialect.04: "$NUM$ᵉ"
+ #
+ ordinal_numeral.welsh_dialect: "$NUM$ᵃⁱⁿ" # Welsh 
+ ordinal_numeral.welsh_dialect.00: "$NUM$ᶠᵉᵈ"
+ ordinal_numeral.welsh_dialect.01: "$NUM$ᵃᶠ"
+ ordinal_numeral.welsh_dialect.02: "$NUM$ⁱˡ"
+ ordinal_numeral.welsh_dialect.03: "$NUM$ʸᵈᵈ"
+ ordinal_numeral.welsh_dialect.04: "$NUM$ʸᵈᵈ"
+ ordinal_numeral.welsh_dialect.05: "$NUM$ᵉᵈ"
+ ordinal_numeral.welsh_dialect.06: "$NUM$ᵉᵈ"
+ ordinal_numeral.welsh_dialect.07: "$NUM$ᶠᵉᵈ"
+ ordinal_numeral.welsh_dialect.08: "$NUM$ᶠᵉᵈ"
+ ordinal_numeral.welsh_dialect.09: "$NUM$ᶠᵉᵈ"
+ ordinal_numeral.welsh_dialect.10: "$NUM$ᶠᵉᵈ"
+ ordinal_numeral.welsh_dialect.11: "$NUM$ᵉᵍ"
+ ordinal_numeral.welsh_dialect.12: "$NUM$ᶠᵉᵈ"
+ ordinal_numeral.welsh_dialect.13: "$NUM$ᵉᵍ"
+ ordinal_numeral.welsh_dialect.14: "$NUM$ᵉᵍ"
+ ordinal_numeral.welsh_dialect.15: "$NUM$ᶠᵉᵈ"
+ ordinal_numeral.welsh_dialect.16: "$NUM$ᵉᵍ"
+ ordinal_numeral.welsh_dialect.17: "$NUM$ᵉᵍ"
+ ordinal_numeral.welsh_dialect.18: "$NUM$ᶠᵉᵈ"
+ ordinal_numeral.welsh_dialect.19: "$NUM$ᵉᵍ"
+ ordinal_numeral.welsh_dialect.20: "$NUM$ᶠᵉᵈ"
+ ordinal_numeral.welsh_dialect.40: "$NUM$ᶠᵉᵈ"
+ ordinal_numeral.welsh_dialect.41: "$NUM$ᶠᵉᵈ"
+ ordinal_numeral.welsh_dialect.42: "$NUM$ⁱˡ"
+ ordinal_numeral.welsh_dialect.43: "$NUM$ʸᵈᵈ"
+ ordinal_numeral.welsh_dialect.44: "$NUM$ʸᵈᵈ"
+ ordinal_numeral.welsh_dialect.45: "$NUM$ᵉᵈ"
+ ordinal_numeral.welsh_dialect.46: "$NUM$ᵉᵈ"
+ ordinal_numeral.welsh_dialect.47: "$NUM$ᶠᵉᵈ"
+ ordinal_numeral.welsh_dialect.48: "$NUM$ᶠᵉᵈ"
+ ordinal_numeral.welsh_dialect.49: "$NUM$ᶠᵉᵈ"
+ ordinal_numeral.welsh_dialect.50: "$NUM$ᶠᵉᵈ"
+ ordinal_numeral.welsh_dialect.51: "$NUM$ᶠᵉᵈ"
+ ordinal_numeral.welsh_dialect.52: "$NUM$ⁱˡ"
+ ordinal_numeral.welsh_dialect.53: "$NUM$ʸᵈᵈ"
+ ordinal_numeral.welsh_dialect.54: "$NUM$ʸᵈᵈ"
+ ordinal_numeral.welsh_dialect.55: "$NUM$ᵉᵈ"
+ ordinal_numeral.welsh_dialect.56: "$NUM$ᵉᵈ"
+ ordinal_numeral.welsh_dialect.57: "$NUM$ᶠᵉᵈ"
+ ordinal_numeral.welsh_dialect.58: "$NUM$ᶠᵉᵈ"
+ ordinal_numeral.welsh_dialect.59: "$NUM$ᶠᵉᵈ"
+ ordinal_numeral.welsh_dialect.60: "$NUM$ᶠᵉᵈ"
+ ordinal_numeral.welsh_dialect.61: "$NUM$ᶠᵉᵈ"
+ ordinal_numeral.welsh_dialect.62: "$NUM$ⁱˡ"
+ ordinal_numeral.welsh_dialect.63: "$NUM$ʸᵈᵈ"
+ ordinal_numeral.welsh_dialect.64: "$NUM$ʸᵈᵈ"
+ ordinal_numeral.welsh_dialect.65: "$NUM$ᵉᵈ"
+ ordinal_numeral.welsh_dialect.66: "$NUM$ᵉᵈ"
+ ordinal_numeral.welsh_dialect.67: "$NUM$ᶠᵉᵈ"
+ ordinal_numeral.welsh_dialect.68: "$NUM$ᶠᵉᵈ"
+ ordinal_numeral.welsh_dialect.69: "$NUM$ᶠᵉᵈ"
+ ordinal_numeral.welsh_dialect.80: "$NUM$ᶠᵉᵈ"
+ ordinal_numeral.welsh_dialect.81: "$NUM$ᶠᵉᵈ"
+ ordinal_numeral.welsh_dialect.82: "$NUM$ⁱˡ"
+ ordinal_numeral.welsh_dialect.83: "$NUM$ʸᵈᵈ"
+ ordinal_numeral.welsh_dialect.84: "$NUM$ʸᵈᵈ"
+ ordinal_numeral.welsh_dialect.85: "$NUM$ᵉᵈ"
+ ordinal_numeral.welsh_dialect.86: "$NUM$ᵉᵈ"
+ ordinal_numeral.welsh_dialect.87: "$NUM$ᶠᵉᵈ"
+ ordinal_numeral.welsh_dialect.88: "$NUM$ᶠᵉᵈ"
+ ordinal_numeral.welsh_dialect.89: "$NUM$ᶠᵉᵈ"
+ ordinal_numeral.welsh_dialect.90: "$NUM$ᵃⁱⁿ"
+ ordinal_numeral.welsh_dialect.91: "$NUM$ᵃⁱⁿ"
+ ordinal_numeral.welsh_dialect.92: "$NUM$ᵃⁱⁿ"
+ ordinal_numeral.welsh_dialect.93: "$NUM$ᵃⁱⁿ"
+ ordinal_numeral.welsh_dialect.94: "$NUM$ᵃⁱⁿ"
+ ordinal_numeral.welsh_dialect.95: "$NUM$ᵃⁱⁿ"
+ ordinal_numeral.welsh_dialect.96: "$NUM$ᵃⁱⁿ"
+ ordinal_numeral.welsh_dialect.97: "$NUM$ᵃⁱⁿ"
+ ordinal_numeral.welsh_dialect.98: "$NUM$ᵃⁱⁿ"
+ ordinal_numeral.welsh_dialect.99: "$NUM$ᵃⁱⁿ"
+
+
+ ################ REGNAL NUMBERS FOR RULERS ################ 
+ #
+ ordinal_numeral.regnal.male: "$ROMAN$"
+ ordinal_numeral.regnal.female: "$ROMAN$"
+ #
+ ordinal_numeral.regnal.male.french_language.000000001: "$ROMAN$ᵉʳ"
+ ordinal_numeral.regnal.female.french_language.000000001: "$ROMAN$ʳᵉ"
+ #
+ ordinal_numeral.regnal.male.occitan_dialect.000000001: "$ROMAN$èr"
+ ordinal_numeral.regnal.female.occitan_dialect.000000001: "$ROMAN$èra"
+ #
+ ordinal_numeral.regnal.male.turkish_language: "$ROMAN$."
+ ordinal_numeral.regnal.female.turkish_language: "$ROMAN$."
+ #
+ ordinal_numeral.regnal.male.german_language: "$ROMAN$."
+ ordinal_numeral.regnal.female.german_language: "$ROMAN$."
+ #
+ ordinal_numeral.regnal.male.basque_language: "$ROMAN$.a"
+ ordinal_numeral.regnal.female.basque_language: "$ROMAN$.a"
+ #
+ ordinal_numeral.regnal.male.danish_dialect: "$NUM$."
+ ordinal_numeral.regnal.female.danish_dialect: "$NUM$."
+ ordinal_numeral.regnal.male.icelandic_dialect: "$NUM$."
+ ordinal_numeral.regnal.female.icelandic_dialect: "$NUM$."

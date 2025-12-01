@@ -1,0 +1,43 @@
+﻿l_english:
+ #
+ # Types
+ #
+ MODIFIER_NONE: "None"
+ MODIFIER_ABSTAIN: "Abstention"
+ #
+ # Generic
+ #
+ less_left_than_right: "less $LEFT|Y$ than $RIGHT|Y$"
+ no_more_left_than_right: "no more $LEFT|Y$ than $RIGHT|Y$"
+ more_left_than_right: "more $LEFT|Y$ than $RIGHT|Y$"
+ no_less_left_than_right: "no less $LEFT|Y$ than $RIGHT|Y$"
+ potential_modifier_desc: "If we had $REQUIREMENTS$; we would get:\n$MODIFIER|Y$:\n$EFFECTS$"
+ potential_modifier_scale: "(scaled with $FACTORS$)"
+ #
+ crown_estate_satisfaction: "Crown Estate Satisfaction"
+ nobles_estate_satisfaction: "Noble Estate Satisfaction"
+ clergy_estate_satisfaction: "Clergy Estate Satisfaction"
+ burghers_estate_satisfaction: "Burghers Estate Satisfaction"
+ peasants_estate_satisfaction: "Peasants Estate Satisfaction"
+ dhimmi_estate_satisfaction: "Dhimmi Estate Satisfaction"
+ tribes_estate_satisfaction: "Tribes Estate Satisfaction"
+ cossacks_estate_satisfaction: "$cossacks_estate$ Satisfaction"
+ 
+ crown_estate_power: "[crown_power|e]"
+ nobles_estate_power: "Noble Estate Power"
+ clergy_estate_power: "Clergy Estate Power"
+ burghers_estate_power: "Burghers Estate Power"
+ peasants_estate_power: "Peasants Estate Power"
+ dhimmi_estate_power: "Dhimmi Estate Power"
+ tribes_estate_power: "Tribes Estate Power"
+ cossacks_estate_power: "$cossacks_estate$ Power"
+ 
+ BOOLEAN_MODIFIER_SOURCES: "This can be set in the following places:"
+ SUBJECT_TYPE_OVERLORD: "[subject_types|e] (Overlord)" 
+ SUBJECT_TYPE_SUBJECT: "[subject_types|e] (Subject)"
+ IO_SPECIAL_STATUS: "[international_organizations|e] - Special Status"
+ IO_LEADERS: "[international_organizations|e] - Leaders"
+ IO_MEMBERS: "[international_organizations|e] - Members"
+ IO_POLICIES: "[international_organizations|e] - Policies"
+ IO_NON_LEADERS: "[international_organizations|e] - Non-Leaders"
+ MODIFIER_NODE_NAME_GOVERNMENT: "$ADJ$ Government"
