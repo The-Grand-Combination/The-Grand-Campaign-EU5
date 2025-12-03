@@ -12,6 +12,6 @@ jobs:
         uses: actions/add-to-project@v0.5.0
         with:
           project-url: https://github.org/orgs/The-Grand-Campaign/projects/6
-          github-token: ${{ secrets.PAT_TOKEN }} # You need a Personal Access Token with project scope
+          github-token: ${{ secrets.PAT_TOKEN }}
           labeled: 'Lane:Express'
           label-operator: AND
