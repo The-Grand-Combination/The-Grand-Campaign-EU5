@@ -1,0 +1,17 @@
+name: Express Lane Automation
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  express-track:
+    if: github.event.label.name == 'Lane:Express'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Move to "Ready" column
+        uses: actions/add-to-project@v0.5.0
+        with:
+          project-url: https://github.org/orgs/The-Grand-Campaign/projects/6
+          github-token: ${{ secrets.PAT_TOKEN }} # You need a Personal Access Token with project scope
+          labeled: 'Lane:Express'
+          label-operator: AND
