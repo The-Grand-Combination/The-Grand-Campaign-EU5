@@ -1,5 +1,5 @@
 # Contributing to The Grand Campaign
-The Grand Campaign is a deeply ambitious project that aims to completely change how the game works. The organization operates under a high-trust open charter, meaning that anyone has the capacity to contribute.\
+The Grand Campaign is a deeply ambitious project that aims to completely change how the game works. The organization operates under a **high-trust open charter**, meaning that everyone is invited to contribute.\
 However, there are a few guidelines that need to be followed to ensure the project runs smoothly.
 ## GitHub Workflow
 The repository is separated into several branches, with each one serving a different purpose, to understand how the team works and manages the repository's workflow, we will explain the purpose of each branch.
@@ -13,7 +13,7 @@ The repository is separated into several branches, with each one serving a diffe
 ## For New Contributors
 People who are new to the project are strongly suggested to read this section, as it explains how the project is managed, and some of the rules it operates under.
 ### TGC's Task Tracker
-The TGC Task Tracker is the central hub for the plannification and organization of the mod's activities, check it out to see what the team & affiliates are up to.
+The TGC Task Tracker is the central hub for the planning and organization of the mod's activities, check it out to see what the team & affiliates are up to.
 
 https://github.com/orgs/The-Grand-Combination/projects/6
 
@@ -48,9 +48,9 @@ All contributors and members who have branch creation privileges are restricted 
 - bugfix/*
 - hotfix/*
 
-Aterisks represent any set of characters.
+Asterisks represent any set of characters.
 
-Not naming a branch by using this convention results in GitHub throwing an error, this is because the repository's rules only allow for creating branches that follows the convention.
+Not naming a branch by using this convention results in GitHub throwing an error. The reason for this error is because the repository's rulesets only allow for creating branches that follows the previously mentioned format.
 
 <img width="312" height="257" alt="image" src="https://github.com/user-attachments/assets/5858c8d2-df83-487f-8f4e-5d0412d0e0a1" />
 
@@ -66,11 +66,11 @@ This is the base team with basic privileges, assigned to new contributors and ap
 
 #### Main Team
 
-The main team is delegated from the main team. Has admin access to the entire repository, and is the only team who can directly access the main branch.
+The main team is delegated from the core team. Has admin access to the entire repository, and is the only team who can directly access the main branch.
 
 #### Dev Team
 
-The dev team is delegated from the main team. The dev team represents main contributors, who have special privileges to manage the dev branch.
+The dev team is delegated from the core team. The dev team represents main contributors, who have special privileges to manage the dev branch.
 
 #### Domain-Specific Teams
 
@@ -103,7 +103,7 @@ With assignee (Taken)<br/>
 #### Initiate Critical Priority Tasks!
 
 If you find an issue/bug that breaks the mod, or see a card ready to be picked up with critical priority, start working on it immediately.\
-If you need help, don't hesistate to ask in #dev-chat or #modding-general, as these tasks are often tackled collectively.\
+If you need help, don't hesitate to ask in #dev-chat or #modding-general, as these tasks are often tackled collectively.\
 These tasks block progress for the whole team on a project-wide scale, so they take precedence over any other task you might be doing at the moment.
 
 <img width="262" height="307" alt="image" src="https://github.com/user-attachments/assets/eac34d0e-4bab-4928-9c9d-79bba62ba749" />
@@ -116,7 +116,7 @@ When you open a Pull Request, please link it to the corresponding issue. The pro
 
 #### Release Stale Tasks
 
-If you assigned yourself to a task but realized you canoot finish it in time, make sure to unassign yourself and move it back to ready.\
+If you assigned yourself to a task but realized you cannot finish it in time, make sure to unassign yourself and move it back to ready.\
 There is no shame in doing this, ghosting a task is worse than dropping it, this is a more respectful move and lets you communicate clearly with the team.\
 If you are stuck and need help with an Issue/PR, comment on it rather than sitting silently with it.
 
