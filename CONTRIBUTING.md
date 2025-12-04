@@ -15,8 +15,12 @@ To read the task board's documentation click on this button called project detai
 ### Work Lanes ###
 Work lanes are a concept of the project that determines the level of autonomy for a task, this allows the organization to properly manage the mod's tasks while ensuring community autonomy and participation.
 Below is the list of work lanes for the project:
+
 🟢 Express: Permissionless, no previous authorization required to work. Simply assign yourself and start working.
+
 🟡 Structured: Requires coordination with team/organization.
+
 🔴 Supervised: Requires deep planning and management, reserved for main team and main collaborators.
+
 ### Your First Issue ###
 Comment on the issue you wish to work on and use the command /assign
