@@ -23,4 +23,4 @@ Below is the list of work lanes for the project:
 🔴 Supervised: Requires deep planning and management, reserved for main team and main collaborators.
 
 ### Your First Issue ###
-Comment on the issue you wish to work on and use the command /assign
+Comment on the issue you wish to work on by using the command /assign in your comment.
