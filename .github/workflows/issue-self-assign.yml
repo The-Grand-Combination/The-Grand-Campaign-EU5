@@ -1,0 +1,36 @@
+name: Self Assign Issue
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  issues: write
+
+jobs:
+  assign:
+    runs-on: ubuntu-latest
+    if: contains(github.event.comment.body, '/assign')
+    steps:
+      - name: Assign commenter
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const user = context.payload.comment.user.login;
+            
+            try {
+              await github.rest.issues.addAssignees({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                assignees: [user]
+              });
+              
+              await github.rest.reactions.createForIssueComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: context.payload.comment.id,
+                content: 'telephone_receiver'
+              });
+            } catch (error) {
+              console.log(error);
+            }

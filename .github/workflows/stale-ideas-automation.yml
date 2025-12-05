@@ -1,0 +1,18 @@
+name: Stale Ideas Automation
+on:
+  schedule:
+    - cron: '00 12 * * *'
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/stale@v10
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          days-before-issue-stale: 60
+          days-before-close: 14
+          stale-issue-label: 'Status: Stale'
+          exempt-issue-labels: 'question, bug, documentation' 
+          stale-issue-message: 'This suggestion has had no activity for 60 days. To keep repository health and organization, we are closing this.'
+          close-issue-message: 'This issue has been closed to keep repository health and organization.'
