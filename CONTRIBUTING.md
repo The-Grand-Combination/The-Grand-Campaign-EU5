@@ -62,19 +62,15 @@ The organization is divided into several teams, with each one having a different
 
 #### The Grand Campaign Team
 
-This is the base team with basic privileges, assigned to new contributors and apprentices, these members can only manage Issues and Pull Requests.
+This is the base team with basic privileges assigned to apprentices, these members can only manage Issues and Pull Requests.
 
 #### Main Team
 
-The main team is delegated from the core team. Has admin access to the entire repository, and is the only team who can directly access the main branch.
+The main team is delegated from the core team. Has admin access to the entire repository.
 
 #### Dev Team
 
-The dev team is delegated from the core team. The dev team represents main contributors, who have special privileges to manage the dev branch.
-
-#### Domain-Specific Teams
-
-Some teams will have privilege access to branches where they have been assigned, these teams must still open Pull Requests to merge with the dev branch.
+The dev team is delegated from the core team. The dev team represents all contributors, who have access to the repository.
 
 ### Project Board Management
 
