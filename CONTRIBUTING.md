@@ -1,6 +1,6 @@
 # Contributing to The Grand Campaign
 The Grand Campaign is a deeply ambitious project that aims to completely change how the game works. The organization operates under a **high-trust open charter**, meaning that everyone is invited to contribute.\
-However, there are a few guidelines that need to be followed to ensure the project runs smoothly.
+However, there are a few guidelines that need to be followed to ensure the project runs smoothly and efficiently.
 ## GitHub Workflow
 The repository is separated into several branches, with each one serving a different purpose, to understand how the team works and manages the repository's workflow, we will explain the purpose of each branch.
 
@@ -13,11 +13,11 @@ The repository is separated into several branches, with each one serving a diffe
 ## For New Contributors
 People who are new to the project are strongly suggested to read this section, as it explains how the project is managed, and some of the rules it operates under.
 ### TGC's Task Tracker
-The TGC Task Tracker is the central hub for the planning and organization of the mod's activities, check it out to see what the team & affiliates are up to.
+The TGC Task Tracker is the central hub for the planning and organization of the mod's activities, check it out to see what the team is up to.
 
 https://github.com/orgs/The-Grand-Combination/projects/6
 
-To read the task board's documentation click on this button called project details located at the top right:
+To read the task board's documentation, click on this button called project details located at the top right:
 
 <img width="100" height="79" alt="image" src="https://github.com/user-attachments/assets/53d5dc94-dd89-46a4-b57d-3403704935e3" />
 
@@ -26,11 +26,11 @@ Work lanes are a concept of the project that determines the level of autonomy fo
 Below is the list of work lanes for the project:
 
 🟢 Express: Permissionless, no previous authorization required to work. Simply assign yourself and start working.\
-🟡 Structured: Requires coordination with team/organization.\
-🔴 Supervised: Requires deep planning and management, reserved for main team and main collaborators.
+🟡 Structured: Requires some coordination with devs.\
+🔴 Supervised: Requires deep planning and management, reserved for main team and skilled developers.
 
 ### Your First Issue
-Comment on the issue you wish to work on by using the command /assign in your comment, like this:
+You can assign yourself to an issue by using a command called /assign. Simply comment on the issue you wish to work on by using the command /assign, like this:
 
 <img width="837" height="250" alt="image" src="https://github.com/user-attachments/assets/b36eb9e8-8730-4047-8283-a8b3a2f24f1f" />
 
@@ -42,7 +42,7 @@ The entire repository has a set of rules that restricts the actions each team ca
 
 #### Branch Naming Conventions
 
-All contributors and members who have branch creation privileges are restricted to naming branches with the following format:
+All developers who have branch creation privileges are restricted to naming branches with the following format:
 
 - feat/*
 - bugfix/*
@@ -50,7 +50,8 @@ All contributors and members who have branch creation privileges are restricted 
 
 Asterisks represent any set of characters.
 
-Not naming a branch by using this convention results in GitHub throwing an error. The reason for this error is because the repository's rulesets only allow for creating branches that follows the previously mentioned format.
+The justification for this rule is to make all branches follow the branch protection rulesets put in place, which blocks anyone from making severe actions like deletions or force pushes.\
+Naming a branch without following this convention results in GitHub throwing an error. The reason for this error is because the repository's rulesets only allow for creating branches that follows the previously mentioned format.
 
 <img width="312" height="257" alt="image" src="https://github.com/user-attachments/assets/5858c8d2-df83-487f-8f4e-5d0412d0e0a1" />
 
@@ -58,7 +59,7 @@ Not naming a branch by using this convention results in GitHub throwing an error
 
 ### The Team
 
-The organization is divided into several teams, with each one having a different set of privileges and parent teams.
+The organization is divided into three teams, with each one having a different set of privileges and parent teams.
 
 #### The Grand Campaign Team
 
@@ -70,11 +71,11 @@ The main team is delegated from the core team. Has admin access to the entire re
 
 #### Dev Team
 
-The dev team is delegated from the core team. The dev team represents all contributors, who have access to the repository.
+The dev team is delegated from the core team. The dev team represents all contributors who have access to the repository.
 
 ### Project Board Management
 
-Contributors and collaborators are encouraged to use [the project board](https://github.com/orgs/The-Grand-Combination/projects/6) to efficiently manage the project's workflow, below is a list of good practices that must be followed to keep the project organized.
+Developers are encouraged to use [the project board](https://github.com/orgs/The-Grand-Combination/projects/6) to efficiently manage the project's workflow, below is a list of good practices that should be followed to keep the project organized.
 
 #### Label Issues and Pull Requests!
 
@@ -82,7 +83,6 @@ Cards and other items are not automatically labeled beyond GitHub's basic labeli
 
 <img width="306" height="122" alt="image" src="https://github.com/user-attachments/assets/923eb4da-d54b-4eb2-bb20-69f4c3a8ae6c" />
 <img width="271" height="206" alt="image" src="https://github.com/user-attachments/assets/a5a80ff4-702e-462a-9e4e-89d37d1ff1f5" /><br/>
-
 
 <img width="270" height="442" alt="image" src="https://github.com/user-attachments/assets/181da670-c3d1-41ac-95b4-77eb126237fe" />
 <img width="272" height="214" alt="image" src="https://github.com/user-attachments/assets/8f7d013e-e3f0-4a70-9543-d529bdc2032b" />
