@@ -2901,7 +2901,7 @@ countries = {
 					vacacai
 					tapes patos jacui sao_leopoldo san_antonio_patrulha arroio
 					tapajo tupinambarana uatuma urucurituba apoquitaua juris
-					turas urubu munduruku
+					turas urubu munduruku manaos
 					mariua waiwai kinja bares maues mura kambeba arua miranha
 					curumu ananatuba anajas arari marajoara pixipixi
 					ariste lokono araguari mazagao arua_amazon nheengaiba mariocai
@@ -2912,11 +2912,10 @@ countries = {
 					manoki
 					mundurukania satere_mawe curuai tupulicus ukarangma
 					kura kajabi kaiabi panara apiacas ikpeng
-					oro_win karipuna pakaasnovos yjxa ahe wari kaxarari
+					# oro_win karipuna pakaasnovos yjxa ahe wari kaxarari
 					uru_pa_in jiparana uru_eu_wau_wau amundava itarap djeoromitxi
 					kwaza akana latunde nambikwara surui_paiter kawahib
 					sakirabia wajuru towa_panka purubora aikana makurap
-					guarasugwa
 					anambe asurini para_gaviao parkateje parakana
 					pyti macauba caraja kricatije tocantis mehin paranaidji
 					acroas kraho
