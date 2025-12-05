@@ -2902,7 +2902,7 @@ countries = {
 					tapes patos jacui sao_leopoldo san_antonio_patrulha arroio
 					tapajo tupinambarana uatuma urucurituba apoquitaua juris
 					turas urubu munduruku
-					mariua waiwai kinja bares manaos maues mura kambeba arua miranha
+					mariua waiwai kinja bares maues mura kambeba arua miranha
 					curumu ananatuba anajas arari marajoara pixipixi
 					ariste lokono araguari mazagao arua_amazon nheengaiba mariocai
 					oiampi wayampi paru kuruaya prainha gurupatuba
@@ -2916,9 +2916,7 @@ countries = {
 					uru_pa_in jiparana uru_eu_wau_wau amundava itarap djeoromitxi
 					kwaza akana latunde nambikwara surui_paiter kawahib
 					sakirabia wajuru towa_panka purubora aikana makurap
-					sabanes guarasugwe kabixi marmainde tawande anunsu nambikuara
 					guarasugwa
-					baure moxos tsimanes kanisianas siriono itonama movima cayubaba pacahuara eseejja takana
 					anambe asurini para_gaviao parkateje parakana
 					pyti macauba caraja kricatije tocantis mehin paranaidji
 					acroas kraho
@@ -3076,12 +3074,12 @@ countries = {
 
 			ARG = {
 				own_control_core = {
-					chana mbegua timbu ituzaingo tuvicha_mini yaros bohan
-					carapachay ombu yaguari_guazu gualeguay nogoya
+					chana mbegua timbu ituzaingo tuvicha_mini
+					carapachay yaguari_guazu gualeguay nogoya
 					tandil tapalquen chivilco calfuleufu tubicha_mini pillahuinco kla_rome_ko
 					trenquelauquen wangulen rangkull_mapu
 					mepenes taragui agaes avaes payubre yapeyu itapua uruguay
-					cuareim pairindi mandisobi
+					pairindi mandisobi
 					sheulec dapiguemlec lanagashec tacshic pitlaxa wichi wiznay
 					niyaj eben_ezer shichaam alpu
 					raxalaa ongamira qompi qollaxalec rukahe yaaucaniga nakaigetergehe
@@ -3172,6 +3170,7 @@ countries = {
 			URU = {
 				own_control_core = {
 					charrua araicuahita yi hum arachan guenoa ita_cuara ybiti yacegua cangucu chuy jaguarao
+					ombu yaros bohan cuareim
 
 				}
 				starting_technology_level = 3
