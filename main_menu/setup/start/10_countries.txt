@@ -2553,7 +2553,8 @@ countries = {
 					cumanagoto cumana paraguachoa turuepano araya karu_pana cumanacoa
 					orinucu uyapari guanipa tucupita kalina maturin anaco
 					caroni parepona aro kai_kara cachamay tumeremo
-					kumarakapay macuxi ingariko takutu mucajai
+					ingariko
+					#kumarakapay macuxi takutu mucajai
 					apure guajobos arechuna sarare suripa caparo tachira cania
 					guanare guaritico barinas tampacal hacarigua tapo
 				}
@@ -2916,7 +2917,11 @@ countries = {
 					kura kajabi kaiabi panara apiacas ikpeng
 					paranaiba porekry opaye ofaie taquarucu anhandui
 					kadiweu piripucu terena nioac
+					#amazon_jungle negro_amazon_jungle solimoes_amazon_jungle purus_amazon_jungle madeira_amazon_jungle
+					saraua_jungle piaui_jungle marajoara_jungle
+					jiboia_jungle maxakali_jungle
 					pantanal_swamp pantanal_forest
+					evuevi sucuriu piquiri camapua ytykyra
 					dawande balotipone parecis haliti ikuiapa guato otuques
 					amazon_jungle
 					eexiwa
@@ -2963,10 +2968,13 @@ countries = {
 					almenara salinas rio_pardo
 					hahahae itaratim
 					bocaiuva tijuco itamarandiba
+					pinhais_forest bocaiuva_forest
 					tamoio cunhambebe
 					iguape cananeia marataiama gohayo sao_sebastiao
 					itu sorocaba araritaguaba
 					mogi_mirim campinas jundiai
+					undiai_forest atibaia_forest camanducaia_forest
+					mogi_forest tamoio_forest marataiama_forest
 					atibaia sao_roque jerubatuba parnaiba piratininga
 					aruja mogi_das_cruzes
 					aimore kiri_kere malalis coutins
@@ -2998,6 +3006,7 @@ countries = {
 					chapeco palmas taquara
 					curitibanos lages sao_joaquim urubici
 					kariio apytere tubarao sambaqui iaguarauna
+					nononai_forest
 					umuarama mbya campo_mourao iguazu guarapuava
 					mbai_yuru
 					bauru botucatu
