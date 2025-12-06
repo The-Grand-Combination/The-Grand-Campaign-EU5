@@ -2910,9 +2910,18 @@ countries = {
 					bakairi kukuro_kalapalo kuhikugu
 					irantxe enawene kajkwakratxi apiaka kayabi rikbaktsa
 					manoki
+					mebengokre aquidauana
+					kadiweu piripucu terena nioac
 					mundurukania satere_mawe curuai tupulicus ukarangma
 					kura kajabi kaiabi panara apiacas ikpeng
+					paranaiba porekry opaye ofaie taquarucu anhandui
+					kadiweu piripucu terena nioac
+					pantanal_swamp pantanal_forest
+					dawande balotipone parecis haliti ikuiapa guato otuques
+					amazon_jungle
+					eexiwa
 					# oro_win karipuna pakaasnovos yjxa ahe wari kaxarari
+					tacaru_jungle kaiowa kaiwa chiripa maracaju
 					uru_pa_in jiparana uru_eu_wau_wau amundava itarap djeoromitxi
 					kwaza akana latunde nambikwara surui_paiter kawahib
 					sakirabia wajuru towa_panka purubora aikana makurap
@@ -2985,7 +2994,8 @@ countries = {
 					lapa ponta_grossa curitiba bocaiuva_do_sul palmeira_brasil
 					sao_jose_pinhais parnanguara
 					karai_yo xokleng itapocu itajai mafra
-					santo_antonio chopim chapeco palmas taquara
+					#santo_antonio chopim
+					chapeco palmas taquara
 					curitibanos lages sao_joaquim urubici
 					kariio apytere tubarao sambaqui iaguarauna
 					umuarama mbya campo_mourao iguazu guarapuava
