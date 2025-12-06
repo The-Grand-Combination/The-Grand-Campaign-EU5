@@ -2319,6 +2319,12 @@ countries = {
 					metigoshe
 					itscheabine 
 				}
+				
+				own_control_colony = {
+					# Liberia
+						saint_paul_river mesurado junk_river bassa
+						cestos cess settra_kru tabou
+				}
 				starting_technology_level = 3
 				government = {
 					ruler = random
@@ -3413,6 +3419,15 @@ countries = {
 
 			CPL = {
 				own_control_core = {
+					sokolow biala_podlaska wlodawa 
+					chelm krasnystaw ugrovesk grabowiec
+					suwalki lipsk veisiejai lazdijai alytus vilkaviskis panemune
+					#Dobrzyń Land
+					dobrzyn lipno rypin
+					#Kujavia
+					wloclawek kowal radziejow
+					ostrow_wielkopolski pleszew
+					siewierz
 					#Lesser Poland
 					ksiaz_wielki proszowice
 					kielce opoczno przedborz zarnow
@@ -3427,8 +3442,8 @@ countries = {
 
 					# own_control_integrated, but culture accepted
 					#Wielun
-					wielun ostrzeszow wieruszowrawa sochaczew wizna goniadz zambrow ostroleka zakroczym przasnysz
-					rozan lomza kolno biala_rawska ciechanow tykocin
+					wielun ostrzeszow wieruszow rawa sochaczew wizna goniadz zambrow ostroleka zakroczym przasnysz
+					rozan lomza kolno biala_rawska ciechanow
 					warsaw grojec czersk liw nur kamieniec garwolin tarczyn
 					plock sierpc szrensk plonsk gostynin gabin
 					leczyca lodz zgierz orlow
@@ -6147,6 +6162,8 @@ countries = {
 			#Russia
 			RUS = {
 				own_control_core = {
+					liuboml shatsk
+					tykocin
 					kazym sumgut_vosh vezhakary kaltysyany
 					kushva novaya_lyalya turyinskiye_rudniki sosva verkhoturye
 					nizhnyaya_salda
@@ -6268,8 +6285,6 @@ countries = {
 					novosyolovo nazarovo uzhur bolshoy_kosogol tatarskaya_tesyu kortuz
 					kamensk motygino taseyevo pashino
 					bolshoy_uluy itatsky tyukhtet makovskoe kazachinskoye
-					siewierz
-					ostrow_wielkopolski pleszew
 					theodoro
 					kaffa vosporo #Black Sea
 					tana 
@@ -6394,15 +6409,16 @@ countries = {
 					
 					amasra #Black Sea
 					#Volhynia
-					chelm krasnystaw liuboml ratne shatsk ugrovesk
+					ratne
 					kremenets dubno zbarazh tykhomel
 					lutsk chortoryisk peremyl rozhyshche stepan volodymyrets
 					rivne kostopil ostroh peresopnytsya
 					volodymyr kamin kovel melnytsya turiisk
 					novohrad_volynskyi iziaslav korets liubar polonne
 					#Halych
-					belz busk grabowiec sokal
+					belz busk  sokal
 					brody
+					
 					#Polesia
 					liubeshiv dubrovytsia
 
@@ -6553,18 +6569,13 @@ countries = {
 					volok
 					
 					#Actually Occupied
-					#Dobrzyń Land
-					dobrzyn lipno rypin
-					#Kujavia
-					wloclawek kowal radziejow
 					#Lithuania
 					vilnius giedraiciai kernave medininkai_vilna
 					ashmyany halshany hieraniony kreva
 					braslaw drysvyaty ezerenai miory
-					kaunas alytus punia vilkaviskis
+					kaunas punia
 					lida astrina eisiskes shchuchyn
-					suwalki lipsk veisiejai
-					trakai lazdijai onushkis merkine
+					trakai onushkis merkine
 					svir dokshytsy hlybokaye myadzyel svencionys vileyka
 					upyte birzai linkava panevezys pasvalys
 					vilkmerge anyksciai maleisiai rokiskis utena
@@ -6573,11 +6584,11 @@ countries = {
 					nyasvizh
 					babruysk luchin rahachow svietlahorsk
 					#Polesia
-					brest_litowsk biala_podlaska chernyany malaryta wlodawa
+					brest_litowsk chernyany malaryta
 					kobryn dabuchyn hajnowka kamyenyets
 					#Samogitia
 					medininkai
-					raseiniai jurbarkas kedainiai panemune tendziogala
+					raseiniai jurbarkas kedainiai tendziogala
 					siauliai kraziai papile zagare
 					#White Ruthenia
 					barysaw klichaw krupki lukolm lyubashany
@@ -6587,7 +6598,7 @@ countries = {
 					palanga rietavas silale skuodas taurage
 					grodek
 					#Podlasie
-					drohiczyn bielsk_podlaski mielnik sokolow suraz
+					drohiczyn bielsk_podlaski mielnik suraz
 					mazeikiai
 					#Ukraine
 					kyiv dymer fastiv zdvizhen
@@ -7747,6 +7758,10 @@ countries = {
 				own_control_integrated = {
 				}
 				own_control_colony = {
+					# Sierra Leone
+						scarcies bunce_island banana_islands shenge
+						sherbro_island galinhas mano cape_mount
+
 					# Mediterranean
 						malta
 
@@ -8431,138 +8446,148 @@ countries = {
 						essequibo demerara berbice tumatumari neekeari
 
 					# South Africa 
-					chainouqua swartberg klipgat agulhas bredasdorp
-					cochoqua ngonnemoa uri_ae_ona chariguriqua
-					gouriqua hessequa gouritsmond attequa outeniqua
-					gonaqua houtunqua damaqua damasonqua hoengeiqua rharhabe
-					kai_karoo gamka humcumqua swy_e inqua khukagamma hamcumqua 
-					khari_karoo gainou kanna_south koo attaqua kammanassie
-					ubiqua swellendam ibequa gydo
-					goringhaikona goringhaiqua paarl gorachouqua
-
-					wirrai_durhai guwandhaang cootamundra thurrawal murranbulla boandik bangarang narrandera awabakal
-					dharug eora guramal tharawal ngarigo jerrinja didthul 
-					thaua yuin bidwell krauatungalung krowathunkkooloong mallacoota
-					braiakalung brataulung boon_wurrung yarra kurnai jaitmatang waveroo taungurung woi_wurrung 
-					karta_pintingga latje_latje millewa chala kooinkill ngarrindjeri ngargad kromelak bindjali djappuminyou jakelbalak
-					dadi_dadi nari_nari malegoondeet kureinji madi_madi yitha_yitha wandjiwalgu barkinji barundji
-					yunggai wemba_wemba marin_balluk dja_dja_wurrung ngunawal lail_buil ngurraiillam wotjobaluk baraba_baraba yorta_yorta yakkajari wiradjuri wachigari
-					buandig coonawarra jardwajali gunditjmara djabwurung balla_arat gulidjan giraiwurung gadubanud geelong wathaurong 
-					east_palawa west_palawa peerapper tommeginne tyerrernotepanner pyemmairrener lairmairrener paredarerme toogee
+						chainouqua swartberg klipgat agulhas bredasdorp
+						cochoqua ngonnemoa uri_ae_ona chariguriqua
+						gouriqua hessequa gouritsmond attequa outeniqua
+						houtunqua damaqua
+						kai_karoo gamka humcumqua swy_e inqua khukagamma hamcumqua 
+						khari_karoo gainou kanna_south koo attaqua kammanassie
+						ubiqua swellendam ibequa gydo
+						goringhaikona goringhaiqua paarl gorachouqua
 					
-					madurai ramesvaram vembar kayattar pattukkottai
-					sankaranayinarkoil aruppukkottai batlagundu
-					dindigul kambam thondi virudhunagar devakottai
-					padaividu kanchipuram vellore
-					gingee
-					madras maduranthakam arcot
-					nellore pazhaverkadu durgarazpatnam
-					kavali kandakura motupalli adanki markapur kondavidu peddapalli macherla
-					masulipatnam gudur kalahasti cumbum vinukonda guntur kanigiri
-					pithapuram rajamahendry pallakolu ellur visakhapatnam vizianagaram tuni rampa bobbili madugula
-					asika ganjam kalingapattanam kalinganagara parlakimidi khurda dhenkanal jajnagar puri
-					kataka harishpur balasore jalesar bhuban bhadrak
-					angul ratnagiri brahmapur kulada nayagarh kanthi
-					srinagar pulawama baramulla ganderbal kupwara banihal sharda
-					rawalakot kohtali
-					gaur godagari naogaon pabna rampur_boalla
-					bogra birampur goraghat rangpur_bengal shahjadpur
-					devkot barbakaabad pandua_adina siliguri tajpur
-					panchagarh jalpaiguri
-					satgaon pandua baragram bardhaman dubrajpur ilambazar
-					khulna east_sundarban husaynabad jaynagar kulpi west_sundarban
-					nadia chandrabad jessore jhenaidah maheshpur pipli sreepur
-					sonargaon bikrampur chandpur kobirhat kumilla savar
-					khalifatabad barguna chandrawip fathabad kotalipara qasba shahbazpur
-					mymensingh atiya belabo kapasia muktagacha tarakanda
-					nagapattinam puddokothai tiruccirapalli thanjavur srirangam pennadam jayankondam karaikal #cola_nadu
-					launggyet
-					akyab ann gwa maungdaw minbya mrauk_u ramree talak_burma taungup thandwe weithali
-					chittagong chakaria kaptai ramu sitakunda
-					parangipettai pondicherry perambalur tirukoilur kallakurichi
-					jaffna mullaitivu mahatittha vavuniya 
-					yapavu anuradhapura salavata kurunegala polonnaruva madakalapu hatthigiripura
-					kotte negombo sitavaka galle hambantota badulla devanagara digavapi tissamaharama
-					kandy gampola ratnapura_LKA trincomalee medawachchiya
-					delhi gurgaon rohtak panipat jind #Delhi Province
-					mirat hapur jansath baran saharanpur piran_i_kaliyar #Upper Doab
-					etawah kanauj sargadwari makanpur #Central Doab
-					prayag kara asni korra #Lower Doab
-					alwar narnaul bharatpur #Mewat
-					agra mathura jalesar_doab kol dholpur chandwar #Braj
-					sirhind sadhaura samana_india thanesar kaithal karnal #Puadh
-					hisar dadri hansi #Bhattiana
-					hajner sunam raikot faridkot bathinda firozpur muktsar #Punjabi Malwa
-					tulamba #Bari Doab Province
-					gugera kasur virkgarh sialkot eminabad pasrur #Mahja
-					jalandhar rahon bajwara milwat kapurthala #Doaba
-					pindi_bhattian shorkot dijkot #Rechna Doab
-					gujrat busal bhera lalian shahpur sillanwali #Jech Doab
-					harrand mithankot omerkot #Derajat
-					dinkot isakhel #Karman
-					chakwal dina khewra khushab pindi_gheb rawalpindi sangni #Pothwar
-					attock #Peshawar
-					shishgarh chandpur_uttar_pradesh nagina seohara shahabad_uttar_pradesh
+					# Australia
+						wardandi gurbillup nannup manjimup bibbulman jarrah_karri munite mallee kaniyang
+						yoberrore pinjarup mandjar narroging willman walyalup whadjuk
+						narangga kaurna_pangkarra tarntanya boanawari burra_burra doora aluri nukunu
+						darumbal bayali gureng_gureng badtjala waka_waka murrumgama gubbi_gubbi burrum
+						wakgun yiman_australia gungabula mandandanji gogai wull_wull barunggam bigambul
+						turrbal geynyan marbul galibal ngarbal wadjar bundjalung quandamooka wigal_wollumbul
+						kamilaroi camel_duahi gunnedah tjake yauan wailwan wonnarua
+						burugardi nganyaywana dainggatti oxley_wilds biripi guringai geawegal worimi gumbaynggirr
+						wirrai_durhai guwandhaang cootamundra thurrawal murranbulla boandik bangarang narrandera awabakal
+						dharug eora guramal tharawal ngarigo jerrinja didthul 
+						thaua yuin bidwell krauatungalung krowathunkkooloong mallacoota
+						braiakalung brataulung boon_wurrung yarra kurnai jaitmatang waveroo taungurung woi_wurrung 
+						karta_pintingga latje_latje millewa chala kooinkill ngarrindjeri ngargad kromelak bindjali djappuminyou jakelbalak
+						buandig coonawarra jardwajali gunditjmara djabwurung balla_arat gulidjan giraiwurung gadubanud geelong wathaurong 
+						east_palawa west_palawa peerapper tommeginne tyerrernotepanner pyemmairrener lairmairrener paredarerme toogee
 					
-					jalna nander pathri kaulas
-					janjira chaul kalyan bombay bassein
-					savantvadi rajapur dabhol sangamesvara
-					ajara mudhol belgaum londa khanapur gokak badami raybag
-					sholhapur naldrug ausa parenda chambargonda
-					udgir bir dahrur qandhar ahmednagar daulatabad
-					pratapgarh satara karad kolhapur aundh jath miraj
-					sinnar nasik chandor
-					bidar yedagiri gulbarga kalyani sagar talikota bagalkot bijapur kembhavi sindagi basavana_bagewadi athani
-					singarh raigarh pune junnar chakan
-					daman surat rander broach baroda
-					khambat dholka ashaval modasa
-					patan deodar radhanpur
-					ranthambore sheopur sambhar ajmer
-					merta nagaur makrana kurki
-					osian phulia mandalgarh bhilwara
-					bayana mandore sabalgarh
-					kalam kelapur mahagaon panar amravati illichpur gawilgarh asirgarh
-					burhanpur pachora sindkedh mehkar akola
-					basim laling thalner sultanpur nandurbar dharangaon
-					khandwa handia hoshangabad bijagarh mandleshwar
-					maheshwar mandu dhar indore ujjain maksi
-					khategaon bhojpur sehore raisin bhopal
-					sarangpur agar sironj shahabad sipri chanderi
-					alirajpur ratlam mandsaur rampura bhanpura
-					gagraun aklera guna khaniadhana
-					bhind konch kalpi lalitpur deogarh bhilsa
-					damoh singorgarh ujargarh sugaur
-					nawakot bijnot derawar channan_pir kot_marot uch mir_garh_qila dunga_bunga chishtian khairpur aror #Cholistan
-					multan mailsi chichawatni dipalpur pakpattan karur_punjab jalalpur_pirwala
-					lahore sultanwind fatehabad batala kalanaur
-					chiniot kamalia talwandi jaranwala jhang
-					dajal dera_ghazi_khan dera_ismail_khan kot_addu
-					sitpur karor karor_2 bhakkar mankera
-					daraban
-					manikpur bhadohi mungra raebareli unnao
-					awadh akbarpur kishi sultanpur_uttar_pradesh
-					varanasi chunar ghazipur jaunpur mau_jaunpur kantit
-					shankargah
-					vijaygarh sidhi agori
-					budaun gunnaur sambhal
-					bareilly nahil pilibhit shahjahanpur
-					khairabad bhurwara biswan firuzabad_bahraich kherigarh
-					lucknow bilgram hardoi ibrahimabad pali_uttar_pradesh
-					bahraich balrampur gonda shravasti tulsipur
-					gorakhpur bansi basti binayakpur kushinagar lumbini
-					azamgarh andar chillupar rudrapur sonepur_bihar thawe
-					bettiah makwanpur mehsi ramnagar_bihar sheohar simraungadh
-					bhagalpur gidhaur hajipur khagaria monghyr samastipur
-					patna bihar_sharif deo gaya narhat rajgir roh
-					hazaribagh chai gobindpur katrasgarh shergarh urda
-					dumka deoghar jangipur mandar_parvat rajmahal teliagarhi
-					manyakheta chitapur bhalki
-					peshawar kohat bannu
-					akora hangu khost tank thal_daman
+					# New Zealand
+						waitangi tamaki whangarei aupouri
+					
+					# India
+						madurai ramesvaram vembar kayattar pattukkottai
+						sankaranayinarkoil aruppukkottai batlagundu
+						dindigul kambam thondi virudhunagar devakottai
+						padaividu kanchipuram vellore
+						gingee
+						madras maduranthakam arcot
+						nellore pazhaverkadu durgarazpatnam
+						kavali kandakura motupalli adanki markapur kondavidu peddapalli macherla
+						masulipatnam gudur kalahasti cumbum vinukonda guntur kanigiri
+						pithapuram rajamahendry pallakolu ellur visakhapatnam vizianagaram tuni rampa bobbili madugula
+						asika ganjam kalingapattanam kalinganagara parlakimidi khurda dhenkanal jajnagar puri
+						kataka harishpur balasore jalesar bhuban bhadrak
+						angul ratnagiri brahmapur kulada nayagarh kanthi
+						srinagar pulawama baramulla ganderbal kupwara banihal sharda
+						rawalakot kohtali
+						gaur godagari naogaon pabna rampur_boalla
+						bogra birampur goraghat rangpur_bengal shahjadpur
+						devkot barbakaabad pandua_adina siliguri tajpur
+						panchagarh jalpaiguri
+						satgaon pandua baragram bardhaman dubrajpur ilambazar
+						khulna east_sundarban husaynabad jaynagar kulpi west_sundarban
+						nadia chandrabad jessore jhenaidah maheshpur pipli sreepur
+						sonargaon bikrampur chandpur kobirhat kumilla savar
+						khalifatabad barguna chandrawip fathabad kotalipara qasba shahbazpur
+						mymensingh atiya belabo kapasia muktagacha tarakanda
+						nagapattinam puddokothai tiruccirapalli thanjavur srirangam pennadam jayankondam karaikal #cola_nadu
+						launggyet
+						akyab ann gwa maungdaw minbya mrauk_u ramree talak_burma taungup thandwe weithali
+						chittagong chakaria kaptai ramu sitakunda
+						parangipettai pondicherry perambalur tirukoilur kallakurichi
+						jaffna mullaitivu mahatittha vavuniya 
+						yapavu anuradhapura salavata kurunegala polonnaruva madakalapu hatthigiripura
+						kotte negombo sitavaka galle hambantota badulla devanagara digavapi tissamaharama
+						kandy gampola ratnapura_LKA trincomalee medawachchiya
+						delhi gurgaon rohtak panipat jind #Delhi Province
+						mirat hapur jansath baran saharanpur piran_i_kaliyar #Upper Doab
+						etawah kanauj sargadwari makanpur #Central Doab
+						prayag kara asni korra #Lower Doab
+						alwar narnaul bharatpur #Mewat
+						agra mathura jalesar_doab kol dholpur chandwar #Braj
+						sirhind sadhaura samana_india thanesar kaithal karnal #Puadh
+						hisar dadri hansi #Bhattiana
+						hajner sunam raikot faridkot bathinda firozpur muktsar #Punjabi Malwa
+						tulamba #Bari Doab Province
+						gugera kasur virkgarh sialkot eminabad pasrur #Mahja
+						jalandhar rahon bajwara milwat kapurthala #Doaba
+						pindi_bhattian shorkot dijkot #Rechna Doab
+						gujrat busal bhera lalian shahpur sillanwali #Jech Doab
+						harrand mithankot omerkot #Derajat
+						dinkot isakhel #Karman
+						chakwal dina khewra khushab pindi_gheb rawalpindi sangni #Pothwar
+						attock #Peshawar
+						shishgarh chandpur_uttar_pradesh nagina seohara shahabad_uttar_pradesh
+						jalna nander pathri kaulas
+						janjira chaul kalyan bombay bassein
+						savantvadi rajapur dabhol sangamesvara
+						ajara mudhol belgaum londa khanapur gokak badami raybag
+						sholhapur naldrug ausa parenda chambargonda
+						udgir bir dahrur qandhar ahmednagar daulatabad
+						pratapgarh satara karad kolhapur aundh jath miraj
+						sinnar nasik chandor
+						bidar yedagiri gulbarga kalyani sagar talikota bagalkot bijapur kembhavi sindagi basavana_bagewadi athani
+						singarh raigarh pune junnar chakan
+						daman surat rander broach baroda
+						khambat dholka ashaval modasa
+						patan deodar radhanpur
+						ranthambore sheopur sambhar ajmer
+						merta nagaur makrana kurki
+						osian phulia mandalgarh bhilwara
+						bayana mandore sabalgarh
+						kalam kelapur mahagaon panar amravati illichpur gawilgarh asirgarh
+						burhanpur pachora sindkedh mehkar akola
+						basim laling thalner sultanpur nandurbar dharangaon
+						khandwa handia hoshangabad bijagarh mandleshwar
+						maheshwar mandu dhar indore ujjain maksi
+						khategaon bhojpur sehore raisin bhopal
+						sarangpur agar sironj shahabad sipri chanderi
+						alirajpur ratlam mandsaur rampura bhanpura
+						gagraun aklera guna khaniadhana
+						bhind konch kalpi lalitpur deogarh bhilsa
+						damoh singorgarh ujargarh sugaur
+						nawakot bijnot derawar channan_pir kot_marot uch mir_garh_qila dunga_bunga chishtian khairpur aror #Cholistan
+						multan mailsi chichawatni dipalpur pakpattan karur_punjab jalalpur_pirwala
+						lahore sultanwind fatehabad batala kalanaur
+						chiniot kamalia talwandi jaranwala jhang
+						dajal dera_ghazi_khan dera_ismail_khan kot_addu
+						sitpur karor karor_2 bhakkar mankera
+						daraban
+						manikpur bhadohi mungra raebareli unnao
+						awadh akbarpur kishi sultanpur_uttar_pradesh
+						varanasi chunar ghazipur jaunpur mau_jaunpur kantit
+						shankargah
+						vijaygarh sidhi agori
+						budaun gunnaur sambhal
+						bareilly nahil pilibhit shahjahanpur
+						khairabad bhurwara biswan firuzabad_bahraich kherigarh
+						lucknow bilgram hardoi ibrahimabad pali_uttar_pradesh
+						bahraich balrampur gonda shravasti tulsipur
+						gorakhpur bansi basti binayakpur kushinagar lumbini
+						azamgarh andar chillupar rudrapur sonepur_bihar thawe
+						bettiah makwanpur mehsi ramnagar_bihar sheohar simraungadh
+						bhagalpur gidhaur hajipur khagaria monghyr samastipur
+						patna bihar_sharif deo gaya narhat rajgir roh
+						hazaribagh chai gobindpur katrasgarh shergarh urda
+						dumka deoghar jangipur mandar_parvat rajmahal teliagarhi
+						manyakheta chitapur bhalki
+						peshawar kohat bannu
+						akora hangu khost tank thal_daman
 
-					#Koh e-Sulayman
-					#Questionable if this shoudl actually be under Delhi. Likely better off independent.
-					zhob duki rakni lorelai kahan wana urgun
+						#Koh e-Sulayman
+						#Questionable if this shoudl actually be under Delhi. Likely better off independent.
+						zhob duki rakni lorelai kahan wana urgun
 				}
 
 				include = "catholic_monarchy"
