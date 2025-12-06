@@ -1,7 +1,7 @@
 ﻿{
-	"name":	"The Grand Combination",
+	"name":	"The Grand Campaign",
 	"id":	"tgc.euv",
-	"version":	"0.0.2",
+	"version":	"0.0.3",
 	"supported_game_version":	"1.0.*",
 	"short_description":	"silly cat",
 	"tags":	["Diplomacy", "Gameplay", "Government and Estates", "Historical", "Overhaul"],

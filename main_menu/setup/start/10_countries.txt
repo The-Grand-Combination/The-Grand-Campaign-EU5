@@ -3412,6 +3412,31 @@ countries = {
 			}
 
 			CPL = {
+				own_control_core = {
+					#Lesser Poland
+					ksiaz_wielki proszowice
+					kielce opoczno przedborz zarnow
+					czestochowa lelow mstow
+					lublin janow_lubelski kazimierz lukow lubartow urzedow
+					busko_zdroj wislica
+					radom ilza stezyca szydlowiec zwolen
+					sandomierz kunow opatow rudnik_poland
+					#Greater Poland
+					kalisz 
+					konin kolo lad_konin
+
+					# own_control_integrated, but culture accepted
+					#Wielun
+					wielun ostrzeszow wieruszowrawa sochaczew wizna goniadz zambrow ostroleka zakroczym przasnysz
+					rozan lomza kolno biala_rawska ciechanow tykocin
+					warsaw grojec czersk liw nur kamieniec garwolin tarczyn
+					plock sierpc szrensk plonsk gostynin gabin
+					leczyca lodz zgierz orlow
+					sieradz szadek turek tuszyn uniejow
+					radomsko brzeznica piotrkow_trybunalski
+
+				}
+				
 				starting_technology_level = 3
 				government = {
 					type = monarchy
@@ -6119,9 +6144,106 @@ countries = {
 				include = "expl_novgorod"
 			}
 
-			#Principality of Muscovy
+			#Russia
 			RUS = {
 				own_control_core = {
+					kazym sumgut_vosh vezhakary kaltysyany
+					kushva novaya_lyalya turyinskiye_rudniki sosva verkhoturye
+					nizhnyaya_salda
+					malaya_ilesha vyya
+					skrytaya kichiga karaga ivashka karagin
+					kuyul parapolsky rekinniki podkagernoye lesnaya
+					kuukucyn keelivtyn otrozhny kagyrgyn ujvyn yeropol yeropol_river anadyr_river
+					ayon nutel_gyrgym pucheveyem raucha lelyuveyem anjuj_river
+					chaun chuvan1 elgygytgyn chuvan2 chuvan3
+					peekin yanranay apapelgino valkumey rytkuchi
+					chirovoye vulvyveyem ekityki palyavaam ichuveem
+					amguema iultin vankarem ryrkaypiy polyarny yakan valkaran
+					shabash berezovka lobuya srednekolymsk sededema urodan
+					yermolovo timkino kolymskoie omoloon achaka xalima
+					anyuysk dve_viski cerskey ambarchik mikhalkino nizhnekolymsk
+					chivitkino evenksk kushka merenga omchikan buksunda
+					ypalgyn vstrechny keperveem orlovka aliskerovo ilirnej
+					shestakova kien_kuol abyy esteriktyaax syagannaax kebergene
+					suoyungu ocuogun khargytyr kurung_yuryakh suturuoxa tuyandina khachimcher soyangi_trail
+					ebeex olooko_kuol ynakh succun kholongsolokh sybaatayy
+					xatingnaax nalimsk dyryn_ebe kal_gatana sylgy_ytar ulakh
+					oyuuhardaax argaxtaax kelyuyekyan andryushkino aly_kyuyel
+					indigiir oyotun cokuurdaax nicalaax olenegorsk vorontsovo
+					tala kupka myakit debin orotukan buiunda seymchan
+					kulu tokichan orotuk kadykchan neksikan burkhaia iagodnoie
+					burkand_ya kontrand_ya delyankir artyk pobeda ust_nera
+					tala_kyuyel ziryanka utaya ugolney nelemney glukharinyi kolyma_trail
+					solomoydokh nagaradalaax kulun_olbut cibagalaax xonuu soboloox indigiir_trail orgulaax_trail
+					madaun atka bakhapcha chalbukhan omchug omchak moi_urusta
+					tenut oimiakon kuydusun agayakan kyubeme razvika
+					udamik tompo menkyule uyana barayy tukulan
+					ust_charky tokuma boronuk yuttyakh batagai taala cheriumche
+					topolinoe kyulyunken nalyachchyya nelgese sentachan derbeke chyliga
+					bala sysy_meyite sartang barylas echiy suordakh nyuele
+					alii kustur sakkyryr tenki machakh zhargalakh dulgalakh dulgalaax_trail
+					kuogastakh kazachye kular ust_kuiga spirka kel_tegey khayyr
+					salylyk selennyakh nemkuchen khabzhylakh chondon ukyulyakh yarok ol_de_trail
+					altaikha oymyakon berelekh baky uyandi yrgychen kurannakh uyandina_trail
+					orotko ot_kyuyel sokurdakh tumat tenkeli chaydakh buor_yuryakh
+					omoloy dyagaryn urasalakh namy tyul_gyar kuolay naiba
+					kele arylakh segyan_kyuyol batamay sangar kuturga
+					olenyok taymylyr noyuo sklad kelimyar khorbusuonka reka_pur uolya_trail
+					tiksi kengdey chekurovka kyusyur siktyakh molodo zharzhan
+					bestyakh bakhanay jigansk kystatyam lena_trail1 lena_trail2 lena_trail3
+					lyokyochyon sydybyl vilyuy khoro orosu orgyot byrakan
+					terbyas kyubyainde uhun kyulekyan dippa seyat balagachchy
+					ulakhan_kyuyol tyaia khatyryk_komo mastakh chay khampa
+					sitte salban byas_kyuyol kobyai argas chagda sortol
+					khatas maymaga kysyl_syr ulu_sysy magan zhatai
+					nuochakha tit_ebya tyokhtyur charang kenkeme ulakhan_an toyon_ary
+					tit_ary yedey ebya yert tongulakh berdigestyakh
+					buotama talalakh tuolba tuorbchany olekma kudu_kyuyol
+					balagannakh marxa sanyyakhtakh malykhan tuobuya mekimbya keyikte
+					uolbut zharkhan daban tegen yunkyur kysyl_yuryuyya
+					tonguo alagadyan chayygda kyundyade arangastakh kempendyai namana
+					ygyatta bysyttakh khati yerkyutey iyesyak khannya
+					niurba kiyeng_yuryakh ynakhsyt sayylyk byuteydyakh bagadya
+					vilyuychan sergelyakh tuoydakh suntar krestyakh oyusut elgyai
+					zhilinda ebelyakh saskylakh yunyung_khaya anabar uele udya puur_trail
+					khakhsyk alymdya morkoka tangkhay ulakhan_vava aikhal udachny kharyyalakh
+					syuldyukar kuchugunnur delinde batyr olguydakh syrgan emyakhsin
+					macha tinnaya patom nyuya lensk chamcha nakhara khamra
+					irelyakh zarya tegelspit dyunkun ulegir kuchaky siyene
+					witym chuya peledui vitim alysardakh yukte
+					uel_tympychan tupuchikan dulis_ma moshi ichera 
+					dyrashnichikha makarikha yerema os_kino chona_trail markhaya_trail
+					ika_nepa bur_nepa tokma icheda chambeta sekili
+					khamakar inarigda yukta ilimpeya kudepyapka ekonda turu tunguska_trail6 tunguska_trail5 vilyuy_trail
+					nidym uchami tutonchany nimde erachimo tunguska_trail1 tunguska_trail2 tunguska_trail3 tunguska_trail4
+					chemal chadobets tsentral oskoba irkineieva tayga
+					belya kamenka kazhma tokhomo turama baykit poligus
+					vangash enashimo kardakan vel_mo bryanka
+					kiya yeruda teya tis_reka sulomay kuzmovka
+					yeniseysk nazimovo ust_ozernoye selo_yartsevo
+					komsa siberia_bor bakhtinsky verkhneimbatsk inbatskoye
+					dudinka khantayskoye turukhansk messoyakha
+					mangazeya pur yevoyakha
+					obdorsk ob shchuchya
+					voikar voykarskiy_sor synya
+					kunovat zazhimchar pitlyar beryozovo
+					nadym pravaya_khetta levaya_khetta nyurum_yegan
+					belogorye karymkary nazym sukhorukova landytuv
+					belogorye karymkary nazym sukhorukova
+					yendyr bardak kharom_vosh kartauzh
+					konda yevra malaya_sosva ess
+					uktus kalatay rezh pervouralsk nizhny_tagil
+					ponil ivdel pelym gari
+					turinsk baykalovo irbit alapayevsk verkhnyaya_sinyachikha sankina tabory
+					kamyshlov yegorshin_povytok kamensky_zavod kataysky talitsa
+					kaslinsky kyshtym chelyaba polevskoy uyelgi irtyash uvildy
+					bisert arti archit krasnoufimsk nyazepetrovsk
+					vorkuta pechora usa_reka
+					izhma ust_tsilma pustozersk
+					bolshaya_laptyuga vashka mezen
+					zanyukhcha verkola shardonem pokshenga chakola ust_chulasa koptyuga chirki
+					okladnikova_sloboda nes khimzha vizhas oma leshukonskoye
+					kuloy verkhnyaya_zolotitsa koyda pinega
 					jariekhi omalo
 					kolomna borovsk khatun koshira maloyaroslavets serpukhov vereya vysokoye
 					nel_kan tsipanda aim_maia ust_yudoma ust_mil ust_maia
@@ -6262,13 +6384,6 @@ countries = {
 					turov davyd_haradok hlynne
 					lakhva
 					lelchytsy zhytkavichy
-					rawa sochaczew wizna goniadz zambrow ostroleka zakroczym przasnysz
-					rozan lomza kolno biala_rawska ciechanow tykocin
-					warsaw grojec czersk liw nur kamieniec garwolin tarczyn
-					plock sierpc szrensk plonsk gostynin gabin
-					leczyca lodz zgierz orlow
-					sieradz szadek turek tuszyn uniejow
-					radomsko brzeznica piotrkow_trybunalski
 					soroca balti lipnic orhei viadineti
 					chisinau targu_lapusnei tuzara
 					palada reni cahul ungheni hotin 
@@ -6436,21 +6551,6 @@ countries = {
 					chelmuzhi vodlozero shalskii rakitnya mikshino bernovo yezsk lyuban
 					#Principality of Volokolansk
 					volok
-					#Lesser Poland
-					ksiaz_wielki proszowice
-					kielce opoczno przedborz zarnow
-					czestochowa lelow mstow
-					lublin janow_lubelski kazimierz lukow lubartow urzedow
-					busko_zdroj wislica
-					radom ilza stezyca szydlowiec zwolen
-					sandomierz kunow opatow rudnik_poland
-					#Greater Poland
-					kalisz 
-					konin kolo lad_konin
-
-					# own_control_integrated, but culture accepted
-					#Wielun
-					wielun ostrzeszow wieruszow
 					
 					#Actually Occupied
 					#Dobrzyń Land
@@ -6528,16 +6628,24 @@ countries = {
 					ushytsia khmilnyk letychiv mezhybozhe mohyliv_podilskyi rov
 					bakota horodok kamianets_podilskyi zalishchyky
 					terebovlia khorostkiv ternopil
+					shuryshkar
 				}
 
 				own_control_colony = {
 					# Siberia
+					teply_klyuch khandyga zhebariki_khaya chymnaii kharbalakh khanda
+					us_kyuyol byanye byadi chiryapchi tomtor mayya tabaga
+					bulun uolba dakky cherkekh churapcha uorga
+					yoniveem innurmin nuvuqaq kytryn yanrakynnot sigheneg chauchu_trail1
+					nutepylmyn enmyl_yn nunligran keniergyn ervykynnot chauchu_trail2 chauchu_trail3
+					valkall_an rykuul ugolnye nyerpicha konchalyt gytgomkyvamm tadlyeoan unazigmit
+					anadyr_trail krasnyano tavayveem v_enyn tumanskaya y_lkytveem gacgatagyn
 					zolotiinka iyengra neriungri neluki nimnyr aldan tommot
 					ketanda ogonok yugorenok ust_ynykchan eldikan tumul
 					takhtoyamsk brokhovo yamsk atargan magadan palatka tauisk
 					palana voyampolka tigil sedanka kovran
 					uka_town shiveluch klyuchi kamchatsk malka
-					ostrov_beringa milkovo achava oktyabr_skii pauzhetka
+					ostrov_beringa milkovo achava oktyabr_skii pauzhetka kamchatka_trail1 kamchatka_trail2 kurile_lake
 					kozyrevsk krutogorovskiy sobolevo kirovskiy khayryuzovo
 					ugoyan ukulan verkhnyaya tegyulte onnyos uluu borulakh
 					nuotara myndagai abaga amga uchele darkylakh
