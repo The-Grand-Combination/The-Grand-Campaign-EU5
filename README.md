@@ -32,4 +32,4 @@ The player's voice is always heard in TGC, the team makes constant polling about
 
 <br clear="left"/>
 
-And we are always looking for modders interested in the development of the mod! Hit the discord up and go to #join-the-team.
+And we are always looking for modders interested in the development of the mod! Hit the Discord up and go to #join-the-team.
