@@ -2,7 +2,7 @@
 
 **The Grand Campaign** is an ambitious total conversion mod for *Europa Universalis V* that aims to bring the Victorian Era (1836–1936) to the new game.
 
-Born as a synthesis between the legacy of *Victoria II* and the modern architecture of Victoria 3, this project seeks to create the definitive Victorian simulation, with the aim aim to bridge the gap between the mechanical depth of the classics and the robustness of the modern engine.
+Born as a synthesis between the legacy of *Victoria II* and the modern architecture of Victoria 3, this project seeks to create the definitive Victorian simulation, with the aim to bridge the gap between the mechanical depth of the classics and the robustness of the modern engine.
 
 ## Planned Features
 
