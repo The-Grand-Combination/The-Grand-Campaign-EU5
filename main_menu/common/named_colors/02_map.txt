@@ -80,7 +80,11 @@ colors = {
 	map_URU = rgb { 131 101 85 }
 	map_URU_dominion2 = rgb { 189 194 97 }
 	map_PRG = rgb { 217 224 179 }
-
+	map_CHL = rgb { 236 159 89 }
+	map_CHL_dominion0 = rgb { 236 218 89 }
+	map_CHL_dominion2 = rgb { 220 225 160 }
+	map_CHL_dominion3 = rgb { 150 225 150 }
+	
 # Iberia
 	map_SPA = rgb { 231 181 12 }
 	map_SPA_carlist = rgb { 255 196 0 }

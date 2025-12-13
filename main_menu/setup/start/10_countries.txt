@@ -1258,6 +1258,7 @@ countries = {
 					east_yuttahih
 				}
 				starting_technology_level = 3
+				include = "expl_world"
 				government = {
 					ruler = random
 
@@ -1298,31 +1299,12 @@ countries = {
 					}
 				}
 
-				discovered_regions = {
-					canada_region
-					caribbean_region
-					east_coast_region
-					great_plains_region
-					mesoamerica_region
-					central_america_region
-					aridoamerica_region
-					alaska_region
-					west_coast_region
-					colombia_region
-					brazil_region
-					andes_region
-					chaco_region
-					la_plata_region
-				}
-
 				accepted_cultures = { }
 				tolerated_cultures = { }
 
 				court_language = norman_dialect
 				country_rank = rank_kingdom
 				capital = tenochtitlan
-
-				include = "expl_western_europe"
 
 				ai_advance_preference_tags = {
 					exploration = 5
@@ -6339,8 +6321,6 @@ countries = {
 					przemysl_moscow mushkov_pogost
 					#Principality of Pereyaslavl-Zalessky
 					pereyaslavl alexandrovskaya_sloboda bogorodskoye_pereyaslavl kirzhach poreevo yanovo
-					
-					amasra #Black Sea
 					#Volhynia
 					ratne
 					kremenets dubno zbarazh tykhomel
@@ -20306,6 +20286,8 @@ countries = {
 			#Ottomans - TUR https://en.wikipedia.org/wiki/Rise_of_the_Ottoman_Empire
 			OTT = {
 				own_control_core = {
+					
+					amasra #Black Sea
 					gradiski_brod dubica bihac srb 
 					akhaltsikhe ardahan
 					hasankale ispir khupati rize
