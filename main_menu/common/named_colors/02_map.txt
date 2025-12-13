@@ -119,6 +119,8 @@ colors = {
 	map_TSC_dominion0 = rgb { 57 140 179 }
 	map_NAP = rgb { 255 247 0 }
 	map_SCI = rgb { 160 30 154 }
+	map_SMR = rgb { 30 144 255 }
+	map_CUO = rgb { 135 205 255 }
 
 # German States
 	map_HAB_AUS = rgb { 236  236  236 }

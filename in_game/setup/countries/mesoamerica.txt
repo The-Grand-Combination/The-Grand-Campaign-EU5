@@ -1193,15 +1193,6 @@ XAP = {
 	religion_definition = nahuatl
 }
 
-#Cuauhtochco - CUO
-CUO = {
-	color = map_cuauhtochco
-	color2 = rgb { 128 162 251 }
-
-	culture_definition = nahua_culture
-	religion_definition = nahuatl
-}
-
 #Xicochimalco - XIC
 XIC = {
 	color = map_xicochimalco

@@ -1158,8 +1158,6 @@ countries = {
 					hoilkut
 					oohl
 					chidkhu
-					tututni
-					ko_kwel
 					natinixwe
 					amblu_kai
 					tsnungwe
@@ -1168,13 +1166,8 @@ countries = {
 					waika
 					siskiyou
 					karuk
-					yulalona
-					tak_elam
-					etnemitane
 					achomawi
 					tollin
-					mbosaksawaas
-					ewksikni
 					modokni
 					iviatim
 					kitanemuk
@@ -1227,65 +1220,16 @@ countries = {
 					cui_yui_ticutta
 					kamu_ticutta
 					panina_ticutta
-					tsitsiadi
-					gidi_tika
-					malheur
-					wadadokado
-					tagotoka
-					moadokado
-					yakwahnim_paa
-					panati
-					tipanuk
-					king_hill
-					yahandeka
-					toponisw
-					seneca
-					arock
-					juntura
-					nyssa
-					payette
-					yam_pah_pa
 					buenaventura
 					morgan
 					yoov_we_teuh
-					so_so_goiw
 					randolph
 					boa_ogoi
-					hazelton
-					richfield
-					pohoko_ikkatee
-					wapi
-					dembimbosaage
-					jefferson
-					lemhi
-					pohogwe
-					koa_aga_itoka
-					shohopanaiti
-					yambadika
-					waradika
 					sahpeech
 					yoowetum
 					pahva_nits
 					cumumba
 					toompahnahwach
-					sweetwater
-					guchuntikka
-					tondzaosha
-					kuccuntikka
-					teewinot
-					leadore
-					kamodika
-					doyahinee
-					red_rock
-					agaidika
-					elkhorn
-					penointikara
-					beaverhead
-					tukudika
-					mitse_adazi
-					fremont
-					gazzllatin
-					ashalaho
 					kahpota
 					moghwachi
 					taviwac
@@ -1311,15 +1255,7 @@ countries = {
 					rock_springs
 					flaming_gorge
 					sinclair
-					point_of_rocks
-					wamsutter
 					east_yuttahih
-					pushroot
-					split_rock
-					washakie
-					hinono_ei
-					moneta
-					hot_springs
 				}
 				starting_technology_level = 3
 				government = {
@@ -4378,7 +4314,7 @@ countries = {
 					sangerhausen
 					halberstadt quedlinburg
 					wittenberg belzig schweinitz bitterfeld torgau liebenwerda hoyerswerda delitzsch
-					wallerfangen merzig bitburg 
+					 merzig bitburg 
 					mors
 					essen munster ahaus warendorf horstmar dulmen
 					hamm altena bochum dortmund rheine tecklenburg
@@ -4915,15 +4851,12 @@ countries = {
 				dynasty = commercy_dynasty
 			}
 
-			SWH = {
+			SHL = {
 				own_control_core = {
 					kiel heiligenhafen plon
 					stormarn segeberg rendsburg steinburg
 					pinneberg
 					heide
-					eckernforde slesvig flensburg aabenraa haderslev
-					ribe tonder
-					husum
 				}
 
 				starting_technology_level = 3
@@ -4959,7 +4892,7 @@ countries = {
 			}
 
 			SLW = { #Slesvig
-				our_cores_conquered_by_others = {
+				own_control_core = {
 					eckernforde slesvig flensburg aabenraa haderslev
 					ribe tonder
 					husum
@@ -7781,10 +7714,8 @@ countries = {
 						karawala awastara ahuya_yari
 
 					# Canada
-						sakwatamau tawatinaw ayahciyiniw_sakahikan kamspikihteek asiniwaciy
 						thilane_hot_ine sakawyiniw ot_esh_otchore
 						athabasca kai_theli_ke_hot_inne tethul
-						mikkwa wabasca mushikitee ksituan
 						amisk_sipi amisk_sakahikan wawaskesiwisakahikan
 						namew kipahigan mistahi_sakahikan wapiskau_sk kiheewapiw
 						sakitawahk methye missinipi kawatinook
@@ -8441,6 +8372,32 @@ countries = {
 						mahnahwoonan
 						sivukutaitiarruvik
 						akimiski
+					
+					# Oregon
+						stlpulmsh chehalis chala_at sklallam twana makah
+						wishram klikitat mamachatpam pa_kiut_lema wanapum
+						aqanqmi yaqan_nukiy akinkumasnuqit aq_am akisq_nuk kananmituk
+						akinka_nup aqyam_nup ainu_nik ktunwakanmituk aknuq_uk yakyu_ki
+						puyallup kittikas duwamish snohomish skagit nisqually
+						nooksack lhaq_temish sto_lo sts_ailes whonnock katzie
+						squamish sechelt sliammon klahoose homalco
+						wenatchi chelan osoyoos similkameen okanagan spaxomin
+						enselxcin swarakxen ntiltxitk stxtilusten snk_mip q_espiea illecillewaet
+						skuppah nlaka_pamux scw_exmx st_at_imcets tsala_ihmec leel_watr_ool
+						tsi_del_del tl_etinqox_t_in tl_esqox yunesit_in elhdaqox_t_in
+						sk_atsin skitsetsen st_uxwtews splatsin tk_emlups qw_ewt stil_qw
+						esk_el stswecen_c llenllenet_ten sexqeltqin simpcw xat_sull
+						mica_creek kinbasket karluk_peak moose_river monashee cariboo
+						saanich stz_uminus ditidaht pentlatch ucluelet
+						k_omoks maaqtusiis yuquot tlatlasikwala ma_amtagila
+						tanakteuk quawshelah oweekeno nuxalc kitasoo heiltsuk haisla
+						sm_algyax nisga_a gitxsanimaax kiis_gwaay gwaay_haanas
+						ulkatchot_en nazkot_en lhoosk_uzt_en saik_uz cheslattat_en nechakot_en lheidlit_en
+						nat_oot_en nadleh_whuten yekooche nak_azdlit_en tl_azt_en khelhghubunt_en a_taw_bun_kut_en
+						nadleht_en goat_creek lanezi crescent_spur willmore hutton
+						ts_il_kaz_koh witset hagwilget skin_tyee nee_tahi_buhn wet_suwet_en sguuxs
+						kwadacha thutade tse_khene takla
+						hominka ingenika mesilinka yutuwichan tsekani
 					
 					# Guyana
 						essequibo demerara berbice tumatumari neekeari
@@ -12374,7 +12331,7 @@ countries = {
 					fermo
 					macerata
 					ancona
-					montefeltro urbino
+					urbino
 					fabriano
 					gubbio
 					pesaro
@@ -13868,7 +13825,7 @@ countries = {
 					plasencia belalcazar escurial herrera jaraicejo medellin puebla_de_alcocer trujillo valverde villanueva_de_la_serena zalamea
 					coruna betanzos ferrol mondonedo vivero
 					lugo monforte_de_lemos navia_de_suarna sarria villalba
-					ourense barco_de_valdeorras ginzo_de_limia monterrey ribadavia viana_bolo
+					ourense barco_de_valdeorras monterrey ribadavia viana_bolo
 					santiago_compostela finisterre lalin mellid noya pontevedra tuy
 					oviedo aviles cangas castropol llanes mieres tineo villaviciosa
 					leon astorga castrocalbon mansilla ponferrada riano sahagun villablino villafranca_bierzo
@@ -14405,7 +14362,7 @@ countries = {
 			FRA = {
 				own_control_core = {
 					#Appanages
-
+					wallerfangen
 					#Poitou (Own by the ruler)
 					poitiers la_roche_sur_yon montaigu thouars parthenay fontenay montmorillon
 					niort bourganeuf chatellerault brosse lusignan aulnay st_jean_dangely
@@ -21582,6 +21539,58 @@ countries = {
 				dynasty = henneberg_dynasty
 			}
 
+			SMR = {	#san marino
+				own_control_core = {
+					montefeltro
+				}
+				starting_technology_level = 3
+				include = "expl_western_europe"
+				include = "catholic_monarchy_no_coast"
+				include = "expl_northern_europe"
+				include = "german_principality"
+				government = {
+					regnal_numbers = {
+						name_berthold = 4
+						name_henry = 7
+					}
+					ruler = hnb_berthold_iv_henneberg_schleusingen
+				}
+
+				tolerated_cultures = {
+					saxon
+				}
+
+				country_rank = rank_county
+				capital = montefeltro
+				dynasty = henneberg_dynasty
+			}
+
+			CUO = {	#couto misto
+				own_control_core = {
+					ginzo_de_limia
+				}
+				starting_technology_level = 3
+				include = "expl_western_europe"
+				include = "catholic_monarchy_no_coast"
+				include = "expl_northern_europe"
+				include = "german_principality"
+				government = {
+					regnal_numbers = {
+						name_berthold = 4
+						name_henry = 7
+					}
+					ruler = hnb_berthold_iv_henneberg_schleusingen
+				}
+
+				tolerated_cultures = {
+					saxon
+				}
+
+				country_rank = rank_county
+				capital = ginzo_de_limia
+				dynasty = henneberg_dynasty
+			}
+
 			LTS = {	#Lichtenstein
 				own_control_core = {
 					feldkirch
@@ -25616,21 +25625,6 @@ countries = {
 				}
 				court_language = nahuatl_language
 				capital = xalapa
-			}
-
-			#Cuauhtochco - CUO
-			CUO = {
-				own_control_core = {
-				}
-				include = "amerindian_advanced_monarchy"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = cuauhtochco
 			}
 
 			#Xicochimalco - XIC

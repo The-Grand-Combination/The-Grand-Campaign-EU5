@@ -21,6 +21,14 @@ CAT = {
 	religion_definition = catholic
 }
 
+CUO = {
+	color = map_CUO
+	color2 = rgb { 16 41 202 }
+	
+	culture_definition = galician
+	religion_definition = catholic
+}
+
 ANR = {
 	color = map_ANR
 	color2 = rgb { 16 41 202 }

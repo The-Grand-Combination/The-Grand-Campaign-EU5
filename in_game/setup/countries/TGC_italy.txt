@@ -146,3 +146,10 @@ SAV	= { #savoy
 	culture_definition = arpitan
 	religion_definition = catholic
 }
+
+SMR	= { #san marino
+	color = map_SMR
+
+	culture_definition = emilian
+	religion_definition = catholic
+}
