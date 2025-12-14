@@ -1,0 +1,319 @@
+template cabinet_efficiency_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			datacontext = "[Country]"
+			text = "GOVERNMENT_WINDOW_ESTATE_CABINET_EFFICIENCY"
+		}
+		
+		blockoverride "title_icon" {
+			icon = {
+				using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/flat_icons/cabinet_efficiency.dds"
+
+				glow = {
+					name = "drop_shadow"
+					glow_radius = 3
+					color = {0.0 0.0 0.0 1.0}
+					alpha = 0.3
+				}
+			}
+		}
+
+		blockoverride "concept_link" {
+			text = [cabinet_efficiency|E]
+		}
+		blockoverride "tooltip_content" {
+			TooltipStringPairList = {
+				blockoverride "block_title" {
+					datacontext = "[Country]"
+					text = "CABINET_EFFICIENCY_TT_TEXT"
+				}
+				textcontext = "[Country.GetDescriptionFor('country_cabinet_efficiency')]"
+			}
+		}
+	}
+}
+
+
+template cabinet_seats_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			datacontext = "[Country]"
+			text = "GOVERNMENT_WINDOW_GOV_SEATS_HEADER"
+		}
+		
+		blockoverride "title_icon" {
+			icon = {
+				using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/flat_icons/cabinet_size.dds"
+
+				glow = {
+					name = "drop_shadow"
+					glow_radius = 3
+					color = {0.0 0.0 0.0 1.0}
+					alpha = 0.3
+				}
+			}
+		}
+
+		blockoverride "concept_link" {
+			text = [cabinet_seats|E]
+		}
+
+		blockoverride "tooltip_content" {
+			TooltipStringPairList = {
+				blockoverride "block_title" {
+					datacontext = "[Country]"
+					text = "GOVERNMENT_SIZE_TT_TEXT"
+				}
+				textcontext = "[Country.GetDescriptionFor('government_size')]"
+			}
+		}
+	}
+}
+
+
+
+template effective_skill_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			datacontext = "[Player]"
+			text = "EFFECTIVE_SKILL_HEADER"
+		}
+		
+		
+		blockoverride "title_icon" {
+			widget = {
+				datacontext = "[Cabinet.GetCharacter]"
+				visible = "[And(Cabinet.IsActive, Cabinet.GetAction.IsAbilityType('adm'))]"
+				using = tooltip_title_icon_size
+				using = icon_adm_alt
+			}
+			
+			widget = {
+				datacontext = "[Cabinet.GetCharacter]"
+				visible = "[And(Cabinet.IsActive, Cabinet.GetAction.IsAbilityType('dip'))]"
+				using = tooltip_title_icon_size
+				using = icon_dip_alt
+			}
+			widget = {
+				datacontext = "[Cabinet.GetCharacter]"
+				visible = "[And(Cabinet.IsActive, Cabinet.GetAction.IsAbilityType('mil'))]"
+				using = tooltip_title_icon_size
+				using = icon_mil_alt
+			}
+		}
+
+		blockoverride "concept_link" {
+			text = [cabinet_efficiency|E]
+		}
+
+		blockoverride "tooltip_content" {
+			TooltipStringPairList = {
+				textcontext = "[Cabinet.GetEffectiveSkillTooltip]"
+			}
+			
+			TooltipRowList= {
+				ontextcontextchanged = "[SetRowListWithTitleFromTextContext(PdxGuiWidget.AccessSelf)]"
+				textcontext = "[Cabinet.GetEffectiveSkillImpactInfo]"
+			}
+
+			TooltipTextBlock = {
+				visible = "[Not(StringIsEmpty(Cabinet.GetActionEffectTextOnActivated))]"
+				blockoverride "text" {
+					text = "[Cabinet.GetActionEffectTextOnActivated]"
+				}
+			}
+		}
+	}
+}
+
+template extra_modifiers_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			datacontext = "[Player]"
+			text = "EXTRA_MODIFIER_HEADER"
+		}
+		
+		
+		blockoverride "title_icon" {
+			icon = {
+				using = tooltip_title_icon_size
+				datacontext = "[Cabinet.GetCharacter]"
+				using = icon_adm_texture
+				using = icon_gold_texture_alt
+				visible = "[And(Cabinet.IsActive, Cabinet.GetAction.IsAbilityType('adm'))]"
+				glow = {
+					name = "drop_shadow"
+					glow_radius = 3
+					color = {0.0 0.0 0.0 1.0}
+					alpha = 0.3
+				}
+			}
+
+			icon = {
+				size = { 30 30 }
+				datacontext = "[Cabinet.GetCharacter]"
+				using = icon_dip_texture
+				using = icon_gold_texture_alt
+				visible = "[And(Cabinet.IsActive, Cabinet.GetAction.IsAbilityType('dip'))]"
+				glow = {
+					name = "drop_shadow"
+					glow_radius = 3
+					color = {0.0 0.0 0.0 1.0}
+					alpha = 0.3
+				}
+			}
+
+			icon = {
+				size = { 30 30 }
+				datacontext = "[Cabinet.GetCharacter]"
+				using = icon_mil_texture
+				using = icon_gold_texture_alt
+				visible = "[And(Cabinet.IsActive, Cabinet.GetAction.IsAbilityType('mil'))]"
+				glow = {
+					name = "drop_shadow"
+					glow_radius = 3
+					color = {0.0 0.0 0.0 1.0}
+					alpha = 0.3
+				}
+			}
+		}
+
+		blockoverride "concept_link" {
+			text = [modifiers|E]
+		}
+
+		blockoverride "tooltip_content" {
+			TooltipRowList= {
+				ontextcontextchanged = "[SetRowListWithTitleFromTextContext(PdxGuiWidget.AccessSelf)]"
+				textcontext = "[Cabinet.GetEffectiveSkillImpactInfo]"
+			}
+		}
+	}
+}
+
+
+template action_progress_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_icon" {
+			icon = {
+				visible = "[Not(Cabinet.IsActive)]"
+				texture = "gfx/interface/icons/outliner/categories/cabinet.dds"
+				using = tooltip_title_icon_size
+			}
+
+			widget = {
+				visible = "[Cabinet.IsActive]"
+				using = tooltip_title_icon_size
+				widget = {
+					parentanchor = center
+					size = { 35 35 }
+					datacontext = "[Cabinet.GetAction]"
+					background = {
+						alwaystransparent = yes
+						align = center
+						texture = "gfx/interface/icons/cabinet_actions/background.dds"
+	
+						margin = { 7 7 }
+						
+						modify_texture = {
+							visible = "[CabinetAction.IsAbilityType('adm')]"
+							using = color_yellow_texture
+							blend_mode = overlay
+							alpha = 0.5
+						}
+						
+						modify_texture = {
+							visible = "[CabinetAction.IsAbilityType('dip')]"
+							using = color_blue_texture
+							blend_mode = overlay
+							alpha = 0.7
+						}
+						
+						modify_texture = {
+							visible = "[CabinetAction.IsAbilityType('mil')]"
+							using = color_red_texture
+							blend_mode = overlay
+							alpha = 0.7
+						}
+					}
+	
+					icon = {
+						size = { 100% 100% }
+						texture = "[GetCabinetActionIcon(CabinetAction.Self)]"
+						parentanchor = center
+						glow = {
+							name = "drop_shadow"
+							glow_radius = 2
+							color = {0.0 0.0 0.0 1.0}
+							alpha = 0.8
+						}
+					}
+				}
+			}
+		}
+
+		blockoverride "title_text" {
+			text = "[Cabinet.GetNameWithNoTooltip]"
+		}
+		
+		blockoverride "concept_link" {
+			text = [cabinet_action|E]
+		}
+
+		blockoverride "tooltip_content" {
+			TooltipContentSection = {
+				datamodel = "[Cabinet.GetActionProgressTooltipSections]"
+				item = {
+					TooltipScrolledBlockList = {
+						blockoverride "block_scrollarea" { maximumsize = { -1 450 }}
+						textcontext = "[CabinetActionProgressTooltipSection.GetString]"
+					}
+				}
+			}
+		}
+	}
+}
+
+template appoint_cabinet_member {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			text = "APPOINT_CABINET"
+		}
+		
+		blockoverride "title_icon" {
+			icon = {
+				using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/character_roles/cabinet.dds"
+
+				glow = {
+					name = "drop_shadow"
+					glow_radius = 3
+					color = {0.0 0.0 0.0 1.0}
+					alpha = 0.3
+				}
+			}
+		}
+
+		blockoverride "concept_link" {
+			text = "[cabinet_member|E]"
+		}
+
+		blockoverride "tooltip_content" {
+			TooltipTextBlock = {
+				visible = "[CabinetItem.GetCabinet.IsCharacterSet]"
+				blockoverride "text" {
+					text = "[CabinetItem.GetAdvisorUIAction.GetDescription]"
+				}
+			}
+
+			TooltipTextBlock = {
+				visible = "[Not(CabinetItem.GetCabinet.IsCharacterSet)]"
+				blockoverride "text" {
+					text = "[CabinetItem.GetNoAdvisorUIAction.GetDescription]"
+				}
+			}
+		}
+	}
+}

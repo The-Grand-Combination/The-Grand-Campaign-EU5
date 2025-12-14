@@ -1,0 +1,328 @@
+### TEMPLATES ###Blur
+
+types WindowComponents {
+	##################
+	### SEPARATORS ###
+
+	# type vertical_separator_01 = icon {
+	# 	layoutpolicy_vertical = expanding
+	# 	using = bg_vertical_separator_01
+	# 	size = { 8 -1 }	
+	# }
+
+	##################
+
+	## DIVIDERS ##
+
+	## CENTER dividerS
+
+	type divider_center_gold = widget {
+		layoutpolicy_horizontal = expanding
+		size = { -1 1 }
+
+		background = {
+			name = "ui_library_header"
+			using = color_gold_texture
+			spriteType = "corneredtiled"
+			texture_density = 2
+
+			modify_texture = {
+				name = "mask"
+				texture = "gfx/interface/component_masks/mask_fade_horizontal_middle.dds"
+				blend_mode = alphamultiply
+			}
+		}
+	}
+
+	# type divider_center_blue = widget {
+	# 	layoutpolicy_horizontal = expanding
+	# 	size = { -1 1 }
+
+	# 	background = {
+	# 		name = "ui_library_header"
+	# 		using = color_light_blue_texture
+	# 		spriteType = "corneredtiled"
+	# 		texture_density = 2
+
+	# 		modify_texture = {
+	# 			name = "mask"
+	# 			texture = "gfx/interface/component_masks/mask_fade_horizontal_middle.dds"
+	# 			blend_mode = alphamultiply
+	# 		}
+	# 	}
+	# }
+
+	type divider_solid_gold = icon {
+		using = color_new_gold_texture
+		layoutpolicy_horizontal = expanding
+		size = { -1 1 }
+	}
+
+	# type divider_solid_grey = icon {
+	# 	using = color_grey_texture
+	# 	layoutpolicy_horizontal = expanding
+	# 	size = { -1 1 }
+	# }
+
+	# type divider_solid_bone = icon {
+	# 	using = color_bone_texture
+	# 	layoutpolicy_horizontal = expanding
+	# 	size = { -1 1 }
+	# }
+
+	# type divider_flavor_gold = icon {
+	# 	using = color_new_gold_texture
+	# 	layoutpolicy_horizontal = expanding
+	# 	size = { -1 1 }
+
+	# 	modify_texture = {
+	# 		texture = "gfx/interface/component_masks/mask_fade_horizontal_middle_solid.dds"
+	# 		texture_density = 2
+	# 		spriteType = stretched
+	# 		spriteBorder = { 0 0 }
+	# 		blend_mode = alphamultiply
+	# 	}
+	# }
+	
+	# type divider_solid_blue = icon {
+	# 	using = color_light_blue_texture
+	# 	layoutpolicy_horizontal = expanding
+	# 	size = { -1 1 }
+	# }	
+
+	## RIGHT dividerS
+
+	# type divider_right_gold = widget {
+	# 	layoutpolicy_horizontal = expanding
+	# 	size = { -1 1 }
+
+	# 	background = {
+	# 		name = "ui_library_header"
+	# 		using = color_gold_texture
+	# 		spriteType = "corneredtiled"
+	# 		texture_density = 2
+
+	# 		modify_texture = {
+	# 			name = "mask"
+	# 			texture = "gfx/interface/component_masks/mask_fade_horizontal_right.dds"
+	# 			blend_mode = alphamultiply
+	# 		}
+	# 	}
+	# }
+
+	# type divider_right_blue = widget {
+	# 	layoutpolicy_horizontal = expanding
+	# 	size = { -1 1 }
+
+	# 	background = {
+	# 		name = "ui_library_header"
+	# 		using = color_light_blue_texture
+	# 		spriteType = "corneredtiled"
+	# 		texture_density = 2
+
+	# 		modify_texture = {
+	# 			name = "mask"
+	# 			texture = "gfx/interface/component_masks/mask_fade_horizontal_right.dds"
+	# 			blend_mode = alphamultiply
+	# 		}
+	# 	}
+	# }
+
+	## LEFT dividerS
+
+	# type divider_left_gold = widget {
+	# 	layoutpolicy_horizontal = expanding
+	# 	size = { -1 1 }
+
+	# 	background = {
+	# 		name = "ui_library_header"
+	# 		using = color_gold_texture
+	# 		spriteType = "corneredtiled"
+	# 		texture_density = 2
+
+	# 		modify_texture = {
+	# 			name = "mask"
+	# 			texture = "gfx/interface/component_masks/mask_fade_horizontal_left.dds"
+	# 			blend_mode = alphamultiply
+	# 		}
+	# 	}
+	# }
+
+	# type divider_left_blue = widget {
+	# 	layoutpolicy_horizontal = expanding
+	# 	size = { -1 1 }
+
+	# 	background = {
+	# 		name = "ui_library_header"
+	# 		using = color_light_blue_texture
+	# 		spriteType = "corneredtiled"
+	# 		texture_density = 2
+
+	# 		modify_texture = {
+	# 			name = "mask"
+	# 			texture = "gfx/interface/component_masks/mask_fade_horizontal_left.dds"
+	# 			blend_mode = alphamultiply
+	# 		}
+	# 	}
+	# }
+
+	# type divider_vertical_lightblue = widget {
+	# 	layoutpolicy_horizontal = fixed
+	# 	layoutpolicy_vertical = expanding
+	# 	size = { 1 -1 }
+
+	# 	background = {
+	# 		name = "ui_library_header"
+	# 		block "divider_color" {
+	# 			using = color_light_blue_texture
+	# 		}
+	# 		spriteType = "corneredtiled"
+	# 		texture_density = 2
+
+	# 		modify_texture = {
+	# 			using = bg_fade_vertical_down_mask_texture
+	# 			blend_mode = alphamultiply
+	# 			block "mirror" {}
+	# 		}
+	# 	}
+	# }
+
+	# type divider_vertical_black = widget {
+	# 	layoutpolicy_horizontal = fixed
+	# 	layoutpolicy_vertical = expanding
+	# 	size = { 1 -1 }
+
+	# 	background = {
+	# 		block "divider_color" {
+	# 			using = color_black_texture
+	# 		}
+	# 		spriteType = "corneredtiled"
+	# 		texture_density = 2
+
+	# 		modify_texture = {
+	# 			using = bg_fade_vertical_down_mask_texture
+	# 			blend_mode = alphamultiply
+	# 			block "mirror" {}
+	# 		}
+	# 	}
+	# }
+}
+
+template divider_vertical_template {
+	layoutpolicy_horizontal = fixed
+	layoutpolicy_vertical = fixed
+	size = { 2 15 }
+
+	background = {
+		name = "ui_library_header"
+		using = color_light_blue_texture
+		spriteType = "corneredtiled"
+		texture_density = 2
+	}
+}
+
+# template vertical_scrollbar {
+# 	scrollbar = {
+# 		name = "vertical_scrollbar"
+# 		size = { 9 9 }
+# 		wheelstep = 20
+# 		direction = vertical
+
+# 		track = {
+# 			button = {
+# 				texture = "gfx/interface_old/tiles/tile_scroll_track.dds"
+# 				spriteType = Corneredtiled
+# 				gfxtype = buttongfx
+# 				spriteborder = { 3 9 }
+# 				size = { 9 9 }
+# 				effectname = "NoHighlight"
+# 				intersectionmask = yes
+# 			}
+# 		}
+
+# 		slider = {
+# 			button = {
+# 				texture = "gfx/interface_old/tiles/tile_scroll_slider.dds"
+# 				spriteType = Corneredtiled
+# 				gfxtype = framedbuttongfx
+# 				spriteborder = { 3 9 }
+# 				effectname = "NoHighlight"
+# 				framesize = { 9 27 }
+# 				upframe = 1
+# 				overframe = 2
+# 				downframe = 2
+# 				intersectionmask = yes
+# 			}
+# 		}
+
+# 		dec_button = {
+# 			button = {
+# 			}
+# 		}
+
+# 		inc_button = {
+# 			button = {
+# 			}
+# 		}
+# 	}
+# }
+
+# template horizontal_scrollbar
+# {
+# 	scrollbar = {
+# 		name = "horizontal_scrollbar"
+# 		size = { 9 9 }
+# 		wheelstep = 20
+# 		direction = horizontal
+
+# 		track = {
+# 			button = {
+# 				texture = "gfx/interface_old/tiles/tile_scroll_track_horizontal.dds"
+# 				spriteType = Corneredtiled
+# 				gfxtype = buttongfx
+# 				spriteborder = { 9 3 }
+# 				size = { 9 9 }
+# 				effectname = "NoHighlight"
+# 				intersectionmask = yes
+# 			}
+# 		}
+
+# 		slider = {
+# 			button = {
+# 				texture = "gfx/interface_old/tiles/tile_scroll_slider_horizontal.dds"
+# 				spriteType = Corneredtiled
+# 				gfxtype = framedbuttongfx
+# 				spriteborder = { 9 3 }
+# 				effectname = "NoHighlight"
+# 				framesize = { 27 9 }
+# 				upframe = 1
+# 				overframe = 2
+# 				downframe = 2
+# 				intersectionmask = yes
+# 			}
+# 		}
+
+# 		dec_button = {
+# 			button = {
+# 			}
+# 		}
+
+# 		inc_button = {
+# 			button = {
+# 			}
+# 		}
+# 	}
+# }
+
+# types AiDebugTypes {
+# 	type ai_debug_tooltip = icon {
+# 		visible = "[IsAIDebug]"
+# 		size = { 32 32 }
+# 		texture = "gfx/interface/icons/flat_icons/tabicons/europedia_flat_icon.dds"
+# 		modify_texture = {
+# 			using = color_white_texture
+# 			color = { 1.0 0.0 1.0 1.0 }
+# 			alpha = 1.0
+# 		}
+# 	}
+# }

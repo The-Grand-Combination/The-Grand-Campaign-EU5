@@ -1,0 +1,11 @@
+window = {
+	name = "audio_ui_window"
+	
+	state = {
+		name = snd_test
+
+		start_sound = {
+			soundeffect = "UI_eventGeneric"
+        }
+	}
+}

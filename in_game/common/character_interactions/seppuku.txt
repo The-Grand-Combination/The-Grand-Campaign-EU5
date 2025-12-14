@@ -1,0 +1,59 @@
+﻿seppuku = { 
+
+	on_own_nation = yes
+	
+	message = yes
+	
+	potential = {
+		scope:actor = {
+			religion = {
+				has_purity = yes
+			}
+		}
+	}
+
+	ai_tick = daily
+	ai_tick_frequency = 180
+
+	allow = {
+		scope:actor = { has_ruler = yes }
+	}
+	
+	select_trigger = {
+		looking_for_a = character
+		source = actor
+		target_flag = recipient
+		name = "choose_character"
+		column = {
+			data = name
+		}
+		visible = {
+		}
+		enabled = {
+			is_ruler = yes
+		}
+	}
+
+	effect = {
+		kill_character = {
+			target = scope:recipient
+			reason = seppuku
+		}
+		scope:actor = {
+			add_purity = purity_extreme_bonus
+			add_stability = stability_ultimate_penalty
+		}
+	}
+
+	ai_will_do = {
+		# We treat scope:target as the important character. This will be evaluated both ways though
+
+		# this is a way of getting out of low purity
+		add = {
+			value = scope:actor.purity
+			subtract = 25
+			multiply = -1
+		}
+	}
+	
+}	

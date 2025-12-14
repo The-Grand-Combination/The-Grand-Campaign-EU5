@@ -1,0 +1,79 @@
+﻿nanbokuchou_resolution = {
+	
+	potential = {
+		situation:nanbokuchou = {
+			situation_is_active = yes
+		}
+	}
+
+	allow = {
+	}
+
+	can_vote = {
+		scope:actor = {
+			is_member_of_international_organization = international_organization:japanese_shogunate
+		}
+	}
+
+	votes = {
+		value = scope:actor.military_strength
+	}
+
+	total_votes_needed = 1
+	show_message = no
+
+	should_finalize_vote = {
+		always = no
+	}
+
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:nanbokuchou = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			this = situation:nanbokuchou
+		}
+		enabled = {
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = country
+		name = "select_vote"
+		target_flag = vote
+		allow_null = yes
+		allow_self = yes
+		source_global_list = nanbokuchou_voters
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			trigger_if = {
+				limit = { scope:actor ?= { has_variable = supports_northern_court } }
+				tag = NTC
+			}
+			trigger_else = {
+				limit = { scope:actor ?= { has_variable = supports_southern_court } }
+				tag = STC
+			}
+		}
+	}
+
+	effect = {
+	}
+
+	ai_will_do = {
+		add = 10000
+	}
+}

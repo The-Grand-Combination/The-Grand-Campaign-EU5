@@ -1,0 +1,43 @@
+types ConfirmWindow {
+	type confirm_window = basic_dialog {
+		layer = confirmation
+
+		blockoverride "content" {
+			text_multi = {
+				block "body_text" {}
+				# parentanchor = top|hcenter
+				maximumsize = { 500 -1 }
+				fontsize = 18
+				using = Font_Type_Standard
+				alwaystransparent = yes
+				align = center
+				autoresize = yes
+				default_format = "#color_white"
+			}
+		}
+
+		blockoverride "bottom_buttons" {
+			button_default = {
+				block "cancel_button" {}
+
+				text = "CANCEL"
+				input_action = "close_window"
+				use_global_input_instance = yes
+				tooltip_enabled = no
+				using = snd_UI_reject
+				using = button_resize_to_fit_text
+			}
+
+			button_default = {
+				block "confirm_button" {}
+
+				text = "CONFIRM"
+				input_action = "confirm"
+				use_global_input_instance = yes
+				tooltip_enabled = no
+				using = snd_UI_confirm
+				using = button_resize_to_fit_text
+			}
+		}
+	}
+}

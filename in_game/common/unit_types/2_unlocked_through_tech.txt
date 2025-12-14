@@ -1,0 +1,773 @@
+﻿########################
+# Tradition
+########################
+
+a_footmen = {
+	category = army_infantry
+	default = yes
+	copy_from = a_age_1_traditions_infantry
+	strength_damage_taken = -0.05
+	
+	
+	country_potential = { 
+		government_type != government_type:steppe_horde
+	}
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = burghers
+		multiply = 0.1
+	}
+	
+	upgrades_to = a_men_at_arms
+
+	
+	maintenance_demand =  early_heavy_infantry_maintenance
+	construction_demand = early_heavy_infantry_construction
+	
+	gfx_tags = { medium_tag }
+	
+
+}
+
+
+a_archers = {
+	category = army_infantry
+	default = yes
+	copy_from = a_age_1_traditions_infantry
+	
+	strength_damage_done = -0.1
+	morale_damage_taken = 0.20
+	initiative = 5
+	
+	light = yes
+
+	upgrades_to = a_crossbowmen
+
+	
+	country_potential = { 
+		government_type != government_type:steppe_horde
+	}
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = burghers
+		multiply = 0.1
+	}
+	
+	maintenance_demand = archer_infantry_maintenance
+	construction_demand = archer_infantry_construction
+	gfx_tags = { archer_tag medium_tag }
+}
+
+a_footmen_levy = {
+	category = army_infantry
+	copy_from = a_footmen
+	
+	buildable = no
+	levy = yes
+	gfx_tags = { medium_tag }
+}
+
+
+a_horsemen = {
+	category = army_cavalry
+	copy_from = a_age_1_traditions_cavalry
+	
+	
+	strength_damage_done = -0.1
+	morale_damage_taken = 0.20
+	initiative = 5
+	
+	light = yes
+	
+	upgrades_to = a_cavalrymen
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.3
+	}
+	gfx_tags = { medium_tag }
+}
+
+a_armored_horsemen = {
+	category = army_cavalry
+	copy_from = a_age_1_traditions_cavalry
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.3
+	}
+	
+	maintenance_demand =  heavy_cavalry_maintenance
+	construction_demand = heavy_cavalry_construction
+
+	upgrades_to = a_heavy_cavalrymen
+
+	gfx_tags = { heavy_tag }
+}
+
+
+a_camp_followers = {
+	category = army_auxiliary
+	copy_from = a_age_1_traditions_auxiliary
+	gfx_tags = { medium_tag }
+	
+	country_potential = { 
+		and = {
+			exists = government_type
+			government_type != government_type:steppe_horde
+		}
+	}
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = peasants
+		multiply = 0.001
+	}
+	
+	upgrades_to = a_supply_carts
+
+}
+
+########################
+# Renaissance
+########################
+
+a_men_at_arms = {
+	category = army_infantry
+	copy_from = a_age_2_renaissance_infantry
+	strength_damage_taken = -0.1
+	combat_speed = 1
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = burghers
+		multiply = 0.1
+	}
+	
+	upgrades_to = a_halberdiers
+
+	
+	maintenance_demand =  early_heavy_infantry_maintenance
+	construction_demand = early_heavy_infantry_construction
+	
+	gfx_tags = { medium_tag }
+}
+
+a_crossbowmen = {
+	category = army_infantry
+	copy_from = a_age_2_renaissance_infantry
+	light = yes
+	
+	strength_damage_done = -0.1
+	morale_damage_taken = 0.20
+	initiative = 5
+	
+	upgrades_to = a_early_arquebusiers
+
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = burghers
+		multiply = 0.1
+	}
+	gfx_tags = { crossbow_tag medium_tag }
+}
+
+
+a_handgonners = {
+	category = army_infantry
+	copy_from = a_age_2_renaissance_infantry
+	
+	morale_damage_done = 0.10
+	build_time_modifier = 0.25
+	food_consumption_per_strength = 0.25
+	combat_speed = -0.5
+
+	
+	maintenance_demand =  infantry_maintenance
+	construction_demand = infantry_construction
+	
+	upgrades_to = a_early_arquebusiers
+
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = burghers
+		multiply = 0.1
+	}
+	gfx_tags = { musket_tag medium_tag }
+}
+
+a_men_at_arms_levy = {
+	category = army_infantry
+	copy_from = a_age_2_renaissance_infantry
+	buildable = no
+	levy = yes
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = burghers
+		multiply = 0.1
+	}
+	gfx_tags = { medium_tag }
+}
+
+a_cavalrymen = {
+	category = army_cavalry
+	copy_from = a_age_2_renaissance_cavalry
+	
+	strength_damage_done = -0.1
+	morale_damage_taken = 0.20
+	initiative = 5
+	
+	light = yes
+	
+	
+	upgrades_to = a_light_lancers
+
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.3
+	}
+	gfx_tags = { medium_tag }
+}
+
+a_heavy_cavalrymen = {
+	category = army_cavalry
+	copy_from = a_age_2_renaissance_cavalry
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.3
+	}
+	
+	upgrades_to = a_lancers
+	
+	maintenance_demand =  heavy_cavalry_maintenance
+	construction_demand = heavy_cavalry_construction
+	gfx_tags = { heavy_tag }
+}
+
+a_houfnice = {
+	category = army_artillery
+	copy_from = a_age_2_renaissance_artillery
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = burghers
+		multiply = 0.05
+	}
+	
+	upgrades_to = a_falconet
+}
+
+a_peasant_levy = {
+	category = army_infantry
+	copy_from = a_age_2_renaissance_infantry
+	buildable = no
+	light = yes
+	levy = yes
+	gfx_tags = { light_tag }
+}
+
+a_supply_carts = {
+	category = army_auxiliary
+	copy_from = a_age_2_renaissance_auxiliary
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = peasants
+		multiply = 0.005
+	}
+	gfx_tags = { medium_tag }
+
+	upgrades_to = a_supply_convoy
+
+
+}
+
+
+########################
+# Discovery
+########################
+
+a_early_arquebusiers = {
+	category = army_infantry
+	copy_from = a_age_3_discovery_infantry
+	
+	strength_damage_done = -0.1
+	morale_damage_taken = 0.20
+	initiative = 5
+
+
+	upgrades_to = a_arquebusiers
+	
+	light = yes
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = burghers
+		multiply = 0.1
+	}
+	gfx_tags = { musket_tag medium_tag }
+}
+
+a_halberdiers = {
+	category = army_infantry
+	copy_from = a_age_3_discovery_infantry
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = burghers
+		multiply = 0.1
+	}
+
+	upgrades_to = a_pikemen
+
+
+	maintenance_demand =  early_heavy_infantry_maintenance
+	construction_demand = early_heavy_infantry_construction
+
+	gfx_tags = { polearm_tag medium_tag }
+}
+
+a_light_lancers = {
+	category = army_cavalry
+	copy_from = a_age_3_discovery_cavalry
+	light = yes
+
+	strength_damage_done = -0.1
+	morale_damage_taken = 0.20
+	initiative = 5
+	
+	upgrades_to = a_pistoleers
+
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.3
+	}
+	
+	gfx_tags = { spear_tag medium_tag }
+}
+
+a_lancers = {
+	category = army_cavalry
+	copy_from = a_age_3_discovery_cavalry
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.3
+	}
+	
+	upgrades_to = a_lancers
+	upgrades_to = a_heavy_lancers
+
+	
+	maintenance_demand =  heavy_cavalry_maintenance
+	construction_demand = heavy_cavalry_construction
+	
+	gfx_tags = { spear_tag heavy_tag }
+}
+
+a_falconet = {
+	category = army_artillery
+	copy_from = a_age_3_discovery_artillery
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = peasants
+		multiply = 0.005
+	}
+	
+
+	upgrades_to = a_chambered_cannon
+
+}
+
+a_matchlock_levy = {
+	category = army_infantry
+	copy_from = a_age_3_discovery_infantry
+	light = yes
+
+	buildable = no
+	levy = yes
+
+	gfx_tags = { musket_tag light_tag }
+}
+
+a_supply_convoy = {
+	category = army_auxiliary
+	copy_from = a_age_3_discovery_auxiliary
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = peasants
+		multiply = 0.005
+	}
+
+	upgrades_to = a_baggage_train
+
+
+}
+
+
+########################
+# Reformation
+########################
+
+a_arquebusiers = {
+	category = army_infantry
+	copy_from = a_age_4_reformation_infantry
+	
+	strength_damage_done = -0.1
+	morale_damage_taken = 0.20
+	initiative = 5
+
+	upgrades_to = a_hunters
+	
+	light = yes
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = burghers
+		multiply = 0.1
+	}
+	gfx_tags = { musket_tag medium_tag }
+}
+
+a_pikemen = {
+	category = army_infantry
+	copy_from = a_age_4_reformation_infantry
+
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = burghers
+		multiply = 0.1
+	}
+	
+	upgrades_to = a_musketeers
+
+	
+	maintenance_demand =  pikemen_maintenance
+	construction_demand = pikemen_construction
+
+	gfx_tags = { pike_tag medium_tag }
+}
+
+a_pistoleers = {
+	category = army_cavalry
+	copy_from = a_age_4_reformation_cavalry
+	
+	strength_damage_done = -0.1
+	morale_damage_taken = 0.20
+	initiative = 5
+
+	light = yes
+	
+	upgrades_to = a_hussars
+
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.3
+	}
+	gfx_tags = { pistol_tag medium_tag }
+}
+
+a_heavy_lancers = {
+	category = army_cavalry
+	copy_from = a_age_4_reformation_cavalry
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.3
+	}
+	gfx_tags = { spear_tag heavy_tag }
+	
+	upgrades_to = a_gallop_cavalry
+
+	
+	maintenance_demand =  heavy_cavalry_maintenance
+	construction_demand = heavy_cavalry_construction
+}
+
+a_chambered_cannon = {
+	category = army_artillery
+	copy_from = a_age_4_reformation_artillery
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = peasants
+		multiply = 0.005
+	}
+	upgrades_to = a_royal_mortar
+}
+
+a_flintlock_levy = {
+	category = army_infantry
+	copy_from = a_age_4_reformation_infantry
+	light = yes
+	buildable = no
+	levy = yes
+	gfx_tags = { musket_tag light_tag }
+}
+
+a_baggage_train = {
+	category = army_auxiliary
+	copy_from = a_age_4_reformation_auxiliary
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = peasants
+		multiply = 0.005
+	}
+	gfx_tags = { medium_tag }
+	
+	upgrades_to = a_wagon_train
+
+}
+
+
+########################
+# Absolutism
+########################
+a_hunters = {
+	category = army_infantry
+	copy_from = a_age_5_absolutism_infantry
+	
+	
+	strength_damage_done = -0.1
+	morale_damage_taken = 0.20
+	initiative = 5
+	
+	light = yes
+
+	upgrades_to = a_sharpshooters
+
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = burghers
+		multiply = 0.1
+	}
+	gfx_tags = { rifle_tag medium_tag }
+	color = unit_rifle_green
+}
+
+a_musketeers = {
+	category = army_infantry
+	copy_from = a_age_5_absolutism_infantry
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = burghers
+		multiply = 0.1
+	}
+	
+	upgrades_to = a_fusiliers
+	
+	maintenance_demand =  heavy_infantry_maintenance
+	construction_demand = heavy_infantry_construction
+
+	
+	gfx_tags = { musket_tag medium_tag }
+}
+
+a_hussars = {
+	category = army_cavalry
+	copy_from = a_age_5_absolutism_cavalry
+	
+	strength_damage_done = -0.1
+	morale_damage_taken = 0.20
+	initiative = 5
+	
+	light = yes
+	
+	upgrades_to = a_light_dragoons
+
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.3
+	}
+	gfx_tags = { medium_tag }
+}
+
+a_gallop_cavalry = {
+	category = army_cavalry
+	copy_from = a_age_5_absolutism_cavalry
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.3
+	}
+	
+	upgrades_to = a_cuirassiers
+	
+	maintenance_demand =  heavy_cavalry_maintenance
+	construction_demand = heavy_cavalry_construction
+	gfx_tags = { heavy_tag }
+}
+
+a_royal_mortar = {
+	category = army_artillery
+	copy_from = a_age_5_absolutism_artillery
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = peasants
+		multiply = 0.005
+	}
+	
+	
+	upgrades_to = a_flying_battery
+}
+
+a_militiamen = {
+	category = army_infantry
+	copy_from = a_age_5_absolutism_infantry
+	light = yes
+	buildable = no
+	levy = yes
+	gfx_tags = { musket_tag light_tag }
+
+}
+
+a_wagon_train = {
+	category = army_auxiliary
+	copy_from = a_age_5_absolutism_auxiliary
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = peasants
+		multiply = 0.005
+	}
+	gfx_tags = { medium_tag }
+
+	upgrades_to = a_logistics_corps
+}
+
+
+########################
+# Revolutions
+########################
+
+
+
+a_sharpshooters = {
+	category = army_infantry
+	copy_from = a_age_6_revolutions_infantry
+	
+	
+	strength_damage_done = -0.1
+	morale_damage_taken = 0.20
+	initiative = 5
+	
+	light = yes
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = burghers
+		multiply = 0.1
+	}
+	gfx_tags = { rifle_tag medium_tag }
+	color = unit_rifle_green 
+}
+
+a_fusiliers = {
+	category = army_infantry
+	copy_from = a_age_6_revolutions_infantry
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = burghers
+		multiply = 0.1
+	}
+	
+	maintenance_demand =  heavy_infantry_maintenance
+	construction_demand = heavy_infantry_construction
+
+	gfx_tags = { musket_tag medium_tag }
+}
+
+
+
+
+a_light_dragoons = {
+	category = army_cavalry
+	copy_from = a_age_6_revolutions_cavalry
+	light = yes
+
+		
+	strength_damage_done = -0.1
+	morale_damage_taken = 0.20
+	initiative = 5
+	
+	light = yes
+	
+	gfx_tags = { heavy_tag }
+}
+
+
+
+a_cuirassiers = {
+	category = army_cavalry
+	copy_from = a_age_6_revolutions_cavalry
+	gfx_tags = { cuirassier_tag heavy_tag }
+	
+		maintenance_demand =  heavy_cavalry_maintenance
+	construction_demand = heavy_cavalry_construction
+	
+}
+
+
+
+a_flying_battery = {
+	category = army_artillery
+	copy_from = a_age_6_revolutions_artillery
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = peasants
+		multiply = 0.005
+	}
+}
+
+a_conscripts = {
+	category = army_infantry
+	copy_from = a_age_6_revolutions_infantry
+	light = yes
+	buildable = no
+	levy = yes
+	gfx_tags = { musket_tag light_tag }
+}
+
+
+
+a_logistics_corps = {
+	category = army_auxiliary
+	copy_from = a_age_6_revolutions_auxiliary
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = peasants
+		multiply = 0.005
+	}
+	gfx_tags = { medium_tag }
+}
+

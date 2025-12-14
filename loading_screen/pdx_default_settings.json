@@ -1,0 +1,45 @@
+{
+    "Graphics": {
+		"renderer": "Vulkan",
+		"texture_streaming": true,
+		"anti_aliasing": "MSAAx2",
+		"setting_framerate_cap": "off",
+		"portrait_multi_sampling": "x4",
+		"gui_texture_streaming": true
+    },
+	"Terrain": {
+		"triplanar_uv_quality": "medium"
+	},
+	"Map":	{
+		"flatmap_mode":	"zoomed_out",
+		"subjects_use_overlord_name": "NO" 
+	},
+	"System": {
+		"mouse_cursor_zoom_mode": "mouse_cursor_zoom_mode_zoom_in_to_cursor",
+		"zoom_speed":	60,
+		"button_tooltip_validation": true,
+		"button_tooltip_validation_ignore_files" : "(.*editor.*)|(gui/scene_viewer.gui)|(gui/multiplayer_types.gui)|(gui/debug_menus.gui)|(gui/debug/*.*)|(gui/node_windows/*.*)|(gui/achievements/*.*)|(gui/watchwindow.gui)|(gui/library_windows_ck3_borrow.gui)|(gui/shared/*.*)|(gui/console.gui)|(gui/object_explorer/*.*)|(gui/POPS/*.*)|(gui/multiplayer_lobby.gui)|(gui/jomini/*.*)|(gui/tools/*.*)|(gui/undo_history_viewer/*.*)|(gui/social/*.*)|(gui/notifications/*.*)|(gui/tweaker/*.*)|(gui/settings/*.*)|(gui/ui_library.gui)|(gui/profiler.gui)|(gui/entity_designer/*.*)|(gui/applicationutils/*.*)|(gui/log_viewer/*.*)|(gui/save_game_analyzer.gui)|(gui/unit_viewer.gui)|(gui/spawn_debug_unit_window.gui)|(gui/script_profiler/script_profiler.gui)|(gui/downloadable_content_list_window.gui)|(gui/toolstypes.gui)|(gui/vfs_mount_path_browser.gui)|(gui/map_editor/*.*)|(gui/portrait_editor_window.gui)|(gui/resign_confirmation_window.gui)|(gui/ticktask_debugger.gui)|(gui/entity_editor/*.*)|(gui/gui_animation_editor/*.*)|(gui/animation_editor/*.*)|(gui/scene_editor/*.*)|(gui/mesh_importer/*.*)"
+	},
+	"interface": {
+		"tooltip": "SETTING_TOOLTIP_MODE_LOCK_ON_TIMER_OR_ACTION_WIDGET_ANCHOR",
+		"tooltip_delay": 0.30,
+		"tooltip_lock_time": 1.0,
+		"tooltip_show_extra_info_delay_time": 0.0,
+		"tooltip_unlock_time": 0.05,
+		"tooltip_open_time_when_another_locked": 0.05,
+		"map_tooltip_delay": 0.40,
+		"confirm":	"SETTING_CONFIRM_MODE_DIALOG",
+		"event_window_input_lock_time":	0.500000,
+		"popup_dialog_input_lock_time":	0.300000
+	},
+	"audio": {
+		"volume.bus:/": 1,
+		"volume.vca:/MUSIC": 1,
+		"volume.vca:/UI": 1,
+		"volume.vca:/SFX": 1,
+		"volume.vca:/AMBIENT": 1
+	},
+	"Game": {
+		"file_transfer_speed": "OPTION_ULTRA"
+	}
+}

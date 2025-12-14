@@ -1,0 +1,874 @@
+template DiplomaticCapacity_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_icon" {
+			icon = {
+				texture = "[GetConceptTexture('diplomatic_capacity')]"
+				using = tooltip_title_icon_size
+
+			}
+		}
+
+		blockoverride "title_text" {
+			text = "DIPLOMATIC_CAPACITY_HEADER"
+		}
+		blockoverride "concept_link" {
+			text = [diplomatic_capacity|E]
+		}
+		
+		blockoverride "tooltip_content" {
+			tooltipmeta = {
+				title = "DIPLOMATIC_COST_BREAKDOWN"
+				texture = "[GetConceptTexture('diplomatic_capacity')]"
+				game_concept = "[diplomatic_capacity|e]"
+			}
+			TooltipScrolledStringPairList = {
+				blockoverride "block_title" {
+					datacontext = "[Player]"
+					text = "DIP_CAPACITY_USED_COU"
+				}
+				blockoverride "block_scrollarea" { maximumsize = { -1 300 }}
+				textcontext = "[Player.GetDiplomacy.GetActiveRelationsList]"
+			}
+			TooltipStringPairList = {
+				visible = "[Player.GetDiplomacy.IsOverCapacityLimit]"
+				textcontext =  "[Player.GetDiplomacy.GetActiveRelationsInfo]"
+			}
+			TooltipScrolledStringPairList = {
+				blockoverride "block_scrollarea" { maximumsize = { -1 300 }}
+				blockoverride "block_title" {
+					datacontext = "[Player]"
+					text = "DIP_CAPACITY_FOR_COU"
+				}
+				datacontext = "[StringToStringPairList(Player.GetDoubleDescriptionFor('diplomatic_capacity','diplomatic_capacity_modifier'))]"
+			}
+		}
+	}
+}
+
+# template improve_relations_tooltip {
+# 	ContextualTooltipType = {
+# 		blockoverride "title_text" {
+# 			text = "IMPROVE_RELATIONS_HEADER"
+# 		}
+# 		blockoverride "title_icon" {
+# 			icon = {
+# 				using = tooltip_title_icon_size
+# 				texture = "gfx/interface/icons/flat_icons/improve_relations.dds"
+# 				using = overlay_color_light_blue # To be removed when we have the coloured icon
+# 				glow = {
+# 					name = "drop_shadow"
+# 					glow_radius = 3
+# 					color = {0.0 0.0 0.0 1.0}
+# 					alpha = 0.3
+# 				}
+# 			}
+# 		}
+# 		blockoverride "concept_link" {
+# 			text = [improve_relations|e]
+# 		}
+# 		blockoverride "tooltip_content" {
+# 			TooltipTextBlock = {
+# 				blockoverride "text" {
+# 					text = "IMPROVE_RELATIONS_TT_TEXT"
+# 				}
+# 			}
+# 			TooltipStringPairList = {
+# 				blockoverride "block_title" {
+# 					text = "LIST_TITLE_SOURCES"
+# 				}
+# 				textcontext = "[Country.GetDescriptionFor('improve_relation_impact')]"
+# 			}
+# 		}
+# 	}
+# }
+
+template diplomatic_range_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			text = "DIPLOMATIC_RANGE_HEADER"
+		}
+		blockoverride "title_icon" {
+			icon = {
+				using = tooltip_title_icon_size
+				texture = "[GetConceptTexture('diplomatic_range')]"
+				glow = {
+					name = "drop_shadow"
+					glow_radius = 3
+					color = {0.0 0.0 0.0 1.0}
+					alpha = 0.3
+				}
+			}
+		}
+		blockoverride "concept_link" {
+			text = [diplomatic_range|e]
+		}
+		blockoverride "title_button" {
+			mapmode_tooltip_button = {
+				datacontext = "[GetMapMode('diplomacy')]"
+			}
+		}
+		blockoverride "tooltip_content" {
+			TooltipStringPairList = {
+				blockoverride "block_title" {
+					text = "DIPLOMATIC_RANGE_TT_TEXT"
+				}
+				textcontext = "[DiplomacyLateralView.GetDiplomaticRangeTooltip]"
+			}
+		}
+	}
+}
+
+template diplomatic_reputation_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			text = "DIPLOMATIC_REPUTATION_HEADER"
+		}
+		blockoverride "title_icon" {
+			icon = {
+				using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/flat_icons/diplomatic_reputation.dds"
+				glow = {
+					name = "drop_shadow"
+					glow_radius = 3
+					color = {0.0 0.0 0.0 1.0}
+					alpha = 0.3
+				}
+			}
+		}
+		blockoverride "concept_link" {
+			text = [diplomatic_reputation|e]
+		}
+		blockoverride "tooltip_content" {
+			TooltipStringPairList = {
+				blockoverride "block_title" {
+					text = "DIPLOMATIC_REPUTATION_TT_TEXT"
+				}
+				textcontext = "[Country.GetDescriptionFor('diplomatic_reputation')]"
+			}
+		}
+	}
+}
+
+template SubjectLoyalty_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			datacontext = "[Country]"
+			text = "SUB_LOYAL_HEADER"
+		}
+		blockoverride "title_icon" {
+			# datacontext = "[Country]"
+			country_flag_small_plus = {
+				# visible = "[Country.GetDiplomacy.IsSubject]"
+				# block "overlord_context" {
+					datacontext = "[Country]"
+				# }				
+			}
+		}
+		
+		blockoverride "concept_link" {
+			text = [subject_loyalty|E]
+		}
+							
+		blockoverride "tooltip_content" {
+			TooltipStringPairList = {
+				textcontext = "[Country.GetDiplomacy.GetSubjectLoyaltyInfo]"
+			}
+		}
+	}
+}
+
+template SubjectTypeDetail_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			text = "SUB_LOYAL_HEADER"
+		}
+		
+		blockoverride "title_icon" {
+			country_flag_small_plus = {
+				# block "overlord_context" {
+					datacontext = "[Country]"
+				# }				
+			}
+		}
+		
+		blockoverride "concept_link" {
+			text = [subject_loyalty|E]
+		}
+		blockoverride "tooltip_content" {
+			TooltipRowList = {
+				visible = "[Country.GetDiplomacy.IsDisloyalSubject]"
+				textcontext = "SubjectTypeDetail_DESC_NOT"
+				tooltipwidget = {
+					using = SubjectLoyalty_tooltip
+				}
+			}
+
+			TooltipRowList = {
+				visible = "[Not(Country.GetDiplomacy.IsDisloyalSubject)]"
+				textcontext = "SubjectTypeDetail_DESC"
+				tooltipwidget = {
+					using = SubjectLoyalty_tooltip
+				}
+			}
+
+			TooltipStringPairList = {
+				textcontext = "[Country.GetDiplomacy.GetSubjectLoyaltyInfo]"
+			}
+			# using = action_tooltip_inner_content
+		}
+	
+		blockoverride "tooltip_ui_action_block" {
+			TooltipUIActionBlockOld = {
+				visible = "[And(PdxGuiWidget.HasUIAction, Country.GetDiplomacy.GetOverlord.IsPlayer)]"
+			}
+		}
+	}
+}
+
+template SubjectHeaderTT_tooltip {
+	SimpleContextualTooltipType = {
+		textcontext = "[RelationTypeItem.GetToolTip]"
+
+		blockoverride "title_icon" {
+			icon = {
+				using = tooltip_title_icon_size
+				texture = "[RelationTypeItem.AccessIcon]"
+			}
+		}
+	}
+}
+
+template power_projection_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			text = "POWER_PROJECTION_HEADER"
+		}
+		blockoverride "title_icon" {
+			icon = {
+				using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/flat_icons/power_projection.dds"
+				glow = {
+					name = "drop_shadow"
+					glow_radius = 3
+					color = {0.0 0.0 0.0 1.0}
+					alpha = 0.3
+				}
+			}
+		}
+		blockoverride "concept_link" {
+			text = [power_projection|e]
+		}
+		blockoverride "tooltip_content" {
+			TooltipStringPairList = {
+				blockoverride "block_title" {
+					datacontext = "[Country]"
+					text = "POWER_PROJECTION_TT_TEXT"
+				}
+				textcontext = "[Country.GetDescriptionFor('power_projection')]"
+			}
+		}
+	}
+}
+
+template great_power_score_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			text = "GREATPOWER_SCORE_HEADER"
+		}
+		blockoverride "title_icon" {
+			icon = {
+				using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/flat_icons/great_power_score.dds"
+				glow = {
+					name = "drop_shadow"
+					glow_radius = 3
+					color = {0.0 0.0 0.0 1.0}
+					alpha = 0.3
+				}
+			}
+		}
+		blockoverride "concept_link" {
+			text = [great_power_score|e]
+		}
+		blockoverride "tooltip_content" {
+			datacontext = "[Country]"
+			TooltipScrolledStringPairList = {
+				blockoverride "block_scrollarea" { maximumsize = { -1 300 }}
+				blockoverride "block_title" {
+					text = "GREATPOWER_SCORE_TITLE"
+				}
+				textcontext = "[Country.GetGreatPowerScoreInfo]"
+			}
+		}
+	}
+}
+
+
+template great_power_info_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			datacontext = "[Country]"
+			text = "GREATPOWER_TITLE_HEADER"
+		}
+		blockoverride "title_icon" {
+			country_rank_banner = {
+				datacontext = "[Country]"
+				blockoverride "country_rank_banner_size" {
+					size = {34 42}
+				}
+				blockoverride "great_power_tooltip" {}
+			}
+		}
+		blockoverride "concept_link" {
+			text = [great_power|e]
+		}
+		blockoverride "tooltip_content" {
+			datacontext = "[Country]"
+			TooltipTextBlock = { 
+				blockoverride "text" {
+					text = "POWER_TEXT"
+				}
+			}
+			TooltipScrolledStringPairList = {
+				blockoverride "block_scrollarea" { maximumsize = { -1 300 }}
+				blockoverride "block_title" {
+					text = "GREATPOWER_BENEFITS"
+				}
+				textcontext = "[Country.GetGreatPowerBonusInfo]"
+			}
+			TooltipScrolledStringPairList = {
+				blockoverride "block_scrollarea" { maximumsize = { -1 300 }}
+				blockoverride "block_title" {
+					text = "GREATPOWER_SCORE_TITLE"
+				}
+				textcontext = "[Country.GetGreatPowerScoreInfo]"
+			}
+			TooltipTextBlock = {
+				visible = "[Country.IsLosingGreatPowerStatus]"
+				blockoverride "text" {
+					text = "[Country.GetLosingGreatPowerScoreInfo]"
+				}
+			}
+		}
+	}
+}
+
+template non_great_power_info_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			datacontext = "[Country]"
+			text = "NORMALPOWER_TITLE_HEADER"
+		}
+		blockoverride "title_icon" {
+			icon = {
+				texture = "gfx/interface/component_tiles/navy_banners.dds"
+				texture_density = 2
+				using = tooltip_title_icon_size
+				text_single = {
+					size = { 100% 70% }
+					autoresize = no
+					align = center|nobaseline
+					text = "[Country.GetGreatPowerRank]"
+				}
+			}
+		}
+		blockoverride "concept_link" {
+			text = [normal_power|e]
+		}
+		blockoverride "tooltip_content" {
+			datacontext = "[Country]"
+			TooltipTextBlock = { 
+				blockoverride "text" {
+					text = "POWER_TEXT"
+				}
+			}
+			TooltipScrolledStringPairList = {
+				blockoverride "block_scrollarea" { maximumsize = { -1 300 }}
+				blockoverride "block_title" {
+					text = "GREATPOWER_SCORE_TITLE"
+				}
+				textcontext = "[Country.GetGreatPowerScoreInfo]"
+			}
+		}
+	}
+}
+
+
+template improve_opinion_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_icon" {
+			icon = {
+				texture = "gfx/interface/icons/flat_icons/foreigncountry/opinion.dds"
+				using = tooltip_title_icon_size
+			}
+		}
+		blockoverride "title_text" {
+			block "improve_opinion_tooltip_countrycontext" {
+				datacontext = "[OngoingRelationCountry.GetCountry]"
+			}
+			text = "DIP_OPINION_IMPROVEMENT_ONGOING"
+		}
+		blockoverride "concept_link" {
+			text = "[opinion|e]"
+		}
+			
+		blockoverride "tooltip_content" {
+			TooltipDebugTextBlock = {
+				textcontext = "[OngoingRelationCountry.GetOpinionImprovementDebugTooltip]"
+			}
+			TooltipStringPairList = {
+				block "improve_opinion_tooltip_textcontext" {
+					textcontext = "[OngoingRelationCountry.GetOpinionImprovementTooltip]"
+				}
+			}
+		}
+	}
+}
+
+template ongoing_relation_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_icon" {
+			icon = {
+				texture = "[OngoingRelationCountryList.GetTexture]"
+				using = tooltip_title_icon_size
+			}
+		}
+		blockoverride "title_text" {
+			text = "[OngoingRelationCountryList.GetDiplomaticStatusName]"
+		}
+
+		blockoverride "concept_link" {
+			text = "[OngoingRelationCountryList.GetConcept]"
+		}
+			
+		blockoverride "tooltip_content" {
+			TooltipStringPairList = { 
+				block "spy_network_tooltip_textcontext" {
+					textcontext = "[OngoingRelationCountryList.GetTooltipForCountry(Country.Self)]"
+				}
+			}
+		}
+	}
+}
+
+template spy_network_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_icon" {
+			icon = {
+				using = spy_network_texture
+				using = tooltip_title_icon_size
+			}
+		}
+		block "spy_network_tooltip_countrycontext" {
+			datacontext = "[OngoingRelationCountry.GetCountry]"
+		}
+		blockoverride "title_text" {
+			text = "DIP_SPY_NETWORK_ONGOING_Title"
+		}
+
+		blockoverride "concept_link" {
+			text = "[spy_network|e]"
+		}
+			
+		blockoverride "tooltip_content" {
+			TooltipTextBlock = { 
+				blockoverride "text" {
+					text = "SPY_NETWORK_CURRENT"
+				}
+			}
+
+			TooltipStringPairList = { 
+				block "spy_network_tooltip_textcontext" {
+					textcontext = "[OngoingRelationCountry.GetBuildingSpyNetworkTooltip]"
+				}
+			}
+		}
+	}
+}
+
+template casus_belli_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_icon" {
+			icon = {
+				texture = "gfx/interface/icons/flat_icons/declare_war/casus_belli.dds"
+				using = tooltip_title_icon_size
+			}
+		}
+		blockoverride "title_text" {
+			block "casus_belli_tooltip_countrycontext" {
+				datacontext = "[OngoingRelationCountry.GetCountry]"
+			}
+			text = "DIP_CASUS_BELLI_CREATION_ONGOING_TT"
+		}
+		blockoverride "concept_link" {
+			text = "[casus_belli|e]"
+		}
+			
+		blockoverride "tooltip_content" {
+			TooltipStringPairList = {
+				# block "casus_belli_tooltip_textcontext" {
+					textcontext = "[OngoingRelationCountry.GetCasusBelliCreationTooltip]"
+				# }
+			}
+		}
+	}
+}
+
+template currying_favors_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_icon" {
+			icon = {
+				using = favors_texture
+				using = tooltip_title_icon_size
+			}
+		}
+		blockoverride "title_text" {
+			datacontext = "[OngoingRelationCountry.GetCountry]"
+			text = "DIP_CURRY_FAVORS_ONGOING_TITLE"
+		}
+		
+		blockoverride "concept_link" {
+			text = "[favors|e]"
+		}
+			
+		blockoverride "tooltip_content" {
+			TooltipStringPairList = { 
+				# block "currying_favors_tooltip_textcontext" {
+					textcontext = "[OngoingRelationCountry.GetCurryFavorsTooltip]"
+				# }
+			}
+		}
+	}
+}
+
+template diplomatic_action_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_icon" {
+			icon = {
+				texture = "[DiplomaticActionItem.GetTexture]"
+				using = tooltip_title_icon_size
+				glow = {
+					name = "drop_shadow"
+					glow_radius = 3
+					color = {0.0 0.0 0.0 1.0}
+					alpha = 0.3
+				}
+			}
+		}
+		blockoverride "title_text" {
+			text = "[DiplomaticActionItem.GetTitle]"
+		}
+
+		blockoverride "concept_link" {
+			text = "[diplomatic_action|e]"
+		}
+
+		blockoverride "tooltip_content" {
+			block "diplomatic_action_tooltip_content_extra" {}
+			# block "diplomatic_action_tooltip_content" {
+				TooltipScrolledConditionList = {
+					ontextcontextchanged = "[SetConditionListWithTitleFromTextContext(PdxGuiWidget.AccessSelf)]"
+					visible = "[And(DiplomaticActionItem.HasTarget, DiplomaticActionItem.ShowExtraInfo)]"
+					
+					blockoverride "block_scrollarea" { maximumsize = { -1 200 }}
+					blockoverride "block_title" {
+						text = "[SelectLocalization( DiplomaticActionItem.RequireAcceptance, 'IF_THEY_ACCEPT', 'DECLINE_OFFER_EXTRA_EFFECT' )]"
+					}
+					textcontext = "[DiplomaticActionItem.GetEffect]"
+				}
+
+				TooltipConditionList = {
+					visible = "[And4(Not(DiplomaticActionItem.IsEnabled), DiplomaticActionItem.HasTarget, DiplomaticActionItem.ShowExtraInfo, ConditionList.HasItems)]"
+					blockoverride "block_title" {
+						text = "NOT_POSSIBLE_DUE_TO"
+					}
+					datacontext = "[StringToConditionListWithTitleOnlyFailAndNeutral(DiplomaticActionItem.GetTooltip)]"
+				}
+				
+				TooltipScrolledStringPairList = {
+					ontextcontextchanged = "[SetStringPairListWithTitleFromTextContext(PdxGuiWidget.AccessSelf)]"
+					visible = "[And3(DiplomaticActionItem.RequireAcceptance, DiplomaticActionItem.HasTarget, DiplomaticActionItem.ShowExtraInfo)]"
+					blockoverride "block_scrollarea" { maximumsize = { -1 200 }}
+					textcontext = "[DiplomaticActionItem.GetAcceptanceTooltip]"
+				}
+	
+				TooltipTextBlock = {
+					visible = "[And3(DiplomaticActionItem.RequireAcceptance, DiplomaticActionItem.HasTarget, DiplomaticActionItem.ShowExtraInfo)]"
+					textcontext = "GOOD_BAD_RATIO_T"
+				}
+
+				TooltipFlavorTextBlock = {
+					visible = "[Not(StringIsEmpty(DiplomaticActionItem.GetFlavor))]"
+					textcontext = "[DiplomaticActionItem.GetFlavor]"
+				}
+			# }
+		}
+	}
+}
+
+template active_hegemon_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_icon" {
+			icon = {
+				texture = "[GetHegemonyBorder(ActiveHegemon.GetHegemony)]"
+				using = tooltip_title_icon_size
+			}
+		}
+		blockoverride "title_text" {
+				text = "[ActiveHegemon.GetHegemony.GetNameWithNoTooltip]"
+		}
+		blockoverride "concept_link" {
+			text = [hegemony|e]
+		}
+		
+		blockoverride "tooltip_content" {
+			TooltipTextBlock = {
+				visible = "[ActiveHegemon.NeedsAnotherAge]"
+				blockoverride "text" {
+					text = "[ActiveHegemon.GetAnotherAge]"
+				}
+			}
+		
+			TooltipTextBlock = {
+				visible = "[Not(ActiveHegemon.IsActive)]"
+				blockoverride "text" {
+					text = "[ActiveHegemon.GetActiveHegemonInfo]"
+				}
+			}
+			
+			widget = {
+				datacontext = "[ActiveHegemon.GetCurrent]"
+				visible = "[Country.IsValid]"
+
+				layoutpolicy_horizontal = expanding
+				size = { -1 80 }
+				
+				tooltipwidget = {
+					using = CountryTooltip
+				}
+
+				hbox = {
+					country_flag_big = {
+						size = { 120 75 }
+						datacontext = "[ActiveHegemon.GetCurrent]"
+			
+						blockoverride "click" {}
+						blockoverride "double_click" {}
+					}
+
+					text_single = {
+						using = layoutpolicy_expanding
+						autoresize = no
+						text = "[ActiveHegemon.GetCurrent.GetLongNameWithNoTooltip]"
+						using = Font_Size_Big
+						default_format = "#yellow_titles"
+					}
+				}
+			}
+			
+			TooltipStringPairList = {
+				visible = "[ActiveHegemon.IsActive]"
+				textcontext = "[ActiveHegemon.GetBaseInfo]"
+			}
+
+			TooltipRequirementsList = {
+				textcontext = "[ActiveHegemon.GetConditions]"
+			}
+			
+			TooltipStringPairList = {
+				textcontext = "[ActiveHegemon.GetGreatPowerStatistic]"
+			}
+
+			TooltipFlavorTextBlock = {
+				blockoverride "text" {
+					text = "[ActiveHegemon.GetHegemony.GetDesc]"
+				}
+			}
+		}
+	}
+}
+
+
+template AntagonismBombSpec_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_icon" {
+			icon = {
+				using = tooltip_title_icon_size
+				texture = "[GetConceptTexture('antagonism')]"
+			}
+		}
+
+		blockoverride "title_text" {
+			text = "ANTAGONISM_TT_TITLE"
+		}
+
+		blockoverride "concept_link" {
+			text = [antagonism|e]
+		}
+
+		blockoverride "tooltip_content" {
+			TooltipStringPairList = { 
+				visible = "[AntagonismBombSpecWrap.GivesAntagonism]"
+				textcontext = "[AntagonismBombSpecWrap.GetDesc][Localize('NEWLINE_BREAK')][AntagonismBombSpecWrap.GetBreakdownPerBomb]"
+			}
+			TooltipTextBlock = {
+				visible = "[Not(AntagonismBombSpecWrap.GivesAntagonism)]"
+				blockoverride "text" { text = "ANTAGONISM_TT_NONE_CAUSED" }
+			}
+	
+			tooltipmeta = {
+				title = "ANTAGONISM_TT_TITLE"
+				texture = "[GetConceptTexture('antagonism')]"
+				game_concept = "[antagonism|e]"
+			}
+			TooltipStringPairList = { 
+				visible = "[Not(StringIsEmpty(AntagonismBombSpecWrap.GetBreakdown))]"
+				textcontext = "[AntagonismBombSpecWrap.GetBreakdown]"
+			}
+		}
+	}
+}
+
+template SubjectType_Tooltip {
+	# datacontext = "[Country]"	
+	ContextualTooltipType = {
+		blockoverride "title_icon" {
+			icon = {
+				using = tooltip_title_icon_size
+				texture = "[GetSubjectTypeIcon(Country.GetDiplomacy.GetSubjectType)]"
+			}
+		}
+	
+		blockoverride "title_text" {
+			text = "[Country.GetDiplomacy.GetSubjectType.GetNameWithNoTooltip] of [Country.GetNameWithNoTooltip]"
+		}
+							
+		blockoverride "concept_link" {
+			text = [subject|E]
+		}
+		blockoverride "tooltip_content" {
+			TooltipTextBlock = {
+				blockoverride "text" {
+					text = "SUBJECT_TYPE_TOOLTIP_TEXT"
+				}
+			}
+		}
+	}	
+}
+
+template SubjectType2_Tooltip {
+	# datacontext = "[Country]"	
+	ContextualTooltipType = {
+		blockoverride "title_icon" {
+			icon = {
+				using = tooltip_title_icon_size
+				texture = "[GetSubjectTypeIcon(Country.GetDiplomacy.GetSubjectType)]"
+			}
+		}
+	
+		blockoverride "title_text" {
+			text = "[Country.GetDiplomacy.GetSubjectType.GetNameWithNoTooltip] of [Country.GetNameWithNoTooltip]"
+		}
+							
+		blockoverride "concept_link" {
+			text = [subject|E]
+		}
+		blockoverride "tooltip_content" {
+			TooltipTextBlock = {
+				blockoverride "text" {
+					text = "SUBJECT_TYPE2_TOOLTIP_TEXT"
+				}
+			}
+		}
+	}	
+}
+
+template international_organizations_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			text = "game_concept_international_organizations"
+		}
+		blockoverride "title_icon" {
+			icon = {
+				using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/alerts_icons/international_organization.dds"
+				glow = {
+					name = "drop_shadow"
+					glow_radius = 3
+					color = {0.0 0.0 0.0 1.0}
+					alpha = 0.3
+				}
+			}
+		}
+		blockoverride "concept_link" {
+			text = [international_organizations|e]
+		}
+		blockoverride "tooltip_content" {
+			TooltipListBase = {
+				block "datamodel" {
+					datamodel = "[Country.GetInternationalOrganizations]"
+				}
+				item = {
+					hbox = {
+						using = layoutpolicy_expanding
+						margin = { 10 0 }
+						maximumsize = { -1 40 }
+						minimumsize = { -1 40 }
+						spacing = 10
+						datacontext = "[InternationalOrganization]"
+						background = {
+							visible = "[IsOdd_int32(PdxGuiWidget.GetIndexInDataModel)]"
+							using = tooltip_table_field_texture
+						}
+
+						navigational_button_alt = {
+							using = bg_circle_alt_brown
+							using = bg_square_tile
+
+							blockoverride "button_icon_stretch_sprite" {}
+
+							blockoverride "button_texture" {
+								texture = "gfx/interface/buttons/navigational_frame.dds"
+								size = { 30 30 }
+							}
+
+							blockoverride "square_extras" {
+								margin = {1 1}
+							}
+
+							blockoverride "icon_texture" {
+								texture = "[InternationalOrganization.GetIcon]"
+								texture_density = 2
+							}
+
+							blockoverride "icon_size" {
+								size = { 80% 80% }
+							}
+
+							onclick = "[OpenInternationalOrganizationView(InternationalOrganization.Self)]"
+							tooltipwidget = {
+								LeftClickButtonTooltip = {
+									blockoverride "onclick_text" {
+										text = "OPEN_IO"
+									}
+								}
+							}
+							#visible = "[Player.IsMemberOfInternationalOrganization(InternationalOrganizationsView.GetInternationalOrganization)]"
+						}
+				
+						text_single = {
+							using = layoutpolicy_expanding
+							autoresize = yes
+							maximumsize = { 230 -1}
+							align = left|nobaseline
+							fontsize_min = 13
+							text = "[InternationalOrganization.GetName]"
+							default_format = "#yellow_titles"
+						}
+						expand = {}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,452 @@
+types music_player_types
+{
+	type music_player_category = button_flavor {
+		layoutpolicy_horizontal = expanding
+
+		onclick = "[MusicPlayer.OnToggleCategoryEnabled( MusicPlayerCategory.AccessSelf )]"
+		tooltip = "MUSIC_PLAYER_ENABLE_CATEGORY"
+		text = "[MusicPlayerCategory.GetName]"
+
+		modify_texture = {
+			using = color_white_texture
+			visible = "[MusicPlayerCategory.IsEnabled]"
+			alpha = 0.2
+		}
+	}
+
+	# type music_category_button = button_default {
+	# 	size = { 100% 100% }
+	# 	onclick = "[MusicPlayer.OnSelectCategory( MusicPlayerCategory.AccessSelf )]"
+	# 	tooltip = "MUSIC_PLAYER_SELECT_CATEGORY"
+	# 	alpha = "[TransparentIfFalse( MusicPlayerCategory.IsEnabled )]"
+	# 	text = "[MusicPlayerCategory.GetName]"
+	# }
+
+	type music_player_track = widget {
+		layoutpolicy_horizontal = expanding
+		size = { -1 50 }
+
+		background = {
+			visible = "[MusicTrack.IsPlaying]"
+			using = bg_round_corners
+			alpha = 0.5
+		}
+
+		hbox = {
+			using = layoutpolicy_expanding
+			margin = { 10 0 }
+			spacing = 5
+
+			button_checkbox = {
+				name = "track_checkbox"
+				checked = "[MusicTrack.IsEnabled]"
+				onclick = "[MusicPlayer.OnToggleTrackEnabled( MusicTrack.AccessSelf )]"
+				tooltip = "MUSIC_PLAYER_ENABLE_TRACK"
+			}
+
+			button_default = {
+				name = "track_toggle_play_pause_button"
+				layoutpolicy_horizontal = expanding
+				size = { 0 35 }
+				tooltip = "MUSIC_PLAYER_PLAY_TRACK"
+				onclick = "[MusicPlayer.OnSelectAndPlayTrack( MusicTrack.Self )]"
+				alpha = "[TransparentIfFalse( MusicTrack.IsEnabled )]"
+
+				text_single = {
+					visible = "[MusicTrack.IsPlaying]"
+					size = { 100% 100% }
+					align = left|nobaseline
+					fontcolor = "[MusicPlayer.GetTrackTextColor( MusicTrack.Self )]"
+					text = "[MusicTrack.GetName]"
+				}
+
+				text_single = {
+					visible = "[Not(MusicTrack.IsPlaying)]"
+					size = { 100% 100% }
+					align = left|nobaseline
+					fontcolor = "[MusicPlayer.GetTrackTextColor( MusicTrack.Self )]"
+					text = "[MusicTrack.GetName]"
+				}
+			}
+		}
+	}
+}
+
+window = {
+	name = "JominiMusicPlayerView"
+	input_context = "generic_window"
+
+	using = bg_window_default
+	alwaystransparent = no
+	reorder_on_mouse = never
+	resizable = no
+	movable = no
+	parentanchor = center
+	allow_outside = yes
+
+	size = { 640 720 }
+
+	widget = {
+		size = { 100% -1 }
+		allow_outside = yes
+
+		button_close = {
+			blockoverride "close_onclick" {
+				onclick = "[OnToggleMusicPlayer]"
+			}
+		}
+	}
+
+	vbox = {
+		using = layoutpolicy_expanding
+		using = window_margin
+
+		window_header = {
+			blockoverride "header_text" {
+				text = "MUSIC_PLAYER_HEADER"
+			}
+		}
+
+		vbox = {
+			using = layoutpolicy_expanding
+			margin = { 2 0 }
+
+			widget = {
+				layoutpolicy_horizontal = expanding
+				size = { -1 80 }
+
+				using = bg_subheader_left
+
+				vbox = {
+					ignoreinvisible = yes
+					text_single = {
+						name = "track_name"
+						autoresize = yes
+						raw_text = "#v [MusicPlayer.GetPlayingTrackName]#!"
+						using = Font_Type_Headers
+						using = Font_Size_Big
+						alpha = "[TransparentIfFalse(MusicPlayer.IsPlaying)]"
+					}
+
+					text_single = {
+						name = "elapsed_time"
+						autoresize = yes
+						align = nobaseline
+						text = "[MusicPlayer.GetPlayingTrackElapsedTime]"
+						using = Font_Type_Standard
+						using = Font_Size_Medium
+						alpha = "[TransparentIfFalse(MusicPlayer.IsPlaying)]"
+					}
+				}
+
+				widget = {
+					parentanchor = bottom
+					size = { 22 22 }
+					position = { 5 -5 }
+
+					button = {
+						size = { 100% 100% }
+
+						visible = "[Not(GetVariableSystem.Exists( 'show_music_player_settings' ))]"
+						onclick = "[GetVariableSystem.Toggle( 'show_music_player_settings' )]"
+
+						texture = "gfx/interface/buttons/flats/button_simple_right.dds"
+						using = color_gold
+						modify_texture = {
+							using = overlay_window_texture
+							blend_mode = overlay
+							alpha = 1
+						}
+					}
+
+					button = {
+						size = { 100% 100% }
+
+						visible = "[GetVariableSystem.Exists( 'show_music_player_settings' )]"
+						onclick = "[GetVariableSystem.Toggle( 'show_music_player_settings' )]"
+
+						texture = "gfx/interface/buttons/flats/button_simple_down.dds"
+						using = color_gold
+						modify_texture = {
+							using = overlay_window_texture
+							blend_mode = overlay
+							alpha = 1
+						}
+					}
+				}
+			}
+
+			# divider_solid_blue = {
+			# 	visible = "[GetVariableSystem.Exists( 'show_music_player_settings' )]"
+			# }
+
+			widget = {
+				visible = "[GetVariableSystem.Exists( 'show_music_player_settings' )]"
+				layoutpolicy_horizontal = expanding
+				size = { -1 100 }
+
+				state = {
+					name = _show
+					duration = 0.1
+					size = { -1 100 }
+					alpha = 1
+				}
+
+				state = {
+					name = _hide
+					duration = 0.1
+					size = { -1 0 }
+					alpha = 0
+				}
+
+				vbox = {
+					using = layoutpolicy_expanding
+					margin = { 20 10 }
+
+					hbox = {
+						using = layoutpolicy_expanding
+						spacing = 30
+
+						text_single = {
+							using = layoutpolicy_expanding
+							autoresize = no
+							align = right
+
+							name = "music_player_volume_textbox"
+							text = "MUSIC_PLAYER_VOLUME_LABEL"
+						}
+
+						scrollbar = {
+							name = "music_player_volume_slider_scrollbar"
+							direction = horizontal
+							size = { 300 14 }
+							minimumsize = { -1 14 }
+							maximumsize = { -1 14 }
+
+							value = "[MusicPlayer.GetVolume]"
+							onvaluechanged = "[MusicPlayer.SetVolume]"
+
+							min = 0.0
+							max = 1.0
+							step = 0.1
+							wheelstep = 0.1
+
+							track = {
+								using = economy_slider_track_range
+							}
+
+							slider = {
+								using = economy_slider_slider
+							}
+
+							dec_button = {
+								using = economy_slider_dec_button
+							}
+
+							inc_button = {
+								using = economy_slider_inc_button
+							}
+						}
+
+						text_single = {
+							using = layoutpolicy_expanding
+							autoresize = no
+							align = left
+
+							name = "music_player_volume_value"
+							text = "[MusicPlayer.GetVolumeString]"
+						}
+					}
+
+#					hbox = {
+#						using = layoutpolicy_expanding
+#						spacing = 30
+#
+#						text_single = {
+#							using = layoutpolicy_expanding
+#							autoresize = no
+#							align = right
+#
+#							name = "music_player_density_textbox"
+#							text = "SETTING_MUSIC_DENSITY"
+#						}
+#
+#						scrollbar = {
+#							name = "music_player_density_slider_scrollbar"
+#							direction = horizontal
+#							size = { 300 14 }
+#
+#							value = "[MusicPlayer.GetMusicDensity]"
+#							onvaluechanged = "[MusicPlayer.SetMusicDensity]"
+#
+#							min = 0.0
+#							max = 1.0
+#							step = 0.5
+#							wheelstep = 0.5
+#
+#							track = {
+#								using = economy_slider_track_range
+#							}
+#
+#							slider = {
+#								using = economy_slider_slider
+#							}
+#
+#							dec_button = {
+#								using = economy_slider_dec_button
+#							}
+#
+#							inc_button = {
+#								using = economy_slider_inc_button
+#							}
+#						}
+#
+#						text_single = {
+#							using = layoutpolicy_expanding
+#							autoresize = no
+#							align = left
+#
+#							name = "music_player_density_value"
+#							text = "[MusicPlayer.GetMusicDensityString]"
+#						}
+#					}
+				}
+			}
+
+			widget = {
+				layoutpolicy_horizontal = expanding
+				size = { -1 50 }
+
+				using = bg_subheader_left
+
+#				hbox = {
+#					spacing = 10
+#					minimumsize = { -1 30 }
+#
+#			 		expand = {}
+#					ui_direction_button = {
+#						size = { 22 22 }
+#
+#						using = bg_circle
+#						blockoverride "button_texture" {
+#							texture = "gfx/interface/buttons/flats/pause_button.dds"
+#							texture_density = 2
+#						}
+#
+#						name = "toggle_play_pause_button_not_paused"
+#						visible = "[MusicPlayer.IsPlaying]"
+#						tooltipwidget = {
+#							LeftClickButtonTooltip = {
+#								blockoverride "onclick_text" { 
+#									text = "MUSIC_PLAYER_PAUSE"
+#								}
+#							}
+#						}
+#						#onclick = "[MusicPlayer.OnTogglePlayPause]"
+#						using = snd_UI_music_player_pause
+#						input_action = "music_play_pause"
+#						use_global_input_instance = yes
+#					}
+#
+#					ui_direction_button = {
+#						size = { 22 22 }
+#
+#						using = bg_circle
+#						blockoverride "button_texture" {
+#							texture = "gfx/interface/buttons/flats/play_button.dds"
+#							texture_density = 2
+#						}
+#
+#						name = "toggle_play_pause_button_paused"
+#						visible = "[Not(MusicPlayer.IsPlaying)]"
+#						tooltipwidget = {
+#							LeftClickButtonTooltip = {
+#								blockoverride "onclick_text" { 
+#									text = "MUSIC_PLAYER_PLAY"
+#								}
+#							}
+#						}						
+#						#onclick = "[MusicPlayer.OnTogglePlayPause]"
+#						using = snd_UI_music_player_unpause
+#						input_action = "music_play_pause"
+#						use_global_input_instance = yes
+#					}
+#
+#					ui_direction_button = {
+#						size = { 22 22 }
+#
+#						using = bg_circle
+#						blockoverride "button_texture" {
+#							texture = "gfx/interface/buttons/flats/upgrade_button.dds"
+#							texture_density = 2
+#						}
+#
+#						name = "next_track_button"
+#						tooltipwidget = {
+#							LeftClickButtonTooltip = {
+#								blockoverride "onclick_text" { 
+#									text = "MUSIC_PLAYER_SKIP_TO_NEXT_TRACK"
+#								}
+#							}
+#						}
+#						#onclick = "[MusicPlayer.OnNextTrack]"
+#						using = snd_UI_music_player_next
+#						input_action = "music_next_track"
+#						use_global_input_instance = yes
+#					}
+#
+#					expand = {}
+#				}
+			}
+
+			hbox = {
+				using = layoutpolicy_expanding
+
+				scroll_list = {
+					using = layoutpolicy_expanding
+					layoutstretchfactor_horizontal = 3
+
+					blockoverride "scroll_list_layout" {
+						vbox = {
+							using = layoutpolicy_expanding
+							vbox = {
+								layoutpolicy_horizontal = expanding
+								margin = { 5 5 }
+								spacing = 5
+								datamodel = "[MusicPlayer.AccessCategories]"
+								item = {
+									music_player_category = {}
+								}
+							}
+
+							expand = {}
+						}
+					}
+				}
+
+				scroll_list = {
+					using = layoutpolicy_expanding
+					layoutstretchfactor_horizontal = 5
+
+					blockoverride "scroll_list_layout" {
+						vbox = {
+							using = layoutpolicy_expanding
+							vbox = {
+								layoutpolicy_horizontal = expanding
+								margin = { 5 5 }
+								spacing = 5
+
+								datamodel = "[MusicPlayer.AccessCategories]"
+								item = {
+									music_player_track = {}
+								}
+							}
+
+							expand = {}
+						}
+					}
+				}
+			}
+		}
+	}
+}

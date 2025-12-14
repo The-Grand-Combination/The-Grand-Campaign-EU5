@@ -1,0 +1,142 @@
+﻿sell_corsica = {
+	type = diplomacy
+	category = CATEGORY_ECONOMY_ACTIONS
+	show_message = no
+	show_message_to_target = no
+	potential = {
+		OR = {
+			province_definition:cismonte_province = {
+				any_location_in_province_definition = {
+					owner = scope:actor
+				}
+			}
+			province_definition:pumonte_province = {
+				any_location_in_province_definition = {
+					owner = scope:actor
+				}
+			}
+		}
+		scope:actor = {
+			has_variable = yeet_corsica
+		}
+	}
+
+	allow = {
+		scope:actor = {
+			at_war = no
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = country
+		target_flag = recipient
+		name = "choose_country"
+		column = {
+			data = name
+		}
+		visible = {
+			is_subject = no
+		}
+        enabled = {
+			at_war = no
+			num_of_ports >= 1
+		}
+	}
+
+	ai_will_do = {
+		#AI will always do
+		add = 50
+	}
+	
+	effect = {
+		custom_tooltip = {
+			text = sell_corsica_tt
+			province_definition:cismonte_province = {
+				every_location_in_province_definition = {
+					limit = {
+						owner = scope:actor
+					}
+					if = {
+						limit = { is_core_of = scope:actor }
+						remove_core = scope:actor
+					}
+					if = {
+						limit = { NOT = { is_core_of = scope:recipient } }
+						add_core = scope:recipient
+					}
+					change_location_owner = scope:recipient
+				}
+			}
+			province_definition:pumonte_province = {
+				every_location_in_province_definition = {
+					limit = {
+						owner = scope:actor
+					}
+					if = {
+						limit = { is_core_of = scope:actor }
+						remove_core = scope:actor
+					}
+					if = {
+						limit = { NOT = { is_core_of = scope:recipient } }
+						add_core = scope:recipient
+					}
+					change_location_owner = scope:recipient
+				}
+			}
+			scope:recipient = {
+				save_scope_as = corsica_buyer
+			}
+			scope:actor = {
+				trigger_event_non_silently = {
+					id = flavor_gen.36
+				}
+				remove_variable = yeet_corsica
+			}
+			remove_global_variable = saved_pumonte
+		}
+	}
+
+	diplo_chance = {
+		base = 10
+	}
+	accept = {
+		add = {
+            #-40..20
+			desc = "THEIR_OPINION_TOOLTIP"
+			value = "scope:recipient.opinion(scope:actor)"
+			if = {
+				limit = {
+					scope:recipient = {
+						"opinion(scope:actor)" > 0
+					}
+				}
+				divide = 10
+			}
+			else = {
+				divide = 5
+			}
+		}
+		add = {
+			scope:recipient = {
+				value = "trust(scope:actor)"
+				divide = 5
+			}
+		}
+		add = {
+			if = {
+				limit = {
+					scope:recipient = {
+						gold < { value = monthly_income_trade_and_tax multiply = 36 }
+					}
+				}
+			}
+		}
+		add = {
+			value = scope:recipient.total_population
+			divide = {	
+				value = global_var:saved_pumonte.population
+				multiply = 2
+			}
+		}
+	}
+}

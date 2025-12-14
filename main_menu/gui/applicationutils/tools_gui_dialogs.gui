@@ -1,0 +1,177 @@
+
+types ToolsTypes
+{
+	type tools_dialog_modal = widget {
+		size = { 100% 100% }
+		alwaystransparent = no
+
+		background = {
+			texture = "gfx/editor_gui/editor_white_pixel.png"
+			spriteType = Stretched
+			shaderfile = "gfx/FX/pdxgui_default.shader"
+			color = { 0 0 0 0.5 }
+		}
+	}
+
+	type tools_dialog = window {
+		parentanchor = vcenter|hcenter
+		using = bg_window_default_alt
+
+		resizable = no
+		movable = yes
+		alwaystransparent = no
+		tabfocusroot = yes
+		focuspolicy = all
+		allow_outside = yes
+
+		widget = {
+			parentanchor = right
+			position = { -5 5 }
+			size = { 40 40 }
+	
+			ui_direction_button_holder_right = {}
+	
+			button_close_alt = {
+				blockoverride "close_onclick" {
+					onclick = [ToolDialog.Cancel]
+				}
+			}
+		}
+		
+		minimumsize = { 500 42 }
+
+		vbox = {
+			using = window_margin_alt
+			restrictparent_min = yes
+
+			layoutpolicy_horizontal = preferred
+			layoutpolicy_vertical = preferred
+
+
+			window_header_alt = {
+				blockoverride "header_text" {
+					text = "[ToolDialog.Title]"
+				}
+			}
+
+			# Window panel
+			vbox = {
+				using = layoutpolicy_expanding
+				using = bg_main_inner_alt
+				using = window_margin_alt
+
+				vbox = {
+					margin = { 8 8 }
+
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = expanding
+
+					# Contents
+					vbox = {
+						name = "contents"
+
+						layoutpolicy_horizontal = expanding
+						layoutpolicy_vertical = preferred
+					}
+
+					widget = {
+						layoutpolicy_horizontal = expanding
+						layoutpolicy_vertical = expanding
+					}
+				}
+				
+				# Buttons
+				hbox = {
+					spacing = 4
+					margin_bottom = 4
+					margin_top = 4
+
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = preferred
+
+					datamodel = "[ToolDialog.Buttons]"
+
+					item = {
+						button_default = {
+					    	using = button_resize_to_fit_text
+							text = "[ToolDialogButton.Text]"
+							onclick = "[ToolDialogButton.OnClick]"
+							focuspolicy = all
+						}
+					}
+				}
+			}
+		}
+	}
+
+	type tools_properties_dialog = vbox {
+		name = "properties"
+
+		layoutpolicy_horizontal = expanding
+		layoutpolicy_vertical = preferred
+
+		spacing = 4
+	}
+
+	type tools_message_dialog = hbox {
+		layoutpolicy_horizontal = expanding
+		layoutpolicy_vertical = preferred
+
+		spacing = 8
+
+		icon = {
+			size = { 48 48 }
+			layoutpolicy_horizontal = fixed
+			layoutpolicy_vertical = fixed
+			visible = "[ToolMessageDialog.IsWarning]"
+			texture = "gfx/tools/material/warning_icon.png"
+		}
+
+		icon = {
+			size = { 48 48 }
+			layoutpolicy_horizontal = fixed
+			layoutpolicy_vertical = fixed
+			visible = "[ToolMessageDialog.IsError]"
+			texture = "gfx/tools/material/error_icon.png"
+		}
+
+		icon = {
+			size = { 48 48 }
+			layoutpolicy_horizontal = fixed
+			layoutpolicy_vertical = fixed
+			visible = "[ToolMessageDialog.IsInfo]"
+			texture = "gfx/tools/material/info_icon.png"
+		}
+
+		text_multi = {
+			text = "[ToolMessageDialog.Message]"
+			maximumsize = { 320 240 }
+
+			autoresize = yes
+			multiline = yes
+		}
+	}
+
+	#type dialog_property_filterable_property_list = vbox {
+	#		using = filterable_property_list_properties
+	#	}
+
+	#type dialog_grid_property_filterable_property_list = vbox {
+	#	using = filterable_grid_property_list_properties
+	#}
+
+	type tools_progress_dialog = vbox {
+
+		layoutpolicy_horizontal = expanding
+		layoutpolicy_vertical = preferred
+
+		spacing = 4
+
+		dockable_progressbar = {
+			size = { 350 10 }
+			min = 0
+			max = 1
+			value = "[ToolProgressDialog.GetProgress]"
+		}
+	}
+}

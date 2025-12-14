@@ -1,0 +1,33 @@
+﻿n_barque = {
+	category = navy_light_ship
+	copy_from = n_age_2_renaissance_light_ship
+	age = "age_2_renaissance"
+	upgrades_to = n_caravel
+}
+
+n_caravel = {
+	category = navy_light_ship
+	copy_from = n_age_3_discovery_light_ship
+	age = "age_3_discovery"
+	upgrades_to = n_pinnace
+}
+
+n_pinnace = {
+	category = navy_light_ship
+	copy_from = n_age_4_reformation_light_ship
+	age = "age_4_reformation"
+	upgrades_to = n_frigate
+}
+
+n_frigate = {
+	category = navy_light_ship
+	copy_from = n_age_5_absolutism_light_ship
+	age = "age_5_absolutism"
+	upgrades_to = n_heavy_frigate
+}
+
+n_heavy_frigate = {
+	category = navy_light_ship
+	copy_from = n_age_6_revolutions_light_ship
+	age = "age_6_revolutions"
+}

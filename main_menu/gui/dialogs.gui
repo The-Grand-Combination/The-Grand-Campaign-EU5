@@ -1,0 +1,256 @@
+types DialogTypes
+{
+	type basic_dialog = window {
+		parentanchor = center
+
+		vbox = {
+			set_parent_size_to_minimum = yes
+
+			# block "dialog_size"  {
+				minimumsize = { 600 300 }
+				maximumsize = { 600 300 }
+			# }
+
+			vbox = {
+				using = layoutpolicy_expanding
+				bottomtotop = yes
+
+				vbox = {
+					layoutpolicy_horizontal = expanding
+					block "window_outside_margin" {
+						margin = { 25 15 }
+					}
+
+					spacing = 10
+					using = layoutpolicy_expanding
+					using = bg_age_event_inner
+					using = bg_age_event_frame
+					blockoverride "bg_age_event_shadow_margin"{ margin = { 4 5 } }
+					blockoverride "bg_age_event_frame_margin"{ margin = { 0 2 } }
+
+					expand = {}
+
+					block "content_outside" {}
+					block "content_inside" {
+						hbox = {
+							layoutpolicy_horizontal = expanding
+							# block "window_margin" {
+								margin = { 40 10 }
+							# }
+
+							block "dialog_content_bckg" {
+								using = message_text_box_background
+							}
+
+							scrollarea = {
+								block "block_scrollarea" {
+									maximumsize = { -1 400 }
+								}
+
+								layoutpolicy_horizontal = expanding
+
+								autoresizescrollarea = yes
+								autoresizeviewport = yes
+								scrollbarpolicy_horizontal = always_off
+
+								scrollbar_vertical = {
+									using = Scrollbar_Vertical
+								}
+								
+								scrollwidget = {
+									block "content" {}
+								}
+							}
+						}
+					}
+
+					block "bottom_space" {
+						expand = {}
+						hbox = {
+							layoutpolicy_horizontal = expanding
+							margin = { 0 10 }
+							spacing = 10
+
+							block "bottom_buttons" {}
+						}
+					}
+				}
+
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					minimumsize = {-1 50}
+
+					# widgetid = "dialog_hbox_intro" cannot use widget ID as those need to be unique for widgets
+					block "bg_dialog_extra" {
+						using = bg_age_event_title
+					
+						blockoverride "bg_event_title_texture" {
+							texture = "gfx/interface/component_tiles/bg_big_round_corners_up.dds"
+							texture_density = 2
+							spriteType = corneredstretched
+							spriteBorder = { 40 40 }
+							margin = {3 0}
+							margin_bottom = -2
+						}
+					}
+
+					widget = {
+						layoutpolicy_vertical = expanding
+						size = {5 -1}
+						
+						AgeEventDecorationTop = {
+							size = { 64 52 }
+							position = { -10 -5 }
+							parentanchor = left|top
+							widgetanchor = top
+						}
+
+						AgeEventDecorationTop2 = {
+							parentanchor = left|bottom
+							widgetanchor = left|vcenter
+							mirror = horizontal
+						}
+					}
+
+					block "header_obj" {
+						hbox = {
+							layoutpolicy_horizontal = expanding
+							margin = {30 10}
+
+							textbox = {
+								layoutpolicy_horizontal = expanding
+								autoresize = yes
+
+								using = text_multi_template
+								using = Font_Size_Big
+								default_format = "#yellow_titles"
+								fontsize = 22
+								fontsize_min = 15
+								align = center|nobaseline
+
+								block "header_text" {
+									text = "CONFIRM"
+								}
+							}
+						}
+					}
+
+					widget = {
+						layoutpolicy_vertical = expanding
+						size = {5 -1}
+
+						AgeEventDecorationTop = {
+							size = { 64 52 }
+							position = { 10 -5 }
+							parentanchor = right|top
+							mirror = horizontal
+						}
+
+						AgeEventDecorationTop2 = {
+							parentanchor = right|bottom
+							widgetanchor = right|vcenter
+						}
+					}
+				}
+			}
+		}
+	}
+
+	type basic_priority_dialog = basic_dialog {
+		layer = confirmation
+	}
+}
+
+template basic_dialog_box_sizes {
+	minimumsize = { 460 -1 }
+	maximumsize = { -1 400 }
+}
+
+window = {
+	using = editor_window
+	name = "basic_info_popup"
+	parentanchor = center
+	size = { 400 300 }
+
+	text_single = {
+		text = "[DialogConfig.GetTitle]"
+		size = { 120 30 }
+		position = { 0 0 }
+		parentanchor = top|hcenter
+		align = center|nobaseline
+	}
+
+	text_multi = {
+		text = "[DialogConfig.GetDescription]"
+		position = { 0 30 }
+		size = { 380 200 }
+		multiline = yes
+		parentanchor = top|hcenter
+		align = center|nobaseline
+	}
+
+	button = {
+		using = GameMenuButton
+		position = { 0 250 }
+		text = "[DialogConfig.GetAcceptText]"
+		onclick = "[DialogConfig.OnAccept]"
+		tooltip_enabled = no
+	}
+}
+
+basic_dialog = {
+	name = "basic_confirmation_popup"
+
+	layer = confirmation
+
+	blockoverride "header_text" {
+		text = "[DialogConfig.GetTitle]"
+	}
+
+	blockoverride "content" {
+		vbox = {
+			set_parent_dimension_to_minimum = height
+			layoutpolicy_horizontal = expanding
+			margin = { 30 5 }
+			min_width = 500
+
+			# Description
+			textbox = {
+				layoutpolicy_horizontal = expanding
+
+				autoresize = yes
+				multiline = yes
+				text_selectable = no
+				alwaystransparent = no
+
+				using = Font_Type_Standard
+				using = Font_Size_Medium
+				default_format = "#medium"
+
+				align = center
+				text = "[DialogConfig.GetDescription]"
+			}
+		}
+	} 
+
+	blockoverride "bottom_buttons" {
+		button_regular = {
+			size = {120 30}
+			text = "[DialogConfig.GetDeclineText]"
+			onclick = "[DialogConfig.OnDecline]"
+			input_action = "close_window"
+			use_global_input_instance = yes
+			tooltip_enabled = no
+			using = snd_UI_reject
+		}
+
+		button_regular = {
+			size = {120 30}
+			text = "[DialogConfig.GetAcceptText]"
+			onclick = "[DialogConfig.OnAccept]"
+			input_action = "confirm"
+			use_global_input_instance = yes
+			tooltip_enabled = no
+		}
+	}
+}

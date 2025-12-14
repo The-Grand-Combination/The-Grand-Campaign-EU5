@@ -1,0 +1,5 @@
+template editor_text {
+	using = "Font_Type_Standard"
+	fontsize = 13
+	fontcolor = { 1 1 1 1 }
+}

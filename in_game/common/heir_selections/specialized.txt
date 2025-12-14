@@ -1,0 +1,456 @@
+﻿admiralty_regime_heir_selection = {
+	#The succession is not through heirs or through elections but through military service
+	#It is a meritocratic one, but only characters which serve as admiral right now are considered
+	all_in_country = yes
+	allow_foreign_ruler = no
+	show_candidates = no
+	ignore_ruler = yes
+	heir_is_allowed = {
+	}
+	potential = {
+		has_reform = government_reform:admiralty_regime_reform
+	}
+	locked = {
+		has_reform = government_reform:admiralty_regime_reform
+	}
+	calc = {
+		if = {
+			limit = {
+				exists = root
+			}
+			add = {
+				desc = "HEIR_SELECTION_OLDER_HEIR_DESC"
+				value = root.character_age
+			}
+			add = {
+				desc = "HEIR_SELECTION_ADM_DESC"
+				value = root.adm
+			}
+			add = {
+				desc = "HEIR_SELECTION_DIP_DESC"
+				value = root.dip
+			}
+			add = {
+				desc = "HEIR_SELECTION_MIL_DESC"
+				value = root.mil
+			}
+			
+			if = {
+				limit = { 
+					is_admiral = yes
+				}
+				add = {
+					desc = "HEIR_SELECTION_ADMIRAL_DESC"
+					value = 100
+				}
+			}
+			
+			if = {
+				limit = {
+					NOR = {
+						is_admiral = yes
+						has_trait_category = admiral
+					}
+				}
+				add = {
+					desc = "HEIR_SELECTION_NOT_ADMIRAL_DESC"
+					value = -1000
+				}
+			}
+			
+			if = {
+				limit = { 
+					has_trait_category = admiral
+				}
+				add = {
+					desc = "HEIR_SELECTION_ADMIRAL_TRAIT_DESC"
+					value = 50
+				}
+			}
+			if = { 
+				limit = { modifier:blocked_from_being_ruler = yes }
+				add = {
+					desc = "HEIR_SELECTION_IS_UNSUITED_TO_RULE_DESC"
+					value = -1000 
+				}
+			}
+		}
+		if = {
+			limit = {
+				not = { exists = root }
+			}
+			add = {
+				desc = "HEIR_SELECTION_OLDER_HEIR_DESC"
+				value = 1
+			}
+			add = {
+				desc = "HEIR_SELECTION_ADM_DESC"
+				value = 1
+			}
+			add = {
+				desc = "HEIR_SELECTION_DIP_DESC"
+				value = 1
+			}
+			add = {
+				desc = "HEIR_SELECTION_MIL_DESC"
+				value = 1
+			}
+			add = {
+				desc = "HEIR_SELECTION_ADMIRAL_DESC"
+				value = 100
+			}
+			add = {
+				desc = "HEIR_SELECTION_ADMIRAL_TRAIT_DESC"
+				value = 50
+			}
+			add = {
+				desc = "HEIR_SELECTION_NOT_ADMIRAL_DESC"
+				value = -1000
+			}
+		}
+	}
+	succession_effect = {
+		scope:new_ruler = {
+			change_character_estate = estate_type:crown_estate
+		}
+	}
+}
+
+general_heir_selection = {
+	#Same as the admiralty version, but for generals
+	all_in_country = yes
+	ignore_ruler = yes
+	heir_is_allowed = {
+	}
+	potential = {
+		has_reform = government_reform:military_regime_reform
+	}
+	locked = {
+		has_reform = government_reform:military_regime_reform
+	}
+	calc = {
+		if = {
+			limit = {
+				exists = root
+			}
+			add = {
+				desc = "HEIR_SELECTION_OLDER_HEIR_DESC"
+				value = root.character_age
+			}
+			add = {
+				desc = "HEIR_SELECTION_ADM_DESC"
+				value = root.adm
+			}
+			add = {
+				desc = "HEIR_SELECTION_DIP_DESC"
+				value = root.dip
+			}
+			add = {
+				desc = "HEIR_SELECTION_MIL_DESC"
+				value = root.mil
+			}
+			
+			if = {
+				limit = { 
+					is_general = yes
+				}
+				add = {
+					desc = "HEIR_SELECTION_ADMIRAL_DESC"
+					value = 100
+				}
+			}
+			
+			if = {
+				limit = {
+					NOR = {
+						is_general = yes
+						has_trait_category = general
+					}
+				}
+				add = {
+					desc = "HEIR_SELECTION_NOT_GENERAL_DESC"
+					value = -1000
+				}
+			}
+			
+			if = {
+				limit = { 
+					has_trait_category = general
+				}
+				add = {
+					desc = "HEIR_SELECTION_GENERAL_TRAIT_DESC"
+					value = 50
+				}
+			}
+			if = { 
+				limit = { modifier:blocked_from_being_ruler = yes }
+				add = {
+					desc = "HEIR_SELECTION_IS_UNSUITED_TO_RULE_DESC"
+					value = -1000 
+				}
+			}
+		}
+		if = {
+			limit = {
+				not = { exists = root }
+			}
+			add = {
+				desc = "HEIR_SELECTION_OLDER_HEIR_DESC"
+				value = 1
+			}
+			add = {
+				desc = "HEIR_SELECTION_ADM_DESC"
+				value = 1
+			}
+			add = {
+				desc = "HEIR_SELECTION_DIP_DESC"
+				value = 1
+			}
+			add = {
+				desc = "HEIR_SELECTION_MIL_DESC"
+				value = 1
+			}
+			add = {
+				desc = "HEIR_SELECTION_ADMIRAL_DESC"
+				value = 100
+			}
+			add = {
+				desc = "HEIR_SELECTION_ADMIRAL_TRAIT_DESC"
+				value = 50
+			}
+			add = {
+				desc = "HEIR_SELECTION_NOT_ADMIRAL_DESC"
+				value = -1000
+			}
+		}
+	}
+	succession_effect = {
+		scope:new_ruler = {
+			change_character_estate = estate_type:crown_estate
+		}
+	}
+}
+
+guru_election = {
+	allow_female = yes
+	use_election = no
+	term_duration = 0	#0 = until ruler death
+	max_possible_candidates = 0
+
+	allowed_estates = { clergy_estate }
+
+	heir_is_allowed = {
+		religion = scope:target.religion
+		OR = {
+			AND = {
+				religion = religion:sikhism
+				is_saint = yes
+			}
+			is_religious_figure = yes
+			total_abilities >= 200
+		}
+	}
+
+	potential = {
+		has_reform = government_reform:guru_leadership_reform
+	}
+
+	locked = {
+		has_reform = government_reform:guru_leadership_reform
+	}
+	
+	calc = {
+		if = {
+			limit = {
+				exists = root
+			}
+			add = {
+				desc = "HEIR_SELECTION_OLDER_HEIR_DESC"
+				value = character_age
+			}
+			if = { 
+				limit = { modifier:blocked_from_being_ruler = yes }
+				add = {
+					desc = "HEIR_SELECTION_IS_UNSUITED_TO_RULE_DESC"
+					value = -1000 
+				}
+			}
+		}
+
+		# Here it goes the description for explaining a heir gets +1 points per year.
+		if = {
+			limit = {
+				not = { exists = root }
+			}
+			add = {
+				desc = "HEIR_SELECTION_OLDER_HEIR_DESC"
+				value = 1
+			}
+		}
+	}
+}
+
+#The dynasty is inherited from the mothers side, but both genders can rule
+matrilineal_non_exclusive = {
+	include_ruler_siblings = yes
+	through_female = yes
+	allow_female = yes
+	allow_male = yes
+	ignore_ruler = yes
+	
+	use_mothers_dynasty = yes
+	traverse_family_tree = yes
+
+	allowed_estates = { nobles_estate clergy_estate burghers_estate}
+	heir_is_allowed = {
+	}
+	locked = {
+	}
+
+	succession_effect = {
+		add_government_power = government_power_mild_penalty
+	}
+	sibling_score = {
+		if = {
+			limit = {
+				exists = root
+			}
+			if = {
+				limit = { 
+					OR = {
+						exists = root.father 
+						exists = root.mother
+					} 
+				}
+				
+				if = {
+					limit = {
+						any_parent = {
+							this = scope:target.ruler
+						}
+					}
+					add = {
+						desc = "HEIR_SELECTION_PARENT_IS_CURRENT_RULER_DESC"
+						value = 100
+					}
+				}
+			}
+			if = {
+				limit = { 
+					OR = {
+						is_general = yes
+						is_admiral = yes
+					}
+				}
+				add = {
+					desc = "HEIR_SELECTION_GENERAL_OR_ADMIRAL_DESC"
+					value = 50
+				}
+			}
+			if = {
+				limit = {
+					has_traits_of_type = { type = military }
+				}
+				add = {
+					desc = "HEIR_SELECTION_MILITARY_TRAITS"
+					value = 50
+				}
+			}
+			
+			add = {
+				desc = "HEIR_SELECTION_IS_UNSUITED_TO_RULE_DESC"
+				if = { limit = { modifier:blocked_from_being_ruler = yes } value = -1000 }
+			}
+		}
+		else = {
+			#description
+			add = {
+				desc = "HEIR_SELECTION_PARENT_IS_CURRENT_RULER_DESC"
+				value = 100
+			}
+			add = {
+				desc = "HEIR_SELECTION_GENERAL_OR_ADMIRAL_DESC"
+				value = 50
+			}
+			add = {
+				desc = "HEIR_SELECTION_ADM_DESC"
+				value = 1
+			}
+			add = {
+				desc = "HEIR_SELECTION_DIP_DESC"
+				value = 1
+			}
+			add = {
+				desc = "HEIR_SELECTION_MIL_DESC"
+				value = 1
+			}
+			add = {
+				desc = "HEIR_SELECTION_MILITARY_TRAITS"
+				value = 50
+			}
+			
+		}
+	}
+
+	calc = {
+		add = {
+			desc = "HEIR_SELECTION_MOTHER_IS_RULER_DESC"
+			if = {
+				limit = {
+					is_female = yes
+					OR = {
+						not = { exists = root }
+						mother ?= scope:target.last_valid_ruler 
+					}
+				}
+				value = 500
+			}
+		}
+
+		add = {
+			desc = "HEIR_SELECTION_GRANDMOTHER_IS_RULER_DESC"
+			if = {
+				limit = {
+					is_female = yes
+					OR = {
+						not = { exists = root }
+						and = {
+							exists = mother
+							mother.mother ?= scope:target.last_valid_ruler
+						}
+					}	
+				}
+				value = 250
+			}
+		}
+
+		if = {
+			limit = {
+				exists = root
+			}
+			add = {
+				desc = "HEIR_SELECTION_OLDER_HEIR_DESC"
+				value = character_age
+			}
+			if = { 
+				limit = { modifier:blocked_from_being_ruler = yes }
+				add = {
+					desc = "HEIR_SELECTION_IS_UNSUITED_TO_RULE_DESC"
+					value = -1000 
+				}
+			}
+		}
+
+		# Here it goes the description for explaining a heir gets +1 points per year.
+		if = {
+			limit = {
+				not = { exists = root }
+				is_female = yes
+			}
+			add = {
+				desc = "HEIR_SELECTION_OLDER_HEIR_DESC"
+				value = 1
+			}
+		}
+	}
+}

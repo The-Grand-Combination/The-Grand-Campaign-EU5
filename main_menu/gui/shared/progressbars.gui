@@ -1,0 +1,244 @@
+###############################
+### Progress Bars & Sliders ###
+###############################
+
+# template default_slider {
+# 	progresstexture = "gfx/interface/progressbars/progress_bar_blue_alt.dds"
+# 	noprogresstexture = "gfx/interface/progressbars/slider_default_bg.dds"
+
+# 	texture_density = 2
+
+# 	spriteType = Corneredstretched
+# 	spriteborder = { 0 0 }
+
+# 	# icon = {
+# 	# 	name = "frame"
+# 	# 	texture = "gfx/interface/progressbars/progressbar_frame.dds"
+# 	# 	spriteType = Corneredstretched
+# 	# 	#spriteborder = { 7 0 }
+# 	# 	parentanchor = center
+# 	# 	size = { 100% 100% }
+# 	# 	position = { 0 0 }
+# 	# 	using = color_gold
+
+# 	# 	modify_texture = {
+# 	#         using = overlay_stone_texture
+# 	#         blend_mode = overlay
+# 	#         alpha = 0.9
+# 	#     }
+# 	# }
+# }
+
+template progressbar_bar_small {
+	progresstexture = "gfx/interface/progressbars/progressbar_blue_small.dds"
+	noprogresstexture = "gfx/interface/progressbars/progressbar_empty_small.dds"
+
+	texture_density = 2
+
+	spriteType = Corneredstretched
+	spriteborder = { 10 0 }
+
+	# icon = {
+	# 	name = "frame"
+	# 	texture = "gfx/interface/progressbars/progressbar_frame.dds"
+	# 	spriteType = Corneredstretched
+	# 	#spriteborder = { 7 0 }
+	# 	parentanchor = center
+	# 	size = { 100% 100% }
+	# 	position = { 0 0 }
+	# 	using = color_gold
+
+	# 	modify_texture = {
+	#         using = overlay_stone_texture
+	#         blend_mode = overlay
+	#         alpha = 0.9
+	#     }
+	# }
+}
+
+template morale_progressbar_bar {
+	progresstexture = "gfx/interface/progressbars/progressbar_blue.dds"
+	noprogresstexture = "gfx/interface/progressbars/progressbar_empty.dds"
+
+	texture_density = 2
+
+	spriteType = Corneredstretched
+	spriteborder = { 12 0 }
+
+	# icon = {
+	# 	name = "frame"
+	# 	texture = "gfx/interface/progressbars/progressbar_frame.dds"
+	# 	spriteType = Corneredstretched
+	# 	#spriteborder = { 7 0 }
+	# 	parentanchor = center
+	# 	size = { 100% 100% }
+	# 	position = { 0 0 }
+	# 	using = color_gold
+
+	# 	modify_texture = {
+	#         using = overlay_stone_texture
+	#         blend_mode = overlay
+	#         alpha = 0.9
+	#     }
+	# }
+}
+
+# template societal_values_progressbar_bar_right {
+# 	progresstexture = "[SocietalValueItem.GetType.GetRightIllustration]"
+# 	# block "societal_values_right_mask" {
+# 		noprogresstexture = "gfx/interface/component_tiles/society_values/loading_mask.dds"
+# 	# }
+
+# 	texture_density = 3
+
+# 	spriteType = Corneredstretched
+# }
+
+# template societal_values_progressbar_bar_left {
+# 	progresstexture = "[SocietalValueItem.GetType.GetLeftIllustration]"
+# 	# block "societal_values_left_mask" {
+# 		noprogresstexture = "gfx/interface/component_tiles/society_values/loading_mask.dds"
+# 	# }
+
+# 	texture_density = 2
+# 	invertprogress = yes
+# 	alpha = 0.9
+
+# 	spriteType = Corneredstretched
+# }
+
+# template unit_view_experience_bar {
+# 	progresstexture = "gfx/interface/icons/unit_view/experience_bar_green.dds"
+# 	noprogresstexture = "gfx/interface/icons/unit_view/moral_bar_transparent.dds"
+# 	spriteType = Corneredtiled
+# 	size = { 5 40 }
+# 	direction = vertical
+# }
+
+# template progress_bar_green {
+# 	progresstexture = "gfx/interface/progressbars/progress_bar_green.dds"
+# 	noprogresstexture = "gfx/interface/progressbars/progress_black.dds"
+#     texture_density = 2
+#     spriteType = Corneredstretched
+#     spriteborder = { 12 0 }
+# }
+
+template progress_bar_red_alt {
+	progresstexture = "gfx/interface/progressbars/progress_bar_red_alt.dds"
+	noprogresstexture = "gfx/interface/progressbars/progress_black.dds"
+    texture_density = 2
+    spriteType = Corneredstretched
+    spriteborder = { 12 0 }
+}
+
+template progress_bar_blue_alt {
+	progresstexture = "gfx/interface/progressbars/progress_bar_blue_alt.dds"
+	noprogresstexture = "gfx/interface/progressbars/progress_black.dds"
+    texture_density = 2
+    spriteType = Corneredstretched
+    spriteborder = { 12 0 }
+}
+
+template progress_bar_blue_alt_left {
+	progresstexture = "gfx/interface/progressbars/progress_bar_blue_alt_left.dds"
+	noprogresstexture = "gfx/interface/progressbars/progress_black.dds"
+    texture_density = 2
+    spriteType = Corneredstretched
+    spriteborder = { 12 0 }
+}
+
+template progress_bar_green_alt {
+	progresstexture = "gfx/interface/progressbars/progress_bar_green_alt.dds"
+	noprogresstexture = "gfx/interface/progressbars/progress_black.dds"
+    texture_density = 2
+    spriteType = Corneredstretched
+    spriteborder = { 12 0 }
+}
+
+# template progress_bar_green_red {
+# 	progresstexture = "gfx/interface/progressbars/progress_bar_green.dds"
+# 	noprogresstexture = "gfx/interface/progressbars/progress_bar_red.dds"
+#     texture_density = 2
+#     spriteType = Corneredstretched
+#     spriteborder = { 12 0 }
+# }
+
+template progress_bar_green_red_alt {
+	progresstexture = "gfx/interface/progressbars/progress_bar_green_alt.dds"
+	noprogresstexture = "gfx/interface/progressbars/progress_bar_red_alt.dds"
+    texture_density = 2
+    spriteType = Corneredstretched
+    spriteborder = { 12 0 }
+}
+
+template progress_bar_blue_green_alt {
+	progresstexture = "gfx/interface/progressbars/progress_bar_blue_alt_left.dds"
+	noprogresstexture = "gfx/interface/progressbars/progress_bar_green_alt.dds"
+    texture_density = 2
+    spriteType = Corneredstretched
+    spriteborder = { 12 0 }
+}
+
+template progress_bar_green_blue_alt {
+	progresstexture = "gfx/interface/progressbars/progress_bar_green_alt.dds"
+	noprogresstexture = "gfx/interface/progressbars/progress_bar_blue_alt_left.dds"
+    texture_density = 2
+    spriteType = Corneredstretched
+    spriteborder = { 12 0 }
+}
+
+template progress_bar_red_blue_alt {
+	progresstexture = "gfx/interface/progressbars/progress_bar_red_alt.dds"
+	noprogresstexture = "gfx/interface/progressbars/progress_bar_blue_alt_left.dds"
+    texture_density = 2
+    spriteType = Corneredstretched
+    spriteborder = { 12 0 }
+}
+
+template progress_bar_blue_red_alt {
+	progresstexture = "gfx/interface/progressbars/progress_bar_blue_alt_left.dds"
+	noprogresstexture = "gfx/interface/progressbars/progress_bar_red_alt.dds"
+    texture_density = 2
+    spriteType = Corneredstretched
+    spriteborder = { 12 0 }
+}
+
+template progress_bar_blue_grey_alt {
+	progresstexture = "gfx/interface/progressbars/progress_bar_blue_alt_left.dds"
+	noprogresstexture = "gfx/interface/progressbars/progress_bar_grey_alt.dds"
+    texture_density = 2
+    spriteType = Corneredstretched
+    spriteborder = { 12 0 }
+}
+
+# template unit_view_morale_bar {
+# 	progresstexture = "gfx/interface/icons/unit_view/experience_bar_green.dds"
+# 	noprogresstexture = "gfx/interface/icons/unit_view/moral_bar_transparent.dds"
+# 	spriteType = Corneredtiled
+# 	size = { 5 40 }
+# 	direction = vertical
+# }
+
+# template combat_side_morale_bar {
+# 	progresstexture = "gfx/interface/progressbars/war_progress_blue.dds"
+# 	noprogresstexture = "gfx/interface/icons/unit_view/moral_bar_transparent.dds"
+# 	spriteType = Corneredstretched
+# 	size = { 16 473 }
+# 	direction = vertical
+# }
+
+# template unit_view_morale_combat {
+# 	progresstexture = "gfx/interface/icons/unit_view/experience_bar_green.dds"
+# 	noprogresstexture = "gfx/interface/icons/unit_view/moral_bar_transparent.dds"
+# 	spriteType = Corneredtiled
+# 	size = { 120 5 }
+# 	direction = vertical
+# }
+
+template progress_bar_goldish {
+	progresstexture = "gfx/interface/progressbars/progress_bar_goldish.dds"
+	noprogresstexture = "gfx/interface/progressbars/progress_black.dds"
+    texture_density = 2
+    spriteType = Corneredstretched
+    spriteborder = { 12 0 }
+}

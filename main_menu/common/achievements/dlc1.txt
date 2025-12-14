@@ -1,0 +1,9 @@
+﻿#time_is_on_our_side = {
+#	possible = {
+#		is_ai = yes
+#	}
+#
+#	happened = {
+#		treasury > 10
+#	}
+#}

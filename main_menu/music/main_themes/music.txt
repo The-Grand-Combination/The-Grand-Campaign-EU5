@@ -1,0 +1,9 @@
+﻿### THIS HAS BEEN RETARGETED AT A DUMMY EVENT OUT because the music system is now instigated via audio scopes and persistent Wwise game objects in 
+### game\loading_screen\sound\persistent_objects\00_loading.txt
+## Kind regards, your local audio director, Mattias Wennlund, xoxo 250515
+
+main_theme_track = {
+	music = "silence"
+	can_be_interrupted = yes
+}
+

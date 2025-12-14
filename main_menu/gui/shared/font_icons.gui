@@ -1,0 +1,2932 @@
+####################################
+# Important Concepts
+####################################
+
+texticon = {
+	icon = power
+	iconsize = {
+		texture = "gfx/interface/icons/foreign_country/power.dds"
+		size = { 17 17 }
+		offset = { 0 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = satisfaction
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/satisfaction.dds"		#TODO make a satisfaction icon for fonts
+		size = { 20 20 }
+		offset = { 0 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = political_power
+	iconsize = {
+		texture = "gfx/interface/icons/location_icons/government.dds"
+		size = { 20 20 }
+		offset = { 0 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = tax_base
+	iconsize = {
+		texture = "gfx/interface/icons/location_icons/tax_base.dds"
+		size = { 20 20 }
+		offset = { 3 3 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = control
+	iconsize = {
+		texture = "gfx/interface/icons/location_icons/control.dds"
+		size = { 20 20 }
+		offset = { 3 3 }
+		fontsize = 18
+	}
+}
+texticon = {
+	icon = monthly_control
+	iconsize = {
+		texture = "gfx/interface/icons/modifier_types/global_monthly_control.dds"
+		size = { 20 20 }
+		offset = { 3 3 }
+		fontsize = 18
+	}
+}
+texticon = {
+	icon = max_control
+	iconsize = {
+		texture = "gfx/interface/icons/modifier_types/global_max_control.dds"
+		size = { 20 20 }
+		offset = { 3 3 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = time
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/time.dds"
+		size = { 25 25 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = adm
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/adm.dds"
+		size = { 18 18 }
+		offset = { 0 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = dip
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/dip.dds"
+		size = { 18 18 }
+		offset = { 0 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = mil
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/mil.dds"
+		size = { 18 18 }
+		offset = { 0 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = food
+	iconsize = {
+		texture = "gfx/interface/icons/unit_view/food.dds"
+		size = { 18 18 }
+		offset = { 2 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = culture_kindred
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/culture/culture_relation_kindred.dds"
+		size = { 30 30 }
+		offset = { 2 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = culture_positive 
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/culture/culture_relation_positive.dds"
+		size = { 30 30 }
+		offset = { 2 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = culture_neutral
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/culture/culture_relation_neutral.dds"
+		size = { 30 30 }
+		offset = { 2 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = culture_negative
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/culture/culture_relation_negative.dds"
+		size = { 26 26 }
+		offset = { 2 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = culture_enemy
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/culture/culture_relation_rival.dds"
+		size = { 28 28 }
+		offset = { 2 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = food_productivity
+	iconsize = {
+		texture = "gfx/interface/icons/modifier_types/global_monthly_food_modifier.dds"
+		size = { 18 18 }
+		offset = { 2 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = death
+	iconsize = {
+		texture = "gfx/interface/icons/character_roles/death.dds"
+		size = { 18 18 }
+		offset = { 2 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = food_suitability
+	iconsize = {
+		texture = "gfx/interface/icons/unit_actions/deposit_food.dds"
+		size = { 18 18 }
+		offset = { 2 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = population
+	iconsize = {
+		texture = "gfx/interface/icons/resources/total_population.dds"
+		size = { 20 20 }
+		offset = { 3 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = prosperity
+	iconsize = {
+		texture = "gfx/interface/icons/location_icons/new/prosperity.dds"
+		size = { 18 18 }
+		offset = { 2 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = development
+	iconsize = {
+		texture = "gfx/interface/icons/location_icons/development.dds"
+		size = { 18 18 }
+		offset = { 2 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = peasants
+	iconsize = {
+		texture = "gfx/interface/icons/pops/peasants.dds"
+		size = { 18 18 }
+		offset = { 2 3 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = laborers
+	iconsize = {
+		texture = "gfx/interface/icons/pops/laborers.dds"
+		size = { 18 18 }
+		offset = { 2 2 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = soldiers
+	iconsize = {
+		texture = "gfx/interface/icons/pops/soldiers.dds"
+		size = { 18 18 }
+		offset = { 2 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = burghers
+	iconsize = {
+		texture = "gfx/interface/icons/pops/burghers.dds"
+		size = { 18 18 }
+		offset = { 2 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = clergy
+	iconsize = {
+		texture = "gfx/interface/icons/pops/clergy.dds"
+		size = { 18 18 }
+		offset = { 2 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = nobles
+	iconsize = {
+		texture = "gfx/interface/icons/pops/nobles.dds"
+		size = { 18 18 }
+		offset = { 2 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = diplomatic_capacity
+	iconsize = {
+		texture = "gfx/interface/icons/modifier_types/diplomatic_capacity.dds"
+		size = { 18 18 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = market
+	iconsize = {
+		texture = "gfx/interface/icons/location_icons/market.dds"
+		size = { 18 18 }
+		offset = { 0 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = market_needs
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/trade_market/our_needs.dds"
+		size = { 18 18 }
+		offset = { 0 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = maritime_presence
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/geopolitics/maritime_presence.dds"
+		size = { 18 18 }
+		offset = { 0 3 }
+		fontsize = 16
+	}
+} 
+
+texticon = {
+	icon = trade
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/trade.dds"
+		size = { 18 18 }
+		offset = { 2 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = trade_advantage
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/trade_advantage.dds"
+		size = { 18 18 }
+		offset = { 2 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = trade_capacity
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/trade_capacity.dds"
+		size = { 18 18 }
+		offset = { 2 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = good
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/trade_market/merchant.dds"
+		size = { 18 18 }
+		offset = { 2 3 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = build_icon
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/building_panel/build.dds"
+		size = { 18 18 }
+		offset = { 2 3 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = government_reform
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/reforms.dds"
+		size = { 18 18 }
+		offset = { 0 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = policy
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/laws.dds"
+		size = { 18 18 }
+		offset = { 0 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = law
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/laws.dds"
+		size = { 18 18 }
+		offset = { 0 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = advance
+	iconsize = {
+		texture = "gfx/interface/icons/alerts_icons/advances.dds"
+		size = { 18 18 }
+		offset = { 0 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = privilege
+	iconsize = {
+		texture = "gfx/interface/icons/location_icons/estates.dds"
+		size = { 18 18 }
+		offset = { 0 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = societal_value
+	iconsize = {
+		texture = "gfx/interface/icons/cabinet_actions/change_societal_values.dds"
+		size = { 18 18 }
+		offset = { 0 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = parliament
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/parliament.dds"
+		size = { 18 18 }
+		offset = { 0 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = cabinet_action
+	iconsize = {
+		texture = "gfx/interface/icons/outliner/categories/cabinet.dds"
+		size = { 18 18 }
+		offset = { 0 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = organization
+	iconsize = {
+		texture = "gfx/interface/icons/alerts_icons/international_organization.dds"
+		size = { 18 18 }
+		offset = { 0 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = rebels
+	iconsize = {
+		texture = "gfx/interface/icons/rebels/fist.dds"
+		size = { 18 18 }
+		offset = { 0 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = nationalist
+	iconsize = {
+		texture = "gfx/interface/icons/rebels/nationalist.dds"
+		size = { 18 18 }
+		offset = { 0 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = pretender
+	iconsize = {
+		texture = "gfx/interface/icons/rebels/pretender.dds"
+		size = { 18 18 }
+		offset = { 0 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = slave
+	iconsize = {
+		texture = "gfx/interface/icons/rebels/slave.dds"
+		size = { 18 18 }
+		offset = { 0 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = rebels_default
+	iconsize = {
+		texture = "gfx/interface/icons/rebels/_default.dds"
+		size = { 18 18 }
+		offset = { 0 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = characters
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/geography/characters.dds"
+		size = { 18 18 }
+		offset = { 0 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = seazone
+	iconsize = {
+		texture = "gfx/interface/icons/control_groups/seazone.dds"
+		size = { 18 18 }
+		offset = { 0 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = social_class
+	iconsize = {
+		texture = "gfx/interface/icons/location_icons/class.dds"
+		size = { 18 18 }
+		offset = { 0 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = willingless
+	iconsize = {
+		texture = "gfx/interface/icons/sort/willingness.dds"
+		size = { 18 18 }
+		offset = { 0 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = ruler
+	iconsize = {
+		texture = "gfx/interface/icons/character_roles/ruler.dds"
+		size = { 18 18 }
+		offset = { 0 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = heir
+	iconsize = {
+		texture = "gfx/interface/icons/character_roles/heir.dds"
+		size = { 18 18 }
+		offset = { 0 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = construction
+	iconsize = {
+		texture = "gfx/interface/icons/unit_actions/build_to_navy.dds"
+		size = { 14 14 }
+		offset = { 0 2 }
+		fontsize = 14
+	}
+}
+
+##### TABS #####
+
+texticon = {
+	icon = religion
+	iconsize = {
+		texture = "gfx/interface/icons/location_icons/main_religion.dds"
+		size = { 18 18 }
+		offset = { 0 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = culture
+	iconsize = {
+		texture = "gfx/interface/icons/location_icons/culture.dds"
+		size = { 18 18 }
+		offset = { 0 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = art_work
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/art_works.dds"
+		size = { 18 18 }
+		offset = { 0 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = country
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/country.dds"
+		size = { 18 18 }
+		offset = { 0 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = building_default
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/building_default.dds"
+		size = { 18 18 }
+		offset = { 0 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = building_levels
+	iconsize = {
+		texture = "gfx/interface/icons/modifier_types/free_building_levels.dds"
+		size = { 18 18 }
+		offset = { 0 3 }
+		fontsize = 16
+	}
+}
+
+####################################
+# Geography
+####################################
+
+texticon = {
+	icon = location
+	iconsize = {
+		texture = "gfx/interface/icons/map_subdivisons/location.dds"
+		size = { 18 18 }
+		offset = { 0 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = province
+	iconsize = {
+		texture = "gfx/interface/icons/map_subdivisons/province.dds"
+		size = { 18 18 }
+		offset = { 0 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = area
+	iconsize = {
+		texture = "gfx/interface/icons/map_subdivisons/area.dds"
+		size = { 18 18 }
+		offset = { 0 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = region
+	iconsize = {
+		texture = "gfx/interface/icons/map_subdivisons/region.dds"
+		size = { 18 18 }
+		offset = { 0 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = continent
+	iconsize = {
+		texture = "gfx/interface/icons/map_subdivisons/continent.dds"
+		size = { 18 18 }
+		offset = { 0 3 }
+		fontsize = 16
+	}
+}
+
+####################################
+# Prices
+####################################
+
+texticon = {
+	icon = price_decrease
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/trade_market/lower.dds"
+		size = { 16 16 }
+		offset = { 2 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = price_increase
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/trade_market/higher.dds"
+		size = { 16 16 }
+		offset = { 2 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = price_stable
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/trade_market/equal.dds" 
+		size = { 16 16 }
+		offset = { 2 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = price_difference_4
+	iconsize = {
+		texture = "gfx/interface/icons/prices/price_difference_4.dds"
+		size = { 16 16 }
+		offset = { 2 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = price_difference_5
+	iconsize = {
+		texture = "gfx/interface/icons/prices/price_difference_5.dds"
+		size = { 16 16 }
+		offset = { 2 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = price_difference_6
+	iconsize = {
+		texture = "gfx/interface/icons/prices/price_difference_6.dds"
+		size = { 16 16 }
+		offset = { 2 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = price_difference_7
+	iconsize = {
+		texture = "gfx/interface/icons/prices/price_difference_7.dds"
+		size = { 16 16 }
+		offset = { 2 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = price_difference_8
+	iconsize = {
+		texture = "gfx/interface/icons/prices/price_difference_8.dds"
+		size = { 16 16 }
+		offset = { 2 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = price_difference_9
+	iconsize = {
+		texture = "gfx/interface/icons/prices/price_difference_9.dds"
+		size = { 16 16 }
+		offset = { 2 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = price_difference_10
+	iconsize = {
+		texture = "gfx/interface/icons/prices/price_difference_10.dds"
+		size = { 16 16 }
+		offset = { 2 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = price_difference_11
+	iconsize = {
+		texture = "gfx/interface/icons/prices/price_difference_11.dds"
+		size = { 16 16 }
+		offset = { 2 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = price_difference_12
+	iconsize = {
+		texture = "gfx/interface/icons/prices/price_difference_12.dds"
+		size = { 16 16 }
+		offset = { 2 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = price_difference_13
+	iconsize = {
+		texture = "gfx/interface/icons/prices/price_difference_13.dds"
+		size = { 16 16 }
+		offset = { 2 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = price_difference_14
+	iconsize = {
+		texture = "gfx/interface/icons/prices/price_difference_14.dds"
+		size = { 16 16 }
+		offset = { 2 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = gold
+	iconsize = {
+		texture = "gfx/interface/icons/resources/gold.dds"
+		size = { 16 16 }
+		offset = { 2 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = manpower
+	iconsize = {
+		texture = "gfx/interface/icons/resources/manpower.dds"
+		size = { 24 24 }
+		offset = { 2 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = hull_size
+	iconsize = {
+		texture = "gfx/interface/icons/unit_category/navy_heavy_ship.dds"
+		size = { 20 20 }
+		offset = { 3 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = cannons
+	iconsize = {
+		texture = "gfx/interface/icons/unit_category/army_artillery.dds"
+		size = { 20 20 }
+		offset = { 3 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = combat_power
+	iconsize = {
+		texture = "gfx/interface/icons/unit_types/combat_power.dds"
+		size = { 20 20 }
+		offset = { 3 8 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = frontage
+	iconsize = {
+		texture = "gfx/interface/icons/unit_types/frontage.dds"
+		size = { 20 20 }
+		offset = { 3 5 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = army_strength
+	iconsize = {
+		texture = "gfx/interface/icons/unit_category/total_strength.dds"
+		size = { 18 18 }
+		offset = { 3 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = navy_strength
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/war_view/navy_strength.dds"
+		size = { 21 21 }
+		offset = { 2 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = ship
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/declare_war/navy.dds"
+		size = { 21 21 }
+		offset = { 2 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = volcano
+	iconsize = {
+		texture = "gfx/interface/topography/volcano.dds"
+		size = { 24 24 }
+		offset = { 2 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = earthquake
+	iconsize = {
+		texture = "gfx/interface/topography/earthquake.dds"
+		size = { 24 24 }
+		offset = { 2 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = topography
+	iconsize = {
+		texture = "gfx/interface/icons/location_icons/topography.dds"
+		size = { 24 24 }
+		offset = { 2 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = vegetation
+	iconsize = {
+		texture = "gfx/interface/vegetation/woods.dds"
+		size = { 24 24 }
+		offset = { 2 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = climate
+	iconsize = {
+		texture = "gfx/interface/icons/location_icons/climate.dds"
+		size = { 24 24 }
+		offset = { 2 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = regiment
+	iconsize = {
+		texture = "gfx/interface/icons/unit_view/formation_flat.dds"
+		size = { 18 18 }
+		offset = { 2 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = morale
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/military/army_morale.dds"
+		size = { 27 27 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = sailors
+	iconsize = {
+		texture = "gfx/interface/icons/resources/sailors.dds"
+		size = { 24 24 }
+		offset = { 2 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = stability
+	iconsize = {
+		texture = "gfx/interface/icons/resources/stability.dds"
+		size = { 24 24 }
+		offset = { 2 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = war_exhaustion
+	iconsize = {
+		texture = "gfx/interface/icons/resources/war_exhaustion.dds"
+		size = { 24 24 }
+		offset = { 2 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = war_leader
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/declare_war/war_leader.dds"
+		size = { 24 24 }
+		offset = { 2 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = purity
+	iconsize = {
+		texture = "gfx/interface/icons/resources/purity.dds"
+		size = { 24 24 }
+		offset = { 2 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = honor
+	iconsize = {
+		texture = "gfx/interface/icons/resources/honor.dds"
+		size = { 24 24 }
+		offset = { 2 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = doom
+	iconsize = {
+		texture = "gfx/interface/icons/resources/doom.dds"
+		size = { 24 24 }
+		offset = { 2 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = yanantin
+	iconsize = {
+		texture = "gfx/interface/icons/resources/yanantin.dds"
+		size = { 24 24 }
+		offset = { 2 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = righteousness
+	iconsize = {
+		texture = "gfx/interface/icons/resources/righteousness.dds"
+		size = { 24 24 }
+		offset = { 2 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = harmony
+	iconsize = {
+		texture = "gfx/interface/icons/resources/harmony.dds"
+		size = { 24 24 }
+		offset = { 2 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = self_control
+	iconsize = {
+		texture = "gfx/interface/icons/resources/self_control.dds"
+		size = { 24 24 }
+		offset = { 2 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = antagonism
+	iconsize = {
+		texture = "gfx/interface/icons/resources/antagonism.dds"
+		size = { 24 24 }
+		offset = { 2 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = inflation
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/inflation.dds"
+		size = { 32 32 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = prestige
+	iconsize = {
+		texture = "gfx/interface/icons/resources/prestige.dds"
+		size = { 26 26 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = supply
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/trade_market/supply.dds"
+		size = { 18 18 }
+		offset = { 3 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = supply_limit
+	iconsize = {
+		texture = "gfx/interface/icons/location_icons/supply_limit.dds"
+		size = { 20 20 }
+		offset = { 3 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = demand
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/trade_market/demand.dds"
+		size = { 18 18 }
+		offset = { 3 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = balance
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/trade_market/goods_balance.dds"
+		size = { 18 18 }
+		offset = { 3 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = subject
+	iconsize = {
+		texture = "gfx/interface/icons/diplomatic_status/vassalized.dds"
+		size = { 21 21 }
+		offset = { 3 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = karma
+	iconsize = {
+		texture = "gfx/interface/icons/religious_doctrines/theravada/karma.dds"
+		size = { 32 32 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = religious_influence_catholic
+	iconsize = {
+		texture = "gfx/interface/icons/religion/catholic.dds"
+		size = { 32 32 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = rite_power
+	iconsize = {
+		texture = "gfx/interface/icons/resources/rite_power.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = horde_unity
+	iconsize = {
+		texture = "gfx/interface/icons/government_power/horde_unity.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = legitimacy
+	iconsize = {
+		texture = "gfx/interface/icons/resources/legitimacy.dds"
+		size = { 24 24 }
+		offset = { 2 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = republican_tradition
+	iconsize = {
+		texture = "gfx/interface/icons/government_power/republican_tradition.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = tribal_cohesion
+	iconsize = {
+		texture = "gfx/interface/icons/government_power/tribal_cohesion.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = devotion
+	iconsize = {
+		texture = "gfx/interface/icons/government_power/devotion.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = army_tradition
+	iconsize = {
+		texture = "gfx/interface/icons/military_army/army_tradition.dds"             
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = navy_tradition
+	iconsize = {
+		texture = "gfx/interface/icons/military_navy/navy_traditions.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = naval_damage_taken
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/military/naval_damage_taken.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = naval_damage_done
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/military/naval_damage_done.dds"
+		size = { 24 24 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = primary_culture
+	iconsize = {
+		texture = "gfx/interface/icons/culture/primary_culture.dds"
+		size = { 18 18 }
+		offset = { 3 3 }
+		fontsize = 16
+	}
+} 
+
+texticon = {
+	icon = accepted_culture
+	iconsize = {
+		texture = "gfx/interface/icons/culture/accepted_culture.dds"
+		size = { 18 18 }
+		offset = { 3 3 }
+		fontsize = 16
+	}
+} 
+
+####################################
+# Diplomatic Currency
+####################################
+
+texticon = {
+	icon = spy_network
+	iconsize = {
+		texture = "gfx/interface/icons/diplomatic_status/building_spy_network.dds"
+		size = { 22 22 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = trust
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/foreigncountry/trust.dds"
+		size = { 22 22 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = favors
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/foreigncountry/favors.dds"
+		size = { 22 22 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = diplomacy
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/balance/diplomacy.dds"
+		size = { 22 22 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+}
+
+####################################
+# Unit Categories
+####################################
+texticon = {
+	icon = army_infantry
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/army_infantry.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = army_cavalry
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/army_cavalry.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = army_artillery
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/army_artillery.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = army_auxiliary
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/army_auxiliary.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = navy_generic
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/navy.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = navy_heavy_ship
+	iconsize = {
+		texture = "gfx/interface/icons/unit_category/navy_heavy_ship.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = navy_light_ship
+	iconsize = {
+		texture = "gfx/interface/icons/unit_category/navy_light_ship.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = navy_galley
+	iconsize = {
+		texture = "gfx/interface/icons/unit_category/navy_galley.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = navy_transport
+	iconsize = {
+		texture = "gfx/interface/icons/unit_category/navy_transport.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = levy
+	iconsize = {
+		texture = "gfx/interface/icons/unit_category/army_levies.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = naval_levy
+	iconsize = {
+		texture = "gfx/interface/icons/unit_category/navy_levies.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = regular
+	iconsize = {
+		texture = "gfx/interface/icons/unit_actions/regulars.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = naval_regular
+	iconsize = {
+		texture = "gfx/interface/icons/unit_category/regulars_navy.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = mercenary
+	iconsize = {
+		texture = "gfx/interface/icons/unit_category/mercenary.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = naval_mercenary
+	iconsize = {
+		texture = "gfx/interface/icons/unit_category/mercenary.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = production_method
+	iconsize = {
+		texture = "gfx/interface/icons/production_methods/_default.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+######################################
+# Script Icons
+######################################
+
+texticon = {
+	icon = trigger_yes
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/trigger_yes.dds"
+		size = { 16 16 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = trigger_no
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/trigger_no.dds"
+		size = { 16 16 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = trigger_pass_inactive
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/trigger_yes.dds"
+		size = { 16 16 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = trigger_fail_inactive
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/trigger_no.dds"
+		size = { 16 16 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = trigger_pass
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/trigger_yes.dds"
+		size = { 16 16 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = trigger_fail
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/trigger_no.dds"
+		size = { 16 16 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = warning_icon
+	iconsize = {
+		texture = "gfx/interface/icons/icon_warning.dds"
+		size = { 16 16 }
+		offset = { 0 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = arrow_bonus_tier_1
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/arrow_bonus_tier_1.dds"
+		size = { 16 16 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = arrow_bonus_tier_2
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/arrow_bonus_tier_2.dds"
+		size = { 16 16 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = arrow_bonus_tier_3
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/arrow_bonus_tier_3.dds"
+		size = { 16 16 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = arrow_malus_tier_1
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/arrow_malus_tier_1.dds"
+		size = { 16 16 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = arrow_malus_tier_2
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/arrow_malus_tier_2.dds"
+		size = { 16 16 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = arrow_malus_tier_3
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/arrow_malus_tier_3.dds"
+		size = { 16 16 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = hint
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/tabicons/hints.dds"
+		size = { 18 18 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = agenda
+	iconsize = {
+		texture = "gfx/interface/icons/missions/agenda.dds"
+		size = { 18 18 }
+		offset = { 0 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = mission
+	iconsize = {
+		texture = "gfx/interface/icons/missions/_default.dds"
+		size = { 18 18 }
+		offset = { 0 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = rgo
+	iconsize = {
+		texture = "gfx/interface/icons/map_modes/raw_material.dds"
+		size = { 20 20 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+} 
+
+texticon = {
+	icon = building
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/building_default.dds"
+		size = { 18 18 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+} 
+
+texticon = {
+	icon = import
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/trade_market/import.dds"
+		size = { 18 18 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+} 
+
+texticon = {
+	icon = export
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/trade_market/export.dds"
+		size = { 18 18 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+} 
+
+texticon = {
+	icon = arrow_up
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/arrow_up.dds"
+		size = { 16 16 }
+		offset = { 0 3 }
+		fontsize = 14
+	}
+} 
+
+texticon = {
+	icon = arrow_down
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/arrow_down.dds"
+		size = { 16 16 }
+		offset = { 0 3 }
+		fontsize = 14
+	}
+}
+
+texticon = {
+	icon = city
+	iconsize = {
+		texture = "gfx/interface/mapitems/city.dds"
+		size = { 14 14 }
+		offset = { 1 3 }
+		fontsize = 14
+	}
+}
+
+texticon = {
+	icon = town
+	iconsize = {
+		texture = "gfx/interface/mapitems/town.dds"
+		size = { 14 14 }
+		offset = { 1 3 }
+		fontsize = 14
+	}
+}
+
+texticon = {
+	icon = rural_settlement
+	iconsize = {
+		texture = "gfx/interface/mapitems/rural_settlement.dds"
+		size = { 14 14 }
+		offset = { 1 3 }
+		fontsize = 14
+	}
+}
+
+texticon = {
+	icon = city_capital
+	iconsize = {
+		texture = "gfx/interface/mapitems/city_capital.dds"
+		size = { 16 16 }
+		offset = { 0 3 }
+		fontsize = 14
+	}
+}
+
+texticon = {
+	icon = town_capital
+	iconsize = {
+		texture = "gfx/interface/mapitems/town_capital.dds"
+		size = { 14 14 }
+		offset = { 1 3 }
+		fontsize = 14
+	}
+}
+
+texticon = {
+	icon = rural_settlement_capital
+	iconsize = {
+		texture = "gfx/interface/mapitems/rural_settlement_capital.dds"
+		size = { 14 14 }
+		offset = { 1 3 }
+		fontsize = 14
+	}
+}
+
+######################################
+# Panel Icons
+######################################
+
+texticon = {
+	icon = government_panel
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/tabicons/government.dds"
+		size = { 16 16 }
+		offset = { 0 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = economy_panel
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/tabicons/economy.dds"
+		size = { 16 16 }
+		offset = { 0 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = production_panel
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/tabicons/production.dds"
+		size = { 16 16 }
+		offset = { 0 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = society_panel
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/tabicons/demography.dds"
+		size = { 16 16 }
+		offset = { 0 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = diplomacy_panel
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/tabicons/diplomacy.dds"
+		size = { 16 16 }
+		offset = { 0 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = military_panel
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/tabicons/military.dds"
+		size = { 16 16 }
+		offset = { 0 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = geopolitics_panel
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/tabicons/geography_flat_icon.dds"
+		size = { 16 16 }
+		offset = { 0 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = advances_panel
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/tabicons/advances.dds"
+		size = { 16 16 }
+		offset = { 0 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = automation
+	iconsize = {
+		texture = "gfx/interface/buttons/checkbox_auto_right.dds"
+		size = { 18 18 }
+		offset = { 0 3 }
+		fontsize = 16
+
+	}
+} 
+
+texticon = {
+	icon = caesar
+	iconsize = {
+		texture = "gfx/interface/icons/alerts_icons/welcome_to_caesar.dds"
+		size = { 18 18 }
+		offset = { 0 3 }
+		fontsize = 16
+
+	}
+}
+
+texticon = {
+	icon = finder_panel
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/tabicons/find_location_flat_icon.dds"
+		size = { 18 18 }
+		offset = { 0 3 }
+		fontsize = 16
+
+	}
+} 
+
+######################################
+# Keyboard Shortcuts
+######################################
+
+texticon = {
+	icon = key_tab
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/tab.dds"
+		size = { 56 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = key_f1
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/f1.dds"
+		size = { 56 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = key_f2
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/f2.dds"
+		size = { 56 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = key_f3
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/f3.dds"
+		size = { 56 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = key_f4
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/f4.dds"
+		size = { 56 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = key_f5
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/f5.dds"
+		size = { 56 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = key_f6
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/f6.dds"
+		size = { 56 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = key_f7
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/f7.dds"
+		size = { 56 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = key_f8
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/f8.dds"
+		size = { 56 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = key_f9
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/f9.dds"
+		size = { 56 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = key_f10
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/f10.dds"
+		size = { 56 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = key_f11
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/f11.dds"
+		size = { 56 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = key_f12
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/f12.dds"
+		size = { 56 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = key_home
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/home.dds"
+		size = { 56 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = key_ctrl
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/ctrl.dds"
+		size = { 60 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = key_shift
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/shift.dds"
+		size = { 60 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = key_alt
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/alt.dds"
+		size = { 60 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = key_escape
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/escape.dds"
+		size = { 56 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = key_space
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/space.dds"
+		size = { 56 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = key_kp_minus
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/minus.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = key_kp_plus
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/plus.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = key_return
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/enter.dds"
+		size = { 56 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = key_backspace
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/back.dds"
+		size = { 56 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = key_q
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/q.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = key_e
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/e.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = key_r
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/r.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = key_t
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/t.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = key_y
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/y.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = key_v
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/v.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = key_w
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/w.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = key_u
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/u.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = key_i
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/i.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = key_j
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/j.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = key_x
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/x.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = key_z
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/z.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = key_o
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/o.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = key_s
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/s.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = key_p
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/p.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = key_k
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/k.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = key_l
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/l.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = key_b
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/b.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = key_a
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/a.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = key_c
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/c.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = key_d
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/d.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = key_h
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/h.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = key_g
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/g.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = key_m
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/m.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = key_n
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/n.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = key_f
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/f.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = players
+	iconsize = {
+		texture = "gfx/interface/icons/players.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = allow_icon
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/allow_grey.dds"
+		size = { 20 20 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = subsidy
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/subsidy_checked.dds"
+		size = { 20 20 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = building_open
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/open_checked.dds"
+		size = { 20 20 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = regent
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/regent.dds"
+		size = { 20 20 }
+		offset = { 0 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = tutorial_screenshot_1
+	iconsize = {
+		texture = "gfx/interface/tutorial/tutorial_image_1.dds"
+		size = { 496 300 }
+		offset = { 0 280 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = pin_icon
+	iconsize = {
+		texture = "gfx/interface/tutorial/checkbox_star_icon_tutorial.dds"
+		size = { 20 20 }
+		offset = { 0 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = orange_left
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/trade_market/orange_left.dds"
+		size = { 20 20 }
+		offset = { 0 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = orange_right
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/trade_market/orange_right.dds"
+		size = { 20 20 }
+		offset = { 0 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = blue_left
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/trade_market/blue_left.dds"
+		size = { 20 20 }
+		offset = { 0 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = blue_right
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/trade_market/blue_right.dds"
+		size = { 20 20 }
+		offset = { 0 2 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = contextmenu
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/contextmenu.dds"
+		size = { 20 20 }
+		offset = { 0 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = rightclick
+	iconsize = {
+		texture = "gfx/interface/icons/ui_controls/right_click.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = leftclick
+	iconsize = {
+		texture = "gfx/interface/icons/ui_controls/left_click.dds"
+		size = { 20 20 }
+		offset = { 0 5 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = centerclick
+	iconsize = {
+		texture = "gfx/interface/icons/ui_controls/center_click.dds"
+		size = { 20 20 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = centerscroll
+	iconsize = {
+		texture = "gfx/interface/icons/ui_controls/center_scroll.dds"
+		size = { 20 20 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = languages
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/language.dds"
+		size = { 20 20 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = artists
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/art_impact.dds"
+		size = { 20 20 }
+		offset = { 0 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = government_power
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/government_power.dds"
+		size = { 20 20 }
+		offset = { 0 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = painter
+	iconsize = {
+		texture = "gfx/interface/icons/artist/painter.dds"
+		size = { 20 20 }
+		offset = { 0 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = writer
+	iconsize = {
+		texture = "gfx/interface/icons/artist/writer.dds"
+		size = { 20 20 }
+		offset = { 0 3 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = painting
+	iconsize = {
+		texture = "gfx/interface/icons/work_of_art/painting.dds"
+		size = { 20 20 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = novel
+	iconsize = {
+		texture = "gfx/interface/icons/work_of_art/novel.dds"
+		size = { 20 20 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = cultural_influence
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/cultural_influence.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = cultural_tradition
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/cultural_tradition.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = religious_influence
+	iconsize = {
+		texture = "gfx/interface/icons/religious_aspects/church_power.dds"
+		size = { 20 20 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = diplomatic_reputation
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/diplomatic_reputation.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = rival
+	iconsize = {
+		texture = "gfx/interface/icons/unit_view/rivals.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = alliance
+	iconsize = {
+		texture = "gfx/interface/icons/diplomatic_status/alliance.dds"
+		size = { 20 20 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = aggressive_military_stance
+	iconsize = {
+		texture = "gfx/interface/icons/military_stances/aggressive_military_stance.dds"
+		size = { 20 20 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = defensive_military_stance
+	iconsize = {
+		texture = "gfx/interface/icons/military_stances/defensive_military_stance.dds"
+		size = { 20 20 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = normal_military_stance
+	iconsize = {
+		texture = "gfx/interface/icons/military_stances/normal_military_stance.dds"
+		size = { 20 20 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = passive_military_stance
+	iconsize = {
+		texture = "gfx/interface/icons/military_stances/passive_military_stance.dds"
+		size = { 20 20 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = supportive_military_stance
+	iconsize = {
+		texture = "gfx/interface/icons/military_stances/supportive_military_stance.dds"
+		size = { 20 20 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = improve_relation_impact
+	iconsize = {
+		texture = "gfx/interface/icons/modifier_types/improve_relation_impact.dds"
+		size = { 20 20 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = migration_attraction
+	iconsize = {
+		texture = "gfx/interface/icons/modifier_types/migration_attraction.dds"
+		size = { 20 20 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = migration_speed
+	iconsize = {
+		texture = "gfx/interface/icons/modifier_types/global_migration_speed.dds"
+		size = { 20 20 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = pop_assimilation_speed
+	iconsize = {
+		texture = "gfx/interface/icons/modifier_types/global_pop_assimilation_speed.dds"
+		size = { 20 20 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = religious_unity
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/religious_unity.dds"
+		size = { 20 20 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = province_integration_speed
+	iconsize = {
+		texture = "gfx/interface/icons/modifier_types/province_integration_speed.dds"
+		size = { 20 20 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = annexation_cost
+	iconsize = {
+		texture = "gfx/interface/icons/modifier_types/diplomatic_annexation_cost.dds"
+		size = { 20 20 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = loyalty
+	iconsize = {
+		texture = "gfx/interface/icons/modifier_types/loyalty_to_overlord.dds"
+		size = { 20 20 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+} 
+
+texticon = {
+	icon = mapmode
+	iconsize = {
+		texture = "gfx/interface/icons/flat_icons/tabicons/mapmodes.dds"
+		size = { 20 20 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+} 
+
+texticon = {
+	icon = send_people_to_the_colonies
+	iconsize = {
+		texture = "gfx/interface/icons/cabinet_actions/send_people_to_the_colonies.dds"
+		size = { 20 20 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = send_people_to_colonial_charter
+	iconsize = {
+		texture = "gfx/interface/icons/cabinet_actions/send_people_to_the_colonies.dds"
+		size = { 20 20 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+} 
+
+texticon = {
+	icon = artistic_skill_icon
+	iconsize = {
+		texture = "gfx/interface/icons/modifier_types/skill_of_new_artists.dds"
+		size = { 20 20 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = holy_site
+	iconsize = {
+		texture = "gfx/interface/icons/religious_doctrines/catholic/holy_sites.dds"
+		size = { 20 20 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+} 
+
+texticon = {
+	icon = casus_belli
+	iconsize = {
+		texture = "gfx/interface/icons/casus_belli/_default.dds"
+		size = { 20 20 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+} 
+
+texticon = {
+	icon = dynasty
+	iconsize = {
+		texture = "gfx/interface/icons/map_modes/dynasty.dds"
+		size = { 20 20 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = restore_lombardy
+	iconsize = {
+		texture = "gfx/interface/icons/cabinet_actions/mlo_restore_kingdom_lombardy.dds"
+		size = { 20 20 }
+		offset = { 0 4 }
+		fontsize = 16
+	}
+}

@@ -1,0 +1,168 @@
+﻿a_indian_elephant_auxiliary = {
+	category = army_auxiliary	
+	copy_from = a_age_5_absolutism_auxiliary	#Yes, they are intentionally the strongest auxilliary unit until the age of Age of Absolutism
+	combat_power = 4
+	location_potential = {
+		market ?= { is_produced_in_market = goods:elephants }
+	}	
+	#root = location. Checks location_potential first so don't need that scripting in
+	max_strength = 0.05
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.1
+	}
+	
+	
+	# some terrain and climate impacts
+	impact = {
+		jungle = -0.25
+	}
+	combat = {
+		jungle = 0.20
+	}
+	
+	maintenance_demand =  elephant_auxiliary_maintenance
+	construction_demand = elephant_auxiliary_construction
+
+	gfx_tags = { elephant_tag auxiliary_elephant_tag  auxiliary_tag medium_tag elephant_auxiliary_tag }
+}
+
+a_indian_elephant_cavalry = {
+	category = army_cavalry	
+	copy_from = a_age_2_renaissance_cavalry
+	# some terrain and climate impacts
+	max_strength = 0.05
+	impact = {
+		jungle = -0.25
+	}
+	#root = location
+	location_potential = {
+		market ?= { is_produced_in_market = goods:elephants }
+	}
+	country_potential = {
+		NOR = {
+			has_advance = ori_lord_of_elephants
+			has_advance = sia_advanced_elephant_warfare
+			has_advance = bng_war_elephants
+			has_advance = thai_war_elephants
+		}
+	}
+	combat = {
+		jungle = 0.20
+	}
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.1
+	}
+	maintenance_demand =  elephant_cavalry_maintenance
+	construction_demand = elephant_cavalry_construction
+	gfx_tags = { elephant_tag medium_tag }
+}
+
+a_orissan_elephant_cavalry = {
+	category = army_cavalry
+	copy_from = a_age_2_renaissance_cavalry
+	strength_damage_taken = -0.10
+	max_strength = 0.05
+	# some terrain and climate impacts
+	impact = { jungle = -0.25 }
+	#root = location
+	location_potential = {
+		market ?= { is_produced_in_market = goods:elephants }
+	}
+	combat = { jungle = 0.20 }
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.1
+	}
+	maintenance_demand =  elephant_cavalry_maintenance
+	construction_demand = elephant_cavalry_construction
+	gfx_tags = { elephant_tag medium_tag }
+}
+
+a_bengali_elephant_cavalry = {
+	category = army_cavalry	
+	copy_from = a_age_2_renaissance_cavalry
+	# some terrain and climate impacts
+	food_storage_per_strength = 1
+	max_strength = 0.05
+	impact = { jungle = -0.25 }
+	#root = location
+	location_potential = {
+		market ?= { is_produced_in_market = goods:elephants }
+	}
+	combat = { jungle = 0.20 }
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.1
+	}
+	maintenance_demand =  elephant_cavalry_maintenance
+	construction_demand = elephant_cavalry_construction
+	gfx_tags = { elephant_tag medium_tag }
+}
+
+a_thai_elephant_cavalry = {
+	category = army_cavalry	
+	copy_from = a_age_2_renaissance_cavalry
+	# some terrain and climate impacts
+	impact = { jungle = -0.25 }
+	#root = location
+	location_potential = {
+		market ?= { is_produced_in_market = goods:elephants }
+	}
+	combat = { jungle = 0.20 }
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.1
+	}
+	maintenance_demand =  elephant_cavalry_maintenance
+	construction_demand = elephant_cavalry_construction
+	gfx_tags = { elephant_tag medium_tag }
+}
+
+a_siamese_advanced_elephant_cavalry = {
+	category = army_cavalry	
+	copy_from = a_age_4_reformation_cavalry
+	# some terrain and climate impacts
+	morale_damage_done = 0.25
+	impact = { jungle = -0.25 }
+	#root = location
+	location_potential = {
+		market ?= { is_produced_in_market = goods:elephants }
+	}
+	combat = { jungle = 0.20 }
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.1
+	}
+	maintenance_demand =  elephant_cavalry_maintenance
+	construction_demand = elephant_cavalry_construction
+	gfx_tags = { elephant_tag medium_tag }
+}
+a_khmer_ballista_elephant_infantry = {
+	category = army_infantry
+	copy_from = a_age_2_renaissance_infantry
+	# some terrain and climate impacts
+	max_strength = 0.05
+	impact = { jungle = -0.25 }
+	initiative = 2
+	combat_speed = -0.05
+	#root = location
+	location_potential = {
+		market ?= { is_produced_in_market = goods:elephants }
+	}
+	combat = { jungle = 0.20 }
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.1
+	}
+	maintenance_demand =  elephant_infantry_maintenance
+	construction_demand = elephant_infantry_construction
+	gfx_tags = { elephant_tag medium_tag }
+}

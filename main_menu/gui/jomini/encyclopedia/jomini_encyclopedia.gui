@@ -1,0 +1,6 @@
+window = {
+	name = "jomini_encyclopedia"
+	editbox = {
+        name = "search_input" # Do not change name, it is referenced from code
+	}
+}

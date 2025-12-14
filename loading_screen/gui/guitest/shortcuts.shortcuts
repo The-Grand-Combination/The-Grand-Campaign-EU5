@@ -1,0 +1,7 @@
+shortcutbindings = {
+	toggle_window = "w,ctrl+r"
+	toggle_province = "shift+p"
+	add_button = "shift+e"
+	click_modifiers_test = "t,shift+t"
+	toggle_dragdrop_subwidnow = "shift+j"
+}

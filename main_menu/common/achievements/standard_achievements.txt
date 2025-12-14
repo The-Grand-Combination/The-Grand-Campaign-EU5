@@ -1,0 +1,627 @@
+﻿#Achievements Very Easy
+
+for_the_glory = {
+	possible = { }
+
+	happened = {
+		has_variable = unlock_achievement_for_the_glory
+	}
+}
+
+brothers_in_arms = {
+	possible = { }
+
+	happened = {
+		any_current_war = {
+			save_temporary_scope_as = target_war
+			root = {
+				NOT = { is_war_leader_of = scope:target_war }
+				any_country_together_in_war_with = {
+					war_score_in_war = {
+						war = scope:target_war
+						value >= 90
+					}
+				}
+			}
+		}
+	}
+}
+
+city_of_cities = {
+	possible = { }
+
+	happened = {
+		any_core_location = { development >= 100 }
+	}
+}
+
+cold_war = {
+	possible = { }
+
+	happened = {
+		any_current_war = {
+		    war_stalling_length_in_years >= 2
+		}
+	}
+}
+
+until_death_do_us_apart = {
+	possible = {
+	}
+
+	happened = {
+		any_royal_marriage = {
+			count >= 1
+		}
+	}
+}
+
+that_is_mine = {
+	possible = {
+
+	}
+	happened = {
+		has_variable = unlock_achievement_that_is_mine
+	}
+}
+
+victorious = {
+	possible = {
+
+	}
+	happened = {
+		has_variable = unlock_achievement_victorious
+	}
+}
+
+its_just_business = {
+	possible = {
+
+	}
+	happened = {
+		has_variable = unlock_achievement_its_just_business
+	}
+}
+
+all_in_favor = {
+	possible = {
+	}
+	happened = {
+		has_variable = unlock_achievement_all_in_favor
+	}
+}
+
+patron_of_the_arts = {
+	possible = {
+	}
+	happened = {
+		has_variable = unlock_achievement_patron_of_the_arts
+	}
+}
+
+combined_arms = {
+	possible = {
+	}
+	happened = {
+		any_country_sub_unit = {
+			is_levy = yes
+		}
+		any_unit = {
+			has_regulars = yes
+		}
+		any_unit = {
+			has_mercenaries = yes
+		}
+	}
+}
+
+rule_of_law = {
+	possible = {
+	}
+	happened = {
+		has_variable = unlock_achievement_rule_of_law
+	}
+}
+
+here_i_stand = {
+	possible = { }
+
+	happened = {
+		religion = religion:lutheran
+		num_of_religious_aspects = 3
+	}
+}
+
+#Achievements Easy
+
+rule_britannia = {
+	possible = { has_or_had_tag = ENG }
+
+	happened = {
+		tag = GBR
+		is_hegemon_type = hegemony:naval_hegemon
+	}
+}
+
+plus_ultra = {
+	possible = { has_or_had_tag = CAS }
+
+	happened = {
+		OR = {
+			tag = CAS
+			tag = SPA
+		}
+		has_presence_in = region:iberia_region
+		has_presence_in = region:maghreb_region
+		has_presence_in = region:caribbean_region
+		has_presence_in = region:mesoamerica_region
+		has_presence_in = region:andes_region
+	}
+}
+
+city_of_mans_desire = {
+	possible = { has_or_had_tag = TUR }
+
+	happened = {
+		owns = location:constantinople
+		custom_tooltip = {
+		text = has_emerged_victorious_during_rise_of_ottomans_situation_tt
+			has_global_variable = victory_in_rise_of_ottomans_variable
+		}
+	}
+}
+a_pile_of_gold = {
+	possible = {
+
+	}
+	happened = {
+		any_owned_location = {
+			OR = {
+				raw_material ?= goods:goods_gold
+				raw_material ?= goods:silver
+			}
+			raw_material_output > 0
+			count >= 35
+		}
+	}
+}
+
+at_every_continent = {
+	possible = {
+
+	}
+	happened = {
+		any_owned_location = {
+			continent = continent:europe
+		}
+		any_owned_location = {
+			continent = continent:asia
+		}
+		any_owned_location = {
+			continent = continent:africa
+		}
+		any_owned_location = {
+			continent = continent:america
+		}
+		any_owned_location = {
+			continent = continent:oceania
+		}
+	}
+}
+
+grand_coalition = {
+	possible = { }
+
+	happened = {
+		any_international_organizations_member_of = {
+			international_organization_type = international_organization_type:coalition
+			total_members > 5
+		}
+	}
+}
+
+it_belongs_in_a_museum = {
+	possible = { }
+
+	happened = {
+		has_variable = unlock_achievement_it_belongs_in_a_museum
+	}
+}
+
+a_cabinet_of_curiosities = {
+	possible = { }
+
+	happened = {
+		any_cabinet_action = {
+			cabinet_action_type = adm
+		}
+		any_cabinet_action = {
+			cabinet_action_type = dip
+		}
+		any_cabinet_action = {
+			cabinet_action_type = mil
+		}
+	}
+}
+
+hearts_and_minds = {
+	possible = { }
+
+	happened = {
+		has_variable = unlock_achievement_hearts_and_minds
+	}
+}
+
+a_brave_new_world = {
+	possible = {
+		NOT = {
+			capital ?= { continent = continent:america }
+		}
+	}
+
+	happened = {
+		continent:america = {
+			any_location_in_continent = {
+				is_discovered_by = root
+			}
+		}
+	}
+}
+
+
+
+#Achievements Medium
+
+crusader_kings = {
+	possible = { }
+
+	happened = {
+		has_variable = unlock_achievement_crusader_kings
+	}
+}
+
+lingua_franca = {
+	possible = { has_or_had_tag = FRA }
+
+	happened = { is_hegemon_type = hegemony:cultural_hegemon }
+}
+
+break_the_yoke = {
+	possible = {
+		OR = {
+			has_or_had_tag = MOS
+			has_or_had_tag = BLO
+			has_or_had_tag = DMI
+			has_or_had_tag = GLM
+			has_or_had_tag = KCH
+			has_or_had_tag = KOS
+			has_or_had_tag = MRM
+			has_or_had_tag = NSL
+			has_or_had_tag = NZH
+			has_or_had_tag = RSO
+			has_or_had_tag = RYA
+			has_or_had_tag = SKY
+			has_or_had_tag = SMO
+			has_or_had_tag = TRS
+			has_or_had_tag = TVE
+			has_or_had_tag = YAR
+			has_or_had_tag = YRV
+			has_or_had_tag = FMB
+			has_or_had_tag = GRS
+			has_or_had_tag = KAS
+			has_or_had_tag = KLN
+			has_or_had_tag = KZK
+			has_or_had_tag = MOG
+			has_or_had_tag = MSV
+			has_or_had_tag = PRK
+			has_or_had_tag = SZL
+			has_or_had_tag = UGL
+			has_or_had_tag = VLR
+			has_or_had_tag = VYA
+			has_or_had_tag = ZUB
+		}
+	}
+
+	happened = {
+		NOT = {
+			is_member_of_international_organization = international_organization:tatar_yoke
+		}
+	}
+}
+
+felix_austria = {
+	possible = { has_or_had_tag = HAB }
+
+	happened = {
+		international_organization:hre.leader_country = root
+		is_great_power = yes
+	}
+}
+
+hongwu_di = {
+	possible = { has_or_had_tag = CHI }
+
+	happened = {
+		international_organization:middle_kingdom.leader_country = root
+		tag = MNG
+		region:north_china_region = {
+			any_ownable_location_in_region = {
+				percent = 1
+				top_owner ?= root 
+			}
+		}
+		region:south_china_region = {
+			any_ownable_location_in_region = {
+				percent = 1
+				top_owner ?= root 
+			}
+		}
+		region:west_china_region = {
+			any_ownable_location_in_region = {
+				percent = 1
+				top_owner ?= root 
+			}
+		}
+		region:east_china_region = {
+			any_ownable_location_in_region = {
+				percent = 1
+				top_owner ?= root 
+			}
+		}
+	}
+}
+
+just_a_little_bit_more_patience = {
+	possible = { }
+
+	happened = {
+		current_year >= 1836
+	}
+}
+
+potato_potato = {
+	possible = {
+		capital ?= {
+			continent = continent:europe
+		}
+	}
+
+	happened = {
+		any_owned_location = {
+			raw_material ?= goods:potato
+			raw_material_output > 0
+		}
+	}
+}
+
+three_mountains = {
+	possible = { culture = culture:ryukyu_culture }
+
+	happened = { tag = RYU }
+}
+
+doge_coins = {
+	possible = { has_or_had_tag = VEN }
+
+	happened = { is_hegemon_type = hegemony:economic_hegemon }
+}
+
+je_maintiendrai = {
+	possible = {
+		culture = { has_culture_group = culture_group:netherlandish_group }
+	}
+
+	happened = { tag = NED }
+}
+
+lion_of_the_north = {
+	possible = {
+		has_or_had_tag = SWE
+	}
+
+	happened = {
+		religion = religion:lutheran
+		custom_tooltip = {
+			text = unlock_lion_of_the_north_achievement_tt
+			has_variable = unlock_lion_of_the_north_achievement_variable
+		}
+	}
+}
+
+the_navigator = {
+	possible = { has_or_had_tag = POR }
+
+	happened = {
+		has_presence_in = continent:africa
+		has_presence_in = continent:america
+		has_presence_in = sub_continent:south_asia
+		has_presence_in = region:indonesia_region
+
+		OR = {
+			current_age = age_1_traditions
+			current_age = age_2_renaissance
+			current_age = age_3_discovery
+		}
+	}
+}
+
+house_of_hus = {
+	possible = { has_or_had_tag = BOH }
+
+	happened = {
+		religion = religion:hussite
+
+		custom_tooltip = {
+			text = hussites_won_hussite_wars_situation_tt #"[ShowReligionName('hussite')] was victorious during the [ShowSituationName('hussite_wars')] [situation|e]"
+			has_global_variable = victorious_hussites_variable
+		}
+	}
+}
+
+the_spice_must_flow = {
+	possible = {
+		capital ?= {
+			continent = continent:europe
+		}
+	}
+
+	happened = {
+		any_trade = {
+			goods = goods:cloves
+			count > 0
+		}
+	}
+}
+
+scientific_victory = {
+	possible = { }
+
+	happened = {
+		num_of_advances_researched >= 450
+	}
+}
+
+cities_skyline = {
+	possible = { }
+
+	happened = {
+		any_owned_location = {
+			total_building_levels >= 200
+		}
+	}
+}
+
+moneytalks = {
+	possible = { }
+
+	happened = {
+		is_hegemon_type = hegemony:economic_hegemon
+	}
+}
+
+#Achievements Hard
+
+what_the_lord_giveth = {
+	possible = { num_estate_privileges:nobles_estate >= 8 }
+
+	happened = {
+		num_estate_privileges:nobles_estate = 0
+	}
+}
+
+be_in_all_the_clubs = {
+	possible = { }
+
+	happened = {
+		any_international_organizations_member_of = {
+			count >= 6
+		}
+	}
+}
+
+welfare_state = {
+	possible = { }
+
+	happened = {
+		any_market_present_in_country = {
+			market_max_food > 60000
+			market_food_percentage > 0.99
+		}
+	}
+}
+
+five_hundred_miles = {
+	possible = { }
+
+	happened = {
+		any_owned_location = {
+			num_roads >= 5
+			count >= 100
+		}
+	}
+}
+
+total_control = {
+	possible = { }
+
+	happened = {
+		any_owned_location = {
+			count >= 20
+			local_control = 1
+		}
+	}
+}
+
+true_heir_of_timur = {
+	possible = { }
+
+	happened = {
+		custom_tooltip = {
+			text = had_timur_as_past_ruler_tt
+			has_global_variable = had_timur_ruler_variable
+		}
+		tag = MUG
+	}
+}
+
+respected = {
+	possible = { }
+
+	happened = {
+		prestige = 100
+		legitimacy = 100
+		stability = 100
+	}
+}
+
+letat_cest_moi = {
+	possible = { }
+
+	happened = {
+		societal_value:centralization_vs_decentralization < -99
+		societal_value:absolutism_vs_liberalism < -99
+	}
+}
+
+manchurian_candidate = {
+	possible = {
+		culture = culture:jurchen_culture
+	}
+
+	happened = {
+		international_organization:middle_kingdom = {
+			leader_country = root
+		}
+	}
+}
+
+#Achievements Very Hard
+
+what_a_great_guy = {
+	possible = { }
+
+	happened = {
+		#asia
+		has_presence_in = sub_continent:east_asia
+		has_presence_in = sub_continent:north_asia
+		has_presence_in = sub_continent:central_asia
+		has_presence_in = sub_continent:middle_east
+		has_presence_in = sub_continent:south_asia
+		has_presence_in = sub_continent:south_east_asia
+		#Oceania
+		has_presence_in = sub_continent:pacific_islands
+		has_presence_in = sub_continent:australasia
+		#America
+		has_presence_in = sub_continent:north_america
+		has_presence_in = sub_continent:south_america
+		#Africa
+		has_presence_in = sub_continent:north_africa
+		has_presence_in = sub_continent:west_africa
+		has_presence_in = sub_continent:east_africa
+		has_presence_in = sub_continent:central_africa
+		has_presence_in = sub_continent:southern_africa
+		#europe
+		has_presence_in = sub_continent:western_europe
+		has_presence_in = sub_continent:eastern_europe
+	}
+}

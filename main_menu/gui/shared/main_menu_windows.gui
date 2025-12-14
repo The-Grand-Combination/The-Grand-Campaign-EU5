@@ -1,0 +1,614 @@
+#####################
+### WINDOW LAYERS ###
+#####################
+
+# This should be on top of everything
+layer debug         { priority = 50 }
+layer confirmation  { priority = 14 }
+layer loadsave      { priority = 13 }
+layer frontend      { priority = 12 }
+layer tutorial      { priority = 11 }
+layer bottom_focused{ priority = 10 }
+layer top           { priority = 9  }
+layer middle        { priority = 8  }
+layer windows_layer { priority = 7  }
+layer messages      { priority = 6  }
+layer outliner      { priority = 5  }
+layer lateralview   { priority = 4  }
+layer bottom        { priority = 3  }
+layer sidemenu      { priority = 2  }
+layer topbar        { priority = 1  }
+layer game_rules	{ priority = -1 }
+layer map_marker    { priority = -2 }
+
+######################################################
+################## WINDOW TEMPLATES ##################
+######################################################
+
+template layoutpolicy_expanding {
+	layoutpolicy_horizontal = expanding
+	layoutpolicy_vertical = expanding
+}
+
+# Standard margins for windows, to get inside the standard decoration gfx around the frame.
+template window_margin {
+	margin_top = 7
+	margin_bottom = 20
+	margin_left = 7
+	margin_right = 7
+}
+
+template window_margin_alt {
+	margin_top = 7
+	margin_bottom = 7
+	margin_left = 7
+	margin_right = 7
+}
+
+template window_main_tabs_margin_alt {
+	margin_left = 15
+	margin_right = 15
+	margin_bottom = 10
+}
+
+template button_secondary_tab_hbox_props {
+	margin_left = 0
+	margin_right = 0
+	margin_top = 5
+	spacing = 5
+}
+
+template header_title_format_template {
+	align = center|nobaseline
+	using = Font_Type_Headers
+	using = Font_Size_Big
+	default_format = "#header_titles"
+}
+
+template window_header_alt_fade_template {
+	modify_texture = {
+		texture = "gfx/interface/component_masks/mask_fade_horizontal_middle.dds"
+		blend_mode = alphamultiply
+		alpha = 0.5
+	}
+
+	modify_texture = {
+		texture = "gfx/interface/component_masks/mask_fadehorizontal_middle_thick.dds"
+		blend_mode = alphamultiply
+	}
+}
+
+######################################################
+####################### TYPES ########################
+######################################################
+
+types WindowTypes
+{
+	####################################
+	##### USEFUL LAYOUT SHORTHANDS #####
+	####################################
+
+	## Use this to create empty space, ie. in a flowcontainer.
+	type spacer = widget {
+		name = "spacer"
+		layoutpolicy_horizontal = fixed
+		layoutpolicy_vertical = fixed
+	}
+
+	# type expand_flavor = widget {
+	# 	# block "expander_size" {
+	# 		size = {-1 15}
+	# 	# }
+
+	# 	# block "expander_margin" {}
+		
+	# 	layoutpolicy_horizontal = growing
+	# 	layoutpolicy_vertical = growing
+
+	# 	background = {
+	# 		# block "expander_texture" {
+	# 			texture = "gfx/interface/cards/floral_pattern_05.dds"
+	# 			texture_density = 2
+	# 			spriteType = corneredtiled
+	# 			spriteBorder = { 0 0 }
+	# 			blend_mode = multiply
+	# 			alpha = 0.1
+	# 			margin = {0 3}
+
+	# 			modify_texture = {
+	# 				using = overlay_cloth_texture
+	# 				blend_mode = overlay
+	# 			}
+				
+	# 			modify_texture = {
+	# 				texture = "gfx/interface/component_masks/mask_fadehorizontal_middle_thick.dds"
+	# 				texture_density = 2
+	# 				mirror = horizontal
+	# 				blend_mode = alphamultiply
+	# 			}
+	# 		# }
+	# 	}
+	# }
+
+    type header_title = text_single {
+		using = layoutpolicy_expanding
+		using = header_title_format_template
+		default_format = "#header_titles"
+	}
+
+	type window_header = widget {
+		layoutpolicy_horizontal = expanding
+		size = { -1 42 }
+
+		vbox = {
+			# block "header_upper_divider" {}
+
+			widget = {
+				layoutpolicy_horizontal = expanding
+				size = { -1 40 }
+
+				# block "header_pattern_texture" {
+					using = bg_overlay_pattern_04
+				# }
+
+				block "header_text_object" {
+					hbox = {
+						header_title = {
+							block "header_text" {
+								text = "DEFAULT_TEXT"
+							}
+						}
+					}
+				}
+			}
+
+			divider_center_gold = {
+				layoutpolicy_horizontal = expanding
+				size = { -1 1.5 }
+			}
+		}
+	}
+
+	type window_header_alt = widget {
+		layoutpolicy_horizontal = expanding
+		size = { -1 40 }
+		
+		vbox = {	
+			widget = {
+				layoutpolicy_horizontal = expanding
+				size = { -1 40 }
+
+				# block "header_pattern_texture" {
+
+					block "window_header_alt_color" {
+						background = {
+							block "window_header_alt_color_texture" {
+								using = color_dark_red_texture
+							}
+
+							# block "window_header_alt_fade" {
+								using = window_header_alt_fade_template
+							# }
+						}
+					}
+
+					background = {
+						texture = "[GetGraphicalCultureTexture('top_header_bg')]"
+						texture_density = 2
+						spriteType = corneredtiled
+						spriteborder = { 0 0 }
+						alpha = 0.6
+						
+						modify_texture = {
+							block "window_header_alt_color_texture" {
+								texture = "gfx/interface/colors/market_red.dds"
+							}
+							blend_mode = overlay
+						}
+
+						
+						modify_texture = {
+							name = "mask"
+							texture = "gfx/interface/component_masks/mask_fade_horizontal_middle.dds"
+							blend_mode = alphamultiply
+							alpha = 0.8
+						}
+						modify_texture = {
+							name = "mask"
+							texture = "gfx/interface/component_masks/mask_fadehorizontal_middle_thick.dds"
+							blend_mode = alphamultiply
+						}
+					}
+
+					widget = {
+						layoutpolicy_horizontal = expanding
+						size = { 100% 2 }
+						position = { 0 3 }
+					
+						background = {
+							name = "ui_library_header"
+							using = color_black_texture
+							spriteType = "corneredtiled"
+							texture_density = 2
+							alpha = 0.3
+							modify_texture = {
+								name = "mask"
+								texture = "gfx/interface/component_masks/mask_fadehorizontal_middle_thick.dds"
+								blend_mode = alphamultiply
+							}
+						}
+					}
+
+					widget = {
+						layoutpolicy_horizontal = expanding
+						size = { 100% 1 }
+						position = { 0 5 }
+					
+						background = {
+							name = "ui_library_header"
+							using = color_white_texture
+							spriteType = "corneredtiled"
+							texture_density = 2
+							alpha = 0.2
+							modify_texture = {
+								name = "mask"
+								texture = "gfx/interface/component_masks/mask_fade_horizontal_middle.dds"
+								blend_mode = alphamultiply
+								alpha = 0.5
+							}
+							modify_texture = {
+								name = "mask"
+								texture = "gfx/interface/component_masks/mask_fadehorizontal_middle_thick.dds"
+								blend_mode = alphamultiply
+							}
+						}
+					}
+
+					widget = {
+						layoutpolicy_horizontal = expanding
+						size = { 100% 2 }
+						position = { 0 34 }
+					
+						background = {
+							name = "ui_library_header"
+							using = color_black_texture
+							spriteType = "corneredtiled"
+							texture_density = 2
+							alpha = 0.3
+							modify_texture = {
+								name = "mask"
+								texture = "gfx/interface/component_masks/mask_fadehorizontal_middle_thick.dds"
+								blend_mode = alphamultiply
+							}
+						}
+					}
+
+					widget = {
+						layoutpolicy_horizontal = expanding
+						size = { 100% 1 }
+						position = { 0 36 }
+					
+						background = {
+							name = "ui_library_header"
+							using = color_white_texture
+							spriteType = "corneredtiled"
+							texture_density = 2
+							alpha = 0.3
+							modify_texture = {
+								name = "mask"
+								texture = "gfx/interface/component_masks/mask_fade_horizontal_middle.dds"
+								color = { 0 0 0 0 }
+								blend_mode = alphamultiply
+								alpha = 0.5
+							}
+							modify_texture = {
+								name = "mask"
+								texture = "gfx/interface/component_masks/mask_fadehorizontal_middle_thick.dds"
+								blend_mode = alphamultiply
+							}
+						}
+					}
+				# }
+
+				block "header_text_object" {
+					hbox = {
+						header_title = {
+							block "header_text" {
+								text = "DEFAULT_TEXT"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	# type window_popup_header_alt = widget {
+	# 	layoutpolicy_horizontal = expanding
+	# 	size = { -1 50 }
+
+	# 	vbox = {	
+	# 		widget = {
+	# 			layoutpolicy_horizontal = expanding
+	# 			size = { -1 50 }
+
+	# 			# block "header_pattern_texture" {
+	# 				using = bg_card_header_cloth_01
+	# 			# }
+
+	# 			block "header_text_object" {
+	# 				hbox = {
+	# 					header_title = {
+	# 						block "header_text" {
+	# 							text = "DEFAULT_TEXT"
+	# 						}
+	# 						maximumsize = { 420 -1 }
+	# 					}
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	type window_selection_header_alt = widget {
+		layoutpolicy_horizontal = expanding
+		size = { -1 40 }
+
+		vbox = {
+			widget = {
+				layoutpolicy_horizontal = expanding
+				size = { -1 40 }
+
+				# block "header_pattern_texture" {
+					background = {
+						using = color_dark_brown_texture
+						modify_texture = {
+							texture = "gfx/interface/colors/black.dds"
+							blend_mode = multiply
+							alpha = 0.4
+						}
+					}
+
+					background = {
+						using = color_bg_brown_texture
+						modify_texture = {
+							texture = "gfx/interface/colors/intense_brown.dds"
+							blend_mode = add
+							alpha = 0.3
+						}
+
+						block "window_header_fade" {
+							modify_texture = {
+								texture = "gfx/interface/component_masks/mask_fade_horizontal_middle.dds"
+								blend_mode = alphamultiply
+								alpha = 0.5
+							}
+
+							modify_texture = {
+								texture = "gfx/interface/component_masks/mask_fadehorizontal_middle_thick.dds"
+								blend_mode = alphamultiply
+							}
+						}
+					}
+
+					background = {
+						block "header_graphical_texture" {
+							texture = "[GetGraphicalCultureTexture('top_header_bg')]"
+						}
+						texture_density = 2
+						spriteType = corneredtiled
+						spriteborder = { 0 0 }
+						alpha = 0.4
+						
+						modify_texture = {
+							texture = "gfx/interface/colors/gold_dark.dds"
+							blend_mode = overlay
+						}
+
+						modify_texture = {
+							texture = "gfx/interface/colors/yellow.dds"
+							blend_mode = overlay
+							alpha = 0.2
+						}
+
+						modify_texture = {
+							name = "mask"
+							texture = "gfx/interface/component_masks/mask_fade_horizontal_middle.dds"
+							blend_mode = alphamultiply
+							alpha = 0.5
+						}
+						modify_texture = {
+							name = "mask"
+							texture = "gfx/interface/component_masks/mask_fadehorizontal_middle_thick.dds"
+							blend_mode = alphamultiply
+						}
+					}
+
+					widget = {
+						layoutpolicy_horizontal = expanding
+						size = { 100% 2 }
+						position = { 0 3 }
+					
+						background = {
+							name = "ui_library_header"
+							using = color_black_texture
+							spriteType = "corneredtiled"
+							texture_density = 2
+							alpha = 0.3
+							modify_texture = {
+								name = "mask"
+								texture = "gfx/interface/component_masks/mask_fadehorizontal_middle_thick.dds"
+								blend_mode = alphamultiply
+							}
+						}
+					}
+
+					widget = {
+						layoutpolicy_horizontal = expanding
+						size = { 100% 1 }
+						position = { 0 5 }
+					
+						background = {
+							name = "ui_library_header"
+							using = color_white_texture
+							spriteType = "corneredtiled"
+							texture_density = 2
+							alpha = 0.2
+							modify_texture = {
+								name = "mask"
+								texture = "gfx/interface/component_masks/mask_fade_horizontal_middle.dds"
+								blend_mode = alphamultiply
+								alpha = 0.5
+							}
+							modify_texture = {
+								name = "mask"
+								texture = "gfx/interface/component_masks/mask_fadehorizontal_middle_thick.dds"
+								blend_mode = alphamultiply
+							}
+						}
+					}
+					widget = {
+						layoutpolicy_horizontal = expanding
+						size = { 100% 2 }
+						position = { 0 34 }
+					
+						background = {
+							name = "ui_library_header"
+							using = color_black_texture
+							spriteType = "corneredtiled"
+							texture_density = 2
+							alpha = 0.3
+							modify_texture = {
+								name = "mask"
+								texture = "gfx/interface/component_masks/mask_fadehorizontal_middle_thick.dds"
+								blend_mode = alphamultiply
+							}
+						}
+					}
+					widget = {
+						layoutpolicy_horizontal = expanding
+						size = { 100% 1 }
+						position = { 0 36 }
+					
+						background = {
+							name = "ui_library_header"
+							using = color_white_texture
+							spriteType = "corneredtiled"
+							texture_density = 2
+							alpha = 0.3
+							modify_texture = {
+								name = "mask"
+								texture = "gfx/interface/component_masks/mask_fade_horizontal_middle.dds"
+								color = { 0 0 0 0 }
+								blend_mode = alphamultiply
+								alpha = 0.5
+							}
+							modify_texture = {
+								name = "mask"
+								texture = "gfx/interface/component_masks/mask_fadehorizontal_middle_thick.dds"
+								blend_mode = alphamultiply
+							}
+						}
+					}
+				# }
+
+				block "header_text_object" {
+					hbox = {
+						header_title = {
+							block "header_text" {
+								text = "DEFAULT_TEXT"
+							}
+
+							maximumsize = { 420 -1 }
+						}
+					}
+				}
+			}
+		}
+	}
+    
+	### SORTING BUTTON
+	type sort_by_button = button {
+		allow_outside = yes
+
+		layoutpolicy_horizontal = expanding
+		layoutpolicy_vertical = expanding
+
+		# block "stretchfactor" {
+		# 	layoutstretchfactor_horizontal = 1
+		# }
+
+		# block "main_icon_onclick" {}
+
+		widget = {
+			size = { 30 20 }
+			parentanchor = center
+
+			button_icon = {
+				size = { 20 20 }
+
+				# block "main_icon_onclick" {}
+				# block "main_icon_texture" {
+					texture = "gfx/interface/icons/sort/_default.dds"
+					texture_density = 2
+				# }
+
+				# block "main_icon_down" {}
+			}
+
+			button_icon = {
+				size = { 8 8 }
+				position = { 22 0 }
+
+				# block "main_icon_onclick" {}
+				# block "top_arrow_texture" {
+					texture = "gfx/interface/icons/flat_icons/arrow.dds"
+					texture_density = 2
+				# }
+
+				# block "top_arrow_down" {}
+			}
+
+			button_icon = {
+				size = { 8 8 }
+				position = { 22 12 }
+
+				# block "main_icon_onclick" {}
+
+				# block "bottom_arrow_texture" {
+					texture = "gfx/interface/icons/flat_icons/arrow.dds"
+					texture_density = 2
+					mirror = vertical
+				# }
+
+				# block "bottom_arrow_down" {}
+			}
+		}
+	}
+    
+	## EMPTY SUB-HEADER
+	type subheader = widget {
+		layoutpolicy_horizontal = expanding
+		size = { -1 50 }
+		vbox  = {
+			# block "subheader_top_divider" {}
+
+			widget = {
+				using = layoutpolicy_expanding
+				block "subheader_background" {}
+
+				hbox = {
+					block "content_margin" {
+						margin = { 8 0 }
+					}
+					widget = {
+						using = layoutpolicy_expanding
+						block "content" {}
+					}
+				}
+			}
+
+			block "subheader_bottom_divider" {}
+		}
+	}
+}

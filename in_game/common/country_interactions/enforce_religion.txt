@@ -1,0 +1,63 @@
+﻿enforce_religion = {
+
+	type = subject
+	category = CATEGORY_SUBJECT_ACTIONS
+
+	potential = {
+	}
+
+	allow = {
+	}
+
+	select_trigger = {
+		looking_for_a = country
+		interaction_source_list = {
+			scope:actor = {
+				every_subject = {
+					add_to_list = source
+				}
+			}
+		}
+		target_flag = recipient
+		name = "choose_country"
+		column = {
+			data = name
+		}
+		visible = {
+			not = { religion = scope:actor.religion }
+		}
+        enabled = {
+			subject_loyalty >= MIN_SUBJECT_LOYALTY_FOR_ACTION
+			liberty_desire < MAX_SUBJECT_LIBERTY_DESIRE_FOR_ACTION
+			trigger_if = {
+				limit = { modifier:blocked_from_conversion = yes }
+				always = no
+			}
+		}
+	}
+
+	effect = {
+		scope:recipient = {
+			change_religion = scope:actor.religion
+			change_religion_for_ruler_and_family = { country = scope:recipient religion = scope:actor.religion }
+			add_cooldown = {
+				type = convert_religion
+				years = 10
+			}
+			capital = {
+				every_pop = {
+					limit = {
+						NOT = {
+							religion = scope:actor.religion
+						}
+					}
+					split_pop = {
+						fraction = 0.16
+						religion = scope:actor.religion
+					}
+				}
+			}
+			add_liberty_desire = liberty_desire_ultimate_plus
+		}
+	}
+}

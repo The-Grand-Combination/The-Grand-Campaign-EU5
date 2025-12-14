@@ -1,0 +1,524 @@
+types ModToolsTypes
+{
+	type BeingUploadedDialog = widget {
+		using = bg_window_default_alt
+		parentanchor = center
+
+		position = { 0 -80 }
+		size = { 70% 120 }
+
+		vbox = {
+			layoutpolicy_horizontal = expanding
+			hbox = {
+				layoutpolicy_horizontal = expanding
+				widget = {
+					layoutpolicy_horizontal = expanding
+					text_single = {
+						size = { 120 30 }
+						autoresize = no
+						align = center
+						text = "MOD_UPLOAD_IN_PROGRESS"
+						visible = "[Not(ModToolsGui.HasLatestOperationResult)]"
+					}
+
+					text_single = {
+						name = "operation_result_text"
+						size = { 100% 30 }
+						autoresize = no
+						align = center
+						text = "[ModToolsGui.LatestOperationResult]"
+						visible = "[ModToolsGui.HasLatestOperationResult]"
+					}
+				}
+				
+				progressbar = {
+					size = { 30 30 }
+					using = loading_progress_texture			
+					visible = "[Not(ModToolsGui.HasLatestOperationResult)]"
+				}
+				
+				expand = {}
+			}
+
+			button_regular = {
+				align = left|nobaseline
+				using = button_resize_to_fit_text
+				text = "MOD_CLOSE_BUTTON"
+				enabled = "[ModToolsGui.HasLatestOperationResult]"			
+				onclick = "[ModToolsGui.CloseUploadingDialog]"
+				tooltip_enabled = no
+			}
+		}
+	}
+	
+	type ModToolsGui = window {
+		using = bg_window_default_alt
+		parentanchor = center
+
+		vbox = {
+			alwaystransparent = yes
+			using = window_margin_alt
+
+			window_header_alt = {
+				blockoverride "header_text" {
+					text = "MOD_TOOLS"
+				}
+			}
+
+			block "extra_widgets" {}
+		}
+
+		widget = {
+			parentanchor = right
+			position = { -5 5 }
+			size = { 40 40 }
+	
+			ui_direction_button_holder_right = {}
+	
+			button_close_alt = {
+				blockoverride "close_onclick" {
+					onclick = "[ModToolsGui.Close]"
+					onclick = "[GetVariableSystem.Set( 'mods_tools', 'create_mod' )]"
+				}
+			}
+		}
+	}
+
+	type CreateModForm = vbox {
+		using = layoutpolicy_expanding
+		using = bg_main_inner_alt
+		using = window_margin_alt
+
+		widget = {
+			using = layoutpolicy_expanding
+
+			vbox = {			
+				enabled = "[Not(ModToolsGui.IsUploadingDialogOpen)]"		
+				layoutpolicy_horizontal = expanding
+				
+				# Error text if UGC is not available
+				text_single = {
+					name = "ugc_error_text"
+					visible = "[Not(ModToolsGui.IsModBackendReady)]"
+					size = { 300 30 }
+					autoresize = no
+					text = "MOD_BACKEND_NOT_AVAILABLE_STEAM"
+				}
+
+				# Mod name
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					margin = { 20 0 }
+
+					vbox = {
+						layoutpolicy_horizontal = expanding
+						text_single = {
+							layoutpolicy_horizontal = expanding
+							autoresize = no
+							size = { -1 30 }
+							text = "MOD_NAME"
+						}
+						editbox_single = {
+							name = "mod_name" #used in code
+							layoutpolicy_horizontal = expanding
+							size = { -1 30 }
+							maxcharacters = 60
+							ontextchanged = "[ModToolsGui.OnNewModName]"
+							oneditingfinished_with_changes = "[ModToolsGui.VerifyModName]"
+							blockoverride "editbox_label"
+							{
+								text = "MOD_EDITBOX_NAME"
+							}
+						}
+
+						textbox = {
+							layoutpolicy_horizontal = expanding
+							name = "mod_name_verification_text"
+							visible = "[Not(ModToolsGui.IsModNameVerified)]"
+							size = { -1 20 }
+							autoresize = no
+							fontcolor = {0.95 0.02 0.02 1.0}
+							text = "[ModToolsGui.ModNameVerificationText]"
+							using = Font_Size_Very_Small
+						}
+					}
+				}
+
+				# ID
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					margin = { 20 0 }
+					margin_bottom = 20
+
+					vbox = {
+						layoutpolicy_horizontal = expanding
+						text_single = {
+							layoutpolicy_horizontal = expanding
+							autoresize = no
+							size = { -1 30 }
+							text = "MOD_ID"
+						}
+						editbox_single = {
+							name = "mod_id" #used in code
+							layoutpolicy_horizontal = expanding
+							size = { -1 30 }
+							blockoverride "editbox_label"
+							{
+								text = "MOD_EDITBOX_ID"
+							}
+						}
+					}
+				}
+
+				# Mod Path
+				vbox = {
+					margin = { 20 5 }
+					layoutpolicy_horizontal = expanding
+					text_single = {
+						layoutpolicy_horizontal = expanding
+						autoresize = no
+						size = { -1 30 }
+						text = "MOD_PATH"
+					}
+					hbox = {
+						layoutpolicy_horizontal = expanding
+						text_single = {
+							size = { 30 30 }
+							autoresize = no
+							raw_text = "[ModToolsGui.GetRelativePathPrefix]"
+							visible = "[Not(ModToolsGui.HasAbsolutePath)]"
+						}
+
+						editbox_single = {
+							name = "mod_path" #used in code
+							size = { 270 30 }
+							maxcharacters = 50
+							ontextchanged = "[ModToolsGui.OnNewModPath]"
+							oneditingfinished_with_changes = "[ModToolsGui.VerifyModPath]"
+							blockoverride "editbox_label"
+							{
+								text = "MOD_EDITBOX_PATH"
+							}
+						}
+					}
+
+					textbox = {
+						layoutpolicy_horizontal = expanding
+						name = "path_verification_text"
+						visible = "[Not(ModToolsGui.IsModPathVerified)]"
+						size = { -1 20 }
+						autoresize = no
+						fontcolor = {0.95 0.02 0.02 1.0}
+						text = "[ModToolsGui.ModPathVerificationText]"
+						using = Font_Size_Very_Small
+					}
+				}
+
+				# Mod version
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					margin = { 20 5 }
+
+					vbox = {
+						margin_right = 20
+						layoutpolicy_horizontal = expanding
+						text_single = {
+							layoutpolicy_horizontal = expanding
+							autoresize = no
+							size = { -1 30 }
+							text = "MOD_VERSION"
+						}
+						editbox_single = {
+							name = "mod_version" #used in code
+							layoutpolicy_horizontal = expanding
+							size = { -1 30 }
+							blockoverride "editbox_label"
+							{
+								text = "MOD_EDITBOX_VERSION"
+							}
+						}
+					}
+
+					vbox = {
+						layoutpolicy_horizontal = expanding
+						text_single = {
+							layoutpolicy_horizontal = expanding
+							autoresize = no
+							size = { -1 30 }
+							text = "MOD_SUPPORTED_VERSION"
+						}
+						editbox_single = {
+							name = "mod_supp_version" #used in code
+							layoutpolicy_horizontal = expanding
+							size = { -1 30 }
+							blockoverride "editbox_label"
+							{
+								text = "MOD_EDITBOX_SUPPORTED_VERSION"
+							}
+						}
+					}
+				}
+
+				# Mod description
+				vbox = {
+					margin = { 20 5 }
+					layoutpolicy_horizontal = expanding
+					text_single = {
+						layoutpolicy_horizontal = expanding
+						autoresize = no
+						size = { -1 30 }
+						text = "MOD_DESC"
+					}
+
+					editbox_single = {
+						name = "mod_desc" #used in code
+						size = { 300 130 }
+						multiline = yes
+						ontextchanged = "[ModToolsGui.OnNewModDesc]"
+						oneditingfinished_with_changes = "[ModToolsGui.VerifyModDesc]"
+						maxcharacters = 8000
+						blockoverride "editbox_label"
+						{
+							text = "MOD_EDITBOX_DESC"
+						}
+					}
+
+					textbox = {
+						layoutpolicy_horizontal = expanding
+						name = "mod_desc_verification_text"
+						visible = "[Not(ModToolsGui.IsModDescVerified)]"
+						size = { -1 20 }
+						autoresize = no
+						fontcolor = {0.95 0.02 0.02 1.0}
+						text = "[ModToolsGui.ModDescVerificationText]"
+						using = Font_Size_Very_Small
+					}
+				}
+				#Tags
+				vbox = {	
+					margin = { 20 0 }	
+					using = layoutpolicy_expanding
+					text_single = {
+						layoutpolicy_horizontal = expanding
+						autoresize = no
+						size = { -1 30 }
+						text = "MOD_TAGS"
+					}
+
+					scrollarea = {
+						using = layoutpolicy_expanding
+						scrollbarpolicy_horizontal = always_off
+
+						scrollbar_vertical = {
+							using = Scrollbar_Vertical
+						}
+
+						scrollwidget = {
+							fixedgridbox = {	
+								datamodel = "[ModToolsGui.Tags]"
+								addcolumn = 50%
+								addrow = 50
+								datamodel_wrap = 2
+								setitemsizefromcell = yes
+								flipdirection = yes
+								
+								item = {
+									widget = {
+										hbox = {
+											margin = { 20 5 }
+											text_single = {	
+												using = layoutpolicy_expanding
+												autoresize = no
+												text = "[TagInfo.Tag]"
+											}
+											checkbutton = {
+												using = button_checkbox_template
+												onclick = "[TagInfo.ToggleSelected]"
+												tooltip_enabled = no
+												checked = "[TagInfo.IsSelected]"
+											}
+
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+
+				#buttons to create/upload
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					margin = { 10 10 }
+					widget = {
+						name = "mod_tools_spacer"
+						size = { 100 1 }
+						layoutpolicy_horizontal = fixed
+						layoutpolicy_vertical = preferred
+					}
+					button_regular = {
+						name = "stub_mod"
+						align = left|nobaseline
+						using = button_resize_to_fit_text
+						enabled = "[And(And(Not(ModToolsGui.HasPathToMod), ModToolsGui.HasPathToValidModFolder), ModToolsGui.HasRequiredFieldsFilledIn)]"
+						text = "MOD_CREATE_MOD_STUB"
+						tooltip = "MOD_CREATE_MOD_STUB_TOOLTIP"
+						onclick = "[ModToolsGui.CreateStubMod]"
+					}
+					button_regular = {
+						name = "create_mod"
+						align = left|nobaseline
+						using = button_resize_to_fit_text
+						enabled = "[And(ModToolsGui.HasPathToMod, ModToolsGui.HasRequiredFieldsFilledIn)]"
+						text = "MOD_UPLOAD_NEW_MOD"
+						tooltip = "MOD_UPLOAD_NEW_MOD_TOOLTIP"
+						onclick = "[ModToolsGui.UploadNewMod]"
+					}
+				}
+			}
+
+			
+
+			BeingUploadedDialog = {
+				visible = "[ModToolsGui.IsUploadingDialogOpen]"
+			}
+		}
+	}
+
+	type ItemsView = vbox {		
+		using = layoutpolicy_expanding
+		using = bg_main_inner_alt
+		using = window_margin_alt
+
+		widget = {
+			using = layoutpolicy_expanding
+			vbox = {
+				enabled = "[Not(ModToolsGui.IsUploadingDialogOpen)]"
+				margin = {15 5}
+				dropdown_menu_default = {			
+					layoutpolicy_horizontal = expanding
+					name = "item_dropdown"
+	
+					datamodel = "[ModToolsGui.CurrentDataModel]"
+					onselectionchanged = "[ModToolsGui.SetDropdownValueIndex]"
+					visible = "[DataModelHasItems(ModToolsGui.CurrentDataModel)]"
+					selectedindex = "[ModToolsGui.GetDropdownValueIndex]"
+					blockoverride "dropdown_item_size" { size = { 300 20 } }
+					blockoverride "dropdown_list_position" { position = { 0 20 } }
+					blockoverride "dropdown_gridbox_size" { addcolumn = 300  addrow = 20 }
+					blockoverride "dropdown_active_item_properties" { text = "[ModToolItem.Name]" }
+					blockoverride "dropdown_item_properties" { text = "[ModToolItem.Name]" }
+				}
+		
+				
+				vbox = {
+					margin = {5 10}
+					hbox = {
+						margin = {5 5}
+						button_regular = {
+							using = button_resize_to_fit_text
+							text = "MOD_OPEN_PAGE"
+							onclick = "[ModToolsGui.OpenPage]"
+							tooltip_enabled = no
+						}
+						button_regular = {
+							using = button_resize_to_fit_text
+							text = "MOD_UNSUBSCRIBE"
+							visible = "[ModToolsGui.SelectedIsSubscribed]"
+							onclick = "[ModToolsGui.Unsubscribe]"
+							tooltip_enabled = no
+						}
+						button_regular = {
+							using = button_resize_to_fit_text
+							text = "MOD_SUBSCRIBE"
+							visible = "[Not(ModToolsGui.SelectedIsSubscribed)]"
+							onclick = "[ModToolsGui.Subscribe]"
+							tooltip_enabled = no
+						}
+						button_regular = {
+							align = left|nobaseline
+							using = button_resize_to_fit_text
+							text = "MOD_DELETE"
+							enabled = "[DataModelHasItems(ModToolsGui.UserItems)]"
+							onclick = "[ModToolsGui.Delete]"
+							tooltip = "MOD_DELETE_TT"
+						}
+						button_regular = {
+							name = "open_in_folder"
+							text = "MODS_GUI_OPEN_IN_FOLDER"
+							align = left|nobaseline
+							using = button_resize_to_fit_text
+							enabled = "[ModToolsGui.SelectedIsInstalled]"
+							onclick = "[ModToolsGui.OpenCurrentItemFolder]"
+							tooltip_enabled = no
+						}
+					}
+					
+					button_regular = {
+						using = button_resize_to_fit_text
+						text = "MOD_UPDATE"
+						onclick = "[ModToolsGui.UploadFromFolder]"
+						tooltip = "MOD_UPDATE_TT"
+					}
+				}
+				expand = {}
+			}
+
+			BeingUploadedDialog = {
+				visible = "[ModToolsGui.IsUploadingDialogOpen]"
+			}
+		}
+	}
+}
+
+ModToolsGui = {
+	name = "mod_tools" #Don't change, used in code.
+	size = { 710 950 }
+
+	blockoverride "extra_widgets" {
+
+		header_main_tabs = {
+			enabled = "[Not(ModToolsGui.IsUploadingDialogOpen)]"
+			blockoverride "content" {
+				# CREATE MOD TAB
+				button_main_tab_alt = {
+					layoutpolicy_horizontal = expanding
+					blockoverride "tab_text"{
+						text = "MOD_CREATE_MOD_TAB"
+					}
+					onclick = "[GetVariableSystem.Set( 'mods_tools', 'create_mod' )]"
+					onclick = "[ModToolsGui.SelectTab( 'create_mod' )]"
+					down = "[Or(Not(GetVariableSystem.Exists('mods_tools')), GetVariableSystem.HasValue( 'mods_tools', 'create_mod' ))]"
+					tooltip_enabled = no						
+					
+				}
+
+				# UPLOADED MODS
+				button_main_tab_alt = {
+					using = layoutpolicy_expanding
+					blockoverride "tab_text"{
+						text = "MOD_USER_ITEMS_TAB"
+					}
+					onclick = "[GetVariableSystem.Set( 'mods_tools', 'user' )]"
+					onclick = "[ModToolsGui.SelectTab( 'user' )]"
+					down = "[GetVariableSystem.HasValue( 'mods_tools', 'user' )]"
+					enabled = "[DataModelHasItems(ModToolsGui.UserItems)]"
+					tooltip_enabled = no			
+				}	
+			}
+		}
+
+		CreateModForm = {						
+			visible = "[Or(Not(GetVariableSystem.Exists('mods_tools')), GetVariableSystem.HasValue( 'mods_tools', 'create_mod' ))]"
+		}
+
+		ItemsView = {
+			name = "items"
+			visible = "[And(GetVariableSystem.Exists('mods_tools'), Not(GetVariableSystem.HasValue( 'mods_tools', 'create_mod' )))]"
+		}
+	}
+}
+
+
+
+

@@ -1,0 +1,1001 @@
+types FrontendSinglePlayerTypes
+{
+	type CountryBackgroundMap = widget {
+		size = { 100% 100% }
+
+		icon = {
+			size = { 100% 100% }
+			block "texture" {}
+		}
+
+		icon = {
+			size = { 100% 100% }
+			using = Animation_Show_Hide_Eased
+			block "visible" { visible = no }
+			block "texture" {}
+			modify_texture = { alpha = 0.8 }
+		}
+	}
+
+	type ProficiencyOptions = widget {
+		size = { 245 50 }
+		allow_outside = yes
+
+		vbox = {
+			layoutpolicy_horizontal = expanding
+
+			widget = {
+				ignore_layout = yes
+				size = {100% 100%}
+				visible = "[Or(GetVariableSystem.Exists( PlayerProficiency.GetKey ), FrontEndSinglePlayerView.IsProficiencySelected(PlayerProficiency.Self))]"
+
+				background = {
+					texture = "gfx/interface/component_tiles/tile_card_shadow.dds"
+					texture_density = 2
+					margin = {15 15}
+					spriteType = corneredstretched
+					spriteBorder = {20 20}
+					alpha = 0.2
+
+					modify_texture = {
+						using = color_bg_blue_texture
+					}
+				}
+			}
+
+			card_header_button_01 = {
+				allow_outside = yes
+				using = layoutpolicy_expanding
+
+				background = {
+					using = bg_card_header_01_default
+					blockoverride "header_color" {
+						block "proficiency_button_bg" {
+							using = color_bronze_texture
+						}
+					}
+					blockoverride "header_pattern" {
+						texture = "gfx/interface/component_overlay/cloth_texture.dds"
+						texture_density = 2
+						spriteType = Corneredtiled
+						spriteborder = { 0 0 }
+						blend_mode = overlay
+					}
+					using = graphical_culture_pattern
+				}
+
+				background = {
+					visible = "[Or(GetVariableSystem.Exists( PlayerProficiency.GetKey ), FrontEndSinglePlayerView.IsProficiencySelected(PlayerProficiency.Self))]"
+					texture = "gfx/interface/component_masks/gradient_vertical_double.dds"
+					texture_density = 2
+					alpha = 0.3
+					modify_texture = {
+						using = color_bone_texture
+					}
+				}
+
+				background = {
+					visible = "[Or(GetVariableSystem.Exists( PlayerProficiency.GetKey ), FrontEndSinglePlayerView.IsProficiencySelected(PlayerProficiency.Self))]"
+					texture = "gfx/interface/component_masks/mask_fade_horizontal_left_texture.dds"
+					texture_density = 2
+					alpha = 0.4
+					modify_texture = {
+						using = color_bone_texture
+					}
+				}
+
+				action_tooltip = {
+					# click_mode = confirm
+					title = "[PlayerProficiency.GetName]"
+					on_action = "[FrontEndSinglePlayerView.SelectProficiency(PlayerProficiency.Self)]"
+				}
+
+				onmousehierarchyenter = "[GetVariableSystem.Toggle( PlayerProficiency.GetKey )]"
+				onmousehierarchyleave = "[GetVariableSystem.Clear( PlayerProficiency.GetKey )]"
+
+				text_single = {
+					align = center|nobaseline
+					layoutpolicy_horizontal = expanding
+					text = "[PlayerProficiency.GetName]"
+					using = title_text_template
+					fontsize = 17
+				}
+			}
+		}
+
+		widget = {
+			size = {51 51}
+			parentanchor = left|vcenter
+			ignore_layout = yes
+			position = {-2 0}
+
+			widget = {
+				size = {100% 100%}
+
+				icon = {
+					size = {100% 100%}
+					parentanchor = center
+					texture = "gfx/interface/buttons/flats/flat_bg_button.dds"
+					texture_density = 2
+					modify_texture = {
+						block "icon_bckg_color" {
+							using = color_new_gold_texture
+						}
+						blend_mode = add
+					}
+					modify_texture = {
+						visible = "[Or(GetVariableSystem.Exists( PlayerProficiency.GetKey ), FrontEndSinglePlayerView.IsProficiencySelected(PlayerProficiency.Self))]"
+						texture = "gfx/interface/component_masks/gradient_vertical_double.dds"
+						texture_density = 2
+						alpha = 0.3
+					}
+				}
+				icon = {
+					size = {100% 100%}
+					parentanchor = center
+					texture = "gfx/interface/component_tiles/missions/missions_icon_frame.dds"
+					texture_density = 2
+					modify_texture = {
+						using = color_new_gold_texture
+						blend_mode = overlay
+					}
+				}
+				icon = {
+					size = {70% 70%}
+					block "icon_texture" {
+						texture = "gfx/interface/icons/player_proficiency/novice_dip.dds"
+					}
+					texture_density = 2
+					parentanchor = center
+
+					glow = {
+						name = "drop_shadow"
+						glow_radius = 3
+						color = {0.0 0.0 0.0 1.0}
+						alpha = 0.8
+					}
+				}
+			}
+		}
+	}
+}
+
+template title_text_template {
+	size = { 100% 100% }
+	autoresize = no
+	default_format = "#yellow_titles"
+	using = Font_Size_Big
+	align = center
+}
+
+template bg_section {
+	background = {
+		using = tile_background_squared_texture
+
+		modify_texture = {
+			using = color_dark_blue_texture
+		}
+		modify_texture = {
+			using = overlay_striped_texture
+			blend_mode = overlay
+			alpha = 0.5
+		}
+
+		using = overlay_window
+		using = overlay_leather
+	}
+
+	background = {
+		margin = { 10 -5 }
+		using = bg_frame_texture
+		alpha = 0.5
+	}
+}
+
+template bg_frame_texture {
+	texture = "gfx/interface/component_tiles/tile_frame_squared.dds"
+	texture_density = 2
+	spriteType = corneredtiled
+	spriteBorder = { 20 20 }
+	alpha = 0.9
+
+	using = color_new_gold
+
+	modify_texture = {
+		using = tile_frame_squared_bevel_texture
+		alpha = 0.1
+	}
+
+	modify_texture = {
+		using = overlay_window_texture
+		alpha = 0.2
+	}
+
+	using = overlay_stone
+}
+
+widget = {
+	name = "mainmenu_single_player"
+	size = { 100% 100% }
+	visible_at_creation = no
+	using = FrontEndAnimation
+
+	FrontEndBackground = {
+		blockoverride "logo_container" {
+			visible = no
+		}
+	}
+
+	widget = {
+		size = { 100% 100% }
+		background = {
+			texture = "gfx/interface/illustrations/player_profiling/player_profiling_map.dds"
+		}
+	}
+
+	widget = {
+		size = { 100% 100% }
+
+		CountryBackgroundMap = {
+			blockoverride "texture" { texture = "gfx/interface/illustrations/player_profiling/countries/ottoman.dds" }
+			blockoverride "visible" { visible = "[GetVariableSystem.Exists('TUR_scenario')]"}
+		}
+
+		CountryBackgroundMap = {
+			blockoverride "texture" { texture = "gfx/interface/illustrations/player_profiling/countries/hungary.dds" }
+			blockoverride "visible" { visible = "[GetVariableSystem.Exists('HUN_scenario')]"}
+		}
+
+		# CountryBackgroundMap = {
+		# 	blockoverride "texture" { texture = "gfx/interface/illustrations/player_profiling/countries/aragon.dds" }
+		# 	blockoverride "visible" { visible = "[GetVariableSystem.Exists('ARA_scenario')]"}
+		# }
+	}
+
+	widget = {
+		size = { 100% 100% }
+
+		# CountryBackgroundMap = {
+		# 	blockoverride "texture" { texture = "gfx/interface/illustrations/player_profiling/countries/flanders.dds" }
+		# 	blockoverride "visible" { visible = "[GetVariableSystem.Exists('FLA_scenario')]"}
+		# }
+
+		CountryBackgroundMap = {
+			blockoverride "texture" { texture = "gfx/interface/illustrations/player_profiling/countries/naples.dds" }
+			blockoverride "visible" { visible = "[GetVariableSystem.Exists('NAP_scenario')]"}
+		}
+
+		CountryBackgroundMap = {
+			blockoverride "texture" { texture = "gfx/interface/illustrations/player_profiling/countries/castille.dds" }
+			blockoverride "visible" { visible = "[GetVariableSystem.Exists('CAS_scenario')]"}
+		}
+	}
+
+	widget = {
+		size = { 100% 100% }
+
+		# CountryBackgroundMap = {
+		# 	blockoverride "texture" { texture = "gfx/interface/illustrations/player_profiling/countries/france.dds" }
+		# 	blockoverride "visible" { visible = "[GetVariableSystem.Exists('FRA_scenario')]"}
+		# }
+
+		CountryBackgroundMap = {
+			blockoverride "texture" { texture = "gfx/interface/illustrations/player_profiling/countries/holland.dds" }
+			blockoverride "visible" { visible = "[GetVariableSystem.Exists('HOL_scenario')]"}
+		}
+
+		CountryBackgroundMap = {
+			blockoverride "texture" { texture = "gfx/interface/illustrations/player_profiling/countries/norway.dds" }
+			blockoverride "visible" { visible = "[GetVariableSystem.Exists('NOR_scenario')]"}
+		}
+	}
+
+	FrontEndPreloadingWidget = {
+		position = { 0 65 }
+		visible = "[IsGamePreloading]"
+	}
+
+	###### Scenarios
+	# Novice
+	OnMapScenario = {
+		datacontext = "[GetScenario('TUR_scenario')]"
+		position = { 82% 52% }
+		# blockoverride "scenario_flag" {
+		# 	texture = "gfx/interface/illustrations/player_profiling/flags/ottoman.dds"
+		# }
+	}
+
+	OnMapScenario = {
+		datacontext = "[GetScenario('HUN_scenario')]"
+		position = { 72% 33% }
+		# blockoverride "scenario_flag" {
+		# 	texture = "gfx/interface/illustrations/player_profiling/flags/hungary.dds"
+		# }
+	}
+
+	# OnMapScenario = {
+	# 	datacontext = "[GetScenario('ARA_scenario')]"
+	# 	position = { 45% 49% }
+	# 	blockoverride "scenario_flag" {
+	# 		texture = "gfx/interface/illustrations/player_profiling/flags/aragon.dds"
+	# 	}
+	# }
+
+	# Experienced
+	OnMapScenario = {
+		datacontext = "[GetScenario('CAS_scenario')]"
+		position = { 37% 46% }
+		# blockoverride "scenario_flag" {
+		# 	texture = "gfx/interface/illustrations/player_profiling/flags/castile.dds"
+		# }
+	}
+
+	OnMapScenario = {
+		datacontext = "[GetScenario('NAP_scenario')]"
+		position = { 56% 69% }
+		# blockoverride "scenario_flag" {
+		# 	texture = "gfx/interface/illustrations/player_profiling/flags/napels.dds"
+		# }
+	}
+
+	# OnMapScenario = {
+	# 	datacontext = "[GetScenario('FLA_scenario')]"
+	# 	position = { 48% 26% }
+	# 	blockoverride "scenario_flag" {
+	# 		texture = "gfx/interface/illustrations/player_profiling/flags/flanders.dds"
+	# 	}
+	# }
+
+	# Advanced
+	# OnMapScenario = {
+	# 	datacontext = "[GetScenario('FRA_scenario')]"
+	# 	position = { 48% 30% }
+	# 	blockoverride "scenario_flag" {
+	# 		texture = "gfx/interface/illustrations/player_profiling/flags/france.dds"
+	# 	}
+	# }
+
+	OnMapScenario = {
+		datacontext = "[GetScenario('NOR_scenario')]"
+		position = { 45% 22% }
+		# blockoverride "scenario_flag" {
+		# 	texture = "gfx/interface/illustrations/player_profiling/flags/norway.dds"
+		# }
+	}
+
+	OnMapScenario = {
+		datacontext = "[GetScenario('HOL_scenario')]"
+		position = { 54% 41% }
+		# blockoverride "scenario_flag" {
+		# 	icon = {
+		# 		texture = "gfx/interface/illustrations/player_profiling/flags/venice.dds"
+		# 	}
+		# }
+	}
+
+	###### Scenario / Country window
+	widget = {
+		size = {100% 100%}
+		position = { 0 0 }
+
+		vbox = {
+			widget = {
+				layoutpolicy_horizontal = expanding
+				size = { 0 60 }
+				using = bg_section
+
+				hbox = {
+					margin = { 20 0 }
+
+					using = bg_stripe_pattern
+					blockoverride "bg_stripe_margins" {
+						margin = {15 3}
+					}
+
+					using = bg_cabinet_card_frame
+					blockoverride "cabinet_card_frame_extra" {
+						margin = {10 2}
+					}
+
+					button_regular = {
+						icon = {
+							position = { 10 0 }
+							using = ui_direction_button_overlay
+							using = back_button_alt_texture
+							size = { 24 24 }
+							parentanchor = vcenter
+						}
+
+						margin = {75 12}
+						using = button_resize_to_fit_text
+
+						name = "back_button"
+						text = "BACK"
+
+						input_action = "close_window"
+						use_global_input_instance = yes
+						
+						action_tooltip = {
+							title = "BACK"
+							on_action = "[FrontEndSinglePlayerView.OnBack]"
+						}
+
+						tooltipwidget = {
+							ContextualTooltipType = {
+								blockoverride "title_icon" {
+									icon = {
+										using = tooltip_title_icon_size
+										texture = "gfx/interface/icons/flat_icons/tabicons/settings_flat_icon.dds"
+									}
+								}
+
+								blockoverride "title_text" {
+									text = "GO_TO_MAIN_MENU"
+								}
+
+								blockoverride "tooltip_content" {
+									TooltipTextBlock = {
+										blockoverride "text" {
+											text = "GO_TO_MAIN_MENU_desc"
+										}
+									}
+								}
+							}
+						}
+					}
+
+					expand = {}
+
+					button_wax = {
+						blockoverride "button_texture" {
+							texture = "gfx/interface/buttons/button_wax_blue.dds"
+						}
+						hbox = {
+							margin = { 70 10 }
+							minimumsize = { -1 42 }
+							spacing = 10
+							resizeparent = yes
+
+							icon =  {
+								size = { 24 24 }
+								texture = "gfx/interface/icons/map_modes/naked.dds"
+
+								glow = {
+									glow_radius = 3
+									color = {0.0 0.0 0.0 1.0}
+									alpha = 0.7
+								}
+							}
+
+							text_single = {
+								text = "PLAYER_PROFILING_START_NEW_GAME_BT"
+							}
+						}
+
+						action_tooltip = {
+							click_mode = confirm
+							title = "PLAYER_PROFILING_START_NEW_GAME"
+							on_action = "[FrontEndSinglePlayerView.ToCountrySelect]"
+							clicksound = "UI_button_gameNew_confirm"
+						}
+
+						tooltipwidget = { BasicFunctionalTooltip = {} }
+					}
+				}
+
+				text_single = {
+					using = title_text_template
+					text = "PLAYER_PROFILING_STAGE3_TITLE"
+				}
+			}
+
+			hbox = {
+				using = layoutpolicy_expanding
+				margin_top = 4
+
+				vbox = {
+					layoutpolicy_vertical = expanding
+					widget = {
+						layoutpolicy_vertical = expanding
+						size = { 430 0 }
+						allow_outside = no
+
+						widget = {
+							size = { 100% 100% }
+							position = { -430 0 }
+
+							visible = "[FrontEndSinglePlayerView.HasSelectedScenario]"
+							datacontext = "[FrontEndSinglePlayerView.GetSelectedScenario]"
+
+							state = {
+								name = _show
+								duration = 0.2
+								bezier = { 0.0 1.0 0.0 1.0 }
+								position = { 0 0 }
+								start_sound = { soundeffect = "UI_lateralview_show" }
+							}
+
+							state = {
+								name = _hide
+								duration = 0.2
+								bezier = { 1.0 0.0 1.0 0.0 }
+								position = { -430 0 }
+								start_sound = { soundeffect = "UI_lateralview_hide" }
+							}
+
+							using = bg_window_default_alt
+
+							vbox = {
+								layoutpolicy_vertical = expanding
+								widget = {
+									layoutpolicy_horizontal = expanding
+									size = {-1 65}
+									using = bg_panel_bar
+
+									hbox = {
+										margin_right = 50
+										spacing = 20
+										expand = {}
+										early_country_flag = {
+											size = { 54 36 }
+
+											blockoverride "tooltip" {
+												tooltip_enabled = no
+												tagtooltip_enabled = no
+											}
+
+											blockoverride "contextmenu" {
+												contextmenu_enabled = no
+											}
+
+											blockoverride "flag" {
+												block "flag" {
+													datacontext = "[GetCountryFlagCoatOfArms(Scenario.GetFlag)]"
+													texture = "[CoatOfArmsWrapper.GetTexture('(int32)144','(int32)96')]"
+													frame = "[CoatOfArmsWrapper.GetFrame('(int32)144','(int32)96')]"
+							                       	framesize = "[CoatOfArmsWrapper.GetFrameSizeOrFallback('(int32)144','(int32)96','(float)0.5')]"
+												}
+
+												texture_density = 2
+											}
+
+											blockoverride "click"  {}
+											blockoverride "double_click" {}
+											blockoverride "hover" {}
+										}
+										text_single = {
+											fontsize = 23
+											raw_text = "#T [Localize(Scenario.GetCountryTagLong)] #!"
+										}
+										expand = {}
+									}
+
+									
+
+									### CORNER2
+									icon = {
+										visible = "[Not(EqualTo_string(Scenario.GetCountryTag, 'TUR'))]"
+										parentanchor = right
+										widgetanchor = left
+										size = { 55 90 }
+										mirror = horizontal
+										texture = "gfx/interface/graphical_cultures/european_gfx/panel_bar_corner_shadow.dds"
+										texture_density = 2
+										using = color_black_texture
+									}
+									icon = {
+										visible = "[Not(EqualTo_string(Scenario.GetCountryTag, 'TUR'))]"
+										parentanchor = right
+										widgetanchor = left
+										size = { 55 90 }
+										mirror = horizontal
+										texture = "gfx/interface/graphical_cultures/european_gfx/panel_bar_corner.dds"
+										texture_density = 2
+										using = non_clickable_color_gold_texture
+									}
+
+									icon = {
+										visible = "[EqualTo_string(Scenario.GetCountryTag, 'TUR')]"
+										parentanchor = right
+										widgetanchor = left
+										size = { 55 90 }
+										mirror = horizontal
+										texture = "gfx/interface/graphical_cultures/middle_east_gfx/panel_bar_corner_shadow.dds"
+										texture_density = 2
+										using = color_black_texture
+									}
+									icon = {
+										visible = "[EqualTo_string(Scenario.GetCountryTag, 'TUR')]"
+										parentanchor = right
+										widgetanchor = left
+										size = { 55 90 }
+										mirror = horizontal
+										texture = "gfx/interface/graphical_cultures/middle_east_gfx/panel_bar_corner.dds"
+										texture_density = 2
+										using = non_clickable_color_gold_texture
+									}
+								}
+
+								vbox = {
+									margin = { 0 0 }
+									using = layoutpolicy_expanding
+									using = bg_main_inner_image_alt
+									blockoverride "overall_bckg" {
+										using = bg_main_inner_alt_base
+									}
+
+									vbox = {
+										using = bg_main_inner_notabs_alt
+										using = layoutpolicy_expanding
+										spacing = 20
+										margin_bottom = 30
+
+										widget = {
+											size = { 410 167}
+											background = {
+												visible = "[EqualTo_string(Scenario.GetCountryTag, 'NOR')]"
+												texture = "gfx/interface/illustrations/event/backgrounds/interior/nobles/north_german_nobles_interior.dds"
+											}
+											background = {
+												visible = "[EqualTo_string(Scenario.GetCountryTag, 'CAS')]"
+												texture = "gfx/interface/illustrations/disaster/castilian_civil_war.dds"
+											}
+											background = {
+												visible = "[EqualTo_string(Scenario.GetCountryTag, 'NAP')]"
+												texture = "gfx/interface/illustrations/government/diplomacy_illustration.dds"
+											}
+											background = {
+												visible = "[EqualTo_string(Scenario.GetCountryTag, 'HUN')]"
+												texture = "gfx/interface/illustrations/institutions/feudalism.dds"
+											}
+											background = {
+												visible = "[EqualTo_string(Scenario.GetCountryTag, 'TUR')]"
+												texture = "gfx/interface/illustrations/situation/rise_of_the_ottomans.dds"
+											}
+											background = {
+												visible = "[EqualTo_string(Scenario.GetCountryTag, 'HOL')]"
+												texture = "gfx/interface/illustrations/government/geopolitics_illustration.dds"
+											}
+											using = bg_age_event_frame
+										}
+
+										vbox = {
+											layoutpolicy_horizontal = expanding
+											margin = { 15 0 }
+											vbox = {
+												layoutpolicy_horizontal = expanding
+												using = bg_dark_paper_card
+
+
+												widget = {
+													layoutpolicy_horizontal = expanding
+													size = {-1 40}
+													visible = "[Scenario.IsPlayStyleKey('diplomatic')]"
+													using = bg_text_mask_container_dark_brown
+													hbox = {
+														layoutpolicy_horizontal = expanding
+														spacing = 10
+
+														expand = {}
+														icon = {
+															size = {25 25}
+															texture = "gfx/interface/icons/text_icons/country.dds"
+														}
+														text_single = {
+															text = "PLAYER_PROFILING_COUNTRY_DESC"
+															default_format = "#yellow_titles"
+															using = Font_Size_Big
+														}
+														expand = {}
+													}
+													using = bg_scroll_card_header
+													blockoverride "header_color_scroll_bg" {
+														using = color_diplomacy_texture
+													}
+												}
+
+												widget = {
+													layoutpolicy_horizontal = expanding
+													size = {-1 40}
+													visible = "[Scenario.IsPlayStyleKey('administrative')]"
+													using = bg_text_mask_container_dark_brown
+													hbox = {
+														layoutpolicy_horizontal = expanding
+														spacing = 10
+
+														expand = {}
+														icon = {
+															size = {25 25}
+															texture = "gfx/interface/icons/text_icons/country.dds"
+														}
+														text_single = {
+															text = "PLAYER_PROFILING_COUNTRY_DESC"
+															default_format = "#yellow_titles"
+															using = Font_Size_Big
+														}
+														expand = {}
+													}
+													using = bg_scroll_card_header
+													blockoverride "header_color_scroll_bg" {
+														using = color_economy_texture
+													}
+												}
+												
+												widget = {
+													layoutpolicy_horizontal = expanding
+													size = {-1 40}
+													visible = "[Scenario.IsPlayStyleKey('military')]"
+													using = bg_text_mask_container_dark_brown
+													hbox = {
+														layoutpolicy_horizontal = expanding
+														spacing = 10
+
+														expand = {}
+														icon = {
+															size = {25 25}
+															texture = "gfx/interface/icons/text_icons/country.dds"
+														}
+														text_single = {
+															text = "PLAYER_PROFILING_COUNTRY_DESC"
+															default_format = "#yellow_titles"
+															using = Font_Size_Big
+														}
+														expand = {}
+													}
+													using = bg_scroll_card_header
+													blockoverride "header_color_scroll_bg" {
+														using = color_military_texture
+													}
+												}
+	
+												text_multi = {
+													layoutpolicy_horizontal = expanding
+													margin = { 25 10 }
+													autoresize = yes
+													align = nobaseline
+													text = "[Scenario.GetDesc]"
+													using = Font_Size_Medium
+												}
+											}
+										}
+
+										vbox = {
+											layoutpolicy_horizontal = expanding
+											margin = { 15 0 }
+											vbox = {
+												layoutpolicy_horizontal = expanding
+												using = bg_dark_paper_card
+
+												widget = {
+													layoutpolicy_horizontal = expanding
+													size = {-1 40}
+													visible = "[Scenario.IsPlayStyleKey('diplomatic')]"
+													using = bg_text_mask_container_dark_brown
+													hbox = {
+														layoutpolicy_horizontal = expanding
+														spacing = 10
+
+														expand = {}
+														icon = {
+															size = {25 25}
+															texture = "gfx/interface/icons/text_icons/dip.dds"
+														}
+														text_single = {
+															text = "[Scenario.GetPlayStyleName]"
+															default_format = "#yellow_titles"
+															using = Font_Size_Big
+														}
+														expand = {}
+													}
+													using = bg_scroll_card_header
+													blockoverride "header_color_scroll_bg" {
+														using = color_diplomacy_texture
+													}
+												}
+												widget = {
+													layoutpolicy_horizontal = expanding
+													size = {-1 40}
+													visible = "[Scenario.IsPlayStyleKey('administrative')]"
+													using = bg_text_mask_container_dark_brown
+													hbox = {
+														layoutpolicy_horizontal = expanding
+														spacing = 10
+
+														expand = {}
+														icon = {
+															size = {25 25}
+															texture = "gfx/interface/icons/text_icons/adm.dds"
+														}
+														text_single = {
+															text = "[Scenario.GetPlayStyleName]"
+															default_format = "#yellow_titles"
+															using = Font_Size_Big
+														}
+														expand = {}
+													}
+													using = bg_scroll_card_header
+													blockoverride "header_color_scroll_bg" {
+														using = color_economy_texture
+													}
+												}
+												widget = {
+													layoutpolicy_horizontal = expanding
+													size = {-1 40}
+													visible = "[Scenario.IsPlayStyleKey('military')]"
+													using = bg_text_mask_container_dark_brown
+													hbox = {
+														layoutpolicy_horizontal = expanding
+														spacing = 10
+
+														expand = {}
+														icon = {
+															size = {25 25}
+															texture = "gfx/interface/icons/text_icons/mil.dds"
+														}
+														text_single = {
+															text = "[Scenario.GetPlayStyleName]"
+															default_format = "#yellow_titles"
+															using = Font_Size_Big
+														}
+														expand = {}
+													}
+													using = bg_scroll_card_header
+													blockoverride "header_color_scroll_bg" {
+														using = color_military_texture
+													}
+												}
+												text_multi = {
+													layoutpolicy_horizontal = expanding
+													margin = { 25 10 }
+													autoresize = yes
+													align = nobaseline
+													text = "[Scenario.GetPlayStyleDesc]"
+													using = Font_Size_Medium
+												}
+											}
+										}
+
+										expand = {}
+
+										hbox = {
+											layoutpolicy_horizontal = expanding
+											spacing = 8
+											margin = { 15 0 }
+
+											checkbox_square_alt = {
+												onclick = "[ToggleSkipPlaythrough]"
+												checked = "[IsPlaythroughSkipped]"
+												tooltip_enabled = no
+											}
+
+											text_multi = {
+												layoutpolicy_horizontal = expanding
+												autoresize = no
+												size = { -1 50 }
+												text = "PLAYER_SKIP_PLAYTHROUGH"
+											}
+										}
+									}
+								}
+							}
+
+							widget = {
+								size = { 100% 30 }
+								parentanchor = bottom
+								alwaystransparent = yes
+								icon = {
+									size = { 100% 100% }
+									alwaystransparent = yes
+									using = window_bottom_paper_shadow_texture
+									alpha = 0.5
+
+									block "image_prop" {}
+
+									modify_texture = {
+										using = color_black_texture
+										blend_mode = multiply
+									}
+								}
+
+								icon = {
+									size = { 100% 100% }
+									alwaystransparent = yes
+									using = window_bottom_paper_texture
+
+									block "image_prop" {}
+
+									modify_texture = {
+										using = color_bg_brown_texture
+										blend_mode = multiply
+									}
+								}
+							}
+
+							background = {
+								using = bg_vignette_mask_texture
+								alpha = 0.5
+
+								modify_texture = {
+									using = color_black_texture
+									blend_mode = multiply
+								}
+							}
+						}
+					}
+				}
+
+				expand = {}
+
+				###### Proficiency
+				vbox = {
+					visible = no
+					# visible = "[Not(FrontEndSinglePlayerView.IsProficiencySelected(GetProficiency('unknown').Self))]"
+					minimumsize = {370 -1}
+					margin = {0 20}
+					spacing = 15
+					layoutpolicy_vertical = expanding
+					ProficiencyOptions = {
+						datacontext = "[GetProficiency('NOVICE')]"
+						blockoverride "icon_texture" {
+							texture = "gfx/interface/icons/player_proficiency/novice_dip.dds"
+						}
+						blockoverride "icon_bckg_color" {
+							using = color_bronze_texture
+						}
+					}
+
+					ProficiencyOptions =  {
+						datacontext = "[GetProficiency('EXPERIENCED')]"
+						blockoverride "icon_texture" {
+							texture = "gfx/interface/icons/player_proficiency/experienced_dip.dds"
+						}
+						blockoverride "proficiency_button_bg"{
+							using = color_silver_texture
+						}
+						blockoverride "icon_bckg_color" {
+							using = color_silver_texture
+						}
+					}
+
+					ProficiencyOptions = {
+						datacontext = "[GetProficiency('ADVANCED')]"
+						blockoverride "icon_texture" {
+							texture = "gfx/interface/icons/player_proficiency/advanced_dip.dds"
+						}
+						blockoverride "proficiency_button_bg"{
+							using = color_new_gold_texture
+						}
+					}
+					expand = {}
+				}
+			}
+
+			expand = {}
+		}
+
+		button_wax = {
+			using = Animation_Show_Hide_Eased
+			parentanchor = hcenter|bottom
+			position = { 0 -20 }
+			
+			blockoverride "button_texture" {
+				texture = "gfx/interface/buttons/button_wax_yellow.dds"
+			}
+			minimumsize = { 440 66 }
+			maximumsize = { 440 66 }
+			using = FrontEndMiddleSectionButton
+			name = "single_player_button"
+			text = "PLAYER_PROFILING_PLAY"
+			visible = "[FrontEndSinglePlayerView.HasSelectedScenario]"
+
+			action_tooltip = {
+				click_type = left
+				click_mode = single
+				title = "START"
+				on_action = "[FrontEndSinglePlayerView.StartGame(FrontEndSinglePlayerView.GetSelectedScenario.Self)]"
+				clicksound = "UI_button_gameNew_confirm"
+			}
+		}
+	}
+	###### Scenario / Country window end
+}

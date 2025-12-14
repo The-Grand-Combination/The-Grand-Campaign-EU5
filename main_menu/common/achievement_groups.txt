@@ -1,0 +1,80 @@
+group = {
+	name = "very_easy_achievements"
+	order = {
+		# Base Title
+		"until_death_do_us_apart"
+		"for_the_glory"
+		"brothers_in_arms"
+		"city_of_cities"
+		"cold_war"
+		"that_is_mine"
+		"victorious"
+		"its_just_business"
+		"all_in_favor"
+		"patron_of_the_arts"
+		"combined_arms"
+		"rule_of_law"
+		"here_i_stand"
+	}
+}
+
+group = {
+	name = "easy_achievements"
+	order = {
+		"rule_britannia"
+		"plus_ultra"
+		"city_of_mans_desire"
+		"a_pile_of_gold"
+		"at_every_continent"
+		"grand_coalition"
+		"it_belongs_in_a_museum"
+		"a_cabinet_of_curiosities"
+		"hearts_and_minds"
+		"a_brave_new_world"
+	}
+}
+
+group = {
+	name = "medium_achievements"
+	order = {
+		"crusader_kings"
+		"lingua_franca"
+		"break_the_yoke"
+		"felix_austria"
+		"hongwu_di"
+		"just_a_little_bit_more_patience"
+		"potato_potato"
+		"three_mountains"
+		"doge_coins"
+		"je_maintiendrai"
+		"lion_of_the_north"
+		"the_navigator"
+		"house_of_hus"
+		"the_spice_must_flow"
+		"scientific_victory"
+		"cities_skyline"
+		"moneytalks"
+	}
+}
+
+group = {
+	name = "hard_achievements"
+	order = {
+		"what_the_lord_giveth"
+		"be_in_all_the_clubs"
+		"welfare_state"
+		"five_hundred_miles"
+		"total_control"
+		"true_heir_of_timur"
+		"respected"
+		"letat_cest_moi"
+		"manchurian_candidate"
+	}
+}
+
+group = {
+	name = "very_hard_achievements"
+	order = {
+		"what_a_great_guy"
+	}
+}

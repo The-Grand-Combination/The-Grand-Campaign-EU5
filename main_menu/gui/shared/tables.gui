@@ -1,0 +1,45 @@
+template fake_table_dark_background {
+	background = {
+		using = color_mid_blue_texture
+		alpha = 0.25
+	}
+}
+
+template fake_table_light_background {
+	background = {
+		using = color_mid_blue_texture
+		alpha = 0.75
+	}
+}
+
+template table_cell_base {
+	layoutpolicy_horizontal = expanding
+	layoutpolicy_vertical = expanding
+
+	# block "table_background" {
+		background = {
+			visible = "[Not(IsEven_int32(PdxGuiWidget.GetIndexInDataModel))]"
+			using = color_mid_blue_texture
+			alpha = 0.75
+		}
+	# }
+}
+
+template table_cell_base_brown {
+	layoutpolicy_horizontal = expanding
+	layoutpolicy_vertical = expanding
+
+	# block "table_background" {
+		background = {
+			visible = "[Not(IsEven_int32(PdxGuiWidget.GetIndexInDataModel))]"
+			using = color_super_dark_brown_texture
+			alpha = 0.5
+			modify_texture = {
+				using = overlay_cloth_texture
+				blend_mode = overlay
+				alpha = 0.4
+			}
+		}
+	# }
+}
+

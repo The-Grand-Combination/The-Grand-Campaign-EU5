@@ -1,0 +1,1403 @@
+
+# template save_slot_button_texture {
+# 	using = bg_round_corners_texture
+
+# 	modify_texture = {
+# 		using = color_light_blue_texture
+# 		blend_mode = add
+# 		alpha = 0.3
+# 	}
+
+# 	modify_texture = {
+# 		using = overlay_stone_texture
+# 		blend_mode = overlay
+# 		alpha = 0.3
+# 	}
+# }
+
+# template save_slot_bg {
+# 	size = { 100% 100% }
+# 	using = bg_round_corners_texture
+
+# 	texture_density = 2
+# 	alpha = 0.4
+
+# 	using = color_light_blue
+
+# 	modify_texture = {
+# 		using = overlay_stone_texture
+# 		blend_mode = overlay
+# 		alpha = 0.3
+# 	}
+# }
+
+# template save_slot_header_bg_base {
+# 	size = { 100% 35 }
+# 	texture = "gfx/interface/component_tiles/tile_card_up.dds"
+# 	texture_density = 2
+# 	spriteType = Corneredstretched
+# 	spriteborder = { 20 20 }
+# 	alpha = 0.5
+
+# 	using = color_light_blue
+# }
+
+# template save_slot_header_bg {
+# 	using = save_slot_header_bg_base
+
+# 	modify_texture = {
+# 		using = overlay_stone_texture
+# 		blend_mode = overlay
+# 		alpha = 0.2
+# 	}
+
+# 	modify_texture = {
+# 		texture = "gfx/interface/component_masks/mask_fade_horizontal_right.dds"
+# 		texture_density = 2
+# 		spriteType = Corneredstretched
+# 		spriteborder = { 20 20 }
+# 		alpha = 1
+# 		blend_mode = alphamultiply
+# 	}
+# }
+
+template slot_icons_savegameitem {
+	tooltipwidget = {
+		ContextualTooltipType = {
+			
+			blockoverride "title_text" {
+					text = "SAVE_GAME"
+			}
+			blockoverride "tooltip_content" {
+				TooltipTextBlock = {
+					visible = "[SaveGameItem.IsIronman]"
+					blockoverride "text" {
+						text = "IRONMAN_MODE"
+					}
+				}
+				TooltipTextBlock = {
+					visible = "[SaveGameItem.IsMultiplayer]"
+					blockoverride "text" {
+						text = "LOAD_MULTIPLAYER_TOOLTIP"
+					}
+				}
+				TooltipTextBlock = {
+					visible = "[SaveGameItem.IsCloudSave]"
+					blockoverride "text" {
+						text = "LOAD_CLOUDSAVE_TOOLTIP"
+					}
+				}
+				TooltipTextBlock = {
+					visible = "[Not(SaveGameItem.IsCloudSave)]"
+					blockoverride "text" {
+						text ="[SaveGameItem.GetFullPath]"
+					}
+				}
+				TooltipTextBlock = {
+					visible = "[SaveGameItem.IsDifferentVersion]"
+					blockoverride "text" {
+						text = "[SaveGameItem.GetDifferentVersionDesc]"
+					}
+				}
+				TooltipTextBlock = {
+					visible = "[SaveGameItem.HasMissingDLC]"
+					blockoverride "text" {
+						text = "[SaveGameItem.GetMissingDLCString]"
+					}
+				}
+				TooltipTextBlock = {
+					visible = "[SaveGameItem.HasMissingMods]"
+					blockoverride "text" {
+						text = "[SaveGameItem.GetMissingModsString]"
+					}
+				}
+			}
+		}
+	}
+
+	# is ironman
+	icon = {
+		size = { 18 18 }
+		using = icon_ironman
+		visible = "[SaveGameItem.IsIronman]"
+		enabled = "[Not(SaveGameItem.HasMissingDLC)]"
+		# texture = "gfx/interface/component_overlay/culture_header_90x60.dds"
+		# block "slot_icon_tint" {}
+	}
+
+	# is multiplayer
+	icon = {
+		size = { 18 18 }
+		using = icon_multiplayer
+		visible = "[SaveGameItem.IsMultiplayer]"
+		# block "slot_icon_tint" {}
+	}
+
+	# is cloud save
+	icon = {
+		size = { 18 18 }
+		texture = "gfx/interface/icons/flat_icons/cloud_save_flat.dds"
+		visible = "[SaveGameItem.IsCloudSave]"
+		# block "slot_icon_tint" {}
+	}
+
+	# is NOT cloud save
+	icon = {
+		size = { 18 18 }
+		texture = "gfx/interface/buttons/flats/slider.dds"
+		visible = "[Not(SaveGameItem.IsCloudSave)]"
+		# block "slot_icon_tint" {}
+	}
+
+	# different version
+	icon = {
+		size = { 18 18 }
+		using = icon_different_version
+		visible = "[SaveGameItem.IsDifferentVersion]"
+		enabled = "[Not(SaveGameItem.HasMissingDLC)]"
+		# block "slot_icon_tint" {}
+	}
+
+	# missing dlc
+	icon = {
+		size = { 18 18 }
+		using = icon_missing_dlc
+		visible = "[SaveGameItem.HasMissingDLC]"
+		# texture = "gfx/interface/component_overlay/culture_header_90x60.dds"
+		# block "slot_icon_tint" {}
+	}
+
+	# missing mods
+	icon = {
+		size = { 18 18 }
+		using = icon_missing_mods
+		visible = "[SaveGameItem.HasMissingMods]"
+		# texture = "gfx/interface/component_overlay/culture_header_90x60.dds"
+		# block "slot_icon_tint" {}
+	}
+}
+
+template slot_icons_playthroughitem {
+	tooltipwidget = {
+		ContextualTooltipType = {
+			blockoverride "title_text" {
+				text = "SAVE_GAME"
+			}
+
+			blockoverride "title_icon" {
+				icon = {
+					texture = "gfx/interface/settings/on_save.dds"
+					using = tooltip_title_icon_size
+				}
+			}
+
+			blockoverride "tooltip_content" {
+				TooltipTextBlock = {
+					visible = "[PlaythroughItem.IsIronman]"
+					blockoverride "text" {
+						text = "IRONMAN_MODE"
+					}
+				}
+
+				TooltipTextBlock = {
+					visible = "[PlaythroughItem.IsMultiplayer]"
+					blockoverride "text" {
+						text = "LOAD_MULTIPLAYER_TOOLTIP"
+					}
+				}
+
+				TooltipTextBlock = {
+					visible = "[PlaythroughItem.IsCloudSave]"
+					blockoverride "text" {
+						text = "LOAD_CLOUDSAVE_TOOLTIP"
+					}
+				}
+
+				TooltipTextBlock = {
+					visible = "[Not(PlaythroughItem.IsCloudSave)]"
+					blockoverride "text" {
+						text ="[PlaythroughItem.GetFullPath]"
+					}
+				}
+
+				TooltipContentSection = {
+					visible = "[PlaythroughItem.IsDifferentVersion]"
+					textcontext = "[PlaythroughItem.GetDifferentVersionDesc]"
+					ontextcontextchanged = "[SetTitleDescTooltipFromTextContext(PdxGuiWidget.AccessSelf)]"
+
+					TooltipTextBlock = {
+						blockoverride "block_title" {
+							text = "[TitleDescTooltip.GetTitle]"
+						}
+
+						textcontext = "[TitleDescTooltip.GetDesc]"
+					}
+				}
+
+				TooltipTextBlock = {
+					visible = "[PlaythroughItem.HasMissingDLC]"
+					blockoverride "text" {
+						text = "[PlaythroughItem.GetMissingDLCString]"
+					}
+				}
+
+				TooltipTextBlock = {
+					visible = "[PlaythroughItem.HasMissingMods]"
+					blockoverride "text" {
+						text = "[PlaythroughItem.GetMissingModsString]"
+					}
+				}
+			}
+		}
+	}
+
+	# is ironman
+	icon = {
+		size = { 18 18 }
+		using = icon_ironman
+		visible = "[PlaythroughItem.IsIronman]"
+		# block "slot_icon_tint" {}
+	}
+
+	# is multiplayer
+	icon = {
+		size = { 18 18 }
+		using = icon_multiplayer
+		visible = "[PlaythroughItem.IsMultiplayer]"
+		# block "slot_icon_tint" {}
+	}
+
+	# is cloud save
+	icon = {
+		size = { 18 18 }
+		texture = "gfx/interface/icons/flat_icons/cloud_save_flat.dds"
+		visible = "[PlaythroughItem.IsCloudSave]"
+		# block "slot_icon_tint" {}
+	}
+
+	# is NOT cloud save
+	icon = {
+		size = { 18 18 }
+		texture = "gfx/interface/icons/flat_icons/not_cloud_save_flat.dds"
+		visible = "[Not(PlaythroughItem.IsCloudSave)]"
+		# block "slot_icon_tint" {}
+	}
+
+	# different version
+	icon = {
+		size = { 18 18 }
+		using = icon_different_version
+		visible = "[PlaythroughItem.IsDifferentVersion]"
+		# block "slot_icon_tint" {}
+	}
+
+	# missing dlc
+	icon = {
+		size = { 18 18 }
+		using = icon_missing_dlc
+		visible = "[PlaythroughItem.HasMissingDLC]"
+		# texture = "gfx/interface/component_overlay/culture_header_90x60.dds"
+		# block "slot_icon_tint" {}
+	}
+
+	# missing mods
+	icon = {
+		size = { 18 18 }
+		using = icon_missing_mods
+		visible = "[PlaythroughItem.HasMissingMods]"
+		# texture = "gfx/interface/component_overlay/culture_header_90x60.dds"
+		# block "slot_icon_tint" {}
+	}
+}
+
+# Whether a SP or MP game is loaded depends on context
+template mixed_load_slot_buttons {
+	action_tooltip = {
+		click_mode = single
+		visible = "[And(PlaythroughItem.HasConfirmation, Not(PlaythroughItem.IsMultiplayer))]"
+		title = "LOAD_SAVE_GAME_TOOLTIP"
+		description = "LOAD_SAVE_GAME_DESC"
+		block "slot_button_SP_left_action_playtroughitem" {}
+		on_action = "[PlaythroughItem.LoadLatest]"
+		clicksoundlater = "UI_button_gameLoad_confirm"
+	}
+
+	action_tooltip = {
+		click_mode = confirm
+		visible = "[And(Not(PlaythroughItem.HasConfirmation), Not(PlaythroughItem.IsMultiplayer))]"
+		title = "LOAD_SAVE_GAME_TOOLTIP"
+		description = "LOAD_SAVE_GAME_DESC"
+		block "slot_button_SP_left_action_playtroughitem" {}
+		on_action = "[PlaythroughItem.LoadLatest]"
+		clicksoundlater = "UI_button_gameLoad_confirm"
+	}
+
+	action_tooltip = {
+		click_mode = single
+		click_type = right
+		visible = "[And3(PlaythroughItem.HasConfirmation, Not(PlaythroughItem.IsMultiplayer), Not(PlaythroughItem.IsIronman))]"
+		title = "LOAD_SAVE_GAME_AND_GO_TO_LOBBY_TOOLTIP"
+		description = "LOAD_SAVE_GAME_AND_GO_TO_LOBBY_DESC"
+		block "slot_button_SP_right_action_playtroughitem" {}
+		on_action = "[PlaythroughItem.LoadLatest]"
+		clicksoundlater = "UI_button_gameLoad_confirm"
+	}
+	
+	action_tooltip = {
+		click_mode = confirm
+		click_type = right
+		visible = "[And3(Not(PlaythroughItem.HasConfirmation), Not(PlaythroughItem.IsMultiplayer), Not(PlaythroughItem.IsIronman))]"
+		title = "LOAD_SAVE_GAME_AND_GO_TO_LOBBY_TOOLTIP"
+		description = "LOAD_SAVE_GAME_AND_GO_TO_LOBBY_DESC"
+		block "slot_button_SP_right_action_playtroughitem" {}
+		on_action = "[PlaythroughItem.LoadLatest]"
+		clicksoundlater = "UI_button_gameLoad_confirm"
+	}
+	
+	# MP games
+	action_tooltip = {
+		click_mode = single
+		visible = "[And(PlaythroughItem.HasConfirmation, PlaythroughItem.IsMultiplayer)]"
+		enabled = "[JominiIsMultiplayerAccessible]"
+		description = "[JominiGetMultiplayerAccessibleString]"
+		title = "LOAD_SAVE_GAME_AND_GO_TO_LOBBY_TOOLTIP"
+		block "slot_button_MP_left_action_playtroughitem" {}
+		on_action = "[PlaythroughItem.LoadLatest]"
+		clicksoundlater = "UI_button_gameLoad_confirm"
+	}
+
+	action_tooltip = {
+		click_mode = confirm
+		visible = "[And(Not(PlaythroughItem.HasConfirmation), PlaythroughItem.IsMultiplayer)]"
+		enabled = "[JominiIsMultiplayerAccessible]"
+		description = "[JominiGetMultiplayerAccessibleString]"
+		title = "LOAD_SAVE_GAME_AND_GO_TO_LOBBY_TOOLTIP"
+		block "slot_button_MP_left_action_playtroughitem" {}
+		on_action = "[PlaythroughItem.LoadLatest]"
+		clicksoundlater = "UI_button_gameLoad_confirm"
+	}
+
+	action_tooltip = {
+		click_mode = single
+		click_type = right
+		visible = "[And(PlaythroughItem.HasConfirmation, PlaythroughItem.IsMultiplayer)]"
+		title = "LOAD_SAVE_GAME_AND_GO_TO_LOBBY_SP_TOOLTIP"
+		block "slot_button_MP_right_action_playtroughitem" {}
+		on_action = "[PlaythroughItem.LoadLatest]"
+		clicksoundlater = "UI_button_gameLoad_confirm"
+	}
+
+	action_tooltip = {
+		click_mode = confirm
+		click_type = right
+		visible = "[And(Not(PlaythroughItem.HasConfirmation), PlaythroughItem.IsMultiplayer)]"
+		title = "LOAD_SAVE_GAME_AND_GO_TO_LOBBY_SP_TOOLTIP"
+		block "slot_button_MP_right_action_playtroughitem" {}
+		on_action = "[PlaythroughItem.LoadLatest]"
+		clicksoundlater = "UI_button_gameLoad_confirm"
+	}
+}
+
+template sp_load_slot_buttons {
+	action_tooltip = {
+		click_mode = single
+		visible = "[PlaythroughItem.HasConfirmation]"
+		title = "LOAD_SAVE_GAME_TOOLTIP"
+		block "slot_button_SP_left_action_playtroughitem" {}
+		description = "LOAD_SAVE_GAME_DESC"
+		on_action = "[PlaythroughItem.LoadLatest]"
+		clicksoundlater = "UI_button_gameLoad_confirm"
+	}
+
+	action_tooltip = {
+		click_mode = confirm
+		visible = "[Not(PlaythroughItem.HasConfirmation)]"
+		title = "LOAD_SAVE_GAME_TOOLTIP"
+		block "slot_button_SP_left_action_playtroughitem" {}
+		description = "LOAD_SAVE_GAME_DESC"
+		on_action = "[PlaythroughItem.LoadLatest]"
+		clicksoundlater = "UI_button_gameLoad_confirm"
+	}
+	
+	action_tooltip = {
+		click_mode = single
+		click_type = right
+		visible = "[And(PlaythroughItem.HasConfirmation, Not(PlaythroughItem.IsIronman))]"
+		title = "LOAD_SAVE_GAME_AND_GO_TO_LOBBY_TOOLTIP"
+		description = "LOAD_SAVE_GAME_AND_GO_TO_LOBBY_DESC"
+		block "slot_button_SP_right_action_playtroughitem" {}
+		on_action = "[PlaythroughItem.LoadLatest]"
+		clicksoundlater = "UI_button_gameLoad_confirm"
+	}
+	
+	action_tooltip = {
+		click_mode = confirm
+		click_type = right
+		visible = "[And(Not(PlaythroughItem.HasConfirmation), Not(PlaythroughItem.IsIronman))]"
+		title = "LOAD_SAVE_GAME_AND_GO_TO_LOBBY_TOOLTIP"
+		description = "LOAD_SAVE_GAME_AND_GO_TO_LOBBY_DESC"
+		block "slot_button_SP_right_action_playtroughitem" {}
+		on_action = "[PlaythroughItem.LoadLatest]"
+		clicksoundlater = "UI_button_gameLoad_confirm"
+	}
+}
+
+template mp_load_slot_buttons {
+	action_tooltip = {
+		click_mode = single
+		visible = "[PlaythroughItem.HasConfirmation]"
+		enabled = "[JominiIsMultiplayerAccessible]"
+		description = "[JominiGetMultiplayerAccessibleString]"
+		title = "LOAD_SAVE_GAME_AND_GO_TO_MP_LOBBY_TOOLTIP"
+		block "slot_button_MP_left_action_playtroughitem" {}
+		on_action = "[PlaythroughItem.LoadLatest]"
+		clicksoundlater = "UI_button_gameLoad_confirm"
+	}
+
+	action_tooltip = {
+		click_mode = confirm
+		visible = "[Not(PlaythroughItem.HasConfirmation)]"
+		enabled = "[JominiIsMultiplayerAccessible]"
+		description = "[JominiGetMultiplayerAccessibleString]"
+		title = "LOAD_SAVE_GAME_AND_GO_TO_MP_LOBBY_TOOLTIP"
+		block "slot_button_MP_left_action_playtroughitem" {}
+		on_action = "[PlaythroughItem.LoadLatest]"
+		clicksoundlater = "UI_button_gameLoad_confirm"
+	}
+}
+
+types LoadSaveTypes
+{
+	type save_slot = clickable_header_card {		
+		blockoverride "header_size" {
+			size = { -1 35 }
+		}
+		
+		blockoverride "header_pattern" {
+			texture = "gfx/interface/cards/headers/header_pattern_01.dds"
+			alpha = 0.9
+		}
+
+		blockoverride "header_color" {}
+
+		blockoverride "header_content" {
+			block "slot_button" {}
+			block "slot_button_background" {}
+			
+			hbox = {
+				using = layoutpolicy_expanding
+					
+				# early_country_flag = {
+				# 	size = { 52 35 }
+					
+				# 	blockoverride "tooltip" {
+				# 		tooltip_enabled = no
+				# 		tagtooltip_enabled = no
+				# 	}
+					
+				# 	blockoverride "contextmenu" {
+				# 		contextmenu_enabled = no
+				# 	}
+					
+				# 	blockoverride "flag" {
+				# 		block "flag" {
+				# 			texture = "[GetCountryFlagCoatOfArms(SaveGameItem.GetFlag).GetTexture('(int32)144','(int32)96')]"
+				# 			frame = "[GetCountryFlagCoatOfArms(SaveGameItem.GetFlag).GetFrame('(int32)144','(int32)96')]"
+				# 			framesize = { 72 48 }
+				# 		}
+						
+				# 		texture_density = 2
+				# 	}
+
+				# 	blockoverride "click" {}
+				# 	blockoverride "double_click" {}
+				# 	blockoverride "hover" {}
+				# }
+
+				text_single = {
+					margin = { 10 0 }
+					using = layoutpolicy_expanding
+					autoresize = no
+					using = Font_Type_Headers
+					align = nobaseline
+					block "slot_top_text" {}
+				}
+			}
+
+			button_close_alt = {
+				size = { 25 25 }
+				position = { -5 0 }
+				
+				blockoverride "close_onclick" {}
+
+				blockoverride "close_button_tooltip" {}
+	
+				blockoverride "close_inputaction" {}
+				blockoverride "bg_button_color" {
+					using = color_enemy_red_texture
+				}
+
+				block "slot_remove_button" {}
+			}
+		}
+
+		blockoverride "bottom_content" {
+			hbox = {
+				using = layoutpolicy_expanding
+				margin = { 10 0 }
+
+				text_single = {
+					using = layoutpolicy_expanding
+					using = Font_Size_Very_Small
+					autoresize = no
+
+					block "slot_bottom_text" {}
+				}
+
+				flowcontainer = {
+					ignoreinvisible = yes
+					spacing = 5
+
+					block "slot_icons" {}
+				}
+			}
+		}
+	}
+
+	type save_menu = window {
+		alwaystransparent = no
+		movable = no
+		resizable = no
+		focus_on_visible = yes # Escape needs this
+
+		size = { 100% 100% }
+		layer = confirmation
+		using = bg_full_dim
+
+		widget = {
+			using = bg_window_default_alt
+			parentanchor = center
+			allow_outside = yes
+
+			enabled = "[SaveListWindow.IsWindowEnabled]"
+
+			widget = {
+				size = { 100% 100% }
+				visible = "[And(Not(SaveNameWindow.IsSaveOk), Not(GameSaveNameWindow.IsIronmanSave))]"
+
+				saving_indicator = {
+					parentanchor = center
+					blockoverride "csi_text" {
+						text = "LOADING_SAVES"
+					}
+				}
+			}
+
+			vbox = {
+				using = window_margin
+
+				set_parent_size_to_minimum = yes
+				minimumsize = { 420 -1 }
+				spacing = 10
+
+				window_header_alt = {
+					blockoverride "header_text" {
+						text = "[SelectLocalization(GameSaveNameWindow.IsIronmanSave, 'SAVE_IRONMAN_GAME', 'SAVE_GAME')]"
+					}
+				}
+
+				scroll_list = {
+					visible = "[Not(GameSaveNameWindow.IsIronmanSave)]"
+					minimumsize = { 420 600 }
+					using = layoutpolicy_expanding
+
+					name = "saved_games_scrollarea"
+					scrollbarpolicy_horizontal = always_off
+
+					blockoverride "scroll_list_content" {
+						name = "saved_games_grid"
+						addcolumn = 100%
+						addrow = 82
+						flipdirection = yes
+						datamodel_wrap = 1
+
+						block "save_game_datamodel" {}
+
+						item = {
+							widget = {
+								size = { 100% 82 }
+								save_slot = {
+									parentanchor = center
+									size = { 90% 70 }
+									blockoverride "slot_button" {
+										action_tooltip = {
+											click_mode = single
+											visible = yes
+											title = "OVERWRITE_SAVE_GAME_TOOLTIP"
+											on_action = "[SaveGameItem.Select]"
+										}
+										
+										tooltipwidget = {BasicFunctionalTooltip = {}}
+									}
+
+									blockoverride "slot_top_text" {
+										name = "name"
+										text = "[SaveGameItem.GetSaveLabel]"
+										enabled = "[Not(SaveGameItem.HasMissingDLC)]"
+									}
+									
+									blockoverride "flag" {	
+										datacontext = "[GetCountryFlagCoatOfArms(SaveGameItem.GetFlag)]"
+										texture = "[CoatOfArmsWrapper.GetTexture('(int32)144','(int32)96')]"
+										frame = "[CoatOfArmsWrapper.GetFrame('(int32)144','(int32)96')]"
+										framesize = "[CoatOfArmsWrapper.GetFrameSizeOrFallback('(int32)144','(int32)96','(float)0.5')]"
+									}
+
+									blockoverride "slot_bottom_text" {
+										name = "date"
+										text = "[SaveGameItem.GetRealDate]"
+										enabled = "[Not(SaveGameItem.HasMissingDLC)]"
+									}
+
+									blockoverride "slot_icons" {
+										using = slot_icons_savegameitem
+									}
+									
+									blockoverride "slot_remove_button" {
+										action_tooltip = {
+											click_mode = confirm
+											title = "REMOVE_SAVE_GAME_TOOLTIP"
+											on_action = "[SaveGameItem.Delete]"
+										}
+
+										tooltipwidget = { BasicFunctionalTooltip = {} }
+									}
+								}
+							}
+						}
+					}
+				}
+
+				vbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 20
+					margin = { 20 5 }
+
+					text_single = {
+						layoutpolicy_horizontal = expanding
+						autoresize = no
+
+						text = "FILE_NAME_INVALID"
+						using = Font_Type_Standard
+						using = Font_Size_Medium
+						align = center
+						alwaystransparent = yes
+						visible = "[Not(SaveNameWindow.IsSaveNameOk)]"
+					}
+
+					hbox = {
+						layoutpolicy_horizontal = expanding
+						spacing = 10
+						hbox = {
+							spacing = 5
+							layoutpolicy_vertical = expanding
+							checkbutton = {
+								using = button_checkbox_template
+								name = "cloud_save"
+								tooltipwidget = {LeftClickButtonTooltip = {blockoverride "onclick_text"{text = "[SaveNameWindow.CloudSaveTooltip]"}enabled = "[SaveNameWindow.CanToggleCloudSaves]"}}
+								checked = "[SaveNameWindow.IsCloudSaveSelected]"
+								enabled = "[SaveNameWindow.CanToggleCloudSaves]"
+								onclick = "[SaveNameWindow.OnCloudSaveClick]"
+							}
+
+							icon = {
+								size = { 26 26 }
+								texture = "gfx/interface/icons/flat_icons/cloud_save_flat.dds"
+								using = color_light_blue
+
+								tooltipwidget = {
+									ContextualTooltipType = {
+										blockoverride "title_icon" {
+											icon = {
+												size = { 50 50 }
+												texture = "gfx/interface/icons/flat_icons/cloud_save_flat.dds"
+											}
+										}
+									
+										blockoverride "title_text" {
+											text = "LOAD_CLOUDSAVE_TOOLTIP"
+										}
+	
+										blockoverride "tooltip_content" {
+											TooltipTextBlock = {
+												blockoverride "text" {
+													text = "[SaveNameWindow.CloudSaveTooltip]"
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						
+						vbox = {
+							layoutpolicy_horizontal = expanding
+							spacing = 10
+							hbox = {
+								layoutpolicy_horizontal = expanding
+			
+								spacing = 5
+								editbox_single = {
+									name = "playthrough_name"
+									layoutpolicy_horizontal = expanding
+									size = { -1 32 }
+
+									alwaystransparent = no
+									focuspolicy = all
+
+									tooltipwidget = { LeftClickButtonTooltip = { blockoverride "onclick_text" { text = "PLAYTHROUGH_NAME_CHANGE_TOOLTIP" } } }
+
+									onreturnpressed = "[GameSaveNameWindow.CheckAndSave]"
+									fontcolor = { 1 1 1 1 }
+
+									blockoverride "editbox_outer_background" {
+										using = editbox_background_texture
+										using = color_bg_brown
+									}
+
+									blockoverride "editbox_inner_background" {}
+
+									blockoverride "editbox_properties" {
+										name = "playthrough_name"
+										text = "[GameSaveNameWindow.GetDefaultPlaythroughSaveName]"
+									}
+									
+									blockoverride "editbox_label" {
+										text = "SAVE_WRITE_PLAYTHROUGH_NAME"
+									}
+								}
+
+								icon = {
+									visible = "[GameSaveNameWindow.IsIronmanSave]"
+									texture = "gfx/interface/settings/on_save.dds"
+									size = { 26 26 }
+								}
+
+							}
+							hbox = {
+								layoutpolicy_horizontal = expanding
+								visible = "[Not(GameSaveNameWindow.IsIronmanSave)]"
+								spacing = 5
+								
+								editbox_single = {
+									name = "save_name"
+									layoutpolicy_horizontal = expanding
+									size = { -1 32 }
+	
+									alwaystransparent = no
+									focuspolicy = all
+	
+									onreturnpressed = "[GameSaveNameWindow.CheckAndSave]"
+									fontcolor = { 1 1 1 1 }
+	
+									blockoverride "editbox_outer_background" {
+										using = editbox_background_texture
+										using = color_bg_brown
+									}
+	
+									blockoverride "editbox_inner_background" {}
+	
+									blockoverride "editbox_properties" {
+										name = "save_game_name"
+										tooltipwidget = { LeftClickButtonTooltip = { blockoverride "onclick_text" { text = "SAVE_GAME_NAME_CHANGE" } } }
+										
+										text = "[SaveNameWindow.GetDefaultSaveName]"
+									}
+									
+									blockoverride "editbox_label" {
+										text = "SAVE_WRITE_NAME"
+									}
+								}
+								icon = {
+									texture = "gfx/interface/settings/on_save.dds"
+									size = { 26 26 }
+								}
+							}
+							
+						}
+					}
+
+					widget = {
+						layoutpolicy_horizontal = expanding
+						size = { -1 40 }
+						hbox = {
+							spacing = 10
+
+							button_regular = {
+								using = layoutpolicy_expanding
+								name = "cancel_button"
+								text = "CANCEL"
+								onclick = "[SaveNameWindow.Cancel]"
+								input_action = "close_window"
+								use_global_input_instance = yes
+								tooltipwidget = { LeftClickButtonTooltip = { blockoverride "onclick_text" { text = "LOAD_SAVE_MENU_CLOSE_TOOLTIP" } } }
+							}
+
+							button_regular = {
+								using = layoutpolicy_expanding
+								name = "save_button_nook"
+								onclick = "[SaveNameWindow.Save]"
+								onclick = "[HideGameRules]"
+								enabled = "[Not(GameSaveNameWindow.IsSaveOk)]"
+								visible = "[Not(GameSaveNameWindow.IsSaveOk)]"
+								tooltipwidget = { LeftClickButtonTooltip = { blockoverride "onclick_text" { text = "[SaveNameWindow.GetSaveErrors]" } } }
+								# using = snd_UI_confirm
+
+								block "confirm_button" {
+									text = "[SelectLocalization(GameSaveNameWindow.IsIronmanSave, 'JOMINI_MULTIPLAYER_GUI_START', 'SAVE')]"
+								}
+							}
+
+							button_regular = {
+								using = layoutpolicy_expanding
+								name = "save_button_ok"
+								onclick = "[SaveNameWindow.Save]"
+								onclick = "[HideGameRules]"
+								enabled = "[GameSaveNameWindow.IsSaveOk]"
+								visible = "[GameSaveNameWindow.IsSaveOk]"
+								tooltipwidget = { LeftClickButtonTooltip = { blockoverride "onclick_text" { text = "SAVE" } } }
+								# using = snd_UI_confirm
+
+								block "confirm_button" {
+									text = "[SelectLocalization(GameSaveNameWindow.IsIronmanSave, 'JOMINI_MULTIPLAYER_GUI_START', 'SAVE')]"
+								}
+							}
+						}
+					}
+				}
+			}
+
+			widget = {
+				parentanchor = right
+				position = { -5 5 }
+				size = { 40 40 }
+	
+				ui_direction_button_holder_right = {}
+	
+				button_close_alt = {
+					blockoverride "close_onclick" {
+						onclick = "[SaveNameWindow.Cancel]"
+					}
+				}
+			}
+		}
+	}
+
+	type save_load_menu_loading_indicator = widget {
+		size = { 400 300 }
+		# block "pending_to_read_saves" {
+			visible = "[SaveListWindow.IsPendingToReadSaveFiles]"
+		# }
+
+		saving_indicator = {
+			parentanchor = center
+			blockoverride "csi_text" {
+				text = "LOADING_SAVES"
+			}
+		}
+	}
+
+	type loadgame_grid = vbox {
+		name = "savegame_grid"
+
+		vbox = {
+			margin = { 0 5 }
+			spacing = 5
+
+			layoutpolicy_horizontal = expanding
+			block "save_game_datamodel" {
+				datamodel = "[SaveListWindow.GetPlaythroughs]"
+			}
+
+			item = {
+				vbox = {
+					layoutpolicy_horizontal = expanding
+					ignoreinvisible = yes
+
+					widget = {
+						layoutpolicy_horizontal = expanding
+						size = { -1 40 }
+
+						icon = {
+							size = { 100% 100% }
+							visible = "[Not(GreaterThan_int32(GetDataModelSize(PlaythroughItem.GetItems), '(int32)1'))]"
+							using = button_main_tab_texture
+							frame = 4
+
+							modify_texture = {
+								using = color_intense_bg_blue_texture
+								blend_mode = multiply
+							}
+					
+							modify_texture = {
+								using = overlay_leather_texture
+								blend_mode = overlay
+								alpha = 0.2
+							}
+						}
+
+						button_secondary_tab_alt = {
+							size = { 100% 100% }
+							visible = "[GreaterThan_int32(GetDataModelSize(PlaythroughItem.GetItems), '(int32)1')]"
+							
+							down = yes
+							tooltipwidget = {BasicFunctionalTooltip = {}}
+
+							action_tooltip = {
+								click_type = left
+								click_mode = single
+								title = "TOGGLE_PLAYTHROUGH_SAVES_TOOLTIP"
+								on_action = "[PlaythroughItem.Select]"
+							}
+						}
+
+						hbox = {
+							margin = { 10 0 }
+							margin_top = 12
+							spacing = 7
+							
+							early_country_flag = {
+								size = { 32 20 }
+								
+								blockoverride "tooltip" {
+									tooltip_enabled = no
+									tagtooltip_enabled = no
+								}
+								
+								blockoverride "contextmenu" {
+									contextmenu_enabled = no
+								}
+								
+								blockoverride "flag" {
+					   				datacontext = "[GetCountryFlagCoatOfArms(PlaythroughItem.GetFlag)]"
+									texture = "[CoatOfArmsWrapper.GetTexture('(int32)72','(int32)48')]"
+									frame = "[CoatOfArmsWrapper.GetFrame('(int32)72','(int32)48')]"
+									framesize = "[CoatOfArmsWrapper.GetFrameSizeOrFallback('(int32)72','(int32)48','(float)0.5')]"
+									
+									texture_density = 2
+								}
+
+								blockoverride "click" {}
+								blockoverride "double_click" {}
+								blockoverride "hover" {}
+								blockoverride "show_as_icon" { visible = yes }
+								blockoverride "show_as_button" { visible = no }
+							}
+
+							text_single = {
+								layoutpolicy_horizontal = expanding
+								autoresize = no
+								align = nobaseline
+								fontsize = 17
+
+								raw_text = "#yellow_titles [PlaythroughItem.GetPlaythroughLabel] #! "
+								default_format = "#Color_white"
+							}
+
+							hbox = {
+								visible = "[GreaterThan_int32(GetDataModelSize(PlaythroughItem.GetItems), '(int32)1')]"
+								spacing = 7
+
+								text_single = {
+									layoutpolicy_vertical = expanding
+									autoresize = yes
+									align = nobaseline
+									raw_text = "[PlaythroughItem.GetNumberOfSaves]"
+									default_format = "#Color_white"
+								}
+
+								icon = {
+									visible = "[Not(PlaythroughItem.IsSelected)]"
+									size = { 22 22 }
+									texture = "gfx/interface/buttons/flats/button_simple_right.dds"
+									using = color_gold
+								}
+
+								icon = {
+									visible = "[PlaythroughItem.IsSelected]"
+									size = { 22 22 }
+									texture = "gfx/interface/buttons/flats/button_simple_down.dds"
+									using = color_gold
+								}
+							}
+						}
+					}
+
+					vbox = {
+						using = layoutpolicy_expanding
+						using = bg_secondary_section
+						margin = { 10 5 }
+						margin_bottom = 10
+						spacing = 10
+						
+						save_slot = {
+							visible = "[Not(PlaythroughItem.IsSelected)]"
+
+							layoutpolicy_horizontal = expanding
+							size = { -1 70 }
+
+							blockoverride "slot_button_background" {
+								icon = {
+									size = { 100% 100% }
+									visible = "[PlaythroughItem.IsIncompatible]"
+									using = color_red_texture
+									alpha = 0.4
+								}
+							}
+
+							blockoverride "slot_button" {
+								# TODO: Use click modifiers on action tooltips
+								# onshift = "[PlaythroughItem.ReplayLatest]"
+
+								block "load_slot_buttons" {
+									using = mixed_load_slot_buttons
+								}
+
+								tooltipwidget = { BasicFunctionalTooltip = {} }
+							}
+
+							blockoverride "slot_remove_button" {
+								action_tooltip = {
+									click_mode = confirm
+									title = "REMOVE_SAVE_GAME_TOOLTIP"
+									on_action = "[PlaythroughItem.Delete]"
+								}
+
+								tooltipwidget = { BasicFunctionalTooltip = {} }
+							}
+
+							blockoverride "slot_top_text" {
+								name = "name"
+								raw_text = "#BOLD [PlaythroughItem.GetSaveLabel] #! "
+							}
+							
+							blockoverride "flag" {
+								datacontext = "[GetCountryFlagCoatOfArms(PlaythroughItem.GetFlag)]"
+								texture = "[CoatOfArmsWrapper.GetTexture('(int32)144','(int32)96')]"
+								frame = "[CoatOfArmsWrapper.GetFrame('(int32)144','(int32)96')]"
+								framesize = "[CoatOfArmsWrapper.GetFrameSizeOrFallback('(int32)144','(int32)96','(float)0.5')]"
+							}
+
+							blockoverride "slot_bottom_text" {
+								name = "date"
+								raw_text = "[PlaythroughItem.GetDate]"
+							}
+
+							blockoverride "slot_icons" {
+								using = slot_icons_playthroughitem
+								
+							}
+						}
+
+						vbox = {
+							layoutpolicy_horizontal = expanding
+							spacing = 5
+							name = "savegame_grid_saves"
+
+							datamodel = "[PlaythroughItem.GetItems]"
+							visible = "[PlaythroughItem.IsSelected]"
+
+							item = {
+								save_slot = {
+									layoutpolicy_horizontal = expanding
+									size = { -1 70 }
+
+									blockoverride "slot_button_background" {
+										icon = {
+											size = { 100% 100% }
+											visible = "[SaveGameItem.IsIncompatible]"
+											using = color_red_texture
+											alpha = 0.4
+										}
+									}
+
+									blockoverride "slot_button" {
+										# TODO: Use click modifiers on action tooltips
+										# onshift = "[SaveGameItem.Replay]"
+
+										action_tooltip = {
+											click_mode = single
+											visible = "[And(SaveGameItem.HasConfirmation, Not(SaveGameItem.IsMultiplayer))]"
+											title = "LOAD_SAVE_GAME_TOOLTIP"
+											block "slot_button_SP_left_action_playtroughitem" {}
+											on_action = "[SaveGameItem.Select]"
+										}
+
+										action_tooltip = {
+											click_mode = confirm
+											visible = "[And(Not(SaveGameItem.HasConfirmation), Not(SaveGameItem.IsMultiplayer))]"
+											title = "LOAD_SAVE_GAME_TOOLTIP"
+											block "slot_button_SP_left_action_playtroughitem" {}
+											on_action = "[SaveGameItem.Select]"
+										}
+
+										action_tooltip = {
+											click_mode = single
+											click_type = right
+											visible = "[And3(SaveGameItem.HasConfirmation, Not(SaveGameItem.IsMultiplayer), Not(SaveGameItem.IsIronman))]"
+											title = "LOAD_SAVE_GAME_AND_GO_TO_LOBBY_TOOLTIP"
+											description = "LOAD_SAVE_GAME_AND_GO_TO_LOBBY_DESC_SG"
+											block "slot_button_SP_right_action_playtroughitem" {}
+											on_action = "[SaveGameItem.Select]"
+										}
+
+										action_tooltip = {
+											click_mode = confirm
+											click_type = right
+											visible = "[And3(Not(SaveGameItem.HasConfirmation), Not(SaveGameItem.IsMultiplayer), Not(SaveGameItem.IsIronman))]"
+											title = "LOAD_SAVE_GAME_AND_GO_TO_LOBBY_TOOLTIP"
+											description = "LOAD_SAVE_GAME_AND_GO_TO_LOBBY_DESC_SG"
+											block "slot_button_SP_right_action_playtroughitem" {}
+											on_action = "[SaveGameItem.Select]"
+										}
+										
+										# MP games
+										action_tooltip = {
+											click_mode = single
+											visible = "[And(SaveGameItem.HasConfirmation, SaveGameItem.IsMultiplayer)]"
+											enabled = "[JominiIsMultiplayerAccessible]"
+											description = "[JominiGetMultiplayerAccessibleString]"
+											title = "LOAD_SAVE_GAME_AND_GO_TO_LOBBY_TOOLTIP"
+											block "slot_button_MP_left_action_playtroughitem" {}
+											on_action = "[SaveGameItem.Select]"
+										}
+		
+										action_tooltip = {
+											click_mode = confirm
+											visible = "[And(Not(SaveGameItem.HasConfirmation), SaveGameItem.IsMultiplayer)]"
+											enabled = "[JominiIsMultiplayerAccessible]"
+											description = "[JominiGetMultiplayerAccessibleString]"
+											title = "LOAD_SAVE_GAME_AND_GO_TO_LOBBY_TOOLTIP"
+											block "slot_button_MP_left_action_playtroughitem" {}
+											on_action = "[SaveGameItem.Select]"
+										}
+		
+										action_tooltip = {
+											click_mode = single
+											click_type = right
+											visible = "[And(SaveGameItem.HasConfirmation, SaveGameItem.IsMultiplayer)]"
+											title = "LOAD_SAVE_GAME_AND_GO_TO_LOBBY_SP_TOOLTIP"
+											block "slot_button_MP_right_action_playtroughitem" {}
+											on_action = "[SaveGameItem.Select]"
+										}
+		
+										action_tooltip = {
+											click_mode = confirm
+											click_type = right
+											visible = "[And(Not(SaveGameItem.HasConfirmation), SaveGameItem.IsMultiplayer)]"
+											enabled = "[JominiIsMultiplayerAccessible]"
+											description = "[JominiGetMultiplayerAccessibleString]"
+											title = "LOAD_SAVE_GAME_AND_GO_TO_LOBBY_SP_DESC_SG"
+											block "slot_button_MP_right_action_playtroughitem" {}
+											on_action = "[SaveGameItem.Select]"
+										}
+
+										tooltipwidget = { BasicFunctionalTooltip = {} }
+									}
+
+									blockoverride "slot_remove_button" {
+										action_tooltip = {
+											click_mode = confirm
+											title = "REMOVE_SAVE_GAME_TOOLTIP"
+											on_action = "[SaveGameItem.Delete]"
+										}
+
+										tooltipwidget = { BasicFunctionalTooltip = {} }
+									}
+
+									blockoverride "slot_top_text" {
+										name = "name"
+										raw_text = "#BOLD [SaveGameItem.GetSaveLabel] #! "
+									}
+									
+									blockoverride "flag" {
+					   					datacontext = "[GetCountryFlagCoatOfArms(SaveGameItem.GetFlag)]"
+										texture = "[CoatOfArmsWrapper.GetTexture('(int32)144','(int32)96')]"
+										frame = "[CoatOfArmsWrapper.GetFrame('(int32)144','(int32)96')]"
+										framesize = "[CoatOfArmsWrapper.GetFrameSizeOrFallback('(int32)144','(int32)96','(float)0.5')]"
+									}
+
+									blockoverride "slot_bottom_text" {
+										name = "date"
+										raw_text = "[SaveGameItem.GetDate]"
+									}
+
+									blockoverride "slot_icons" {
+										using = slot_icons_savegameitem
+										
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		expand = {}
+	}
+
+	type load_menu = window {
+		alwaystransparent = no
+		movable = no
+		resizable = no
+
+		size = { 100% 100% }
+		layer = loadsave
+		using = bg_full_dim
+		
+		widget = {
+			using = bg_window_default_alt
+			parentanchor = center
+			allow_outside = yes
+			size = { 430 833 }
+
+			vbox = {
+				using = window_margin_alt
+	
+				window_header_alt = {
+					blockoverride "header_text" {
+						text = "LOAD_GAME"
+					}
+				}
+	
+				# widget = {
+				# 	layoutpolicy_horizontal = expanding
+				# 	size = { -1 30 }
+	
+				# 	hbox = {
+				# 		button_main_tab = {
+				# 			using = layoutpolicy_expanding
+				# 			tooltip_enabled = no
+	
+				# 			text_single = {
+				# 				size = { 100% 100% }
+				# 				using = Font_Type_Headers
+				# 				using = Font_Size_Medium
+				# 				default_format = "#color_white"
+				# 				autoresize = no
+				# 				align = center|nobaseline
+	
+				# 				text = "SINGLE_PLAYER_BTN"
+				# 			}
+	
+				# 			down = yes
+				# 		}
+	
+				# 		button_main_tab = {
+				# 			using = layoutpolicy_expanding
+				# 			tooltip_enabled = no
+	
+				# 			text_single = {
+				# 				size = { 100% 100% }
+				# 				using = Font_Type_Headers
+				# 				using = Font_Size_Medium
+				# 				default_format = "#color_white"
+				# 				autoresize = no
+				# 				align = center|nobaseline
+	
+				# 				text = "MP_BTN"
+				# 			}
+	
+				# 			enabled = no
+				# 		}
+				# 	}
+				# }
+	
+				vbox = {
+					using = layoutpolicy_expanding
+					margin = { 10 10 }
+	
+					# loading message
+					save_load_menu_loading_indicator = {}
+	
+					expand = {
+						# block "pending_to_read_saves" {
+							visible = "[SaveListWindow.IsPendingToReadSaveFiles]"
+						# }
+					}
+	
+					# inside content
+					scroll_list = {
+						using = layoutpolicy_expanding
+						name = "savegame_scrollarea"
+	
+						# block "not_pending_to_read_saves" {
+							visible = "[Not(SaveListWindow.IsPendingToReadSaveFiles)]"
+						# }
+	
+						blockoverride "scroll_list_layout" {
+							loadgame_grid = {
+								using = layoutpolicy_expanding
+							}
+						}
+	
+						blockoverride "slot_button_SP_left_action_playtroughitem" {
+							on_action = "[AccessPauseMenu.SetInitSettings('(bool)no', '(bool)no')]"
+						}
+	
+						blockoverride "slot_button_SP_right_action_playtroughitem" {
+							on_action = "[AccessPauseMenu.SetInitSettings('(bool)yes', '(bool)no')]"
+						}
+	
+						blockoverride "slot_button_MP_left_action_playtroughitem" {
+							on_action = "[AccessPauseMenu.SetInitSettings('(bool)yes', '(bool)yes')]"
+						}
+	
+						blockoverride "slot_button_MP_right_action_playtroughitem" {
+							on_action = "[AccessPauseMenu.SetInitSettings('(bool)yes', '(bool)no')]"
+						}
+
+						state = {
+							name = _show
+							start_sound = { soundeffect = "UI_button_gameLoad" }
+						}
+					}
+				}
+			}
+	
+			# block "button_back_obj" {
+				# button_back = {
+				# 	name = "back_button"
+				# 	input_action = "close_window"
+	
+				# 	blockoverride "back_onclick" {
+				# 		block "on_back" {
+				# 			onclick = "[JominiLoadWindow.Cancel]"
+				# 		}
+				# 	}
+	
+				# 	position = { -5 -6 }
+				# }
+			# }
+	
+			# block "button_close_obj" {
+				widget = {
+					parentanchor = right
+					position = { -5 5 }
+					size = { 40 40 }
+		
+					ui_direction_button_holder_right = {}
+		
+					button_close_alt = {
+						input_action = "close_window"
+						use_global_input_instance = yes
+						blockoverride "close_onclick" {
+							onclick = "[JominiLoadWindow.Cancel]"
+						}
+					}
+				}
+			# }
+		}
+	}
+}

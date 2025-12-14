@@ -1,0 +1,54 @@
+types FlavorTypes
+{
+    type AgeEventDecorationTop = icon {			
+        size = { 74 60 }
+        texture = "gfx/interface/component_decoration/age_event_top_flavor.dds"
+        texture_density = 2
+		# block "decor_mirror" {}
+
+        modify_texture = {
+            using = color_new_gold_texture
+            blend_mode = add
+            alpha = 0.6
+        }
+
+        modify_texture = {
+            using = color_black_texture
+            blend_mode = overlay
+            alpha = 0.4
+        }
+    
+        glow = {
+            name = "drop_shadow"
+            glow_radius = 2
+            color = {0.0 0.0 0.0 1.0}
+            alpha = 0.7
+        }
+    }
+
+    type AgeEventDecorationTop2 = icon {			
+        size = { 26 32 }
+        texture = "gfx/interface/component_decoration/age_event_top_flavor2.dds"
+        texture_density = 2
+
+        modify_texture = {
+            using = color_new_gold_texture
+            blend_mode = add
+            alpha = 0.6
+        }
+		
+
+        modify_texture = {
+            using = color_black_texture
+            blend_mode = overlay
+            alpha = 0.4
+        }
+    
+        glow = {
+            name = "drop_shadow"
+            glow_radius = 2
+            color = {0.0 0.0 0.0 1.0}
+            alpha = 0.7
+        }
+    }
+}

@@ -1,0 +1,8 @@
+Scripted widgets are a way of creating widgets without needing to define them inside an existing .gui file.
+
+A scripted widget is declared following this format within a .txt file inside this folder:
+gui/scripted_widget_file_name.gui = scripted_widget_name
+
+Note: The scripted widget inside the .gui file is required to have a 'visible' attribute.
+'visible = yes' does not work, the boolean must be returned by a function.
+As a workaround, 'visible = "[EqualTo_CFixedPoint('(CFixedPoint)0', '(CFixedPoint)0')]"' works as an equivalent to 'visible = yes'.

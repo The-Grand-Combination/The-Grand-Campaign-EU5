@@ -1,0 +1,55 @@
+##########################
+#   WORKBENCH BASE UI    #
+##########################
+
+margin_widget = {
+	name = "gui_workbench"
+	size = { 100% 100% }
+	margin = { 10 10 }
+
+	background = {
+		texture = "gfx/interface/debug/workbench_bg.dds"
+	}
+
+	button_close = {
+		blockoverride "close_onclick" {
+			onclick = "[ExecuteConsoleCommand('GUI.ClearWidgets')]"
+		}
+	}
+
+	##########################
+	# USE IT FROM HERE BELOW #
+	##########################
+
+	window = {
+		name = "panel_list_test"
+		size = { 500 900 }
+
+		parentanchor = center
+
+		using = bg_window_default_alt
+
+		vbox = { # Window Content Here:
+			using = window_margin_alt
+			window_header_alt = {
+
+				blockoverride "header_text" {
+					raw_text = "Standard List Test"
+				}
+			}
+
+			expand = {}
+		}
+	}
+} # END OF "test_window"
+
+
+
+
+
+
+
+
+
+
+

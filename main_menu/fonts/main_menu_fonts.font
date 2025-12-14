@@ -1,0 +1,28 @@
+## Console font
+
+font = {
+	name = "ConsoleFont"
+
+	fontstyle = {
+		style = regular
+		fontfiles = "NotoSansMono-Light"
+	}
+
+	fontstyle = {
+		style = semibold # We should use this tag, theres no  "light" tag for styles in "textformatting.gui"
+		fontfiles = "NotoSansMono-Light"
+	}
+
+	fontstyle = {
+		style = bold
+		fontfiles = "NotoSansMono-Medium"
+	}
+
+	underlineformats = {
+		default = {
+			thickness = 1
+			offset = 0.12
+		}
+	}
+}
+

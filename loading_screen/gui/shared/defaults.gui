@@ -1,0 +1,407 @@
+template default_scrollbar_button {
+	clicksound = ""
+}
+
+template loading_progress_texture {
+	gfxtype = framedprogressbargfx
+	texture = "gfx/interface/frontend/loading_progress.dds"
+	frame_grid = { 24 1 }
+	loopinterval = 2.0
+	max = 0
+}
+
+# button_regular
+template button_common_textobj_font {
+	using = text_single_template
+	using = Font_Type_Headers
+}
+
+template button_common_textobj_template {
+	buttonText = {
+		textbox = {
+			using = button_common_textobj_font
+
+			size = { 100% 100% }
+			autoresize = no
+			align = center|nobaseline
+			block "button_text_properties" {
+				default_format = "#color_white"
+			}
+		}
+	}
+}
+
+template button_common_properties_template {
+	gfxtype = framedbuttongfx
+	effectname = "NoHighlight"
+
+	upframe = 1
+	overframe = 2
+	downframe = 3
+	disableframe = 4
+}
+
+template button_common_template {
+	using = button_common_textobj_template
+	block "button_push_properties" {
+		using = button_common_properties_template
+	}
+}
+
+template button_regular_texture {
+	texture = "gfx/interface/buttons/button_regular.dds"
+	texture_density = 2
+	alpha = 1
+	spriteType = corneredstretched
+	spriteborder = { 14 14 }
+	frame_grid = {4 1}
+
+	modify_texture = {
+		using = overlay_stone_texture
+		blend_mode = overlay
+		alpha = 0.3
+	}
+}
+
+template button_regular_red_texture {
+	texture = "gfx/interface/buttons/button_regular_red.dds"
+	texture_density = 2
+	alpha = 1
+	spriteType = corneredstretched
+	spriteborder = { 14 14 }
+	frame_grid = {4 1}
+
+	modify_texture = {
+		using = overlay_stone_texture
+		blend_mode = overlay
+		alpha = 0.3
+	}
+}
+
+template button_regular_yellow_texture {
+	texture = "gfx/interface/buttons/button_regular_yellow.dds"
+	texture_density = 2
+	alpha = 1
+	spriteType = corneredstretched
+	spriteborder = { 14 14 }
+	frame_grid = {4 1}
+
+	modify_texture = {
+		using = overlay_stone_texture
+		blend_mode = overlay
+		alpha = 0.3
+	}
+}
+
+template button_regular_green_texture {
+	texture = "gfx/interface/buttons/button_regular_green.dds"
+	texture_density = 2
+	alpha = 1
+	spriteType = corneredstretched
+	spriteborder = { 14 14 }
+	frame_grid = {4 1}
+
+	modify_texture = {
+		using = overlay_stone_texture
+		blend_mode = overlay
+		alpha = 0.3
+	}
+}
+
+template button_regular_shadow_texture {
+	texture = "gfx/interface/buttons/regular_button_shadow.dds"
+	texture_density = 2
+	alpha = 0.5
+	spriteType = corneredstretched
+	spriteborder = { 14 0 }
+
+	modify_texture = {
+		using = color_black_texture
+	}
+}
+
+##############################
+
+types Default
+{
+	type pieslice = uberpieslice {
+		focuspolicy = click
+		gfxtype = pieslicegfx
+		shaderfile = "gfx/FX/pdxgui_piechart.shader"
+		alwaystransparent = no
+		mask = "gfx/interface/default_piechart_mask.dds"
+		using = tooltip_se
+	}
+
+	type pieslice_no_highlight = pieslice {
+		effectname = "NoHighlight"
+	}
+
+	type button = uberbutton {
+		focuspolicy = click
+		gfxtype = buttongfx
+		shaderfile = "gfx/FX/pdxgui_pushbutton.shader"
+		using = tooltip_se
+		using = snd_UI_buttonPress
+		using = snd_UI_hover
+	}
+
+	type action_button = action_button {
+		focuspolicy = click
+		gfxtype = buttongfx
+		shaderfile = "gfx/FX/pdxgui_pushbutton.shader"
+		using = tooltip_se
+		using = snd_UI_open
+		using = snd_UI_buttonPress
+
+		visible = "[UIAction.IsVisible]"
+		enabled = "[UIAction.IsEnabled]"
+		onpressed = "[UIAction.OnLeftMouseDown]"
+		onreleased = "[UIAction.OnLeftMouseUp]"
+		onrightpressed = "[UIAction.OnRightMouseDown]"
+		onrightreleased = "[UIAction.OnRightMouseUp]"
+		onclick = "[UIAction.OnLeftClick]"
+		onrightclick = "[UIAction.OnRightClick]"
+	}
+
+	type editbox = editbox {
+		gfxtype = editboxgfx
+		shaderfile = "gfx/FX/pdxgui_default.shader"
+		font = StandardGameFont
+		fontsize = 15
+		fontcolor = "[GetDebugFontColor]" # magenta in debug to make people use font templates
+		using = tooltip_se
+	}
+
+	type textbox = ubertextbox {
+		focuspolicy = click
+		gfxtype = textboxgfx
+		shaderfile = "gfx/FX/pdxgui_default.shader"
+		font = StandardGameFont
+		fontsize = 15
+		fontcolor = "[GetDebugFontColor]" # magenta in debug to make people use font templates
+		using = tooltip_se
+	}
+
+	type debug_textbox = debug_textbox {
+		gfxtype = textboxgfx
+		shaderfile = "gfx/FX/pdxgui_default.shader"
+		font = ConsoleFont
+		fontsize = 15
+		fontcolor = "[GetDebugFontColor]" # magenta in debug to make people use font templates
+		using = tooltip_se
+	}
+
+	type icon = icon {
+		focuspolicy = click
+		gfxtype = icongfx
+		shaderfile = "gfx/FX/pdxgui_default.shader"
+		using = tooltip_se
+	}
+
+	type window = window {
+		focuspolicy = click
+		gfxtype = windowgfx
+		shaderfile = "gfx/FX/pdxgui_default.shader"
+		spriteType = corneredstretched
+		spriteborder = { 19 19 }
+		using = tooltip_se
+		layer = windows_layer
+		using = snd_UI_window_state
+		min_dist_from_screen_edge = 100
+	}
+
+	type progressbar = progressbar {
+		focuspolicy = click
+		gfxtype = progressbargfx
+		shaderfile = "gfx/FX/pdxgui_progressbar.shader"
+		using = tooltip_se
+	}
+
+	# type progresspie = progressbar {
+	# 	focuspolicy = click
+	# 	gfxtype = progresspiegfx
+	# 	shaderfile = "gfx/FX/gui_progresspie.shader"
+	# 	using = tooltip_se
+	# }
+
+	type checkbutton = checkbutton {
+		focuspolicy = click
+		gfxtype = checkbuttongfx
+		shaderfile = "gfx/FX/pdxgui_pushbutton.shader"
+		using = tooltip_se
+		using = snd_UI_clickPress
+		using = snd_UI_checkbutton_default
+		using = snd_UI_hover
+	}
+
+	# type ubercheckbutton = ubercheckbutton {
+	# 	focuspolicy = click
+	# 	gfxtype = checkbuttongfx
+	# 	shaderfile = "gfx/FX/pdxgui_pushbutton.shader"
+	# 	using = tooltip_se
+	# 	using = snd_UI_clickPress
+	# 	using = snd_UI_checkbutton_default
+	# 	using = snd_UI_hover
+	# }
+
+	type dropdown = dropdown {
+		using = snd_UI_dropdown_widget
+	}
+
+	type scrollbar = scrollbar {
+		min = 0
+		max = 100
+		step = 1
+		page = 10
+		value = 0
+		alwaystransparent = no
+
+		slider = {
+			button = {
+				using = default_scrollbar_button
+				texture = "gfx/interface/scrollbars/scrollbar_slider.dds"
+			}
+		}
+		using = tooltip_se
+	}
+
+	type scrollarea = uberscrollarea {
+		focuspolicy = click
+		block "scrollarea_scissor" {
+			scissor = yes
+		}
+		scrollbaralign_vertical = right
+		scrollbaralign_horizontal = bottom
+		using = tooltip_se
+	}
+
+	# this should be fixed and not done like this
+	type container = container {
+		focuspolicy = click
+		ignoreinvisible = no
+		using = tooltip_se
+	}
+
+	# this should be fixed and not done like this
+	type flowcontainer = flowcontainer {
+		focuspolicy = click
+		ignoreinvisible = no
+		using = tooltip_se
+	}
+
+	type widget = uberwidget {
+		focuspolicy = click
+		using = tooltip_se
+	}
+
+	type hbox = uberhbox {
+		focuspolicy = click
+		using = tooltip_se
+	}
+
+	type vbox = ubervbox {
+		focuspolicy = click
+		using = tooltip_se
+	}
+
+	type piechart = piechart {
+		focuspolicy = click
+		using = tooltip_se
+	}
+
+	type ecscameracontrolwidget = cameracontrolwidget {
+		gfxtype = ecs_scene_viewer_gfx
+		shaderfile = "gfx/FX/pdxgui_default.shader"
+
+		# effectname = "PdxGuiDefault"
+		# effectname = "PdxGuiPreMultipliedAlpha"
+		effectname = "PdxGuiDefaultNoAlpha"
+
+		block "enabled_input" {
+			enabled_input = no
+		}
+		block "use_for_loading_screen" {
+			use_for_loading_screen = no
+		}
+		# block "grid_name" {}
+	}
+
+	type ecs_scene_viewer_widget = ecs_scene_viewer_widget {
+		ecscameracontrolwidget = {
+			size = { 100% 100% }
+			name = "viewport"
+
+			# block "camera_control_modify_textures" {}
+
+			visible = "[Not(EcsSceneViewer.Is2DScene)]"
+			camera_zoom_limits = { 0.1 2000 }
+		}
+
+		icon = {
+			size = { 100% 100% }
+			name = "image_viewport"
+			visible = "[EcsSceneViewer.Is2DScene]"
+		}
+
+		icon = {
+			size = { 100% 100% }
+			name = "ultrawide_mask"
+			texture = "gfx/loading_screen_assets/00/images/mask2_219.dds"
+			visible = "[EcsSceneViewer.IsUltraWide]"
+		}
+	}
+
+	type button_regular = button {
+		using = button_regular_texture
+		using = button_common_template
+		fontsize = 13
+		size = { -1 30 }
+
+		background = {
+			using = button_regular_shadow_texture
+			margin = {1 0}
+			margin_bottom = 3
+		}
+	}
+
+	type button_regular_red = button {
+		using = button_regular_red_texture
+		using = button_common_template
+		fontsize = 13
+		size = { -1 30 }
+
+		background = {
+			using = button_regular_shadow_texture
+			margin = {1 0}
+			margin_bottom = 3
+		}
+	}
+
+	type button_regular_yellow = button
+	{
+		using = button_regular_yellow_texture
+		using = button_common_template
+		fontsize = 13
+		size = { -1 30 }
+
+		background = {
+			using = button_regular_shadow_texture
+			margin = {1 0}
+			margin_bottom = 3
+		}
+	}
+
+	type button_regular_green = button {
+		using = button_regular_green_texture
+		using = button_common_template
+		fontsize = 13
+		size = { -1 30 }
+
+		background = {
+			using = button_regular_shadow_texture
+			margin = {1 0}
+			margin_bottom = 3
+		}
+	}
+}

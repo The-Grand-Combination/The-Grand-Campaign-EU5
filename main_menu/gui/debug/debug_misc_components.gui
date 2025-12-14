@@ -1,0 +1,12 @@
+types Miscelaneous
+{
+} # END OF "types Miscelaneous"
+
+# template debug_square {
+# 	background = {
+# 		texture = "gfx/interface/debug/pink_square_opacy.dds"
+# 		spriteType = Corneredtiled
+# 		spriteborder = { 1 1 }
+# 		alpha = 0.5
+# 	}
+# }

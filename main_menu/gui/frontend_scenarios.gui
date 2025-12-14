@@ -1,0 +1,186 @@
+types ScenarioContainer
+{
+	type OnMapScenario = widget {
+		# visible = "[ObjectsEqual(Scenario.GetProficiency.Self, FrontEndSinglePlayerView.GetSelectedProficiency.Self)]"
+		size = { 0 0 }
+		allow_outside = yes
+		button = {
+			allow_outside = yes
+			parentanchor = center
+			size = { 130 150 }
+			
+			action_tooltip = {
+				# click_mode = confirm
+				title = "[Scenario.GetName]"
+				on_action = "[FrontEndSinglePlayerView.SelectScenario(Scenario.Self)]"
+			}
+
+			onmousehierarchyenter = "[GetVariableSystem.Toggle( Scenario.GetKey )]"
+			onmousehierarchyleave = "[GetVariableSystem.Clear( Scenario.GetKey )]"
+			
+			widget = {
+				size = {100% 100%}
+				visible = "[Or(GetVariableSystem.Exists( Scenario.GetKey ), FrontEndSinglePlayerView.IsScenarioSelected(Scenario.Self))]"
+				using = Animation_Show_Hide_Eased
+
+				background = {
+					texture = "gfx/interface/component_tiles/tile_card_shadow.dds"
+					texture_density = 2
+					margin = {35 35}
+					alpha = 0.8
+
+					modify_texture = {
+						using = color_white_texture
+					}
+				}
+			}
+
+			widget = {
+				size = { 130 170 }
+
+				vbox ={
+					spacing = -4
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = expanding
+
+					early_country_flag = {
+						size = {128 86}
+						visible = "[And(Not(GetVariableSystem.Exists( Scenario.GetKey )), Not(FrontEndSinglePlayerView.IsScenarioSelected(Scenario.Self)))]"
+
+						blockoverride "tooltip" {
+							tooltip_enabled = no
+							tagtooltip_enabled = no
+						}
+						
+						blockoverride "contextmenu" {
+							contextmenu_enabled = no
+						}
+						
+						blockoverride "flag" {
+							block "flag" {
+								datacontext = "[GetCountryFlagCoatOfArms(Scenario.GetFlag)]"
+								texture = "[CoatOfArmsWrapper.GetTexture('(int32)144','(int32)96')]"
+								frame = "[CoatOfArmsWrapper.GetFrame('(int32)144','(int32)96')]"
+								framesize = "[CoatOfArmsWrapper.GetFrameSizeOrFallback('(int32)144','(int32)96','(float)0.5')]"
+							}
+							
+							texture_density = 2
+						}
+
+						blockoverride "click" {
+							action_tooltip = {			
+									title = "[Scenario.GetName]"
+									on_action = "[FrontEndSinglePlayerView.SelectScenario(Scenario.Self)]"
+							}
+						}
+						blockoverride "double_click" {}
+						blockoverride "hover" {}
+					}
+
+					early_country_flag = {
+						size = {132 88}
+						visible = "[Or(GetVariableSystem.Exists( Scenario.GetKey ), FrontEndSinglePlayerView.IsScenarioSelected(Scenario.Self))]"
+						blockoverride "tooltip" {
+							tooltip_enabled = no
+							tagtooltip_enabled = no
+						}
+						
+						blockoverride "contextmenu" {
+							contextmenu_enabled = no
+						}
+						
+						blockoverride "flag" {
+							block "flag" {
+								datacontext = "[GetCountryFlagCoatOfArms(Scenario.GetFlag)]"
+								texture = "[CoatOfArmsWrapper.GetTexture('(int32)144','(int32)96')]"
+								frame = "[CoatOfArmsWrapper.GetFrame('(int32)144','(int32)96')]"
+								framesize = "[CoatOfArmsWrapper.GetFrameSizeOrFallback('(int32)144','(int32)96','(float)0.5')]"
+							}
+							
+							texture_density = 2
+						}
+
+						blockoverride "click" {
+							action_tooltip = {			
+									title = "[Scenario.GetName]"
+									on_action = "[FrontEndSinglePlayerView.SelectScenario(Scenario.Self)]"
+							}
+						}
+						blockoverride "double_click" {}
+						blockoverride "hover" {}
+					}
+
+					vbox = {
+						margin = {5 5}
+						margin_top = 10
+						spacing = 1
+						layoutpolicy_horizontal = expanding
+						background = {
+							visible = "[Scenario.IsPlayStyleKey('diplomatic')]"
+							
+							using = bg_name_banner_texture
+							blockoverride "name_banner_texture" {
+								texture = "gfx/interface/component_tiles/playstyle_banners_diplomacy.dds"
+							}
+							# modify_texture = {
+							# 	visible = "[Or(GetVariableSystem.Exists( Scenario.GetKey ), FrontEndSinglePlayerView.IsScenarioSelected(Scenario.Self))]"
+							# 	using = color_white_texture
+							# 	blend_mode = overlay
+							# 	alpha = 0.2
+							# }
+						}
+						background = {
+							visible = "[Scenario.IsPlayStyleKey('administrative')]"
+							
+							using = bg_name_banner_texture
+							blockoverride "name_banner_texture" {
+								texture = "gfx/interface/component_tiles/playstyle_banners_economy.dds"
+							}
+							modify_texture = {
+								visible = "[Or(GetVariableSystem.Exists( Scenario.GetKey ), FrontEndSinglePlayerView.IsScenarioSelected(Scenario.Self))]"
+								using = color_white_texture
+								blend_mode = overlay
+								alpha = 0.2
+							}
+						}
+						background = {
+							visible = "[Scenario.IsPlayStyleKey('military')]"
+							
+							using = bg_name_banner_texture
+							blockoverride "name_banner_texture" {
+								texture = "gfx/interface/component_tiles/playstyle_banners_military.dds"
+							}
+							modify_texture = {
+								visible = "[Or(GetVariableSystem.Exists( Scenario.GetKey ), FrontEndSinglePlayerView.IsScenarioSelected(Scenario.Self))]"
+								using = color_white_texture
+								blend_mode = overlay
+								alpha = 0.2
+							}
+						}
+						
+						expand = {}
+
+						text_single = {
+							size = { 130 20 }
+							autoresize = no
+							using = title_text_template
+							text = "[Localize(Scenario.GetCountryTag)]"
+						}
+
+						text_single = {
+							size = { 130 15 }
+							autoresize = no						
+							using = Font_Size_Small
+							align = center|nobaseline
+							text = "[Scenario.GetPlayStyleName]"
+						}
+
+						expand = {}
+					}
+					
+					expand = {}
+				}
+			}
+		}
+	}	
+}

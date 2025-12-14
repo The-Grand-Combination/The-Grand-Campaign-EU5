@@ -1,0 +1,67 @@
+basic_dialog = {
+	name = "close_settings_dialog_window"
+
+	blockoverride "header_text" {
+		text = "CONFIRM"
+	}
+
+	blockoverride "close_onclick" {
+		onclick = "[CloseSettingsDialogWindow.OnCancel]"
+	}
+
+	blockoverride "content"  {
+		flowcontainer = {
+			direction = vertical
+			margin = { 20 0 }
+
+			# Description
+			textbox = {
+				text = "SETTINGS_CONFIRM_CHANGES"
+				max_width = 500
+				autoresize = yes
+				multiline = yes
+				text_selectable = no
+				alwaystransparent = no
+				margin_left = 10
+				margin_right = 10
+
+				using = Font_Type_Standard
+				using = Font_Size_Medium
+				default_format = "#medium"
+
+				align = center
+				margin_bottom = 5
+			}
+		}
+	}
+
+	blockoverride "bottom_buttons" {
+
+		button_regular = {
+			size = {120 30}
+			text = "SAVE_SETTINGS"
+			onclick = "[CloseSettingsDialogWindow.OnSave]"
+			input_action = "confirm"
+			use_global_input_instance = yes
+			tooltip_enabled = no
+		}
+
+		button_regular = {
+			size = {120 30}
+			text = "DISCARD"
+			onclick = "[CloseSettingsDialogWindow.OnDiscard]"
+			use_global_input_instance = yes
+			tooltip_enabled = no
+		}
+
+		button_regular = {
+			size = {120 30}
+			text = "CANCEL_BUTTON"
+			onclick = "[CloseSettingsDialogWindow.OnCancel]"
+			input_action = "close_window"
+			use_global_input_instance = yes
+			tooltip_enabled = no
+		}
+	}
+}
+

@@ -1,0 +1,118 @@
+caesar_legal_docs_viewer = {
+    blockoverride "sdk_window" { 
+        using = sdk_window_template 
+        movable = no
+    }
+    blockoverride "sdk_button_size" { using = sdk_button_size_template }
+    blockoverride "sdk_button_style" { using = sdk_button_style_template }
+    blockoverride "sdk_text_style" { using = sdk_text_style_template }
+    blockoverride "sdk_vertical_scrollbar" { using = Scrollbar_Vertical }
+    blockoverride "close_button_obj" {}
+    blockoverride "legal_docs_vbox_properties" {
+        layoutpolicy_vertical = expanding
+        layoutpolicy_horizontal = expanding
+        margin = { 10 10 }
+        spacing =  20
+    }
+    blockoverride "legal_docs_scrollarea_size" { minimumsize = { 615 768 } }
+    blockoverride "legal_docs_text_size" {
+        minimumsize = { 600 768 }
+        maximumsize = { 600 -1 }
+
+        background = {
+            using = bg_round_corners
+            alpha = 0.5
+        }
+
+        margin = { 10 10 }
+    }
+}
+
+types CaesarSDK
+{
+    type caesar_legal_docs_viewer = window {
+        name = "legal_docs_viewer"
+
+        using = bg_window_default_alt
+        alwaystransparent = no
+        reorder_on_mouse = never
+        resizable = no
+        movable = no
+        parentanchor = center
+        allow_outside = yes
+
+        size = { 700 720 }
+
+        widget = {
+            parentanchor = right
+            position = { -5 5 }
+            size = { 40 40 }
+        }
+
+        vbox = {
+            using = layoutpolicy_expanding
+            using = window_margin_alt
+            
+            window_header_alt = {
+                blockoverride "header_text" {
+                    text = "REVIEW_LEGAL_DOCUMENT"
+                }
+            }
+
+            vbox = {
+                using = layoutpolicy_expanding
+                using = bg_main_inner_alt
+
+                spacing = 20
+
+                margin = { 0 10 }
+
+                scroll_list = {
+                    size = { 674 600 }
+
+                    blockoverride "scroll_list_layout" {
+                        vbox = {
+                            using = layoutpolicy_expanding
+
+                            textbox = {
+                                minimumsize = { 600 768 }
+                                maximumsize = { 600 -1 }
+
+                                align = left
+                                multiline = yes
+                                autoresize = yes
+
+                                raw_text = "[LegalDocsViewer.GetDocumentText]"
+
+                                using = Font_Type_Standard
+                                using = text_multi_template
+                                default_format = "#medium"
+                            }
+                        }
+                    }
+
+                    scrollbar_vertical = {
+                        using = sdk_vertical_scrollbar
+                    }
+                }
+
+                settings_save_button = {
+                    size = { 100 30 }
+                    text_single = {
+                        align = center
+                        parentanchor = center
+                        size = { 96% 100% }
+                        autoresize = no
+                        text = "POPS_OK"
+                    }
+                    tooltipwidget = {
+                        LeftClickButtonTooltip = {
+                            blockoverride "onclick_text" { text = "AGREE_LEGAL_DOCUMENT" } 
+                        }
+                    }
+                    onclick = "[LegalDocsViewer.Agree]"
+                }
+            }
+        }
+    }
+}

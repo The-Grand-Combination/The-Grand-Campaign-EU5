@@ -1,0 +1,70 @@
+﻿{
+  "animationSets": [
+    {
+      "name": "MyTimelineAnimation1",
+      "duration": 20.0,
+      "paths": [
+        {
+          "path": "topWidget",
+          "keyframes": {
+            "size": [
+              {"time": 0.0, "value": { "x": 1, "y": 1}},
+              {"time": 1.0, "value": { "x": 20, "y": 20}}
+            ],
+            "position": [
+              {"time": 0.0, "value": { "x": 20, "y": 20}},
+              {"time": 0.3, "value": { "x": 100, "y": -20}},
+              {"time": 1.0, "value": { "x": 120, "y": 120}}
+            ]
+          }
+        },
+        {
+          "path": "topWidget.childWidget",
+          "keyframes": {
+            "size": [
+              {"time": 0.2, "value": { "x": 1, "y": 1}},
+              {"time": 1.0, "value": { "x": 20, "y": 20}}
+            ],
+            "position": [
+              {"time": 0.1, "value": { "x": 20, "y": 20}},
+              {"time": 0.3, "value": { "x": 100, "y": -20}},
+              {"time": 1.0, "value": { "x": 120, "y": 120}}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "MyTimelineAnimation2",
+      "duration": 20.0,
+      "paths": [
+        {
+          "path": "topWidget",
+          "keyframes": {
+            "size": [
+              {"time": 0.0, "value": { "x": 1, "y": 1}},
+              {"time": 1.0, "value": { "x": 20, "y": 20}}
+            ],
+            "position": [
+              {"time": 0.0, "value": { "x": 20, "y": 20}},
+              {"time": 1.0, "value": { "x": 120, "y": 120}}
+            ]
+          }
+        },
+        {
+          "path": "topWidget.childWidget",
+          "keyframes": {
+            "size": [
+              {"time": 0.0, "value": { "x": 1, "y": 1}},
+              {"time": 1.0, "value": { "x": 20, "y": 20}}
+            ],
+            "position": [
+              {"time": 0.0, "value": { "x": 20, "y": 20}},
+              {"time": 1.0, "value": { "x": 120, "y": 120}}
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

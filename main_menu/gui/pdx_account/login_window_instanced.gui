@@ -1,0 +1,84 @@
+caesar_login_window = {
+    blockoverride "sdk_window" { using = sdk_window_template }
+    blockoverride "sdk_text_style" { using = sdk_text_style_template }
+    blockoverride "sdk_button_style" { using = sdk_button_style_template }
+    blockoverride "sdk_button_size" { using = sdk_button_size_template }
+    blockoverride "sdk_generic_entry" { using = sdk_generic_entry_template }
+    blockoverride "sdk_textbox_entry" { using = sdk_textbox_entry_template }
+    blockoverride "sdk_dropdown_enum" { using = dropwdown_sdk_enum_template }
+    blockoverride "sdk_checkbutton" { using = sdk_checkbutton_template }
+    blockoverride "sdk_load_indicator" { using = sdk_load_indicator_template }
+    blockoverride "close_button" { onclick = "[LoginView.Hide]"}
+
+    blockoverride "reset_password_button" {}
+    blockoverride "login_entries_block_properties" {}
+    blockoverride "reset_password_block_properties" {}
+    blockoverride "reset_password_button_hbox_properties" {
+        margin = { 10 10 }
+    }
+
+    blockoverride "login_hbox_properties" {
+        margin = { 20 10 }
+        resizeparent = yes
+    }
+
+    blockoverride "login_entries_vbox_properties" {
+        margin = { 20 20 }
+        spacing = 10
+        resizeparent = yes
+    }
+
+    blockoverride "create_block_properties" {
+        visible = no
+    }
+
+    blockoverride "create_block_vbox_properties" {
+        margin = { 35 35 }
+        resizeparent = yes
+    }
+
+    blockoverride "reset_password_vbox_properties" {
+        margin = { 20 10 }
+        spacing = 20
+        resizeparent = yes
+    }
+}
+
+template caesar_sdk_modal_template {
+    size = { 100% 100% }
+    movable = no 
+    alwaystransparent = no
+    reorder_on_mouse = never
+    resizable = no
+
+    background = {
+        spriteType = CorneredStretched
+
+        texture = "gfx/interface/colors/grey.dds"
+        spriteborder = { 5 5 }
+        margin = { 0 0 }
+        alpha = 0.5
+    }
+}
+
+types CaesarSDK
+{
+	type caesar_login_window = window {
+        name = "login_window"
+        using = caesar_sdk_modal_template
+
+        login_window = {
+            name = "login_window_inner"
+
+            sdk_button = {
+                visible = "[Not(LoginView.IsRestoringPassword)]"
+                position = { 0 -35 }
+                parentanchor = bottom|hcenter
+                text = "ACCOUNT_BUTTON_CREATE"
+                layoutpolicy_horizontal = fixed
+                onclick = "[LoginView.Hide]"
+                onclick = "[ToggleJominiCreateAccount]"
+            }
+        }
+    }
+}

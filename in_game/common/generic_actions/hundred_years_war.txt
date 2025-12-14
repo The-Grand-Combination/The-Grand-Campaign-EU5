@@ -1,0 +1,1309 @@
+﻿demand_autonomy = {	#Appanage - Demand Autonomy
+	type = situation
+	show_message = no
+	potential = {
+		scope:actor = {
+			is_subject_of = c:FRA
+			is_subject_type = appanage
+		}
+	}
+
+	allow = {
+		
+		scope:actor = {
+			custom_tooltip = {
+				text = another_appanage_capital_area_stronger_tt
+				NOT = {	#Action reserved for the strongest local appanage
+					c:FRA = {
+						any_subject = {
+							exists = capital
+							capital.area = scope:actor.capital.area
+							is_subject_type = appanage
+							relative_strength = {
+								target = scope:actor
+								value >= 0.5
+							}
+						}
+					}
+				}
+			}
+			at_war = no
+		}
+	}
+
+	cooldown = {
+		type = demand_autonomy
+		years = 10
+	}
+
+	price = price:hyw_main_actions_price
+
+	automation_tick = never
+	automation_tick_frequency = 12
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:hundred_years_war = this
+			situation_is_active = yes
+		}
+	}
+
+	effect = { 
+		scope:actor = {
+			trigger_event_non_silently = hundred_years_war.206
+		}
+		
+	}
+
+	ai_will_do = {	#Appanage should always want this as long as they are disloyal
+		add = 5
+
+		if = {
+			limit = { scope:actor = { subject_loyalty > 50 } }
+			add = -10
+		}
+	}
+}
+
+request_papal_delegates = {	#Request Papal Legates
+	type = situation
+	show_message = no
+	potential = {
+		c:PAP ?= { 
+			NOR = { 
+				is_subject_of = c:FRA 
+				is_subject_of = c:ENG 
+			}
+		}
+		scope:actor = {
+			OR = {
+				tag = FRA
+				tag = ENG
+			}
+			NOT = { is_at_war_with = c:PAP }
+		}
+	}
+	price = price:hyw_main_actions_price
+
+	automation_tick = never
+	automation_tick_frequency = 12
+
+	allow = {
+		c:PAP ?= {
+			opinion = {
+				target = scope:actor
+				value > 0
+			}
+		}
+		scope:actor = {
+			ruler_or_regent ?= { 
+				NOT = { has_character_modifier = excommunicated }
+			}
+			trigger_if = {
+				limit = { scope:actor = c:FRA }
+				any_current_war = {
+					attacker_leader = c:ENG
+					defender_leader = scope:actor
+					war_length_in_years > 4
+				}
+			}
+			trigger_else = {
+				any_current_war = {
+					attacker_leader = c:FRA
+					defender_leader = scope:actor
+					war_length_in_years > 4
+				}
+			}
+		}
+	}
+
+	cooldown = {
+		type = request_papal_delegates
+		years = 15
+	}
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:hundred_years_war = this
+			situation_is_active = yes
+		}
+	}
+
+	effect = {
+		custom_tooltip = {
+			text = pap_will_be_asked_to_enforce_wp_tt
+			c:PAP = { trigger_event_silently = hundred_years_war.207 }
+		}		
+	}
+
+	ai_will_do = {
+		if = {
+			limit = {
+				scope:actor = {
+					any_current_war = {
+						OR = {
+							AND = {
+								attacker_leader = c:ENG
+								defender_leader = c:FRA
+							}
+							AND = {
+								defender_leader = c:ENG
+								attacker_leader = c:FRA
+							}
+						}
+						scope:actor = {	#AI will do this when they are not winning a very stagnant war
+							war_score_in_war = { war = prev value < 10 }	
+						}
+					}
+				}
+			}
+			add = 100
+		}
+		else = { subtract = -100 }
+	}
+}
+
+influence_french_subject = {	#Influence French Subject
+	type = situation
+	show_message = no
+
+	automation_tick = never
+	automation_tick_frequency = 12
+
+	cooldown = {
+		type = influence_french_subject
+		months = 2
+	}
+
+	potential = {
+		scope:actor = { tag = ENG }
+	}
+
+	allow = {
+		c:FRA = {
+			any_subject = {
+				is_subject_type = appanage
+				NOT = { has_country_modifier = appanage_diplomatic_betrayal_modifier }
+			}
+			NOT = { 
+				any_subject = {
+					has_country_modifier = appanage_diplomatic_betrayal_modifier
+					count > 3
+				}
+			}
+		}
+		scope:actor = {
+			gold >= 300
+			at_war = no
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:hundred_years_war = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:hundred_years_war = this
+			situation_is_active = yes
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = country
+		interaction_source_list = {
+			c:FRA = {
+				every_subject = {
+					limit = { 
+						is_subject_type = appanage 
+						at_war = no
+						NOT = { has_country_modifier = appanage_diplomatic_betrayal_modifier }
+					}
+					add_to_list = source
+				}
+			}
+		}
+		target_flag = target_subject
+		name = "choose_country"
+		column = { data = name }
+		column = { data = expected_army_size }
+		column = { data = expected_navy_size }
+		visible = {
+			subject_loyalty < 50	
+			NOT = { has_country_modifier = appanage_diplomatic_betrayal_modifier }
+		}
+	}
+
+	effect = {
+		if = {
+			limit = { exists = scope:target_subject }
+			scope:target_subject ?= { trigger_event_non_silently = hundred_years_war.209 }
+		}
+		else = { custom_tooltip = influence_french_subject_tt }
+		
+	}
+
+	ai_will_do = {
+		add = 5
+		if = {
+			limit = {
+				exists = scope:target_subject
+			}
+			if = {
+				limit = {	#Do this only to the strongest available Appanage
+					c:FRA = {
+						relative_strength = {
+							target = scope:target_subject
+							value > 0.8
+						}
+					}
+				}
+				subtract = 100
+			}
+			else = { add = 10 }
+			if = {
+				limit = { scope:actor.gold < 1000 }
+				subtract = 25
+			}
+			else = { add = 10 }
+		}
+		if = {
+			limit = {
+				scope:actor = { has_truce_with = c:FRA }
+			}
+			subtract = 1000
+		}
+	}
+}
+
+fra_diplomacy_with_subjects = {	#Influence French Subject
+	type = situation
+	show_message = no
+	potential = {
+		scope:actor = { 
+			tag = FRA 
+			any_subject = {
+				exists = capital
+				capital.region = c:FRA.capital.region
+			}
+		}
+	}
+
+	automation_tick = never
+	automation_tick_frequency = 12
+
+	allow = {
+		c:FRA = {
+			any_subject = {
+				NOT = { modifier:appanage_prevented_from_call_to_war = yes }
+				NOT = { has_country_modifier = strong_diplomacy_modifier }
+				subject_loyalty < 50
+			}
+		}
+	}
+
+	cooldown = {
+		type = fra_diplomacy_with_subjects
+		years = 5
+	}
+
+	price = price:hyw_main_actions_price
+
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:hundred_years_war = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:hundred_years_war = this
+			situation_is_active = yes
+		}
+	}
+	effect = { 
+		c:FRA ?= {
+			ordered_subject = {
+				limit = { 
+					NOT = { modifier:appanage_prevented_from_call_to_war = yes }
+					NOT = { has_country_modifier = strong_diplomacy_modifier }
+					subject_loyalty < 50
+				}
+				order_by = {
+					value = subject_loyalty
+					multiply = -1
+				}
+				max = 3
+				check_range_bounds = no
+				add_opinion = {
+					target = c:FRA
+					modifier = successful_diplomacy
+				}
+				add_country_modifier = {
+					modifier = strong_diplomacy_modifier
+					years = 5
+					mode = replace
+				}
+			}
+		}
+		
+	}
+
+	ai_will_do = {	#We want France to always do this when available
+		add = 100
+	}
+}
+
+demand_appanage_promotion = {	#Demand Promotion to Appanage
+	type = situation
+	show_message = no
+	potential = {
+		scope:actor = { 
+			is_subject_of = c:FRA
+			is_subject_type = vassal
+		}
+		
+	}
+
+	automation_tick = never
+	automation_tick_frequency = 12
+
+	allow = {
+		c:FRA = {
+			has_ruler = yes
+			ruler = { has_dynasty = yes }
+			opinion = {
+				target = scope:actor 
+				value > 75
+			}
+		}
+		scope:actor = { 
+			government_power > 90
+			has_ruler = yes
+			ruler = { has_dynasty = yes }
+			OR = {
+				ruler.dynasty = c:FRA.ruler_or_regent.dynasty
+				custom_tooltip = {
+					text = fra_has_eligible_child_tt
+					c:FRA.ruler = {
+						dynasty = {
+							any_character_in_dynasty = {
+								owner = c:FRA
+								is_heir = no
+								is_regent = no
+								is_ruler = no
+								is_alive = yes
+							} 
+						}
+					}
+				}
+			}
+		}
+	}
+
+	price = price:hyw_main_actions_price
+
+	cooldown = {
+		type = demand_appanage_promotion
+		years = 10
+	}
+
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:hundred_years_war = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:hundred_years_war = this
+			situation_is_active = yes
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = character
+		interaction_source_list = {
+			c:FRA.ruler = {
+				dynasty = { 
+					every_character_in_dynasty = {
+						limit = {
+							owner = c:FRA
+							is_heir = no
+							is_regent = no
+							is_ruler = no
+							is_alive = yes
+						}
+						add_to_list = source
+					}
+				}
+			}
+		}
+		target_flag = target_character3
+		name = "choose_situation"
+		column = { data = name }
+		column = { data = character_info }
+	}
+
+	effect = { 
+		c:FRA ?= {
+			trigger_event_non_silently = hundred_years_war.210
+		}
+	}
+
+	ai_will_do = {	#They should always want this as long as they are not very loyal
+		add = -10
+
+		if = {
+			limit = { scope:actor = { subject_loyalty < 50 } }
+			add = 5
+		}
+
+		if = {
+			limit = { exists = scope:target_character3 }
+			if = {
+				limit = { scope:target_character3.total_abilities > 120 }
+				add = {
+					value = scope:target_character3.total_abilities
+					divide = 10
+				}
+			}
+			else = { subtract = 10 }
+		}
+		if = {
+			limit = { 
+				scope:actor = {
+					has_heir = yes
+				}
+			}
+			subtract = { 
+				value = scope:actor.heir.total_abilities
+				divide = 10
+			}
+		}
+		else = { add = 5 }
+	}
+}
+
+demand_territory_return = {	#Demand Return of Territory
+	type = situation
+	show_message = no
+	potential = {
+		scope:actor = {
+			is_subject_of = c:FRA
+		}
+	}
+
+	automation_tick = never
+	automation_tick_frequency = 12
+
+	ai_tick = monthly
+	ai_tick_frequency = 12
+	automation_tick = monthly
+	automation_tick_frequency = 2
+
+	allow = {
+		scope:actor = { at_war = no }
+		c:FRA = { at_war = no }
+	}
+
+	price = price:hyw_main_actions_price
+
+	cooldown = {
+		type = demand_territory_return
+		years = 5
+	}
+
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:hundred_years_war = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = {
+			situation:hundred_years_war = this
+			situation_is_active = yes
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = location
+		source = actor
+		source_flags = adjacent_locations
+		target_flag = target_location
+		name = "choose_location"
+		none_available_msg_key = "no_locations_available"
+		column = { data = name }
+		column = { data = population }
+		column = { data = rank }
+		visible = {
+			is_capital = no
+			has_owner = yes
+			is_core_of = scope:actor
+			owner = {
+				is_subject_or_below_of = c:FRA
+				at_war = no
+			}
+		}
+	}
+
+	effect = { 
+
+		if = {
+			limit = { exists = scope:target_location }
+			scope:target_location.owner ?= { trigger_event_non_silently = hundred_years_war.213 }
+		}
+		else = { custom_tooltip = demand_territory_return_tt }		
+	}
+
+	ai_will_do = {
+		add = 1		#They should always want this
+
+		if = {
+			limit = { exists = scope:target_location }
+			if = {
+				limit = {
+					scope:actor = {
+						relative_strength = {
+							target = scope:target_location.owner
+							value >= 0.5
+						}
+					}
+				}
+				add = {		#Positive relative strength
+					value = 100
+					multiply = "scope:actor.relative_strength(scope:target_location.owner)"
+				}
+			}
+			else = {	#Negative relative strength
+				subtract = {
+					value = 100
+					multiply = "scope:actor.relative_strength(scope:target_location.owner)"
+				}
+			}
+			if = {		#Loyal Subject
+				limit = { scope:actor.subject_loyalty > 50 }
+				subtract = scope:actor.subject_loyalty
+			}
+			else = { 	#Disloyal Subject
+				add = 10 
+			}
+
+			add = {			#How aggressive is the AI
+				value = scope:actor.modifier:aggressiveness_modifier
+				multiply = 10
+			}
+
+			subtract = {	#How careful is the AI
+				value = scope:actor.modifier:carefulness_modifier
+				multiply = 10
+			}
+		}
+	}
+}
+
+betray_our_allegiance = {	#Betray our Allegiance
+	type = situation
+	show_message = no
+
+	automation_tick = never
+	automation_tick_frequency = 12
+
+	ai_tick = daily
+	ai_tick_frequency = 30
+	automation_tick = daily
+	automation_tick_frequency = 7
+
+	potential = {
+		scope:actor = {
+			OR = {
+				has_mutual_scripted_relation = {
+					type = relation_type:alliance
+					target = c:FRA
+				}
+				is_subject_of = c:FRA
+				has_mutual_scripted_relation = {
+					type = relation_type:alliance
+					target = c:ENG
+				}
+				is_subject_of = c:ENG
+			}
+		}
+	}
+
+	allow = {
+		scope:actor = {
+			any_current_war = {
+				custom_tooltip = {
+					text = eng_leads_one_side_france_another_tt
+					OR = {
+						AND = {
+							attacker_leader = c:ENG
+							defender_leader = c:FRA
+						}
+						AND = {
+							attacker_leader = c:FRA
+							defender_leader = c:ENG
+						}
+					}
+				}
+			}
+		}
+	}
+
+	price = price:hyw_main_actions_price
+
+	cooldown = {
+		type = betray_our_allegiance
+		years = 10
+	}
+
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:hundred_years_war = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = {
+			situation:hundred_years_war = this
+			situation_is_active = yes
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = war
+		source = actor
+		target_flag = target_war
+		name = "choose_war_tt"
+		none_available_msg_key = "no_valid_wars"
+		column = {
+			data = name
+		}
+		visible = {
+			OR = {
+				AND = {
+					attacker_leader = c:ENG
+					defender_leader = c:FRA
+				}
+				AND = {
+					attacker_leader = c:FRA
+					defender_leader = c:ENG
+				}
+			}
+		}
+	}
+
+	effect = { 
+		scope:actor = { trigger_event_non_silently = hundred_years_war.215	}
+	}
+
+	ai_will_do = {
+		add = -30
+
+		if = {
+			limit = { exists = scope:target_war }
+			scope:target_war = {
+				attacker_leader = { save_temporary_scope_as = target_attacker_scope }
+				defender_leader = { save_temporary_scope_as = target_defender_scope }
+			}
+			if = {
+				limit = {
+					scope:target_war = { is_a_defender = scope:actor }
+				}
+				subtract = {				#Calculate in favor of attacker_leader as we are one of the defenders
+					value = 100
+					multiply = "scope:target_defender_scope.relative_strength(scope:target_attacker_scope)"
+				}
+				add = {
+					value = 100
+					multiply = "scope:target_attacker_scope.relative_strength(scope:target_defender_scope)"
+				}
+				if = {
+					limit = { 
+						scope:actor = { is_subject_of = scope:target_defender_scope }
+					}
+					if = {		#Loyal Subject
+						limit = { scope:actor.subject_loyalty > 50 }
+						subtract = {
+							value = scope:actor.subject_loyalty
+							divide = 5
+						}
+					}
+					else = { add = 20 }	#Disloyal Vassal...
+				}
+				if = {
+					limit = {
+						scope:actor = {
+							opinion = {
+								target = scope:target_defender_scope
+								value > 0
+							}
+						}
+					}
+					scope:target_defender_scope = {
+						subtract = {	#Better opinion with the defender reduces the chances of pressing this button
+							value = scope:actor.this_opinion_of_prev
+							multiply = 0.1
+						}
+					}
+				}
+				else = { add = 5 }
+				if = {
+					limit = {
+						scope:actor = {
+							opinion = {
+								target = scope:target_attacker_scope
+								value > 0
+							}
+						}
+					}
+					scope:target_attacker_scope = {
+						add = {	#Better opinion with the attacker increases the chances of pressing this button
+							value = scope:actor.this_opinion_of_prev
+							multiply = 0.2
+						}
+					}
+				}
+				else = { add = -5 }
+			}
+			else = {
+				add = {				#Calculate in favor of defender_leader as we are one of the attackers
+					value = 100
+					multiply = "scope:target_defender_scope.relative_strength(scope:target_attacker_scope)"
+				}
+				subtract = {
+					value = 100
+					multiply = "scope:target_attacker_scope.relative_strength(scope:target_defender_scope)"
+				}
+				if = {
+					limit = { 
+						scope:actor = { is_subject_of = scope:target_attacker_scope }
+					}
+					if = {		#Loyal Subject
+						limit = { scope:actor.subject_loyalty > 50 }
+						subtract = {
+							value = scope:actor.subject_loyalty
+							divide = 5
+						}
+					}
+					else = { add = 20 }	#Disloyal Vassal
+				}
+				if = {
+					limit = {
+						scope:actor = {
+							opinion = {
+								target = scope:target_defender_scope
+								value > 0
+							}
+						}
+					}
+					scope:target_defender_scope = {
+						add = {	#Better opinion with the defender increases the chances of pressing this button
+							value = scope:actor.this_opinion_of_prev
+							multiply = 0.2
+						}
+					}
+				}
+				else = { add = 5 }
+				if = {
+					limit = {
+						scope:actor = {
+							opinion = {
+								target = scope:target_attacker_scope
+								value > 0
+							}
+						}
+					}
+					scope:target_attacker_scope = {
+						subtract = {	#Better opinion with the attacker increases the chances of pressing this button
+							value = scope:actor.this_opinion_of_prev
+							multiply = 0.1
+						}
+					}
+				}
+				else = { add = -5 }
+			}
+			if = {
+				limit = { 
+					scope:actor = { is_subject = yes }
+				}
+				add = {
+					value = scope:actor.liberty_desire
+					multiply = 0.25
+				}
+
+				if = {
+					limit = { scope:actor.overlord.modifier:diplomatic_reputation > 0 }
+					subtract = {
+						value = scope:actor.overlord.modifier:diplomatic_reputation
+						multiply = 2
+					}
+				}
+				else_if = {
+					limit = { scope:actor.overlord.modifier:diplomatic_reputation < 0 }
+					add = {
+						value = scope:actor.overlord.modifier:diplomatic_reputation
+						multiply = 5
+					}
+				}
+			}
+		}
+	}
+}
+
+procure_core_claim = {	#Procure Core Claim
+	type = situation
+	show_message = no
+
+	automation_tick = never
+	automation_tick_frequency = 12
+
+	ai_tick = monthly
+	ai_tick_frequency = 4
+
+	potential = {
+		scope:actor = {
+			OR = {
+				this = c:ENG
+				this = c:FRA
+				is_subject_or_below_of = c:ENG
+				is_subject_or_below_of = c:FRA
+			}
+		}
+	}
+
+	allow = {
+		scope:actor = {
+			at_war = no
+			any_core_location = {
+				owner != scope:actor
+				owner = { is_neighbor_of = scope:actor }
+				has_owner = yes
+				is_core_of = scope:actor
+				scope:actor = {
+					can_declare_war_on = prev.owner
+				}
+			}
+		}
+	}
+
+	price = price:hyw_main_actions_price
+
+	cooldown = {
+		type = procure_core_claim
+		years = 2
+	}
+
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:hundred_years_war = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = {
+			situation:hundred_years_war = this
+			situation_is_active = yes
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = location
+		source = actor
+		interaction_source_list = {
+			scope:actor = {
+				every_core_location = { 
+					limit = {
+						owner != scope:actor
+					}
+					add_to_list = source 
+				}
+			}
+		}
+		target_flag = target_location
+		name = "choose_location"
+		none_available_msg_key = "no_locations_available"
+		column = { data = name }
+		column = { data = population }
+		column = { data = rank }
+		visible = {
+			has_owner = yes
+			is_core_of = scope:actor
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+		}
+	}
+
+	effect = { 
+		if = {
+			limit = { exists = scope:target_location }
+			scope:actor = { 
+				add_casus_belli = { 
+					type = casus_belli:cb_conquer_province 
+					province = scope:target_location.province 
+					target = scope:target_location.owner
+					years = 5
+				}
+			}
+		}
+		else = { custom_tooltip = gain_claim_for_core_tt }
+	}
+
+	ai_will_do = {	#We generally want to do this always
+		subtract = 25
+		if = {
+			limit = { exists = scope:target_location }
+			add = {			#We want claims against relatively equal countries
+				value = 100
+				multiply = "scope:actor.relative_strength(scope:target_location.owner)"
+			}	
+		}	
+	}
+}
+
+request_war_entry = {	#Request War Entry
+	type = situation
+	show_message = no
+
+	automation_tick = never
+	automation_tick_frequency = 12
+
+	ai_tick = monthly
+	ai_tick_frequency = 4
+
+	potential = {
+		scope:actor = {
+			OR = {
+				this = c:ENG
+				this = c:FRA
+			}
+		}
+	}
+
+	allow = {
+		scope:actor = {
+			gold >= {
+				value = monthly_income_trade_and_tax
+				multiply = 7
+			}
+			trigger_if = {
+				limit = { tag = FRA }
+				any_current_war = {
+					attacker_leader = c:ENG
+					defender_leader = scope:actor
+				}
+			}
+			trigger_else = {
+				any_current_war = {
+					attacker_leader = c:FRA
+					defender_leader = scope:actor
+				}
+			}
+			sub_continent:western_europe = {
+				any_country_with_capital_in_geography = {
+					at_war = no
+					is_subject = no
+					opinion = {
+						target = scope:actor
+						value > 0
+					}
+					NOT = { has_truce_with = scope:actor }
+					NOR = {
+						is_rival_of = scope:actor
+						is_enemy_of = scope:actor
+					}
+					relative_strength = {
+						target = scope:actor
+						value >= 0.1
+					}
+				}
+			}
+		}
+	}
+
+	price = price:hyw_main_actions_price
+
+	cooldown = {
+		type = request_war_entry
+		years = 2
+	}
+
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:hundred_years_war = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = {
+			situation:hundred_years_war = this
+			situation_is_active = yes
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = country
+		interaction_source_list = {
+			sub_continent:western_europe = {
+				every_country_with_capital_in_geography = {
+					limit = {
+						opinion = {
+							target = scope:actor
+							value > 0
+						}
+						at_war = no
+						is_subject = no
+						NOT = { has_truce_with = scope:actor }
+						NOR = {
+							is_rival_of = scope:actor
+							is_enemy_of = scope:actor
+						}
+						relative_strength = {
+							target = scope:actor
+							value >= 0.1
+						}
+					}
+					add_to_list = source
+				}
+			}
+		}
+		target_flag = target_country
+		name = "choose_neighbor_country"
+		none_available_msg_key = "no_neighbor_country_available"
+		column = { data = name }
+		column = { data = population }
+		column = { data = army_size }
+	}
+
+	effect = { 
+		if = {
+			limit = { exists = scope:target_country }
+			custom_tooltip = target_country_will_be_asked_to_join_hyw_tt
+			scope:target_country = { 
+				trigger_event_silently = hundred_years_war.217
+			}
+		}
+		else = { custom_tooltip = selected_country_will_be_asked_to_join_hyw_tt }
+	}
+
+	ai_will_do = {
+		subtract = 50	# Lowered baseline deterrent — it's a valuable tool but not to be spammed
+
+		# Incentivize targeting a strong neighbor
+		add = {
+			value = 75
+			multiply = "scope:target_country.relative_strength(scope:actor)"
+		}
+
+		# More likely if losing — increased slightly
+		if = {
+			limit = {
+				scope:actor = { is_in_losing_war = yes }
+			}
+			add = 15
+		}
+
+		# Desperate if manpower is low
+		if = {
+			limit = { 
+				scope:actor.manpower_percentage < 0.2 
+			}
+			add = 5
+		}
+
+		# Additional boost if the potential ally is hostile to our enemy
+		if = {
+			limit = {
+				scope:actor = c:FRA
+				scope:target_country = {
+					OR = {
+						is_rival_of = c:ENG
+						is_enemy_of = c:ENG
+					}
+				}
+			}
+			add = 25
+		}
+		else_if = {
+			limit = {
+				scope:target_country = {
+					OR = {
+						is_rival_of = c:FRA
+						is_enemy_of = c:FRA
+					}
+				}
+			}
+			add = 25
+		}
+
+		# War exhaustion adds pressure
+		add = {
+			value = scope:actor.war_exhaustion
+			multiply = 2
+		}
+	}
+
+
+}
+
+hyw_sign_truce = {	#Sign a Truce
+	type = situation
+	show_message = no
+
+	automation_tick = never
+	automation_tick_frequency = 12
+
+	ai_tick = monthly
+	ai_tick_frequency = 3
+
+	potential = {
+		scope:actor = {
+			OR = {
+				this = c:ENG
+				this = c:FRA
+			}
+		}
+	}
+
+	allow = {
+		scope:actor = {
+			any_neighbor_country = {
+				can_declare_war_on = prev
+				NOT = { has_truce_with = prev }
+			}
+		}
+	}
+
+	price = price:hyw_main_actions_price
+
+	cooldown = {
+		type = hyw_sign_truce
+		years = 4
+	}
+
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:hundred_years_war = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = { data = name }
+		visible = {
+			situation:hundred_years_war = this
+			situation_is_active = yes
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = country
+		source = actor
+		source_flags = neighbor
+		target_flag = target_country
+		name = "choose_neighbor_country"
+		none_available_msg_key = "no_neighbor_country_available"
+		column = { data = name }
+		column = { data = population }
+		column = { data = army_size }
+		visible = {
+			can_declare_war_on = scope:actor
+			NOT = { has_truce_with = scope:actor }
+		}
+	}
+
+	effect = { 
+		if = {
+			limit = { exists = scope:target_country }
+			custom_tooltip = {
+				text = target_country_will_be_asked_for_truce_tt
+				scope:target_country = { trigger_event_silently = hundred_years_war.218 }
+			}
+		}
+		else = { custom_tooltip = selected_country_will_be_asked_for_truce_tt }
+	}
+
+	ai_will_do = {
+		subtract = 35
+		if = {
+			limit = { exists = scope:target_country }
+			add = {			#We want a truce with as strong of a neighbor as possible
+				value = 100
+				multiply = "scope:target_country.relative_strength(scope:actor)"
+			}
+
+			if = {	#Encouraged to truce stable nations  that are not easy pray
+				limit = { scope:target_country.stability > 0 }
+				add = {	
+					value = scope:target_country.stability
+					multiply = 0.1
+				}
+			}
+			else = {	#They are less likely to truce countries with low stability
+				add = {	
+					value = scope:target_country.stability
+					multiply = -0.1
+				}
+			}
+
+			subtract = scope:target_country.war_exhaustion
+			
+			if = {
+				limit = {
+					scope:target_country = { is_during_bankruptcy = yes }
+				}
+				subtract = 1000
+			}
+			subtract = {
+				value = scope:target_country.defensive_alliance_strength
+				multiply = 0.05
+			}
+			
+		}	
+	}
+}

@@ -1,0 +1,164 @@
+﻿make_unit_available_for_hire = {
+	type = owncountry
+	
+	potential = {
+		scope:actor = {
+			at_war = no
+			regular_army_size > 0
+		}
+	}
+
+	allow = {
+	}
+
+	ai_tick = daily
+	ai_tick_frequency = 90
+
+	automation_tick = daily
+	automation_tick_frequency = 20
+	
+	select_trigger = {
+		looking_for_a = unit
+		source = actor
+		target_flag = target
+		name = "make_unit_available_for_hire_select_unit"
+		none_available_msg_key = "make_unit_available_for_hire_no_units"
+		column = {
+			data = name
+		}
+		column = {
+			data = unit_location
+		}
+		visible = {
+			or = {
+				is_army = no
+				owner = {
+					not = { country_type = army }
+				}
+			}
+			or = {
+				is_navy = no
+				owner = {
+					not = { country_type = navy }
+				}
+			}
+			has_mercenaries = no
+			has_levies = no
+		}
+	}
+	
+	select_trigger = {
+		looking_for_a = value
+		target_flag = target_1
+		name = "make_unit_available_for_hire_select_cost_multiplier"
+		min = 0
+		max = 5
+		step = 0.05
+		default = 1
+		ai_override_value = 2 #for the AI, only test this value, we want it to be a bit more performant
+	}
+
+	select_trigger = {
+		looking_for_a = value
+		target_flag = target_2
+		name = "make_unit_available_for_hire_select_duration"
+		min = 1
+		max = "define:NMercenary|MERCENARY_MAX_DURATION_IN_MONTHS"
+		step = 1
+		default = "define:NMercenary|MERCENARY_DEFAULT_DURATION_IN_MONTHS"
+		ai_override_value = "define:NMercenary|MERCENARY_DEFAULT_DURATION_IN_MONTHS" #for the AI, only test this value, smaller durations aren't worth testing and we want it to be a bit more performant
+	}
+
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:target = {
+				make_unit_available_for_hire = {
+					cost_multiplier = scope:target_1
+					months = scope:target_2
+					save_scope_as = merc_for_hire
+				}
+			}
+		}
+	}
+	
+	ai_will_do = {
+		#calculate the hire price
+		value = {
+			scope:target = {
+				value = "hire_price(scope:target_1|scope:target_2)"
+				save_temporary_value_as = total_hire_price
+			}
+		}
+
+		#base
+		value = -500
+
+		#utility of the cash
+		add = "scope:actor.currency_utility(gold|scope:total_hire_price)"
+
+		#longer duration is more sensible
+		add = {
+			value =  scope:target_2
+			multiply = 0.02
+		}
+	}
+}
+
+delist_unit = {
+	type = owncountry
+	
+	potential = {
+	}
+
+	allow = {
+	}
+
+	ai_tick = daily
+	ai_tick_frequency = 20
+
+	automation_tick = daily
+	automation_tick_frequency = 20
+	
+	#area in scope:target
+	select_trigger = {
+		looking_for_a = mercenary
+		source = actor
+		target_flag = target
+		name = "delist_unit_select_merc"
+		none_available_msg_key = "delist_unit_no_mercenaries"
+		column = {
+			data = name
+		}
+		visible = {
+			has_customer = no
+		}
+	}
+	
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:target = {
+				custom_tooltip = {
+					text = delist_unit_merc_destroyed
+					destroy_mercenary = scope:target
+				}
+			}
+		}
+	}
+
+	ai_will_do = {
+		scope:actor = {
+			if = {
+				limit = {
+					at_war = yes
+				}
+				add = 100
+			}
+		}
+	}
+}

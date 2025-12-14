@@ -1,0 +1,46 @@
+﻿##########################
+## BASE GAME ARCHETYPES ##
+##########################
+
+european_sfx = 
+{ 
+    priority = 100 # Continental
+    culture_tag = european_gfx
+}
+
+middle_east_sfx = 
+{ 
+    priority = 100 # Continent
+    culture_tag = middle_east_gfx
+}
+
+indian_sfx = 
+{ 
+    priority = 110 # Continent
+    culture_tag = indian_gfx
+}
+
+african_sfx = 
+{ 
+    priority = 100 # continent
+    culture_tag = african_gfx
+}
+
+east_asian_sfx = 
+{ 
+    priority = 100 # continent
+    culture_tag = east_asian_gfx
+}
+
+north_american_sfx = 
+{ 
+    priority = 100 # continent
+    culture_tag = north_american_gfx
+}
+
+south_american_sfx = 
+{ 
+    priority = 100 # continent
+    culture_tag = south_american_gfx
+}
+

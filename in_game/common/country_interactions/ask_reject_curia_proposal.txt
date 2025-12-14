@@ -1,0 +1,141 @@
+﻿ask_reject_curia_proposal = {
+	type = diplomacy
+	category = CATEGORY_HOSTILE_ACTIONS
+
+	diplomatic_cost = ask_reject_curia_proposal_cost
+	
+	potential = {
+		scope:actor = {
+			num_cardinals > 0
+			religion = religion:catholic
+			international_organization:catholic_church = {
+				has_active_resolution = yes
+			}
+		}
+		situation:western_schism = {
+			situation_is_active = no
+		}
+	}
+
+	allow = {
+	}
+	
+	select_trigger = {
+		looking_for_a = country
+		target_flag = recipient
+
+		interaction_source_list = {
+			religion:catholic = {
+				every_country_with_cardinals = {
+					add_to_list = source
+				}
+			}
+		}
+
+		name = "choose_country"
+		column = {
+			data = name
+		}
+		visible = {
+			religion = religion:catholic
+			num_cardinals > 0
+		}
+        enabled = {
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = active_resolution
+		interaction_source_list = {
+			international_organization:catholic_church = {
+				every_active_resolution = {
+					add_to_list = source
+				}
+			}
+		}
+		cache_targets = yes
+		target_flag = target
+		name = "ask_curia_proposal_select_resolution"
+		none_available_msg_key = "ask_reject_curia_proposal_no_resolutions"
+		column = {
+			data = name
+		}
+		visible = {
+		}
+	}
+
+	ai_will_do = {
+		# did they propose the current proposal?
+		scope:target = {
+			add = {
+				if = {
+					limit = {
+						resolution_proposer ?= scope:actor
+					}
+					value = -1000
+				}
+			}
+			# opinion of the proposer
+			add = {
+				if = {
+					limit = {
+						not = { resolution_proposer ?= scope:actor }
+					}
+					value = resolution_proposer.prev_opinion_of_this
+					multiply = -1
+				}
+			}
+			add = {
+				"vote_in_active_resolution(resolution_proposer)" = {
+					save_temporary_scope_as = proposal_vote
+				}
+				value = "scope:actor.resolution_opinion(international_organization:catholic_church|scope:target|scope:proposal_vote)"
+				divide = -5
+			}
+		}
+	}
+	
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			international_organization:catholic_church = {
+				set_vote = {
+					voter = scope:recipient
+					resolution = scope:target.resolution
+					vote = no
+				}
+			}
+		}
+	}
+
+	diplo_chance = {
+		base = -5
+		recipient_is_rival = -100
+		recipient_overlord_is_rival = -100
+	}
+
+	#
+	# Extra calculation offers
+	#
+	accept = {
+		# opinion of the current proposal
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			add = {
+				international_organization:catholic_church = {
+					"active_resolution(scope:target)" ?= {
+						"vote_in_active_resolution(resolution_proposer)" = {
+							save_temporary_scope_as = proposal_vote
+						}
+						value = "scope:actor.resolution_opinion(international_organization:catholic_church|scope:target|scope:proposal_vote)"
+					}
+				}
+				divide = -1
+			}
+		}
+	}
+}

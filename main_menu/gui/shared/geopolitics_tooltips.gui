@@ -1,0 +1,756 @@
+template known_world_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			text = "KNOWN_WORLD_HEADER"
+		}
+		blockoverride "title_icon" {
+			icon = {
+				using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/flat_icons/geopolitics/known_world.dds"
+				glow = {
+					name = "drop_shadow"
+					glow_radius = 3
+					color = {0.0 0.0 0.0 1.0}
+					alpha = 0.3
+				}
+			}
+		}
+		blockoverride "concept_link" {
+			text = [known_world|e]
+		}
+		blockoverride "tooltip_content" {
+			TooltipTextBlock = {
+				blockoverride "text" {
+					text = "KNOWN_WORLD_TEXT"
+				}
+			}
+			TooltipFlavorTextBlock = {
+				blockoverride "text" {
+					text = "KNOWN_WORLD_FLAVOR_TEXT"
+				}
+			}
+		}
+	}
+}
+
+template naval_range_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			text = "NAVAL_RANGE_HEADER"
+		}
+		blockoverride "title_icon" {
+			icon = {
+				using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/military_navy/naval_range.dds"
+				glow = {
+					name = "drop_shadow"
+					glow_radius = 3
+					color = {0.0 0.0 0.0 1.0}
+					alpha = 0.3
+				}
+			}
+		}
+		blockoverride "concept_link" {
+			text = [naval_range|e]
+		}
+		blockoverride "tooltip_content" {
+			TooltipStringPairList = {
+				blockoverride "block_title" {
+					text = "NAVAL_RANGE_TT_TEXT"
+				}
+				textcontext = "[Country.GetDoubleDescriptionFor('naval_range','naval_range_modifier')]"
+			}
+			TooltipFlavorTextBlock = {
+				blockoverride "text" {
+					text = "NAVAL_RANGE_TT_FLAVOR_TEXT"
+				}
+			}
+		}
+	}
+}
+
+
+template colonial_range_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			text = "COLONIAL_RANGE_HEADER"
+		}
+		blockoverride "title_icon" {
+			icon = {
+				using = tooltip_title_icon_size
+				texture = "[GetConceptTexture('colonial_range')]"
+				glow = {
+					name = "drop_shadow"
+					glow_radius = 3
+					color = {0.0 0.0 0.0 1.0}
+					alpha = 0.3
+				}
+			}
+		}
+		blockoverride "concept_link" {
+			text = [colonial_range|e]
+		}
+		blockoverride "tooltip_content" {
+			TooltipStringPairList = {
+				blockoverride "block_title" {
+					text = "COLONIAL_RANGE_TT_TEXT"
+				}
+				textcontext = "[Country.GetDoubleDescriptionFor('colonial_range','colonial_range_modifier')]"
+			}
+			# TooltipFlavorTextBlock = {
+			# 	blockoverride "text" {
+			# 		text = "COLONIAL_RANGE_TT_FLAVOR_TEXT"
+			# 	}
+			# }
+		}
+	}
+}
+template exploration_expense_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			text = "EXPLORATION_EXPENSE_HEADER"
+		}
+		blockoverride "title_icon" {
+			icon = {
+				using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/flat_icons/geopolitics/exploration_cost.dds"
+				glow = {
+					name = "drop_shadow"
+					glow_radius = 3
+					color = {0.0 0.0 0.0 1.0}
+					alpha = 0.3
+				}
+			}
+		}
+		blockoverride "concept_link" {
+			text = [exploration_expense|e]
+		}
+		blockoverride "tooltip_content" {
+			TooltipStringPairList = {
+				blockoverride "block_title" {
+					text = "EXPLORATION_EXPENSE_TT_TEXT"
+				}
+				textcontext = "[Country.GetDescriptionFor('exploration_maintenance_cost')]"
+			}
+		}
+	}
+}
+
+template exploration_progress_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			text = "EXPLORATION_PROGRESS_HEADER"
+		}
+		blockoverride "title_icon" {
+			icon = {
+				using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/flat_icons/geopolitics/exploration_mission_speed.dds"
+				glow = {
+					name = "drop_shadow"
+					glow_radius = 3
+					color = {0.0 0.0 0.0 1.0}
+					alpha = 0.3
+				}
+			}
+		}
+		blockoverride "concept_link" {
+			text = [exploration_progress|e]
+		}
+		blockoverride "tooltip_content" {
+
+			TooltipStringPairList = {
+				blockoverride "block_title" {
+					text = "EXPLORATION_PROGRESS_TT_TEXT"
+				}
+				textcontext = "[Country.GetDescriptionFor('exploration_mission_speed')]"
+			}
+		}
+	}
+}
+
+template colonial_charters_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			text = "COLONIAL_CHARTERS_HEADER"
+		}
+		blockoverride "title_icon" {
+			icon = {
+				using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/flat_icons/geopolitics/available_colonies.dds"
+				glow = {
+					name = "drop_shadow"
+					glow_radius = 3
+					color = {0.0 0.0 0.0 1.0}
+					alpha = 0.3
+				}
+			}
+		}
+		blockoverride "concept_link" {
+			text = [colonial_charter|e]
+		}
+		blockoverride "tooltip_content" {
+			TooltipTextBlock = {
+				blockoverride "text" {
+					text = "COLONIAL_CHARTERS_TT_TEXT"
+				}
+			}
+			TooltipTextBlock = {
+				visible = "[EqualTo_CFixedPoint(Country.GetTotalColonialCharters, '(CFixedPoint)0')]"
+				blockoverride "text" {
+					text = "COLONIAL_CHARTERS_TT_NO_SOURCES"
+				}
+			}
+			TooltipListBase = {
+				visible = "[Not(EqualTo_CFixedPoint(Country.GetTotalColonialCharters, '(CFixedPoint)0'))]"
+				blockoverride "block_title" {
+					text = "COLONIAL_CHARTERS_TT_SOURCES"
+				}
+				block "datamodel" {
+					datamodel = "[Country.GetColonialCharters]"
+				}
+				item = {
+					hbox = {
+						using = layoutpolicy_expanding
+						margin = { -5 0 }
+						maximumsize = { -1 30 }
+						minimumsize = { -1 30 }
+						spacing = 8
+						datacontext = "[ColonialCharter]"
+						background = {
+							visible = "[IsOdd_int32(PdxGuiWidget.GetIndexInDataModel)]"
+							using = tooltip_table_field_texture
+						}
+				
+						text_single = {
+							using = layoutpolicy_expanding
+							autoresize = yes
+							maximumsize = { 230 -1}
+							align = left|nobaseline
+							fontsize_min = 13
+							text = "[ColonialCharter.GetName]"
+							default_format = "#yellow_titles"
+						}
+		
+						text_single = {
+							size = { 50 20 }
+							autoresize = no
+							align = center|nobaseline
+							raw_text = "[ColonialCharter.GetMonthlyMaintenance|2]@gold!"
+							
+							tooltipwidget = {
+								using = colonial_charter_maintenance_tooltip
+							}
+						}
+				
+						hbox = {
+							tooltipwidget = {
+								using = colonial_charter_migration_tooltip
+							}
+						
+							text_single = {
+								layoutpolicy_vertical = expanding
+								size = { 40 -1 }
+								autoresize = no
+								align = center|nobaseline
+								text = "[ColonialCharter.GetMonthlyMigration]"
+							}
+							icon = {
+								texture_density = 2
+								size = { 15 15 }
+								block "icon_texture" {
+									texture = "gfx/interface/buttons/flats/demography.dds"
+								}
+								using = color_light_blue
+								modify_texture = {
+									using = color_white_texture
+									alpha = 0.2
+								}
+								glow = {
+									name = "drop_shadow"
+									glow_radius = 3
+									color = {0.0 0.0 0.0 1.0}
+									alpha = 0.3
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+template global_colonial_migration_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			text = "GLOBAL_COLONIAL_MIGRATION_HEADER_TT"
+		}
+		blockoverride "title_icon" {
+			icon = {
+				using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/flat_icons/geopolitics/colonial_migration.dds"
+				glow = {
+					name = "drop_shadow"
+					glow_radius = 3
+					color = {0.0 0.0 0.0 1.0}
+					alpha = 0.3
+				}
+			}
+		}
+		blockoverride "concept_link" {
+			text = [colonial_migration|e]
+		}
+		blockoverride "tooltip_content" {
+			TooltipStringPairList = {
+				blockoverride "block_title" {
+					text = "GLOBAL_COLONIAL_MIGRATION_TT_TEXT"
+				}
+				textcontext = "[Country.GetDoubleDescriptionFor('colonial_migration_size','colonial_migration_size_modifier')]"
+			}
+		}
+	}
+}
+
+template colonial_maintenance_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			text = "COLONIAL_MAINTENANCE_HEADER"
+		}
+		blockoverride "title_icon" {
+			icon = {
+				using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/flat_icons/geopolitics/colonial_maintenance.dds"
+				glow = {
+					name = "drop_shadow"
+					glow_radius = 3
+					color = {0.0 0.0 0.0 1.0}
+					alpha = 0.3
+				}
+			}
+		}
+		blockoverride "concept_link" {
+			text = [colonial_maintenance|e]
+		}
+		blockoverride "tooltip_content" {
+			TooltipStringPairList = {
+				blockoverride "block_title" {
+					text = "COLONIAL_MAINTENANCE_TT_TEXT"
+				}
+				textcontext = "[Country.GetDescriptionFor('colonial_maintenance_cost')]"
+			}
+		}
+	}
+}
+
+template maritime_presence_global_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			text = "MARITIME_PRESENCE_HEADER"
+		}
+		blockoverride "title_icon" {
+			icon = {
+				using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/flat_icons/geopolitics/maritime_presence.dds"
+				glow = {
+					name = "drop_shadow"
+					glow_radius = 3
+					color = {0.0 0.0 0.0 1.0}
+					alpha = 0.3
+				}
+			}
+		}
+		blockoverride "concept_link" {
+			text = [maritime_presence|e]
+		}
+		blockoverride "tooltip_content" {
+			TooltipStringPairList = {
+				blockoverride "block_title" {
+					text = "MARITIME_PRESENCE_TT_TEXT"
+				}
+				textcontext = "[Country.GetDescriptionFor('global_maritime_presence_modifier')]"
+			}
+		}
+	}
+}
+
+template privateer_durability_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			text = "PRIVATEER_DURABILITY_HEADER"
+		}
+		blockoverride "title_icon" {
+			icon = {
+				using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/flat_icons/geopolitics/privateer_durability.dds"
+				glow = {
+					name = "drop_shadow"
+					glow_radius = 3
+					color = {0.0 0.0 0.0 1.0}
+					alpha = 0.3
+				}
+			}
+		}
+		blockoverride "concept_link" {
+			text = [privateer_durability|e]
+		}
+		blockoverride "tooltip_content" {
+			TooltipStringPairList = {
+				blockoverride "block_title" {
+					text = "PRIVATEER_DURABILITY_TT_TEXT"
+				}
+				textcontext = "[Country.GetDescriptionFor('privateer_durability')]"
+			}
+		}
+	}
+}
+
+template merchant_power_from_maritime_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			text = "MERCHANT_POWER_FROM_MARITIME_HEADER"
+		}
+
+		blockoverride "title_icon" {
+			icon = {
+				texture = "gfx/interface/icons/flat_icons/geopolitics/maritime_trade_advantage.dds"
+				using = tooltip_title_icon_size
+			}
+		}
+		blockoverride "concept_link" {
+			text = [merchant_maritime_power|e]
+		}
+		blockoverride "tooltip_content" {
+			TooltipStringPairList = {
+				blockoverride "block_title" {
+					text = "MERCHANT_POWER_FROM_MARITIME_TT_TEXT"
+				}
+				textcontext = "[Country.GetDoubleDescriptionFor('merchant_power_from_maritime', 'merchant_power_from_maritime_modifier')]"
+			}
+		}
+	}
+}
+
+template privateer_maintenance_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			text = "PRIVATEER_MAINTENANCE_HEADER"
+		}
+		blockoverride "title_icon" {
+			icon = {
+				using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/flat_icons/geopolitics/privateer_maintenance.dds"
+				glow = {
+					name = "drop_shadow"
+					glow_radius = 3
+					color = {0.0 0.0 0.0 1.0}
+					alpha = 0.3
+				}
+			}
+		}
+		blockoverride "concept_link" {
+			text = [privateer_maintenance|e]
+		}
+		blockoverride "tooltip_content" {
+			TooltipStringPairList = {
+				blockoverride "block_title" {
+					text = "PRIVATEER_MAINTENANCE_TT_TEXT"
+				}
+				textcontext = "[Country.GetDescriptionFor('privateer_maintenance_cost_modifier')]"
+			}
+		}
+	}
+}
+
+
+template colonial_charter_migration_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			datacontext = "[ColonialCharter]"
+			text = "COLONIAL_MIGRATION_HEADER_TT"
+		}
+		
+		blockoverride "title_icon_texture" {
+			texture = "gfx/interface/icons/resources/total_population.dds"
+			glow = {
+				name = "drop_shadow"
+				glow_radius = 3
+				color = {0.0 0.0 0.0 1.0}
+				alpha = 0.3
+			}
+		}
+		
+		blockoverride "concept_link" {
+			text = [colonial_charters|e]
+		}
+		
+		blockoverride "tooltip_content" {
+			TooltipStringPairList = {
+				textcontext = "[ColonialCharter.GetMonthlyMigrationInfo]"
+			}
+		}
+	}
+}
+
+template colonial_charter_progress_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			text = "COLONIAL_PROGRESS_HEADER"
+		}
+		
+		blockoverride "title_icon_texture" {
+		texture = "gfx/interface/icons/flat_icons/geopolitics/available_colonies.dds"
+			glow = {
+				name = "drop_shadow"
+				glow_radius = 3
+				color = {0.0 0.0 0.0 1.0}
+				alpha = 0.3
+			}
+		}
+		
+		blockoverride "concept_link" {
+			text = [colonial_charters|e]
+		}
+		
+		blockoverride "tooltip_content" {
+			TooltipStringPairList = {
+				textcontext = "[ColonialCharter.GetProgressInformation]"
+			}
+		}
+	}
+}
+
+template colonial_charter_maintenance_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			datacontext = "[ColonialCharter]"
+			text = "COLONIAL_MAINTENANCE_FOR_COLONY_HEADER"
+		}
+		
+		blockoverride "title_icon_texture" {
+			texture = "gfx/interface/icons/flat_icons/geopolitics/colonial_maintenance.dds"
+			glow = {
+				name = "drop_shadow"
+				glow_radius = 3
+				color = {0.0 0.0 0.0 1.0}
+				alpha = 0.3
+			}
+		}
+		
+		blockoverride "concept_link" {
+			text = [colonial_maintenance|e]
+		}
+		
+		blockoverride "tooltip_content" {
+			TooltipStringPairList = {
+				textcontext = "[ColonialCharter.GetMonthlyMaintenanceInfo]"
+			}
+		}
+	}
+}
+
+
+
+
+template maritime_presence_tooltip {	
+	ContextualTooltipType = {
+		block "datacontext_block" {}
+		blockoverride "title_text" {
+			datacontext = "[MaritimePresence]"
+			text = "MARITIME_PRESENCE_CHANGE"
+		}
+		
+		blockoverride "title_icon_texture" {
+			texture = "gfx/interface/icons/flat_icons/geopolitics/maritime_presence.dds"
+				texture_density = 2
+				alpha = 1
+				glow = {
+					name = "drop_shadow"
+					glow_radius = 3
+					color = {0.0 0.0 0.0 1.0}
+					alpha = 0.3
+				}
+		}
+
+		blockoverride "title_button" {
+            mapmode_tooltip_button = {
+                datacontext = "[GetMapMode('maritime')]"
+            }
+
+            hint_button = {
+                action_tooltip = {
+                    title = "OPEN_HINT"
+                    on_action = "[OpenLateralViewWithParams('hints', 'selected_hint = hint_maritime')]"
+                }
+            }
+        }
+		
+		blockoverride "concept_link" {
+			text = [maritime_presence|E]
+		}
+		
+		blockoverride "tooltip_content" {
+			TooltipTextBlock = {
+				blockoverride "text" {
+					text = "SEAZONE_MARITIME_PRESENCE"
+				}
+			}
+			
+			TooltipStringPairList = {
+				textcontext = "[MaritimePresence.GetChangeInfo]"
+			}
+		}
+	}
+}
+
+
+template MaritimePresenceLabel_tooltip {
+	using = maritime_presence_tooltip
+	
+	blockoverride "datacontext_block" {
+		datacontext = "[MaritimeInLocationWrap.GetPresence]"
+	}
+}
+
+
+template maritime_merchant_power_tooltip {	
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			datacontext = "[MaritimePresence]"
+			text = "MARITIME_MERCHANT_POWER_TITLE"
+		}
+		
+		blockoverride "title_icon_texture" {
+			texture = "gfx/interface/icons/flat_icons/trade_advantage.dds"
+		}
+		
+		blockoverride "concept_link" {
+			text = [merchant_power|E]
+		}
+		
+		blockoverride "tooltip_content" {
+			TooltipStringPairList = {
+				textcontext = "[MaritimePresence.GetMaritimeMerchantPowerInfo]"
+			}
+		}
+	}
+}
+
+
+template LocationColonial_Tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			datacontext = "[Location]"
+			text = "COLONIZE_MAP_MODE_TT"
+
+		}
+		blockoverride "title_icon" {
+			icon = {
+				using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/flat_icons/geopolitics/available_colonies.dds"
+				glow = {
+					name = "drop_shadow"
+					glow_radius = 3
+					color = {0.0 0.0 0.0 1.0}
+					alpha = 0.3
+				}
+			}
+		}
+		blockoverride "concept_link" {
+			text = [colonial_charter|e]
+		}
+		blockoverride "tooltip_content" {
+			TooltipTextBlock = {
+				visible = "[Location.HasColonialClaimsInfo]"
+				datacontext = "[Location]"
+				blockoverride "text" {
+					text = "[Location.GetColonialClaimsInfo]"
+				}
+			}
+		
+		
+			TooltipTextBlock = {
+				visible = "[Location.HasOwner]"
+				datacontext = "[Location]"
+				blockoverride "text" {
+					text = "COLONIZE_MAP_MODE_OWNER"
+				}
+			}
+			
+			
+			TooltipStringPairList = {
+				textcontext = "[Location.GetColonialRangeInfo]"
+			}
+
+			
+			TooltipContentSection = {
+				using = tooltip_location_alt_content
+			}
+		}
+	}
+}
+
+template CreateConquistadorTooltip {
+	ContextualTooltipType = {
+        blockoverride "title_text" {
+            text = "[UIAction.GetTitle]"
+        }
+       
+        blockoverride "title_icon" {
+            icon = {
+                using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/unit_actions/conquistador.dds"
+            }
+        }
+
+        blockoverride "concept_link" {
+            text = [conquistador|e]
+        }
+
+        blockoverride "tooltip_content" {
+
+            TooltipTextBlock = {
+                blockoverride "text" {
+                    text = "[UIAction.GetDescription]"
+                }
+            }
+
+			TooltipStringPairList = {
+				datacontext = "[StringToStringPairList(ExpansionLateralView.GetOngoingConquistadorsList)]"
+			}
+
+			TooltipConditionList = {
+                blockoverride "block_title" {
+                    text = "LIST_TITLE_REQUIREMENTS"
+                }
+				datacontext = "[StringToConditionListOnlyPassedAndNeutral(UIAction.GetConditions)]"
+				visible = "[ConditionList.HasItems]"
+			}
+        }
+    }
+}
+
+template CreateExplorerTooltip {
+	ContextualTooltipType = {
+        blockoverride "title_text" {
+            text = "RECRUIT_EXPLORER"
+        }
+       
+        blockoverride "title_icon" {
+            icon = {
+                using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/character_roles/explorer.dds"
+            }
+        }
+
+        blockoverride "concept_link" {
+            text = "[explorer|e]"
+        }
+
+        blockoverride "tooltip_content" {
+			TooltipConditionList = {
+				datacontext = "[StringToConditionListOnlyPassedAndNeutral(ExpansionLateralView.GetRecruitInfo)]"
+				visible = "[ConditionList.HasItems]"
+			}
+        }
+    }
+}

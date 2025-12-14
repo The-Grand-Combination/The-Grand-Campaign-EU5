@@ -1,0 +1,2555 @@
+@tooltip_title_wide = 420
+@tooltip_title_high = 20
+@tooltip_inner_margin = 10
+@tooltip_inner_wide =  @[tooltip_title_wide - tooltip_inner_margin * 2]
+
+template tooltip_title_icon_size { size = { 42 42 } }
+# template tooltip_min_width_title_wide { min_width = @tooltip_title_wide }
+template tooltip_max_width_title_wide { max_width = @tooltip_title_wide }
+# template tooltip_min_width_inner_wide { min_width = @tooltip_inner_wide }
+# template tooltip_max_width_inner_wide { max_width = @tooltip_inner_wide }
+
+template tooltip_table_field_texture {
+	using = text_mask_container_texture
+	alpha = 0.2
+	modify_texture = {
+		using = color_turquoise_texture
+	}
+}
+
+# Background box
+template Background_Area {
+	using = bg_round_corners_texture
+	shaderfile = "gfx/FX/pdxgui_default.shader"
+	alpha = 0.4
+}
+
+template Scrollbar_Vertical_Tooltips {
+	scrollbar = {
+		name = "vertical_scrollbar_messages"
+		size = { 4 12 }
+		wheelstep = 60
+		direction = vertical
+
+		block "scrollbar_setup" {}
+
+		track = {
+			button = {
+				block "scrollbar_visible" {}
+				gfxtype = buttongfx
+				size = { 100% -1 }
+
+				using = color_dark_blue_texture
+				alpha = 0.2
+			}
+		}
+
+		slider = {
+			button = {
+				block "scrollbar_visible" {}
+				gfxtype = framedbuttongfx
+
+				texture = "gfx/interface/scrollbars/scrollbar_slider.dds"
+				texture_density = 4
+				spriteType = Corneredtiled
+				spriteborder = { 5 4 }
+
+				size = { 100% -1 }
+				minimumsize = { -1 30 }
+				maximumsize = { -1 -1 }
+
+				glow = {
+					name = "drop_shadow"
+					glow_radius = 4
+					color = {0.0 0.0 0.0 1.0}
+					alpha = 0.99
+				}
+
+				upframe = 1
+				overframe = 2
+				downframe = 2
+			}
+		}
+
+		dec_button = {
+			button = {
+				block "scrollbar_visible" {}
+			}
+		}
+
+		inc_button = {
+			button = {
+				block "scrollbar_visible" {}
+			}
+		}
+	}
+}
+
+template tooltip_left_click_template {
+	hbox = {
+		layoutpolicy_horizontal = expanding
+		margin = { 10 10 }
+		spacing = 5
+
+		block "action_left" {}
+
+		widget = {
+			size = { 40 40 }
+
+			block "left_icon_extra" {}
+			block "left_icon_object" {
+				icon = {
+					parentanchor = center
+					size = { 80% 80% }
+					texture = "gfx/interface/icons/ui_controls/left_click.dds"
+				}
+			}
+		}
+
+		vbox = {
+			layoutpolicy_horizontal = expanding
+
+			hbox = {
+				layoutpolicy_horizontal = expanding
+				text_multi = {
+					block "action_text_wide" {
+						min_width = @[tooltip_title_wide - 70]
+						max_width = @[tooltip_title_wide - 70]
+					}
+
+					align = left|nobaseline
+					multiline = yes
+					autoresize = yes
+
+					default_format = "#Color_Yellow"
+
+					block "action_left_text" { visible = no }
+				}
+
+				expand = {}
+			}
+
+			hbox = {
+				layoutpolicy_horizontal = expanding
+				text_single = {
+					block "action_text_wide" {
+						min_width = @[tooltip_title_wide - 65]
+						max_width = @[tooltip_title_wide - 65]
+					}
+
+					align = left|nobaseline
+
+					block "action_left_cost" { visible = no }
+				}
+
+				expand = {}
+			}
+		}
+
+		expand = {}
+	}
+}
+
+template tooltip_right_click_template {
+	hbox = {
+		layoutpolicy_horizontal = expanding
+		margin = { 10 10 }
+		spacing = 5
+
+		block "action_right" {}
+
+		expand = {}
+
+		vbox = {
+			layoutpolicy_horizontal = expanding
+
+			hbox = {
+				layoutpolicy_horizontal = expanding
+				expand = {}
+
+				text_multi = {
+					block "action_text_wide" {
+						min_width = @[tooltip_title_wide - 65]
+						max_width = @[tooltip_title_wide - 65]
+					}
+
+					align = right|nobaseline
+					multiline = yes
+					autoresize = yes
+
+					default_format = "#Color_Yellow"
+
+					block "action_right_text" { visible = no }
+				}
+			}
+
+			hbox = {
+				layoutpolicy_horizontal = expanding
+				expand = {}
+
+				text_single = {
+					block "action_text_wide" {
+						min_width = @[tooltip_title_wide - 65]
+						max_width = @[tooltip_title_wide - 65]
+					}
+
+					align = right|nobaseline
+
+					block "action_right_cost" { visible = no }
+				}
+			}
+		}
+
+		widget = {
+			size = { 40 40 }
+
+			block "right_icon_extra" {}
+			block "right_icon_object" {
+				icon = {
+					parentanchor = center
+					size = { 80% 80% }
+					texture = "gfx/interface/icons/ui_controls/right_click.dds"
+				}
+			}
+		}
+	}
+}
+
+template tooltip_left_right_click_template {
+	using = tooltip_left_click_template
+	using = tooltip_right_click_template
+
+	blockoverride "action_text_wide" {
+		min_width = @[(tooltip_title_wide * 0.5) - 70]
+		max_width = @[(tooltip_title_wide * 0.5) - 70]
+	}
+}
+
+template tooltip_left_click_conditions_template {
+	margin = { 5 5 }
+
+	background = {
+		using = text_mask_container_texture
+		alpha = 0.3
+
+		block "textblock_background_tint" {
+			modify_texture = {
+				using = color_mid_red_texture
+			}
+		}
+	}
+
+	icon = {
+		ignore_layout = yes
+		parentanchor = left|bottom
+		position = { 17 1 }
+		size = { 16 10 }
+
+		texture = "gfx/interface/icons/flat_icons/arrow.dds"
+		texture_density = 2
+		mirror = vertical
+
+		modify_texture = {
+			using = color_mid_red_texture
+			blend_mode = add
+			alpha = 1.0
+		}
+
+		modify_texture = {
+			using = color_white_texture
+			blend_mode = add
+			alpha = 0.1
+		}
+	}
+}
+
+template tooltip_right_click_conditions_template {
+	margin = { 5 5 }
+
+	background = {
+		using = bg_round_corners_alt_texture
+
+		margin_top = 2
+		frame_grid = { 1 2 }
+		frame = 2
+		alpha = 0.3
+
+		modify_texture = {
+			using = color_mid_red_texture
+		}
+	}
+
+	background = {
+		texture = "gfx/interface/component_tiles/round_corners_frame_thin_alt.dds"
+		texture_density = 2
+		spriteType = corneredstretched
+		spriteBorder = { 15 15 }
+
+		margin_top = 2
+		frame_grid = { 1 2 }
+		frame = 2
+
+		modify_texture = {
+			using = color_mid_red_texture
+		}
+	}
+
+	icon = {
+		ignore_layout = yes
+		parentanchor = right|top
+		position = { -17 -1 }
+		size = { 16 10 }
+
+		texture = "gfx/interface/icons/flat_icons/arrow.dds"
+		texture_density = 2
+
+		modify_texture = {
+			using = color_mid_red_texture
+			blend_mode = add
+			alpha = 1.0
+		}
+
+		modify_texture = {
+			using = color_white_texture
+			blend_mode = add
+			alpha = 0.1
+		}
+	}
+}
+
+template tooltip_text_block_template {
+	using = text_multi_template
+	layoutpolicy_horizontal = expanding
+	autoresize = yes
+	block "tooltip_minimumsize" { minimumsize = { @tooltip_inner_wide -1 } }
+	block "tooltip_text_color" { fonttintcolor = "[ExtraTooltipInfo.GetTintColor]" }
+}
+
+types AuxBuldingBlocksTooltipsTypes
+{
+	type TooltipHotkeyHeader = widget {
+		parentanchor = top|left
+		widgetanchor = bottom|left
+
+		hbox = {
+			set_parent_size_to_minimum = yes
+			position = { 20 5 }
+
+			textbox = {
+				name = "TooltipTextInputAction"
+
+				using = text_single_template
+				elide = right
+
+				margin = { 2 0 }
+				margin_bottom = 5
+				autoresize = yes
+				align = nobaseline
+
+				visible_at_creation = no
+				ontextchanged = "[UpdateVisibilityIfThereIsAnyText(PdxGuiWidget.AccessSelf)]"
+
+				block "hotkey_background" {}
+			}
+
+			textbox = {
+				name = "TooltipTextShortcut"
+
+				using = text_single_template
+				elide = right
+
+				margin = { 2 0 }
+				margin_bottom = 5
+				autoresize = yes
+				align = nobaseline
+
+				visible_at_creation = no
+				ontextchanged = "[UpdateVisibilityIfThereIsAnyText(PdxGuiWidget.AccessSelf)]"
+
+				block "hotkey_background" {}
+			}
+		}
+	}
+
+	type TooltipLockProgress = widget {
+		layoutpolicy_horizontal = expanding
+		size = { -1 3 }
+		block "tooltiplockprogress_setup" {}
+
+		progressbar = {
+			name = "tooltip_lock_progress_bar"
+			visible = "[And(UsesTimerLocking, Not(PdxGuiWidget.IsTooltipLocked))]"
+			size = { 100% 100% }
+
+			min = 0
+			max = 1
+
+			block "tooltip_tintcolor" { tintcolor = "[ExtraTooltipInfo.GetTintColor]" }
+			noprogresstexture = "gfx/interface/progressbars/slider_default_bg.dds"
+			progresstexture = "gfx/interface/progressbars/slider_default_gold.dds"
+
+			texture_density = 2
+			spriteType = stretched
+
+			modify_texture = {
+				using = color_black_texture
+				alpha = 0.2
+				blend_mode = multiply
+			}
+
+			state = {
+				name = _show
+				alpha = 1
+			}
+
+			state = {
+				name = _hide
+				bezier = { 0.25 0.1 0.25 1 }
+				duration = 0.05
+				alpha = 0
+			}
+		}
+
+		widget = {
+			size = {100% 100%}
+			ignore_layout = yes
+			icon = {
+				visible = "[PdxGuiWidget.IsTooltipLocked]"
+				size = { 100% 100% }
+				texture = "gfx/interface/progressbars/slider_default_gold.dds"
+				spriteType = stretched
+				tintcolor = "[ExtraTooltipInfo.GetTintColor]"
+				shaderfile = "gfx/FX/pdxgui_default.shader"
+			}
+
+			icon = {
+				size = { 100% 3 }
+				parentanchor = hcenter|top
+				using = tile_frame_squared_texture
+				using = color_new_gold
+				modify_texture = {
+					using = overlay_stone_texture
+					blend_mode = overlay
+					alpha = 0.3
+				}
+				modify_texture = {
+					using = overlay_window_texture
+					blend_mode = overlay
+					alpha = 0.3
+				}
+				tintcolor = "[ExtraTooltipInfo.GetTintColor]"
+				shaderfile = "gfx/FX/pdxgui_default.shader"
+			}
+
+			icon = {
+				size = { 100% 3 }
+				parentanchor = hcenter|bottom
+				using = tile_frame_squared_texture
+				using = color_new_gold
+				modify_texture = {
+					using = overlay_stone_texture
+					blend_mode = overlay
+					alpha = 0.3
+				}
+				modify_texture = {
+					using = overlay_window_texture
+					blend_mode = overlay
+					alpha = 0.3
+				}
+				tintcolor = "[ExtraTooltipInfo.GetTintColor]"
+				shaderfile = "gfx/FX/pdxgui_default.shader"
+			}
+		}
+	}
+}
+
+types BuildingBlocksTooltipsTypes
+{
+	type TooltipYesNoCheckbox = icon {
+		texture = "gfx/interface/component_masks/mask_texture_01.dds"
+		texture_density = 2
+		alpha = 1
+		spriteType = corneredstretched
+		spriteBorder = { 12 12 }
+		size = { 20 20 }
+
+		modify_texture = {
+			texture = "gfx/interface/buttons/checkbox_square.dds"
+			texture_density = 2
+			frame_grid = { 2 1 }
+			blend_mode = alphamultiply
+		}
+
+		modify_texture = {
+			using = color_grey_texture
+		}
+		modify_texture = {
+			using = color_white_texture
+			alpha = 0.3
+		}
+
+		icon = {
+			block "yes_visible" { visible = no }
+			texture = "gfx/interface/icons/text_icons/trigger_yes.dds"
+			size = { 80% 80% }
+			parentanchor = center
+
+			glow = {
+				glow_radius = 3
+				color = {0.3 1.0 0.3 1.0}
+				alpha = 0.4
+			}
+		}
+
+		icon = {
+			block "no_visible" { visible = no }
+			texture = "gfx/interface/icons/text_icons/trigger_no.dds"
+			size = { 80% 80% }
+			parentanchor = center
+		}
+	}
+
+	type TooltipFunctionalBlock = hbox {
+		layoutpolicy_horizontal = expanding
+		# background = {
+		# 	using = bg_round_corners_alt_texture
+		# 	alpha = 0.3
+
+		# 	modify_texture = {
+		# 		using = color_blue_texture
+		# 	}
+		# }
+		# background = {
+		# 	texture = "gfx/interface/component_tiles/round_corners_frame_thin_alt.dds"
+		# 	texture_density = 2
+		# 	spriteType = corneredstretched
+		# 	spriteBorder = {15 15}
+		# 	alpha = 0.3
+
+		# 	modify_texture = {
+		# 		using = color_blue_texture
+		# 	}
+		# 	modify_texture = {
+		# 		using = overlay_watercolor_texture
+		# 		blend_mode = multiply
+		# 		using = color_blue_texture
+		# 	}
+		# }
+		# background = {
+		# 	texture = "gfx/interface/component_tiles/round_corners_frame_thin_alt.dds"
+		# 	texture_density = 2
+		# 	spriteType = corneredstretched
+		# 	spriteBorder = {15 15}
+		# 	alpha = 0.3
+
+		# 	modify_texture = {
+		# 		using = color_blue_texture
+		# 	}
+		# 	modify_texture = {
+		# 		using = overlay_watercolor_texture
+		# 		blend_mode = multiply
+		# 		alpha = 0.8
+		# 	}
+		# }
+
+		spacing = 10
+
+		# blockoverride "tooltip_text_block_size" {
+		# 	using = tooltip_min_width_title_wide
+		# 	using = tooltip_max_width_title_wide
+		# }
+	}
+
+	type TooltipContentSection = vbox {
+		layoutpolicy_horizontal = expanding
+		spacing = 10
+		ignoreinvisible = yes
+		allow_outside = yes
+
+		block "section_content"	{}
+	}
+
+	type TooltipScrolledContentSection = scrollarea {
+		block "block_scrollarea" {
+			maximumsize = { -1 600 }
+		}
+
+		layoutpolicy_horizontal = expanding
+
+		autoresizescrollarea = yes
+		autoresizeviewport = yes
+		scrollbarpolicy_horizontal = always_off
+
+		scrollbar_vertical = {
+			using = Scrollbar_Vertical_Tooltips
+		}
+
+		scrollwidget = {
+			block "scrollarea_content" {
+				TooltipContentSection = {
+					set_parent_dimension_to_minimum = height
+				}
+			}
+		}
+	}
+}
+
+types CooltipsBaseTypes
+{
+	# type tooltip_text_block = textbox {
+	# 	using = tooltip_text_block_template
+	# }
+
+	type tooltip_debug_text_block = debug_textbox {
+		visible_at_creation = no
+		using = tooltip_text_block_template
+		fontcolor = { 0.9 0.7 0.9 1.0 }
+		using = Font_Type_Console
+		fontsize = 12
+
+		block "text_margin" {
+			margin = { @tooltip_inner_margin @tooltip_inner_margin }
+		}
+
+		block "text_background" {
+			background = {
+				using = bg_tooltip_debug
+			}
+		}
+
+		name = "script"
+		block "script_text" {
+			debug_text = ""
+			visible = no
+		}
+
+		ontextchanged = "[UpdateVisibilityIfThereIsAnyText(PdxGuiWidget.AccessSelf)]"
+	}
+}
+
+types ContextualTooltipTypes
+{
+	type SimpleContextualTooltipType = ContextualTooltipType {
+		ontextcontextchanged = "[SetTitleDescTooltipFromTextContext(PdxGuiWidget.AccessSelf)]"
+
+		blockoverride "title_text" {
+			block "title_text" {
+				text = "[TitleDescTooltip.GetTitle]"
+			}
+		}
+
+		blockoverride "tooltip_content" {
+			block "tooltip_content" {
+				TooltipScrolledTextBlock = {
+					textcontext = "[TitleDescTooltip.GetDesc]"
+				}
+
+				block "tooltip_extra_content" {}
+			}
+		}
+	}
+
+	type ContextualTooltipDefaultIcon = icon {
+		using = tooltip_title_icon_size
+		block "title_icon_texture" {
+			texture = "[PdxGuiWidget.GetTooltipMetaTexture]"
+		}
+	}
+
+	type ContextualTooltipHeader = widget {
+		block "tooltip_layout_policy" {
+			layoutpolicy_horizontal = expanding
+		}
+
+		block "tooltip_title_size" {
+			size = { @tooltip_title_wide -1 }
+		}
+
+		using = bg_contextual_tooltip_header
+
+		hbox = {
+			resizeparent = yes
+			ignoreinvisible = yes
+			margin = { @tooltip_inner_margin 4 }
+			spacing = 10
+
+			block "title_icon" {
+				ContextualTooltipDefaultIcon = {}
+			}
+
+			vbox = {
+				layoutpolicy_horizontal = expanding
+				ignoreinvisible = yes
+
+				block "title_obj" {
+					text_single = {
+						layoutpolicy_horizontal = expanding
+						autoresize = no
+						fontsize_min = 14
+						align = left|nobaseline
+
+						# block "title_font_size" {
+							using = Font_Type_Headers
+							using = Font_Size_Medium
+							default_format = "#T"
+						# }
+
+						block "title_text" {
+							visible = "[PdxGuiWidget.HasTooltipMetaTitle]"
+							text = "[PdxGuiWidget.GetTooltipMetaTitle]"
+						}
+
+						block "tooltip_text_color" { fonttintcolor = "[ExtraTooltipInfo.GetTintColor]" }
+						alwaystransparent = yes
+					}
+				}
+
+				block "concept_link_obj" {
+					text_single = {
+						layoutpolicy_horizontal = expanding
+						size = { -1 20 }
+						autoresize = no
+						align = left|nobaseline
+
+						# block "concept_link_font_size" {
+							using = Font_Type_Flavor
+						# }
+						block "concept_link" {
+							visible = "[PdxGuiWidget.HasTooltipMetaGameConcept]"
+							text = "[PdxGuiWidget.GetTooltipMetaGameConcept]"
+						}
+						block "tooltip_text_color" { fonttintcolor = "[ExtraTooltipInfo.GetTintColor]" }
+						alwaystransparent = yes
+					}
+				}
+			}
+
+			block "title_button" {}
+
+			# TooltipHotkeyIcon = {}
+		}
+	}
+
+	type TooltipConditionListType = ContextualTooltipTypeBase {
+		TooltipConditionList = {
+			set_parent_size_to_minimum = yes
+			margin = { 5 5 }
+		}
+
+		widget = { using = bg_tooltip_frame }
+	}
+
+	type TooltipUIActionBlock = vbox {
+		layoutpolicy_horizontal = expanding
+		ignoreinvisible = yes
+
+		hbox = {
+			visible = "[UIAction.HasAnyClickModifierAvailable]"
+			layoutpolicy_horizontal = expanding
+
+			margin = { 2 0 }
+			spacing = 4
+
+			hbox = {
+				margin = { 2 0 }
+				spacing = 4
+
+				widget = {
+					visible = "[UIAction.HasClickModifierAvailable('shift')]"
+					size = { 62 22 }
+
+					icon = {
+						texture = "gfx/interface/icons/text_icons/shift.dds"
+						texture_density = 2
+						parentanchor = center
+
+						modify_texture = {
+							visible = "[UIAction.IsClickModifierEnabled('shift')]"
+							using = color_white_texture
+							alpha = 0.2
+						}
+					}
+				}
+
+				block "shift_left_extra" {}
+			}
+
+			hbox = {
+				margin = { 2 0 }
+				spacing = 4
+
+				widget = {
+					visible = "[UIAction.HasClickModifierAvailable('ctrl')]"
+					size = { 62 22 }
+
+					icon = {
+						texture = "gfx/interface/icons/text_icons/ctrl.dds"
+						texture_density = 2
+						parentanchor = center
+
+						modify_texture = {
+							visible = "[UIAction.IsClickModifierEnabled('ctrl')]"
+							using = color_white_texture
+							alpha = 0.2
+						}
+					}
+				}
+			}
+
+			hbox = {
+				margin = { 2 0 }
+				spacing = 4
+
+				widget = {
+					visible = "[UIAction.HasClickModifierAvailable('alt')]"
+					size = { 62 22 }
+
+					icon = {
+						texture = "gfx/interface/icons/text_icons/alt.dds"
+						texture_density = 2
+						parentanchor = center
+						position = { 0 0 }
+
+						modify_texture = {
+							visible = "[UIAction.IsClickModifierEnabled('alt')]"
+							using = color_white_texture
+							alpha = 0.2
+						}
+					}
+				}
+			}
+
+			expand = {}
+		}
+
+		TooltipConditionList = {
+			using = tooltip_left_click_conditions_template
+
+			visible = "[And3(UIAction.IsLeftClickVisible, Not(UIAction.IsLeftClickEnabled), Not(StringIsEmpty(StringToConditionListOnlyFail(UIAction.GetLeftClickTooltip).GetOutput)))]"
+			datacontext = "[StringToConditionListOnlyFailCollapseRequirement(UIAction.GetLeftClickTooltip)]"
+			# tooltipwidget = {
+			# 	TooltipConditionListType = {
+			# 		datacontext = "[StringToConditionList(UIAction.GetLeftClickTooltip)]"
+			# 	}
+			# }
+		}
+
+		TooltipConditionList = {
+			using = tooltip_left_click_conditions_template
+
+			visible = "[And3(UIAction.IsLeftClickAndConfirmVisible, Not(UIAction.IsLeftClickAndConfirmEnabled), Not(StringIsEmpty(StringToConditionListOnlyFail(UIAction.GetLeftClickAndConfirmTooltip).GetOutput)))]"
+			datacontext = "[StringToConditionListOnlyFailCollapseRequirement(UIAction.GetLeftClickAndConfirmTooltip)]"
+			# tooltipwidget = {
+			# 	TooltipConditionListType = {
+			# 		datacontext = "[StringToConditionList(UIAction.GetLeftClickAndConfirmTooltip)]"
+			# 	}
+			# }
+		}
+
+		TooltipFunctionalBlock = {
+			visible = "[And(Or(UIAction.IsLeftClickVisible, UIAction.IsLeftClickAndConfirmVisible), Not(Or(UIAction.IsRightClickVisible, UIAction.IsRightClickAndConfirmVisible)))]"
+			using = tooltip_left_click_template
+		}
+
+		TooltipFunctionalBlock = {
+			visible = "[And(Not(Or(UIAction.IsLeftClickVisible, UIAction.IsLeftClickAndConfirmVisible)), Or(UIAction.IsRightClickVisible, UIAction.IsRightClickAndConfirmVisible))]"
+			using = tooltip_right_click_template
+		}
+
+		TooltipFunctionalBlock = {
+			visible = "[And(Or(UIAction.IsLeftClickVisible, UIAction.IsLeftClickAndConfirmVisible), Or(UIAction.IsRightClickVisible, UIAction.IsRightClickAndConfirmVisible))]"
+			using = tooltip_left_right_click_template
+		}
+
+		TooltipConditionList = {
+			using = tooltip_right_click_conditions_template
+			blockoverride "conditionlist_item_setup" { righttoleft = yes }
+
+			visible = "[And3(UIAction.IsRightClickVisible, Not(UIAction.IsRightClickEnabled), Not(StringIsEmpty(StringToConditionListOnlyFail(UIAction.GetRightClickTooltip).GetOutput)))]"
+			datacontext = "[StringToConditionListOnlyFailCollapseRequirement(UIAction.GetRightClickTooltip)]"
+			# tooltipwidget = {
+			# 	TooltipConditionListType = {
+			# 		datacontext = "[StringToConditionList(UIAction.GetRightClickTooltip)]"
+			# 	}
+			# }
+		}
+
+		TooltipConditionList = {
+			using = tooltip_right_click_conditions_template
+			blockoverride "conditionlist_item_setup" { righttoleft = yes }
+
+			visible = "[And3(UIAction.IsRightClickAndConfirmVisible, Not(UIAction.IsRightClickAndConfirmEnabled), Not(StringIsEmpty(StringToConditionListOnlyFail(UIAction.GetRightClickAndConfirmTooltip).GetOutput)))]"
+			datacontext = "[StringToConditionListOnlyFailCollapseRequirement(UIAction.GetRightClickAndConfirmTooltip)]"
+			# tooltipwidget = {
+			# 	TooltipConditionListType = {
+			# 		datacontext = "[StringToConditionList(UIAction.GetRightClickAndConfirmTooltip)]"
+			# 	}
+			# }
+		}
+
+		blockoverride "action_left" {
+			background = {
+				visible = "[UIAction.IsLeftClickModifierEnabled('shift')]"
+				using = color_white_texture
+				alpha = 0.1
+			}
+
+			background = {
+				visible = "[UIAction.IsLeftClickModifierEnabled('ctrl')]"
+				using = color_white_texture
+				alpha = 0.1
+			}
+
+			background = {
+				visible = "[UIAction.IsLeftClickModifierEnabled('alt')]"
+				using = color_white_texture
+				alpha = 0.1
+			}
+
+			enabled = "[Or(UIAction.IsLeftClickEnabled, UIAction.IsLeftClickAndConfirmEnabled)]"
+			tooltip_enabled = "[Not(StringIsEmpty(Concatenate(UIAction.GetLeftClickTooltip, UIAction.GetLeftClickAndConfirmTooltip)))]"
+			tooltipwidget = {
+				TooltipConditionListType = {
+					datacontext = "[StringToConditionList(Concatenate(UIAction.GetLeftClickTooltip, UIAction.GetLeftClickAndConfirmTooltip))]"
+				}
+			}
+		}
+
+		blockoverride "left_icon_object" {
+			icon = {
+				tooltipwidget = {
+					TooltipConditionListType = {
+						datacontext = "[StringToConditionList(Localize('CLICK_TOOLTIP'))]"
+					}
+				}
+				visible = "[Not(UIAction.IsLeftClickAndConfirmVisible)]"
+				parentanchor = center
+				size = { 80% 80% }
+				texture = "gfx/interface/icons/ui_controls/left_click.dds"
+			}
+
+			icon = {
+				tooltipwidget = {
+					TooltipConditionListType = {
+						datacontext = "[StringToConditionList(Localize('CLICK_HOLD_TOOLTIP'))]"
+					}
+				}
+				visible = "[And(IsActionConfirmAndHoldMode,UIAction.IsLeftClickAndConfirmVisible)]"
+				parentanchor = center
+				size = { 80% 80% }
+				texture = "gfx/interface/icons/ui_controls/left_click_hold.dds"
+			}
+
+			icon = {
+				tooltipwidget = {
+					TooltipConditionListType = {
+						datacontext = "[StringToConditionList(Localize('CLICK_CONFIRM_DIALOG_TOOLTIP'))]"
+					}
+				}
+				visible = "[And(IsActionDialogMode,UIAction.IsLeftClickAndConfirmVisible)]"
+				parentanchor = center
+				size = { 80% 80% }
+				texture = "gfx/interface/icons/ui_controls/left_click_dialog.dds"
+			}
+		}
+
+		blockoverride "left_icon_extra" {
+			piechart = {
+				size = { 100% 100% }
+
+				visible = "[And(IsActionConfirmAndHoldMode,UIAction.IsLeftClickAndConfirmVisible)]"
+				enabled = "[UIAction.IsLeftClickAndConfirmEnabled]"
+
+				using = piechart_angles
+
+				icon = {
+					texture = "gfx/interface/pie_charts/pie_chart_alpha_80.dds"
+					size = { 97% 97% }
+					parentanchor = center
+					using = color_value_progress_gray
+				}
+
+				pieslice = {
+					texture = "gfx/interface/pie_charts/pie_chart_alpha_80.dds"
+					value = "[UIAction.GetLeftMouseDownPercentage]"
+					using = color_value_progress_blue
+					alpha = 0.8
+				}
+
+				pieslice = {
+					texture = "gfx/interface/pie_charts/pie_chart_alpha_80.dds"
+					value = "[UIAction.GetLeftMouseDownPercentageLeft]"
+					using = color_red
+					alpha = 0.8
+				}
+			}
+		}
+
+		blockoverride "action_left_text" {
+			text = "[UIAction.GetLeftClickName][UIAction.GetLeftClickAndConfirmName]"
+		}
+
+		blockoverride "action_left_cost" {
+			text = "[UIAction.GetLeftClickCost][UIAction.GetLeftClickAndConfirmCost]"
+		}
+
+		blockoverride "action_right" {
+			background = {
+				visible = "[UIAction.IsRightClickModifierEnabled('shift')]"
+				using = color_white_texture
+				alpha = 0.1
+			}
+
+			background = {
+				visible = "[UIAction.IsRightClickModifierEnabled('ctrl')]"
+				using = color_white_texture
+				alpha = 0.1
+			}
+
+			background = {
+				visible = "[UIAction.IsRightClickModifierEnabled('alt')]"
+				using = color_white_texture
+				alpha = 0.1
+			}
+
+			enabled = "[Or(UIAction.IsRightClickEnabled, UIAction.IsRightClickAndConfirmEnabled)]"
+
+			tooltip_enabled = "[Not(StringIsEmpty(Concatenate(UIAction.GetRightClickTooltip, UIAction.GetRightClickAndConfirmTooltip)))]"
+			tooltipwidget = {
+				TooltipConditionListType = {
+					datacontext = "[StringToConditionList(Concatenate(UIAction.GetRightClickTooltip, UIAction.GetRightClickAndConfirmTooltip))]"
+				}
+			}
+		}
+
+		blockoverride "right_icon_object" {
+			icon = {
+				tooltipwidget = {
+					TooltipConditionListType = {
+						datacontext = "[StringToConditionList(Localize('CLICK_TOOLTIP'))]"
+					}
+				}
+				visible = "[Not(UIAction.IsRightClickAndConfirmVisible)]"
+				parentanchor = center
+				size = { 80% 80% }
+				texture = "gfx/interface/icons/ui_controls/right_click.dds"
+			}
+
+			icon = {
+				tooltipwidget = {
+					TooltipConditionListType = {
+						datacontext = "[StringToConditionList(Localize('CLICK_HOLD_TOOLTIP'))]"
+					}
+				}
+				visible = "[And(IsActionConfirmAndHoldMode,UIAction.IsRightClickAndConfirmVisible)]"
+				parentanchor = center
+				size = { 80% 80% }
+				texture = "gfx/interface/icons/ui_controls/right_click_hold.dds"
+			}
+
+			icon = {
+				tooltipwidget = {
+					TooltipConditionListType = {
+						datacontext = "[StringToConditionList(Localize('CLICK_CONFIRM_DIALOG_TOOLTIP'))]"
+					}
+				}
+				visible = "[And(IsActionDialogMode,UIAction.IsRightClickAndConfirmVisible)]"
+				parentanchor = center
+				size = { 80% 80% }
+				texture = "gfx/interface/icons/ui_controls/right_click_dialog.dds"
+			}
+		}
+
+		blockoverride "right_icon_extra" {
+			piechart = {
+				size = { 100% 100% }
+
+				visible = "[And(IsActionConfirmAndHoldMode,UIAction.IsRightClickAndConfirmVisible)]"
+				enabled = "[UIAction.IsRightClickAndConfirmEnabled]"
+
+				using = piechart_angles
+
+				icon = {
+					texture = "gfx/interface/pie_charts/pie_chart_alpha_80.dds"
+					size = { 97% 97% }
+					parentanchor = center
+					using = color_value_progress_gray
+				}
+
+				pieslice = {
+					texture = "gfx/interface/pie_charts/pie_chart_alpha_80.dds"
+					value = "[UIAction.GetRightMouseDownPercentage]"
+					using = color_value_progress_blue
+					alpha = 0.8
+				}
+
+				pieslice = {
+					texture = "gfx/interface/pie_charts/pie_chart_alpha_80.dds"
+					value = "[UIAction.GetRightMouseDownPercentageLeft]"
+					using = color_value_progress_gray
+					alpha = 0.8
+				}
+			}
+		}
+
+		blockoverride "action_right_text" {
+			text = "[UIAction.GetRightClickName][UIAction.GetRightClickAndConfirmName]"
+		}
+
+		blockoverride "action_right_cost" {
+			text = "[UIAction.GetRightClickCost][UIAction.GetRightClickAndConfirmCost]"
+		}
+	}
+
+	type ContextualTooltipTypeBase = tooltip_widget {
+		alwaystransparent = no
+		filter_mouse = all
+
+		using = bg_contextual_tooltip
+		using = snd_UI_tooltip_handling
+	}
+
+	type LeftClickButtonTooltip = ContextualTooltipType {
+		blockoverride "tooltip_title" {}
+		blockoverride "tooltip_content_margin" { margin = { 4 4 } }
+
+		blockoverride "tooltip_ui_action_block" {
+			TooltipFunctionalBlock = {
+				using = tooltip_left_click_template
+
+				blockoverride "action_text_wide" {
+					using = tooltip_max_width_title_wide
+				}
+
+				blockoverride "action_left_text" {
+					block "onclick_text" {}
+				}
+			}
+		}
+	}
+
+	type BasicFunctionalTooltip = ContextualTooltipType {
+		blockoverride "tooltip_title" {}
+		blockoverride "tooltip_content_margin" { margin = { 4 4 } }
+		blockoverride "action_text_wide" { using = tooltip_max_width_title_wide }
+	}
+
+	# type BasicConditionListTooltip = ContextualTooltipType {
+	# 	blockoverride "tooltip_title" {}
+	# 	blockoverride "tooltip_content" {
+	# 		TooltipConditionList = {
+	# 			# block "condition_list_setup" {}
+	# 		}
+	# 	}
+	# }
+
+	# type ToolTipHintBox = vbox {
+	# 	block "show_hint" { visible = yes }
+
+	# 	background = {
+	# 		using = bg_round_corners
+	# 		alpha = 0.3
+	# 	}
+
+	# 	margin = { 20 20 }
+
+	# 	ignoreinvisible = yes
+	# 	spacing = 10
+
+	# 	widget = {
+	# 		size = { @[tooltip_inner_wide - 40] 40 }
+	# 		hbox = {
+	# 			spacing = 10
+	# 			icon = {
+	# 				texture = "gfx/interface/icons/flat_icons/europedia_flat_icon.dds"
+	# 				size = { 32 32 }
+
+	# 				modify_texture = {
+	# 					using = color_gold_texture
+	# 				}
+	# 			}
+
+	# 			text_single = {
+	# 				using = layoutpolicy_expanding
+	# 				default_format = "#help"
+	# 				using = Font_Size_Medium
+	# 				autoresize = no
+	# 				align = nobaseline
+	# 				block "hint_title" {}
+	# 			}
+	# 		}
+	# 	}
+
+	# 	tooltip_text_block = {
+	# 		min_width = @[tooltip_inner_wide - 40]
+	# 		max_width = @[tooltip_inner_wide - 40]
+	# 		default_format = "#help"
+	# 		block "hint_text" {}
+	# 	}
+	# }
+
+	# type TooltipTutorialTextBlock = vbox {
+	# 	layoutpolicy_horizontal = expanding
+
+	# 	background = {
+	# 		using = color_turquoise_texture
+	# 		alpha = 0.1
+	# 	}
+
+	# 	margin = { @tooltip_inner_margin @[tooltip_inner_margin + 10] }
+	# 	spacing = 10
+
+	# 	widget = {
+	# 		size = { @tooltip_inner_wide 40 }
+
+	# 		hbox = {
+	# 			set_parent_size_to_minimum = yes
+	# 			spacing = 10
+
+	# 			vbox = {
+	# 				layoutpolicy_vertical = expanding
+	# 				icon = {
+	# 					texture = "gfx/interface/icons/flat_icons/europedia_flat_icon.dds"
+	# 					size = { 32 32 }
+	# 					modify_texture = {
+	# 						using = color_white_texture
+	# 						blend_mode = normal
+	# 						alpha = 0.7
+	# 					}
+	# 				}
+
+	# 				expand = {}
+	# 			}
+
+	# 			textbox = {
+	# 				using = tooltip_text_block_template
+	# 				# blockoverride "tooltip_text_block_size" {}
+	# 				default_format = "#help"
+	# 				using = Font_Size_Medium
+	# 				align = nobaseline
+	# 				block "tutorial_title_text" {}
+	# 			}
+	# 		}
+	# 	}
+
+	# 	tooltip_text_block = {
+	# 		# blockoverride "tooltip_text_block_size" {}
+	# 		default_format = "#help"
+	# 		block "tutorial_text" {}
+	# 	}
+	# }
+
+	type TooltipListBase = vbox {
+		layoutpolicy_horizontal = expanding
+		block "tooltip_minimumsize" { minimumsize = { @tooltip_inner_wide -1 } }
+
+		ignoreinvisible = yes
+		allow_outside = yes
+		margin = { 1 1 }
+
+		block "bg_listbase" {
+			using = bg_listbase_template
+		}
+
+		TooltipTableHeader = {
+			blockoverride "tableheader_text" {
+				block "block_title" {
+					visible = no
+				}
+			}
+		}
+	}
+
+	type TooltipScrolledColumnList = TooltipListBase {
+		ontextcontextchanged = "[SetTableColumnListFromTextContext(PdxGuiWidget.AccessSelf)]"
+
+		blockoverride "block_title" {
+			block "block_title" {
+				visible = "[TableColumnList.HasTitle]"
+				text = "[TableColumnList.GetTitle]"
+			}
+		}
+
+		TooltipListScrollArea = {
+			visible = "[DataModelHasItems(TableColumnList.GetColumns)]"
+
+			blockoverride "scrollarea_content" {
+				TooltipColumnListContent = {
+					set_parent_dimension_to_minimum = height
+					layoutpolicy_horizontal = expanding
+				}
+			}
+		}
+
+		TooltipListEmptyContent = {
+			visible = "[IsDataModelEmpty(TableColumnList.GetColumns)]"
+		}
+	}
+
+	type TooltipTableHeader = hbox {
+		layoutpolicy_horizontal = expanding
+		# block "table_header_icon" {}
+		block "table_header_background" {
+			using = bg_text_mask_container_turquoise
+		}
+		textbox = {
+			using = tooltip_text_block_template
+			align = nobaseline
+			margin = { @tooltip_inner_margin 5 }
+			block "tableheader_text" {}
+		}
+
+		block "table_header_extra" {}
+	}
+
+	type TooltipListScrollArea = TooltipScrolledContentSection {}
+
+	type ConceptTooltipType = widget {
+		alwaystransparent = no
+		filter_mouse = all
+
+		using = bg_concept_tooltip
+		using = snd_UI_tooltip_handling
+
+		TooltipHotkeyHeader = {
+			blockoverride "hotkey_background" {
+				using = bg_concept_hotkey
+			}
+		}
+
+		vbox = {
+			set_parent_size_to_minimum = yes
+			ignoreinvisible = yes
+			allow_outside = yes
+
+			block "tooltip_title" {
+				ConceptTooltipHeader = {}
+				TooltipLockProgress = {}
+			}
+
+			TooltipContentSection = {
+				block "tooltip_content_margin" {
+					margin = { 10 10 }
+				}
+
+				block "tooltip_content" {}
+				block "tooltip_ui_action_block" {
+					TooltipUIActionBlock = {
+						visible = "[ExtraTooltipInfo.HasUIAction]"
+						datacontext = "[ExtraTooltipInfo.GetUIAction]"
+					}
+				}
+			}
+		}
+
+		widget = { using = bg_tooltip_frame }
+	}
+
+	type ConceptTooltipDefaultIcon = widget {
+		size = { 1 32 }
+		# block "title_icon_texture" {
+		# 	texture = "gfx/interface/icons/flat_icons/tabicons/europedia_flat_icon.dds"
+		# 	texture_density = 2
+		# }
+	}
+
+	type ConceptTooltipHeader = widget {
+		layoutpolicy_horizontal = expanding
+
+		block "tooltip_title_size" {
+			size = { @tooltip_title_wide -1 }
+		}
+
+		using = bg_concept_tooltip_header
+		hbox = {
+			resizeparent = yes
+			ignoreinvisible = yes
+			margin = { @tooltip_inner_margin 5 }
+			spacing = 10
+
+			block "title_icon" {
+				ConceptTooltipDefaultIcon = {}
+			}
+
+			vbox = {
+				layoutpolicy_horizontal = expanding
+
+				block "title_obj" {
+					text_multi = {
+						layoutpolicy_horizontal = expanding
+						autoresize = no
+						align = left|nobaseline
+						# block "title_font_size" {
+							using = Font_Type_Headers
+							using = Font_Size_Medium
+							default_format = "#T"
+						# }
+						block "title_text" {
+							visible = "[PdxGuiWidget.HasTooltipMetaTitle]"
+							text = "[PdxGuiWidget.GetTooltipMetaTitle]"
+						}
+						block "tooltip_text_color" { fonttintcolor = "[ExtraTooltipInfo.GetTintColor]" }
+						alwaystransparent = yes
+					}
+				}
+
+				block "concept_link_obj" {
+					text_single = {
+						layoutpolicy_horizontal = expanding
+						size = { -1 20 }
+						autoresize = no
+						align = left|nobaseline
+
+						# block "concept_link_font_size" {
+							using = Font_Type_Flavor
+						# }
+						block "concept_link" {
+							visible = "[PdxGuiWidget.HasTooltipMetaGameConcept]"
+							text = "[PdxGuiWidget.GetTooltipMetaGameConcept]"
+						}
+						block "tooltip_text_color" { fonttintcolor = "[ExtraTooltipInfo.GetTintColor]" }
+						alwaystransparent = yes
+					}
+				}
+			}
+
+			block "title_button" {}
+
+			# TooltipHotkeyIcon = {}
+		}
+	}
+
+	type ContextualTooltipType = ContextualTooltipTypeBase {
+		TooltipHotkeyHeader = {
+			blockoverride "hotkey_background" {
+				using = bg_contextual_hotkey
+			}
+		}
+
+		vbox = {
+			set_parent_size_to_minimum = yes
+
+			block "tooltip_title" {
+				ContextualTooltipHeader = {}
+				TooltipLockProgress = {}
+			}
+
+			TooltipContentSection = {
+				block "tooltip_content_margin" {
+					margin = { 10 10 }
+				}
+
+				block "tooltip_content" {}
+				block "extra_tooltip_content" {}
+				block "tooltip_ui_action_block" {
+					TooltipUIActionBlock = {
+						visible = "[ExtraTooltipInfo.HasUIAction]"
+						datacontext = "[ExtraTooltipInfo.GetUIAction]"
+					}
+				}
+			}
+		}
+
+		widget = { using = bg_tooltip_frame }
+	}
+
+	type TooltipScrolledRowList = TooltipListBase {
+		ontextcontextchanged = "[SetRowListFromTextContext(PdxGuiWidget.AccessSelf)]"
+
+		blockoverride "block_title" {
+			block "block_title" {
+				visible = "[RowList.HasTitle]"
+				text = "[RowList.GetTitle]"
+			}
+		}
+
+		TooltipListScrollArea = {
+			block "rowlist_datamodel_has_items" {
+				visible = "[DataModelHasItems(RowList.GetRows)]"
+			}
+
+			blockoverride "scrollarea_content" {
+				TooltipRowListContent = {
+					set_parent_dimension_to_minimum = height
+					layoutpolicy_horizontal = expanding
+				}
+			}
+		}
+
+		TooltipListEmptyContent = {
+			block "rowlist_datamodel_is_empty" {
+				visible = "[IsDataModelEmpty(RowList.GetRows)]"
+			}
+		}
+
+		TooltipTableHeader = {
+			block "table_header_background" {
+				background = {
+					using = tile_background_squared_texture
+					mirror = vertical
+					alpha = 0.7
+					modify_texture = {
+						using = color_turquoise_texture
+					}
+				}
+			}
+
+			blockoverride "tableheader_text" {
+				# block "block_footer" {
+					visible = no
+				# }
+			}
+		}
+	}
+
+	# type ScrolledTooltipTableColumn = vbox {
+	# 	layoutpolicy_horizontal = expanding
+
+	# 	TooltipTableField = {
+	# 		block "column_title" {
+	# 			visible = no
+	# 		}
+
+	# 		blockoverride "field_background" {
+	# 			background = {
+	# 				using = tile_background_squared_texture
+	# 				frame_grid = { 1 2 }
+	# 				spriteborder_bottom = 0
+	# 				alpha = 0.4
+	# 				modify_texture = {
+	# 					using = color_turquoise_texture
+	# 				}
+	# 			}
+	# 		}
+
+	# 		blockoverride "field_content" {
+	# 			block "column_title_left" {}
+
+	# 			text_single = {
+	# 				using = Font_Type_Headers
+	# 				block "column_title_text" {}
+	# 			}
+
+	# 			block "column_title_right" {}
+	# 		}
+	# 	}
+	# 	TooltipScrolledContentSection = {
+	# 		block "block_scrollarea" {
+	# 			blockoverride "block_scrollarea" {
+	# 				maximumsize = { -1 600 }
+	# 			}
+	# 		}
+	# 		blockoverride "scrollarea_content" {
+	# 			TooltipContentSection = {
+	# 				spacing = 0
+	# 				set_parent_dimension_to_minimum = height
+	# 				block "column_datamodel" {}
+	# 				item = {
+	# 				# block "tablefield_item" {
+	# 					TooltipTableField = {
+	# 						blockoverride "field_content" {
+	# 							block "table_field_margin" {
+	# 								margin = { 10 0 }
+	# 							}
+	# 							block "table_field_spacing" {
+	# 								spacing = 5
+	# 							}
+
+	# 							block "field_left" {}
+
+	# 							block "tooltip_table_text_single" {
+	# 								text_single = {
+	# 									block "field_text_visibility" {}
+	# 									block "field_text" {}
+	# 								}
+	# 							}
+
+	# 							block "field_right" {}
+	# 						}
+	# 					}
+	# 				# }
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+		
+	# }
+
+	type TooltipTableColumn = vbox {
+		layoutpolicy_horizontal = expanding
+
+		block "column_datamodel" {}
+
+		TooltipTableField = {
+			block "column_title" {
+				visible = no
+			}
+
+			blockoverride "field_background" {
+				background = {
+					using = tile_background_squared_texture
+					frame_grid = { 1 2 }
+					spriteborder_bottom = 0
+					alpha = 0.4
+					modify_texture = {
+						using = color_turquoise_texture
+					}
+				}
+			}
+
+			blockoverride "field_content" {
+				block "column_title_left" {}
+
+				text_single = {
+					using = Font_Type_Headers
+					block "column_title_text" {}
+				}
+
+				block "column_title_right" {}
+			}
+		}
+
+		item = {
+			# block "tablefield_item" {
+				TooltipTableField = {
+					blockoverride "field_content" {
+						block "table_field_margin" {
+							margin = { 10 0 }
+						}
+						spacing = 5
+
+						block "field_left" {}
+
+						block "tooltip_table_text_single" {
+							text_single = {
+								block "field_text_visibility" {}
+								block "field_text" {}
+							}
+						}
+
+						block "field_right" {}
+					}
+				}
+			# }
+		}
+	}
+
+	type TooltipListRowContent = vbox {
+		layoutpolicy_horizontal = expanding
+	}
+
+	type TooltipListColumnContent = hbox {
+		layoutpolicy_horizontal = expanding
+	}
+
+	type TooltipColumnListContent = TooltipListColumnContent {
+		# block "columnlist_datamodel" {
+		datamodel = "[TableColumnList.GetColumns]"
+		ignoreinvisible = yes
+		# }
+
+		item = {
+			TooltipTableColumn = {
+				layoutpolicy_horizontal = "[TableColumn.GetHorizontalLayoutPolicy]"
+
+				blockoverride "column_datamodel" {
+					datamodel = "[TableColumn.GetRows]"
+					ignoreinvisible = yes
+				}
+
+				blockoverride "column_title" {
+					visible = "[TableColumnList.HasTitleRow]"
+				}
+
+				blockoverride "column_title_text" {
+					autoresize = yes
+					text = "[TableColumn.GetTitle]"
+					align = "[TableColumn.GetTextAlignment]"
+				}
+
+				blockoverride "column_title_left" {
+					expand = {
+						visible = "[TableColumn.IsTextRight]"
+					}
+				}
+
+				blockoverride "column_title_right" {
+					expand = {
+						visible = "[TableColumn.IsTextLeft]"
+					}
+				}
+
+				blockoverride "field_text" {
+					autoresize = yes
+					text = "[CString.GetString]"
+					align = "[TableColumn.GetTextAlignment]"
+				}
+
+				blockoverride "field_left" {
+					expand = {
+						visible = "[TableColumn.IsTextRight]"
+					}
+				}
+
+				blockoverride "field_right" {
+					expand = {
+						visible = "[TableColumn.IsTextLeft]"
+					}
+				}
+			}
+		}
+	}
+
+	type TooltipTableField = hbox {
+		block "visibility" {}
+		block "row_size" {
+			maximumsize = { -1 30 }
+			minimumsize = { -1 30 }
+		}
+		block "field_margin" {
+			margin = { 10 0 }
+		}
+
+		layoutpolicy_horizontal = expanding
+
+		block "field_background" {
+			background = {
+				visible = "[IsOdd_int32(PdxGuiWidget.GetIndexInDataModel)]"
+				using = tooltip_table_field_texture
+			}
+		}
+
+		block "field_content" {}
+	}
+
+	type TooltipManualTableField = TooltipTableField {
+		spacing = 10
+		blockoverride "field_background" {
+			background = {
+				visible = "[IsOdd_int32(PdxGuiWidget.GetIndexInParent)]"
+				using = tooltip_table_field_texture
+			}
+		}
+	}
+
+	type TooltipTextBlock = TooltipListBase {
+		block "set_textcontext" {
+			ontextcontextchanged = "[SetCStringFromTextContext(PdxGuiWidget.AccessSelf)]"
+		}
+
+		vbox = {
+			layoutpolicy_horizontal = expanding
+			margin = { @tooltip_inner_margin @tooltip_inner_margin }
+
+			textbox = {
+				using = tooltip_text_block_template
+
+				block "text" {
+					text = "[CString.GetString]"
+				}
+			}
+		}
+	}
+
+	type TooltipScrolledTextBlock = TooltipListBase {
+		block "set_textcontext" {
+			ontextcontextchanged = "[SetCStringFromTextContext(PdxGuiWidget.AccessSelf)]"
+		}
+
+		TooltipListScrollArea = {
+			blockoverride "scrollarea_content" {
+				vbox = {
+					set_parent_dimension_to_minimum = height
+					layoutpolicy_horizontal = expanding
+					margin = { @tooltip_inner_margin @tooltip_inner_margin }
+
+					textbox = {
+						using = tooltip_text_block_template
+
+						block "text" {
+							text = "[CString.GetString]"
+						}
+					}
+				}
+			}
+		}
+	}
+
+	type TooltipRowList = TooltipListBase {
+		ontextcontextchanged = "[SetRowListFromTextContext(PdxGuiWidget.AccessSelf)]"
+
+		blockoverride "block_title" {
+			block "block_title" {
+				visible = "[RowList.HasTitle]"
+				text = "[RowList.GetTitle]"
+			}
+		}
+
+		TooltipRowListContent = {
+			block "rowlist_datamodel_has_items" {
+				visible = "[DataModelHasItems(RowList.GetRows)]"
+			}
+
+			layoutpolicy_horizontal = expanding
+		}
+
+		TooltipListEmptyContent = {
+			block "rowlist_datamodel_is_empty" {
+				visible = "[IsDataModelEmpty(RowList.GetRows)]"
+			}
+		}
+
+		TooltipTableHeader = {
+			block "table_header_background" {
+				background = {
+					using = tile_background_squared_texture
+					mirror = vertical
+					alpha = 0.7
+					modify_texture = {
+						using = color_turquoise_texture
+					}
+				}
+			}
+
+			blockoverride "tableheader_text" {
+				# block "block_footer" {
+					visible = no
+				# }
+			}
+		}
+	}
+
+	type TooltipRowListContent = vbox {
+		block "rowlist_datamodel" {
+			datamodel = "[RowList.GetRows]"
+			ignoreinvisible = yes
+		}
+
+		item = {
+			TooltipTableField = {
+				blockoverride "field_content" {
+					block "rowlist_content" {
+						textbox = {
+							layoutpolicy_horizontal = expanding
+							autoresize = yes
+							margin = { 0 5 }
+
+							using = text_multi_template
+							align = nobaseline
+							elide = right
+
+							block "rowlist_item" {
+								text = "[CString.GetString]"
+								block "field_text_format" {}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	type TooltipListEmptyContent = vbox {
+		layoutpolicy_horizontal = expanding
+
+		TooltipManualTableField = {
+			blockoverride "field_content" {
+				text_single = {
+					layoutpolicy_horizontal = expanding
+
+					block "empty_list_text" {
+						text = "NONE"
+					}
+
+					block "field_text_format" {}
+				}
+			}
+		}
+	}
+
+	type TooltipUIActionBlockOld = vbox {
+		layoutpolicy_horizontal = expanding
+		ignoreinvisible = yes
+		spacing = 5
+
+		vbox = {
+			layoutpolicy_horizontal = expanding
+			ignoreinvisible = yes
+
+			TooltipConditionList = {
+				using = tooltip_left_click_conditions_template
+
+				visible = "[And3(UIAction.IsLeftClickVisible, Not(UIAction.IsLeftClickEnabled), Not(StringIsEmpty(StringToConditionListOnlyFailCollapseRequirement(UIAction.GetLeftClickTooltip).GetOutput)))]"
+				tooltip_enabled = "[IsBuildDebug]"
+				tooltip = "[UIAction.GetLeftClickTooltip]"
+
+				ontextcontextchanged = "[SetConditionListOnlyFailCollapseRequirementFromTextContext(PdxGuiWidget.AccessSelf)]"
+				textcontext = "[UIAction.GetLeftClickTooltip]"
+			}
+
+			# Single click
+			TooltipFunctionalBlock = {
+				visible = "[And(UIAction.IsLeftClickVisible, Not(UIAction.IsRightClickVisible))]"
+				using = tooltip_left_click_template
+			}
+
+			TooltipFunctionalBlock = {
+				visible = "[And(Not(UIAction.IsLeftClickVisible), UIAction.IsRightClickVisible)]"
+				using = tooltip_right_click_template
+			}
+
+			TooltipFunctionalBlock = {
+				visible = "[And(UIAction.IsLeftClickVisible, UIAction.IsRightClickVisible)]"
+				using = tooltip_left_right_click_template
+			}
+
+			TooltipConditionList = {
+				using = tooltip_right_click_conditions_template
+				blockoverride "conditionlist_item_setup" { righttoleft = yes }
+
+				visible = "[And3(UIAction.IsRightClickVisible, Not(UIAction.IsRightClickEnabled), Not(StringIsEmpty(StringToConditionListOnlyFailCollapseRequirement(UIAction.GetRightClickTooltip).GetOutput)))]"
+				tooltip_enabled = "[IsBuildDebug]"
+				tooltip = "[UIAction.GetRightClickTooltip]"
+
+				ontextcontextchanged = "[SetConditionListOnlyFailCollapseRequirementFromTextContext(PdxGuiWidget.AccessSelf)]"
+				textcontext = "[UIAction.GetRightClickTooltip]"
+			}
+
+			blockoverride "action_left" {
+				enabled = "[UIAction.IsLeftClickEnabled]"
+
+				tooltip_enabled = "[Not(StringIsEmpty(UIAction.GetLeftClickTooltip))]"
+				datacontext = "[StringToConditionList(UIAction.GetLeftClickTooltip)]"
+				tooltipwidget = {
+					ContextualTooltipTypeBase = {
+						TooltipConditionList = {
+							set_parent_size_to_minimum = yes
+							margin = { 5 5 }
+						}
+
+						widget = { using = bg_tooltip_frame }
+					}
+				}
+			}
+
+			blockoverride "action_left_text" {
+				text = "[UIAction.GetLeftClickName]"
+			}
+
+			blockoverride "action_left_cost" {
+				text = "[UIAction.GetLeftClickCost]"
+			}
+
+			blockoverride "action_right" {
+				enabled = "[UIAction.IsRightClickEnabled]"
+
+				tooltip_enabled = "[Not(StringIsEmpty(UIAction.GetRightClickTooltip))]"
+				datacontext = "[StringToConditionList(UIAction.GetRightClickTooltip)]"
+				tooltipwidget = {
+					ContextualTooltipTypeBase = {
+						TooltipConditionList = {
+							set_parent_size_to_minimum = yes
+							margin = { 5 5 }
+						}
+
+						widget = { using = bg_tooltip_frame }
+					}
+				}
+			}
+
+			blockoverride "action_right_text" {
+				text = "[UIAction.GetRightClickName]"
+			}
+
+			blockoverride "action_right_cost" {
+				text = "[UIAction.GetRightClickCost]"
+			}
+		}
+
+		vbox = {
+			layoutpolicy_horizontal = expanding
+			ignoreinvisible = yes
+
+			TooltipConditionList = {
+				using = tooltip_left_click_conditions_template
+
+				visible = "[And3(UIAction.IsLeftClickAndConfirmVisible, Not(UIAction.IsLeftClickAndConfirmEnabled), Not(StringIsEmpty(StringToConditionListOnlyFail(UIAction.GetLeftClickAndConfirmTooltip).GetOutput)))]"
+				tooltip_enabled = "[IsBuildDebug]"
+				tooltip = "[UIAction.GetLeftClickAndConfirmTooltip]"
+
+				ontextcontextchanged = "[SetConditionListOnlyFailCollapseRequirementFromTextContext(PdxGuiWidget.AccessSelf)]"
+				textcontext = "[UIAction.GetLeftClickAndConfirmTooltip]"
+			}
+
+			# Confirm click
+			TooltipFunctionalBlock = {
+				visible = "[And(UIAction.IsLeftClickAndConfirmVisible, Not(UIAction.IsRightClickAndConfirmVisible))]"
+				using = tooltip_left_click_template
+			}
+
+			TooltipFunctionalBlock = {
+				visible = "[And(Not(UIAction.IsLeftClickAndConfirmVisible), UIAction.IsRightClickAndConfirmVisible)]"
+				using = tooltip_right_click_template
+			}
+
+			TooltipFunctionalBlock = {
+				visible = "[And(UIAction.IsLeftClickAndConfirmVisible, UIAction.IsRightClickAndConfirmVisible)]"
+				using = tooltip_left_right_click_template
+			}
+
+			TooltipConditionList = {
+				using = tooltip_right_click_conditions_template
+				blockoverride "conditionlist_item_setup" { righttoleft = yes }
+
+				visible = "[And3(UIAction.IsRightClickAndConfirmVisible, Not(UIAction.IsRightClickAndConfirmEnabled), Not(StringIsEmpty(StringToConditionListOnlyFail(UIAction.GetRightClickAndConfirmTooltip).GetOutput)))]"
+				tooltip_enabled = "[IsBuildDebug]"
+				tooltip = "[UIAction.GetRightClickAndConfirmTooltip]"
+
+				ontextcontextchanged = "[SetConditionListOnlyFailCollapseRequirementFromTextContext(PdxGuiWidget.AccessSelf)]"
+				textcontext = "[UIAction.GetRightClickAndConfirmTooltip]"
+			}
+
+			blockoverride "action_left" {
+				enabled = "[UIAction.IsLeftClickAndConfirmEnabled]"
+
+				tooltip_enabled = "[Not(StringIsEmpty(UIAction.GetLeftClickAndConfirmTooltip))]"
+				datacontext = "[StringToConditionList(UIAction.GetLeftClickAndConfirmTooltip)]"
+				tooltipwidget = {
+					ContextualTooltipTypeBase = {
+						TooltipConditionList = {
+							set_parent_size_to_minimum = yes
+							margin = { 5 5 }
+						}
+
+						widget = { using = bg_tooltip_frame }
+					}
+				}
+			}
+
+			blockoverride "left_icon_extra" {
+				piechart = {
+					size = { 100% 100% }
+
+					visible = "[And(IsActionConfirmAndHoldMode,UIAction.IsLeftClickAndConfirmVisible)]"
+					enabled = "[UIAction.IsLeftClickAndConfirmEnabled]"
+					# tooltip = "[UIAction.GetLeftClickAndConfirmTooltip]"
+
+					using = piechart_angles
+
+					icon = {
+						texture = "gfx/interface/pie_charts/pie_chart_alpha_80.dds"
+						size = { 97% 97% }
+						parentanchor = center
+						using = color_value_progress_gray
+					}
+
+					pieslice = {
+						texture = "gfx/interface/pie_charts/pie_chart_alpha_80.dds"
+						value = "[UIAction.GetLeftMouseDownPercentage]"
+						using = color_value_progress_blue
+						alpha = 0.8
+					}
+
+					pieslice = {
+						texture = "gfx/interface/pie_charts/pie_chart_alpha_80.dds"
+						value = "[UIAction.GetLeftMouseDownPercentageLeft]"
+						using = color_value_progress_gray
+						alpha = 0.8
+					}
+				}
+
+				# dialog image
+				# icon = {
+				# 	visible = "[And(IsActionDialogMode,UIAction.IsLeftClickAndConfirmVisible)]"
+				# 	texture = "gfx/interface/icons/ui_controls/dialog_mode.dds"
+				# 	size = { 100% 100% }
+				# }
+			}
+
+			blockoverride "action_left_text" {
+				text = "[UIAction.GetLeftClickAndConfirmName]"
+			}
+
+			blockoverride "action_left_cost" {
+				text = "[UIAction.GetLeftClickAndConfirmCost]"
+			}
+
+			blockoverride "action_right" {
+				enabled = "[UIAction.IsRightClickAndConfirmEnabled]"
+
+				tooltip_enabled = "[Not(StringIsEmpty(UIAction.GetRightClickAndConfirmTooltip))]"
+				datacontext = "[StringToConditionList(UIAction.GetRightClickAndConfirmTooltip)]"
+				tooltipwidget = {
+					ContextualTooltipTypeBase = {
+						TooltipConditionList = {
+							set_parent_size_to_minimum = yes
+							margin = { 5 5 }
+						}
+
+						widget = { using = bg_tooltip_frame }
+					}
+				}
+			}
+
+			blockoverride "right_icon_extra" {
+				piechart = {
+					size = { 100% 100% }
+
+					visible = "[And(IsActionConfirmAndHoldMode,UIAction.IsRightClickAndConfirmVisible)]"
+					enabled = "[UIAction.IsRightClickAndConfirmEnabled]"
+					# tooltip = "[UIAction.GetRightClickAndConfirmTooltip]"
+
+					using = piechart_angles
+
+					icon = {
+						texture = "gfx/interface/pie_charts/pie_chart_alpha_80.dds"
+						size = { 97% 97% }
+						parentanchor = center
+						using = color_value_progress_gray
+					}
+
+					pieslice = {
+						texture = "gfx/interface/pie_charts/pie_chart_alpha_80.dds"
+						value = "[UIAction.GetRightMouseDownPercentage]"
+						using = color_value_progress_blue
+						alpha = 0.8
+					}
+
+					pieslice = {
+						texture = "gfx/interface/pie_charts/pie_chart_alpha_80.dds"
+						value = "[UIAction.GetRightMouseDownPercentageLeft]"
+						using = color_value_progress_gray
+						alpha = 0.8
+					}
+				}
+
+				# dialog image
+				# icon = {
+				# 	visible = "[And(IsActionDialogMode,UIAction.IsRightClickAndConfirmVisible)]"
+				# 	texture = "gfx/interface/icons/ui_controls/dialog_mode.dds"
+				# 	size = { 100% 100% }
+				# }
+			}
+
+			blockoverride "action_right_text" {
+				text = "[UIAction.GetRightClickAndConfirmName]"
+			}
+
+			blockoverride "action_right_cost" {
+				text = "[UIAction.GetRightClickAndConfirmCost]"
+			}
+		}
+	}
+
+	type TooltipConditionListContent = vbox {
+		# block "conditionlist_datamodel" {
+			datamodel = "[ConditionList.GetLines]"
+			ignoreinvisible = yes
+		# }
+
+		item = {
+			TooltipTableField = {
+				blockoverride "field_background" {
+					background = {
+						visible = "[ConditionLine.HasPassed]"
+						using = color_mid_light_green_texture
+						alpha = 0.3
+
+						modify_texture = {
+							visible = "[IsOdd_int32(PdxGuiWidget.GetIndexInDataModel)]"
+							using = color_white_texture
+							alpha = 0.1
+						}
+					}
+
+					background = {
+						visible = "[ConditionLine.HasFailed]"
+						using = color_mid_red_texture
+						alpha = 0.2
+
+						modify_texture = {
+							visible = "[IsOdd_int32(PdxGuiWidget.GetIndexInDataModel)]"
+							using = color_white_texture
+							alpha = 0.1
+						}
+					}
+
+					background = {
+						visible = "[ConditionLine.IsNeutral]"
+						using = color_mid_blue_texture
+						alpha = 0.2
+
+						modify_texture = {
+							visible = "[IsOdd_int32(PdxGuiWidget.GetIndexInDataModel)]"
+							using = color_white_texture
+							alpha = 0.1
+						}
+					}
+				}
+
+				blockoverride "field_content" {
+					# block "conditionlist_content" {
+						block "conditionlist_item_setup" {}
+						# block "conditionlist_item_margin" {
+							margin = { 10 5 }
+							spacing = 10
+						# }
+
+						TooltipYesNoCheckbox = {
+							visible = "[Or(ConditionLine.HasPassed, ConditionLine.HasFailed)]"
+							blockoverride "yes_visible" { visible = "[ConditionLine.HasPassed]" }
+							blockoverride "no_visible" { visible = "[ConditionLine.HasFailed]" }
+						}
+
+						textbox = {
+							layoutpolicy_horizontal = expanding
+							autoresize = yes
+
+							align = nobaseline
+							using = text_multi_template
+							elide = right
+
+							# block "conditionlist_item" {
+								text = "[ConditionLine.GetText]"
+								block "field_text_format" {}
+							# }
+
+							tooltip_enabled = "[ConditionList.HasCollapsedText]"
+							tooltipwidget = {
+								ContextualTooltipTypeBase = {
+									datacontext = "[StringToRequirementsList(ConditionList.GetCollapsedText)]"
+									TooltipScrolledRequirementsList = {
+										set_parent_size_to_minimum = yes
+										margin = { 5 5 }
+									}
+
+									widget = { using = bg_tooltip_frame }
+								}
+							}
+						}
+					# }
+				}
+			}
+		}
+	}
+
+	type TooltipRequirementsListContent = vbox {
+		# block "requirementslist_datamodel" {
+			datamodel = "[RequirementsList.GetLines]"
+		# }
+
+		item = {
+			TooltipTableField = {
+				datacontext = "[GetRequirementLineAux(RequirementLine.Self, PdxGuiWidget.AccessSelf, PdxGuiWidget.GetIndexInDataModel)]"
+
+				blockoverride "field_background" {
+					background = {
+						visible = "[RequirementLine.HasPassed]"
+						using = color_mid_light_green_texture
+						alpha = 0.3
+
+						modify_texture = {
+							visible = "[IsOdd_int32(PdxGuiWidget.GetIndexInDataModel)]"
+							using = color_white_texture
+							alpha = 0.1
+						}
+					}
+
+					background = {
+						visible = "[RequirementLine.HasFailed]"
+						using = color_mid_red_texture
+						alpha = 0.4
+
+						modify_texture = {
+							visible = "[IsOdd_int32(PdxGuiWidget.GetIndexInDataModel)]"
+							using = color_white_texture
+							alpha = 0.1
+						}
+					}
+
+					background = {
+						visible = "[RequirementLine.IsSkipped]"
+						using = color_mid_blue_texture
+						alpha = 0.3
+
+						modify_texture = {
+							visible = "[IsOdd_int32(PdxGuiWidget.GetIndexInDataModel)]"
+							using = color_white_texture
+							alpha = 0.1
+						}
+					}
+
+					background = {
+						visible = "[RequirementLine.IsBlocker]"
+						using = color_mid_red_texture
+						alpha = 0.2
+
+						modify_texture = {
+							visible = "[IsOdd_int32(PdxGuiWidget.GetIndexInDataModel)]"
+							using = color_white_texture
+							alpha = 0.1
+						}
+					}
+
+					background = {
+						visible = "[RequirementLine.IsUndefined]"
+						using = color_mid_blue_texture
+						alpha = 0.2
+
+						modify_texture = {
+							visible = "[IsOdd_int32(PdxGuiWidget.GetIndexInDataModel)]"
+							using = color_white_texture
+							alpha = 0.1
+						}
+					}
+
+					background = {
+						texture = "gfx/interface/component_tiles/floral_container_frame.dds"
+						texture_density = 2
+						spriteType = corneredstretched
+						spriteborder = { 15 10 }
+						margin_top = 1
+
+						modify_texture = {
+							using = color_dark_brown_texture
+							blend_mode = multiply
+						}
+
+						modify_texture = {
+							visible = "[IsOdd_int32(PdxGuiWidget.GetIndexInDataModel)]"
+							using = color_white_texture
+							alpha = 0
+						}
+					}
+				}
+
+				blockoverride "field_content" {
+					# block "requirementslist_content" {
+						hbox = {
+							layoutpolicy_horizontal = expanding
+							spacing = 10
+
+							# Hierarchy arrows
+							hbox = {
+								layoutpolicy_vertical = expanding
+
+								# Indent spacing
+								hbox = {
+									datamodel = "[DataModelRepeatedItem(RequirementLine.GetIndent)]"
+									item = {
+										widget = {
+											size = { 20 3 }
+										}
+									}
+								}
+
+								# First element root line
+								widget = {
+									size = { 10 2 }
+									icon = {
+										visible = "[EqualTo_int32(PdxGuiWidget.GetIndexInDataModel, '(int32)0')]"
+										size = { 100% 100% }
+										parentanchor = right|vcenter
+										using = color_requirementlist_arrow_white_texture
+									}
+								}
+
+								# Vertical line to parent/sibling
+								icon = {
+									size = { 2 2 }
+									using = color_requirementlist_arrow_white_texture
+
+									icon = {
+										visible = "[Not(EqualTo_int32(PdxGuiWidget.GetIndexInDataModel, '(int32)0'))]"
+										size = "[RequirementLineAux.GetAuxParentArrowSize('(float)3', '(float)0')]"
+										parentanchor = bottom
+										using = color_requirementlist_arrow_white_texture
+									}
+								}
+
+								# Last mile arrow to text
+								icon = {
+									size = { 30 2 }
+									using = color_requirementlist_arrow_white_texture
+								}
+							}
+
+							TooltipYesNoCheckbox = {
+								visible = "[Not(RequirementLine.IsUndefined)]"
+								blockoverride "yes_visible" { visible = "[RequirementLine.HasPassed]" }
+								blockoverride "no_visible" { visible = "[RequirementLine.HasFailed]" }
+							}
+
+							textbox = {
+								layoutpolicy_horizontal = expanding
+								autoresize = yes
+								margin = { 0 5 }
+
+								align = nobaseline
+								using = text_multi_template
+								elide = right
+
+								# block "requirement_item" {
+								text = "[RequirementLine.GetText]"
+								block "field_text_format" {}
+								# }
+							}
+						}
+					# }
+				}
+			}
+		}
+	}
+
+		type TooltipRequirementsList = TooltipListBase {
+		block "set_textcontext" {
+			ontextcontextchanged = "[SetRequirementsListFromTextContext(PdxGuiWidget.AccessSelf)]"
+		}
+
+		blockoverride "bg_listbase" {
+			background = {
+				using = tile_frame_squared_texture
+				using = color_bg_brown
+				modify_texture = {
+					using = overlay_cloth_texture
+					blend_mode = overlay
+					alpha = 0.3
+				}
+			}
+		}
+
+		blockoverride "block_title" {
+			block "block_title" {
+				margin = { 20 7 }
+				minimumsize = { -1 -1 }
+				maximumsize = { -1 -1 }
+				align = nobaseline
+				visible = "[Not(StringIsEmpty(RequirementsList.GetTitle))]"
+				text = "[RequirementsList.GetTitle]"
+			}
+		}
+
+		TooltipRequirementsListContent = {
+			# block "requirementslist_datamodel_has_items" {
+				visible = "[DataModelHasItems(RequirementsList.GetLines)]"
+			# }
+
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = preferred
+		}
+
+		TooltipListEmptyContent = {
+			block "requirementslist_datamodel_is_empty" {
+				visible = "[IsDataModelEmpty(RequirementsList.GetLines)]"
+			}
+		}
+	}
+
+	type TooltipScrolledRequirementsList = TooltipListBase {
+		block "set_textcontext" {
+			ontextcontextchanged = "[SetRequirementsListFromTextContext(PdxGuiWidget.AccessSelf)]"
+		}
+
+		blockoverride "bg_listbase" {
+			background = {
+				using = tile_frame_squared_texture
+				using = color_bg_brown
+				modify_texture = {
+					using = overlay_cloth_texture
+					blend_mode = overlay
+					alpha = 0.3
+				}
+			}
+		}
+
+		blockoverride "block_title" {
+			block "block_title" {
+				margin = { 20 7 }
+				minimumsize = { -1 -1 }
+				maximumsize = { -1 -1 }
+				align = nobaseline
+				visible = "[Not(StringIsEmpty(RequirementsList.GetTitle))]"
+				text = "[RequirementsList.GetTitle]"
+			}
+		}
+
+		TooltipListScrollArea = {
+			block "stringpair_datamodel_has_items" {
+				visible = "[DataModelHasItems(RequirementsList.GetLines)]"
+			}
+
+			blockoverride "scrollarea_content" {
+				TooltipRequirementsListContent = {
+					# block "requirementslist_datamodel_has_items" {
+						visible = "[DataModelHasItems(RequirementsList.GetLines)]"
+					# }
+
+					set_parent_dimension_to_minimum = height
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = preferred
+				}
+			}
+		}
+
+		TooltipListEmptyContent = {
+			block "requirementslist_datamodel_is_empty" {
+				visible = "[IsDataModelEmpty(RequirementsList.GetLines)]"
+			}
+		}
+	}
+
+	type TooltipConditionList = TooltipListBase {
+		ontextcontextchanged = "[SetConditionListFromTextContext(PdxGuiWidget.AccessSelf)]"
+
+		blockoverride "block_title" {
+			block "block_title" {
+				visible = "[ConditionList.HasTitle]"
+				text = "[ConditionList.GetTitle]"
+			}
+		}
+
+		TooltipConditionListContent = {
+			# block "conditionlist_datamodel_has_items" {
+				visible = "[DataModelHasItems(ConditionList.GetLines)]"
+			# }
+
+			layoutpolicy_horizontal = expanding
+		}
+
+		TooltipListEmptyContent = {
+			# block "conditionlist_datamodel_is_empty" {
+				visible = "[IsDataModelEmpty(ConditionList.GetLines)]"
+			# }
+		}
+	}
+
+	type TooltipScrolledConditionList = TooltipListBase {
+		ontextcontextchanged = "[SetConditionListFromTextContext(PdxGuiWidget.AccessSelf)]"
+
+		blockoverride "block_title" {
+			block "block_title" {
+				visible = "[ConditionList.HasTitle]"
+				text = "[ConditionList.GetTitle]"
+			}
+		}
+
+		TooltipListScrollArea = {
+			# block "conditionlist_datamodel_has_items" {
+				visible = "[DataModelHasItems(ConditionList.GetLines)]"
+			# }
+
+			blockoverride "scrollarea_content" {
+				TooltipConditionListContent = {
+					set_parent_dimension_to_minimum = height
+					layoutpolicy_horizontal = expanding
+				}
+			}
+		}
+
+		TooltipListEmptyContent = {
+			# block "conditionlist_datamodel_is_empty" {
+				visible = "[IsDataModelEmpty(ConditionList.GetLines)]"
+			# }
+		}
+	}
+}

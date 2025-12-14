@@ -1,0 +1,29 @@
+directory
+name = common
+sub_directories = yes
+exclude_path = dlc
+
+directory
+name = events
+sub_directories = yes
+
+directory
+name = map_data
+sub_directories = yes
+
+directory
+name = setup
+sub_directories = yes
+
+directory
+name = gui
+sub_directories = yes
+exclude_path = gui_editor
+
+directory
+name = localization
+sub_directories = yes
+exclude_path = dlc
+
+file
+name = checksum_manifest.txt

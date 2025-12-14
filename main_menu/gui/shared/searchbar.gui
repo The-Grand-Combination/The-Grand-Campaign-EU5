@@ -1,0 +1,697 @@
+template editbox_background_texture {
+	texture = "gfx/interface/component_tiles/circle_container_flat.dds"
+	texture_density = 2
+	spriteType = Corneredstretched
+	spriteborder = { 30 15 }
+}
+
+template editbox_solid_background {
+	block "editbox_outer_background" {
+		background = {
+			using = editbox_background_texture
+			margin = { 1 1 }
+
+			# block "editbox_outer_background_color" {
+				alpha = 0.7
+				using = color_gold
+			# }
+
+			block "editbox_outer_background_extra" {}
+		}
+	}
+}
+
+# template editbox_blue_background {
+# 	using = editbox_solid_background
+# 	blockoverride "editbox_outer_background_color" {
+# 		using = color_light_blue
+# 	}
+# }
+
+template editbox_background {
+	using = editbox_solid_background
+	block "editbox_inner_background" {
+		background = {
+			using = editbox_background_texture
+
+			# block "editbox_inner_background_color" {
+				alpha = 1
+				using = color_dark_blue
+			# }
+
+			# block "editbox_inner_background_extra" {}
+		}
+	}
+}
+
+template searchbar_background {
+	using = editbox_background
+	blockoverride "editbox_outer_background_extra" {
+		# modify_texture = {
+		# 	texture = "gfx/interface/component_masks/mask_fade_horizontal_right.dds"
+		# 	texture_density = 2
+		# 	spriteType = stretched
+		# 	blend_mode = alphamultiply
+		# 	alpha = 0.8
+		# }
+	}
+}
+
+template searchbar_icon {
+	icon = {
+		size = { 20 20 }
+
+		# block "searchbar_icon" {
+			texture = "gfx/interface/icons/flat_icons/search_icon.dds"
+			using = color_bone
+		# }
+	}
+}
+
+types SearchbarTypes
+{
+	type editbox_single = editbox {
+		layoutpolicy_horizontal = expanding
+		size = { -1 30 }
+
+		filter_mouse = none
+		alwaystransparent = no
+
+		using = editbox_background
+		margin = { 12 0 }
+		align = nobaseline
+
+		focuspolicy = all
+		default_format = "#high"
+		tooltip = "[GetTextFromSelfOrAnyChildEditbox(PdxGuiWidget.Self)]"
+
+		block "editbox_properties" {}
+
+		text_single = {
+			size = { 100% 100% }
+			margin = { 12 0 }
+			parentanchor = vcenter
+			autoresize = no
+			alpha = 0.5
+			alwaystransparent = yes
+			align = left|nobaseline
+
+			# block "editbox_empty" {
+				visible = "[IsSelfOrAnyChildAnEmptyEditbox(PdxGuiWidget.AccessParent.Self)]"
+			# }
+
+			block "editbox_label" {
+				text = "SEARCHBAR_SEARCH_TEXT"
+			}
+		}
+	}
+
+	type editbox_single_alt = editbox {
+		layoutpolicy_horizontal = expanding
+		size = { -1 30 }
+
+		filter_mouse = none
+		alwaystransparent = no
+
+		using = bg_text_mask_container_dark_blue
+		margin = { 12 0 }
+		align = nobaseline
+
+		focuspolicy = all
+		default_format = "#high"
+		tooltip = "[GetTextFromSelfOrAnyChildEditbox(PdxGuiWidget.Self)]"
+
+		block "editbox_properties" {}
+
+		text_single = {
+			size = { 100% 100% }
+			margin = { 12 0 }
+			parentanchor = vcenter
+			autoresize = no
+			alpha = 0.5
+			alwaystransparent = yes
+			align = left|nobaseline
+
+			# block "editbox_empty" {
+				visible = "[IsSelfOrAnyChildAnEmptyEditbox(PdxGuiWidget.AccessParent.Self)]"
+			# }
+
+			block "editbox_label" {
+				text = "SEARCHBAR_SEARCH_TEXT"
+			}
+		}
+	}
+
+	type searchbar = vbox {
+		layoutpolicy_horizontal = expanding
+
+		# using = bg_subheader_left
+
+		widget = {
+			layoutpolicy_horizontal = expanding
+			size = { -1 52 }
+
+			hbox =  {
+				margin = { 8 0 }
+				spacing = 5
+
+				# block "searchbar_top_extra" {}
+
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = expanding
+					maximumsize = { -1 30 }
+					spacing = 8
+
+					margin_right = "[Select_float(SearchBar.Manager.IsLeftPanel,'(float)1.0','(float)8.0')]"
+					margin_left = "[Select_float(SearchBar.Manager.IsLeftPanel,'(float)8.0','(float)1.0')]"
+
+					using = searchbar_background
+
+					button = {
+						size = { 28 28 }
+						visible = "[And(SearchBar.HasSearchFilterCategories, Not(SearchBar.Manager.IsLeftPanel))]"
+
+						onclick = "[SearchBar.Manager.ToggleSelectSearchFilter(PdxGuiWidget.Self, SearchBar.AccessSelf)]"
+						onrightclick = "[SearchBar.Manager.ClearFilters]"
+						down = "[SearchBar.Manager.IsSelectSearchFilterOpened(PdxGuiWidget.Self)]"
+
+						block "button_texture" {
+							texture = "gfx/interface/buttons/round_button_texture_alt.dds"
+							texture_density = 2
+						}
+
+						modify_texture = {
+							using = color_new_gold_texture
+							blend_mode = overlay
+							alpha = 1
+						}
+
+						modify_texture = {
+							using = overlay_stone_texture
+							blend_mode = overlay
+							alpha = 1
+						}
+
+						block "navigational_bg" {
+							background = {
+								texture = "gfx/interface/buttons/bg_button_light.dds"
+								texture_density = 2
+								modify_texture = {
+									using = color_intense_brown_texture
+									blend_mode = add
+								}
+								modify_texture = {
+									using = color_super_dark_brown_texture
+									blend_mode = multiply
+									alpha = 0.6
+								}
+							}
+						}
+
+						tooltipwidget = {
+							ContextualTooltipType = {
+								blockoverride "tooltip_title" {}
+								blockoverride "tooltip_content_margin" { margin = { 4 4 } }
+
+								blockoverride "tooltip_ui_action_block" {
+									TooltipFunctionalBlock = {
+										using = tooltip_left_click_template
+										using = tooltip_right_click_template
+
+										blockoverride "action_text_wide" {
+											min_width = 145
+											max_width = 145
+										}
+
+										blockoverride "action_left_text" {
+											text = "FILTERS_SIDEMENU"
+										}
+
+										blockoverride "action_right_text" {
+											text = "SEARCHBAR_CLEAR_SEARCH_FILTERS_TOOLTIP"
+										}
+									}
+								}
+							}
+						}
+
+						ui_direction_button = {
+							size = { 28 28 }
+							blockoverride "button_texture"  {
+								texture = "gfx/interface/buttons/flats/filter.dds"
+							}
+							visible = "[And(SearchBar.HasSearchFilterCategories, Not(SearchBar.Manager.IsLeftPanel))]"
+
+							onclick = "[SearchBar.Manager.ToggleSelectSearchFilter(PdxGuiWidget.Self, SearchBar.AccessSelf)]"
+							onrightclick = "[SearchBar.ResetFiltersToDefault]"
+							down = "[SearchBar.Manager.IsSelectSearchFilterOpened(PdxGuiWidget.Self)]"
+
+							blockoverride "glow_visible" {
+								visible = "[SearchBar.Manager.IsSelectSearchFilterOpened(PdxGuiWidget.Self)]"
+							}
+						}
+					}
+
+					widget = {
+						size = { 20 20 }
+						using = searchbar_icon
+					}
+					
+					widget =  {
+						layoutpolicy_horizontal = expanding
+						size = { -1 30 }
+						filter_mouse = none
+						alwaystransparent = no
+
+						# block "pre_empty_search_text" {}
+
+						text_single = {
+							size = { 100% 100% }
+							autoresize = no
+							align = left|nobaseline
+							alpha = 0.5
+							text = "SEARCHBAR_SEARCH_TEXT"
+							visible = "[SearchBar.IsTextFilterEmpty]"
+
+							# block "empty_search_text" {}
+						}
+
+						editbox = {
+							name = "searchbar_editbox"
+							size = { 100% 100% }
+
+							alwaystransparent = no
+							focuspolicy = all
+							default_format = "#high"
+
+							oneditingstart = "[SearchBar.OnEditingStart(PdxGuiWidget.AccessSelf, PdxGuiWidget.AccessParent.FindChild('autocomplete'))]"
+							ontextedited = "[SearchBar.OnTextEdited(PdxGuiWidget.AccessSelf, PdxGuiWidget.AccessParent.FindChild('autocomplete'))]"
+							oneditingfinished = "[SearchBar.OnEditingFinished(PdxGuiWidget.AccessSelf, PdxGuiWidget.AccessParent.FindChild('autocomplete'))]"
+							oneditingfinished_with_changes = "[SearchBar.OnEditingFinishedWithChanges(PdxGuiWidget.AccessSelf, PdxGuiWidget.AccessParent.FindChild('autocomplete'))]"
+							onreturnpressed = "[SearchBar.OnReturnPressed(PdxGuiWidget.AccessSelf, PdxGuiWidget.AccessParent.FindChild('autocomplete'))]"
+							onfocusout = "[SearchBar.OnFocusOut(PdxGuiWidget.AccessSelf, PdxGuiWidget.AccessParent.FindChild('autocomplete'))]"
+
+							block "searchbar_editbox_setup" {}
+						}
+
+						block "autocomplete_dropdown" {
+							scrollarea = {
+								name = "autocomplete"
+								visible_at_creation = no
+
+								size = { 100% -1 }
+								maximumsize = { -1 100 }
+								position = { 0 30 }
+
+								using = snd_UI_dropdown_expand
+								using = snd_UI_dropdown_retract
+
+								autoresizescrollarea = yes
+								autoresizeviewport = yes
+								alwaystransparent = yes
+								scrollbarpolicy_horizontal = always_off
+
+								background = {
+									using = dropdown_list_background_template
+								}
+
+								block "autocomplete_setup" {}
+
+								scrollwidget = {
+									fixedgridbox = {
+										setitemsizefromcell = yes
+										alwaystransparent = no
+										addcolumn = 100%
+										addrow = 30
+
+										datamodel = "[SearchBar.GetAutocompleteEntries]"
+										item = {
+											widget = {
+												block "autocomplete_entry_widget_setup" {}
+
+												button_dropdown = {
+													focuspolicy = none
+													button_trigger = press
+
+													block "autocomplete_entry_actions" {
+														action_tooltip = {
+															title = "TOGGLE_FILTER"
+															on_action = "[AutocompleteEntry.ToggleFilter]"
+														}
+													}
+
+													block "autocomplete_entry_tooltip" {
+														tooltipwidget = {
+															SimpleContextualTooltipType = {
+																textcontext = "[AutocompleteEntry.GetTooltip]"
+																blockoverride "title_text" {
+																	text = "[AutocompleteEntry.GetName]"
+																}
+
+																blockoverride "title_icon" {
+																	icon = {
+																		texture = "gfx/interface/buttons/flats/filter.dds"
+																		using = tooltip_title_icon_size
+																		modify_texture = {
+																			using = color_gold_texture
+																		}
+
+																		glow = {
+																			name = "drop_shadow"
+																			glow_radius = 3
+																			color = {0.0 0.0 0.0 1.0}
+																			alpha = 0.3
+																		}
+																	}
+																}
+															}
+														}
+													}
+												}
+
+												hbox =  {
+													margin = { 10 0 }
+													spacing = 5
+
+													widget = {
+														size = { 20 20 }
+														block "autocomplete_entry_icon" {
+															icon = {
+																visible = "[AutocompleteEntry.IsFilterEnabled]"
+																texture = "gfx/interface/icons/text_icons/trigger_yes.dds"
+																size = { 100% 100% }
+																parentanchor = center
+															}
+														}
+													}
+
+													text_single = {
+														using = layoutpolicy_expanding
+														autoresize = no
+														align = left|nobaseline
+														fontsize_min = 13
+														text = "[AutocompleteEntry.GetName]"
+													}
+												}
+
+												background = {
+													visible = "[EqualTo_int32('(int32)0', PdxGuiWidget.GetIndexInDataModel)]"
+													using = color_white_texture
+													alpha = 0.2
+												}
+											}
+										}
+									}
+								}
+
+								scrollbar_vertical = {
+									using = Scrollbar_Vertical
+								}
+							}
+						}
+					}
+
+					ui_direction_button = {
+						size = { 22 22 }
+
+						blockoverride "button_texture"  {
+							texture = "gfx/interface/buttons/flats/clean_text.dds"
+						}
+
+						visible = "[Not(SearchBar.IsTextFilterEmpty)]"
+						onclick = "[SearchBar.ClearTextFilter(PdxGuiWidget.AccessParent.AccessParent.FindChild('searchbar_editbox'))]"
+						tooltipwidget = { LeftClickButtonTooltip = { blockoverride "onclick_text" { text = "SEARCHBAR_CLEAR_TEXT" } } }
+					}
+
+					# block "searchbar_filter_button" {
+						button = {
+							size = { 28 28 }
+							visible = "[And(SearchBar.HasSearchFilterCategories, SearchBar.Manager.IsLeftPanel)]"
+
+							onclick = "[SearchBar.Manager.ToggleSelectSearchFilter(PdxGuiWidget.Self, SearchBar.AccessSelf)]"
+							onrightclick = "[SearchBar.Manager.ClearFilters]"
+							down = "[SearchBar.Manager.IsSelectSearchFilterOpened(PdxGuiWidget.Self)]"
+
+							block "button_texture" {
+								texture = "gfx/interface/buttons/round_button_texture_alt.dds"
+								texture_density = 2
+							}
+
+							modify_texture = {
+								using = color_new_gold_texture
+								blend_mode = overlay
+								alpha = 1
+							}
+
+							modify_texture = {
+								using = overlay_stone_texture
+								blend_mode = overlay
+								alpha = 1
+							}
+
+							block "navigational_bg" {
+								background = {
+									texture = "gfx/interface/buttons/bg_button_light.dds"
+									texture_density = 2
+									modify_texture = {
+										using = color_intense_brown_texture
+										blend_mode = add
+									}
+									modify_texture = {
+										using = color_super_dark_brown_texture
+										blend_mode = multiply
+										alpha = 0.6
+									}
+								}
+							}
+
+							tooltipwidget = {
+								ContextualTooltipType = {
+									blockoverride "tooltip_title" {}
+									blockoverride "tooltip_content_margin" { margin = { 4 4 } }
+
+									blockoverride "tooltip_ui_action_block" {
+										TooltipFunctionalBlock = {
+											using = tooltip_left_click_template
+											using = tooltip_right_click_template
+
+											blockoverride "action_text_wide" {
+												min_width = 145
+												max_width = 145
+											}
+
+											blockoverride "action_left_text" {
+												text = "FILTERS_SIDEMENU"
+											}
+
+											blockoverride "action_right_text" {
+												text = "SEARCHBAR_CLEAR_SEARCH_FILTERS_TOOLTIP"
+											}
+										}
+									}
+								}
+							}
+
+							ui_direction_button = {
+								size = { 28 28 }
+								blockoverride "button_texture"  {
+									texture = "gfx/interface/buttons/flats/filter.dds"
+								}
+								visible = "[And(SearchBar.HasSearchFilterCategories, SearchBar.Manager.IsLeftPanel)]"
+
+								onclick = "[SearchBar.Manager.ToggleSelectSearchFilter(PdxGuiWidget.Self, SearchBar.AccessSelf)]"
+								onrightclick = "[SearchBar.ResetFiltersToDefault]"
+								down = "[SearchBar.Manager.IsSelectSearchFilterOpened(PdxGuiWidget.Self)]"
+
+								blockoverride "glow_visible" {
+									visible = "[SearchBar.Manager.IsSelectSearchFilterOpened(PdxGuiWidget.Self)]"
+								}
+							}
+						}
+					# }
+				}
+			}
+		}
+
+		block "searchbar_extra_pre_content" {}
+
+		scrollarea = {
+			visible = "[SearchBar.HasEnabledSearchFilters]"
+			layoutpolicy_horizontal = expanding
+			scrollbarpolicy_horizontal = always_off
+			autoresizescrollarea = yes
+			maximumsize = { -1 165 }
+
+			scrollbar_vertical = {
+				using = Scrollbar_Vertical
+			}
+
+			# block "scroll_list_bg" {}
+
+			scrollwidget = {
+				flowcontainer = {
+					direction = vertical
+					margin = { 10 0 }
+					margin_bottom = 10
+					spacing = 5
+
+					flowcontainer = {
+						layoutpolicy_horizontal = expanding
+						direction = vertical
+
+						datamodel = "[SearchBar.GetCustomEnabledFilters]"
+						item = {
+							flowcontainer = {
+								ignoreinvisible = yes
+
+								button = {
+									visible = "[SearchFilter.IsCustomFilter]"
+									size = { 510 27 }
+									texture = "gfx/interface/buttons/banner_button_02.dds"
+									spriteType = corneredstretched
+									spriteborder = { 25 0 }
+									texture_density = 2
+									modify_texture = {
+										texture = "gfx/interface/component_overlay/scrollwork_A_white.dds"
+										texture_density =  3
+										spriteType = corneredtiled
+										spriteborder = { 0 0 }
+										blend_mode = multiply
+										alpha = 0.1
+									}
+
+									hbox = {
+										layoutpolicy_horizontal = expanding
+										layoutpolicy_vertical = expanding
+										spacing = 5
+
+										margin_left = 8
+										margin_right = 5
+
+										tooltipwidget = {
+											using = search_filter_tt
+										}
+
+										text_single = {
+											align = center|nobaseline
+											layoutpolicy_horizontal = expanding
+											autoresize = no
+											fontsize_min = 12
+											text = "[SearchFilter.GetName]"
+										}
+
+										ui_direction_button = {
+											# parentanchor = right|vcenter
+											# position = { -5 0 }
+											size = { 22 22 }
+											blockoverride "button_texture" {
+												texture = "gfx/interface/buttons/flats/clean_text.dds"
+											}
+											onclick = "[SearchBar.DisableFilter(SearchFilter.Self)]"
+										}
+									}
+								}
+							}
+						}
+					}
+
+					flowcontainer = {
+						wrap_length = 520
+						spacing = 5
+
+						datamodel = "[SearchBar.GetEnabledFilters]"
+						item = {
+							button = {
+								size = { -1 -1 }
+								texture = "gfx/interface/buttons/banner_button.dds"
+								spriteType = corneredstretched
+								spriteborder = { 25 0 }
+								texture_density = 2
+
+								modify_texture = {
+									using = overlay_cloth_texture
+									blend_mode = overlay
+									alpha = 0.2
+								}
+
+								onclick = "[SearchBar.DisableFilter(SearchFilter.Self)]"
+								vbox = {
+									set_parent_size_to_minimum =  yes
+									text_single = {
+										visible = "[Not(SearchFilter.IsCustomFilter)]"
+										margin = { 10 5 }
+										margin_right = 32
+										autoresize = yes
+										maximumsize = { 468 -1 }
+										fontsize_min = 12
+										align = nobaseline
+										text = "[SearchFilter.GetName]"
+										tooltipwidget = {
+											using = search_filter_tt
+											blockoverride "extra_functional_block" {
+												TooltipFunctionalBlock = {
+													using = tooltip_left_click_template
+
+													blockoverride "action_left_text" {
+														text = "REMOVE_FILTER"
+													}
+												}
+											}
+										}
+
+										ui_direction_button = {
+											parentanchor = right|vcenter
+											position = { -5 0 }
+											size = { 22 22 }
+											blockoverride "button_texture" {
+												texture = "gfx/interface/buttons/flats/clean_text.dds"
+											}
+											onclick = "[SearchBar.DisableFilter(SearchFilter.Self)]"
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		block "custom_search_filter" {}
+	}
+}
+
+template search_filter_tt {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			text = "[Select_CString(StringIsEmpty(SearchFilter.GetName), Localize('FILTER_TT_TITLE'), SearchFilter.GetName)]"
+		}
+		blockoverride "title_icon" {
+			icon = {
+				texture = "gfx/interface/buttons/flats/filter.dds"
+				using = tooltip_title_icon_size
+				modify_texture = {
+					using = color_gold_texture
+				}
+
+				glow = {
+					name = "drop_shadow"
+					glow_radius = 3
+					color = {0.0 0.0 0.0 1.0}
+					alpha = 0.3
+				}
+			}
+		}
+		blockoverride "tooltip_content" {
+			TooltipTextBlock = {
+				blockoverride "text" {
+					text = "[SearchFilter.GetTooltip]"
+				}
+			}
+
+			block "extra_functional_block" {}
+		}
+	}
+}
+

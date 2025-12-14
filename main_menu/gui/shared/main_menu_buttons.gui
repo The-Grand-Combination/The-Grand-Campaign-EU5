@@ -1,0 +1,2854 @@
+template button_wax_texture {
+	block "button_texture" {
+		texture = "gfx/interface/buttons/button_wax_red.dds"
+	}
+	texture_density = 2
+	spriteType = corneredstretched
+	spriteborder = { 31 22 }
+	frame_grid = {4 1}
+
+	modify_texture = {
+		texture = "gfx/interface/component_overlay/overlay_texture.dds"
+		texture_density = 2
+		spriteType = corneredtiled
+		blend_mode = multiply
+		alpha = 0.4
+	}
+}
+
+# SQUARE FRAME
+template button_mission_square_frame_texture {
+    texture = "gfx/interface/buttons/button_mission_tree_square_frame.dds"
+	texture_density = 2
+	spriteType = corneredstretched
+	spriteborder = {14 14}
+	frame_grid = {4 1}
+	block "button_mission_square_frame_texture_extra"{}
+}
+
+# BASE SQUARE FRAME 
+template mission_tree_color_texture {
+	texture = "gfx/interface/buttons/mission_button_tree_bg.dds"
+	texture_density = 2
+	alpha = 1
+	modify_texture = {
+		blend_mode = overlay
+		alpha = 1
+		block "mission_tree_color_texture_bg_color" {
+			using = color_diplomacy_texture
+		
+		}
+	}
+	
+}
+
+# SQUARE FRAME DECORATED
+template button_mission_frame_texture {
+    texture = "gfx/interface/buttons/button_mission_frame.dds"
+	texture_density = 2
+	spriteType = corneredstretched
+	spriteborder = {12 12}
+	frame_grid = {4 1}
+	modify_texture = {
+		texture = "gfx/interface/component_overlay/overlay_texture.dds"
+		texture_density = 2
+		spriteType = corneredtiled
+		blend_mode = multiply
+		alpha = 0.4
+	}
+}
+# BASE SQUARE FRAME DECORATED
+template mission_color_texture {
+	texture = "gfx/interface/buttons/mission_button_focus_bg.dds"
+	frame_grid = {4 1}
+	block "mission_color_texture_frames" {
+		frame = 1
+	}
+	spriteType = corneredstretched
+	spriteborder = {35 0}
+	texture_density = 2
+	alpha = 1
+
+	block "mission_color_modify_texture" {
+		modify_texture = {
+			blend_mode = overlay
+			alpha = 1
+			block "bg_color" {
+				using = color_red_texture
+			}
+		}
+	}
+	
+}
+
+# ROUND FRAME DECORATED
+template button_mission_tree_frame_texture {
+    texture = "gfx/interface/buttons/mission_tree_frame.dds"
+	texture_density = 2
+	ignore_layout = yes
+	frame_grid = {4 1}
+	modify_texture = {
+		texture = "gfx/interface/component_overlay/overlay_texture.dds"
+		texture_density = 2
+		spriteType = corneredtiled
+		blend_mode = multiply
+		alpha = 0.4
+	}
+}
+
+template overlay_texture_overlay {
+	modify_texture = {
+		texture = "gfx/interface/component_overlay/overlay_texture.dds"
+		texture_density = 2
+		spriteType = Corneredtiled
+		spriteborder = { 0 0 }
+		block "overlay_blend_mode" {
+			blend_mode = overlay
+		}
+		# block "overlay_blend_alpha" {
+			alpha = 0.5
+		# }
+	}
+}
+
+template button_regular_texture_alt {
+	texture = "gfx/interface/buttons/button_regular_alt.dds"
+	texture_density = 2
+	alpha = 1
+	spriteType = corneredstretched
+	spriteborder = { 11 11 }
+	frame_grid = {4 1}
+}
+
+template button_regular_texture_alt_red {
+	texture = "gfx/interface/buttons/button_regular_alt_red.dds"
+	texture_density = 2
+	alpha = 1
+	spriteType = corneredstretched
+	spriteborder = { 11 11 }
+	frame_grid = {4 1}
+}
+
+template button_regular_texture_alt_green {
+	texture = "gfx/interface/buttons/button_regular_alt_green.dds"
+	texture_density = 2
+	alpha = 1
+	spriteType = corneredstretched
+	spriteborder = { 11 11 }
+	frame_grid = {4 1}
+}
+
+template button_regular_texture_alt_yellow {
+	texture = "gfx/interface/buttons/button_regular_alt_yellow.dds"
+	texture_density = 2
+	alpha = 1
+	spriteType = corneredstretched
+	spriteborder = { 11 11 }
+	frame_grid = {4 1}
+}
+
+template button_banner_01_texture {
+	texture = "gfx/interface/buttons/button_banner_01.dds"
+	texture_density = 2
+	alpha = 1
+	spriteType = corneredstretched
+	spriteborder = { 40 0 }
+	frame_grid = {4 1}
+	using = overlay_texture_overlay
+	block "overlay_blend_mode" {
+		blend_mode = multiply
+	}
+}
+
+template button_tab_toggle_properties {
+	gfxtype = togglepushbuttongfx
+	effectname = "NoHighlight"
+
+	upframe = 1
+	uphoverframe = 2
+	uppressedframe = 3
+	downframe = 2
+	downhoverframe = 2
+	downpressedframe = 3
+	disableframe = 4
+}
+
+# template button_lobby_banner_texture {
+# 	texture = "gfx/interface/buttons/lobby_banner.dds"
+# 	texture_density = 2
+# 	spriteType = corneredstretched
+# 	spriteborder = { 40 0 }
+# 	frame_grid = {4 1}
+# 	using = overlay_texture_overlay
+# 	blockoverride "overlay_blend_mode" {
+# 		blend_mode = multiply
+# 	}
+# }
+
+template button_banner_02_texture {
+	texture = "gfx/interface/buttons/button_banner_02.dds"
+	texture_density = 2
+	alpha = 1
+	spriteType = corneredstretched
+	spriteborder = { 40 0 }
+	frame_grid = {4 1}
+	using = overlay_texture_overlay
+	blockoverride "overlay_blend_mode" {
+		blend_mode = multiply
+	}
+	block "button_banner_02_texture" {}
+}
+
+template bg_name_banner_texture {
+	block "name_banner_texture" {
+		texture = "gfx/interface/component_tiles/name_banner.dds"
+	}
+	texture_density = 2
+	spriteType = corneredstretched
+	spriteborder = { 30 0 }
+
+	using = overlay_texture_overlay
+	blend_mode = multiply
+	# block "name_banner_texture_margin" {
+		margin = {10 0}
+		margin_bottom = 15
+	# }
+}
+
+template bg_name_banner_green {
+	background = {
+		block "bg_name_banner_green_visible" {
+			visible = yes
+		}
+		texture = "gfx/interface/buttons/button_banner_green.dds"
+		texture_density = 2
+		alpha = 1
+		spriteType = corneredstretched
+		spriteborder = { 30 0 }
+		frame_grid = {2 1}
+		frame = 1
+		using = overlay_texture_overlay
+		block "bg_name_banner_margin" {
+			margin = {10 0}
+		}
+		margin_bottom = 5
+		block "name_banner_texture" {}
+	}
+	background = {
+		block "bg_name_banner_green_alt_visible" {
+			visible = no
+		}
+		texture = "gfx/interface/buttons/button_banner_green.dds"
+		texture_density = 2
+		alpha = 1
+		spriteType = corneredstretched
+		spriteborder = { 30 0 }
+		frame_grid = {2 1}
+		frame = 2
+		using = overlay_texture_overlay
+		block "bg_name_banner_margin" {
+			margin = {10 0}
+		}
+		margin_bottom = 5
+		block "name_banner_texture" {}
+	}
+}
+
+template bg_name_banner {
+	background = {
+		texture = "gfx/interface/buttons/button_banner_02.dds"
+		texture_density = 2
+		alpha = 1
+		spriteType = corneredstretched
+		spriteborder = { 30 0 }
+		frame_grid = {4 1}
+		frame = 3
+		# modify_texture = {
+		# 	using = color_brown_leather_texture
+		# 	blend_mode = overlay
+		# }
+
+		using = overlay_texture_overlay
+		# blockoverride "overlay_blend_mode" {
+		# 	blend_mode = multiply
+		# 	alpha = 0.7
+		# }
+		block "bg_name_banner_margin" {
+			margin = {10 0}
+		}
+		margin_bottom = 5
+		block "name_banner_texture" {}
+	}
+}
+
+template bg_name_banner_left {
+	background = {
+		texture = "gfx/interface/buttons/button_banner_01.dds"
+		texture_density = 2
+		alpha = 1
+		spriteType = corneredstretched
+		spriteborder = { 20 10 }
+		frame_grid = {4 1}
+		frame = 3
+		
+		using = overlay_texture_overlay
+		blockoverride "overlay_blend_mode" {
+			blend_mode = multiply
+			alpha = 0.7
+		}
+
+		block "bg_name_banner_flip" {
+			mirror = horizontal
+		}
+
+		block "bg_name_banner_margin" {
+			margin_left = 0
+			margin_right = 20
+			margin_top = 2
+			margin_bottom = 7
+		}
+	}
+}
+
+template button_main_tab_texture {
+	texture = "gfx/interface/buttons/main_tab_alt.dds"
+	spriteType = corneredstretched
+	spriteborder = { 20 0 }
+	frame_grid = {4 1}
+	texture_density = 2
+	alpha = 1
+}
+
+template button_main_tab_hbox_props {
+	margin_left = 15
+	margin_right = 15
+	margin_top = 5
+	spacing = 5
+}
+
+template button_main_tab_props {
+	layoutpolicy_horizontal = expanding
+	size = { -1 45 }
+}
+
+# template button_toggle_properties_template {
+# 	gfxtype = togglepushbuttongfx
+# 	effectname = "NoHighlight"
+
+# 	upframe = 1
+# 	uphoverframe = 4
+# 	uppressedframe = 2
+# 	downframe = 4
+# 	downhoverframe = 4
+# 	downpressedframe = 2
+# 	disableframe = 1
+# }
+
+template tab_selection_texture {
+	# margin = { -8 -4 }
+	texture = "gfx/interface/buttons/selected_tab_up_texture_sides1_alt.dds"
+	spriteType = corneredstretched
+	spriteborder = { 20 0 }
+	texture_density = 2
+	blend_mode = multiply
+}
+
+template button_resize_to_fit_text_template {
+	autoresize = yes
+	resizeparent = yes
+	margin = { 25 5 }
+	minimumsize = { 80 30 }
+}
+
+template button_resize_to_fit_text {
+	blockoverride "button_text_properties" {
+		default_format = "#color_white"
+		using = button_resize_to_fit_text_template
+	}
+}
+
+template Master_Button_Modify_Texture {
+	modify_texture = {
+		texture = "gfx/interface/colors/color_frames.dds"
+		framesize = { 10 10 }
+		spritetype = corneredtiled
+		spriteborder = { 2 2 }
+
+		block "master_color_frame" {}
+	}
+}
+
+# template Master_Button_Modify_Texture_Intense {
+# 	modify_texture = {
+# 		texture = "gfx/interface/colors/color_frames_intense.dds"
+# 		framesize = { 10 10 }
+# 		spritetype = corneredtiled
+# 		spriteborder = { 2 2 }
+
+# 		block "master_color_frame" {}
+# 	}
+# }
+
+template button_default_icon_texture {
+	texture = "gfx/interface/buttons/button_regular.dds"
+	texture_density = 2
+	alpha = 1
+	spriteType = corneredstretched
+	spriteborder = { 14 14 }
+	frame_grid = {4 1}
+
+	modify_texture = {
+		using = overlay_stone_texture
+		blend_mode = overlay
+		alpha = 0.3
+	}
+}
+
+# template button_flavor_texture {
+# 	texture = "gfx/interface/buttons/sneaky_button.dds"
+# 	spriteType = corneredstretched
+# 	spriteborder = { 25 0 }
+# 	texture_density = 2
+# 	modify_texture = {
+# 		using = overlay_paper_03
+# 		blend_mode = overlay
+# 		alpha = 0.3
+# 	}
+# 	background = {
+# 		texture = "gfx/interface/component_tiles/tile_card_shadow.dds"
+# 		texture_density = 2
+# 		spriteType = corneredstretched
+# 		spriteBorder = {20 20}
+# 		margin = {5 5}
+# 	}
+# }
+
+template button_debug_texture {
+	texture = "gfx/interface/buttons/button_debug.dds"
+	texture_density = 2
+
+	spriteType = corneredstretched
+	spriteborder = { 20 0 }
+	framesize = { 126 40 }
+}
+
+template button_secondary_tab_alt_color {
+	modify_texture = {
+		using = color_intense_bg_blue_texture
+		blend_mode = multiply
+		# alpha = 0.8
+	}
+
+	modify_texture = {
+		using = overlay_leather_texture
+		blend_mode = overlay
+		alpha = 0.2
+	}
+}
+
+template button_panel_tab_icon_effect {
+	modify_texture = {
+		block "icon_effect_visible" {}
+		using = color_bone_texture
+		alpha = 0.3
+	}
+
+	glow = {
+		block "icon_effect_visible" {}
+		glow_radius = 3
+		block "icon_effect_color" {
+			color = { 0.40 0.68 0.73 1.0 }
+		}
+	}
+}
+
+template header_button_template {
+	size = { -1 40 }
+	block "header_button_template_push_properties" {using = button_common_template}
+	using = bg_square_tile_shadow
+	using = bg_header_button
+	block "header_button_template_texture" {using = header_button_texture}
+
+	hbox = {
+		block "adjust_to_content" {
+			set_parent_size_to_minimum = no
+		}
+		
+		# block "header_button_shadow" {
+		# 	background = {
+		# 		texture = "gfx/interface/component_tiles/square_glow.dds"
+		# 		spriteBorder = {20 20}
+		# 		spriteType = corneredstretched
+		# 		margin = {5 5}
+		# 		alpha = 0.2
+		# 	}
+		# }
+
+		block "header_button_full_content" {
+			block "header_button_orientation" {}
+			widget = {
+				block "header_button_icon_size" { size = { 40 40 } }
+				icon = {
+					block "header_button_frame_inner" {}
+					texture = "gfx/interface/buttons/navigational_header_button_frame_inner.dds"
+					# spriteborder = { 45 25 }
+					size = {100% 100%}
+					texture_density = 2
+					modify_texture = {
+						using = color_black_texture
+						blend_mode = multiply
+						alpha = 0.3
+					}
+					block "header_button_frame_inner_mirror" {}
+				}
+				block "header_button_icon_obj" {
+					block "icon_replace" {
+						icon = {
+							parentanchor = center
+							widgetanchor = center
+							block "icon_texture" {
+								texture = "gfx/interface/buttons/flats/advances.dds"
+							}
+							# using = color_new_gold
+		
+							block "icon_size" {
+								size = { 65% 65% }
+							}
+		
+							texture_density = 2
+							block "icon_overlay" {
+								modify_texture = {
+									using = color_new_gold_texture
+								}
+								modify_texture = {
+									using = overlay_stone_texture
+									blend_mode = overlay
+									alpha = 0.2
+								}
+								modify_texture = {
+									using = overlay_window_texture
+									blend_mode = overlay
+									alpha = 0.2
+								}
+							}
+						}
+					}
+				}
+				block "header_button_widget_extra" {}
+			}
+	
+			block "header_button_text_layout" {
+				vbox = {
+					using = layoutpolicy_expanding
+					minimumsize = { -1 40 }
+	
+					block "header_button_text_margins" {}
+	
+					expand = {}
+	
+					text_single = {
+						fontsize = 15
+	
+						block "text_top" {
+							visible = no
+						}
+	
+						block "header_button_text_align" {}
+					}
+	
+					text_single = {
+						fontsize = 12
+	
+						block "text_bottom" {
+							visible = no
+						}
+	
+						block "header_button_text_align" {}
+					}
+	
+					expand = {}
+				}
+			}
+		}
+	}
+}
+
+template header_button_texture {
+	texture = "gfx/interface/buttons/navigational_header_button_frame.dds"
+	spriteType = corneredstretched
+	spriteborder = { 12 12 }
+	texture_density = 2
+	frame_grid = { 4 1 }
+
+	modify_texture = {
+		using = overlay_stone_texture
+		blend_mode = overlay
+		alpha = 0.1
+	}
+	modify_texture = {
+		using = overlay_window_texture
+		blend_mode = overlay
+		alpha = 0.1
+	}
+	modify_texture = {
+		texture = "gfx/interface/component_overlay/cloth_texture.dds"
+		texture_density = 2
+		spriteType = Corneredtiled
+		spriteborder = { 0 0 }
+		blend_mode = overlay
+		alpha = 0.7
+	}
+}
+
+template pressed_button_texture {
+	texture = "gfx/interface/buttons/navigational_header_button_frame_pressed.dds"
+	spriteType = corneredstretched
+	spriteborder = { 12 12 }
+	texture_density = 2
+	frame_grid = { 4 1 }
+
+	modify_texture = {
+		using = overlay_stone_texture
+		blend_mode = overlay
+		alpha = 0.1
+	}
+	modify_texture = {
+		using = overlay_window_texture
+		blend_mode = overlay
+		alpha = 0.1
+	}
+	modify_texture = {
+		texture = "gfx/interface/component_overlay/cloth_texture.dds"
+		texture_density = 2
+		spriteType = Corneredtiled
+		spriteborder = { 0 0 }
+		blend_mode = overlay
+		alpha = 0.7
+	}
+}
+
+template pressed_button_texture_light {
+	texture = "gfx/interface/buttons/navigational_header_button_frame_light.dds"
+	spriteType = corneredstretched
+	spriteborder = { 12 12 }
+	texture_density = 2
+	frame_grid = { 4 1 }
+
+	modify_texture = {
+		using = overlay_stone_texture
+		blend_mode = overlay
+		alpha = 0.1
+	}
+	modify_texture = {
+		using = overlay_window_texture
+		blend_mode = overlay
+		alpha = 0.1
+	}
+	modify_texture = {
+		texture = "gfx/interface/component_overlay/cloth_texture.dds"
+		texture_density = 2
+		spriteType = Corneredtiled
+		spriteborder = { 0 0 }
+		blend_mode = overlay
+		alpha = 0.7
+	}
+}
+
+template bg_header_button {
+	background = {
+		texture = "gfx/interface/buttons/bg_navigational_header_button.dds"
+		texture_density = 2
+		block "bg_color" {
+			modify_texture = {
+				using = color_dark_brown_texture
+				blend_mode = multiply
+			}
+		}
+		modify_texture = {
+			using = overlay_stone_texture
+			blend_mode = overlay
+			alpha = 0.2
+		}
+		modify_texture = {
+			using = overlay_window_texture
+			blend_mode = overlay
+			alpha = 0.2
+		}
+	}
+	# block "bg_icon_frame" {
+		background = {
+			texture = "gfx/interface/buttons/bg_navigational_header_button_icon.dds"
+			texture_density = 2
+			block "bg_color" {
+				modify_texture = {
+					using = color_dark_brown_texture
+					blend_mode = multiply
+				}
+			}
+			modify_texture = {
+				using = overlay_stone_texture
+				blend_mode = overlay
+				alpha = 0.2
+			}
+			modify_texture = {
+				using = overlay_window_texture
+				blend_mode = overlay
+				alpha = 0.2
+			}
+		}
+	# }
+}
+
+template button_default_template {
+	using = button_default_icon_texture
+	using = button_common_template
+}
+
+# template button_regular_template {
+# 	using = button_regular_texture
+# 	using = button_common_template
+# }
+
+template checkbox_square_alt_template {
+	texture = "gfx/interface/buttons/checkbox_square.dds"
+	texture_density = 2
+	frame_grid = {2 1}
+	size = { 30 30 }
+
+	using = overlay_stone
+	using = snd_UI_checkbutton_square
+
+	modify_texture = {
+		using = color_new_gold_texture
+	}
+
+	background = {
+		texture = "gfx/interface/buttons/checkbox_bg_square.dds"
+		texture_density = 2
+		using = color_dark_blue
+	}
+}
+
+template button_checkbox_template {
+	texture = "gfx/interface/buttons/checkbox.dds"
+	texture_density = 2
+	framesize = { 40 40 }
+	size = { 30 30 }
+
+	background = {
+		texture = "gfx/interface/buttons/checkbox_bg.dds"
+		texture_density = 2
+		using = color_dark_blue
+		# margin = { 1 1 }
+		shaderfile = "gfx/FX/pdxgui_default.shader"
+	}
+}
+
+types Buttons
+{
+	type dlc_button_01 = button {
+		gfxtype = framedbuttongfx
+		effectname = "NoHighlight"
+		upframe = 1
+		overframe = 2
+		downframe = 3
+		disableframe = 4
+		frame_grid = {4 1}
+		spriteType = Corneredstretched
+		spriteborder = { 30 0 }
+		texture = "gfx/interface/buttons/dlc_button.dds"
+		texture_density = 2
+		# clicksound = "click_ok"
+		block "button_text_properties" {
+			default_format = "#color_white"
+			using = Font_Type_Headers
+		}
+		# modify_texture = {
+		# 	using = color_government_texture
+		# }
+
+		modify_texture = {
+			block "header_pattern" {
+				# texture = "gfx/interface/cards/headers/header_pattern_01.dds"
+				texture = "[GetGraphicalCultureTexture('header_pattern')]"
+			}
+			block "header_pattern_texture_density" {texture_density = 1.8}
+			spriteType = corneredtiled
+			# spriteBorder = {0 0}
+			blend_mode = overlay
+			block "header_pattern_alpha" {}
+			alpha = 0.2
+		}
+		modify_texture = {
+			texture = "gfx/interface/component_overlay/cloth_texture.dds"
+			texture_density = 2
+			spriteType = Corneredtiled
+			spriteborder = { 0 0 }
+			blend_mode = overlay
+			alpha = 0.2
+		}
+
+		# background = {
+		# 	texture = "gfx/interface/component_tiles/tile_shadow_squared.dds"
+		# 	spriteType = Corneredstretched
+		# 	texture_density = 2
+		# 	spriteborder = { 20 20 }
+		# 	margin = {4 4}
+		# }
+
+		# dlc_button_border_01 = {
+		# 	size = { 100% 100% }
+		# }
+
+	}
+
+	type dlc_icon_01 = icon {
+		frame = 1
+		frame_grid = {4 1}
+		spriteType = Corneredstretched
+		spriteborder = { 30 0 }
+		texture = "gfx/interface/buttons/dlc_button.dds"
+		texture_density = 2
+		# clicksound = "click_ok"
+		block "button_text_properties" {
+			default_format = "#color_white"
+			using = Font_Type_Headers
+		}
+		# modify_texture = {
+		# 	using = color_government_texture
+		# }
+
+		modify_texture = {
+			block "header_pattern" {
+				# texture = "gfx/interface/cards/headers/header_pattern_01.dds"
+				texture = "[GetGraphicalCultureTexture('header_pattern')]"
+			}
+			block "header_pattern_texture_density" {texture_density = 1.8}
+			spriteType = corneredtiled
+			# spriteBorder = {0 0}
+			blend_mode = overlay
+			block "header_pattern_alpha" {}
+			alpha = 0.2
+		}
+		modify_texture = {
+			texture = "gfx/interface/component_overlay/cloth_texture.dds"
+			texture_density = 2
+			spriteType = Corneredtiled
+			spriteborder = { 0 0 }
+			blend_mode = overlay
+			alpha = 0.2
+		}
+
+		# background = {
+		# 	texture = "gfx/interface/component_tiles/tile_shadow_squared.dds"
+		# 	spriteType = Corneredstretched
+		# 	texture_density = 2
+		# 	spriteborder = { 20 20 }
+		# 	margin = {4 4}
+		# }
+
+		# dlc_button_border_01 = {
+		# 	size = { 100% 100% }
+		# }
+
+	}
+
+	# type dlc_button_border_01 = button {
+	# 	gfxtype = framedbuttongfx
+	# 	alwaystransparent = yes
+	# 	effectname = "NoHighlight"
+	# 	upframe = 1
+	# 	overframe = 2
+	# 	downframe = 3
+	# 	disableframe = 4
+	# 	texture = "gfx/interface/buttons/dlc_button_border.dds"
+	# 	frame_grid = {4 1}
+	# 	spriteType = Corneredstretched
+	# 	texture_density = 2
+	# 	spriteborder = { 60 0 }
+	# 	# clicksound = "click_ok"
+	# 	block "button_text_properties" {
+	# 		default_format = "#color_white"
+	# 		using = Font_Type_Headers
+	# 	}
+
+	# 	modify_texture = {
+	# 		texture = "gfx/interface/component_overlay/cloth_texture.dds"
+	# 		texture_density = 2
+	# 		spriteType = Corneredtiled
+	# 		spriteborder = { 0 0 }
+	# 		blend_mode = overlay
+	# 		alpha = 0.2
+	# 	}
+
+	# }
+
+	### close and back buttons
+	type ui_direction_button = button {
+		block "button_texture" {
+			texture = "gfx/interface/icons/flat_icons/close_flat_icon.dds"
+		}
+		texture_density = 2
+
+		modify_texture = {
+			using = overlay_window_texture
+			blend_mode = overlay
+			alpha = 0.7
+		}
+
+		modify_texture = {
+			using = color_new_gold_texture
+		}
+
+		modify_texture = {
+			texture = "gfx/interface/buttons/buttons_texture.dds"
+			texture_density = 2
+			blend_mode = overlay
+			alpha = 0.2
+		}
+
+		modify_texture = {
+			using = overlay_stone_texture
+			blend_mode = overlay
+			alpha = 0.4
+		}
+
+		glow = {
+			glow_radius = 5
+			color = { 1.0 0.85 0.55 1.0 }
+			alpha = 0.6
+
+			block "glow_visible" {
+				visible = no
+			}
+		}
+	}
+
+	### close and back buttons
+	type ui_direction_color_button = button {
+		block "button_texture" {
+			texture = "gfx/interface/icons/flat_icons/close_flat_icon.dds"
+		}
+		texture_density = 2
+
+		modify_texture = {
+			texture = "gfx/interface/buttons/buttons_texture.dds"
+			texture_density = 2
+			blend_mode = overlay
+			alpha = 0.2
+		}
+
+		glow = {
+			glow_radius = 5
+			color = { 1.0 0.85 0.55 1.0 }
+			alpha = 0.6
+
+			block "glow_visible" {
+				visible = no
+			}
+		}
+	}
+
+	### direction alt buttons
+	type ui_direction_button_alt = button {
+		block "button_texture" {}
+
+		using = ui_direction_button_overlay
+	}
+
+	type header_main_tabs = widget {
+		using = button_main_tab_props
+
+		background = {
+			using = color_bg_brown_texture
+
+			modify_texture = {
+				using = overlay_leather_texture
+				blend_mode = overlay
+				alpha = 0.3
+			}
+		}
+
+		background = {
+			using = pattern_vertical_bis_graphical_culture_texture
+			alpha = 0.4
+		}
+
+		background = {
+			using = color_dark_blue_texture
+			margin = { -13 0 }
+		}
+
+		background = {
+			using = bg_fade_vertical_up_mask_texture
+			alpha = 0.3
+
+			margin = { -13 0 }
+
+			modify_texture = {
+				using = color_black_texture
+				blend_mode = multiply
+			}
+		}
+
+		hbox = {
+			using = button_main_tab_hbox_props
+			block "content" {}
+		}
+	}
+
+	type button_main_tab_alt_base = button {
+		using = button_main_tab_texture
+		gfxtype = togglepushbuttongfx
+		effectname = "NoHighlight"
+		upframe = 1
+		uphoverframe = 3
+		uppressedframe = 2
+		downframe = 4
+		downhoverframe = 4
+		downpressedframe = 2
+		disableframe = 1
+
+		buttonText = {
+			textbox = {
+				using = button_common_textobj_font
+
+				size = { 100% 100% }
+				autoresize = no
+				align = center|nobaseline
+				margin_top = 4
+
+				block "button_text_properties" {
+					default_format = "#color_white"
+				}
+			}
+		}
+
+		hbox = {
+			margin = { 5 0 }
+			margin_top = 4
+			text_single = {
+				block "tab_text"{
+					visible = no
+					text = ""
+				}
+				using = Font_Type_Headers
+				using = layoutpolicy_expanding
+				align = center
+				autoresize = no
+			}
+		}
+	}
+
+	type button_main_tab_alt = button_main_tab_alt_base {
+		size = { -1 40 }
+
+		modify_texture = {
+			using = color_bg_brown_texture
+			blend_mode = multiply
+			alpha = 1
+		}
+
+		modify_texture = {
+			using = overlay_leather_texture
+			blend_mode = overlay
+			alpha = 0.2
+		}
+
+		widget = {
+			size = { 100% 100% }
+			background = {
+				using = tab_selection_texture
+				blend_mode = alphamultiply
+				alpha = 0.3
+
+				modify_texture = {
+					using = color_dark_brown_texture
+				}
+				modify_texture = {
+					using = overlay_leather_texture
+					blend_mode = overlay
+					alpha = 0.7
+				}
+			}
+		}
+	}
+
+	type ui_direction_button_holder_right = icon {
+		parentanchor = right|vcenter
+		texture = "gfx/interface/buttons/action_button_frame.dds"
+		size = { 10 35 }
+
+		using = non_clickable_color_gold_texture
+
+		background = {
+			texture = "gfx/interface/buttons/action_button_frame_bg.dds"
+			texture_density = 2
+			alpha = 1
+			using = color_dark_blue
+		}
+	}
+
+	type button_close = ui_direction_button {
+		blockoverride "button_texture" {
+			texture = "gfx/interface/buttons/flats/close_button.dds"
+		}
+
+		block "close_properties" {
+			parentanchor = right|top
+			position = { 5 -6 }
+		}
+
+		# block "close_size" {
+			size = { 23 23 }
+		# }
+
+		block "close_onclick" {}
+		block "close_inputaction" {
+			input_action = "close_window"
+			use_global_input_instance = yes
+		}
+
+		tooltipwidget = {
+			LeftClickButtonTooltip = {
+				blockoverride "onclick_text" { text = "CLOSE" }
+			}
+		}
+
+		using = bg_circle
+		using = snd_UI_close
+	}
+
+	type button_close_alt = ui_direction_button_alt {
+		blockoverride "button_texture" {
+			texture = "gfx/interface/buttons/flats/close_button_alt.dds"
+			texture_density = 2
+		}
+
+		background = {
+			using = bg_button_light_round_texture
+			modify_texture = {
+				block "bg_button_color" { using = color_dark_blue_texture }
+			}
+		}
+
+		block "close_properties" {
+			parentanchor = vcenter|right
+		}
+
+		block "close_onclick" {}
+		block "close_inputaction" {
+			input_action = "close_window"
+			use_global_input_instance = yes
+		}
+
+		block "close_button_tooltip" {
+			tooltipwidget = {
+				LeftClickButtonTooltip = {
+					blockoverride "onclick_text" { text = "CLOSE" }
+				}
+			}
+		}
+
+		using = snd_UI_close
+	}
+
+	type button_menu_alt = ui_direction_button_alt {
+		blockoverride "button_texture" {
+			texture = "gfx/interface/buttons/flats/list_button_alt.dds"
+			texture_density = 2
+		}
+
+		background = {
+			using = bg_button_light_round_texture
+			modify_texture = {
+				using = color_dark_blue_texture
+			}
+		}
+
+		block "close_properties" {
+			parentanchor = vcenter|right
+		}
+
+		block "close_onclick" {}
+		block "close_inputaction" {
+			input_action = "close_window"
+			use_global_input_instance = yes
+		}
+
+		tooltipwidget = {
+			LeftClickButtonTooltip = {
+				blockoverride "onclick_text" { text = "CLOSE" }
+			}
+		}
+
+		using = snd_UI_close
+	}
+
+	# For dropdown filter
+	type button_drop = button {
+		size = { 100% 100% }
+		button_trigger = none
+		gfxtype = framedbuttongfx
+		effectname = "NoHighlight"
+		upframe = 1
+		overframe = 2
+		downframe = 3
+		disableframe = 1
+		using = button_regular_texture
+	}
+
+	# For dropdown filter options
+	type button_dropdown = button {
+		size = { 100% 100% }
+		button_trigger = none
+		gfxtype = framedbuttongfx
+		effectname = "NoHighlight"
+		upframe = 1
+		overframe = 2
+		downframe = 3
+		disableframe = 1
+
+		texture = "gfx/interface/buttons/button_interaction_menu.dds"
+		texture_density = 2
+		framesize = { 60 30 }
+		spriteType = Corneredstretched
+		spriteborder = { 0 0 }
+	}
+
+	type button_default = button {
+		using = button_default_icon_texture
+		using = button_common_template
+
+		size = { 120 30 }
+	}
+
+	type button_debug = button {
+		using = button_debug_texture
+		using = button_common_template
+
+		size = { 120 30 }
+		maximumsize = { -1 30 }
+	}
+
+	# type button_secondary_tab_flavor = button {
+	# 	size = { 50 16 }
+	# 	texture = "gfx/interface/buttons/inner_tab_flavor.dds"
+	# 	texture_density = 2
+	# 	spriteType = corneredstretched
+	# 	spriteborder = { 20 0 }
+	# 	framesize = { 50 35 }
+	# 	alpha = 1
+
+	# 	buttonText = {
+	# 		textbox = {
+	# 			size = { 100% 100% }
+	# 			using = Font_Type_Headers
+	# 			using = Font_Size_Small
+	# 			elide = right
+	# 			fontsize_min = 8
+
+	# 			default_format = "#high"
+
+	# 			align = center|nobaseline
+	# 			margin = { 10 0 }
+	# 		}
+	# 	}
+
+	# 	gfxtype = togglepushbuttongfx
+	# 	effectname = "NoHighlight"
+
+	# 	upframe = 1
+	# 	uphoverframe = 3
+	# 	uppressedframe = 3
+	# 	downframe = 2
+	# 	downhoverframe = 2
+	# 	downpressedframe = 3
+	# 	disableframe = 4
+	# }
+
+	# type button_secondary_tab = button
+	# {
+	# 	size = { 50 16 }
+	# 	texture = "gfx/interface/buttons/inner_tab_fade_vertical_low.dds"
+	# 	spriteType = stretched
+	# 	spriteborder = { 0 0 }
+	# 	framesize = { 50 50 }
+	# 	texture_density = 2
+	# 	alpha = 1
+
+	# 	buttonText = {
+	# 		textbox = {
+	# 			size = { 100% 100% }
+	# 			using = Font_Type_Headers
+	# 			using = Font_Size_Small
+	# 			elide = right
+	# 			fontsize_min = 8
+
+	# 			default_format = "#high"
+
+	# 			align = center|nobaseline
+	# 			margin = { 10 0 }
+	# 		}
+	# 	}
+
+	# 	gfxtype = togglepushbuttongfx
+	# 	effectname = "NoHighlight"
+
+	# 	upframe = 1
+	# 	uphoverframe = 3
+	# 	uppressedframe = 3
+	# 	downframe = 2
+	# 	downhoverframe = 2
+	# 	downpressedframe = 3
+	# 	disableframe = 4
+	# }
+
+	type round_button_alt = button {
+		icon = {
+			block "button_texture" {
+				visible = no
+				texture = "gfx/interface/icons/flat_icons/diplomacy_flat_icon.dds"
+			}
+
+			# block "button_texture_size" {
+				size = { 10 10 }
+			# }
+
+			parentanchor = center
+			texture_density = 2
+		}
+
+		texture = "gfx/interface/buttons/round_button_alt.dds"
+		texture_density = 2
+
+		size = { 27 27 }
+
+		block "close_onclick" {}
+		block "close_inputaction" {
+			input_action = "close_window"
+			use_global_input_instance = yes
+		}
+
+		tooltip = "CLOSE_TOOLTIP"
+		modify_texture = {
+			using = color_new_gold_texture
+			blend_mode = multiply
+		}
+		modify_texture = {
+			using = color_new_gold_texture
+			alpha = 0.5
+			# blend_mode = overlay
+		}
+		modify_texture = {
+			using = overlay_window_texture
+			blend_mode = overlay
+			alpha = 0.4
+		}
+		modify_texture = {
+			using = overlay_gold_texture
+			blend_mode = overlay
+			alpha = 0.2
+		}
+		using = bg_circle_alt
+		using = snd_UI_close
+	}
+
+	type button_icon = button {
+		size = { 50 50 }
+		texture = "gfx/interface/icons/flat_icons/blank.dds"
+
+		block "bg_button_color" {
+			modify_texture = {
+				using = color_new_gold_texture
+			}
+		}
+	}
+
+	type button_flavor = button {
+		size = { 80 30 }
+		texture = "gfx/interface/buttons/sneaky_button.dds"
+		spriteType = corneredstretched
+		spriteborder = { 25 0 }
+		texture_density = 2
+		modify_texture = {
+			using = overlay_paper_03
+			blend_mode = overlay
+			alpha = 0.3
+		}
+		background = {
+			texture = "gfx/interface/component_tiles/tile_card_shadow.dds"
+			texture_density = 2
+			spriteType = corneredstretched
+			spriteBorder = {20 20}
+			margin = {5 5}
+		}
+		default_format = "#color_white"
+	}
+
+	type header_secondary_tabs = widget {
+		using = button_main_tab_props
+
+		background = {
+			using = bg_fade_vertical_up_mask_texture
+			alpha = 0.6
+
+			modify_texture = {
+				using = color_black_texture
+				blend_mode = multiply
+			}
+		}
+
+		hbox = {
+			block "secondary_tabs_margin" {
+				using = button_secondary_tab_hbox_props
+			}
+			block "content" {}
+		}
+	}
+
+	# type button_header = button {
+	# 	using = header_button_texture
+	# 	using = button_common_template
+	# 	fontsize = 13
+	# 	size = { -1 30 }
+
+	# 	background = {
+	# 		using = button_regular_shadow_texture
+	# 		margin = {1 0}
+	# 		margin_bottom = 3
+	# 	}
+	# }
+
+	###Buttons Cards headers
+
+	type card_header_button_01 = button {
+		gfxtype = framedbuttongfx
+		effectname = "NoHighlight"
+		upframe = 1
+		overframe = 2
+		downframe = 3
+		disableframe = 4
+		texture = "gfx/interface/buttons/card_header_button_01.dds"
+		frame_grid = {4 1}
+		spriteType = Corneredstretched
+		texture_density = 2
+		spriteborder = { 20 20 }
+		# clicksound = "click_ok"
+		block "button_text_properties" {
+			default_format = "#color_white"
+			using = Font_Type_Headers
+		}
+
+		background = {
+			texture = "gfx/interface/component_tiles/tile_shadow_squared.dds"
+			spriteType = Corneredstretched
+			texture_density = 2
+			spriteborder = { 20 20 }
+			margin = {4 4}
+		}
+	}
+
+	type card_header_icon_01 = icon {
+		frame = 1
+		frame_grid = {4 1}
+		spriteType = Corneredstretched
+		spriteborder = { 20 20 }
+		texture = "gfx/interface/buttons/card_header_button_01.dds"
+		texture_density = 2
+
+		background = {
+			texture = "gfx/interface/component_tiles/tile_shadow_squared.dds"
+			spriteType = Corneredstretched
+			texture_density = 2
+			spriteborder = { 20 20 }
+			margin = {4 4}
+		}
+	}
+
+	type card_raw_paper_button = button {
+		gfxtype = framedbuttongfx
+		effectname = "NoHighlight"
+		upframe = 1
+		overframe = 2
+		downframe = 3
+		disableframe = 4
+		texture = "gfx/interface/buttons/card_raw_paper_button.dds"
+		frame_grid = {4 1}
+		spriteType = Corneredstretched
+		texture_density = 2
+		spriteborder = { 40 40 }
+		# clicksound = "click_ok"
+
+		block "raw_paper_button_color" {
+			modify_texture = {
+				using = color_raw_paper_texture
+				blend_mode = multiply
+			}
+		}
+
+		modify_texture = {
+			using = overlay_cloth_texture
+			blend_mode = overlay
+			alpha = 0.1
+		}
+
+		modify_texture = {
+			using = overlay_watercolor_texture
+			blend_mode = overlay
+			alpha = 0.2
+		}
+
+		block "button_text_properties" {
+			default_format = "#color_white"
+			using = Font_Type_Headers
+		}
+	}
+
+	type card_header_button_08 = button {
+		gfxtype = framedbuttongfx
+		effectname = "NoHighlight"
+		upframe = 1
+		overframe = 2
+		downframe = 3
+		disableframe = 4
+		texture = "gfx/interface/buttons/card_header_button_08.dds"
+		frame_grid = {4 1}
+		spriteType = Corneredstretched
+		texture_density = 2
+		spriteborder = { 40 40 }
+		# clicksound = "click_ok"
+		block "button_text_properties" {
+			default_format = "#color_white"
+			using = Font_Type_Headers
+		}
+	}
+
+	type small_card_button_01 = button {
+		gfxtype = framedbuttongfx
+		effectname = "NoHighlight"
+		upframe = 1
+		overframe = 2
+		downframe = 3
+		disableframe = 4
+		texture = "gfx/interface/buttons/card_header_button_08.dds"
+		frame_grid = {4 1}
+		spriteType = Corneredstretched
+		texture_density = 2
+		spriteborder = { 40 40 }
+		# clicksound = "click_ok"
+		block "button_text_properties" {
+			default_format = "#color_white"
+			using = Font_Type_Headers
+		}
+
+		# block "extra_content" {}
+	}
+
+	type card_list_button = button {
+		gfxtype = framedbuttongfx
+		effectname = "NoHighlight"
+		upframe = 1
+		overframe = 2
+		downframe = 3
+		disableframe = 4
+		texture = "gfx/interface/buttons/card_list_action_button.dds"
+		frame_grid = {4 1}
+		spriteType = Corneredstretched
+		texture_density = 2
+		spriteborder = { 40 40 }
+		# clicksound = "click_ok"
+		block "button_text_properties" {
+			default_format = "#color_white"
+			using = Font_Type_Headers
+		}
+
+		modify_texture = {
+			using = overlay_cloth_texture
+			blend_mode = overlay
+			alpha = 0.1
+		}
+		
+		modify_texture = {
+			using = overlay_paper_03
+			blend_mode = overlay
+		}
+
+		block "button_extras" {}
+	}
+
+	type button_wax = button {
+		using = button_wax_texture
+		using = button_common_template
+		size = { -1 50 }
+	}
+
+	type button_mission_frame = button {
+		
+		using = button_mission_frame_texture
+		using = button_common_template	
+	}
+
+	type button_regular_alt = button {
+		using = button_regular_texture_alt
+		using = button_common_template
+		fontsize = 13
+		size = { -1 30 }
+	}
+
+	type button_regular_alt_red = button {
+		using = button_regular_texture_alt_red
+		using = button_common_template
+		fontsize = 13
+		size = { -1 30 }
+	}
+
+	type button_regular_alt_green = button {
+		using = button_regular_texture_alt_green
+		using = button_common_template
+		fontsize = 13
+		size = { -1 30 }
+	}
+
+	type button_regular_alt_yellow = button {
+		using = button_regular_texture_alt_yellow
+		using = button_common_template
+		fontsize = 13
+		size = { -1 30 }
+	}
+
+	type checkbox_square_alt = checkbutton {
+
+		using = checkbox_square_alt_template
+	}
+
+	type checkbutton_01_alt = button {
+		size = { -1 -1 }
+		texture = "gfx/interface/buttons/checkbutton_01_alt.dds"
+		spriteType = corneredstretched
+		spriteborder = { 43 0 }
+		frame_grid = { 4 1 }
+		texture_density = 2
+
+		buttonText = {
+			textbox = {
+				visible = no
+			}
+		}
+
+		modify_texture = {
+			using = overlay_cloth_texture
+			blend_mode = overlay
+			alpha = 0.2
+		}
+
+		gfxtype = togglepushbuttongfx
+		effectname = "NoHighlight"
+
+		upframe = 1
+		uphoverframe = 2
+		uppressedframe = 4
+		downframe = 3
+		downhoverframe = 3
+		downpressedframe = 3
+		disableframe = 1
+	}
+
+	type checkbutton_02_alt = button {
+		size = { -1 -1 }
+		texture = "gfx/interface/buttons/checkbutton_02_alt.dds"
+		spriteType = corneredstretched
+		spriteborder = { 20 0 }
+		frame_grid = { 4 1 }
+		texture_density = 2
+
+		buttonText = {
+			textbox = {
+				visible = no
+			}
+		}
+
+		gfxtype = togglepushbuttongfx
+		effectname = "NoHighlight"
+
+		upframe = 1
+		uphoverframe = 2
+		uppressedframe = 4
+		downframe = 3
+		downhoverframe = 3
+		downpressedframe = 3
+		disableframe = 1
+	}
+
+	# type checkbutton_02_alt_grey = button
+	# {
+	# 	size = { -1 -1 }
+	# 	texture = "gfx/interface/buttons/checkbutton_02_alt_grey.dds"
+	# 	spriteType = corneredstretched
+	# 	spriteborder = { 20 0 }
+	# 	frame_grid = { 4 1 }
+	# 	texture_density = 2
+
+	# 	buttonText = {
+	# 		textbox = {
+	# 			visible = no
+	# 		}
+	# 	}
+
+	# 	gfxtype = togglepushbuttongfx
+	# 	effectname = "NoHighlight"
+
+	# 	upframe = 1
+	# 	uphoverframe = 2
+	# 	uppressedframe = 4
+	# 	downframe = 3
+	# 	downhoverframe = 3
+	# 	downpressedframe = 3
+	# 	disableframe = 1
+	# }
+
+	type button_banner_01 = button {
+		# block "button_banner_texture" {
+			using = button_banner_01_texture
+			blockoverride "overlay_blend_mode" {}
+		# }
+
+		using = button_common_template
+		size = { -1 45 }
+	}
+
+	type button_building_paper = button {
+		# block "button_building_texture" {
+			texture = "gfx/interface/buttons/brown_button_building_paper.dds"
+		# }
+
+		texture_density = 2
+		spriteType = corneredstretched
+		spriteborder = { 40 0 }
+		frame_grid = {4 1}
+		modify_texture = {
+			using = overlay_cloth_texture
+			blend_mode = overlay
+			alpha = 0
+		}
+		modify_texture = {
+			using = paper_03_texture
+			blend_mode = overlay
+			alpha = 0.5
+		}
+		modify_texture = {
+			using = overlay_window_texture
+			blend_mode = overlay
+			alpha = 0.2
+		}
+
+		using = button_common_template
+		size = { -1 45 }
+	}
+
+	type button_banner_02 = button {
+		using = button_banner_02_texture
+		using = button_common_template
+		size = { -1 45 }
+	}
+
+	type filter_button_alt = button {
+		size = { 23 23 }
+		texture = "gfx/interface/buttons/round_button_texture_alt.dds"
+		texture_density = 2
+
+		modify_texture = {
+			using = color_new_gold_texture
+			blend_mode = overlay
+			alpha = 1
+		}
+
+		modify_texture = {
+			using = overlay_stone_texture
+			blend_mode = overlay
+			alpha = 1
+		}
+		background = {
+			texture = "gfx/interface/buttons/bg_button_light.dds"
+			texture_density = 2
+			modify_texture = {
+				using = color_intense_brown_texture
+				blend_mode = add
+			}
+			modify_texture = {
+				using = color_dark_brown_texture
+				blend_mode = multiply
+				alpha = 0.8
+			}
+		}
+		block "filter_button_action" {}
+		ui_direction_button = {
+			size = { 85% 85% }
+			parentanchor = center
+			# block "filter_button_tooltip" {}
+			block "filter_button_action" {}
+			blockoverride "button_texture"  {
+				texture = "gfx/interface/buttons/flats/filter.dds"
+			}
+		}
+	}
+
+	# type brown_direction_button_alt = button
+	# {
+	# 	size = { 23 23 }
+	# 	texture = "gfx/interface/buttons/round_button_texture_alt.dds"
+	# 	texture_density = 2
+
+	# 	modify_texture = {
+	# 		using = color_new_gold_texture
+	# 		blend_mode = overlay
+	# 		alpha = 1
+	# 	}
+
+	# 	modify_texture = {
+	# 		using = overlay_stone_texture
+	# 		blend_mode = overlay
+	# 		alpha = 1
+	# 	}
+	# 	background = {
+	# 		texture = "gfx/interface/buttons/bg_button_light.dds"
+	# 		texture_density = 2
+	# 		modify_texture = {
+	# 			using = color_intense_brown_texture
+	# 			blend_mode = add
+	# 		}
+	# 		modify_texture = {
+	# 			using = color_dark_brown_texture
+	# 			blend_mode = multiply
+	# 			alpha = 0.8
+	# 		}
+	# 	}
+
+	# 	#should have same name in both blocks to have same action
+	# 	block "filter_button_action" {}
+
+	# 	ui_direction_button = {
+	# 		size = { 67% 67% }
+	# 		parentanchor = center
+	# 		block "filter_button_tooltip" {}
+
+	# 		#should have same name in both blocks to have same action
+	# 		block "filter_button_action" {}
+
+	# 		block "button_texture"  {
+	# 			texture = "gfx/interface/buttons/flats/filter.dds"
+	# 		}
+	# 	}
+
+	# }
+
+	type button_secondary_tab_alt = button_main_tab_alt_base {
+		size = { -1 40 }
+		using = button_secondary_tab_alt_color
+		# using = snd_UI_panel_child # UI_panelChild_show now hardcoded to occur on changing child panels.
+
+		widget = {
+			size = { 100% 100% }
+
+			background = {
+				using = tab_selection_texture
+				blend_mode = alphamultiply
+				alpha = 0.3
+
+				modify_texture = {
+					using = color_dark_blue_texture
+				}
+				modify_texture = {
+					using = overlay_leather_texture
+					blend_mode = overlay
+					alpha = 0.7
+				}
+			}
+		}
+	}
+
+	type button_panel_tab_alt = button {
+		size = { -1 -1 }
+		texture = "gfx/interface/buttons/panel_tabs_alt.dds"
+		spriteType = stretched
+		spriteborder = { 0 0 }
+		frame_grid = { 4 1 }
+		texture_density = 2
+
+		buttonText = {
+			textbox = {
+				visible = no
+			}
+		}
+
+		gfxtype = togglepushbuttongfx
+		effectname = "NoHighlight"
+
+		upframe = 1
+		uphoverframe = 2
+		uppressedframe = 4
+		downframe = 3
+		downhoverframe = 3
+		downpressedframe = 3
+		disableframe = 1
+	}
+
+	# type button_formation_box = button
+	# {
+	# 	size = { -1 -1 }
+	# 	using = button_regular_texture
+	# 	gfxtype = togglepushbuttongfx
+	# 	effectname = "NoHighlight"
+
+	# 	upframe = 1
+	# 	uphoverframe = 2
+	# 	uppressedframe = 3
+	# 	downframe = 2
+	# 	downhoverframe = 2
+	# 	downpressedframe = 2
+	# 	disableframe = 4
+	# }
+
+	type estate_privilege_action_button_alt = widget {
+		scissor = yes
+		size = { 32 45 }
+
+		background = {
+			texture = "gfx/interface/buttons/estate_privileges/bg_ep.dds"
+			texture_density = 2
+			modify_texture = {
+				using = color_bg_brown_texture
+			}
+			glow = {
+				name = "drop_shadow"
+				glow_radius = 3
+				color = {0.0 0.0 0.0 1.0}
+				alpha = 0.7
+
+				block "glow_visible" {
+					visible = yes
+				}
+			}
+		}
+
+		icon = {
+			size = { 92% 100% }
+			parentanchor = center
+			texture_density = 2
+			block "icon_texture" {
+				texture = "gfx/interface/icons/government_reforms/illustrations/peasant_republic_reform.dds"
+			}
+		}
+
+		button = {
+			block "estate_privilege_button_visible" {
+				visible = yes
+			}
+			size = {100% 100%}
+			block "estate_privilege_button_action" {
+				using = button_common_properties_template
+			}
+			texture = "gfx/interface/buttons/card_header_button_04.dds"
+			texture_density = 2
+			spriteType = corneredstretched
+			spriteborder = { 11 11 }
+			frame_grid = {4 1}
+
+			block "privilege_action" {}
+		}
+
+		icon = {
+			block "estate_privilege_icon_visible" {
+				visible = no
+			}
+			size = {100% 100%}
+			texture = "gfx/interface/buttons/card_header_button_04.dds"
+			texture_density = 2
+			spriteType = corneredstretched
+			spriteborder = { 11 11 }
+			frame_grid = {4 1}
+		}
+	}
+
+	type estate_privilege2_action_button_alt = widget {
+		scissor = yes
+		size = { 34 40 }
+
+		background = {
+			texture = "gfx/interface/buttons/estate_privileges/bg_ep.dds"
+			texture_density = 2
+			modify_texture = {
+				using = color_dark_brown_texture
+				alpha = 0.4
+			}
+			glow = {
+				name = "drop_shadow"
+				glow_radius = 1
+				color = {0.0 0.0 0.0 1.0}
+				alpha = 0.2
+
+				block "glow_visible" {
+					visible = yes
+				}
+			}
+		}
+
+		margin_widget = {
+			size = { 34 40 }
+			margin = { 2 2 }
+			zoomarea = {
+				size = { 100% 100% }
+				scissor = yes
+				pan_position = { -4 -4 }
+				zoomwidget = {
+					icon = {
+						widgetanchor = center
+						size = { 37 47 }
+						texture_density = 2
+						block "icon_texture" {
+							texture = "gfx/interface/icons/government_reforms/illustrations/peasant_republic_reform.dds"
+						}
+					}
+				}
+			}
+		}
+
+		button = {
+			size = { 100% 100% }
+
+			background = {
+				texture = "gfx/interface/buttons/estate_privileges/frame_shadow_ep2.dds"
+				texture_density = 2
+				alpha = 0.5
+				modify_texture = {
+					using = color_brown_leather_texture
+					blend_mode = multiply
+				}
+			}
+
+			texture = "gfx/interface/buttons/estate_privileges/frame_1_ep2.dds"
+			texture_density = 2
+
+			modify_texture = {
+				using = color_brown_leather_texture
+				blend_mode = overlay
+			}
+
+			modify_texture = {
+				using = color_brown_leather_texture
+				blend_mode = add
+				alpha = 0.5
+			}
+		}
+	}
+
+	type button_plus = button {
+		texture = "gfx/interface/buttons/blue_button_plus_minus.dds"
+		texture_density = 2
+		using = snd_UI_plus
+		frame_grid = {4 1}
+		using = button_common_properties_template
+
+		icon = {
+			size = {100% 100%}
+			parentanchor = center
+			texture = "gfx/interface/buttons/flats/add.dds"
+			texture_density = 2
+
+			modify_texture = {
+				using = color_gold_texture
+			}
+			modify_texture = {
+				using = overlay_window_texture
+				blend_mode = overlay
+				alpha = 0.9
+			}
+
+			background = {
+				texture = "gfx/interface/buttons/flats/add.dds"
+				texture_density = 2
+				margin_bottom = 1
+
+				modify_texture = {
+					using = color_black_texture
+				}
+			}
+
+			glow = {
+				name = "drop_shadow"
+				glow_radius = 3
+				color = {0.0 0.0 0.0 1.0}
+				alpha = 0.2
+			}
+		}
+	}
+
+	type button_square_plus = button {
+		texture = "gfx/interface/buttons/button_square_plusminus.dds"
+		texture_density = 2
+		using = snd_UI_plus
+		frame_grid = {4 1}
+		using = button_common_properties_template
+
+		using = bg_square_tile_shadow
+
+		block "square_icon_extra" {}
+
+		icon = {
+			block "square_icon_size" {
+				size = {100% 100%}
+			}
+			parentanchor = center
+			block "plusminus_icon" {
+				texture = "gfx/interface/buttons/flats/add.dds"
+			}
+			texture_density = 2
+
+			modify_texture = {
+				using = color_gold_texture
+			}
+			modify_texture = {
+				using = overlay_window_texture
+				blend_mode = overlay
+				alpha = 0.9
+			}
+
+			background = {
+				block "plusminus_icon" {
+					texture = "gfx/interface/buttons/flats/add.dds"
+				}
+				texture_density = 2
+				margin_bottom = 1
+
+				modify_texture = {
+					using = color_black_texture
+				}
+			}
+
+			glow = {
+				name = "drop_shadow"
+				glow_radius = 3
+				color = {0.0 0.0 0.0 1.0}
+				alpha = 0.2
+			}
+		}
+	}
+
+	type button_square_minus = button_square_plus {
+		using = snd_UI_plus
+		blockoverride "plusminus_icon" {
+			texture = "gfx/interface/buttons/flats/minus.dds"
+		}
+	}
+
+	type button_minus = button {
+		texture = "gfx/interface/buttons/blue_button_plus_minus.dds"
+		texture_density = 2
+		using = snd_UI_plus
+		frame_grid = {4 1}
+		using = button_common_properties_template
+
+		icon = {
+			size = {100% 100%}
+			parentanchor = center
+			texture = "gfx/interface/buttons/flats/minus.dds"
+			texture_density = 2
+
+			modify_texture = {
+				using = color_gold_texture
+			}
+			modify_texture = {
+				using = overlay_window_texture
+				blend_mode = overlay
+				alpha = 0.9
+			}
+
+			background = {
+				texture = "gfx/interface/buttons/flats/minus.dds"
+				texture_density = 2
+				margin_bottom = 1
+
+				modify_texture = {
+					using = color_black_texture
+				}
+			}
+
+			glow = {
+				name = "drop_shadow"
+				glow_radius = 3
+				color = {0.0 0.0 0.0 1.0}
+				alpha = 0.2
+			}
+		}
+	}
+
+	# type button_upgrade = button
+	# {
+	# 	texture = "gfx/interface/buttons/blue_button_plus_minus.dds"
+	# 	texture_density = 2
+	# 	using = snd_UI_plus
+	# 	frame_grid = {4 1}
+	# 	using = button_common_properties_template
+
+	# 	icon = {
+	# 		block "square_icon_size" {
+	# 			size = {80% 80%}
+	# 		}
+	# 		parentanchor = center
+	# 		texture = "gfx/interface/buttons/flats/upgrade_button2.dds"
+	# 		texture_density = 2
+
+	# 		modify_texture = {
+	# 			using = color_gold_texture
+	# 		}
+	# 		modify_texture = {
+	# 			using = overlay_window_texture
+	# 			blend_mode = overlay
+	# 			alpha = 0.9
+	# 		}
+
+	# 		background = {
+	# 			texture = "gfx/interface/buttons/flats/upgrade_button2.dds"
+	# 			texture_density = 2
+	# 			margin_bottom = 1
+
+	# 			modify_texture = {
+	# 				using = color_black_texture
+	# 			}
+	# 		}
+
+	# 		glow = {
+	# 			name = "drop_shadow"
+	# 			glow_radius = 3
+	# 			color = {0.0 0.0 0.0 1.0}
+	# 			alpha = 0.2
+	# 		}
+	# 	}
+	# }
+
+	type estate_reform_action_button_alt = widget {
+		size = { 32 45 }
+		widget = {
+			scissor = yes
+			size = { 100% 100% }
+			block "reform_item_normal_visibility" {
+				visible = "[And(Not(ReformItem.IsUnique),Not(ReformItem.IsMajor))]"
+			}
+			background = {
+				texture = "gfx/interface/buttons/estate_privileges/bg_ep.dds"
+				texture_density = 2
+				modify_texture = {
+					using = color_dark_brown_texture
+					alpha = 0.4
+				}
+				glow = {
+					name = "drop_shadow"
+					glow_radius = 3
+					color = {0.0 0.0 0.0 1.0}
+					alpha = 0.7
+
+					block "glow_visible" {
+						visible = yes
+					}
+				}
+			}
+
+			widget = {
+				size = { 98% 98% }
+
+				icon = {
+					scissor = yes
+					size = { 100% 100% }
+					parentanchor = center
+					texture_density = 2
+					block "icon_texture" {
+						texture = "gfx/interface/icons/government_reforms/illustrations/peasant_republic_reform.dds"
+					}
+				}
+			}
+
+			### NORMAL	
+			button = {
+				size = {100% 102%}
+				block "estate_reform_button_visible" {
+					visible = yes
+				}
+				using = button_common_properties_template
+				texture = "gfx/interface/buttons/government_reform_normal_button.dds"
+				texture_density = 2
+				frame_grid = {4 1}
+				block "reform_action" {}
+			}
+
+			icon = {
+				size = {100% 102%}
+				block "estate_reform_icon_visible" {
+					visible = no
+				}
+				texture = "gfx/interface/buttons/government_reform_normal_button.dds"
+				texture_density = 2
+				frame_grid = {4 1}
+			}
+		}
+
+		widget = {
+			scissor = yes
+			size = { 100% 100% }
+			block "reform_item_unique_visibility" {
+				visible = "[ReformItem.IsUnique]"
+			}
+			background = {
+				texture = "gfx/interface/buttons/estate_privileges/bg_ep.dds"
+				texture_density = 2
+				modify_texture = {
+					using = color_dark_brown_texture
+					alpha = 0.4
+				}
+				glow = {
+					name = "drop_shadow"
+					glow_radius = 3
+					color = {0.0 0.0 0.0 1.0}
+					alpha = 0.7
+
+					block "glow_visible" {
+						visible = yes
+					}
+				}
+			}
+
+			widget = {
+				size = { 98% 98% }
+
+				icon = {
+					scissor = yes
+					size = { 100% 100% }
+					parentanchor = center
+					texture_density = 2
+					block "icon_texture" {
+						texture = "gfx/interface/icons/government_reforms/illustrations/peasant_republic_reform.dds"
+					}
+				}
+			}
+
+			##UNIQUE
+			button = {
+				size = {100% 102%}
+				block "estate_reform_button_visible" {
+					visible = yes
+				}
+				using = button_common_properties_template
+				texture = "gfx/interface/buttons/government_reform_unique_button.dds"
+				texture_density = 2
+				frame_grid = {4 1}
+				block "reform_action" {}
+			}
+
+			icon = {
+				size = {100% 102%}
+				block "estate_reform_icon_visible" {
+					visible = no
+				}
+				texture = "gfx/interface/buttons/government_reform_unique_button.dds"
+				texture_density = 2
+				frame_grid = {4 1}
+			}
+		}
+
+		widget = {
+			size = { 100% 100% }
+			block "reform_item_major_visibility" {
+				visible = "[And(Not(ReformItem.IsUnique),ReformItem.IsMajor)]"
+			}
+			background = {
+				texture = "gfx/interface/buttons/estate_privileges/bg_ep.dds"
+				texture_density = 2
+				modify_texture = {
+					using = color_dark_brown_texture
+					alpha = 0.4
+				}
+				glow = {
+					name = "drop_shadow"
+					glow_radius = 3
+					color = {0.0 0.0 0.0 1.0}
+					alpha = 0.7
+
+					block "glow_visible" {
+						visible = yes
+					}
+				}
+			}
+
+			widget = {
+				size = { 98% 98% }
+
+				icon = {
+					scissor = yes
+					size = { 100% 100% }
+					parentanchor = center
+					texture_density = 2
+					block "icon_texture" {
+						texture = "gfx/interface/icons/government_reforms/illustrations/peasant_republic_reform.dds"
+					}
+				}
+			}
+
+			##MAJOR
+			button = {
+				size = {117% 102%}
+				position = {-3 0}
+				block "estate_reform_button_visible" {
+					visible = yes
+				}
+				using = button_common_properties_template
+				texture = "gfx/interface/buttons/government_reform_major_button.dds"
+				texture_density = 2
+				frame_grid = {4 1}
+				block "reform_action" {}
+			}
+
+			icon = {
+				size = {117% 102%}
+				position = {-3 0}
+				block "estate_reform_icon_visible" {
+					visible = no
+				}
+				texture = "gfx/interface/buttons/government_reform_major_button.dds"
+				texture_density = 2
+				frame_grid = {4 1}
+			}
+		}
+	}
+
+	type estate_privilege_button_plus = button_icon {
+		size = { 32 45 }
+		texture = "gfx/interface/buttons/estate_privileges/ep_button_plus.dds"
+		texture_density = 2
+
+		# using = bg_circle
+		modify_texture = {
+			using = color_dark_brown_texture
+			blend_mode = multiply
+			alpha = 0.8
+		}
+
+		using = overlay_texture_overlay
+
+		icon = {
+			size = { 80% 60% }
+			parentanchor = center
+			texture = "gfx/interface/buttons/estate_privileges/ep_plus.dds"
+			texture_density = 2
+
+			modify_texture = {
+				using = color_new_gold_texture
+				blend_mode = add
+			}
+
+			glow = {
+				name = "drop_shadow"
+				glow_radius = 3
+				color = {0.0 0.0 0.0 1.0}
+				alpha = 0.8
+			}
+		}
+	}
+
+	type estate_privilege2_button_plus = button_icon {
+		size = { 34 40 }
+		texture = "gfx/interface/buttons/estate_privileges/ep2_button_plus.dds"
+		texture_density = 2
+
+		# using = bg_circle
+		modify_texture = {
+			using = color_dark_brown_texture
+			blend_mode = multiply
+			alpha = 0.8
+		}
+
+		using = overlay_texture_overlay
+
+		button = {
+			size = { 70% 60% }
+			parentanchor = center
+			texture = "gfx/interface/buttons/estate_privileges/ep_plus.dds"
+			texture_density = 2
+
+			modify_texture = {
+				using = color_new_gold_texture
+				blend_mode = add
+			}
+
+			glow = {
+				name = "drop_shadow"
+				glow_radius = 3
+				color = {0.0 0.0 0.0 1.0}
+				alpha = 0.8
+			}
+		}
+	}
+
+	# type flat_sneaky_button = button {
+	# 	size = { 80 30 }
+	# 	texture = "gfx/interface/buttons/sneaky_button_black.dds"
+	# 	spriteType = corneredstretched
+	# 	spriteborder = { 25 0 }
+	# 	texture_density = 2
+		
+	# 	modify_texture = {
+	# 		block "flat_sneaky_button_color" {
+	# 			using = color_government_texture
+	# 		}
+	# 	}
+	# 	modify_texture = {
+	# 		using = overlay_paper_03
+	# 		blend_mode = overlay
+	# 		alpha = 0.3
+	# 	}
+	# 	background = {
+	# 		texture = "gfx/interface/component_tiles/tile_card_shadow.dds"
+	# 		texture_density = 2
+	# 		spriteType = corneredstretched
+	# 		spriteBorder = {20 20}
+	# 		margin = {5 5}
+	# 	}
+	# }
+
+	type sneaky_button = button {
+		size = { 80 30 }
+		texture = "gfx/interface/buttons/sneaky_button.dds"
+		spriteType = corneredstretched
+		spriteborder = { 25 0 }
+		texture_density = 2
+		modify_texture = {
+			using = overlay_paper_03
+			blend_mode = overlay
+			alpha = 0.3
+		}
+		background = {
+			texture = "gfx/interface/component_tiles/tile_card_shadow.dds"
+			texture_density = 2
+			spriteType = corneredstretched
+			spriteBorder = {20 20}
+			margin = {5 5}
+		}
+	}
+
+	type estate_reform_button_plus = button_icon {
+		size = { 32 45 }
+		texture = "gfx/interface/buttons/estate_privileges/er_button_plus.dds"
+		texture_density = 2
+
+		# using = bg_circle
+		modify_texture = {
+			using = color_dark_brown_texture
+			blend_mode = multiply
+			alpha = 0.8
+		}
+
+		using = overlay_texture_overlay
+
+		icon = {
+			size = { 80% 60% }
+			parentanchor = center
+			texture = "gfx/interface/buttons/estate_privileges/ep_plus.dds"
+			texture_density = 2
+
+			modify_texture = {
+				using = color_new_gold_texture
+				blend_mode = add
+			}
+
+			glow = {
+				name = "drop_shadow"
+				glow_radius = 3
+				color = {0.0 0.0 0.0 1.0}
+				alpha = 0.8
+			}
+		}
+	}
+
+	### navigational alt buttons
+	type navigational_button_alt = button_icon_stretch {
+		block "button_texture" {
+			texture = "gfx/interface/buttons/navigational_frame.dds"
+			size = { 35 35 }
+		}
+		texture_density = 2
+		modify_texture = {
+			using = overlay_window_texture
+			blend_mode = overlay
+			alpha = 0.8
+		}
+		modify_texture = {
+			using = overlay_stone_texture
+			blend_mode = alphamultiply
+			alpha = 0.3
+		}
+
+		block "navigational_bg" {
+			background = {
+				texture = "gfx/interface/component_tiles/navigational_square_tile.dds"
+				texture_density = 2
+				margin = {1 1}
+				modify_texture = {
+					using = color_dark_blue_texture
+					blend_mode = multiply
+				}
+			}
+		}
+
+		glow = {
+			glow_radius = 5
+			color = { 1.0 0.85 0.55 1.0 }
+			alpha = 0.6
+
+			block "glow_visible" {
+				visible = no
+			}
+		}
+
+		icon = {
+			block "icon_size" {
+				size = { 43 43 }
+			}
+			block "icon_texture" {
+				texture = "gfx/interface/buttons/flats/advances.dds"
+				visible = no
+			}
+			modify_texture = {
+				using = overlay_stone_texture
+				blend_mode = alphamultiply
+				alpha = 0.5
+			}
+
+			parentanchor = center
+			texture_density = 2
+		}
+
+		# block "navigational_button_alt_extra" {}
+	}
+
+	### navigational alt buttons two rows
+	# type navigational_2row_button_alt = button_icon_stretch {
+	# 	block "button_texture" {
+	# 		texture = "gfx/interface/buttons/navigational_frame.dds"
+	# 		size = { 35 35 }
+	# 	}
+	# 	texture_density = 2
+
+	# 	modify_texture = {
+	# 		using = overlay_window_texture
+	# 		blend_mode = overlay
+	# 		alpha = 0.5
+	# 	}
+
+	# 	modify_texture = {
+	# 		using = overlay_stone_texture
+	# 		blend_mode = overlay
+	# 		alpha = 0.5
+	# 	}
+
+	# 	block "navigational_bg" {
+	# 		background = {
+	# 			texture = "gfx/interface/component_tiles/square_tile.dds"
+	# 			texture_density = 2
+	# 			modify_texture = {
+	# 				using = color_dark_blue_texture
+	# 				blend_mode = multiply
+	# 			}
+	# 		}
+	# 	}
+
+	# 	glow = {
+	# 		glow_radius = 5
+	# 		color = { 1.0 0.85 0.55 1.0 }
+	# 		alpha = 0.6
+
+	# 		block "glow_visible" {
+	# 			visible = no
+	# 		}
+	# 	}
+
+	# 	vbox = {
+	# 		using = layoutpolicy_expanding
+	# 		margin_top = 3
+	# 		spacing = -4
+
+	# 		expand = {}
+
+	# 		icon = {
+	# 			size = { 43 43 }
+	# 			block "icon_texture" {
+	# 				texture = "gfx/interface/buttons/flats/advances.dds"
+	# 				visible = no
+	# 			}
+	# 			modify_texture = {
+	# 				using = overlay_stone_texture
+	# 				blend_mode = alphamultiply
+	# 				alpha = 0.5
+	# 			}
+
+	# 			texture_density = 2
+	# 		}
+	# 		hbox = {
+	# 			text_single = {
+	# 				align = nobaseline
+	# 				maximumsize = { 25 20 }
+	# 				block "navigational_button_text" {
+	# 					raw_text = "todo"
+	# 				}
+	# 			}
+	# 		}
+	# 		expand = {}
+	# 	}
+
+	# 	block "navigational_2row_button_alt_extra" {}
+	# }
+
+	type navigational_checkbox_alt = checkbutton {
+
+		texture = "gfx/interface/buttons/navigational_checkbox_frame.dds"
+		texture_density = 2
+		frame_grid = {2 1}
+		size = { 30 30 }
+
+		modify_texture = {
+			using = overlay_window_texture
+			blend_mode = overlay
+			alpha = 0.8
+		}
+		modify_texture = {
+			using = overlay_stone_texture
+			blend_mode = alphamultiply
+			alpha = 0.3
+		}
+
+		# block "navigational_checkbox_bg" {
+			background = {
+				texture = "gfx/interface/component_tiles/navigational_square_tile.dds"
+				texture_density = 2
+				margin = {1 1}
+				modify_texture = {
+					using = color_dark_blue_texture
+					blend_mode = multiply
+				}
+			}
+		# }
+
+		icon = {
+			block "icon_texture" {
+				texture = "gfx/interface/buttons/flats/advances.dds"
+			}
+
+			block "icon_size" {
+				size = { 37 37 }
+			}
+			texture_density = 2
+			parentanchor = center
+		}
+	}
+
+	type button_icon_stretch = button {
+		size = { 50 50 }
+		texture = "gfx/interface/icons/flat_icons/blank.dds"
+		block "button_icon_stretch_sprite" {
+			spriteType = corneredstretched
+			spriteborder = { 19 19 }
+		}
+		texture_density = 2
+
+		# block "button_modify_texture" {
+			modify_texture = {
+				using = color_new_gold_texture
+			}
+		# }
+	}
+					
+	type UnitAbilitCheckbox = header_button_left {
+		blockoverride "button_icon_stretch_sprite" {}
+		blockoverride "header_button_frame_inner" {visible = no}
+		# blockoverride "header_button_icon_size" { size = { 100% 100% } }
+		blockoverride "header_button_text_layout" {}
+		blockoverride "header_button_template_push_properties"{using = button_tab_toggle_properties}
+		blockoverride "header_button_template_texture"{using = pressed_button_texture_light}
+
+		blockoverride "header_button_left_extra_texture" {
+			background = {
+				texture = "gfx/interface/component_tiles/square_glow.dds"
+				margin = {5 5}
+				block "header_button_modify_visible" {}
+				modify_texture = {
+					using = color_bone_texture
+				}
+				modify_texture = {
+					using = color_white_texture
+					blend_mode = overlay
+					alpha = 0.2
+				}
+			}
+		}
+		blockoverride "icon_overlay" {
+			modify_texture = {
+				block "header_button_modify_visible" {}
+				using = color_new_gold_texture
+				alpha = 0.5
+			}
+			modify_texture = {
+				block "header_button_modify_visible" {}
+				using = overlay_stone_texture
+				blend_mode = overlay
+				alpha = 0.2
+			}
+			modify_texture = {
+				block "header_button_modify_visible" {}
+				using = overlay_window_texture
+				blend_mode = overlay
+				alpha = 0.2
+			}
+			glow = {
+				block "header_button_modify_visible" {}	
+				name = "drop_shadow"
+				glow_radius = 2
+				color = {0.0 0.0 0.0 1.0}
+				alpha = 0.3
+			}
+		}
+	}
+
+	type header_button_left = button {
+		
+		using = bg_navigational_header_button_left
+		using = header_button_template
+
+		blockoverride "header_button_orientation" { righttoleft = no }
+		blockoverride "header_button_text_margins" {
+			margin_left = 5
+			margin_right = 20
+		}
+		blockoverride "header_button_text_align" { align = left|nobaseline }
+	}
+
+	type button_checkbox_auto = checkbutton {
+		texture = "gfx/interface/buttons/checkbox_auto.dds"
+		texture_density = 2
+		frame_grid = { 2 1 }
+		size = { 30 30 }
+		using = snd_UI_checkbutton_automation
+
+		background = {
+			texture = "gfx/interface/buttons/checkbox_auto_bg.dds"
+			texture_density = 2
+			using = color_dark_blue
+			margin = { 1 1 }
+			shaderfile = "gfx/FX/pdxgui_default.shader"
+		}
+	}
+
+	type button_check = button {
+		using = button_checkbox_template
+	}
+
+    type button_checkbox = checkbutton {
+		using = button_checkbox_template
+	}
+}

@@ -1,0 +1,46 @@
+types Icons
+{
+	type gender_icon = widget {
+		block "gender_icon_size" {
+			size = { 24 24 }
+		}
+
+		icon = {
+			visible = "[Not(Character.IsFemale)]"
+			block "tooltip_override" {
+				tooltip = "GENDER_MALE_TOOLTIP"
+			}
+			texture = "gfx/interface/icons/ruler/male.dds"
+			size = { 100% 100% }
+		}
+
+		### Icon if is female
+		icon = {
+			visible = "[Character.IsFemale]"
+			block "tooltip_override" {
+				tooltip = "GENDER_FEMALE_TOOLTIP"
+			}
+			texture = "gfx/interface/icons/ruler/female.dds"
+			size = { 100% 100% }
+		}
+	}
+
+	# type masked_icon = icon
+	# {
+	# 	gfxtype = blendable_mask_gfx
+	# 	shaderfile = "gfx/FX/gui_blendable_mask.shader"
+	# 	blendable_mask_mode = overlay
+	# 	blendable_channel = "r"
+	# 	texture_density = 1
+	# 	spriteborder = { 15 15 }
+	# 	alpha = 1
+	# }
+
+	type masked_threecolor_icon = icon {
+		gfxtype = three_color_blendable_mask
+		shaderfile = "gfx/FX/gui_threecolor_blendable_mask.shader"
+		texture_density = 1
+		spriteborder = { 15 15 }
+		alpha = 1
+	}
+} # END OF "types Icons"

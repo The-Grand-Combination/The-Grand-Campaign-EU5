@@ -1,0 +1,456 @@
+JominiServerBrowserWindow = {
+	size = { 100% 100% }
+	position = { 430 0 }
+
+	parentanchor = left
+	movable = no
+
+	blockoverride "jominimultiplayertextbox" {
+		using = text_single_template
+	}
+
+	blockoverride "serverbrowser_background" {}
+
+	blockoverride "serverbrowser_margin" {
+
+		@margin_menu_base = 450
+		@margin_other_base = 30
+
+		alwaystransparent = yes
+
+		margin_right = @[margin_menu_base]
+		margin_left = @[margin_other_base]
+		margin_bottom = @[margin_other_base + 2]
+		margin_top = @[margin_other_base]
+
+		background = {
+			using = tile_background_squared_texture
+			alpha = 0.93
+
+			modify_texture = {
+				using = color_dark_blue_texture
+			}
+
+			using = overlay_window
+			using = overlay_leather
+
+			margin_right = @[-margin_menu_base + 7]
+			margin_left = @[-margin_other_base + 7]
+			margin_bottom = @[-margin_other_base + 7]
+			margin_top = @[-margin_other_base + 7]
+		}
+
+		background = {
+			using = tile_frame_squared_texture
+			alpha = 0.9
+			
+			modify_texture = {
+				texture = "gfx/interface/colors/new_gold.dds"
+			}
+
+			modify_texture = {
+				using = tile_frame_squared_bevel_texture
+				alpha = 0.1
+			}
+
+			using = overlay_window
+			using = overlay_stone
+
+			margin_right = @[-margin_menu_base + 2]
+			margin_left = @[-margin_other_base + 2]
+			margin_bottom = @[-margin_other_base + 2]
+			margin_top = @[-margin_other_base + 2]
+		}
+
+		background = {
+			using = tile_background_squared_texture
+
+			modify_texture = {
+				using = color_dark_brown_texture
+			}
+
+			using = overlay_window
+			using = overlay_leather
+
+			margin_right = @[-margin_menu_base]
+			margin_left = @[-margin_other_base]
+			margin_bottom = @[-margin_other_base]
+			margin_top = @[-margin_other_base - 90]
+		}
+
+		background = {
+			using = color_brown_leather_texture
+			alpha = 0.2
+
+			modify_texture = {
+				using = color_white_texture
+				alpha = 0.1
+			}
+
+			modify_texture = {
+				using = bg_fade_vertical_down_mask_texture
+				blend_mode = alphamultiply
+			}
+
+			using = overlay_leather
+
+			margin_right = @[-margin_menu_base]
+			margin_left = @[-margin_other_base]
+			margin_bottom = @[-margin_other_base]
+			margin_top = @[-margin_other_base - 90]
+		}
+
+		background = {
+			using = bg_vignette_mask_texture
+			alpha = 0.5
+
+			modify_texture = {
+				using = color_black_texture
+				blend_mode = multiply
+			}
+
+			margin_right = @[-margin_menu_base]
+			margin_left = @[-margin_other_base]
+			margin_bottom = @[-margin_other_base]
+			margin_top = @[-margin_other_base - 90]
+		}
+
+		background = {
+			using = pattern_vertical_bis_graphical_culture_texture
+			alpha = 0.4
+
+			margin_right = @[-margin_menu_base]
+			margin_left = @[-margin_other_base]
+			margin_bottom = @[-margin_other_base]
+			margin_top = @[-margin_other_base - 90]
+		}
+	}
+
+	blockoverride "serverbrowser_top_hbox" {
+		layoutpolicy_horizontal = expanding
+		size = { -1 50 }
+		using = bg_dynasty_header
+		using = bg_cabinet_card_frame
+	}
+
+	blockoverride "serverbrowser_top_row_properties" {
+		margin = { 20 0 }
+		spacing = 20
+	}
+
+	blockoverride "serverbrowser_bottom_row_properties" {}
+
+	blockoverride "serverbrowser_top_spacer" {
+		layoutpolicy_horizontal = expanding
+		size = { -1 5 }
+	}
+
+	blockoverride "serverbrowser_bottom_spacer" {
+		visible = no
+	}
+
+	blockoverride "serverbrowser_bottom_hbox" {
+		visible = no
+	}
+
+	blockoverride "jominimultiplayereditbox" {
+		default_format = "#high"
+		using = editbox_background
+		margin = { 10 0 }
+		align = nobaseline
+		minimumsize = { -1 30 }
+		maximumsize = { -1 30 }
+	}
+
+	blockoverride "serverbrowser_join_button" {
+		default_format = "#color_white"
+		minimumsize = { -1 30 }
+		maximumsize = { 90 30 }
+
+		block "texture" {
+			using = button_regular_texture
+		}
+	}
+
+	blockoverride "serverbrowser_join_button_onclick" {
+		onclick = "[JoinJominiServer(JominiServer.Self)]"
+	}
+
+	blockoverride "serverbrowser_checkbutton" {
+		flowcontainer = {
+			direction = horizontal
+			spacing = 10
+
+			checkbutton = {
+				using = checkbox_square_alt_template
+
+				block "checkbutton" {}
+				tooltip_enabled = no
+			}
+
+			text_single = {
+				parentanchor = vcenter
+				block "label" {
+					text = "LABEL"
+				}
+			}
+		}
+	}
+
+	blockoverride "serverbrowser_header" {
+		window_header_alt = {
+			blockoverride "header_text" {
+				text = "JOMINI_MULTIPLAYER_GUI_SERVER_BROWSER_HEADER"
+			}
+		}
+	}
+
+	blockoverride "jomini_multiplayer_push_button" {
+		using = button_default_template
+	}
+
+	blockoverride "serverbrowser_row_height" {
+		addrow = 50
+	}
+
+	blockoverride "serverbrowser_item_size" {
+		layoutpolicy_horizontal = expanding
+		size = { 100% 50 }
+	}
+
+	blockoverride "serverbrowser_item_properties" {
+		maximumsize = { -1 40 }
+		parentanchor = vcenter
+
+		background = {
+			margin = { -15 0 }
+			visible = "[IsEven_int32(PdxGuiWidget.GetIndexInDataModel)]"
+			using = color_white_texture
+			alpha = 0.1
+		}
+	}
+
+	blockoverride "serverbrowser_join_server" {
+		size = { 200 38 }
+	}
+
+	blockoverride "has_password_icon_properties" {
+		size = { 32 32 }
+		position = { 0 4 }
+		using = icon_locked
+	}
+
+	blockoverride "no_password_icon_properties" {
+		size = { 32 32 }
+		position = { 0 3 }
+		using = icon_unlocked
+	}
+
+	blockoverride "serverbrowser_list_row_properties" {
+		margin = { 20 10 }
+	}
+
+	blockoverride "serverbrowser_scrollbar" {
+		using = Scrollbar_Vertical
+	}
+
+	blockoverride "serverbrowser_divider" {
+		widget = {
+			layoutpolicy_vertical = expanding
+			size = { 20 -1 }
+
+			icon = {
+				visible = "[Not(Or( IsDataModelEmpty( JominiServerBrowserGui.AccessServers ), JominiServerBrowserGui.IsRefreshing ))]"
+				parentanchor = center
+				size = { 1 100% }
+				using = color_bone_texture
+				alpha = 0.3
+			}
+		}
+	}
+
+	blockoverride "serverbrowser_spacer_widget" {
+		widget = {
+			layoutpolicy_vertical = expanding
+			size = { 20 -1 }
+		}
+	}
+
+	blockoverride "serverbrowser_emptyspace" {
+		size = { 60 20 }
+	}
+
+	blockoverride "serverbrowser_searchbox" {
+		text_single = {
+			size = { 100% 100% }
+			margin = { 12 0 }
+			parentanchor = vcenter
+			autoresize = no
+			alpha = 0.5
+			alwaystransparent = yes
+			align = left|nobaseline
+
+			# block "editbox_empty" {
+				visible = "[IsSelfOrAnyChildAnEmptyEditbox(PdxGuiWidget.AccessParent.Self)]"
+			# }
+
+			block "editbox_label" {
+				text = "MULTIPLAYER_GUI_SEARCH_FOR_SERVER_PROMPT"
+			}
+		}
+	}
+
+	# [SD] CASEAR-55844 assets cleanup - commenting unused(?) gui script
+	# blockoverride "asc_button_properties" {
+	# 	texture = "gfx/interface_old/from_sulla/tiny_button_up.dds"
+	# 	size = { 18 18 }
+	# }
+
+	# blockoverride "desc_button_properties" {
+	# 	texture = "gfx/interface_old/from_sulla/tiny_button_down.dds"
+	# 	size = { 18 18 }
+	# }
+
+	# Password popup
+	vbox = {
+		name = "password_popup"
+		visible_at_creation = no
+		layer = confirmation
+		parentanchor = center
+		widgetanchor = right|vcenter
+		minimumsize = { 600 300 }
+		maximumsize = { 600 300 }		
+		using = bg_window_message_t3		
+		spacing = 10
+
+		hbox = {
+			margin = {0 15}
+			layoutpolicy_horizontal = expanding
+			using = bg_message_dialog_title
+
+			textbox = {
+				minimumsize = { 400 -1 }
+				maximumsize = { 400 100 }
+				autoresize = yes
+				multiline = yes
+
+				using = Font_Size_Big
+				default_format = "#yellow_titles"
+				fontsize = 30
+				fontsize_min = 15
+				align = center|nobaseline
+				text = "PASSWORD_REQUIRED"
+			}
+		}
+
+		expand = {}
+
+		scrollarea = {
+			maximumsize = { -1 400 }
+			autoresizescrollarea = yes
+			alwaystransparent = no
+			scrollbarpolicy_horizontal = always_off
+
+			scrollbar_vertical = {
+				using = Scrollbar_Vertical
+			}
+
+			scrollwidget = {
+				vbox = {
+					spacing = 10
+					textbox = {
+						minimumsize = { 400 -1 }
+						maximumsize = { 400 100 }
+						autoresize = yes
+						multiline = yes
+	
+						using = Font_Size_Big
+						default_format = "#yellow_titles"
+						fontsize = 20
+						fontsize_min = 15
+						align = center|nobaseline
+						text = "ENTER_TO_CONTINUE"
+					}
+
+					editbox = {
+						focuspolicy = all
+						alwaystransparent = no			
+						default_format = "#yellow_titles"
+						size = { 300 24 }		
+		
+						background = {
+							margin_left = 5
+							margin_top = -2
+							texture = "gfx/editor_gui/editor_field.dds"
+							spriteType = CorneredStretched
+							spriteborder = { 4 4 }
+							shaderfile = "gfx/FX/pdxgui_default.shader"
+						}
+		
+						name = "password"
+						password = yes
+						onreturnpressed = "[SubmitPassword]"
+					}
+				}
+			}
+		}
+
+		expand = {}
+
+		hbox = {
+			margin = { 0 10 }
+			margin_bottom = 25
+			spacing = 25
+
+			button_regular = {
+				size = { 150 40 }
+				layoutpolicy_horizontal = expanding
+				text = "JOMINI_MULTIPLAYER_GUI_POPUP_DECLINE"
+				
+				onclick = "[DeclinePassword]"
+				tooltip_enabled = no
+				shortcut = close_window
+			}
+
+			button_regular = {
+				size = { 150 40 }
+				layoutpolicy_horizontal = expanding
+				text = "JOMINI_MULTIPLAYER_GUI_POPUP_SUBMIT"
+				onclick = "[SubmitPassword]"
+				enabled = "[Not(IsPasswordEmpty)]"
+				tooltip_enabled = no
+				shortcut = close_window
+			}
+		}
+	}
+}
+
+JominiJoinServerDialogWindow = {
+
+	blockoverride "serverdialog_background" {
+		using = bg_window_default
+	}
+
+	blockoverride "serverdialog_margin" {
+		margin = { 32 32 }
+		spacing = 32
+	}
+
+	blockoverride "jominimultiplayereditbox" {
+		default_format = "#high"
+		using = editbox_background
+		margin = { 10 0 }
+		align = nobaseline
+		minimumsize = { -1 30 }
+		maximumsize = { -1 30 }
+	}
+
+	# blockoverride "jomini_multiplayer_push_button" {
+	# 	using = pops_button_style_template
+	# 	using = pops_button_size_template
+	# }
+
+	blockoverride "jominimultiplayertextbox" {
+		using = text_single_template
+	}
+}

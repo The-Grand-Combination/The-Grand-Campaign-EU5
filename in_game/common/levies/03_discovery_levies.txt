@@ -1,0 +1,50 @@
+﻿# Unique Levies
+
+levy_a_late_longbowmen = {
+	size = 0.03
+	
+	allowed_pop_type = peasants
+
+	allow = {
+		unit_longbowmen_pop_trigger = yes
+	}
+	
+	unit = a_late_longbowmen
+}
+
+levy_a_late_gallowglass = {
+	size = 0.02
+	
+	allow = {
+		unit_gallowglass_pop_trigger = yes
+	}
+	
+	unit = a_late_gallowglass
+}
+
+levy_a_paik = {
+	size = 0.05
+	allow = {
+		unit_indian_paik_location_levy_trigger = yes
+	}
+	unit = a_paik
+}
+
+# Unlockable Levies
+
+levy_a_matchlock_levy = {
+	size = 0.01
+	unit = a_matchlock_levy
+	
+	allowed_pop_type = peasants
+	allowed_pop_type = laborers
+
+}
+
+levy_cavaliers = {
+	size = 0.1
+	
+	allowed_pop_type = nobles
+	
+	unit = a_cavaliers
+}

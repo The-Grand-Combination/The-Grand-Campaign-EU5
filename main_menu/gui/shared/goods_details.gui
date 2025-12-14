@@ -1,0 +1,210 @@
+# types GoodsTypes
+# {
+# 	type goods_details_item = widget 
+# 	{
+# 		layoutpolicy_horizontal = expanding
+# 		size = { -1 40 }
+
+# 		background = {
+# 			visible = "[IsOdd_int32(PdxGuiWidget.GetIndexInParent)]"
+# 			using = color_dark_blue_texture
+# 			alpha = 0.3
+# 		}
+
+# 		hbox = {
+# 			margin = { 10 0 }
+# 			spacing = 10
+# 			block "item_content" {}
+# 		}
+# 	}
+# }
+
+template goods_details_text {
+	using = layoutpolicy_expanding
+	using = Font_Size_Big
+	align = nobaseline
+}
+
+template goods_details {
+	TooltipStatsBar = {
+		blockoverride "items" {
+			TooltipStatBarIconTextItem = { # BASE PRICE
+				blockoverride "item_icon" {
+					size = { 25 25 }
+					texture = "[GetConceptTexture('gold')]"
+					texture_density = 2
+				}
+				blockoverride "item_text" {
+					text = "[Goods.GetDefaultMarketPrice|1]"
+					using = goods_details_text
+				}
+				tooltip = "[market_price|e]"
+				tagtooltip_enabled = yes
+			}	
+
+			TooltipStatBarIconTextItem = { # SOURCES
+				blockoverride "item_icon_obj" {
+					icon = {
+						visible = "[Goods.IsRawMaterial]"
+						size = { 26 26 }
+						texture = "[GetConceptTexture('raw_material')]"
+						texture_density = 2
+					}
+
+					icon = {
+						visible = "[Not(Goods.IsRawMaterial)]"
+						size = { 25 25 }
+						texture = "[GetConceptTexture('produced_good')]"
+						texture_density = 2
+					}
+				}
+				blockoverride "item_text" {
+					raw_text = "[Goods.GetNumSources]"
+					using = goods_details_text
+				}
+				tooltipwidget = { using = good_sources_tooltip }
+			}	
+
+			TooltipStatBarIconTextItem = { # USAGES
+				blockoverride "item_icon" {
+					texture = "[GetConceptTexture('demand')]"
+					texture_density = 2
+				}
+				blockoverride "item_text" {
+					text = "[Goods.GetNumDemands]"
+					using = goods_details_text
+				}
+				tooltipwidget = { using = good_demands_tooltip }
+			}	
+
+			TooltipStatBarIconTextItem = { # TRANSPORT COST
+				blockoverride "item_icon" {
+					size = { 25 25 }
+					texture = "gfx/interface/icons/flat_icons/transport_cost.dds"
+					texture_density = 2
+				}
+				blockoverride "item_text" {
+					raw_text = "[Goods.GetTransportWeight]"
+					using = goods_details_text
+				}
+				tooltipwidget = { using = good_transport_cost_tooltip }
+			}	
+
+			TooltipStatBarIconTextItem = { # FOOD
+				visible = "[GreaterThan_CFixedPoint(Goods.GetFoodOutput, '(CFixedPoint)0')]"
+				blockoverride "item_icon" {
+					size = { 25 25 }
+					texture = "[GetConceptTexture('food')]"
+					texture_density = 2
+				}
+				blockoverride "item_text" {
+					text = "[Goods.GetFoodOutput]"
+					using = goods_details_text
+				}
+				tooltipwidget = { using = good_food_tooltip }
+			}
+		}
+	}
+	
+	TooltipStringPairList = {
+		visible = "[Goods.IsRawMaterial]"
+		textcontext = "[Goods.GetRawMaterialMethodInfo]"
+	}
+	
+	TooltipStringPairList = {
+		visible = "[Goods.HasPopsDemandInfo]"
+		textcontext = "[Goods.GetPopsDemandInfo]"
+	}
+}
+
+template good_sources_tooltip {
+	SimpleContextualTooltipType = {
+		blockoverride "title_icon" {
+			icon = {
+				visible = "[Goods.IsRawMaterial]"
+				using = tooltip_title_icon_size
+				texture = "[GetConceptTexture('raw_material')]"
+			}
+			icon = {
+				visible = "[Not(Goods.IsRawMaterial)]"
+				using = tooltip_title_icon_size
+				texture = "[GetConceptTexture('produced_good')]"
+			}
+		}
+		blockoverride "concept_link" {
+			text = "[SelectLocalization(Goods.IsRawMaterial, 'RAW_MATERIAL_LOC', 'PRODUCED_GOOD_LOC')]"
+		}
+		textcontext = "[Goods.GetSources]"
+	}
+}
+
+template good_demands_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			text = "game_concept_goods_demands"
+		}		
+		blockoverride "title_icon" {
+			icon = {
+				using = tooltip_title_icon_size
+				texture = "[GetConceptTexture('demand')]"
+				texture_density = 2
+			}
+		}
+		blockoverride "concept_link" {
+			text = "[goods|e]"
+		}
+		blockoverride "tooltip_content" {
+			TooltipTextBlock = {
+				blockoverride "text" {
+					text = "[Goods.GetDemandsInfo]"
+				}
+			}
+			TooltipScrolledStringPairList = {
+				visible = "[Not(StringIsEmpty(Goods.GetDemandsForBuildings))]"
+				blockoverride "block_scrollarea" { maximumsize = { -1 300 }}
+				textcontext	= "[Goods.GetDemandsForBuildings]"
+			}
+		}		
+	}
+}
+
+template good_transport_cost_tooltip {
+	SimpleContextualTooltipType = {
+		blockoverride "title_icon" {
+			icon = {
+				using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/flat_icons/transport_cost.dds"
+			}
+		}
+		blockoverride "concept_link" {
+			text = "[merchant_capacity|e]"
+		}
+		textcontext = "GOODS_TRANSPORT_WEIGHT"
+	}
+}
+
+template good_food_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_icon" {
+			icon = {
+				using = tooltip_title_icon_size
+				texture = "[GetConceptTexture('food')]"
+			}
+		}
+		
+		blockoverride "title_text" {
+			text = "FOOD_POP_PROVIDE_TT_TITLE"
+		}
+		blockoverride "concept_link" {
+			text = "[food|e]"
+		}
+		
+		blockoverride "tooltip_content" {
+			TooltipTextBlock = {
+				blockoverride "text" {
+					text = "FOOD_POP_PROVIDE"
+				}
+			}
+		}
+	}
+}

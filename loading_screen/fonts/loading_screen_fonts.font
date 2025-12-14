@@ -1,0 +1,731 @@
+### NotoSans
+
+fontfiles = {
+	name = "NotoSans-Regular"
+	always_load = no
+
+	group = {
+		languages = { "l_english" "l_french" "l_german" "l_russian" "l_spanish" "l_polish" "l_braz_por" "l_turkish" }
+		files = { "fonts/NotoSans/NotoSans-Regular.ttf" "fonts/NotoSansSC/NotoSansSC-Regular.ttf" "fonts/NotoSansJP/NotoSansJP-Regular.ttf" "fonts/NotoSansKR/NotoSansKR-Regular.ttf" }
+	}
+
+	group = {
+		languages = { "l_simp_chinese" }
+		files = { "fonts/NotoSans/NotoSans-Regular.ttf" "fonts/NotoSansSC/NotoSansSC-Regular.ttf" "fonts/NotoSansJP/NotoSansJP-Regular.ttf" "fonts/NotoSansKR/NotoSansKR-Regular.ttf" }
+	}
+
+	group = {
+		languages = { "l_korean" }
+		files = { "fonts/NotoSans/NotoSans-Regular.ttf" "fonts/NotoSansKR/NotoSansKR-Regular.ttf" "fonts/NotoSansSC/NotoSansSC-Regular.ttf" "fonts/NotoSansJP/NotoSansJP-Regular.ttf" }
+	}
+
+	group = {
+		languages = { "l_japanese" }
+		files = { "fonts/NotoSans/NotoSans-Regular.ttf" "fonts/NotoSansJP/NotoSansJP-Regular.ttf" "fonts/NotoSansSC/NotoSansSC-Regular.ttf" "fonts/NotoSansKR/NotoSansKR-Regular.ttf" }
+	}
+}
+
+fontfiles = {
+	name = "NotoSans-Light"
+	always_load = no
+
+	group = {
+		languages = { "l_english" "l_french" "l_german" "l_russian" "l_spanish" "l_polish" "l_braz_por" "l_turkish" }
+		files = { "fonts/NotoSans/NotoSans-Light.ttf" "fonts/NotoSansSC/NotoSansSC-Light.ttf" "fonts/NotoSansJP/NotoSansJP-Light.ttf" "fonts/NotoSansKR/NotoSansKR-Light.ttf" }
+	}
+
+	group = {
+		languages = { "l_simp_chinese" }
+		files = { "fonts/NotoSans/NotoSans-Light.ttf" "fonts/NotoSansSC/NotoSansSC-Light.ttf" "fonts/NotoSansJP/NotoSansJP-Light.ttf" "fonts/NotoSansKR/NotoSansKR-Light.ttf" }
+	}
+
+	group = {
+		languages = { "l_korean" }
+		files = { "fonts/NotoSans/NotoSans-Light.ttf" "fonts/NotoSansKR/NotoSansKR-Light.ttf" "fonts/NotoSansSC/NotoSansSC-Light.ttf" "fonts/NotoSansJP/NotoSansJP-Light.ttf" }
+	}
+
+	group = {
+		languages = { "l_japanese" }
+		files = { "fonts/NotoSans/NotoSans-Light.ttf" "fonts/NotoSansJP/NotoSansJP-Light.ttf" "fonts/NotoSansSC/NotoSansSC-Light.ttf" "fonts/NotoSansKR/NotoSansKR-Light.ttf" }
+	}
+}
+
+fontfiles = {
+	name = "NotoSans-Italic"
+	always_load = no
+
+	group = {
+		languages = { "l_english" "l_french" "l_german" "l_russian" "l_spanish" "l_polish" "l_braz_por" "l_turkish" }
+		files = { "fonts/NotoSans/NotoSans-Italic.ttf" "fonts/NotoSansSC/NotoSansSC-Regular.ttf" "fonts/NotoSansJP/NotoSansJP-Regular.ttf" "fonts/NotoSansKR/NotoSansKR-Regular.ttf" }
+	}
+
+	group = {
+		languages = { "l_simp_chinese" }
+		files = { "fonts/NotoSans/NotoSans-Italic.ttf" "fonts/NotoSansSC/NotoSansSC-Regular.ttf" "fonts/NotoSansJP/NotoSansJP-Regular.ttf" "fonts/NotoSansKR/NotoSansKR-Regular.ttf" }
+	}
+
+	group = {
+		languages = { "l_korean" }
+		files = { "fonts/NotoSans/NotoSans-Italic.ttf" "fonts/NotoSansKR/NotoSansKR-Regular.ttf" "fonts/NotoSansSC/NotoSansSC-Regular.ttf" "fonts/NotoSansJP/NotoSansJP-Regular.ttf" }
+	}
+
+	group = {
+		languages = { "l_japanese" }
+		files = { "fonts/NotoSans/NotoSans-Italic.ttf" "fonts/NotoSansJP/NotoSansJP-Regular.ttf" "fonts/NotoSansSC/NotoSansSC-Regular.ttf" "fonts/NotoSansKR/NotoSansKR-Regular.ttf" }
+	}
+}
+
+fontfiles = {
+	name = "NotoSans-Medium"
+	always_load = no
+
+	group = {
+		languages = { "l_english" "l_french" "l_german" "l_russian" "l_spanish" "l_polish" "l_braz_por" "l_turkish" }
+		files = { "fonts/NotoSans/NotoSans-Medium.ttf" "fonts/NotoSansSC/NotoSansSC-Medium.ttf" "fonts/NotoSansJP/NotoSansJP-Medium.ttf" "fonts/NotoSansKR/NotoSansKR-Medium.ttf" }
+	}
+
+	group = {
+		languages = { "l_simp_chinese" }
+		files = { "fonts/NotoSans/NotoSans-Medium.ttf" "fonts/NotoSansSC/NotoSansSC-Medium.ttf" "fonts/NotoSansJP/NotoSansJP-Medium.ttf" "fonts/NotoSansKR/NotoSansKR-Medium.ttf" }
+	}
+
+	group = {
+		languages = { "l_korean" }
+		files = { "fonts/NotoSans/NotoSans-Medium.ttf" "fonts/NotoSansKR/NotoSansKR-Medium.ttf" "fonts/NotoSansSC/NotoSansSC-Medium.ttf" "fonts/NotoSansJP/NotoSansJP-Medium.ttf" }
+	}
+
+	group = {
+		languages = { "l_japanese" }
+		files = { "fonts/NotoSans/NotoSans-Medium.ttf" "fonts/NotoSansJP/NotoSansJP-Medium.ttf" "fonts/NotoSansSC/NotoSansSC-Medium.ttf" "fonts/NotoSansKR/NotoSansKR-Medium.ttf" }
+	}
+}
+
+fontfiles = {
+	name = "NotoSans-MediumItalic"
+	always_load = no
+
+	group = {
+		languages = { "l_english" "l_french" "l_german" "l_russian" "l_spanish" "l_polish" "l_braz_por" "l_turkish" }
+		files = { "fonts/NotoSans/NotoSans-MediumItalic.ttf" "fonts/NotoSansSC/NotoSansSC-Medium.ttf" "fonts/NotoSansJP/NotoSansJP-Medium.ttf" "fonts/NotoSansKR/NotoSansKR-Medium.ttf" }
+	}
+
+	group = {
+		languages = { "l_simp_chinese" }
+		files = { "fonts/NotoSans/NotoSans-MediumItalic.ttf" "fonts/NotoSansSC/NotoSansSC-Medium.ttf" "fonts/NotoSansJP/NotoSansJP-Medium.ttf" "fonts/NotoSansKR/NotoSansKR-Medium.ttf" }
+	}
+
+	group = {
+		languages = { "l_korean" }
+		files = { "fonts/NotoSans/NotoSans-MediumItalic.ttf" "fonts/NotoSansKR/NotoSansKR-Medium.ttf" "fonts/NotoSansSC/NotoSansSC-Medium.ttf" "fonts/NotoSansJP/NotoSansJP-Medium.ttf" }
+	}
+
+	group = {
+		languages = { "l_japanese" }
+		files = { "fonts/NotoSans/NotoSans-Medium.ttf" "fonts/NotoSansJP/NotoSansJP-Medium.ttf" "fonts/NotoSansSC/NotoSansSC-Medium.ttf" "fonts/NotoSansKR/NotoSansKR-Medium.ttf" }
+	}
+}
+
+
+
+#### NotoSerif
+
+fontfiles = {
+	name = "NotoSerif-Regular"
+	always_load = no
+
+	group = {
+		languages = { "l_english" "l_french" "l_german" "l_russian" "l_spanish" "l_polish" "l_braz_por" "l_turkish" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-Regular.ttf" "fonts/NotoSansSC/NotoSansSC-Regular.ttf" "fonts/NotoSansJP/NotoSansJP-Regular.ttf" "fonts/NotoSansKR/NotoSansKR-Regular.ttf" }
+	}
+
+	group = {
+		languages = { "l_simp_chinese" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-Regular.ttf" "fonts/NotoSansSC/NotoSansSC-Regular.ttf" "fonts/NotoSansJP/NotoSansJP-Regular.ttf" "fonts/NotoSansKR/NotoSansKR-Regular.ttf" }
+	}
+
+	group = {
+		languages = { "l_korean" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-Regular.ttf" "fonts/NotoSansKR/NotoSansKR-Regular.ttf" "fonts/NotoSansSC/NotoSansSC-Regular.ttf" "fonts/NotoSansJP/NotoSansJP-Regular.ttf" }
+	}
+
+	group = {
+		languages = { "l_japanese" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-Regular.ttf" "fonts/NotoSansJP/NotoSansJP-Regular.ttf" "fonts/NotoSansSC/NotoSansSC-Regular.ttf" "fonts/NotoSansKR/NotoSansKR-Regular.ttf" }
+	}
+}
+
+fontfiles = {
+	name = "NotoSerif-Italic"
+	always_load = no
+
+	group = {
+		languages = { "l_english" "l_french" "l_german" "l_russian" "l_spanish" "l_polish" "l_braz_por" "l_turkish" }
+		# [SD] changed all but latin to regular due to missing glyphs
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-Italic.ttf" "fonts/NotoSansSC/NotoSansSC-Regular.ttf" "fonts/NotoSansKR/NotoSansKR-Regular.ttf" "fonts/NotoSansJP/NotoSansJP-Regular.ttf" }
+	}
+
+	group = {
+		languages = { "l_simp_chinese" }
+		# [SD] changed all but latin to regular due to missing glyphs
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-Italic.ttf" "fonts/NotoSansSC/NotoSansSC-Regular.ttf" "fonts/NotoSansJP/NotoSansJP-Regular.ttf" "fonts/NotoSansKR/NotoSansKR-Regular.ttf" }
+	}
+
+	group = {
+		languages = { "l_korean" }
+		# [SD] changed all but latin to regular due to missing glyphs
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-Italic.ttf" "fonts/NotoSansKR/NotoSansKR-Regular.ttf" "fonts/NotoSansSC/NotoSansSC-Regular.ttf" "fonts/NotoSansJP/NotoSansJP-Regular.ttf" }
+	}
+
+	group = {
+		languages = { "l_japanese" }
+		# [SD] changed all but latin to regular due to missing glyphs
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-Italic.ttf" "fonts/NotoSansJP/NotoSansJP-Regular.ttf" "fonts/NotoSansSC/NotoSansSC-Regular.ttf" "fonts/NotoSansKR/NotoSansKR-Regular.ttf" }
+	}
+}
+
+
+
+fontfiles = {
+	name = "NotoSerif-Medium"
+	always_load = no
+
+	group = {
+		languages = { "l_english" "l_french" "l_german" "l_russian" "l_spanish" "l_polish" "l_braz_por" "l_turkish" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-Medium.ttf" "fonts/NotoSansSC/NotoSansSC-Medium.ttf" "fonts/NotoSansJP/NotoSansJP-Medium.ttf" "fonts/NotoSansKR/NotoSansKR-Medium.ttf" }
+	}
+
+	group = {
+		languages = { "l_simp_chinese" }
+		files = {"fonts/NotoSerif/NotoSerif_SemiCondensed-Medium.ttf" "fonts/NotoSansSC/NotoSansSC-Medium.ttf" "fonts/NotoSansJP/NotoSansJP-Medium.ttf" "fonts/NotoSansKR/NotoSansKR-Medium.ttf" }
+	}
+
+	group = {
+		languages = { "l_korean" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-Medium.ttf" "fonts/NotoSansKR/NotoSansKR-Medium.ttf" "fonts/NotoSansSC/NotoSansSC-Medium.ttf" "fonts/NotoSansJP/NotoSansJP-Medium.ttf" }
+	}
+
+	group = {
+		languages = { "l_japanese" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-Medium.ttf" "fonts/NotoSansJP/NotoSansJP-Medium.ttf" "fonts/NotoSansSC/NotoSansSC-Medium.ttf" "fonts/NotoSansKR/NotoSansKR-Medium.ttf" }
+	}
+}
+
+fontfiles = {
+	name = "NotoSerif-MediumItalic"
+	always_load = no
+
+	group = {
+		languages = { "l_english" "l_french" "l_german" "l_russian" "l_spanish" "l_polish" "l_braz_por" "l_turkish" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-MediumItalic.ttf" "fonts/NotoSansSC/NotoSansSC-Medium.ttf" "fonts/NotoSansJP/NotoSansJP-Medium.ttf" "fonts/NotoSansKR/NotoSansKR-Medium.ttf" }
+	}
+
+	group = {
+		languages = { "l_simp_chinese" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-MediumItalic.ttf" "fonts/NotoSansSC/NotoSansSC-Medium.ttf" "fonts/NotoSansJP/NotoSansJP-Medium.ttf" "fonts/NotoSansKR/NotoSansKR-Medium.ttf" }
+	}
+
+	group = {
+		languages = { "l_korean" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-MediumItalic.ttf" "fonts/NotoSansKR/NotoSansKR-Medium.ttf" "fonts/NotoSansSC/NotoSansSC-Medium.ttf" "fonts/NotoSansJP/NotoSansJP-Medium.ttf" }
+	}
+
+	group = {
+		languages = { "l_japanese" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-Medium.ttf" "fonts/NotoSansJP/NotoSansJP-Medium.ttf" "fonts/NotoSansSC/NotoSansSC-Medium.ttf" "fonts/NotoSansKR/NotoSansKR-Medium.ttf" }
+	}
+}
+
+fontfiles = {
+	name = "NotoSerif-Bold"
+	always_load = no
+
+	group = {
+		languages = { "l_english" "l_french" "l_german" "l_russian" "l_spanish" "l_polish" "l_braz_por" "l_turkish" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-Bold.ttf" "fonts/NotoSansSC/NotoSansSC-Bold.ttf" "fonts/NotoSansJP/NotoSansJP-Bold.ttf" "fonts/NotoSansKR/NotoSansKR-Bold.ttf" }
+	}
+
+	group = {
+		languages = { "l_simp_chinese" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-Bold.ttf" "fonts/NotoSansSC/NotoSansSC-Bold.ttf" "fonts/NotoSansJP/NotoSansJP-Bold.ttf" "fonts/NotoSansKR/NotoSansKR-Bold.ttf" }
+	}
+
+	group = {
+		languages = { "l_korean" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-Bold.ttf" "fonts/NotoSansKR/NotoSansKR-Bold.ttf" "fonts/NotoSansSC/NotoSansSC-Bold.ttf" "fonts/NotoSansJP/NotoSansJP-Bold.ttf" }
+	}
+
+	group = {
+		languages = { "l_japanese" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-Bold.ttf" "fonts/NotoSansJP/NotoSansJP-Bold.ttf" "fonts/NotoSansSC/NotoSansSC-Bold.ttf" "fonts/NotoSansKR/NotoSansKR-Bold.ttf" }
+	}
+}
+
+fontfiles = {
+	name = "NotoSerif-BoldItalic"
+	always_load = no
+
+	group = {
+		languages = { "l_english" "l_french" "l_german" "l_russian" "l_spanish" "l_polish" "l_braz_por" "l_turkish" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-BoldItalic.ttf" "fonts/NotoSansSC/NotoSansSC-Bold.ttf" "fonts/NotoSansJP/NotoSansJP-Bold.ttf" "fonts/NotoSansKR/NotoSansKR-Bold.ttf" }
+	}
+
+	group = {
+		languages = { "l_simp_chinese" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-BoldItalic.ttf" "fonts/NotoSansSC/NotoSansSC-Bold.ttf" "fonts/NotoSansJP/NotoSansJP-Bold.ttf" "fonts/NotoSansKR/NotoSansKR-Bold.ttf" }
+	}
+
+	group = {
+		languages = { "l_korean" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-BoldItalic.ttf" "fonts/NotoSansKR/NotoSansKR-Bold.ttf" "fonts/NotoSansSC/NotoSansSC-Bold.ttf" "fonts/NotoSansJP/NotoSansJP-Bold.ttf" }
+	}
+
+	group = {
+		languages = { "l_japanese" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-Bold.ttf" "fonts/NotoSansJP/NotoSansJP-Bold.ttf" "fonts/NotoSansSC/NotoSansSC-Bold.ttf" "fonts/NotoSansKR/NotoSansKR-Bold.ttf" }
+	}
+}
+
+fontfiles = {
+	name = "NotoSerif-SemiBold"
+	always_load = no
+
+	group = {
+		languages = { "l_english" "l_french" "l_german" "l_russian" "l_spanish" "l_polish" "l_braz_por" "l_turkish" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-SemiBold.ttf" "fonts/NotoSansSC/NotoSansSC-SemiBold.ttf" "fonts/NotoSansJP/NotoSansJP-SemiBold.ttf" "fonts/NotoSansKR/NotoSansKR-SemiBold.ttf" }
+	}
+
+	group = {
+		languages = { "l_simp_chinese" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-SemiBold.ttf" "fonts/NotoSansSC/NotoSansSC-SemiBold.ttf" "fonts/NotoSansJP/NotoSansJP-SemiBold.ttf" "fonts/NotoSansKR/NotoSansKR-SemiBold.ttf" }
+	}
+
+	group = {
+		languages = { "l_korean" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-SemiBold.ttf" "fonts/NotoSansKR/NotoSansKR-SemiBold.ttf" "fonts/NotoSansSC/NotoSansSC-SemiBold.ttf" "fonts/NotoSansJP/NotoSansJP-SemiBold.ttf" }
+	}
+
+	group = {
+		languages = { "l_japanese" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-SemiBold.ttf" "fonts/NotoSansJP/NotoSansJP-SemiBold.ttf" "fonts/NotoSansSC/NotoSansSC-SemiBold.ttf" "fonts/NotoSansKR/NotoSansKR-SemiBold.ttf" }
+	}
+}
+
+fontfiles = {
+	name = "NotoSerif-SemiBoldItalic"
+	always_load = no
+
+	group = {
+		languages = { "l_english" "l_french" "l_german" "l_russian" "l_spanish" "l_polish" "l_braz_por" "l_turkish" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-SemiBoldItalic.ttf" "fonts/NotoSansSC/NotoSansSC-SemiBold.ttf" "fonts/NotoSansJP/NotoSansJP-SemiBold.ttf" "fonts/NotoSansKR/NotoSansKR-SemiBold.ttf" }
+	}
+
+	group = {
+		languages = { "l_simp_chinese" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-SemiBoldItalic.ttf" "fonts/NotoSansSC/NotoSansSC-SemiBold.ttf" "fonts/NotoSansJP/NotoSansJP-SemiBold.ttf" "fonts/NotoSansKR/NotoSansKR-SemiBold.ttf" }
+	}
+
+	group = {
+		languages = { "l_korean" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-SemiBoldItalic.ttf" "fonts/NotoSansKR/NotoSansKR-SemiBold.ttf" "fonts/NotoSansSC/NotoSansSC-SemiBold.ttf" "fonts/NotoSansJP/NotoSansJP-SemiBold.ttf" }
+	}
+
+	group = {
+		languages = { "l_japanese" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-SemiBold.ttf" "fonts/NotoSansJP/NotoSansJP-SemiBold.ttf" "fonts/NotoSansSC/NotoSansSC-SemiBold.ttf" "fonts/NotoSansKR/NotoSansKR-SemiBold.ttf" }
+	}
+}
+
+#### NotoSerif Header
+
+fontfiles = {
+	name = "NotoSerif-Regular-Header"
+	always_load = no
+
+	group = {
+		languages = { "l_english" "l_french" "l_german" "l_russian" "l_spanish" "l_polish" "l_braz_por" "l_turkish" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-Regular.ttf" "fonts/NotoSerifSC/NotoSerifSC-Regular.otf" "fonts/NotoSerifJP/NotoSerifJP-Regular.otf" "fonts/NotoSerifKR/NotoSerifKR-Regular.otf" }
+	}
+
+	group = {
+		languages = { "l_simp_chinese" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-Regular.ttf" "fonts/NotoSerifSC/NotoSerifSC-Regular.otf" "fonts/NotoSerifJP/NotoSerifJP-Regular.otf" "fonts/NotoSerifKR/NotoSerifKR-Regular.otf" }
+	}
+
+	group = {
+		languages = { "l_korean" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-Regular.ttf" "fonts/NotoSerifKR/NotoSerifKR-Regular.otf" "fonts/NotoSerifSC/NotoSerifSC-Regular.otf" "fonts/NotoSerifJP/NotoSerifJP-Regular.otf" }
+	}
+
+	group = {
+		languages = { "l_japanese" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-Regular.ttf" "fonts/NotoSerifJP/NotoSerifJP-Regular.otf" "fonts/NotoSerifSC/NotoSerifSC-Regular.otf" "fonts/NotoSerifKR/NotoSerifKR-Regular.otf" }
+	}
+}
+
+fontfiles = {
+	name = "NotoSerif-Italic-Header"
+	always_load = no
+
+	group = {
+		languages = { "l_english" "l_french" "l_german" "l_russian" "l_spanish" "l_polish" "l_braz_por" "l_turkish" }
+		# [SD] changed all but latin to regular due to missing glyphs
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-Italic.ttf" "fonts/NotoSerifSC/NotoSerifSC-Regular.otf" "fonts/NotoSerifKR/NotoSerifKR-Regular.otf" "fonts/NotoSerifJP/NotoSerifJP-Regular.otf" }
+	}
+
+	group = {
+		languages = { "l_simp_chinese" }
+		# [SD] changed all but latin to regular due to missing glyphs
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-Italic.ttf" "fonts/NotoSerifSC/NotoSerifSC-Regular.otf" "fonts/NotoSerifJP/NotoSerifJP-Regular.otf" "fonts/NotoSerifKR/NotoSerifKR-Regular.otf" }
+	}
+
+	group = {
+		languages = { "l_korean" }
+		# [SD] changed all but latin to regular due to missing glyphs
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-Italic.ttf" "fonts/NotoSerifKR/NotoSerifKR-Regular.otf" "fonts/NotoSerifSC/NotoSerifSC-Regular.otf" "fonts/NotoSerifJP/NotoSerifJP-Regular.otf" }
+	}
+
+	group = {
+		languages = { "l_japanese" }
+		# [SD] changed all but latin to regular due to missing glyphs
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-Italic.ttf" "fonts/NotoSerifJP/NotoSerifJP-Regular.otf" "fonts/NotoSerifSC/NotoSerifSC-Regular.otf" "fonts/NotoSerifKR/NotoSerifKR-Regular.otf" }
+	}
+}
+
+
+
+fontfiles = {
+	name = "NotoSerif-Medium-Header"
+	always_load = no
+
+	group = {
+		languages = { "l_english" "l_french" "l_german" "l_russian" "l_spanish" "l_polish" "l_braz_por" "l_turkish" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-Medium.ttf" "fonts/NotoSerifSC/NotoSerifSC-Medium.otf" "fonts/NotoSerifJP/NotoSerifJP-Medium.otf" "fonts/NotoSerifKR/NotoSerifKR-Medium.otf" }
+	}
+
+	group = {
+		languages = { "l_simp_chinese" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-Medium.ttf" "fonts/NotoSerifSC/NotoSerifSC-Medium.otf" "fonts/NotoSerifJP/NotoSerifJP-Medium.otf" "fonts/NotoSerifKR/NotoSerifKR-Medium.otf" }
+	}
+
+	group = {
+		languages = { "l_korean" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-Medium.ttf" "fonts/NotoSerifKR/NotoSerifKR-Medium.otf" "fonts/NotoSerifSC/NotoSerifSC-Medium.otf" "fonts/NotoSerifJP/NotoSerifJP-Medium.otf" }
+	}
+
+	group = {
+		languages = { "l_japanese" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-Medium.ttf" "fonts/NotoSerifJP/NotoSerifJP-Medium.otf" "fonts/NotoSerifSC/NotoSerifSC-Medium.otf" "fonts/NotoSerifKR/NotoSerifKR-Medium.otf" }
+	}
+}
+
+fontfiles = {
+	name = "NotoSerif-MediumItalic-Header"
+	always_load = no
+
+	group = {
+		languages = { "l_english" "l_french" "l_german" "l_russian" "l_spanish" "l_polish" "l_braz_por" "l_turkish" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-MediumItalic.ttf" "fonts/NotoSerifSC/NotoSerifSC-Medium.otf" "fonts/NotoSerifJP/NotoSerifJP-Medium.otf" "fonts/NotoSerifKR/NotoSerifKR-Medium.otf" }
+	}
+
+	group = {
+		languages = { "l_simp_chinese" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-MediumItalic.ttf" "fonts/NotoSerifSC/NotoSerifSC-Medium.otf" "fonts/NotoSerifJP/NotoSerifJP-Medium.otf" "fonts/NotoSerifKR/NotoSerifKR-Medium.otf" }
+	}
+
+	group = {
+		languages = { "l_korean" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-MediumItalic.ttf" "fonts/NotoSerifKR/NotoSerifKR-Medium.otf" "fonts/NotoSerifSC/NotoSerifSC-Medium.otf" "fonts/NotoSerifJP/NotoSerifJP-Medium.otf" }
+	}
+
+	group = {
+		languages = { "l_japanese" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-Medium.ttf" "fonts/NotoSerifJP/NotoSerifJP-Medium.otf" "fonts/NotoSerifSC/NotoSerifSC-Medium.otf" "fonts/NotoSerifKR/NotoSerifKR-Medium.otf" }
+	}
+}
+
+fontfiles = {
+	name = "NotoSerif-Bold-Header"
+	always_load = no
+
+	group = {
+		languages = { "l_english" "l_french" "l_german" "l_russian" "l_spanish" "l_polish" "l_braz_por" "l_turkish" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-Bold.ttf" "fonts/NotoSerifSC/NotoSerifSC-Bold.otf" "fonts/NotoSerifJP/NotoSerifJP-Bold.otf" "fonts/NotoSerifKR/NotoSerifKR-Bold.otf" }
+	}
+
+	group = {
+		languages = { "l_simp_chinese" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-Bold.ttf" "fonts/NotoSerifSC/NotoSerifSC-Bold.otf" "fonts/NotoSerifJP/NotoSerifJP-Bold.otf" "fonts/NotoSerifKR/NotoSerifKR-Bold.otf" }
+	}
+
+	group = {
+		languages = { "l_korean" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-Bold.ttf" "fonts/NotoSerifKR/NotoSerifKR-Bold.otf" "fonts/NotoSerifSC/NotoSerifSC-Bold.otf" "fonts/NotoSerifJP/NotoSerifJP-Bold.otf" }
+	}
+
+	group = {
+		languages = { "l_japanese" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-Bold.ttf" "fonts/NotoSerifJP/NotoSerifJP-Bold.otf" "fonts/NotoSerifSC/NotoSerifSC-Bold.otf" "fonts/NotoSerifKR/NotoSerifKR-Bold.otf" }
+	}
+}
+
+fontfiles = {
+	name = "NotoSerif-BoldItalic-Header"
+	always_load = no
+
+	group = {
+		languages = { "l_english" "l_french" "l_german" "l_russian" "l_spanish" "l_polish" "l_braz_por" "l_turkish" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-BoldItalic.ttf" "fonts/NotoSerifSC/NotoSerifSC-Bold.otf" "fonts/NotoSerifJP/NotoSerifJP-Bold.otf" "fonts/NotoSerifKR/NotoSerifKR-Bold.otf" }
+	}
+
+	group = {
+		languages = { "l_simp_chinese" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-BoldItalic.ttf" "fonts/NotoSerifSC/NotoSerifSC-Bold.otf" "fonts/NotoSerifJP/NotoSerifJP-Bold.otf" "fonts/NotoSerifKR/NotoSerifKR-Bold.otf" }
+	}
+
+	group = {
+		languages = { "l_korean" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-BoldItalic.ttf" "fonts/NotoSerifKR/NotoSerifKR-Bold.otf" "fonts/NotoSerifSC/NotoSerifSC-Bold.otf" "fonts/NotoSerifJP/NotoSerifJP-Bold.otf" }
+	}
+
+	group = {
+		languages = { "l_japanese" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-Bold.ttf" "fonts/NotoSerifJP/NotoSerifJP-Bold.otf" "fonts/NotoSerifSC/NotoSerifSC-Bold.otf" "fonts/NotoSerifKR/NotoSerifKR-Bold.otf" }
+	}
+}
+
+fontfiles = {
+	name = "NotoSerif-SemiBold-Header"
+	always_load = no
+
+	group = {
+		languages = { "l_english" "l_french" "l_german" "l_russian" "l_spanish" "l_polish" "l_braz_por" "l_turkish" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-SemiBold.ttf" "fonts/NotoSerifSC/NotoSerifSC-SemiBold.otf" "fonts/NotoSerifJP/NotoSerifJP-SemiBold.otf" "fonts/NotoSerifKR/NotoSerifKR-SemiBold.otf" }
+	}
+
+	group = {
+		languages = { "l_simp_chinese" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-SemiBold.ttf" "fonts/NotoSerifSC/NotoSerifSC-SemiBold.otf" "fonts/NotoSerifJP/NotoSerifJP-SemiBold.otf" "fonts/NotoSerifKR/NotoSerifKR-SemiBold.otf" }
+	}
+
+	group = {
+		languages = { "l_korean" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-SemiBold.ttf" "fonts/NotoSerifKR/NotoSerifKR-SemiBold.otf" "fonts/NotoSerifSC/NotoSerifSC-SemiBold.otf" "fonts/NotoSerifJP/NotoSerifJP-SemiBold.otf" }
+	}
+
+	group = {
+		languages = { "l_japanese" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-SemiBold.ttf" "fonts/NotoSerifJP/NotoSerifJP-SemiBold.otf" "fonts/NotoSerifSC/NotoSerifSC-SemiBold.otf" "fonts/NotoSerifKR/NotoSerifKR-SemiBold.otf" }
+	}
+}
+
+fontfiles = {
+	name = "NotoSerif-SemiBoldItalic-Header"
+	always_load = no
+
+	group = {
+		languages = { "l_english" "l_french" "l_german" "l_russian" "l_spanish" "l_polish" "l_braz_por" "l_turkish" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-SemiBoldItalic.ttf" "fonts/NotoSerifSC/NotoSerifSC-SemiBold.otf" "fonts/NotoSerifJP/NotoSerifJP-SemiBold.otf" "fonts/NotoSerifKR/NotoSerifKR-SemiBold.otf" }
+	}
+
+	group = {
+		languages = { "l_simp_chinese" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-SemiBoldItalic.ttf" "fonts/NotoSerifSC/NotoSerifSC-SemiBold.otf" "fonts/NotoSerifJP/NotoSerifJP-SemiBold.otf" "fonts/NotoSerifKR/NotoSerifKR-SemiBold.otf" }
+	}
+
+	group = {
+		languages = { "l_korean" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-SemiBoldItalic.ttf" "fonts/NotoSerifKR/NotoSerifKR-SemiBold.otf" "fonts/NotoSerifSC/NotoSerifSC-SemiBold.otf" "fonts/NotoSerifJP/NotoSerifJP-SemiBold.otf" }
+	}
+
+	group = {
+		languages = { "l_japanese" }
+		files = { "fonts/NotoSerif/NotoSerif_SemiCondensed-SemiBold.ttf" "fonts/NotoSerifJP/NotoSerifJP-SemiBold.otf" "fonts/NotoSerifSC/NotoSerifSC-SemiBold.otf" "fonts/NotoSerifKR/NotoSerifKR-SemiBold.otf" }
+	}
+}
+
+
+
+### NotoSansMono
+
+fontfiles = {
+	name = "NotoSansMono-Light"
+	always_load = no
+
+	group = {
+		languages = { "l_english" "l_french" "l_german" "l_russian" "l_spanish" "l_simp_chinese" "l_korean" "l_japanese" "l_polish" "l_braz_por" "l_turkish" }
+		files = { "fonts/NotoSansMono/NotoSansMono_SemiCondensed-Light.ttf" "fonts/NotoSansSC/NotoSansSC-Light.ttf" "fonts/NotoSansJP/NotoSansJP-Light.ttf" "fonts/NotoSansKR/NotoSansKR-Light.ttf" }
+	}
+}
+
+fontfiles = {
+	name = "NotoSansMono-Medium"
+	always_load = no
+
+	group = {
+		languages = { "l_english" "l_french" "l_german" "l_russian" "l_spanish" "l_simp_chinese" "l_korean" "l_japanese" "l_polish" "l_braz_por" "l_turkish" }
+		files = { "fonts/NotoSansMono/NotoSansMono_SemiCondensed-Medium.ttf" "fonts/NotoSansSC/NotoSansSC-Medium.ttf" "fonts/NotoSansJP/NotoSansJP-Medium.ttf" "fonts/NotoSansKR/NotoSansKR-Medium.ttf" }
+	}
+}
+
+#######################################################################
+#######################################################################
+#######################################################################
+
+# Each font should specify what it is used for.
+# Name fonts after intented usage, not after source file names.
+### Fonts used in-game ###
+
+font = {
+	name = "StandardGameFont"
+
+	fontstyle = {
+		style = regular
+		fontfiles = "NotoSerif-Regular"
+	}
+
+	#fontstyle = {
+	#	style = semibold # We should use this tag, theres no "light" tag for styles in "textformatting.gui"
+	#	fontfiles = "NotoSerif-Light"
+	#}
+
+	fontstyle = {
+		style = bold
+		fontfiles = "NotoSerif-Medium"
+	}
+
+	fontstyle = {
+		style = italic
+		fontfiles = "NotoSerif-Italic"
+	}
+
+	fontstyle = {
+		style = bold|italic
+		fontfiles = "NotoSerif-MediumItalic"
+	}
+
+	underlineformats = {
+		default = {
+			thickness = 1
+			offset = 0.12
+		}
+	}
+}
+
+# Simple Font
+
+font = {
+	name = "SimpleFont"
+
+	fontstyle = {
+		style = regular
+		fontfiles = "NotoSans-Regular"
+	}
+
+	fontstyle = {
+		style = semibold # We should use this tag, theres no "light" tag for styles in "textformatting.gui"
+		fontfiles = "NotoSans-Light"
+	}
+
+	fontstyle = {
+		style = bold
+		fontfiles = "NotoSans-Medium"
+	}
+
+	fontstyle = {
+		style = italic
+		fontfiles = "NotoSans-Italic"
+	}
+
+	fontstyle = {
+		style = bold|italic
+		fontfiles = "NotoSans-MediumItalic"
+	}
+
+	underlineformats = {
+		default = {
+			thickness = 1
+			offset = 0.12
+		}
+	}
+}
+
+# Headers font
+
+font = {
+	name = "HeadersFont"
+
+	fontstyle = {
+		style = regular
+		fontfiles = "NotoSerif-SemiBold-Header"
+	}
+
+	fontstyle = {
+		style = italic
+		fontfiles = "NotoSerif-SemiBoldItalic-Header"
+	}
+
+	fontstyle = {
+		style = bold
+		fontfiles = "NotoSerif-Bold-Header"
+	}
+
+	fontstyle = {
+		style = bold|italic
+		fontfiles = "NotoSerif-BoldItalic-Header"
+	}
+
+	underlineformats = {
+		default = {
+			thickness = 1
+			offset = 0.12
+		}
+	}
+}
+
+font = {
+	name = "Debug"
+	
+	fontstyle = {
+			style = bold
+			fontfiles = "NotoSansMono-Medium"
+		}
+		
+		fontstyle = {
+			style = regular
+			fontfiles = "NotoSansMono-Medium"
+		}
+}
+
+
+# Flavor font
+
+font = {
+	name = "FlavorFont"
+
+	fontstyle = {
+		style = regular
+		fontfiles = "NotoSerif-Italic" # these are inverted so italics in event descs become unitalicized
+	}
+
+	fontstyle = {
+		style = bold
+		fontfiles = "NotoSerif-SemiBoldItalic"
+	}
+
+	fontstyle = {
+		style = italic
+		fontfiles = "NotoSerif-Regular"
+	}
+
+	fontstyle = {
+		style = bold|italic
+		fontfiles = "NotoSerif-SemiBold"
+	}
+
+	underlineformats = {
+		default = {
+			thickness = 1
+			offset = 0.12
+		}
+	}
+}

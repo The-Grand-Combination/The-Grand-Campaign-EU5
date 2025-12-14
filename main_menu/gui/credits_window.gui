@@ -1,0 +1,115 @@
+widget = {
+    name = "JominiCreditsWindow"
+    visible_at_creation = no
+
+    size = { 60% 100% }
+    parentanchor = center
+    alwaystransparent = no
+
+	background = {
+		using = color_bg_blue_texture
+		alpha = 0.7
+
+		margin = {105 0}
+
+		modify_texture = {
+			name = "mask"
+			texture = "gfx/interface/component_masks/mask_fade_horizontal_middle.dds"
+			blend_mode = alphamultiply
+		}
+	}
+
+    state = {
+        name = _show
+        next = "auto_scrollbar"
+    }
+
+    state = {
+        name = "auto_scrollbar"
+        delay = 0.5
+        on_finish = "[CreditsWindow.OnTogglePause]"
+    }
+
+    widget = {
+        # using = pops_close_button_template
+
+        # blockoverride "close_button_properties" {
+        #     name = "close_button"
+        # }
+
+        blockoverride "close_button" {
+            onclick = "[CreditsWindow.OnClose]"
+        }
+    }
+
+    vbox = {
+        using = window_margin
+
+        widget = {
+            # using = pops_title_template
+            blockoverride "title" {
+                raw_text = "Project Caesar"
+            }
+        }
+
+        vbox = {
+            using = layoutpolicy_expanding
+            margin = { 10 10 }
+            scrollarea = {
+                name = "credits_scroll_area"
+                using = layoutpolicy_expanding
+
+                scrollbarpolicy_vertical = always_off
+                scrollbarpolicy_horizontal = always_off
+
+                scrollbar_vertical = {
+                    using = Scrollbar_Vertical
+                }
+
+                scrollwidget = {
+                    using = JominiCreditsWindowTextbox
+                    blockoverride "textbox" {
+                        using = text_single_template
+                        using = Font_Type_Headers
+                        align = center
+                        autoresize = no
+                        fontsize = 24
+                        widgetanchor = top|hcenter
+                        parentanchor = top|hcenter
+                    }
+                }
+            }
+        }
+
+        widget = {
+            layoutpolicy_horizontal = expanding
+            size = { -1 70 }
+            JominiCreditsWindowSlowerButton = {
+                tooltip_enabled = no
+                using = button_resize_to_fit_text
+                enabled = "[Not(CreditsWindow.HasReachedEnd)]"
+            }
+            JominiCreditsWindowTogglePauseButton = {
+                tooltip_enabled = no
+                using = button_resize_to_fit_text
+                enabled = "[Not(CreditsWindow.HasReachedEnd)]"
+            }
+            JominiCreditsWindowFasterButton = {
+                tooltip_enabled = no
+                using = button_resize_to_fit_text
+                enabled = "[Not(CreditsWindow.HasReachedEnd)]"
+            }
+        }
+    }
+
+    blockoverride "buttonstyle" {
+        using = button_default_template
+    }
+
+    blockoverride "textbox" {
+        using = text_single_template
+        align = center
+        widgetanchor = top|hcenter
+        parentanchor = top|hcenter
+    }
+}

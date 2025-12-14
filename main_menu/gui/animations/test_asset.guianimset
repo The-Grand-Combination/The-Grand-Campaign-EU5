@@ -1,0 +1,899 @@
+﻿name = guitest_animations
+extends = ""
+animations = {
+    {
+        name = click_bounce
+        duration = 2
+        property_animations = {
+            position = {
+                keyframes = {
+                    {
+                        time = 0
+                        value = { 20 20 }
+                    }
+                    {
+                        time = 0.3
+                        value = { 100 -20 }
+                    }
+                    {
+                        time = 1
+                        value = { 120 120 }
+                    }
+                }
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            position_x = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            position_y = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            alpha = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            frame = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            size = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            size_x = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            size_y = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            scale = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            zoom = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            glow_radius = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            glow_alpha = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            progress_value = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            modify_texture = {
+                frame_index = {}
+                alpha = {}
+                translate_uv = {}
+                rotate_uv = {}
+                name = ""
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+        }
+    }
+    {
+        name = size_up
+        duration = 0.3
+        property_animations = {
+            position = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            position_x = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            position_y = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            alpha = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            frame = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            size = {
+                keyframes = {
+                    {
+                        time = 0
+                        value = { 200 50 }
+                    }
+                    {
+                        time = 1
+                        value = { 230 55 }
+                    }
+                }
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            size_x = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            size_y = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            scale = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            zoom = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            glow_radius = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            glow_alpha = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            progress_value = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            modify_texture = {
+                frame_index = {}
+                alpha = {}
+                translate_uv = {}
+                rotate_uv = {}
+                name = ""
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+        }
+    }
+    {
+        name = size_down
+        duration = 0.3
+        property_animations = {
+            position = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            position_x = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            position_y = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            alpha = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            frame = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            size = {
+                keyframes = {
+                    {
+                        time = 0
+                        value = { 230 55 }
+                    }
+                    {
+                        time = 1
+                        value = { 200 50 }
+                    }
+                }
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            size_x = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            size_y = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            scale = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            zoom = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            glow_radius = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            glow_alpha = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            progress_value = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            modify_texture = {
+                frame_index = {}
+                alpha = {}
+                translate_uv = {}
+                rotate_uv = {}
+                name = ""
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+        }
+    }
+    {
+        name = move_bounce
+        duration = 3
+        property_animations = {
+            position = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            position_x = {
+                keyframes = {
+                    {
+                        time = 0
+                        value = 100
+                    }
+                    {
+                        time = 0.5
+                        value = 0
+                    }
+                    {
+                        time = 1
+                        value = 100
+                    }
+                }
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "animation_to_widget"
+            }
+            position_y = {
+                keyframes = {
+                    {
+                        time = 0
+                        value = 200
+                    }
+                    {
+                        time = 0.5
+                        value = 300
+                    }
+                    {
+                        time = 1
+                        value = 200
+                    }
+                }
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "animation_to_widget"
+            }
+            alpha = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            frame = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            size = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            size_x = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            size_y = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            scale = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            zoom = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            glow_radius = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            glow_alpha = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            progress_value = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            modify_texture = {
+                frame_index = {}
+                alpha = {}
+                translate_uv = {}
+                rotate_uv = {}
+                name = ""
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+        }
+    }
+    {
+        name = alpha_fade_out
+        duration = 1
+        property_animations = {
+            position = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            position_x = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            position_y = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            alpha = {
+                keyframes = {
+                    {
+                        time = 0
+                        value = 1
+                    }
+                    {
+                        time = 0.5
+                        value = 0
+                    }
+                    {
+                        time = 1
+                        value = 0
+                    }
+                }
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "animation_to_widget"
+            }
+            frame = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            size = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            size_x = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            size_y = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            scale = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            zoom = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            glow_radius = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            glow_alpha = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            progress_value = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            modify_texture = {
+                frame_index = {}
+                alpha = {}
+                translate_uv = {}
+                rotate_uv = {}
+                name = ""
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+        }
+    }
+    {
+        name = alpha_fade_in
+        duration = 1
+        property_animations = {
+            position = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            position_x = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            position_y = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            alpha = {
+                keyframes = {
+                    {
+                        time = 0
+                        value = 0
+                    }
+                    {
+                        time = 1
+                        value = 1
+                    }
+                }
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "animation_to_widget"
+            }
+            frame = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            size = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            size_x = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            size_y = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            scale = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            zoom = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            glow_radius = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            glow_alpha = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            progress_value = {
+                keyframes = {}
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+            modify_texture = {
+                frame_index = {}
+                alpha = {}
+                translate_uv = {}
+                rotate_uv = {}
+                name = ""
+                curve = {
+                    type = 1
+                    bezier_control_point0 = { 0 0 }
+                    bezier_control_point1 = { 0 0 }
+                }
+                data_flow = "widget_to_animation"
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+﻿malaria = {
+	monthly_spawn_chance = {
+		#malaria is endemic - doesn't "spawn"
+		value = 0
+	}
+
+	spawn = {
+	}
+
+	monthly_resistance_reduction = 0
+
+	r0 = { 
+		#doesn't pass from person to person
+		value = 0
+	}
+
+	environmental_infection = 0.1
+
+	calc_interval_days = { 10 15 }
+
+	location_stagnation_chance = {
+		value = 0
+	}
+
+	percentage_to_meet_their_fate_on_calc = {
+		value = 1
+	}
+
+	location_modifier = {
+		#Nothing
+	}
+
+	mortality_rate = { 
+		value = { 0.1 0.5 }
+	}
+
+	character_mortality_chance = {
+		value = { 0.1 0.5 }
+		multiply = "disease_presence(scope:disease)"
+	}
+
+	on_spread_to_country = {
+	}
+
+	map_color = {
+		lerp = { #Dark Blue
+			min_color = rgb { 100  120  188 }
+			max_color = rgb { 2 30 70 }
+			factor = "disease_presence(scope:disease)"
+		}
+	}
+}

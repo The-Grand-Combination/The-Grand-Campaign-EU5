@@ -1,0 +1,100 @@
+template FontDefaultColor {
+	fontcolor = { 0.86 0.86 0.73 1.0 }
+}
+
+# template FontDarkColor {
+# 	fontcolor = { 0.16 0.16 0.03 1.0 }
+# }
+
+### Font templates
+
+# template FontDebug
+# {
+# 	fontsize = 12
+# 	font = SimpleFont
+# 	fontcolor = { 0.8 0.2 0.7 1.0 } #linked to textformatting.gui somehow?
+# }
+
+# template FontSmall
+# {
+# 	fontsize = 14
+# 	font = SimpleFont
+# 	using = FontDefaultColor
+# }
+
+# template FontNormal {
+# 	fontsize = 16
+# 	font = SimpleFont
+# 	using = FontDefaultColor
+# }
+
+# template EventFontNormal {
+# 	fontsize = 14
+# 	font = SimpleFont
+# 	using = FontDefaultColor
+# }
+
+# template FontNormal_dark
+# {
+# 	using = FontNormal
+# 	using = FontDarkColor
+# }
+
+# template EventFontNormal_dark
+# {
+# 	using = EventFontNormal
+# 	using = FontDarkColor
+# }
+
+# template FontButton
+# {
+# 	fontsize = 16
+# 	font = SimpleFont
+# 	using = FontDefaultColor
+# }
+
+# template FontButton_big
+# {
+# 	fontsize = 25
+# 	font = SimpleFont
+# 	using = FontDefaultColor
+# }
+
+# template FontValue
+# {
+# 	fontsize = 16
+# 	font = SimpleFont
+# 	using = FontDefaultColor
+# }
+
+template FontHeading3 {
+	fontsize = 20
+	font = SimpleFont
+	using = FontDefaultColor
+}
+
+# template FontHeading3_dark
+# {
+# 	using = FontHeading3
+# 	using = FontDarkColor
+# }
+
+# template FontHeading2
+# {
+# 	fontsize = 25
+# 	font = SimpleFont
+# 	using = FontDefaultColor
+# }
+
+# template FontHeading1 {
+# 	fontsize = 31
+# 	font = Title_font
+# 	using = FontDefaultColor
+# }
+
+# template FontHeading1_dark
+# {
+# 	using = FontHeading1
+# 	using = FontDarkColor
+# }
+

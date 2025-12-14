@@ -1,0 +1,419 @@
+### COLOR TEMPLATES
+
+template color_blue_texture { texture = "gfx/interface/colors/blue.dds" }
+template color_bone_texture { texture = "gfx/interface/colors/bone.dds" }
+template color_brown_leather_texture { texture = "gfx/interface/colors/brown_leather.dds" }
+template color_intense_bg_blue_texture { texture = "gfx/interface/colors/intense_bg_blue.dds" }
+template color_dark_turquoise_texture { texture = "gfx/interface/colors/dark_turquoise.dds" }
+template color_gold_texture { texture = "gfx/interface/colors/gold.dds" }
+template color_gold_dark_texture { texture = "gfx/interface/colors/gold_dark.dds" }
+template color_grey_texture { texture = "gfx/interface/colors/grey.dds" }
+template color_intense_brown_texture { texture = "gfx/interface/colors/intense_brown.dds" }
+template color_light_blue_texture { texture = "gfx/interface/colors/light_blue.dds" }
+template color_bronze_texture { texture = "gfx/interface/colors/bronze.dds" }
+template color_silver_texture { texture = "gfx/interface/colors/silver.dds" }
+template color_super_dark_brown_texture { texture = "gfx/interface/colors/super_dark_brown.dds" }
+# template color_super_dark_red_texture { texture = "gfx/interface/colors/super_dark_red.dds" }
+template color_light_green_texture { texture = "gfx/interface/colors/light_green.dds" }
+template color_mid_blue_texture { texture = "gfx/interface/colors/mid_blue.dds" }
+template color_mid_green_texture { texture = "gfx/interface/colors/mid_green.dds" }
+template color_low_green_texture { texture = "gfx/interface/colors/low_green.dds" }
+template color_mid_light_green_texture { texture = "gfx/interface/colors/mid_light_green.dds" }
+template color_mid_red_texture { texture = "gfx/interface/colors/mid_red.dds" }
+template color_new_gold_texture { texture = "gfx/interface/colors/new_gold.dds" }
+template color_paper_texture { texture = "gfx/interface/colors/paper.dds" }
+template color_light_paper_texture { texture = "gfx/interface/colors/light_paper.dds" }
+template color_progress_blue_texture { texture = "gfx/interface/colors/progress_blue.dds" }
+template color_red_texture { texture = "gfx/interface/colors/red.dds" }
+template color_dark_red_texture { texture = "gfx/interface/colors/dark_red.dds" }
+template color_light_red_texture { texture = "gfx/interface/colors/light_red.dds" }
+template color_desat_red_texture { texture = "gfx/interface/colors/desat_red.dds" }
+template color_turquoise_texture { texture = "gfx/interface/colors/turquoise.dds" }
+template color_white_texture { texture = "gfx/interface/colors/white.dds" }
+template color_yellow_texture { texture = "gfx/interface/colors/yellow.dds" }
+template color_mid_yellow_texture { texture = "gfx/interface/colors/mid_yellow.dds" }
+template color_mid_orange_texture { texture = "gfx/interface/colors/mid_orange.dds" }
+template color_purple_texture { texture = "gfx/interface/colors/purple.dds" }
+template color_purple_02_texture { texture = "gfx/interface/colors/purple_02.dds" }
+template color_mid_purple_texture { texture = "gfx/interface/colors/mid_purple.dds" }
+template color_dark_purple_texture { texture = "gfx/interface/colors/dark_purple.dds" }
+template color_greyish_texture { texture = "gfx/interface/colors/greyish.dds" }
+template color_whiteish_texture { texture = "gfx/interface/colors/whiteish.dds" }
+template color_raw_paper_texture { texture = "gfx/interface/colors/raw_paper.dds" }
+# template color_select_blue_texture { texture = "gfx/interface/colors/select_blue.dds" }
+template color_wood_brown_texture { texture = "gfx/interface/colors/wood_brown.dds" }
+template color_dark_green_texture { texture = "gfx/interface/colors/dark_green.dds" }
+template color_muztard_texture { texture = "gfx/interface/colors/muztard.dds" }
+template color_tool_blue_texture { texture = "gfx/interface/colors/tool_blue.dds" }
+template color_sortby_off { texture = "gfx/interface/colors/sortby_off.dds" }
+template color_sortby_on { texture = "gfx/interface/colors/sortby_on.dds" }
+template color_market_green_texture { texture = "gfx/interface/colors/market_green.dds" }
+template color_market_blue_texture { texture = "gfx/interface/colors/market_blue.dds" }
+template color_market_red_texture { texture = "gfx/interface/colors/market_red.dds" }
+template color_market_grey_texture { texture = "gfx/interface/colors/market_grey.dds" }
+template color_enemy_red_texture { texture = "gfx/interface/colors/enemy_red.dds" }
+template color_allied_blue_texture { texture = "gfx/interface/colors/allied_blue.dds" }
+template color_default_brown_texture { texture = "gfx/interface/colors/default_brown.dds" }
+
+## ESTATES ##
+template color_crown_texture { texture = "gfx/interface/colors/crown.dds" }
+template color_nobles_texture { texture = "gfx/interface/colors/nobles.dds" }
+template color_clergy_texture { texture = "gfx/interface/colors/clergy.dds" }
+# template color_burghers_texture { texture = "gfx/interface/colors/burghers.dds" }
+# template color_commoners_texture { texture = "gfx/interface/colors/commoners.dds" }
+
+## CATEGORIES ##
+template color_government_texture { texture = "gfx/interface/colors/government.dds" }
+template color_economy_texture { texture = "gfx/interface/colors/economy.dds" }
+template color_production_texture { texture = "gfx/interface/colors/production.dds" }
+template color_society_texture { texture = "gfx/interface/colors/society.dds" }
+template color_diplomacy_texture { texture = "gfx/interface/colors/diplomacy.dds" }
+template color_military_texture { texture = "gfx/interface/colors/military.dds" }
+template color_geopolitics_texture { texture = "gfx/interface/colors/geopolitics.dds" }
+template color_advances_texture { texture = "gfx/interface/colors/advances.dds" }
+# template color_debug_texture { texture = "gfx/interface/colors/debug.dds" }
+
+# template color_requirementlist_arrow_texture {
+# 	using = color_black_texture
+# 	alpha = 0.6
+
+# 	modify_texture = {
+# 		using = color_white_texture
+# 		alpha = 1
+# 	}
+# 	modify_texture = {
+# 		using = overlay_cloth_texture
+# 		alpha = 0.2
+# 	}
+# }
+
+template color_requirementlist_arrow_white_texture {
+	# using = color_bg_brown_texture
+	# modify_texture = {
+	# 	using = color_grey_texture
+	# 	alpha = 0.7
+	# }
+	texture = "gfx/interface/component_masks/mask_texture_01.dds"
+	texture_density = 2
+	alpha = 1
+	spriteType = corneredstretched
+	spriteBorder = { 12 12 }
+
+	modify_texture = {
+		using = color_grey_texture
+	}
+	modify_texture = {
+		using = color_white_texture
+		alpha = 0.3
+	}
+}
+
+template color_requirementlist_arrow_brown_texture {
+	using = color_black_texture
+
+	modify_texture = {
+		using = color_dark_brown_texture
+		alpha = 1
+	}
+}
+
+# template color_requirement_arrow_texture {
+# 	using = color_mid_blue_texture
+
+# 	modify_texture = {
+# 		using = color_white_texture
+# 		alpha = 0.5
+# 	}
+# }
+
+# template color_blue {
+# 	modify_texture = {
+# 		using = color_blue_texture
+# 	}
+# }
+
+template color_bg_blue {
+	modify_texture = {
+		using = color_bg_blue_texture
+	}
+}
+
+# template color_very_light_blue {
+# 	modify_texture = {
+# 		using = color_white_texture
+# 		alpha = 0.3
+# 	}
+
+# 	modify_texture = {
+# 		using = color_light_blue_texture
+# 	}
+# }
+
+template color_light_blue {
+	modify_texture = {
+		using = color_light_blue_texture
+	}
+}
+
+template overlay_color_light_blue {
+	modify_texture = {
+		using = color_light_blue_texture
+		blend_mode = overlay
+	}
+}
+
+# template overlay_color_icon_blue {
+# 	modify_texture = {
+# 		using = color_white_texture
+# 		blend_mode = overlay
+# 		alpha = 0.3
+# 	}
+
+# 	modify_texture = {
+# 		using = color_light_blue_texture
+# 		blend_mode = overlay
+# 	}
+# }
+
+template overlay_color_blue {
+	modify_texture = {
+		using = color_blue_texture
+		blend_mode = overlay
+	}
+}
+
+template color_mid_blue {
+	modify_texture = {
+		using = color_mid_blue_texture
+	}
+}
+
+# template color_mid_bright_blue {
+# 	modify_texture = {
+# 		using = color_progress_blue_texture
+# 		alpha = 0.4
+# 		blend_mode = add
+# 	}
+# 	modify_texture = {
+# 		using = color_turquoise_texture
+# 		alpha = 0.8
+# 		blend_mode = overlay
+# 	}
+# }
+
+# template color_mid_green {
+# 	modify_texture = {
+# 		using = color_mid_green_texture
+# 	}
+# }
+
+# template color_mid_red {
+# 	modify_texture = {
+# 		using = color_mid_red_texture
+# 	}
+# }
+
+# template overlay_color_mid_blue {
+# 	modify_texture = {
+# 		using = color_mid_blue_texture
+# 		blend_mode = overlay
+# 		alpha = 0.8
+# 	}
+# }
+
+template color_dark_blue {
+	modify_texture = {
+		using = color_dark_blue_texture
+	}
+}
+
+template color_dark_brown {
+	modify_texture = {
+		using = color_dark_brown_texture
+	}
+}
+
+template color_brown_leather {
+	modify_texture = {
+		using = color_brown_leather_texture
+	}
+}
+
+template color_bg_brown {
+	modify_texture = {
+		using = color_bg_brown_texture
+	}
+}
+
+# template color_intense_brown
+# {
+# 	modify_texture = {
+# 		using = color_intense_brown_texture
+# 	}
+# }
+
+# template color_dark_turquoise {
+# 	modify_texture = {
+# 		using = color_dark_turquoise_texture
+# 	}
+# }
+
+# template color_grey {
+# 	modify_texture = {
+# 		using = color_grey_texture
+# 	}
+# }
+
+template color_gold {
+	modify_texture = {
+		using = color_gold_texture
+	}
+}
+
+template color_new_gold {
+	modify_texture = {
+		using = color_new_gold_texture
+	}
+}
+
+# template overlay_color_gold {
+# 	modify_texture = {
+# 		using = color_gold
+# 		blend_mode = overlay
+# 	}
+# }
+
+template non_clickable_color_gold_texture {
+	modify_texture = {
+		using = color_new_gold_texture
+		blend_mode = add
+		alpha = 0.6
+	}
+
+	modify_texture = {
+		using = color_black_texture
+		blend_mode = overlay
+		alpha = 0.4
+	}
+
+	modify_texture = {
+		using = color_purple_texture
+		blend_mode = multiply
+		alpha = 0.1
+	}
+}
+
+template overlay_color_new_gold {
+	modify_texture = {
+		using = color_grey_texture
+		alpha = 0.1
+	}
+	modify_texture = {
+		using = color_new_gold_texture
+		blend_mode = overlay
+	}
+}
+
+template color_bone {
+	modify_texture = {
+		using = color_bone_texture
+	}
+}
+
+# template overlay_color_bone {
+# 	modify_texture = {
+# 		using = color_bone_texture
+# 		blend_mode = overlay
+# 		alpha = 0.4
+# 	}
+# }
+
+# template color_white {
+# 	modify_texture = {
+# 		using = color_white_texture
+# 	}
+# }
+
+# template overlay_color_white {
+# 	modify_texture = {
+# 		using = color_white_texture
+# 		blend_mode = overlay
+# 	}
+# }
+
+template color_black {
+	modify_texture = {
+		using = color_black_texture
+	}
+}
+
+template color_light_green {
+	modify_texture = {
+		using = color_light_green_texture
+	}
+}
+
+template color_red {
+	modify_texture = {
+		using = color_red_texture
+	}
+}
+
+template overlay_color_red {
+	modify_texture = {
+		using = color_red_texture
+		blend_mode = overlay
+	}
+}
+
+template overlay_color_light_green {
+	modify_texture = {
+		using = color_light_green_texture
+		blend_mode = overlay
+	}
+}
+
+# template color_turquoise {
+# 	modify_texture = {
+# 		using = color_turquoise_texture
+# 	}
+# }
+
+# template overlay_color_turquoise {
+# 	modify_texture = {
+# 		using = color_turquoise_texture
+# 		blend_mode = overlay
+# 	}
+# }
+
+template color_yellow {
+	modify_texture = {
+		using = color_yellow_texture
+	}
+}
+
+# template overlay_color_yellow {
+# 	modify_texture = {
+# 		using = color_yellow_texture
+# 		blend_mode = overlay
+# 		alpha = 0.5
+# 	}
+# }
+
+template color_progress_blue {
+	modify_texture = {
+		using = color_progress_blue_texture
+	}
+}
+
+template color_value_progress_blue {
+	color = { 0.168 0.556 0.854 1 }
+}
+
+template color_value_progress_red {
+	color = { 0.987 0.1 0.1 1 }
+}
+
+template color_value_progress_gray {
+	color = { 0.25 0.25 0.25 1 }
+}

@@ -1,0 +1,63 @@
+﻿n_early_iberian_galleon = {
+	category = navy_heavy_ship	
+	copy_from = n_age_3_discovery_heavy_ship
+	upgrades_to = n_iberian_galleon
+	buildable = yes
+	
+	movement_speed = 7
+	hull_size = 30
+	cannons = 60
+
+	maintenance_demand =  heavy_ship_3_maintenance
+	construction_demand = heavy_ship_3_construction
+
+	location_potential = {
+		unit_iberian_ship_location_trigger = yes
+	}
+}
+
+n_square_rigged_caravel = {
+	category = navy_light_ship	
+	copy_from = n_age_3_discovery_light_ship
+	buildable = yes
+	
+	movement_speed = 12
+
+	maintenance_demand =  heavy_ship_3_maintenance
+	construction_demand = heavy_ship_3_construction
+
+	location_potential = {
+		unit_iberian_ship_location_trigger = yes
+	}
+}
+
+n_baochuan = {
+	category = navy_heavy_ship
+	copy_from = n_age_3_discovery_heavy_ship
+	buildable = no
+
+	movement_speed = 6
+	maritime_presence = ship_lower_medium_maritime
+	hull_size = 30
+	crew_size = 0.350
+	cannons = 40
+
+	maintenance_demand =  heavy_ship_3_maintenance
+	construction_demand = heavy_ship_3_construction
+	age = "age_3_discovery"
+}
+
+n_sekibune = {
+	category = navy_galley
+	copy_from = n_age_3_discovery_galley
+	upgrades_to = n_atakebune
+
+	movement_speed = 9
+	hull_size = 6
+	cannons = 8
+	maritime_presence = ship_small_maritime
+
+	maintenance_demand =  galley_3_maintenance
+	construction_demand = galley_3_construction
+	age = "age_3_discovery"
+}

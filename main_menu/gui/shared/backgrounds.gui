@@ -1,0 +1,7951 @@
+######################################################
+################ BACKGROUND TEMPLATES ################
+######################################################
+
+### CONTAINER TEMPLATES
+
+template bg_circle # circle buttons bg
+{
+	background = {
+		margin = { 2.5 2.5 }
+		texture = "gfx/interface/buttons/flats/flat_bg_button.dds"
+		texture_density = 2
+		alpha = 1
+		using = color_dark_blue
+	}
+}
+
+template bg_circle_alt # circle buttons bg
+{
+	background = {
+		margin = { 1 1 }
+		texture = "gfx/interface/buttons/flats/flat_bg_button.dds"
+		texture_density = 2
+		alpha = 1
+		using = color_dark_blue
+	}
+}
+
+template bg_circle_alt_brown # circle buttons bg
+{
+	background = {
+		texture = "gfx/interface/buttons/flats/flat_bg_button.dds"
+		texture_density = 2
+		alpha = 0.8
+		block "color" {
+			using = color_dark_brown
+		}
+
+		block "bg_circle_alt_margin" {
+			margin = { 0 0 }
+		}
+	}
+}
+
+template bg_circle_alt_purple_02 # circle buttons bg
+{
+	background = {
+		texture = "gfx/interface/buttons/flats/flat_bg_button.dds"
+		texture_density = 2
+		alpha = 0.8
+		block "bg_circle_alt_margin" {
+			margin = { 1 1 }
+		}
+
+		modify_texture = {
+			using = color_purple_02_texture
+		}
+	}
+}
+
+template bg_circle_light_alt # circle buttons bg
+{
+	background = {
+		margin = { 1 1 }
+		texture = "gfx/interface/buttons/bg_button_light.dds"
+		spriteType = corneredstretched
+		spriteborder = { 19 19 }
+		texture_density = 2
+		alpha = 1
+		# block "bg_circle_color" {
+			using = color_dark_blue
+		# }
+	}
+}
+
+# template bg_header_button_left # header buttons bg
+# {
+# 	background = {
+# 		margin = { 1 1 }
+# 		texture = "gfx/interface/buttons/header_button_bg.dds"
+# 		spriteType = corneredstretched
+# 		spriteborder = { 40 40 }
+# 		texture_density = 2
+# 		alpha = 1
+
+# 		modify_texture = {
+# 			using = color_intense_brown_texture
+# 		}
+
+# 		modify_texture = {
+# 			#using = overlay_metal_texture
+# 			blend_mode = overlay
+# 			alpha = 0.2
+# 		}
+# 	}
+# 	background = {
+# 		margin = { 1 1 }
+# 		texture = "gfx/interface/buttons/header_button_bg.dds"
+# 		spriteType = corneredstretched
+# 		spriteborder = { 40 40 }
+# 		texture_density = 2
+# 		blend_mode = alphamultiply
+# 		alpha = 0.3
+# 	}
+# }
+
+template bg_button_light_alt_round # circle buttons bg round
+{
+	background = {
+		margin = { 1 1 }
+		texture = "gfx/interface/buttons/bg_button_light_round.dds"
+		# spriteType = corneredstretched
+		# spriteborder = { 30 30 }
+		texture_density = 2
+		alpha = 1
+		# block "bg_button_round_color" {
+			using = color_dark_blue
+		# }
+	}
+}
+
+template bg_button_flavor_1 {
+	icon = {
+		size = {100% 99%}
+		using = bg_button_flavor_1_texture
+
+		modify_texture = {
+			using = color_new_gold_texture
+		}
+
+		modify_texture = {
+			using = overlay_stone_texture
+			blend_mode = overlay
+			alpha = 0.4
+		}
+
+		background = {
+			using = bg_button_flavor_1_texture
+			margin_bottom = 1
+		}
+	}
+}
+
+template bg_button_flavor_2 {
+	icon = {
+		size = {100% 100%}
+		using = bg_button_flavor_2_texture
+
+		modify_texture = {
+			using = color_new_gold_texture
+		}
+
+		modify_texture = {
+			using = overlay_stone_texture
+			blend_mode = overlay
+			alpha = 0.4
+		}
+
+		background = {
+			using = bg_button_flavor_2_texture
+
+			modify_texture = {
+				using = bg_fade_vertical_up_mask_texture
+				blend_mode = alphamultiply
+				alpha = 1
+			}
+		}
+	}
+}
+
+template bg_button_flavor_3 {
+	icon = {
+		size = {100% 100%}
+		using = bg_button_flavor_3_texture
+
+		modify_texture = {
+			using = color_new_gold_texture
+		}
+
+		modify_texture = {
+			using = overlay_stone_texture
+			blend_mode = overlay
+			alpha = 0.4
+		}
+
+		background = {
+			using = bg_button_flavor_3_texture
+			margin_bottom = 2
+
+			modify_texture = {
+				using = bg_fade_vertical_down_mask_texture
+				blend_mode = alphamultiply
+				alpha = 1
+			}
+		}
+	}
+}
+
+template bg_button_flavor_4 {
+	icon = {
+		size = {100% 100%}
+		using = bg_button_flavor_4_texture
+
+		modify_texture = {
+			using = color_new_gold_texture
+		}
+
+		modify_texture = {
+			using = overlay_stone_texture
+			blend_mode = overlay
+			alpha = 0.4
+		}
+
+		background = {
+			using = bg_button_flavor_4_texture
+			margin_bottom = 2
+
+			modify_texture = {
+				using = bg_fade_vertical_down_mask_texture
+				blend_mode = alphamultiply
+				alpha = 1
+			}
+		}
+	}
+}
+
+template bg_paper_card {
+	background = {
+		using = paper_card_texture
+		margin = { 1 1 }
+		margin_bottom = 2
+		alpha = 0.4
+		block "card_shadow_margin" {}
+	}
+
+	background = {
+		using = paper_card_texture
+		block "card_margin" {}
+
+		block "card_color" {
+			modify_texture = {
+				using = color_paper_texture
+			}
+		}
+
+		modify_texture = {
+			using = overlay_paper_03
+		}
+
+		# block "card_fancy_texture_extra" {}
+		block "card_texture_extra" {}
+	}
+}
+
+template bg_paper_card_situations {
+	background = {
+		texture = "gfx/interface/cards/paper_card_fancy_01.dds"
+		texture_density = 2
+		spriteType = corneredstretched
+		spriteborder = { 100 100 }
+		margin = { 1 1 }
+		margin_bottom = 2
+		alpha = 0.4
+	}
+
+	background = {
+		texture = "gfx/interface/cards/paper_card_fancy_01.dds"
+		texture_density = 2
+		spriteType = corneredstretched
+		spriteborder = { 100 100 }
+		block "card_margin" {}
+
+		block "card_color" {
+			modify_texture = {
+				using = color_paper_texture
+			}
+			modify_texture = {
+				using = color_black_texture
+				alpha = 0.3
+			}
+		}
+
+		modify_texture = {
+			using = overlay_paper_03
+		}
+		modify_texture = {
+			using = overlay_cloth_texture
+			blend_mode = overlay
+			alpha = 0.2
+		}
+
+		block "card_texture_extra" {}
+	}
+}
+
+template bg_card_header_situation {
+	background = {
+		block "header_color" {
+			using = color_purple_02_texture
+		}
+		texture_density = 2
+		margin_top = 1
+		modify_texture = {
+			using = overlay_cloth_texture
+			blend_mode = overlay
+			alpha = 0.3
+		}
+	}
+
+	background = {
+		using = color_dark_blue_texture
+		alpha = 0.3
+		margin_top = 1
+		modify_texture = {
+			using = mask_fade_horizontal_middle_texture
+			blend_mode = alphamultiply
+		}
+	}
+	background = {
+		using = tile_frame_squared_texture
+		alpha = 0.5
+		modify_texture = {
+			using = color_black_texture
+		}
+		modify_texture = {
+			using = overlay_cloth_texture
+			blend_mode = overlay
+			alpha = 0.3
+		}
+	}
+
+	# block "header_extra" {}
+}
+
+template bg_card_header_geo_situation {
+	background = {
+		texture = "gfx/interface/cards/headers/situations/geo_header_decor.dds"
+		texture_density = 2
+		spriteType = Corneredstretched
+		spriteborder = { 100 0 }
+		alpha = 0.5
+		modify_texture = {
+			using = color_black_texture
+		}
+		modify_texture = {
+			using = overlay_cloth_texture
+			blend_mode = overlay
+			alpha = 0.3
+		}
+	}
+}
+
+template bg_situation_striped_frame {
+	background = {
+		texture = "gfx/interface/component_decoration/situation/frame_striped_situation.dds"
+		spriteType = Corneredstretched
+		spriteborder = { 40 40 }
+		texture_density = 2
+		alpha = 0.5
+		margin_bottom = 2
+		margin_top = -2
+		modify_texture = {
+			using = color_black_texture
+		}
+		# block "bg_situation_frame_shadow" {}
+	}
+	background = {
+		texture = "gfx/interface/component_decoration/situation/frame_striped_situation.dds"
+		spriteType = Corneredstretched
+		spriteborder = { 40 40 }
+		texture_density = 2
+		modify_texture = {
+			using = color_new_gold_texture
+		}
+		modify_texture = {
+			using = color_black_texture
+			blend_mode = overlay
+			alpha = 0.3
+		}
+		modify_texture = {
+			using = overlay_stone_texture
+			blend_mode = overlay
+			alpha = 0.3
+
+		}
+		modify_texture = {
+			using = overlay_window_texture
+			blend_mode = overlay
+			alpha = 0.2
+		}
+		# block "bg_situation_frame_extra" {}
+	}
+}
+
+template bg_geodiplo_situation_corner_decor {
+	background = {
+		texture = "gfx/interface/component_decoration/situation/geodiplo_corner_decor_situation.dds"
+		spriteType = Corneredstretched
+		spriteborder = { 50 40 }
+		texture_density = 2
+		margin = {0 8}
+		margin_right = 2
+		margin_bottom = 1
+		alpha = 0.5
+		modify_texture = {
+			using = color_black_texture
+		}
+
+		# block "bg_geodiplo_shadow" {}
+	}
+	background = {
+		texture = "gfx/interface/component_decoration/situation/geodiplo_corner_decor_situation.dds"
+		spriteType = Corneredstretched
+		spriteborder = { 50 40 }
+		texture_density = 2
+		margin = {0 10}
+		margin_bottom = 0
+		modify_texture = {
+			using = color_new_gold_texture
+		}
+		modify_texture = {
+			using = color_black_texture
+			blend_mode = overlay
+			alpha = 0.3
+		}
+		modify_texture = {
+			using = overlay_stone_texture
+			blend_mode = overlay
+			alpha = 0.3
+		}
+		modify_texture = {
+			using = overlay_window_texture
+			blend_mode = overlay
+			alpha = 0.2
+		}
+		# block "bg_situation_frame_extra" {}
+	}
+}
+
+template bg_geodiplo_situation_header {
+	using = bg_card_header_situation
+	using = bg_card_header_geo_situation
+	using = bg_situation_striped_frame
+	using = bg_geodiplo_situation_corner_decor
+}
+
+template bg_geodiplo_situation_header_secondary {
+	using = bg_card_header_situation
+	using = bg_card_header_geo_situation
+	using = bg_situation_striped_frame
+}
+
+# TO DELETE ONCE WILL MERGES STUFF INTO DEVELOP
+# template bg_religious_situation_header {
+# 	background = {
+# 		block "header_color" {
+# 			using = color_clergy_texture
+# 		}
+# 		texture_density = 2
+# 		margin_top = 1
+# 		modify_texture = {
+# 			using = overlay_cloth_texture
+# 			blend_mode = overlay
+# 			alpha = 0.3
+# 		}
+# 	}
+# 	background = {
+# 		using = color_dark_blue_texture
+# 		alpha = 0.3
+# 		margin_top = 1
+# 		modify_texture = {
+# 			using = mask_fade_horizontal_middle_texture
+# 			blend_mode = alphamultiply
+# 		}
+# 	}
+# 	background = {
+# 		using = tile_frame_squared_texture
+# 		alpha = 0.5
+# 		modify_texture = {
+# 			using = color_black_texture
+# 		}
+# 		modify_texture = {
+# 			using = overlay_cloth_texture
+# 			blend_mode = overlay
+# 			alpha = 0.3
+# 		}
+# 	}
+# 	# block "header_extra" {}
+# }
+
+template bg_religious_situation_header_secondary {
+	background = {
+		block "header_color" {
+			using = color_clergy_texture
+		}
+		texture_density = 2
+		margin_top = 1
+		modify_texture = {
+			using = overlay_cloth_texture
+			blend_mode = overlay
+			alpha = 0.3
+		}
+	}
+	background = {
+		using = color_dark_blue_texture
+		alpha = 0.3
+		margin_top = 1
+		modify_texture = {
+			using = mask_fade_horizontal_middle_texture
+			blend_mode = alphamultiply
+		}
+	}
+	background = {
+		using = tile_frame_squared_texture
+		alpha = 0.5
+		modify_texture = {
+			using = color_black_texture
+		}
+		modify_texture = {
+			using = overlay_cloth_texture
+			blend_mode = overlay
+			alpha = 0.3
+		}
+	}
+	# block "header_extra" {}
+}
+
+template bg_religion_main_decor {
+	background = {
+		texture = "gfx/interface/component_decoration/situation/religion_decor_main_situation.dds"
+		spriteType = Corneredtiled
+		spriteborder = { 125 40 }
+		texture_density = 2
+		margin = { -3 -3 }
+
+		modify_texture = {
+			using = color_dark_brown_texture
+		}
+	}
+}
+
+template bg_war_situation_main_header {
+	background = {
+		texture = "gfx/interface/component_decoration/situation/header_wood_frame.dds"
+		spriteType = Corneredstretched
+		spriteborder = { 100 40 }
+		texture_density = 2
+		alpha = 0.8
+		margin_bottom = 2
+		modify_texture = {
+			using = color_black_texture
+		}
+		# block "bg_situation_wood_frame_shadow" {}
+	}
+	background = {
+		texture = "gfx/interface/component_decoration/situation/header_wood_frame.dds"
+		spriteType = Corneredstretched
+		spriteborder = { 100 40 }
+		texture_density = 2
+		modify_texture = {
+			using = color_wood_brown_texture
+		}
+		modify_texture = {
+			using = color_black_texture
+			blend_mode = overlay
+			alpha = 0.4
+		}
+		modify_texture = {
+			using = overlay_wood_texture
+			blend_mode = overlay
+			alpha = 0.5
+		}
+		modify_texture = {
+			using = overlay_window_texture
+			blend_mode = overlay
+			alpha = 0.2
+		}
+		# block "bg_situation_frame_extra" {}
+	}
+	background = {
+		texture = "gfx/interface/component_decoration/situation/header_wood_frame_inner_shadow.dds"
+		spriteType = Corneredstretched
+		spriteborder = { 100 40 }
+		texture_density = 2
+		alpha = 0.5
+		modify_texture = {
+			using = color_black_texture
+		}
+		modify_texture = {
+			using = color_wood_brown_texture
+			blend_mode = overlay
+			alpha = 0.8
+		}
+		modify_texture = {
+			using = overlay_wood_texture
+			blend_mode = overlay
+			alpha = 0.5
+		}
+		modify_texture = {
+			using = overlay_window_texture
+			blend_mode = overlay
+			alpha = 0.2
+		}
+	}
+	background = {
+		texture = "gfx/interface/component_decoration/situation/header_wood_burned.dds"
+		spriteType = Corneredstretched
+		spriteborder = { 100 40 }
+		texture_density = 2
+		modify_texture = {
+			using = color_black_texture
+		}
+	}
+}
+
+template bg_war_situation_secondary_header {
+	using = bg_card_header_situation
+
+	background = {
+		texture = "gfx/interface/component_decoration/situation/header_burned_cloth.dds"
+		spriteType = Corneredstretched
+		spriteborder = { 100 40 }
+		texture_density = 2
+		# block "burned_cloth" {
+		# 	visible = yes
+		# }
+	}
+	background = {
+		texture = "gfx/interface/component_decoration/situation/header_wood_frame_outside.dds"
+		spriteType = Corneredstretched
+		spriteborder = { 100 40 }
+		texture_density = 2
+		margin_top = -1
+		margin_bottom = 1
+		alpha = 0.8
+		modify_texture = {
+			using = color_black_texture
+		}
+	}
+	background = {
+		texture = "gfx/interface/component_decoration/situation/header_wood_frame_outside.dds"
+		spriteType = Corneredstretched
+		spriteborder = { 100 40 }
+		texture_density = 2
+		modify_texture = {
+			using = color_wood_brown_texture
+		}
+		modify_texture = {
+			using = color_black_texture
+			blend_mode = overlay
+			alpha = 0.4
+		}
+		modify_texture = {
+			using = overlay_wood_texture
+			blend_mode = overlay
+			alpha = 0.5
+		}
+		modify_texture = {
+			using = overlay_window_texture
+			blend_mode = overlay
+			alpha = 0.2
+		}
+		# block "bg_situation_frame_extra" {}
+	}
+}
+
+template bg_disease_situation_header {
+	background = {
+		texture = "gfx/interface/colors/desat_red.dds"
+
+		texture_density = 2
+
+		modify_texture = {
+			# texture = "gfx/interface/cards/headers/header_pattern_01.dds"
+			texture = "[GetGraphicalCultureTexture('header_pattern')]"
+			texture_density = 2
+			spriteType = corneredtiled
+			blend_mode = overlay
+			alpha = 0.5
+		}
+		modify_texture = {
+			texture = "gfx/interface/component_overlay/cloth_texture.dds"
+			texture_density = 2
+			spriteType = Corneredtiled
+			spriteborder = { 0 0 }
+			blend_mode = overlay
+			alpha = 0.2
+		}
+	}
+
+	background = {
+		texture = "gfx/interface/component_overlay/disease_stain_texture.dds"
+		texture_density = 2
+		spriteType = Corneredstretched
+		spriteborder = { 125 0 }
+		blend_mode = overlay
+		alpha = 0.3
+		modify_texture = {
+			texture = "gfx/interface/colors/muztard.dds"
+		}
+	}
+
+	background = {
+		texture = "gfx/interface/component_masks/disease_card_mask_top.dds"
+		texture_density = 2
+		alpha = 0.4
+		modify_texture = {
+			texture = "gfx/interface/colors/super_dark_red.dds"
+		}
+	}
+
+	background = {
+		texture = "gfx/interface/component_decoration/situation/header_wood_frame_outside.dds"
+		spriteType = Corneredstretched
+		spriteborder = { 100 40 }
+		texture_density = 2
+		alpha = 0.8
+		modify_texture = {
+			using = color_black_texture
+		}
+	}
+}
+
+# template bg_religion_decor_situation {
+# 	background = {
+# 		texture = "gfx/interface/component_decoration/situation/religion_decor_situation.dds"
+# 		spriteType = Corneredstretched
+# 		spriteborder = { 100 40 }
+# 		texture_density = 2
+# 		margin = { -6 -6 }
+
+# 		modify_texture = {
+# 			using = color_bg_brown_texture
+# 		}
+# 	}
+# }
+
+# template bg_religion_frame_situation {
+# 	background = {
+# 		texture = "gfx/interface/component_decoration/situation/religion_frame_situation.dds"
+# 		spriteType = Corneredstretched
+# 		spriteborder = { 40 50 }
+# 		texture_density = 2
+# 		# block "religion_margins_frame" {
+# 			margin = {-4 -4}
+# 		# }
+
+# 		modify_texture = {
+# 			using = color_clergy_texture
+# 		}
+# 		modify_texture = {
+# 			using = overlay_watercolor_texture
+# 			blend_mode = multiply
+# 			alpha = 0.4
+# 		}
+# 	}
+# }
+
+# template bg_card_header_religion_situation {
+# 	background = {
+# 		block "header_color" {
+# 			using = color_clergy_texture
+# 		}
+# 		texture_density = 2
+# 		margin_top = 1
+# 		modify_texture = {
+# 			using = overlay_cloth_texture
+# 			blend_mode = overlay
+# 			alpha = 0.3
+# 		}
+# 	}
+# 	background = {
+# 		using = color_dark_blue_texture
+# 		alpha = 0.3
+# 		margin_top = 1
+# 		modify_texture = {
+# 			using = mask_fade_horizontal_middle_texture
+# 			blend_mode = alphamultiply
+# 		}
+# 	}
+# 	background = {
+# 		using = tile_frame_squared_texture
+# 		alpha = 0.5
+# 		modify_texture = {
+# 			using = color_black_texture
+# 		}
+# 		modify_texture = {
+# 			using = overlay_cloth_texture
+# 			blend_mode = overlay
+# 			alpha = 0.3
+# 		}
+# 	}
+# 	# block "header_extra" {}
+# }
+
+### situations overview cards ####
+
+template bg_common_situation_overview {
+	using = bg_card_header_situation
+	background = {
+		texture = "gfx/interface/component_decoration/situation/header_wood_frame_outside.dds"
+		spriteType = Corneredstretched
+		spriteborder = { 100 40 }
+		texture_density = 2
+		alpha = 0.8
+		modify_texture = {
+			using = color_black_texture
+		}
+	}
+}
+
+template bg_war_situation_overview {
+	using = bg_war_situation_main_header
+}
+
+template bg_geodiplo_situation_overview {
+	using = bg_card_header_situation
+	using = bg_geodiplo_situation_header
+}
+
+template bg_diseases_situation_overview {
+	using = bg_card_header_situation
+	using = bg_disease_situation_header
+}
+
+template bg_paper_card_fancy {
+	background = {
+		texture = "gfx/interface/cards/paper_card_fancy_01.dds"
+		texture_density = 2
+		spriteType = corneredstretched
+		spriteborder = { 100 100 }
+		block "card_fancy_shadow" {
+			margin = { 1 1 }
+		}
+
+		margin_bottom = 2
+		alpha = 0.4
+	}
+
+	background = {
+		texture = "gfx/interface/cards/paper_card_fancy_01.dds"
+		texture_density = 2
+		spriteType = corneredstretched
+		spriteborder = { 100 100 }
+		# block "card_fancy_margin" {}
+
+		block "card_color" {
+			modify_texture = {
+				using = color_paper_texture
+			}
+		}
+
+		modify_texture = {
+			using = overlay_paper_03
+		}
+
+		block "card_texture_extra" {}
+	}
+}
+
+# template bg_light_paper_card {
+# 	background = {
+# 		using = paper_card_texture
+# 		margin = { 1 1 }
+# 		margin_bottom = 2
+# 		alpha = 0.4
+# 	}
+
+# 	background = {
+# 		using = paper_card_texture
+# 		block "margins" {
+# 			margin = {0 0}
+# 		}
+
+# 		modify_texture = {
+# 			using = color_light_paper_texture
+# 		}
+
+# 		modify_texture = {
+# 			using = overlay_paper_03
+# 			alpha = 0.3
+# 		}
+
+# 		modify_texture = {
+# 			using = color_black_texture
+# 			blend_mode = overlay
+# 			alpha = 0.2
+# 		}
+# 	}
+# }
+
+template bg_dark_paper_card {
+	background = {
+		using = paper_card_texture
+		margin = { 1 1 }
+		margin_bottom = 2
+		alpha = 0.4
+		# block "bg_dark_paper_card_shadow" {}
+	}
+
+	background = {
+		using = paper_card_texture
+
+		modify_texture = {
+			using = color_paper_texture
+		}
+
+		modify_texture = {
+			using = overlay_paper_03
+		}
+
+		modify_texture = {
+			using = color_black_texture
+			blend_mode = overlay
+			alpha = 0.4
+		}
+		# block "bg_dark_paper_card_extra" {}
+	}
+}
+
+# template bg_outline_text_left {
+# 	background = {
+# 		using = paper_card_texture
+# 		margin = {0 5}
+# 		margin_left = 5
+# 		margin_right = -25
+
+# 		modify_texture = {
+# 			using = color_paper_texture
+# 		}
+
+# 		modify_texture = {
+# 			using = overlay_paper_03
+# 			alpha = 0.4
+# 		}
+
+# 		modify_texture = {
+# 			using = color_black_texture
+# 			blend_mode = overlay
+# 			alpha = 0.4
+# 		}
+# 	}
+# }
+
+# template bg_outline_text_right {
+# 	background = {
+# 		using = paper_card_texture
+# 		margin = {0 5}
+# 		margin_right = 5
+# 		margin_left = -25
+
+# 		modify_texture = {
+# 			using = color_paper_texture
+# 		}
+
+# 		modify_texture = {
+# 			using = overlay_paper_03
+# 			alpha = 0.4
+# 		}
+
+# 		modify_texture = {
+# 			using = color_black_texture
+# 			blend_mode = overlay
+# 			alpha = 0.4
+# 		}
+# 	}
+# }
+
+# template bg_dark_blue_paper_card {
+# 	background = {
+# 		using = paper_card_texture
+# 		margin = { 1 1 }
+# 		margin_bottom = 2
+# 		alpha = 0.4
+# 	}
+
+# 	background = {
+# 		using = paper_card_texture
+
+# 		# block "bg_blue_paper_card_color" {
+# 			modify_texture = {
+# 				using = color_dark_blue_texture
+# 			}
+# 		# }
+
+# 		modify_texture = {
+# 			using = overlay_paper_03
+# 		}
+
+# 		modify_texture = {
+# 			using = color_black_texture
+# 			blend_mode = overlay
+# 			alpha = 0.4
+# 		}
+# 	}
+# }
+
+template bg_scroll_card {
+	background = {
+		using = scroll_card_texture
+		margin = { 1 1 }
+		margin_top = 0
+		margin_bottom = 2
+		alpha = 0.2
+	}
+
+	background = {
+		using = scroll_card_texture
+
+		block "card_color" {
+			modify_texture = {
+				using = color_paper_texture
+			}
+		}
+
+		modify_texture = {
+			using = overlay_paper_03
+			alpha = 0.3
+		}
+	}
+
+	background = {
+		using = scroll_card_outline_texture
+		margin = { 1 1 }
+		alpha = 0.5
+	}
+}
+
+template bg_scroll_card_rendered {
+	background = {
+		block "bg_scroll_card_rendered_visible" {}
+		using = scroll_card_texture
+		margin = { 1 1 }
+		margin_top = 0
+		margin_bottom = 2
+		alpha = 0.2
+	}
+
+	background = {
+		block "bg_scroll_card_rendered_visible" {}
+		using = scroll_card_texture
+
+		block "card_color" {
+			modify_texture = {
+				using = color_bg_brown_texture
+			}
+		}
+	}
+
+	background = {
+		block "bg_scroll_card_rendered_visible" {}
+		using = scroll_card_outline_texture
+		margin = { 1 1 }
+		alpha = 0.5
+	}
+
+	background = {
+		block "bg_scroll_card_rendered_visible" {}
+		using = scroll_card_light_texture
+		margin = { 1 1 }
+		alpha = 0.5
+		modify_texture = {
+			using = color_bg_brown_texture
+			blend_mode = overlay
+		}
+	}
+}
+
+# template bg_list_card {
+# 	background = {
+# 		texture = "gfx/interface/cards/list_card_02.dds"
+# 		texture_density = 2
+# 		margin = { 1 1 }
+# 		margin_top = 0
+# 		margin_bottom = 2
+# 		alpha = 0.2
+# 		modify_texture = {
+# 			using = color_black_texture
+# 			blend_mode = multiply
+# 		}
+# 	}
+
+# 	background = {
+# 		texture = "gfx/interface/cards/list_card_02.dds"
+# 		texture_density = 2
+
+# 		modify_texture = {
+# 			using = color_paper_texture
+# 			blend_mode = multiply
+# 		}
+
+# 		modify_texture = {
+# 			using = overlay_paper_03
+# 			alpha = 0.3
+# 		}
+# 	}
+# }
+
+# template bg_folded_card_02 {
+# 	background = {
+# 		texture = "gfx/interface/cards/folded_card_02.dds"
+# 		texture_density = 2
+# 		spritetype = corneredstretched
+# 		spriteBorder = {50 50}
+# 		margin = { 1 1 }
+# 		margin_top = 0
+# 		margin_bottom = 2
+# 		alpha = 0.2
+# 		modify_texture = {
+# 			using = color_black_texture
+# 			blend_mode = multiply
+# 		}
+# 	}
+
+# 	background = {
+# 		texture = "gfx/interface/cards/folded_card_02.dds"
+# 		texture_density = 2
+# 		spritetype = corneredstretched
+# 		spriteBorder = {50 50}
+
+# 		modify_texture = {
+# 			using = color_paper_texture
+# 			blend_mode = multiply
+# 		}
+
+# 		modify_texture = {
+# 			texture = "gfx/interface/component_masks/mask_fade_horizontal_middle_solid.dds"
+# 			texture_density = 2
+# 			blend_mode = overlay
+# 			alpha = 0.2
+# 		}
+
+# 		modify_texture = {
+# 			using = overlay_paper_03
+# 			alpha = 0.4
+# 		}
+# 	}
+# }
+
+template bg_generic_shadow {
+	background = {
+		texture = "gfx/interface/component_tiles/tile_card_shadow.dds"
+		spriteType = Corneredstretched
+		spriteborder = { 20 20 }
+		texture_density = 2
+		alpha = 0.6
+		block "generic_shadow_extra" {
+			margin = { 12 9 }
+			margin_top = 6
+		}
+	}
+}
+
+template bg_generic_side_mask {
+	background = {
+		texture = "gfx/interface/component_masks/mask_fade_horizontal_sides.dds"
+		texture_density = 2
+		alpha = 0.2
+
+		modify_texture = {
+			using = color_black_texture
+			blend_mode = multiply
+		}
+
+		modify_texture = {
+			using = overlay_cloth_texture
+			blend_mode = overlay
+			alpha = 0.9
+		}
+	}
+}
+
+template bg_card_header_texture {
+	background = {
+		texture = "gfx/interface/component_masks/mask_events_texture_full.dds"
+		spriteType = corneredstretched
+		spriteborder = {60 60}
+		texture_density = 2
+		alpha = 0.2
+
+		modify_texture = {
+			using = color_paper_texture
+		}
+
+		modify_texture = {
+			using = overlay_cloth_texture
+			blend_mode = overlay
+			alpha = 0.9
+		}
+	}
+}
+
+template bg_card {
+	using = bg_paper_card
+	using = bg_cabinet_card_frame
+	# background = {
+	# 	texture = "gfx/interface/cards/card_bg.dds"
+	# 	spriteType = Corneredtiled
+	# 	spriteborder = { 20 20 }
+	# 	texture_density = 2
+	# 	alpha = 1
+
+	# 	glow = {
+	# 		name = "drop_shadow"
+	# 		glow_radius = 4
+	# 		color = {0.0 0.0 0.0 1.0}
+	# 		alpha = 0.4
+	# 	}
+
+	# 	block "card_color" {
+	# 		using = color_mid_blue
+	# 	}
+
+	# 	modify_texture = {
+	# 		using = overlay_stone_texture
+	# 		blend_mode = overlay
+	# 		alpha = 0.4
+	# 	}
+	# }
+
+	# background = {
+	# 	texture = "gfx/interface/cards/card_inner_A.dds"
+	# 	spriteType = Corneredtiled
+	# 	spriteborder = { 20 20 }
+	# 	texture_density = 2
+	# 	alpha = 0.3
+
+	# 	block "card_color" {
+	# 		using = color_light_blue
+	# 	}
+
+	# 	modify_texture = {
+	# 		using = overlay_stone_texture
+	# 		blend_mode = overlay
+	# 		alpha = 1
+	# 	}
+	# }
+
+	# background = {
+	# 	texture = "gfx/interface/cards/card_frame_A.dds"
+	# 	#spriteType = Corneredtiled
+	# 	#spriteborder = { 20 20 }
+	# 	texture_density = 2
+	# 	alpha = 1
+
+	# 	block "card_color" {
+	# 		using = color_gold
+	# 	}
+
+	# 	glow = {
+	# 		name = "drop_shadow"
+	# 		glow_radius = 2
+	# 		color = {0.0 0.0 0.0 1.0}
+	# 		alpha = 0.3
+	# 	}
+
+	# 	modify_texture = {
+	# 		using = overlay_stone_texture
+	# 		blend_mode = overlay
+	# 		alpha = 1
+	# 	}
+
+	# 	modify_texture = {
+	# 		using = overlay_window_texture
+	# 		blend_mode = overlay
+	# 		alpha = 1
+	# 	}
+	# }
+}
+
+##AGES BG CARD
+
+template bg_age_past {
+	background = {
+		texture = "gfx/interface/cards/age_card_bg.dds"
+		spriteType = corneredstretched
+		spriteBorder = {30 30}
+		margin_bottom = 2
+		alpha = 0.4
+
+		modify_texture = {
+			using = color_black_texture
+			texture_density = 2
+			blend_mode = multiply
+		}
+	}
+
+	background = {
+		texture = "gfx/interface/cards/age_card_bg.dds"
+		spriteType = corneredstretched
+		spriteBorder = {30 30}
+
+		modify_texture = {
+			block "card_color" {
+				using = color_super_dark_brown_texture
+			}
+			blend_mode = multiply
+		}
+
+		modify_texture = {
+			using = overlay_paper_03
+		}
+		modify_texture = {
+			using = overlay_cloth_texture
+			blend_mode = overlay
+			alpha = 0.3
+		}
+	}
+}
+
+template bg_age_current {
+	background = {
+		texture = "gfx/interface/cards/age_card_bg.dds"
+		spriteType = corneredstretched
+		spriteBorder = {30 30}
+
+		modify_texture = {
+			using = color_bg_brown_texture
+			texture_density = 2
+			blend_mode = multiply
+		}
+
+		modify_texture = {
+			using = color_grey_texture
+			texture_density = 2
+			blend_mode = multiply
+			alpha = 0.6
+		}
+
+		modify_texture = {
+			using = color_grey_texture
+			# blend_mode = overlay
+			alpha = 0.1
+		}
+
+		modify_texture = {
+			using = overlay_paper_03
+		}
+		modify_texture = {
+			using = overlay_cloth_texture
+			blend_mode = overlay
+			alpha = 0.3
+		}
+	}
+}
+
+template bg_age_header {
+	background = {
+		texture = "gfx/interface/colors/black.dds"
+		alpha = 0.4
+		margin_bottom = 1
+
+		modify_texture = {
+			texture = "gfx/interface/cards/age_card_header_mask.dds"
+			spriteType = corneredstretched
+			spriteBorder = {30 30}
+			blend_mode = alphamultiply
+		}
+	}
+
+	background = {
+		block "header_color" {
+			texture = "gfx/interface/colors/gold_dark.dds"
+		}
+
+		modify_texture = {
+			texture = "gfx/interface/colors/black.dds"
+			blend_mode = multiply
+			alpha = 0.4
+		}
+
+		modify_texture = {
+			texture = "gfx/interface/cards/age_card_header_mask.dds"
+			spriteType = corneredstretched
+			spriteBorder = {30 30}
+			blend_mode = alphamultiply
+		}
+
+		modify_texture = {
+			texture = "gfx/interface/component_masks/patterns/age_floral_02.dds"
+			texture_density = 2
+			spriteType = corneredtiled
+			spriteBorder = {0 20}
+			blend_mode = overlay
+			alpha = 0.6
+		}
+
+		modify_texture = {
+			texture = "gfx/interface/component_overlay/striped_texture.dds"
+			texture_density = 2
+			spriteType = corneredtiled
+			spriteBorder = {0 0}
+			blend_mode = overlay
+			alpha = 0.1
+		}
+	}
+}
+
+template bg_age_header_past {
+	background = {
+		texture = "gfx/interface/colors/black.dds"
+		alpha = 0.4
+		margin = {-1 0}
+		margin_bottom = 1
+
+		modify_texture = {
+			texture = "gfx/interface/cards/age_card_header_mask.dds"
+			spriteType = corneredstretched
+			spriteBorder = {30 30}
+			blend_mode = alphamultiply
+		}
+	}
+
+	background = {
+		block "header_color" {
+			texture = "gfx/interface/colors/bronze.dds"
+		}
+
+		texture_density = 2
+
+		modify_texture = {
+			texture = "gfx/interface/colors/black.dds"
+			blend_mode = multiply
+			alpha = 0.3
+		}
+
+		modify_texture = {
+			texture = "gfx/interface/cards/age_card_header_mask.dds"
+			spriteType = corneredstretched
+			spriteBorder = {30 30}
+			blend_mode = alphamultiply
+		}
+
+		modify_texture = {
+			texture = "gfx/interface/component_masks/patterns/age_floral_02.dds"
+			texture_density = 2
+			spriteType = corneredtiled
+			spriteBorder = {0 20}
+			blend_mode = overlay
+			alpha = 0.6
+		}
+
+		modify_texture = {
+			texture = "gfx/interface/component_overlay/striped_texture.dds"
+			texture_density = 2
+			spriteType = corneredtiled
+			spriteBorder = {0 0}
+			blend_mode = overlay
+			alpha = 0.1
+		}
+	}
+}
+
+template bg_divider_age {
+	background = {
+		texture = "gfx/interface/component_tiles/dividers/divider_age.dds"
+		texture_density = 2
+		spriteType = corneredstretched
+		spriteBorder = {0 40}
+		margin = {0 1}
+		margin_top = 0
+		alpha = 0.7
+
+		modify_texture = {
+			using = color_black_texture
+			blend_mode = multiply
+		}
+	}
+
+	background = {
+		texture = "gfx/interface/component_tiles/dividers/divider_age.dds"
+		texture_density = 2
+		spriteType = corneredstretched
+		spriteBorder = {0 40}
+
+		block "age_state" {
+			modify_texture = {
+				using = color_gold_dark_texture
+				blend_mode = multiply
+			}
+		}
+	}
+}
+
+# template bg_institutions {
+# 	background = {
+# 		texture = "gfx/interface/component_overlay/institutions_bg.dds"
+# 		texture_density = 2
+# 	}
+# }
+
+# template bg_circle_flavor {
+# 	background = {
+# 		texture = "gfx/interface/component_tiles/circle_flavor_02.dds"
+# 		texture_density = 2
+# 		spriteType = Corneredstretched
+# 		spriteborder = { 45 45 }
+# 		# block "bg_circle_flavor_extra" {}
+
+# 		# block "bg_circle_flavor_color" {
+# 			modify_texture = {
+# 				using = color_new_gold_texture
+# 				blend_mode = multiply
+# 			}
+# 		# }
+
+# 		modify_texture = {
+# 			using = overlay_window_texture
+# 			blend_mode = overlay
+# 			alpha = 0.5
+# 		}
+# 	}
+# }
+
+template bg_embraced_institution {
+	background = {
+		texture = "gfx/interface/buttons/bg_button.dds"
+		texture_density = 2
+		margin = {1 1}
+		margin_bottom = 2
+		alpha = 0.4
+
+		modify_texture = {
+			using = color_black_texture
+			blend_mode = multiply
+		}
+		# block "embraced_institution_extra" {}
+	}
+
+	background = {
+		texture = "gfx/interface/buttons/bg_button.dds"
+		texture_density = 2
+
+		modify_texture = {
+			using = color_bronze_texture
+			blend_mode = multiply
+		}
+
+		modify_texture = {
+			texture = "gfx/interface/component_overlay/institutions_bg.dds"
+			blend_mode = multiply
+		}
+
+		# block "embraced_institution_extra" {}
+	}
+}
+
+# template round_outline_thin_alt {
+# 	background = {
+# 		texture = "gfx/interface/component_tiles/round_outline_thin_alt.dds"
+# 		texture_density = 2
+# 		spriteType = Corneredstretched
+# 		spriteborder = { 45 45 }
+# 		# block "round_outline_thin_extra" {}
+
+# 		# block "round_outline_thin_color" {
+# 			modify_texture = {
+# 				using = color_new_gold_texture
+# 				blend_mode = multiply
+# 			}
+# 		# }
+
+# 		modify_texture = {
+# 			using = overlay_window_texture
+# 			blend_mode = overlay
+# 			alpha = 0.5
+# 		}
+# 	}
+# }
+
+template bg_corner_flavor {
+	background = {
+		block "corner_flavor_texture" {
+			texture = "gfx/interface/component_decoration/bg_corner_flavor_01.dds"
+			texture_density = 2
+			spriteType = Corneredstretched
+			spriteborder = { 35 35 }
+		}
+
+		block "corner_flavor_color" {
+			modify_texture = {
+				using = color_new_gold_texture
+				blend_mode = multiply
+			}
+		}
+
+		modify_texture = {
+			using = overlay_window_texture
+			blend_mode = overlay
+			alpha = 0.3
+		}
+
+		# block "corner_flavor_extra" {}
+
+		modify_texture = {
+			using = overlay_stone_texture
+			blend_mode = overlay
+			alpha = 0.5
+		}
+	}
+}
+
+template bg_corner_flavor_wood {
+	background = {
+		block "corner_flavor_texture" {
+			texture = "gfx/interface/component_decoration/bg_corner_flavor_01.dds"
+			texture_density = 2
+			spriteType = Corneredstretched
+			spriteborder = { 35 35 }
+			margin_bottom = 1
+			margin_top = -1
+		}
+
+		modify_texture = {
+			using = color_black_texture
+			blend_mode = multiply
+		}
+	}
+	background = {
+		block "corner_flavor_texture" {
+			texture = "gfx/interface/component_decoration/bg_corner_flavor_01.dds"
+			texture_density = 2
+			spriteType = Corneredstretched
+			spriteborder = { 35 35 }
+		}
+
+		block "corner_flavor_color" {
+			modify_texture = {
+				using = color_wood_brown_texture
+				blend_mode = multiply
+			}
+		}
+
+		modify_texture = {
+			using = overlay_window_texture
+			blend_mode = overlay
+			alpha = 0.1
+		}
+
+		modify_texture = {
+			using = overlay_wood_texture
+			blend_mode = overlay
+			alpha = 0.5
+		}
+
+		# block "corner_flavor_extra" {}
+	}
+}
+
+template bg_corner_flavor_04 {
+	background = {
+		texture = "gfx/interface/component_decoration/bg_corner_flavor_04.dds"
+		texture_density = 2
+		spriteType = Corneredstretched
+		spriteborder = { 35 35 }
+		margin_bottom = 1
+		margin_top = 0
+		margin_right = 0
+		alpha = 0.2
+		modify_texture = {
+			using = color_black_texture
+			blend_mode = multiply
+		}
+	}
+	background = {
+		texture = "gfx/interface/component_decoration/bg_corner_flavor_04.dds"
+		texture_density = 2
+		spriteType = Corneredstretched
+		spriteborder = { 35 35 }
+		margin = {-1 1}
+		alpha = 0.5
+		using = non_clickable_color_gold_texture
+	}
+}
+
+template bg_card_container {
+	background = {
+		texture = "gfx/interface/component_tiles/tile_card_shadow.dds"
+		spriteType = Corneredstretched
+		spriteborder = { 20 20 }
+		margin = { 2 2 }
+		texture_density = 2
+		alpha = 1
+	}
+
+	background = {
+		using = tile_card_bg_texture
+		margin = { -4 -4 }
+		using = color_mid_blue
+
+		modify_texture = {
+			using = overlay_stone_texture
+			blend_mode = overlay
+			alpha = 0.3
+		}
+	}
+}
+
+template bg_card_header_01 {
+	background = {
+		texture = "gfx/interface/colors/black.dds"
+		margin = { 1 1 }
+		margin_bottom = 2
+		texture_density = 2
+		alpha = 0.4
+	}
+	
+	block "bg_card_header_01_bg" {
+		background = {
+			using = bg_card_header_01_default
+			alpha = 0.3
+		}
+	}
+	block "bg_card_header_01_bg_disabled" {}
+}
+
+template bg_card_header_01_default {
+	block "header_color" {
+		using = color_mid_red_texture
+	}
+
+	modify_texture = {
+		block "header_pattern" {
+			# texture = "gfx/interface/cards/headers/header_pattern_01.dds"
+			texture = "[GetGraphicalCultureTexture('header_pattern')]"
+		}
+		block "header_pattern_texture_density" {texture_density = 2}
+		spriteType = corneredtiled
+		# spriteBorder = {0 0}
+		blend_mode = overlay
+		block "header_pattern_alpha" {}
+	}
+	modify_texture = {
+		texture = "gfx/interface/component_overlay/cloth_texture.dds"
+		texture_density = 2
+		spriteType = Corneredtiled
+		spriteborder = { 0 0 }
+		blend_mode = overlay
+		alpha = 0.2
+	}
+	# block "header_extra" {}
+}
+
+# template color_government_texture
+# template color_economy_texture
+# template color_production_texture
+# template color_society_texture
+# template color_diplomacy_texture
+# template color_military_texture
+# template color_geopolitics_texture
+# template color_advances_texture
+
+template graphical_culture_pattern {
+	modify_texture = {
+		block "graphical_culture_pattern_texture" {
+			texture = "[GetGraphicalCultureTexture('header_pattern')]"
+		}
+		texture_density = 2
+		# block "gfx_culture_alpha" {
+			alpha = 0.4
+		# }
+		spriteType = corneredtiled
+		blend_mode = overlay
+	}
+}
+
+template bg_card_header_01_government {
+	background = {
+		texture = "gfx/interface/colors/black.dds"
+		margin = { 1 1 }
+		margin_bottom = 2
+		texture_density = 2
+		alpha = 0.4
+		block "header_government_extra" {}
+	}
+	background = {
+		# block "header_government_color" {
+			using = color_government_texture
+		# }
+		alpha = 0.4
+
+		modify_texture = {
+			block "header_pattern" {
+				# texture = "gfx/interface/cards/headers/header_pattern_01.dds"
+				texture = "[GetGraphicalCultureTexture('header_pattern')]"
+			}
+			block "header_pattern_texture_density" {texture_density = 2}
+			spriteType = corneredtiled
+			# spriteBorder = {0 0}
+			blend_mode = overlay
+			block "header_pattern_alpha" {}
+		}
+		modify_texture = {
+			texture = "gfx/interface/component_overlay/cloth_texture.dds"
+			texture_density = 2
+			spriteType = Corneredtiled
+			spriteborder = { 0 0 }
+			blend_mode = overlay
+			alpha = 0.2
+		}
+		block "header_government_extra" {}
+	}
+}
+
+template bg_card_header_01_economy {
+	background = {
+		texture = "gfx/interface/colors/black.dds"
+		margin = { 1 1 }
+		margin_bottom = 2
+		texture_density = 2
+		alpha = 0.4
+		block "header_economy_extra" {}
+	}
+	background = {
+		# block "header_economy_color" {
+			using = color_economy_texture
+		# }
+		alpha = 0.4
+
+		modify_texture = {
+			block "header_pattern" {
+				# texture = "gfx/interface/cards/headers/header_pattern_01.dds"
+				texture = "[GetGraphicalCultureTexture('header_pattern')]"
+			}
+			block "header_pattern_texture_density" {texture_density = 2}
+			spriteType = corneredtiled
+			# spriteBorder = {0 0}
+			blend_mode = overlay
+			block "header_pattern_alpha" {}
+		}
+		modify_texture = {
+			texture = "gfx/interface/component_overlay/cloth_texture.dds"
+			texture_density = 2
+			spriteType = Corneredtiled
+			spriteborder = { 0 0 }
+			blend_mode = overlay
+			alpha = 0.2
+		}
+		block "header_economy_extra" {}
+	}
+}
+
+template bg_card_header_01_production {
+	background = {
+		texture = "gfx/interface/colors/black.dds"
+		margin = { 1 1 }
+		margin_bottom = 2
+		texture_density = 2
+		alpha = 0.4
+		block "header_production_extra" {}
+	}
+	background = {
+		# block "header_production_color" {
+			using = color_production_texture
+		# }
+		alpha = 0.4
+
+		modify_texture = {
+			block "header_pattern" {
+				# texture = "gfx/interface/cards/headers/header_pattern_01.dds"
+				texture = "[GetGraphicalCultureTexture('header_pattern')]"
+			}
+			block "header_pattern_texture_density" {texture_density = 2}
+			spriteType = corneredtiled
+			# spriteBorder = {0 0}
+			blend_mode = overlay
+			block "header_pattern_alpha" {}
+		}
+		modify_texture = {
+			texture = "gfx/interface/component_overlay/cloth_texture.dds"
+			texture_density = 2
+			spriteType = Corneredtiled
+			spriteborder = { 0 0 }
+			blend_mode = overlay
+			alpha = 0.2
+		}
+		block "header_production_extra" {}
+	}
+}
+
+template bg_card_header_01_society {
+	background = {
+		texture = "gfx/interface/colors/black.dds"
+		margin = { 1 1 }
+		margin_bottom = 2
+		texture_density = 2
+		alpha = 0.4
+	}
+	background = {
+		# block "header_society_color" {
+			using = color_society_texture
+		# }
+		alpha = 0.4
+
+		modify_texture = {
+			block "header_pattern" {
+				# texture = "gfx/interface/cards/headers/header_pattern_01.dds"
+				texture = "[GetGraphicalCultureTexture('header_pattern')]"
+			}
+			block "header_pattern_texture_density" {texture_density = 2}
+			spriteType = corneredtiled
+			# spriteBorder = {0 0}
+			blend_mode = overlay
+			block "header_pattern_alpha" {}
+		}
+		modify_texture = {
+			texture = "gfx/interface/component_overlay/cloth_texture.dds"
+			texture_density = 2
+			spriteType = Corneredtiled
+			spriteborder = { 0 0 }
+			blend_mode = overlay
+			alpha = 0.2
+		}
+		# block "header_society_extra" {}
+	}
+}
+
+template bg_card_header_01_diplomacy {
+	background = {
+		texture = "gfx/interface/colors/black.dds"
+		margin = { 1 1 }
+		margin_bottom = 2
+		texture_density = 2
+		alpha = 0.4
+
+		block "header_diplomacy_extra" {}
+	}
+
+	background = {
+		# block "header_diplomacy_color" {
+			using = color_diplomacy_texture
+		# }
+		alpha = 0.6
+
+		modify_texture = {
+			block "header_pattern" {
+				# texture = "gfx/interface/cards/headers/header_pattern_01.dds"
+				texture = "[GetGraphicalCultureTexture('header_pattern')]"
+			}
+			block "header_pattern_texture_density" {texture_density = 2}
+			spriteType = corneredtiled
+			# spriteBorder = {0 0}
+			blend_mode = overlay
+			block "header_pattern_alpha" {}
+		}
+		modify_texture = {
+			texture = "gfx/interface/component_overlay/cloth_texture.dds"
+			texture_density = 2
+			spriteType = Corneredtiled
+			spriteborder = { 0 0 }
+			blend_mode = overlay
+			alpha = 0.2
+		}
+		block "header_diplomacy_extra" {}
+	}
+}
+
+template bg_card_header_01_hre {
+	background = {
+		using = bg_card_header_01_default
+		blockoverride "header_color" {
+			# block "header_color_01_diplomacy" {
+				using = color_muztard_texture
+			# }
+		}
+		blockoverride "header_pattern" {
+			texture = "gfx/interface/component_overlay/cloth_texture.dds"
+			texture_density = 2
+			spriteType = Corneredtiled
+			spriteborder = { 0 0 }
+			blend_mode = overlay
+		}
+		using = graphical_culture_pattern
+		modify_texture = {
+			block "uiaction_gov" {
+				visible = no
+			}
+			using = color_greyish_texture
+			alpha = 1
+			blend_mode = normal
+		}
+		# block "bg_header_diplomacy_extra" {}
+	}
+}
+
+template bg_card_header_01_military {
+	background = {
+		texture = "gfx/interface/colors/black.dds"
+		margin = { 1 1 }
+		margin_bottom = 2
+		texture_density = 2
+		alpha = 0.4
+		block "header_military_extra" {}
+	}
+	background = {
+		# block "header_military_color" {
+			using = color_military_texture
+		# }
+		alpha = 0.6
+
+		modify_texture = {
+			block "header_pattern" {
+				# texture = "gfx/interface/cards/headers/header_pattern_01.dds"
+				texture = "[GetGraphicalCultureTexture('header_pattern')]"
+			}
+			block "header_pattern_texture_density" {texture_density = 2}
+			spriteType = corneredtiled
+			# spriteBorder = {0 0}
+			blend_mode = overlay
+			block "header_pattern_alpha" {}
+		}
+		modify_texture = {
+			texture = "gfx/interface/component_overlay/cloth_texture.dds"
+			texture_density = 2
+			spriteType = Corneredtiled
+			spriteborder = { 0 0 }
+			blend_mode = overlay
+			alpha = 0.2
+		}
+		block "header_military_extra" {}
+	}
+}
+
+template bg_card_header_01_geopolitics {
+	background = {
+		texture = "gfx/interface/colors/black.dds"
+		margin = { 1 1 }
+		margin_bottom = 2
+		texture_density = 2
+		alpha = 0.4
+	}
+	background = {
+		# block "header_geopolitics_color" {
+			using = color_geopolitics_texture
+		# }
+		alpha = 0.6
+
+		modify_texture = {
+			block "header_pattern" {
+				# texture = "gfx/interface/cards/headers/header_pattern_01.dds"
+				texture = "[GetGraphicalCultureTexture('header_pattern')]"
+			}
+			block "header_pattern_texture_density" {texture_density = 2}
+			spriteType = corneredtiled
+			# spriteBorder = {0 0}
+			blend_mode = overlay
+			block "header_pattern_alpha" {}
+		}
+		modify_texture = {
+			texture = "gfx/interface/component_overlay/cloth_texture.dds"
+			texture_density = 2
+			spriteType = Corneredtiled
+			spriteborder = { 0 0 }
+			blend_mode = overlay
+			alpha = 0.2
+		}
+		# block "header_geopolitics_extra" {}
+	}
+}
+
+template bg_card_header_01_advances {
+	background = {
+		texture = "gfx/interface/colors/black.dds"
+		margin = { 1 1 }
+		margin_bottom = 2
+		texture_density = 2
+		alpha = 0.4
+		block "header_advances_extra" {}
+	}
+	background = {
+		# block "header_advances_color" {
+			using = color_advances_texture
+		# }
+		alpha = 0.6
+
+		modify_texture = {
+			block "header_pattern" {
+				# texture = "gfx/interface/cards/headers/header_pattern_01.dds"
+				texture = "[GetGraphicalCultureTexture('header_pattern')]"
+			}
+			block "header_pattern_texture_density" {texture_density = 2}
+			spriteType = corneredtiled
+			# spriteBorder = {0 0}
+			blend_mode = overlay
+			block "header_pattern_alpha" {}
+		}
+		modify_texture = {
+			texture = "gfx/interface/component_overlay/cloth_texture.dds"
+			texture_density = 2
+			spriteType = Corneredtiled
+			spriteborder = { 0 0 }
+			blend_mode = overlay
+			alpha = 0.2
+		}
+		block "header_advances_extra" {}
+	}
+}
+
+# template bg_card_header_military_default {
+# 	background = {
+# 		block "header_color" {
+# 			texture = "gfx/interface/colors/light_red.dds"
+# 		}
+# 		texture_density = 2
+
+# 		modify_texture = {
+# 			block "header_pattern" {
+# 				texture = "gfx/interface/cards/headers/header_pattern_military_01.dds"
+# 			}
+# 			texture_density = 2
+# 			spriteType = corneredtiled
+# 			#spriteBorder = {0 0}
+# 			blend_mode = overlay
+# 			#alpha = 0.2
+# 		}
+# 		modify_texture = {
+# 			texture = "gfx/interface/component_overlay/cloth_texture.dds"
+# 			texture_density = 2
+# 			spriteType = Corneredtiled
+# 			spriteborder = { 0 0 }
+# 			blend_mode = overlay
+# 			alpha = 0.2
+# 		}
+# 		modify_texture = {
+# 			using = overlay_watercolor_texture
+# 			blend_mode = multiply
+# 			alpha = 0.4
+# 		}
+# 		# block "header_extra" {}
+# 	}
+# }
+
+# template bg_card_header_05 {
+# 	background = {
+# 		texture = "gfx/interface/colors/black.dds"
+# 		margin = { 1 1 }
+# 		margin_bottom = 2
+# 		texture_density = 2
+# 		alpha = 0.4
+# 	}
+
+# 	background = {
+# 		block "header_color" {
+# 			using = color_dark_purple_texture
+# 		}
+# 		texture_density = 2
+
+# 		modify_texture = {
+# 			block "header_pattern" {
+# 				texture = "gfx/interface/cards/headers/header_pattern_05.dds"
+# 				alpha = 0.5
+# 			}
+# 			texture_density = 2
+# 			spriteType = corneredtiled
+# 			blend_mode = overlay
+# 		}
+# 		modify_texture = {
+# 			texture = "gfx/interface/component_overlay/cloth_texture.dds"
+# 			texture_density = 2
+# 			spriteType = Corneredtiled
+# 			spriteborder = { 0 0 }
+# 			blend_mode = overlay
+# 			alpha = 0.2
+# 		}
+# 	}
+# }
+
+# template bg_card_header_09 {
+# 	background = {
+# 		texture = "gfx/interface/colors/black.dds"
+# 		margin = { 1 1 }
+# 		margin_bottom = 2
+# 		texture_density = 2
+# 		alpha = 0.4
+# 	}
+
+# 	background = {
+# 		block "header_color" {
+# 			using = color_dark_purple_texture
+# 		}
+# 		texture_density = 2
+
+# 		modify_texture = {
+# 			block "header_pattern" {
+# 				using = header_pattern_04_texture
+# 				alpha = 0.5
+# 			}
+# 			texture_density = 2
+# 			spriteType = corneredtiled
+# 			blend_mode = overlay
+# 		}
+# 		modify_texture = {
+# 			texture = "gfx/interface/component_overlay/cloth_texture.dds"
+# 			texture_density = 2
+# 			spriteType = Corneredtiled
+# 			spriteborder = { 0 0 }
+# 			blend_mode = overlay
+# 			alpha = 0.2
+# 		}
+# 	}
+# }
+
+# template bg_card_header_frame_tile {
+# 	background = {
+# 		texture = "gfx/interface/component_decoration/card_header_tile_08.dds"
+# 		spriteType = Corneredstretched
+# 		spriteborder = { 40 40 }
+# 		texture_density = 2
+# 		# block "frame_shadow_properties" {
+# 			margin = { 1 1 }
+# 			margin_bottom = 2
+# 			alpha = 0.4
+# 		# }
+
+# 		modify_texture = {
+# 			using = color_black_texture
+# 			blend_mode = multiply
+# 		}
+# 	}
+
+# 	background = {
+# 		texture = "gfx/interface/component_decoration/card_header_tile_08.dds"
+# 		spriteType = Corneredstretched
+# 		spriteborder = { 40 40 }
+# 		texture_density = 2
+
+# 		# block "header_frame_tile_color" {
+# 			modify_texture = {
+# 				using = color_bronze_texture
+# 				blend_mode = multiply
+# 			}
+# 		# }
+
+# 		# block "header_frame_tile_fxs" {
+# 			modify_texture = {
+# 				using = overlay_stone_texture
+# 				blend_mode = overlay
+# 				alpha = 0.1
+# 			}
+# 			modify_texture = {
+# 				using = overlay_window_texture
+# 				blend_mode = overlay
+# 				alpha = 0.1
+# 			}
+# 		# }
+# 	}
+# }
+
+# template floral_pattern_04 {
+# 	background = {
+# 		texture = "gfx/interface/cards/floral_pattern_04.dds"
+# 		texture_density = 2
+# 		spriteType = corneredtiled
+# 		spriteBorder = { 86 0 }
+# 		blend_mode = multiply
+# 		alpha = 0.1
+# 		# block "floral_pattern_04_extra" {}
+
+# 		modify_texture = {
+# 			texture = "gfx/interface/component_masks/mask_fade_horizontal_extended.dds"
+# 			texture_density = 2
+# 			mirror = horizontal
+# 			blend_mode = alphamultiply
+# 		}
+# 	}
+# }
+
+template disease_card_rotten_tile {
+	background = {
+		texture = "gfx/interface/component_masks/disease_card_rotten_tile.dds"
+		texture_density = 2
+		spriteType = corneredstretched
+		spriteborder = {30 0}
+		margin_right = 15
+
+		block "disease_card_tile_color" {
+			modify_texture = {
+				using = color_dark_red_texture
+			}
+		}
+	}
+}
+
+template card_header_disease {
+	background = {
+		block "card_disease_color" {
+			texture = "gfx/interface/colors/desat_red.dds"
+		}
+
+		texture_density = 2
+
+		modify_texture = {
+			# texture = "gfx/interface/cards/headers/header_pattern_01.dds"
+			texture = "[GetGraphicalCultureTexture('header_pattern')]"
+			texture_density = 2
+			spriteType = corneredtiled
+			blend_mode = overlay
+			alpha = 0.5
+		}
+		modify_texture = {
+			texture = "gfx/interface/component_overlay/cloth_texture.dds"
+			texture_density = 2
+			spriteType = Corneredtiled
+			spriteborder = { 0 0 }
+			blend_mode = overlay
+			alpha = 0.2
+		}
+	}
+
+	background = {
+		texture = "gfx/interface/component_overlay/disease_stain_texture.dds"
+		texture_density = 2
+		spriteType = Corneredstretched
+		spriteborder = { 125 0 }
+		blend_mode = overlay
+		alpha = 0.2
+		modify_texture = {
+			texture = "gfx/interface/colors/muztard.dds"
+		}
+	}
+
+	background = {
+		texture = "gfx/interface/component_masks/disease_card_mask_top.dds"
+		texture_density = 2
+		alpha = 0.6
+		modify_texture = {
+			texture = "gfx/interface/colors/super_dark_red.dds"
+		}
+	}
+
+	# block "card_header_disease_extra" {}
+}
+
+template bg_character_box {
+	background = {
+		texture = "gfx/interface/component_tiles/square_tile.dds"
+		texture_density = 2
+		spriteType = corneredstretched
+		spriteBorder = { 30 60 }
+		# block "bg_character_box_inside" {
+			modify_texture = {
+				using = color_bg_brown_texture
+				blend_mode = multiply
+			}
+		# }
+
+		modify_texture = {
+			using = overlay_striped_texture
+			blend_mode = overlay
+			alpha = 0.1
+		}
+	}
+
+	background = {
+		texture = "gfx/interface/component_tiles/character_box.dds"
+		texture_density = 2
+		spriteType = corneredstretched
+		spriteBorder = { 30 15 }
+		# block "bg_character_box_frame" {
+		modify_texture = {
+			using = color_dark_brown_texture
+			blend_mode = multiply
+		}
+		# }
+		modify_texture = {
+			using = overlay_stone_texture
+			blend_mode = overlay
+			alpha = 0.1
+		}
+		modify_texture = {
+			using = overlay_window_texture
+			blend_mode = overlay
+			alpha = 0.3
+		}
+	}
+}
+
+# template bg_overview_container_frame {
+# 	background = {
+# 		texture = "gfx/interface/component_tiles/frame_overview_flavor.dds"
+# 		texture_density = 2
+# 		spriteType = corneredstretched
+# 		spriteBorder = { 25 25 }
+
+# 		modify_texture = {
+# 			using = color_new_gold_texture
+# 			blend_mode = multiply
+# 		}
+# 		modify_texture = {
+# 			using = overlay_stone_texture
+# 			blend_mode = overlay
+# 			alpha = 0.4
+# 		}
+
+# 		# block "overview_container_extra" {}
+# 	}
+# }
+
+# template bg_overview_container_frame_02 {
+# 	background = {
+# 		texture = "gfx/interface/component_tiles/frame_overview_flavor_02.dds"
+# 		texture_density = 2
+# 		spriteType = corneredstretched
+# 		spriteBorder = { 25 25 }
+
+# 		modify_texture = {
+# 			using = color_new_gold_texture
+# 			blend_mode = multiply
+# 		}
+# 		modify_texture = {
+# 			using = overlay_stone_texture
+# 			blend_mode = overlay
+# 			alpha = 0.4
+# 		}
+
+# 		# block "overview_container_02_extra" {}
+# 	}
+# }
+
+# template bg_vertical_separator_01 {
+# 	background = {
+# 		texture = "gfx/interface/component_tiles/vertical_separator_01.dds"
+# 		texture_density = 2
+# 		spriteType = corneredstretched
+# 		spriteBorder = { 0 0 }
+
+# 		modify_texture = {
+# 			using = color_new_gold_texture
+# 			blend_mode = multiply
+# 		}
+# 		modify_texture = {
+# 			using = overlay_stone_texture
+# 			blend_mode = overlay
+# 			alpha = 0.4
+# 		}
+# 	}
+# }
+
+# template bg_demand_card {
+# 	background = {
+# 		texture = "gfx/interface/cards/demand_card.dds"
+# 		texture_density = 2
+# 		spriteType = corneredstretched
+# 		spriteBorder = { 15 25 }
+# 		block "shadow_margin" {
+# 			margin = {1 1}
+# 			margin_bottom = 2
+# 		}
+# 		alpha = 0.3
+
+# 		modify_texture = {
+# 			using = color_black_texture
+# 			blend_mode = multiply
+# 		}
+# 	}
+
+# 	background = {
+# 		texture = "gfx/interface/cards/demand_card.dds"
+# 		texture_density = 2
+# 		spriteType = corneredstretched
+# 		spriteBorder = { 15 25 }
+# 		block "card_margin" {
+# 			margin = {0 0}
+# 		}
+
+# 		modify_texture = {
+# 			block "card_color" {
+# 				using = color_light_blue_texture
+# 			}
+# 			blend_mode = multiply
+# 		}
+# 		modify_texture = {
+# 			using = overlay_paper_03
+# 			alpha = 0.4
+# 		}
+# 	}
+# }
+
+template bg_unit_block {
+	# block "unit_block_shadow" {
+		background = {
+			texture = "gfx/interface/component_tiles/unit_block.dds"
+			texture_density = 2
+			spriteType = corneredstretched
+			spriteBorder = { 20 20 }
+			margin = {2 2}
+			alpha = 0.2
+			# block "unit_block_shadow_color" {
+				modify_texture = {
+					using = color_black_texture
+					blend_mode = multiply
+				}
+			# }
+		}
+	# }
+
+	background = {
+		# block "unit_block_shape" {
+			texture = "gfx/interface/component_tiles/unit_block.dds"
+			texture_density = 2
+			spriteType = corneredstretched
+			spriteBorder = { 20 20 }
+		# }
+
+		block "unit_block_color" {
+			modify_texture = {
+				using = color_bg_blue_texture
+				blend_mode = multiply
+			}
+		}
+
+		modify_texture = {
+			using = overlay_stone_texture
+			blend_mode = overlay
+			alpha = 0.3
+		}
+
+		# block "unit_block_props" {}
+	}
+}
+
+# template bg_check_tile {
+# 	background = {
+# 		texture = "gfx/interface/component_masks/check_tile.dds"
+# 		spriteType = corneredtiled
+# 		spriteBorder = { 20 0 }
+# 		texture_density = 2
+# 	}
+# }
+
+# template bg_navigational_frame {
+# 	background = {
+# 		texture = "gfx/interface/buttons/navigational_frame.dds"
+# 		texture_density = 2
+# 		spriteType = corneredstretched
+# 		spriteBorder = { 22 22 }
+
+# 		# block "bg_navigational_frame_color" {
+# 			modify_texture = {
+# 				using = color_new_gold_texture
+# 			}
+# 		# }
+# 		modify_texture = {
+# 			using = overlay_stone_texture
+# 			blend_mode = overlay
+# 			alpha = 0.3
+# 		}
+# 		modify_texture = {
+# 			using = overlay_window_texture
+# 			blend_mode = overlay
+# 			alpha = 0.3
+# 		}
+# 	}
+# }
+
+template bg_black_fade_horizontal {
+	background = {
+		texture = "gfx/interface/colors/black.dds"
+		texture_density = 2
+		alpha = 0.3
+		# block "bg_black_fade_horizontal_extra" {}
+
+		modify_texture = {
+			texture = "gfx/interface/component_masks/mask_fade_horizontal_right.dds"
+			texture_density = 2
+			blend_mode = alphamultiply
+		}
+
+		modify_texture = {
+			using = overlay_cloth_texture
+			blend_mode = overlay
+			alpha = 0.9
+		}
+		# block "black_fade_extra" {}
+	}
+}
+
+template bg_combat_map_unit {
+	background = {
+		block "texture_shape" {
+			texture = "gfx/interface/component_tiles/round_card_alt.dds"
+			spriteType = corneredstretched
+			spriteBorder = { 20 20 }
+		}
+		texture_density = 2
+		block "texture_color" {
+			modify_texture = {
+				using = color_bg_blue_texture
+				blend_mode = multiply
+			}
+		}
+
+		modify_texture = {
+			using = overlay_stone_texture
+			blend_mode = overlay
+			alpha = 0.2
+		}
+	}
+
+	# block "combat_map_unit_add_bckg" {}
+}
+
+template bg_battle_map_unit {
+	background = {
+		# block "battle_texture_shape" {
+			texture = "gfx/interface/component_tiles/round_card_alt.dds"
+			spriteType = corneredstretched
+			spriteBorder = { 20 20 }
+		# }
+		texture_density = 2
+		# block "battle_texture_color" {
+			modify_texture = {
+				using = color_paper_texture
+				blend_mode = multiply
+			}
+			modify_texture = {
+				using = color_black_texture
+				blend_mode = overlay
+				alpha = 0.2
+			}
+			modify_texture = {
+				using = overlay_striped_texture
+				blend_mode = overlay
+				alpha = 0.3
+			}
+		# }
+	}
+
+	# block "battle_map_unit_extra" {}
+}
+
+template bg_square_fade_horizontal {
+	background = {
+		using = color_black_texture
+		texture_density = 2
+		alpha = 0.3
+		block "square_fade_extra" {}
+
+		modify_texture = {
+			texture = "gfx/interface/component_masks/mask_fade_horizontal_right.dds"
+			texture_density = 2
+			blend_mode = alphamultiply
+		}
+
+		modify_texture = {
+			using = overlay_cloth_texture
+			blend_mode = overlay
+			alpha = 0.9
+		}
+	}
+}
+
+# template bg_demand_card_container {
+# 	background = {
+# 		texture = "gfx/interface/cards/demand_card_container.dds"
+# 		texture_density = 2
+# 		spriteType = corneredstretched
+# 		spriteBorder = { 10 10 }
+# 		block "card_margin" {
+# 			margin = {0 0}
+# 		}
+
+# 		modify_texture = {
+# 			block "card_color" {
+# 				using = color_light_blue_texture
+# 			}
+# 			blend_mode = multiply
+# 		}
+# 		modify_texture = {
+# 			using = overlay_paper_03
+# 			alpha = 0.2
+# 		}
+# 	}
+# }
+
+template bg_card_header_02 {
+	background = {
+		# block "tile" {
+			texture = "gfx/interface/component_tiles/balance_card_bg.dds"
+		# }
+
+		spriteType = corneredtiled
+		spriteborder = { 10 10 }
+
+		modify_texture = {
+			block "header_color" {
+				texture = "gfx/interface/colors/mid_blue.dds"
+				blend_mode = add
+			}
+			texture_density = 2
+
+		}
+
+		# block "header_texture" {
+			modify_texture = {
+				texture = "gfx/interface/component_overlay/header_building_60px.dds"
+				texture_density = 2
+				spriteType = Corneredtiled
+				spriteborder = { 0 0 }
+				alpha = 0.4
+				blend_mode = overlay
+			}
+		# }
+
+		modify_texture = {
+			using = overlay_cloth_texture
+			blend_mode = overlay
+			alpha = 0.3
+		}
+	}
+
+	background = {
+		texture = "gfx/interface/component_tiles/balance_card_bg.dds"
+		texture_density = 2
+		spriteType = corneredtiled
+		spriteborder = { 10 10 }
+		alpha = 0.3
+
+		modify_texture = {
+			texture = "gfx/interface/component_masks/mask_fade_horizontal_right.dds"
+			texture_density = 2
+			spriteType = stretched
+			spriteborder = { 0 0 }
+			alpha = 0.5
+			blend_mode = alphamultiply
+		}
+	}
+}
+
+
+template bg_card_header_flag_01 {
+	block "flag_header_shadow" {
+		background = {
+			texture = "gfx/interface/component_tiles/war/flag_header.dds"
+			texture_density = 2
+			spriteType = corneredtiled
+			spriteborder = { 100 0 }
+			margin = {1 1}
+			margin_bottom = 2
+
+			modify_texture = {
+				using = color_black_texture
+				blend_mode = multiply
+			}
+		}
+	}
+	background = {
+		texture = "gfx/interface/component_tiles/war/flag_header.dds"
+		texture_density = 2
+		spriteType = corneredtiled
+		spriteborder = { 100 0 }
+		margin = {1 0}
+		margin_right = 4
+
+		block "header_color" {
+			modify_texture = {
+				using = color_mid_green_texture
+				blend_mode = multiply
+			}
+		}
+
+		modify_texture = {
+			block "header_pattern" {
+				# texture = "gfx/interface/cards/headers/header_pattern_01.dds"
+				texture = "[GetGraphicalCultureTexture('header_pattern')]"
+				alpha = 0.3
+			}
+			block "header_pattern_texture_density"{texture_density = 2}
+			spriteType = corneredtiled
+			# spriteBorder = {0 0}
+			blend_mode = overlay
+			# alpha = 0.2
+		}
+		modify_texture = {
+			texture = "gfx/interface/component_overlay/cloth_texture.dds"
+			texture_density = 2
+			spriteType = Corneredtiled
+			spriteborder = { 0 0 }
+			blend_mode = overlay
+			alpha = 0.2
+		}
+		modify_texture = {
+			using = paper_03_texture
+			blend_mode = overlay
+			alpha = 0.5
+
+		}
+	}
+}
+
+template bg_declare_war_header_flag_01 {
+	background = {
+		texture = "gfx/interface/component_tiles/war/declare_war_flag_header.dds"
+		texture_density = 2
+		spriteType = corneredstretched
+		spriteborder = { 75 0 }
+		# margin = {1 0}
+		# margin_right = 4
+
+		block "header_color" {
+			modify_texture = {
+				using = color_mid_green_texture
+				blend_mode = multiply
+			}
+		}
+		modify_texture = {
+			texture = "gfx/interface/component_overlay/cloth_texture.dds"
+			texture_density = 2
+			spriteType = Corneredtiled
+			spriteborder = { 0 0 }
+			blend_mode = overlay
+			alpha = 0.2
+		}
+	}
+}
+template bg_declare_war_header_sides {
+	background = {
+		texture = "gfx/interface/component_tiles/war/declare_war_sides_header.dds"
+		texture_density = 1.5
+		spriteType = corneredstretched
+		spriteborder = { 100 0 }
+		margin = {0 10}
+
+		block "header_color" {
+			modify_texture = {
+				using = color_mid_green_texture
+				blend_mode = multiply
+			}
+			modify_texture = {
+				using = color_whiteish_texture
+				blend_mode = overlay
+			}
+		}
+		modify_texture = {
+			texture = "gfx/interface/component_overlay/cloth_texture.dds"
+			texture_density = 2
+			spriteType = Corneredtiled
+			spriteborder = { 0 0 }
+			blend_mode = overlay
+			alpha = 0.2
+		}
+	}
+}
+# template bg_card_header_cloth_01 {
+# 	background = {
+# 		texture = "gfx/interface/colors/black.dds"
+# 		margin = { 1 1 }
+# 		margin_bottom = 2
+# 		texture_density = 2
+# 		alpha = 0.2
+# 	}
+
+# 	background = {
+# 		# block "header_tile_texture" {
+# 		texture = "gfx/interface/component_tiles/war/cloth_card_header_01.dds"
+# 		spriteType = corneredstretched
+# 		spriteborder = { 142 0 }
+# 		# }
+
+# 		texture_density = 2
+
+# 		block "card_margin" {
+# 			margin = {4 0}
+# 		}
+
+# 		modify_texture = {
+# 			block "header_color" {
+# 				using = color_light_red_texture
+# 			}
+# 			blend_mode = multiply
+# 		}
+
+# 		modify_texture = {
+# 			block "header_pattern" {
+# 				texture = "gfx/interface/cards/headers/header_pattern_01.dds"
+# 			}
+# 			texture_density = 2
+# 			spriteType = corneredtiled
+# 			blend_mode = overlay
+# 			alpha = 0.3
+# 		}
+# 		modify_texture = {
+# 			texture = "gfx/interface/component_overlay/cloth_texture.dds"
+# 			texture_density = 2
+# 			spriteType = Corneredtiled
+# 			spriteborder = { 0 0 }
+# 			blend_mode = overlay
+# 			alpha = 0.1
+# 		}
+# 		modify_texture = {
+# 			texture = "gfx/interface/component_overlay/striped_texture.dds"
+# 			texture_density = 2
+# 			spriteType = Corneredtiled
+# 			spriteborder = { 0 0 }
+# 			blend_mode = overlay
+# 			alpha = 0.2
+# 		}
+# 	}
+# }
+
+# template bg_card_header_cloth_02 {
+# 	background = {
+# 		texture = "gfx/interface/colors/black.dds"
+# 		margin = { 1 1 }
+# 		margin_bottom = 2
+# 		texture_density = 2
+# 		alpha = 0.2
+# 	}
+
+# 	background = {
+# 		# block "header_tile_texture" {
+# 			texture = "gfx/interface/component_tiles/war/cloth_card_header_01.dds"
+# 			spriteType = corneredstretched
+# 			spriteborder = { 142 0 }
+# 		# }
+
+# 		texture_density = 2
+
+# 		block "card_margin" {
+# 			margin = {4 0}
+# 		}
+
+# 		modify_texture = {
+# 			block "header_color" {
+# 				using = color_mid_green_texture
+# 			}
+# 			blend_mode = multiply
+# 		}
+
+# 		modify_texture = {
+# 			block "header_pattern" {
+# 				texture = "gfx/interface/cards/headers/header_pattern_01.dds"
+# 			}
+# 			texture_density = 2
+# 			spriteType = corneredtiled
+# 			blend_mode = overlay
+# 			alpha = 0.3
+# 		}
+# 		modify_texture = {
+# 			texture = "gfx/interface/component_overlay/cloth_texture.dds"
+# 			texture_density = 2
+# 			spriteType = Corneredtiled
+# 			spriteborder = { 0 0 }
+# 			blend_mode = overlay
+# 			alpha = 0.1
+# 		}
+# 		modify_texture = {
+# 			texture = "gfx/interface/component_overlay/striped_texture.dds"
+# 			texture_density = 2
+# 			spriteType = Corneredtiled
+# 			spriteborder = { 0 0 }
+# 			blend_mode = overlay
+# 			alpha = 0.2
+# 		}
+# 	}
+# }
+
+# war message header
+# template high_cloth_header {
+# 	background = {
+# 		texture = "gfx/interface/component_tiles/messages/high_cloth_header.dds"
+# 		margin = { 1 1 }
+# 		margin_bottom = 2
+# 		texture_density = 2
+# 		alpha = 0.2
+
+# 		modify_texture = {
+# 			using = color_black_texture
+# 			blend_mode = multiply
+# 		}
+# 	}
+
+# 	background = {
+# 		texture = "gfx/interface/component_tiles/messages/high_cloth_header.dds"
+# 		texture_density = 2
+# 		spriteType = corneredstretched
+# 		spriteborder = { 80 0 }
+# 		# block "high_cloth_margin" {
+# 			margin = {6 0}
+# 			margin_top = 2
+# 		# }
+
+# 		modify_texture = {
+# 			# block "high_cloth_color" {
+# 				using = color_light_red_texture
+# 			# }
+# 			blend_mode = multiply
+# 		}
+
+# 		modify_texture = {
+# 			# block "high_cloth_pattern" {
+# 				texture = "gfx/interface/cards/headers/header_pattern_01.dds"
+# 			# }
+# 			texture_density = 2
+# 			spriteType = corneredtiled
+# 			blend_mode = overlay
+# 			alpha = 0.3
+# 		}
+# 		modify_texture = {
+# 			texture = "gfx/interface/component_overlay/cloth_texture.dds"
+# 			texture_density = 2
+# 			spriteType = Corneredtiled
+# 			spriteborder = { 0 0 }
+# 			blend_mode = overlay
+# 			alpha = 0.1
+# 		}
+# 		modify_texture = {
+# 			texture = "gfx/interface/component_overlay/striped_texture.dds"
+# 			texture_density = 2
+# 			spriteType = Corneredtiled
+# 			spriteborder = { 0 0 }
+# 			blend_mode = overlay
+# 			alpha = 0.2
+# 		}
+# 	}
+# }
+
+# MARKETS
+
+template bg_market_card {
+	background = {
+		texture = "gfx/interface/component_tiles/round_card_alt.dds"
+		texture_density = 2
+		spriteType = corneredstretched
+		spriteBorder = { 20 20 }
+		block "market_card_extra" {}
+		# block "market_card_color" {
+			modify_texture = {
+				using = color_dark_brown_texture
+				blend_mode = multiply
+			}
+			modify_texture = {
+				using = overlay_wood_texture
+				blend_mode = overlay
+				alpha = 0.1
+			}
+		# }
+	}
+}
+
+template bg_market_card_frame {
+	background = {
+		texture = "gfx/interface/component_tiles/markets/market_card_frame.dds"
+		texture_density = 2
+		spritetype = corneredstretched
+		spriteBorder = {20 20}
+		block "market_card_frame_extra" {}
+		# block "market_card_frame_color" {
+			modify_texture = {
+				using = color_wood_brown_texture
+				blend_mode = multiply
+			}
+			modify_texture = {
+				using = overlay_wood_texture
+				blend_mode = overlay
+				alpha = 0.3
+			}
+		# }
+	}
+}
+
+# template bg_market_card_right_side {
+# 	background = {
+# 		texture = "gfx/interface/component_tiles/round_card_alt.dds"
+# 		texture_density = 2
+# 		spriteType = corneredstretched
+# 		spriteBorder = { 20 20 }
+# 		block "market_card_extra" {}
+# 		# block "market_card_color" {
+# 			modify_texture = {
+# 				using = color_dark_brown_texture
+# 				blend_mode = multiply
+# 			}
+# 			modify_texture = {
+# 				using = overlay_wood_texture
+# 				blend_mode = overlay
+# 				alpha = 0.1
+# 			}
+# 		# }
+# 	}
+# 	background = {
+# 		texture = "gfx/interface/component_tiles/markets/market_card_frame_right.dds"
+# 		texture_density = 2
+# 		spritetype = corneredstretched
+# 		spriteBorder = {20 20}
+# 		block "market_card_frame_extra" {}
+# 		# block "market_card_frame_color" {
+# 			modify_texture = {
+# 				using = color_wood_brown_texture
+# 				blend_mode = multiply
+# 			}
+# 			modify_texture = {
+# 				using = overlay_wood_texture
+# 				blend_mode = overlay
+# 				alpha = 0.3
+# 			}
+# 		# }
+# 	}
+# }
+
+# template bg_production_methods {
+# 	using = bg_number_container_bckg
+# 	blockoverride "number_container_extra" {
+# 		margin = {-2 -2}
+# 	}
+# 	using = bg_cabinet_card_frame
+# }
+
+template bg_building_card_colors {
+	background = {
+		using = paper_card_texture
+		block "building_color_card_margins" {
+			margin = {-3 -3}
+		}
+
+		modify_texture = {
+			using = color_paper_texture
+		}
+
+		modify_texture = {
+			using = overlay_paper_03
+		}
+	}
+	background = {
+		block "building_main_texture" {
+			using = color_grey_texture
+		}
+		block "building_color_grey_margins" {
+			margin = {-3 -3}
+		}
+
+		modify_texture = {
+			# texture = "gfx/interface/cards/headers/header_pattern_01.dds"
+			texture = "[GetGraphicalCultureTexture('header_pattern')]"
+			block "header_pattern_texture_density" {texture_density = 2}
+			spriteType = corneredtiled
+			blend_mode = overlay
+			alpha = 0.2
+		}
+
+		modify_texture = {
+			block "building_color" {
+				color = "[BuildingItem.GetBuildingType.GetPopType.GetColor]"
+				alpha = 0.7
+				blend_mode = overlay
+			}
+		}
+	}
+}
+
+# template hanging_cloth_deco {
+# 	background = {
+# 		texture = "gfx/interface/component_tiles/messages/hanging_cloth_decor.dds"
+# 		margin = { 1 1 }
+# 		spriteType = corneredtiled
+# 		spriteborder = { 0 0 }
+# 		margin_bottom = 2
+# 		texture_density = 2
+# 		alpha = 0.2
+
+# 		modify_texture = {
+# 			using = color_black_texture
+# 			blend_mode = multiply
+# 		}
+# 	}
+
+# 	background = {
+# 		texture = "gfx/interface/component_tiles/messages/hanging_cloth_decor.dds"
+# 		texture_density = 2
+# 		spriteType = corneredtiled
+# 		spriteborder = { 0 77 }
+# 		block "margins" {
+# 			margin = {6 0}
+# 			margin_top = 1
+# 		}
+# 	}
+# }
+
+template circular_wood_frame {
+	# block "circular_wood_frame_shadow" {
+		background = {
+			texture = "gfx/interface/component_tiles/circle_outline_tile_thick.dds"
+			texture_density = 2
+			margin_bottom = 1
+			modify_texture = {
+				using = color_black_texture
+				blend_mode = multiply
+			}
+		}
+	# }
+	background = {
+		texture = "gfx/interface/component_tiles/circle_outline_tile_thick.dds"
+		texture_density = 2
+		modify_texture = {
+			# block "circular_wood_frame_color" {
+				using = color_wood_brown_texture
+			# }
+			blend_mode = multiply
+		}
+		# block "circular_wood_frame_extra" {}
+	}
+}
+template circular_golden_frame {
+	# block "circular_golden_frame_shadow" {
+		background = {
+			texture = "gfx/interface/component_tiles/circle_outline_tile_thick.dds"
+			texture_density = 2
+			margin_bottom = 1
+			modify_texture = {
+				using = color_black_texture
+				blend_mode = multiply
+			}
+		}
+	# }
+	background = {
+		texture = "gfx/interface/component_tiles/circle_outline_tile_thick.dds"
+		texture_density = 2
+		modify_texture = {
+			using = color_new_gold_texture
+			blend_mode = multiply
+		}
+		modify_texture = {
+			using = color_white_texture
+			blend_mode = overlay
+			alpha = 0.2
+		}
+		modify_texture = {
+			using = overlay_window_texture
+			blend_mode = overlay
+			alpha = 0.7
+		}
+		# block "circular_golden_frame_extra" {}
+	}
+}
+
+template bg_control_romboid {
+	background = {
+		texture = "gfx/interface/component_tiles/control_romboid.dds"
+		texture_density = 2
+		margin = {12 1}
+		margin_bottom = 2
+
+	}
+	background = {
+		texture = "gfx/interface/component_tiles/control_romboid.dds"
+		texture_density = 2
+		margin = {12 0}
+		modify_texture = {
+			using = color_wood_brown_texture
+		}
+		modify_texture = {
+			using = overlay_wood_texture
+			blend_mode = overlay
+			alpha = 0.7
+		}
+		modify_texture = {
+			using = color_black_texture
+			alpha = 0.2
+			blend_mode = multiply
+		}
+	}
+
+	background = {
+		texture = "gfx/interface/component_tiles/control_romboid.dds"
+		texture_density = 2
+		margin = {12 0}
+		alpha = 0.5
+		modify_texture = {
+			using = color_black_texture
+		}
+		modify_texture = {
+			using = mask_fade_horizontal_middle_texture
+
+			blend_mode = alphamultiply
+		}
+	}
+}
+template bg_cabinet_inner_frame {
+	background = {
+		texture = "gfx/interface/component_tiles/cabinet/cabinet_inner_frame.dds"
+		texture_density = 2
+		spritetype = corneredstretched
+		spriteBorder = {20 0}
+		block "cabinet_card_frame_color" {
+			modify_texture = {
+				using = color_wood_brown_texture
+				blend_mode = multiply
+			}			
+		}		
+	}
+}
+
+template bg_cabinet_card_frame {
+	background = {
+		texture = "gfx/interface/component_tiles/cabinet/cabinet_card_frame.dds"
+		texture_density = 2
+		spritetype = corneredstretched
+		spriteBorder = {20 20}
+		margin_bottom = 1
+		margin_top = -1
+		margin_right = 1
+		modify_texture = {
+			using = color_black_texture
+			blend_mode = multiply
+		}
+		block "cabinet_card_shadow" {}
+		block "cabinet_card_frame" {}
+	}
+	background = {
+		texture = "gfx/interface/component_tiles/cabinet/cabinet_card_frame.dds"
+		texture_density = 2
+		spritetype = corneredstretched
+		spriteBorder = {20 20}
+		block "cabinet_card_frame_extra" {}
+		block "cabinet_card_frame_color" {
+			modify_texture = {
+				using = color_wood_brown_texture
+				blend_mode = multiply
+			}
+			modify_texture = {
+				using = overlay_wood_texture
+				blend_mode = overlay
+				alpha = 0.3
+			}
+		}
+		block "cabinet_card_frame" {}
+	}
+}
+
+template bg_cabinet_card_frame_mission {
+    background = {
+        texture = "gfx/interface/backgrounds/bg_scroll_header_mission.dds"
+        texture_density = 2
+        spritetype = corneredstretched
+        spriteBorder = {20 20}
+        margin_bottom = 5
+        margin_top = 1
+        margin_right = 1
+    }
+}
+
+template events_mask_texture {
+	background = {
+		texture = "gfx/interface/component_masks/mask_events_texture_full.dds"
+		spriteType = corneredstretched
+		spriteborder = {60 60}
+		texture_density = 2
+		alpha = 0.8
+
+		modify_texture = {
+			using = color_paper_texture
+		}
+
+		modify_texture = {
+			using = overlay_cloth_texture
+			blend_mode = overlay
+			alpha = 0.9
+		}
+	}
+}
+
+template bg_scroll_card_header {
+	block "card_header_shadow" {
+		background = {
+			texture = "gfx/interface/component_tiles/tile_card_shadow.dds"
+			spriteType = Corneredstretched
+			spriteborder = { 20 20 }
+			margin = { 10 10 }
+			margin_top = 6
+			texture_density = 2
+			alpha = 0.6
+		}
+	}
+
+	background = {
+		using = scroll_card_texture
+		margin = { 5 3 }
+		margin_top = 2
+		margin_bottom = 3
+		alpha = 0.4
+	}
+
+	background = {
+		using = scroll_card_texture
+		margin = {4 1}
+
+		modify_texture = {
+			using = color_paper_texture
+		}
+
+		modify_texture = {
+			using = overlay_paper_03
+			alpha = 0.3
+		}
+		modify_texture = {
+			using = overlay_cloth_texture
+			blend_mode = overlay
+			alpha = 0.1
+		}
+	}
+
+	block "card_header_pattern" {
+		background = {
+			# block "card_header_pattern_pattern" {
+				using = bg_card_header_01_default
+			# }
+			margin = {-5 0}
+			blockoverride "header_color" {
+				block "header_color_scroll_bg" {
+					using = color_diplomacy_texture
+				}
+			}
+			blockoverride "header_pattern" {
+				texture = "gfx/interface/component_overlay/cloth_texture.dds"
+				texture_density = 2
+				spriteType = Corneredtiled
+				spriteborder = { 0 0 }
+				blend_mode = overlay
+			}
+			using = graphical_culture_pattern
+			modify_texture = {
+				block "uiaction_gov" {
+					visible = no
+				}
+				using = color_greyish_texture
+				alpha = 1
+				blend_mode = normal
+			}
+		}
+	}
+
+	background = {
+		texture = "gfx/interface/component_masks/mask_events_texture_full.dds"
+		spriteType = corneredstretched
+		spriteborder = {60 60}
+		texture_density = 2
+		alpha = 0.4
+		margin = {-5 0}
+
+		modify_texture = {
+			using = color_paper_texture
+		}
+
+		modify_texture = {
+			using = overlay_cloth_texture
+			blend_mode = overlay
+			alpha = 0.9
+		}
+	}
+
+	background = {
+		texture = "gfx/interface/component_masks/mask_fade_horizontal_sides.dds"
+		texture_density = 2
+		alpha = 0.2
+		margin = {-5 0}
+
+		modify_texture = {
+			using = color_black_texture
+			blend_mode = multiply
+		}
+
+		modify_texture = {
+			using = overlay_cloth_texture
+			blend_mode = overlay
+			alpha = 0.9
+		}
+	}
+
+	background = {
+		using = scroll_card_outline_texture
+		margin = { 5 3 }
+		alpha = 0.4
+		modify_texture = {
+			using = color_default_brown_texture
+			blend_mode = multiply
+		}
+	}
+}
+
+template bg_card_header_cabinet {
+	background = {
+		texture = "gfx/interface/component_tiles/cabinet/cabinet_header_frame.dds"
+		texture_density = 2
+		spriteType = corneredstretched
+		spriteBorder = {45 45}
+		block "header_cabinet_margin" {
+			margin = { 3 1}
+		}
+
+		modify_texture = {
+			using = color_wood_brown_texture
+			blend_mode = multiply
+		}
+		modify_texture = {
+			using = overlay_wood_texture
+			blend_mode = overlay
+		}
+	}
+}
+
+# template bg_hegemony_base_frame {
+# 	background = {
+# 		texture = "gfx/interface/hegemony/hegemony_base_frame.dds"
+# 		texture_density = 2
+# 		spriteType = corneredstretched
+# 		spriteBorder = {45 45}
+# 		block "header_cabinet_margin" {}
+
+# 		# modify_texture = {
+# 		# 	using = color_new_gold_texture
+# 		# 	blend_mode = multiply
+# 		# }
+# 		# modify_texture = {
+# 		# 	using = overlay_stone_texture
+# 		# 	blend_mode = overlay
+# 		# 	alpha = 0.5
+# 		# }
+# 		# modify_texture = {
+# 		# 	using = overlay_window_texture
+# 		# 	blend_mode = overlay
+# 		# 	alpha = 0.5
+# 		# }
+# 	}
+# }
+
+# template bg_hegemony_icon_frame {
+# 	background = {
+# 		texture = "gfx/interface/hegemony/hegemony_base_frame.dds"
+# 		texture_density = 2
+
+# 		modify_texture = {
+# 			using = color_new_gold_texture
+# 			blend_mode = multiply
+# 		}
+# 		modify_texture = {
+# 			using = overlay_stone_texture
+# 			blend_mode = overlay
+# 		}
+# 		modify_texture = {
+# 			using = overlay_window_texture
+# 			blend_mode = overlay
+# 		}
+# 	}
+# }
+
+# template hanging_cloth_sides {
+# 	background = {
+# 		texture = "gfx/interface/component_tiles/estates/hanging_cloth_sides.dds"
+# 		margin = { 1 1 }
+# 		texture_density = 2
+# 		alpha = 0.2
+
+# 		modify_texture = {
+# 			using = color_black_texture
+# 			blend_mode = multiply
+# 		}
+# 	}
+
+# 	background = {
+# 		texture = "gfx/interface/component_tiles/estates/hanging_cloth_sides.dds"
+# 		texture_density = 2
+# 		block "margins" {
+# 			margin = {0 0}
+# 		}
+# 	}
+# }
+
+template bg_estates_frame {
+	background = {
+		texture = "gfx/interface/component_tiles/estates/estates_frame.dds"
+		margin = { 1 1 }
+		texture_density = 2
+		alpha = 0.2
+		spriteType = corneredstretched
+		spriteBorder = {50 0}
+
+		modify_texture = {
+			using = color_black_texture
+			blend_mode = multiply
+		}
+	}
+
+	background = {
+		texture = "gfx/interface/component_tiles/estates/estates_frame.dds"
+		texture_density = 2
+		spriteType = corneredstretched
+		spriteBorder = {50 0}
+		block "bg_estates_frame_margins" {
+			margin = {0 0}
+		}
+		modify_texture = {
+			using = color_new_gold_texture
+			blend_mode = multiply
+		}
+		modify_texture = {
+			using = overlay_stone_texture
+			blend_mode = overlay
+			alpha = 0.7
+		}
+		modify_texture = {
+			using = overlay_window_texture
+			blend_mode = overlay
+			alpha = 0.5
+		}
+	}
+}
+
+# template bg_estates_frame_top_bar {
+# 	background = {
+# 		texture = "gfx/interface/component_tiles/estates/estates_frame_top_bar.dds"
+# 		margin = { 1 1 }
+# 		texture_density = 2
+# 		alpha = 0.2
+# 		spriteType = corneredstretched
+# 		spriteBorder = {50 0}
+
+# 		modify_texture = {
+# 			using = color_black_texture
+# 			blend_mode = multiply
+# 		}
+# 	}
+
+# 	background = {
+# 		texture = "gfx/interface/component_tiles/estates/estates_frame_top_bar.dds"
+# 		texture_density = 2
+# 		spriteType = corneredstretched
+# 		spriteBorder = {50 0}
+# 		modify_texture = {
+# 			using = color_new_gold_texture
+# 			blend_mode = multiply
+# 		}
+# 		modify_texture = {
+# 			using = overlay_stone_texture
+# 			blend_mode = overlay
+# 			alpha = 0.4
+# 		}
+# 		modify_texture = {
+# 			using = overlay_window_texture
+# 			blend_mode = overlay
+# 			alpha = 0.4
+# 		}
+
+# 	}
+# }
+
+# template bg_estates_header_effects {
+# 	modify_texture = {
+# 		using = bg_fade_vertical_up_mask_texture
+# 		blend_mode = overlay
+# 		alpha = 0.9
+# 	}
+# 	modify_texture = {
+# 		using = overlay_cloth_texture
+# 		blend_mode = overlay
+# 		alpha = 0.9
+# 	}
+# }
+
+# template bg_thick_border_decor {
+# 	background = {
+# 		texture = "gfx/interface/component_tiles/thick_border_tile.dds"
+# 		texture_density = 2
+# 		spriteType = corneredstretched
+# 		spriteborder = { 20 20 }
+# 		block "margins" {
+# 			margin = {-3 -3}
+# 		}
+
+# 		# block "thick_tile_color" {
+# 			modify_texture = {
+# 				using = color_light_red_texture
+# 				blend_mode = multiply
+# 			}
+# 		# }
+# 		modify_texture = {
+# 			# block "thick_tile_pattern" {
+# 				texture = "gfx/interface/cards/headers/header_pattern_01.dds"
+# 				alpha = 0.4
+# 			# }
+# 			texture_density = 2
+# 			spriteType = corneredtiled
+# 			blend_mode = overlay
+
+# 		}
+# 	}
+# }
+
+# template hanging_cloth_deco_corners {
+# 	background = {
+# 		texture = "gfx/interface/component_tiles/messages/hanging_cloth_decor_corners.dds"
+# 		texture_density = 2
+# 		spriteType = corneredstretched
+# 		spriteborder = { 60 0 }
+# 		# block "hanging_cloth_margins" {
+# 			margin = {8 -6}
+# 			margin_top = 14
+# 		# }
+# 	}
+# }
+
+template bg_stripe_pattern {
+	background = {
+		texture = "gfx/interface/component_decoration/bg_stripe_pattern.dds"
+		texture_density = 2
+		spriteType = corneredstretched
+		spriteborder = { 200 25 }
+		block "bg_stripe_margins" {
+			margin = {8 0}
+		}
+		alpha = 0.8
+		modify_texture = {
+			using = color_new_gold_texture
+		}
+		modify_texture = {
+			using = overlay_cloth_texture
+			blend_mode = overlay
+			alpha = 0.2
+		}
+		modify_texture = {
+			using = overlay_striped_texture
+			blend_mode = overlay
+			alpha = 0.1
+		}
+		modify_texture = {
+			# block "bg_stripe_pattern_pattern" {
+				texture = "gfx/interface/cards/headers/header_pattern_01.dds"
+			# }
+			texture_density = 2
+			spriteType = corneredtiled
+			blend_mode = overlay
+			alpha = 0.3
+		}
+	}
+}
+
+# template messages_top_decoration {
+# 	background = {
+# 		texture = "gfx/interface/component_decoration/messages_top_decoration.dds"
+# 		texture_density = 2
+# 		fittype = end
+# 		block "mirror" {
+# 			mirror = horizontal
+# 		}
+# 	}
+# }
+
+# template bg_inside_decor_t1 {
+# 	background = {
+# 		texture = "gfx/interface/component_decoration/inside_decor_t1.dds"
+# 		texture_density = 2
+# 		spriteType = corneredstretched
+# 		spriteborder = { 85 85 }
+# 		# block "bg_inside_margins" {}
+# 		alpha = 0.6
+
+# 		modify_texture = {
+# 			using = color_new_gold_texture
+# 			blend_mode = multiply
+# 		}
+# 		modify_texture = {
+# 			using = overlay_cloth_texture
+# 			blend_mode = overlay
+# 			alpha = 0.4
+# 		}
+# 	}
+# }
+
+template bg_banner_button_vertical {
+	# block "banner_button_shadow" {
+		background = {
+			texture = "gfx/interface/buttons/banner_button_vertical.dds"
+			texture_density = 2
+			spriteType = corneredstretched
+			spriteborder = { 44 50 }
+			block "banner_button_shadow_margin" {
+				margin = {1 6}
+				margin_bottom = 7
+				margin_right = 5
+			}
+			alpha = 0.5
+
+			modify_texture = {
+				using = color_black_texture
+			}
+			block "banner_button_extra" {}
+		}
+	# }
+
+	background = {
+		texture = "gfx/interface/buttons/banner_button_vertical.dds"
+		texture_density = 2
+		spriteType = corneredstretched
+		spriteborder = { 44 50 }
+		block "banner_button_margin" {
+			margin = {3 6}
+			margin_bottom = 8
+		}
+
+		block "banner_button_extra" {}
+
+		block "banner_button_color" {
+			modify_texture = {
+				using = color_dark_blue_texture
+			}
+		}
+	}
+}
+
+template bg_square_tile {
+	background = {
+		texture = "gfx/interface/component_tiles/square_tile.dds"
+		texture_density = 2
+
+		block "square_extras" {}
+
+		block "container_color" {
+			modify_texture = {
+				using = color_dark_blue_texture
+				blend_mode = multiply
+			}
+		}
+	}
+}
+
+template bg_square_wood_tile {
+	background = {
+		texture = "gfx/interface/component_tiles/square_tile.dds"
+		texture_density = 2
+
+		modify_texture = {
+			using = color_wood_brown_texture
+			blend_mode = multiply
+		}
+		modify_texture = {
+			using = color_black_texture
+			blend_mode = multiply
+			alpha = 0.2
+		}
+		modify_texture = {
+			using = overlay_stone_texture
+			blend_mode = overlay
+			alpha = 0.3
+		}
+		modify_texture = {
+			using = overlay_wood_texture
+			blend_mode = overlay
+			alpha = 0.3
+		}
+		modify_texture = {
+			using = overlay_window_texture
+			blend_mode = overlay
+			alpha = 0.2
+		}
+	}
+
+	background = {
+		texture = "gfx/interface/component_tiles/cabinet/cabinet_card_frame.dds"
+		texture_density = 2
+		spritetype = corneredstretched
+		spriteBorder = {20 20}
+		margin_bottom = 1
+		margin_top = -1
+		margin_right = 1
+		modify_texture = {
+			using = color_black_texture
+			blend_mode = multiply
+		}
+		block "cabinet_card_shadow" {}
+	}
+	background = {
+		texture = "gfx/interface/component_tiles/cabinet/cabinet_card_frame.dds"
+		texture_density = 2
+		spritetype = corneredstretched
+		spriteBorder = {20 20}
+		block "cabinet_card_frame_extra" {}
+		block "cabinet_card_frame_color" {
+			modify_texture = {
+				using = color_wood_brown_texture
+				blend_mode = multiply
+			}
+			modify_texture = {
+				using = overlay_wood_texture
+				blend_mode = overlay
+				alpha = 0.3
+			}
+		}
+	}
+}
+
+template bg_square_gold_tile {
+	background = {
+		texture = "gfx/interface/component_tiles/square_tile.dds"
+		texture_density = 2
+		
+		modify_texture = {
+			using = color_new_gold_texture
+			blend_mode = multiply
+		}
+		modify_texture = {
+			using = overlay_stone_texture
+			blend_mode = overlay
+			alpha = 0.4
+		}
+		modify_texture = {
+			using = overlay_window_texture
+			blend_mode = overlay
+			alpha = 0.5
+		}
+		modify_texture = {
+			using = color_black_texture
+			blend_mode = overlay
+			alpha = 0.4
+		}
+	}
+
+	background = {
+		texture = "gfx/interface/component_decoration/situation/frame_striped_situation.dds"
+		spriteType = Corneredstretched
+		spriteborder = { 16 16 }
+		texture_density = 2
+		alpha = 0.5
+		margin = {-1 0}
+		margin_bottom = 2
+		margin_top = -2
+		modify_texture = {
+			using = color_black_texture
+		}
+		# block "bg_frame_shadow" {}
+	}
+	background = {
+		texture = "gfx/interface/component_decoration/situation/frame_striped_situation.dds"
+		spriteType = Corneredstretched
+		spriteborder = { 16 16 }
+		texture_density = 2
+		using = non_clickable_color_gold_texture
+	}
+}
+
+template bg_square_outline_tile {
+	background = {
+		texture = "gfx/interface/component_tiles/square_outline_alt.dds"
+		texture_density = 2
+		spriteType = corneredstretched
+		spriteborder = { 25	25 }
+
+		block "container_color" {
+			modify_texture = {
+				using = color_dark_blue_texture
+				blend_mode = multiply
+			}
+		}
+	}
+}
+
+# template bg_circle_outline_tile {
+# 	background = {
+# 		texture = "gfx/interface/component_tiles/circle_outline_tile.dds"
+# 		texture_density = 2
+
+# 		block "container_color" {
+# 			modify_texture = {
+# 				using = color_dark_blue_texture
+# 				blend_mode = multiply
+# 			}
+# 		}
+# 	}
+# }
+
+# template bg_circle_outline_tile_thick {
+# 	background = {
+# 		texture = "gfx/interface/component_tiles/circle_outline_tile_thick.dds"
+# 		texture_density = 2
+
+# 		block "frame_color" {
+# 			modify_texture = {
+# 				using = color_dark_blue_texture
+# 				blend_mode = multiply
+# 			}
+# 		}
+# 	}
+# }
+
+template bg_circle_piechart {
+	background = {
+		texture = "gfx/interface/buttons/round_button_alt.dds"
+		texture_density = 2
+		# block "other_margins" {
+			margin = {2 2}
+		# }
+		margin_bottom = 3
+		modify_texture = {
+			using = color_dark_blue_texture
+			blend_mode = multiply
+		}
+		block "bg_circle_piechart_shadow" {}
+	}
+
+	background = {
+		texture = "gfx/interface/buttons/round_button_alt.dds"
+		texture_density = 2
+		# block "other_margins" {
+			margin = {2 2}
+		# }
+		block "frame_color" {
+			modify_texture = {
+				using = color_bronze_texture
+				blend_mode = multiply
+			}
+			modify_texture = {
+				using = color_gold_texture
+				# blend_mode = multiply
+				alpha = 0.3
+			}
+		}
+	}
+
+	background = {
+		texture = "gfx/interface/buttons/bg_button.dds"
+		texture_density = 2
+		margin = {1 1}
+		block "inside_color" {
+			modify_texture = {
+				using = color_bg_blue_texture
+				blend_mode = multiply
+			}
+		}
+
+		modify_texture = {
+			using = overlay_paper_03
+		}
+	}
+}
+
+# template bg_cricle_simple_piechart {
+# 	background = {
+# 		texture = "gfx/interface/buttons/round_button_alt.dds"
+# 		texture_density = 2
+# 		margin = {2 2}
+# 		margin_bottom = 3
+# 		modify_texture = {
+# 			using = color_dark_blue_texture
+# 			blend_mode = multiply
+# 		}
+# 	}
+
+# 	background = {
+# 		texture = "gfx/interface/buttons/bg_button.dds"
+# 		texture_density = 2
+# 		margin = {1 1}
+# 		modify_texture = {
+# 			using = color_bg_blue_texture
+# 			blend_mode = multiply
+# 		}
+
+# 		modify_texture = {
+# 			using = overlay_paper_03
+# 		}
+# 	}
+# }
+
+template bg_number_container_bckg {
+	background = {
+		# block "number_container_texture" {
+			texture = "gfx/interface/component_tiles/number_container.dds"
+			texture_density = 2
+			spriteType = corneredstretched
+			spriteborder = { 25 25 }
+
+		# }
+		block "number_container_alpha" {
+			alpha = 0.7
+		}
+		block "number_container_extra" {
+			margin = {2 2}
+		}
+
+		block "number_container_color" {
+			modify_texture = {
+				using = color_super_dark_brown_texture
+				blend_mode = multiply
+			}
+		}
+
+		modify_texture = {
+			using = overlay_cloth_texture
+			blend_mode = overlay
+			alpha = 0.3
+		}
+	}
+}
+
+template bg_round_button_circle {
+	background = {
+		texture = "gfx/interface/buttons/round_button_big_alt.dds"
+		texture_density = 2
+		margin = {2 2}
+		margin_bottom = 3
+		modify_texture = {
+			using = color_dark_blue_texture
+			blend_mode = multiply
+		}
+		# block "round_button_extra" {}
+	}
+	background = {
+		texture = "gfx/interface/buttons/round_button_big_alt.dds"
+		texture_density = 2
+		margin = {2 2}
+		modify_texture = {
+			using = color_new_gold_texture
+			blend_mode = multiply
+		}
+		# block "round_button_extra" {}
+	}
+}
+
+template bg_circle_piechart_big {
+	background = {
+		texture = "gfx/interface/buttons/round_button_big_alt.dds"
+		texture_density = 2
+		margin = {2 2}
+		margin_bottom = 3
+		modify_texture = {
+			using = color_dark_blue_texture
+			blend_mode = multiply
+		}
+	}
+	background = {
+		texture = "gfx/interface/buttons/round_button_big_alt.dds"
+		texture_density = 2
+		margin = {2 2}
+
+		modify_texture = {
+			using = color_new_gold_texture
+			blend_mode = multiply
+		}
+	}
+
+	background = {
+		texture = "gfx/interface/buttons/bg_button_big.dds"
+		texture_density = 2
+		# block "bg_piechart_big_color" {
+			modify_texture = {
+				using = color_bg_blue_texture
+				blend_mode = multiply
+			}
+		# }
+		modify_texture = {
+			using = overlay_paper_03
+			blend_mode = overlay
+		}
+		modify_texture = {
+			using = overlay_leather_texture
+			blend_mode = overlay
+			alpha = 0.4
+		}
+		modify_texture = {
+			using = overlay_window_texture
+			blend_mode = overlay
+			alpha = 0.4
+		}
+	}
+
+	# block "inner_circle_piechart" {
+		background = {
+			texture = "gfx/interface/buttons/circle_navigational_frame.dds"
+			texture_density = 2
+			margin = {-17 -17}
+			modify_texture = {
+				using = color_new_gold_texture
+			}
+		}
+	# }
+}
+
+# template bg_raw_paper_card {
+# 	background = {#shadow
+# 		texture = "gfx/interface/cards/raw_paper_card.dds"
+# 		texture_density = 2
+# 		margin = {1 1}
+# 		frame_grid = {4 1}
+# 		spriteType = Corneredstretched
+# 		spriteborder = { 40 40 }
+# 		alpha = 0.5
+# 		modify_texture = {
+# 			using = color_black_texture
+# 			blend_mode = multiply
+# 		}
+# 	}
+
+# 	background = {
+# 		texture = "gfx/interface/cards/raw_paper_card.dds"
+# 		frame_grid = {1 1}
+# 		spriteType = Corneredstretched
+# 		texture_density = 2
+# 		spriteborder = { 40 40 }
+
+# 		# block "raw_paper_card_color" {
+# 			modify_texture = {
+# 				using = color_paper_texture
+# 				blend_mode = multiply
+# 			}
+# 		# }
+
+# 		modify_texture = {
+# 			using = overlay_cloth_texture
+# 			blend_mode = overlay
+# 			alpha = 0.2
+# 		}
+# 	}
+# }
+
+
+# template wood_frame {
+# 	background = {
+# 		texture = "gfx/interface/component_tiles/war/wood_frame.dds"
+# 		spriteborder = { 22 22 }
+# 		spriteType = corneredstretched
+# 		texture_density = 2
+# 		# block "wood_frame_extra" {
+# 			modify_texture = {
+# 				using = color_brown_leather_texture
+# 				blend_mode = multiply
+# 			}
+# 		# }
+
+# 		modify_texture = {
+# 			texture = "gfx/interface/component_overlay/striped_texture.dds"
+# 			texture_density = 2
+# 			spriteType = corneredtiled
+# 			spriteBorder = {0 0}
+# 			blend_mode = overlay
+# 			alpha = 0.2
+# 		}
+
+# 		modify_texture = {
+# 			using = overlay_stone_texture
+# 			blend_mode = overlay
+# 			alpha = 0.5
+# 		}
+# 	}
+
+# 	background = {
+# 		texture = "gfx/interface/component_tiles/war/wood_frame.dds"
+# 		spriteborder = { 22 22 }
+# 		spriteType = corneredstretched
+# 		texture_density = 2
+# 		alpha = 0.4
+
+# 		modify_texture = {
+# 			using = color_black_texture
+# 			blend_mode = multiply
+# 		}
+
+# 		modify_texture = {
+# 			texture = "gfx/interface/component_masks/mask_fade_vertical_overlay.dds"
+# 			texture_density = 2
+# 			mirror = vertical
+# 			blend_mode = alphamultiply
+# 		}
+# 	}
+
+# 	background = {
+# 		texture = "gfx/interface/component_tiles/war/frame_knobs.dds"
+# 		spriteborder = { 22 22 }
+# 		spriteType = corneredstretched
+# 		texture_density = 2
+# 		margin = {-1 -1}
+# 		alpha = 0.4
+
+# 		modify_texture = {
+# 			using = color_black_texture
+# 			blend_mode = multiply
+# 		}
+# 	}
+
+# 	background = {
+# 		texture = "gfx/interface/component_tiles/war/frame_knobs.dds"
+# 		spriteborder = { 22 22 }
+# 		spriteType = corneredstretched
+# 		texture_density = 2
+
+# 		modify_texture = {
+# 			using = color_new_gold_texture
+# 			blend_mode = multiply
+# 		}
+
+# 		modify_texture = {
+# 			using = overlay_gold_texture
+# 			blend_mode = overlay
+# 			alpha = 0.2
+# 		}
+# 	}
+# }
+
+template wood_frame_thin {
+	background = {
+		texture = "gfx/interface/component_tiles/war/wood_frame_thin.dds"
+		spriteborder = { 22 22 }
+		spriteType = corneredstretched
+		texture_density = 2
+
+		# block "frame_extras" {}
+
+		block "frame_color" {
+			modify_texture = {
+				using = color_brown_leather_texture
+				blend_mode = multiply
+			}
+		}
+
+		modify_texture = {
+			texture = "gfx/interface/component_overlay/striped_texture.dds"
+			texture_density = 2
+			spriteType = corneredtiled
+			spriteBorder = {0 0}
+			blend_mode = overlay
+			alpha = 0.2
+		}
+
+		modify_texture = {
+			using = overlay_stone_texture
+			blend_mode = overlay
+			alpha = 0.5
+		}
+	}
+
+	background = {
+		texture = "gfx/interface/component_tiles/war/wood_frame_thin.dds"
+		spriteborder = { 22 22 }
+		spriteType = corneredstretched
+		texture_density = 2
+		alpha = 0.4
+
+		modify_texture = {
+			using = color_black_texture
+			blend_mode = multiply
+		}
+
+		modify_texture = {
+			texture = "gfx/interface/component_masks/mask_fade_vertical_overlay.dds"
+			texture_density = 2
+			mirror = vertical
+			blend_mode = alphamultiply
+		}
+	}
+}
+
+# template frame_knobs {
+# 	background = {
+# 		texture = "gfx/interface/component_tiles/war/frame_knobs.dds"
+# 		spriteborder = { 22 22 }
+# 		spriteType = corneredstretched
+# 		texture_density = 2
+
+# 		modify_texture = {
+# 			using = color_new_gold_texture
+# 			blend_mode = multiply
+# 		}
+
+# 		modify_texture = {
+# 			using = overlay_gold_texture
+# 			blend_mode = overlay
+# 			alpha = 0.2
+# 		}
+# 	}
+# }
+
+template baroque_corner_flavor_01 {
+	background = {
+		# block "flavor_full" {
+			texture = "gfx/interface/component_tiles/baroque_corner_flavor_01.dds"
+		# }
+		spriteType = Corneredstretched
+		spriteborder = { 22 0 }
+		texture_density = 2
+	}
+}
+
+# template flag_folds_01 {
+# 	background = {
+# 		texture = "gfx/interface/component_tiles/flag_folds_01.dds"
+# 		spriteType = Corneredstretched
+# 		spriteborder = { 50 0 }
+# 		texture_density = 2
+# 		block "fold_shadow_margin" {
+# 			margin = {-1 0}
+# 			margin_top = -1
+# 			margin_bottom = 7
+# 		}
+
+# 		alpha = 0.9
+
+# 		modify_texture = {
+# 			using = color_black_texture
+# 			blend_mode = multiply
+# 		}
+# 	}
+# 	background = {
+# 		texture = "gfx/interface/component_tiles/flag_folds_01.dds"
+# 		spriteType = Corneredstretched
+# 		spriteborder = { 50 0 }
+# 		texture_density = 2
+# 		block "fold_margin" {
+# 			margin_bottom = 9
+# 		}
+
+# 		block "flag_color" {
+# 			modify_texture = {
+# 				using = color_new_gold_texture
+# 				blend_mode = multiply
+# 			}
+# 		}
+
+# 		modify_texture = {
+# 			using = overlay_cloth_texture
+# 			blend_mode = overlay
+# 			alpha = 0.3
+# 		}
+# 	}
+# }
+
+template bg_tile_shadow {
+	background = {
+		texture = "gfx/interface/component_tiles/tile_card_shadow.dds"
+		spriteType = Corneredstretched
+		spriteborder = { 20 20 }
+		block "shadow_tile_margin" {
+			margin = { 2 2 }
+		}
+		texture_density = 2
+	}
+}
+
+template bg_circle_tile_shadow {
+	background = {
+		texture = "gfx/interface/component_tiles/circle_full_shadow.dds"
+		
+		block "shadow_tile_margin" {
+			margin = { 2 2 }
+		}
+		texture_density = 2
+	}
+}
+
+template bg_selected_law_frame {
+	block "bg_selected_law_visible" {		
+		visible = no
+	}
+	texture = "gfx/interface/component_tiles/war/wood_frame.dds"
+	spriteborder = { 22 22 }
+	spriteType = corneredstretched
+	texture_density = 2
+	modify_texture = {
+		using = color_new_gold_texture
+		blend_mode = multiply
+	}
+	modify_texture = {
+		using = color_white_texture
+		blend_mode = overlay
+		alpha = 0.8
+	}
+	modify_texture = {
+		using = overlay_window_texture
+		blend_mode = overlay
+		alpha = 0.7
+	}
+}
+
+# template bg_card_container_sat_blue {
+# 	background = {
+# 		texture = "gfx/interface/component_tiles/tile_card_shadow.dds"
+# 		spriteType = Corneredstretched
+# 		spriteborder = { 20 20 }
+# 		margin = { 2 2 }
+# 		texture_density = 2
+# 		alpha = 1
+# 	}
+
+# 	background = {
+# 		using = tile_card_bg_texture
+# 		margin = { -4 -4 }
+# 		using = color_dark_blue
+
+# 		modify_texture = {
+# 			using = color_dark_blue_texture
+# 			texture_density = 2
+# 			spriteType = stretched
+# 			spriteborder = { 0 0 }
+# 			alpha = 1
+# 		}
+
+# 		modify_texture = {
+# 			texture = "gfx/interface/component_masks/mask_fade_horizontal_left.dds"
+# 			texture_density = 2
+# 			spriteType = stretched
+# 			blend_mode = overlay
+# 			alpha = 0.5
+# 		}
+# 	}
+# }
+
+# template bg_circle_texture {
+# 	texture = "gfx/interface/component_tiles/bg_cricle.dds"
+# 	spriteType = Corneredstretched
+# 	spriteborder = { 0 0 }
+# 	texture_density = 2
+# 	block "bg_circle_texture_extra" {}
+# }
+
+template bg_round_corners_texture {
+	texture = "gfx/interface/component_tiles/bg_round_corners.dds"
+	spriteType = Corneredstretched
+	spriteborder = { 10 10 }
+	texture_density = 2
+	# block "bg_round_corners_prop" {}
+}
+
+# template bg_round_corners_frame_texture {
+# 	texture = "gfx/interface/component_tiles/bg_round_corners_frame.dds"
+# 	texture_density = 2
+# 	spriteType = Corneredstretched
+# 	spriteborder = { 10 10 }
+# }
+
+template bg_round_corners_alt_texture {
+	texture = "gfx/interface/component_tiles/round_corners_alt.dds"
+	spriteType = Corneredstretched
+	spriteborder = { 10 10 }
+	texture_density = 2
+	# block "bg_round_corners_prop" {}
+}
+
+template bg_round_corners_frame_alt_texture {
+	texture = "gfx/interface/component_tiles/round_corners_frame_alt.dds"
+	spriteType = Corneredstretched
+	spriteborder = { 10 10 }
+	texture_density = 2
+	# block "bg_round_corners_prop" {}
+}
+
+template bg_round_corners_up_base {
+	texture = "gfx/interface/component_tiles/balance_card_up.dds"
+	spriteType = Corneredtiled
+	spriteborder = { 25 25 }
+	texture_density = 2
+	alpha = 1
+}
+
+# template bg_round_corners_up_frame {
+# 	texture = "gfx/interface/component_tiles/balance_card_up_frame.dds"
+# 	spriteType = Corneredtiled
+# 	spriteborder = { 25 25 }
+# 	texture_density = 2
+# 	alpha = 1
+
+# 	modify_texture = {
+# 		block "frame_color" {
+# 			using = color_red_texture
+# 			blend_mode = add
+# 			visible = no
+# 		}
+# 	}
+# 	modify_texture = {
+# 		using = overlay_stone_texture
+# 		blend_mode = overlay
+# 		alpha = 0.5
+# 	}
+# }
+
+template mask_round_corners {
+	modify_texture = {
+		using = bg_round_corners_texture
+		blend_mode = alphamultiply
+	}
+}
+
+template mask_round_corners_up {
+	modify_texture = {
+		using = bg_round_corners_texture
+		frame_grid = { 1 2 }
+		spriteborder_bottom = 0
+		blend_mode = alphamultiply
+	}
+}
+
+# template mask_round_corners_down {
+# 	modify_texture = {
+# 		using = bg_round_corners_texture
+# 		frame_grid = { 1 2 }
+# 		spriteborder_top = 0
+# 		frame = 2
+# 		blend_mode = alphamultiply
+# 	}
+# }
+
+# template mask_round_corners_left {
+# 	modify_texture = {
+# 		using = bg_round_corners_texture
+# 		frame_grid = { 2 1 }
+# 		spriteborder_right = 0
+# 		blend_mode = alphamultiply
+# 	}
+# }
+
+# template mask_round_corners_right {
+# 	modify_texture = {
+# 		using = bg_round_corners_texture
+# 		frame_grid = { 2 1 }
+# 		spriteborder_left = 0
+# 		frame = 2
+# 		blend_mode = alphamultiply
+# 	}
+# }
+
+# template mask_round_corners_left_down {
+# 	modify_texture = {
+# 		using = bg_round_corners_texture
+# 		frame_grid = { 2 2 }
+# 		spriteborder_top = 0
+# 		spriteborder_right = 0
+# 		frame = 3
+# 		blend_mode = alphamultiply
+# 	}
+# }
+
+# template mask_round_corners_right_down {
+# 	modify_texture = {
+# 		using = bg_round_corners_texture
+# 		frame_grid = { 2 2 }
+# 		spriteborder_top = 0
+# 		spriteborder_left = 0
+# 		frame = 4
+# 		blend_mode = alphamultiply
+# 	}
+# }
+
+template bg_round_corners {
+	using = color_light_blue_texture
+	using = mask_round_corners
+	alpha = 0.9
+}
+
+template bg_round_corners_up {
+	using = bg_round_corners_up_base
+
+	block "bg_color" {
+		modify_texture = {
+			using = color_light_blue_texture
+			blend_mode = add
+		}
+	}
+}
+
+template bg_round_corners_dark {
+	using = bg_round_corners_texture
+	alpha = 0.9
+
+	modify_texture = {
+		using = color_dark_blue_texture
+		blend_mode = add
+	}
+}
+
+# template bg_tile_card_up_fade_texture {
+# 	using = tile_card_bg_texture
+# 	alpha = 0.9
+
+# 	using = color_light_blue
+
+# 	modify_texture = {
+# 		using = overlay_stone_texture
+# 		blend_mode = overlay
+# 		alpha = 0.3
+# 	}
+
+# 	modify_texture = {
+# 		texture = "gfx/interface/component_masks/mask_fade_horizontal.dds"
+# 		texture_density = 2
+# 		alpha = 0.5
+# 		spriteType = stretched
+# 		spriteBorder = { 0 0 }
+# 		blend_mode = alphamultiply
+# 		mirror = horizontal
+# 	}
+# }
+
+# template bg_round_corners_green_texture {
+# 	using = bg_round_corners_texture
+# 	alpha = 0.9
+
+# 	modify_texture = {
+# 		using = color_light_green_texture
+# 		blend_mode = add
+# 	}
+# }
+
+# template bg_round_corners_green_fade_texture {
+# 	using = bg_round_corners_texture
+# 	alpha = 0.6
+
+# 	modify_texture = {
+# 		using = color_light_green_texture
+# 	}
+
+# 	modify_texture = {
+# 		texture = "gfx/interface/component_masks/mask_fade_horizontal.dds"
+# 		texture_density = 2
+# 		spriteType = stretched
+# 		spriteBorder = { 0 0 }
+# 		blend_mode = alphamultiply
+# 	}
+# }
+
+# template bg_round_corners_red_texture {
+# 	using = bg_round_corners_texture
+# 	alpha = 0.9
+
+# 	modify_texture = {
+# 		using = color_red_texture
+# 		blend_mode = add
+# 	}
+# }
+
+# template bg_round_corners_red_fade_texture
+# {
+# 	using = bg_round_corners_texture
+# 	alpha = 0.9
+
+# 	modify_texture = {
+# 		using = color_red_texture
+# 		blend_mode = add
+# 	}
+
+# 	modify_texture = {
+# 		texture = "gfx/interface/component_masks/mask_fade_horizontal.dds"
+# 		texture_density = 2
+# 		spriteType = stretched
+# 		spriteBorder = { 0 0 }
+# 		blend_mode = alphamultiply
+# 	}
+# }
+
+template bg_round_corners_mid_blue_texture {
+	using = bg_round_corners_texture
+	alpha = 0.9
+
+	modify_texture = {
+		using = color_mid_blue_texture
+		blend_mode = add
+	}
+}
+
+template bg_round_corners_dark_blue_texture {
+	using = bg_round_corners_texture
+	alpha = 0.9
+
+	modify_texture = {
+		using = color_dark_blue_texture
+		blend_mode = add
+	}
+}
+
+# template bg_square_filters_texture {
+# 	using = color_light_blue_texture
+# 	alpha = 0.9
+
+# 	modify_texture = {
+# 		using = overlay_stone_texture
+# 		blend_mode = overlay
+# 		alpha = 0.8
+# 	}
+# }
+
+template bg_container_framed_texture {
+	texture = "gfx/interface/component_tiles/tile_container_framed.dds"
+	spriteType = Corneredtiled
+	spriteborder = { 20 20 }
+	texture_density = 2
+	alpha = 0.75
+}
+
+# template bg_container_framed_small_texture {
+# 	texture = "gfx/interface/component_tiles/tile_container_framed.dds"
+# 	spriteType = Corneredtiled
+# 	spriteborder = { 10 10 }
+# 	texture_density = 4
+# 	alpha = 1
+# }
+
+template bg_full_dim {
+	background = {
+		using = color_black_texture
+		alpha = 0.5
+	}
+}
+
+# template bg_hud_corner {
+# 	background = {
+# 		margin = { 5 5 }
+# 		texture = "gfx/interface/component_tiles/hud_corners/tile_shadow_top.dds"
+# 		texture_density = 2
+# 		spriteType = corneredtiled
+# 		spriteBorder = { 25 25 }
+# 		alpha = 0.9
+# 		margin_top = 0
+
+# 		modify_texture = {
+# 			using = overlay_window_texture
+# 			blend_mode = overlay
+# 			alpha = 1
+# 		}
+# 	}
+
+# 	background = {
+# 		spriteType = CorneredStretched
+# 		texture = "gfx/interface/gui_blur/flat_blur_medium_low.dds"
+# 		shaderfile = "gfx/FX/gui_screen_blur.shader"
+		
+# 		visible = "[IsScreenGrabWorking]"
+# 		spriteborder = { 5 5 }
+# 		margin = { 0 0 }
+
+# 		modify_texture = {
+# 			texture = "gfx/interface/component_tiles/hud_corners/tile_background_top.dds"
+# 			texture_density = 2
+# 			spriteType = corneredtiled
+# 			spriteBorder = { 15 15 }
+# 			blend_mode = alphamultiply
+# 		}
+# 	}
+
+# 	background = { # Expandable Background
+# 		texture = "gfx/interface/component_tiles/hud_corners/tile_background_top.dds"
+# 		texture_density = 2
+# 		spriteType = corneredstretched
+# 		spriteBorder = { 30 30 }
+# 		alpha = 0.93
+
+# 		modify_texture = {
+# 			using = color_dark_blue_texture
+# 		}
+
+# 		modify_texture = {
+# 			using = color_mid_blue_texture
+# 			alpha = 0.2
+# 		}
+
+# 		modify_texture = {
+# 			using = overlay_window_texture
+# 			blend_mode = overlay
+# 		}
+
+# 		modify_texture = {
+# 			using = overlay_stone_texture
+# 			blend_mode = overlay
+# 			alpha = 0.7
+# 		}
+# 	}
+# }
+
+template bg_battle_flank_arrows {
+	background = {
+		texture = "gfx/interface/component_tiles/battle/bg_battle_flank_arrows.dds"
+		texture_density = 2
+		alpha = 0.2
+		frame_grid = {6 1}
+		modify_texture = {
+			using = color_dark_brown_texture
+			blend_mode = multiply
+		}
+		block "bg_battle_flank_arrows_extra" {}
+	}
+}
+
+template bg_battle_arrow {
+	background = {
+		texture = "gfx/interface/component_tiles/battle/battle_arrows.dds"
+		texture_density = 2
+		alpha = 0.3
+		modify_texture = {
+			using = color_dark_brown_texture
+			blend_mode = multiply
+		}
+		block "battle_arrow_mirror" {mirror = vertical}
+	}
+}
+
+template bg_square_tile_shadow {
+	background = {
+		texture = "gfx/interface/component_tiles/navigational_square_tile.dds"
+		spriteType = Corneredstretched
+		spriteborder = { 20 20 }
+		texture_density = 2
+		alpha = 0.5
+		margin_bottom = 1
+		# block "bg_square_tile_shadow_extra" {}
+	}
+}
+
+template bg_square_shadow {
+	background = {
+		texture = "gfx/interface/component_tiles/tooltip_shadow.dds"
+		spriteType = Corneredstretched
+		spriteborder = { 20 20 }
+		texture_density = 2
+		alpha = 0.3
+
+		margin = { 8 8 }
+		margin_top = 1
+	}
+}
+
+## TOOLTIPS
+###############################################################################
+
+template bg_tooltip_debug {
+	using = bg_round_corners_texture
+	alpha = 0.2
+
+	modify_texture = {
+		using = color_white_texture
+		color = { 1.0 0.0 1.0 1.0 }
+		alpha = 1.0
+	}
+}
+
+template text_mask_container_texture {
+	texture = "gfx/interface/component_masks/text_mask_frame.dds"
+	texture_density = 2
+	alpha = 0.8
+	spriteType = corneredstretched
+	spriteBorder = { 12 12 }
+}
+
+template bg_text_mask_container_grey {
+	background = {
+		using = text_mask_container_texture
+
+		block "text_mask_color" {
+			modify_texture = {
+				using = color_grey_texture
+				blend_mode = add
+				alpha = 0.7
+			}
+			modify_texture = {
+				using = color_grey_texture
+				blend_mode = overlay
+			}
+		}
+	}
+}
+
+template bg_text_mask_container_dark_brown {
+	background = {
+		using = text_mask_container_texture
+
+		block "text_mask_color" {
+			modify_texture = {
+				using = color_super_dark_brown_texture
+				blend_mode = add
+				alpha = 0.7
+			}
+			modify_texture = {
+				using = color_super_dark_brown_texture
+				blend_mode = overlay
+			}
+		}
+		block "text_mask_extra" {}
+	}
+}
+
+template bg_text_mask_container_brown {
+	background = {
+		using = text_mask_container_texture
+
+		block "text_mask_color" {
+			modify_texture = {
+				using = color_bg_brown_texture
+				blend_mode = add
+				alpha = 0.7
+			}
+			modify_texture = {
+				using = color_bg_brown_texture
+				blend_mode = overlay
+			}
+		}
+		block "text_mask_extra" {
+			alpha = 0.5
+		}
+	}
+}
+
+# template bg_text_mask_container_paper {
+# 	background = {
+# 		using = text_mask_container_texture
+
+# 		block "text_mask_color" {
+# 			modify_texture = {
+# 				using = color_paper_texture
+# 				blend_mode = add
+# 				alpha = 0.7
+# 			}
+# 			modify_texture = {
+# 				using = color_paper_texture
+# 				blend_mode = overlay
+# 			}
+# 		}
+# 		block "text_mask_extra" {
+# 			alpha = 0.5
+# 		}
+# 	}
+# }
+
+template bg_text_mask_container_dark_blue {
+	background = {
+		using = text_mask_container_texture
+
+		block "text_mask_color" {
+			modify_texture = {
+				using = color_dark_blue_texture
+				blend_mode = add
+				alpha = 0.7
+			}
+			modify_texture = {
+				using = color_dark_blue_texture
+				blend_mode = overlay
+			}
+		}
+		block "text_mask_extra" {
+			alpha = 0.5
+		}
+	}
+}
+
+template bg_text_mask_container_turquoise {
+	background = {
+		using = text_mask_container_texture
+
+		block "text_mask_color" {
+			modify_texture = {
+				using = color_turquoise_texture
+				blend_mode = add
+				alpha = 0.7
+			}
+			modify_texture = {
+				using = color_turquoise_texture
+				blend_mode = overlay
+			}
+		}
+	}
+}
+
+template bg_text_mask_container_dark_green {
+	background = {
+		using = text_mask_container_texture
+
+		block "text_mask_color" {
+			modify_texture = {
+				using = color_dark_green_texture
+				blend_mode = add
+				alpha = 0.7
+			}
+			modify_texture = {
+				using = color_dark_green_texture
+				blend_mode = overlay
+			}
+		}
+		block "text_mask_extra" {
+			alpha = 0.5
+		}
+	}
+}
+
+template bg_text_mask_container_light_green {
+	background = {
+		using = text_mask_container_texture
+
+		block "text_mask_color" {
+			modify_texture = {
+				using = color_light_green_texture
+				blend_mode = add
+				alpha = 0.7
+			}
+			modify_texture = {
+				using = color_light_green_texture
+				blend_mode = overlay
+			}
+		}
+		block "text_mask_extra" {
+			alpha = 0.5
+		}
+	}
+}
+
+template bg_text_mask_container_dark_red {
+	background = {
+		using = text_mask_container_texture
+
+		block "text_mask_color" {
+			modify_texture = {
+				using = color_dark_red_texture
+				blend_mode = add
+				alpha = 0.7
+			}
+			modify_texture = {
+				using = color_dark_red_texture
+				blend_mode = overlay
+			}
+		}
+		block "text_mask_extra" {
+			alpha = 0.5
+		}
+	}
+}
+
+template bg_text_mask_container_fade_red {
+	background = {
+		using = text_mask_container_texture
+
+		block "text_mask_color" {
+			modify_texture = {
+				using = color_red_texture
+				blend_mode = add
+				alpha = 0.7
+			}
+			modify_texture = {
+				using = color_red_texture
+				blend_mode = overlay
+			}
+			modify_texture = {
+				texture = "gfx/interface/component_masks/mask_fade_horizontal_left.dds"
+				spriteType = Corneredstretched
+				spriteborder = { 0 0 }
+				blend_mode = alphamultiply
+			}
+			
+		}
+		block "text_mask_extra" {
+			alpha = 0.5
+		}
+	}
+}
+
+template bg_contextual_tooltip {
+	# background = {
+	# 	using = bg_round_corners_alt_texture
+
+	# 	block "tooltip_bg_color" {
+	# 		tintcolor = "[ExtraTooltipInfo.GetTintColor]"
+	# 	}
+
+	# 	shaderfile = "gfx/FX/pdxgui_default.shader"
+	# }
+
+	background = {
+		texture = "gfx/interface/component_tiles/tooltip_shadow.dds"
+		spriteType = Corneredstretched
+		spriteborder = { 20 20 }
+		texture_density = 2
+		alpha = 0.3
+
+		margin = { 8 8 }
+		margin_top = 1
+
+		shaderfile = "gfx/FX/pdxgui_default.shader"
+	}
+
+	background = {
+		using = bg_round_corners_alt_texture
+		block "bg_tooltip_alpha" {
+			alpha = 1.0
+		}
+
+		block "tooltip_bg_color" {
+			tintcolor = "[ExtraTooltipInfo.GetTintColor]"
+		}
+
+		modify_texture = {
+			using = color_tool_blue_texture
+		}
+
+		modify_texture = {
+			using = overlay_cloth_texture
+			blend_mode = overlay
+			alpha = 0.2
+		}
+		modify_texture = {
+			using = overlay_watercolor_texture
+			blend_mode = multiply
+			alpha = 0.4
+		}
+
+		modify_texture = {
+			visible = "[PdxGuiWidget.IsTooltipLocked]"
+			using = color_white_texture
+			blend_mode = overlay
+			alpha = 0.3
+		}
+
+		shaderfile = "gfx/FX/pdxgui_default.shader"
+	}
+
+	background = {
+		texture = "gfx/interface/component_tiles/rough_tile_edge.dds"
+		texture_density = 2
+		spriteType = corneredstretched
+		spriteBorder = {210 115}
+		alpha = 0.2
+
+		modify_texture = {
+			using = color_black_texture
+		}
+		modify_texture = {
+			using = bg_round_corners_alt_texture
+			blend_mode = alphamultiply
+		}
+	}
+}
+
+template bg_tooltip_frame {
+	size = { 100% 100% }
+
+	background = {
+		block "tooltip_locked_visible" {
+			visible = "[PdxGuiWidget.IsTooltipLocked]"
+		}
+		texture = "gfx/interface/component_tiles/bg_round_corners_frame.dds"
+		texture_density = 2
+		spriteType = Corneredstretched
+		spriteborder = { 10 10 }
+
+		modify_texture = {
+			using = color_new_gold_texture
+			alpha = 1.0
+		}
+		modify_texture = {
+			using = overlay_stone_texture
+			blend_mode = overlay
+			alpha = 0.6
+		}
+		modify_texture = {
+			using = overlay_window_texture
+			blend_mode = overlay
+			alpha = 0.6
+		}
+
+		block "tooltip_bg_color" {
+			tintcolor = "[ExtraTooltipInfo.GetTintColor]"
+		}
+	}
+
+	background = {
+		block "tooltip_locked_visible" {
+			visible = "[PdxGuiWidget.IsTooltipLocked]"
+		}
+		texture = "gfx/interface/component_decoration/bg_corner_flavor_08.dds"
+		texture_density = 2
+		spriteType = Corneredstretched
+		spriteborder = { 35 35 }
+		margin = {-1 -1}
+
+		block "tooltip_bg_color" {
+			tintcolor = "[ExtraTooltipInfo.GetTintColor]"
+		}
+		shaderfile = "gfx/FX/pdxgui_default.shader"
+
+		modify_texture = {
+			using = color_new_gold_texture
+		}
+
+		modify_texture = {
+			using = overlay_window_texture
+			blend_mode = overlay
+			alpha = 0.6
+		}
+
+		modify_texture = {
+			using = overlay_stone_texture
+			blend_mode = overlay
+			alpha = 0.6
+		}
+	}
+	using = bg_corner_flavor
+	blockoverride "corner_flavor_texture" {
+		texture = "gfx/interface/component_decoration/bg_corner_flavor_06.dds"
+		texture_density = 2
+		spriteType = Corneredstretched
+		spriteborder = { 35 35 }
+		margin = {-2 -2}
+	}
+	blockoverride "corner_flavor_color" {
+		modify_texture = {
+			using = color_bg_brown_texture
+			blend_mode = multiply
+		}
+		modify_texture = {
+			using = overlay_cloth_texture
+			blend_mode = overlay
+			alpha = 0.3
+		}
+	}
+}
+
+template bg_contextual_hotkey {
+	background = {
+		using = bg_round_corners_texture
+		alpha = 1.0
+		margin = { 2 3 }
+		frame_grid = { 1 2 }
+		spriteborder_bottom = 0
+
+		block "tooltip_bg_color" {
+			tintcolor = "[ExtraTooltipInfo.GetTintColor]"
+		}
+
+		modify_texture = {
+			using = color_mid_blue_texture
+			alpha = 0.9
+		}
+
+		shaderfile = "gfx/FX/pdxgui_default.shader"
+	}
+
+	background = {
+		using = tile_background_squared_texture
+		alpha = 0.3
+
+		frame_grid = { 1 2 }
+		spriteborder_bottom = 0
+
+		block "tooltip_bg_color" {
+			tintcolor = "[ExtraTooltipInfo.GetTintColor]"
+		}
+
+		modify_texture = {
+			using = color_turquoise_texture
+			alpha = 1.0
+		}
+
+		shaderfile = "gfx/FX/pdxgui_default.shader"
+	}
+}
+
+# template bg_click_modifiers {
+# 	background = {
+# 		using = text_mask_container_texture
+# 		alpha = 0.3
+# 		frame_grid = { 1 2 }
+# 		spriteborder_bottom = 0
+
+# 		modify_texture = {
+# 			using = color_blue_texture
+# 		}
+
+# 		block "tooltip_bg_color" {
+# 			tintcolor = "[ExtraTooltipInfo.GetTintColor]"
+# 		}
+
+# 		# modify_texture = {
+# 		# 	block "click_modifier_enabled" {
+# 		# 		visible = no
+# 		# 	}
+
+# 		# 	using = color_white_texture
+# 		# 	alpha = 0.4
+# 		# }
+# 	}
+
+# 	background = {
+# 		using = tile_frame_squared_texture
+# 		using = color_light_blue
+# 		modify_texture = {
+# 			using = overlay_cloth_texture
+# 			blend_mode = overlay
+# 			alpha = 0.3
+# 		}
+# 	}
+# }
+
+# template bg_hotkey_icon {
+# 	background = {
+# 		using = bg_round_corners_texture
+# 		alpha = 1.0
+# 		margin = { 2 2 }
+
+# 		block "tooltip_bg_color" {
+# 			tintcolor = "[ExtraTooltipInfo.GetTintColor]"
+# 		}
+
+# 		modify_texture = {
+# 			using = color_mid_blue_texture
+# 			alpha = 0.9
+# 		}
+
+# 		shaderfile = "gfx/FX/pdxgui_default.shader"
+# 	}
+
+# 	background = {
+# 		using = bg_round_corners_texture
+# 		alpha = 0.6
+# 		margin = { 0 0 }
+
+# 		block "tooltip_bg_color" {
+# 			tintcolor = "[ExtraTooltipInfo.GetTintColor]"
+# 		}
+
+# 		modify_texture = {
+# 			using = color_gold_texture
+# 			alpha = 0.9
+# 		}
+
+# 		shaderfile = "gfx/FX/pdxgui_default.shader"
+# 	}
+# }
+
+# template bg_contextual_functional {
+# 	background = {
+# 		using = bg_round_corners_texture
+# 		alpha = 1.0
+
+# 		block "tooltip_bg_color" {
+# 			tintcolor = "[ExtraTooltipInfo.GetTintColor]"
+# 		}
+
+# 		modify_texture = {
+# 			using = color_gold_texture
+# 			alpha = 0.8
+# 		}
+
+# 		shaderfile = "gfx/FX/pdxgui_default.shader"
+# 	}
+# }
+
+template bg_contextual_tooltip_header {
+	background = {
+		using = bg_round_corners_alt_texture
+		spriteborder_bottom = 0
+		frame_grid = { 1 2 }
+
+		block "tooltip_bg_color" {
+			tintcolor = "[ExtraTooltipInfo.GetTintColor]"
+		}
+		shaderfile = "gfx/FX/pdxgui_default.shader"
+
+		modify_texture = {
+			using = color_bg_brown_texture
+			alpha = 1
+		}
+		modify_texture = {
+			using = color_black_texture
+			blend_mode = multiply
+			alpha = 0.2
+		}
+		modify_texture = {
+			using = overlay_cloth_texture
+			blend_mode = overlay
+			alpha = 0.1
+		}
+		modify_texture = {
+			using = overlay_watercolor_texture
+			blend_mode = multiply
+			alpha = 0.2
+		}
+	}
+	background = {
+		texture = "gfx/interface/component_tiles/rough_tile_edge.dds"
+		texture_density = 2
+		spriteType = corneredstretched
+		spriteBorder = {210 115}
+		alpha = 0.2
+		spriteborder_bottom = 0
+
+		block "tooltip_bg_color" {
+			tintcolor = "[ExtraTooltipInfo.GetTintColor]"
+		}
+		shaderfile = "gfx/FX/pdxgui_default.shader"
+
+		modify_texture = {
+			using = color_black_texture
+		}
+		modify_texture = {
+			using = bg_round_corners_alt_texture
+			blend_mode = alphamultiply
+		}
+	}
+	# background = {
+	# 	texture = "gfx/interface/component_tiles/raw_paper_bottom.dds"
+	# 	texture_density = 2
+	# 	spriteType = corneredstretched
+	# 	spriteBorder = {0 4}
+
+	# 	block "tooltip_bg_color" {
+	# 		tintcolor = "[ExtraTooltipInfo.GetTintColor]"
+	# 	}
+	# 	shaderfile = "gfx/FX/pdxgui_default.shader"
+
+	# 	modify_texture = {
+	# 		using = color_bg_brown_texture
+	# 	}
+	# 	modify_texture = {
+	# 		using = color_white_texture
+	# 		blend_mode = overlay
+	# 		alpha = 0.3
+	# 	}
+	# }
+}
+
+template bg_concept_tooltip {
+	background = {
+		using = bg_round_corners_alt_texture
+		block "bg_tooltip_alpha" {
+			alpha = 1.0
+		}
+
+		block "tooltip_bg_color" {
+			tintcolor = "[ExtraTooltipInfo.GetTintColor]"
+		}
+
+		modify_texture = {
+			using = color_tool_blue_texture
+		}
+
+		modify_texture = {
+			using = overlay_cloth_texture
+			blend_mode = overlay
+			alpha = 0.2
+		}
+		modify_texture = {
+			using = overlay_watercolor_texture
+			blend_mode = multiply
+			alpha = 0.4
+		}
+
+		modify_texture = {
+			visible = "[PdxGuiWidget.IsTooltipLocked]"
+			using = color_white_texture
+			blend_mode = overlay
+			alpha = 0.3
+		}
+
+		shaderfile = "gfx/FX/pdxgui_default.shader"
+	}
+
+	background = {
+		texture = "gfx/interface/component_tiles/rough_tile_edge.dds"
+		texture_density = 2
+		spriteType = corneredstretched
+		spriteBorder = {210 115}
+		alpha = 0.2
+
+		block "tooltip_bg_color" {
+			tintcolor = "[ExtraTooltipInfo.GetTintColor]"
+		}
+		shaderfile = "gfx/FX/pdxgui_default.shader"
+
+		modify_texture = {
+			using = color_black_texture
+		}
+		modify_texture = {
+			using = bg_round_corners_alt_texture
+			blend_mode = alphamultiply
+		}
+	}
+}
+
+template bg_concept_hotkey {
+	background = {
+		using = bg_round_corners_texture
+		alpha = 1.0
+		margin = { 2 3 }
+		frame_grid = { 1 2 }
+		spriteborder_bottom = 0
+
+		block "tooltip_bg_color" {
+			tintcolor = "[ExtraTooltipInfo.GetTintColor]"
+		}
+
+		modify_texture = {
+			using = color_mid_blue_texture
+			alpha = 0.9
+		}
+
+		shaderfile = "gfx/FX/pdxgui_default.shader"
+	}
+
+	background = {
+		using = bg_round_corners_texture
+		alpha = 0.6
+
+		frame_grid = { 1 2 }
+		spriteborder_bottom = 0
+
+		block "tooltip_bg_color" {
+			tintcolor = "[ExtraTooltipInfo.GetTintColor]"
+		}
+
+		modify_texture = {
+			using = color_dark_blue_texture
+			alpha = 1.0
+		}
+
+		shaderfile = "gfx/FX/pdxgui_default.shader"
+	}
+}
+
+template bg_concept_tooltip_header {
+	background = {
+		using = bg_round_corners_alt_texture
+		spriteborder_bottom = 0
+		frame_grid = { 1 2 }
+
+		block "tooltip_bg_color" {
+			tintcolor = "[ExtraTooltipInfo.GetTintColor]"
+		}
+		shaderfile = "gfx/FX/pdxgui_default.shader"
+
+		modify_texture = {
+			using = color_light_blue_texture
+			alpha = 1
+		}
+		modify_texture = {
+			using = color_black_texture
+			blend_mode = multiply
+			alpha = 0.2
+		}
+		modify_texture = {
+			using = overlay_cloth_texture
+			blend_mode = overlay
+			alpha = 0.1
+		}
+		modify_texture = {
+			using = overlay_watercolor_texture
+			blend_mode = multiply
+			alpha = 0.2
+		}
+	}
+	background = {
+		texture = "gfx/interface/component_tiles/rough_tile_edge.dds"
+		texture_density = 2
+		spriteType = corneredstretched
+		spriteBorder = {210 115}
+		alpha = 0.2
+		spriteborder_bottom = 0
+
+		block "tooltip_bg_color" {
+			tintcolor = "[ExtraTooltipInfo.GetTintColor]"
+		}
+		shaderfile = "gfx/FX/pdxgui_default.shader"
+
+		modify_texture = {
+			using = color_black_texture
+		}
+		modify_texture = {
+			using = bg_round_corners_alt_texture
+			blend_mode = alphamultiply
+		}
+	}
+	# background = {
+	# 	texture = "gfx/interface/component_tiles/raw_paper_bottom.dds"
+	# 	texture_density = 2
+	# 	spriteType = corneredstretched
+	# 	spriteBorder = {0 4}
+
+	# 	block "tooltip_bg_color" {
+	# 		tintcolor = "[ExtraTooltipInfo.GetTintColor]"
+	# 	}
+	# 	shaderfile = "gfx/FX/pdxgui_default.shader"
+
+	# 	modify_texture = {
+	# 		using = color_blue_texture
+	# 		alpha = 0.6
+	# 	}
+	# 	modify_texture = {
+	# 		using = color_tool_blue_texture
+	# 		alpha = 0.5
+	# 	}
+	# 	modify_texture = {
+	# 		using = overlay_watercolor_texture
+	# 		blend_mode = multiply
+	# 		alpha = 0.2
+	# 	}
+	# }
+}
+
+## WINDOWS
+###############################################################################
+
+template bg_panel_bar {
+	background = {
+		texture = "gfx/interface/component_tiles/bg_age_title.dds"
+		texture_density = 2
+		spriteType = corneredstretched
+		spriteBorder = { 40 50 }
+		margin = {0 -2}
+
+		using = color_bg_blue
+		using = overlay_window
+
+		modify_texture = {
+			using = overlay_leather_texture
+			blend_mode = multiply
+			alpha = 0.5
+		}
+
+		modify_texture = {
+			block "bg_panel_bar_graphical_texture" {
+				texture = "[GetGraphicalCultureTexture('panel_bar_corner_bg')]"
+			}
+			texture_density = 1.5
+			spriteType = corneredtiled
+			spriteborder = { 0 0 }
+			blend_mode = add
+			# alpha = 0.3
+			alpha = 0.2
+		}
+	}
+}
+
+template bg_panel_tabs {
+	background = {
+		block "bg_panel_tabs_color" {
+			visible = no
+			using = color_intense_bg_blue_texture
+		}
+	}
+
+	background = {
+		block "bg_panel_tabs_gradient_color" {
+			visible = no
+			using = color_mid_purple_texture
+		}
+
+		modify_texture = {
+			texture = "gfx/interface/component_masks/mask_fadehorizontal_middle_thick.dds"
+			blend_mode = alphamultiply
+		}
+	}
+
+	# GOVERNMENT
+	background = {
+		block "bg_panel_group_tabs_color" {
+			visible = "[IsLateralGroupOpened('government_group')]"
+		}
+		using = color_government_texture
+	}
+
+	background = {
+		block "bg_panel_group_tabs_color" {
+			visible = "[IsLateralGroupOpened('government_group')]"
+		}
+		using = color_government_texture
+
+		modify_texture = {
+			texture = "gfx/interface/component_masks/mask_fadehorizontal_middle_thick.dds"
+			blend_mode = alphamultiply
+		}
+	}
+
+	# ECONOMY
+	background = {
+		block "bg_panel_group_tabs_color" {
+			visible = "[IsLateralGroupOpened('economy_group')]"
+		}
+		using = color_economy_texture
+	}
+
+	background = {
+		block "bg_panel_group_tabs_color" {
+			visible = "[IsLateralGroupOpened('economy_group')]"
+		}
+		using = color_economy_texture
+
+		modify_texture = {
+			texture = "gfx/interface/component_masks/mask_fadehorizontal_middle_thick.dds"
+			blend_mode = alphamultiply
+		}
+	}
+
+	# PRODUCTION
+	background = {
+		block "bg_panel_group_tabs_color" {
+			visible = "[IsLateralGroupOpened('production_group')]"
+		}
+		using = color_production_texture
+	}
+
+	background = {
+		block "bg_panel_group_tabs_color" {
+			visible = "[IsLateralGroupOpened('production_group')]"
+		}
+		using = color_production_texture
+
+		modify_texture = {
+			texture = "gfx/interface/component_masks/mask_fadehorizontal_middle_thick.dds"
+			blend_mode = alphamultiply
+		}
+	}
+
+	# SOCIETY
+	background = {
+		block "bg_panel_group_tabs_color" {
+			visible = "[IsLateralGroupOpened('society_group')]"
+		}
+		using = color_society_texture
+	}
+
+	background = {
+		block "bg_panel_group_tabs_color" {
+			visible = "[IsLateralGroupOpened('society_group')]"
+		}
+		using = color_society_texture
+
+		modify_texture = {
+			texture = "gfx/interface/component_masks/mask_fadehorizontal_middle_thick.dds"
+			blend_mode = alphamultiply
+		}
+	}
+
+	# DIPLOMACY
+	background = {
+		block "bg_panel_group_tabs_color" {
+			visible = "[IsLateralGroupOpened('diplomacy_group')]"
+		}
+		using = color_diplomacy_texture
+	}
+
+	background = {
+		block "bg_panel_group_tabs_color" {
+			visible = "[IsLateralGroupOpened('diplomacy_group')]"
+		}
+		using = color_diplomacy_texture
+
+		modify_texture = {
+			texture = "gfx/interface/component_masks/mask_fadehorizontal_middle_thick.dds"
+			blend_mode = alphamultiply
+		}
+	}
+
+	# MILITARY
+	background = {
+		block "bg_panel_group_tabs_color" {
+			visible = "[IsLateralGroupOpened('military_group')]"
+		}
+		using = color_military_texture
+	}
+
+	background = {
+		block "bg_panel_group_tabs_color" {
+			visible = "[IsLateralGroupOpened('military_group')]"
+		}
+		using = color_military_texture
+
+		modify_texture = {
+			texture = "gfx/interface/component_masks/mask_fadehorizontal_middle_thick.dds"
+			blend_mode = alphamultiply
+		}
+	}
+
+	# GEOPOLITICS
+	background = {
+		block "bg_panel_group_tabs_color" {
+			visible = "[IsLateralGroupOpened('geography_group')]"
+		}
+		using = color_geopolitics_texture
+	}
+
+	background = {
+		block "bg_panel_group_tabs_color" {
+			visible = "[IsLateralGroupOpened('geography_group')]"
+		}
+		using = color_geopolitics_texture
+
+		modify_texture = {
+			texture = "gfx/interface/component_masks/mask_fadehorizontal_middle_thick.dds"
+			blend_mode = alphamultiply
+		}
+	}
+
+	# ADVANCES
+	background = {
+		block "bg_panel_group_tabs_color" {
+			visible = "[IsLateralGroupOpened('advances_group')]"
+		}
+		using = color_advances_texture
+	}
+
+	background = {
+		block "bg_panel_group_tabs_color" {
+			visible = "[IsLateralGroupOpened('advances_group')]"
+		}
+		using = color_advances_texture
+
+		modify_texture = {
+			texture = "gfx/interface/component_masks/mask_fadehorizontal_middle_thick.dds"
+			blend_mode = alphamultiply
+		}
+	}
+}
+
+template bg_window_default_expandable_template {
+	texture = "gfx/interface/component_tiles/tile_background_center.dds"
+	texture_density = 2
+	spriteType = corneredstretched
+	spriteBorder = { 20 20 }
+	alpha = 0.93
+
+	modify_texture = {
+		using = color_dark_blue_texture
+	}
+
+	modify_texture = {
+		using = overlay_window_texture
+		blend_mode = overlay
+	}
+
+	modify_texture = {
+		using = overlay_stone_texture
+		blend_mode = overlay
+		alpha = 0.8
+	}
+}
+
+template bg_window_default_frame_template {
+	margin = { -5 -5 }
+	texture = "gfx/interface/component_tiles/tile_frame_center.dds"
+	texture_density = 2
+	spriteType = corneredtiled
+	spriteBorder = { 20 20 }
+	alpha = 0.9
+
+	modify_texture = {
+		using = color_gold_texture
+	}
+
+	modify_texture = {
+		texture = "gfx/interface/component_tiles/tile_frame_center_bevel.dds"
+		texture_density = 2
+		spriteType = corneredtiled
+		spriteBorder = { 20 20 }
+		alpha = 0.1
+	}
+
+	modify_texture = {
+		using = overlay_window_texture
+		alpha = 0.2
+	}
+
+	modify_texture = {
+		using = overlay_stone_texture
+		blend_mode = overlay
+		alpha = 1
+	}
+}
+
+@lateralview_bg_margin = 5
+template bg_lateralview {
+	background = {
+		texture = "gfx/interface/component_tiles/tile_shadow_squared_dark.dds"
+		spriteType = corneredstretched
+		texture_density = 2
+		frame_grid = { 1 2 }
+		frame = 2
+
+		spriteborder_left = @lateralview_bg_margin
+		spriteborder_right = @lateralview_bg_margin
+		spriteborder_bottom = 2
+
+		margin_left = @lateralview_bg_margin
+		margin_right = @lateralview_bg_margin
+		margin_bottom = @lateralview_bg_margin
+
+		using = color_black_texture
+	}
+
+	background = {
+		using = color_black_texture
+		alpha = 0.93
+
+		using = color_dark_blue
+		using = overlay_window
+	}
+
+	background = {
+		using = tile_frame_squared_texture
+		alpha = 0.9
+
+		margin = { 0 0 }
+
+		using = color_new_gold
+
+		modify_texture = {
+			using = tile_frame_squared_bevel_texture
+			alpha = 0.1
+		}
+
+		using = overlay_window
+		using = overlay_stone
+	}
+}
+
+template bg_small_menu {
+	background = {
+		using = color_black_texture
+		alpha = 0.93
+
+		margin = {5 5}
+
+		using = color_dark_blue
+		using = overlay_window
+		using = overlay_leather
+	}
+
+	background = {
+		using = tile_frame_squared_texture
+		alpha = 0.9
+
+		using = color_new_gold
+
+		modify_texture = {
+			using = tile_frame_squared_bevel_texture
+			alpha = 0.1
+		}
+
+		using = overlay_window
+		using = overlay_stone
+	}
+
+	background = {
+		using = pattern_vertical_bis_graphical_culture_texture
+		alpha = 0.2
+
+		modify_texture = {
+			using = color_brown_leather_texture
+		}
+	}
+}
+
+template bg_sidemenu {
+	background = {
+		using = color_black_texture
+		alpha = 0.93
+
+		margin_top = 1
+		margin_left = 1
+		margin_right = 1
+		margin_bottom = 1
+
+		using = color_dark_blue
+		using = overlay_window
+		using = overlay_leather
+	}
+
+	background = {
+		using = tile_frame_squared_texture
+		margin_right = 10
+		alpha = 0.9
+
+		margin = { 0 0 }
+
+		using = color_new_gold
+
+		modify_texture = {
+			using = tile_frame_squared_bevel_texture
+			alpha = 0.1
+		}
+
+		using = overlay_window
+		using = overlay_stone
+	}
+
+	background = {
+		using = pattern_vertical_bis_graphical_culture_texture
+		# margin_right = 10
+		alpha = 0.4
+
+		modify_texture = {
+			using = color_brown_leather_texture
+		}
+	}
+}
+
+template bg_expandable_alt {
+	background = {
+		using = tile_background_squared_texture
+		alpha = 0.93
+
+		modify_texture = {
+			using = color_dark_blue_texture
+		}
+
+		using = overlay_window
+		using = overlay_leather
+	}
+
+	background = {
+		margin = { -5 -5 }
+		texture = "gfx/interface/component_masks/mask_vignette.dds"
+		texture_density = 2
+		spriteType = Corneredtiled
+		spriteborder = { 20 20 }
+		alpha = 0.5
+
+		using = color_black
+	}
+
+	background = {
+		using = tile_frame_squared_texture
+		alpha = 0.9
+		margin = { -5 -5 }
+
+		modify_texture = {
+			texture = "gfx/interface/colors/new_gold.dds"
+		}
+
+		modify_texture = {
+			using = tile_frame_squared_bevel_texture
+			alpha = 0.1
+		}
+
+		using = overlay_window
+		using = overlay_stone
+	}
+}
+
+template bg_side_menu_alt {
+	background = {
+		using = tile_background_squared_texture
+		alpha = 0.93
+		margin = { -1 -1 }
+
+		modify_texture = {
+			using = color_dark_blue_texture
+		}
+
+		using = overlay_window
+		using = overlay_leather
+	}
+
+	background = {
+		margin = { -5 -5 }
+		texture = "gfx/interface/component_masks/mask_vignette.dds"
+		texture_density = 2
+		spriteType = Corneredtiled
+		spriteborder = { 20 20 }
+		alpha = 0.5
+
+		using = color_black
+	}
+}
+
+# template bg_window_frame_alt {
+# 	background = {
+# 		using = tile_frame_squared_texture
+# 		alpha = 0.9
+
+# 		modify_texture = {
+# 			using = color_new_gold_texture
+# 		}
+
+# 		modify_texture = {
+# 			using = tile_frame_squared_bevel_texture
+# 			alpha = 0.1
+# 		}
+
+# 		using = overlay_window
+# 		using = overlay_stone
+# 	}
+# }
+
+template bg_main_inner_alt_base {
+	background = {
+		block "bg_main_inner_alt_base_extra" {}
+		using = tile_background_squared_texture
+
+		modify_texture = {
+			using = color_dark_brown_texture
+		}
+
+		using = overlay_window
+		using = overlay_leather
+	}
+
+	background = {
+		block "bg_main_inner_alt_base_extra" {}
+		using = color_brown_leather_texture
+		alpha = 0.2
+
+		modify_texture = {
+			using = color_white_texture
+			alpha = 0.1
+		}
+
+		modify_texture = {
+			using = bg_fade_vertical_down_mask_texture
+			blend_mode = alphamultiply
+		}
+
+		using = overlay_leather
+	}
+}
+
+template bg_main_inner_alt {
+	background = {
+		using = color_dark_brown_texture
+	}
+
+	background = {
+		using = bg_gradient_mask_texture
+
+		modify_texture = {
+			using = color_bg_brown_texture
+		}
+		modify_texture = {
+			using = overlay_leather_texture
+			blend_mode = overlay
+			alpha = 0.3
+		}
+	}
+
+	background = {
+		texture = "gfx/interface/component_overlay/grunge_texture.dds"
+		alpha = 0.1
+		spriteType = corneredtiled
+		spriteBorder = {0 0}
+
+		modify_texture = {
+			using = color_dark_brown_texture
+			alpha = 0.3
+		}
+	}
+
+	background = {
+		using = pattern_vertical_bis_graphical_culture_texture
+		alpha = 0.4
+	}
+}
+
+# template bg_main_inner_top_alt_base {
+# 	background = {
+# 		using = tile_background_squared_texture
+# 		alpha = 0.93
+
+# 		modify_texture = {
+# 			using = color_dark_brown_texture
+# 		}
+
+# 		using = overlay_window
+# 		using = overlay_leather
+# 	}
+# }
+
+template bg_main_inner_top_alt {
+	using = bg_main_inner_alt_base
+
+	background = {
+		using = bg_vignette_mask_texture
+		alpha = 0.5
+
+		modify_texture = {
+			using = color_brown_leather_texture
+			blend_mode = multiply
+		}
+	}
+
+	background = {
+		texture = "gfx/interface/component_masks/patterns/pattern_01_horizontal.dds"
+		spriteType = corneredtiled
+		spriteborder = { 0 12 }
+		texture_density = 2
+		alpha = 0.4
+	}
+
+	background = {
+		using = tile_frame_squared_texture
+		alpha = 0.9
+
+		margin = { 0 0 }
+		margin_top = -12
+
+		using = color_new_gold
+
+		modify_texture = {
+			using = overlay_stone_texture
+			blend_mode = overlay
+			alpha = 1
+		}
+	}
+
+	background = {
+		using = tile_frame_squared_texture
+		alpha = 0.5
+		margin = { -1 -1 }
+		blend_mode = alphamultiply
+		modify_texture = {
+			texture = "gfx/interface/colors/black.dds"
+		}
+	}
+
+	background = {
+		using = tile_frame_squared_texture
+		alpha = 0.9
+		margin = { 0 0 }
+		modify_texture = {
+			texture = "gfx/interface/colors/new_gold.dds"
+		}
+
+		modify_texture = {
+			using = tile_frame_squared_bevel_texture
+			alpha = 0.1
+		}
+
+		using = overlay_window
+		using = overlay_stone
+	}
+}
+
+# template bg_primary_window_alt {
+# 	background = {
+# 		using = color_dark_brown_texture
+# 	}
+# 	background = {
+# 		using = bg_gradient_mask_texture
+
+# 		modify_texture = {
+# 			using = color_bg_brown_texture
+# 		}
+# 		modify_texture = {
+# 			using = overlay_leather_texture
+# 			blend_mode = overlay
+# 			alpha = 0.3
+# 		}
+# 	}
+
+# 	background = {
+# 		texture = "gfx/interface/component_overlay/grunge_texture.dds"
+# 		alpha = 0.1
+# 		spriteType = corneredtiled
+# 		spriteBorder = {0 0}
+
+# 		modify_texture = {
+# 			using = color_dark_brown_texture
+# 			alpha = 0.3
+# 		}
+# 	}
+# }
+
+template bg_secondary_inner_alt {
+	background = {
+		using = color_dark_blue_texture
+	}
+
+	background = {
+		using = bg_gradient_mask_texture
+
+		modify_texture = {
+			using = color_bg_blue_texture
+		}
+	}
+
+	background = {
+		using = bg_gradient_mask_texture
+
+		modify_texture = {
+			using = color_intense_bg_blue_texture
+		}
+
+		modify_texture = {
+			using = overlay_leather_texture
+			blend_mode = overlay
+			alpha = 0.2
+		}
+	}
+
+	background = {
+		using = floral_window_pattern_texture
+
+		modify_texture = {
+			using = color_blue_texture
+			alpha = 0.6
+		}
+	}
+}
+
+template bg_secondary_inner_image_alt {
+	block "overall_bckg" {
+		using = bg_secondary_inner_alt
+	}
+
+	background = {
+
+		# block "image_fittype" {
+			fittype = end
+		# }
+		block "image" {
+			texture = "gfx/interface/illustrations/bg/bg_government.dds"
+		}
+		texture_density = 2
+		alpha = 0.3
+		modify_texture = {
+			using = color_light_blue_texture
+			blend_mode = overlay
+		}
+	}
+	# block "bg_inner_image_extra" {}
+}
+
+template bg_main_inner_image_alt {
+	block "overall_bckg" {
+
+		using = bg_main_inner_alt
+	}
+
+	background = {
+		fittype = end
+		block "image" {
+			texture = "gfx/interface/illustrations/bg/bg_government.dds"
+		}
+		texture_density = 2
+		alpha = 0.3
+		modify_texture = {
+			using = color_bg_brown_texture
+			blend_mode = overlay
+		}
+	}
+}
+
+template bg_secondary_section {
+	background = {
+		using = paper_card_texture
+		margin = { 1 0 }
+		margin_bottom = 3
+		alpha = 0.4
+		block "card_shadow_margin" {}
+	}
+	background = {
+		using = paper_card_texture
+		modify_texture = {
+			using = color_bg_blue_texture
+		}
+	}
+
+	background = {
+		using = bg_gradient_mask_texture
+
+		modify_texture = {
+			using = color_intense_bg_blue_texture
+		}
+
+		modify_texture = {
+			using = overlay_leather_texture
+			blend_mode = overlay
+			alpha = 0.2
+		}
+	}
+
+	background = {
+		using = floral_window_pattern_texture
+
+		modify_texture = {
+			using = color_blue_texture
+			alpha = 0.6
+		}
+	}
+}
+
+# template bg_missions_tree_window {
+# 	background = {
+# 		using = color_dark_blue_texture
+
+# 		modify_texture = {
+# 			using = color_grey_texture
+# 			alpha = 0.1
+# 		}
+# 	}
+# 	### TEXTURE
+# 	background = {
+# 		using = bg_gradient_mask_texture
+
+# 		alpha = 0.6
+# 		modify_texture = {
+# 			using = color_intense_bg_blue_texture
+# 		}
+# 		modify_texture = {
+# 			using = overlay_paper_03
+# 			blend_mode = overlay
+# 			alpha = 1
+# 		}
+
+# 		modify_texture = {
+# 			using = overlay_cloth_texture
+# 			blend_mode = overlay
+# 			alpha = 0.3
+# 		}
+# 	}
+# 	### INNER SHADOW
+# 	background = {
+# 		texture = "gfx/interface/component_overlay/square_inner_shadow.dds"
+# 		margin_top = -50
+# 		alpha = 0.
+# 		modify_texture = {
+# 			using = color_dark_blue_texture
+# 			blend_mode = multiply
+# 		}
+
+# 		modify_texture = {
+# 			using = overlay_cloth_texture
+# 			blend_mode = overlay
+# 			alpha = 0.3
+# 		}
+# 	}
+
+# 	using = bg_secondary_inner_alt
+
+# 	background = {
+
+# 		# block "image_fittype" {
+# 			fittype = end
+# 		# }
+# 		block "image" {
+# 			texture = "gfx/interface/component_overlay/advance_bg.dds"
+# 		}
+# 		texture_density = 2
+# 		alpha = 0.3
+# 		modify_texture = {
+# 			using = color_dark_blue_texture
+# 			blend_mode = overlay
+# 			alpha = 0.4
+# 		}
+# 	}
+# 	# block "bg_inner_image_extra" {}
+# }
+
+template bg_missions_window {
+	background = {
+		using = color_dark_blue_texture
+
+		modify_texture = {
+			using = color_grey_texture
+			alpha = 0.1
+		}
+	}
+	### TEXTURE
+	background = {
+		using = bg_gradient_mask_texture
+
+		alpha = 0.6
+		modify_texture = {
+			using = color_intense_bg_blue_texture
+		}
+		modify_texture = {
+			using = overlay_paper_03
+			blend_mode = overlay
+			alpha = 1
+		}
+
+		modify_texture = {
+			using = overlay_cloth_texture
+			blend_mode = overlay
+			alpha = 0.3
+		}
+	}
+	### INNER SHADOW
+	background = {
+		texture = "gfx/interface/component_overlay/square_inner_shadow.dds"
+		margin_top = -50
+		alpha = 0.
+		modify_texture = {
+			using = color_dark_blue_texture
+			blend_mode = multiply
+		}
+
+		modify_texture = {
+			using = overlay_cloth_texture
+			blend_mode = overlay
+			alpha = 0.3
+		}
+	}
+
+	using = bg_secondary_inner_alt
+
+	background = {
+
+		# block "image_fittype" {
+			fittype = end
+		# }
+		block "image" {
+			texture = "gfx/interface/component_overlay/mission_tree_bg.dds"
+		}
+		texture_density = 2
+		alpha = 0.3
+		modify_texture = {
+			using = color_dark_blue_texture
+			blend_mode = overlay
+			alpha = 0.4
+		}
+	}
+	# block "bg_inner_image_extra" {}
+}
+
+template bg_advances_window {
+	background = {
+		using = color_dark_blue_texture
+
+		modify_texture = {
+			using = color_grey_texture
+			alpha = 0.1
+		}
+	}
+	### TEXTURE
+	background = {
+		using = bg_gradient_mask_texture
+
+		alpha = 0.6
+		modify_texture = {
+			using = color_intense_bg_blue_texture
+		}
+		modify_texture = {
+			using = overlay_paper_03
+			blend_mode = overlay
+			alpha = 1
+		}
+
+		modify_texture = {
+			using = overlay_cloth_texture
+			blend_mode = overlay
+			alpha = 0.3
+		}
+	}
+	### INNER SHADOW
+	background = {
+		texture = "gfx/interface/component_overlay/square_inner_shadow.dds"
+		margin_top = -50
+		alpha = 0.
+		modify_texture = {
+			using = color_dark_blue_texture
+			blend_mode = multiply
+		}
+
+		modify_texture = {
+			using = overlay_cloth_texture
+			blend_mode = overlay
+			alpha = 0.3
+		}
+	}
+
+	using = bg_secondary_inner_alt
+
+	background = {
+
+		# block "image_fittype" {
+			fittype = end
+		# }
+		block "image" {
+			texture = "gfx/interface/component_overlay/advance_bg.dds"
+		}
+		texture_density = 2
+		alpha = 0.3
+		modify_texture = {
+			using = color_dark_blue_texture
+			blend_mode = overlay
+			alpha = 0.4
+		}
+	}
+	# block "bg_inner_image_extra" {}
+}
+
+template bg_main_inner_notabs_alt {
+	using = bg_main_inner_alt_base
+
+	background = {
+		using = bg_vignette_mask_texture
+		alpha = 0.5
+
+		modify_texture = {
+			using = color_black_texture
+			blend_mode = multiply
+		}
+	}
+
+	background = {
+		using = pattern_vertical_bis_graphical_culture_texture
+		alpha = 0.4
+	}
+}
+
+template bg_secondary_inner_notabs_alt {
+	background = {
+		using = color_dark_blue_texture
+	}
+
+	background = {
+		using = floral_window_pattern_texture
+
+		modify_texture = {
+			using = color_blue_texture
+			alpha = 0.6
+		}
+	}
+
+	background = {
+		using = bg_vignette_mask_texture
+		alpha = 0.5
+
+		modify_texture = {
+			using = color_black_texture
+			blend_mode = multiply
+		}
+	}
+}
+
+template bg_dynasty_window {
+	background = {
+		using = color_bg_blue_texture
+
+		modify_texture = {
+			using = overlay_cloth_texture
+			blend_mode = overlay
+			alpha = 0.3
+		}
+
+		modify_texture = {
+			texture = "gfx/interface/component_masks/patterns/romboid_pattern.dds"
+			texture_density = 2
+			blend_mode = multiply
+			alpha = 0.1
+		}
+	}
+}
+
+template bg_dynasty_header {
+	background = {
+		using = color_dark_brown_texture
+
+		modify_texture = {
+			using = overlay_cloth_texture
+			blend_mode = overlay
+			alpha = 0.3
+		}
+	}
+}
+
+template bg_button_age_focus {
+	background = {
+		texture = "gfx/interface/component_tiles/tile_shadow_squared.dds"
+		texture_density = 2
+		spriteType = corneredstretched
+		spriteBorder = { 6 6 }
+		margin_left = 5
+		margin_right = 5
+		margin_top = 5
+		margin_bottom = 5
+
+		modify_texture = {
+			using = color_dark_brown_texture
+			blend_mode = overlay
+		}
+	}
+
+	background = {
+		using = tile_background_squared_texture
+
+		modify_texture = {
+			using = color_dark_brown_texture
+			blend_mode = multiply
+		}
+
+		using = overlay_window
+		using = overlay_leather_texture
+	}
+
+	background = {
+		using = tile_frame_squared_texture
+		alpha = 0.9
+
+		modify_texture = {
+			texture = "gfx/interface/colors/new_gold.dds"
+		}
+
+		modify_texture = {
+			using = tile_frame_squared_bevel_texture
+			alpha = 0.1
+		}
+
+		using = overlay_window
+		using = overlay_stone
+	}
+}
+
+# template bg_window_message {
+# 	background = {
+# 		using = tile_background_squared_texture
+
+# 		# block "bg_window_message_color" {
+# 			modify_texture = {
+# 				using = color_super_dark_brown_texture
+# 			}
+# 		# }
+
+# 		modify_texture = {
+# 			using = overlay_cloth_texture
+# 			blend_mode = overlay
+# 			alpha = 0.1
+# 		}
+
+# 		modify_texture = {
+# 			using = overlay_paper_03
+# 			blend_mode = overlay
+# 			alpha = 0.5
+# 		}
+# 	}
+
+# 	# block "message_tile_frame" {
+# 		background = {
+# 			using = tile_frame_squared_texture
+# 			alpha = 0.9
+# 			margin = { 0 0 }
+
+# 			# block "message_tile_frame_color" {
+# 			modify_texture = {
+# 				texture = "gfx/interface/colors/new_gold.dds"
+# 			}
+# 			# }
+
+# 			modify_texture = {
+# 				using = tile_frame_squared_bevel_texture
+# 				alpha = 0.1
+# 			}
+
+# 			using = overlay_window
+# 			using = overlay_stone
+# 		}
+# 	# }
+# }
+
+template bg_window_default_alt {
+	background = {
+		using = tile_background_squared_texture
+		alpha = 0.93
+
+		modify_texture = {
+			using = color_dark_blue_texture
+		}
+
+		using = overlay_window
+		using = overlay_leather
+	}
+
+	background = {
+		using = tile_frame_squared_texture
+		alpha = 0.9
+		margin = { -5 -5 }
+
+		modify_texture = {
+			texture = "gfx/interface/colors/new_gold.dds"
+		}
+
+		modify_texture = {
+			using = tile_frame_squared_bevel_texture
+			alpha = 0.1
+		}
+
+		using = overlay_window
+		using = overlay_stone
+	}
+}
+
+template bg_window_default {
+	filter_mouse = all
+
+	background = {
+		spriteType = CorneredStretched
+		texture = "gfx/interface/gui_blur/flat_blur_medium_low.dds"
+		shaderfile = "gfx/FX/gui_screen_blur.shader"
+		spriteborder = { 5 5 }
+		margin = { 0 0 }
+
+		modify_texture = {
+			texture = "gfx/interface/component_tiles/tile_background_center.dds"
+			texture_density = 2
+			spriteType = corneredtiled
+			spriteBorder = { 15 15 }
+			blend_mode = alphamultiply
+		}
+	}
+
+	background = {
+		margin = { 5 5 }
+		texture = "gfx/interface/component_tiles/tile_shadow_center.dds"
+		texture_density = 2
+		spriteType = corneredtiled
+		spriteBorder = { 25 25 }
+		alpha = 0.5
+	}
+
+	background = { # Expandable Background
+		using = bg_window_default_expandable_template
+	}
+
+	background = { # Main Top Panel Frame
+		using = bg_window_default_frame_template
+	}
+}
+
+# template bg_window_default_lateral_old {
+# 	background = {
+# 		spriteType = CorneredStretched
+# 		texture = "gfx/interface/component_tiles/tile_frame_age_squared.dds"
+# 		shaderfile = "gfx/FX/gui_screen_blur.shader"
+# 		spriteborder = { 5 5 }
+# 		margin = { 0 0 }
+
+# 		modify_texture = {
+# 			texture = "gfx/interface/component_tiles/tile_background_center.dds"
+# 			texture_density = 2
+# 			spriteType = corneredtiled
+# 			spriteBorder = { 15 15 }
+# 			blend_mode = alphamultiply
+# 		}
+# 	}
+
+# 	background = {
+# 		margin_top = 5
+# 		margin_bottom = 5
+# 		margin_left = 0
+# 		margin_right = 5
+
+# 		texture = "gfx/interface/component_tiles/tile_shadow_lateral.dds"
+# 		texture_density = 2
+# 		spriteType = corneredtiled
+# 		spriteBorder = { 25 25 }
+# 		alpha = 0.5
+# 	}
+
+# 	background = { # Expandable Background
+# 		texture = "gfx/interface/component_tiles/tile_background_lateral.dds"
+# 		texture_density = 2
+# 		spriteType = corneredstretched
+# 		spriteBorder = { 20 20 }
+# 		alpha = 0.93
+
+# 		modify_texture = {
+# 			using = color_dark_blue_texture
+# 		}
+
+# 		using = overlay_window
+# 		using = overlay_stone
+# 	}
+
+# 	background = { # Main Top Panel Frame
+# 		margin_top = -5
+# 		margin_bottom = -5
+# 		margin_left = 0
+# 		margin_right = -5
+
+# 		texture = "gfx/interface/component_tiles/tile_frame_lateral.dds"
+# 		texture_density = 2
+# 		spriteType = corneredstretched
+# 		spriteBorder = { 18 18 }
+# 		alpha = 0.9
+
+# 		modify_texture = {
+# 			using = color_gold_texture
+# 		}
+
+# 		using = overlay_stone
+# 	}
+# }
+
+template bg_window_default_lateral_right_old {
+	background = {
+		spriteType = CorneredStretched
+		texture = "gfx/interface/component_tiles/tile_frame_age_squared.dds"
+		shaderfile = "gfx/FX/gui_screen_blur.shader"
+		spriteborder = { 5 5 }
+		margin = { 0 0 }
+
+		modify_texture = {
+			texture = "gfx/interface/component_tiles/tile_background_lateral_right.dds"
+			texture_density = 2
+			spriteType = corneredtiled
+			spriteBorder = { 15 15 }
+			blend_mode = alphamultiply
+		}
+	}
+
+	background = {
+		margin_top = 5
+		margin_bottom = 5
+		margin_left = 5
+		margin_right = 0
+
+		texture = "gfx/interface/component_tiles/tile_shadow_lateral_right.dds"
+		texture_density = 2
+		spriteType = corneredtiled
+		spriteBorder = { 25 25 }
+		alpha = 0.5
+	}
+
+	background = {
+		texture = "gfx/interface/component_tiles/tile_background_lateral_right.dds"
+		texture_density = 2
+		spriteType = corneredstretched
+		spriteBorder = { 20 20 }
+		alpha = 0.93
+
+		modify_texture = {
+			using = color_dark_blue_texture
+		}
+
+		using = overlay_window
+
+		modify_texture = {
+			using = overlay_stone_texture
+			blend_mode = overlay
+			alpha = 0.8
+		}
+	}
+
+	background = { # Main Top Panel Frame
+		margin_top = -5
+		margin_bottom = -5
+		margin_left = -5
+		margin_right = 0
+
+		texture = "gfx/interface/component_tiles/tile_frame_lateral_right.dds"
+		texture_density = 2
+		spriteType = corneredstretched
+		spriteBorder = { 18 18 }
+		alpha = 0.9
+
+		modify_texture = {
+			using = color_gold_texture
+		}
+
+		using = overlay_stone
+	}
+}
+
+# template bg_light_blue {
+# 	background = {
+# 		using = color_light_blue_texture
+# 		alpha = 0.9
+
+# 		modify_texture = {
+# 			name = "mask"
+# 			texture = "gfx/interface/component_masks/mask_fade_horizontal_middle.dds"
+# 			blend_mode = alphamultiply
+# 		}
+
+# 		modify_texture = {
+# 			texture = "gfx/interface/component_masks/patterns/header_pattern.dds"
+# 			texture_density = 2
+# 			spriteType = Corneredtiled
+# 			spriteborder = { 0 0 }
+# 			blend_mode = overlay
+# 			alpha = 1
+# 		}
+# 	}
+# }
+
+template bg_subheader_left {
+	background = {
+		margin_left = 2
+		using = color_light_blue_texture
+		texture_density = 2
+		spriteType = stretched
+		alpha = 0.5
+
+		modify_texture = {
+			using = overlay_stone_texture
+			blend_mode = overlay
+			alpha = 0.5
+		}
+	}
+}
+
+## BG DIVIDERS ##
+
+template bg_divider_flavor_01 {
+	background = {
+		texture = "gfx/interface/component_tiles/dividers/divider_flavor_01.dds"
+		spriteType = corneredstretched
+		spriteBorder = {0 10}
+		texture_density = 2
+		block "divider_margin" {
+			margin = {0 -3}
+		}
+		alpha = 0.4
+
+		modify_texture = {
+			using = color_dark_brown_texture
+			blend_mode = multiply
+		}
+
+		block "divider_extras" {}
+	}
+}
+
+# template bg_divider_flavor_02 {
+# 	background = {
+# 		texture = "gfx/interface/component_tiles/dividers/divider_geo_02.dds"
+# 		spriteType = corneredstretched
+# 		spriteBorder = {0 10}
+# 		texture_density = 2
+# 		margin = {0 -3}
+# 		alpha = 0.8
+
+# 		block "bg_color" {
+# 			modify_texture = {
+# 				using = color_dark_brown_texture
+# 				blend_mode = multiply
+# 			}
+# 		}
+# 	}
+
+# }
+
+template bg_divider_flavor_03 {
+	background = {
+		texture = "gfx/interface/component_tiles/dividers/divider_flavor_03.dds"
+		spriteType = corneredstretched
+		spriteBorder = {0 10}
+		texture_density = 2
+		margin = {0 -3}
+		alpha = 0.5
+	}
+}
+
+## OVERLAY_PATTERNS
+###########################################
+
+# template bg_overlay_pattern_00 {
+# 	background = {
+# 		using = color_light_blue_texture
+# 		alpha = 0.9
+
+# 		modify_texture = {
+# 			name = "mask"
+# 			texture = "gfx/interface/component_masks/mask_fade_horizontal_middle.dds"
+# 			blend_mode = alphamultiply
+# 		}
+
+# 		modify_texture = {
+# 			texture = "gfx/interface/component_masks/patterns/header_pattern.dds"
+# 			texture_density = 2
+# 			spriteType = corneredtiled
+# 			spriteborder = { 0 0 }
+# 			blend_mode = overlay
+# 			alpha = 1
+# 		}
+# 	}
+# }
+
+# template bg_overlay_pattern_01 {
+# 	background = {
+# 		using = color_light_blue_texture
+# 		alpha = 0.9
+
+# 		modify_texture = {
+# 			name = "mask"
+# 			texture = "gfx/interface/component_masks/mask_fade_horizontal_middle.dds"
+# 			blend_mode = alphamultiply
+# 		}
+
+# 		modify_texture = {
+# 			# texture = "gfx/interface/component_overlay/graphical_culture/header_pattern_01.dds"
+# 			texture = "[GetGraphicalCultureTexture('header_pattern')]"
+# 			texture_density = 2
+# 			spriteType = corneredtiled
+# 			spriteborder = { 0 0 }
+# 			blend_mode = overlay
+# 			alpha = 1
+# 		}
+# 	}
+# }
+
+# template bg_overlay_pattern_02 {
+# 	background = {
+# 		using = color_gold_texture
+
+# 		modify_texture = {
+# 			name = "mask"
+# 			texture = "gfx/interface/component_masks/mask_fade_horizontal_middle.dds"
+# 			blend_mode = alphamultiply
+# 		}
+
+# 		modify_texture = {
+# 			texture = "gfx/interface/component_overlay/graphical_culture/header_pattern_02.dds"
+# 			texture_density = 2
+# 			spriteType = corneredtiled
+# 			spriteborder = { 0 0 }
+# 			blend_mode = overlay
+# 			alpha = 0.6
+# 		}
+# 	}
+# }
+
+# template bg_overlay_pattern_03 {
+# 	background = {
+# 		using = color_light_blue_texture
+# 		alpha = 0.9
+
+# 		modify_texture = {
+# 			name = "mask"
+# 			texture = "gfx/interface/component_masks/mask_fade_horizontal_middle.dds"
+# 			blend_mode = alphamultiply
+# 		}
+
+# 		modify_texture = {
+# 			texture = "gfx/interface/component_overlay/graphical_culture/header_pattern_03.dds"
+# 			texture_density = 2
+# 			spriteType = corneredtiled
+# 			spriteborder = { 0 0 }
+# 			blend_mode = overlay
+# 			alpha = 0.7
+# 		}
+# 	}
+# }
+
+template bg_overlay_pattern_04 {
+	background = {
+		using = color_light_blue_texture
+		alpha = 0.9
+
+		modify_texture = {
+			name = "mask"
+			texture = "gfx/interface/component_masks/mask_fade_horizontal_middle.dds"
+			blend_mode = alphamultiply
+		}
+
+		modify_texture = {
+			texture = "gfx/interface/component_overlay/scrollwork_texture_01.dds"
+			texture_density = 2
+			spriteType = corneredtiled
+			spriteborder = { 0 0 }
+			blend_mode = overlay
+			alpha = 0.7
+		}
+
+		modify_texture = {
+			texture = "gfx/interface/component_overlay/paper_texture_01.dds"
+			texture_density = 2
+			spriteType = corneredtiled
+			spriteborder = { 0 0 }
+			blend_mode = overlay
+			alpha = 0.5
+		}
+	}
+}
+
+template bg_country_banner {
+	background = {
+		texture = "gfx/interface/component_tiles/country_banner_texture.dds"
+		texture_density = 2
+		alpha = 1
+		spriteType = corneredstretched
+		spriteborder = { 57 37 }
+		using = overlay_texture_overlay
+		blockoverride "overlay_blend_mode" {
+			blend_mode = multiply
+		}
+	}
+}
+
+template bg_header_golden_frame {
+	background = {
+		using = tile_frame_squared_texture
+		using = color_new_gold
+		margin = { 1 1 }
+	}
+}
+
+template bg_navigational_header_button_left {
+	block "header_button_left_extra_texture" {}
+	background = {
+		texture = "gfx/interface/buttons/bg_navigational_header_button.dds"
+		texture_density = 2
+		spriteType = corneredstretched
+		spriteborder = { 42 20 }
+
+		block "bg_color" {
+			modify_texture = {
+				using = color_dark_brown_texture
+				blend_mode = multiply
+			}
+		}
+		modify_texture = {
+			using = overlay_stone_texture
+			blend_mode = overlay
+			alpha = 0.5
+		}
+		modify_texture = {
+			using = overlay_window_texture
+			blend_mode = overlay
+			alpha = 0.5
+		}
+	}
+}
+
+template bg_navigational_header_button_right {
+	background = {
+		texture = "gfx/interface/buttons/bg_navigational_header_button.dds"
+		texture_density = 2
+		spriteType = corneredstretched
+		spriteborder = { 42 20 }
+		mirror = horizontal
+
+		block "bg_color" {
+			modify_texture = {
+				using = color_dark_brown_texture
+				blend_mode = multiply
+			}
+		}
+		modify_texture = {
+			using = overlay_stone_texture
+			blend_mode = overlay
+			alpha = 0.5
+		}
+		modify_texture = {
+			using = overlay_window_texture
+			blend_mode = overlay
+			alpha = 0.5
+		}
+	}
+}
+
+template bg_round_card_outline {
+	background = {
+		texture = "gfx/interface/component_tiles/round_card_alt.dds"
+		texture_density = 2
+		spritetype = corneredstretched
+		spriteBorder = {60 60}
+		margin = {2 2}
+		margin_bottom = 3
+		alpha = 0.4
+
+		modify_texture = {
+			using = color_black_texture
+			blend_mode = multiply
+		}
+	}
+
+	background = {
+		texture = "gfx/interface/component_tiles/round_card_alt.dds"
+		texture_density = 2
+		spritetype = corneredstretched
+		spriteBorder = {60 60}
+
+		modify_texture = {
+			using = overlay_metal_texture
+			alpha = 0.1
+		}
+
+		modify_texture = {
+			texture = "gfx/interface/component_masks/mask_fade_vertical_up.dds"
+			alpha = 0.1
+		}
+
+		# block "inner_color" {
+			modify_texture = {
+				using = color_progress_blue_texture
+				blend_mode = multiply
+			}
+		# }
+	}
+
+	background = {
+		texture = "gfx/interface/component_tiles/round_outline_alt.dds"
+		texture_density = 2
+		spritetype = corneredstretched
+		spriteBorder = {60 60}
+		margin = {2 2}
+
+		block "outline_color" {
+			modify_texture = {
+				using = color_new_gold_texture
+				blend_mode = multiply
+			}
+		}
+
+		modify_texture = {
+			using = overlay_metal_texture
+			blend_mode = overlay
+			alpha = 0.3
+		}
+
+		modify_texture = {
+			texture = "gfx/interface/component_masks/mask_fade_vertical_up.dds"
+			alpha = 0.1
+		}
+	}
+}
+
+# template bg_circle_frame_alt_thin {
+# 	background = {
+# 		texture = "gfx/interface/component_tiles/hud_corners/circle_frame_alt_thin.dds"
+# 		texture_density = 2
+# 		block "shadow_margin" {
+# 			margin = {1 1}
+# 			margin_bottom = 2
+# 		}
+
+# 		modify_texture = {
+# 			using = color_new_gold_texture
+# 			blend_mode = multiply
+# 		}
+# 	}
+# }
+
+template bg_circle_outline {
+	background = {
+		texture = "gfx/interface/component_tiles/hud_corners/circle_frame_alt.dds"
+		texture_density = 2
+		block "shadow_margin" {
+			margin = {1 1}
+			margin_bottom = 2
+			alpha = 0.4
+		}
+
+		modify_texture = {
+			using = color_black_texture
+			blend_mode = multiply
+		}
+	}
+
+	background = {
+		texture = "gfx/interface/buttons/bg_button.dds"
+		texture_density = 2
+		block "container_margin" {
+			margin = {0 0}
+		}
+
+		block "inside_color" {
+			modify_texture = {
+				using = color_progress_blue_texture
+				blend_mode = multiply
+			}
+		}
+
+		modify_texture = {
+			using = overlay_stone_texture
+			blend_mode = overlay
+			alpha = 0.6
+		}
+	}
+
+	background = {
+		block "frame_size" {
+			texture = "gfx/interface/component_tiles/hud_corners/circle_frame_alt.dds"
+			texture_density = 2
+		}
+
+		modify_texture = {
+			texture = "gfx/interface/component_masks/mask_fade_vertical_up.dds"
+			alpha = 0.2
+		}
+
+		block "frame_color" {
+			modify_texture = {
+				using = color_new_gold_texture
+				blend_mode = multiply
+			}
+		}
+
+		modify_texture = {
+			using = overlay_stone_texture
+			blend_mode = overlay
+			alpha = 0.6
+		}
+	}
+}
+
+template bg_age_event_title {
+	background = {
+		block "bg_event_title_texture" {
+			texture = "gfx/interface/component_tiles/bg_age_title_alt.dds"
+			texture_density = 2
+			spriteType = corneredstretched
+			spriteBorder = { 40 0 }
+			margin_bottom = -2
+		}
+
+		block "bg_event_title_color" {
+			using = color_dark_blue
+		}
+
+		using = overlay_window
+		using = overlay_leather
+
+		modify_texture = {
+			texture = "gfx/interface/component_overlay/scrollwork_c.dds"
+			texture_density = 2
+			spriteType = corneredtiled
+			spriteborder = { 0 0 }
+			blend_mode = overlay
+			alpha = 0.5
+			block "bg_event_title_texture_overlay" {}
+		}
+
+		# block "bg_event_title_extra" {}
+	}
+
+	# block "bg_event_title_overlay" {}
+
+	block "bg_event_title_line_top" {
+		background = {
+			texture = "gfx/interface/component_tiles/tile_line_top.dds"
+			texture_density = 2
+			alpha = 0.8
+			margin = { -40 0 }
+	
+			modify_texture = {
+				using = color_new_gold_texture
+				blend_mode = add
+				alpha = 0.6
+			}
+	
+			modify_texture = {
+				using = color_black_texture
+				blend_mode = overlay
+				alpha = 0.4
+			}
+	
+			using = overlay_window
+			using = overlay_stone
+		}
+	}
+}
+
+template bg_age_event_frame {
+	background = {
+		texture = "gfx/interface/component_tiles/tile_shadow_squared.dds"
+		texture_density = 2
+		spriteType = corneredstretched
+		spriteBorder = { 6 6 }
+		block "bg_age_event_shadow_margin" { margin = { 7 5 } }
+
+		modify_texture = {
+			using = color_dark_brown_texture
+			blend_mode = overlay
+		}
+	}
+
+	background = {
+		texture = "gfx/interface/component_tiles/tile_frame_age_squared.dds"
+		texture_density = 2
+		spriteType = corneredstretched
+		spriteBorder = { 12 12 }
+		alpha = 0.8
+		block "bg_age_event_frame_margin" { margin = { 2 2 } }
+
+		modify_texture = {
+			using = color_new_gold_texture
+			blend_mode = add
+			alpha = 0.6
+		}
+
+		modify_texture = {
+			using = color_black_texture
+			blend_mode = overlay
+			alpha = 0.4
+		}
+
+		using = overlay_window
+		using = overlay_stone
+	}
+}
+
+template bg_age_event_mask {
+	background = {
+		texture = "gfx/interface/component_masks/age_event_mask_frame_horizontal.dds"
+		texture_density = 2
+		alpha = 0.8
+		spriteType = corneredstretched
+		spriteBorder = { 12 12 }
+
+		modify_texture = {
+			using = color_dark_brown_texture
+			blend_mode = add
+			alpha = 0.7
+		}
+		modify_texture = {
+			using = color_dark_brown_texture
+			blend_mode = overlay
+		}
+	}
+}
+
+template message_text_box_background {
+	background = {
+		using = tile_frame_squared_texture
+		using = color_bg_brown
+		modify_texture = {
+			using = overlay_cloth_texture
+			blend_mode = overlay
+			alpha = 0.3
+		}
+	}
+	using = bg_text_mask_container_dark_brown
+}
+
+template bg_age_event_inner {
+	background = {
+		using = color_brown_leather_texture
+
+		modify_texture = {
+			using = color_black_texture
+			alpha = 0.8
+			blend_mode = multiply
+		}
+	}
+
+	background = {
+		using = bg_gradient_mask_texture
+
+		modify_texture = {
+			using = color_brown_leather_texture
+		}
+	}
+
+	background = {
+		using = bg_gradient_mask_texture
+		margin_bottom = 300
+
+		modify_texture = {
+			using = color_brown_leather_texture
+			alpha = 0.5
+		}
+
+		modify_texture = {
+			using = overlay_leather_texture
+			blend_mode = overlay
+			alpha = 0.2
+		}
+	}
+
+	background = {
+		using = floral_window_pattern_texture
+
+		modify_texture = {
+			using = color_brown_leather_texture
+		}
+
+		modify_texture = {
+			using = color_white_texture
+			alpha = 0.5
+		}
+
+		modify_texture = {
+			using = bg_gradient_mask_texture
+			blend_mode = alphamultiply
+			alpha = 0.7
+		}
+	}
+}
+
+#### EVENTS WINDOW ###
+
+# template bg_event_card {
+# 	background = {
+# 		texture = "gfx/interface/component_tiles/events/events_card.dds"
+# 		texture_density = 2
+# 		spriteType = corneredstretched
+# 		spriteBorder = { 140 55 }
+# 		margin = {-2 -2}
+
+# 		modify_texture = {
+# 			using = color_bg_blue_texture
+# 			blend_mode = multiply
+# 		}
+# 		modify_texture = {
+# 			using = overlay_window_texture
+# 			blend_mode = overlay
+# 			alpha = 0.9
+# 		}
+# 		modify_texture = {
+# 			using = overlay_striped_texture
+# 			blend_mode = overlay
+# 			alpha = 0.3
+# 		}
+# 		modify_texture = {
+# 			texture = "gfx/interface/component_overlay/events_generic_pattern.dds"
+# 			texture_density = 2
+# 			spriteType = corneredtiled
+# 			spriteBorder = { 0 0 }
+# 			blend_mode = overlay
+# 			alpha = 0.2
+# 		}
+# 	}
+# }
+
+# template bg_event_card_frame {
+# 	background = {
+# 		texture = "gfx/interface/component_tiles/events/events_card_frame.dds"
+# 		texture_density = 2
+# 		spriteType = corneredstretched
+# 		spriteBorder = { 140 55 }
+
+# 		modify_texture = {
+# 			using = color_new_gold_texture
+# 			blend_mode = add
+# 			alpha = 0.6
+# 		}
+# 		modify_texture = {
+# 			using = overlay_stone_texture
+# 			blend_mode = overlay
+# 			alpha = 0.2
+# 		}
+
+# 		modify_texture = {
+# 			using = color_black_texture
+# 			blend_mode = overlay
+# 			alpha = 0.4
+# 		}
+# 	}
+# }
+
+# template bg_event_card_frame_decor {
+# 	background = {
+# 		# block "decor_texture" {
+# 			texture = "gfx/interface/component_tiles/events/events_frame_decor_top2.dds"
+# 		# }
+# 		texture_density = 2
+# 		spriteType = corneredstretched
+# 		spriteBorder = { 0 0 }
+# 		# block "frame_decor_mirror" {}
+# 		modify_texture = {
+# 			using = color_new_gold_texture
+# 			blend_mode = add
+# 			alpha = 0.6
+# 		}
+# 		modify_texture = {
+# 			using = overlay_stone_texture
+# 			blend_mode = overlay
+# 			alpha = 0.2
+# 		}
+
+# 		modify_texture = {
+# 			using = color_black_texture
+# 			blend_mode = overlay
+# 			alpha = 0.4
+# 		}
+# 		# modify_texture = {
+# 		# 	using = overlay_window_texture
+# 		# 	blend_mode = overlay
+# 		# 	alpha = 0.7
+# 		# }
+# 	}
+# }
+
+# template bg_event_card_frame_side_decor {
+# 	background = {
+# 		using = color_brown_leather_texture
+
+# 		modify_texture = {
+# 			using = color_black_texture
+# 			alpha = 0.8
+# 			blend_mode = multiply
+# 		}
+# 	}
+# }
+
+# template bg_event_illustration_frame {
+# 	background = {
+# 		texture = "gfx/interface/component_tiles/events/events_illustration_frame.dds"
+# 		texture_density = 2
+# 		spriteType = corneredstretched
+# 		spriteBorder = { 65 65 }
+
+# 		modify_texture = {
+# 			using = color_new_gold_texture
+# 			blend_mode = add
+# 			alpha = 0.6
+# 		}
+# 		modify_texture = {
+# 			using = overlay_stone_texture
+# 			blend_mode = overlay
+# 			alpha = 0.2
+# 		}
+
+# 		modify_texture = {
+# 			using = color_black_texture
+# 			blend_mode = overlay
+# 			alpha = 0.4
+# 		}
+
+# 		block "bg_illustration_frame_extra" {}
+# 	}
+# }
+
+# template bg_event_illustration_frame_decor {
+# 	background = {
+# 		texture = "gfx/interface/component_tiles/events/events_illustration_frame_decor.dds"
+# 		texture_density = 2
+
+# 		modify_texture = {
+# 			using = color_new_gold_texture
+# 			blend_mode = add
+# 			alpha = 0.6
+# 		}
+# 		modify_texture = {
+# 			using = overlay_stone_texture
+# 			blend_mode = overlay
+# 			alpha = 0.2
+# 		}
+
+# 		modify_texture = {
+# 			using = color_black_texture
+# 			blend_mode = overlay
+# 			alpha = 0.4
+# 		}
+
+# 		block "bg_illustration_frame_extra" {}
+# 	}
+# }
+
+template bg_sort_by_highlight_texture {
+	using = color_bone_texture
+	alpha = 0.15
+	parentanchor = center
+	texture_density = 2
+
+	modify_texture = {
+		texture = "gfx/interface/component_masks/mask_fade_horizontal_center_texture.dds"
+		texture_density = 2
+		alpha = 0.6
+		blend_mode = alphamultiply
+	}
+}
+
+template bg_sort_by_highlight {
+	background = {
+		visible = "[PdxGuiWidget.IsKeyHoveredByWidgetName]"
+		using = bg_sort_by_highlight_texture
+	}
+}
+
+template top_bar_bg {
+	background = {
+		using = tile_background_squared_texture
+
+		modify_texture = {
+			using = color_dark_brown_texture
+			alpha = 0.7
+		}
+
+		modify_texture = {
+			visible = "[Not(IsPlayerValid)]"
+			texture = "gfx/interface/component_overlay/striped_texture.dds"
+			texture_density = 2
+			spriteType = corneredtiled
+			spriteborder = { 0 0 }
+			blend_mode = overlay
+		}
+
+		modify_texture = {
+			visible = "[IsPlayerValid]"
+			texture = "[GetGraphicalCultureTexture('top_bar_bg')]"
+			texture_density = 2
+			spriteType = corneredtiled
+			spriteborder = { 0 0 }
+			blend_mode = overlay
+			alpha = 0.2
+		}
+	}
+
+	background = {
+		using = tile_frame_horizontal_texture
+		alpha = 1
+
+		modify_texture = {
+			using = color_new_gold_texture
+			blend_mode = overlay
+		}
+		modify_texture = {
+			using = color_bg_blue_texture
+			blend_mode = overlay
+			alpha = 0.2
+		}
+		modify_texture = {
+			using = color_purple_texture
+			blend_mode = multiply
+			alpha = 0.2
+		}
+	}
+}
+
+# template foreign_country_bar_bg {
+# 	background = {
+# 		using = tile_background_squared_texture
+
+# 		modify_texture = {
+# 			using = color_dark_brown_texture
+# 			alpha = 0.7
+# 		}
+
+# 		modify_texture = {
+# 			visible = "[Country.IsValid]"
+# 			texture = "[GetGraphicalCultureTextureForCountry('top_bar_bg', Country.Self)]"
+# 			texture_density = 2
+# 			spriteType = corneredtiled
+# 			spriteborder = { 0 0 }
+# 			blend_mode = overlay
+# 			alpha = 0.2
+# 		}
+# 	}
+
+# 	background = {
+# 		using = tile_frame_horizontal_texture
+# 		alpha = 1
+
+# 		modify_texture = {
+# 			using = color_new_gold_texture
+# 			blend_mode = overlay
+# 		}
+# 		modify_texture = {
+# 			using = color_bg_blue_texture
+# 			blend_mode = overlay
+# 			alpha = 0.2
+# 		}
+# 		modify_texture = {
+# 			using = color_purple_texture
+# 			blend_mode = multiply
+# 			alpha = 0.2
+# 		}
+# 	}
+# }
+
+template bg_listbase_template {
+	background = {
+		using = text_mask_container_texture
+
+		block "textblock_background_tint" {
+			modify_texture = {
+				using = color_dark_blue_texture
+			}
+		}
+
+		alpha = 0.3
+	}
+
+	background = {
+		using = tile_frame_squared_texture
+		using = color_bg_brown
+		modify_texture = {
+			using = overlay_cloth_texture
+			blend_mode = overlay
+			alpha = 0.3
+		}
+	}
+}

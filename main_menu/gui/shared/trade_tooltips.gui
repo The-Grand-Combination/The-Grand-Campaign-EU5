@@ -1,0 +1,213 @@
+
+
+template merchant_capacity_modifier_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			text = "MERCHANT_CAPACITY_MODIFIER_TT_HEADER"
+		}
+		blockoverride "title_icon" {
+			icon = {
+				size = { 50 50 }
+				texture = "gfx/interface/icons/flat_icons/trade_capacity.dds"
+
+				glow = {
+					name = "drop_shadow"
+					glow_radius = 3
+					color = {0.0 0.0 0.0 1.0}
+					alpha = 0.3
+				}
+			}
+		}
+		blockoverride "concept_link" {
+			text = [merchant_capacity|e]
+		}
+		blockoverride "tooltip_content" {
+			TooltipStringPairList = {
+				textcontext = "[Country.GetDescriptionFor('global_merchant_capacity_modifier')]"
+			}
+		}
+	}
+}
+
+template trade_efficiency_modifier_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			text = "TRADE_EFFICIENCY_MODIFIER_TT_HEADER"
+		}
+		blockoverride "title_icon" {
+			icon = {
+				size = { 50 50 }
+				texture = "gfx/interface/icons/flat_icons/trade_efficiency.dds"
+
+				glow = {
+					name = "drop_shadow"
+					glow_radius = 3
+					color = {0.0 0.0 0.0 1.0}
+					alpha = 0.3
+				}
+			}
+		}
+		blockoverride "concept_link" {
+			text = [trade_efficiency|e]
+		}
+		blockoverride "tooltip_content" {
+			TooltipStringPairList = {
+				textcontext = "[Country.GetDescriptionFor('trade_efficiency')]"
+			}
+		}
+	}
+}
+
+
+template merchant_power_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			text = "MERCHANT_POWER_TT_HEADER"
+		}
+		blockoverride "title_icon" {
+			icon = {
+				using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/flat_icons/trade_advantage.dds"
+
+				glow = {
+					name = "drop_shadow"
+					glow_radius = 3
+					color = {0.0 0.0 0.0 1.0}
+					alpha = 0.3
+				}
+			}
+		}
+		blockoverride "concept_link" {
+			text = [merchant_power|e]
+		}
+		blockoverride "tooltip_content" {
+			TooltipStringPairList = {
+				textcontext = "[Country.GetDescriptionFor('global_merchant_power')]"
+			}
+		}
+	}
+}
+
+
+template merchant_maintenance_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			text = "MERCHANT_MAINTENANCE_TT_HEADER"
+		}
+		blockoverride "title_icon" {
+			icon = {
+				using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/flat_icons/trade_maintenance.dds"
+
+				glow = {
+					name = "drop_shadow"
+					glow_radius = 3
+					color = {0.0 0.0 0.0 1.0}
+					alpha = 0.3
+				}
+			}
+		}
+		blockoverride "concept_link" {
+			text = [merchant_maintenance|e]
+		}
+		blockoverride "tooltip_content" {
+			TooltipStringPairList = {
+				textcontext = "[Country.GetDescriptionFor('merchant_maintenance_cost')]"
+			}
+		}
+	}
+}
+
+
+
+
+template market_attraction_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			text = "MARKET_ATTRACTION_TT_HEADER"
+		}
+		blockoverride "title_icon" {
+			icon = {
+				using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/flat_icons/market_attraction.dds"
+
+				glow = {
+					name = "drop_shadow"
+					glow_radius = 3
+					color = {0.0 0.0 0.0 1.0}
+					alpha = 0.3
+				}
+			}
+		}
+		blockoverride "concept_link" {
+			text = [market_attraction|e]
+		}
+		blockoverride "tooltip_content" {
+			TooltipStringPairList = {
+				textcontext = "[Country.GetDescriptionFor('global_trade_center_power')]"
+			}
+		}
+	}
+}
+
+
+template trade_protection_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			text = "TRADE_PROTECTION_TT_HEADER"
+		}
+		blockoverride "title_icon" {
+			icon = {
+				using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/flat_icons/market_protection.dds"
+
+				glow = {
+					name = "drop_shadow"
+					glow_radius = 3
+					color = {0.0 0.0 0.0 1.0}
+					alpha = 0.3
+				}
+			}
+		}
+		blockoverride "concept_link" {
+			text = [trade_protection|e]
+		}
+		blockoverride "tooltip_content" {
+			TooltipStringPairList = {
+				textcontext = "[Country.GetDescriptionFor('global_trade_protection_factor')]"
+			}
+		}
+	}
+}
+
+
+
+template trade_range_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_text" {
+			text = "TRADE_RANGE_TT_HEADER"
+		}
+		blockoverride "title_icon" {
+			icon = {
+				using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/flat_icons/trade_range.dds"
+
+				glow = {
+					name = "drop_shadow"
+					glow_radius = 3
+					color = {0.0 0.0 0.0 1.0}
+					alpha = 0.3
+				}
+			}
+		}
+		blockoverride "concept_link" {
+			text = [trade_range|e]
+		}
+		blockoverride "tooltip_content" {
+			TooltipStringPairList = {
+				textcontext = "[Country.GetDoubleDescriptionFor('trade_range','trade_range_modifier')]"
+			}
+		}
+	}
+}
+

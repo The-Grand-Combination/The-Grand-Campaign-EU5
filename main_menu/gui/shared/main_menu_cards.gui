@@ -1,0 +1,46 @@
+types Cards
+{
+    type clickable_header_card = widget {
+		layoutpolicy_horizontal = expanding
+		block "clickable_header_card_size" {
+			size = { -1 75 }
+		}
+
+		block "card_bg" {
+			using = bg_paper_card
+		}
+		
+		vbox = {
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = expanding
+			block "layout_setup" {}
+
+			widget = {
+				layoutpolicy_horizontal = expanding
+				block "header_size" {
+					size = { -1 35 }
+				}
+
+				block "header_bg" {
+					using = bg_card_header_01
+				}	
+
+				block "header_button" {
+					card_header_button_01 = {
+						size = { 100% 100% }
+						block "header_content" {}
+					}
+				}
+			}
+
+			block "bottom_content_layout" {
+				widget = {
+					using = layoutpolicy_expanding
+					block "bottom_content" {}
+				}
+			}
+			
+			block "layout_end" {}
+		}
+	}
+}

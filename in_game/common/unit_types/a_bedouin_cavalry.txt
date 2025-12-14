@@ -1,0 +1,39 @@
+﻿a_bedouin_cavalry = {
+	category = army_cavalry
+	
+	
+	copy_from = a_age_2_renaissance_cavalry
+	light = yes
+
+	max_strength = 0.05
+
+	movement_speed = 0.25
+	build_time_modifier = 0.1
+
+	# some terrain and climate impacts
+	impact = {
+		desert = -0.75
+		arid = -0.75
+		arctic = 0.25
+	}
+
+	location_potential = {
+		dominant_culture = { has_culture_group = culture_group:arabian_group }
+		OR = {
+			sub_continent = sub_continent:north_africa
+			sub_continent = sub_continent:middle_east
+		}
+	}
+	
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = tribesmen
+		multiply = 0.3
+	}
+
+	combat = {
+		desert = 0.10
+	}
+	gfx_tags = { medium_tag }
+
+}

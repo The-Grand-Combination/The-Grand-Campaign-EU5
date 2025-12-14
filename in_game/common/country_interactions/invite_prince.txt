@@ -1,0 +1,126 @@
+﻿invite_prince =  {
+	type = diplomacy
+	category = CATEGORY_INFLUENCE_ACTIONS
+
+	potential = {
+		scope:actor = {
+			succession_law = heir_selection:veche_selection
+		}
+	}
+
+	allow = {
+		scope:actor = {
+			has_regent = yes
+			has_heir = no
+		}
+	}
+	
+	select_trigger = {
+		looking_for_a = country
+		target_flag = recipient
+		name = "choose_country"
+		column = {
+			data = name
+		}
+		visible = {
+			government_type = government_type:monarchy
+			has_ruler = yes
+		}
+        enabled = {
+			trigger_if = {
+				limit = { scope:actor = { has_country_modifier = forbidden_from_joining_unions } }
+				is_in_union = no
+			}
+			ruler ?= {
+				custom_tooltip = {
+					text = veche_has_not_been_dismissed_tt
+					NOT = { has_variable = veche_got_dismissed }
+				}
+			}
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = character
+		source = recipient
+		target_flag = target
+		name = "invite_prince_SELECT_TITLE"
+		none_available_msg_key = "invite_prince_no_characters"
+		column = {
+			data = character_info
+		}
+		visible = {
+			is_alive = yes
+			trigger_if = {
+				limit = {
+					scope:recipient = {
+						ruler ?= { has_dynasty = yes }
+					}
+				}
+				has_dynasty = yes
+				dynasty = scope:recipient.ruler.dynasty
+			}
+			is_adult = yes
+			is_female = no
+			modifier:blocked_from_character_interactions = no
+		}
+	}
+	
+	effect = {
+		if = {
+			limit = { exists = scope:target }
+			scope:actor = {
+				if = {
+					limit = {
+						scope:target = {
+							OR = {
+								is_ruler = yes
+								is_heir = yes
+							}
+						}
+					}
+					set_new_foreign_ruler = scope:target
+				}
+				else = {
+					set_new_ruler = scope:target
+				}
+			}
+		}
+	}
+	
+
+	
+	block_when_at_war = yes
+
+
+	diplo_chance = {
+		base = -10
+		rank = -2
+		opinion = 0.2
+		relative_strength = 200
+		border_distance = -0.1
+	}
+
+	ai_will_do = {
+		add = {
+			if = {
+				limit = {	
+					scope:recipient = { 
+						is_rival_of = scope:actor 
+					}
+				}
+				value = -1000
+			}
+		}
+		add = {
+			value = "scope:recipient.opinion(scope:actor)"
+			divide = 5
+		}
+		add = {
+			scope:recipient = {
+				value = "trust(scope:actor)"
+				divide = 5
+			}
+		}
+	}
+}	

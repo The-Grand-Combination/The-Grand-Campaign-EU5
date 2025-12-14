@@ -1,0 +1,59 @@
+﻿break_others_alliance =  { 
+	type = diplomacy
+	category = CATEGORY_HOSTILE_ACTIONS
+
+	diplomatic_cost = break_others_alliance_cost
+
+	allow = {
+		# allow it always for now.. scope:recipient	= { is_allied_with = { target = scope:actor } }
+	}
+
+	select_trigger = {
+		looking_for_a = country
+		target_flag = recipient
+		name = "choose_country"
+		column = {
+			data = name
+		}
+		visible = {
+		}
+        enabled = {
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = country
+		target_flag = target
+		name = "break_others_alliance_SELECT_TITLE"
+		none_available_msg_key = "break_others_alliance_no_countries"
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			has_mutual_scripted_relation = {
+				type = relation_type:alliance
+				target = scope:recipient
+			}
+		}
+	}
+
+	effect = {
+		if = {
+			limit = {
+				scope:target != scope:recipient
+				exists = scope:target
+			}
+			remove_relation = {
+				type = relation_type:alliance
+				first = scope:target
+				second = scope:recipient
+			}
+			scope:target = {	
+				block_treaties = scope:recipient
+			}
+		}
+	}
+}	

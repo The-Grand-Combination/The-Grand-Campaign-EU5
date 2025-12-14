@@ -1,0 +1,293 @@
+types EconomySliderComponents
+{
+	type EconomySlider_TrackRange = button {
+		parentanchor = vcenter
+		texture = "gfx/interface/progressbars/slider_default_bg.dds"
+		texture_density = 2
+		using = color_progress_blue
+		alpha = 0.3
+		spriteType = Corneredstretched
+		spriteborder = { 10 0 }
+
+		effectname = "NoHighlight"
+
+		using = bg_square_outline_tile
+		blockoverride "container_color" {
+			modify_texture = {
+				using = color_black_texture
+				blend_mode = multiply
+			}
+		}
+	}
+
+	type EconomySlider_TrackHighlight = button {
+		parentanchor = vcenter
+		texture = "gfx/interface/progressbars/progress_bar_blue_alt.dds"
+		texture_density = 2
+		spriteType = Corneredstretched
+		spriteborder = { 0 0 }
+		effectname = "NoHighlight"
+	}
+
+	type EconomySlider_Slider = ui_direction_button {
+		size = { 14 14 }
+		parentanchor = vcenter
+
+		blockoverride "button_texture" {
+			texture = "gfx/interface/buttons/flats/slider.dds"
+		}
+
+		glow = {
+			name = "drop_shadow"
+			glow_radius = 3
+			color = {0.0 0.0 0.0 1.0}
+			alpha = 0.5
+		}
+	}
+
+	type EconomySlider_DecButton = button_square_minus {
+		size = { 15 15 }
+		parentanchor = vcenter
+		using = snd_UI_minus
+		block "economy_slider_dec_button_config" {}
+	}
+
+	type EconomySlider_IncButton = button_square_plus {
+		size = { 15 15 }
+		parentanchor = vcenter
+		using = snd_UI_plus
+		block "economy_slider_inc_button_config" {}
+	}
+}
+
+template economy_slider_track_range {
+	EconomySlider_TrackRange = {}
+}
+
+template economy_slider_track_highlight {
+	EconomySlider_TrackHighlight = {}
+}
+
+template economy_slider_slider {
+	EconomySlider_Slider = {}
+}
+
+template economy_slider_dec_button {
+	EconomySlider_DecButton = {}
+}
+
+template economy_slider_inc_button {
+	EconomySlider_IncButton = {}
+}
+
+template icon_missing_dlc {
+	texture = "gfx/interface/icons/flat_icons/missing_dlc_flat.dds"
+	size = { 50 50 }
+}
+
+template icon_missing_mods {
+	texture = "gfx/interface/icons/flat_icons/missing_dlc_flat.dds"
+	size = { 50 50 }
+}
+
+types Standard_Components
+{
+	# type saving_indicator = flowcontainer {
+	# 	background = {
+	# 		using = bg_round_corners
+	# 		alpha = 0.7
+	# 	}
+
+	# 	spacing = 15
+	# 	margin = { 20 15 }
+
+	# 	progressbar = {
+	# 		size = { 44 44 }
+	# 		using = loading_progress_texture
+	# 	}
+
+	# 	text_single = {
+	# 		parentanchor = vcenter
+	# 		align = nobaseline
+	# 		using = Font_Size_Medium
+
+	# 		block "csi_text"
+	# 		{
+	# 			text = "SAVE_IN_PROGRESS"
+	# 		}
+	# 	}
+	# }
+
+	type base_indicator = widget {
+		parentanchor = bottom
+		widget = {
+			size = { 100% 100% }
+			visible = "[CanUnpause]"
+
+			background = {
+				texture = "gfx/interface/component_tiles/pause/pause_bg.dds"
+				texture_density = 2
+				spriteType = Corneredstretched
+				spriteborder = { 25 0 }
+			}
+
+			background = {
+				texture = "[GetGraphicalCultureTexture('header_pattern')]"
+				texture_density = 1.3
+				spriteType = corneredtiled
+				spriteborder = { 0 0 }
+				alpha = 0.15
+
+				modify_texture = {
+					using = color_market_red_texture
+					blend_mode = overlay
+				}
+
+				modify_texture = {
+					texture = "gfx/interface/component_tiles/pause/pause_mask.dds"
+					texture_density = 2
+					spriteType = Corneredstretched
+					spriteborder = { 25 0 }
+					blend_mode = alphamultiply
+				}
+			}
+		}
+
+		widget = {
+			size = { 100% 100% }
+			visible = "[Not(CanUnpause)]"
+
+			background = {
+				texture = "gfx/interface/component_tiles/pause/pause_bg.dds"
+				texture_density = 2
+				spriteType = Corneredstretched
+				spriteborder = { 25 0 }
+			}
+			
+			background = {
+				texture = "[GetGraphicalCultureTexture('header_pattern')]"
+				texture_density = 1.3
+				spriteType = corneredtiled
+				spriteborder = { 0 0 }
+				alpha = 0.3
+				
+				modify_texture = {
+					using = color_grey_texture
+					blend_mode = multiply
+					alpha = 0.3
+				}
+				
+				modify_texture = {
+					texture = "gfx/interface/component_tiles/pause/pause_mask.dds"
+					texture_density = 2
+					spriteType = Corneredstretched
+					spriteborder = { 25 0 }
+					blend_mode = alphamultiply
+				}
+			}
+			
+			background = {
+				texture = "gfx/interface/component_tiles/pause/pause_mandatory_mp.dds"
+				texture_density = 2
+				spriteType = Corneredstretched
+				spriteborder = { 45 0 }
+				alpha = 0.6
+
+				modify_texture = {
+					texture = "gfx/interface/component_tiles/pause/pause_mask.dds"
+					texture_density = 2
+					spriteType = Corneredstretched
+					spriteborder = { 45 0 }
+					blend_mode = alphamultiply
+				}
+			}
+		}
+		
+		vbox = {
+			set_parent_size_to_minimum = yes
+			margin_bottom = 10
+
+			text_single = {
+				autoresize = yes
+				multiline = yes
+				block "container_size" {
+					maximumsize = { 500 -1 }
+				}
+				align = center|nobaseline
+				using = Font_Type_Headers
+				using = Font_Size_Medium
+				default_format = "#yellow_titles"
+
+				block "text" {}
+			}
+		}
+
+		### ART FOR MP - NEEDS SCRIPT FIX
+		# widget = {
+		# 	size = { 100% 70% }
+		# 	# size = {-1 40}
+		# 	parentanchor = center
+		# 	icon = {
+		# 		size = { 100% 100% }
+		# 		texture = "gfx/interface/buttons/map_modes/banner.dds"
+		# 		texture_density = 2
+		# 		spriteType = Corneredstretched
+		# 		spriteborder = { 10 10 }
+		# 		modify_texture = {
+		# 			using = color_market_blue_texture
+		# 			blend_mode = overlay
+		# 		}
+
+		# 		glow = {
+		# 			name = "drop_shadow"
+		# 			glow_radius = 9
+		# 			color = {0.0 0.0 0.0 1.0}
+		# 			alpha = 1
+		# 		}
+		# 		icon = {
+		# 			size = { 100% 100% }
+		# 			texture = "gfx/interface/buttons/map_modes/banner_frame.dds"
+		# 			texture_density = 2
+		# 			spriteType = Corneredstretched
+		# 			spriteborder = { 10 10 }
+		# 		}
+		# 	}
+			
+		# }
+		# widget = {
+		# 	size = { 20% 100% }
+		# 	parentanchor = left|vcenter
+		# 	position = {-8 3}
+		# 	icon = {
+		# 		size = { 90% 90% }
+		# 		texture = "gfx/interface/icons/outliner/background/_defaultbg01.dds"
+		# 		texture_density = 2
+		# 		modify_texture = {
+		# 			using = color_light_blue_texture
+		# 			blend_mode = overlay
+		# 		}
+		# 		glow = {
+		# 			name = "drop_shadow"
+		# 			glow_radius = 5
+		# 			color = {0.0 0.0 0.0 1.0}
+		# 			alpha = 0.8
+		# 		}
+		# 		icon = {
+		# 			parentanchor = center
+		# 			size = { 80% 80% }
+		# 			texture = "gfx/interface/icons/outliner/human_player.dds"
+		# 			texture_density = 2
+		# 		}
+		# 	}
+		# }
+	}
+
+	type saving_indicator = base_indicator {
+		blockoverride "text" {
+			margin = { 60 20 }
+			block "csi_text" {
+				text = "SAVE_IN_PROGRESS"
+			}
+		}
+	}
+}

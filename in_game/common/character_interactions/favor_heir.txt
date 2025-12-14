@@ -1,0 +1,77 @@
+﻿favor_heir = {
+	on_own_nation = yes
+	message = yes
+	potential = {
+		scope:actor = {
+			has_for_elective_heir_selection = yes
+		}
+	}
+	ai_tick = monthly
+	ai_tick_frequency = 1
+	allow = {
+		scope:actor = {
+			custom_tooltip = {
+				text = favor_heir_tt
+				OR = {
+					NOT = { has_variable_list = supported_heirs }
+					NOT = {
+						any_in_list = {
+							variable = supported_heirs
+							is_alive = yes
+							has_variable = home_country
+							var:home_country ?= scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	select_trigger = {
+		looking_for_a = character
+		source = actor
+		target_flag = recipient
+		name = "choose_character"
+		pre_evaluation_sort_value = {
+			value = age_in_years
+		}
+		pre_evaluation_number_to_evaluate_fully = 5
+		column = {
+			data = name
+		}
+		visible = {
+			is_alive = yes
+			is_adult = yes
+		}
+		enabled = {
+			modifier:blocked_from_character_interactions = no
+			is_eligible_heir_baseline = scope:actor
+			valid_estate_for_heir_selection = scope:actor.succession_law
+		}
+	}
+	effect = {
+		scope:recipient = {
+			custom_tooltip = {
+				text = favor_heir_ct
+				set_variable = {
+					name = home_country
+					value = scope:actor
+				}
+			}
+		}
+		hidden_effect = {
+			scope:actor = {
+				add_to_variable_list = {
+					name = supported_heirs
+					target = scope:recipient
+				}
+			}
+		}
+	}
+	ai_will_do = {
+		value = -100
+		add = {
+			desc = "POTENTIAL_HEIR_SCORE"
+			value = "scope:recipient.heir_score(scope:actor)"
+		}
+	}
+}

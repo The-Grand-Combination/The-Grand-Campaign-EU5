@@ -1,0 +1,420 @@
+@density_factor_low = 0.25
+@density_factor_medium = 0.5
+@density_factor_high = 1.0
+
+# Most of these generators have beel split into a low/medium/high trio
+# The mapeditor will has a finite number of positions where meshes can be placed.
+# The generator with the lowest density for each point will be prioritized
+# This means that we can have 3 identical generators but with different max-densities and the lower-density generators will "steal" positions from the higher ones.
+# Artists can paint for the high-quality setting. Medium and Low will automatically just be less dense
+
+# Pine Forest
+@pine_density_base = 0.95
+pine_generator_low = {
+    layer = "vegetation_low"
+    max_density = @[pine_density_base * density_factor_low]
+	
+    mask = "pine_mask"
+    meshes = {
+            "vegetation_diorama_arctic_tree_mesh" = 1
+         "vegetation_diorama_arctic_tree2_mesh" = 0.7
+         "vegetation_diorama_arctic_tree3_mesh" = 0.8
+         "vegetation_diorama_arctic_tree4_mesh" = 1
+    }
+    density_curve = {
+        { x = 0.7 y = 0.5 }
+        { x = 0.8 y = 0.9}
+        { x = 1 y = 1}
+    }
+    scale_curve = {
+        { x = 0.0 y = 0.75 }
+        { x = 0.74  y = 0.75 }
+    }
+    scale_fuzziness_curve = {
+        { x = 0.0 y = 0.0 }
+    }
+}
+pine_generator_medium = {
+	clone = pine_generator_low
+    layer = "vegetation_medium"
+    max_density = @[pine_density_base * density_factor_medium]
+}
+pine_generator_high = {
+	clone = pine_generator_low
+    layer = "vegetation_high"
+    max_density = @[pine_density_base * density_factor_high]
+}
+
+# Woods
+@woods_cherry_base = 0.7
+woods_cherry_low = {
+    layer = "vegetation_low"
+    max_density = @[woods_density_base * density_factor_low]
+    
+	mask = "vegetation_woods_japan_mask"
+    meshes = {
+         "vegetation_diorama_cherrytree_a_mesh" = 1
+         "vegetation_diorama_tree_single1_mesh" = 0.5
+         "vegetation_diorama_cherrytree_a_mesh" = 1
+         "vegetation_diorama_tree_single3_mesh" = 0.5
+    }
+    density_curve = {
+        { x = 0.000000 y = 0.400000 }
+        { x = 1.0000000 y = 0.9000 }
+    }
+    scale_curve = {
+        { x = 0.0 y = 0.75 }
+        { x = 0.74  y = 0.85 }
+    }
+    scale_fuzziness_curve = {
+        { x = 1.000000 y = 0.100000 }
+    }
+}
+woods_cherry_medium = {
+	clone = woods_cherry_low
+    layer = "vegetation_medium"
+    max_density = @[woods_cherry_base * density_factor_medium]
+}
+woods_cherry_high = {
+	clone = woods_cherry_low
+    layer = "vegetation_high"
+    max_density = @[woods_cherry_base * density_factor_high]
+}
+
+@woods_density_base = 0.7
+woods_generator_low = {
+    layer = "vegetation_low"
+    max_density = @[woods_density_base * density_factor_low]
+    
+	mask = "vegetation_woods_continental_oceanic_mask"
+    meshes = {
+         "vegetation_diorama_tree_single_mesh" = 1
+         "vegetation_diorama_tree_single1_mesh" = 1
+         "vegetation_diorama_tree_single2_mesh" = 1
+         "vegetation_diorama_tree_single3_mesh" = 1
+    }
+    density_curve = {
+        { x = 0.000000 y = 0.400000 }
+        { x = 1.0000000 y = 0.9000 }
+    }
+    scale_curve = {
+        { x = 0.0 y = 0.75 }
+        { x = 0.74  y = 0.85 }
+    }
+    scale_fuzziness_curve = {
+        { x = 1.000000 y = 0.100000 }
+    }
+}
+woods_generator_medium = {
+	clone = woods_generator_low
+    layer = "vegetation_medium"
+    max_density = @[woods_density_base * density_factor_medium]
+}
+woods_generator_high = {
+	clone = woods_generator_low
+    layer = "vegetation_high"
+    max_density = @[woods_density_base * density_factor_high]
+}
+
+# forest
+@forest_density_base = 0.85
+forest_generator_low = {
+    layer = "vegetation_low"
+    max_density = @[forest_density_base * density_factor_low]
+    
+	mask = "vegetation_forest_continental_oceanic_mask"
+    meshes = {
+         "vegetation_diorama_tree_single_mesh" = 1
+         "vegetation_diorama_tree_single1_mesh" = 1
+         "vegetation_diorama_tree_single2_mesh" = 1
+         "vegetation_diorama_tree_single3_mesh" = 1
+         
+
+         
+    }
+    density_curve = {
+        { x = 0.000000 y = 0.400000 }
+        { x = 1.0000000 y = 0.9000 }
+    }
+    scale_curve = {
+        { x = 0.0 y = 0.85 }
+        { x = 0.74  y = 0.85 }
+    }
+    scale_fuzziness_curve = {
+        { x = 1.000000 y = 0.100000 }
+    }
+}
+forest_generator_medium = {
+	clone = forest_generator_low
+    layer = "vegetation_medium"
+    max_density = @[forest_density_base * density_factor_medium]
+}
+forest_generator_high = {
+	clone = forest_generator_low
+    layer = "vegetation_high"
+    max_density = @[forest_density_base * density_factor_high]
+}
+
+
+# Cherry tree
+@cherry_tree_forest_base = 0.75
+cherry_tree_generator_low = {
+    layer = "vegetation_low"
+    max_density = @[cherry_tree_forest_base * density_factor_low]
+	
+    mask = "vegetation_forest_japan_mask"
+    meshes = {
+         "vegetation_diorama_cherrytree_a_mesh" = 1
+         "vegetation_diorama_tree_single1_mesh" = 0.5
+         "vegetation_diorama_cherrytree_a_mesh" = 1
+         #"vegetation_diorama_tree_single3_mesh" = 0.5
+         
+
+         
+    }
+    density_curve = {
+        { x = 0.000000 y = 0.400000 }
+        { x = 1.0000000 y = 0.9000 }
+    }
+    scale_curve = {
+        { x = 0.0 y = 0.85 }
+        { x = 0.74  y = 0.85 }
+    }
+    scale_fuzziness_curve = {
+        { x = 1.000000 y = 0.100000 }
+    }
+}
+cherry_tree_generator_medium = {
+	clone = cherry_tree_generator_low
+    layer = "vegetation_medium"
+    max_density = @[cherry_tree_forest_base * density_factor_medium]
+}
+cherry_tree_generator_high = {
+	clone = cherry_tree_generator_low
+    layer = "vegetation_high"
+    max_density = @[cherry_tree_forest_base * density_factor_high]
+}
+
+
+# Jungle 
+@jungle_density_base = 0.85
+jungle_generator_low = {
+    layer = "vegetation_low"
+    max_density = @[jungle_density_base * density_factor_low]
+	
+    mask = "jungle_mask"
+    meshes = {
+          "vegetation_diorama_jungle_tree_mesh" = 1
+         "vegetation_diorama_jungle_tree1_mesh" = 1
+         "vegetation_diorama_jungle_tree_mesh" = 1
+         "vegetation_diorama_jungle_tree1_mesh" = 1
+    }
+    density_curve = {
+        { x = 0.000000 y = 0.400000 }
+        { x = 1.0000000 y = 0.9000 }
+    }
+    scale_curve = {
+        { x = 0.0 y = 0.85 }
+        { x = 0.74  y = 0.85 }
+    }
+    scale_fuzziness_curve = {
+        { x = 1.000000 y = 0.100000 }
+    }
+}
+jungle_generator_medium = {
+	clone = jungle_generator_low
+    layer = "vegetation_medium"
+    max_density = @[jungle_density_base * density_factor_medium]
+}
+jungle_generator_high = {
+	clone = jungle_generator_low
+    layer = "vegetation_high"
+    max_density = @[jungle_density_base * density_factor_high]
+}
+
+
+# Grass
+@grass_density_base = 0.8
+grass_generator_low = {
+    layer = "vegetation_low"
+    max_density = @[grass_density_base * density_factor_low]
+	
+    mask = "grassmesh_mask"
+    meshes = {
+        "vegetation_grass_test_mesh" = 1.00000
+        "vegetation_grass_1_mesh" = 0.0100
+        "vegetation_grass_2_mesh" = 0.0100
+
+    }
+    density_curve = {
+        { x = 0.000000 y = 0.570000 }
+        { x = 0.570000 y = 0.740000 }
+    }
+    scale_curve = {
+        { x = 0.000000 y = 0.798000 }
+        { x = 1.000000 y = 0.883500 }
+    }
+    scale_fuzziness_curve = {
+        { x = 1.000000 y = 0.500000 }
+    }
+}
+grass_generator_medium = {
+	clone = grass_generator_low
+	layer = "vegetation_medium"
+    max_density = @[grass_density_base * density_factor_medium]
+}
+grass_generator_high = {
+	clone = grass_generator_low
+	layer = "vegetation_high"
+    max_density = @[grass_density_base * density_factor_high]
+}
+
+@reeds_density_base = 0.4
+reeds_generator_low = {
+    layer = "vegetation_low"
+    max_density = @[reeds_density_base * density_factor_low]
+	
+    mask = "reeds_mask"
+    meshes = {
+        "vegetation_reeds_a_mesh" = 1.00000
+        "reeds_diorama_mesh" = 0.500
+
+    }
+    density_curve = {
+        { x = 0.000000 y = 0.030000 }
+        { x = 0.570000 y = 0.070000 }
+    }
+    scale_curve = {
+        { x = 0.000000 y = 1.100 }
+        { x = 1.000000 y = 1.2000 }
+    }
+    scale_fuzziness_curve = {
+        { x = 1.000000 y = 0.100000 }
+    }
+}
+reeds_generator_medium = {
+	clone = reeds_generator_low
+	layer = "vegetation_medium"
+    max_density = @[reeds_density_base * density_factor_medium]
+}
+reeds_generator_high = {
+	clone = reeds_generator_low
+	layer = "vegetation_high"
+    max_density = @[reeds_density_base * density_factor_high]
+}
+
+#TEST
+
+Grass
+@decal_density_base = 0.0005
+decal_generator_low = {
+    layer = "vegetation_low"
+    max_density = @[grass_density_base * density_factor_low]
+	
+    mask = "decals_mask"
+    meshes = {
+         "decal_rock_group_01_a_mesh" = 1.00000
+        "decal_rock_group_01_b_mesh" = 1.00000
+        "decal_rock_group_01_c_mesh" = 1.00000
+        "decal_rock_group_01_d_mesh" = 1.00000
+        "decal_rock_group_01_e_mesh" = 1.00000
+
+
+    }
+    density_curve = {
+        { x = 0.000000 y = 0.050000 }
+        { x = 1.00000 y = 0.050000 }
+    }
+    scale_curve = {
+        { x = 0.900000 y = 0.5 }
+        { x = 1.000000 y = 0.7 }
+    }
+    scale_fuzziness_curve = {
+        { x = 1.000000 y = 0.100000 }
+    }
+}
+grass_generator_medium = {
+	clone = grass_generator_low
+	layer = "vegetation_medium"
+    max_density = @[grass_density_base * density_factor_medium]
+}
+grass_generator_high = {
+	clone = grass_generator_low
+	layer = "vegetation_high"
+    max_density = @[grass_density_base * density_factor_high]
+}
+
+
+# Decals
+@dirt_grass_density_base = 1.0005
+dirt_generator_low = {
+    layer = "vegetation_low"
+    max_density = @[dirt_grass_density_base * density_factor_low]
+	
+    mask = "dirt_mask"
+    meshes = {
+         "decal_dirt_patch_01_b_mesh" = 1.00
+        # "decal_dirt_patch_01_c_mesh" = 1.00
+         "decal_dirt_patch_01_d_mesh" = 1.00
+         "decal_dirt_patch_01_e_mesh" = 1.00
+
+    }
+    density_curve = {
+        { x = 0.000000 y = 0.290000 }
+        { x = 1.00000 y = 0.320000 }
+    }
+    scale_curve = {
+        { x = 0.900000 y = 2.9 }
+        { x = 1.000000 y = 3.0 }
+    }
+    scale_fuzziness_curve = {
+        { x = 1.000000 y = 0.100000 }
+    }
+}
+grass_generator_medium = {
+	clone = dirt_generator_low
+	layer = "vegetation_medium"
+    max_density = @[dirt_grass_density_base * density_factor_medium]
+}
+grass_generator_high = {
+	clone = dirt_generator_low
+	layer = "vegetation_high"
+    max_density = @[dirt_grass_density_base * density_factor_high]
+}
+
+# @rocks_density_base = 1.0005
+# rock_generator_low = {
+#     layer = "vegetation_low"
+#     max_density = @[rocks_density_base * density_factor_low]
+	
+#     mask = "rock_mask"
+#     meshes = {
+#         "decal_rock_cluster_01_a_mesh" = 1.00
+#          "decal_rock_cluster_01_b_mesh" = 1.00
+#          "decal_rock_cluster_01_c_mesh" = 1.00
+#          "decal_rock_cluster_01_d_mesh" = 1.00
+#          "decal_rock_cluster_01_e_mesh" = 1.00
+
+#     }
+#     density_curve = {
+#         { x = 0.000000 y = 0.190000 }
+#         { x = 1.00000 y = 0.20000 }
+#     }
+#     scale_curve = {
+#         { x = 0.900000 y = 1.4 }
+#         { x = 1.000000 y = 1.5 }
+#     }
+#     scale_fuzziness_curve = {
+#         { x = 1.000000 y = 0.100000 }
+#     }
+# }
+# rock_generator_medium = {
+# 	clone = rock_generator_low
+# 	layer = "vegetation_medium"
+#     max_density = @[rocks_density_base * density_factor_medium]
+# }
+# rock_generator_high = {
+# 	clone = rock_generator_low
+# 	layer = "vegetation_high"
+#     max_density = @[rocks_density_base * density_factor_high]
+# }

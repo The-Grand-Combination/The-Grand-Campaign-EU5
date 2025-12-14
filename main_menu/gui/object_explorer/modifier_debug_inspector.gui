@@ -1,0 +1,30 @@
+vbox = {
+	name = "modifier_debug_inspector_plugin"
+	layoutpolicy_horizontal = preferred
+	layoutpolicy_vertical = expanding
+
+	widget = { size = {0 2 } }
+
+	editor_textbox = {
+		layoutpolicy_vertical = fixed
+		layoutpolicy_horizontal = preferred
+		size = { 100 20 }
+		raw_text = "#BOLD Modifiers:#!"
+	}
+
+	Scrollbox = {
+		name = "scrollable_area"
+		using = layoutpolicy_expanding
+		size = { 100 100 }
+		blockoverride "scrollbox_content" {
+			vbox = {
+				text_single = {
+					layoutpolicy_horizontal = expanding
+					align = left
+					default_format = "#color_white"
+					text = "[ModifierDebugInspectorPlugin.GetScopeData.GetModifiers]"
+				}
+			}
+		}
+	}
+}

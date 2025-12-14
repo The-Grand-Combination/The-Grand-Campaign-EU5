@@ -1,0 +1,236 @@
+types LabelTypes
+{
+	# Normal, single-line text.
+	# Use "default_format =" to specify text color, as seen in textformatting.gui
+	type text_single = textbox {
+		using = text_single_template
+		using = text_default_text_template
+		elide = right
+	}
+
+	# Normal,  multi-line text.
+	type text_multi = textbox {
+		using = text_multi_template
+		using = text_default_text_template
+		elide = right
+	}
+
+	### TEXT LABELS
+
+	## COLOR = BONE
+	# type text_label_solid_bone = text_single {
+	# 	using = text_single_template
+	# 	using = text_default_text_template
+	# 	default_format = "#color_black"
+	# 	align = center
+	# 	elide = right
+	# 	margin_bottom = 5
+
+	# 	background = {
+	# 		using = text_background_solid_common_template
+	# 		using = text_background_solid_bone_texture
+	# 	}
+	# }
+
+	# type text_label_center_bone = text_single {
+	# 	using = text_single_template
+	# 	using = text_default_text_template
+	# 	default_format = "#color_black"
+	# 	align = center
+	# 	elide = right
+	# 	margin_bottom = 5
+
+	# 	background = {
+	# 		using = text_background_solid_common_template
+	# 		using = text_background_solid_bone_texture
+
+	# 		modify_texture = {
+	# 			using = mask_fade_horizontal_middle_texture
+	# 		}
+	# 	}
+	# }
+
+	# type text_label_left_bone = text_single {
+	# 	using = text_single_template
+	# 	using = text_default_text_template
+	# 	default_format = "#color_black"
+	# 	align = left
+	# 	elide = right
+	# 	margin_bottom = 5
+
+	# 	background = {
+	# 		using = text_background_solid_common_template
+	# 		using = text_background_solid_bone_texture
+
+	# 		modify_texture = {
+	# 			using = mask_fade_horizontal_right_texture
+	# 		}
+	# 	}
+	# }
+
+	# type text_label_right_bone = text_single {
+	# 	using = text_single_template
+	# 	using = text_default_text_template
+	# 	default_format = "#color_black"
+	# 	align = right
+	# 	elide = right
+	# 	margin_bottom = 5
+
+	# 	background = {
+	# 		using = text_background_solid_common_template
+	# 		using = text_background_solid_bone_texture
+
+	# 		modify_texture = {
+	# 			using = mask_fade_horizontal_left_texture
+	# 		}
+	# 	}
+	# }
+
+	## COLOR = LIGHT BLUE
+
+	# type text_label_solid_light_blue = text_single {
+	# 	using = text_single_template
+	# 	using = text_default_text_template
+	# 	default_format = "#color_white"
+	# 	align = center
+	# 	elide = right
+	# 	margin_bottom = 5
+
+	# 	background = {
+	# 		using = text_background_solid_common_template
+	# 		using = text_background_solid_light_blue_texture
+	# 	}
+	# }
+
+	# type text_label_center_light_blue = text_single {
+	# 	using = text_single_template
+	# 	using = text_default_text_template
+	# 	default_format = "#color_white"
+	# 	align = center
+	# 	margin_bottom = 5
+
+	# 	background = {
+	# 		margin_left = 20
+	# 		margin_right = 20
+	# 		alpha = 1
+
+	# 		using = text_background_solid_light_blue_texture
+	# 		modify_texture = {
+	# 			using = mask_fade_horizontal_middle_texture
+	# 		}
+	# 	}
+	# }
+
+	# type text_label_left_light_blue = textbox {
+	# 	using = text_single_template
+	# 	using = text_default_text_template
+	# 	default_format = "#color_white"
+	# 	align = left
+	# 	elide = right
+	# 	margin_bottom = 5
+
+	# 	background = {
+	# 		margin_left = 8
+	# 		margin_right = 0
+	# 		alpha = 1
+
+	# 		using = text_background_solid_light_blue_texture
+	# 		modify_texture = {
+	# 			using = mask_fade_horizontal_right_texture
+	# 		}
+	# 	}
+	# }
+
+	# type text_label_right_light_blue = text_single {
+	# 	using = text_single_template
+	# 	using = text_default_text_template
+	# 	default_format = "#color_white"
+	# 	align = right
+	# 	elide = right
+	# 	margin_bottom = 5
+
+	# 	background = {
+	# 		margin_left = 0
+	# 		margin_right = 50
+	# 		alpha = 1
+
+	# 		using = text_background_solid_light_blue_texture
+	# 		modify_texture = {
+	# 			using = mask_fade_horizontal_left_texture
+	# 		}
+	# 	}
+	# }
+
+	## COLOR = DARK BLUE
+
+	# type text_label_solid_dark_blue = text_single {
+	# 	using = text_single_template
+	# 	using = text_default_text_template
+	# 	default_format = "#color_white"
+	# 	align = center
+	# 	elide = right
+	# 	margin_bottom = 5
+
+	# 	background = {
+	# 		using = text_background_solid_common_template
+	# 		using = text_background_solid_dark_blue_texture
+	# 	}
+	# }
+
+	# type text_label_center_dark_blue = text_single {
+	# 	using = text_single_template
+	# 	using = text_default_text_template
+	# 	default_format = "#color_white"
+	# 	align = center
+	# 	margin_bottom = 5
+
+	# 	background = {
+	# 		using = text_background_solid_common_template
+	# 		using = text_background_solid_dark_blue_texture
+
+	# 		modify_texture = {
+	# 			using = mask_fade_horizontal_middle_texture
+	# 		}
+	# 	}
+	# }
+
+	# type text_label_left_dark_blue = text_single {
+	# 	using = text_single_template
+	# 	using = text_default_text_template
+	# 	default_format = "#color_white"
+	# 	align = left
+	# 	elide = right
+	# 	margin_bottom = 5
+
+	# 	background = {
+	# 		margin_left = 50
+	# 		margin_right = 0
+	# 		alpha = 1
+
+	# 		using = text_background_solid_dark_blue_texture
+	# 		modify_texture = {
+	# 			using = mask_fade_horizontal_right_texture
+	# 		}
+	# 	}
+	# }
+
+	# type text_label_right_dark_blue = text_single {
+	# 	using = text_single_template
+	# 	using = text_default_text_template
+	# 	default_format = "#color_white"
+	# 	align = right
+	# 	elide = right
+	# 	margin_bottom = 5
+
+	# 	background = {
+	# 		margin_left = 0
+	# 		margin_right = 50
+	# 		alpha = 1
+
+	# 		using = text_background_solid_dark_blue_texture
+	# 		modify_texture = {
+	# 			using = mask_fade_horizontal_left_texture
+	# 		}
+	# 	}
+	# }
+} # END OF "LabelTypes"

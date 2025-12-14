@@ -1,0 +1,31 @@
+﻿sound_toll_exemption = {
+	cost = {
+		add = {
+			desc = "DIPLOREASON_BASE"
+			value = 50
+		}
+	}
+
+	potential = {
+		scope:loser = {
+			has_sound_tolls = yes
+		}
+	}
+	allow = {
+	}
+
+	effect = {
+		scope:winner = {
+			create_relation = { 
+				first = scope:loser
+				second = scope:winner
+				type = relation_type:sound_toll_exemption
+			}
+		}
+	}
+
+	ai_desire = {
+		value = 10
+	}
+}
+

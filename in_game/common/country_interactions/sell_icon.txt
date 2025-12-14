@@ -1,0 +1,146 @@
+﻿sell_icon = {
+	category = CATEGORY_ECONOMY_ACTIONS
+	type = diplomacy
+
+	diplomatic_cost = sell_icon_cost
+	
+	price = price:sell_icon
+	
+	#scope:actor is the country doing the action, scope:target is the work of art
+	price_modifier = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			add = {
+				value = scope:target.art_quality
+			}
+		}
+	}
+	
+	payer = scope:recipient
+	payee = scope:actor
+	
+	potential = {
+		scope:actor = {
+			#have we got an icon to sell?
+			any_owned_location = {
+				any_work_of_art_in_location = {
+					work_of_art_type = work_of_art_type:icon
+				}
+			}
+		}
+	}
+
+	allow = {
+	}
+	
+	select_trigger = {
+		looking_for_a = country
+		target_flag = recipient
+		interaction_source_list = {
+			religion:orthodox = {
+				every_country_in_religion = {
+					add_to_list = source
+				}
+			}
+		}
+		name = "choose_country"
+		column = {
+			data = name
+		}
+		visible = {
+		}
+        enabled = {
+			religion = religion:orthodox
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = work_of_art
+		source = actor
+		cache_targets = yes
+		target_flag = target
+		name = "select_an_icon_to_sell"
+		none_available_msg_key = "sell_icon_no_works_of_art"
+		column = {
+			data = name
+		}
+		visible = {
+			work_of_art_type = work_of_art_type:icon
+		}
+	}
+
+	ai_will_do = {
+		# low religious influence
+		add = {
+			value = scope:actor.religious_influence
+			subtract = 50
+			multiply = -1
+		}
+		add = {
+			desc = "game_concept_rival"
+			if = {
+				limit = {	
+					scope:recipient = { 
+						is_rival_of = scope:actor 
+					}
+				}
+				value = -100
+			}
+		}
+		if = {
+			limit = {
+				scope:actor = {
+					is_enemy_of = scope:recipient
+				}
+			}
+			add = {
+				desc = "game_concept_enemy"
+				value = -100
+			}
+		}
+		add = {
+			desc = "DIPLOMATIC_REPUTATION"
+			value = {
+				value = scope:recipient.modifier:diplomatic_reputation
+				multiply = 3
+			}
+		}
+		add = {
+			desc = "OUR_OPINION_TOOLTIP"
+			value = "scope:actor.opinion(scope:recipient)"
+		}
+		add = {
+			desc = "THEIR_OPINION_TOOLTIP"
+			value = "scope:recipient.opinion(scope:actor)"
+		}
+	}
+	
+	effect = {
+		scope:target = {
+			move_art = scope:recipient.capital
+		}
+	}
+
+	diplo_chance = {
+		base = -5
+	}
+
+	#
+	# Extra calculation offers
+	#
+	accept = {
+		add = {
+			desc = "game_concept_rival"
+			if = {
+				limit = {	
+					scope:recipient = { 
+						is_rival_of = scope:actor 
+					}
+				}
+				value = -100
+			}
+		}
+	}
+}

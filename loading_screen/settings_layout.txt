@@ -1,0 +1,251 @@
+page = {
+	name = "SETTINGS_PAGE_GRAPHICS"
+	category = {
+		category = "Graphics" # Must match category name in code
+		name = "SETTINGS_CATEGORY_SCREEN"
+		order = { 
+			"renderer"
+			"display_mode"
+			"resolution"
+			"vsync"
+			"display_index"
+			"setting_framerate_cap"
+			"maximize_tick_speed"
+		}
+	}
+	category = {
+		category = "Graphics" # Must match category name in code
+		name = "SETTINGS_CATEGORY_QUALITY"
+		order = { 
+			"quality"
+			"mapobject_quality"
+			"texture_quality"
+			"mesh_lod_bias"
+			"mesh_lod_fade"
+			"anti_aliasing"
+			"anisotropic_filtering"
+			"bloom_quality"
+			"ssao"
+			"depthoffield"
+			"refraction_quality"
+			"ssr_quality"
+			"blur_quality"
+			"low_quality_shaders"
+			"shadowmap_resolution"
+			"texture_streaming"
+			"gui_texture_streaming"
+			"render_scale"
+			"animated_portraits"
+			"single_unit_armies"
+			"unit_coa_resolution_size"
+			"portraits_ssao"
+			"portrait_multi_sampling"
+			"upscale"
+			"upscale_quality"
+		}
+	}
+	category = {
+		category = "Terrain" # Must match category name in code
+		name = "SETTINGS_CATEGORY_QUALITY"
+		order = {
+			"triplanar_uv_quality"
+			"3d_terrain_disable"
+		}
+	}
+	category = {
+		category = "Graphics" # Must match category name in code
+		name = "SETTINGS_CATEGORY_QUALITY"
+		order = {
+			"enable_particles"
+		}
+	}
+}
+page = {
+	name = "SETTINGS_PAGE_MAP"
+	category = {
+		category = "Map" # Must match category name in code
+		name = "SETTINGS_CATEGORY_MAP"
+		order = { 
+			"province_mapname_mode"
+			"fill_in_impassable_terrain"
+			"flatmap_mode"
+			"flatmap_water_color"
+			"camera_rotation_reset"
+			"location_name_language"
+			"weather_graphics_effects"
+			"city_graphics_tile_size"
+		}
+	}
+	
+	category = {
+		category = "Map" # Must match category name in code
+		name = "SETTINGS_CATEGORY_COUNTRIES"
+		order = {
+			"subjects_use_overlord_name"
+			"subjects_use_overlord_color"
+			"io_show_as_overlords"
+			"country_names"
+		}
+	}
+}
+page = {
+	name = "SETTINGS_PAGE_GAME"
+	category = {
+		category = "System" # Must match category name in code
+		name = "SETTINGS_CATEGORY_SYSTEM"
+		order = {
+			"language"
+			"clock_type"
+			"editor"
+			"telemetry_consent"
+		}
+	}
+	category = {
+		category = "Game" # Must match category name in code
+		name = "SETTINGS_CATEGORY_GAME"
+		order = {
+			"skip_welcome_new_game"
+			"autosave"
+			"debug_saves"
+			"show_hints"
+			"monthly_autopause"
+			"game_speed_on_war"
+			"game_speed_on_unit_select"
+			"mp_chat_position"
+			"mp_chat_position_lobby"
+		}
+	}
+	
+	category = {
+		category = "Game" # Must match category name in code
+		name = "SETTINGS_CATEGORY_MULTIPLAYER"
+		order = {
+			file_transfer_speed
+		}
+	}
+
+	
+	category = {
+		category = "Game" # Must match category name in code
+		name = "SETTINGS_CATEGORY_MULTIPLAYER"
+		order = {
+			max_ticks_ahead
+		}
+	}
+}
+page = {
+	name = "SETTINGS_PAGE_CONTROLS"
+	category = {
+		category = "System" # Must match category name in code
+		name = "SETTINGS_CATEGORY_CONTROLS"
+		order = {
+			"scroll_speed"
+			"camera_rotation_speed"
+			"zoom_speed"
+			"screen_edge_scroll_mode"
+			"mouse_cursor_zoom_mode"
+			"hide_gamecontroller_cursor"
+
+		}
+	}
+}
+page = {
+	id = settings_menu_input_bindings
+	name = "SETTINGS_CATEGORY_INPUT_BINDINGS"
+	category = {
+		category = "System" # Must match category name in code
+		name = "SETTINGS_CATEGORY_INPUT_BINDINGS"
+		order = {
+			"common"
+			"pause_menu"
+			"window_tab"
+			"map"
+			"map_modes"
+		}
+	}
+}
+page = {
+	name = "SETTINGS_PAGE_INTERFACE"
+	category = {
+		category = "GUI" # Must match category name in code
+		name = "SETTINGS_CATEGORY_GUI"
+		order = {
+			"scale"
+		}
+	}
+	category = {
+		category = "Accessibility" # Must match category name in code
+		name = "SETTINGS_CATEGORY_ACCESSIBILITY"
+		order = {
+			"color_blind_mode"
+		}
+	}
+	category = {
+		category = "Interface" # Must match category name in code
+		name = "SETTINGS_CATEGORY_CONFIRM"
+		order = {
+			"confirm"
+		}
+	}
+	category = {
+		category = "Interface" # Must match category name in code
+		name = "SETTINGS_CATEGORY_TOOLTIPS"
+		order = {
+			"tooltip"
+			"tooltip_delay"
+			"tooltip_lock_time"
+			"tooltip_show_extra_info_delay_time"
+			"tooltip_unlock_time"
+			"tooltip_open_time_when_another_locked"
+			"map_tooltips"
+			"map_tooltip_delay"
+		}
+	}
+
+	category = {
+		category = "Interface" # Must match category name in code
+		name = "SETTINGS_CATEGORY_INPUT_LOCK"
+		order = {
+			"event_window_input_lock_time"
+			"popup_dialog_input_lock_time"
+		}
+	}
+
+	category = {
+		category = "Interface" # Must match category name in code
+		name = "SETTINGS_CATEGORY_DYNAMIC_NAMES"
+		order = {
+			"estates_name_language"
+			"parliament_name_language"
+		}
+	}
+}
+page = {
+	name = "SETTINGS_PAGE_AUDIO"
+	category = {
+		category = "Audio" # Must match category name in code
+		name = "SETTINGS_CATEGORY_AUDIO"
+		order = {
+			"volume.bus:/"
+
+			"volume.vca:/MUSIC"
+
+			"volume.vca:/UI"
+			"volume.vca:/UI_CLOCK"
+
+			"volume.vca:/SFX"
+			"volume.vca:/AMBIENT_MAP"
+			"volume.vca:/ARMIES"
+			"volume.vca:/AMBIENT_MAP_BACKGROUND"
+			"volume.vca:/AMBIENT_OBJECTS"
+
+			"volume.vca:/AMBIENT_PANEL"
+
+			########
+			"volume.vca:/MUSIC_DENSITY"
+			########
+			"audio_device_profile"
+		}
+	}
+}
+

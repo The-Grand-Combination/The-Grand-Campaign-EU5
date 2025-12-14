@@ -1,0 +1,38 @@
+[
+	{
+	"Name": "vsync",
+	"Category": "Graphics",
+	"TriggerValue": true,
+	"RelationActions": [
+	  {
+		"Name": "setting_framerate_cap",
+		"Category": "Graphics",
+		"ActionType": "Disable"
+	  },
+	  {
+		"Name": "setting_framerate_cap",
+		"Category": "Graphics",
+		"ActionType": "ForceSet",
+		"Value": "off"
+	  }
+	]
+	},
+	{
+	"Name": "upscale",
+	"Category": "Graphics",
+	"TriggerValue": "dlss",
+	"RelationActions": [
+	  {
+		"Name": "anti_aliasing",
+		"Category": "Graphics",
+		"ActionType": "Disable"
+	  },
+	  {
+		"Name": "anti_aliasing",
+		"Category": "Graphics",
+		"ActionType": "ForceSet",
+		"Value": "DISABLED"
+	  }
+	]
+	}
+]

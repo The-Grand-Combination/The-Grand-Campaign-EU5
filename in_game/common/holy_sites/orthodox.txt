@@ -1,0 +1,48 @@
+﻿constantinople_episcopal_see = {
+    location = constantinople
+    type = episcopal_see
+    importance = 5
+	religions = { orthodox miaphysite }
+}
+
+antioch_episcopal_see = {
+    location = antioch
+    type = episcopal_see
+    importance = 3
+	religions = { orthodox miaphysite }
+}
+
+jerusalem_episcopal_see_orthodox = {
+    location = jerusalem
+    type = episcopal_see
+    importance = 5
+	religions = { orthodox miaphysite }
+}
+
+alexandria_episcopal_see = {
+    location = alexandria
+    type = episcopal_see
+    importance = 3
+	religions = { orthodox miaphysite }
+}
+
+rome_episcopal_see = {
+    location = rome
+    type = episcopal_see
+    importance = 3
+	religions = { orthodox miaphysite }
+}
+
+mount_athos = {
+    location = mount_athos
+    type = orthodox_church_holy_site
+    importance = 2
+	religions = { orthodox }
+}
+
+saint_katrine_monastery = { #https://orthodoxwiki.org/St._Catherine%27s_Monastery_(Sinai)
+    location = saint_katrine
+    type = orthodox_church_holy_site
+    importance = 2
+	religions = { orthodox }
+}

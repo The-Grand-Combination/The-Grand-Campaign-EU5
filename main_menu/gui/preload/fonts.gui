@@ -1,0 +1,75 @@
+
+######################################################
+################### FONT TEMPLATES ###################
+######################################################
+
+# Templates that deal with text formatting and positioning.
+
+## Size
+
+template Font_Size_Very_Small {
+	font = SimpleFont
+	fontsize = 12
+	size = { 0 23 }
+}
+
+template Font_Size_Small {
+	fontsize = 15
+	size = { 0 23 }
+}
+
+template Font_Size_Medium {
+	fontsize = 18
+	size = { 0 26 }
+}
+
+# template Font_Size_Medium_No_Resize
+# {
+# 	fontsize = 18
+# 	size = { 0 26 }
+# 	fontsize_min = 16
+# 	autoresize = no
+# }
+
+template Font_Size_Big {
+	fontsize = 23
+	size = { 0 33 }
+}
+
+template Font_Size_Small_No_Resize {
+	autoresize = no
+	fontsize_min = 14
+}
+
+## Typeface
+
+template Font_Type_Standard {
+	font = StandardGameFont
+}
+
+# template Font_Type_Simple
+# {
+# 	font = SimpleFont
+# }
+
+template Font_Type_Headers {
+	font = HeadersFont
+}
+
+template Font_Type_Flavor {
+	font = FlavorFont
+}
+
+# template Font_Type_Script {
+# 	font = ConsoleFont
+# }
+
+# template Font_Type_Debug
+# {
+# 	font = ConsoleFont
+# }
+
+template Font_Type_Console {
+	fontsize = 14
+	font = ConsoleFont
+}

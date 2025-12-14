@@ -1,0 +1,35 @@
+caesar_create_social_profile_window = {
+	blockoverride "social_window" { using = social_window_template }
+	blockoverride "social_text_style" { using = social_text_style_template }
+	blockoverride "social_button_style" { using = social_button_style_template }
+	blockoverride "social_button_size" { using = social_button_size_template }
+	blockoverride "social_generic_entry" { using = social_generic_entry_template }
+	blockoverride "social_textbox_entry" { using = social_textbox_entry_template }
+	blockoverride "social_dropdown_enum" { using = dropwdown_social_enum_template }
+	blockoverride "social_load_indicator" { using = social_load_indicator_template }
+	blockoverride "create_social_profile_block_properties" {}
+
+	blockoverride "create_social_profile_vbox_properties" {
+		resizeparent = yes
+		margin = { 20 10 }
+		spacing = 10
+	}
+
+	blockoverride "textbox_error" {
+		autoresize = yes
+	}
+}
+
+types CaesarSDK
+{
+	type caesar_create_social_profile_window = window {
+		name = "create_social_profile_window"
+		visible = no
+        using = caesar_sdk_modal_template
+
+        create_social_profile_window = {
+            name = "create_social_profile_window_inner"
+			visible = yes
+        }
+	}
+}

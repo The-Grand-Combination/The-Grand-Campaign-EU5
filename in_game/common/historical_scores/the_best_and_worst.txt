@@ -1,0 +1,104 @@
+﻿hs_napoleon = {
+	tag = FRA_revolutionary_republic
+	score = 40000
+}
+
+hs_suleyman = {
+	tag = TUR
+	score = 38000
+}
+
+hs_charles = {
+	tag = HRE
+	score = 36000
+}
+
+hs_fredrik_the_great = {
+	tag = PRU
+	score = 34000
+}
+
+hs_pius_v = {
+	tag = PAP
+	score = 32000
+}
+
+
+hs_mansa_musa = {
+	tag = MAL
+	score = 30000
+}
+
+hs_jan_sobieski = {
+	tag = PLC
+	score = 28000
+}
+
+hs_gustavus_adolphus = {
+	tag = SWE
+	score = 26000
+}
+
+hs_peter_the_great = {
+	tag = RUS
+	score = 24000
+}
+
+hs_elizabeth_i = {
+	tag = ENG_quarterly_france
+	score = 22000
+}
+hs_tamerlane = {
+	tag = TIM
+	score = 20000
+}
+
+hs_tokugawa = {
+	tag = JAP_tokugawa
+	score = 18000
+}
+
+hs_aurangzeb = {
+	tag = MUG
+	score = 16000
+}
+
+hs_willem_of_orange = {
+	tag = NED
+	score = 14000
+}
+
+hs_pachacuti = {
+	tag = INC
+	score = 12000
+}
+
+hs_hiawatha = {
+	tag = IRO
+	score = 10000
+}
+
+hs_christian_ii = {
+	tag = DAN
+	score = 8000
+}
+
+hs_may_stuart = {
+	tag = SCO
+	score = 6000
+}
+
+hs_charles_the_bold = {
+	tag = BUR_Valois
+	score = 4000
+}
+
+tag_montezuma = {
+	tag = TNC
+	score = 2000
+}
+
+hs_enrique_de_impotent = {
+	tag = CAS_castile_leon
+	score = 0
+}

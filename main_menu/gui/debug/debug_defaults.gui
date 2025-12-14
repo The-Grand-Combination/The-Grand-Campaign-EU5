@@ -1,0 +1,24 @@
+# types DebugDefaults
+# {
+# 	type debug_scrollarea = scrollarea {
+# 		scissor = yes
+# 		scrollbaralign_vertical = right
+# 		scrollbaralign_horizontal = bottom
+
+# 		#using = *add tooltip template
+# 	}
+# } # END OF types "DebugDefaults"
+
+
+### TOOLTIP PLACEMENT TEMPLATES
+
+## Straight Above
+# Use if it looks nicer
+# template debug_tooltip_above
+# {
+# 	tooltip_type = custom
+# 	tooltip_parentanchor = bottom|left
+# 	tooltip_widgetanchor = top|left
+# 	tooltip_verticalbehavior = mirror
+# 	tooltip_horizontalbehavior = mirror
+# }

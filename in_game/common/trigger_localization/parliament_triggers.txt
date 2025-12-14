@@ -1,0 +1,11 @@
+﻿can_be_bribe = {
+	none = CAN_BE_BRIBE_TRIGGER
+	global = CAN_BE_BRIBE_TRIGGER
+	third = THIRD_CAN_BE_BRIBE_TRIGGER
+}
+
+agenda_for_estate_type = {
+	none = AGENDA_FOR_ESTATE_TYPE_TRIGGER
+	global = AGENDA_FOR_ESTATE_TYPE_TRIGGER
+	third = THIRD_AGENDA_FOR_ESTATE_TYPE_TRIGGER
+}

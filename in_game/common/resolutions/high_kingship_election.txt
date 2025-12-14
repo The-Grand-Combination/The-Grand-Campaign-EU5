@@ -1,0 +1,393 @@
+﻿high_kingship_election = {
+	loc = election
+
+	potential = {
+	}
+
+	allow = {
+	}
+
+	#if it's live, then we only want to test this monthly
+	ai_tick = monthly
+
+	is_live = {
+		scope:recipient = {
+			international_organization_has_leader = no
+		}
+	}
+
+	can_vote = {
+		scope:actor = {
+			has_ruler = yes
+			is_member_of_international_organization = scope:recipient
+			ruler ?= {
+				NOT = { modifier:character_blocked_from_high_kingship = yes }
+			}
+		}
+	}
+
+	votes = {
+		scope:actor = {
+			# more powerful lords are more convincing, so they are
+			add = {
+				desc = "[great_power_score|e]"
+				value = scope:actor.great_power_score
+				multiply = 0.1 # just so its a bit more readable in the UI
+			}
+
+			if = {
+				limit = {
+					scope:actor = {
+						ruler ?= { has_character_modifier = overthrew_high_king }
+					}				
+				}
+				multiply = {
+					desc = "[ShowModifier('character_overthrew_high_king')]"
+					value = 2
+				}
+			}
+		}
+	}
+
+	requires_explicit_votes = no
+
+	total_votes_needed = {
+		add = {
+			value = scope:total_votes_available
+			multiply = 0.5
+		}
+	}
+
+	should_finalize_vote = {
+		custom_tooltip = {
+			text = OVER_HALF_OF_VOTES
+			scope:recipient = {
+				not = { exists = leader_country }
+			}
+			scope:highest_vote >= scope:total_votes_needed
+		}
+	}
+	
+	select_trigger = {
+		looking_for_a = international_organization
+		target_flag = recipient
+		name = "choose_international_organization"
+		column = {
+			data = name
+		}
+		visible = {
+			international_organization_type = international_organization_type:high_kingship
+		}
+		enabled = {
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = country
+		source = recipient
+		target_flag = vote
+		allow_self = yes
+		name = "election_select_country"
+		none_available_msg_key = "election_select_no_countries"
+		default_sort = great_power_score
+		column = {
+			data = name
+		}
+		column = {
+			data = great_power_score
+		}
+		visible = {
+			can_lead_international_organization = scope:recipient
+		}
+		enabled = {
+			OR = {
+				NOT = { exists = scope:actor }
+				NOR = {
+					is_rival_of = scope:actor
+					is_enemy_of = scope:actor
+					is_at_war_with = scope:actor
+				}
+			}
+		}
+	}
+	
+	effect = {
+		if = {
+			limit = {
+				exists = scope:vote
+			}
+			scope:recipient = {
+				set_leader_country = scope:vote
+			}
+		}
+	}
+
+	ai_will_do = {
+		if = {
+			limit = {
+				scope:recipient = { leader_country ?= scope:actor }
+			}
+			scope:actor.heir ?= { save_temporary_scope_as = potential_high_king }
+		}
+		else = {
+			scope:actor.ruler ?= { save_temporary_scope_as = potential_high_king }
+		}
+
+		scope:vote = {
+			add = {
+				desc = "[great_power_score|e]"
+				value = great_power_score
+			}
+			if = {
+				limit = {
+					this = scope:actor 
+				}
+				add = {
+					desc = "LEADERSHIP_VOTE_FOR_SELF"
+					value = 300
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						scope:recipient = { leader_country ?= scope:actor }
+					}
+					add = {
+						desc = "CURRENT_HIGH_KING"
+						value = -10000
+					}
+				}
+				add = {
+					if = {
+						limit = {	
+							is_allied_with = { target = scope:actor }
+						}
+						desc = "game_concept_alliance"
+						value = 100
+					}
+				}
+				add = {
+					if = {
+						limit = { any_rival = { is_rival_of = scope:actor } }
+						desc = "LEADERSHIP_RIVAL_OF_RIVAL"
+						value = 100
+					}
+					else_if = {
+						limit = { any_rival = { is_enemy_of = scope:actor } }
+						desc = "LEADERSHIP_RIVAL_OF_ENEMY"
+						value = 50
+					}
+					else_if = {
+						limit = { any_enemy = { is_rival_of = scope:actor } }
+						desc = "LEADERSHIP_ENEMY_OF_RIVAL"
+						value = 50
+					}
+					else_if = {
+						limit = { any_enemy = { is_enemy_of = scope:actor } }
+						desc = "LEADERSHIP_ENEMY_OF_ENEMY"
+						value = 50
+					}
+				}
+				add = {
+					if = {
+						limit = {	
+							capital.area = scope:actor.capital.area
+						}
+						desc = "LEADERSHIP_VOTE_SAME_AREA"
+						value = 75
+					}
+				}
+				add = {
+					if = {
+						limit = {	
+							culture != scope:actor.culture
+						}
+						desc = "[primary_culture|e]"
+						value = -25
+					}
+				}
+				add = {
+					if = {
+						limit = {	
+							culture.language != scope:actor.culture.language
+						}
+						desc = "[common_language|e]"
+						value = -25
+					}
+				}
+				add = {
+					if = {
+						limit = {	
+							religion != scope:actor.religion
+						}
+						desc = "[religion|e]"
+						value = -100
+					}
+				}
+				add = {
+					if = {
+						limit = {	
+							NOT = { this = scope:actor }
+						}
+						if = { 
+							limit = {
+								scope:actor = { this_opinion_of_prev < 100 }
+							}
+							desc = "LEADERSHIP_VOTE_NEGATIVE_OPINION"
+							value = -200
+						}
+						else = {
+							desc = "[opinion|e]"
+							scope:actor = {
+								value = this_opinion_of_prev
+							}
+						}
+					}
+				}
+				add = {
+					if = {
+						limit = {
+							scope:actor = { 
+								is_subject = yes
+								any_overlord_or_above =  {
+									scope:vote = this
+								}
+							}
+						}
+						desc = "[subject_loyalty|e]"
+						value = 1000
+					}
+				}
+
+			}
+			add = {
+				if = {
+					limit = {	
+						country_rank = country_rank:rank_empire
+					}
+					desc = "[ShowCountryRankName('rank_empire')]"
+					value = 100
+				}
+			}
+			add = {
+				if = {
+					limit = {	
+						country_rank = country_rank:rank_kingdom
+					}
+					desc = "[ShowCountryRankName('rank_kingdom')]"
+					value = 50
+				}
+			}
+			add = {
+				if = {
+					limit = {	
+						country_rank = country_rank:rank_duchy
+					}
+					
+					desc = "[ShowCountryRankName('rank_duchy')]"
+					value = 25
+				}
+			}
+			add = {
+				if = {
+					limit = {
+						scope:vote = { 
+							has_heir = no
+						}
+					}
+					desc = "[heir|e]"
+					value = -100
+				}
+			}
+			add = {
+				desc = "[prestige|e]"
+				value = prestige
+			}
+			add = {
+				desc = "[legitimacy|e]"
+				if = {
+					limit = { uses_government_power = legitimacy }
+					value = legitimacy
+				}
+			}
+			add = {
+				desc = "[tribal_cohesion|e]"
+				if = {
+					limit = { uses_government_power = tribal_cohesion }
+					value = tribal_cohesion
+				}
+			}
+
+			if = {
+				limit = {
+					exists = scope:potential_high_king
+				}
+
+				scope:potential_high_king = {
+					add = {
+						desc = "[mil|e]"
+						value = mil
+					}
+					add = {
+						desc = "[total_ability|e]"
+						value = total_abilities
+					}
+					if = {
+						limit = {
+							has_character_modifier = overthrew_high_king
+						}
+						add = {
+							desc = "[ShowModifier('character_overthrew_high_king')]"
+							value = 100
+						}
+					}
+					if = {
+						limit = {
+							dynasty ?= scope:actor.ruler.dynasty
+						}
+						add = {
+							desc = "[dynasty|e]"
+							value = 25
+						}
+					}
+					if = {
+						limit = {
+							is_general = yes
+						}
+						add = {
+							desc = "[general|e]"
+							value = 25
+						}
+					}
+					if = {
+						limit = {
+							has_trait_category = general
+						}
+						add = {
+							desc = "[general|e] [trait|e]"
+							value = 25
+						}
+					}
+					if = {
+						limit = {
+							is_admiral = yes
+						}
+						add = {
+							desc = "[admiral|e]"
+							value = 25
+						}
+					}
+					if = {
+						limit = {
+							has_trait_category = admiral
+						}
+						add = {
+							desc = "[admiral|e] [trait|e]"
+							value = 25
+						}
+					}
+				}
+			}
+		}
+	}
+}

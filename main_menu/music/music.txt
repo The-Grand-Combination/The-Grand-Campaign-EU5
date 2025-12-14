@@ -1,0 +1,8 @@
+﻿# As of today 2024-05-16 according to Mattias Wennlund we don't need mus_main_Jukebox event anymore.
+# The mus_main_theme event together with the game state changes should be able to handle all our music needs.
+#mood_track1 = {
+#	music = "mus_main_Jukebox"
+#
+#	mood = yes
+#	can_be_interrupted = yes
+#}

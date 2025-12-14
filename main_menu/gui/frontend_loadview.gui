@@ -1,0 +1,94 @@
+widget = {
+	name = "mainmenu_load"
+	size = { 100% 100% }
+	visible_at_creation = no
+	
+	FrontEndBackground = {}
+	FrontEndPreloadingWidget = 
+	{ 
+		visible = "[IsGamePreloading]"
+	}
+
+	FrontEndMenu = {
+		blockoverride "frontend_menu_middle_section_layout" {
+			name = "load_window_container"
+		}
+
+		blockoverride "frontend_menu_bottom_section" {
+			button_regular = {
+				using = FrontEndBottomSectionButton
+
+				name = "back_button"
+				text = "BACK"
+
+				input_action = "close_window"
+				use_global_input_instance = yes
+				onclick = "[FrontEndLoadView.OnBack]"				
+				tooltipwidget = {
+					LeftClickButtonTooltip = {
+						blockoverride "onclick_text" { text = "BACK_TOOLTIP_LEFT" } 
+					}
+				}        
+			}
+			margin_bottom = 60
+		}
+	}
+}
+
+widget = {
+	name = "mainmenu_load_window"
+	size = { 100% 100% }
+	enabled = "[SaveListWindow.IsWindowEnabled]"
+
+	# inside content SP
+	scroll_list = {
+		visible = "[And(Not(FrontEndLoadView.IsMultiplayer), Not(SaveListWindow.IsPendingToReadSaveFiles))]"
+		size = { 100% 100% }
+
+		blockoverride "scroll_list_layout" {
+			loadgame_grid = {
+				using = layoutpolicy_expanding
+				blockoverride "load_slot_buttons" {
+					using = sp_load_slot_buttons
+				}
+				blockoverride "slot_button_SP_left_action_playtroughitem" {
+					on_action = "[FrontEndLoadView.SetInitSettings('(bool)no', '(bool)no')]"
+				}
+
+				blockoverride "slot_button_SP_right_action_playtroughitem" {
+					on_action = "[FrontEndLoadView.SetInitSettings('(bool)yes', '(bool)no')]"
+				}
+			}
+		}
+		blockoverride "save_game_datamodel" {
+			datamodel = "[SaveListWindow.GetPlaythroughs]"
+		}
+	}
+	
+	# inside content MP
+	scroll_list = {
+		visible = "[And(FrontEndLoadView.IsMultiplayer, Not(SaveListWindow.IsPendingToReadSaveFiles))]"
+		size = { 100% 100% }
+
+		blockoverride "scroll_list_layout" {
+			loadgame_grid = {
+				using = layoutpolicy_expanding
+				blockoverride "load_slot_buttons" {
+					using = mp_load_slot_buttons
+				}
+			}
+		}
+		blockoverride "save_game_datamodel" {
+			datamodel = "[SaveListWindow.GetPlaythroughs]"
+		}
+	}
+
+	save_load_menu_loading_indicator = {
+		parentanchor = center
+	}
+
+	state = {
+		name = _show
+		start_sound = { soundeffect = "UI_button_gameLoad" }
+	}
+}

@@ -1,0 +1,49 @@
+caesar_create_account_window = {
+    blockoverride "sdk_window" { using = sdk_window_template }
+    blockoverride "sdk_text_style" { using = sdk_text_style_template }
+    blockoverride "sdk_button_style" { using = sdk_button_style_template }
+    blockoverride "sdk_textbox_entry" { using = sdk_textbox_entry_template }
+    blockoverride "sdk_dropdown_enum" { using = dropwdown_sdk_enum_template }
+    blockoverride "sdk_checkbutton" { using = sdk_checkbutton_template }
+    blockoverride "sdk_load_indicator" { using = sdk_load_indicator_template }
+    blockoverride "close_button" { onclick = "[CreateAccount.Hide]" }
+
+    blockoverride "sdk_button_size" {}
+    blockoverride "create_account_content_layout_properties" {}
+
+    blockoverride "sdk_dropdown_entry" {
+        sdk_dropdown = {
+            blockoverride "fixedgridbox_add" {
+                addcolumn = 250
+                addrow = 30
+            }
+        }
+    }
+
+    blockoverride "create_account_entries_vbox_properties" {
+        margin = { 20 20 }
+        spacing = 1
+        resizeparent = yes
+    }
+}
+
+types CaesarSDK
+{
+	type caesar_create_account_window = window {
+		name = "create_container"
+        using = caesar_sdk_modal_template
+
+        create_account_window = {
+            name = "create_container_inner"
+
+            sdk_button = {
+                position = { 0 -28 }
+                parentanchor = bottom|hcenter
+                raw_text = "LOGIN"
+                layoutpolicy_horizontal = fixed
+                onclick = "[CreateAccount.Hide]"
+                onclick = "[ToggleJominiLoginAccount]"
+            }
+        }
+	}
+}

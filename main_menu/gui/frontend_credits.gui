@@ -1,0 +1,118 @@
+widget = {
+    using = Animation_ShowHide_Standard
+    name = "JominiFrontEndCreditsView"
+    size = { 100% 100% }
+    visible_at_creation = no
+
+    state = {
+		name = _hide
+		using = Animation_FadeOut_Standard
+	}
+
+    background = {
+        using = FrontEndBackgroundTexture
+    }
+    background = {
+		using = color_bg_blue_texture
+		alpha = 0.3
+	}
+
+    widget = {
+        name = "mainmenu_load"
+        size = { 100% 100% }
+        
+        widget = {
+            size = { 200 100% }
+            
+            vbox = {
+                spacing = 5
+                margin = {5 5}
+
+                hbox = {
+                    layoutpolicy_horizontal = expanding
+                    button_regular = {
+                        margin = {50 10}
+                        using = button_resize_to_fit_text
+                        
+                        action_tooltip = {
+                            title = "CREDITS_BACK"
+                            on_action = "[FrontEndCreditsView.OnBack]"
+                        }
+                        text = "CREDITS_BACK"
+
+                        tooltipwidget = {
+                            ContextualTooltipType = {
+                                blockoverride "title_icon" {
+                                    icon = {
+                                        using = tooltip_title_icon_size
+                                        texture = "gfx/interface/icons/flat_icons/tabicons/settings_flat_icon.dds"
+                                    }
+                                }
+
+                                blockoverride "title_text" {
+                                    text = "CREDITS_BACK"
+                                }
+
+                                blockoverride "tooltip_content" {
+                                    TooltipTextBlock = {
+                                        blockoverride "text" {
+                                            text = "BACK_TOOLTIP_LEFT"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        button = {
+                            using = ui_direction_button_overlay
+                            using = back_button_alt_texture
+                            size = {30 30}
+                            position = { 5 3 }
+                            parentanchor = left
+
+                            background = {
+                                using = bg_button_light_round_texture
+                                modify_texture = {
+                                    using = color_dark_blue_texture
+                                }
+                            }
+
+                            name = "back_button"
+                            
+                            action_tooltip = {
+                                title = "CREDITS_BACK"
+                                on_action = "[FrontEndCreditsView.OnBack]"
+                            }
+
+                            tooltipwidget = {
+                                ContextualTooltipType = {
+                                    blockoverride "title_icon" {
+                                        icon = {
+                                            using = tooltip_title_icon_size
+                                            texture = "gfx/interface/icons/flat_icons/tabicons/settings_flat_icon.dds"
+                                        }
+                                    }
+
+                                    blockoverride "title_text" {
+                                        text = "CREDITS_BACK"
+                                    }
+
+                                    blockoverride "tooltip_content" {
+                                        TooltipTextBlock = {
+                                            blockoverride "text" {
+                                                text = "BACK_TOOLTIP_LEFT"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    expand = {}
+                }
+
+                expand = {}
+            }
+        }
+    }
+}

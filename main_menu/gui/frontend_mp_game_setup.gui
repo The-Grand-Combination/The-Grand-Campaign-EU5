@@ -1,0 +1,62 @@
+widget = {
+	name = "mainmenu_mp_game_setup"
+	size = { 100% 100% }
+	visible_at_creation = no
+
+	state = {
+		name = _show
+		on_start = "[GetVariableSystem.Set( 'mp_host_tabs', 'game_setup'  )]"
+		using = FrontEndOnShowAnimation
+	}
+
+	state = {
+		name = _hide
+		on_start = "[GetVariableSystem.Clear( 'tabs_open' )]"
+		using = FrontEndOnHideAnimation
+	}
+		
+	FrontEndBackground = {}
+	FrontEndMenu = {
+		blockoverride "frontend_menu_middle_section" {
+			button_default = {
+				text = "JOMINI_MULTIPLAYER_GUI_SERVER_BROWSER_HOST_BUTTON"
+				using = FrontEndMiddleSectionButton
+
+				onclick = "[GameMpSetup.OnStart]"
+				tooltipwidget = {
+					LeftClickButtonTooltip = {
+						blockoverride "onclick_text" { text = "JOMINI_MULTIPLAYER_GUI_SERVER_BROWSER_HOST_BUTTON" } 
+					}
+				}
+			}
+
+			button_default = {
+				using = FrontEndMiddleSectionButton
+				text = "JOMINI_MULTIPLAYER_GUI_SERVER_BROWSER_LOAD_AND_HOST_BUTTON"
+
+				onclick = "[GameMpSetup.OnLoad]"
+				enabled = "[GameMpSetup.CanLoad]"
+				tooltip = "[GameMpSetup.GetLoadTooltip]"
+			}
+		}
+
+		blockoverride "frontend_menu_bottom_section" {
+			button_default = {
+				using = FrontEndBottomSectionButton
+
+
+				name = "back_button"
+				text = "BACK"
+
+				input_action = "close_window"
+				use_global_input_instance = yes
+				onclick = "[GameMpSetup.OnBack]"				
+				tooltipwidget = {
+					LeftClickButtonTooltip = {
+						blockoverride "onclick_text" { text = "BACK_TOOLTIP_LEFT" } 
+					}
+				}
+			}
+		}
+	}
+}

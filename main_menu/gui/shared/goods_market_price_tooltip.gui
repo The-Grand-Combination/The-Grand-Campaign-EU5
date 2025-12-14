@@ -1,0 +1,135 @@
+# template goods_market_price_diff_tooltip {
+# 	ContextualTooltipType = {
+# 		blockoverride "title_text" {
+# 			text = "GOODS_MARKET_ENTRY_TITLE"
+# 		}
+
+# 		blockoverride "concept_link" {
+# 			text = [market_price|e]
+# 		}
+
+# 		blockoverride "tooltip_content" {
+# 			TooltipTextBlock = {
+# 				blockoverride "text" {
+# 					text = "[GoodsMarketEntry.GetPriceDifferenceTT]"
+# 				}
+# 			}
+# 		}
+# 	}
+# }
+
+template goods_market_details {
+	TooltipTextBlock = {
+		blockoverride "text" {
+			text = "CURRENT_PRICE_GM_DET"
+			using = Font_Size_Big
+			align = center
+		}
+	}
+
+	TooltipStringPairList = {
+		textcontext = "[Market.GetPriceInfo(GoodsMarketEntry.GetGoods)]"
+	}
+
+	caesar_plotline = {
+		layoutpolicy_horizontal = expanding
+		size = { -1 230 }
+
+		blockoverride "header" {
+			text = "PRICE_CHANGES_LAST_YEAR"
+		}
+		blockoverride "line_color" {
+			color = { .9 .9 .9 1.0 }
+		}
+		blockoverride "line_plotpoints" {
+			plotpoints = "[GoodsMarketEntry.GetHistoryTrend]"
+		}
+		blockoverride "maxvalue" {
+			raw_text = "[GoodsMarketEntry.GetMaxPrice|2]@gold!"
+		}
+		blockoverride "minvalue" {
+			raw_text = "[GoodsMarketEntry.GetMinPrice|2]@gold!"
+		}
+		blockoverride "startdate" {
+			text = "[GoodsMarketEntry.GetStartDataDate]"
+		}
+		blockoverride "enddate" {
+			text = "[GoodsMarketEntry.GetEndDataDate]"
+		}
+		blockoverride "multiitem" {}
+
+		blockoverride "extra_plotlines" {
+			### Base Price line
+			plotline = {
+				size = { 100% 100% }
+				using = plot_line
+				width = 2
+				color = { 0.2 0.2 0.9 1.0 }
+				plotpoints = "[GoodsMarketEntry.GetBasePricePlotPoints]"
+			}
+		}
+		blockoverride "empty_state_visibility" {
+			# visible = "[IsEmpty(Goods.GetPriceTrend)]"
+		}
+		blockoverride "empty_state_text" {
+			# text = "GRAPH_NOT_INITIALIZED"
+		}
+	}
+}
+
+
+
+template GoodsPriceOnMarket_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_icon_texture" {
+			texture = "[GetGoodsIcon(GoodsPriceOnMarketWrap.GetGoods)]"
+		}
+
+		blockoverride "title_text" {
+			text = "[GoodsPriceOnMarketWrap.GetName]"
+		}
+
+		blockoverride "concept_link" {
+			text = "[market_price|e]"
+		}
+		
+		blockoverride "tooltip_content" {
+			datacontext = "[GoodsPriceOnMarketWrap.GetGoodsMarketEntry]"
+			datacontext = "[GoodsPriceOnMarketWrap.GetMarket]"
+			using = goods_market_details
+		}
+	}
+}
+
+template goods_market_price_tooltip {
+	ContextualTooltipType = {
+		blockoverride "title_icon" {
+			button = {
+				datacontext = "[GoodsMarketEntry.GetGoods]"
+				using = tooltip_title_icon_size
+				texture = "[GetGoodsIcon(GoodsMarketEntry.GetGoods)]"
+				tooltipwidget = { 
+					using = Goods_tooltip
+				}
+				action_tooltip = {
+					click_type = left
+					click_mode = single
+					title = "OPEN_GOOD_PANEL"
+					on_action = "[ShowGoods(GoodsMarketEntry.GetGoods)]"
+				}
+			}
+		}
+	
+		blockoverride "title_text" {
+			text = "GOODS_MARKET_ENTRY_TITLE"
+		}
+
+		blockoverride "concept_link" {
+			text = "[market_price|e]"
+		}
+		
+		blockoverride "tooltip_content" {
+			using = goods_market_details
+		}
+	}
+}

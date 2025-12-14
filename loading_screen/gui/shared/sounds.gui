@@ -1,0 +1,370 @@
+####################################################################################################################################
+## NAVIGATION ## (Mouse pointer, hovers)
+####################################################################################################################################
+
+# Default hover over ANY interactible element. Use blockoverride on any button to change its sound.
+template snd_UI_hover { 
+    state = {
+        name = _mouse_hierarchy_enter
+        start_sound = { block "hover_on_button_default"     { soundeffect = "UI_hover" } }
+    }
+    state = {
+        name = _mouse_hierarchy_leave
+        start_sound = { block "hover_off_button_default"    { soundeffect = "UI_hoverOff" } }
+    }
+ }
+
+# Specific hovers - just overrides the soundeffect since UI_hover propagates to all interactible elements
+template snd_UI_hover_alert {
+    blockoverride "hover_on_button_default"                 { soundeffect = "UI_hover_alert" }
+    blockoverride "hover_off_button_default"                { soundeffect = "UI_hoverOff_alert" }
+}
+
+template snd_UI_hover_flag {
+    blockoverride "hover_on_button_default"                 { soundeffect = "UI_hover_flag" }
+    blockoverride "hover_off_button_default"                { soundeffect = "UI_hoverOff_flag" } 
+}
+
+template snd_UI_hover_shield { 
+    blockoverride "hover_on_button_default"                 { soundeffect = "UI_hover_shield" }
+    blockoverride "hover_off_button_default"                { soundeffect = "UI_hoverOff_shield" } 
+}
+
+# Default Mouse Click (Mostly unused until GSG Tech support for post event on mouse action)
+# Hooking this to an invisible fullscreen button should work, but need confirmation from Jordi
+template snd_UI_clickPress {
+    state = {
+        name = _mouse_press
+        start_sound = { soundeffect = "UI_clickPress" }
+    }
+    state = {
+        name = _mouse_release
+        start_sound = { soundeffect = "UI_clickRelease" }
+    }
+}
+
+####################################################################################################################################
+## BUTTONS ##
+####################################################################################################################################
+
+# Default Button Press (Hooked in defaults, propagates to every button. Includes clickPress inside its Wwise event)
+template snd_UI_buttonPress {
+    state = {
+        name = _mouse_press
+        start_sound = { 
+            # block "snd_default_button_press"  { 
+                soundeffect = "UI_button_press"
+            # }
+        }
+    }
+    state = {
+        name = _mouse_release
+        start_sound = { soundeffect = "UI_button_release" }
+    }
+}
+
+# BUTTON CLICKS (triggers if press AND release WHILE pointer still over button)
+template snd_UI_open                            { clicksound = "UI_open" }
+template snd_UI_close                           { clicksound = "UI_close" }
+
+template snd_UI_confirm                         { clicksound = "UI_popup_confirm" } 	#TODO clicksound = "UI_confirm" }
+template snd_UI_reject                          { clicksound = "UI_reject" }
+
+template snd_UI_popup_confirm                   { clicksound = "UI_popup_confirm" } # Popup confirm/reject + hide
+# template snd_UI_popup_reject                    { clicksound = "UI_popup_reject" } # hide problem will be fixed
+
+template snd_UI_forward                         { clicksound = "UI_next" }
+template snd_UI_backward                        { clicksound = "UI_previous" }
+
+# template snd_UI_speedIncrease                   { clicksound = "UI_speedIncrease" } # hooked in code
+# template snd_UI_speedDecrease                   { clicksound = "UI_speedDecrease" } # hooked in code
+
+template snd_UI_plus                            { clicksound = "UI_button_plus" }
+template snd_UI_minus                           { clicksound = "UI_button_minus" }
+
+template snd_UI_alert_openAndCycle              { clicksound = "UI_alert_open_and_cycle" }
+
+template snd_UI_event_option_generic            { clicksound = "UI_eventGeneric_option_generic" }
+# template snd_UI_event_option_moral              { clicksound = "UI_eventGeneric_option_moral" }
+# template snd_UI_event_option_evil               { clicksound = "UI_eventGeneric_option_evil" }
+# template snd_UI_event_option_risky              { clicksound = "UI_eventGeneric_option_risky" }
+# template snd_UI_event_option_rewarding          { clicksound = "UI_eventGeneric_option_rewarding" }
+# template snd_UI_event_option_historical         { clicksound = "UI_eventGeneric_option_historical" }
+
+template snd_UI_event_age_option_administrative { clicksound = "UI_event_age_option_administrative" }
+template snd_UI_event_age_option_diplomatic     { clicksound = "UI_event_age_option_diplomatic" }
+template snd_UI_event_age_option_military       { clicksound = "UI_event_age_option_military" }
+
+template snd_UI_exitToMainMenu                  { clicksound = "UI_button_exit_toMainMenu" }
+template snd_UI_exitGame                        { clicksound = "UI_button_exit_game" }
+
+template snd_UI_goto                            { clicksound = "silence" }
+
+template snd_UI_checkbutton_automation          { clicksound = "UI_checkbutton_automation" }
+template snd_UI_checkbutton_square              { clicksound = "UI_checkbutton_square" }
+template snd_UI_checkbutton_round               { clicksound = "UI_checkbutton_round" }
+template snd_UI_checkbutton_diamond             { clicksound = "UI_checkbutton_diamond" }
+
+# BUTTON BEHAVIORS
+
+# Checkbutton default, used in combination with specific checkbox types with clicksound
+template snd_UI_checkbutton_default   {
+    state = {
+        name = _mouse_click
+        start_sound = { soundeffect = "UI_checkbutton_default"}
+    }
+}
+# keep an eye out for unhooked checkbuttons
+
+# Alert Appear, using this template + blockoverrides in 9 other alert banner templates in alertmanager.gui
+template snd_UI_alert_appear_default { 
+    block "alert_appear_default_soundeffect" { 
+        on_start = "[PlayAudioEffect('UI_alert_appear')]"
+    }
+}
+
+# Alert hide
+template snd_UI_alert_hide { 
+    state = {
+        name = _hide
+        start_sound = { soundeffect = "UI_alert_disappear" }
+    }
+}
+
+# Alert Situation
+template snd_UI_alert_situation {
+    state = {
+        name = _show
+        on_start = "[PlayAudioEffect('UI_situation_start')]"
+    }   
+    state = {
+        name = _hide
+        on_start = "[PlayAudioEffect('UI_situation_end')]"
+    }  
+}
+
+# Dropdown Menu WiP, haven't found a good way to hook in one place, currently have to hook to each individual list/dropdown widget.
+template snd_UI_dropdown_expand     { state = { name = _show start_sound = { soundeffect = "UI_dropdown_expand"}}}
+template snd_UI_dropdown_retract    { state = { name = _hide start_sound = { soundeffect = "UI_dropdown_retract"}}} #These are for lists
+# There are two ways dropdowns present themselves, in a list where we hook like above, and in a dropdown widget like below.
+template snd_UI_dropdown_widget {
+    open_sound = "UI_dropdown_expand"
+    close_sound = "UI_dropdown_retract"
+} 
+# The above are properties we can use for dropdown widgets.
+# Search for IsExpanded to find some places to hook to lists/dynamic gridboxes. Or search dropdown to hook with open_sound/close_sound
+
+####################################################################################################################################
+## WINDOWS ## 
+####################################################################################################################################
+
+# Window show/hide - hooked in defaults, propagates to every window. 
+# Now uses end_sound on _show, instead of start_sound on _hide
+template snd_UI_window_state {
+    state = {
+        name = _show
+        start_sound = {
+            # block "window_open_soundeffect" {
+                soundeffect = "UI_window_show"
+            # }
+        }
+    }
+    state = {
+        name = _hide
+        start_sound = { 
+            # block "window_close_soundeffect" {
+                soundeffect = "UI_window_hide"
+            # }
+        }
+    }
+}
+
+# Window show/hide MUTE to exclude certain "windows", used in 33 gui files as workaround to presumably a bug.
+# Use console command " audio.play_event UI_window_problematic_unmute " without quotes to hear them again.
+# and " audio.play_event UI_window_problematic_mute " to mute them again. Muted by default.
+# template snd_UI_window_state_mute {
+#     blockoverride "window_open_soundeffect"                 { soundeffect = "UI_window_show" }
+#     blockoverride "window_close_soundeffect"                { soundeffect = "UI_window_hide" } 
+# }
+
+# In-Game menu open/close, should be replaced with a blockoverride solution once above problem is solved.
+template snd_UI_inGameMenu_open     { on_start = "[PlayAudioEffect('UI_menu_open')]" }
+template snd_UI_inGameMenu_close    { on_start = "[PlayAudioEffect('UI_menu_close')]" }
+
+# Popup message window appear (Hide sound is built into confirm/reject buttons)
+# Remove hide sound from confirm, and add hide hook, once issue with game object killing is resolved.
+template snd_UI_popup_show {
+    state = {
+        name = _show
+        start_sound = { soundeffect = "UI_popup_show" }
+        start_sound = { block "snd_popup_type" { soundeffect = "UI_popup_basic_message" } }
+    }
+}
+
+# template snd_UI_popup_hide {
+#     state = {
+#         name = _hide
+#         start_sound =   { soundeffect = "UI_popup_hide" }
+#     }
+# }
+
+# Message log on the right side, sound on new message and scroll, Problem: new messages stop sounding when gridbox fills up.
+template snd_UI_messageLog {
+    state = {
+        name = _show
+        start_sound =   { soundeffect = "UI_messageLog" }
+    }
+}
+
+# Tooltip audio handling
+template snd_UI_tooltip_handling {
+    widget = {
+        visible = "[ExtraTooltipInfo.TooltipIsReady]"
+
+        state = {
+            name = _show
+            start_sound = { soundeffect = "UI_tooltip_show" }
+        }
+    }
+
+    widget = {
+        visible = "[PdxGuiWidget.IsTooltipLocked]"
+
+        state = {
+            name = _show
+            using = snd_UI_tooltip_lock
+        }
+    }
+
+    state = {
+        name = _hide
+        start_sound = { soundeffect = "UI_tooltip_hide" }
+    }
+}
+
+# ContextMenu audio handling
+template snd_UI_contextmenu_handling {
+    widget = {
+        visible = "[ExtraTooltipInfo.TooltipIsReady]"
+
+        state = {
+            name = _show
+            start_sound = { soundeffect = "UI_tooltip_show" }
+        }
+    }
+
+    state = {
+        name = _hide
+        start_sound = { soundeffect = "UI_tooltip_hide" }
+    }
+}
+
+# Tooltip lock - Hooked to the moment the lock bar fills up, independent of duration in settings.
+template snd_UI_tooltip_lock { 
+    start_sound =       { soundeffect = "UI_tooltip_lock" }
+}
+# Cooltip lock - Ditto
+# template snd_UI_cooltip_lock { 
+#     start_sound =       { soundeffect = "UI_cooltip_lock" }
+# }
+
+####################################################################################################################################
+## PANELS ## 
+####################################################################################################################################
+# Templates for lateralview show/hide/hoverOn/hoverOff animation states, use these in panel contexts.
+# You can use a blockoverride when hooking to a new panel (most likely in a lateralview).            
+# One blockoverride is for the one-shot identifier, the other for soundscapes. If there is a dynamic panel
+# image, then in the "soundeffect" field for soundscape, enter a function that returns a string based 
+# on the panel image showm. These functions are in development by code, more info on confluence.
+# If you want to use an animation state for both parent and child widget, but with different
+# sounds, you need to use two unique templates with unique block "names" (e.g. panel + panel_child). 
+#
+####################################################################################################################################
+
+# Left/right panel show/hide - when the whole side panel opens (not when switching tabs)
+template snd_UI_lateralview {
+    state = {
+        name = _show
+        start_sound = { soundeffect = "UI_lateralview_show" }
+    }
+    state = {
+        name = _hide
+        start_sound = { soundeffect = "UI_lateralview_hide" }
+    }
+}
+
+# Panel Main Tab - Soundscape Logic hooked to HOVER, soundscape and unique OS identifier is hooked to show/hide
+# Hooked in a place that propagates to all lateralviews, so only need to blockoverride in any lateralview.
+template snd_UI_panel {
+    state = {
+        name = _show
+        start_sound = { soundeffect = "panel_focus_zero" } # sets initial volume to muted to avoid playing without hover.
+        start_sound = { block "snd_panel_identifier"        { soundeffect = "UI_panel_show" } } # oneshot for panels
+        end_sound = { soundeffect = "UI_panel_stop_all" }
+    }
+    state = {
+        name = _mouse_hierarchy_enter
+        start_sound = { soundeffect = "cursor_on_panel" }
+    }
+    state = {
+        name = _mouse_hierarchy_leave
+        start_sound = { soundeffect = "cursor_off_panel" }
+    }
+}
+
+# Secondary Tab (children, the blue ones) - Optional Enrichments
+# The implementations of these in script vary, so have to hook snd_UI_panel_child on a case by case basis.
+# template snd_UI_panel_child { clicksound = "UI_panelChild_show" }
+
+####################################################################################################################################
+## CONTEXTUAL MENUS ##
+####################################################################################################################################
+# template snd_UI_contextmenu {
+#     state = {
+#         name = _show
+#         start_sound = { 
+#             # block "snd_contextmenu_show" {
+#                 soundeffect = "UI_contextmenu_show"
+#             # }
+#          }
+#     }
+#     state = {
+#         name = _hide
+#         start_sound = { 
+#             # block "snd_contextmenu_hide" { 
+#                 soundeffect = "UI_contextmenu_hide"
+#             # }
+#         }
+#     }
+# }
+
+####################################################################################################################################
+## EVENTS ##
+####################################################################################################################################
+
+template snd_UI_eventGeneric {
+    state = {
+        name = _show
+        start_sound = { soundeffect = "UI_eventGeneric" }
+    }
+}
+
+# Event new age
+template snd_UI_event_age {
+    state = {
+        name = _show
+        on_start = "[PlayAudioEffect('UI_event_age_generic')]"
+    }
+}
+
+# You can mute / unmute units with the following console commands. Muted by default.
+# audio.play_event units_unmute
+# audio.play_event units_mute
+
+####################################################################################################################################
+## MUSIC PLAYER ##
+####################################################################################################################################
+
+# template snd_UI_music_player_unpause                           { clicksound = "mus_player_unpause" }
+# template snd_UI_music_player_pause                             { clicksound = "mus_player_pause" }
+# template snd_UI_music_player_next                              { clicksound = "mus_player_next_all" }

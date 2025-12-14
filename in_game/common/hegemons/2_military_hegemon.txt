@@ -1,0 +1,26 @@
+﻿military_hegemon = {
+	gain = {
+		is_great_power = yes
+		is_subject = no
+		NOT = { any_other_great_power = { regular_army_size > root.regular_army_size } }
+	}
+	lose = {
+		any_other_great_power = { 
+			regular_army_size > {
+				value = root.regular_army_size 
+				multiply = 1.1
+			}
+		}
+	}
+	
+	modifier = {
+		global_war_score_cost = -0.1
+		
+		allow_diplomacy_violate_sovereignty = yes
+		allow_cabinet_soldiers_as_workforce = yes
+
+	}
+	
+
+	
+}

@@ -1,0 +1,230 @@
+
+##### CURVES
+
+
+template Animation_Curve_EaseOut {
+	bezier = { 0.42 0.59 0.69 0.94 }
+}
+
+template Animation_Curve_EaseIn {
+	bezier = { 0.94 0.69 0.59 0.42 }
+}
+
+template Animation_Curve_Default {
+	bezier = { 0.25 0.1 0.25 1 }
+}
+
+template Animation_Show_Hide_Properties {
+	duration = 0.3
+	using = Animation_Curve_EaseIn
+}
+
+template Animation_Show_Hide_Eased {
+	state = {
+		name = _hide
+		using = Animation_Show_Hide_Properties
+
+		block "on_hide_ui" {
+			alpha = 0
+		}
+	}
+
+	state = {
+		name = _show
+		using = Animation_Show_Hide_Properties
+
+		block "on_show_ui" {
+			alpha = 1
+		}
+	}
+}
+
+template Animation_FadeIn_Quick {
+	using = Animation_Curve_Default
+	duration = 0.15
+
+	alpha = 1
+}
+
+template Animation_FadeOut_Quick {
+	using = Animation_Curve_Default
+	duration = 0.15
+
+	alpha = 0
+}
+
+template Animation_ShowHide_Quick {
+	state = {
+		name = _show
+		using = Animation_FadeIn_Quick
+	}
+
+	state = {
+		name = _hide
+		using = Animation_FadeOut_Quick
+	}
+}
+
+template Animation_FadeIn_Standard {
+	using = Animation_Curve_Default
+	duration = 0.25
+
+	alpha = 1
+}
+
+template Animation_FadeOut_Standard {
+	using = Animation_Curve_Default
+	duration = 0.25
+
+	alpha = 0
+}
+
+template Animation_ShowHide_Standard {
+	state = {
+		name = _show
+		using = Animation_FadeIn_Standard
+	}
+
+	state = {
+		name = _hide
+		using = Animation_FadeOut_Standard
+	}
+}
+
+# template Animation_Tab_Switch
+# {
+# 	state = {
+# 		name = _show
+# 		using = Animation_FadeIn_Quick
+# 	}
+
+# 	state = {
+# 		name = _hide
+# 		alpha = 0
+# 	}
+# }
+
+
+##### ANIMATIONS
+
+# template onmouse_hierarchy_overview_left {
+# 	alwaystransparent = no
+# 	onmousehierarchyenter = "[PdxGuiInterruptThenTriggerAllAnimations('hide_overview_titles_left', 'show_overview_titles_left')]"
+# 	onmousehierarchyleave = "[PdxGuiInterruptThenTriggerAllAnimations('show_overview_titles_left', 'hide_overview_titles_left')]"
+# }
+
+# template overview_bg_left {
+# 	parentanchor = left
+# 	position = {-4 0}
+# 	mirror = horizontal
+# }
+
+# template overview_bg_right {
+# 	parentanchor = right
+# 	position = {4 0}
+# }
+
+# template icon_text_2rows_bg_animation_left {
+# 	icon = {
+# 		block "icon_bg_size" {
+# 			size = { 80% 119%}
+# 		}
+		
+# 		alpha = 0
+# 		ignore_layout = yes
+# 		# block "background_position" {
+# 			using = overview_bg_left
+# 		# }
+
+# 		state = {
+# 			name = show_overview_titles_left
+# 			alpha = 1
+# 			duration = 0.25
+# 			using = Animation_Curve_Default
+# 		}
+# 		state = {
+# 			name = hide_overview_titles_left
+# 			alpha = 0
+# 			duration = 0.25
+# 			using = Animation_Curve_Default
+# 		}
+# 		using = bg_dark_paper_card
+# 		blockoverride "bg_dark_paper_card_shadow" {
+# 			margin_top = 0
+# 			margin_bottom = 1
+# 			alpha = 0.2
+# 		}
+# 	}
+# }
+
+# template icon_text_2rows_top_animation_left {
+# 	size = {-1 0}
+# 	alpha = 0
+
+# 	state = {
+# 		name = show_overview_titles_left
+# 		alpha = 1
+# 		size = {-1 20}
+# 		duration = 0.25
+# 		using = Animation_Curve_Default
+# 	}
+# 	state = {
+# 		name = hide_overview_titles_left
+# 		alpha = 0
+# 		size = {-1 0}
+# 		duration = 0.25
+# 		using = Animation_Curve_Default
+# 	}
+# }
+
+# template onmouse_hierarchy_overview_right {
+# 	alwaystransparent = no
+# 	onmousehierarchyenter = "[PdxGuiInterruptThenTriggerAllAnimations('hide_overview_titles_right', 'show_overview_titles_right')]"
+# 	onmousehierarchyleave = "[PdxGuiInterruptThenTriggerAllAnimations('show_overview_titles_right', 'hide_overview_titles_right')]"
+# }
+
+# template icon_text_2rows_bg_animation_right {
+# 	icon = {
+# 		size = { 100% 100%}
+# 		alpha = 0
+
+# 		state = {
+# 			name = show_overview_titles_right
+# 			alpha = 1
+# 			duration = 0.25
+# 			using = Animation_Curve_Default
+# 		}
+# 		state = {
+# 			name = hide_overview_titles_left
+# 			alpha = 0
+# 			duration = 0.25
+# 			using = Animation_Curve_Default
+# 		}
+# 		using = simple_paper_card_texture
+# 		mirror = horizontal
+
+# 		modify_texture = {
+# 			using = color_bg_blue_texture
+# 		}
+# 	}
+# }
+
+template icon_text_2rows_top_animation_right {
+	size = {-1 0}
+	alpha = 0
+
+	state = {
+		name = show_overview_titles_right
+		alpha = 1
+		size = {-1 20}
+		duration = 0.25
+		using = Animation_Curve_Default
+	}
+	state = {
+		name = hide_overview_titles_right
+		alpha = 0
+		size = {-1 0}
+		duration = 0.25
+		using = Animation_Curve_Default
+	}
+}

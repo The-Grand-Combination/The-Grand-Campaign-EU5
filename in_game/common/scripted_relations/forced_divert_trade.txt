@@ -1,0 +1,136 @@
+﻿forced_divert_trade =  { 
+	type = diplomacy
+	relation_type = oneway
+	break_on_war = yes
+	merchant_fraction_to_first = 0.5
+	category = {
+		offer = CATEGORY_ECONOMY_ACTIONS
+		cancellation = CATEGORY_ECONOMY_ACTIONS
+	}
+
+	visible = {
+		scope:actor = {
+			modifier:allow_diplomacy_force_divert_trade = yes
+		}
+		scope:recipient = {
+			is_subject = no
+			has_markets = no
+			is_great_power = no
+			not = {
+				#can only do this to one country
+				receiving_scripted_relation = {
+					type = relation_type:forced_divert_trade
+					target = scope:actor
+				}
+			}
+		}
+	}
+	
+	 will_expire_trigger = {
+     	scope:actor = {
+			modifier:allow_diplomacy_force_divert_trade = no
+		}
+    }
+	
+
+	request_visible = no
+	break_visible = no
+
+	wants_to_give = {
+		#should generally want to do this
+		add = 10
+
+		#try not to piss anyone off more
+		add = {
+			if = {
+				limit = {
+					scope:actor = {
+						or = {
+							is_target_of_international_organization_of_type = coalition
+							has_countries_with_coalition_grade_antagonism = yes
+						}
+					}
+				}
+				value = -1000
+			}
+		}
+
+		#AI shouldn't do it to allies
+		add = {
+			if = {
+				limit = {
+					or = {
+						scope:actor = {
+							can_join_defensive_war_with = scope:recipient
+						}
+						scope:recipient = {
+							can_join_defensive_war_with = scope:actor
+						}
+					}
+				}
+				value = -100
+			}
+		}
+
+		#rivals?
+		add = {
+			desc = "game_concept_rival"
+			if = {
+				limit = {	
+					scope:recipient = { 
+						is_rival_of = scope:actor 
+					}
+				}
+				value = 100
+			}
+		}
+
+		#screw enemies
+		add = {
+			desc = "IS_WAR_ENEMY"
+			if = {
+				limit = {
+					scope:recipient = { 
+						is_at_war_with = scope:actor
+					}
+				}
+				value = 200
+			}
+		}
+
+		#leave allies alone
+		add = {
+			desc = "game_concept_ally"
+			if = {
+				limit = {	
+					scope:recipient = { 
+						is_allied_with = { target = scope:actor }
+					}
+				}
+				value = -100
+			}
+		}
+		#the less we like the recipient the better
+		subtract = {
+			desc = "game_concept_opinion"
+			scope:actor = {
+				value = "opinion(scope:recipient)"
+			}
+		}
+		#if we distruct the recipient, screw 'em'
+		add = {
+			scope:actor = {
+				value = 100
+				subtract = "trust(scope:recipient)"
+				divide = 5
+			}
+		}
+		#if they trust us don't mess with them
+		add = {
+			scope:recipient = {
+				value = "trust(scope:actor)"
+				divide = 5
+			}
+		}
+	}
+}

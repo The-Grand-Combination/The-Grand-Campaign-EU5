@@ -1,0 +1,333 @@
+
+######################################################
+############## LIST TYPES AND TEMPLATES ##############
+######################################################
+
+template dropdown_list_background_template {
+	using = tile_card_bg_texture
+	shaderfile = "gfx/FX/pdxgui_default.shader"
+	using = color_mid_blue
+
+	# block "dropdown_list_background" {}
+}
+
+## Debug Vertical scrollbar
+template Scrollbar_Vertical_Debug {
+	scrollbar = {
+		name = "vertical_scrollbar_debug"
+		size = { 12 12 }
+		wheelstep = 60
+		direction = vertical
+
+		track = {
+			button = {
+				gfxtype = buttongfx
+				maximumsize = { 6 -1 }
+
+				using = color_black_texture
+				spriteType = Corneredtiled
+				spriteborder = { 0 10 }
+				effectname = "NoHighlight"
+				# alpha = 0.75
+
+				modify_texture = {
+					name = "mask"
+					texture = "gfx/interface/component_masks/mask_fade_horizontal_middle_thick_vertical.dds"
+					blend_mode = alphamultiply
+					spriteType = Corneredstretched
+					spriteborder = { 0 12 }
+					# alpha = 0.5
+				}
+			}
+		}
+
+		slider = {
+			button = {
+				gfxtype = framedbuttongfx
+				effectname = "NoHighlight"
+
+				texture = "gfx/interface/scrollbars/scrollbar_slider_debug.dds"
+				texture_density = 2
+				spriteType = Corneredtiled
+				spriteborder = { 10 8 }
+				framesize = { 10 20 }
+				maximumsize = { 6 -1 }
+
+				upframe = 1
+				overframe = 2
+				downframe = 2
+
+				# oversound = "event:/SFX/UI/Generic/sfx_ui_generic_icon_pointer_over"
+
+				# state = {
+				#    name = _mouse_press
+				#    start_sound = {
+				#        #soundeffect = "event:/SFX/UI/Generic/sfx_ui_generic_icon_select"
+				#    }
+				# }
+				#
+				# state = {
+				#    name = _mouse_release
+				#    start_sound = {
+				#        #soundeffect = "event:/SFX/UI/Generic/sfx_ui_generic_icon_select"
+				#    }
+				# }
+			}
+		}
+
+		dec_button = {
+			button = {
+			}
+		}
+
+		inc_button = {
+			button = {
+			}
+		}
+	}
+}
+
+types Lists
+{
+	type scroll_list = scrollarea {
+		using = layoutpolicy_expanding
+		scrollbarpolicy_horizontal = always_off
+		autoresizeviewport = yes
+		viewportwidget = {
+			widget = {
+				block "scroll_list_scissor" {
+					scissor = yes
+				}
+			}
+		}
+
+		scrollbar_vertical = {
+			using = Scrollbar_Vertical
+		}
+
+		# block "scroll_list_bg" {}
+
+		scrollwidget = {
+			block "scroll_list_layout" {
+				fixedgridbox = {
+					position = { 0 2 }
+					block "scroll_list_content" {}
+				}
+			}
+		}
+
+		text_multi = {
+			position = { 0 20 }
+			parentanchor = hcenter
+			block "scroll_list_is_empty_size" {
+				size = { 480 100 }
+			}
+			align = center|hcenter
+
+			block "scroll_list_is_empty" {
+				visible = no
+			}
+
+			block "scroll_list_is_empty_text" {
+				text = "SCROLL_LIST_EMPTY"
+			}
+		}
+
+		scrollarea = {
+			block "scroll_list_is_empty" {
+				visible = no
+			}
+			block "empty_scroll_list_layout" {
+				parentanchor = hcenter
+				position = { 0 110 }
+				size = { 300 200 }
+			}
+			scrollbarpolicy_horizontal = always_off
+			autoresizescrollarea = no
+
+			scrollbar_vertical = {
+				using = Scrollbar_Vertical
+			}
+
+			scrollwidget = {
+				block "list_for_scroll_list_empty_layout" {
+					fixedgridbox = {
+						parentanchor = hcenter
+						size = { 300 200 }
+						position = { 0 0 }
+						# block "list_for_scroll_list_empty_content" {}
+					}
+				}
+			}
+		}
+	}
+
+	type sort_list = vbox {
+		layoutpolicy_horizontal = expanding
+		layoutpolicy_vertical = expanding
+
+		hbox = {
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = expanding
+			maximumsize = { -1 40 }
+			margin = { 4 0 }
+
+			# block "sort_buttons_config" {}
+
+			background = {
+				using = tile_card_bg_texture
+				margin = { -4 -4 }
+				alpha = 0.5
+
+				using = color_mid_blue
+
+				modify_texture = {
+					using = overlay_stone_texture
+					blend_mode = overlay
+					alpha = 0.3
+				}
+			}
+
+			block "sort_buttons_visible" {
+				visible = yes
+			}
+
+			# block "sort_buttons" {}
+		}
+
+		scroll_list = {}
+	}
+
+    type dropdown_menu_default = dropDown {
+		size = { 200 30 }
+		alwaystransparent = no
+
+		active_item = {
+			widget = {
+				size = { 100% 30 }
+
+				button_drop = {}
+				hbox = {
+					using = layoutpolicy_expanding
+					margin = { 5 0 }
+					text_single = {
+						using = layoutpolicy_expanding
+						margin = { 10 0 }
+						autoresize = no
+						align = left|nobaseline
+						fontsize_min = 13
+
+						block "dropdown_active_item_properties" {}
+					}
+
+					icon = {
+						size = { 22 22 }
+						texture = "gfx/interface/buttons/flats/button_simple_down.dds"
+						using = color_gold
+						modify_texture = {
+							using = overlay_window_texture
+							blend_mode = overlay
+							alpha = 1
+						}
+					}
+				}
+			}
+		}
+
+		item = {
+			widget = {
+				size = { 100% 30 }
+
+				button_dropdown = {}
+				text_single = {
+					size = { 100% 100% }
+					margin = { 15 0 }
+					autoresize = no
+					align = left|nobaseline
+					fontsize_min = 15
+					default_format = "#medium"
+
+					block "dropdown_item_properties" {}
+				}
+			}
+		}
+
+		list = {
+			scrollarea = {
+				size = { 100% 250 }
+				position = { 0 0 }
+
+				autoresizescrollarea = yes
+				autoresizeviewport = yes
+				alwaystransparent = yes
+				scrollbarpolicy_horizontal = always_off
+
+				background = {
+					using = dropdown_list_background_template
+				}
+
+				# block "dropdown_list_maxsize" {
+					maximumsize = { -1 250 }
+				# }
+
+				# block "dropdown_list_properties" {}
+
+				scrollwidget = {
+					fixedgridbox = {
+						setitemsizefromcell = yes
+						alwaystransparent = no
+						addcolumn = 100%
+						addrow = 30
+					}
+				}
+
+				scrollbar_vertical = {
+					using = Scrollbar_Vertical
+				}
+			}
+		}
+	}
+}
+
+####################################
+########### SCROLL AREA ############
+####################################
+
+## Generic scrollarea. Remember that "scrollbox_content" can only contain one child without siblings.
+
+types Scrollbar
+{
+	type scrollbox = scrollarea {
+		scrollbarpolicy_horizontal = always_off
+
+		scrollbar_vertical = {
+			using = Scrollbar_Vertical
+		}
+
+		# block "scrollbox_background" {}
+
+		scrollwidget = {
+			# block "scrollbox_replace_vbox" {
+				vbox = {
+					block "scrollbox_content" {
+						visible =no
+					}
+
+					text_single = {
+						default_format = "#low;italic"
+
+						block "scrollbox_empty" {
+							visible = no
+						}
+					}
+
+					block "scrollbox_expand" {
+						expand = {
+							layoutpolicy_vertical = growing
+						}
+					}
+				}
+			# }
+		}
+	}
+}

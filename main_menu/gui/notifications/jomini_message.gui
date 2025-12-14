@@ -1,0 +1,71 @@
+basic_dialog = {
+	name = "jomini_message"
+	parentanchor = center
+	resizable = no
+	modal = yes
+	modality = all
+	layer = confirmation
+
+	blockoverride "header_text" {
+		text = "[JominiNotification.GetTitle]"
+	}
+
+	blockoverride "content"  {
+		vbox = {
+			margin = { 20 0 }
+
+			# Description
+			textbox = {
+				text = "[JominiNotification.GetText]"
+				layoutpolicy_horizontal = expanding
+				autoresize = yes
+				multiline = yes
+				text_selectable = no
+				alwaystransparent = no
+				margin_left = 10
+				margin_right = 10
+
+				using = Font_Type_Standard
+				using = Font_Size_Medium
+				default_format = "#medium"
+
+				align = center
+				margin_bottom = 5
+			}
+		}
+	}
+
+	blockoverride "bottom_buttons" {
+		button_regular = {
+			size = { 180 40 }	
+			text = "[JominiNotification.GetDeclineButtonText]"
+			onclick = "[JominiNotification.OnDecline]"
+			input_action = "close_window"
+			visible = "[Or(JominiNotification.HasOnAccept, JominiNotification.HasOnDecline)]"
+			tooltip_enabled = no
+			using = snd_UI_reject
+		}
+
+		widget = {
+			layoutpolicy_horizontal = expanding
+			visible = "[Or(JominiNotification.HasOnAccept, JominiNotification.HasOnDecline)]"
+		}
+
+		button_regular = {
+			size = { 180 40 }	
+			text = "[JominiNotification.GetAcceptButtonText]"
+			onclick = "[JominiNotification.OnAccept]"
+			input_action = "close_window"
+			visible = "[Not(Or(JominiNotification.HasOnAccept, JominiNotification.HasOnDecline))]"
+			tooltip_enabled = no
+		}
+
+		button_regular = {
+			size = { 180 40 }		
+			text = "[JominiNotification.GetAcceptButtonText]"
+			onclick = "[JominiNotification.OnAccept]"
+			visible = "[Or(JominiNotification.HasOnAccept, JominiNotification.HasOnDecline)]"
+			tooltip_enabled = no
+		}
+	}
+}

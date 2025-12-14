@@ -1,0 +1,419 @@
+﻿#Catholic-to-Pope Actions
+request_divorce =  {
+	type = diplomacy
+	price = price:catholic_country_interaction
+	category = CATEGORY_PAPAL_ACTIONS
+
+	potential = {
+		papacy_active = yes
+		has_global_variable_list = pope_countries
+		scope:actor = {
+			religion = religion:catholic
+			modifier:is_pope = no
+			exists = ruler	
+		}
+	}	
+
+	allow = {
+		scope:actor = {
+			ruler ?= {
+				is_married = yes
+				is_alive = yes
+				exists = first_spouse
+				owner = scope:actor
+			}
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = country
+		target_flag = recipient
+		source_global_list = pope_countries
+		name = "choose_country"
+		column = {
+			data = name
+		}
+		visible = {
+			modifier:is_pope = yes
+		}
+        enabled = {
+			NOT = { is_at_war_with = scope:actor }
+		}
+	}
+
+	effect = {
+		scope:actor = { ruler = { divorce_character = first_spouse } }
+	}
+	ai_will_do = {
+		add = -10
+		add = {
+			if = {
+				limit = {
+					scope:actor = {
+						ruler = {
+							first_spouse = {
+								NOT = { religion = religion:catholic }
+							}
+						}
+					}
+				}
+				value = 100
+			}
+		}
+	}
+	accept = {
+		if = {
+			limit = {
+				scope:actor = {
+					ruler = {
+						first_spouse = {
+							NOT = { religion = religion:catholic }
+							religion.group = religion_group:christian
+						}
+					}
+				}
+			}
+			add = {
+				desc = DIPLOREASON_HERETICAL_SPOUSE
+				value = 100
+			}
+		}
+		if = {
+			limit = {
+				scope:actor = {
+					ruler = {
+						first_spouse = {
+							NOT = { religion = religion:catholic }
+							NOT = { religion.group = religion_group:christian }
+						}
+					}
+				}
+			}
+			add = {
+				desc = DIPLOREASON_HEATHEN_SPOUSE
+				value = 1000
+			}
+		}
+	}
+	diplo_chance = {
+		base = -25
+		opinion = 0.2
+		diplomatic_reputation = 3
+	}
+}	
+
+#Pope-to-Catholic Actions
+excommunicate = {
+	type = diplomacy
+	price = price:excommunication_price
+	category = CATEGORY_PAPAL_ACTIONS
+
+	block_when_at_war = no	
+
+	potential = {		
+		scope:actor = {
+			papacy_active = yes
+			excommunicate_allow_trigger = yes
+			religion = religion:catholic
+			modifier:is_pope = yes
+		}
+	}	
+
+	allow = {
+		international_organization:catholic_church = {
+			modifier:excommunication_disabled = no
+			modifier:direct_excommunication_allowed = yes
+		}
+		scope:actor = {
+			NOT = { has_cooldown = excommunicate }
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = country
+		target_flag = recipient
+		name = "choose_country"
+		column = {
+			data = name
+		}
+		visible = {
+			religion = religion:catholic
+			modifier:is_pope = no
+			is_excommunicated = no
+		}
+        enabled = {
+			scope:actor = {		
+				opinion = {
+					target = root
+					value < 0
+				}
+			}
+			excommunicate_target_trigger = yes
+		}
+	}
+
+	effect = {
+		scope:actor = {
+			add_cooldown = {
+				type = excommunicate
+				years = 20
+			}
+		}
+		scope:recipient = {
+			excommunicate_effect = yes
+		}
+	}
+	ai_will_do = {
+		add = 10
+		if = {
+			limit = {
+				scope:actor = { is_at_war_with = scope:recipient }
+			}
+			add = 100
+		}
+		#do we like them?
+		add = {
+			value = "scope:actor.opinion(scope:recipient)"
+			multiply = -0.25
+		}
+		#are they a threat to us?
+		add = {
+			value = "scope:actor.antagonism(scope:recipient)"
+			multiply = 0.5
+		}
+		#friends don't excommunicate friends
+		if = {
+			limit = {
+				scope:actor = {
+					is_allied_with = { target = scope:recipient }
+				}
+			}
+			add = -1000
+		}
+		#we also shouldn't excommunicate ourselves...
+		if = {
+			limit = {
+				scope:actor = {
+					in_union_with = scope:recipient
+				}
+			}
+			add = -1000
+		}
+	}
+}
+
+lift_excommunication = {
+	type = diplomacy
+	price = price:catholic_country_interaction
+	category = CATEGORY_PAPAL_ACTIONS
+
+	potential = {
+		papacy_active = yes
+		scope:actor = {
+			religion = religion:catholic
+			modifier:is_pope = yes
+		}
+	}
+
+	allow = {
+	}
+
+	select_trigger = {
+		looking_for_a = country
+		target_flag = recipient
+		name = "choose_country"
+		column = {
+			data = name
+		}
+		visible = {
+			religion = religion:catholic
+			modifier:is_pope = no
+			is_excommunicated = yes
+		}
+        enabled = {
+		}
+	}
+
+	effect = {
+		scope:recipient = {
+			lift_excommunication_effect = yes
+		}
+	}
+	ai_will_do = {
+		subtract = 75	#AI should be stubborn about excommunications
+		add = "scope:actor.opinion(scope:recipient)"
+	}
+}
+
+ask_to_lift_excommunication = {
+	type = diplomacy
+	category = CATEGORY_PAPAL_ACTIONS
+	price = price:catholic_country_interaction
+	potential = {
+		papacy_active = yes
+		scope:actor = {
+			religion = religion:catholic
+			modifier:is_pope = no
+			is_excommunicated = yes
+			is_subject = no
+		}
+	}
+	allow = {}
+	select_trigger = {
+		looking_for_a = country
+		target_flag = recipient
+		name = "choose_country"
+		column = { data = name }
+		visible = {
+			papacy_active = yes
+			religion = religion:catholic
+			modifier:is_pope = yes
+		}
+		enabled = {}
+	}
+	effect = {
+		scope:actor = {
+			lift_excommunication_effect = yes
+		}
+	}
+	ai_will_do = {
+		add = 1	#If possible, the AI should try to get it lifted
+	}
+	diplo_chance = {
+		base = -50
+		opinion = 0.2
+		diplomatic_reputation = 3
+	}
+}
+
+place_interdict = {
+	type = diplomacy
+	price = price:catholic_country_interaction
+	category = CATEGORY_PAPAL_ACTIONS
+
+	block_when_at_war = no	
+
+	potential = {
+		papacy_active = yes
+		scope:actor = {
+			religion = religion:catholic
+			modifier:is_pope = yes
+		}
+	}
+
+	allow = {
+	}
+
+	select_trigger = {
+		looking_for_a = country
+		target_flag = recipient
+		name = "choose_country"
+		column = {
+			data = name
+		}
+		visible = {
+			NOT = { has_country_modifier = interdict }
+			religion = religion:catholic
+			modifier:is_pope = no
+		}
+        enabled = {
+			scope:actor = {
+				opinion = {
+					target = root
+					value < 0
+				}
+			}
+			was_recently_under_interdict = no
+		}
+	}
+
+	effect = {
+		scope:recipient = {
+			interdict_effect = yes
+		}
+	}
+	ai_will_do = {
+		add = 0
+	}
+}
+
+lift_interdict = {
+	type = diplomacy
+	price = price:catholic_country_interaction
+	category = CATEGORY_PAPAL_ACTIONS
+
+	potential = {
+		papacy_active = yes
+		scope:actor = {
+			religion = religion:catholic
+			modifier:is_pope = yes
+		}
+	}
+	allow = {
+	}
+
+	select_trigger = {
+		looking_for_a = country
+		target_flag = recipient
+		name = "choose_country"
+		column = {
+			data = name
+		}
+		visible = {
+			has_country_modifier = interdict
+			religion = religion:catholic
+			modifier:is_pope = no
+		}
+        enabled = {
+		}
+	}
+
+	effect = {
+		scope:recipient = {
+			lift_interdict_effect = yes
+		}
+	}
+	ai_will_do = {
+		subtract = 75	#AI should be stubborn about excommunications
+		add = "scope:actor.opinion(scope:recipient)"
+	}
+}
+
+ask_to_lift_interdict = {
+	type = diplomacy
+	category = CATEGORY_PAPAL_ACTIONS
+	price = price:catholic_country_interaction
+	potential = {
+		papacy_active = yes
+		scope:actor = {
+			has_country_modifier = interdict
+			religion = religion:catholic
+			modifier:is_pope = no
+		}
+	}
+	allow = {}
+	select_trigger = {
+		looking_for_a = country
+		target_flag = recipient
+		name = "choose_country"
+		column = { data = name }
+		visible = {
+			religion = religion:catholic
+			modifier:is_pope = yes
+		}
+		enabled = {}
+	}
+	effect = {
+		scope:actor = {
+			lift_interdict_effect = yes
+		}
+	}
+	ai_will_do = {
+		add = 1	#If possible, the AI should try to get it lifted
+	}
+	diplo_chance = {
+		base = -25
+		opinion = 0.2
+		diplomatic_reputation = 3
+	}
+}

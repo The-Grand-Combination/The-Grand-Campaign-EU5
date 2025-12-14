@@ -1,0 +1,26 @@
+﻿corrupt_officials =  { 
+	type = diplomacy
+	block_when_at_war = no
+	break_on_not_spying = yes
+	dangerous_relation = yes
+	relation_type = oneway
+	monthly_ongoing_price_first_country = corrupt_officials_monthly_cost
+	diplomatic_cost_offer = corrupt_officials_cost
+	category = {
+		offer = CATEGORY_COVERT_ACTIONS
+		cancellation = CATEGORY_COVERT_ACTIONS
+	}
+
+	relation_type_for_ai = hostile
+
+	offer_enabled = {
+		scope:recipient = {
+			modifier:country_cabinet_efficiency >= 0.0
+		}
+	}
+
+	use_with_enemies = yes
+
+	request_visible = no
+	break_visible = no
+}	

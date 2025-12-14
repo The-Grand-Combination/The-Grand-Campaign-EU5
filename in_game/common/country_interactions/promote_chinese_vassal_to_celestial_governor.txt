@@ -1,0 +1,84 @@
+﻿promote_member_to_celestial_governor = { 
+	category = CATEGORY_CHINA_ACTIONS
+	type = diplomacy
+	
+	ai_tick = never
+
+	potential = {
+		exists = international_organization:middle_kingdom
+		scope:actor = {
+			is_leader_of_international_organization = international_organization:middle_kingdom
+		}
+		international_organization:middle_kingdom = { 
+			leader_country ?= {
+				modifier:may_convert_vassals_to_celestial_governors = yes
+			}
+		}
+	}
+
+	allow = {
+		international_organization:middle_kingdom = {
+			var:celestial_authority > 5
+			trigger_if = {
+				limit = { 
+					international_organization_has_policy = policy:expand_the_tianxia_policy
+				}
+				var:num_of_celestial_governors < 4
+			}
+			trigger_else = { 
+				var:num_of_celestial_governors < 3
+			}	
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = country
+		target_flag = recipient
+		name = "choose_country"
+		column = {
+			data = name
+		}
+		visible = {
+			is_member_of_international_organization = international_organization:middle_kingdom 
+			international_organization:middle_kingdom = {
+				NOT = {
+					country_has_special_status = {
+						type = special_status:celestial_governor
+						country = root
+					}
+				}
+			}
+		}
+        enabled = {
+			opinion = {
+				target = scope:actor
+				value > 0
+			}
+		}
+	}
+
+	effect = {
+		scope:recipient = {	#Subject that receives this interaction
+			add_opinion = { 
+				target = scope:actor 
+				modifier = opinion_elevated_to_celestial_governor 
+			}
+		}		
+		scope:actor = {	#Emperor	
+			add_prestige = prestige_mild_penalty
+		}
+		change_celestial_authority = { value = celestial_authority_weak_penalty }
+		international_organization:middle_kingdom = {
+			international_organization_add_special_status = {
+				type = special_status:celestial_governor
+				country = scope:recipient
+			}
+			change_variable = {
+				name = num_of_celestial_governors
+				add = 1
+			}
+		}
+	}
+	ai_will_do = {
+	}	
+}	

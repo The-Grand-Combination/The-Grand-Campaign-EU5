@@ -1,0 +1,80 @@
+﻿support_heir =  {
+	type = diplomacy
+	relation_type = oneway	
+	break_on_war = yes
+	receiving_color = rgb { 60 120 0 }
+	giving_color = rgb { 40 100 0 }		
+	relation_type_for_ai = friendly
+	uses_diplo_capacity = giving
+	diplomatic_capacity_cost = support_heir_upkeep_cost
+	offer_visible = no	#We do not want the diplo actions from that relation as they are done in country_interactions/support_heir.txt
+	request_visible = no
+	break_visible = no
+	category = {
+		offer = CATEGORY_FRIENDLY_ACTIONS
+		cancellation = CATEGORY_HOSTILE_ACTIONS
+		break = CATEGORY_HOSTILE_ACTIONS
+	}
+	cancel_effect = {
+		scope:recipient = {
+			every_in_list = {
+				variable = supported_heirs
+				limit = {
+					has_variable = home_country
+					var:home_country ?= scope:actor
+				}
+				if = {
+					limit = {
+						is_alive = yes
+						is_ruler = no
+					}
+					move_country = scope:actor
+				}
+				remove_variable = home_country
+				scope:recipient = {
+					remove_list_variable = {
+						name = supported_heirs
+						target = PREV
+					}
+				}
+			}
+		}
+	}
+	expire_effect = {
+		scope:recipient = {
+			every_in_list = {
+				variable = supported_heirs
+				limit = {
+					has_variable = home_country
+					var:home_country ?= scope:actor
+				}
+				if = {
+					limit = {
+						is_alive = yes
+						is_ruler = no
+					}
+					move_country = scope:actor
+				}
+				remove_variable = home_country
+				scope:recipient = {
+					remove_list_variable = {
+						name = supported_heirs
+						target = PREV
+					}
+				}
+			}
+		}
+	}	
+	will_expire_trigger = {
+		#we don't need any checks in it as it gets automatically removed
+	}
+	wants_to_give_diplo_chance = {
+		base = -10
+	}
+	wants_to_give = {
+		add = -1000	#AI will do that via country_interactions/support_heir.txt anyways
+	}
+	wants_to_receive = {
+		add = -1000	#AI will do that via country_interactions/support_heir.txt anyways
+	}
+}

@@ -1,0 +1,318 @@
+types ReportIssue
+{
+    type issue_report_file_entry = widget {
+        widget = {        
+            size = { 98% 100% }
+            parentanchor = center
+
+            using = bg_scroll_card
+            blockoverride "card_color" { using = color_mid_blue_texture }
+
+            button =  {
+                size = { 100% 100% }
+                gfxtype = framedbuttongfx
+                effectname = "NoHighlight"
+                upframe = 1
+                overframe = 2
+                downframe = 3
+                disableframe = 4
+
+                texture = "gfx/interface/buttons/scroll_card_button.dds"
+                frame_grid = { 4 1 }
+                spriteType = Corneredstretched
+                spriteborder = { 16 13 }
+
+                action_tooltip = {
+                    click_mode = single
+                    click_type = left
+                    title = "TOGGLE_SELECTION"
+                    on_action = "[ReportIssueItem.Toggle]"
+                }
+                
+                tooltipwidget = { 
+					BasicFunctionalTooltip = {}
+				}
+
+                hbox = {
+                    margin = { 20 0 }
+                    using = layoutpolicy_expanding
+                    spacing = 10
+                    ignoreinvisible = yes
+    
+                    # icon
+                    icon = {
+                        texture = "gfx/interface/buttons/flats/regiments.dds"
+                        size = { 24 24 }
+                        using = ui_direction_button_overlay
+                    }
+    
+                    text_single = {
+                        layoutpolicy_horizontal = expanding
+                        autoresize = no
+                        align = left|nobaseline
+                        text = "[ReportIssueItem.GetName]"
+                    }
+    
+                    button_checkbox = {
+                        size = { 20 20 }
+                        autoresize = no
+                        checked = "[ReportIssueItem.IsSelected]"
+                        onclick = "[ReportIssueItem.Toggle]"
+                        tooltipwidget = { LeftClickButtonTooltip = { blockoverride "onclick_text" { text = "TOGGLE_SELECTION" } } }
+                    }
+                }
+            }
+        }
+    }
+
+    type issue_report_files = vbox {
+		sort_list = {
+			datacontext = "[ReportIssueWindow.GetItemSortSearch]"
+
+            blockoverride "sort_buttons_visible" {
+				visible = no
+			}
+
+			blockoverride "scroll_list_content" {
+				addcolumn = 100%
+				addrow = 40
+                setitemsizefromcell = yes
+				datamodel = "[ReportIssueWindow.GetAttachmentList]"
+				item = {
+					issue_report_file_entry = {}
+				}
+			}
+		}
+	}   
+}
+
+window = {
+	name = "report_issue_window"
+    parentanchor = center
+    movable = yes
+    layer = top
+
+    size = { 800 900 }
+    using = bg_window_default_alt
+	
+    vbox = {
+        set_parent_size_to_minimum = yes
+        using = window_margin_alt
+        
+        window_header_alt = {
+            blockoverride "header_text" {
+                text = "REPORT_ISSUE"
+            }
+        }
+
+        vbox = {
+            using = layoutpolicy_expanding
+            using = bg_main_inner_notabs_alt
+            using = window_main_tabs_margin_alt
+
+            vbox = {
+                layoutpolicy_horizontal = expanding
+                spacing = 10
+                margin = { 10 10 }
+                editbox_single = {
+                    layoutpolicy_horizontal = expanding
+                    name = "issue_title"
+                    margin = { 10 5 }
+
+                    alwaystransparent = no
+                    focuspolicy = all
+                    ontextedited = "[ReportIssueWindow.OnTitleTextChanged]"
+                    tooltipwidget = { LeftClickButtonTooltip = { blockoverride "onclick_text" { text = "REPORT_ISSUE_TITLE_DESC" } } }
+
+                    using = Font_Type_Console
+                    default_format = "#color_white"
+
+                    blockoverride "editbox_label" {
+                        text = "REPORT_ISSUE_TITLE"
+                        default_format = "#color_white"
+                    }
+                }
+
+                editbox = {
+                    name = "issue_description"
+                    using = layoutpolicy_expanding
+                    size = { -1 160 }
+
+                    tooltipwidget = { LeftClickButtonTooltip = { blockoverride "onclick_text" { text = "REPORT_ISSUE_DESCRIPTION_DESC" } } }
+                    filter_mouse = none
+                    alwaystransparent = no
+                    multiline = yes
+                    ontextedited = "[ReportIssueWindow.OnDescriptionTextChanged]"
+
+                    using = editbox_background
+                    margin = { 12 12 }
+                    align = nobaseline|top
+
+                    focuspolicy = all
+                    default_format = "#high"
+
+                    text_single = {
+                        size = { 100% 100% }
+                        margin = { 12 12 }
+                        parentanchor = vcenter
+                        autoresize = no
+                        alpha = 0.5
+                        alwaystransparent = yes
+                        align = nobaseline|top
+
+                        visible = "[IsSelfOrAnyChildAnEmptyEditbox(PdxGuiWidget.AccessParent.Self)]"
+                        text = "REPORT_ISSUE_DESCRIPTION"
+                    }
+                }
+
+                editbox = {
+                    name = "issue_steps"
+                    using = layoutpolicy_expanding
+                    size = { -1 80 }
+
+                    tooltipwidget = { LeftClickButtonTooltip = { blockoverride "onclick_text" { text = "REPORT_ISSUE_STEPS_DESC" } } }
+                    filter_mouse = none
+                    alwaystransparent = no
+                    multiline = yes
+                    ontextedited = "[ReportIssueWindow.OnStepsTextChanged]"
+
+                    using = editbox_background
+                    margin = { 12 12 }
+                    align = nobaseline|top
+                    focuspolicy = all
+                    default_format = "#high"
+
+                    text_single = {
+                        size = { 100% 100% }
+                        margin = { 12 12 }
+
+                        parentanchor = vcenter
+                        autoresize = no
+                        alpha = 0.5
+                        alwaystransparent = yes
+                        align = nobaseline|top
+
+                        visible = "[IsSelfOrAnyChildAnEmptyEditbox(PdxGuiWidget.AccessParent.Self)]"
+                        text = "REPORT_ISSUE_STEPS"
+                    }
+                }
+            }
+
+            
+            vbox = {
+                layoutpolicy_horizontal = expanding
+                margin = { 10 10 }
+                
+                vbox = {
+                    layoutpolicy_horizontal = expanding
+                    minimumsize = { 540 220 }
+                    spacing = 10
+
+                    using = bg_paper_card
+
+                    widget = {
+                        size = { -1 32 }
+    
+                        layoutpolicy_horizontal = expanding
+                        using = bg_card_header_01
+                        
+                        text_single = {
+                            margin = { 10 5 }
+                            autoresize = yes
+                            using = Font_Size_Small
+                            default_format = "#yellow_titles"
+                            visible = "[Not(IsDataModelEmpty(ReportIssueWindow.GetAttachmentList))]"
+                            text = "REPORT_ISSUE_ATTACHMENT_LIST_DESC"
+                        }
+                    }
+
+                    issue_report_files = {
+                        using = layoutpolicy_expanding
+                    }
+                }
+            }
+            
+            hbox = {
+                layoutpolicy_horizontal = expanding
+                margin = { 10 0 }
+                spacing = 10
+                
+                button_regular = {
+                    name = "resume_button"
+                    text = "CANCEL"
+                    input_action = "close_window"
+                    use_global_input_instance = yes
+                    using = button_resize_to_fit_text
+
+                    action_tooltip = {
+                        click_mode = single
+                        click_type = left
+
+                        title = "REPORT_ISSUE_DISMISS"
+                        on_action = "[ReportIssueWindow.Hide]"
+                    }
+
+                    tooltipwidget = { 
+                        BasicFunctionalTooltip = {}
+                    }
+                }
+
+                expand = {}
+
+                button_regular = {
+                    name = "generate_button"
+                    text = "REPORT_ISSUE_GENERATE_FILES"
+                    enabled = "[ReportIssueWindow.IsFileGenerationAvailable]"
+                    using = button_resize_to_fit_text
+
+                    action_tooltip = {
+                        click_mode = single
+                        click_type = left
+                        enabled = "[ReportIssueWindow.IsFileGenerationAvailable]"
+                        title = "[ReportIssueWindow.GetFileGenerateTooltip]"
+                        on_action = "[ReportIssueWindow.GenerateReportFiles]"
+                    }
+
+                    tooltipwidget = { 
+                        BasicFunctionalTooltip = {}
+                    }
+                }
+
+                button_regular = {
+                    name = "confirm_button"
+                    text = "REPORT_ISSUE_SEND"
+                    enabled = "[ReportIssueWindow.CanSendReport]"
+                    using = button_resize_to_fit_text
+                    using = snd_UI_confirm
+
+                    action_tooltip = {
+                        click_mode = single
+                        click_type = left
+                        enabled = "[ReportIssueWindow.CanSendReport]"
+                        title = "[ReportIssueWindow.GetConfirmTooltip]"
+                        on_action = "[ReportIssueWindow.Confirm]"
+                    }
+
+                    tooltipwidget = { 
+                        BasicFunctionalTooltip = {}
+                    }
+                }
+            }
+        }
+    }
+
+    widget = {
+        parentanchor = right
+        position = { -5 5 }
+        size = { 40 40 }
+
+        ui_direction_button_holder_right = {}
+
+        button_close_alt = {
+            blockoverride "close_onclick" {
+                 onclick = "[ReportIssueWindow.Hide]"
+            }
+        }
+    }
+}
+

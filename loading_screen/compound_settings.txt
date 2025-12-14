@@ -1,0 +1,273 @@
+setting = {
+	name = "quality"
+	gui_name = "SETTING_QUALITY"
+	category = "Graphics"
+	
+	enum_entry = {
+		name = "very_low"
+		gui_name = "OPTION_VERY_LOW"
+	}
+	enum_entry = {
+		name = "low"
+		gui_name = "OPTION_LOW"
+	}
+	enum_entry = {
+		name = "medium"
+		gui_name = "OPTION_MEDIUM"
+	}
+	enum_entry = {
+		name = "high"
+		gui_name = "OPTION_HIGH"
+	}
+	enum_entry = {
+		name = "ultra"
+		gui_name = "OPTION_ULTRA"
+	}
+
+	setting = {
+        name = "mesh_lod_bias"
+        category = "Graphics"
+		version=1
+		"very_low" = {setting_value = { value = "low" }}
+        "low" = {setting_value = { value = "low" }}
+        "medium" = {setting_value = { value = "medium" }}
+        "high" = {setting_value = { value = "high" }}
+		"ultra" = {setting_value = { value = "high" }}
+    }	
+	setting = {
+        name = "mesh_lod_fade"
+        category = "Graphics"
+		version=0
+		"very_low" = {setting_value = {  enabled = no }}
+        "low" = {setting_value = {  enabled = no }}
+        "medium" = {setting_value = {  enabled = yes }}
+        "high" = {setting_value = {  enabled = yes }}
+		"ultra" = {setting_value = {  enabled = yes }}
+    }	
+	setting = {
+		name = "anti_aliasing"
+		category = "Graphics"
+		version=0
+		"very_low" = {setting_value = { value = "DISABLED" }}
+		"low" = {setting_value = { value = "DISABLED" }}
+        "medium" = {setting_value = { value = "MSAAx2" }}
+        "high" = { setting_value =  { value = "MSAAx2"}
+                condition = {
+                     category = "Graphics"
+                     name = "resolution"
+                     version = 0
+                     exact = not {setting_value = { value = "1920x1080" }}
+                  }
+             }
+        "high" = {setting_value = { value = "MSAAx4" }}
+        "ultra" = { setting_value =  { value = "MSAAx2"}
+                condition = {
+                     category = "Graphics"
+                     name = "resolution"
+                     version = 0
+                     exact = not {setting_value = { value = "1920x1080" }}
+                  }
+             }
+		"ultra" = {setting_value = { value = "MSAAx8" }}
+	}
+	setting = {
+		name = "portrait_multi_sampling"
+		category = "Graphics"
+		version = 0
+		"very_low" = {setting_value = { value = "x2" }}
+		"low" = {setting_value = { value = "x2" }}
+		"medium" = { setting_value =  { value = "x4"}}
+		"high" = {setting_value = { value = "x8" }}
+		"ultra" = {setting_value = { value = "x8" }}
+	}
+	setting = {
+		name = "texture_quality"
+		category = "Graphics"
+		version=1
+		"very_low" = {setting_value = { value = "low" }}
+		"low" = {setting_value = { value = "low" }}
+		"medium" = {setting_value = { value = "medium" }}
+		"high" = {setting_value = { value = "high" }}
+		"ultra" = {setting_value = { value = "ultra" }}
+	}
+	setting = {
+		name = "anisotropic_filtering"
+		category = "Graphics"
+		version=0
+		"very_low" = {setting_value = { value = "DISABLED" }}
+		"low" = {setting_value = { value = "DISABLED" }}
+		"medium" = {setting_value = { value = "x4" }}
+		"high" = {setting_value = { value = "x8" }}
+		"ultra" = {setting_value = { value = "x16" }}
+	}
+	setting = {
+		name = "refraction_quality"
+		category = "Graphics"
+		version=1
+		"very_low" = {setting_value = { value = "disabled" }}
+		"low" = {setting_value = { value = "disabled" }}
+		"medium" = {setting_value = { value = "low" }}
+		"high" = {setting_value = { value = "high" }}
+		"ultra" = {setting_value = { value = "high" }}
+	}
+	setting = {
+        name = "shadowmap_resolution"
+        category = "Graphics"
+		version=2
+		"very_low" = {setting_value = { value = "disabled" }}
+        "low" = {setting_value = { value = "disabled" }}
+        "medium" = {setting_value = { value = "1024x1024" }}
+        "high" = {setting_value = { value = "2048x2048" }}
+		"ultra" = {setting_value = { value = "4096x4096" }}
+    }
+	setting = {
+		name = "mapobject_quality"
+		category = "Graphics"
+		version=0
+		"very_low" = {setting_value = { value = "off" }}
+		"low" = {setting_value = { value = "low" }}
+		"medium" = {setting_value = { value = "medium" }}
+		"high" = {setting_value = { value = "high" }}
+		"ultra" = {setting_value = { value = "high" }}
+	}
+	setting = {
+		name = "ssr_quality"
+		category = "Graphics"
+		version = 1
+		"very_low" = {setting_value = { value = "disabled" }}
+		"low" = {setting_value = { value = "disabled" }}
+		"medium" = {setting_value = { value = "low" }}
+		"high" = {setting_value = { value = "high" }}
+		"ultra" = {setting_value = { value = "high" }}
+	}
+	setting = {
+		name = "blur_quality"
+		category = "Graphics"
+		version = 1
+		"very_low" = {setting_value = { value = "disabled" }}
+		"low" = {setting_value = { value = "disabled" }}
+		"medium" = {setting_value = { value = "low" }}
+		"high" = {setting_value = { value = "high" }}
+		"ultra" = {setting_value = { value = "high" }}
+	}
+	setting = {
+		name = "low_quality_shaders"
+		category = "Graphics"
+		version = 0
+		"very_low" = {setting_value = {  enabled = yes }}
+		"low" = {setting_value = {  enabled = no } }    #This setting is meant for the lowest of low-spec systems. Disable it by default in all presets.
+		"medium" = {setting_value = {  enabled = no }}
+		"high" = {setting_value = {  enabled = no }}
+		"ultra" = {setting_value = {  enabled = no }}
+	}
+	setting = {
+        name = "animated_portraits"
+        category = "Graphics"
+		version=0
+		"very_low" = {setting_value = {  enabled = no }}
+        "low" = {setting_value = {  enabled = no }}
+        "medium" = {setting_value = {  enabled = yes }}
+        "high" = {setting_value = {  enabled = yes }}
+		"ultra" = {setting_value = {  enabled = yes }}
+	}
+	setting = {
+        name = "portraits_ssao"
+        category = "Graphics"
+		version=0
+		"very_low" = {setting_value = {  enabled = no }}
+        "low" = {setting_value = {  enabled = no }}
+        "medium" = {setting_value = {  enabled = no }}
+        "high" = {setting_value = {  enabled = yes }}
+		"ultra" = {setting_value = {  enabled = yes }}
+	}
+	setting = {
+		name = "bloom_quality"
+		category = "Graphics"
+		version = 0
+		"very_low" = {setting_value = { value = "disabled" }}
+		"low" = {setting_value = { value = "low" }}
+		"medium" = {setting_value = { value = "low" }}
+		"high" = {setting_value = { value = "high" }}
+		"ultra" = {setting_value = { value = "high" }}
+	}
+	setting = {
+		name = "ssao"
+		category = "Graphics"
+		version = 0
+		"very_low" = {setting_value = {  enabled = no }}
+		"low" = {setting_value = {  enabled = no }}
+		"medium" = {setting_value = {  enabled = no }}
+		"high" = {setting_value = {  enabled = yes }}
+		"ultra" = {setting_value = {  enabled = yes }}
+	}
+	setting = {
+		name = "depthoffield"
+		category = "Graphics"
+		version = 0
+		"very_low" = {setting_value = {  enabled = no }}
+		"low" = {setting_value = {  enabled = no }}
+		"medium" = {setting_value = {  enabled = no }}
+		"high" = {setting_value = {  enabled = yes }}
+		"ultra" = {setting_value = {  enabled = yes }}
+	}
+	setting = {
+		name = "triplanar_uv_quality"
+		category = "Terrain"
+		version = 1
+		"very_low" = {setting_value = { value = "disabled" }}
+		"low" = {setting_value = { value = "low" }}
+		"medium" = {setting_value = { value = "medium" }}
+		"high" = {setting_value = { value = "high" }}
+		"ultra" = {setting_value = { value = "high" }}
+	}
+	setting = {
+		name = "3d_terrain_disable"
+		category = "Terrain"
+		version = 0
+		"very_low" = {setting_value = {  enabled = yes }}
+		"low" = {setting_value = {  enabled = no }}
+		"medium" = {setting_value = {  enabled = no }}
+		"high" = {setting_value = {  enabled = no }}
+		"ultra" = {setting_value = {  enabled = no }}
+	}
+	setting = {
+		name = "enable_particles"
+		category = "Graphics"
+		version = 0
+		"very_low" = {setting_value = {  enabled = no }}
+		"low" = {setting_value = {  enabled = yes }}
+		"medium" = {setting_value = {  enabled = yes }}
+		"high" = {setting_value = {  enabled = yes }}
+		"ultra" = {setting_value = {  enabled = yes }}
+	}
+	setting = {
+        name = "unit_coa_resolution_size"
+        category = "Graphics"
+		version=0
+		"very_low" = {setting_value = { value ="32 x 32" }}
+        "low" = {setting_value = { value = "64 x 64" }}
+        "medium" = {setting_value = { value = "64 x 64" }}
+        "high" = {setting_value = { value = "128 x 128" }}
+		"ultra" = {setting_value = { value = "128 x 128" }}
+    }
+	setting = {
+		name = "gui_texture_streaming"
+		category = "Graphics"
+		version = 1
+		"very_low" = {setting_value = {  enabled = yes }}
+		"low" = {setting_value = {  enabled = yes }}
+		"medium" = {setting_value = {  enabled = yes }}
+		"high" = {setting_value = {  enabled = yes }}
+		"ultra" = {setting_value = {  enabled = yes }}
+	}	
+	setting = {
+		name = "single_unit_armies"
+		category = "Graphics"
+		version = 0
+		"very_low" = 	{setting_value = {  enabled = yes }}
+		"low" = 		{setting_value = {  enabled = no }}
+		"medium" = 		{setting_value = {  enabled = no }}
+		"high" = 		{setting_value = {  enabled = no }}
+		"ultra" = 		{setting_value = {  enabled = no }}
+	}
+}

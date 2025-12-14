@@ -1,0 +1,173 @@
+﻿enlightenment = {
+	age = age_6_revolutions
+	
+	
+	can_spawn = {
+		OR = {
+			AND = {
+				has_game_rule = institution_spawn_random_city
+				location_rank = location_rank:city
+			}
+			AND = {
+				has_game_rule = institution_spawn_fixed_historical
+				this = location:paris
+			}
+			AND = {
+				has_game_rule = institution_spawn_plausible
+				has_institution = institution:scientific_revolution
+
+				OR = {
+					continent = continent:europe
+					sub_continent = sub_continent:north_africa
+				}
+
+				has_building_with_at_least_one_level = university
+				average_location_literacy > 30
+				
+				
+				owner = {
+					societal_value:traditionalist_vs_innovative > 20
+				}
+			}
+		}
+		
+	}
+
+	
+	promote_chance = {
+		add = {
+			value = average_location_literacy
+		}
+
+		add = {
+			value = num_pop_type:burghers
+			multiply = 10
+		}
+		add = {
+			value = num_pop_type:nobles
+			multiply = 10
+		}
+	}
+	
+	#hardcoded spreads for optimisations..
+	spread_from_friendly_coast_border_location = institution_base_spread_from_friendly_neighbor_with_late
+	spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_late
+	spread_from_any_import = institution_trade_spread_value_late
+	spread_from_was_possible_spawn = institution_spread_from_was_possible_spawn_late
+	spread_scale_on_control_if_owner_embraced = 2
+	spread_embraced_to_capital = institution_total_embraced_to_capital_late
+	spread_to_market_member = institution_spread_to_market_member_late
+
+}
+
+industrialization = {
+	age = age_6_revolutions 
+	
+	
+	can_spawn = {
+		OR = {
+			AND = {
+				has_game_rule = institution_spawn_random_city
+				location_rank = location_rank:city
+			}
+			AND = {
+				has_game_rule = institution_spawn_fixed_historical
+				this = location:blackburn
+			}
+			AND = {
+				has_game_rule = institution_spawn_plausible
+				has_institution = institution:manufactories
+
+				OR = {
+					continent = continent:europe
+					sub_continent = sub_continent:north_africa
+				}
+
+				num_pop_type:burghers > 20
+				total_building_levels > 120
+				
+				owner = {
+					societal_value:capital_economy_vs_traditional_economy < -30
+				}
+			}
+		}
+
+	}
+	
+	promote_chance = {
+		add = {
+			value = average_location_literacy
+		}
+
+		add = {
+			value = owner.total_population
+		}
+	}
+	
+		#hardcoded spreads for optimisations..
+	spread_from_friendly_coast_border_location = institution_base_spread_from_friendly_neighbor_with_late
+	spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_late
+	spread_from_any_import = institution_trade_spread_value_late
+	spread_from_was_possible_spawn = institution_spread_from_was_possible_spawn_late
+	spread_scale_on_control_if_owner_embraced = 2
+	spread_embraced_to_capital = institution_total_embraced_to_capital_late
+	spread_to_market_member = institution_spread_to_market_member_late
+
+}
+
+levee_en_masse = {
+	age = age_6_revolutions
+	
+	
+	can_spawn = {
+		OR = {
+			AND = {
+				has_game_rule = institution_spawn_random_city
+				location_rank = location_rank:city
+			}
+			AND = {
+				has_game_rule = institution_spawn_fixed_historical
+				this = location:paris
+			}
+			AND = {
+				has_game_rule = institution_spawn_plausible
+				has_institution = institution:military_revolution
+				owner ?= { capital = root }
+				population > 200
+				
+				owner = {
+					societal_value:quality_vs_quantity > 0
+				}
+			}
+		}
+		
+	}
+	
+	promote_chance = {
+		add = {
+			value = average_location_literacy
+		}
+
+		add = num_pop_type:peasants
+	}
+		#hardcoded spreads for optimisations..
+	spread_from_friendly_coast_border_location = institution_base_spread_from_friendly_neighbor_with_late
+	spread_from_any_coast_border_location = institution_base_spread_from_neighbor_with_late
+	spread_from_any_import = institution_trade_spread_value_late
+	spread_from_was_possible_spawn = institution_spread_from_was_possible_spawn_late
+	spread_scale_on_control_if_owner_embraced = 2
+	spread_embraced_to_capital = institution_total_embraced_to_capital_late
+	spread_to_market_member = institution_spread_to_market_member_late
+
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,1745 @@
+﻿
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$TITLE_EUROPA_UNIVERSALIS_V$
+
+
+
+$STUDIO_PARADOX_TINTO$
+
+
+
+$ROLE_GAME_DIRECTOR$
+Johan Andersson
+
+$ROLE_EXECUTIVE_PRODUCER$
+Sonia Linares Martínez
+
+$ROLE_GAME_DESIGNER$
+The Entire Team at Paradox Tinto
+
+$ROLE_TECH_DIRECTOR$
+Alexander Ivannikov
+
+$ROLE_ART_DIRECTOR$
+David Horler
+
+$ROLE_CONTENT_DESIGN_LEAD$
+Álvaro Sanz
+
+$ROLE_ASSOCIATE_PRODUCER$
+Arnau Casellas
+
+$ROLE_RELEASE_ENGINEER$
+Kuba Gabryel
+
+$ROLE_UX_UI_COORDINATOR$
+Èric Vicent i Ferrer
+
+$ROLE_3D_COORDINATOR$
+Stefan Vonboe Lang
+
+$ROLE_2D_COORDINATOR$
+Matias Tiscornia Pujol
+
+$ROLE_GAME_PROGRAMMER$
+Johan Andersson
+James Capstick
+Jordi Santiago Provencio
+Adrián González López
+Albert Martinez Oliver
+Sergey Demidov
+Aurelien Delay
+Daniel Eriksson
+Olle Sundin
+Jakub Woldon
+Pedro González-Anta
+
+$ROLE_ENGINE_PROGRAMMER$
+Alex García Giménez
+Ricardo Pérez Cortés
+Riccardo Maria
+
+$ROLE_CONTENT_DESIGNER$
+Javier Salazar Vilches
+Álvaro Sanz
+Ogulcan Yildirim
+Raúl Trullenque Viudas
+Roger Corominas Guillen
+William Samelis
+Markus Hofmann
+
+$ROLE_UX_UI_DESIGNER$
+Èric Vicent i Ferrer
+Jorge Baringo Castel
+
+$ROLE_2D_ARTIST$
+Cristina Arenas Béjar
+Matias Tiscornia Pujol
+Mina Noughou
+Sara Monzón Ramírez
+
+$ROLE_3D_ENVIRONMENT_ARTIST$
+Javier Izquierdo
+
+$ROLE_3D_CHARACTER_ARTIST$
+Stefan Vonboe Lang
+Artur Augusto
+
+$ROLE_QA_COORDINATOR$
+Kuba Gabryel
+
+$ROLE_QA_TESTER$
+George Fournaris
+Marc Ghattas
+
+$ROLE_QA_AUTOMATION$
+George Fournaris
+
+
+
+$DISCIPLINE_ADDITIONAL$
+
+$ROLE_ADDITIONAL_PROGRAMMER$
+David Horler
+Martin Hesselborn
+Ogulcan Yildirim
+Roger Corominas Guillen
+Danieulsus Vitkauskas
+Petter Hansson
+Henrik Hansson
+Rickard Westerlund
+Kuba Gabryel
+Stefan Lindström
+Andrei Vinogradov
+Albert Manyà
+
+$ROLE_ADDITIONAL_CONTENT_DESIGNER$
+Johan Andersson
+David Horler
+James Capstick
+Nolan Myrick
+Hubert Musiał
+Pavel Poprík
+Vasileios Magos
+Ola Jentzsch
+Jon Olsson
+
+$ROLE_LOCALIZATION_REVIEWER_EDITOR$
+Anna Merchant
+Matthew Hlady
+
+$ROLE_ADDITIONAL_2D_ARTIST$
+Axel Alba Morcillo
+Irene Rodríguez
+Mathieu Boyer
+Raphael Berthoud
+Lucas Somariva
+Ecbel Oueslati
+
+$ROLE_COAT_OF_ARMS_ARTIST$
+Patrick Mauffrey
+
+$ROLE_ADDITIONAL_3D_CHARACTER_ARTIST$
+Pierre Azuelos
+Nils Wadensten
+
+$ROLE_ASSISTANT_PRODUCER$
+Laura Cort Ferreres
+
+$ROLE_ART_RESEARCHER$
+Enrique Sales Ruiz
+
+$ROLE_ADDITIONAL_3D_ENVIRONMENT_ARTIST$
+Eva Ara
+Luisa Rodríguez Salazar
+Lidia Ortolá Calatayud
+Nelo López Chilet
+Nerea Echeverria Rodríguez
+
+$ROLE_VFX_ARTIST$
+Erik Forsström
+Sean Meegan
+
+$ROLE_UI_DEVELOPER$
+Lia Schüler
+Alejandro Arfini
+Luis Vizán
+Anne Björnsdotter
+
+$ROLE_ADDITIONAL_QA$
+Arnau Casellas
+Markus Hofmann
+Jorge Baringo Castel
+Markus Grebe
+Pawel Adamczyk
+Micha Helder
+Luis Vizán
+Nicolai Frosch
+Anton Baringo Castel
+Yamaan Ziade
+
+
+
+$DISCIPLINE_COMMUNITY_MANAGEMENT$
+
+$ROLE_COMMUNITY_MANAGER$
+Ryan Booher
+Erik Jakobsson
+
+$ROLE_COMMUNITY_AMBASSADOR$
+Lia Patsakos
+Alex Dunk
+Anna Merchant
+Clément Thébault
+Yamaan Ziade
+Lizhi Dong
+
+$ROLE_ADDITIONAL_SUPPORT$
+Peter Curtiss
+Hubert Musiał
+
+
+
+$DISCIPLINE_LOCALIZATION_PRODUCTION$
+Arnau Casellas
+Roger Corominas Guillen
+
+
+
+$DISCIPLINE_MANAGEMENT$
+
+$ROLE_STUDIO_MANAGER$
+Johan Andersson
+
+$ROLE_HEAD_OF_OPERATIONS$
+Sonia Linares Martínez
+
+
+
+$DISCIPLINE_OFFICE$
+
+$ROLE_FACILITIES$
+Sonia Linares Martínez
+Nuria Rubira
+Jorge Arce
+
+$ROLE_OFFICE_DOGS$
+Kira I 
+Kira II
+Leia
+Nocco
+Pincho
+Sora
+Summer
+Marley
+Kiara
+Shiva
+Lucy
+Bilbo
+
+
+
+$DISCIPLINE_CONTRIBUTIONS$
+
+$ROLE_CONTRIBUTION_PROGRAMMER$
+Ján Takáč
+Yurii Denis
+Konrad Magnusson
+Marcus Holmberg
+Jesús Viveros
+
+$ROLE_CONTRIBUTION_CONTENT_DESIGN$
+José María Aguirre García de la Noceda
+Micha Helder
+Nicolai Frosch
+Henrik Lohmander
+Hugo Cortell
+Gilles Gaudray
+Geneviève Hébert-Jodoin
+Verónica Pazos
+Peter Nicholson
+Kuba Gabryel
+George Fournaris
+Álvaro García Hernández
+Ignacio Vielba González
+Anna Merchant
+Matthew Hlady
+
+$ROLE_CONTRIBUTION_UI_DEVELOPER$
+Desiré Marrón
+
+$ROLE_CONTRIBUTION_UX_UI_DESIGNER$
+Peter Johannesson
+Ellinor Zetterman
+Kajsa Olofsson
+
+$ROLE_CONTRIBUTION_2D_ARTIST$
+Jon Astrup Hällkvist
+Max Elmberg Sjöholm
+Kaloyan Boychev
+Nuria Calzada
+Rubén Pérez
+Şule Billur Yapıcı
+
+$ROLE_CONTRIBUTION_3D_ARTIST$
+Joacim Carlberg
+Paul Le Quéré
+Paula Martín López
+Enrique Sales Ruiz
+Nathan Collado
+
+$ROLE_CONTRIBUTION_ASSOCIATE_PRODUCER$
+Rodrigo Moltó
+Jesús Escribano
+
+$ROLE_CONTRIBUTION_AS_LOCALIZATION_REVIEWER_EDITOR$
+Cy Joseph Pabis
+Henry Newton
+
+$ROLE_CONTRIBUTION_QA$
+Mathias Lamerz
+Carlos Muñoz Díaz
+Lia Schüler
+Alejandro Arfini
+
+
+
+$STUDIO_PARADOX_INTERACTIVE$
+
+
+
+$DISCIPLINE_MANAGEMENT$
+ 
+$ROLE_CHIEF_EXECUTIVE_OFFICER$
+Fredrik Wester
+
+$ROLE_CHIEF_OF_STAFF$
+Mattias Lilja
+
+$ROLE_CHIEF_FINANCE_OFFICER$
+Alexander Bricca
+
+$ROLE_CHIEF_OPERATIONS_OFFICER$
+Charlotta Nilsson
+
+$ROLE_CHIEF_BUSINESS_OFFICER$
+Mattias Rengstedt
+
+$ROLE_CHIEF_CREATIVE_OFFICER$
+Henrik Fåhraeus
+
+$ROLE_CHIEF_GROWTH_OFFICER$
+Daniel Grigorov
+
+$ROLE_EVP_OF_CULTURE_ENGAGEMENT$
+Paula Thelin
+
+$ROLE_EXECUTIVE_ASSISTANT$
+Stina Parmenvik 
+
+
+
+$DISCIPLINE_PRODUCTION_TEAM$
+
+$ROLE_MANAGER_OF_PRODUCT_LAUNCH$
+Nicole Savage
+
+$ROLE_RELEASE_MANAGER$
+Robyn Svanström
+Louise Mutel
+Ida Ankarstrand
+Ana Pinton
+
+$ROLE_COMPLIANCE_DESIGNER$
+Lars Minkkinen
+
+$ROLE_RELEASE_COORDINATOR$
+Rebecca Gelson
+
+$ROLE_GAME_PLATFORM_SPECIALIST$
+David Karlsson Lille
+
+$ROLE_MANAGER_OF_PUBLISHING_PRODUCTION$
+Jonathan Cole
+
+$ROLE_LOCALIZATION_PRODUCER$
+Nick Citkoŭ
+Marcus Westerlund
+
+$ROLE_GAMETECH_LAB_TECHNICIAN$
+Ivan Fomenko
+
+$ROLE_GAMETECH_LAB_SPECIALIST$
+Marcus Brobert
+
+$ROLE_QA_MANAGER_FOR_PUBLISHING$
+Khalid Gisberts
+
+$ROLE_PUBLISHING_TECH_LEAD$
+Roman Fadeev
+
+$ROLE_VP_OF_BUSINESS_-_GSG$
+Fabricio Santos
+
+$ROLE_BUSINESS_OWNER$
+Fredrik Selldén
+Jakob Jorstedt
+Luca Kling
+
+$ROLE_PRODUCT_MARKETING_MANAGEMENT$
+Alan Mahmodian
+Alexandra Sukhova
+Camilla Wemmenlöv
+Davide Ghelli
+Francesca Passoni
+Hanna Holmgren
+Maciej Kozlowski
+Tess Van Loo
+
+$ROLE_HEAD_OF_MARKETING$
+Stefan Wallin
+
+$ROLE_HEAD_OF_MARKETING_CREATIVE$
+Adam Skarin
+
+$ROLE_MARKETING_CREATIVE$
+Alexander Eliasson
+Benjamin Kajfasz
+Felicia Holmgren Fondelius
+Felix Hindemo
+Jennie Nyström
+Johan Adegran
+John Ahlbäck
+Marcus Paulsson
+Marianna Bukowski
+Max Collin
+Niklas Johansson
+Oskar Petrén
+Rachel Oratis
+Simon Zickbauer
+Victoria Säwström
+Yali Murillo
+
+$ROLE_PAID_MEDIA$
+Linn Yngvesson
+Anton Rask
+Henrik Bonnichsen
+Sofia Lundstedt Radetzki
+
+$ROLE_MARKET_RESEARCH$
+Filip Stenback Seligman
+
+$ROLE_MARKET_GROWTH$
+June Low
+
+$ROLE_INFLUENCER_RELATIONS$
+Dennis Johnni
+Jonathan Whitley
+
+$ROLE_SOCIAL_MEDIA_SPECIALIST$
+Preethi Doddy
+
+$ROLE_CRM$
+Annie Alström
+Karola Kiessling
+Christopher Borén
+
+$ROLE_HEAD_OF_WEB_SERVICES$
+Jonas Stenqvist
+
+$ROLE_WEB_SERVICES$
+David Zardini
+Dimo Fedortchenko
+João Duduch
+Josef Widoff
+Oleg Böttiger
+Sofia Svensson
+
+$ROLE_CUSTOMER_SUPPORT$
+Christian Arvidsson
+
+$ROLE_PUBLIC_RELATIONS$
+Jesse Henning
+Troy Goodfellow
+Mauritz Carlström
+
+$ROLE_COMMUNITY_PROGRAM$
+Madeleine Jonsson
+Erik Jakobsson
+Michaela Aicardi
+
+$ROLE_COMMUNITY_MANAGER$
+Pelly Davies
+Jacob Blakey
+Amelie Archibald
+Per Bonomi
+
+$ROLE_CORPORATE_COMMUNICATIONS$
+Marcus Hallberg
+
+$ROLE_PARTNER_ACCOUNT_MANAGER$
+Alexander Mellström
+Sofia Stenson
+
+$ROLE_PARTNER_MARKETING_MANAGER$
+Kimberly Trapnell
+
+$ROLE_COMMERCIAL_MANAGER$
+Johan Rosenqvist
+Simon Rizell
+
+$ROLE_BI_SPECIALIST$
+Max Tillas
+Per Fagerström
+
+$ROLE_LICENSING_MANAGER$
+Melissa Skogman
+
+$ROLE_MERCHANDISE$
+Veronica Gunlycke
+
+
+
+$DISCIPLINE_CENTRAL_TECH_SERVICES$
+
+$ROLE_CENTRAL_TECH_SERVICES_DIRECTOR$
+Leif Dellmar
+
+$ROLE_CLAUSEWITZ_ENGINE_PROGRAMMER_MANAGER$
+Mario Lasan
+
+$ROLE_CLAUSEWITZ_ENGINE_TECH_LEAD$
+Rickard Lagerbäck
+Davey van den Berg
+Victor Wåhlström
+
+$ROLE_CLAUSEWITZ_ENGINE_ENGINEER$
+Andrey Martynyuk
+Elliot Kim
+Flovin Michaelsen
+Hadi Brais
+Jonathan Rawet
+Priyanka Balasaheb Gunjal
+Kajsa Olenäs
+Marcus Beausang
+Marcus Holmberg
+Nikita Bart
+Roman Baev
+Sean Wenström
+Siarhei Harelyshau
+Trevin Sorenson
+
+$ROLE_PLATFORM_SERVICES_MANAGER$
+David Drake
+
+$ROLE_BUILD_TEST_AUTOMATION_ENGINEER$
+Per Hasselström
+Albin Wallin
+Alexander Fast
+Henrik Lindgren
+Tadgh Wagstaff
+Vjola Velikaj
+Yaroslav Hetman
+
+$ROLE_INFRASTRUCTURE_AUTOMATION_ENGINEER$
+Philip Adams
+Rohit Thomas
+Javier Jarpa
+Layla Manley
+
+$ROLE_ONLINE_SERVICES_MANAGER$
+Maria Jakobsson
+
+$ROLE_ONLINE_SERVICES_TECH_LEAD$
+Aleš Bolka
+Daniel Karlsson
+Etki Gür
+Mikolaj Trzeciecki
+
+$ROLE_ONLINE_SERVICES_ENGINEER$
+Alex Örnberg
+Alexander Altanis
+Jad Hajjar
+Maximillian Fischhaber
+Mikael Berg
+Shubhangi Pardeshi
+William Goh
+Zachary Eriksson
+
+$ROLE_TECHNICAL_WRITER$
+Johanna Vaher
+
+$ROLE_HEAD_OF_DATA_ANALYTICS$
+Serge de Gosson de Varennes
+
+$ROLE_BI_SPECIALIST$
+Max Tillas
+Per Fagerström
+
+$ROLE_DATA_ENGINEER$
+Gabriel Grünberg
+Pablo Nahuel Pelli
+Vlad Caciula
+
+$ROLE_DATA_SCIENTIST$
+Fatemeh Seifan
+Jenny Wade
+Stephen White
+Berkan Yapici
+Claudio Rosa
+   
+$ROLE_RESEARCH_MANAGER$
+Stefan Eld
+
+$ROLE_USER_RESEARCHER$
+Laurent Cala
+Cherno Jallow
+Hanna Löhman
+Samantha Kadour
+Agata Macuba
+Margot Thétiot
+Jenny Wickman
+
+$ROLE_USER_RESEARCH_COORDINATOR$
+Anna Ström
+
+
+
+$DISCIPLINE_PARADOX_AUDIO$
+
+$ROLE_HEAD_OF_AUDIO$
+Franco Freda
+
+$ROLE_AUDIO_PRODUCER$
+Samet Atasoy
+
+$ROLE_AUDIO_DIRECTOR$
+Mattias Wennlund
+
+$ROLE_MUSIC_BUSINESS_DIRECTOR$
+Tobias Gustavsson
+
+$ROLE_MUSIC_BUSINESS_CONSULTANT$
+Yannick Süß
+
+$ROLE_SOUND_DESIGNER$
+Andrew J. Ryan
+Robert Wozniak
+Tobey Evans
+Leon Lopez Moral
+Ernesto Lopez
+
+
+
+$DISCIPLINE_IT$
+
+$ROLE_HEAD_OF_IT$
+Mathias Frostewärn
+
+$ROLE_IT_SYSTEMS_ENGINEER$
+David Östlund
+Marcus Bose Holmqvist
+
+$ROLE_IT_APPLICATION_MANAGER$
+Sarah Lager
+
+$ROLE_IT_SERVICE_MANAGER$
+Kim Synnerborn
+
+$ROLE_IT_SUPPORT_TEAM_LEAD$
+Richard Lindkvist
+
+$ROLE_IT_SUPPORT_TECHNICIAN$
+Jesse Kopparvall
+Neyla Garcia
+Philip Wessman
+Tomasz Ender
+
+
+
+$DISCIPLINE_CULTURE_ENGAGEMENT$
+
+$ROLE_EVENTS$
+Umy Yuen Yi Ng
+Isabella Weski
+
+$ROLE_CENTRAL_COMMUNICATIONS$
+Elia Martinez
+Maylis Perez
+
+$ROLE_STOCKHOLM_OFFICE_TEAM$
+Rebecka Rönnbäck 
+Oscar Funegård Viberg
+Renata Majka
+Lotta Gumeliusson
+
+
+
+$DISCIPLINE_FINANCE_LEGAL$
+
+$ROLE_FINANCE$
+Gabriel Andersson
+Fredrik Sederholm
+Sofia Mårtensson
+Alexia Moss
+Tobias Nordlöf
+Emil Pettersson
+
+$ROLE_BUSINESS_CONTROL$
+Mattias Matti
+Henrik Friis-Liby
+
+$ROLE_LEGAL$
+Fredrik Eklund
+Emma Jarl
+Kim Nordmark
+
+
+
+$DISCIPLINE_HUMAN_RESOURCES$
+
+$ROLE_HR_BUSINESS_PARTNERS$
+Caroline Lagerqvist-Merzan
+Ulrika Strandmark
+Fredrik Ullberg
+Elin Trosgård
+
+$ROLE_HR_COORDINATOR$
+Natasha Garkusha Sesay
+
+
+
+$DISCIPLINE_CONTRIBUTIONS$
+
+Simon Stackman
+
+
+
+$STUDIO_ORIGINAL_SOUNDTRACK$
+
+$ROLE_MUSIC_COMPOSER$
+Håkan Glänte
+
+$ROLE_MUSIC_PRODUCER$
+Håkan Glänte
+
+$ROLE_ORCHESTRA$
+Norrköping Symphony Orchestra
+
+$ROLE_CONDUCTOR$
+Håkan Glänte
+
+$ROLE_FRENCH_HORN$
+Anna Ahlenius
+
+$ROLE_OBOE$
+Thomas Bodin
+
+$ROLE_CLARINET$
+Lars Paulsson 
+
+$ROLE_ENGLISH_HORN$
+Daniel Burstedt
+
+$ROLE_RECORDER$
+Emelie Roos
+
+$ROLE_LUTE$
+Dohyo Sol
+
+$ROLE_VIOLA_DA_GAMBA$
+Samuel Runsteen
+
+$ROLE_ORGAN$
+Martin Östergren
+
+$ROLE_FLUGELHORN_TRUMPET$
+Bjørn Bjerknæs-Jacobsen
+
+$ROLE_ADDITIONAL_INSTRUMENTS$
+Håkan Glänte
+
+$ROLE_SOPRANO$
+Anna Jobrant
+Ann Kjellsson
+
+$ROLE_ALTO$
+Siri Woxlin
+
+$ROLE_COUNTERTENOR$
+Daniel Carlsson
+
+$ROLE_TENOR$
+Mikael Carlsson
+Mikael Englund
+
+$ROLE_BASS$
+Adam Jondelius
+Stefan Berkieta
+
+$ROLE_RECORDING_ENGINEER$
+Lars Nilsson
+
+$ROLE_CONTRACTOR$
+Lars Nilsson
+
+$ROLE_MIXING_ENGINEER$
+Håkan Glänte
+
+$ROLE_ORCHESTRATION$
+Håkan Glänte 
+Bjørn Bjerknæs-Jacobsen
+
+$ROLE_SCORE_PARTS_PREPARATION$
+Bjørn Bjerknæs-Jacobsen
+
+
+
+$STUDIO_DECCAN_MUSIC$
+
+$ROLE_AUDIO_PRODUCER$
+Ashutosh Sohoni
+
+$ROLE_CONTRACTOR$
+Ashutosh Sohoni
+
+$ROLE_ORCHESTRATION_SCORE_PREPARATION$
+Ashutosh Sohoni
+
+$ROLE_VEENA$
+Rohan Pillai
+
+$ROLE_MRIDANGAM$
+Pancham Upadhyay
+
+$ROLE_MUSIC_COMPOSITION$
+Traditional
+
+
+
+$STUDIO_ASHANTI_AZTEC_IROQUOIS_MUSIC$
+
+$ROLE_RECORDED_ASHANTI_AZTEC_IROQUOIS_MUSIC$
+
+$ROLE_AUDIO_EXECUTIVE_PRODUCER_CREATIVE_DIRECTOR$
+Cody Matthew Johnson
+
+$ROLE_AUDIO_PRODUCER_ASSOCIATE_CREATIVE_DIRECTOR$
+Hélène Choyer
+
+$ROLE_MIXING_ENGINEER$
+Alec Justice
+
+$ROLE_MASTERING_ENGINEER$
+Alec Justice
+
+$ROLE_RECORDING_ENGINEER$
+Brandon Seliga
+
+$ROLE_AUDIO_PRODUCER$
+Jeff Rona
+
+$ROLE_AUDIO_ASSOCIATE_PRODUCER$
+Richard Bowser
+
+$ROLE_VIDEOGRAPHY$
+Sara Moody
+
+
+
+$DISCIPLINE_ASHANTI_MUSIC$
+
+$ROLE_RECORDED_ASHANTI$
+
+$ROLE_RECORDING_ARTIST$
+Nana Osei Twum Barima
+
+$ROLE_RECORDING_ENGINEER$
+Michiel Lagae
+
+$ROLE_RECORDING_ASSISTANT$
+Wesley Wong Kok Leong
+
+$ROLE_MUSIC_COMPOSITION$
+Traditional
+
+
+
+$DISCIPLINE_AZTEC_MUSIC$
+
+$ROLE_RECORDED_AZTEC$
+
+$ROLE_AZTEC_MUSIC_EXPERT_EHTNOMUSICOLOGIST$
+Pierre Harmon
+
+$ROLE_RECORDING_ARTIST_WINDS$
+Pierre Harmon
+
+$ROLE_RECORDING_ARTIST_PERCUSSION$
+Laurent Sauron
+
+$ROLE_RECORDING_ENGINEER$
+Alban Sautour
+
+$ROLE_MUSIC_COMPOSITION$
+Traditional
+
+
+
+$DISCIPLINE_IROQUOIS_MUSIC$
+
+$ROLE_RECORDED_IROQUOIS$
+
+$ROLE_RECORDING_ARTIST$
+Dan Cecil Hill
+
+$ROLE_RECORDING_ENGINEER$
+Richard Bowser
+
+$ROLE_RECORDING_ASSISTANT$
+Sarah Moody
+
+$ROLE_MUSIC_COMPOSITION$
+Traditional
+
+
+
+$STUDIO_SYRIAN_NORTHERN_GERMAN_CHINESE_MUSIC$
+
+$DISCIPLINE_SYRIAN_MUSIC$
+
+$ROLE_AUDIO_PRODUCER$
+Andreas Unge
+
+$ROLE_RECORDING_ENGINEER$
+Jerker Eklund
+
+$ROLE_MIXING_ENGINEER$
+Jerker Eklund
+
+$ROLE_CONTRACTOR$
+Andreas Unge
+
+$ROLE_QANUN$
+Feras Charestan
+
+$ROLE_VOCALS$
+Ilona Danho
+
+$ROLE_MUSIC_COMPOSITION$
+Gabriel Assad
+Rohi al-Khammash
+Traditional
+
+
+
+$DISCIPLINE_NORTHERN_GERMAN_MUSIC$
+
+$ROLE_RECORDED_GERMAN_MUSIC$
+
+$ROLE_AUDIO_PRODUCER$
+Andreas Unge
+
+$ROLE_RECORDING_ENGINEER$
+Andreas Unge
+
+$ROLE_MIXING_ENGINEER$
+Jerker Eklund
+
+$ROLE_CONTRACTOR$
+Andreas Unge
+
+$ROLE_BAROQUE_CHURCH_ORGAN$
+Martin Östergren
+
+$ROLE_MUSIC_COMPOSITION$
+Traditional
+
+
+
+$DISCIPLINE_CHINESE_MUSIC$
+
+$ROLE_AUDIO_PRODUCER$
+Andreas Unge
+
+$ROLE_RECORDING_ENGINEER$
+Andreas Unge
+
+$ROLE_MIXING_ENGINEER$
+Jerker Eklund
+
+$ROLE_CONTRACTOR$
+Andreas Unge
+
+$ROLE_PIPA$
+Yingying Herrdahl
+
+$ROLE_MUSIC_COMPOSITION$
+Traditional
+
+
+
+$STUDIO_NIX_GAME_VR_STUDIO$
+
+$ROLE_NIX_EXECUTIVE_PRODUCER$
+Sergii Gotsman
+
+$ROLE_NIX_PRODUCER$
+Anastasiia Antoshko
+Oleksandr Holovakhin
+
+$ROLE_NIX_3D_CHARACTER_LEAD$
+Vitalii Shevchenko
+
+$ROLE_NIX_CHARACTER_ARTIST$
+Diana Tarnavska
+Oleksii Zahrunnyi
+Denys Lavrushyn
+Oleksandr Korniienko
+Oleksandr Safonov
+Kateryna Makrushyna
+Rostyslav Bova
+
+$ROLE_NIX_3D_ENVIRONMENT_LEAD$
+Dmytro Bikus
+
+$ROLE_NIX_3D_ENVIRONMENT_ARTIST$
+levgen Gogol
+Yevhenii Tsezariev
+Petro Shekhter
+Oleksandra Putilova
+
+$ROLE_NIX_ANIMATOR$
+Dmytro Pylypiv
+Oleksandr Horayko
+Polina Natalevych
+Yurii Harazha
+
+$ROLE_NIX_2D_LEAD_ARTIST$
+Kateryna Dolhova-Korol
+Maryna Shcherbakova
+Viktoriia Kirichok
+
+$ROLE_NIX_2D_ARTIST$
+Bohdana Vitkovska
+Kyrylo Nedorosol
+Oleksandra Medvedenko
+Nazar Havrylyuk
+Andrii Shvyrov
+Taras Shypko
+Anna Larina
+Vsevolod Zuban
+Alina Samsonenko
+Emmanuil Mysko
+Yurii Averin
+Oleksandra Hrebenozhko
+Yuliia Shandruk
+Vadym Kutsenko
+Daria Sitak
+Olha Derechyna
+Oleksandr Evstihnieiev
+Tetiana Berdynskykh
+Kateryna Ivanytsia
+Hanna Vorona
+Anastasiia Volkovinska
+Andrii Shyvrov
+Mariia Yovko
+Iuliia Fedina
+Alona Chernukha
+Anna Zablotska
+Maryna Staryshko
+Anton Tkachenko
+Viktoriia Vizor
+Mariia Nekrasenko
+Nina Galinska
+Mykola Nikitchenko
+Yevhen Velhanenko
+Mariia Lytvyn
+Yurii Averin
+
+$ROLE_NIX_RESEARCHER$
+Ivan Kulikov 
+Dmytro Linnyk
+Sviatoslav Vasylyshyn
+
+
+
+$STUDIO_ROOM_8_STUDIO$
+
+$ROLE_ROOM8_SENIOR_BUSINESS_DEVELOPMENT_DIRECTOR$
+Jani Savolainen
+
+$ROLE_ROOM8_ART_PRODUCER$
+Anastasia Kuzmenko
+
+$ROLE_ROOM8_ART_DIRECTOR$
+Karyna Khoroshailo
+
+$ROLE_ROOM8_TEAM_LEAD$
+Giorgi Ovnanian
+
+$ROLE_ROOM8_PROJECT_LEAD$
+Oleh Fedorov Character
+
+$ROLE_ROOM8_2D_ARTIST$
+Yevhen Bodrenko
+Natalia Breyeva
+Yaroslav Tarasenko
+Oleksii Tyshchenko
+Stanislav Komarov
+Vladyslav Martynov
+Laura Ortega
+Artem Shapoval
+Evgenii Ostapov
+Daria Demenkova
+Igor Kotsiuba
+Caina Lopes
+Bruno Cavinato
+Dan Pohrebnyi
+Mark Hretskyi
+
+
+
+$STUDIO_GOODNAME_DIGITAL_ART_STUDIO$
+
+$ROLE_GOODNAME_CREATIVE_DIRECTOR$
+Erikas Perlikovskis
+
+$ROLE_GOODNAME_ART_MANAGER$
+Edvinas Ganusauskas
+Rytis Rogačius
+
+$ROLE_GOODNAME_ART_DIRECTOR$
+Mintautas Šukys
+
+$ROLE_GOODNAME_PRINCIPAL_ARTIST$
+Gintas Galvanauskas
+
+$ROLE_GOODNAME_TEAM_LEAD_CONCEPT_ARTIST$
+Paulius Daščioras
+
+$ROLE_GOODNAME_2D_ARTIST$
+Rimas Valeikis
+Vilhelmas Banys
+Yuliya Vasilyeva
+Mathias Meyer
+Rytis Sabaliauskas
+Danielius Borisevičius
+
+
+
+$STUDIO_POSIBILLIAN_TECH$
+
+$ROLE_POSIBILLIAN_PRODUCER$
+José Luis Parcerisa Gonzalez
+
+$ROLE_POSIBILLIAN_ART_PRODUCER$
+Martin Cabrera Pavez
+
+$ROLE_POSIBILLIAN_2D_ARTIST$
+Julio Andrés Peralta Leclerc
+Rocío Cabrera Elizeche
+Camila Barúa Castro
+Leila Bernal Enciso
+Matías José González Dávalos
+
+
+$STUDIO_KEYWORDS$
+
+$ROLE_kEYWORDS_PROJECT_MANAGER$
+Gea Palau
+María Bazo
+
+
+
+$DISCIPLINE_FRENCH_TEAM$
+
+$ROLE_FR_REVIEWER$
+Alvina Veillon 
+Philippe Colin
+
+$ROLE_FR_TRANSLATOR$
+Marie-Noelle Wolffer
+Pierre Gehenne 
+Julien Meunier-Sanquer
+Luc Gonachon
+Baptiste Almasio
+Audrey Lablanchy
+Annabelle Pauloby
+Alexia Gatumel
+Violaine Sauze
+
+
+
+$DISCIPLINE_SPANISH_TEAM$
+
+$ROLE_SP_REVIEWER$
+Manuel Mata Álvarez-Santullanor
+Sebastián Sorroche Jurado
+Paula Osorio Pomares
+
+$ROLE_SP_TRANSLATOR$
+Mizar Becerril Bustos
+Alejandro Gómez de la Muñoza
+Carlos Lacasa Martín
+Ángela Fernández Pérez
+Eduard Roig Quincoces
+Laia Fàbregas
+
+
+
+$STUDIO_NATIVE_PRIME_SAS$
+
+$ROLE_NATIVE_PROJECT_MANAGER$
+Julia Othlinghaus-Wulhorst
+Friedrich Klemme
+
+$ROLE_NATIVE_ADDITIONAL_PROJECT_MANAGER$
+Dieter Pfeil
+Maren Garn
+
+$ROLE_NATIVE_LOCALIZATION_QA_TOOLS$
+Friedrich Klemme
+Julia Othlinghaus-Wulhorst
+Dieter Pfeil
+Michael Waaler
+
+
+
+$DISCIPLINE_SIMPLIFIED_CHINESE_TEAM$
+
+$ROLE_CH_PROJECT_MANAGER$
+Troy Ye
+Crystal Wu
+
+$ROLE_CH_TRANSLATOR$
+Bei Lan
+Thomas Zeng
+Eric Zhao
+Kevin Song
+
+$ROLE_CH_REVIEWER_EDITOR$
+Haximodor He
+Yin Hu
+Rex Liu
+Bruce Chen
+
+
+
+$DISCIPLINE_RUSSIAN_TEAM$
+
+$ROLE_RU_PROJECT_MANAGER$
+Loktionov Alexander
+
+$ROLE_RU_TRANSLATOR$
+Nikita Antonov
+Vadim Bogomolov
+Ian Bogomolov
+Igor Vasiliev
+Vladislav Vorobyov
+Dmitrii Donskoi
+Nikolai Kondratenko
+Alexander Larin
+Maksim Mihailov
+Daria Naumova
+Pavel Nikolenko
+Maksim Onishchenko
+Alexander Skachkov
+Vasilii Firsov
+Andrei Cherkovskii
+
+$ROLE_RU_REVIEWER_EDITOR$
+Oleg Gurin
+Irina Shobuhova
+Anastasia Vasilieva
+Maria Yunger
+
+$ROLE_RU_PLAYTESTER$
+Nikita Shogin
+Alexander Radkevich
+
+
+
+$DISCIPLINE_KOREAN_TEAM$
+
+$ROLE_KO_PROJECT_MANAGER$
+Jonghyun Yeom
+
+$ROLE_KO_TRANSLATOR$
+Bongjun Choe
+Donghun Im
+Jaehyung Oh
+Kang Bong Yang
+Minseok Kahm
+
+$ROLE_KO_REVIEWER_EDITOR$
+Jaehyok Chung
+Joonho Kim
+Jonghyun Yeom
+SangHyuk Park
+Seojun Ahn
+Seongpil Hyun
+
+
+
+$DISCIPLINE_GERMAN_TEAM$
+
+$ROLE_GE_PROJECT_MANAGER$
+Julia Othlinghaus-Wulhorst
+Dieter Pfeil
+Maren Garn
+
+$ROLE_GE_LEAD_TRANSLATOR$
+Kai Bagehorn
+Ole Johan Christiansen
+
+$ROLE_GE_ADDITIONAL_TRANSLATOR$
+Sabrina Ingenerf
+Christian Hoffmann
+Christian Meier
+Arlett Kieschke
+
+$ROLE_GE_LEAD_REVIEWER$
+Thomas Christiansen
+
+$ROLE_GE_ADDITIONAL_REVIEWERS_EDITORS$
+Tamara Katherina Neiß
+Claudia Hahn
+
+
+
+$DISCIPLINE_POLISH_TEAM$
+
+$ROLE_PO_PROJECT_MANAGER$
+Paulina Golanowska
+Jacek Smoliński
+
+$ROLE_PO_TRANSLATOR$
+Łukasz Gładkowski
+Piotr Goździk
+Andrzej Jakubiec
+Dominika Rycerz-Jakubiec
+Bartosz Klofik
+Jakub Oleksów
+Jacek Smoliński
+Monika Kucharczyk
+Łukasz Zieliński
+Robert Zygmunt
+
+$ROLE_PO_REVIEWER_EDITOR$
+Jakub Dudkowski
+Karolina Jagnyziak
+
+
+
+$DISCIPLINE_JAPANESE_TEAM$
+
+$ROLE_JP_PROJECT_MANAGER$
+James Davis
+
+$ROLE_JP_TRANSLATOR$
+Erika Siffert
+Ikue Hirata
+Yusuke Tsujita
+KaHi
+Keigo Yonemura
+
+$ROLE_JP_REVIEWER_EDITOR$
+Yo Shin
+
+
+
+$DISCIPLINE_TURKISH_TEAM$
+
+$ROLE_TU_PROJECT_MANAGER$
+Sadi Fakihoğlu
+Ebru Yılmaz Akca
+Ali Barutçuoğlu
+
+$ROLE_TU_TRANSLATOR$
+Umut Dinç
+Cemre Helin Turan
+Ertuğrul Bahadır
+Deniz Tunç Şafak
+Mehmet Efe Demir
+Atahan Yıldırım
+İdil Berfin Akın
+Burak Onur Yıldız
+Yaren Biricik
+Memduh Arzu
+
+$ROLE_TU_REVIEWER_EDITOR$
+Cankat Karakaş
+Berk Göbekcioğlu
+Abbas Barış Bingöl
+Fevzi Ebrar Yeşilyurt
+Berkay Şahinoğlu
+
+
+
+$DISCIPLINE_BRAZILIAN_PORTUGUESE_TEAM$
+
+$ROLE_BR_PROJECT_MANAGER$
+Estéfano Vitagliano, Thiago Kunis
+
+$ROLE_BR_TRANSLATOR$
+Antonio Amarante
+Danilo Venturini
+Frank Holbach
+Júlia Spanopoulos
+Luciana Quero
+Maria Paula Bueno
+Marianna de Oliveira Couto
+Michel Dornes
+Ramon D. Ferreira
+Ramon Lourenço
+
+$ROLE_BR_REVIEWER_EDITOR$
+Dieggo Lessa
+Diva Nogueira
+Osman Alves
+Sandra Smith
+
+
+
+$STUDIO_QLOC$
+
+$ROLE_QLOC_GENERAL_MANAGER$
+Adam Piesiak
+
+$ROLE_QLOC_HEAD_OF_BUSINESS_DEVELOPMENT$
+Paweł Książek
+
+$ROLE_QLOC_BUSINESS_DEVELOPMENT_MANAGER$
+Weronika Purgal
+
+$ROLE_QLOC_DIRECTOR_OF_QUALITY_ASSURANCE$
+Sergiusz Ślosarczyk
+
+$ROLE_QLOC_QA_OPERATIONS_MANAGER$
+Paweł Strzelczyk
+
+$ROLE_QLOC_LEAD_QA_PROJECT_MANAGER$
+Jakub Dudkowski
+
+$ROLE_QLOC_QA_PROJECT_MANAGERS$
+Kacper Bugaj
+Andrzej Tsupko
+
+$ROLE_QLOC_QA_LAB_MANAGERS$
+Piotr Badurek
+Emil Lubowicki
+Gabriela Malinowska
+Tomasz Prusicki
+
+$ROLE_QLOC_LEARNING_DEVELOPMENT_COORDINATOR$
+Aleksandra Grigorian-Kopka
+
+$ROLE_QLOC_LEARNING_DEVELOPMENT_SPECIALIST$
+Michał Grabuś
+Damian Jasiński
+
+$ROLE_QLOC_FQA_TEAM_LEADERS$
+Krystian Bas
+Marta Czekalska
+Mateusz Kuriata
+Maria Latanowicz
+Tomasz Lisek
+
+$ROLE_QLOC_QA_TESTERS$
+Mateusz Adach
+Artur Adamczyk
+Jan Armatys
+Gracjan Banaszkiewicz
+Bartosz Byczyński
+Dawid Cegiełka
+Bartosz Chojnacki
+Łukasz Dobrowolski
+Norbert Głowinkowski
+Wojciech Jakimiak
+Jakub Koryciński
+Mikołaj Kuchta
+Robert Lewczuk
+Adam Mitkiewicz
+Miłosz Pijawka
+Jakub Płomin
+Igor Szynkiewicz 
+
+$ROLE_QLOC_IT_DIRECTOR$
+Artur Szczurzyński
+
+
+
+$STUDIO_UNIVERSALLY_SPEAKING$
+
+$ROLE_HEAD_OF_LQA$
+Tommaso Petrelli
+
+$ROLE_LQA_MANAGER$
+Gregory Berger
+
+$ROLE_LQA_PROJECT_MANAGER$
+Rosa Rocco
+
+$ROLE_LQA_SENIOR_LEAD$
+Becky Koltunicki
+
+$ROLE_LQA_TESTERS$
+Lucie Kelterbaum 
+Manon Noblecourt
+Carlos Garcia-Maurino Arranz
+Maria Martin Regatos
+Yihan Xie
+Krzysztof Winikajtys
+Roxana Roman Anez Gomes
+Mark Varnaliy
+Max Muenster
+Sean Junseong Go
+Kumi Akutsu
+Eray Buyrukcu
+Natalie Tsang
+Yoon Tak
+
+
+
+$STUDIO_COMMUNITY_TEAM$
+
+
+
+$DISCIPLINE_DISCORD_MODERATORS$
+
+Chefjones
+Clifton Maxwell
+Diego R.T. - Yeyo
+Eleanore Oldenziel - Lot26
+flemsch
+Gary Baugher - IamCogs
+Janek Eisinger - Greeny3x3
+Joel Reimer - Air Admiral
+Johann Martin Krampe
+Justin Buschke
+Nicholas Wakemen - R. F. Omega
+PDX Anasyrma
+Rebecca  Leite  - RebelSapph
+Shannon Arras - Arwys
+Trevor Williams - Vulcanus
+Twandhi
+YetiBandito
+Zack Radnan -  Ferdy
+
+
+
+$DISCIPLINE_COMMUNITY_LOCATION$
+
+$ROLE_RUSSIAN_LOC$
+Adrian Kish - Deterock
+
+$ROLE_KOREAN_LOC$
+Hyunho Ryu - Catnyangi
+
+$ROLE_CHINESE_JAPANESE$
+Lizzie Dong - yukistelle
+
+
+
+$DISCIPLINE_WIKI_TEAM$
+
+Daniel Stefanescu - Kami-sama
+Matthias L. - Grotaclas
+Janek Eisinger - Greeny3x3
+Christian P. - CaesarVincens
+Zohar Mishaev - SolSys
+
+
+
+$STUDIO_LICENSES$
+
+$ROLE_LICENSES_TEXT_1$
+$ROLE_LICENSES_TEXT_2$
+
+Breakpad Copyright (c) 2006, Google Inc., 2001-2004 Unicode, Inc.
+
+cJSON Copyright (c) 2009-2017 Dave Gamble and cJSON contributors
+
+FreeImage open source image library. See http://freeimage.sourceforge.net for details.
+FreeImage is used under the FIPL license
+
+FreeType Copyright 1996-2002, 2006 by David Turner, Robert Wilhelm, and Werner Lemberg
+
+spdlog Copyright (C) 2016 Gabi Melman
+
+delaunator-cpp Copyright (C) 2018 Volodymyr Bilonenko
+
+d3-delaunay Copyright (C) 2018-2021 Observable, Inc.
+d3-delaunay Copyright (C) 2021 Mapbox
+
+atomic_queue Copyright (C) 2019 Maxim Egorushkin
+
+VMA VulkanMemoryAllocator Copyright (c) 2017-2025 Advanced Micro Devices, Inc. All rights reserved.
+
+SPIRV-Cross Apache License Version 2.0, January 2004
+
+DirectX Shader compiler Copyright (c) 2003-2015 University of Illinois at Urbana-Champaign.
+
+DLSS Copyright (C)
+
+D3dx12 Copyright (c) 2019-2025 Advanced Micro Devices, Inc. All rights reserved.
+
+Dxd12memalloc Copyright (c) 2003-2015 University of Illinois at Urbana-Champaign.
+
+mimalloc Copyright (c) 2018-2021 Microsoft Corporation, Daan Leijen
+
+$ROLE_LICENSES_TEXT_FONTS_1$
+$ROLE_LICENSES_TEXT_FONTS_2$
+
+Powered by Wwise © 2006 – 2025 Audiokinetic Inc. All rights reserved.
+
+
+
+$SPECIAL_THANKS$
+
+$SPECIAL_THANKS_TEXT_1$
+$SPECIAL_THANKS_TEXT_2$
+$SPECIAL_THANKS_TEXT_3$
+$SPECIAL_THANKS_TEXT_4$
+
+
+$DISCIPLINE_BETA_TESTERS$
+
+Simon Landenstad  - Tezzla
+Logan Shane Richardson  - Inferno
+Ian Brake  - ChefJones
+Zack Radnan/Zachariah Zeev  - Ferdy
+Philip Gelsinger  - Nitrogue
+Ian Finlay Patrick  - Findeath
+Janek Eisinger  - Greeny
+Gary E. Baugher Jr.  - Coggies
+Ricardo Squires  - Verenity Void
+Carl Taylor  - Viking_Nephilim
+Manuel Küting  - YetiBandito
+Ricky Hsu  - thelostnyx 
+Kalafina - Aimer_rythem
+Sealand
+Miguel Mesquita Batista - Stami
+Cyril Achar  - The Turk
+Amy Druschke  - KaiserinAmy
+Twan van Dijk  - Twandhi
+Yan Beletskiy  - killedbyparty
+Nil Simon  - Nilx16
+Michał Staniszewski  - Bear of the Forest
+Tomasz Hochlewicz  - Hochel
+Albert Jan Hendrik Holsappel  - Rocksauze 
+Magnus Eames  - Zelley
+Jānis Urbanovičs  - Plati
+Angel Andrés Alcantud Alfaro  - Anx
+Florian Gierschner  - Flogi
+Shyy (Gary) Gipson  - Shyy
+John Harty   - Aurelia
+Filip Rybárik  - Qwinn
+Aura (Torek) Bongers  - Dutch_Aura
+Artem Astakhov  - Zero
+Christian P. - CaesarVincens
+Wang Chenyu  - Diffat Elicka
+Shaoyang
+Jingyi Fan - 蜜水
+Cong Haoyuan  - Shrimpal
+Junge Cao  - Lin Xueshan
+Gao Jiayu  - Andraste
+Anon Barcelona - Saltfish
+XuRenMeng - 虚人梦 
+Marsary
+Sam Emerson  - _Mercy
+Matthias Lamerz  - Grotaclas
+Miaosen Teng  - Cyan
+Fraser Johnstone  - Fraser
+Joshua Smith  - Mordaith
+Caitlin Laird  - EnigmaticRose
+Daniel-Nicolae Ștefănescu  - Kami-sama
+Agami
+Alexandre Kerscher Souza
+Brian A Haddad
+Dmitrii Lebedev
+Jonathan Bagley
+Nikola Ličanin
+Patrick Haberlag
+Shannon Leigh Arras
+Thomas William Perry
+Zeheng Yan
+Gaétan Cautain – DaftDef
+Anders Lohde Mikkelsen - Rule Britannia
+Roger Weber - Sir Rogers
+Marcel Duda - Madaszo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$SPECIAL_THANKS_CLOSING$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

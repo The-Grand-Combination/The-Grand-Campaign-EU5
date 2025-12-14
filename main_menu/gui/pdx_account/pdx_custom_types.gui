@@ -1,0 +1,369 @@
+
+template sdk_text_style_template {
+    using = text_single_template
+    autoresize = no
+}
+
+template sdk_button_style_template {
+    buttonText = {
+        textbox = {
+            using = button_common_textobj_font
+            align = center|nobaseline
+
+            default_format = "#color_white"
+            autoresize = yes
+            resizeparent = yes
+            margin = { 30 5 }
+            minimumsize = { 80 30 }
+        }
+    }
+
+    using = button_common_properties_template
+    using = button_regular_texture
+    tooltip_enabled = no
+}
+
+template sdk_button_size_template {
+}
+
+template sdk_generic_entry_template {
+    layoutpolicy_horizontal = expanding
+
+    widget = {
+        size = { 150 30 }
+        hbox = {
+            sdk_required_textbox={}
+            text_single = {
+                layoutpolicy_horizontal = expanding
+                layoutpolicy_vertical = expanding
+
+                block "title" {
+                    raw_text = "#D Title:#!"
+                }
+            }
+        }
+    }
+
+    block "sdk_generic_entry_field" {}
+}
+
+template sdk_textbox_entry_template {
+    widget = {
+        size = { 300 30 }
+
+        hbox = {
+            margin = { 10 0 }
+            using = editbox_background
+
+            editbox = {
+                name = "sdk_editbox"
+
+                layoutpolicy_horizontal = expanding
+                layoutpolicy_vertical = expanding
+
+                default_format = "#high"
+
+                alwaystransparent = no
+                focuspolicy = all
+                cursorcolor = { 1 1 0.5 1 }
+                selectioncolor = { 0.45 0.45 0.45 0.7 }
+                maxcharacters = 255
+
+                block "sdk_editbox" {}
+
+                block "editbox_text" {
+                    raw_text = "#D Enter something#!"
+                }
+
+                block "password" {
+                    password = no
+                }
+            }
+        }
+    }
+}
+
+template sdk_checkbutton_template {
+    spacing = 10
+    checkbutton = {
+        tooltip_enabled = no
+        using = button_checkbox_template
+        block "checkbutton" {}
+    }
+
+    sdk_textbox = {
+        layoutpolicy_horizontal = expanding
+        layoutpolicy_vertical = expanding
+
+        minimumsize = { -1 100 }
+
+        multiline = yes
+
+        block "label" {
+            text = "LABEL"
+        }
+    }
+}
+
+template dropwdown_sdk_enum_template {
+    alwaystransparent = no
+    active_item = {
+        widget = {
+
+            # block "active_item_size" {
+                size = { 100% 30 }
+            # }
+
+            block "active_item" {}
+
+            button_drop = {
+                blockoverride "dropdown_active_item_properties" {
+                    block "item_text" {}
+                }
+            }
+
+            hbox = {
+				margin = { 5 0 }
+				text_single = {
+					using = layoutpolicy_expanding
+					margin = { 10 0 }
+					autoresize = no
+					align = left|nobaseline
+
+					block "item_text" {}
+				}
+
+				icon = {
+					size = { 22 22 }
+					texture = "gfx/interface/buttons/flats/button_simple_down.dds"
+					using = color_gold
+					modify_texture = {
+						using = overlay_window_texture
+						blend_mode = overlay
+						alpha = 1
+					}
+				}
+			}
+        }
+    }
+
+    item = {
+        widget = {
+            # block "item_size" {
+                size = { 250 20 }
+            # }
+
+            block "item" {}
+
+            button_dropdown = {
+                tooltip_enabled = no
+                blockoverride "dropdown_item_properties" {
+                    block "item_text" {}
+                }
+            }
+
+            text_single = {
+				size = { 100% 100% }
+				margin = { 15 0 }
+				autoresize = no
+				align = left|nobaseline
+				default_format = "#medium"
+
+				block "item_text" {}
+			}
+        }
+    }
+
+    list = {
+        scrollarea = {
+            position = { 2 30 }
+            autoresizescrollarea = yes
+            alwaystransparent = yes
+
+            # block "scrollarea_size" {
+                maximumsize = { 250 210 }
+            # }
+
+            block "scrollarea" {}
+
+            background = {
+                using = dropdown_list_background_template
+            }
+
+            scrollwidget = {
+                fixedgridbox = {
+                    alwaystransparent = no
+                    block "fixedgridbox_add" {
+                        addcolumn = 70
+                        addrow = 30
+                    }
+                }
+            }
+
+            scrollbar_vertical = {
+                using = Scrollbar_Vertical
+            }
+
+            scrollbar_horizontal = {
+                using = editor_horizontal_scrollbar
+            }
+        }
+    }
+}
+
+template sdk_title_template {
+    layoutpolicy_horizontal = expanding
+		size = { -1 40 }
+		
+		vbox = {	
+			widget = {
+				layoutpolicy_horizontal = expanding
+				size = { -1 40 }
+
+                background = {
+                    using = color_dark_turquoise_texture
+                    modify_texture = {
+                        texture = "gfx/interface/colors/black.dds"
+                        blend_mode = multiply
+                        alpha = 0.4
+                    }
+                }
+
+                background = {
+                    using = color_turquoise_texture
+
+                    modify_texture = {
+                        texture = "gfx/interface/component_masks/mask_fade_horizontal_middle.dds"
+                        blend_mode = alphamultiply
+                        alpha = 0.5
+                    }
+
+                    modify_texture = {
+                        texture = "gfx/interface/component_masks/mask_fadehorizontal_middle_thick.dds"
+                        blend_mode = alphamultiply
+                    }
+                }
+
+                background = {
+                    texture = "gfx/interface/graphical_cultures/middle_east_gfx/top_header_bg.dds"
+                    texture_density = 2
+                    spriteType = corneredtiled
+                    spriteborder = { 0 0 }
+                    alpha = 0.5
+                    
+                    modify_texture = {
+                        texture = "gfx/interface/colors/mid_purple.dds"
+                        blend_mode = overlay
+                    }
+
+                    modify_texture = {
+                        texture = "gfx/interface/colors/progress_blue.dds"
+                        blend_mode = overlay
+                        alpha = 0.5
+                    }
+                    modify_texture = {
+                        name = "mask"
+                        texture = "gfx/interface/component_masks/mask_fade_horizontal_middle.dds"
+                        blend_mode = alphamultiply
+                        alpha = 0.5
+                    }
+                    modify_texture = {
+                        name = "mask"
+                        texture = "gfx/interface/component_masks/mask_fadehorizontal_middle_thick.dds"
+                        blend_mode = alphamultiply
+                    }
+                }
+
+				hbox = {
+                    header_title = {
+                        block "title" {
+                            text = "DEFAULT_TEXT"
+                        }
+                        maximumsize = { 420 -1 }
+                    }
+                }
+			}
+		}
+}
+
+template sdk_close_button_template {
+    parentanchor = right
+    position = { -5 5 }
+    size = { 40 40 }
+
+    ui_direction_button_holder_right = {}
+
+    button_close_alt = {
+        blockoverride "close_onclick" {
+            block "close_button" {}
+        }
+    }
+}
+
+template sdk_window_vbox_template {
+    block "vbox_properties" {
+        using = layoutpolicy_expanding
+        using = window_margin_alt
+    }
+
+    widget = {
+        using = sdk_title_template
+    }
+
+    block "before_content" {}
+
+    hbox = {
+        margin = { 10 0 }
+        block "hbox_properties" {
+            layoutpolicy_horizontal = expanding
+            layoutpolicy_vertical = preferred
+        }
+
+        block "content_layout" {
+            vbox = {
+                scissor = yes
+
+                layoutpolicy_horizontal = expanding
+                layoutpolicy_vertical = preferred
+
+                block "content" {}
+
+                widget = {
+                    layoutpolicy_vertical = preferred
+                }
+            }
+        }
+    }
+}
+
+template sdk_load_indicator_template {
+    parentanchor = center
+    size = { 32 32 }
+    gfxtype = framedprogressbargfx
+	texture = "gfx/interface/frontend/loading_progress.dds"
+	frame_grid = { 24 1 }
+	loopinterval = 2.0
+	max = 0
+
+    block "load_indicator" {
+        visible = no
+    }
+}
+
+template sdk_window_template {
+    using = bg_window_default_alt
+    resizable = no
+    movable = yes
+    allow_outside = yes
+
+    vbox = {
+        resizeparent = yes
+        using = sdk_window_vbox_template
+    }
+
+    block "close_button_obj" {
+        widget = {
+            using = sdk_close_button_template
+        }
+    }
+}

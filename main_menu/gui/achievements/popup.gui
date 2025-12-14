@@ -1,0 +1,121 @@
+types Achievements
+{
+	type achievement_spacer_horizontal = widget {
+		size = { 5 0 }
+	}
+	type achievement_spacer_vertical = widget {
+		size = { 0 3 }
+	}
+
+	type achievement_button = button {
+		layoutpolicy_horizontal = expanding
+		size = { -1 120 }
+		visible = yes
+		focuspolicy = click
+		onclick = "[GUIAchievement.OnClick]"
+		using = bg_round_corners_dark
+
+		# block "achievement_unlock_popup" {}
+
+		state = {
+			name = on_create
+			duration = 0.5
+			trigger_on_create = yes
+			alpha = 0
+			delay = 5
+			on_finish = "[GUIAchievement.Remove]"
+
+			# block "popup_on_create_state" {}
+		}
+
+		hbox = {
+			margin = { 20 10 }
+			spacing = 20
+
+			icon = {
+				texture = "[GUIAchievement.AccessTexture]"
+				size = { 64 64 }
+
+				background = {
+					using = bg_round_corners
+					alpha = 0.5
+				}
+			}
+
+			vbox = {
+				using = layoutpolicy_expanding
+				spacing = 2
+
+				textbox = {
+					layoutpolicy_horizontal = expanding
+					using = text_single_template
+					using = Font_Type_Headers
+					autoresize = no
+
+					text = "ACHIEVEMENT_UNLOCKED"
+					# block "achievement_unlocked_text" {}
+				}
+
+				textbox = {
+					layoutpolicy_horizontal = expanding
+					using = text_single_template
+					autoresize = no
+
+					text = "[GUIAchievement.GetName]"
+					# block "achievement_name" {}
+				}
+
+				textbox = {
+					using = layoutpolicy_expanding
+					using = text_multi_template
+					autoresize = no
+					fontsize = 12
+
+					text = "[GUIAchievement.GetDescription]"
+					# block "achievement_description" {}
+				}
+			}
+		}
+	}
+}
+
+window = {
+	name = "achievement_popup_window"
+	size = { 400 100% }
+	position = { 20 118 }
+
+	visible_at_creation = no
+	alwaystransparent = yes
+	allow_outside = yes
+	movable = no
+	layer = confirmation
+
+	# block "popup_window" {}
+
+	vbox = {
+		alwaystransparent = yes
+		using = layoutpolicy_expanding
+
+		margin_top = 20
+		margin_bottom = 138
+
+		margin_left = 20
+		margin_right = 20
+
+		# block "popup_window_layout" {}
+
+		expand = {}
+
+		vbox = {
+			layoutpolicy_horizontal = expanding
+			spacing = 10
+
+			datamodel = "[AchievementPopup.AccessJustUnlockedAchievements]"
+			# block "popups_gridbox" {}
+
+			item = {
+				achievement_button = {}
+			}
+		}
+	}
+}

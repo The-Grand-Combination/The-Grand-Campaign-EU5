@@ -1,0 +1,5 @@
+window = {
+	name = "ingame_resign_confirmation"
+	size = { 100% 100% }
+	movable = no
+}

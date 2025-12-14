@@ -1,0 +1,135 @@
+######################################################
+#################### EARLY COAT OF ARMS ##############
+######################################################
+
+# Early loaded Coa of Arms types
+
+types CoATypes
+{
+	type early_country_flag = widget {
+		# Copy of country_flag. We can probably merge them by letting country_flag inherit this one, but requires re-exposing blocks.
+	
+		size = { 180 120 }
+
+		early_flag = {
+			size = { 100% 100% }
+		}
+
+		# FRAME
+		widget = {
+			size = { 100% 100% }
+			block "show_as_button" { visible = yes }
+			alwaystransparent = yes
+			background = {
+				block "flag_frame_texture" {
+					texture = "gfx/interface/component_decoration/flag_frames/frame_2.dds"
+				}
+				texture_density = 2
+			}
+		}
+	}
+
+	# Country Flag
+	type early_flag = widget {
+		# Copy of flag. We can probably merge them by letting flag inherit this one, but requires re-exposing blocks.
+	
+		size = { 180 120 }
+
+		widget = {
+			size = { 100% 100% }
+			icon = {
+				size = { 92% 92% }
+				parentanchor = center
+	
+				block "show_as_icon" { visible = no }
+				block "flag_contents" {}
+			}
+
+			icon = {
+				size = { 100% 100% }
+				block "flag_frame_texture" {
+					texture = "gfx/interface/component_decoration/flag_frames/frame_180x120.dds"
+				}
+				texture_density = 2
+			}
+
+			block "tooltip_contents" {}
+		}
+	
+		button = {
+			size = { 83% 83% }
+			parentanchor = center
+			inherit_visual_state = no
+			distribute_visual_state = no
+			# block "flag_shader" {
+				shaderfile = "gfx/FX/pdxgui_pushbutton.shader"
+			# }
+	
+			using = snd_UI_hover_flag
+			
+			block "click" {
+				block "click_properties" {}
+				# block "double_click" { ondoubleclick = "[PanToCountry(Country.Self)]" }
+				action_tooltip = {
+					click_type = left
+					click_mode = single
+
+					block "click_action" {
+						visible = "[Not(IsLobbyOpen)]"
+						title = "COUNTRY_CLICK_TOOLTIP_LEFT_CLICK"
+						#on_action = "[OpenDiplomacy(Country.Self)]"
+					}
+				}
+
+				#ondoubleclick = "[PanToCountry(Country.Self)]"
+			}
+
+			block "rightclick" {
+				action_tooltip = {
+					click_type = right
+					click_mode = single
+
+					block "rightclick_action" {
+						cursor = "country_menu"
+						title = "CLICK_ACTION_COUNTRY_CONTEXT_MENU"
+						on_action = "[PdxGuiWidget.ToggleContextMenu]"
+					}
+				}
+			}
+
+			block "show_as_button" { visible = yes }
+			block "flag_contents" {}
+			block "tooltip_contents" {}
+		}
+
+		blockoverride "tooltip_contents" {
+			block "tooltip" {
+				#tooltip_enabled = "[Country.Exists]" 
+				#tagtooltip_enabled = "[Country.IsValid]"
+				#tooltip = "[Country.GetName]"
+			}
+			
+			block "contextmenu" {
+				# Needs to be empty
+			}
+		}
+
+		blockoverride "flag_contents" {
+			block "flag" {
+				texture = "gfx/interface/coat_of_arms/flag_texture.dds" #Added to avoid error for missing texture "flag"
+				framesize = { 180 120 }
+			}
+			modify_texture = {
+				name = "Brighter"
+				texture = "gfx/interface/coat_of_arms/flag_texture.dds"
+				blend_mode = multiply
+			}
+		}
+
+		block "hover" {
+			#onmousehierarchyenter = "[PdxGuiWidget.SetHighlightCountry( Country.Self )]"
+			block "hover_leave" {}
+		}
+	}
+}
+

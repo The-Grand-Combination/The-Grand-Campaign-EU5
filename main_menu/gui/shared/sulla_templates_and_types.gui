@@ -1,0 +1,634 @@
+## Scroll Bar
+template icon_ironman {
+	texture = "gfx/interface/icons/flat_icons/ironman_flat.dds"
+	Framesize = { 50 50 }
+	size = { 50 50 }
+}
+
+template icon_different_version {
+	texture = "gfx/interface/icons/flat_icons/wrong_version_flat.dds"
+	size = { 50 50 }
+}
+
+template icon_multiplayer {
+	texture = "gfx/interface/icons/flat_icons/world_flat_icon.dds"
+	size = { 50 50 }
+}
+
+template icon_warning {
+	texture = "gfx/interface/icons/icon_warning.dds"
+	Framesize = { 50 50 }
+	size = { 50 50 }
+}
+
+# template version_warning {
+# 	texture = "gfx/interface/icons/icon_warning.dds"
+# 	size = { 50 50 }
+# }
+
+template icon_locked {
+	texture = "gfx/interface/icons/map_subdivisons/locked.dds"
+	size = { 50 50 }
+}
+
+template icon_unlocked {
+	texture = "gfx/interface/icons/map_subdivisons/unlocked.dds"
+	size = { 50 50 }
+}
+
+template piechart_angles {
+	startangle = 450
+	endangle = 90
+}
+
+types Standard_Types
+{
+	# type button_category_white_marble_a_s = button {
+	# 	gfxtype = buttongfx
+	# 	shaderfile = "gfx/FX/pdxgui_pushbutton.shader"
+	# 	texture = "gfx/interface_old/buttons/category_button_a.dds"
+	# 	spriteType = Corneredtiled
+	# 	spriteborder = { 50 0 }
+	# 	size = { 174 38 }
+
+	# 	buttonText = {
+	# 		textbox = {
+	# 			parentanchor = bottom|hcenter
+	# 			using = Font_Type_Standard
+	# 			using = Font_Size_Medium
+	# 			default_format = "#medium"
+
+	# 			autoresize = yes
+	# 			position = { 0 -12 }
+	# 		}
+	# 	}
+	# }
+
+	# type button_category_white_marble_b_s = button {
+	# 	gfxtype = buttongfx
+	# 	shaderfile = "gfx/FX/pdxgui_pushbutton.shader"
+	# 	texture = "gfx/interface_old/buttons/category_button_b.dds"
+	# 	spriteType = Corneredtiled
+	# 	spriteborder = { 50 0 }
+	# 	size = { 174 38 }
+
+	# 	buttonText = {
+	# 		textbox = {
+	# 			parentanchor = bottom|hcenter
+	# 			using = Font_Type_Standard
+	# 			using = Font_Size_Medium
+	# 			default_format = "#medium"
+
+	# 			autoresize = yes
+	# 			position = { 0 -12 }
+	# 		}
+	# 	}
+	# }
+
+	# type sort_button = button {
+	# 	size = { 50 16 }
+	# 	texture = "gfx/interface/buttons/inner_tab_fade.dds"
+	# 	spriteType = stretched
+	# 	spriteborder = { 0 0 }
+	# 	framesize = { 50 50 }
+	# 	texture_density = 2
+
+	# 	default_format = "#color_white"
+
+	# 	gfxtype = togglepushbuttongfx
+	# 	effectname = "NoHighlight"
+
+	# 	upframe = 1
+	# 	uphoverframe = 3
+	# 	uppressedframe = 3
+	# 	downframe = 2
+	# 	downhoverframe = 2
+	# 	downpressedframe = 3
+	# 	disableframe = 4
+
+	# 	buttonText = {
+	# 		textbox = {
+	# 			parentanchor = bottom|hcenter
+	# 			using = Font_Type_Standard
+	# 			autoresize = yes
+	# 			block "text_position"
+	# 			{
+	# 				position = { 0 -10 }
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	# Increase width by incriments of 40 px
+	# type square_close_button = button {
+	# 	size = { 30 30 }
+	# 	gfxtype = togglepushbuttongfx
+	# 	effectname = "NoHighlight"
+
+	# 	upframe = 1
+	# 	uphoverframe = 2
+	# 	uppressedframe = 3
+	# 	downframe = 4
+	# 	downhoverframe = 4
+	# 	downpressedframe = 4
+
+	# 	texture = "gfx/interface/debug/debug_close_squarebutton.dds"
+	# 	spriteType = Corneredstretched
+	# 	spriteborder = { 8 5 }
+	# 	framesize = { 30 30 }
+	# }
+
+	type pie_chart_legend = fixedgridbox {
+		addrow = 23
+		minimumsize = { -1 69 } #nice
+		maxverticalslots = 5
+
+		# block "columnsize" {
+			addcolumn = 290
+		# }
+
+		block "datamodel" {
+			datamodel = "[Player.GetLivingCharacters]"
+		}
+
+		item = {
+			widget = {
+				# block "textlabelsize" {
+					size = { 290 23 }
+				# }
+				block "tooltip" {
+					raw_tooltip = ""
+				}
+
+				icon = {
+					texture = "gfx/interface/pie_charts/piechart_legend.dds"
+					size = { 18 18 }
+					parentanchor = left|vcenter
+					block "color" {}
+				}
+
+				text_single = {
+					position = { 23 0 }
+					autoresize = yes
+					align = left|nobaseline
+					block "leftside_info" {
+						raw_text = "#todo leftside_info#!"
+					}
+				}
+
+				text_single = {
+					position = { -100 0 }
+					parentanchor = top|right
+					align = left|nobaseline
+					autoresize = yes
+					block "middle_info" {
+						visible = no
+						raw_text = "#todo middle_info#!"
+					}
+				}
+
+				text_single = {
+					parentanchor = top|right
+					align = left|nobaseline
+					autoresize = yes
+					block "rightside_info" {
+						raw_text = "#todo rightside_info#!"
+					}
+				}
+			}
+		}
+	}
+
+	type icon_pie_left = widget {
+		block "PieSize" { size = { 44 44 } }
+
+		block "PieSize_bckg" {
+
+			background = {
+				texture = "gfx/interface/buttons/flats/flat_bg_button.dds"
+				texture_density = 2
+				margin = {1 1}
+				alpha = 0.5
+			}
+	
+			background = {
+				texture = "gfx/interface/buttons/flats/flat_bg_button.dds"
+				texture_density = 2
+	
+				using = color_mid_blue
+	
+				modify_texture = {
+					using = overlay_cloth_texture
+					blend_mode = overlay
+					alpha = 0.1
+				}
+	
+				glow = {
+					name = "drop_shadow"
+					glow_radius = 2
+					color = {0.0 0.0 0.0 1.0}
+					alpha = 0.9
+				}
+			}
+	
+			background = {
+				texture = "gfx/interface/buttons/flats/flat_bg_button.dds"
+				texture_density = 2
+	
+				margin = { -10 -10 }
+	
+				using = color_mid_blue
+				alpha = 0.9
+	
+				modify_texture = {
+					using = overlay_window_texture
+					blend_mode = overlay
+					alpha = 1
+				}
+				modify_texture = {
+					using = overlay_cloth_texture
+					blend_mode = overlay
+					alpha = 0.1
+				}
+			}
+		}
+
+		icon = {
+			block "Icon_Size" { size = { 45% 45% } }
+			parentanchor = center
+
+			block "Icon" {
+				texture = "gfx/interface/icons/_default.dds"
+				modify_texture = {
+					using = color_gold_texture
+					texture_density = 2
+					blend_mode = alphamultiply
+					alpha = 1
+				}
+			}
+		}
+
+		piechart = {
+			parentanchor = center
+			size = { 90% 90% }
+
+			block "pie_datamodel" {}
+			icon = {
+				size = { 100% 100% }
+				parentanchor = center
+
+				texture = "gfx/interface/pie_charts/piechart_alpha.dds"
+				texture_density = 2
+				color = { 0 0 0 0.25 }
+			}
+
+			using = piechart_angles
+
+			item = {
+				block "pieslice_item" {
+					pieslice = {
+						texture = "gfx/interface/pie_charts/piechart_alpha.dds"
+						texture_density = 2
+						tagtooltip_enabled = yes
+						block "SliceTooltip" { raw_tooltip = "TODO replace for SliceTooltip" }
+						block "SliceValue" { value = "1" }
+						block "SliceColor" { color = { 1 1 1 1 } }
+						alpha = 0.99
+					}
+				}
+			}
+		}
+	}
+
+	type icon_pie_left_alt = widget {
+		block "PieSize" { size = { 44 44 } }
+
+		background = {
+			texture = "gfx/interface/buttons/flats/flat_bg_button.dds"
+			texture_density = 2
+			margin = {1 1}
+			alpha = 0.5
+		}
+
+		background = {
+			block "outline_color" {
+				texture = "gfx/interface/buttons/flats/flat_bg_button.dds"
+				texture_density = 2
+
+				using = color_brown_leather
+			}
+
+			modify_texture = {
+				using = overlay_cloth_texture
+				blend_mode = overlay
+				alpha = 0.1
+			}
+		}
+
+		background = {
+			texture = "gfx/interface/buttons/flats/flat_bg_button.dds"
+			texture_density = 2
+			margin = {-5 -5}
+			alpha = 0.4
+		}
+
+		background = {
+			texture = "gfx/interface/buttons/flats/flat_bg_button.dds"
+			texture_density = 2
+
+			margin = { -10 -10 }
+
+			using = color_bg_blue
+			alpha = 1
+
+			modify_texture = {
+				using = overlay_window_texture
+				blend_mode = overlay
+				alpha = 1
+			}
+
+			modify_texture = {
+				using = overlay_cloth_texture
+				blend_mode = overlay
+				alpha = 0.3
+			}
+		}
+
+		icon = {
+			block "Icon_Size" { size = { 45% 45% } }
+			parentanchor = center
+
+			block "Icon" {
+				texture = "gfx/interface/icons/_default.dds"
+				modify_texture = {
+					using = color_gold_texture
+					texture_density = 2
+					blend_mode = alphamultiply
+					alpha = 1
+				}
+			}
+		}
+
+		piechart = {
+			parentanchor = center
+			size = { 90% 90% }
+
+			block "pie_datamodel" {}
+			icon = {
+				size = { 100% 100% }
+				parentanchor = center
+
+				texture = "gfx/interface/pie_charts/piechart_alpha.dds"
+				texture_density = 2
+				color = { 0 0 0 0.25 }
+			}
+
+			using = piechart_angles
+
+			item = {
+				pieslice = {
+					texture = "gfx/interface/pie_charts/piechart_alpha.dds"
+					texture_density = 2
+					tagtooltip_enabled = yes
+					block "SliceTooltip" { raw_tooltip = "TODO replace for SliceTooltip" }
+					block "SliceValue" { value = "1" }
+					block "SliceColor" { color = { 1 1 1 1 } }
+					alpha = 0.99
+				}
+			}
+		}
+	}
+
+	type icon_pie = hbox {
+		spacing = 5
+
+		background = {
+			using = paper_card_texture
+			modify_texture = {
+				using = color_whiteish_texture
+			}
+
+			alpha = 0.1
+		}
+
+		block "icon_pie_frame" {
+			background = {
+				using = tile_frame_squared_texture
+				alpha = 0.4
+				margin = {1 1}
+				modify_texture = {
+					using = color_black_texture
+				}
+			}
+		}
+
+		hbox = {
+			margin = { 20 20 }
+			block "icon_pie_left_extra" {}
+			
+			icon_pie_left = {
+				using = bg_circle_piechart_big
+			}
+		}
+
+		vbox = {
+			layoutpolicy_vertical = expanding
+			margin = { 5 0 }
+
+			background = {
+				using = tile_background_squared_texture
+				modify_texture = {
+					using = color_black_texture
+				}
+
+				alpha = 0.1
+			}
+
+			scrollarea = {
+				block "scrollarea_pie_size" {
+					using = layoutpolicy_expanding
+					size = { 320 -1 }
+				}
+
+				scrollbarpolicy_horizontal = always_off
+				autoresizeviewport = yes
+				viewportwidget = {
+					widget = {
+						scissor = yes
+					}
+				}
+
+				scrollbar_vertical = {
+					using = Scrollbar_Vertical
+				}
+
+				scrollwidget = {
+					fixedgridbox = {
+						addrow = 35
+						addcolumn = 100%
+
+						block "datamodel" {
+							datamodel = "[Player.GetLivingCharacters]"
+						}
+
+						item = {
+							widget = {
+								size = { 98% 30 }
+								hbox = {
+									margin = { 10 5 }
+									spacing = 5
+									block "tooltip" {
+										raw_tooltip = ""
+									}
+
+									block "scrollarea_pie_bg" {
+										background = {
+											visible = "[IsEven_int32(PdxGuiWidget.GetIndexInDataModel)]"
+											block "item_bg_color" {
+												using = color_whiteish_texture
+												alpha = 0.2
+	
+											}
+										}
+									}
+
+									widget = {
+										layoutpolicy_vertical = expanding
+										size = { 15 -1 }
+
+										icon = {
+											size = { 100% 100% }
+											position = { 0 -1 }
+											texture = "gfx/interface/component_tiles/bookmark_white.dds"
+
+											modify_texture = {
+												using = overlay_cloth_texture
+												blend_mode = overlay
+												alpha = 0.3
+											}
+											block "color" {}
+											glow = {
+												name = "drop_shadow"
+												glow_radius = 3
+												color = {0.0 0.0 0.0 1.0}
+												alpha = 0.2
+											}
+										}
+									}
+
+									text_single = {
+										using = layoutpolicy_expanding
+										align = left|nobaseline
+										block "leftside_info" {
+											raw_text = "#todo leftside_info#!"
+										}
+									}
+
+									text_single = {
+										autoresize = yes
+										align = right|nobaseline
+
+										block "rightside_info" {
+											raw_text = "#todo rightside_info#!"
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	# Black marble background and text for Headers
+	# type DefaultHeaderBackground = widget {
+	# 	background = {
+	# 		name = "bg"
+	# 		texture = "gfx/interface_old/from_sulla/black_marble_texture_tile.dds"
+	# 		spriteType = Corneredtiled
+	# 		spriteborder = { 0 0 }
+	# 		shaderfile = "gfx/FX/pdxgui_default.shader"
+	# 		margin = { -5 -5 }
+	# 	}
+
+	# 	# icon = {
+	# 	# 	block "family_tile" {}
+	# 	# }
+
+	# 	icon = {
+	# 		name = "frame"
+	# 		texture = "gfx/interface_old/from_sulla/black_marble_bg1_corners.dds"
+	# 		spriteType = Corneredtiled
+	# 		spriteborder = { 20 20 }
+	# 		size = { 100% 100% }
+	# 	}
+
+	# 	textbox = {
+	# 		position = { 12 8 }
+	# 		autoresize = yes
+	# 		using = Font_Type_Standard
+	# 		using = Font_Size_Medium
+	# 		default_format = "#medium"
+
+	# 		block "text" {
+	# 			raw_text = "REPLACE_THIS_TEXT"
+	# 		}
+	# 	}
+	# }
+
+	# type go_to_button = button {
+	# 	texture = "gfx/interface_old/from_sulla/button_go_to.dds"
+	# }
+}
+
+# types Mapmodestuff
+# {
+# 	type mapmodebutton = button {
+# 		shaderfile = "gfx/FX/pdxgui_pushbutton.shader"
+# 		gfxtype = togglepushbuttongfx
+# 		effectname = "NoHighlight"
+
+# 		upframe = 1
+# 		uphoverframe = 2
+# 		uppressedframe = 3
+# 		downframe = 4
+# 		downhoverframe = 5
+# 		downpressedframe = 6
+
+# 		block "visibility" {
+# 			visible = "[CanChangeMapMode]"
+# 			enabled = "[CanChangeMapMode]"
+# 		}
+# 	}
+# }
+
+# template standard_list {
+# 	# block "ss_scrollarea" {
+# 		size = { 10 10 }
+# 	# }
+
+# 	textbox = {
+# 		name = "list_empty_info"
+# 		position = { 0 10 }
+# 		autoresize = yes
+# 		using = Font_Type_Standard
+# 		parentanchor = top|hcenter
+# 		widgetanchor = top|hcenter
+# 		# block "ss_empty_state_text" {
+# 			visible = no
+# 		# }
+# 	}
+
+# 	scrollbar_vertical = {
+# 		using = Scrollbar_Vertical
+# 	}
+
+# 	scrollbarpolicy_horizontal = always_off
+
+# 	scrollwidget = {
+# 		container = { #not sure if we need this container...
+# 			# block "ss_container" {}
+# 		}
+# 	}
+# }

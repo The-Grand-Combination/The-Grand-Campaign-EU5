@@ -1,0 +1,443 @@
+@topbar_height = 40
+@panel_bar_height = 90
+@left_panel_width = 570
+
+@panel_x = 0
+@lateralview_margin_bottom = 0
+
+template ConsoleBackground {
+	using = bg_round_corners_texture
+	alpha = 0.9
+}
+
+template ButtonResizeToFitTextConsole {
+	using = button_resize_to_fit_text
+	margin = { 15 5 }
+	minimumsize = { 125 -1 }
+}
+
+template ConsoleContent {
+	widget = {
+		using = layoutpolicy_expanding
+		icon = {
+			texture = "gfx/interface/logos/pdx_tinto_logo.dds"
+			size = { @[left_panel_width * 0.33] @[left_panel_width * 0.33] }
+			parentanchor = center
+			alpha = 0.04
+		}
+
+		scrollarea = {
+			name = "console_output_scrollarea"
+			visible = "[Not(ConsoleWindow.IsMenuShown)]"
+			size = { 100% 100% }
+
+			scrollwidget = {
+				flowcontainer = {
+					name = "console_output"
+					direction = "vertical"
+					ignoreinvisible = no
+				}
+			}
+
+			scrollbar_vertical = {
+				using = Scrollbar_Vertical_Debug
+			}
+
+			scrollbar_horizontal = {
+				using = Scrollbar_Vertical_Debug
+			}
+		}
+
+		scrollarea = {
+			name = "menu_scroll_area"
+			visible = "[ConsoleWindow.IsMenuShown]"
+
+			size = { 35% 100% }
+			scrollbarpolicy_horizontal = always_off
+
+			scrollbar_vertical = {
+				using = Scrollbar_Vertical_Debug
+			}
+
+			scrollwidget = {
+				fixedgridbox = {
+					name = "menu_grid"
+
+					addcolumn = 100
+					addrow = 24
+
+					item = {
+						container = {
+							icon = {
+								visible = [ConsoleMenuItem.IsCurrentGroup]
+								using = ConsoleBackground
+								position = { 0 0 }
+								size = { 106 28 }
+							}
+
+							button_debug = {
+								position = { 3 3 }
+								size = { 100 22 }
+								onclick = "[ConsoleMenuItem.Select]"
+								tooltip = "[ConsoleMenuItem.GetHelp]"
+								text = "[ConsoleMenuItem.GetName]"
+								using = Font_Type_Console
+							}
+						}
+					}
+				}
+			}
+		}
+
+		scrollarea = {
+			name = "command_scroll_area"
+			visible = "[ConsoleWindow.IsMenuShown]"
+
+			position = { 35% 0 }
+			size = { 65% 100% }
+
+			scrollbarpolicy_horizontal = always_off
+
+			scrollbar_vertical = {
+				using = editor_vertical_scrollbar
+			}
+
+			scrollwidget = {
+				fixedgridbox = {
+					name = "command_grid"
+
+					addcolumn = 200
+					addrow = 24
+
+					item = {
+						button_debug = {
+							size = { 250 24 }
+							onclick = "[ConsoleMenuItem.Select]"
+							tooltip = "[ConsoleMenuItem.GetHelp]"
+							text = "[ConsoleMenuItem.GetName]"
+						}
+					}
+				}
+			}
+		}
+	}
+
+	editbox_single = {
+		name = "console_edit"
+
+		layoutpolicy_horizontal = expanding
+		size = { -1 30 }
+		margin = { 10 5 }
+
+		alwaystransparent = no
+		focuspolicy = all
+
+		# blockoverride "editbox_outer_background" {
+		# 	using = editbox_background_texture
+		# 	modify_texture = {
+		# 		using = color_white_texture
+		# 		alpha = 0.35
+		# 	}
+		# }
+
+		# blockoverride "editbox_inner_background" {}
+
+		using = Font_Type_Console
+		default_format = "#color_white"
+
+		blockoverride "editbox_label" {
+			text = "CONSOLE_INSERT_COMMAND"
+			using = Font_Type_Console
+			default_format = "#color_white"
+		}
+	}
+
+	vbox = {
+		name = "toolbars_window"
+		layoutpolicy_horizontal = expanding
+
+		background = {
+			using = tile_frame_squared_texture
+			alpha = 0.9
+
+			modify_texture = {
+				texture = "gfx/interface/colors/new_gold.dds"
+			}
+		}
+
+		spacing = 5
+		margin = { 5 5 }
+
+		vbox = {
+			layoutpolicy_horizontal = expanding
+			margin = { 10 5 }
+			spacing = 5
+			
+			text_single = {
+				layoutpolicy_horizontal = expanding
+				size = { -1 20 }
+
+				using = Font_Type_Console
+				fontsize = 17
+				default_format = "#high"
+				raw_text = "TOOLBOX"
+			}
+
+			flowcontainer = {
+				min_width = @[left_panel_width - 54]
+				wrap_length = @[left_panel_width - 54]
+				spacing = 5
+				ignoreinvisible = yes
+
+				button_regular = {
+					using = ButtonResizeToFitTextConsole
+					raw_text = "Language"
+
+					using = Font_Type_Console
+					onclick = "[ExecuteConsoleCommand('gui.CreateDockable gui/debug_menus.gui language_window')]"
+				}
+
+				button_regular = {
+					using = ButtonResizeToFitTextConsole
+					raw_text = "Environment"
+
+					using = Font_Type_Console
+					onclick = "[ExecuteConsoleCommand('gui.CreateDockable gui/debug_menus.gui environment_debug_window')]"
+				}
+
+				button_regular = {
+					using = ButtonResizeToFitTextConsole
+					raw_text = "Map menu"
+
+					using = Font_Type_Console
+					onclick = "[ExecuteConsoleCommand('gui.CreateDockable gui/debug_menus.gui map_debug_menu')]"
+				}
+				
+				button_regular = {
+					using = ButtonResizeToFitTextConsole
+					raw_text = "Inspect"
+
+					using = Font_Type_Console
+					enabled = "[Or(IsBuildDebug,Not(GameIsIronman))]"
+					onclick = "[ExecuteConsoleCommand('inspect_player_country')]"
+				}
+
+				# EXPLORER button_debug
+				button_regular = {
+					using = ButtonResizeToFitTextConsole
+					raw_text = "Explorer"
+
+					using = Font_Type_Console
+					enabled = "[Or(IsBuildDebug,Not(GameIsIronman))]"
+					onclick = "[ExecuteConsoleCommand('explorer')]"
+				}
+
+				button_regular = {
+					using = ButtonResizeToFitTextConsole
+					raw_text = "Unit Viewer"
+
+					using = Font_Type_Console
+					enabled = "[Or(IsBuildDebug,Not(GameIsIronman))]"
+					onclick = "[ExecuteConsoleCommand('unit_viewer')]"
+					visible = "[CanUnitViewerOpen]"
+				}
+
+				button_regular = {
+					using = ButtonResizeToFitTextConsole
+					raw_text = "Errors"
+
+					using = Font_Type_Console
+					visible = "[HasErrors]"
+					tooltip = "[ErrorTooltip]"
+					onclick = "[OpenErrorLog]"
+				}
+			}
+		}
+
+		vbox = {
+			layoutpolicy_horizontal = expanding
+			margin = { 10 5 }
+			spacing = 5
+			
+			text_single = {
+				layoutpolicy_horizontal = expanding
+				size = { -1 20 }
+
+				using = Font_Type_Console
+				fontsize = 17
+				default_format = "#high"
+				raw_text = "2D Tools"
+			}
+
+			flowcontainer = {
+				min_width = @[left_panel_width - 54]
+				wrap_length = @[left_panel_width - 54]
+				spacing = 5
+				ignoreinvisible = yes
+
+				button_regular = {
+					using = ButtonResizeToFitTextConsole
+					raw_text = "UI Editor"
+
+					using = Font_Type_Console
+					onclick = "[ExecuteConsoleCommand('gui_editor')]"
+				}
+
+				button_regular = {
+					using = ButtonResizeToFitTextConsole
+					raw_text = "Animator"
+
+					using = Font_Type_Console
+					onclick = "[ExecuteConsoleCommand('gui_animation_editor')]"
+				}
+
+				button_regular = {
+					using = ButtonResizeToFitTextConsole
+					raw_text = "UI Bounds"
+					raw_tooltip = "Enable/Disable"
+
+					using = Font_Type_Console
+					onclick = "[ExecuteConsoleCommand('gui.debug')]"
+				}
+
+				button_regular = {
+					using = ButtonResizeToFitTextConsole
+					raw_text = "UI Library"
+
+					using = Font_Type_Console
+					onclick = "[ExecuteConsoleCommand('GUI.CreateWidget gui/ui_library.gui ui_library_window')]"
+				}
+
+				button_regular = {
+					using = ButtonResizeToFitTextConsole
+					raw_text = "Workbench"
+					raw_tooltip = "Enable/Disable"
+
+					using = Font_Type_Console
+					onclick = "[ExecuteConsoleCommand('GUI.CreateWidget gui/debug/frontend_gui_workbench.gui gui_workbench')]"
+				}
+
+				button_regular = {
+					using = ButtonResizeToFitTextConsole
+					raw_text = "Reload GFX"
+
+					using = Font_Type_Console
+					onclick = "[ExecuteConsoleCommand('reload texture')]"
+				}
+			}
+		}
+
+		vbox = {
+			layoutpolicy_horizontal = expanding
+			margin = { 10 5 }
+			spacing = 5
+
+			text_single = {
+				layoutpolicy_horizontal = expanding
+				size = { -1 20 }
+
+				using = Font_Type_Console
+				fontsize = 17
+				default_format = "#high"
+				raw_text = "3D Editors"
+			}
+			
+			flowcontainer = {
+				min_width = @[left_panel_width - 54]
+				wrap_length = @[left_panel_width - 54]
+				spacing = 5
+				ignoreinvisible = yes
+
+				button_regular = {
+					using = ButtonResizeToFitTextConsole
+					raw_text = "E. Designer"
+					raw_tooltip = "Enable/Disable"
+
+					using = Font_Type_Console
+					onclick = "[ExecuteConsoleCommand('entity_designer_node_editor')]"
+				}
+
+				button_regular = {
+					using = ButtonResizeToFitTextConsole
+					raw_text = "Animation Edit"
+
+					using = Font_Type_Console
+					onclick = "[ExecuteConsoleCommand('animation_editor')]"
+				}
+
+				button_regular = {
+					using = ButtonResizeToFitTextConsole
+					raw_text = "Particle Edit"
+
+					using = Font_Type_Console
+					onclick = "[ExecuteConsoleCommand('particleeditor')]"
+				}
+			}
+		}
+	}
+}
+
+textbox = {
+	name = "console_output_item"
+	maximumsize = { 390 -1 }
+	align = left|top
+	using = Font_Type_Console
+	multiline = yes
+	autoresize = yes
+}
+
+widget = {
+	name = "console_window"
+	size = { @left_panel_width 100% }
+	position = { @panel_x 0 }
+	alwaystransparent = yes
+
+	vbox = {
+		margin_top = @[topbar_height + panel_bar_height]
+		margin_bottom = @lateralview_margin_bottom
+
+		widget = {
+			using = layoutpolicy_expanding
+			alwaystransparent = no
+
+			using = FrontEndBackgroundBlur
+			
+			background = {
+				using = tile_background_squared_texture
+				alpha = 0.7
+
+				modify_texture = {
+					using = color_dark_blue_texture
+				}
+
+				using = overlay_window
+				using = overlay_leather
+			}
+
+			# button_debug = {
+			# 	using = editor_button_debug
+			# 	parentanchor = right
+			# 	size = { 24 24 }
+
+			# 	raw_text = "M"
+			# 	onclick = "[ConsoleWindow.ToggleMenu]"
+			# }
+
+			vbox = {
+				margin = { 12 12 }
+				spacing = 10
+
+				background = {
+					using = tile_frame_squared_texture
+					alpha = 0.9
+
+					modify_texture = {
+						texture = "gfx/interface/colors/new_gold.dds"
+					}
+				}
+
+				using = ConsoleContent
+			}
+		}
+	}
+}

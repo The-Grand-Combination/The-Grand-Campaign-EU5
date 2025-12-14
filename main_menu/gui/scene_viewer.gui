@@ -1,0 +1,123 @@
+types SceneViewerTypes
+{
+	type EcsSceneViewerDockable = hbox {
+		using = layoutpolicy_expanding
+		minimumsize = { 1250 870 }
+
+		vbox = {
+			using = layoutpolicy_expanding
+
+			ecs_scene_viewer_widget =  {
+				using = layoutpolicy_expanding
+
+				name= "ecs_scene_viewer_dockable"
+				scene = "[EcsSceneViewerDockable.GenerateSceneDesc]"
+			}
+
+			block "extra_widgets" {}
+		}
+	}
+}
+
+EcsSceneViewerDockable = {
+	name = "ecs_scene_viewer" #Don't change, used in code.
+
+	blockoverride "extra_widgets" {
+		widget = {
+			layoutpolicy_horizontal = expanding
+			size = { -1 100 }
+
+			vbox = {
+				layoutpolicy_vertical = expanding
+
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					size = { -1 50}
+					margin = { 10 10 }
+					spacing = 10
+
+					dropdown_menu_default = {
+
+						datamodel = "[EcsSceneViewerDockable.GetAllScenes]"
+						onselectionchanged = "[EcsSceneViewerDockable.OnSceneDropdownChanged]"
+						selectedindex = "[EcsSceneViewerDockable.GetSceneDropdownIndex]"
+
+						blockoverride "dropdown_active_item_properties" {
+							raw_text = "[SceneData.GetKey]"
+						}
+
+						blockoverride "dropdown_item_properties" {
+							raw_text = "[SceneData.GetKey]"
+						}
+					}
+
+					editbox_single = {
+						name = "load_scene_editbox"
+						visible = no
+
+						layoutpolicy_horizontal = expanding
+						size = { -1 30 }
+
+						ontextedited = "[EcsSceneViewerDockable.UpdateText(PdxGuiWidget.AccessParent.FindChild('load_scene_editbox'))]"
+
+						blockoverride "editbox_label" {
+							raw_text = "Scene to load key..."
+						}
+					}
+
+					button_default = {
+						layoutpolicy_horizontal = expanding
+						size = { -1 30 }
+
+						default_format = "#color_white"
+						onclick = "[EcsSceneViewerDockable.SwitchEnableInput]"
+						raw_text = "Switch input enabled"
+					}
+
+					button_default = {
+						layoutpolicy_horizontal = expanding
+						size = { -1 30 }
+
+						default_format = "#color_white"
+						onclick = "[EcsSceneViewerDockable.SwitchCameraProjection]"
+						raw_text = "Switch camera projection"
+					}
+
+					button_default = {
+						layoutpolicy_horizontal = expanding
+						size = { -1 30 }
+
+						default_format = "#color_white"
+						onclick = "[EcsSceneViewerDockable.FitCameraToEntity]"
+						raw_text = "Fit Camera to Entity"
+					}
+				}
+
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					button_default = {
+						layoutpolicy_horizontal = expanding
+						size = { -1 30 }
+
+						default_format = "#color_white"
+						onclick = "[EcsSceneViewerDockable.ToggleWireframe]"
+						raw_text = "Toggle Wireframe"
+					}
+
+					button_default = {
+						layoutpolicy_horizontal = expanding
+						size = { -1 30 }
+
+						default_format = "#color_white"
+						onclick = "[EcsSceneViewerDockable.ToggleGrid]"
+						raw_text = "Toggle Grid"
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+

@@ -1,0 +1,75 @@
+﻿propose_ruler =  { 
+	type = diplomacy
+	category = CATEGORY_INFLUENCE_ACTIONS
+
+	potential = {
+		scope:actor = {
+			government_type = government_type:monarchy
+		}
+	}
+
+	allow = {
+		scope:actor = {
+			exists = ruler_or_heir_if_regent.dynasty
+			any_character = {
+				is_ruler = no
+				has_dynasty = yes
+				dynasty = scope:actor.ruler_or_heir_if_regent.dynasty
+				religion = scope:actor.religion
+			}
+		}
+	}
+	
+	select_trigger = {
+		looking_for_a = country
+		target_flag = recipient
+		name = "choose_country"
+		column = {
+			data = name
+		}
+		visible = {
+			government_type = government_type:monarchy
+			not = { is_subject_of = scope:actor }
+		}
+        enabled = {
+			has_regent = yes
+			has_heir = no
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = character
+		source = actor
+		target_flag = target
+		name = "propose_ruler_SELECT_TITLE"
+		none_available_msg_key = "propose_ruler_no_characters"
+		column = {
+			data = character_ruler
+		}
+		visible = {
+			is_alive = yes
+			is_ruler = no
+			is_heir = no
+			has_dynasty = yes
+			dynasty = scope:actor.ruler_or_heir_if_regent.dynasty
+			is_adult = yes
+			religion = scope:actor.religion
+			modifier:blocked_from_character_interactions = no
+		}
+	}
+	
+	effect = {
+		if = {
+			limit = { exists = scope:target }
+			scope:target = { move_country = scope:recipient }
+			scope:recipient = { set_new_ruler = scope:target }
+		}
+	}
+	
+	block_when_at_war = yes
+	
+	diplo_chance = {
+		base = -10
+		rank = -2
+	}
+}	

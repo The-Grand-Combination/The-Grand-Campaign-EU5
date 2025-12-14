@@ -1,0 +1,218 @@
+JominiMultiplayerFrontendView = {
+	visible_at_creation = no
+
+	state = {
+		name = _show
+		on_start = "[GetVariableSystem.Clear( 'join_server_by_id' )]"
+		using = FrontEndOnShowAnimation
+	}
+
+	state = {
+		name = _hide
+		on_start = "[GetVariableSystem.Clear( 'join_server_by_id' )]"
+		using = FrontEndOnHideAnimation
+	}
+
+	blockoverride "background" {
+		FrontEndBackground = {}
+	}
+
+	blockoverride "button_style" {
+		using = button_default_template
+	}
+
+	blockoverride "menu_button_properties" {
+		using = layoutpolicy_expanding
+	}
+
+	blockoverride "logo_container" {
+		visible = no
+	}
+
+	blockoverride "menu" {
+		FrontEndMenu = {
+			blockoverride "frontend_menu_middle_section_layout" {
+				vbox = {
+					using = layoutpolicy_expanding
+					margin = { 0 20 }
+
+					widget = {
+						allow_outside = yes
+						layoutpolicy_horizontal = expanding
+						size = { -1 240 }
+
+						vbox = {
+							layoutpolicy_horizontal = expanding
+							spacing = 20
+
+							button_regular = {
+								layoutpolicy_horizontal = expanding
+								using = FrontEndMiddleSectionButton
+
+								hbox = {
+									margin = { 20 0 }
+									spacing = 10
+									
+									text_single = {
+										layoutpolicy_horizontal = expanding
+										text = "JOIN_GAME_BY_SERVER_ID_BTN"
+										autoresize = no
+										align = nobaseline
+									}
+
+									icon = {
+										visible = "[Not(GetVariableSystem.Exists( 'join_server_by_id' ))]"
+										size = { 20 20 }
+		
+										texture = "gfx/interface/buttons/flats/button_simple_right.dds"
+										using = color_gold
+									}
+		
+									icon = {
+										visible = "[GetVariableSystem.Exists( 'join_server_by_id' )]"
+										size = { 20 20 }
+		
+										texture = "gfx/interface/buttons/flats/button_simple_down.dds"
+										using = color_gold
+									}
+								}
+
+								tooltip_enabled = no
+								onclick = "[GetVariableSystem.Toggle( 'join_server_by_id' )]"
+							}
+
+							widget = {
+								visible = "[GetVariableSystem.Exists( 'join_server_by_id' )]"
+
+								layoutpolicy_horizontal = expanding
+								allow_outside = yes
+
+								state = {
+									name = _show
+									duration = 0.1
+									size = { -1 240 }
+									alpha = 1
+								}
+
+								state = {
+									name = _hide
+									duration = 0.1
+									size = { -1 0 }
+									alpha = 0
+								}
+
+								widget = {
+									size = { 100% 100% }
+									parentanchor = center
+									using = bg_window_default_alt
+
+									vbox = {
+										using = layoutpolicy_expanding
+										using = window_margin_alt
+
+										vbox = {
+											using = layoutpolicy_expanding
+											using = bg_secondary_inner_alt
+
+											margin = { 25 20 }
+											spacing = 10
+
+											expand = {}
+
+											editbox_single = {
+												name = "server_id"
+												layoutpolicy_horizontal = expanding
+												blockoverride "editbox_label" {
+													text = "JOMINI_MULTIPLAYER_GUI_SERVER_BROWSER_ID_LABEL"
+												}
+												blockoverride "editbox_properties" {
+													tooltip_enabled = no 
+												}
+											}
+
+											editbox_single = {
+												name = "server_id_password"
+												password = yes
+												layoutpolicy_horizontal = expanding
+												blockoverride "editbox_label" {
+													text = "JOMINI_MULTIPLAYER_GUI_SERVER_PASSWORD"
+												}
+												blockoverride "editbox_properties" {
+													tooltip_enabled = no 
+												}
+											}
+
+											button_default = {
+												layoutpolicy_horizontal = expanding
+												text = "JOMINI_MULTIPLAYER_GUI_SERVER_BROWSER_JOIN_SERVER_BUTTON"
+												using = FrontEndMiddleSectionButton
+												onclick = "[JoinServerByIdWithTextWidget(PdxGuiWidget.AccessParent.FindChild('server_id'), PdxGuiWidget.AccessParent.FindChild('server_id_password'), PdxGuiWidget.AccessParent.FindChild('invalid_server_id_text'))]"
+												enabled = "[Not(IsJoinServerByIdWithTextWidgetEmpty(PdxGuiWidget.AccessParent.FindChild('server_id')))]"
+												tooltip_enabled = no
+											}
+
+											text_single = {
+												name = "invalid_server_id_text"
+												visible_at_creation = no
+												layoutpolicy_horizontal = expanding
+												text = "INVALID_SERVER_ID"
+												autoresize = no
+												align = center
+												default_format = "#color_red"
+											}
+
+											expand = {}
+										}
+									}
+								}
+							}
+
+							expand = {}
+						}
+					}
+
+					expand = {}
+
+					vbox = {
+						using = version_label
+						blockoverride "version_label_background" { 
+							using = VersionLabelBackground
+						}
+
+						blockoverride "version_label_left_column" {}
+					}
+				}
+			}
+
+			blockoverride "frontend_menu_bottom_section" {
+				button_default = {
+					using = FrontEndBottomSectionButton
+
+					onclick = "[JominiServerBrowserGui.RefreshServers]"
+					text = "JOMINI_MULTIPLAYER_GUI_SERVER_BROWSER_SCAN_BUTTON"
+					tooltipwidget = {
+                        LeftClickButtonTooltip = {
+                            blockoverride "onclick_text" { text = "JOMINI_MULTIPLAYER_GUI_SERVER_BROWSER_SCAN_BUTTON" } 
+                        }
+					} 
+				}
+
+				button_default = {
+					using = FrontEndBottomSectionButton
+
+					onclick = "[FrontEndMultiplayerView.OnBack]"
+					text = "JOMINI_MULTIPLAYER_GUI_SERVER_BROWSER_BACK_BUTTON"
+
+					input_action = "close_window"
+					use_global_input_instance = yes					
+					tooltipwidget = {
+                        LeftClickButtonTooltip = {
+                            blockoverride "onclick_text" { text = "BACK_TOOLTIP_LEFT" } 
+                        }
+					}      
+				}
+				margin_bottom = 70
+			}
+		}
+	}
+}

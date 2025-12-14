@@ -1,0 +1,29 @@
+{
+	"state_sets": {
+		"StateSet0": {
+			"states": {
+				"_onlick": {
+					"animation": "Animation1"
+				},
+				"_ondrag": {
+					"animation": "Animation2"
+				}
+			}
+		},
+		"StateSet1": {
+			"states": {
+				"initial": {
+					"animation": "AnimationMove",
+					"trigger_on_create": true,
+					"looped" : true
+				},
+				"_mouse_enter": {
+					"animation": "AnimationSizeUp"
+				},
+				"_mouse_leave": {
+					"animation": "AnimationSizeDown"
+				}
+			}
+		}
+	}
+}

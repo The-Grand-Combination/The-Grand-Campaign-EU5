@@ -1,0 +1,897 @@
+template TT_MaxStrength {
+	ContextualTooltipType = {
+        blockoverride "title_text" {
+            text = "TT_MAXSTRENGTH_TITLE"
+        }
+       
+        blockoverride "title_icon" {
+            icon = {
+                using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/unit_types/max_strength.dds"
+        	}
+		}
+
+        blockoverride "concept_link" {
+            text = [maximum_strength|e]
+        }
+
+        blockoverride "tooltip_content" {
+
+            TooltipTextBlock = {
+                blockoverride "text" {
+                    text = "TT_MAXSTRENGTH_TEXT"
+                }
+            }
+
+			TooltipStringPairList = {
+                blockoverride "block_title" {
+                    text = "LIST_TITLE_SOURCES"
+                }
+				textcontext = "[UnitTypeLateralView.GetUnitType.GetStatTooltip('max_strength')]"
+			}
+        }
+    }
+}
+
+template TT_AttritionWeight {
+	ContextualTooltipType = {
+        blockoverride "title_text" {
+            text = "TT_ATTRITIONWEIGHT_TITLE"
+        }
+       
+        blockoverride "title_icon" {
+            icon = {
+                using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/unit_types/unit_weight_strength.dds"
+        	}
+		}
+
+        blockoverride "concept_link" {
+            text = [unit_weight|e]
+        }
+
+        blockoverride "tooltip_content" {
+
+            TooltipTextBlock = {
+                blockoverride "text" {
+                    text = "TT_ATTRITIONWEIGHT_TEXT"
+                }
+            }
+
+			TooltipStringPairList = {
+                blockoverride "block_title" {
+                    text = "LIST_TITLE_SOURCES"
+                }
+				textcontext = "[UnitTypeLateralView.GetUnitType.GetStatTooltip('attrition_weight')]"
+			}
+        }
+    }
+}
+
+template TT_CombatPower {
+	ContextualTooltipType = {
+        blockoverride "title_text" {
+            text = "TT_COMBATPOWER_TITLE"
+        }
+       
+        blockoverride "title_icon" {
+            icon = {
+                using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/unit_types/combat_power.dds"
+        	}
+		}
+
+        blockoverride "concept_link" {
+            text = [combat_power|e]
+        }
+
+        blockoverride "tooltip_content" {
+
+            TooltipTextBlock = {
+                blockoverride "text" {
+                    text = "TT_COMBATPOWER_TEXT"
+                }
+            }
+
+			TooltipStringPairList = {
+                blockoverride "block_title" {
+                    text = "LIST_TITLE_SOURCES"
+                }
+				textcontext = "[UnitTypeLateralView.GetUnitType.GetStatTooltip('combat_power')]"
+			}
+        }
+    }
+}
+
+template TT_MaritimePresence {
+	ContextualTooltipType = {
+        blockoverride "title_text" {
+            text = "TT_MARITIMEPRESENCE_TITLE"
+        }
+       
+        blockoverride "title_icon" {
+            icon = {
+                using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/unit_types/maritime_presence.dds"
+        	}
+		}
+
+        blockoverride "concept_link" {
+            text = [maritime_presence|e]
+        }
+
+        blockoverride "tooltip_content" {
+
+            TooltipTextBlock = {
+                blockoverride "text" {
+                    text = "TT_MARITIMEPRESENCE_TEXT"
+                }
+            }
+
+			TooltipStringPairList = {
+                blockoverride "block_title" {
+                    text = "LIST_TITLE_SOURCES"
+                }
+				textcontext = "[UnitTypeLateralView.GetUnitType.GetStatTooltip('maritime_presence')]"
+			}
+        }
+    }
+}
+
+template TT_AttritionLoss {
+	ContextualTooltipType = {
+        blockoverride "title_text" {
+            text = "TT_ATTRITIONLOSS_TITLE"
+        }
+       
+        blockoverride "title_icon" {
+            icon = {
+                using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/unit_types/monthly_attrition.dds"
+        	}
+		}
+
+        blockoverride "concept_link" {
+            text = [attrition|e]
+        }
+
+        blockoverride "tooltip_content" {
+
+            TooltipTextBlock = {
+                blockoverride "text" {
+                    text = "TT_ATTRITIONLOSS_TEXT"
+                }
+            }
+
+			TooltipStringPairList = {
+                blockoverride "block_title" {
+                    text = "LIST_TITLE_SOURCES"
+                }
+				textcontext = "[UnitTypeLateralView.GetUnitType.GetStatTooltip('attrition_loss')]"
+			}
+        }
+    }
+}
+
+template TT_BlockadeCapacity {
+	ContextualTooltipType = {
+        blockoverride "title_text" {
+            text = "TT_BLOCKADECAPACITY_TITLE"
+        }
+       
+        blockoverride "title_icon" {
+            icon = {
+                using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/unit_types/blockade_capacity.dds"
+        	}
+		}
+
+        blockoverride "concept_link" {
+            text = [blockade_capacity|e]
+        }
+
+        blockoverride "tooltip_content" {
+
+            TooltipTextBlock = {
+                blockoverride "text" {
+                    text = "TT_BLOCKADECAPACITY_TEXT"
+                }
+            }
+
+			TooltipStringPairList = {
+                blockoverride "block_title" {
+                    text = "LIST_TITLE_SOURCES"
+                }
+				textcontext = "[UnitTypeLateralView.GetUnitType.GetStatTooltip('blockade_capacity')]"
+			}
+        }
+    }
+}
+
+template TT_ArtilleryBarrage {
+	ContextualTooltipType = {
+        blockoverride "title_text" {
+            text = "TT_ARTILLERY_BARRAGE_TITLE"
+        }
+       
+        blockoverride "title_icon" {
+            icon = {
+                using = tooltip_title_icon_size
+				texture = "[GetConceptTexture('artillery_barrage')]"
+        	}
+		}
+
+        blockoverride "concept_link" {
+            text = "[artillery_barrage|e]"
+        }
+
+        blockoverride "tooltip_content" {
+
+            TooltipTextBlock = {
+                blockoverride "text" {
+                    text = "TT_ARTILLERYBARRAGE_TEXT"
+                }
+            }
+
+			TooltipStringPairList = {
+                blockoverride "block_title" {
+                    text = "LIST_TITLE_SOURCES"
+                }
+				textcontext = "[UnitTypeLateralView.GetUnitType.GetStatTooltip('artillery_barrage')]"
+			}
+        }
+    }
+}
+
+template TT_FoodConsumption {
+	ContextualTooltipType = {
+        blockoverride "title_text" {
+            text = "TT_FOODCONSUMPTION_TITLE"
+        }
+       
+        blockoverride "title_icon" {
+            icon = {
+                using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/unit_types/food_consumption.dds"
+        	}
+		}
+
+        blockoverride "concept_link" {
+            text = [food_consumption|e]
+        }
+
+        blockoverride "tooltip_content" {
+
+            TooltipTextBlock = {
+                blockoverride "text" {
+                    text = "TT_FOODCONSUMPTION_TEXT"
+                }
+            }
+
+			TooltipStringPairList = {
+                blockoverride "block_title" {
+                    text = "LIST_TITLE_SOURCES"
+                }
+				textcontext = "[UnitTypeLateralView.GetUnitType.GetStatTooltip('food_consumption_per_strength')]"
+			}
+        }
+    }
+}
+
+template TT_CrewSize {
+	ContextualTooltipType = {
+        blockoverride "title_text" {
+            text = "TT_CREWSIZE_TITLE"
+        }
+       
+        blockoverride "title_icon" {
+            icon = {
+                using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/unit_types/crew_size.dds"
+        	}
+		}
+
+        blockoverride "concept_link" {
+            text = [crew_size|e]
+        }
+
+        blockoverride "tooltip_content" {
+
+            TooltipTextBlock = {
+                blockoverride "text" {
+                    text = "TT_CREWSIZE_TEXT"
+                }
+            }
+
+			TooltipStringPairList = {
+                blockoverride "block_title" {
+                    text = "LIST_TITLE_SOURCES"
+                }
+				textcontext = "[UnitTypeLateralView.GetUnitType.GetStatTooltip('crew_size')]"
+			}
+        }
+    }
+}
+
+template TT_FoodStorage {
+	ContextualTooltipType = {
+        blockoverride "title_text" {
+            text = "TT_FOODSTORAGE_TITLE"
+        }
+       
+        blockoverride "title_icon" {
+            icon = {
+                using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/unit_types/food_storage.dds"
+        	}
+		}
+
+        blockoverride "concept_link" {
+            text = [food_storage|e]
+        }
+
+        blockoverride "tooltip_content" {
+
+            TooltipTextBlock = {
+                blockoverride "text" {
+                    text = "TT_FOODSTORAGE_TEXT"
+                }
+            }
+
+			TooltipStringPairList = {
+                blockoverride "block_title" {
+                    text = "LIST_TITLE_SOURCES"
+                }
+				textcontext = "[UnitTypeLateralView.GetUnitType.GetStatTooltip('food_storage_per_strength')]"
+			}
+        }
+    }
+}
+
+template TT_MovementSpeed {
+	ContextualTooltipType = {
+        blockoverride "title_text" {
+            text = "TT_MOVEMENTSPEED_TITLE"
+        }
+       
+        blockoverride "title_icon" {
+            icon = {
+                using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/unit_types/movement_speed.dds"
+        	}
+		}
+
+        blockoverride "concept_link" {
+            text = [movement_speed|e]
+        }
+
+        blockoverride "tooltip_content" {
+
+            TooltipTextBlock = {
+                blockoverride "text" {
+                    text = "TT_MOVEMENTSPEED_TEXT"
+                }
+            }
+
+			TooltipStringPairList = {
+                blockoverride "block_title" {
+                    text = "LIST_TITLE_SOURCES"
+                }
+				textcontext = "[UnitTypeLateralView.GetUnitType.GetStatTooltip('movement_speed')]"
+			}
+        }
+    }
+}
+
+template TT_CombatSpeed {
+	ContextualTooltipType = {
+        blockoverride "title_text" {
+            text = "TT_COMBATSPEED_TITLE"
+        }
+       
+        blockoverride "title_icon" {
+            icon = {
+                using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/unit_types/combat_speed.dds"
+        	}
+		}
+
+        blockoverride "concept_link" {
+            text = [combat_speed|e]
+        }
+
+        blockoverride "tooltip_content" {
+
+            TooltipTextBlock = {
+                blockoverride "text" {
+                    text = "TT_COMBATSPEED_TEXT"
+                }
+            }
+
+			TooltipStringPairList = {
+                blockoverride "block_title" {
+                    text = "LIST_TITLE_SOURCES"
+                }
+				textcontext = "[UnitTypeLateralView.GetUnitType.GetStatTooltip('combat_speed')]"
+			}
+        }
+    }
+}
+
+template TT_Initiative {
+	ContextualTooltipType = {
+        blockoverride "title_text" {
+            text = "TT_INITIATIVE_TITLE"
+        }
+       
+        blockoverride "title_icon" {
+            icon = {
+                using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/unit_types/initiative.dds"
+        	}
+		}
+
+        blockoverride "concept_link" {
+            text = [initiative|e]
+        }
+
+        blockoverride "tooltip_content" {
+
+            TooltipTextBlock = {
+                blockoverride "text" {
+                    text = "TT_INITIATIVE_TEXT"
+                }
+            }
+
+			TooltipStringPairList = {
+                blockoverride "block_title" {
+                    text = "LIST_TITLE_SOURCES"
+                }
+				textcontext = "[UnitTypeLateralView.GetUnitType.GetStatTooltip('initiative')]"
+			}
+        }
+    }
+}
+
+template TT_Frontage {
+	ContextualTooltipType = {
+        blockoverride "title_text" {
+            text = "TT_FRONTAGE_TITLE"
+        }
+       
+        blockoverride "title_icon" {
+            icon = {
+                using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/unit_types/frontage.dds"
+        	}
+		}
+
+        blockoverride "concept_link" {
+            text = [frontage|e]
+        }
+
+        blockoverride "tooltip_content" {
+
+            TooltipTextBlock = {
+                blockoverride "text" {
+                    text = "TT_FRONTAGE_TEXT"
+                }
+            }
+
+			TooltipStringPairList = {
+                blockoverride "block_title" {
+                    text = "LIST_TITLE_SOURCES"
+                }
+				textcontext = "[UnitTypeLateralView.GetUnitType.GetStatTooltip('frontage')]"
+			}
+        }
+    }
+}
+
+template TT_FlankingAbility {
+	ContextualTooltipType = {
+        blockoverride "title_text" {
+            text = "TT_FLANKINGABILITY_TITLE"
+        }
+       
+        blockoverride "title_icon" {
+            icon = {
+                using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/unit_types/flanking_ability.dds"
+        	}
+		}
+
+        blockoverride "concept_link" {
+            text = [flanking_ability|e]
+        }
+
+        blockoverride "tooltip_content" {
+
+            TooltipTextBlock = {
+                blockoverride "text" {
+                    text = "TT_FLANKINGABILITY_TEXT"
+                }
+            }
+
+			TooltipStringPairList = {
+                blockoverride "block_title" {
+                    text = "LIST_TITLE_SOURCES"
+                }
+				textcontext = "[UnitTypeLateralView.GetUnitType.GetStatTooltip('flanking_ability')]"
+			}
+        }
+    }
+}
+
+template TT_SecureFlanks {
+	ContextualTooltipType = {
+        blockoverride "title_text" {
+            text = "TT_SECUREFLANKS_TITLE"
+        }
+       
+        blockoverride "title_icon" {
+            icon = {
+                using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/unit_types/secure_flanks.dds"
+        	}
+		}
+
+        blockoverride "concept_link" {
+            text = [secure_flanks|e]
+        }
+
+        blockoverride "tooltip_content" {
+
+            TooltipTextBlock = {
+                blockoverride "text" {
+                    text = "TT_SECUREFLANKS_TEXT"
+                }
+            }
+
+			TooltipStringPairList = {
+                blockoverride "block_title" {
+                    text = "LIST_TITLE_SOURCES"
+                }
+				textcontext = "[UnitTypeLateralView.GetUnitType.GetStatTooltip('secure_flanks_defense')]"
+			}
+        }
+    }
+}
+
+template TT_TransportCapacity {
+	ContextualTooltipType = {
+        blockoverride "title_text" {
+            text = "TT_TRANSPORTCAPACITY_TITLE"
+        }
+       
+        blockoverride "title_icon" {
+            icon = {
+                using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/unit_types/transport_capacity.dds"
+        	}
+		}
+
+        blockoverride "concept_link" {
+            text = [transport_capacity|e]
+        }
+
+        blockoverride "tooltip_content" {
+
+            TooltipTextBlock = {
+                blockoverride "text" {
+                    text = "TT_TRANSPORTCAPACITY_TEXT"
+                }
+            }
+
+			TooltipStringPairList = {
+                blockoverride "block_title" {
+                    text = "LIST_TITLE_SOURCES"
+                }
+				textcontext = "[UnitTypeLateralView.GetUnitType.GetStatTooltip('transport_capacity')]"
+			}
+        }
+    }
+}
+
+template TT_AntiPiracyWarfare {
+	ContextualTooltipType = {
+        blockoverride "title_text" {
+            text = "TT_ANTIPIRACYWARFARE_TITLE"
+        }
+       
+        blockoverride "title_icon" {
+            icon = {
+                using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/unit_types/anti_piracy_impact.dds"
+        	}
+		}
+
+        blockoverride "concept_link" {
+            text = [anti_piracy_warfare|e]
+        }
+
+        blockoverride "tooltip_content" {
+
+            TooltipTextBlock = {
+                blockoverride "text" {
+                    text = "TT_ANTIPIRACYWARFARE_TEXT"
+                }
+            }
+
+			TooltipStringPairList = {
+                blockoverride "block_title" {
+                    text = "LIST_TITLE_SOURCES"
+                }
+				textcontext = "[UnitTypeLateralView.GetUnitType.GetStatTooltip('anti_piracy_warfare')]"
+			}
+        }
+    }
+}
+
+template TT_Cannons {
+	ContextualTooltipType = {
+        blockoverride "title_text" {
+            text = "TT_CANNONS_TITLE"
+        }
+       
+        blockoverride "title_icon" {
+            icon = {
+                using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/unit_types/cannons.dds"
+        	}
+		}
+
+        blockoverride "concept_link" {
+            text = [cannons|e]
+        }
+
+        blockoverride "tooltip_content" {
+
+            TooltipTextBlock = {
+                blockoverride "text" {
+                    text = "TT_CANNONS_TEXT"
+                }
+            }
+
+			TooltipStringPairList = {
+                blockoverride "block_title" {
+                    text = "LIST_TITLE_SOURCES"
+                }
+				textcontext = "[UnitTypeLateralView.GetUnitType.GetStatTooltip('cannons')]"
+			}
+        }
+    }
+}
+
+template TT_HullSize {
+	ContextualTooltipType = {
+        blockoverride "title_text" {
+            text = "TT_HULLSIZE_TITLE"
+        }
+       
+        blockoverride "title_icon" {
+            icon = {
+                using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/unit_types/hull_size.dds"
+        	}
+		}
+
+        blockoverride "concept_link" {
+            text = [hull_size|e]
+        }
+
+        blockoverride "tooltip_content" {
+
+            TooltipTextBlock = {
+                blockoverride "text" {
+                    text = "TT_HULLSIZE_TEXT"
+                }
+            }
+
+			TooltipStringPairList = {
+                blockoverride "block_title" {
+                    text = "LIST_TITLE_SOURCES"
+                }
+				textcontext = "[UnitTypeLateralView.GetUnitType.GetStatTooltip('hull_size')]"
+			}
+        }
+    }
+}
+
+template TT_StrengthDamageTaken {
+	ContextualTooltipType = {
+        blockoverride "title_text" {
+            text = "TT_STRENGTHDAMAGETAKEN_TITLE"
+        }
+       
+        blockoverride "title_icon" {
+            icon = {
+                using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/unit_types/strength_damage_taken.dds"
+        	}
+		}
+
+        blockoverride "concept_link" {
+            text = [strength_damage_taken|e]
+        }
+
+        blockoverride "tooltip_content" {
+
+            TooltipTextBlock = {
+                blockoverride "text" {
+                    text = "TT_STRENGTHDAMAGETAKEN_TEXT"
+                }
+            }
+
+			TooltipStringPairList = {
+                blockoverride "block_title" {
+                    text = "LIST_TITLE_SOURCES"
+                }
+				textcontext = "[UnitTypeLateralView.GetUnitType.GetStatTooltip('strength_damage_taken')]"
+			}
+        }
+    }
+}
+
+template TT_MoraleDamageTaken {
+	ContextualTooltipType = {
+        blockoverride "title_text" {
+            text = "TT_MORALEDAMAGETAKEN_TITLE"
+        }
+       
+        blockoverride "title_icon" {
+            icon = {
+                using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/unit_types/morale_damage_taken.dds"
+        	}
+		}
+
+        blockoverride "concept_link" {
+            text = [morale_damage_taken|e]
+        }
+
+        blockoverride "tooltip_content" {
+
+            TooltipTextBlock = {
+                blockoverride "text" {
+                    text = "TT_MORALEDAMAGETAKEN_TEXT"
+                }
+            }
+
+			TooltipStringPairList = {
+                blockoverride "block_title" {
+                    text = "LIST_TITLE_SOURCES"
+                }
+				textcontext = "[UnitTypeLateralView.GetUnitType.GetStatTooltip('morale_damage_taken')]"
+			}
+        }
+    }
+}
+
+
+
+template TT_StrengthDamageDone {
+	ContextualTooltipType = {
+        blockoverride "title_text" {
+            text = "TT_STRENGTHDAMAGEDONE_TITLE"
+        }
+       
+        blockoverride "title_icon" {
+            icon = {
+                using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/unit_types/strength_damage_done.dds"
+        	}
+		}
+
+        blockoverride "concept_link" {
+            text = [strength_damage_done|e]
+        }
+
+        blockoverride "tooltip_content" {
+
+            TooltipTextBlock = {
+                blockoverride "text" {
+                    text = "TT_STRENGTHDAMAGEDONE_TEXT"
+                }
+            }
+
+			TooltipStringPairList = {
+                blockoverride "block_title" {
+                    text = "LIST_TITLE_SOURCES"
+                }
+				textcontext = "[UnitTypeLateralView.GetUnitType.GetStatTooltip('strength_damage_done')]"
+			}
+        }
+    }
+}
+
+template TT_MoraleDamageDone {
+	ContextualTooltipType = {
+        blockoverride "title_text" {
+            text = "TT_MORALEDAMAGEDONE_TITLE"
+        }
+       
+        blockoverride "title_icon" {
+            icon = {
+                using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/unit_types/morale_damage_done.dds"
+        	}
+		}
+
+        blockoverride "concept_link" {
+            text = [morale_damage_done|e]
+        }
+
+        blockoverride "tooltip_content" {
+
+            TooltipTextBlock = {
+                blockoverride "text" {
+                    text = "TT_MORALEDAMAGEDONE_TEXT"
+                }
+            }
+
+			TooltipStringPairList = {
+                blockoverride "block_title" {
+                    text = "LIST_TITLE_SOURCES"
+                }
+				textcontext = "[UnitTypeLateralView.GetUnitType.GetStatTooltip('morale_damage_done')]"
+			}
+        }
+    }
+}
+
+template TT_Construction {
+	ContextualTooltipType = {
+        blockoverride "title_text" {
+            text = "TT_CONSTRUCTION_TITLE"
+        }
+       
+        blockoverride "title_icon" {
+            icon = {
+                using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/unit_types/construction.dds"
+        	}
+		}
+
+        blockoverride "concept_link" {
+            text = [construction|e]
+        }
+
+        blockoverride "tooltip_content" {
+
+            TooltipTextBlock = {
+                blockoverride "text" {
+                    text = "TT_CONSTRUCTION_TEXT"
+                }
+            }
+        }
+    }
+}
+
+template TT_Maintenance {
+	ContextualTooltipType = {
+        blockoverride "title_text" {
+            text = "TT_MAINTENANCE_TITLE"
+        }
+       
+        blockoverride "title_icon" {
+            icon = {
+                using = tooltip_title_icon_size
+				texture = "gfx/interface/icons/unit_types/maintenance.dds"
+        	}
+		}
+
+        blockoverride "concept_link" {
+            text = [maintenance|e]
+        }
+
+        blockoverride "tooltip_content" {
+
+            TooltipTextBlock = {
+                blockoverride "text" {
+                    text = "TT_MAINTENANCE_TEXT"
+                }
+            }
+        }
+    }
+}

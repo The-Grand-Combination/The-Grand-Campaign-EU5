@@ -1,0 +1,164 @@
+
+template Line_DynastyTree {
+	gfxtype = linegfx
+	effectname = "PdxGuiLineScreenSpace"
+	width = 8
+	line_cap = yes
+	color = { 0.62 0.52 0.26 1.0 }
+	alpha = 0.8
+
+	# animation_speed = { 0.15 0.15 }
+	texture = "gfx/lines/tiling_noise.dds"
+	uv_scale = { 1.0 1.0 }
+
+	mask = "gfx/lines/mask.dds"
+	mask_uv_scale = { 0.1 1.0 }
+}
+
+template Line_Tree {
+	gfxtype = linegfx
+	effectname = "PdxGuiLineScreenSpace"
+	width = 8
+	line_cap = yes
+
+	# animation_speed = { 0.15 0.15 }
+	texture = "gfx/interface/colors/white.dds"
+	uv_scale = { 1.0 1.0 }
+
+	mask = "gfx/lines/mask.dds"
+	mask_uv_scale = { 0.01 1.0 }
+}
+
+# template Background_Frame {
+# 	texture = "gfx/interface_old/from_titus/background_frame.dds"
+# 	spriteType = Corneredstretched
+# 	spriteborder = { 10 10 }
+# 	color = { 0.9 0.9 0.9 0.15 }
+# }
+
+# template Color_Blue
+# {
+# 	color = { 0.4 0.5 0.6 1 }
+# }
+
+# template Color_Orange
+# {
+# 	color = { 0.9 0.7 0.5 0.7 }
+# }
+# template Color_Purple
+# {
+# 	color = { 0.55 0.5 0.6 1 }
+# }
+
+# template Background_Area_Dark
+# {
+# 	texture = "gfx/interface_old/from_titus/mask_rough_edges.dds"
+# 	spriteType = Corneredtiled
+# 	spriteborder = { 20 20 }
+# 	color = { 0 0 0 0.6 }
+# 	texture_density = 2
+# }
+
+# template Background_Area_With_Header_Dark
+# {
+# 	texture = "gfx/interface_old/from_titus/tile_frame_thin_02_title.dds"
+# 	spriteType = Corneredtiled
+# 	spriteborder = { 50 50 }
+# }
+
+# template Background_Area_Dark_Border
+# {
+# 	texture = "gfx/interface_old/from_titus/tile_frame_thin_03.dds"
+# 	spriteType = Corneredtiled
+# 	spriteborder = { 50 50 }
+# }
+
+# template Mask_Rough_Edges
+# {
+# 	modify_texture = {
+# 		texture = "gfx/interface_old/from_titus/mask_rough_edges.dds"
+# 		spriteType = Corneredtiled
+# 		spriteborder = { 20 20 }
+# 		blend_mode = alphamultiply
+# 		texture_density = 2
+# 	}
+# }
+
+types TitusStuff
+{
+	# TODO DEPRECATE
+	type editbox_standard = margin_widget {
+		margin_left = 5
+		margin_right = 5
+		margin_top = 5
+
+		block "editbox_standard_size" {
+			size = { 72 30 }
+		}
+
+		using = tooltip_es
+
+		editbox = {
+			block "editbox_properties" {
+				name = "give_me_a_unique_name_for_code_to_find_me"
+			}
+
+			align = top|left
+			size = {100% 100%}
+			alwaystransparent = no
+			focuspolicy = all
+			default_format = "#high"
+		}
+	}
+
+	type editbox_search_field = hbox {
+		spacing = 5
+
+		editbox_standard = {
+			layoutpolicy_horizontal = expanding
+		}
+	}
+
+	type button_select_arrow = button_icon {
+		size = { 20 20 }
+		texture = "gfx/interface/buttons/flats/button_simple.dds"
+		modify_texture = {
+			using = overlay_stone_texture
+			blend_mode = overlay
+			alpha = 0.3
+		}
+		modify_texture = {
+			using = overlay_window_texture
+			blend_mode = overlay
+			alpha = 0.3
+		}
+		tooltipwidget = {
+			ContextualTooltipType = {
+				blockoverride "title_icon" {
+					icon = {
+						using = tooltip_title_icon_size
+						texture = "gfx/interface/icons/flat_icons/tabicons/settings_flat_icon.dds"	
+					}
+				}
+				blockoverride "title_text" {
+					text = "GAME_RULES_CHANGE"
+				}
+				blockoverride "tooltip_content" {
+					TooltipTextBlock = {
+						blockoverride "text" {
+							text = "GAME_RULES_APPLY"
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# Standard margins for windows, to get inside the standard decoration gfx around the frame.
+template Window_Margins {
+	margin_left = 35
+	margin_right = 35
+	margin_top = 18
+	margin_bottom = 20
+}

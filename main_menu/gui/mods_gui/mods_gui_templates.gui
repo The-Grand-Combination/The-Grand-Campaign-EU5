@@ -1,0 +1,151 @@
+# template mods_details_editbox {
+#     max_width = 490
+#     multiline = yes
+#     elide = right
+#     autoresize = yes
+# }
+
+template playset_details_tooltip {
+    ContextualTooltipType = {
+        blockoverride "title_obj" {
+            text_single = {
+                layoutpolicy_horizontal = expanding
+                autoresize = no
+                fontsize_min = 14
+                align = left|nobaseline
+                using = Font_Type_Headers
+                using = Font_Size_Medium
+                default_format = "#T"
+
+                visible = "[Not(StringIsEmpty(ModsPlayset.Name))]"
+                text = "[ModsPlayset.Name]"
+
+                fonttintcolor = "[ExtraTooltipInfo.GetTintColor]"
+                alwaystransparent = yes
+            }
+
+            text_single = {
+                layoutpolicy_horizontal = expanding
+                autoresize = no
+                fontsize_min = 14
+                align = left|nobaseline
+                using = Font_Type_Headers
+                using = Font_Size_Medium
+                default_format = "#T"
+
+                visible = "[StringIsEmpty(ModsPlayset.Name)]"
+                text = "MODS_GUI_NO_PLAYSET_SELECTED"
+
+                fonttintcolor = "[ExtraTooltipInfo.GetTintColor]"
+                alwaystransparent = yes
+            }
+        }
+
+        blockoverride "concept_link_obj" {}
+        blockoverride "tooltip_content" {
+            TooltipListBase = {
+                datamodel = "[ModsPlayset.Mods]"
+                blockoverride "block_title"
+                {
+                    text = "MODS_GUI_USED_MODS_PLAYSET"
+                }
+                item = {
+                    TooltipManualTableField = {
+                        text_multi = {
+                            layoutpolicy_horizontal = expanding
+                            autoresize = yes
+                            text = "[ModsPlaysetEntry.Name]"
+                        }
+                    } 
+                }
+            }
+        }
+    }
+}
+
+template downloaded_mods_details_tooltip {
+    ContextualTooltipType = {
+        blockoverride "title_text"{
+            text = "[LocalMod.DisplayName]"
+        }
+        blockoverride "title_icon" {
+            icon = {
+                texture = "[LocalMod.DisplayImage]"
+                using = tooltip_title_icon_size
+            }
+        }
+        blockoverride "tooltip_content"{
+            TooltipTextBlock = {
+                blockoverride "properties" {
+                    visible = "[Not(StringIsEmpty(LocalMod.Version))]"
+                }
+                blockoverride "text" {
+                    raw_text = "MODS_GUI_MOD_VERSION"
+                }
+            }
+
+            TooltipTextBlock = {
+                blockoverride "properties" {
+                    visible = "[Not(StringIsEmpty(LocalMod.Description))]"
+                }
+                blockoverride "text" {
+                    text = "[LocalMod.Description]"
+                }
+            }
+        }
+    }
+}
+
+template selected_mods_details_tooltip {
+    ContextualTooltipType = {
+        blockoverride "title_text"{
+            text = "[ModsPlaysetEntry.Name]"
+        }
+        blockoverride "title_icon" {
+            icon = {
+                texture = "[ModsPlaysetEntry.GetDisplayImage]"
+                using = tooltip_title_icon_size
+            }
+        }
+        blockoverride "tooltip_content"{
+            TooltipTextBlock = {
+                blockoverride "properties" {
+                    visible = "[Not(StringIsEmpty(ModsPlaysetEntry.Version))]"
+                }
+                blockoverride "text" {
+                    raw_text = "MODS_GUI_SELECTED_MOD_VERSION"
+                }
+            }
+
+            TooltipTextBlock = {
+                blockoverride "properties" {
+                    visible = "[Not(StringIsEmpty(ModsPlaysetEntry.Description))]"
+                }
+                blockoverride "text" {
+                    text = "[ModsPlaysetEntry.Description]"
+                }
+            }
+        }
+    }
+}
+
+# template mods_details_tooltip {
+#     ContextualTooltipType = {
+#         blockoverride "title_text"{
+#             text = "[NonDownloadedMod.DisplayName]"
+#         }
+#         blockoverride "tooltip_content"{
+#             TooltipTextBlock = {
+#                 blockoverride "text" {
+#                     text = "[NonDownloadedMod.Description]"
+#                 }
+#             }
+
+#             TooltipTextBlock = {
+#                 blockoverride "text" {                    
+#                     raw_text = "Version: [NonDownloadedMod.Version]"
+#                 }
+#             }
+#         }
+#     }
+# }

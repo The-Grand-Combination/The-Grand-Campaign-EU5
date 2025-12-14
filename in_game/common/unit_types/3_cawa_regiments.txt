@@ -1,0 +1,204 @@
+﻿a_cawa = {
+	category = army_infantry
+	copy_from = a_age_1_traditions_infantry
+
+	upgrades_to = a_renaissance_cawa
+
+	strength_damage_taken = -0.10
+	attrition_loss = -0.50
+
+	limit = {
+		add = {
+			desc = "cawa_barracks"
+			value = total_effective_building_levels:cawa_barracks
+		}
+	}
+	
+	impact = {
+		hills = -0.50
+		mountains = -0.50
+		plateau = -0.50
+	}
+
+	location_potential = {
+		unit_cawa_location_trigger = yes
+	}
+
+	combat = {
+		mountains = 0.10
+		plateau = 0.10
+	}
+
+	gfx_tags = { medium_tag }
+}
+
+a_renaissance_cawa = {
+	category = army_infantry
+	copy_from = a_age_2_renaissance_infantry
+
+	upgrades_to = a_discovery_cawa
+
+	strength_damage_taken = -0.10
+	attrition_loss = -0.50
+
+	limit = {
+		add = {
+			desc = "cawa_barracks"
+			value = total_effective_building_levels:cawa_barracks
+		}
+	}
+	
+	impact = {
+		hills = -0.50
+		mountains = -0.50
+		plateau = -0.50
+	}
+
+	location_potential = {
+		unit_cawa_location_trigger = yes
+	}
+
+	combat = {
+		mountains = 0.10
+		plateau = 0.10
+	}
+
+	gfx_tags = { medium_tag }
+}
+
+a_discovery_cawa = {
+	category = army_infantry
+	copy_from = a_age_3_discovery_infantry
+
+	upgrades_to = a_reformation_cawa
+
+	strength_damage_taken = -0.10
+	attrition_loss = -0.50
+
+	limit = {
+		add = {
+			desc = "cawa_barracks"
+			value = total_effective_building_levels:cawa_barracks
+		}
+	}
+	
+	impact = {
+		hills = -0.50
+		mountains = -0.50
+		plateau = -0.50
+	}
+
+	location_potential = {
+		unit_cawa_location_trigger = yes
+	}
+
+	combat = {
+		mountains = 0.10
+		plateau = 0.10
+	}
+
+	gfx_tags = { medium_tag musket_tag }
+}
+
+a_reformation_cawa = {
+	category = army_infantry
+	copy_from = a_age_4_reformation_infantry
+
+	upgrades_to = a_absolutism_cawa
+
+	strength_damage_taken = -0.10
+	attrition_loss = -0.50
+
+	limit = {
+		add = {
+			desc = "cawa_barracks"
+			value = total_effective_building_levels:cawa_barracks
+		}
+	}
+		
+	impact = {
+		hills = -0.50
+		mountains = -0.50
+		plateau = -0.50
+	}
+
+	location_potential = {
+		unit_cawa_location_trigger = yes
+	}
+
+	combat = {
+		mountains = 0.10
+		plateau = 0.10
+	}
+
+	gfx_tags = { medium_tag musket_tag }
+}
+
+
+a_absolutism_cawa = {
+	category = army_infantry
+	copy_from = a_age_5_absolutism_infantry
+
+	upgrades_to = a_revolutions_cawa
+
+	strength_damage_taken = -0.10
+	attrition_loss = -0.50
+
+	limit = {
+		add = {
+			desc = "cawa_barracks"
+			value = total_effective_building_levels:cawa_barracks
+		}
+	}
+		
+	impact = {
+		hills = -0.50
+		mountains = -0.50
+		plateau = -0.50
+	}
+
+	location_potential = {
+		unit_cawa_location_trigger = yes
+	}
+
+	combat = {
+		mountains = 0.10
+		plateau = 0.10
+	}
+	
+	gfx_tags = { medium_tag musket_tag }
+}
+
+a_revolutions_cawa = {
+	category = army_infantry
+	copy_from = a_age_6_revolutions_infantry
+
+	strength_damage_taken = -0.10
+	attrition_loss = -0.50
+
+	limit = {
+		add = {
+			desc = "cawa_barracks"
+			value = total_effective_building_levels:cawa_barracks
+		}
+	}
+			
+	impact = {
+		hills = -0.50
+		mountains = -0.50
+		plateau = -0.50
+	}
+
+	location_potential = {
+		unit_cawa_location_trigger = yes
+	}
+
+	combat = {
+		mountains = 0.10
+		plateau = 0.10
+	}
+
+	gfx_tags = { medium_tag musket_tag }
+}
+
+

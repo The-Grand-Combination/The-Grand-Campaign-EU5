@@ -1,0 +1,409 @@
+
+template overlay_leather_texture {
+	texture = "gfx/interface/component_overlay/overlay_leather.dds"
+	texture_density = 2
+	spriteType = Corneredtiled
+	spriteborder = { 0 0 }
+}
+
+template overlay_metal_texture {
+	texture = "gfx/interface/component_overlay/metal_texture.dds"
+	texture_density = 2
+	spriteType = stretched
+	spriteborder = { 0 0 }
+}
+
+template overlay_triangular_pattern_texture {
+	texture = "gfx/interface/component_overlay/triangular_pattern_texture.dds"
+	texture_density = 2
+	spriteType = Corneredtiled
+	spriteborder = { 0 43 }
+}
+
+template overlay_leather {
+	modify_texture = {
+		using = overlay_leather_texture
+		blend_mode = overlay
+	}
+}
+
+template warning_icon_texture {
+	texture = "gfx/interface/icons/icon_warning.dds"
+}
+
+# template overlay_metal
+# {
+# 	modify_texture = {
+# 		using = overlay_metal_texture
+# 		blend_mode = overlay
+# 		alpha = 0.6
+# 	}
+# }
+
+template overlay_watercolor_texture {
+	texture = "gfx/interface/component_overlay/watercolor_texture.dds"
+	texture_density = 2
+	spriteType = Corneredtiled
+	spriteborder = { 0 0 }
+}
+
+template overlay_wood_texture {
+	texture = "gfx/interface/component_overlay/wood_texture.dds"
+	texture_density = 2
+	spriteType = Corneredtiled
+	spriteborder = { 0 0 }
+}
+
+template overlay_gold_texture {
+	texture = "gfx/interface/component_overlay/gold_overlay.dds"
+	texture_density = 2
+	spriteType = stretched
+}
+
+template overlay_gold {
+	modify_texture = {
+		using = overlay_gold_texture
+		blend_mode = overlay
+		alpha = 0.7
+	}
+}
+
+template tile_frame_horizontal_texture {
+	texture = "gfx/interface/component_tiles/top_bar/horizontal_frame.dds"
+	texture_density = 2
+	spriteType = corneredstretched
+	spriteBorder = { 0 0 }
+}
+
+template pattern_vertical_bis_graphical_culture_texture {
+	texture = "[GetGraphicalCultureTexture('pattern_bevel_vertical_bis')]"
+	texture_density = 2
+	spriteType = corneredtiled
+	spriteborder = { 12 0 }
+}
+
+# template pattern_01_horizontal_texture {
+# 	texture = "gfx/interface/component_masks/patterns/pattern_01_horizontal.dds"
+# 	texture_density = 2
+# 	spriteType = corneredtiled
+# 	spriteborder = { 0 12 }
+# }
+
+template bg_vignette_mask_texture {
+	texture = "gfx/interface/component_masks/mask_vignette.dds"
+	texture_density = 2
+	spriteType = corneredstretched
+	spriteborder = { 20 20 }
+}
+
+template bg_fade_vertical_up_mask_texture {
+	texture = "gfx/interface/component_masks/mask_fade_vertical_up.dds"
+	texture_density = 2
+	spriteType = stretched
+}
+
+template bg_fade_vertical_up_noborder_mask_texture {
+	texture = "gfx/interface/component_masks/mask_fade_vertical_up_noborders.dds"
+	texture_density = 2
+	spriteType = corneredstretched
+	spriteborder = { 20 20 }
+}
+
+template bg_fade_vertical_down_mask_texture {
+	texture = "gfx/interface/component_masks/mask_fade_vertical.dds"
+	texture_density = 2
+	spriteType = stretched
+}
+
+template tile_card_bg_texture {
+	texture = "gfx/interface/component_tiles/tile_card_bg.dds"
+	texture_density = 2
+	spriteType = corneredstretched
+	spriteborder = { 7 7 }
+}
+
+# template tile_card_bg_left_texture {
+# 	texture = "gfx/interface/component_tiles/tile_card_bg.dds"
+# 	texture_density = 2
+# 	spriteType = corneredstretched
+# 	frame_grid = { 2 1 }
+# 	spriteborder = { 7 7 }
+# 	spriteborder_right = 0
+# }
+
+# template tile_card_bg_right_texture {
+# 	texture = "gfx/interface/component_tiles/tile_card_bg.dds"
+# 	texture_density = 2
+# 	spriteType = corneredstretched
+# 	frame_grid = { 2 1 }
+# 	spriteborder = { 7 7 }
+# 	spriteborder_left = 0
+# 	frame = 2
+# }
+
+template tile_card_bg_up_texture {
+	texture = "gfx/interface/component_tiles/tile_card_bg.dds"
+	texture_density = 2
+	spriteType = corneredstretched
+	frame_grid = { 1 2 }
+	spriteborder = { 7 7 }
+	spriteborder_bottom = 0
+}
+
+# template tile_card_bg_bottom_texture {
+# 	texture = "gfx/interface/component_tiles/tile_card_bg.dds"
+# 	texture_density = 2
+# 	spriteType = corneredstretched
+# 	frame_grid = { 1 2 }
+# 	spriteborder = { 7 7 }
+# 	spriteborder_top = 0
+# 	frame = 2
+# }
+
+template paper_card_texture {
+	texture = "gfx/interface/cards/paper_card.dds"
+	texture_density = 2
+	spriteType = corneredstretched
+	spriteborder = { 100 100 }
+}
+
+template simple_paper_card_texture {
+	texture = "gfx/interface/cards/simple_paper_card.dds"
+	texture_density = 2
+	spriteType = corneredstretched
+	spriteborder = { 100 100 }
+}
+
+# template geo_card {
+# 	texture = "gfx/interface/cards/geo_cards.dds"
+# 	texture_density = 2
+# 	spriteType = corneredstretched
+# 	spriteborder = { 100 100 }
+# }
+
+template scroll_card_texture {
+	texture = "gfx/interface/cards/scroll_card.dds"
+	texture_density = 2
+	spriteType = corneredstretched
+	spriteBorder = { 45 10 }
+}
+
+template scroll_card_outline_texture {
+	texture = "gfx/interface/cards/scroll_card_outline.dds"
+	texture_density = 2
+	spriteType = corneredstretched
+	spriteBorder = { 45 10 }
+}
+
+template scroll_card_light_texture {
+	texture = "gfx/interface/cards/scroll_card_light.dds"
+	texture_density = 2
+	spriteType = corneredstretched
+	spriteBorder = { 45 10 }
+}
+
+
+template window_bottom_paper_shadow_texture {
+	texture = "gfx/interface/component_decoration/window_bottom_paper_shadow.dds"
+	texture_density = 2
+	spriteType = corneredstretched
+	spriteborder_left = 15
+	spriteborder_right = 15
+}
+
+template window_bottom_paper_texture {
+	texture = "gfx/interface/component_decoration/window_bottom_paper.dds"
+	texture_density = 2
+	spriteType = corneredstretched
+	spriteborder_left = 15
+	spriteborder_right = 15
+}
+
+template window_top_paper_texture {
+	texture = "gfx/interface/component_decoration/window_top_paper.dds"
+	texture_density = 2
+	spriteType = corneredstretched
+}
+
+template bg_button_flavor_1_texture {
+	texture = "gfx/interface/buttons/flavors/bg_button_flavor_1.dds"
+	texture_density = 2
+	spriteType = Corneredstretched
+	spriteborder = { 15 15 }
+}
+
+template bg_button_flavor_2_texture {
+	texture = "gfx/interface/buttons/flavors/bg_button_flavor_2.dds"
+	texture_density = 2
+	spriteType = Corneredstretched
+	spriteborder = { 24 0 }
+}
+
+template bg_button_flavor_3_texture {
+	texture = "gfx/interface/buttons/flavors/bg_button_flavor_3.dds"
+	texture_density = 2
+	spriteType = Corneredstretched
+	spriteborder = { 28 0 }
+}
+
+template bg_button_flavor_4_texture {
+	texture = "gfx/interface/buttons/flavors/bg_button_flavor_4.dds"
+	texture_density = 2
+	spriteType = Corneredstretched
+	spriteborder = { 28 0 }
+}
+
+template bg_button_light_round_texture {
+	texture = "gfx/interface/buttons/bg_button_light_round.dds"
+	texture_density = 2
+}
+
+template back_button_alt_texture {
+	texture = "gfx/interface/buttons/flats/back_button_alt.dds"
+	texture_density = 2
+}
+
+template mask_scratches_texture {
+	texture = "gfx/interface/component_masks/mask_scratches.dds"
+	texture_density = 2
+	spriteType = corneredstretched
+	spriteborder = { 0 0 }
+}
+
+template bg_gradient_mask_texture {
+	texture = "gfx/interface/component_masks/bg_gradient_mask.dds"
+}
+
+template floral_window_pattern_texture {
+	texture = "gfx/interface/component_overlay/floral_window_pattern.dds"
+	alpha = 0.1
+	spriteType = corneredtiled
+	spriteBorder = {0 0}
+}
+
+template ui_direction_button_detail {
+	modify_texture = {
+		using = overlay_window_texture
+		blend_mode = overlay
+		alpha = 0.5
+	}
+
+	modify_texture = {
+		using = mask_scratches_texture
+		blend_mode = alphamultiply
+		alpha = 0.4
+	}
+
+	glow = {
+		glow_radius = 5
+		color = { 1.0 0.85 0.55 1.0 }
+		alpha = 0.6
+
+		block "glow_visible" {
+			visible = no
+		}
+	}
+}
+
+template ui_direction_button_overlay {
+	using = color_gold
+	using = ui_direction_button_detail
+}
+
+template button_main_tab_icon_texture {
+	texture = "gfx/interface/buttons/main_tab_icon.dds"
+	texture_density = 2
+	spriteType = corneredstretched
+	spriteborder = { 20 0 }
+}
+
+### CARD PATTERNS  ###
+
+# template header_pattern_03_texture {
+# 	texture = "gfx/interface/cards/headers/header_pattern_03.dds"
+# 	texture_density = 2
+# 	spriteType = corneredtiled
+# 	spriteborder = { 0 0 }
+# }
+
+# template header_pattern_04_texture {
+# 	texture = "gfx/interface/cards/headers/header_pattern_04.dds"
+# 	texture_density = 2
+# 	spriteType = corneredtiled
+# 	spriteborder = { 0 0 }
+# }
+
+# template header_pattern_05_texture {
+# 	texture = "gfx/interface/cards/headers/header_pattern_05.dds"
+# 	texture_density = 2
+# 	spriteType = corneredtiled
+# 	spriteborder = { 0 0 }
+# }
+
+# template header_pattern_06_texture {
+# 	texture = "gfx/interface/cards/headers/header_pattern_06.dds"
+# 	texture_density = 2
+# 	spriteType = corneredtiled
+# 	spriteborder = { 0 0 }
+# }
+
+# template header_pattern_07_texture {
+# 	texture = "gfx/interface/cards/headers/header_pattern_07.dds"
+# 	texture_density = 2
+# 	spriteType = corneredtiled
+# 	spriteborder = { 0 0 }
+# }
+
+# template header_pattern_08_texture {
+# 	texture = "gfx/interface/cards/headers/header_pattern_08.dds"
+# 	texture_density = 2
+# 	spriteType = corneredtiled
+# 	spriteborder = { 0 0 }
+# }
+
+# template header_pattern_09_texture {
+# 	texture = "gfx/interface/cards/headers/header_pattern_09.dds"
+# 	texture_density = 2
+# 	spriteType = corneredtiled
+# 	spriteborder = { 0 0 }
+# }
+
+template header_pattern_estates_crown {
+	texture = "gfx/interface/cards/headers/header_pattern_crown.dds"
+	texture_density = 2
+	spriteType = corneredtiled
+	spriteborder = { 0 80 }
+}
+
+# template header_pattern_estates_nobility {
+# 	texture = "gfx/interface/cards/headers/header_pattern_crown.dds"
+# 	texture_density = 2
+# 	spriteType = corneredtiled
+# 	spriteborder = { 0 80 }
+# }
+
+# template header_pattern_estates_clergy {
+# 	texture = "gfx/interface/cards/headers/header_pattern_clergy.dds"
+# 	texture_density = 2
+# 	spriteType = corneredtiled
+# 	spriteborder = { 0 80 }
+# }
+
+# template header_pattern_estates_burghers {
+# 	texture = "gfx/interface/cards/headers/header_pattern_burghers.dds"
+# 	texture_density = 2
+# 	spriteType = corneredtiled
+# 	spriteborder = { 0 80 }
+# }
+
+# template header_pattern_estates_commoners {
+# 	texture = "gfx/interface/cards/headers/header_pattern_commoners.dds"
+# 	texture_density = 2
+# 	spriteType = corneredtiled
+# 	spriteborder = { 0 80 }
+# }
+
+template province_texture {
+	texture = "gfx/interface/icons/map_subdivisons/province.dds"
+	texture_density = 2
+}

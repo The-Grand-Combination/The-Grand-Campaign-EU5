@@ -1,0 +1,130 @@
+﻿subject_pays_vassal = {
+	scaled_gold = 0.2
+	ignore_inflation = yes
+}
+
+subject_pays_colonial = {
+	scaled_gold = 0.025
+	scaled_sailors = 0.1
+	scaled_manpower = 0.1
+	ignore_inflation = yes
+}
+
+subject_pays_tributary = {
+	scaled_gold = 0.2
+	scaled_sailors = 0.05
+	scaled_manpower = 0.05
+	ignore_inflation = yes
+}
+
+subject_pays_march = {
+	scaled_gold = 0.1
+	ignore_inflation = yes
+}
+
+subject_pays_samanta = {
+	scaled_gold = 0.1
+	ignore_inflation = yes
+}
+subject_pays_maha_samanta = {
+	scaled_gold = 0.2
+	ignore_inflation = yes
+}
+subject_pays_pradhana_maha_samanta = {
+	scaled_gold = 0.33
+	scaled_sailors = 0.15
+	scaled_manpower = 0.15
+	ignore_inflation = yes
+}
+
+hanseatic_member_cost = {
+	scaled_gold = 0.05
+	scaled_sailors = 0.1
+	scaled_manpower = 0.1
+	ignore_inflation = yes
+}
+
+subject_pays_trade_company = {
+	scaled_gold = 0.5
+	ignore_inflation = yes
+}
+
+excommunication_price = {
+	religious_influence = 100
+}
+catholic_country_interaction = {
+	religious_influence = 25
+}
+
+ennoble_price = {
+	government_power = 10
+}
+
+pardon_price = {
+	government_power = 5
+}
+
+appoint_as_heir_price = {
+	government_power = 30
+	stability = 10
+}
+
+grant_cabinet_right_price = {
+	government_power = 20
+}
+
+commission_art_price = {
+	scaled_gold = 6
+}
+
+sow_discontent_monthly_cost = {
+	scaled_gold = 1
+}
+
+corrupt_officials_monthly_cost = {
+	scaled_gold = 1
+}
+
+abdicate_price = {
+	prestige = 100
+	legitimacy = 20
+}
+
+middle_kingdom_tribute_price = {
+	gold = 1
+}
+
+imperial_contribution_price = {
+	gold = 1
+}
+
+imperial_treasury_contribution_price = {
+	gold = 1
+}
+
+imperial_army_contribution_price = {
+	manpower = 0.25
+}
+
+union_contribution_price = {
+	gold = 2
+}
+
+tithe_price = {
+	gold = 1
+}
+
+tatar_yoke_contribution_price = {
+	gold = 1
+	manpower = 0.01
+}
+
+tatar_yoke_leader_payments_price = {
+	gold = 1
+	manpower = 0.01
+}
+
+uc_bey_pays = {
+	scaled_gold = 0.05
+	ignore_inflation = yes
+}

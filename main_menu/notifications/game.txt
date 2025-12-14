@@ -1,0 +1,74 @@
+﻿
+@default_window_file = "gui/notifications/jomini_message.gui"
+@default_window_name = "jomini_message"
+
+mission_unlock_missions = {
+	level = dialog
+	category = tutorial
+	window_file = @default_window_file
+	window_name = @default_window_name
+	
+	title_text = MISSION_UNLOCK_MISSIONS
+	text = MISSION_UNLOCK_MISSIONS_WARNING
+	accept_text = OK
+	decline_text = CANCEL
+}
+
+mod_tool_confirm_delete = {
+	level = dialog
+	category = social
+	window_file = @default_window_file
+	window_name = @default_window_name
+
+	title_text = MOD_DELETE_DIALOG_TITLE
+	text = MOD_DELETE_DIALOG_DESC
+	accept_text = MOD_DELETE
+	decline_text = MOD_DIALOG_CANCEL
+}
+
+toggle_observe_blocking_country = {
+	level = alert
+	category = multiplayer
+	window_file = @default_window_file
+	window_name = @default_window_name
+
+	title_text = TOGGLE_OBSERVE_BLOCKING_COUNTRY_TITLE
+	text = TOGGLE_OBSERVE_BLOCKING_COUNTRY_DESC
+	accept_text = TOGGLE_OBSERVE_BLOCKING_COUNTRY_ACCEPT
+	decline_text = TOGGLE_OBSERVE_BLOCKING_COUNTRY_DECLINE
+}
+
+failed_loading_savegame_errors = {
+	level = alert
+	category = multiplayer
+	window_file = @default_window_file
+	window_name = @default_window_name
+
+	title_text = FAILED_LOADING_SAVEGAME_ERRORS
+	text = FAILED_LOADING_SAVEGAME_ERRORS_DESC
+	accept_text = CLOSE
+}
+
+failed_saving_savegame_errors = {
+	level = alert
+	category = system
+	window_file = @default_window_file
+	window_name = @default_window_name
+
+	title_text = FAILED_SAVING_SAVEGAME_ERRORS
+	text = FAILED_SAVING_SAVEGAME_ERRORS_DESC
+	accept_text = CLOSE
+}
+
+
+confirm_continue_playset_issues = {
+	level = alert
+	category = mods
+	window_file = @default_window_file
+	window_name = @default_window_name
+
+	title_text = MODS_GUI_CONFIRM_CONTINUE_PLAYSET_ISSUES
+	text = MODS_GUI_CONFIRM_CONTINUE_PLAYSET_ISSUES_DESC
+	accept_text = OK
+	decline_text = CANCEL
+}

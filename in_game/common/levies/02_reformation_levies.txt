@@ -1,0 +1,12 @@
+﻿# Unique Levies
+
+
+# Unlockable Levies
+
+levy_a_flintlock_levy = {
+	size = 0.01
+	unit = a_flintlock_levy
+	
+	allowed_pop_type = peasants
+	allowed_pop_type = laborers
+}

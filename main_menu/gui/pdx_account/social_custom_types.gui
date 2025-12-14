@@ -1,0 +1,116 @@
+
+template social_text_style_template {
+    using = sdk_text_style_template
+}
+
+template social_button_style_template {
+    using = sdk_button_style_template
+}
+
+template social_button_size_template {
+    using = sdk_button_size_template
+}
+
+template social_generic_entry_template {
+    layoutpolicy_horizontal = expanding
+
+    widget = {
+        size = { 150 30 }
+        hbox = {
+            social_required_textbox={}
+            text_single = {
+                layoutpolicy_horizontal = expanding
+                layoutpolicy_vertical = expanding
+
+                block "title" {
+                    raw_text = "#D Title:#!"
+                }
+            }
+        }
+    }
+
+    block "social_generic_entry_field" {}
+}
+
+template social_textbox_entry_template {
+    widget = {
+        size = { 300 30 }
+
+        hbox = {
+            margin = { 10 0 }
+            using = editbox_background
+
+            editbox = {
+                name = "social_editbox"
+
+                layoutpolicy_horizontal = expanding
+                layoutpolicy_vertical = expanding
+
+                default_format = "#high"
+
+                alwaystransparent = no
+                focuspolicy = all
+                cursorcolor = { 1 1 0.5 1 }
+                selectioncolor = { 0.45 0.45 0.45 0.7 }
+                maxcharacters = 255
+
+                block "social_editbox" {}
+
+                block "editbox_text" {
+                    raw_text = "#D Enter something#!"
+                }
+
+                block "password" {
+                    password = no
+                }
+            }
+        }
+    }
+}
+
+# template social_checkbutton_template {
+#     spacing = 10
+#     checkbutton = {
+#         using = button_checkbox_template
+#         block "checkbutton" {}
+#     }
+
+#     social_textbox = {
+#         layoutpolicy_horizontal = expanding
+#         layoutpolicy_vertical = expanding
+
+#         minimumsize = { -1 100 }
+
+#         multiline = yes
+
+#         block "label" {
+#             raw_text = "LABEL"
+#         }
+#     }
+# }
+
+template dropwdown_social_enum_template {
+    using = dropwdown_sdk_enum_template
+}
+
+template social_load_indicator_template {
+    using = sdk_load_indicator_template
+}
+
+template social_window_template {
+    using = bg_window_default_alt
+    resizable = no
+    movable = yes
+    allow_outside = yes
+
+    vbox = {
+        resizeparent = yes
+        using = sdk_window_vbox_template
+    }
+
+    block "close_button_obj" {
+        widget = {
+            using = sdk_close_button_template
+        }
+    }
+}

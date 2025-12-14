@@ -1,0 +1,121 @@
+# Type "initiallanguage" into console when in the main menu to test.
+template language_select_scrollarea_setup {
+    autoresizeviewport = yes
+    viewportwidget = {
+        widget = {
+            scissor = yes
+        }
+    }
+    autoresizescrollarea = no
+    scrollbarpolicy_horizontal = always_off
+    scrollbar_vertical = {
+        using = Scrollbar_Vertical
+    }
+}
+types InitialLanguageSelectionTypes {
+    type LanguageItem = widget {
+        size = { 20% 20% }
+        hbox = {
+            margin_left = 80
+            spacing = -4
+            early_country_flag = {
+               blockoverride "click" {
+                   action_tooltip = {
+                       click_type = left
+                       click_mode = single
+                       block "click_action" {
+                           title = "SELECT_LANGUAGE"
+                           on_action = "[FrontEndMainView.SelectLanguage(CString.GetString)]"
+                       }
+                   }
+               }
+               blockoverride "flag" {
+                   block "flag" {
+					   datacontext = "[GetLanguageFlagCoatOfArms(CString.GetString)]"
+                       texture = "[CoatOfArmsWrapper.GetTexture('(int32)144','(int32)96')]"
+                       frame = "[CoatOfArmsWrapper.GetFrame('(int32)144','(int32)96')]"
+                       framesize = "[CoatOfArmsWrapper.GetFrameSizeOrFallback('(int32)144','(int32)96','(float)0.5')]"
+                   }
+                   texture_density = 2
+               }
+            }
+            text_single = {
+                margin = { 25 }
+                autoresize = yes
+                fontsize = 33
+                maximumsize = {380 -1}
+                text = "[Localize(CString.GetString)]"
+                using = bg_name_banner_left
+            }
+            expand = {}
+        }
+    }
+    type InitialLanguageSelection = window {
+        size = { 100% 100% }
+        layer = debug
+        movable = no
+        using = bg_age_event_inner
+        using = bg_age_event_frame
+		background = {
+			texture = "gfx/interface/component_masks/mask_fade_horizontal_middle_overlay.dds"
+			texture_density = 2
+			alpha = 0.3
+			blend_mode = alphamultiply
+			modify_texture = {
+				texture = "gfx/interface/colors/bg_blue.dds"
+				texture_density = 2
+				alpha = 1
+			}
+			modify_texture = {
+				texture = "gfx/interface/colors/black.dds"
+				texture_density = 2
+				alpha = 0.3
+			}
+		}
+        scrollarea = {
+            size = { 100% 100% }
+            using = language_select_scrollarea_setup
+            scrollwidget = {
+                vbox = {
+                    margin_top = 30
+                    spacing = 55
+                    text_single = {
+                        layoutpolicy_horizontal = expanding
+                        size = { -1 100 }
+                        autoresize = yes
+                        margin = { 0 35 }
+                        fontsize = 50
+                        align = center
+                        raw_text = "[SelectLocalization(FrontEndMainView.HasSelectedLanguageAndWaitingForReload, 'RELOADING_TO_SET_LANGUAGE', 'SELECT_LANGUAGE')]"
+                        using = bg_generic_shadow
+                        using = bg_age_event_title
+                        blockoverride "bg_event_title_texture" {
+                            texture = "gfx/interface/colors/black.dds"
+                            texture_density = 2
+                        }
+						blockoverride "bg_event_title_line_top" {}
+                    }
+                    widget = {
+                        visible = "[Or(FrontEndMainView.HasSelectedLanguageAndWaitingForReload, Not(FrontEndMainView.CanSelectLanguageNow))]"
+                        sdk_load_indicator = {
+                            visible = "[FrontEndMainView.HasSelectedLanguageAndWaitingForReload]"
+                        }
+                    }
+                    fixedgridbox = {
+                        visible = "[And(Not(FrontEndMainView.HasSelectedLanguageAndWaitingForReload), FrontEndMainView.CanSelectLanguageNow)]"
+                        using = layoutpolicy_expanding
+                        datamodel = "[FrontEndMainView.GetLanguageChoices]"
+                        addcolumn = 33%
+                        addrow = 140
+                        datamodel_wrap = 3
+                        flipdirection = yes
+                        setitemsizefromcell = yes
+                        item = {
+                            LanguageItem = {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

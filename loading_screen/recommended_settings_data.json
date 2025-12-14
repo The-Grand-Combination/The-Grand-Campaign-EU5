@@ -1,0 +1,189 @@
+{
+  "BaseResources": {
+    "CPU": 10000,
+    "GPU": 1000,
+    "RAM": 8000,
+    "VRAM": 4000
+  },
+  "SettingsData": [
+    {
+      "Category": "Graphics",
+      "Name": "mapobject_quality",
+      "LevelsData": [
+        {
+          "Value": "off",
+          "Cost": {
+            "GPU": 0,
+            "VRAM": 0,
+            "RAM": 0,
+            "CPU": 200
+          },
+          "Priority": 0.0
+        },
+        {
+          "Value": "low",
+          "Cost": {
+            "GPU": 100,
+            "VRAM": 256,
+            "RAM": 256,
+            "CPU": 200
+          },
+          "Priority": 3800.0
+        },
+        {
+          "Value": "medium",
+          "Cost": {
+            "GPU": 200,
+            "VRAM": 512,
+            "RAM": 512,
+            "CPU": 400
+          },
+          "Priority": 2050.0
+        },
+        {
+          "Value": "high",
+          "Cost": {
+            "GPU": 400,
+            "VRAM": 1024,
+            "RAM": 1024,
+            "CPU": 800
+          },
+          "Priority": 1000.0
+        }
+      ]
+    },
+    {
+      "Category": "Graphics",
+      "Name": "texture_quality",
+      "LevelsData": [
+        {
+          "Value": "low",
+          "Cost": {
+            "GPU": 0,
+            "VRAM": 0
+          },
+          "Priority": 10.0
+        },
+        {
+          "Value": "medium",
+          "Cost": {
+            "GPU": 10,
+            "VRAM": 256
+          },
+          "Priority": 3500.0
+        },
+        {
+          "Value": "high",
+          "Cost": {
+            "GPU": 20,
+            "VRAM": 512
+          },
+          "Priority": 3250.0
+        },
+        {
+          "Value": "ultra",
+          "Cost": {
+            "GPU": 40,
+            "VRAM": 1024
+          },
+          "Priority": 2000.0
+        }
+      ]
+    },
+    {
+      "Category": "Graphics",
+      "Name": "refraction_quality",
+      "LevelsData": [
+        {
+          "Value": "disabled",
+          "Cost": {
+            "GPU": 0
+          },
+          "Priority": 1.0
+        },
+        {
+          "Value": "low",
+          "Cost": {
+            "GPU": 100
+          },
+          "Priority": 4080.0
+        },
+        {
+          "Value": "high",
+          "Cost": {
+            "GPU": 200
+          },
+          "Priority": 2020.0
+        }
+      ]
+    },
+    {
+      "Category": "Graphics",
+      "Name": "animated_portraits",
+      "LevelsData": [
+        {
+          "Value": true,
+          "Cost": {
+            "GPU": 200.0
+          },
+          "Priority": 4100.0
+        },
+        {
+          "Value": false,
+          "Cost": {
+            "GPU": 0
+          },
+          "Priority": 0.0
+        }
+      ]
+    },
+    {
+      "Category": "Graphics",
+      "Name": "single_unit_armies",
+      "LevelsData": [
+        {
+          "Value": false,
+          "Cost": {
+            "GPU": 32.0,
+            "CPU": 250.0
+          },
+          "Priority": 4000.0
+        },
+        {
+          "Value": true,
+          "Cost": {
+            "GPU": 0.0,
+            "CPU": 0.0
+          },
+          "Priority": 0.0
+        }
+      ]
+    },
+    {
+      "Category": "Terrain",
+      "Name": "3d_terrain_disable",
+      "LevelsData": [
+        {
+          "Value": false,
+          "Cost": {
+            "GPU": 500.0,
+            "CPU": 3000.0,
+            "RAM": 2048.0,
+            "VRAM": 2048.0
+          },
+          "Priority": 5000.0
+        },
+        {
+          "Value": true,
+          "Cost": {
+            "GPU": 0.0,
+            "VRAM": 0.0,
+            "RAM": 0.0,
+            "CPU": 0.0
+          },
+          "Priority": 0.0
+        }
+      ]
+    }
+  ]
+}

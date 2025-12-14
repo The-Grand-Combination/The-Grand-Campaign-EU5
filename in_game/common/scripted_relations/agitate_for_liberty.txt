@@ -1,0 +1,37 @@
+﻿agitate_for_liberty =  { 
+	type = diplomacy
+	relation_type = oneway
+	relation_type_for_ai = friendly
+    category = {
+        offer = CATEGORY_COVERT_ACTIONS
+        cancellation = CATEGORY_COVERT_ACTIONS
+    }
+
+	diplomatic_cost_offer = agitate_for_liberty_cost
+
+    institution_spread_to_second = monthly_institution_spread_mild
+
+	visible = {
+		scope:recipient = { 
+			is_subject = yes
+			not = {
+				is_subject_or_below_of = scope:actor
+			}
+		}
+	}
+
+	offer_enabled = {
+		scope:recipient = { 
+			modifier:loyalty_to_overlord > -50
+		}
+	}
+
+	request_visible = no
+	break_visible = no
+
+	will_expire_trigger = {
+		scope:recipient = {
+			is_subject = no
+		}
+	}
+}	

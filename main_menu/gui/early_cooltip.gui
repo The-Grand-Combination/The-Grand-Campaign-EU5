@@ -1,0 +1,96 @@
+﻿template early_tooltip_concept_title_icon_size { size = { 32 32 }}
+
+template early_game_concept_tooltip {
+	ConceptTooltipType = {
+		blockoverride "title_icon" {
+			ConceptTooltipDefaultIcon = {
+				visible = "[Not(GameConceptTooltip.HasIcon)]"
+			}
+
+			icon = {
+				using = early_tooltip_concept_title_icon_size
+				visible = "[GameConceptTooltip.HasIcon]"
+				texture = "[GameConceptTooltip.GetIcon]"
+				block "tooltip_tintcolor" { tintcolor = "[ExtraTooltipInfo.GetTintColor]" }
+				frame = "[GameConceptTooltip.GetFrame]"
+				framesize = "[GameConceptTooltip.GetFrameSize]"
+			}
+		}
+
+		blockoverride "title_text" {
+			text = "[GameConceptTooltip.GetOriginalAliasName]"
+		}
+
+		blockoverride "concept_link" {
+			visible = "[GameConceptTooltip.HasFamily]"
+			text = "[GameConceptTooltip.GetFamilyLink|e]"
+		}
+
+		blockoverride "tooltip_content" {
+			TooltipTextBlock = {
+				blockoverride "text" {
+					text = "[GameConceptTooltip.GetDescription]"
+				}
+			}
+		}
+	}
+}
+
+container = {
+	alwaystransparent = no
+	name = "GameConceptTooltipDefaultEarly"
+	using = early_game_concept_tooltip
+}
+
+container = {
+	alwaystransparent = no
+	name = "RowListTooltipEarly"
+
+	ContextualTooltipType = {
+		lowpriotextcontext = "[TooltipString.GetString]"
+		ontextcontextchanged = "[SetRowListWithTitleFromTextContext(PdxGuiWidget.AccessSelf)]"
+
+		blockoverride "title_text" {
+			text = "[Select_CString(PdxGuiWidget.HasTooltipMetaTitle, PdxGuiWidget.GetTooltipMetaTitle, RowList.GetTitle)]"
+		}
+		
+		blockoverride "tooltip_content" {
+			TooltipListBase = {
+				TooltipListScrollArea = {
+					blockoverride "block_scrollarea" { maximumsize = { -1 420 }}
+					visible = "[DataModelHasItems(RowList.GetRows)]"
+
+					blockoverride "scrollarea_content" {
+						fixedgridbox = {
+							datamodel = "[RowList.GetRows]"
+							addcolumn = 500
+							addrow = 30
+							setitemsizefromcell = yes
+
+							item = {
+								textbox = {
+									background = {
+										visible = "[IsOdd_int32(PdxGuiWidget.GetIndexInDataModel)]"
+										using = tooltip_table_field_texture
+									}
+
+									using = text_multi_template
+									autoresize = no
+									margin = { 10 5 }
+
+									align = nobaseline
+									elide = right
+									text = "[CString.GetString]"
+								}
+							}
+						}
+					}
+				}
+
+				TooltipListEmptyContent = {
+					visible = "[IsDataModelEmpty(RowList.GetRows)]"
+				}
+			}
+		}
+	}
+}

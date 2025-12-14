@@ -1,0 +1,96 @@
+﻿#example
+#
+# generator1 = 
+#{
+#	entity = (the name of the entity the spawn)
+#
+#	topography =  	<optional> (the topography the location must have to spawn in )
+#	vegetation =	<optional> (the vegetation the location must have to spawn in )
+#	climate =  		<optional> (the climate the location must have to spawn in )
+#	raw_material =  <optional> (the raw_material the location must have to spawn in )
+#	avoid_sea = false (if provinces with sea should not be counted for calculations)
+#
+#	generation_mode = Equidistant (tries to place the particles equidistant in each blob of terrain) | VfxLocator (uses the location VfxLocator to place the mapobjects)
+#	separation = <Needed for equidistant>(separation between two different particles)
+# 	margin = 0 <used with separation> (margins of the province to avoid pacing objects to far away)
+#	
+#	clamp_to_water_level = no (if something can go in the surface of the ocean ot bottom)
+#
+#	zoom_max = the level of zoom at witch particles stop spawing
+#}
+
+
+jungle_mist =
+{
+	schematic_name =  "mist_jungle_schematic"
+	vegetation = "jungle"
+	avoid_sea = yes
+
+	generation_mode = Equidistant
+	
+	separation = 50.0
+	margin = 10.0
+	
+	clamp_to_water_level = yes
+	zoom_max = 5
+}
+
+mountains_mist =
+{
+	schematic_name =  "mist_mountain_schematic"
+	topography = "mountain_wasteland"
+	avoid_sea = yes
+
+	generation_mode = Equidistant
+	separation = 50.0
+	margin = 10.0
+	
+	
+	clamp_to_water_level = yes
+	zoom_max = 7
+}
+
+worlds_clouds =
+{
+	schematic_name =  "clouds_world_schematic"
+	topography = "mountains"
+	topography = "mountain_wasteland"
+
+	generation_mode = Equidistant
+	
+	separation = 100.0
+	margin = 20.0
+	
+	clamp_to_water_level = yes
+	zoom_max = 7
+}
+
+sand_storm_01 =
+{
+	schematic_name =  "sand_storm_01_large_schematic"
+	topography = "flatland_wasteland"
+	climate = "arid"
+	vegetation = "desert"
+
+	generation_mode = Equidistant
+	
+	separation = 100.0
+	margin = 30.0
+	
+	clamp_to_water_level = yes
+	zoom_max = 5
+}
+
+# whale =
+# {
+# 	schematic_name =  "resource_whale_schematic"
+# 	topography = "ocean_wasteland"
+
+# 	generation_mode = Equidistant
+	
+# 	separation = 500.0
+# 	margin = 100.0
+	
+# 	clamp_to_water_level = yes
+# 	zoom_max = 8
+# }

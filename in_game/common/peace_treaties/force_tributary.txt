@@ -1,0 +1,38 @@
+﻿force_tributary = {
+	cost = 60
+
+	base_antagonism = 20
+	antagonism_type = antagonism_force_tributary
+
+	category = country
+	
+	potential = {
+		scope:war = {
+			is_no_cb_war = no
+			casus_belli ?= casus_belli:cb_make_tributary
+		}
+		scope:loser = {
+			can_make_subject_of = {
+				target = scope:winner
+				type = subject_type:tributary
+				ignore_war_limitation = yes	#casus_belli:cb_make_tributary disables all forms of subjugation
+			}
+		}
+	}
+	allow = {
+	}
+
+	effect = {
+		scope:loser = {
+			make_subject_of = {
+				target = scope:winner
+				type = subject_type:tributary
+				war = scope:war
+			}
+		}
+	}
+
+	ai_desire = {
+		value = 1000
+	}
+}

@@ -1,0 +1,19 @@
+vbox = {
+	name = "screenshotutils_window"
+
+	widget = {
+		layoutpolicy_horizontal = Expanding
+		layoutpolicy_vertical = Expanding
+		layoutstretchfactor_vertical = 20
+	}
+}
+
+vbox = {
+	name = "screenshot_map_window"
+
+	widget = {
+		layoutpolicy_horizontal = Expanding
+		layoutpolicy_vertical = Expanding
+		layoutstretchfactor_vertical = 20
+	}
+}

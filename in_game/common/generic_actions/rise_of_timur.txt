@@ -1,0 +1,485 @@
+﻿#Timur's Actions
+rot_plan_invasion = {
+	type = situation	
+	potential = {
+		scope:actor = {
+			tag = TIM
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:rise_of_timur = this
+			situation_is_active = yes
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = country
+		target_flag = target
+		name = "rot_plan_invasion_select_country"
+		none_available_msg_key = "rot_plan_invasion_no_countries"
+		column = {
+			data = name
+		}
+		column = {
+			data = expected_army_size
+		}
+		visible = {
+			NOT = { has_truce_with = scope:actor }
+			NOT = { is_allied_with = { target = scope:actor } }
+			NOT = { is_subject_of = scope:actor }
+			is_neighbor_of = scope:actor
+			within_diplomatic_range = scope:actor
+			scope:actor = {
+				NOT = { has_casus_belli_of_type_on = { type = casus_belli:cb_timurs_conquests target = PREV } }
+			}
+		}
+	}
+
+	cooldown = {
+		type = rot_plan_invasion
+		months = 18
+	}
+
+	automation_tick = never
+	automation_tick_frequency = 12
+
+	effect = {
+		scope:actor = {
+			if = {
+				limit = {
+					exists = scope:target
+				}
+				add_casus_belli = {
+					target = scope:target
+					type = casus_belli:cb_timurs_conquests
+				}
+				drop_antagonism_bomb = {
+					target = scope:target.capital
+					modifier = antagonism_planned_invasion
+				}
+			}
+			else = {
+				custom_tooltip = rot_plan_invasion_tt
+			}
+		}
+	}
+	ai_will_do = {
+		add = 100
+		multiply = {
+			if = {
+				limit = { exists = scope:target }
+				value = {
+					value = "scope:actor.opinion(scope:target)"
+					multiply = -1
+				}
+			}
+			else = {
+				value = 1	#We need that else or otherwise the whole chance is multiplied with 0
+			}
+		}
+		add = {
+			if = {
+				limit = { exists = scope:target }
+				value = "scope:actor.antagonism(scope:actor)"
+				divide = -10
+			}
+		}
+	}
+}
+
+rot_select_core_region = {
+	type = situation	
+	potential = {
+		scope:actor = {
+			tag = TIM
+		}
+	}
+	price = price:rot_select_core_region_price
+	allow = {
+		scope:actor = {
+			custom_tooltip = {
+				text = rot_has_NOT_selected_core_region_tt
+				NOT = { has_variable = rot_has_selected_core_region }
+			}
+			at_war = no
+		}
+	}
+
+	automation_tick = never
+	automation_tick_frequency = 12
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:rise_of_timur = this
+			situation_is_active = yes
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = region
+		target_flag = target
+		name = "rot_select_core_region_select_region"
+		none_available_msg_key = "rot_select_core_region_no_regions"
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			any_location_in_region = {
+				owner ?= scope:actor
+				percent >= 0.4
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = { exists = scope:target }
+			custom_tooltip = {
+				text = rot_select_core_region_tt_specific
+				scope:actor = {
+					set_variable = {
+						name = rot_has_selected_core_region
+						value = scope:target
+					}
+				}
+				scope:target ?= {
+					if = {
+						limit = {
+							scope:actor = {
+								has_ruler = yes
+								ruler ?= { has_character_modifier = timmy_wants_to_play }
+							}
+						}
+						every_location_in_region = {
+							limit = { owner = scope:actor }
+							change_integration_level = core
+							add_location_modifier = {
+								modifier = rot_timurs_core_region
+								years = -1	#Lasts until the timmy_wants_to_play is no longer applied
+								mode = add_and_extend
+							}
+						}
+					}
+				}
+			}
+		}
+		else = {
+			custom_tooltip = rot_select_core_region_tt
+		}
+	}
+
+	ai_will_do = {
+		add = 25
+		add = {
+			if = {
+				limit = { exists = scope:target scope:target = region:persia_region }
+				value = 100	#Historical AI should always aim for Persia
+			}
+		}
+		add = {
+			if = {
+				limit = { exists = scope:target scope:target = region:khorasan_region }
+				value = -100	#Timur should have relatively low interest in making Khorasan his core region
+			}
+		}
+		add = {
+			if = {
+				limit = { exists = scope:target scope:target = region:arabia_region }
+				value = -20	#Arabia might be too poor for this
+			}
+		}
+		add = {
+			if = {
+				limit = { exists = scope:target scope:target = region:anatolia_region }
+				value = 50	#Anatolia could make sense if Timur aims to role play as a Roman
+			}
+		}
+		add = {
+			if = {
+				limit = { exists = scope:target scope:target = region:crescent_region }
+				value = 75	#Sword of Islam larp
+			}
+		}
+		add = {
+			if = {
+				limit = { exists = scope:target scope:target = region:mongolia_region }
+				value = 60	#$genghis_khan_name_no_tooltip$ larp
+			}
+		}
+		add = {
+			if = {
+				limit = { exists = scope:target scope:target = region:tibet_region }
+				value = -50	#Mountains and horses do not go well together
+			}
+		}
+		add = {
+			if = {
+				limit = { exists = scope:target scope:target = region:east_china_region }
+				value = 90	#Replacing Yuán
+			}
+		}
+		add = {
+			if = {
+				limit = { exists = scope:target scope:target = region:north_china_region }
+				value = 90	#Replacing Yuán
+			}
+		}
+		add = {
+			if = {
+				limit = { exists = scope:target scope:target = region:south_china_region }
+				value = 90	#Replacing Yuán
+			}
+		}
+		add = {
+			if = {
+				limit = { exists = scope:target scope:target = region:west_china_region }
+				value = 90	#Replacing Yuán
+			}
+		}
+		add = {
+			if = {
+				limit = { exists = scope:target scope:target = region:west_siberia_region }
+				value = -200	#He should never choose Siberia as his core region
+			}
+		}
+		add = {
+			if = {
+				limit = { exists = scope:target scope:target = region:east_siberia_region }
+				value = -200	#He should never choose Siberia as his core region
+			}
+		}
+		add = {
+			if = {
+				limit = { exists = scope:target scope:target = region:deccan_region }
+				value = 50	#Might become an early Mughal then
+			}
+		}
+	}
+}
+
+rot_reform_into_monarchy = {
+	type = situation	
+	potential = {
+		scope:actor = {
+			tag = TIM
+		}
+	}
+
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rot_reform_into_monarchy_price
+	allow = {
+		scope:actor = {
+			at_war = no
+			NOT = { country_type = location }
+			custom_tooltip = {
+				text = rot_has_selected_core_region_tt
+				has_variable = rot_has_selected_core_region
+			}
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:rise_of_timur = this
+			situation_is_active = yes
+		}
+	}
+
+	effect = {
+		scope:actor = {
+			change_country_type = location
+			change_government_type = government_type:monarchy
+			unlock_government_reform_effect = { type = timurid_empire }
+			add_reform = government_reform:timurid_empire
+			set_country_rank = country_rank:rank_empire
+		}
+	}
+
+	ai_will_do = {
+		add = 250	#Ai should always do it asap
+	}
+}
+
+rot_promote_regional_culture = {
+	type = situation
+	potential = {
+		scope:actor = {
+			tag = TIM
+		}
+	}
+	allow = {
+		scope:actor = {
+			trigger_if = {
+				limit = { has_variable = rot_has_selected_core_region }
+				var:rot_has_selected_core_region = {
+					any_ownable_location_in_region = {
+						has_owner = yes
+						owner = scope:actor
+						count = all
+					}
+				}
+			}
+			trigger_else = {
+				custom_tooltip = {
+					text = rot_has_selected_core_region_tt
+					has_variable = rot_has_selected_core_region
+				}
+			}
+			custom_tooltip = {
+				text = rot_NOT_assumed_regional_culture_tt
+				NOT = { has_variable = rot_assumed_regional_culture }
+			}
+		}
+	}	
+
+	ai_tick = monthly
+	ai_tick_frequency = 3
+
+	automation_tick = never
+	automation_tick_frequency = 12
+
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:rise_of_timur = this
+			situation_is_active = yes
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = culture
+		source_ai_override = actor
+		source_flags_ai_override = include_any_present
+		target_flag = target
+		name = "rot_promote_regional_culture_select_culture"
+		none_available_msg_key = "rot_promote_regional_culture_no_cultures"
+		column = {
+			data = name
+		}
+		visible = {
+			NOT = { scope:actor.culture = this }
+			scope:actor = {
+				culture_percentage_in_country = {
+					culture = root
+					value >= 0.01
+				}
+			}
+		}
+	}
+	select_trigger = {
+		looking_for_a = culture
+		source_ai_override = actor
+		source_flags_ai_override = include_any_present
+		target_flag = target_1
+		name = "rot_promote_regional_culture_select_culture_to_accept"
+		none_available_msg_key = "rot_promote_regional_culture_no_cultures"
+		allow_null = yes	#In case there is no other eligible culture
+		column = {
+			data = name
+		}
+		visible = {
+			NOT = { scope:actor.culture = this }
+			NOT = { scope:target = this }
+			scope:actor = {
+				culture_percentage_in_country = {
+					culture = root
+					value >= 0.01
+				}
+			}
+		}
+	}
+	select_trigger = {
+		looking_for_a = culture
+		source_ai_override = actor
+		source_flags_ai_override = include_any_present
+		target_flag = target_2
+		name = "rot_promote_regional_culture_select_culture_to_accept"
+		none_available_msg_key = "rot_promote_regional_culture_no_cultures"
+		allow_null = yes	#In case there is no other eligible culture
+		column = {
+			data = name
+		}
+		visible = {
+			NOT = { scope:actor.culture = this }
+			NOT = { scope:target = this }
+			NOT = { scope:target_1 = this }
+			scope:actor = {
+				culture_percentage_in_country = {
+					culture = root
+					value >= 0.01
+				}
+			}
+		}
+	}
+
+	effect = {
+		scope:actor = {
+			unlock_policy_effect = { type = timurid_court_policy }
+			add_policy = policy:timurid_court_policy
+		}
+		if = {
+			limit = { exists = scope:target }
+			custom_tooltip = {
+				text = rot_promote_regional_culture_tt_specific
+				scope:actor = {
+					set_variable = rot_assumed_regional_culture
+					culture = {
+						save_scope_as = old_culture
+					}
+					change_culture = scope:target
+					add_accepted_culture = scope:old_culture
+					set_court_language = scope:target.dialect
+					if = {
+						limit = { exists = scope:target_1 }
+						add_accepted_culture = scope:target_1
+					}
+					if = {
+						limit = { exists = scope:target_2 }
+						add_accepted_culture = scope:target_2
+					}
+				}
+			}
+		}
+		else = {
+			custom_tooltip = rot_promote_regional_culture_tt
+		}
+	}
+
+	ai_will_do = {
+		add = 25
+		add = {
+			if = {
+				limit = { exists = scope:target scope:target = culture:farsi_culture }
+				value = 100	#Historicla AI should always aim for Persia
+			}
+		}
+	}
+}

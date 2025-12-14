@@ -1,0 +1,155 @@
+﻿
+a_cavaliers = {
+	category = army_cavalry
+	
+	copy_from = a_age_3_discovery_cavalry
+
+	strength_damage_taken = -0.25
+	morale_damage_taken = -0.25
+	
+	buildable = no
+	levy = yes
+
+	maintenance_demand =  heavy_cavalry_maintenance
+	construction_demand = heavy_cavalry_construction
+	
+	combat = { 
+		grasslands = 0.10
+		wetlands = -0.10
+	}
+
+	gfx_tags = { heavy_tag }
+}
+
+a_plated_knights = {
+	category = army_cavalry
+	
+	copy_from = a_age_2_renaissance_cavalry
+
+	strength_damage_taken = -0.5
+	morale_damage_taken = -0.25
+	
+	buildable = no
+	levy = yes
+
+	maintenance_demand =  heavy_cavalry_maintenance
+	construction_demand = heavy_cavalry_construction
+	
+	combat = { 
+		grasslands = 0.10
+		wetlands = -0.10
+	}
+
+	gfx_tags = { heavy_tag }
+}
+
+a_teulu = {
+	category = army_cavalry
+
+	copy_from = a_age_1_traditions_cavalry
+
+	morale_damage_taken = -0.25
+	initiative = 2
+	
+	buildable = no
+	levy = yes
+	
+	combat = { 
+		hills = 0.10
+		mountains = 0.05
+	}
+
+	gfx_tags = { heavy_tag }
+}
+
+a_mailed_knights = {
+	category = army_cavalry
+
+	copy_from = a_age_1_traditions_cavalry
+	
+	strength_damage_taken = -0.25
+	morale_damage_taken = -0.25
+	
+	buildable = no
+	levy = yes
+	
+	combat = { 
+		grasslands = 0.10
+		wetlands = -0.10
+	}
+
+	gfx_tags = { heavy_tag }
+}
+
+a_noble_cavalry = {
+	category = army_cavalry
+	
+	copy_from = a_age_1_traditions_cavalry
+
+	strength_damage_taken = -0.1
+	morale_damage_taken = -0.25
+	
+	buildable = no
+	levy = yes
+	
+	combat = { 
+		grasslands = 0.10
+		wetlands = -0.10
+	}
+
+	gfx_tags = { medium_tag }
+}
+
+
+a_order_knights = {
+	category = army_cavalry
+
+	copy_from = a_age_1_traditions_cavalry
+	
+	strength_damage_taken = -0.25
+	morale_damage_taken = -0.25
+
+	upgrades_to = a_order_knights_2
+	
+	buildable = yes
+	
+	combat = { 
+		grasslands = 0.10
+		wetlands = -0.10
+	}
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.5
+	}
+
+	gfx_tags = { crusader_tag heavy_tag }
+}
+
+
+
+
+a_order_knights_2 = {
+	category = army_cavalry
+
+	copy_from = a_age_2_renaissance_cavalry
+	
+	strength_damage_taken = -0.25
+	morale_damage_taken = -0.25
+	
+	buildable = yes
+	
+	combat = { 
+		grasslands = 0.10
+		wetlands = -0.10
+	}
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = nobles
+		multiply = 0.5
+	}
+
+	gfx_tags = { crusader_tag heavy_tag }
+}

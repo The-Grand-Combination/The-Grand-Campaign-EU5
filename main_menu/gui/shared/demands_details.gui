@@ -1,0 +1,172 @@
+template demands_details {
+	TooltipListBase = {
+		blockoverride "block_title" {
+			text = "REQUIRES_IN_MARKET"
+		}
+		
+		TooltipListColumnContent = {
+			TooltipTableColumn = {
+				blockoverride "column_title" {}
+				blockoverride "column_title_text" { text = "[goods|e]" }
+
+				blockoverride "field_left" {
+					expand = {}
+					datacontext = "[GoodsDemandEntry.GetGoods]"
+					datacontext = "[Location.GetMarket]"
+					tooltipwidget = {
+						using = SpecificGoodsMarket_tooltip
+					}
+
+					icon = {
+						size = { 24 24 }
+						texture = "[GetGoodsIcon(GoodsDemandEntry.GetGoods)]"
+					}
+				}
+
+				blockoverride "field_text" {
+					text = "[GoodsDemandEntry.GetGoods.GetNameWithNoTooltip|L]"
+				}
+
+				blockoverride "field_right" { expand = {} }
+			}
+
+			TooltipTableColumn = {
+				blockoverride "column_title" {}
+				blockoverride "column_title_text" { text = "GOODS_REQUIRED" }
+
+				#blockoverride "field_left" { expand = {} }
+				blockoverride "field_text" { text = "[GoodsDemandEntry.GetValue]" }
+			}
+
+			TooltipTableColumn = {
+				blockoverride "column_title" {}
+				blockoverride "column_title_text" { text = "GOODS_IN_SURPLUS" }
+				
+				#blockoverride "field_left" { expand = {} }
+				blockoverride "field_text" { 
+					datacontext = "[GoodsDemandEntry.GetGoods]"
+					datacontext = "[Location.GetMarket]"
+					tooltipwidget = {
+						using = SpecificGoodsMarket_tooltip
+					}
+					tooltipmeta = {
+						texture = "[GetGoodsIcon(Goods.Self)]"
+						game_concept = "[market_balance|e]"
+					}
+					raw_text = "[Location.GetMarket.GetStockpile(GoodsDemandEntry.GetGoods)|1] ([Location.GetMarket.GetSurplusLabelWithBreakdown(GoodsDemandEntry.GetGoods)|+=2]@balance!)" 
+				}
+			}
+
+			blockoverride "column_datamodel"  { datamodel = "[GoodsDemand.GetEntries]" }
+		}
+	}
+}
+
+template demands_details_no_location {
+	TooltipListBase = {
+		TooltipListColumnContent = {
+			TooltipTableColumn = {
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = preferred
+
+				# blockoverride "column_title" {}
+				blockoverride "column_title_text" {
+					text = "[goods|e]"					
+				}
+	
+				blockoverride "column_datamodel"  { datamodel = "[GoodsDemand.GetEntries]" }
+				blockoverride "field_text" {
+					margin = { 0 0 }
+					default_format = "#subtle_name"
+					text = "[GoodsDemandEntry.GetGoods.GetNameWithNoTooltip]"
+				}
+	
+				blockoverride "field_left" {
+					margin = { 10 0 }
+					spacing = 5
+
+					icon = {
+						size = { 24 24 }
+						texture = "[GetGoodsIcon(GoodsDemandEntry.GetGoods)]"
+					}
+				}
+
+				blockoverride "field_right" { expand = {} }
+			}
+
+			TooltipTableColumn = {
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = preferred
+
+				# blockoverride "column_title" {}
+				blockoverride "column_title_text" {
+					text = "GOODS_REQUIRED"			
+				}
+	
+				blockoverride "column_datamodel"  { datamodel = "[GoodsDemand.GetEntries]" }
+				blockoverride "field_text" {
+					text = "[GoodsDemandEntry.GetValue]"
+				}
+	
+				blockoverride "field_left" { expand = {} }
+				blockoverride "field_right" {}
+			}
+		}
+	}
+}
+
+
+template demands_details_no_location_rgo {
+	TooltipListBase = {
+		TooltipListColumnContent = {
+			TooltipTableColumn = {
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = preferred
+
+				# blockoverride "column_title" {}
+				blockoverride "column_title_text" {
+					text = "[goods|e]"					
+				}
+	
+				blockoverride "column_datamodel"  { datamodel = "[GoodsDemand.GetEntries]" }
+				blockoverride "field_text" {
+					margin = { 0 0 }
+					default_format = "#subtle_name"
+					text = "[GoodsDemandEntry.GetGoods.GetName]"
+				}
+	
+				blockoverride "field_left" {
+					margin = { 10 0 }
+					spacing = 5
+
+					icon = {
+						size = { 24 24 }
+						texture = "[GetGoodsIcon(GoodsDemandEntry.GetGoods)]"
+					}
+				}
+
+				blockoverride "field_right" { expand = {} }
+			}
+
+			TooltipTableColumn = {
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = preferred
+
+				# blockoverride "column_title" {}
+				blockoverride "column_title_text" {
+					text = "GOODS_REQUIRED"			
+				}
+	
+				blockoverride "column_datamodel"  { datamodel = "[GoodsDemand.GetEntries]" }
+				blockoverride "field_text" {
+					block "goods_demand_text" {
+						raw_text = "[GoodsDemandEntry.GetValue] / [Location.GetMarket.GetStockpile(GoodsDemandEntry.GetGoods)|1] ([Location.GetMarket.GetSurplusLabelWithBreakdown(GoodsDemandEntry.GetGoods)])"
+					}
+				}
+	
+				blockoverride "field_left" { expand = {} }
+				blockoverride "field_right" {}
+			}
+		}
+	}
+}

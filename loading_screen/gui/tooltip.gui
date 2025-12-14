@@ -1,0 +1,327 @@
+@tooltip_title_wide = 450
+
+# this template is used from code
+template DefaultTooltipText {
+	using = text_multi_template
+	max_width = @tooltip_title_wide
+	autoresize = yes
+}
+
+# template DefaultTooltipLockingProgress
+# {
+# 	widget = {
+# 		size = { 100% 100% }
+# 		icon = {
+# 			name = "tooltip_frame_locked" # Name referenced from code to toggle visibility
+# 			texture = "gfx/interface/component_tiles/bg_round_corners.dds"
+# 			texture_density = 2
+# 			spriteType = Corneredstretched
+# 			spriteborder = { 20 20 }
+# 			tintcolor = "[ExtraTooltipInfo.GetTintColor]"
+# 			size = { 100% 100% }
+# 			alpha = 0.3
+
+# 			modify_texture = {
+# 				name = "color"
+# 				texture = "gfx/interface/colors/light_blue.dds"
+# 				texture_density = 2
+# 				spriteType = stretched
+# 				spriteborder = { 0 0 }
+# 				blend_mode = add
+# 			}
+# 		}
+
+# 		### timer lock icon
+# 		# block "progress" {
+# 			progresspie = {
+# 				name = "tooltip_lock_progress_bar" # Name referenced from code to fill value
+# 				visible = "[And(UsesTimerLocking, Not(PdxGuiWidget.IsTooltipLocked))]"
+# 				parentanchor = top|right
+# 				position = { 6 -6 }
+# 				size = { 24 24 }
+# 				min = 0
+# 				max = 1
+# 				tintcolor = "[ExtraTooltipInfo.GetTintColor]"
+# 				texture = "gfx/interface/pie_charts/tooltip_lock_timer.dds"
+# 				framesize = { 48 48 }
+# 				frame = 2
+
+# 				state = {
+# 					name = _show
+# 					alpha = 1
+# 				}
+
+# 				state = {
+# 					name = _hide
+# 					bezier = { 0.25 0.1 0.25 1 }
+# 					duration = 0.05
+# 					alpha = 0
+# 				}
+# 			}
+# 		# }
+# 	}
+# }
+
+template bg_tooltip {
+	alwaystransparent = no
+	filter_mouse = all
+
+	background = {
+		texture = "gfx/interface/component_tiles/tooltip_shadow.dds"
+		spriteType = Corneredstretched
+		spriteborder = { 20 20 }
+		texture_density = 2
+		alpha = 0.3
+		margin_top = 1
+		margin = { 2 3 }
+
+		shaderfile = "gfx/FX/pdxgui_default.shader"
+	}
+
+	background = {
+		texture = "gfx/interface/component_tiles/bg_round_corners.dds"
+		spriteType = Corneredstretched
+		spriteborder = { 10 10 }
+		texture_density = 2
+
+		alpha = 0.3
+		margin = { 2 3 }
+
+		block "tooltip_bg_color" {
+			tintcolor = "[ExtraTooltipInfo.GetTintColor]"
+		}
+
+		shaderfile = "gfx/FX/pdxgui_default.shader"
+	}
+
+	background = {
+		texture = "gfx/interface/component_tiles/bg_round_corners.dds"
+		spriteType = Corneredstretched
+		spriteborder = { 10 10 }
+		texture_density = 2
+
+		block "bg_tooltip_alpha" {
+			alpha = 1.0
+		}
+	
+		block "tooltip_bg_color" {
+			tintcolor = "[ExtraTooltipInfo.GetTintColor]"
+		}
+
+		modify_texture = {
+			texture = "gfx/interface/colors/dark_blue.dds"
+			alpha = 0.3
+		}
+
+		modify_texture = {
+			visible = "[PdxGuiWidget.IsTooltipLocked]"
+			texture = "gfx/interface/colors/white.dds"
+			alpha = 0.05
+		}
+
+		shaderfile = "gfx/FX/pdxgui_default.shader"
+	}
+
+	background = {
+		texture = "gfx/interface/component_tiles/bg_round_corners.dds"
+		spriteType = Corneredstretched
+		spriteborder = { 10 10 }
+		texture_density = 2
+		alpha = 0.5
+
+		modify_texture = {
+			texture = "gfx/interface/colors/blue.dds"
+		}
+
+		modify_texture = {
+			texture = "gfx/interface/component_masks/mask_fade_vertical.dds"
+			blend_mode = alphamultiply
+			alpha = 0.6
+		}
+
+		block "tooltip_bg_color" {
+			tintcolor = "[ExtraTooltipInfo.GetTintColor]"
+		}
+
+		shaderfile = "gfx/FX/pdxgui_default.shader"
+	}
+
+	background = {
+		visible = "[PdxGuiWidget.IsTooltipLocked]"
+		texture = "gfx/interface/component_tiles/bg_round_corners_frame.dds"
+		spriteType = Corneredstretched
+		spriteborder = { 10 10 }
+		texture_density = 2
+
+		modify_texture = {
+			texture = "gfx/interface/colors/new_gold.dds"
+		}
+		modify_texture = {
+			using = overlay_stone_texture
+			blend_mode = overlay
+			alpha = 0.5
+		}
+		modify_texture = {
+			using = overlay_window_texture
+			blend_mode = overlay
+			alpha = 0.5
+		}
+		
+
+		block "tooltip_bg_color" {
+			tintcolor = "[ExtraTooltipInfo.GetTintColor]"
+		}
+
+		shaderfile = "gfx/FX/pdxgui_default.shader"
+	}
+}
+
+TooltipWidgetType = {
+	# Important not to change, because the name is referred in code.
+	name = "MapTooltipWidget"
+	blockoverride "bg_tooltip_alpha"  { alpha = 0.8 }
+}
+
+types TooltipTypes
+{
+	type DefaultTooltipLockProgress = widget {
+		size = { 100% 100% }
+		block "tooltiplockprogress_setup" {}
+
+		progressbar = {
+			name = "tooltip_lock_progress_bar"
+			visible = "[And(UsesTimerLocking, Not(PdxGuiWidget.IsTooltipLocked))]"
+			size = { 100% 100% }
+
+			min = 0
+			max = 1
+
+			block "tooltip_tintcolor" { tintcolor = "[ExtraTooltipInfo.GetTintColor]" }
+			noprogresstexture = "gfx/interface/progressbars/slider_default_bg.dds"
+			progresstexture = "gfx/interface/progressbars/progress_bar_blue_alt.dds"
+
+			alpha = 0.1
+			texture_density = 2
+			spriteType = stretched
+
+			modify_texture = {
+				texture = "gfx/interface/component_tiles/bg_round_corners.dds"
+				spriteType = Corneredstretched
+				spriteborder = { 10 10 }
+				texture_density = 2
+				blend_mode = alphamultiply
+			}
+
+			state = {
+				name = _show
+				alpha = 1
+			}
+
+			state = {
+				name = _hide
+				bezier = { 0.25 0.1 0.25 1 }
+				duration = 0.05
+				alpha = 0
+			}
+		}
+	}
+
+	type TooltipWidgetType = widget {
+		alwaystransparent = no
+		filter_mouse = all
+
+		using = bg_tooltip
+		using = snd_UI_tooltip_handling
+
+		DefaultTooltipLockProgress = {}
+		
+		vbox = {
+			set_parent_size_to_minimum = yes
+			layoutpolicy_horizontal = expanding
+			margin = { 10 10 }
+			ignoreinvisible = yes
+			allow_outside = yes
+
+			block "tooltip_content" {
+				textbox = {
+					name = "TooltipText"
+					using = DefaultTooltipText
+					align = nobaseline
+					block "tooltip_text_color" { 
+						fonttintcolor = "[ExtraTooltipInfo.GetTintColor]" 
+					}
+				}
+			}
+
+			textbox = {
+				name = "TooltipTextInputAction"
+				using = DefaultTooltipText
+			}
+		}
+	}
+}
+
+###
+### TOOLTIP PLACEMENT TEMPLATES
+###
+
+## East-South Direction (right, then down)
+template tooltip_es {
+	tooltip_type = custom
+	tooltip_parentanchor = top|right
+	tooltip_widgetanchor = top|left
+	tooltip_verticalbehavior = mirror
+	tooltip_horizontalbehavior = mirror
+}
+
+## west south
+# template tooltip_ws {
+# 	tooltip_type = custom
+# 	tooltip_parentanchor = top|left
+# 	tooltip_widgetanchor = top|right
+# 	tooltip_verticalbehavior = mirror
+# 	tooltip_horizontalbehavior = mirror
+# }
+
+## North-East Direction (up, then right)
+# template tooltip_ne {
+# 	tooltip_type = custom
+# 	tooltip_parentanchor = top|right
+# 	tooltip_widgetanchor = bottom|left
+# 	tooltip_verticalbehavior = mirror
+# 	tooltip_horizontalbehavior = mirror
+# }
+
+# BELOW
+
+## South-East Direction (down, then right)
+template tooltip_se {
+	tooltip_type = custom
+	tooltip_parentanchor = bottom|right
+	tooltip_widgetanchor = top|left
+	tooltip_verticalbehavior = mirror
+	tooltip_horizontalbehavior = mirror
+}
+
+## Straight Below
+# template tooltip_below {
+# 	tooltip_type = custom
+# 	tooltip_parentanchor = bottom|hcenter
+# 	tooltip_widgetanchor = top|hcenter
+# 	tooltip_verticalbehavior = mirror
+# 	tooltip_horizontalbehavior = mirror
+# }
+
+## Straight Above
+# template tooltip_above {
+# 	tooltip_type = custom
+# 	tooltip_parentanchor = top|hcenter
+# 	tooltip_widgetanchor = bottom|hcenter
+# 	tooltip_verticalbehavior = mirror
+# 	tooltip_horizontalbehavior = mirror
+# }
+
+TooltipWidgetType = {
+	name = "DefaultTooltipWidget"
+	position = { 4 4 }
+}

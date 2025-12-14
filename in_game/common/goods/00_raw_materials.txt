@@ -330,6 +330,20 @@ medicaments = { #Medicinal plants, Pills, Opium, Mummy Powder, etc
 }
 
 #combine into a generic spices RGO?
+#spices = {
+#	method = farming
+#	category = raw_material
+#	color = goods_saffron
+#	default_market_price = 5
+#	transport_cost = 0.5
+	
+#	demand_add = {
+#		nobles = 0.35
+#		burghers = 0.0095
+#		clergy = 0.02
+#	}
+#}
+
 saffron = {
 	method = farming
 	category = raw_material

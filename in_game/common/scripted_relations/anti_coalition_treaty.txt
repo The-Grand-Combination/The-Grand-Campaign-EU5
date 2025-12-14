@@ -1,0 +1,16 @@
+﻿anti_coalition_treaty =  { 
+	type = diplomacy
+	relation_type = oneway
+	break_on_war = yes
+	break_on_becoming_subject = yes
+	relation_type_for_ai = hostile
+
+	offer_enabled = {
+		always = no
+	}
+	
+	offer_visible = no
+	request_visible = no
+	cancel_visible = no
+	break_visible = no
+}	
