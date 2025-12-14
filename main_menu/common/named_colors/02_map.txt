@@ -84,10 +84,19 @@ colors = {
 	map_CHL_dominion0 = rgb { 236 218 89 }
 	map_CHL_dominion2 = rgb { 220 225 160 }
 	map_CHL_dominion3 = rgb { 150 225 150 }
-	
+
 # Iberia
 	map_SPA = rgb { 231 181 12 }
 	map_SPA_carlist = rgb { 255 196 0 }
+
+# Scandinavia
+	map_DAN = rgb { 155 0 90 }
+	map_SWE = rgb { 25 25 125 }
+	map_NOR = rgb { 120 165 190 }
+	map_NOR_dominion1 = rgb { 57 72 147 }
+	map_FIN = rgb { 215 222 252 }
+	map_FIN_dominion0_1 = rgb { 110 152 105 }
+	map_NOR_dominion1 = rgb { 57 72 147 }
 
 # Eastern Europe
 	map_KRA = rgb { 138 193 231 }
@@ -98,6 +107,15 @@ colors = {
 	map_UKR = rgb { 212 179 47 }
 	map_BLR = rgb { 172 170 170 }
 	map_KLR = rgb { 136 157 23 }
+	map_ESH = rgb { 110 152 105 }
+	map_ESH_dominion0 = rgb { 85 124 104 }
+	map_LIV = rgb { 135 134 121 }
+	map_LIV_dominion0 = rgb { 85 124 104 }
+	map_KUR = rgb { 161 118 95 }
+	map_KUR_dominion0 = rgb { 85 124 104 }
+	map_CPL = rgb { 167 62 76 }
+	map_CPL_dominion0 = rgb { 100 125 90 }
+	map_CPL_dominion1 = rgb { 44 92 98 }
 
 # Balkans
 	map_MOL = rgb { 136 157 23 }
@@ -127,6 +145,8 @@ colors = {
 	map_CUO = rgb { 135 205 255 }
 
 # German States
+	map_PZN = rgb { 255 25 40 }
+	map_PZN_dominion0_1 = rgb { 34 77 83 }
 	map_HAB_AUS = rgb { 236  236  236 }
 	map_AUS_democratic = rgb { 155 78 75 }
 	map_AUS_dictatorship = rgb { 155 78 75 }
@@ -139,7 +159,9 @@ colors = {
 	map_SWH = rgb { 220 150 158 }
 	map_SWH_dominion0_1 = rgb { 207 50 130 }
 	map_SLW = rgb { 30 131 162 }
+	map_SLW_dominion0_1 = rgb { 207 50 130 }
 	map_SHL = rgb { 220 150 158 }
+	map_SHL_dominion0_1 = rgb { 207 50 130 }
 	map_HOH = rgb { 83 49 83 }
 	map_HOS = rgb { 16 24 71 }
 	map_MST = rgb { 251 237 134 }
@@ -149,6 +171,10 @@ colors = {
 	map_WUR = rgb { 111 162 128 }
 	map_HAN = rgb { 164 217 127 }
 	map_NEU = rgb { 255 204 0 }
+	map_LAU = rgb { 252 221 9 }
+	map_LAU_dominion0_1 = rgb { 207 50 130 }
+
+# Italy
 	map_PAP = rgb { 224 224 148 }
 	map_PAP_democratic = rgb { 238 17 17 }
 	map_PAP_dominion0 = rgb { 57 140 179 }
@@ -279,16 +305,11 @@ colors = {
 	map_low_german = hsv360 { 255 22 48 }
 	map_dithmarschen = rgb { 72 194 212 }
 	map_maori = hsv { 0 0.78 0.38 }
-	map_livonian_order = rgb { 125 30 100 }
 	map_riga = rgb { 183 176 194 }
 	map_arch_riga = rgb { 67 164 50 }
 	map_LVA = rgb { 150 14 20 }
 	map_osel = rgb { 62 122 189 }
 	map_dorpat = rgb { 139 138 160 }
-	map_kurland = rgb { 99 137 153 }
-	map_estonian = rgb { 0.0 0.60 0.45 }
-	map_latvian = rgb { 0.9 0.86 0.71 }
-	map_liv = rgb {155 126 71 }
 	map_aukstaitian = rgb { 0.96 0.78 0.78 }
 	map_norse_gael = rgb { 0 105 104 }
 	map_PLE = hsv360 { 345 61 68 }

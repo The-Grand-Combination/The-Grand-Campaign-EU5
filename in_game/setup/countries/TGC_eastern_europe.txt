@@ -1,6 +1,6 @@
 # Poland
 CPL = {
-	color = map_ENG
+	color = map_CPL_dominion0
 	color2 = rgb { 16 41 202 }
 	
 	unit_color0 = hsv360 {	0 76 53 }
@@ -72,37 +72,31 @@ LIT = { # Lithuania
 }
 
 ESH = { # Estland Governate
-	color = map_ENG
+	color = map_ESH_dominion0
 	color2 = rgb { 16 41 202 }
 	
 	unit_color0 = hsv360 {	0 76 53 }
 	unit_color1 = hsv360 {	230 64 36 }
 	unit_color2 = hsv360 {	37 84 89 }
 
-	culture_definition = muscovite
-	religion_definition = orthodox
-
-	description_category = administrative
-	difficulty = 3
+	culture_definition = german_baltic
+	religion_definition = catholic
 }
 
 LIV = { # Livland Governate
-	color = map_livonian_order
+	color = map_LIV_dominion0
 	color2 = rgb { 16 41 202 }
 
 	culture_definition = german_baltic
 	religion_definition = catholic
 
-	description_category = military
-	difficulty = 4
-	
 	unit_color0 = white
 	unit_color1 = red
 	unit_color2 = white
 }
 
 KUR = { # Kurland Governate
-	color = map_kurland
+	color = map_KUR_dominion0
 	color2 = rgb { 16 41 202 }
 
 	culture_definition = german_baltic

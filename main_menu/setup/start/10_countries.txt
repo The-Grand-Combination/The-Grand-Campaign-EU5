@@ -975,77 +975,7 @@ countries = {
 					tugumlepen
 					estok_gna
 					cachopostales
-					cacaxtles
-					koke_metchesko_laha
-					cabias
-					tsel_tatli_dsha
 					tinapihuaya
-					piguique
-					capoque
-					karankawa
-					copane
-					mariame
-					tu_sis_nde
-					bobole
-					ndawe_qoha
-					tonkawa
-					kanahatino
-					sha_ia_nde
-					kol_kuka
-					teyas
-					mashgalende
-					melenudo
-					waco
-					nokoni
-					tanimuu
-					kitsai
-					taovaya
-					tawakoni
-					aays
-					yscani
-					tses_tsembai
-					tenawa
-					tchokana
-					penatuka
-					kwaaru
-					paruhuya
-					atajal
-					tchesha
-					aranama
-					saxop_wan_pupako
-					chayopin
-					yanaguana
-					nasoni
-					lacane
-					nisohone
-					nadakuh
-					nabiti
-					nacao
-					nacogdoches
-					naconiche
-					ayish
-					haynay
-					nacachau
-					nabaydacu
-					nakono
-					deadose
-					bidai
-					patiri
-					ishak
-					han
-					orcoquisac
-					caux
-					toyal
-					pachina
-					palaquechare
-					mayeye
-					yojuane
-					cantona
-					toho
-					ajehuac_yana
-					sana_tx
-					tza_wan_pupako
-					tickanwatic
 					tih_go_tel
 					teypana
 					shiewhibak
@@ -1257,6 +1187,79 @@ countries = {
 					sinclair
 					east_yuttahih
 				}
+
+				our_cores_conquered_by_others = {
+					cacaxtles
+					koke_metchesko_laha
+					cabias
+					tsel_tatli_dsha
+					piguique
+					capoque
+					karankawa
+					copane
+					mariame
+					tu_sis_nde
+					bobole
+					ndawe_qoha
+					tonkawa
+					kanahatino
+					sha_ia_nde
+					kol_kuka
+					teyas
+					mashgalende
+					melenudo
+					waco
+					nokoni
+					tanimuu
+					kitsai
+					taovaya
+					tawakoni
+					aays
+					yscani
+					tses_tsembai
+					tenawa
+					tchokana
+					penatuka
+					kwaaru
+					paruhuya
+					atajal
+					tchesha
+					aranama
+					saxop_wan_pupako
+					chayopin
+					yanaguana
+					nasoni
+					lacane
+					nisohone
+					nadakuh
+					nabiti
+					nacao
+					nacogdoches
+					naconiche
+					ayish
+					haynay
+					nacachau
+					nabaydacu
+					nakono
+					deadose
+					bidai
+					patiri
+					ishak
+					han
+					orcoquisac
+					caux
+					toyal
+					pachina
+					palaquechare
+					mayeye
+					yojuane
+					cantona
+					toho
+					ajehuac_yana
+					sana_tx
+					tza_wan_pupako
+					tickanwatic
+				}
 				starting_technology_level = 3
 				include = "expl_world"
 				government = {
@@ -1309,6 +1312,109 @@ countries = {
 				ai_advance_preference_tags = {
 					exploration = 5
 				}
+			}
+
+			TEX = {
+				own_control_core = {
+					cacaxtles
+					koke_metchesko_laha
+					cabias
+					tsel_tatli_dsha
+					piguique
+					capoque
+					karankawa
+					copane
+					mariame
+					tu_sis_nde
+					bobole
+					ndawe_qoha
+					tonkawa
+					kanahatino
+					sha_ia_nde
+					kol_kuka
+					teyas
+					mashgalende
+					melenudo
+					waco
+					nokoni
+					tanimuu
+					kitsai
+					taovaya
+					tawakoni
+					aays
+					yscani
+					tses_tsembai
+					tenawa
+					tchokana
+					penatuka
+					kwaaru
+					paruhuya
+					atajal
+					tchesha
+					aranama
+					saxop_wan_pupako
+					chayopin
+					yanaguana
+					nasoni
+					lacane
+					nisohone
+					nadakuh
+					nabiti
+					nacao
+					nacogdoches
+					naconiche
+					ayish
+					haynay
+					nacachau
+					nabaydacu
+					nakono
+					deadose
+					bidai
+					patiri
+					ishak
+					han
+					orcoquisac
+					caux
+					toyal
+					pachina
+					palaquechare
+					mayeye
+					yojuane
+					cantona
+					toho
+					ajehuac_yana
+					sana_tx
+					tza_wan_pupako
+					tickanwatic
+				}
+
+				starting_technology_level = 3
+				include = "expl_world"
+				government = {
+
+					ruler = shl_johann_iii_holstein_kiel
+
+					ruler_term = {	character = shl_gerhard_ii_holstein_kiel start_date = 1290.1.1 end_date = 1312.10.28 regnal_number = 2	}
+					ruler_term = {
+						character = shl_gerhard_iv_holstein_kiel start_date = 1312.10.28 end_date = 1314.6.7 regnal_number = 4 #Yes, there is no Gerhard III, it skips from II to IV
+						character = shl_johann_iii_holstein_kiel start_date = 1312.10.28 end_date = 1314.6.7 regnal_number = 3
+					}
+					ruler_term = { character = shl_johann_iii_holstein_kiel start_date = 1314.6.7 regnal_number = 3 }
+
+					regnal_numbers = {
+						name_gerard = 4
+						name_john = 3
+						name_adolf = 6
+					}
+				}
+
+				tolerated_cultures = {
+					polabian
+				}
+
+				country_rank = rank_county
+				capital = waco
+				dynasty = schauenburg_dynasty
 			}
 
 			USA = {
@@ -3335,6 +3441,7 @@ countries = {
 				include = "expl_western_europe"
 			}
 
+		# Europe
 			CPL = {
 				own_control_core = {
 					sokolow biala_podlaska wlodawa 
@@ -3427,6 +3534,12 @@ countries = {
 			}
 
 			EST = {
+				our_cores_conquered_by_others = {
+					tallinn narva padise paide rakvere rapla toolse vasknarva
+					hapsal kaina kuressaare lihula st_martin valjala
+					parnu karksi poltsamaa saarde suure_jaani viljandi lake_vorts
+					tartu valka vastseliina vonnu
+				}
 				starting_technology_level = 3
 				government = {
 					type = monarchy
@@ -3485,6 +3598,14 @@ countries = {
 
 			LTV = {
 				starting_technology_level = 3
+				our_cores_conquered_by_others = {
+					kuldiga dundaga durbe grobina kandava piltene saldus ventspils
+					daugavpils aizkraukle selpils
+					jelgava bauska dobele tukums
+					cesis aluksne gulbene rauna valmiera
+					riga koknese limbazi salaspils sigulda straupe
+					vilaka jekabpils kraslava makonkalns pietalava rezekne
+				}
 				government = {
 					type = monarchy
 					heir_selection = cognatic_primogeniture
@@ -3542,6 +3663,10 @@ countries = {
 
 			ESH = {
 				starting_technology_level = 3
+				own_control_core = {
+					tallinn narva padise paide rakvere rapla toolse vasknarva
+					hapsal kaina kuressaare lihula st_martin valjala
+				}
 				government = {
 					type = monarchy
 					heir_selection = cognatic_primogeniture
@@ -3588,7 +3713,7 @@ countries = {
 
 				court_language = norman_dialect
 				country_rank = rank_kingdom
-				capital = london
+				capital = tallinn
 
 				include = "expl_western_europe"
 
@@ -3596,6 +3721,40 @@ countries = {
 					exploration = 5
 				}
 			}
+
+			PZN = { #Poznan
+				own_control_core = {
+					bydgoszcz inowroclaw
+					znin chodziez szubin
+					gniezno mogilno trzemeszno
+					poznan buk czarnkow miedzyrzecz oborniki skwierzyna szamotuly wielen
+					pyzdry kozmin sroda_wielkopolska
+					koscian babimost grodzisk_wielkopolski rawicz srem wschowa
+				}
+
+				own_control_integrated = {
+				}
+
+				include = "catholic_bishopric"
+				include = "expl_northern_europe"
+
+				government = {
+					type = theocracy
+
+					ruler = kur_johann_ii
+					ruler_term = {	character = kur_johann_ii start_date = 1332.1.1 regnal_number = 2	}
+					regnal_numbers = {
+						name_john = 1
+					}
+				}
+
+				tolerated_cultures = {
+				}
+
+				capital = jelgava
+			}
+		
+		# Scandinavia
 
 			SWE = {
 				own_control_core = {
@@ -4341,7 +4500,7 @@ countries = {
 					niemodlin
 					wroclaw sroda_slaska
 					nysa grodkow klodzko glubczyce hlucin
-					glogow szprotawa kozuchow wschowa zielona_gora
+					glogow szprotawa kozuchow zielona_gora
 					balga ostroda dzierzgon elblag morag
 					wolgast stralsund rugen grimmen swinousjcie miastko szadzko
 					nowoszczecin gryfia_gora bialogard slawno slupsk
@@ -4354,13 +4513,7 @@ countries = {
 					mayen coblenz saarburg
 					daun cochem
 					kreuznach castellaun
-					pyzdry kozmin sroda_wielkopolska
-					gniezno mogilno trzemeszno
-					koscian babimost grodzisk_wielkopolski rawicz srem
 					naklo wyrzysk zlotow
-					poznan buk czarnkow miedzyrzecz oborniki skwierzyna szamotuly wielen
-					znin chodziez szubin
-					bydgoszcz inowroclaw
 					raciborz #Duchy of Raciborz
 					lubawa chelmno
 					kwidzyn
@@ -4447,74 +4600,6 @@ countries = {
 				currency_data = {
 					war_exhaustion = 5
 				}
-			}
-
-			LIV = { #Livonian Order
-				own_control_core = {
-				}
-				
-				own_control_integrated = {
-				}
-				
-				include = "catholic_military_order"
-				include = "expl_northern_europe"
-
-				government = {
-					type = theocracy
-					ruler = liv_eberhard_von_monheim
-					ruler_term = {	character = liv_eberhard_von_monheim start_date = 1328.1.1 regnal_number = 1	}
-					regnal_numbers = {
-						name_everard = 1
-					}
-
-
-					centralization_vs_decentralization = 20
-					aristocracy_vs_plutocracy = -95
-					serfdom_vs_free_subjects = -90
-					traditionalist_vs_innovative = -20
-					spiritualist_vs_humanist = -90
-					mercantilism_vs_free_trade = -30
-					offensive_vs_defensive = 0
-					land_vs_naval = 0
-					quality_vs_quantity = -30
-					belligerent_vs_conciliatory = -30
-					capital_economy_vs_traditional_economy = 100
-					individualism_vs_communalism = -20
-					outward_vs_inward = -60
-
-				}
-
-				tolerated_cultures = {
-				}
-
-				country_rank = rank_duchy
-				capital = parnu
-			}
-
-			KUR = { #Courland
-				own_control_core = {
-				}
-
-				own_control_integrated = {
-				}
-
-				include = "catholic_bishopric"
-				include = "expl_northern_europe"
-
-				government = {
-					type = theocracy
-
-					ruler = kur_johann_ii
-					ruler_term = {	character = kur_johann_ii start_date = 1332.1.1 regnal_number = 2	}
-					regnal_numbers = {
-						name_john = 1
-					}
-				}
-
-				tolerated_cultures = {
-				}
-
-				capital = piltene
 			}
 
 			HSA = {	#Hansa
@@ -6294,14 +6379,8 @@ countries = {
 					ostrov opochka sebech slavkovitchi volodimerets voronich
 					rzhev bor_volgo khotoshino molodoi_tud
 					toropets andreapol dubrovna nizhelskoe
-					riga
-					gulbene jekabpils koknese limbazi pietalava rauna straupe vilaka
-					tartu valka vastseliina vonnu
-					hapsal lihula kuressaare st_martin
+					 jekabpils  pietalava   vilaka
 
-					# own_control_integrated, but culture accepted
-					tallinn narva padise rakvere rapla toolse vasknarva
-					dundaga piltene
 					#Black Ruthenia
 					novogrudok lyakhavichy lyubcha turets
 					vawkavysk porazava vowpa
@@ -6535,12 +6614,8 @@ countries = {
 
 					yaroslavka yahotyn lutava opishnya hovtva kolomak
 					
-					parnu  valmiera viljandi kaina valjala
-					karksi poltsamaa  kandava dobele bauska sigulda cesis aluksne
-					rezekne daugavpils selpils kraslava jelgava  tukums
-					saarde suure_jaani makonkalns aizkraukle salaspils  saldus
-					paide
-					ventspils grobina kuldiga durbe
+					rezekne kraslava
+					makonkalns 
 					cherdyn nyrob ust_kulom lupya chernaya troitsko_pechorsk vukyl ukhta kortkeros ust_vym zheshart
 					ust_sysola vizinga koygorodok kirs afanasyevo siva karagay nytva perm kungur 
 					beryozovka lysva kizel gubakha dobryanka solikamsk
@@ -14342,7 +14417,7 @@ countries = {
 			FRA = {
 				own_control_core = {
 					#Appanages
-					wallerfangen
+					wallerfangen bitche
 					#Poitou (Own by the ruler)
 					poitiers la_roche_sur_yon montaigu thouars parthenay fontenay montmorillon
 					niort bourganeuf chatellerault brosse lusignan aulnay st_jean_dangely
@@ -21403,7 +21478,7 @@ countries = {
 					pfaffenhofen friedberg ingolstadt neuburg_an_der_donau  burglengenfeld
 					germersheim neustadt_an_der_haardt oppenheim kaiserslautern
 					amberg eschenbach neumarkt roding sulzbach #Oberpfalz
-					zweibrucken pirmasens bitche lichtenberg_veldenz landau_rhineland leiningen speyer worms hof
+					zweibrucken pirmasens lichtenberg_veldenz landau_rhineland leiningen speyer worms hof
 					laufen muhldorf passau immenstadt
 					dillingen oberdorf sonthofen
 					freising miesbach garmisch
@@ -23339,11 +23414,21 @@ countries = {
 			}
 
 			LIT = {	#Lithuania
-				own_control_core = {
-				}
-				own_control_integrated = {
-				}
-				own_core = {
+				our_cores_conquered_by_others = {
+					ashmyany halshany hieraniony kreva
+					braslaw drysvyaty ezerenai miory
+					kaunas alytus punia vilkaviskis
+					lida astrina eisiskes shchuchyn
+					suwalki lipsk veisiejai
+					trakai lazdijai onushkis merkine
+					svir dokshytsy hlybokaye myadzyel svencionys vileyka
+					upyte birzai linkava panevezys pasvalys
+					vilkmerge anyksciai maleisiai rokiskis utena
+					vilnius giedraiciai kernave medininkai_vilna
+					grodno bershty grodek masty sokolka
+					medininkai palanga rietavas silale skuodas taurage
+					raseiniai jurbarkas kedainiai panemune tendziogala
+					siauliai kraziai mazeikiai papile zagare
 				}
 
 				include = "expl_eastern_europe"
@@ -24666,1454 +24751,6 @@ countries = {
 					ruler = random
 				}
 			}
-			#Extra Nahuatl Tags
-
-			#Chalco - CLC
-			CLC = {
-				own_control_core = {
-				}
-				include = "amerindian_advanced_monarchy_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = chalco
-			}
-
-			#Huaxtepec - HUX
-			HUX = {
-				own_control_core = {
-				}
-				include = "amerindian_advanced_monarchy_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = huaxtepec
-			}
-
-			#Cuauhnahuac - CUU
-			CUU = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = cuauhnahuac
-			}
-
-			#Tlachco - TCH
-			TCH = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = tlachco
-			}
-
-			#Oztoman - OZT
-			OZT = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = oztoman
-			}
-
-			#Temascaltepec - TMS
-			TMS = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = temascaltepec
-			}
-
-			#Tepecoacuilco - TCC
-			TCC = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				tolerated_cultures = {
-					chontal_culture
-				}
-				court_language = nahuatl_language
-				capital = tepecoacuilco
-			}
-
-			#Chiautla - CTL
-			CTL = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = chiautla
-			}
-
-			#Tetellan - TLL
-			TLL = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = tetellan
-			}
-
-			#Zompanco - ZOM
-			ZOM = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = zompanco
-			}
-
-			#Tlazcozauhtitlan - TLZ
-			TLZ = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = tlazcozauhtitlan
-			}
-
-			#Cuauhteopan - UAU
-			UAU = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = cuauhteopan
-			}
-
-			#Yohualtepec - YOH
-			YOH = {
-				own_control_core = {
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = yohualtepec
-			}
-
-			#Tecpantepec - TPT
-			TPT = {
-				own_control_core = {
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = tecpan
-			}
-
-			#Cihuatlan - CIH
-			CIH = {
-				own_control_core = {
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = cihuatlan
-			}
-
-			#Zacatollan - ZCT
-			ZCT = {
-				own_control_core = {
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = zacatollan
-			}
-
-			#Ajuchitlan - AJC
-			AJC = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = cuitlatec_language
-				capital = ajuchitlan
-			}
-
-			#Tlapan - TLP
-			TLP = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = tlapan
-			}
-
-			#Ayotlan - AYO
-			AYO = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = tecoanapa
-			}
-
-			#Ometepec - OMT
-			OMT = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = ometepec
-			}
-
-			#Coatlicamac - CTC
-			CTC = {
-				own_control_core = {
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = totozoquean_language
-				capital = coatlicamac
-			}
-
-			#Coatzacoalco - CTZ
-			CTZ = {
-				own_control_core = {
-				}
-				include = "amerindian_advanced_monarchy"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				tolerated_cultures = {
-					mixe_culture
-					zoque_culture
-				}
-				court_language = nahuatl_language
-				capital = coatzacoalco
-			}
-
-			#Tepeyacac - TPY
-			TPY = {
-				own_control_core = {
-				}
-				include = "amerindian_advanced_monarchy_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = tepeyacac
-			}
-
-			#Cuetlaxtlan - CTX
-			CTX = {
-				own_control_core = {
-				}
-				include = "amerindian_advanced_monarchy"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = cuetlaxtlan
-			}
-
-			#Cholollan - CLL
-			CLL = {
-				own_control_core = {
-				}
-				include = "amerindian_advanced_monarchy_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = cholollan
-			}
-
-			#Xochimilco - XCH
-			XCH = {
-				own_control_core = {
-				}
-				include = "amerindian_advanced_monarchy_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = xochimilco
-			}
-
-			#Atocpan - ATO
-			ATO = {
-				own_control_core = {
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = otopamean_language
-				capital = atocpan
-			}
-
-			#Tollantzinco - TZC
-			TZC = {
-				own_control_core = {
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = otopamean_language
-				capital = tollantzinco
-			}
-
-			#Metztitlan - MET
-			MET = {#https://es.wikipedia.org/wiki/Metztitl%C3%A1n
-				own_control_core = {
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = otopamean_language
-				capital = metztitlan
-			}
-
-			#Huayacocotla - HYC https://es.wikipedia.org/wiki/Huayacocotla
-			HYC = {
-				own_control_core = {
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = maya_language
-				capital = huayacocotla
-			}
-
-			#Tutotepec - TUT https://es.wikipedia.org/wiki/Tutotepec
-			TUT = {
-				own_control_core = {
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = maya_language
-				capital = tutotepec
-			}
-
-			#Xilotepec - XIL https://es.wikipedia.org/wiki/Se%C3%B1or%C3%ADo_de_Jilotepec
-			XIL = {
-				own_control_core = {
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = otopamean_language
-				capital = xilotepec
-			}
-
-			#Zinapecuaro - ZIN
-			ZIN = {
-				own_control_core = {
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = otopamean_language
-				capital = zinapecuaro
-			}
-
-			#Ixtacamaxtitlan - IXT
-			IXT = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = ixtacamaxtitlan
-			}
-
-			#Tetela - TEE
-			TEE = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = tetela
-			}
-
-			#Zacatlan - ZAT
-			ZAT = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = zacatlan
-			}
-
-			#Tlatlauquitepec - TLQ
-			TLQ = {
-				own_control_core = {
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = tlatlauquitepec
-			}
-
-			#Tlapacoyan - TCY
-			TCY = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = tlapacoyan
-			}
-
-			#Ahuacatlan - AHU
-			AHU = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = ahuacatlan
-			}
-
-			#Cuauhchinanco - GCH
-			GCH = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = cuauhchinanco
-			}
-
-			#Etzatlan - ETZ
-			ETZ = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = etzatlan
-			}
-
-			#Xochitepec - XCT
-			XCT = {
-				own_control_core = {
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				tolerated_cultures = {
-					nahua_culture
-				}
-				court_language = nahuatl_language
-				capital = xochitepec
-			}
-
-			#Ameca - AME
-			AME = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = ameca
-			}
-
-			#Tenamaxtlan - TNX
-			TNX = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = tenamaxtlan
-			}
-
-			#Amollan - AML
-			AML = {
-				own_control_core = {
-				}
-				include = "amerindian_advanced_monarchy_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = amollan
-			}
-
-			#Cuzalapa - CZL
-			CZL = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = cuzalapa
-			}
-
-			#Tomatlan - TMT
-			TMT = {
-				own_control_core = {
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = tomatlan
-			}
-
-			#Melahuacan - MHC
-			MHC = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = melahuacan
-			}
-
-			#Xihutla - XIH
-			XIH = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = xihutla
-			}
-
-			#Autlan - ATL
-			ATL = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = autlan
-			}
-
-			#Cocollan - CCL
-			CCL = {
-				own_control_core = {
-				}
-				include = "amerindian_advanced_monarchy_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = cocollan
-			}
-
-			#Huitzquilic - HTZ
-			HTZ = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = huitzquilic
-			}
-
-			#Aztatlan - AZL
-			AZL = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = aztatlan
-			}
-
-			#Tlamazolan - TZM
-			TZM = {
-				own_control_core = {
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = tlamazolan
-			}
-
-			#Tlapacoya - TLY
-			TLY = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = tlapacoya
-			}
-
-			#Cuautla - CAU
-			CAU = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = cuautla
-			}
-
-			#Amapila - AMP
-			AMP = {
-				own_control_core = {
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = tlacalahuastla
-			}
-
-			#Sayula - SAY
-			SAY = {
-				own_control_core = {
-				}
-				include = "amerindian_advanced_monarchy_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = sayula
-			}
-
-			#Pantepec - PTP
-			PTP = {
-				own_control_core = {
-				}
-				include = "amerindian_advanced_monarchy_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = pantepec
-			}
-
-			#Xalapa - XAP
-			XAP = {
-				own_control_core = {
-				}
-				include = "amerindian_advanced_monarchy_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = xalapa
-			}
-
-			#Xicochimalco - XIC
-			XIC = {
-				own_control_core = {
-				}
-				include = "amerindian_advanced_monarchy_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = xicochimalco
-			}
-
-			#Tochtepec - TOH https://es.wikipedia.org/wiki/Municipio_de_Tochtepec
-			TOH = {
-				own_control_core = {
-				}
-				own_control_integrated = {
-					
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = tochtepec
-			}
-
-			#Teutila - TTA
-			TTA = {
-				own_control_core = {
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = teutila
-			}
-
-			#Puctlan - PTL
-			PTL = {
-				own_control_core = {
-				}
-				include = "amerindian_advanced_monarchy"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = puctlan
-			}
-
-			#Cosamaloapan - CSM
-			CSM = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = cosamaloapan
-			}
-
-			#Otatitlan - OTA
-			OTA = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = otatitlan
-			}
-
-			#Tlacotlalpan - TLT
-			TLT = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = tlacotlalpan
-			}
-
-			#Tozlan - TOZ
-			TOZ = {
-				own_control_core = {
-				}
-				include = "amerindian_advanced_monarchy"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				tolerated_cultures = {
-					zoque_culture
-				}
-				court_language = nahuatl_language
-				capital = tozlan
-			}
-
-			#Iztachacalapan - IZC
-			IZC = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = iztachacalapan
-			}
-
-			#Tesechoacan - TSE
-			TSE = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = tesechoacan
-			}
-
-			#Cuauhcuetzpaltepec - CCP
-			CCP = {
-				own_control_core = {
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = cuauhcuetzpaltepec
-			}
-
-			#Ozumacin - OZU
-			OZU = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = ozumacin
-			}
-
-			#Atepec - ATP
-			ATP = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = atepec
-			}
-
-			#Choapan - CPN
-			CPN = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = choapan
-			}
-
-			#Xochiapa - XCP
-			XCP = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = totozoquean_language
-				capital = xochiapa
-			}
-
-			#Atitlan - ATT
-			ATT = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = atitlan
-			}
-
-			#Ixtapan - IXA
-			IXA = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = ixtapan
-			}
-
-			#Cutzamala - CUZ
-			CUZ = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				tolerated_cultures = {
-					cuitlatec_culture
-				}
-				court_language = nahuatl_language
-				capital = cutzamala
-			}
-
-			#Teloloapan - TLO
-			TLO = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				tolerated_cultures = {
-					chontal_culture
-				}
-				court_language = nahuatl_language
-				capital = teloloapan
-			}
-
-			#Amaticoztitlan - AMT
-			AMT = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = amaticoztitlan
-			}
-
-			#Itzocan - IZO
-			IZO = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = itzocan
-			}
-
-			#Axochiapan - AXC
-			AXC = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = axochiapan
-			}
-
-			#Tepexi - TPX
-			TPX = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = tepexi
-			}
-
-			#Zacazonapan - ZCZ
-			ZCZ = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = nahuatl_language
-				capital = zacazonapan
-			}
-
-			#Itza - ITZ
-			ITZ = {
-				own_control_core = {
-				}
-				own_control_integrated = {
-					
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = itz_kan_ek
-				}
-				country_rank = rank_duchy
-				court_language = maya_language
-				capital = noh_peten
-				dynasty = itza_dynasty
-			}
-
-			#Cocom - COC
-			COC = {
-				own_control_core = {
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = maya_language
-				capital = mayapan
-				dynasty = cocom_dynasty
-			}
-
-			#Tutul-Xiu - XIU
-			XIU = {
-				own_control_core = {
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = maya_language
-				capital = mani
-				dynasty = xiu_dynasty
-			}
-
-			#Ah Canul - CNL
-			CNL = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = maya_language
-				capital = calkini
-				dynasty = canul_dynasty
-			}
-
-			#Chakan Putum - CKP
-			CKP = {
-				own_control_core = {
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = maya_language
-				capital = chakan_putum
-				dynasty = canul_dynasty
-			}
-
-			#Chel - HEL
-			HEL = {
-				own_control_core = {
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = maya_language
-				capital = dzilam
-				dynasty = chel_dynasty
-			}
-
-			#Uaymil - UAY
-			UAY = {
-				own_control_core = {
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = maya_language
-				capital = tixmul
-			}
 
 			#Mopan - MOP
 			MOP = {
@@ -26134,303 +24771,7 @@ countries = {
 					ruler = random
 				}
 			}
-
-			#Cháak teʼ éemal - CTM
-			CTM = {
-				own_control_core = {
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = maya_language
-				capital = chactemal
-			}
-
-			#Kowoj - KOW
-			KOW = {
-				own_control_core = {
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = maya_language
-				capital = chakanbakan
-			}
-
-			#Yoko t'aanob - YOK
-			YOK = {
-				own_control_core = {
-				}
-				include = "amerindian_mesoamerican_tribe_not_nahuatl"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = maya_language
-				capital = cupilco
-			}
-
-			#Chʼol - XOL
-			XOL = {
-				own_control_core = {
-				}
-				include = "amerindian_mesoamerican_tribe_not_nahuatl"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = maya_language
-				capital = xicallanco
-			}
-
-			#Qʼeqchiʼ - QEQ
-			QEQ = {
-				type = pop
-
-				add_pops_from_locations = {
-					chama
-				}
-				discovered_regions = {
-					mesoamerica_region
-					central_america_region
-				}
-
-				include = "amerindian_tribe"
-				include = "expl_mesoamerica"
-				government = {
-					ruler = random
-				}
-			}
-
-			#Kʼicheʼ - KIC
-			KIC = {
-				own_control_core = {
-					
-				}
-				own_control_integrated = {
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = kic_kokaib
-				}
-				court_language = maya_language
-				capital = pismachi
-			}
-
-			#Chorti - CHT
-			CHT = {
-				own_control_core = {
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				tolerated_cultures = {
-					poqom_culture
-					pipil_culture
-				}
-				court_language = maya_language
-				capital = chiquimula
-			}
-
-			#Sotz'leb - LAC
-			LAC = {
-				own_control_core = {
-				}
-				include = "amerindian_mesoamerican_tribe_not_nahuatl"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = maya_language
-				capital = napinaica
-			}
-
-			#Kaqchikel - KAQ
-			KAQ = {
-				own_control_core = {
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				tolerated_cultures = {
-					mam_culture
-				}
-				court_language = maya_language
-				capital = kakol_kiej
-			}
-
-			#Mam - MMM
-			MMM = {
-				own_control_core = {
-				}
-				own_control_integrated = {
-					
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				tolerated_cultures = {
-					chiapanec_culture
-				}
-				court_language = maya_language
-				capital = chinabajul
-			}
-
-			#Tojolabal - TOJ
-			TOJ = {
-				type = pop
-
-				add_pops_from_locations = {
-					zapaluta
-				}
-				discovered_regions = {
-					mesoamerica_region
-					central_america_region
-				}
-
-				include = "amerindian_tribe"
-				include = "expl_mesoamerica"
-				starting_technology_level = 0
-				government = {
-					type = tribe
-					heir_selection = tribal_oldest_male
-					ruler = random
-				}
-			}
-
-			#Tzeltal - TZE
-			TZE = {
-				own_control_core = {
-				}
-				include = "amerindian_mesoamerican_tribe_not_nahuatl"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = maya_language
-				capital = quechula
-			}
-
-			#Tz'utujil - TZU
-			TZU = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = maya_language
-				capital = atitlan_guatemala
-			}
-
-			#Q'anjob'al - QAN
-			QAN = {
-				own_control_core = {
-					
-				}
-				include = "amerindian_advanced_monarchy_not_nahuatl_no_coast"
-				include = "expl_mesoamerica"
-				government = {
-					type = monarchy
-					heir_selection = cognatic_primogeniture
-					ruler = random
-				}
-				court_language = maya_language
-				capital = jolom_konob
-			}
-
-			#Toquegua - TOQ
-			TOQ = {
-				type = pop
-
-				add_pops_from_locations = {
-					toquegua chinda naco
-				}
-				discovered_regions = {
-					mesoamerica_region
-					central_america_region
-				}
-
-				include = "amerindian_tribe"
-				include = "expl_mesoamerica"
-				starting_technology_level = 0
-				government = {
-					type = tribe
-					heir_selection = tribal_oldest_male
-					ruler = random
-				}
-			}
 			#-------------------------- Central America ----------------------------
-
-
-			#Kuskatan - KUS https://en.wikipedia.org/wiki/Cuzcatlan
-			KUS = {
-				own_control_core = {
-				}
-				discovered_regions = {
-					central_america_region
-				}
-				include = "amerindian_monarchy"
-				include = "expl_mesoamerica"
-				starting_technology_level = 1
-				government = {
-					ruler = random
-				}
-				court_language = maya_language
-				capital = kuskatan
-			}
-
-			#Cuauhtemallan - QUA
-			QUA = {
-				own_control_core = {
-				}
-				discovered_regions = {
-					central_america_region
-				}
-				include = "amerindian_monarchy"
-				include = "expl_mesoamerica"
-				starting_technology_level = 1
-				government = {
-					ruler = random
-				}
-				court_language = maya_language
-				capital = cuauhtemallan
-			}
 
 			#Lenca - LNC
 			LNC = {
@@ -29887,270 +28228,6 @@ countries = {
 
 				include = "expl_manchurian_tribe"
 				include = "yeren_tribe"
-				government = {
-					ruler = random
-					heir_selection = ritual_selection
-				}
-			}
-
-			HDA = { #Hada
-				own_control_core = {
-				}
-
-				include = "haixi_tribe"
-				include = "expl_manchurian_tribe"
-
-				dynasty = hada_nara_dynasty
-
-				capital = kaiyuan_jurchen
-				government = {
-					ruler = random
-					heir_selection = ritual_selection
-				}
-			}
-
-			HOI = { #Hoifa
-				own_control_core = {
-				}
-
-				include = "expl_manchurian_tribe"
-				include = "haixi_tribe"
-
-				dynasty = hoifa_nara_dynasty
-
-				capital = huifacheng
-				government = {
-					ruler = random
-					heir_selection = ritual_selection
-				}
-			}
-
-			UAA = { #Ula
-				own_control_core = {
-				}
-
-				include = "expl_manchurian_tribe"
-				include = "haixi_tribe"
-
-				dynasty = ula_nara_dynasty
-
-				capital = girin_ula
-				government = {
-					ruler = random
-					heir_selection = ritual_selection
-				}
-			}
-
-			YEH = { #Yehe
-				own_control_core = {
-				}
-
-				include = "expl_manchurian_tribe"
-				include = "haixi_tribe"
-
-				dynasty = yehe_nara_dynasty
-
-				capital = yehe
-				government = {
-					ruler = random
-					heir_selection = ritual_selection
-				}
-			}
-
-			DNG = { #Donggo
-				own_control_core = {
-				}
-
-				include = "expl_manchurian_tribe"
-				include = "jianzhou_tribe"
-
-				dynasty = donggo_dynasty
-
-				capital = donggo
-				government = {
-					ruler = random
-					heir_selection = ritual_selection
-				}
-			}
-
-			HJN = { #Holjaon
-				own_control_core = {
-				}
-
-				include = "expl_manchurian_tribe"
-				include = "jianzhou_tribe"
-
-				dynasty = holjaon_dynasty
-
-				capital = onseong
-				government = {
-					ruler = random
-					heir_selection = ritual_selection
-				}
-			}
-
-			HNE = { #Hunehe
-				own_control_core = {
-				}
-
-				include = "expl_manchurian_tribe"
-				include = "jianzhou_tribe"
-
-				dynasty = bira_hala_dynasty
-
-				capital = shenyang
-				government = {
-					ruler = random
-					heir_selection = ritual_selection
-				}
-			}
-
-			HUL = { #Huligai
-				own_control_core = {
-				}
-
-				include = "expl_manchurian_tribe"
-				include = "jianzhou_tribe"
-
-				capital = ganggye
-				government = {
-					ruler = random
-					heir_selection = ritual_selection
-				}
-			}
-
-			JEC = { #Jecen
-				own_control_core = {
-				}
-
-				include = "expl_manchurian_tribe"
-				include = "jianzhou_tribe"
-
-				dynasty = jecen_dynasty
-
-				capital = hetu_ala
-				government = {
-					ruler = random
-					heir_selection = ritual_selection
-				}
-			}
-
-			JUS = { #Jusheli
-				own_control_core = {
-				}
-
-				include = "expl_manchurian_tribe"
-				include = "jianzhou_tribe"
-
-				dynasty = jusheli_dynasty
-
-				capital = juxeri
-				government = {
-					ruler = random
-					heir_selection = ritual_selection
-				}
-			}
-
-			MAO = { #Maolian
-				own_control_core = {
-				}
-
-				include = "expl_manchurian_tribe"
-				include = "jianzhou_tribe"
-
-				capital = gyeongseong
-				government = {
-					ruler = random
-					heir_selection = ritual_selection
-				}
-			}
-
-			NEY = { #Neyen
-				own_control_core = {
-				}
-
-				include = "expl_manchurian_tribe"
-				include = "jianzhou_tribe"
-
-				dynasty = neyen_dynasty
-
-				capital = sunggari
-				government = {
-					ruler = random
-					heir_selection = ritual_selection
-				}
-			}
-
-			ODO = { #Odoli
-				own_control_core = {
-				}
-
-				include = "expl_manchurian_tribe"
-				include = "jianzhou_tribe"
-
-				capital = chosan
-				government = {
-					ruler = random
-					heir_selection = ritual_selection
-				}
-			}
-
-			SSH = { #Suksuhu
-				own_control_core = {
-				}
-
-				include = "expl_manchurian_tribe"
-				include = "jianzhou_tribe"
-
-				dynasty = aisin_gioro_dynasty
-
-				capital = fushun_liaoyang
-				government = {
-					ruler = random
-					heir_selection = ritual_selection
-				}
-			}
-
-			URY = { #Uryangkhad
-				own_control_core = {
-				}
-
-				include = "expl_manchurian_tribe"
-				include = "jianzhou_tribe"
-
-				capital = hamheung
-				government = {
-					ruler = random
-					heir_selection = ritual_selection
-				}
-			}
-
-			YAL = { #Yalu
-				own_control_core = {
-				}
-
-				include = "expl_manchurian_tribe"
-				include = "jianzhou_tribe"
-
-				dynasty = yalu_dynasty
-
-				capital = linjiang_jurchen
-				government = {
-					ruler = random
-					heir_selection = ritual_selection
-				}
-			}
-
-			WGG = { #Wanggiya
-				own_control_core = {
-				}
-
-				include = "expl_manchurian_tribe"
-				include = "jianzhou_tribe"
-
-				dynasty = wanyan_dynasty
-
-				capital = wanggika
 				government = {
 					ruler = random
 					heir_selection = ritual_selection

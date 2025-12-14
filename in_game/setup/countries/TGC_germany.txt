@@ -43,15 +43,36 @@ HAN = {
 	difficulty = 3
 }
 
+LAU = {
+	color = map_LAU_dominion0_1
+
+	culture_definition = lower_saxon
+	religion_definition = catholic
+}
+
+SLW = {
+	color = map_SLW_dominion0_1
+	
+	culture_definition = holsatian
+	religion_definition = catholic
+}
+
+PZN = {
+	color = map_PZN_dominion0_1
+	
+	culture_definition = brandenburgish
+	religion_definition = catholic
+}
+
 SHL = {
-	color = map_SHL
+	color = map_SHL_dominion0_1
 	color2 = rgb { 16 41 202 }
 	
 	unit_color0 = hsv360 {	0 76 53 }
 	unit_color1 = hsv360 {	230 64 36 }
 	unit_color2 = hsv360 {	37 84 89 }
 
-	culture_definition = english
+	culture_definition = holsatian
 	religion_definition = catholic
 
 	description_category = administrative

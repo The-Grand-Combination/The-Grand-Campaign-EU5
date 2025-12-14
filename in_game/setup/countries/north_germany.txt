@@ -168,13 +168,6 @@ HTR = {
 	religion_definition = catholic
 }
 
-SLW = {
-	color = map_SLW
-	
-	culture_definition = holsatian
-	religion_definition = catholic
-}
-
 HNB = {
 	color = rgb { 234 193 53 }
 	
@@ -317,13 +310,6 @@ NWG = {
 	color = rgb { 100 75 66 }
 
 	culture_definition = eastern_pomeranian
-	religion_definition = catholic
-}
-
-LAU = {
-	color = rgb { 79 139 99 }
-
-	culture_definition = lower_saxon
 	religion_definition = catholic
 }
 

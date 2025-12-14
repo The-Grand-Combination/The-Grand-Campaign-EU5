@@ -1,5 +1,5 @@
 ﻿SWE = {
-	color = map_swedish
+	color = map_SWE
 	color2 = rgb { 208 9 9 }
 	
 	unit_color0 = hsv360 {	216 89 54	} 
@@ -20,7 +20,7 @@
 }
 
 DAN = {
-	color = map_danish
+	color = map_DAN
 	color2 = rgb { 255 223 0 }
 
 	unit_color0 = rgb {	202 28 46 }
@@ -48,7 +48,7 @@ SKE = {
 
 
 NOR = {
-	color = map_norwegian
+	color = map_NOR_dominion1
 	color2 = rgb { 208 9 9 }
 
 	culture_definition = norwegian
@@ -60,7 +60,7 @@ NOR = {
 	
 }
 FIN = {
-	color = map_finnish
+	color = map_FIN_dominion0_1
 	color2 = rgb { 16 41 202 }
 
 	culture_definition = swedish
