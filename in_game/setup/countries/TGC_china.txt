@@ -12,3 +12,76 @@ RYU = {
 	description_category = administrative
 	difficulty = 3
 }
+
+CHI = { #China
+	color = map_QNG
+	color2 = rgb { 16 41 202 }
+
+	unit_color0 = rgb {	43 56 107 }
+	unit_color1 = rgb {	142 16 16 }
+	unit_color2 = rgb {	223 175 69 }
+
+	culture_definition = mongolian_culture
+	religion_definition = tibetan_buddhism
+
+	description_category = diplomatic
+	difficulty = 5
+}
+
+ANU = {
+	color = map_ANU
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = ainu_culture
+	religion_definition = ainu_religion
+}
+
+KOR = {
+	color = map_KOR
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = korean_culture
+	religion_definition = mahayana
+
+	description_category = diplomatic
+	difficulty = 2
+}
+
+JAP = {
+	color = map_JAP
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = saigoku_culture
+	religion_definition = shinto
+
+	description_category = diplomatic
+	difficulty = 5
+}
+
+QNG = { #Yuán
+	color = map_QNG
+
+	culture_definition = mongolian_culture
+	religion_definition = tibetan_buddhism
+	is_historic = yes	#Released during the Crisis events
+}
+
+YUA = { #Yuán
+	color = rgb { 16 42 202 }	#Will never change its color anyway
+
+	culture_definition = mongolian_culture
+	religion_definition = tibetan_buddhism
+	is_historic = yes	#Released during the Crisis events
+}
+
+MNG = {	#Míng
+	color = map_MNG
+	color2 = rgb { 179 128 104 }
+	culture_definition = jianghuai_culture
+	religion_definition = sanjiao
+	is_historic = yes	#Released during the Crisis events
+}
+
+CDB = {
+
+}

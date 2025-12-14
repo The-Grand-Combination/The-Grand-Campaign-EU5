@@ -19203,8 +19203,12 @@ countries = {
 
 			#China
 
-			CHI = { #Yuán
+			CHI = { #China
 				own_control_core = {
+					amis paiwan takbanuao truku
+					basai kavalan ketagalan kulun pakuali squliq
+					siraya ishbukun lloa makatao rukai takitudu tsou
+					papora arikun babuza mayrinax seediq taokas
 					mala
 					tongan_lijiang jujin
 					gongshan adeqiu linxi zhuluo lanzhou_lanzhou zhiziluo
@@ -19268,7 +19272,11 @@ countries = {
 					trigu chikchar gonpatsi lhodrak lho_taklung tragor zangchen
 					gyamda buchu daklha_gampo zhokha
 					nakchu barom rongpo
-					namtso_doring tsedzong ronglung gonkri
+					namtso_doring tsedzong ronglung gonkri zagya
+					gerze_tibet bairab cemar cozha dagze dogai dorsotung yurba
+					sharu drichu duolundu hoh_xil jilibulake kunlun qumarleb
+					chogyal_khar balgatai dsun gashun nalinggele temirlik tsaidam yuka
+					yalingkuo jingyu kumkol
 					serzhik shantsa zangdan
 					mendong samten selephu
 					phari
@@ -19442,7 +19450,8 @@ countries = {
 					ilanbalyk koktuma toli atanuul bodonch bulgan chinggil ulungur kara_irtysh 
 					burqin jeminay qila_panjeh ishkashim roshtqala sarhad sar_sang zebak 
 					shighnan vamar ilibalyk koktal kayalyk ayagoz tansyk
-					zarafshan gunt murghab oksu
+					zarafshan murgo amtogor raskam sanju
+					gunt murghab oksu
 					qocho turpan lukchun pichan toksun
 					beshbalik dunla guchung mori
 					dashahai bailongdui miran loulan
@@ -19829,9 +19838,26 @@ countries = {
 				}
 			}
 
-			RYU = {
+			RYU = { # Ryukyu
 				own_control_core = {
 					urasoe nakijin oozato
+				}
+
+				include = "east_asia_monarchy"
+				government = {
+					regency = consort_regency
+					active_regent = chz_tamagusuku_spouse
+					start_regency_date = 1336.1.1
+					end_regency_date = 1346.1.1
+					heir = chz_seii
+				}
+
+				capital = urasoe
+			}
+
+			MGE = { # Mongolia
+				own_control_core = {
+					
 				}
 
 				include = "east_asia_monarchy"
@@ -27503,41 +27529,6 @@ countries = {
 				religious_school = naqshbandi_school
 				country_rank = rank_kingdom
 				capital = samarkand
-			}
-
-			MGE = { #The Mongol Empire
-				type = army
-				own_control_core = { }
-				our_cores_conquered_by_others = { }
-				starting_technology_level = 3
-				include = "expl_mongols"
-				include = "eurasian_horde_not_present"
-				government = {
-					ruler_term = { character = genghis_khan start_date = 1206.1.1 end_date = 1227.8.25 regnal_number = 1 }
-					ruler_term = { character = tolui_borjigin start_date = 1227.8.25 end_date = 1229.9.13 regnal_number = 1 }
-					ruler_term = { character = chg_ogedei_borjigin start_date = 1229.9.13 end_date = 1241.12.11 regnal_number = 1 }
-					type = steppe_horde
-					heir_selection = tribal_oldest_male
-				}
-				country_rank = rank_empire
-				court_language = mongolian_language
-				capital = karakorum
-			}
-
-			OIR = {
-				type = army
-				own_control_core = { }
-				our_cores_conquered_by_others = { }
-				starting_technology_level = 3
-				include = "expl_mongols"
-				include = "eurasian_horde_not_present"
-				government = {
-					type = steppe_horde
-					heir_selection = tribal_oldest_male
-				}
-				country_rank = rank_empire
-				court_language = mongolian_language
-				capital = karakorum
 			}
 
 			QCH = { #Qocho

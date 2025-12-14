@@ -2553,7 +2553,6 @@ colors = {
 	map_YUA = hsv360 { 64 62 61 }
 	#Chinese Revolters
 	map_MNG = rgb { 179 128 104 }
-	map_QNG = rgb { 237 152 18 }
 	map_CSO = rgb { 153 51 51 }
 	map_WUU = rgb { 126 87 198 }
 	map_CTW = rgb { 31 150 153 }
