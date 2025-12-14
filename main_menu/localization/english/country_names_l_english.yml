@@ -814,6 +814,8 @@
  SPA_latin_ADJ: "Hispanic"
  GBR: "Great Britain"
  GBR_ADJ: "British"
+ GBI: "Great Britain and Ireland"
+ GBI_ADJ: "British"
  GBR_latin: "Britannia"
  GBR_latin_ADJ: "Britannic"
  GBR_welsh: "Prydain"

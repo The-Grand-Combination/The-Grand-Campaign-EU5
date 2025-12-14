@@ -7767,7 +7767,7 @@ countries = {
 				}
 			}
 
-			GBR = { # England
+			GBI = { # England
 				own_control_core = {
 					# Earldom of Chester
 					# cornwall

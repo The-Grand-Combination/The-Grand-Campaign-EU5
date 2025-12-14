@@ -1137,7 +1137,7 @@ NZN = {
 }
 
 CHI = { #China
-	color = map_YUA
+	color = map_QNG
 	color2 = rgb { 16 41 202 }
 
 	unit_color0 = rgb {	43 56 107 }

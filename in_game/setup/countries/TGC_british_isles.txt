@@ -1,3 +1,18 @@
+GBI = {
+	color = map_GBR_GBI
+	color2 = rgb { 16 41 202 }
+	
+	unit_color0 = hsv360 {	0 76 53 }
+	unit_color1 = hsv360 {	230 64 36 }
+	unit_color2 = hsv360 {	37 84 89 }
+
+	culture_definition = english
+	religion_definition = anglican
+
+	description_category = administrative
+	difficulty = 3
+}
+
 GBR = {
 	color = map_GBR
 	color2 = rgb { 16 41 202 }

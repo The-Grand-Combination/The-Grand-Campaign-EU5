@@ -394,3 +394,104 @@ LTS = { # Lichtenstein
 	culture_definition = saxon
 	religion_definition = catholic
 }
+
+HSA = {
+	color = map_hansa
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = hanseatic	#can't be holsatian
+	religion_definition = catholic
+
+	description_category = administrative
+	difficulty = 3
+}
+
+LUB = {
+	color = map_lubeck
+	color2 = rgb { 156 179 189 }
+
+	culture_definition = holsatian
+	religion_definition = catholic
+}
+
+
+BRA = {
+	color = map_BRA
+	color2 = rgb { 123 90 90 }
+
+	unit_color0 = rgb {	0 0 128 }
+	unit_color1 = rgb {	255 255 128 }
+	unit_color2 = rgb {	205 74 44 }
+
+	culture_definition = brandenburgish
+	religion_definition = catholic
+
+	description_category = military
+	difficulty = 5
+}
+
+
+MAG = {
+	color = rgb { 189 115 99 }
+	
+	culture_definition = brandenburgish
+	religion_definition = catholic
+}
+
+THU = {
+	color = rgb { 66 126 157 }
+	
+	culture_definition = saxon
+	religion_definition = catholic
+}
+
+BRE = {
+	color = rgb { 33 101 137 }
+	
+	culture_definition = lower_saxon
+	religion_definition = catholic
+}
+
+SAA = {
+	color = rgb { 75 110 102 }
+	
+	culture_definition = rhine_franconian
+	religion_definition = catholic
+}
+
+SOR = {
+	color = map_SOR
+	color2 = rgb { 67 80 128 }
+
+	culture_definition = sorbian
+	religion_definition = catholic
+}
+
+MKL = {
+	color = map_MKL
+	color2 = rgb { 55 140 143 }
+
+	culture_definition = western_pomeranian
+	religion_definition = catholic
+}
+
+HAM = {
+	color = rgb { 227 95 7 }
+
+	culture_definition = lower_saxon
+	religion_definition = catholic
+}
+
+GEL = {
+	color = rgb { 139 66 97 }
+
+	culture_definition = low_franconian
+	religion_definition = catholic
+}
+
+OLD = {
+	color = rgb { 147 130 118 }
+
+	culture_definition = lower_saxon
+	religion_definition = catholic
+}

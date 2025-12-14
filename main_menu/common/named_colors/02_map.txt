@@ -225,7 +225,7 @@ colors = {
 	map_LTS = rgb { 255 215 0 }
 
 # British Isles
-	map_GBR = rgb { 195 0 0 }
+	map_GBR_GBI = rgb { 195 0 0 }
 
 # Superformables
 	map_LTU = rgb { 203 90 86 } # Latin Union
@@ -239,6 +239,7 @@ colors = {
 
 # China
 	map_RYU = rgb { 84 96 136 }
+	map_QNG = rgb { 229 196 68 }
 
 # PLACEHOLDER
 
