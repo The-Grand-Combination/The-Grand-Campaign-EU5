@@ -846,7 +846,7 @@ is_candidate_for_NW_good = {
 		raw_material = goods:silk
 		raw_material = goods:mercury
 		#Spices
-		raw_material = goods:saffron
+		raw_material = goods:spices
 		raw_material = goods:pepper
 		raw_material = goods:cloves
 		raw_material = goods:chili
@@ -904,7 +904,7 @@ is_candidate_for_OW_good = {
 		raw_material = goods:silk
 		raw_material = goods:mercury
 		#Spices
-		raw_material = goods:saffron
+		raw_material = goods:spices
 		raw_material = goods:pepper
 		raw_material = goods:cloves
 		raw_material = goods:chili

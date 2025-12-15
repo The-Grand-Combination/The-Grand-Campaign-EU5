@@ -6677,7 +6677,7 @@ can_extract_pepper={
 	}
 }
 
-can_extract_saffron={
+can_extract_spices={
 	boolean=yes
 	game_data={
 		category=country
@@ -8680,28 +8680,28 @@ global_beeswax_output_modifier={
 	}
 }
 
-ban_exports_of_saffron={
+ban_exports_of_spices={
 	boolean=yes
 	game_data={
 		category=country
 	}
 }
 
-ban_imports_of_saffron={
+ban_imports_of_spices={
 	boolean=yes
 	game_data={
 		category=country
 	}
 }
 
-local_saffron_output_modifier={
+local_spices_output_modifier={
 	percent=yes
 	game_data={
 		category=location
 	}
 }
 
-global_saffron_output_modifier={
+global_spices_output_modifier={
 	percent=yes
 	game_data={
 		category=country

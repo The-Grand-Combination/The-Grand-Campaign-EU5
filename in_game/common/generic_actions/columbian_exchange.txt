@@ -760,9 +760,9 @@ move_ow_good_to_new_location = {
 			#Saffron https://es.wikipedia.org/wiki/Crocus_sativus
 			trigger_if = {
 				limit = {
-					scope:target_good = goods:saffron
+					scope:target_good = goods:spices
 				}
-				NOT = { raw_material ?= goods:saffron }
+				NOT = { raw_material ?= goods:spices }
 				OR = {
 					vegetation = sparse
 					vegetation = grasslands
