@@ -46,7 +46,7 @@
 			fine_cloth = 0.2
 			books = 0.1
 			goods_gold = 0.1
-			marble = 0.1
+			stone = 0.1
 				
 			category = building_maintenance
 		}
@@ -487,7 +487,7 @@ republican_assembly = {
 			fine_cloth = 0.5
 			books = 0.1
 			goods_gold = 0.1
-			marble = 0.1
+			stone = 0.1
 				
 			category = building_maintenance
 		}
@@ -537,7 +537,7 @@ royal_garden = {
 			fine_cloth = 0.05
 			books = 0.1
 			goods_gold = 0.05
-			marble = 0.05
+			stone = 0.05
 				
 			category = building_maintenance
 		}

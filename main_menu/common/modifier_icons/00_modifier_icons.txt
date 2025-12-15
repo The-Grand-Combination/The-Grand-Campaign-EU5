@@ -3082,9 +3082,6 @@ can_extract_wine = {
 can_extract_elephants = {
 	positive = "gfx/interface/icons/modifier_types/elephants_positive.dds"
 }
-can_extract_marble = {
-	positive = "gfx/interface/icons/modifier_types/marble_positive.dds" 
-}
 can_extract_mercury = {
 	positive = "gfx/interface/icons/modifier_types/mercury_positive.dds" 
 }
@@ -4363,18 +4360,6 @@ foreign_export_from_market_cost_modifier = {
 
 
 
-ban_exports_of_marble = {
-	positive = "gfx/interface/icons/modifier_types/marble_negative.dds" 
-}
-ban_imports_of_marble = {
-	positive = "gfx/interface/icons/modifier_types/marble_negative.dds" 
-}
-local_marble_output_modifier = {
-	positive = "gfx/interface/icons/modifier_types/marble_positive.dds" 
-}
-global_marble_output_modifier = {
-	positive = "gfx/interface/icons/modifier_types/marble_positive.dds" 
-}
 
 ban_exports_of_cannons = {
 	positive = "gfx/interface/icons/modifier_types/cannons_negative.dds" 

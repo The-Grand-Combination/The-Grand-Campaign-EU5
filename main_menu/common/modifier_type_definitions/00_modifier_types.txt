@@ -6418,13 +6418,6 @@ can_extract_elephants={
 	}
 }
 
-can_extract_marble={
-	boolean=yes
-	game_data={
-		category=country
-	}
-}
-
 can_extract_mercury={
 	boolean=yes
 	game_data={
@@ -8576,34 +8569,6 @@ maximum_stockpile_capacity={
 }
 
 foreign_export_from_market_cost_modifier={
-	percent=yes
-	game_data={
-		category=country
-	}
-}
-
-ban_exports_of_marble={
-	boolean=yes
-	game_data={
-		category=country
-	}
-}
-
-ban_imports_of_marble={
-	boolean=yes
-	game_data={
-		category=country
-	}
-}
-
-local_marble_output_modifier={
-	percent=yes
-	game_data={
-		category=location
-	}
-}
-
-global_marble_output_modifier={
 	percent=yes
 	game_data={
 		category=country

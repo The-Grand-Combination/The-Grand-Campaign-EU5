@@ -294,7 +294,6 @@ mining_advance = {
 	depth = 0
 	research_cost = 2.0
 	can_extract_stone = yes
-	can_extract_marble = yes
 }
 
 metallurgy  = {

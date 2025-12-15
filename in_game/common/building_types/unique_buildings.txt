@@ -1870,7 +1870,7 @@ royal_society = {
 		royal_society_maintenance = {
 			paper = 1
 			books = 0.5
-			marble = 0.2
+			stone = 0.2
 			goods_gold = 0.1
 			fine_cloth = 0.2
 			furniture = 0.2
@@ -2656,7 +2656,7 @@ venetian_palaces = {
 			cloth = 0.2
 			jewelry = 0.05
 			paper = 0.25
-			marble = 0.1
+			stone = 0.1
 			fine_cloth = 0.1
 			
 			category = building_maintenance

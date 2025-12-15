@@ -573,7 +573,7 @@ pop_demand = {
 		value = 1
 	}
 
-	marble = {
+	stone = {
 		value = 1
 	}
 		

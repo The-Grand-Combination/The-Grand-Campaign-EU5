@@ -395,7 +395,7 @@ cotswold_olimpick_games = {
 st_pauls_construction = {
 	masonry = 25
 	lumber = 10
-	marble = 1
+	stone = 1
 	lead = 1
 	iron = 1
 
@@ -572,7 +572,7 @@ mos_holy_trinity_st_sergius_lavra_construction = {
 	masonry = 5
 	lumber = 5
 	sand = 3
-	marble = 1
+	stone = 1
 	glass = 1
 	iron = 1
 
@@ -597,7 +597,7 @@ mos_paper_wills = {
 mos_uspensky_sobor_construction = {
 	masonry = 10
 	lumber = 5
-	marble = 5
+	stone = 5
 	goods_gold = 1
 	glass = 1
 	sand = 1
@@ -626,7 +626,7 @@ mos_great_bell_tower_construction = {
 mos_st_basil_cathedral_construction = {
 	masonry = 5
 	lumber = 3
-	marble = 3
+	stone = 3
 	goods_gold = 1
 	glass = 1
 	sand = 1
@@ -671,7 +671,7 @@ mos_lady_of_kazan_copies = {
 eng_hampton_court_construction = {
 	masonry = 15
 	lumber = 5
-	marble = 1
+	stone = 1
 	glass = 1
 
 	hidden = no
@@ -742,7 +742,7 @@ rus_gatchina_palace_construction = {
 	lumber = 3
 	iron = 3
 	sand = 3
-	marble = 1
+	stone = 1
 	glass = 3
 
 	hidden = no
@@ -866,7 +866,7 @@ peacock_throne_maintenance = {
 }
 
 taj_mahal_maintenance = {
-	marble = 15
+	stone = 15
 
 	hidden = no
 	category = special_demands

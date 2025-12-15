@@ -184,10 +184,9 @@ mill_construction = {
 
 cathedral_construction = {
 	masonry = 0.1
-	stone = 0.1
+	stone = 0.35
 	glass = 0.1
 	lumber = 0.2
-	marble = 0.25
 	category = building_construction
 }
 
@@ -195,7 +194,7 @@ minting_office_construction = {
 	masonry = 0.1
 	glass = 0.1
 	lumber = 0.2
-	marble = 0.25
+	stone = 0.25
 	category = building_construction
 }
 
@@ -399,7 +398,7 @@ admiralty_construction = {
 	naval_supplies = 1
 	glass = 1
 	fine_cloth = 1
-	marble = 2
+	stone = 2
 	category = building_construction
 }
 
@@ -409,7 +408,7 @@ important_building_construction = {
 	tools = 4
 	glass = 1
 	fine_cloth = 1
-	marble = 1
+	stone = 1
 	category = building_construction
 }
 
@@ -420,7 +419,7 @@ capital_building_construction = {
 	glass = 2
 	fine_cloth = 2
 	goods_gold = 2
-	marble = 2
+	stone = 2
 	category = building_construction
 }
 
@@ -431,7 +430,7 @@ prestige_building_construction = {
 	copper = 2
 	tin = 2
 	goods_gold = 2
-	marble = 5
+	stone = 5
 	category = building_construction
 }
 
@@ -439,7 +438,7 @@ grand_apartment_construction = {
 	lumber = 1
 	tools = 1
 	glass = 1
-	marble = 1
+	stone = 1
 	category = building_construction
 }
 
@@ -584,7 +583,7 @@ ibadat_khana_construction = {
 bolshoi_construction = {
 	lumber = 2
 	masonry = 3
-	marble = 1
+	stone = 1
 	glass = 1
 	goods_gold = 0.5
 	
@@ -604,14 +603,14 @@ hanseatic_town_hall_construction = {
 	glass = 2
 	fine_cloth = 2
 	goods_gold = 2
-	marble = 2
+	stone = 2
 	category = building_construction
 }
 
 college_of_poets_construction = {
 	lumber = 2
 	masonry = 3
-	marble = 1
+	stone = 1
 	glass = 2
 	books = 2
 	
@@ -667,7 +666,7 @@ rahdar_construction = {
 herrenchiemsee_abbey_construction = {
 	lumber = 2
 	masonry = 3
-	marble = 1
+	stone = 1
 	glass = 2
 	books = 2
 	

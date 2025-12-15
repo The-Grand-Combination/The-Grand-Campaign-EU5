@@ -4268,7 +4268,7 @@ colors = {
 	goods_lacquerware = rgb { 152 0 24 }
 	goods_alum = rgb { 123 50 45 }
 	goods_elephants = rgb { 210 106 47 }
-	goods_marble = rgb { 0.97 0.90 0.97 }
+	#goods_marble = rgb { 0.97 0.90 0.97 }
 	goods_mercury = rgb { 224 59 80 }
 	goods_masonry = hsv360 {	26	70	25	} 	
 

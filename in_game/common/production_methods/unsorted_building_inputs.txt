@@ -147,7 +147,7 @@ qalat_al_mashwar_maintenance = {
 art_school_maintenance = {
 	paper = 0.3
 	dyes = 0.1
-	marble = 0.1
+	clay = 0.1
 	books = 0.2
 	
 	category = building_maintenance	
@@ -156,7 +156,7 @@ art_school_maintenance = {
 arts_academy_maintenance = {
 	paper = 0.6
 	dyes = 0.2
-	marble = 0.2
+	clay = 0.2
 	books = 0.4
 	
 	category = building_maintenance	
@@ -356,7 +356,7 @@ early_capital_building_maintenance = {
 	fine_cloth = 0.5
 	books = 0.1
 	goods_gold = 0.1
-	marble = 0.1
+	stone = 0.1
 		
 	category = building_maintenance
 }
@@ -367,7 +367,7 @@ early_capital_building_silver_maintenance = {
 	fine_cloth = 0.5
 	books = 0.1
 	silver = 0.1
-	marble = 0.1
+	stone = 0.1
 		
 	category = building_maintenance
 }
@@ -402,7 +402,7 @@ capital_building_maintenance = {
 	books = 0.1
 	ivory = 0.2
 	goods_gold = 0.1
-	marble = 0.2
+	stone = 0.2
 		
 	category = building_maintenance
 }
@@ -415,7 +415,7 @@ prestige_building_maintenance = {
 	goods_gold = 0.1
 	copper = 0.1
 	tin = 0.1
-	marble = 0.5
+	stone = 0.5
 	furniture = 0.1
 		
 	category = building_maintenance
@@ -538,7 +538,7 @@ hanseatic_town_hall_maintenance = {
 	fine_cloth = 0.5
 	books = 0.1
 	goods_gold = 0.1
-	marble = 0.1
+	stone = 0.1
 		
 	category = building_maintenance
 }
@@ -546,7 +546,7 @@ hanseatic_town_hall_maintenance = {
 
 ablaq_palace_maintenance = {
 	lumber = 0.14
-	marble = 0.2
+	stone = 0.2
 
 	produced = silk
 	output = 0.35
