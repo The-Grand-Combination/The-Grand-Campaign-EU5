@@ -13,6 +13,7 @@ Given the standard for location granularity in the base game, we will reconstruc
 *   **Granular Borders:** Restoration of historical borders and granularity previously impossible in past titles due to province limits.
 *   **Accurate Demographics:** A population model based on historical 1836 census data, with a wealth of cultures, languages, and religions.
 *   **Industrial-Era Resources:** A complete overhaul of the goods tree to include rubber, oil, electricity, and other goods that fueled this period.
+*   **Industrial-Era Resources:** A complete overhaul of the goods tree to include rubber, oil, electricity, and other goods that fueled this period.
 
 <img width="1288" height="543" alt="WIP2" src="https://github.com/user-attachments/assets/81a998a6-17f2-4ffa-8df3-ae9d35a9561f" />
 
@@ -24,6 +25,16 @@ Given the standard for location granularity in the base game, we will reconstruc
 The player's voice is always heard in TGC, the team makes constant polling about important decisions to help guide the mod's development.
 
 <br clear="right"/>
+
+
+## Long-Term Projects
+
+<br clear="right"/>
+
+* **Russia Rework** - A total overhaul of Russian content, from expanded Great Game flavor to more in-depth content for Russian Alyaska — and an endgame formable in the form of the Slavic Union.
+* **Argentina Rework** - A total rework of Argentinian content, from the Federalist-Unitarian struggles to settling Patagonia and reworked disputes over the Chaco, Paraguay, Bolivia, and Uruguay.
+
+## Our Community
 
 <img src="https://user-images.githubusercontent.com/32886642/209703700-c2908082-3eb5-4452-a373-376d7a91acbc.png" align="left"/>
 <br>
