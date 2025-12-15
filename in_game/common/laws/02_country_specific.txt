@@ -598,7 +598,7 @@ teu_amber_monopoly_law = {
 		}
 		location_modifier = {
 			potential_trigger = {
-				raw_material = goods:amber
+				raw_material = goods:resin
 			}
 			local_crown_estate_power = 2
 		}
@@ -615,7 +615,7 @@ teu_amber_monopoly_law = {
 		}
 		location_modifier = {
 			potential_trigger = {
-				raw_material = goods:amber
+				raw_material = goods:resin
 			}
 			local_burghers_estate_power = 2
 		}
@@ -628,11 +628,11 @@ teu_amber_monopoly_law = {
 	peasant_controlled_amber_gathering = {
 		country_modifier = {
 			monthly_towards_free_subjects = societal_value_minor_monthly_move
-			global_amber_output_modifier = 0.25
+			global_resin_output_modifier = 0.25
 		}
 		location_modifier = {
 			potential_trigger = {
-				raw_material = goods:amber
+				raw_material = goods:resin
 			}
 			local_peasants_estate_power = 2
 		}

@@ -4259,7 +4259,7 @@ colors = {
 	
 	goods_medicaments = rgb { 255 127 127 }
 	goods_pearls = rgb { 234 224 200 }
-	goods_amber = rgb { 255 191 0 }
+	goods_resin = rgb { 255 191 0 }
 	goods_saltpeter = rgb { 150 75 0 }
 	goods_horses = rgb { 159 129 112 }
 	goods_weaponry = rgb { 202 204 206 }

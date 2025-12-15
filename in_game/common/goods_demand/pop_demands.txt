@@ -467,12 +467,12 @@ pop_demand = {
 		
 	}
 	
-	amber  = {
+	resin  = {
 		value = 1
 
 		if = {
 			limit = {
-				location.market ?= { produced_in_market:amber <= 0 } 
+				location.market ?= { produced_in_market:resin <= 0 } 
 			}
 			
 			multiply = {

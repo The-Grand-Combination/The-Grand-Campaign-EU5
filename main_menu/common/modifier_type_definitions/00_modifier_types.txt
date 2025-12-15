@@ -6383,7 +6383,7 @@ can_extract_pearls={
 	}
 }
 
-can_extract_amber={
+can_extract_resin={
 	boolean=yes
 	game_data={
 		category=country
@@ -6922,7 +6922,7 @@ ban_exports_of_pearls={
 	}
 }
 
-ban_exports_of_amber={
+ban_exports_of_resin={
 	boolean=yes
 	game_data={
 		category=country
@@ -7356,7 +7356,7 @@ ban_imports_of_pearls={
 	}
 }
 
-ban_imports_of_amber={
+ban_imports_of_resin={
 	boolean=yes
 	game_data={
 		category=country
@@ -7790,7 +7790,7 @@ local_pearls_output_modifier={
 	}
 }
 
-local_amber_output_modifier={
+local_resin_output_modifier={
 	percent=yes
 	game_data={
 		category=location
@@ -8224,7 +8224,7 @@ global_pearls_output_modifier={
 	}
 }
 
-global_amber_output_modifier={
+global_resin_output_modifier={
 	percent=yes
 	game_data={
 		category=country

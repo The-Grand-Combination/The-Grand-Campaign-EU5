@@ -1405,14 +1405,14 @@
 
  # Teutonic Order
 
- teu_amber_monopoly_law: "[ShowGoodsNameWithNoTooltip('amber')] Monopoly"
- teu_amber_monopoly_law_desc: "[ShowGoodsName('amber')] is amongst the most prized resources within our state. Its trade is of ample importance and must be regulated carefully."
+ teu_amber_monopoly_law: "[ShowGoodsNameWithNoTooltip('resin')] Monopoly"
+ teu_amber_monopoly_law_desc: "[ShowGoodsName('resin')] is amongst the most prized resources within our state. Its trade is of ample importance and must be regulated carefully."
  state_controlled_amber_gathering: "State-controlled Gathering"
- state_controlled_amber_gathering_desc: "The state reserves itself the exclusive right to manage the [ShowGoodsName('amber')] resource. The export of this valuable good is managed by government ministers, bolstering the authority of the ruling class."
- burghers_controlled_amber_gathering: "[ShowGoodsNameWithNoTooltip('amber')] in Merchant Hands"
- burghers_controlled_amber_gathering_desc: "It is perhaps best that the [ShowGoodsName('amber')] would land in the hands of those who trade with it. Without such middle-men to disrupt the trade, our commerce would flourish."
+ state_controlled_amber_gathering_desc: "The state reserves itself the exclusive right to manage the [ShowGoodsName('resin')] resource. The export of this valuable good is managed by government ministers, bolstering the authority of the ruling class."
+ burghers_controlled_amber_gathering: "[ShowGoodsNameWithNoTooltip('resin')] in Merchant Hands"
+ burghers_controlled_amber_gathering_desc: "It is perhaps best that the [ShowGoodsName('resin')] would land in the hands of those who trade with it. Without such middle-men to disrupt the trade, our commerce would flourish."
  peasant_controlled_amber_gathering: "Gathering by the Commons"
- peasant_controlled_amber_gathering_desc: "[ShowGoodsName('amber')] shall belong to the very hands that gather it. The resource gathering shall be managed by the [ShowEstateTypeName('peasants_estate')]."
+ peasant_controlled_amber_gathering_desc: "[ShowGoodsName('resin')] shall belong to the very hands that gather it. The resource gathering shall be managed by the [ShowEstateTypeName('peasants_estate')]."
 
  #japan
 

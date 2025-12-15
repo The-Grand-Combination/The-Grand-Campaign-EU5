@@ -734,10 +734,10 @@ pearls = {
 	
 }
 
-amber = {
+resin = {
 	method = gathering
 	category = raw_material
-	color = goods_amber
+	color = goods_resin
 	default_market_price = 4
 	
 	demand_add = {
