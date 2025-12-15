@@ -12,10 +12,15 @@ Born as a synthesis between the legacy of *Victoria II* and the modern architect
 Given the standard for location granularity in the base game, we will reconstruct the world for an 1836 start date with an unprecedented amount of detail only seen since the days of TGC for Victoria II.
 *   **Granular Borders:** Restoration of historical borders and granularity previously impossible in past titles due to province limits.
 *   **Accurate Demographics:** A population model based on historical 1836 census data, with a wealth of cultures, languages, and religions.
-*   **Industrial-Era Resources:** A complete overhaul of the goods tree to include rubber, oil, electricity, and other goods that fueled this period.
-*   **Industrial-Era Resources:** A complete overhaul of the goods tree to include rubber, oil, electricity, and other goods that fueled this period.
+*   **Industrial-Era Resources:** A complete overhaul of resource gathering operations (RGOs) to include saltpeter, rubber, oil, aluminum, and other raw goods that fueled this period.
 
 <img width="1288" height="543" alt="WIP2" src="https://github.com/user-attachments/assets/81a998a6-17f2-4ffa-8df3-ae9d35a9561f" />
+
+### A Deep Political System
+In TGC, we will rework Victorian-era politics so that interests and classes are a real force to be reckoned with, making the player's nation feel politically alive. 
+
+### An Overhauled Economy
+The 1800s were the main period of the Industrial Revolution, and we intend to reflect that by reworking the economy to show the full breadth of the era's evolving production chains: from synthesizing high explosives to assembling cars and tractors.
 
 ## Community Voice
 
