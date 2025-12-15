@@ -177,17 +177,6 @@ gems = {
 	
 }
 
-marble = {
-	method = mining
-	category = raw_material
-	color = goods_marble
-	default_market_price = 5
-	
-	demand_add = {
-		nobles = 0.05
-	}	
-}
-
 mercury = {
 	method = mining
 	category = raw_material
