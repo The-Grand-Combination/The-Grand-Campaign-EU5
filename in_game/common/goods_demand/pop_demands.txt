@@ -918,7 +918,7 @@ pop_demand = {
 		
 	}
 	
-	spices = {
+	saffron = {
 		value = 1
 		if = {
 			limit = { #Turks use it extensively

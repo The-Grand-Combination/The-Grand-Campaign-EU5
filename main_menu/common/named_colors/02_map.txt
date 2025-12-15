@@ -4273,7 +4273,7 @@ colors = {
 	goods_masonry = hsv360 {	26	70	25	} 	
 
 	goods_beeswax = hsv360 { 37 82 80 }	
-	goods_spices = hsv360 { 22 86 75 }	
+	goods_saffron = hsv360 { 22 86 75 }	
 	goods_pepper = rgb { 173 192 192 }	
 	goods_chili = hsv360 { 10 87 75 }	
 	goods_cloves = hsv360 { 110 87 75 }	
