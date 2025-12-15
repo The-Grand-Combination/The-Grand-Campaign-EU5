@@ -184,7 +184,7 @@ bronze_cannons = {
 
 japanese_tea_ceremonies = {
 	tea = 0.2
-	incense = 0.1
+	resin = 0.1
 	
 	hidden = yes
 	category = special_demands
@@ -444,7 +444,7 @@ procure_remedies = {
 	mercury = 0.05
 	medicaments = 0.1
 	liquor = 0.1
-	incense = 0.1
+	resin = 0.1
 
 	hidden = no
 	category = special_demands
@@ -456,7 +456,7 @@ procure_remedies_no_liquor = {
 	lumber = 0.1
 	mercury = 0.05
 	medicaments = 0.1
-	incense = 0.2
+	resin = 0.2
 
 	hidden = no
 	category = special_demands

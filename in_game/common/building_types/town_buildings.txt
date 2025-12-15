@@ -493,7 +493,7 @@ pest_house = {
 	unique_production_methods = {
 		pest_house_maintenance = {
 			fiber_crops = 0.10
-			incense = 0.10
+			resin = 0.10
 			category = building_maintenance
 		}
 	}

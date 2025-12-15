@@ -41,7 +41,7 @@
  flavor_oma.6.c: "[target_location.GetNameWithNoTooltip] does not need any support."
  
  flavor_oma.7.title: "Strengthening the Frankincense Trade"
- flavor_oma.7.desc: "Whilst the farms of [target_location.GetName] have served our [ShowGoodsName('incense')] trade quite well, its demand has been increasing as our high-quality perfumes are sought out by the rest of the world. Perhaps, by investing more into this trade, we can make a big profit in no time."
+ flavor_oma.7.desc: "Whilst the farms of [target_location.GetName] have served our [ShowGoodsName('resin')] trade quite well, its demand has been increasing as our high-quality perfumes are sought out by the rest of the world. Perhaps, by investing more into this trade, we can make a big profit in no time."
  flavor_oma.7.a: "Let us sell even more perfumes to the world."
  flavor_oma.7.b: "It is too costly."
  

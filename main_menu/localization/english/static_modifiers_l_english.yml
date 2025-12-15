@@ -1607,7 +1607,7 @@
  
  #Oman
  STATIC_MODIFIER_NAME_increased_incense_production: "Increased Incense Cultivation"
- STATIC_MODIFIER_DESC_increased_incense_production: "The [ShowGoodsName('incense')] farms of this [location|e] have been some of the most profitable ones in [ShowRegionName('arabia_region')]."
+ STATIC_MODIFIER_DESC_increased_incense_production: "The [ShowGoodsName('resin')] farms of this [location|e] have been some of the most profitable ones in [ShowRegionName('arabia_region')]."
  STATIC_MODIFIER_NAME_bolstering_hormuz_island: "Aiding the Island of Hormuz"
  STATIC_MODIFIER_DESC_bolstering_hormuz_island: "This [location|e] is receiving our aid to turn it into an important trade hub in [ShowRegionName('persia_region')]."
 

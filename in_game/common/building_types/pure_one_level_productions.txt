@@ -152,7 +152,7 @@ perfumery = {
 			liquor = 0.2
 			pepper = 0.25
 			
-			produced = incense
+			produced = resin
 			output = 1
 			
 			debug_max_profit = 0.6

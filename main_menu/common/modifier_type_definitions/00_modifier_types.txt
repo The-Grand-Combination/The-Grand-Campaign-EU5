@@ -6299,13 +6299,6 @@ can_extract_dyes={
 	}
 }
 
-can_extract_incense={
-	boolean=yes
-	game_data={
-		category=country
-	}
-}
-
 can_extract_tea={
 	boolean=yes
 	game_data={
@@ -6838,13 +6831,6 @@ ban_exports_of_dyes={
 	}
 }
 
-ban_exports_of_incense={
-	boolean=yes
-	game_data={
-		category=country
-	}
-}
-
 ban_exports_of_tea={
 	boolean=yes
 	game_data={
@@ -7266,13 +7252,6 @@ ban_imports_of_silk={
 }
 
 ban_imports_of_dyes={
-	boolean=yes
-	game_data={
-		category=country
-	}
-}
-
-ban_imports_of_incense={
 	boolean=yes
 	game_data={
 		category=country
@@ -7706,13 +7685,6 @@ local_dyes_output_modifier={
 	}
 }
 
-local_incense_output_modifier={
-	percent=yes
-	game_data={
-		category=location
-	}
-}
-
 local_tea_output_modifier={
 	percent=yes
 	game_data={
@@ -8134,13 +8106,6 @@ global_silk_output_modifier={
 }
 
 global_dyes_output_modifier={
-	percent=yes
-	game_data={
-		category=country
-	}
-}
-
-global_incense_output_modifier={
 	percent=yes
 	game_data={
 		category=country

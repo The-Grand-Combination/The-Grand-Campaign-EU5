@@ -964,7 +964,7 @@
  oma_falaj: "Falaj"
  oma_falaj_desc: "The $oma_falaj$ is an underground aqueduct system that allows us to safely transport water to any location."
  oma_nizwa_fort: "Nizwā Fort"
- oma_nizwa_fort_desc: "The $oma_nizwa_fort$ is a vital spot for the [ShowGoodsName('incense')] trade in [ShowAreaName('oman_area')]."
+ oma_nizwa_fort_desc: "The $oma_nizwa_fort$ is a vital spot for the [ShowGoodsName('resin')] trade in [ShowAreaName('oman_area')]."
  coastal_settlements: "Coastal Settlement"
  coastal_settlements_desc: "A $coastal_settlements$ will attract much of our [pops|e] to move in there."
  dutch_trade_outpost: "Dutch Trade Outpost"

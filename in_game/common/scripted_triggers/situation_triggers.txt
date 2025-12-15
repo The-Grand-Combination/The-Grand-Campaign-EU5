@@ -844,7 +844,6 @@ is_candidate_for_NW_good = {
 		raw_material = goods:pearls
 		raw_material = goods:resin
 		raw_material = goods:silk
-		raw_material = goods:incense
 		raw_material = goods:mercury
 		#Spices
 		raw_material = goods:saffron
@@ -903,7 +902,6 @@ is_candidate_for_OW_good = {
 		raw_material = goods:pearls
 		raw_material = goods:resin
 		raw_material = goods:silk
-		raw_material = goods:incense
 		raw_material = goods:mercury
 		#Spices
 		raw_material = goods:saffron
@@ -1058,7 +1056,7 @@ has_expensive_procure_remedies_goods = {
 		goods:mercury = { price_in_market = { market = scope:actor.capital.market value > 3.5 } }
 		goods:medicaments = { price_in_market = { market = scope:actor.capital.market value > 1.5 } }
 		goods:liquor = { price_in_market = { market = scope:actor.capital.market value > 3.5 } }
-		goods:incense = { price_in_market = { market = scope:actor.capital.market value > 4 } }
+		goods:resin = { price_in_market = { market = scope:actor.capital.market value > 4 } }
 	}
 }
 		

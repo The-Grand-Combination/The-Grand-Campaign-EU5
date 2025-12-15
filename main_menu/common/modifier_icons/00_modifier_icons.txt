@@ -3031,9 +3031,6 @@ can_extract_silk = {
 can_extract_dyes = {
 	positive = "gfx/interface/icons/modifier_types/dyes_positive.dds"
 }
-can_extract_incense = {
-	positive = "gfx/interface/icons/modifier_types/incense_positive.dds"
-}
 can_extract_tea = {
 	positive = "gfx/interface/icons/modifier_types/tea_positive.dds"
 }
@@ -3257,10 +3254,6 @@ ban_exports_of_silk = {
 
 ban_exports_of_dyes = {
 	positive = "gfx/interface/icons/modifier_types/dyes_negative.dds" 
-}
-
-ban_exports_of_incense = {
-	positive = "gfx/interface/icons/modifier_types/incense_negative.dds"
 }
 
 ban_exports_of_tea = {
@@ -3515,10 +3508,6 @@ ban_imports_of_dyes = {
 	positive = "gfx/interface/icons/modifier_types/dyes_negative.dds" 
 }
 
-ban_imports_of_incense = {
-	positive = "gfx/interface/icons/modifier_types/incense_negative.dds" 
-}
-
 ban_imports_of_tea = {
 	positive = "gfx/interface/icons/modifier_types/tea_negative.dds" 
 }
@@ -3766,10 +3755,6 @@ local_silk_output_modifier = {
 
 local_dyes_output_modifier = {
 	positive = "gfx/interface/icons/modifier_types/dyes_positive.dds" 
-}
-
-local_incense_output_modifier = {
-	positive = "gfx/interface/icons/modifier_types/incense_positive.dds" 
 }
 
 local_tea_output_modifier = {
@@ -4022,10 +4007,6 @@ global_silk_output_modifier = {
 
 global_dyes_output_modifier = {
 	positive = "gfx/interface/icons/modifier_types/dyes_positive.dds" 
-}
-
-global_incense_output_modifier = {
-	positive = "gfx/interface/icons/modifier_types/incense_positive.dds" 
 }
 
 global_tea_output_modifier = {

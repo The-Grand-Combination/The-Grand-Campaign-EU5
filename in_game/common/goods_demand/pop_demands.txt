@@ -495,6 +495,20 @@ pop_demand = {
 				desc = "POP_DEMAND_CULTURAL_PREFERENCES"
 			}
 		}
+		if = {
+			limit = {
+				pop_type = pop_type:clergy
+				OR = {
+					religion = religion:miaphysite
+					religion = religion:orthodox
+					religion = religion:catholic
+				}
+			}
+			multiply = {
+				value = 2
+				desc = "POP_DEMAND_CLERGY"
+			}
+		}
 	}
 
 	silver = {
@@ -548,25 +562,6 @@ pop_demand = {
 			}
 		}
 
-	}
-	
-	incense = {
-		value = 1
-
-		if = {
-			limit = {
-				pop_type = pop_type:clergy
-				OR = {
-					religion = religion:miaphysite
-					religion = religion:orthodox
-					religion = religion:catholic
-				}
-			}
-			multiply = {
-				value = 2
-				desc = "POP_DEMAND_CLERGY"
-			}
-		}
 	}
 	
 	gems = {

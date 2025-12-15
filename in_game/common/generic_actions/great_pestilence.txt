@@ -48,7 +48,7 @@
 						goods:mercury = { price_in_market = { market = scope:actor.capital.market value > 3.5 } }
 						goods:medicaments = { price_in_market = { market = scope:actor.capital.market value > 1.5 } }
 						goods:liquor = { price_in_market = { market = scope:actor.capital.market value > 3.5 } }
-						goods:incense = { price_in_market = { market = scope:actor.capital.market value > 4 } }
+						goods:resin = { price_in_market = { market = scope:actor.capital.market value > 4 } }
 					}
 				}
 				add_country_modifier = {

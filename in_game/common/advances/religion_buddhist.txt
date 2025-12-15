@@ -381,7 +381,7 @@ incense_burning = {
 		religion.group = religion_group:buddhist
 	}
 	
-	global_incense_output_modifier = 0.5
+	global_resin_output_modifier = 0.5
 
 	requires = offerings
 }
