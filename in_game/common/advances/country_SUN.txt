@@ -17,7 +17,7 @@ pepper_of_the_parahyangan = {
 
 	icon = karimi_merchants
 	
-	global_pepper_output_modifier = 0.25
+	global_spices_output_modifier = 0.25
 }
 
 pan_asian_trade = {

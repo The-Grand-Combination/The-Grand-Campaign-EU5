@@ -86,8 +86,8 @@
  flavor_ven.18.desc: "[ROOT.GetCountry.GetName|U], for centuries the foremost city of printing and glass-making in [ShowRegionName('italy_region')], has begun to surpass or at least compete with [ShowLocationName('rome')|U] as the foremost city of art and music. Great painters such as Tintoretto, Titian, Veronese or musicians like Monteverdi, Gabrieli, or Donati are but a few of the many artists that work and live in our city. In [ShowRegionNameWithNoTooltip('italy_region')] and abroad, [ROOT.GetCountry.GetNameWithNoTooltip] have begun to become synonymous with art."
  flavor_ven.18.a: "[ROOT.GetCountry.Custom('common_string_ok')]"
 
- flavor_ven.1000.title: "[ShowGoodsNameWithNoTooltip('pepper')|U] Trade Threatened"
- flavor_ven.1000.desc: "The [GetCountry('POR').GetAdjective] have taken control of the trade in the [ShowRegionName('indian_ocean_region')], diverting trade around [ShowContinentName('africa')] instead of through [ShowLocationName('alexandria')]. This has severely affected our chances of controlling the [ShowGoodsName('pepper')|U] Trade. We can, however, attempt to send some help to the [GetCountry('MAM').GetName]."
+ flavor_ven.1000.title: "[ShowGoodsNameWithNoTooltip('spices')|U] Trade Threatened"
+ flavor_ven.1000.desc: "The [GetCountry('POR').GetAdjective] have taken control of the trade in the [ShowRegionName('indian_ocean_region')], diverting trade around [ShowContinentName('africa')] instead of through [ShowLocationName('alexandria')]. This has severely affected our chances of controlling the [ShowGoodsName('spices')|U] Trade. We can, however, attempt to send some help to the [GetCountry('MAM').GetName]."
  flavor_ven.1000.a: "Send help to [ShowLocationNameWithNoTooltip('alexandria')]!"
  ven_helping_mamelukes: "Helping the $mamluks$"
  flavor_ven.1000.b: "It is not our problem"

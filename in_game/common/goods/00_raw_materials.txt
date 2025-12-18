@@ -334,7 +334,7 @@ saffron = {
 	}
 }
 
-pepper = {
+spices = {
 	method = farming
 	category = raw_material
 	color = goods_pepper

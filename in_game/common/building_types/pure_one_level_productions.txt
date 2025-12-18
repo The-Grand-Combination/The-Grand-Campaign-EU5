@@ -150,7 +150,7 @@ perfumery = {
 		
 		perfumery_maintenance = {
 			liquor = 0.2
-			pepper = 0.25
+			spices = 0.25
 			
 			produced = resin
 			output = 1

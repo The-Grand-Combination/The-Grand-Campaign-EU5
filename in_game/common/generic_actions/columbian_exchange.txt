@@ -782,9 +782,9 @@ move_ow_good_to_new_location = {
 			#Pepper https://en.wikipedia.org/wiki/Black_pepper
 			trigger_if = {
 				limit = {
-					scope:target_good = goods:pepper
+					scope:target_good = goods:spices
 				}
-				NOT = { raw_material ?= goods:pepper }
+				NOT = { raw_material ?= goods:spices }
 				OR = {
 					vegetation = jungle
 					vegetation = woods

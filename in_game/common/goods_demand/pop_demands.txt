@@ -975,7 +975,7 @@ pop_demand = {
 	}
 
 
-	pepper = {
+	spices = {
 		value = 1
 
 		#some cultures have preferences

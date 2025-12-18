@@ -344,7 +344,7 @@ fund_karimi = {
 
 	potential = {
 		OR = {
-			produced_in_country:pepper > 0
+			produced_in_country:spices > 0
 		}
 		religion ?= {
 			group ?= religion_group:muslim

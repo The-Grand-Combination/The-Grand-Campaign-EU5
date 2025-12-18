@@ -98,7 +98,7 @@
  flavor_ned.18.title: "The Lust for Spice"
  flavor_ned.18.desc: "With the routes to $india$ blocked by the [ShowReligionGroupAdjective('muslim')] traders, our people have been starved of their luxury goods. The [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] of [target_market.GetName] have been eyeing down new sea routes to once again secure the Spice Trade. Whatever the case, [target_character.GetName] needs to find a way to $india$."
  flavor_ned.18.a: "Let us set sail for the Indies."
- NED_SECURE_SPICE_FOR_BONUSES: "Should we be able to import [ShowGoodsName('pepper')] into the [target_market.GetName] [market|e], we will gain benefits."
+ NED_SECURE_SPICE_FOR_BONUSES: "Should we be able to import [ShowGoodsName('spices')] into the [target_market.GetName] [market|e], we will gain benefits."
  
  flavor_ned.19.title: "Freedom of Thought"
  flavor_ned.19.desc: "With the rise of the [ShowReligionAdjective('lutheran')] Reformation, many new extremist religious views have arisen in the [ShowReligionGroupAdjective('christian')] world. [ROOT.GetCountry.GetName] though has been promoting more and more humanist ideas, favoring freedom of thought and ideals, as long as one serves the nation. [target_character.GetName] has taken note of this, and is now planning the future of this new wave of humanism."
@@ -107,8 +107,8 @@
  flavor_ned.19.c: "Let us not upset the [ROOT.GetCountry.GetReligion.GetAdjectiveWithNoTooltip] authorities."
  
  flavor_ned.20.title: "The Spice Flows"
- flavor_ned.20.desc: "Our merchants have finally managed to gain a supply of [ShowGoodsName('pepper')]. The [target_country.GetAdjective] people can now finally use this new good in their cookings."
- flavor_ned.20.a: "As long as we have a navy, the [ShowGoodsNameWithNoTooltip('pepper')] will flow."
+ flavor_ned.20.desc: "Our merchants have finally managed to gain a supply of [ShowGoodsName('spices')]. The [target_country.GetAdjective] people can now finally use this new good in their cookings."
+ flavor_ned.20.a: "As long as we have a navy, the [ShowGoodsNameWithNoTooltip('spices')] will flow."
  
  flavor_ned.21.title: "[target_character.GetNameWithNoTooltip]'s Philosophies"
  flavor_ned.21.desc: "Inspired by the writings of Muḥammad bin Ṭufayl, [target_character.GetName] has arrived at our [ROOT.GetCountry.GetGovernment.GetCourtTitle] seeking employment. Born in [ShowLocationName('paris')] as a [ShowCultureName('french')] citizen, he has since then left his home to pursue his philosophical studies. He wishes to write a biographical dictionary, labelled as #italic Dictionnaire Historique et Critique#!."

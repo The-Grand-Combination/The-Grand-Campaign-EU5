@@ -70,7 +70,7 @@ tea_and_sugar_for_britain = {
 }
 
 spice_trade = {
-	pepper = 1
+	spices = 1
 	cloves = 1
 
 	hidden = yes
@@ -192,7 +192,7 @@ japanese_tea_ceremonies = {
 
 
 decline_of_spices = {
-	pepper = -0.33
+	spices = -0.33
 	cloves = -0.33
 	hidden = yes
 	category = special_demands
@@ -235,7 +235,7 @@ popularization_of_tobacco = {
 
 
 eng_the_forme_of_cury_demand = {
-	pepper = 1
+	spices = 1
 	cloves = 1
 
 	hidden = no
@@ -525,7 +525,7 @@ coke_smelting = {
 the_experienced_english_housekeeper = {
 	cocoa = 2
 	livestock = 2
-	pepper = 2
+	spices = 2
 	cloves = 1
 	chili = 1
 	wine = 2
@@ -771,7 +771,7 @@ crimean_slave_trade_encouraged = {
 }
 
 dutch_spice_lust = {
-	pepper = 10
+	spices = 10
 	cloves = 10
 	hidden = yes
 	category = special_demands
@@ -820,7 +820,7 @@ mam_trade_with_france = {
 fra_trade_with_levant = {
 	silk = -2
 	wheat = -3
-	pepper = -1
+	spices = -1
 	
 	hidden = no
 	category = special_demands
@@ -829,7 +829,7 @@ fra_trade_with_levant = {
 tur_trade_with_fra = {
 	silk = 2
 	wheat = 3
-	pepper = 2
+	spices = 2
 
 	hidden = no
 	category = special_demands

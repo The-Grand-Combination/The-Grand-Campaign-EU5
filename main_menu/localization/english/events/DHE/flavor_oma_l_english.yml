@@ -104,5 +104,5 @@
  flavor_oma.17.b: "Just the plans alone will make us go bankrupt."
  
  flavor_oma.18.title: "Overseas Ambitions"
- flavor_oma.18.desc: "With our mightly fleet constructed and our might recognized by other powers, [target_character.GetName] and [target_character.GetHisHer] [ROOT.GetCountry.GetGovernment.GetCabinetTitle] have been making plans as to what part of the world they will claim for themselves. Many argue that the [ShowGoodsName('pepper')] in $india$ are what they need to secure, whilst others argue that the lands of [ShowRegionName('swahili_coast_region')] are more viable to control. Whatever the case, history will remember [ROOT.GetCountry.GetName] as an $rank_empire$."
+ flavor_oma.18.desc: "With our mightly fleet constructed and our might recognized by other powers, [target_character.GetName] and [target_character.GetHisHer] [ROOT.GetCountry.GetGovernment.GetCabinetTitle] have been making plans as to what part of the world they will claim for themselves. Many argue that the [ShowGoodsName('spices')] in $india$ are what they need to secure, whilst others argue that the lands of [ShowRegionName('swahili_coast_region')] are more viable to control. Whatever the case, history will remember [ROOT.GetCountry.GetName] as an $rank_empire$."
  flavor_oma.18.a: "Like the rest, we too shall carve our place in the sun."

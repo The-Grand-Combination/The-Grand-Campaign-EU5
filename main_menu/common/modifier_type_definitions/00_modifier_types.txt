@@ -6670,7 +6670,7 @@ can_extract_cloves={
 	}
 }
 
-can_extract_pepper={
+can_extract_spices={
 	boolean=yes
 	game_data={
 		category=country
@@ -8708,28 +8708,28 @@ global_saffron_output_modifier={
 	}
 }
 
-ban_exports_of_pepper={
+ban_exports_of_spices={
 	boolean=yes
 	game_data={
 		category=country
 	}
 }
 
-ban_imports_of_pepper={
+ban_imports_of_spices={
 	boolean=yes
 	game_data={
 		category=country
 	}
 }
 
-local_pepper_output_modifier={
+local_spices_output_modifier={
 	percent=yes
 	game_data={
 		category=location
 	}
 }
 
-global_pepper_output_modifier={
+global_spices_output_modifier={
 	percent=yes
 	game_data={
 		category=country

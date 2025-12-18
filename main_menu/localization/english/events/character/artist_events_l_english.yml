@@ -238,9 +238,9 @@
  artist_events.45.b: "Invest the coin to bolster the abilities of [target_character.GetShortNameWithNoTooltip]."
 
  artist_events.46.title: "An Unexpected Sneeze"
- artist_events.46.desc: "While [target_artist.GetName] was hard at work in [target_artist.GetHerHis] commission, one of [target_artist.GetHerHis] assistants came to [target_artist.GetHerHim] to present the latest shipment of [ShowGoodsName('pepper')]. Unfortunately, black pepper makes one sneeze, and the sudden outburst made [target_artist.GetNameWithNoTooltip] spill ink all over. [target_artist.GetHerHis|U] work has been irremediably ruined by random splotches and smudges, and all previously meticulously traced lines have lost their proper shapes, and there may not be other choice than to start again from scratch."
+ artist_events.46.desc: "While [target_artist.GetName] was hard at work in [target_artist.GetHerHis] commission, one of [target_artist.GetHerHis] assistants came to [target_artist.GetHerHim] to present the latest shipment of [ShowGoodsName('spices')]. Unfortunately, black pepper makes one sneeze, and the sudden outburst made [target_artist.GetNameWithNoTooltip] spill ink all over. [target_artist.GetHerHis|U] work has been irremediably ruined by random splotches and smudges, and all previously meticulously traced lines have lost their proper shapes, and there may not be other choice than to start again from scratch."
  artist_events.46.a: "We will supply [target_artist.GetNameWithNoTooltip] with extra materials."
- artist_events.46.b: "This must not happen again, remove all [ShowGoodsNameWithNoTooltip('pepper')] around [target_artist.GetHerHim]."
+ artist_events.46.b: "This must not happen again, remove all [ShowGoodsNameWithNoTooltip('spices')] around [target_artist.GetHerHim]."
  artist_events.46.c: "Actually, [target_artist.GetNameWithNoTooltip] claims [target_artist.GetSheHe] can work with it."
 
  artist_events.47.title: "A Mischievous Feline"
