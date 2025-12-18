@@ -848,8 +848,6 @@ is_candidate_for_NW_good = {
 		#Spices
 		raw_material = goods:saffron
 		raw_material = goods:spices
-		raw_material = goods:cloves
-		raw_material = goods:chili
 		#Strategic
 		raw_material = goods:livestock
 		raw_material = goods:iron
@@ -906,8 +904,6 @@ is_candidate_for_OW_good = {
 		#Spices
 		raw_material = goods:saffron
 		raw_material = goods:spices
-		raw_material = goods:cloves
-		raw_material = goods:chili
 		#Strategic
 		raw_material = goods:livestock
 		raw_material = goods:iron

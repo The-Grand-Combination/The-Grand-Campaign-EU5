@@ -467,7 +467,7 @@ the_spice_must_flow = {
 
 	happened = {
 		any_trade = {
-			goods = goods:cloves
+			goods = goods:spices
 			count > 0
 		}
 	}

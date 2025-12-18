@@ -79,7 +79,7 @@ spice_islands_base = {
 	game_data = {
 		category = location
 	}
-	local_cloves_output_modifier = 5
+	local_spices_output_modifier = 5
 }
 
 nile_delta_rice_base = {

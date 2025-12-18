@@ -6663,13 +6663,6 @@ can_extract_slaves_goods={
 	}
 }
 
-can_extract_cloves={
-	boolean=yes
-	game_data={
-		category=country
-	}
-}
-
 can_extract_spices={
 	boolean=yes
 	game_data={
@@ -6685,13 +6678,6 @@ can_extract_saffron={
 }
 
 can_extract_beeswax={
-	boolean=yes
-	game_data={
-		category=country
-	}
-}
-
-can_extract_chili={
 	boolean=yes
 	game_data={
 		category=country
@@ -8730,62 +8716,6 @@ local_spices_output_modifier={
 }
 
 global_spices_output_modifier={
-	percent=yes
-	game_data={
-		category=country
-	}
-}
-
-ban_exports_of_cloves={
-	boolean=yes
-	game_data={
-		category=country
-	}
-}
-
-ban_imports_of_cloves={
-	boolean=yes
-	game_data={
-		category=country
-	}
-}
-
-local_cloves_output_modifier={
-	percent=yes
-	game_data={
-		category=location
-	}
-}
-
-global_cloves_output_modifier={
-	percent=yes
-	game_data={
-		category=country
-	}
-}
-
-ban_exports_of_chili={
-	boolean=yes
-	game_data={
-		category=country
-	}
-}
-
-ban_imports_of_chili={
-	boolean=yes
-	game_data={
-		category=country
-	}
-}
-
-local_chili_output_modifier={
-	percent=yes
-	game_data={
-		category=location
-	}
-}
-
-global_chili_output_modifier={
 	percent=yes
 	game_data={
 		category=country

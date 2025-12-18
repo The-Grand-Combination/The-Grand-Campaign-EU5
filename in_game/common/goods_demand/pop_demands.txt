@@ -976,7 +976,7 @@ pop_demand = {
 
 
 	spices = {
-		value = 1
+		value = 3
 
 		#some cultures have preferences
 		if = {
@@ -988,19 +988,6 @@ pop_demand = {
 				desc = "POP_DEMAND_INDIA"
 			}
 		}
-		
-	}
-	
-	cloves = {
-		value = 1
-
-	}
-	
-	
-	
-	chili = {
-		value = 1
-		
 		
 	}
 

@@ -842,7 +842,7 @@
  flavor_chi.2011.desc: "Though our expedition to [ROOT.GetVariable('chinese_treasure_target_location').GetLocation.GetName] was not exploratory in nature, correspondence with local rulers along the way has allowed our voyagers to discover new routes. With their return, we can use this expertise to better map out the lands beyond the [GetInternationalOrganization('middle_kingdom').GetName]."
  flavor_chi.2011.a: "There is more to the world than just the [GetInternationalOrganization('middle_kingdom').GetNameWithNoTooltip]?"
 
- chi_we_will_gift_cloves: "We will give [expedition_initiator.GetName] a gift of [ShowGoodsName('cloves')]."
+ chi_we_will_gift_cloves: "We will give [expedition_initiator.GetName] a gift of [ShowGoodsName('spices')]."
  chi_we_will_gift_giraffe: "We will give [expedition_initiator.GetName] a giraffe."
  chi_we_will_gift_persian_blue: "We will give [expedition_initiator.GetName] a gift of our local [ShowGoodsName('dyes')]."
 
@@ -856,7 +856,7 @@
  flavor_chi.2013.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
 
  flavor_chi.2014.title: "A Taste to Remember"
- flavor_chi.2014.desc: "While [ShowRegionName('indonesia_region')] is certainly known for its spices, our $expedition_name_treasure_voyage$ has visited an area where the exceptional [ShowGoodsName('cloves')] are grown in large amounts - the [ShowAreaName('moluccas_area')]. The locals there have welcomed our expedition graciously and have provided us many of those wonderful spices as tribute. The [ROOT.GetCountry.GetGovernment.GetCourtTitle] and the [ROOT.GetCountry.GetGovernment.GetRulerTitle] will savor it for the months to come."
+ flavor_chi.2014.desc: "While [ShowRegionName('indonesia_region')] is certainly known for its spices, our $expedition_name_treasure_voyage$ has visited an area where the exceptional [ShowGoodsName('spices')] are grown in large amounts - the [ShowAreaName('moluccas_area')]. The locals there have welcomed our expedition graciously and have provided us many of those wonderful spices as tribute. The [ROOT.GetCountry.GetGovernment.GetCourtTitle] and the [ROOT.GetCountry.GetGovernment.GetRulerTitle] will savor it for the months to come."
  flavor_chi.2014.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
 
  flavor_chi.2015.title: "Coward Found"

@@ -270,36 +270,6 @@ move_nw_good_to_new_location = {
 					climate = mediterranean
 				}
 			}
-			#Chili https://es.wikipedia.org/wiki/Capsicum
-			trigger_if = {
-				limit = {
-					scope:target_good ?= goods:chili
-				}
-				NOT = { raw_material ?= goods:chili }
-				OR = {
-					vegetation = farmland
-					vegetation = forest
-					vegetation = woods
-					vegetation = grasslands
-					vegetation = sparse
-				}
-				area = {
-					is_area_sea = no
-				}
-				OR = { 
-					topography = wetlands
-					topography = flatland
-					topography = hills
-					topography = plateau
-				}
-				OR = {
-					climate = tropical
-					climate = subtropical
-					climate = mediterranean
-					climate = oceanic
-					climate = continental
-				}
-			}
 			#Potato
 			trigger_if = {
 				limit = {
@@ -789,27 +759,23 @@ move_ow_good_to_new_location = {
 					vegetation = jungle
 					vegetation = woods
 					vegetation = forest
+					vegetation = farmland
+					vegetation = grasslands
+					vegetation = sparse
 				}
 				OR = {
 					topography = plateau
 					topography = flatland
 					topography = hills
+					topography = wetlands
 				}
-				climate = tropical
-			}
-			#Cloves https://en.wikipedia.org/wiki/Clove
-			trigger_if = {
-				limit = {
-					scope:target_good = goods:cloves
-				}
-				NOT = { raw_material ?= goods:cloves }
-				vegetation = jungle
 				OR = {
-					topography = plateau
-					topography = flatland
-					topography = hills
+					climate = tropical
+					climate = subtropical
+					climate = mediterranean
+					climate = oceanic
+					climate = continental
 				}
-				climate = tropical
 			}
 		}
 	}
