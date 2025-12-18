@@ -221,7 +221,6 @@ country_base_values = {
 	can_extract_spices = yes
 	can_extract_saffron = yes
 	can_extract_beeswax = yes
-	can_extract_chili = yes
 	can_extract_pottery = yes
 
 
