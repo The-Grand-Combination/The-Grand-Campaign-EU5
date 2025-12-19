@@ -53,7 +53,6 @@ diplomacy_manager = {
     dependency = { first = NOR second = GRL subject_type = dominion }
     dependency = { first = NOR second = ORK subject_type = vassal }
 
-    dependency = { first = DAN second = SLV subject_type = vassal }
     scripted_mutual = { first = DAN second = UBV type = alliance }
     scripted_mutual = { first = DAN second = BRA type = alliance }
 
@@ -274,7 +273,6 @@ diplomacy_manager = {
     dependency = { first = TRI second = PSZ subject_type = vassal }
     dependency = { first = KMM second = NWG subject_type = fiefdom }
     dependency = { first = BRA second = SOR subject_type = fiefdom }
-    scripted_mutual = { first = MEI second = HES type = alliance }
     scripted_oneway = { first = FLA second = HOL type = trade_access }
 
     #------Byzantium--------

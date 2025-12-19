@@ -4683,7 +4683,7 @@ countries = {
 				include = "eastern_european_catholic"
 
 				government = {
-					type = kingdom
+					type = monarchy
 					ruler = teu_dietrich_von_altenburg
 					ruler_term = { character = teu_werner_von_orseln start_date = 1324.7.6 end_date = 1331.2.17 regnal_number = 1	}
 					ruler_term = { character = teu_luther_von_braunschweig_grubenhagen start_date = 1331.2.17 end_date = 1335.4.18 regnal_number = 1 }
