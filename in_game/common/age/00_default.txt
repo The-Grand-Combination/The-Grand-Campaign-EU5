@@ -278,3 +278,55 @@ age_6_revolutions = {
 		cossacks_estate = 0
 	}
 }
+age_7_industry = {
+	year = 1815
+	price_stability = 0.02
+	max_price = 5
+	hegemons_allowed = yes
+	modifier = {
+		expected_army_size_modifier = 5.0
+		levy_maintenance_modifier = 1.0
+		levy_combat_efficiency = -0.5
+		
+		global_war_score_cost = -0.2
+		subject_loyalty = -30
+		lack_of_control_impact_on_warscore = -1.0
+		
+		construction_center_max_level = 5
+		
+		global_navy_levy_size_modifier = -2.0
+		
+		subject_pays_colonial_cost_modifier = 1.0
+		
+		antagonism_culture_influence = 0.1
+		antagonism_societal_value_influence = 0.2
+		antagonism_government_type_influence = 0.25
+	}
+	
+	mercenaries = -0.9
+	war_score_from_battles = -0.8
+
+	
+	efficiency = 0.1
+	victory_card = 5
+
+	max_ai_privilege_per_estate = {
+		nobles_estate = 0
+		clergy_estate = 0
+		burghers_estate = 0
+		peasants_estate = 0
+		dhimmi_estate = 0
+		tribes_estate = 0
+		cossacks_estate = 0
+	}
+	
+	min_ai_privilege_per_estate = {
+		nobles_estate = 0
+		clergy_estate = 0
+		burghers_estate = 0
+		peasants_estate = 0
+		dhimmi_estate = 0
+		tribes_estate = 0
+		cossacks_estate = 0
+	}
+}

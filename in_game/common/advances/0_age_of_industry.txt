@@ -1,0 +1,285 @@
+﻿
+social_thought_advance = {
+	age = age_7_industry
+	icon = renaissance_advance
+	
+	cultural_influence = 0.05
+
+	depth = 0
+	
+	allow = { has_embraced_institution = institution:social_thought }
+
+}
+mass_markets_advance = {
+	age = age_7_industry
+	icon = renaissance_advance
+	
+	cultural_influence = 0.05
+
+	depth = 0
+	
+	allow = { has_embraced_institution = institution:mass_markets }
+
+}
+total_war_advance = {
+	age = age_7_industry
+	icon = renaissance_advance
+	
+	cultural_influence = 0.05
+
+	depth = 0
+	
+	allow = { has_embraced_institution = institution:total_war }
+
+}
+
+## ARMY ##
+	# Army Doctrine
+		post_napoleonic_thought = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = total_war_advance
+		}
+		
+		strategic_mobility = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = post_napoleonic_thought
+		}
+		
+		point_defense_system = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = strategic_mobility
+		}
+		
+		deep_defense_system = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = point_defense_system
+		}
+		
+		infiltration = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = deep_defense_system
+		}
+		
+		armored_vehicles = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = infiltration
+		}
+		
+		great_war_army_doctrine = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = armored_vehicles
+		}
+		
+	# Light Armament
+		flintlock_rifles = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = total_war_advance
+		}
+		
+		caplock_rifles = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = flintlock_rifles
+		}
+		
+		breech_loaded_rifles = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = caplock_rifles
+		}
+		
+		machine_guns = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = breech_loaded_rifles
+		}
+		
+		bolt_action_rifles = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = machine_guns
+		}
+		
+		semi_automatic_rifles = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = bolt_action_rifles
+		}
+		
+		great_war_divisional_structure = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = semi_automatic_rifles
+		}
+		
+	# Heavy Armament and Artillery
+		bronze_muzzle_loaded_artillery = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = total_war_advance
+		}
+		
+		iron_muzzle_loaded_artillery = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = bronze_muzzle_loaded_artillery
+		}
+		
+		iron_breech_loaded_artillery = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = iron_muzzle_loaded_artillery
+		}
+		
+		steel_breech_loaded_artillery = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = iron_breech_loaded_artillery
+		}
+		
+		indirect_artillery_fire = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = steel_breech_loaded_artillery
+		}
+		
+		self_propelled_artillery = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = indirect_artillery_fire
+		}
+		
+		heavy_armament = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = self_propelled_artillery
+		}
+		
+	# Military Science
+		military_staff_system = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = total_war_advance
+		}
+		
+		military_plans = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = military_staff_system
+		}
+		
+		military_statistics = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = military_plans
+		}
+		
+		military_logistics = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = military_statistics
+		}
+		
+		military_directionism = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = military_logistics
+		}
+		
+		early_aeronautics = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = military_directionism
+		}
+		
+		military_aeronautics = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = early_aeronautics
+		}
+		
+	# Army Leadership
+		military_command_principle = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = total_war_advance
+		}
+		
+		army_professionalism = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = military_command_principle
+		}
+		
+		army_decision_making = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = army_professionalism
+		}
+		
+		army_risk_management = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = army_decision_making
+		}
+		
+		nco_military_training = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = army_risk_management
+		}
+		
+		military_tradition_and_culture = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = nco_military_training
+		}
+		
+		great_war_experience = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = military_tradition_and_culture
+		}
