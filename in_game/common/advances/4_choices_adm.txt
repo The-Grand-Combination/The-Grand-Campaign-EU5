@@ -17,16 +17,6 @@ innovativeness = {
 	global_max_literacy = 5
 }
 
-empiricism = {
-	age = age_2_renaissance
-	icon = scholasticism
-	for = adm
-
-	requires = construction_speed_renaissance
-	
-	legislative_efficiency = 0.10
-}
-
 
 court_accounting = {
 	age = age_2_renaissance

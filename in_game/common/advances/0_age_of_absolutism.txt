@@ -234,13 +234,6 @@ national_sovereignty = {
 	global_integration_speed_modifier = 0.20
 }
 
-naval_professionalism = {
-	age = age_5_absolutism
-	icon = safe_exploration_techniques_advance
-	requires = ship_building_techniques_absolutism
-	naval_range = 500
-}
-
 measuring_the_world = {
 	age = age_5_absolutism
 	icon = global_trade_advance

@@ -1,5 +1,4 @@
-﻿
-social_thought_advance = {
+﻿tgc_army_advance = {
 	age = age_7_industry
 	icon = renaissance_advance
 	
@@ -7,10 +6,11 @@ social_thought_advance = {
 
 	depth = 0
 	
-	allow = { has_embraced_institution = institution:social_thought }
+	allow = { has_embraced_institution = institution:tgc_army }
 
 }
-mass_markets_advance = {
+
+tgc_navy_advance = {
 	age = age_7_industry
 	icon = renaissance_advance
 	
@@ -18,10 +18,11 @@ mass_markets_advance = {
 
 	depth = 0
 	
-	allow = { has_embraced_institution = institution:mass_markets }
+	allow = { has_embraced_institution = institution:tgc_navy }
 
 }
-total_war_advance = {
+
+tgc_economy_advance = {
 	age = age_7_industry
 	icon = renaissance_advance
 	
@@ -29,7 +30,31 @@ total_war_advance = {
 
 	depth = 0
 	
-	allow = { has_embraced_institution = institution:total_war }
+	allow = { has_embraced_institution = institution:tgc_economy }
+
+}
+
+tgc_society_advance = {
+	age = age_7_industry
+	icon = renaissance_advance
+	
+	cultural_influence = 0.05
+
+	depth = 0
+	
+	allow = { has_embraced_institution = institution:tgc_society }
+
+}
+
+tgc_industry_advance = {
+	age = age_7_industry
+	icon = renaissance_advance
+	
+	cultural_influence = 0.05
+
+	depth = 0
+	
+	allow = { has_embraced_institution = institution:tgc_industry }
 
 }
 
@@ -39,7 +64,7 @@ total_war_advance = {
 			age = age_7_industry
 			icon = enlightenment_advance
 			
-			requires = total_war_advance
+			requires = tgc_army_advance
 		}
 		
 		strategic_mobility = {
@@ -89,7 +114,7 @@ total_war_advance = {
 			age = age_7_industry
 			icon = enlightenment_advance
 			
-			requires = total_war_advance
+			requires = tgc_army_advance
 		}
 		
 		caplock_rifles = {
@@ -139,7 +164,7 @@ total_war_advance = {
 			age = age_7_industry
 			icon = enlightenment_advance
 			
-			requires = total_war_advance
+			requires = tgc_army_advance
 		}
 		
 		iron_muzzle_loaded_artillery = {
@@ -188,13 +213,15 @@ total_war_advance = {
 		military_staff_system = {
 			age = age_7_industry
 			icon = enlightenment_advance
+			military_tactics = 0.25
 			
-			requires = total_war_advance
+			requires = tgc_army_advance
 		}
 		
 		military_plans = {
 			age = age_7_industry
 			icon = enlightenment_advance
+			military_tactics = 0.25
 			
 			requires = military_staff_system
 		}
@@ -202,6 +229,7 @@ total_war_advance = {
 		military_statistics = {
 			age = age_7_industry
 			icon = enlightenment_advance
+			military_tactics = 0.25
 			
 			requires = military_plans
 		}
@@ -209,6 +237,7 @@ total_war_advance = {
 		military_logistics = {
 			age = age_7_industry
 			icon = enlightenment_advance
+			military_tactics = 0.50
 			
 			requires = military_statistics
 		}
@@ -216,6 +245,7 @@ total_war_advance = {
 		military_directionism = {
 			age = age_7_industry
 			icon = enlightenment_advance
+			military_tactics = 0.50
 			
 			requires = military_logistics
 		}
@@ -223,6 +253,7 @@ total_war_advance = {
 		early_aeronautics = {
 			age = age_7_industry
 			icon = enlightenment_advance
+			military_tactics = 0.50
 			
 			requires = military_directionism
 		}
@@ -230,6 +261,7 @@ total_war_advance = {
 		military_aeronautics = {
 			age = age_7_industry
 			icon = enlightenment_advance
+			military_tactics = 0.50
 			
 			requires = early_aeronautics
 		}
@@ -238,13 +270,15 @@ total_war_advance = {
 		military_command_principle = {
 			age = age_7_industry
 			icon = enlightenment_advance
+			land_morale = 0.25
 			
-			requires = total_war_advance
+			requires = tgc_army_advance
 		}
 		
 		army_professionalism = {
 			age = age_7_industry
 			icon = enlightenment_advance
+			land_morale = 0.25
 			
 			requires = military_command_principle
 		}
@@ -252,6 +286,7 @@ total_war_advance = {
 		army_decision_making = {
 			age = age_7_industry
 			icon = enlightenment_advance
+			land_morale = 0.25
 			
 			requires = army_professionalism
 		}
@@ -259,6 +294,7 @@ total_war_advance = {
 		army_risk_management = {
 			age = age_7_industry
 			icon = enlightenment_advance
+			land_morale = 0.25
 			
 			requires = army_decision_making
 		}
@@ -266,6 +302,7 @@ total_war_advance = {
 		nco_military_training = {
 			age = age_7_industry
 			icon = enlightenment_advance
+			land_morale = 0.25
 			
 			requires = army_risk_management
 		}
@@ -273,6 +310,7 @@ total_war_advance = {
 		military_tradition_and_culture = {
 			age = age_7_industry
 			icon = enlightenment_advance
+			land_morale = 0.25
 			
 			requires = nco_military_training
 		}
@@ -280,6 +318,1033 @@ total_war_advance = {
 		great_war_experience = {
 			age = age_7_industry
 			icon = enlightenment_advance
+			land_morale = 0.25
 			
 			requires = military_tradition_and_culture
+		}
+
+## NAVY ##
+	# Naval Doctrine
+		post_nelsonian_thought = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = tgc_navy_advance
+		}
+		
+		battleship_column_doctrine = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = post_nelsonian_thought
+		}
+		
+		raider_group_doctrine = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = battleship_column_doctrine
+		}
+		
+		blue_and_brown_water_schools = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = raider_group_doctrine
+		}
+		
+		high_seas_battle_fleet = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = blue_and_brown_water_schools
+		}
+		
+		the_grand_fleet = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = high_seas_battle_fleet
+		}
+		
+		great_war_naval_doctrine = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = the_grand_fleet
+		}
+		
+	# Construction and Propulsion
+		clipper_design = {
+			age = age_7_industry
+			icon = enlightenment_advance
+		ship_build_speed = 0.1
+			
+			requires = tgc_navy_advance
+		}
+		
+		paddle_steamers = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = clipper_design
+		}
+		
+		screw_propelled_steamers = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = paddle_steamers
+		}
+		
+		steel_steamers = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = screw_propelled_steamers
+		}
+		
+		steam_turbine_ships = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = steel_steamers
+		}
+		
+		early_oil_ships = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = steam_turbine_ships
+		}
+		
+		oil_driven_ships = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = early_oil_ships
+		}
+		
+	# Naval Engineering
+		naval_design_bureaus = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			ship_build_speed = 0.1
+			
+			requires = tgc_navy_advance
+		}
+		
+		fire_control_systems = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			ship_build_speed = 0.1
+			
+			requires = naval_design_bureaus
+		}
+		
+		weapon_platforms = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			ship_build_speed = 0.1
+			
+			requires = fire_control_systems
+		}
+		
+		main_naval_armament = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			ship_build_speed = 0.1
+			
+			requires = weapon_platforms
+		}
+		
+		advanced_naval_design = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			ship_build_speed = 0.1
+			
+			requires = main_naval_armament
+		}
+		
+		naval_welding = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			ship_build_speed = 0.1
+			
+			requires = advanced_naval_design
+		}
+		
+		great_war_naval_design = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			ship_build_speed = 0.1
+			
+			requires = naval_welding
+		}
+		
+	# Naval Science
+		alphabetic_flag_signaling = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			naval_range = 250
+			
+			requires = tgc_navy_advance
+		}
+		
+		naval_plans = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			naval_range = 250
+			
+			requires = alphabetic_flag_signaling
+		}
+		
+		naval_statistics = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			naval_range = 250
+			
+			requires = naval_plans
+		}
+		
+		naval_logistics = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			naval_range = 250
+			
+			requires = naval_statistics
+		}
+		
+		naval_directionism = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			naval_range = 250
+			
+			requires = naval_logistics
+		}
+		
+		naval_integration = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			naval_range = 250
+			
+			requires = naval_directionism
+		}
+		
+		network_centric_warfare = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			naval_range = 250
+			
+			requires = naval_integration
+		}
+		
+	# Naval Leadership
+		naval_command_principle = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			naval_morale = 0.25
+			
+			requires = tgc_navy_advance
+		}
+		
+		naval_professionalism = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			naval_morale = 0.25
+			
+			requires = naval_command_principle
+		}
+		
+		naval_decision_making = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			naval_morale = 0.25
+			
+			requires = naval_professionalism
+		}
+		
+		naval_risk_management = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			naval_morale = 0.25
+			
+			requires = naval_decision_making
+		}
+		
+		naval_nco_training = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			naval_morale = 0.25
+			
+			requires = naval_risk_management
+		}
+		
+		naval_culture = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			naval_morale = 0.25
+			
+			requires = naval_nco_training
+		}
+		
+		great_war_naval_training = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			naval_morale = 0.25
+			
+			requires = naval_culture
+		}
+
+## ECONOMY ##
+	# Financial Institutions
+		private_banks = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = tgc_economy_advance
+		}
+		
+		stock_exchange = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = private_banks
+		}
+		
+		business_banks = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = stock_exchange
+		}
+		
+		investment_banks = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = business_banks
+		}
+		
+		bank_inspection_board = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = investment_banks
+		}
+		
+		mutual_funds = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = bank_inspection_board
+		}
+		
+		hedge_funds = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = mutual_funds
+		}
+		
+	# Monetary System
+		ad_hoc_banknote_printing = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = tgc_economy_advance
+		}
+		
+		uncontrolled_banknote_printing = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = ad_hoc_banknote_printing
+		}
+		
+		private_banknote_printing = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = uncontrolled_banknote_printing
+		}
+		
+		central_bank_banknote_printing = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = private_banknote_printing
+		}
+		
+		modern_central_bank_system = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = central_bank_banknote_printing
+		}
+		
+		market_determined_exchange_rates = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = modern_central_bank_system
+		}
+		
+		federal_reserve_system = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = market_determined_exchange_rates
+		}
+		
+	# Economic Thought and Critique
+		early_classical_theory_and_critique = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = tgc_economy_advance
+		}
+		
+		late_classical_theory = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = early_classical_theory_and_critique
+		}
+		
+		collectivist_theory = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = late_classical_theory
+		}
+		
+		the_historical_theory = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = collectivist_theory
+		}
+		
+		marginalism = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = the_historical_theory
+		}
+		
+		neoclassical_theory = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = marginalism
+		}
+		
+		keynesian_economics = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = neoclassical_theory
+		}
+		
+	# Market Functionality
+		freedom_of_trade = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = tgc_economy_advance
+		}
+		
+		market_structure = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = freedom_of_trade
+		}
+		
+		business_regulations = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = market_structure
+		}
+		
+		market_regulations = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = business_regulations
+		}
+		
+		economic_responsibility = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = market_regulations
+		}
+		
+		government_interventionism = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = economic_responsibility
+		}
+		
+		inflation_targeting = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = government_interventionism
+		}
+		
+	# Tech Organization
+		guild_based_production = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = tgc_economy_advance
+		}
+		
+		organized_factories = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = guild_based_production
+		}
+		
+		scientific_management = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = organized_factories
+		}
+		
+		time_saving_measures = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = scientific_management
+		}
+		
+		management_strategy = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = time_saving_measures
+		}
+		
+		organizational_development = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = management_strategy
+		}
+		
+		piece_work = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = organizational_development
+		}
+
+## SOCIETY ## (Culture)
+	# Aesthetics
+		classicism_and_early_romanticism = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = tgc_society_advance
+		}
+		
+		romanticism = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = classicism_and_early_romanticism
+		}
+		
+		realism = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = romanticism
+		}
+		
+		impressionism = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = realism
+		}
+		
+		expressionism = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = impressionism
+		}
+		
+		modernism = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = expressionism
+		}
+		
+		mass_culture_and_the_avant_garde = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = modernism
+		}
+		
+	# Philosophy
+		late_enlightenment_philosophy = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = tgc_society_advance
+		}
+		
+		idealism = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = late_enlightenment_philosophy
+		}
+		
+		empiricism = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = idealism
+		}
+		
+		analytic_philosophy = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = empiricism
+		}
+		
+		phenomenology_and_hermeneutic = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = analytic_philosophy
+		}
+		
+		anti_rationalism = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = phenomenology_and_hermeneutic
+		}
+		
+		formal_ontology = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = anti_rationalism
+		}
+		
+	# Social Thought
+		malthusian_thought = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = tgc_society_advance
+		}
+		
+		positivism = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = malthusian_thought
+		}
+		
+		functionalism = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = positivism
+		}
+		
+		biologism = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = functionalism
+		}
+		
+		social_science = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = biologism
+		}
+		
+		social_alienation = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = social_science
+		}
+		
+		social_psychology = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = social_alienation
+		}
+		
+	# Political Thought
+		the_rights_of_man = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = tgc_society_advance
+		}
+		
+		ideological_thought = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = the_rights_of_man
+		}
+		
+		state_and_government = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = ideological_thought
+		}
+		
+		nationalism_and_imperialism = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = state_and_government
+		}
+		
+		revolution_and_counterrevolution = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = nationalism_and_imperialism
+		}
+		
+		mass_politics = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = revolution_and_counterrevolution
+		}
+		
+		the_police_state = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = mass_politics
+		}
+		
+	# Psychology
+		introspectionism = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = tgc_society_advance
+		}
+		
+		associationism = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = introspectionism
+		}
+		
+		phenomenalism = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = associationism
+		}
+		
+		experimental_psychology = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = phenomenalism
+		}
+		
+		psychoanalysis = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = experimental_psychology
+		}
+		
+		psychodynamics = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = psychoanalysis
+		}
+		
+		behaviorism = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = psychodynamics
+		}
+
+## INDUSTRY ##
+	# Tech Power
+		piston_steam_engine = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = tgc_industry_advance
+		}
+		
+		high_pressure_steam_engine = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = piston_steam_engine
+		}
+		
+		compound_steam_engines = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = high_pressure_steam_engine
+		}
+		
+		steam_turbine = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = compound_steam_engines
+		}
+		
+		combustion_engine = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = steam_turbine
+		}
+		
+		electrical_power_generation = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = combustion_engine
+		}
+		
+		advanced_turbine_generators = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = electrical_power_generation
+		}
+		
+	# Mechanization
+		mechanical_production = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = tgc_industry_advance
+		}
+		
+		interchangeable_parts = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = mechanical_production
+		}
+		
+		semi_automatization = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = interchangeable_parts
+		}
+		
+		pneumatics_and_hydraulics = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = semi_automatization
+		}
+		
+		assembly_line = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = pneumatics_and_hydraulics
+		}
+		
+		shift_work = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = assembly_line
+		}
+		
+		assembly_line_mechanization = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = shift_work
+		}
+		
+	# Metallurgy
+		hot_blast_process = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = tgc_industry_advance
+		}
+		
+		mechanized_mining = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = hot_blast_process
+		}
+		
+		regenerative_furnaces = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = mechanized_mining
+		}
+		
+		drilling_and_blasting = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = regenerative_furnaces
+		}
+		
+		open_hearth_furnace = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = drilling_and_blasting
+		}
+		
+		electric_arc_furnace = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = open_hearth_furnace
+		}
+		
+		complex_steel_alloys = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = electric_arc_furnace
+		}
+		
+	# Tech Infrastructure
+		experimental_railroad = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = tgc_industry_advance
+		}
+		
+		early_railroad = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = experimental_railroad
+		}
+		
+		iron_railroad = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = early_railroad
+		}
+		
+		steel_railroad = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = iron_railroad
+		}
+		
+		integral_rail_system = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = steel_railroad
+		}
+		
+		limited_access_roads = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = integral_rail_system
+		}
+		
+		advanced_interchange_design = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = limited_access_roads
+		}
+		
+	# Chemistry and Electricity
+		basic_chemistry = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = tgc_industry_advance
+		}
+		
+		medicine = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = basic_chemistry
+		}
+		
+		inorganic_chemistry = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = medicine
+		}
+		
+		organic_chemistry = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = inorganic_chemistry
+		}
+		
+		electricity = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = organic_chemistry
+		}
+		
+		synthetic_polymers = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = electricity
+		}
+		
+		advanced_polymers = {
+			age = age_7_industry
+			icon = enlightenment_advance
+			
+			requires = synthetic_polymers
 		}

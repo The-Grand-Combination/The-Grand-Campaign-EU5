@@ -103,19 +103,6 @@ religious_toleration = {
 	requires = gov_reform_reformation_a
 }
 
-army_professionalism = {
-	age = age_5_absolutism
-	potential = {
-		OR = {
-			has_or_had_tag = BRA
-			has_or_had_tag = PRU
-		}
-	}
-	land_morale_modifier = 0.1
-	
-	requires = artillery_vs_fort_age_5_absolutism
-}
-
 soldier_king = {
 	age = age_5_absolutism
 	
