@@ -2,6 +2,8 @@
 The Grand Campaign is a deeply ambitious project that aims to completely change how the game works. The organization operates under a **high-trust open charter**, meaning that everyone is invited to contribute.\
 However, there are a few guidelines that need to be followed to ensure the project runs smoothly and efficiently.
 
+This document provides an outline of the project's workflow and its standards. For a more detailed explanation of each concept, you may want to visit [the wiki](https://github.com/The-Grand-Combination/The-Grand-Campaign-EU5/wiki). 
+
 ## For New Contributors
 
 People who are new to the project are strongly suggested to read this section, as it explains how the project is managed, and some of the rules it operates under.
