@@ -24,7 +24,8 @@
 			"events/religion",
 			"events/situations",
 			"common/goods",
-			"common/building_types"
+			"common/building_types",
+			"common/advances"
  		]
 	}
 }
