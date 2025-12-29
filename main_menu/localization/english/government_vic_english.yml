@@ -1,0 +1,22 @@
+l_english:
+ #
+ # Victoria II Ported Government Types
+ # Government Type Names
+ bourgeois_dictatorship: "Bourgeois Dictatorship"
+ fascist_dictatorship: "Fascist Dictatorship"
+ presidential_dictatorship: "Presidential Dictatorship"
+ proletarian_dictatorship: "Proletarian Dictatorship"
+ trade_unions_congress: "Trade Unions Congress"
+ colonial_company: "Colonial Company"
+ prussian_constitutionalism: "Prussian Constitutionalism"
+ hms_government: "HM's Government"
+ #
+ # Government Type Descriptions
+ bourgeois_dictatorship_desc: "A form of authoritarian [ShowGovernmentTypeName('republic')] where the ruling class consists primarily of wealthy merchants and industrialists who maintain control through a combination of economic power and military force."
+ fascist_dictatorship_desc: "An authoritarian and ultranationalist form of government characterized by dictatorial power, forcible suppression of opposition, and strong regimentation of society and the economy."
+ presidential_dictatorship_desc: "A form of government where a president holds absolute power, often maintaining the facade of republican institutions while ruling autocratically through military backing or emergency powers."
+ proletarian_dictatorship_desc: "A form of [ShowGovernmentTypeName('republic')] where political power is held by the working class, typically through a revolutionary vanguard party that claims to represent the interests of workers and peasants."
+ trade_unions_congress_desc: "A form of [ShowGovernmentTypeName('republic')] where political power is exercised through organized labor unions and worker councils, with leadership selected from among union representatives."
+ colonial_company_desc: "A form of [ShowGovernmentTypeName('republic')] governed by a chartered trading company that holds sovereign rights over colonial territories, prioritizing commercial interests and exploitation of resources."
+ prussian_constitutionalism_desc: "A form of constitutional [ShowGovernmentTypeName('monarchy')] that balances royal prerogative with limited parliamentary representation, characterized by strong centralized administration and military influence."
+ hms_government_desc: "His or Her Majesty's Government is a form of constitutional [ShowGovernmentTypeName('monarchy')] where the monarch serves as head of state while the government is run by elected ministers responsible to parliament."
