@@ -137,3 +137,121 @@ tribe = {
 		care_about_producing_heirs = yes
 	}
 }
+
+bourgeois_dictatorship = {
+	heir_selection = republic_4_year_terms
+	heir_selection = military_dictatorship
+	map_color = gov_republic
+	
+	government_power = republican_tradition
+
+	default_character_estate = burghers_estate
+
+	modifier = {
+		diplomatic_upkeep_modifier = -0.5
+	}
+}
+
+fascist_dictatorship = {
+	heir_selection = military_dictatorship
+	map_color = gov_monarchy
+	
+	government_power = legitimacy
+
+	default_character_estate = nobles_estate
+
+	modifier = {
+		war_no_cb_cost_modifier = -0.25
+	}
+}
+
+presidential_dictatorship = {
+	heir_selection = military_dictatorship
+	heir_selection = republic_4_year_terms
+	map_color = gov_republic
+	
+	government_power = legitimacy
+
+	default_character_estate = nobles_estate
+
+	modifier = {
+		diplomatic_upkeep_modifier = -0.5
+	}
+}
+
+proletarian_dictatorship = {
+	heir_selection = military_dictatorship
+	heir_selection = peasant_elective
+	map_color = gov_republic
+	
+	government_power = republican_tradition
+
+	default_character_estate = burghers_estate
+
+	modifier = {
+		global_nobles_food_consumption = -0.5
+	}
+}
+
+trade_unions_congress = {
+	heir_selection = republic_2_year_terms
+	heir_selection = peasant_elective
+	map_color = gov_republic
+	
+	government_power = republican_tradition
+
+	default_character_estate = burghers_estate
+
+	modifier = {
+		diplomatic_upkeep_modifier = -0.25
+	}
+}
+
+colonial_company = {
+	heir_selection = oligarchic_elective
+	heir_selection = bank_selection
+	map_color = gov_republic
+	
+	government_power = republican_tradition
+
+	default_character_estate = burghers_estate
+
+	modifier = {
+		amount_looted_modifier = 0.25
+	}
+}
+
+prussian_constitutionalism = {
+	use_regnal_number = yes
+	heir_selection = cognatic_primogeniture
+	heir_selection = absolute_cognatic_primogeniture
+	heir_selection = salic_law
+	heir_selection = semi_salic_law
+	map_color = gov_monarchy
+	
+	government_power = legitimacy
+
+	default_character_estate = nobles_estate
+
+	modifier = {
+		care_about_producing_heirs = yes
+		diplomatic_upkeep_modifier = -0.25
+	}
+}
+
+hms_government = {
+	use_regnal_number = yes
+	heir_selection = cognatic_primogeniture
+	heir_selection = absolute_cognatic_primogeniture
+	heir_selection = salic_law
+	heir_selection = semi_salic_law
+	map_color = gov_monarchy
+	
+	government_power = legitimacy
+
+	default_character_estate = nobles_estate
+
+	modifier = {
+		care_about_producing_heirs = yes
+	}
+}
