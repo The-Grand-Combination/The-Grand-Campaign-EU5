@@ -1,0 +1,11 @@
+﻿kazenny  = {
+	ability = adm
+	potential = {
+		modifier:unlock_prikazi_reform_cabinet_actions = yes
+	}
+	
+	country_modifier = {
+		tax_income_efficiency = tiny_tax_income_efficiency_bonus
+		global_distance_from_capital_cost_modifier = -0.025
+	}
+}

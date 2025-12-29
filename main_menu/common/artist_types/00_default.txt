@@ -1,0 +1,67 @@
+﻿painter = {
+}
+
+sculptor = {
+}
+
+composer = {
+}
+
+writer = {
+}
+
+architect = {
+}
+
+philosopher = {
+}
+
+jurist = { #https://en.wikipedia.org/wiki/Jurist
+}
+
+scientist = {
+}
+
+iconographer = {
+	potential = {
+		OR = {
+			religion = religion:orthodox
+			religion = religion:miaphysite
+		}
+	}
+}
+
+metalsmith = {
+	potential = {
+		has_advance = metallurgy
+	}
+}
+
+calligrapher = {
+	potential = {
+		OR = {
+			court_language = language:arabic_language
+			court_language.language_family ?= language_family:chinese_language_family
+			court_language = language:korean_language
+			court_language = language:japanese_language
+			court_language = language:mongolian_language
+			court_language = language:nepali_language
+			court_language = language:persian_language
+			court_language = language:tibetan_language
+			court_language = language:turkish_language
+			court_language = language:vietnamese_language
+		}
+	}
+}
+
+storyteller = { # Oral Traditions
+	potential = {
+		OR = {
+			religion = religion:iroquoian_totemism
+			religion = religion:midewiwin_religion
+			religion = religion:great_plains_shamanism
+			religion = religion:dene_shamanism
+			religion = religion:kachina_religion
+		}
+	}
+}

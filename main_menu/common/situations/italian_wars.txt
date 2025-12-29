@@ -1,0 +1,814 @@
+﻿italian_wars = {
+	monthly_spawn_chance = monthly_spawn_chance_unique
+	hint_tag = hint_italian_wars
+	
+	can_start = {
+		NOT = { is_situation_active = situation:guelphs_and_ghibellines }
+		current_age = age_3_discovery
+		continent:europe = {
+			any_war ?= {
+				attacker_leader ?= {
+					religion.group = religion_group:christian
+					capital.region != region:italy_region
+					OR = {
+						capital.region = region:france_region
+						capital.region = region:iberia_region
+						international_organization:hre.leader_country ?= this
+					}
+					OR = {
+						international_organization:hre.leader_country ?= this
+						is_great_power = yes
+						country_rank_level >= 3
+						total_population > 5000							
+					}
+				}
+				defender_leader ?= { capital.region = region:italy_region }
+			}
+		}
+		region:italy_region = {
+			NOT = { 
+				any_country_with_capital_in_geography = {
+					culture = { has_culture_group = culture_group:italian_group }
+					num_locations_owned_or_owned_by_subjects_or_below > 200
+				}
+			}
+		}			
+	}
+	
+	can_end = {
+		OR = {
+			international_organization:foreign_league_france ?= {
+				total_locations_owned >= 200
+			}
+			international_organization:foreign_league_hre ?= {
+				total_locations_owned >= 200
+			}
+			international_organization:foreign_league_iberia ?= {
+				total_locations_owned >= 200
+			}
+			international_organization:italian_league_1 ?= {
+				total_locations_owned >= 200
+			}
+			international_organization:italian_league_2 ?= {
+				total_locations_owned >= 200
+			}
+			international_organization:italian_league_3 ?= {
+				total_locations_owned >= 200
+			}
+			situation:italian_wars = { years_since_situation_start > 50 }
+			custom_tooltip = {
+				text = no_league_io_owns_any_land_in_italy_tt
+				AND = {
+					years_since_situation_start > 1
+					international_organization:foreign_league_france ?= {
+						total_locations_owned < 1
+					}
+					international_organization:foreign_league_hre ?= {
+						total_locations_owned < 1
+					}
+					international_organization:foreign_league_iberia ?= {
+						total_locations_owned < 1
+					}
+					international_organization:italian_league_1 ?= {
+						total_locations_owned < 1
+					}
+					international_organization:italian_league_2 ?= {
+						total_locations_owned < 1
+					}
+					international_organization:italian_league_3 ?= {
+						total_locations_owned < 1
+					}
+				}
+			}
+			
+		}
+	}
+	visible = {
+		OR = {
+			has_presence_in = region:italy_region
+			is_leader_of_international_organization = international_organization:foreign_league_france
+			is_leader_of_international_organization = international_organization:foreign_league_hre
+			is_leader_of_international_organization = international_organization:foreign_league_iberia
+			
+			AND = {
+				international_organization:foreign_league_france ?= {
+					exists = leader_country
+				}
+				is_enemy_of = international_organization:foreign_league_france.leader_country
+			}
+			AND = {
+				international_organization:foreign_league_hre ?= {
+					exists = leader_country
+				}
+				is_enemy_of = international_organization:foreign_league_hre.leader_country 
+			}
+			AND = {
+				international_organization:foreign_league_iberia ?= {
+					exists = leader_country
+				}
+				is_enemy_of = international_organization:foreign_league_iberia.leader_country 
+			}
+			AND = {
+				international_organization:foreign_league_france ?= {
+					exists = leader_country
+				}
+				is_rival_of = international_organization:foreign_league_france.leader_country 
+			}
+			AND = {
+				international_organization:foreign_league_hre ?= {
+					exists = leader_country
+				}
+				is_rival_of = international_organization:foreign_league_hre.leader_country 
+			}
+			AND = {
+				international_organization:foreign_league_iberia ?= {
+					exists = leader_country
+				}
+				is_rival_of = international_organization:foreign_league_iberia.leader_country 
+			}
+		}
+	}
+	
+
+	on_start = {
+		#Calculate Strongest French Contender
+		ordered_country = {  
+			limit = {
+				capital.region = region:france_region
+				country_type = location
+				is_subject = no
+			}  
+			order_by = {
+				value = 100
+				add = {
+					value = country_total_army_levy_size
+				}
+				multiply = country_rank_level
+				add = {
+					value = army_size
+					multiply = 10
+				}
+				add = {
+					value = country_total_navy_levy_size
+					divide = 2
+				}
+				add = {
+					value = monthly_income_trade_and_tax
+					divide = 10
+				}
+				if = {
+					limit = { is_great_power = yes }
+					add = 100
+				}
+			} 
+			max = 1  
+			check_range_bounds = no
+			save_temporary_scope_as = target_french_leader
+			create_international_organization = {
+				type = international_organization_type:foreign_league_france
+				add_country_to_international_organization = scope:target_french_leader
+				set_leader_country = scope:target_french_leader
+			}
+			international_organization:foreign_league_france = {
+				add_to_global_variable_list = {
+					name = iw_foreign_leagues_list
+					target = this 
+				}
+			}
+			trigger_event_non_silently = italian_wars.1
+		} 
+		#Calculate Strongest Iberian Contender
+		ordered_country = {  
+			limit = {
+				capital.region = region:iberia_region
+				country_type = location
+				is_subject = no
+			}  
+			order_by = {
+				value = 100
+				add = {
+					value = country_total_army_levy_size
+				}
+				multiply = country_rank_level
+				add = {
+					value = army_size
+					multiply = 10
+				}
+				add = {
+					value = country_total_navy_levy_size
+					divide = 2
+				}
+				add = {
+					value = monthly_income_trade_and_tax
+					divide = 10
+				}
+				if = {
+					limit = { is_great_power = yes }
+					add = 100
+				}
+			} 
+			max = 1 
+			check_range_bounds = no
+			save_temporary_scope_as = target_iberian_leader
+			create_international_organization = {
+				type = international_organization_type:foreign_league_iberia
+				add_country_to_international_organization = scope:target_iberian_leader
+				set_leader_country = scope:target_iberian_leader
+			}
+			international_organization:foreign_league_iberia = {
+				add_to_global_variable_list = {
+					name = iw_foreign_leagues_list
+					target = this 
+				}
+			}
+			trigger_event_non_silently = italian_wars.1
+		} 
+		international_organization:hre.leader_country ?= {
+			if = {
+				limit = {
+					NOR = {
+						is_member_of_international_organization = international_organization:foreign_league_france
+						is_member_of_international_organization = international_organization:foreign_league_iberia
+					}
+				}
+				save_temporary_scope_as = target_hre_leader
+				create_international_organization = {
+					type = international_organization_type:foreign_league_hre
+					add_country_to_international_organization = scope:target_hre_leader
+					set_leader_country = scope:target_hre_leader
+				}
+				international_organization:foreign_league_hre = {
+					add_to_global_variable_list = {
+						name = iw_foreign_leagues_list
+						target = this 
+					}
+				}
+				trigger_event_non_silently = italian_wars.1
+			}
+		}
+		#Calculate Strongest Italian Defenders
+		ordered_country = {  
+			limit = {
+				capital.region = region:italy_region
+				country_type = location
+				is_subject = no
+			}  
+			order_by = {
+				value = 100
+				add = {
+					value = country_total_army_levy_size
+				}
+				multiply = country_rank_level
+				add = {
+					value = army_size
+					multiply = 10
+				}
+				add = {
+					value = country_total_navy_levy_size
+					divide = 2
+				}
+				add = {
+					value = monthly_income_trade_and_tax
+					divide = 10
+				}
+				if = {
+					limit = { is_great_power = yes }
+					add = 100
+				}
+			} 
+			max = 1 
+			check_range_bounds = no
+			save_temporary_scope_as = target_ita1_leader
+			create_international_organization = {
+				type = international_organization_type:italian_league_1
+				add_country_to_international_organization = scope:target_ita1_leader
+				set_leader_country = scope:target_ita1_leader
+			}
+			international_organization:italian_league_1 = {
+				add_to_global_variable_list = {
+					name = iw_italian_leagues_list
+					target = this 
+				}
+			}
+			trigger_event_non_silently = italian_wars.1
+		} 
+		ordered_country = {  
+			limit = {
+				capital.region = region:italy_region
+				country_type = location
+				is_subject = no
+				NOR = {
+					is_member_of_international_organization = international_organization:foreign_league_france
+					is_member_of_international_organization = international_organization:foreign_league_hre
+					is_member_of_international_organization = international_organization:foreign_league_iberia
+					is_member_of_international_organization = international_organization:italian_league_1
+					is_member_of_international_organization = international_organization:italian_league_2
+					is_member_of_international_organization = international_organization:italian_league_3
+				}
+			}  
+			order_by = {
+				value = 100
+				add = {
+					value = country_total_army_levy_size
+				}
+				multiply = country_rank_level
+				add = {
+					value = army_size
+					multiply = 10
+				}
+				add = {
+					value = country_total_navy_levy_size
+					divide = 2
+				}
+				add = {
+					value = monthly_income_trade_and_tax
+					divide = 10
+				}
+				if = {
+					limit = { is_great_power = yes }
+					add = 100
+				}
+			} 
+			max = 1 
+			check_range_bounds = no
+			save_temporary_scope_as = target_italian_2_leader
+			create_international_organization = {
+				type = international_organization_type:italian_league_2
+				add_country_to_international_organization = scope:target_italian_2_leader
+				set_leader_country = scope:target_italian_2_leader
+			}
+			international_organization:italian_league_2 = {
+				add_to_global_variable_list = {
+					name = iw_italian_leagues_list
+					target = this 
+				}
+			}
+			trigger_event_non_silently = italian_wars.1
+		} 
+		ordered_country = {  
+			limit = {
+				capital.region = region:italy_region
+				country_type = location
+				is_subject = no
+				NOR = {
+					is_member_of_international_organization = international_organization:foreign_league_france
+					is_member_of_international_organization = international_organization:foreign_league_hre
+					is_member_of_international_organization = international_organization:foreign_league_iberia
+					is_member_of_international_organization = international_organization:italian_league_1
+					is_member_of_international_organization = international_organization:italian_league_2
+					is_member_of_international_organization = international_organization:italian_league_3
+				}
+			}  
+			order_by = {
+				value = 100
+				add = {
+					value = country_total_army_levy_size
+				}
+				multiply = country_rank_level
+				add = {
+					value = army_size
+					multiply = 10
+				}
+				add = {
+					value = country_total_navy_levy_size
+					divide = 2
+				}
+				add = {
+					value = monthly_income_trade_and_tax
+					divide = 10
+				}
+				if = {
+					limit = { is_great_power = yes }
+					add = 100
+				}
+			} 
+			max = 1 
+			check_range_bounds = no
+			save_temporary_scope_as = target_italian_3_leader
+			create_international_organization = {
+				type = international_organization_type:italian_league_3
+				add_country_to_international_organization = scope:target_italian_3_leader
+				set_leader_country = scope:target_italian_3_leader
+			}
+			international_organization:italian_league_3 = {
+				add_to_global_variable_list = {
+					name = iw_italian_leagues_list
+					target = this 
+				}
+			}
+			trigger_event_non_silently = italian_wars.1
+		} 
+		every_country = {
+			limit = {
+				capital.region = region:italy_region
+				is_subject = no
+				NOR = {
+					is_member_of_international_organization = international_organization:foreign_league_france
+					is_member_of_international_organization = international_organization:foreign_league_hre
+					is_member_of_international_organization = international_organization:foreign_league_iberia
+					is_member_of_international_organization = international_organization:italian_league_1
+					is_member_of_international_organization = international_organization:italian_league_2
+					is_member_of_international_organization = international_organization:italian_league_3
+				}
+			}
+			trigger_event_non_silently = italian_wars.3
+		}
+		sort_global_variable_list = {
+			name = iw_italian_leagues_list
+			order = {
+				value = total_locations_owned
+			}
+		}
+		sort_global_variable_list = {
+			name = iw_foreign_leagues_list
+			order = {
+				value = total_locations_owned
+			}
+		}
+	}
+
+	on_monthly = { 
+		sort_global_variable_list = {
+			name = iw_italian_leagues_list
+			order = {
+				value = total_locations_owned
+			}
+		}
+		sort_global_variable_list = {
+			name = iw_foreign_leagues_list
+			order = {
+				value = total_locations_owned
+			}
+		}
+	}
+
+
+	on_ended = {
+		#Italian Leagues triumphant
+		if = {
+			limit = {
+				international_organization:italian_league_1 = {
+					total_locations_owned >= 200
+				}
+			}
+			international_organization:italian_league_1 = {
+				every_international_organization_member = {
+					trigger_event_non_silently = italian_wars.100
+				}
+			}
+			every_country = {
+				limit = {
+					capital.region = region:italy_region
+					NOT = { is_member_of_international_organization = international_organization:italian_league_1 }
+				}
+				trigger_event_non_silently = italian_wars.200
+			}
+		}
+		if = {
+			limit = {
+				international_organization:italian_league_2 = {
+					total_locations_owned >= 200
+				}
+			}
+			international_organization:italian_league_2 = {
+				every_international_organization_member = {
+					trigger_event_non_silently = italian_wars.100
+				}
+			}
+			every_country = {
+				limit = {
+					capital.region = region:italy_region
+					NOT = { is_member_of_international_organization = international_organization:italian_league_2 }
+				}
+				trigger_event_non_silently = italian_wars.200
+			}
+		}
+		if = {
+			limit = {
+				international_organization:italian_league_3 = {
+					total_locations_owned >= 200
+				}
+			}
+			international_organization:italian_league_3 = {
+				every_international_organization_member = {
+					trigger_event_non_silently = italian_wars.100
+				}
+			}
+			every_country = {
+				limit = {
+					capital.region = region:italy_region
+					NOT = { is_member_of_international_organization = international_organization:italian_league_3 }
+				}
+				trigger_event_non_silently = italian_wars.200
+			}
+		}
+		#Foreign League Triumph
+		if = {
+			limit = {
+				international_organization:foreign_league_france = {
+					total_locations_owned >= 200
+				}
+			}
+			international_organization:foreign_league_france = {
+				every_international_organization_member = {
+					trigger_event_non_silently = italian_wars.300
+				}
+			}
+		}
+		if = {
+			limit = {
+				international_organization:foreign_league_hre = {
+					total_locations_owned >= 200
+				}
+			}
+			international_organization:foreign_league_hre = {
+				every_international_organization_member = {
+					trigger_event_non_silently = italian_wars.300
+				}
+			}
+		}
+		if = {
+			limit = {
+				international_organization:foreign_league_iberia = {
+					total_locations_owned >= 200
+				}
+			}
+			international_organization:foreign_league_iberia = {
+				every_international_organization_member = {
+					trigger_event_non_silently = italian_wars.300
+				}
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					years_since_situation_start > 50
+					AND = {
+						years_since_situation_start > 1
+						international_organization:foreign_league_france ?= {
+							total_locations_owned < 1
+						}
+						international_organization:foreign_league_hre ?= {
+							total_locations_owned < 1
+						}
+						international_organization:foreign_league_iberia ?= {
+							total_locations_owned < 1
+						}
+						international_organization:italian_league_1 ?= {
+							total_locations_owned < 1
+						}
+						international_organization:italian_league_2 ?= {
+							total_locations_owned < 1
+						}
+						international_organization:italian_league_3 ?= {
+							total_locations_owned < 1
+						}
+					}
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_presence_in = region:italy_region
+						has_presence_in = region:iberia_region
+						has_presence_in = region:france_region
+						is_member_of_international_organization = international_organization:foreign_league_france
+						is_member_of_international_organization = international_organization:foreign_league_hre
+						is_member_of_international_organization = international_organization:foreign_league_iberia
+						is_member_of_international_organization = international_organization:italian_league_1
+						is_member_of_international_organization = international_organization:italian_league_2
+						is_member_of_international_organization = international_organization:italian_league_3
+					}
+				}
+				trigger_event_non_silently = italian_wars.400
+			}
+		}
+		destroy_all_italian_leagues = yes
+	}
+
+	tooltip = {
+		#French League
+		if = { #Leader of the French League
+			limit = {
+				has_owner = yes
+				owner ?= { is_leader_of_international_organization = international_organization:foreign_league_france }
+			}
+			custom_tooltip = "LEADER_FRENCH_POWER_TOOLTIP"
+		}
+		else_if = { #Member of the French League
+			limit = {
+				has_owner = yes
+				owner ?= { is_member_of_international_organization = international_organization:foreign_league_france }
+			}
+			custom_tooltip = "MEMBER_FRENCH_POWER_TOOLTIP"
+		}
+		#Espanita League
+		if = { #Leader of the Iberian League
+			limit = {
+				has_owner = yes
+				owner ?= { is_leader_of_international_organization = international_organization:foreign_league_iberia }
+			}
+			custom_tooltip = "LEADER_IBERIAN_POWER_TOOLTIP"
+		}
+		else_if = { #Member of the Iberian League
+			limit = {
+				has_owner = yes
+				owner ?= { is_member_of_international_organization = international_organization:foreign_league_iberia }
+			}
+			custom_tooltip = "MEMBER_IBERIAN_POWER_TOOLTIP"
+		}
+		#Emperor-led League
+		if = { #Leader of the HRE League
+			limit = {
+				has_owner = yes
+				owner ?= { is_leader_of_international_organization = international_organization:foreign_league_hre }
+			}
+			custom_tooltip = "LEADER_HRE_POWER_TOOLTIP"
+		}
+		else_if = { #Member of the HRE League
+			limit = {
+				has_owner = yes
+				owner ?= { is_member_of_international_organization = international_organization:foreign_league_hre }
+			}
+			custom_tooltip = "MEMBER_HRE_POWER_TOOLTIP"
+		}
+		#Italian League
+		if = { #Leader of the 1st Italian League
+			limit = {
+				has_owner = yes
+				owner ?= { is_leader_of_international_organization = international_organization:italian_league_1 }
+			}
+			custom_tooltip = "LEADER_ITALIAN_LEAGUE_1_TOOLTIP"
+		}
+		else_if = { #Member of the 1st Italian League
+			limit = {
+				has_owner = yes
+				owner ?= { is_member_of_international_organization = international_organization:italian_league_1 }
+			}
+			custom_tooltip = "MEMBER_ITALIAN_LEAGUE_1_TOOLTIP"
+		}
+		if = { #Leader of the 2nd Italian League
+			limit = {
+				has_owner = yes
+				owner ?= { is_leader_of_international_organization = international_organization:italian_league_2 }
+			}
+			custom_tooltip = "LEADER_ITALIAN_LEAGUE_2_TOOLTIP"
+		}
+		else_if = { #Member of the 2nd Italian League
+			limit = {
+				has_owner = yes
+				owner ?= { is_member_of_international_organization = international_organization:italian_league_2 }
+			}
+			custom_tooltip = "MEMBER_ITALIAN_LEAGUE_2_TOOLTIP"
+		}
+		if = { #Leader of the 3rd Italian League
+			limit = {
+				has_owner = yes
+				owner ?= { is_leader_of_international_organization = international_organization:italian_league_3 }
+			}
+			custom_tooltip = "LEADER_ITALIAN_LEAGUE_3_TOOLTIP"
+		}
+		else_if = { #Member of the 3rd Italian League
+			limit = {
+				has_owner = yes
+				owner ?= { is_member_of_international_organization = international_organization:italian_league_3 }
+			}
+			custom_tooltip = "MEMBER_ITALIAN_LEAGUE_3_TOOLTIP"
+		}
+	}
+
+	map_color = {
+		# French League
+		if = {
+			limit = {
+				owner ?= { 
+					OR = {
+						overlord ?= { is_member_of_international_organization = international_organization:foreign_league_france }
+						is_member_of_international_organization = international_organization:foreign_league_france
+					}
+				}
+			}
+			value = map_french_league_leader
+		}
+		# Iberian League
+		else_if = {
+			limit = {
+				owner ?= { 
+					OR = {
+						overlord ?= { is_member_of_international_organization = international_organization:foreign_league_iberia }
+						is_member_of_international_organization = international_organization:foreign_league_iberia
+					}
+				}
+			}
+			value = map_iberian_league_leader
+		}
+		# HRE League
+		else_if = {
+			limit = {
+				owner ?= { 
+					OR = {
+						overlord ?= { is_member_of_international_organization = international_organization:foreign_league_hre }
+						is_member_of_international_organization = international_organization:foreign_league_hre
+					}
+				}
+			}
+			value = map_hre_league_leader
+		}
+		# Italian League 1
+		else_if = {
+			limit = {
+				owner ?= { 
+					OR = {
+						overlord ?= { is_member_of_international_organization = international_organization:italian_league_1 }
+						is_member_of_international_organization = international_organization:italian_league_1
+					}
+				}
+			}
+			value = map_italian_league_1_leader
+		}
+		# Italian League 2
+		else_if = {
+			limit = {
+				owner ?= { 
+					OR = {
+						overlord ?= { is_member_of_international_organization = international_organization:italian_league_2 }
+						is_member_of_international_organization = international_organization:italian_league_2
+					}
+				}
+			}
+			value = map_italian_league_2_leader
+		}
+		# Italian League 3
+		else_if = {
+			limit = {
+				owner ?= { 
+					OR = {
+						overlord ?= { is_member_of_international_organization = international_organization:italian_league_3 }
+						is_member_of_international_organization = international_organization:italian_league_3
+					}
+				}
+			}
+			value = map_italian_league_3_leader
+		}
+
+		#Neutral
+		else = {
+			value = define:NMapColors|DEFAULT_COLOR
+		}
+	}
+	
+	legend_key = { 
+		desc = "foreign_league_france"
+		color = map_french_league_leader
+		require_color_on_map = yes
+	}
+	legend_key = { 
+		desc = "foreign_league_iberia"
+		color = map_iberian_league_leader
+		require_color_on_map = yes
+	}
+	legend_key = { 
+		desc = "io_opinion_foreign_league_hre"
+		color = map_hre_league_leader
+		require_color_on_map = yes
+	}
+	legend_key = { 
+		desc = "MEMBER_ITALIAN_LEAGUE_1_TOOLTIP"
+		color = map_italian_league_1_leader
+		require_color_on_map = yes
+	}
+	legend_key = { 
+		desc = "MEMBER_ITALIAN_LEAGUE_2_TOOLTIP"
+		color = map_italian_league_2_leader
+		require_color_on_map = yes
+	}
+	legend_key = { 
+		desc = "MEMBER_ITALIAN_LEAGUE_3_TOOLTIP"
+		color = map_italian_league_3_leader
+		require_color_on_map = yes
+	}
+}
+
+#Outcome 1
+#All of the involved external Great Powers have resigned their claims 
+#on the peninsula via a special Peace Deal
+
+#Outcome 2
+#Either side has accumulated too much Influence
+	#.1 Italian Leagues
+	#Foreign Great Powers suffer huge maluses
+	#Italian States receive bonuses
+	#Italian League leaders may subjugate their members?
+	
+	#.2 Foreign Victory
+	#Winner Foreign League Leader gets some claims in Italy
+	#Diplomatic bonuses with their members 
+	#Other Foreign League Leaders get maluses
+	#Italian Leagues receive some maluses - if any at all
+#
+#Outcome 3
+#Any League (Foreign or Italian) controls N% of Italy either through:
+	#.1 Having the locations be part of their League
+	#.2 Direct ownership of the locations
+	#.3 Indirect ownership of the locations
+#

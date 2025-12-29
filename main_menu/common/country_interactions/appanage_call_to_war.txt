@@ -1,0 +1,168 @@
+﻿call_appanage_to_war = {
+	type = subject
+	category = CATEGORY_SUBJECT_ACTIONS
+
+	potential = {
+		scope:actor = {
+			has_reform = government_reform:french_feudal_nobility
+		}
+	}
+
+	allow = {
+		scope:actor = {
+			at_war = yes
+			any_current_war = {
+				OR = {
+					attacker_leader = scope:actor
+					defender_leader = scope:actor
+				}
+			}
+		}
+	}	
+
+	select_trigger = {
+		looking_for_a = country
+		interaction_source_list = {
+			scope:actor = {
+				every_subject = {
+					add_to_list = source
+				}
+			}
+		}
+		cache_targets = yes
+		target_flag = recipient
+		name = "choose_country"
+		column = {
+			data = name
+		}
+		visible = {
+			is_subject_type = appanage
+			is_subject_of = scope:actor
+		}
+        enabled = {
+			not = { is_at_war_with = scope:actor }
+			subject_loyalty >= MIN_SUBJECT_LOYALTY_FOR_ACTION
+			liberty_desire < MAX_SUBJECT_LIBERTY_DESIRE_FOR_ACTION
+			NOT = { modifier:appanage_prevented_from_call_to_war = yes }
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = country
+		interaction_source_list = {
+			scope:actor = {
+				every_country_at_war_with = {
+					add_to_list = source
+				}
+			}
+		}
+		cache_interaction_source_list = yes
+		target_flag = target
+		name = "call_appanage_to_war_title"
+		none_available_msg_key = "call_appanage_to_war_no_countries"
+		column = { data = name }
+		column = { data = population }
+		visible = {
+			not = { is_allied_with = { target = scope:recipient } }
+			not = { is_at_war_with = scope:recipient }
+			not = { is_subject_of = scope:actor }
+			not = { is_subject_of = scope:recipient }	
+			not = { is_independent_or_autonomous_subject = no }
+			any_current_war = {
+				or = {
+					attacker_leader = scope:actor
+					defender_leader = scope:actor
+				}
+			}
+		}
+	}
+	effect = {
+		scope:actor = {		
+			reverse_add_opinion = {
+				target = scope:recipient
+				modifier = opinion_called_into_war_by_overlord
+			}	
+		}		
+		scope:target = {
+			random_current_war = {
+				limit = {
+					or = {
+						attacker_leader = scope:actor
+						defender_leader = scope:actor
+					}
+				}
+				save_scope_as = overlords_war
+			}
+		}
+		scope:recipient = {
+			if = {
+				limit = {
+					scope:overlords_war = { attacker_leader = scope:actor }
+				}
+				join_war_as_attacker = { war = scope:overlords_war }
+			}
+			else = {
+				join_war_as_defender = { war = scope:overlords_war }
+			}
+		}
+	}
+
+	ai_will_do = {
+		if = {
+			limit = {
+				scope:actor = {	
+					lowest_war_score < 0
+				}
+			}
+
+			add = {
+				value = 10
+			}
+		}
+	}
+
+	diplo_chance = {
+		base = -10
+        diplomatic_reputation = 3
+		opinion = 0.2
+		in_debt = -5
+		trust_in_actor = 0.5
+		recipient_is_rival = -100
+	}
+	accept = {
+		add = {
+			desc = "IS_BANKRUPT_TOOLTIP"
+			if = {
+				limit = {	
+					scope:recipient = { 
+						is_during_bankruptcy = yes
+					}
+				}
+				value = -1000
+			}
+		}
+		add = {
+			scope:recipient = {
+				value = "trust(scope:actor)"
+				divide = 5
+			}
+		}
+		add = {
+			scope:recipient = {
+				value = "war_exhaustion"
+				divide = -2
+			}
+		}
+		add = {
+			desc = "IS_AT_WAR"
+			if = {
+				limit = {	
+					scope:recipient = { 
+						at_war = yes
+					}
+				}
+				value = -25
+			}
+		}
+	}
+}

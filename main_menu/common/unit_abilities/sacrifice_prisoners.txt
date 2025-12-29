@@ -1,0 +1,27 @@
+﻿sacrifice_prisoners = {
+	toggle = no
+
+	map = yes
+
+	hidden = {
+		OR = {
+			has_prisoners = no
+			owner = {
+				religion = {
+					has_doom = no
+				}
+			}
+		}
+	}
+
+	allow = {
+		can_execute_prisoners = yes
+	}
+
+	start_effect = {
+		sacrifice_prisoners_effect = yes
+	}
+	
+	ai_will_do = {
+	}
+}

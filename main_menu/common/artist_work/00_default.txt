@@ -1,0 +1,177 @@
+﻿painting = {
+	captured = yes
+	allow = {
+		artist_type = painter
+	}
+}
+
+miniature_painting = {
+	captured = yes
+	allow = {
+		OR = {
+			artist_type = painter
+			artist_type = calligrapher
+		}
+	}
+}
+
+icon = {
+	captured = yes
+	allow = {
+		artist_type = iconographer
+	}
+	religion_scale_modifier = religious_icon_power_modifier
+	location_modifier = {
+		local_unrest = -0.2
+		local_max_rgo_size_modifier = 0.10
+	}
+}
+
+scripture = {
+	captured = yes
+	allow = {
+		always = no #We don't want to get new scriptures created in the period
+	}
+}
+
+statue = {
+	captured = yes
+	allow = {
+		artist_type = sculptor
+	}
+}
+
+motet = {
+	captured = yes
+	allow = {
+		artist_type = composer
+		NOR = {
+			current_age = age_3_discovery
+			current_age = age_4_reformation
+			current_age = age_5_absolutism
+			current_age = age_6_revolutions
+		}
+	}
+}
+
+symphony = {
+	captured = yes
+	allow = {
+		artist_type = composer
+		OR = {
+			current_age = age_5_absolutism
+			current_age = age_6_revolutions
+		}
+	}
+}
+
+hymnal = {
+	captured = yes
+	allow = {
+		artist_type = composer
+	}
+}
+
+chronicle = {
+	captured = yes
+	allow = {
+		artist_type = writer
+	}
+}
+
+novel = {
+	captured = yes
+	allow = {
+		artist_type = writer
+	}
+}
+
+poem = {
+	captured = yes
+	allow = {
+		artist_type = writer
+	}
+}
+
+play = {
+	captured = yes
+	allow = {
+		artist_type = writer
+	}
+}
+
+mansion = {
+	captured = no
+	allow = {
+		artist_type = architect
+	}
+}
+
+monument = {
+	captured = no
+	allow = {
+		artist_type = architect
+	}
+}
+
+palace = {
+	captured = no
+	allow = {
+		artist_type = architect
+	}
+}
+
+temple_tower = {
+	captured = no
+	allow = {
+		artist_type = architect
+		location = {
+			OR = {
+				has_building_with_at_least_one_level = temple
+				has_building_with_at_least_one_level = cathedral
+			}
+		}
+	}
+}
+
+treatise = {
+	captured = no
+	allow = {
+		OR = {
+			artist_type = philosopher
+			artist_type = jurist
+			artist_type = scientist
+		}
+	}
+}
+
+weapon = {
+	captured = yes
+	allow = {
+		artist_type = metalsmith
+	}
+}
+
+regalia = {
+	captured = yes
+	allow = {
+		artist_type = metalsmith
+	}
+}
+
+prayer_book = {
+	captured = yes
+	allow = {
+		OR = {
+			artist_type = writer
+			artist_type = calligrapher
+		}
+	}
+}
+
+oral_traditions = {
+	captured = no
+	allow = {
+		artist_type = storyteller
+	}
+}

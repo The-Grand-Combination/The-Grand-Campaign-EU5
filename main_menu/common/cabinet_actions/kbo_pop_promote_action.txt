@@ -1,0 +1,51 @@
+﻿kbo_pop_promote_action = {
+	icon = pop_promote_action
+	ability = adm
+	
+	potential = {
+		has_variable = serf_social_integration_variable
+		num_locations > 0 
+	}
+	
+	select_trigger = {
+		looking_for_a = province
+		source = actor
+		target_flag = target
+		name = "kbo_pop_promote_action_select_province"
+		none_available_msg_key = "kbo_pop_promote_action_no_provinces"
+		column = {
+			data = name
+		}
+		column = {
+			data = primary_culture_percentage
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			any_location_in_province = {
+				OR = {
+					NOT = { dominant_culture = owner.culture }
+					local_cultural_unity < 1.0
+				}
+				
+			}
+		}
+		map_color = {
+			lerp = {
+				min_color = define:NMapColors|MAP_COLOR_LOW
+				max_color = define:NMapColors|MAP_COLOR_HIGH
+				factor = "province.culture_percentage(owner.dominant_culture)"
+			}
+		}
+	}
+
+	country_modifier = {
+		wrong_culture_levy_size = 0.1
+	}
+	
+	location_modifier = {
+		local_pop_promotion_speed = 0.02
+		local_pop_assimilation_speed = 0.02
+	}
+}

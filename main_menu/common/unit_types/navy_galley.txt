@@ -1,0 +1,60 @@
+﻿n_canoe = {
+	category = navy_galley
+	use_ship_names = yes
+
+	age = "age_1_traditions"
+	
+	maritime_presence = ship_neglible_maritime
+	
+	movement_speed = 2
+	
+	hull_size = 1
+	cannons = 1
+	
+	crew_size = 0.01
+	
+	
+	maintenance_demand =  canoe_maintenance
+	construction_demand = canoe_construction
+
+	gfx_tags = { canoe_tag }
+	
+	upgrades_to = n_traditional_galley
+}
+
+n_traditional_galley = {
+	category = navy_galley
+	copy_from = n_age_1_traditions_galley
+	age = "age_1_traditions"
+	
+	upgrades_to = n_mediterrannean_galley
+}
+
+n_mediterrannean_galley = {
+	category = navy_galley
+	copy_from = n_age_2_renaissance_galley
+	upgrades_to = n_war_galley
+	age = "age_2_renaissance"
+}
+
+n_war_galley = {
+	category = navy_galley
+	copy_from = n_age_3_discovery_galley
+	upgrades_to = n_galleass
+	age = "age_3_discovery"
+}
+
+n_galleass = {
+	category = navy_galley
+	copy_from = n_age_4_reformation_galley
+	upgrades_to = n_xebec
+	age = "age_4_reformation"
+}
+
+n_xebec = {
+	category = navy_galley
+	copy_from = n_age_5_absolutism_galley
+	age = "age_5_absolutism"
+	upgrades_to = n_archipelago_frigate
+}
+

@@ -1,0 +1,10 @@
+﻿## Not hardcoded
+# Modifiers in this file will automatically be applied to all international organization
+#	- Tooltips will also be generated
+#	- The AI will also understand them
+
+dynasty_base_values = {
+	type = dynasty
+	category = dynasty
+
+}

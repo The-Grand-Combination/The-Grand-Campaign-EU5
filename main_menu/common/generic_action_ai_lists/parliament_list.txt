@@ -1,0 +1,13 @@
+﻿parliament_list = {
+	potential = {
+		is_active_parliament = yes
+	}
+	actions = {
+		request_more_taxes
+		prepare_for_war
+		ask_for_larger_levies
+		ask_for_law_changes
+		force_parliament_issue
+		promote_mamluks
+	}
+}

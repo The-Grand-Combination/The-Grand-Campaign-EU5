@@ -1,0 +1,34 @@
+﻿n_early_carrack = {
+	category = navy_heavy_ship
+	copy_from = n_age_2_renaissance_heavy_ship
+	age = "age_2_renaissance"
+	upgrades_to = n_carrack
+}
+
+n_carrack = {
+	category = navy_heavy_ship
+	copy_from = n_age_3_discovery_heavy_ship
+	age = "age_3_discovery"
+	upgrades_to = n_galleon
+}
+
+n_galleon = {
+	category = navy_heavy_ship
+	copy_from = n_age_4_reformation_heavy_ship
+	age = "age_4_reformation"
+	upgrades_to = n_twodecker
+}
+
+n_twodecker = {
+	category = navy_heavy_ship
+	copy_from = n_age_5_absolutism_heavy_ship
+	age = "age_5_absolutism"
+	upgrades_to = n_threedecker
+}
+
+n_threedecker = {
+	category = navy_heavy_ship
+	copy_from = n_age_6_revolutions_heavy_ship
+	age = "age_6_revolutions"
+	upgrades_to = n_ship_of_the_line
+}

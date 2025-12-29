@@ -1,0 +1,10 @@
+﻿militarize_country = {
+	ability = mil
+	potential = {
+		has_reform = government_reform:prussian_monarchy
+	}
+	
+	country_modifier = {
+		discipline = 0.1
+	}
+}

@@ -1,0 +1,44 @@
+﻿n_early_turtle_ship = {
+	category = navy_galley
+	upgrades_to = n_turtle_ship
+	copy_from = n_age_2_renaissance_galley
+	movement_speed = 5
+	cannons = 11
+	
+	maintenance_demand =  galley_2_maintenance
+	construction_demand = galley_2_construction
+}
+
+n_iberian_caravel = {
+	category = navy_light_ship	
+	copy_from = n_age_2_renaissance_light_ship
+	buildable = yes
+	
+	movement_speed = 12
+	hull_size = 8
+	cannons = 10
+	crew_size = 0.075
+	maintenance_demand =  light_ship_2_maintenance
+	construction_demand = light_ship_2_construction
+
+	location_potential = {
+		unit_iberian_ship_location_trigger = yes
+	}
+}
+
+n_kilwan_dhow = {
+	category = navy_light_ship	
+	copy_from = n_age_2_renaissance_light_ship
+	buildable = yes
+	
+	maritime_presence = ship_medium_maritime
+}
+
+n_kilwan_zambuc = {
+	category = navy_transport	
+	copy_from = n_age_2_renaissance_transport
+	buildable = yes
+	
+	maritime_presence = ship_small_mid_maritime
+
+}

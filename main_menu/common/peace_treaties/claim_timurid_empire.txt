@@ -1,0 +1,60 @@
+﻿claim_timurid_empire = {
+	
+	cost = {
+		add = {
+			desc = "DIPLOREASON_BASE"
+			value = 5
+		}
+		add = {
+			desc = "game_concept_population"
+			value = scope:loser.total_population
+			multiply = 0.009
+		}
+	}
+
+	potential = {
+		scope:war = {
+			casus_belli ?= casus_belli:cb_claim_timurids
+		}
+	}
+
+	effect = {
+        custom_tooltip = {
+            text = claim_timurid_empire_tooltip
+            annex_country = {
+                country = scope:loser
+            }
+    
+            change_country_tag = TIM
+            change_country_name = TIM
+            change_country_adjective = TIM_ADJ
+            change_country_color = map_TIM
+            change_country_flag = TIM
+        }
+	}
+
+	ai_desire = {
+		if = {
+			limit = {
+				scope:winner = {
+					is_rival_of = scope:loser
+				}
+			}
+			add = {
+				desc = "game_concept_rival"
+				value = 10
+			}
+		}
+		if = {
+			limit = {
+				scope:winner.prestige < scope:loser.prestige
+			}
+			add = {
+				desc = "DIPLOREASON_LOWER_PRESTIGE"
+				value = scope:loser.prestige
+				subtract = scope:winner.prestige
+			}
+		}
+	}
+}
+

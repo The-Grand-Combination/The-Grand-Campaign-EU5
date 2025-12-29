@@ -1,0 +1,234 @@
+﻿#Unification
+colonial_federation_unification = {
+	type = international_organization
+	law_category = centralization
+	potential = { international_organization_type = international_organization_type:colonial_federation }
+	allow = {
+		NOT = {
+			any_international_organization_member = {
+				is_subject_type = colonial_nation
+			}
+		}
+	}
+	colonial_federation_found_republic = {
+		allow = {
+			international_organization_lifetime > 5
+		}
+		on_activate = {
+			if = {
+				limit = { has_valid_policy_vote_proposer = yes }
+				var:io_law_proposer ?= {
+					custom_tooltip = {
+						text = colonial_federation_found_republic_specific_tt
+						set_variable = colonial_federation_picked_gov_type_republic
+						trigger_event_silently = colonial_federation_events.1000
+					}
+				}
+			}
+			else_if = {
+				limit = { international_organization_has_leader = yes }
+				leader_country ?= {
+					custom_tooltip = {
+						text = colonial_federation_found_republic_specific_tt
+						set_variable = colonial_federation_picked_gov_type_republic
+						trigger_event_silently = colonial_federation_events.1000
+					}
+				}
+			}
+			else = {
+				custom_tooltip = colonial_federation_found_republic_tt
+				hidden_effect = {
+					if = {
+						limit = { any_international_organization_member = { is_ai = no } }
+						#Player with the most pops in the IO gets to become new Country
+						#Other players will lose their locations instead
+						ordered_international_organization_member = {
+							limit = { is_ai = no }
+							order_by = total_population
+							max = 1
+							check_range_bounds = no
+							set_variable = colonial_federation_picked_gov_type_republic
+							trigger_event_silently = colonial_federation_events.1000
+						}
+					}
+					else = {
+						#AI unifies the IO, no check needed for players in the IO
+						ordered_international_organization_member = {
+							order_by = total_population
+							max = 1
+							check_range_bounds = no
+							set_variable = colonial_federation_picked_gov_type_republic
+							trigger_event_silently = colonial_federation_events.1000
+						}
+					}
+				}
+			}
+		}
+		wants_this_policy_bias = {
+			if = {
+				limit = { scope:recipient = { international_organization_has_leader = yes } }
+				#opinion of the leader country
+				add = {
+					desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+					value = "opinion(scope:recipient.leader_country)"
+				}
+				#diplomatic rep of the leader country
+				add = {
+					desc = "IO_LEADER_DIP_REP"
+					value = scope:recipient.leader_country.modifier:diplomatic_reputation
+				}
+			}
+			else = {
+				add = {
+					desc = "VOTE_BASE_VALUE"
+					value = 10
+				}
+				#our own dip rep in hope we get it
+				add = {
+					desc = "game_concept_diplomatic_reputation"
+					value = modifier:diplomatic_reputation
+				}
+				add = io_members_and_potential_members_opinion_value
+			}
+			add = {
+				desc = "BIAS_FROM_RULER_TRAITS"
+				value = modifier:bias_for_diplomat_policies
+			}
+		}
+	}
+	colonial_federation_found_monarchy = {
+		allow = {
+			international_organization_lifetime > 10
+			leader_country = {
+				government_power < 60
+			}
+		}
+		on_activate = {
+			if = {
+				limit = { has_valid_policy_vote_proposer = yes }
+				var:io_law_proposer ?= {
+					custom_tooltip = {
+						text = colonial_federation_found_monarchy_specific_tt
+						set_variable = colonial_federation_picked_gov_type_monarchy
+						trigger_event_silently = colonial_federation_events.1000
+					}
+				}
+			}
+			else_if = {
+				limit = { international_organization_has_leader = yes }
+				leader_country ?= {
+					custom_tooltip = {
+						text = colonial_federation_found_monarchy_specific_tt
+						set_variable = colonial_federation_picked_gov_type_monarchy
+						trigger_event_silently = colonial_federation_events.1000
+					}
+				}
+			}
+			else = {
+				custom_tooltip = colonial_federation_found_monarchy_tt
+			}
+		}
+		wants_this_policy_bias = {
+			if = {
+				limit = { scope:recipient = { international_organization_has_leader = yes } }
+				#opinion of the leader country
+				add = {
+					desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+					value = "opinion(scope:recipient.leader_country)"
+				}
+				#diplomatic rep of the leader country
+				add = {
+					desc = "IO_LEADER_DIP_REP"
+					value = scope:recipient.leader_country.modifier:diplomatic_reputation
+				}
+			}
+			else = {
+				add = {
+					desc = "VOTE_BASE_VALUE"
+					value = 10
+				}
+				#our own dip rep in hope we get it
+				add = {
+					desc = "game_concept_diplomatic_reputation"
+					value = modifier:diplomatic_reputation
+				}
+				add = io_members_and_potential_members_opinion_value
+			}
+			add = {
+				desc = "BIAS_FROM_RULER_TRAITS"
+				value = modifier:bias_for_diplomat_policies
+			}
+		}
+	}
+	colonial_federation_found_theocracy = {
+		allow = {
+			international_organization_lifetime > 10
+			OR = {
+				leader_country = {
+					OR = {
+						religious_unity > 0.9
+						ruler_or_regent = {
+							has_trait = zealot
+						}
+					}
+				}
+			}
+		}
+		on_activate = {
+			if = {
+				limit = { has_valid_policy_vote_proposer = yes }
+				var:io_law_proposer ?= {
+					custom_tooltip = {
+						text = colonial_federation_found_theocracy_specific_tt
+						set_variable = colonial_federation_picked_gov_type_theocracy
+						trigger_event_silently = colonial_federation_events.1000
+					}
+				}
+			}
+			else_if = {
+				limit = { international_organization_has_leader = yes }
+				leader_country ?= {
+					custom_tooltip = {
+						text = colonial_federation_found_theocracy_specific_tt
+						set_variable = colonial_federation_picked_gov_type_theocracy
+						trigger_event_silently = colonial_federation_events.1000
+					}
+				}
+			}
+			else = {
+				custom_tooltip = colonial_federation_found_theocracy_tt
+			}
+		}
+		wants_this_policy_bias = {
+			if = {
+				limit = { scope:recipient = { international_organization_has_leader = yes } }
+				#opinion of the leader country
+				add = {
+					desc = "POLICY_BIAS_OPINION_OF_IO_LEADER"
+					value = "opinion(scope:recipient.leader_country)"
+				}
+				#diplomatic rep of the leader country
+				add = {
+					desc = "IO_LEADER_DIP_REP"
+					value = scope:recipient.leader_country.modifier:diplomatic_reputation
+				}
+			}
+			else = {
+				add = {
+					desc = "VOTE_BASE_VALUE"
+					value = 10
+				}
+				#our own dip rep in hope we get it
+				add = {
+					desc = "game_concept_diplomatic_reputation"
+					value = modifier:diplomatic_reputation
+				}
+				add = io_members_and_potential_members_opinion_value
+			}
+			add = {
+				desc = "BIAS_FROM_RULER_TRAITS"
+				value = modifier:bias_for_diplomat_policies
+			}
+		}
+	}
+}

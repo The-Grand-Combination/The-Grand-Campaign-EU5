@@ -1,0 +1,13 @@
+﻿oma_bolster_omani_navy = {
+	
+	potential = {
+		has_unlocked_cabinet_action_trigger = { type = oma_bolster_omani_navy }
+	}
+	ability = dip
+	allow_multiple = no 
+
+	country_modifier = {
+		merchant_power_from_maritime_modifier = 0.2
+		global_naval_supplies_output_modifier = 0.1
+	}
+}

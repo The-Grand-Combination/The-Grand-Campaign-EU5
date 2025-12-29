@@ -1,0 +1,54 @@
+﻿gather_acllas = {
+	ability = adm
+	potential = {
+		modifier:can_use_aclla_distribution = yes
+	}
+	years = 4
+	country_modifier = {
+		clergy_estate_target_satisfaction = medium_permanent_target_satisfaction
+	}
+	on_activate = {
+		scope:actor ?= {
+			hidden_effect = {
+				remove_country_modifier = accumalating_acllas
+				add_country_modifier = { modifier = accumalating_acllas years = 4 mode = add }
+				random_list = {
+					3 = { set_variable = { name = is_gathering_acllas value = 2 } }
+					5 = { set_variable = { name = is_gathering_acllas value = 3 } }
+					4 = { set_variable = { name = is_gathering_acllas value = 4 } }
+					3 = { set_variable = { name = is_gathering_acllas value = 5 } }
+					2 = { set_variable = { name = is_gathering_acllas value = 6 } }
+					1 = { set_variable = { name = is_gathering_acllas value = 7 } }
+				}
+			}
+		}
+	}
+	is_finished = {
+		NOT = { has_country_modifier = accumalating_acllas }
+	}
+	on_deactivate = {
+		scope:actor ?= {
+			hidden_effect = {
+				if = {
+					limit = { has_country_modifier = accumalating_acllas }
+					remove_country_modifier = accumalating_acllas
+				}
+				else = {
+					while = {
+						limit = {
+							var:is_gathering_acllas > 0
+						}
+						change_variable = { name = is_gathering_acllas add = -1 }
+						create_character = {
+							religion = scope:actor.religion
+							culture = scope:actor.culture
+							estate = estate_type:clergy_estate
+							age = 18
+							female = yes
+						}
+					}
+				}
+			}
+		}
+	}
+}

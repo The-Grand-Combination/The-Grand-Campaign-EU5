@@ -1,0 +1,193 @@
+﻿join_foreign_order_of_chivalry = {
+	is_consort_action = no
+	on_own_nation = yes
+	message = yes
+	context_menu_click_mode = click # Disable confirm
+
+	potential = {
+		scope:actor = {
+			religion.group = religion_group:christian
+			any_in_global_list = {
+				variable = countries_with_chivalric_orders
+				has_different_order_of_chivalry = { country = scope:actor }
+			}
+		}
+	}
+
+	ai_tick = daily
+	ai_tick_frequency = 180
+
+	allow = {
+		scope:actor = {
+			custom_tooltip = {
+				text = order_of_chivalry_country_cooldown
+				not = { has_variable = order_of_chivalry_country_cooldown }
+			}
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = character
+		source = actor
+		target_flag = recipient
+		name = "choose_character"
+		column = {
+			data = name
+		}
+		visible = {
+			is_alive = yes
+			owner = scope:actor
+			is_artist = no
+		}
+		enabled = {
+			modifier:is_in_chivalric_order = no
+			religion.group = religion_group:christian
+			OR = {
+				has_estate = estate_type:nobles_estate
+				has_estate = estate_type:crown_estate
+			}
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = country
+		source_global_list = countries_with_chivalric_orders
+		target_flag = target
+		name = "join_foreign_order_of_chivalry_select_title"
+		none_available_msg_key = "join_foreign_order_of_chivalry_no_countries"
+		column = { data = name }
+		visible = {
+			NOT = { root = scope:actor }
+			character_can_join_order_of_chivalry = { country = root character = scope:recipient }
+			not = { is_at_war_with = scope:actor }
+			has_different_order_of_chivalry = { country = scope:actor }
+			within_diplomatic_range = scope:actor
+		}
+	}
+	ai_will_do = {
+		add = 5
+		if = {
+			limit = {
+				scope:target = { has_desirable_order_of_chivalry_for_target_country = { country = scope:actor } }
+			}
+			add = 20
+		}
+		if = {
+			limit = { scope:target = { has_policy = order_of_saint_george_policy } }
+			add = "scope:recipient.add_static_modifier_utility(joined_order_of_saint_george)"
+		}
+		if = {
+			limit = { scope:target = { has_policy = order_of_the_ermine_policy } }
+			add = "scope:recipient.add_static_modifier_utility(joined_order_of_the_ermine)"
+		}
+		if = {
+			limit = { scope:target = { has_policy = order_of_the_dragon_policy } }
+			add = "scope:recipient.add_static_modifier_utility(joined_order_of_the_dragon)"
+		}
+	}
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				set_variable = { name = order_of_chivalry_country_cooldown value = yes years = 10 }
+			}
+		}
+		scope:recipient = {
+			join_order_of_chivalry_effect = { country = scope:target }
+		}
+		if = {
+			limit = { exists = scope:target }
+			scope:target = {
+				add_opinion = {
+					target = scope:actor
+					modifier = opinion_joined_our_order_of_chivalry
+				}
+			}
+		}
+	}
+}
+
+invite_to_order_of_chivalry = {
+	is_consort_action = no
+	on_own_nation = yes
+	message = yes
+
+	potential = {
+	}
+
+	allow = {
+		scope:actor = {
+			custom_tooltip = {
+				text = order_of_chivalry_country_cooldown
+				not = { has_variable = order_of_chivalry_country_cooldown }
+			}
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = character
+		source = actor
+		target_flag = recipient
+		name = "choose_character"
+		column = {
+			data = name
+		}
+		visible = {
+			is_alive = yes
+			character_can_join_order_of_chivalry = {
+				country = scope:actor
+				character = root
+			}
+		}
+		enabled = {
+			modifier:is_in_chivalric_order = no 
+			religion.group = religion_group:christian
+			owner = { within_diplomatic_range = scope:actor }
+			OR = {
+				has_estate = estate_type:nobles_estate
+				has_estate = estate_type:crown_estate
+			}
+		}
+	}
+
+	ai_will_do = {
+		add = 25	#Base Value
+		if = {
+			limit = { scope:actor = { has_policy = order_of_saint_george_policy } }
+			add = "scope:recipient.add_static_modifier_utility(joined_order_of_saint_george)"
+		}
+		if = {
+			limit = { scope:actor = { has_policy = order_of_the_ermine_policy } }
+			add = "scope:recipient.add_static_modifier_utility(joined_order_of_the_ermine)"
+		}
+		if = {
+			limit = { scope:actor = { has_policy = order_of_the_dragon_policy } }
+			add = "scope:recipient.add_static_modifier_utility(joined_order_of_the_dragon)"
+		}
+		if = {
+			limit = { scope:actor = { has_policy = order_of_the_band_policy } }
+			add = "scope:recipient.add_static_modifier_utility(joined_order_of_the_band)"
+		}
+		if = {
+			limit = { scope:actor = { has_policy = order_of_the_swan_policy } }
+			add = "scope:recipient.add_static_modifier_utility(joined_order_of_the_swan)"
+		}
+		if = {
+			limit = { scope:actor = { has_policy = order_of_the_black_eagle_policy } }
+			add = "scope:recipient.add_static_modifier_utility(joined_order_of_the_black_eagle)"
+		}
+		if = {
+			limit = { scope:actor = { has_policy = order_of_the_white_eagle_policy } }
+			add = "scope:recipient.add_static_modifier_utility(joined_order_of_the_white_eagle)"
+		}
+	}
+	effect = {
+		hidden_effect = {
+			scope:actor = {
+				set_variable = { name = order_of_chivalry_country_cooldown value = yes years = 10 }
+			}
+		}
+		scope:recipient = {
+			join_order_of_chivalry_effect = { country = scope:actor }
+		}
+	}
+}

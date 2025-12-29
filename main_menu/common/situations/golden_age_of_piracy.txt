@@ -1,0 +1,265 @@
+﻿golden_age_of_piracy = {
+	monthly_spawn_chance = monthly_spawn_chance_unique
+	hint_tag = hint_golden_age_of_piracy
+	
+	can_start = {
+		current_age_or_later = { age = age_5_absolutism }
+		any_american_colonial_country = {
+			count >= 5
+		}
+	}
+	
+	can_end = { golden_age_of_piracy_end_trigger = yes }
+	
+	visible = {
+		#Natives only care about the situation if they have a reasonable navy
+		trigger_if = {
+			limit = { 
+				culture = { is_culture_native_american = yes }
+			}
+			navy_size_percentage >= 0.25
+		}
+		
+		OR = {
+			AND = {
+				OR = {
+					has_presence_in = continent:america
+					any_subject = { has_presence_in = continent:america }
+				}
+				NOT = { culture = { is_culture_native_american = yes } }
+			}
+			country_type = navy
+			has_reform = government_reform:pirate_brethren_reform
+		}
+	}
+	
+
+	on_start = {
+		every_country = {
+			limit = {
+				OR = {
+					country_type = navy
+					AND = {
+						OR = {
+							has_presence_in = continent:america
+							any_subject = { has_presence_in = continent:america }
+						}
+						NOT = { culture = { is_culture_native_american = yes } }
+					}
+				}
+			}
+			trigger_event_non_silently = great_pirate_era.300
+		}
+	}
+
+	on_monthly = {
+		every_country_of_country_type = {
+			type = navy
+			limit = { has_reform = government_reform:pirate_brethren_reform }
+			random_list = {
+				75 = { }
+				5 = { 
+					trigger_event_non_silently = great_pirate_era.1
+				}
+				5 = { 
+					trigger_event_non_silently = great_pirate_era.2
+				}
+				5 = { 
+					trigger_event_non_silently = great_pirate_era.4
+				}
+				5 = { 
+					trigger_event_non_silently = great_pirate_era.5
+				}
+				5 = { 
+					trigger_event_non_silently = great_pirate_era.6
+				}
+			}
+		}
+		ordered_country_of_country_type = {
+			type = navy
+			limit = { 
+				has_reform = government_reform:pirate_brethren_reform
+				is_subject = no
+			}
+			order_by = great_power_score
+			check_range_bounds = no
+			max = 1
+			save_scope_as = target_pirate_country
+			add_country_modifier = {
+				modifier = strongest_pirate_modifier
+				years = -1
+				desc = as_long_as_strongest_pirate_desc
+				mode = replace
+			}
+		}
+
+		if = {
+			limit = { 
+				exists = var:strongest_pirate_variable
+				var:strongest_pirate_variable != scope:target_pirate_country 
+			}
+			var:strongest_pirate_variable ?= { remove_country_modifier = strongest_pirate_modifier }
+		}
+		set_variable = {
+			name = strongest_pirate_variable
+			value = scope:target_pirate_country
+		}
+	}
+
+	on_ended = {
+		remove_variable = strongest_pirate_variable
+		if = {
+			limit = {
+				any_country_of_country_type = { 
+					type = navy
+					has_reform = government_reform:pirate_brethren_reform
+					is_subject = no
+				}
+			}
+			ordered_country_of_country_type = {
+				type = navy
+				limit = { 
+					has_reform = government_reform:pirate_brethren_reform
+					is_subject = no
+				}
+				order_by = great_power_score
+				check_range_bounds = no
+				max = 1
+				save_scope_as = target_pirate_country
+			}
+			every_country = {
+				limit = { can_see_situation = situation:golden_age_of_piracy }
+				trigger_event_silently = great_pirate_era.100
+			}
+		}
+		else = { 
+			every_country = {
+				limit = { can_see_situation = situation:golden_age_of_piracy }
+				trigger_event_silently = great_pirate_era.200
+			}
+		}
+	}
+
+	tooltip = {
+		#If the location has a Pirate building base country, color it as that
+		if = {
+			limit = {
+				OR = {
+					owner ?= {
+						has_reform = government_reform:pirate_brethren_reform
+					}
+					any_foreign_building_countries_in_location = {
+						has_reform = government_reform:pirate_brethren_reform
+					}
+				}
+			}
+			custom_tooltip = "GAOP_PIRATE_MAP_TT"
+		}
+		#Countries that are at war with pirates
+		else_if = {
+			limit = {
+				owner ?= {	
+					any_country_at_war_with = {
+						has_reform = government_reform:pirate_brethren_reform
+					}
+				}		
+			}
+			custom_tooltip = "GAOP_WAR_WITH_PIRATE_MAP_TT"
+		}
+		#Countries that support a pirate
+		else_if = {
+			limit = {
+				owner ?= {	
+					any_related_country = {
+						type = alliance
+						has_reform = government_reform:pirate_brethren_reform
+					}
+				}		
+			}
+			custom_tooltip = "GAOP_SUPPORT_PIRATE_MAP_TT"
+		}
+		#Countries that subjugate the pirates
+		else_if = {
+			limit = {
+				owner ?= {
+					any_subject_or_below = {
+						has_reform = government_reform:pirate_brethren_reform
+					}
+				}
+			}
+			custom_tooltip = "GAOP_PIRATE_OVERLORD_MAP_TT"
+		}
+	}
+
+	map_color = {
+		#If the location has a Pirate building base country, color it as that
+		if = {
+			limit = {
+				OR = {
+					owner ?= {
+						has_reform = government_reform:pirate_brethren_reform
+					}
+					any_foreign_building_countries_in_location = {
+						has_reform = government_reform:pirate_brethren_reform
+					}
+				}
+			}
+			value = black
+		}
+		#Countries that are at war with pirates
+		else_if = {
+			limit = {
+				owner ?= {	
+					any_country_at_war_with = {
+						has_reform = government_reform:pirate_brethren_reform
+					}
+				}		
+			}
+			value = red
+		}
+		#Countries that support a pirate
+		else_if = {
+			limit = {
+				owner ?= {	
+					any_related_country = {
+						type = alliance
+						has_reform = government_reform:pirate_brethren_reform
+					}
+				}		
+			}
+			value = green
+		}
+		#Countries that subjugate the pirates
+		else_if = {
+			limit = {
+				owner ?= {
+					any_subject_or_below = {
+						has_reform = government_reform:pirate_brethren_reform
+					}
+				}
+			}
+			value = blue
+		}
+	}
+	
+	legend_key = { 
+		desc = "[pirates|e]"
+		color = black
+		require_color_on_map = yes
+	}
+	legend_key = { 
+		desc = "LEGEND_KEY_WAR_ENEMY"
+		color = red
+		require_color_on_map = yes
+	}
+	legend_key = { 
+		desc = "IO_PARLIAMENT_VOTERS"
+		color = green
+		require_color_on_map = yes
+	}
+	legend_key = { 
+		desc = "game_concept_subjugate"
+		color = blue
+		require_color_on_map = yes
+	}
+}

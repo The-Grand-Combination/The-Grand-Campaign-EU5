@@ -1,0 +1,73 @@
+﻿sinicization_disaster = {
+
+	image = "gfx/interface/illustrations/disaster/sinicization_disaster.dds"
+
+	monthly_spawn_chance = monthly_spawn_chance_very_low
+
+	can_start = {
+		trigger_if = {
+			limit = {
+				country_exists = c:CHI
+				OR = {
+					NOT = { exists = international_organization:middle_kingdom }
+					c:CHI = { is_leader_of_international_organization = international_organization:middle_kingdom }
+				}
+			}
+			this != c:CHI
+			power_projection < c:CHI.power_projection
+		}
+		trigger_if = {
+			limit = {
+				exists = international_organization:middle_kingdom
+				exists = international_organization:middle_kingdom.leader_country
+			}
+			this != international_organization:middle_kingdom.leader_country
+			power_projection < international_organization:middle_kingdom.leader_country.power_projection
+		}
+		trigger_else = { always = no }
+		societal_value:sinicized_vs_unsinicized <= -90
+		is_subject = no
+	}
+	
+
+	can_end = {
+		sinicization_disaster_end_trigger = yes
+	}
+	modifier = {
+		monthly_tribal_cohesion = -0.2
+		monthly_legitimacy = -0.2
+		monthly_republican_tradition = -0.05
+		monthly_devotion = -0.2
+		monthly_rebel_growth = 0.01
+		global_estate_target_satisfaction = big_permanent_target_satisfaction_penalty
+	}
+	
+	on_start = {
+		trigger_event_non_silently = sinicization_disaster.1
+		set_variable = {
+			name = china_side
+			value = 0
+		}
+		set_variable = {
+			name = sovereign_side
+			value = 0
+		}
+	}
+	on_end = {
+		trigger_event_non_silently = sinicization_disaster.100
+	}
+	
+	on_monthly = {
+	
+		random_list = {
+			250 = { } 
+			10 = { trigger_event_non_silently = sinicization_disaster.2 }
+			10 = { trigger_event_non_silently = sinicization_disaster.3 }
+			10 = { trigger_event_non_silently = sinicization_disaster.4 }
+			10 = { trigger_event_non_silently = sinicization_disaster.5 }
+			10 = { trigger_event_non_silently = sinicization_disaster.6 }
+			10 = { trigger_event_non_silently = sinicization_disaster.7 }
+			100 = { trigger_event_non_silently = sinicization_disaster.8 }
+		} 
+	}
+}

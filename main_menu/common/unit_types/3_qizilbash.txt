@@ -1,0 +1,22 @@
+﻿a_discovery_qizilbash = {
+	category = army_cavalry
+	copy_from = a_age_3_discovery_cavalry
+	upgrades_to = a_reformation_qizilbash
+
+	strength_damage_done = 0.1
+
+	limit = qizilbash_unit_limit
+	gfx_tags = { medium_tag }
+}
+
+a_reformation_qizilbash = {
+	category = army_cavalry
+	copy_from = a_age_4_reformation_cavalry
+	country_potential = {
+		has_unlocked_unit_trigger = { type = a_reformation_qizilbash }
+	}
+	strength_damage_done = 0.2
+
+	limit = qizilbash_unit_limit
+	gfx_tags = { medium_tag }
+}

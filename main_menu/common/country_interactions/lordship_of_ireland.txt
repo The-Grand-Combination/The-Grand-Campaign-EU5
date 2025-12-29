@@ -1,0 +1,485 @@
+﻿lordship_of_ireland_bestow_lieutenant_status = {
+	type = diplomacy
+	category = CATEGORY_FRIENDLY_ACTIONS
+
+	potential = {
+		exists = international_organization:lordship_of_ireland
+		international_organization:lordship_of_ireland = {
+			leader_country ?= scope:actor
+			"num_countries_with_special_status(special_status:lieutenant)" < "max_countries_with_special_status(special_status:lieutenant)"
+		}
+	}
+
+	allow = {
+	}
+	
+	select_trigger = {
+		looking_for_a = country
+		target_flag = recipient
+		name = "choose_country"
+		column = {
+			data = name
+		}
+		visible = {
+			is_member_of_international_organization = international_organization:lordship_of_ireland
+		}
+        enabled = {
+			international_organization:lordship_of_ireland = {
+				special_status_can_be_bestowed = {
+					type = special_status:lieutenant
+					country = root
+				}
+			}
+		}
+	}
+
+	effect = {
+		international_organization:lordship_of_ireland = {
+			international_organization_add_special_status = {
+				type = special_status:lieutenant
+				country = scope:recipient
+			}
+			international_organization_remove_special_status = {
+				type = special_status:loyalist
+				country = scope:recipient
+			}
+		}
+	}
+
+	ai_will_do = {
+		value = -100
+		add = {
+			desc = "OUR_OPINION_TOOLTIP"
+			value = "scope:actor.opinion(scope:recipient)"
+		}
+		add = {
+			desc = "THEIR_OPINION_TOOLTIP"
+			value = "scope:recipient.opinion(scope:actor)"
+		}
+		if = {
+			limit = {
+				scope:actor.culture = scope:recipient.culture
+			}
+			add = 50
+		}
+		else_if = {
+			limit = {
+				scope:actor = {
+					any_accepted_culture = {
+						this = scope:recipient.culture
+					}
+				}
+			}
+			add = 25
+		}
+	}
+
+	accept = {
+		if = {
+			limit = { exists = scope:recipient }
+			add = {
+				desc = "THEIR_OPINION_TOOLTIP"
+				value = "scope:recipient.opinion(scope:actor)"
+				if = {
+					limit = {
+						scope:recipient = {
+							"opinion(scope:actor)" > 0
+						}
+					}
+					divide = 10
+				}
+				else = {
+					divide = 5
+				}
+			}
+			add = {
+				scope:actor = {
+					value = modifier:diplomatic_reputation
+					multiply = 3
+				}
+			}
+			add = {
+				scope:recipient = {
+					value = "trust(scope:actor)"
+					divide = 5
+				}
+			}
+		}
+	}
+}
+
+lordship_of_ireland_rescind_lieutenant_status = {
+	type = diplomacy
+	category = CATEGORY_HOSTILE_ACTIONS
+
+	potential = {
+		exists = international_organization:lordship_of_ireland
+		international_organization:lordship_of_ireland = {
+			leader_country ?= scope:actor
+		}
+	}
+
+	allow = {
+	}
+	
+	select_trigger = {
+		looking_for_a = country
+		target_flag = recipient
+		name = "choose_country"
+		column = {
+			data = name
+		}
+		visible = {
+			is_member_of_international_organization = international_organization:lordship_of_ireland
+			international_organization:lordship_of_ireland = {
+				country_has_special_status = {
+					type = special_status:lieutenant
+					country = root
+				}
+			}
+		}
+        enabled = {
+		}
+	}
+
+	effect = {
+		international_organization:lordship_of_ireland = {
+			international_organization_remove_special_status = {
+				type = special_status:lieutenant
+				country = scope:recipient
+			}
+			international_organization_add_special_status = {
+				type = special_status:loyalist
+				country = scope:recipient
+			}
+		}
+	}
+
+	ai_will_do = {
+		value = 0
+
+		subtract = {
+			desc = "OUR_OPINION_TOOLTIP"
+			value = "scope:actor.opinion(scope:recipient)"
+		}
+	}
+}
+
+lordship_of_ireland_assert_regency = {
+	type = diplomacy
+	category = CATEGORY_SUBJECT_ACTIONS
+
+	potential = {
+		exists = international_organization:lordship_of_ireland
+		international_organization:lordship_of_ireland = {
+			leader_country ?= scope:actor
+		}
+	}
+
+	allow = {
+		scope:actor = { 
+			has_ruler = yes
+			ruler = {
+				can_become_a_regent = yes
+			}
+			government_type = government_type:monarchy
+			at_war = no
+		}
+	}
+	
+	select_trigger = {
+		looking_for_a = country
+		target_flag = recipient
+		name = "choose_country"
+		column = {
+			data = name
+		}
+		visible = {
+			is_member_of_international_organization = international_organization:lordship_of_ireland
+		}
+        enabled = {
+			has_regent = yes
+			NOT = { regent ?= scope:actor.ruler }
+			OR = {
+				is_subject = no
+				is_subject_of = scope:actor
+			}		
+			government_type = government_type:monarchy
+			at_war = no
+		}
+	}
+
+	effect = {
+		scope:recipient = { set_regent = scope:actor.ruler }
+	}
+
+	ai_will_do = {
+		value = 100
+
+		subtract = {
+			desc = "OUR_OPINION_TOOLTIP"
+			value = "scope:actor.opinion(scope:recipient)"
+		}
+	}
+}
+
+
+lordship_of_ireland_enfeoff_regency = {
+	type = diplomacy
+	category = CATEGORY_SUBJECT_ACTIONS
+
+	potential = {
+		exists = international_organization:lordship_of_ireland
+		international_organization:lordship_of_ireland = {
+			leader_country ?= scope:actor
+		}
+	}
+
+	allow = {
+		scope:actor = { 
+			has_ruler = yes
+			government_type = government_type:monarchy
+			at_war = no
+		}
+	}
+	
+	select_trigger = {
+		looking_for_a = country
+		target_flag = recipient
+		name = "choose_country"
+		column = {
+			data = name
+		}
+		visible = {
+			is_member_of_international_organization = international_organization:lordship_of_ireland
+		}
+        enabled = {
+			has_ruler = no
+			OR = {
+				is_subject = no
+				is_subject_of = scope:actor
+			}
+			regent ?= scope:actor.ruler
+			government_type = government_type:monarchy
+			at_war = no
+			has_heir = no
+		}
+	}
+
+	effect = {
+		scope:recipient = {
+			make_subject_of = {
+				target = scope:actor
+				type = subject_type:fiefdom
+			}
+		}
+	}
+
+	ai_will_do = {
+		value = 100
+
+		subtract = {
+			desc = "OUR_OPINION_TOOLTIP"
+			value = "scope:actor.opinion(scope:recipient)"
+		}
+	}
+}
+
+
+
+lordship_of_ireland_surrender_and_regrant = {
+	type = diplomacy
+	category = CATEGORY_FRIENDLY_ACTIONS
+
+	potential = {
+		exists = international_organization:lordship_of_ireland
+		international_organization:lordship_of_ireland = {
+			leader_country ?= scope:actor
+		}
+	}
+
+	allow = {
+		scope:actor = { 
+			has_ruler = yes
+			at_war = no
+		}
+	}
+	
+	select_trigger = {
+		looking_for_a = country
+		target_flag = recipient
+		name = "choose_country"
+		column = {
+			data = name
+		}
+		visible = {
+			NOT = { is_member_of_international_organization = international_organization:lordship_of_ireland }
+			capital = { is_owned_by_international_organization = international_organization:lordship_of_ireland }
+			has_ruler = yes
+			is_subject = no
+			OR = {
+				government_type = government_type:monarchy
+				government_type = government_type:tribe
+			}
+			religion.group = scope:actor.religion.group
+			at_war = no
+			custom_tooltip = {
+				text = lordship_of_ireland_target_of_IO_tt
+				international_organization:lordship_of_ireland ?= {
+					NOT = {
+						any_international_organization_member = {
+							is_member_of_international_organization_of_type = {
+								type = coalition
+								target = scope:recipient
+							}
+						}
+					}
+				}
+			}
+		}
+        
+	}
+
+	effect = {
+		international_organization:lordship_of_ireland = {
+			add_country_to_international_organization = scope:recipient
+		}
+		scope:recipient = {
+			if = {
+				limit = {
+					culture = {
+						has_culture_group = culture_group:hibernian_group
+						language = language:gaelic_language
+					}
+					scope:actor = {
+						culture.language = language:english_language
+					}
+					culture:anglo_irish.language = language:english_language
+				}
+				culture = {
+					save_scope_as = old_culture
+				}
+				change_culture = culture:anglo_irish
+			}
+			if = {
+				limit = {
+					religion != scope:actor.religion
+				}
+				change_religion = scope:actor.religion
+				change_religion_for_ruler_and_family = { country = scope:recipient religion = scope:actor.religion }
+			}
+			if = {
+				limit = {
+					government_type = government_type:tribe
+				}
+				change_government_type = government_type:monarchy
+			}
+			if = {
+				limit = {
+					court_dialect != scope:actor.court_dialect
+				}
+				set_court_language = scope:actor.court_dialect
+			}
+			if = {
+				limit = {
+					succession_law = heir_selection:tanistry_elective
+				}
+				change_heir_selection = heir_selection:cognatic_primogeniture
+			}
+			every_international_organizations_member_of = {
+				limit = {
+					international_organization_type = international_organization_type:high_kingship
+				}
+				remove_country_from_international_organization = scope:recipient
+			}
+			add_legitimacy = legitimacy_severe_bonus
+		}
+	}
+
+	ai_will_do = {
+		value = 0
+
+		subtract = {
+			desc = "OUR_OPINION_TOOLTIP"
+			value = "scope:actor.opinion(scope:recipient)"
+		}
+	}
+
+	accept = {
+		value = -100
+
+		scope:recipient = {
+			add = {
+				desc = "THEIR_OPINION_TOOLTIP"
+				value = "scope:recipient.opinion(scope:actor)"
+			}
+			add = {
+				desc = "DIPLOREASON_BELONGS_TO_HIGH_KINGSHIP"
+				if = {
+					limit = {	
+						scope:recipient = { 
+							any_international_organizations_member_of = { international_organization_type = international_organization_type:high_kingship }
+						}
+					}
+					add = -10
+				}
+			}
+			add = {
+				desc = "THEY_ARE_TRIBE"
+				if = {
+					limit = {	
+						scope:recipient = { 
+							government_type = government_type:tribe
+						}
+					}
+					add = -10
+				}
+			}
+			add = {
+				desc = "DIPLOREASON_DIFF_RELIGION"
+				if = {
+					limit = {	
+						scope:recipient = { 
+							religion != scope:actor.religion
+						}
+					}
+					add = -10
+				}
+			}
+			add = {
+				desc = "DIPLOREASON_DIFF_CULTURE"
+				if = {
+					limit = {	
+						scope:recipient = { 
+							culture != scope:actor.culture
+							culture.language != culture:anglo_irish.language
+						}
+					}
+					add = -10
+				}
+			}
+			add = {
+				desc = "DIPLOREASON_DIFF_COURT_LANGUAGE"
+				if = {
+					limit = {	
+						scope:recipient = { 
+							court_language != scope:actor.court_language
+						}
+					}
+					add = -10
+				}
+			}
+			add = {
+				desc = "UPKEEP_RANK"
+				if = {
+					limit = {	
+						scope:recipient = { 
+							country_rank_level >= scope:actor.country_rank_level
+						}
+					}
+					add = -10
+				}
+			}
+		}
+	}
+}

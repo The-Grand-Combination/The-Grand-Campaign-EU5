@@ -1,0 +1,48 @@
+﻿a_jaguar_warrior = {
+	category = army_infantry
+	
+	copy_from = a_age_2_renaissance_infantry
+	
+	construction_demand = a_warriors_construction
+	maintenance_demand =  a_warriors_maintenance
+	
+	morale_damage_taken = -0.1
+	max_strength = 0.3
+	
+	buildable = yes
+	
+	location_potential = {
+		modifier:local_may_build_nahuatl_units = yes
+	}
+
+	country_potential = {
+		modifier:global_may_build_nahuatl_units = yes
+	}
+
+	gfx_tags = { jaguar_warrior_tag medium_tag }
+}
+
+a_eagle_warrior = {
+	category = army_infantry
+	
+	copy_from = a_age_2_renaissance_infantry
+	
+	construction_demand = a_warriors_construction
+	maintenance_demand =  a_warriors_maintenance
+	
+	strength_damage_taken = -0.1
+	morale_damage_done = 0.1
+	movement_speed = 2
+	
+	buildable = yes
+	
+	location_potential = {
+		modifier:local_may_build_nahuatl_units = yes
+	}
+
+	country_potential = {
+		modifier:global_may_build_nahuatl_units = yes
+	}
+
+	gfx_tags = { eagle_warrior_tag medium_tag }
+}

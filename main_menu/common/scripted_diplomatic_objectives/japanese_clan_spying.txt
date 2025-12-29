@@ -1,0 +1,110 @@
+﻿jap_clan_spy_objective = {
+    days_between_checks = 365
+    actor_trigger = { 
+        exists = situation:nanbokuchou
+        is_member_of_international_organization = international_organization:japanese_shogunate
+    }
+
+    recipient_trigger = {
+        scope:recipient = {
+            is_member_of_international_organization = international_organization:japanese_shogunate
+        }
+
+        scope:recipient = {
+            num_locations < 1
+        }
+        "scope:actor.relative_military_strength(scope:recipient)" > 0.5
+
+        or = {
+            and = {
+                scope:actor = {
+                     has_variable = supports_northern_court
+                }
+                scope:recipient = {
+                     has_variable = supports_southern_court
+                }
+            }
+            and = {
+                scope:actor = {
+                     has_variable = supports_southern_court
+                }
+                scope:recipient = {
+                     has_variable = supports_northern_court
+                }
+            }
+        }
+    }
+
+    recipient_priority = {
+        add = {
+            value = 50
+        }
+        if = {
+            limit = {
+                not = { scope:actor.capital = scope:recipient.capital }
+            }
+            divide = "scope:actor.capital.distance_to(scope:recipient.capital)"
+        }
+    }
+
+    pause_trigger = { 
+        always = no
+    }
+
+    cancel_trigger = {
+        "scope:actor.relative_military_strength(scope:recipient)" < 0.5
+    }
+
+    country_interactions = {
+       scout_enemy_holdings = yes
+    }
+
+    destroy = yes
+    spy_network_target = 70
+    fabricate_cb = "cb_nanbokuchou"
+
+    max_allowed = 2
+}
+
+jap_clan_improve_opinion_with_emperor = {
+    days_between_checks = 365
+
+    actor_trigger = { 
+        is_member_of_international_organization = international_organization:japanese_shogunate
+        country_exists = c:JAP
+        c:JAP = {
+            opinion = {
+                target = root 
+                value < 100
+            }
+        }
+    }
+
+    recipient_trigger = {
+        scope:recipient = {
+            this = international_organization:japanese_shogunate.leader_country
+        }
+    }
+
+    recipient_priority = {
+        value = 50
+    }
+
+    pause_trigger = { 
+        always = no
+    }
+
+    cancel_trigger = {
+        country_exists = c:JAP
+        c:JAP = {
+            opinion = {
+                target = scope:actor
+                value > 175
+            }
+        }
+    }
+
+    improve_relation = yes
+
+    max_allowed = 1
+}

@@ -1,0 +1,28 @@
+﻿a_renaissance_conquistadors = {
+	category = army_infantry
+	copy_from = a_age_2_renaissance_infantry
+	upgrades_to = a_discovery_conquistadors
+	strength_damage_taken = -0.1
+	morale_damage_done = 0.2
+	
+	food_storage_per_strength = 11
+
+	buildable = no
+
+	gfx_tags = { conquistador_tag heavy_tag }
+}
+
+
+a_discovery_conquistadors = {
+	category = army_infantry
+	copy_from = a_age_3_discovery_infantry
+	strength_damage_taken = -0.1
+	morale_damage_done = 0.2
+
+	food_storage_per_strength = 11
+
+	buildable = no
+
+	gfx_tags = { conquistador_tag cc heavy_tag }
+}
+

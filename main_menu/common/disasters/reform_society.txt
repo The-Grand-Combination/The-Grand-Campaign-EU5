@@ -1,0 +1,56 @@
+﻿reform_society = {
+
+	image = "gfx/interface/illustrations/disaster/reform_society.dds"
+
+	monthly_spawn_chance = monthly_spawn_chance_unique
+
+	can_start = {
+		religion = religion:nahuatl 
+		has_any_active_disaster = no
+		custom_tooltip = {
+			text = eligible_for_reform_society_disaster_tt
+			has_variable = eligible_for_reform_society_disaster_variable
+		}
+	}
+	
+
+	can_end = {
+		reform_society_end_trigger = yes
+	}
+	modifier = {
+		monthly_towards_centralization = societal_value_large_monthly_move
+		global_estate_target_satisfaction = big_permanent_target_satisfaction_penalty
+		monthly_doom = 0.05
+		monthly_rebel_growth = 0.005
+	}
+	
+	on_start = {
+		trigger_event_non_silently = reform_society.1
+	}
+	on_end = {
+		remove_variable = eligible_for_reform_society_disaster_variable
+		trigger_event_non_silently = reform_society.2
+	}
+	
+	on_monthly = {
+	
+		show_as_tooltip = {
+			random_list = {
+				90 = { custom_tooltip = no_event_occurs_tt }
+				10 = { custom_tooltip = an_event_occurs_tt }
+			}
+		}
+		hidden_effect = {
+			random_list = {
+			
+				1 = { trigger_event_silently = reform_society.3 }
+				1 = { trigger_event_silently = reform_society.4 }
+				1 = { trigger_event_silently = reform_society.5 }
+				1 = { trigger_event_silently = reform_society.6 }
+				1 = { trigger_event_silently = reform_society.7 }
+				1 = { trigger_event_silently = reform_society.8 }
+				90 = { custom_tooltip = no_event_occurs_tt }
+			}
+		}
+	}
+}

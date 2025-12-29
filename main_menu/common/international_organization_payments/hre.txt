@@ -1,0 +1,295 @@
+﻿#Gold contribution to the Emperor directly
+imperial_contribution = {
+	get_payer_list = {
+		every_international_organization_member = {
+			limit = { 
+				NOT = { is_leader_of_international_organization = root }
+				modifier:excluded_from_paying_imperial_contribution = no
+			}
+
+			add_to_local_variable_list = {
+				name = payers
+				target = this
+			}
+		}
+	}
+	get_payee_list = {
+		leader_country ?= {
+			add_to_local_variable_list = {
+				name = payees
+				target = this
+			}
+		}
+	}
+	price = imperial_contribution_price
+	uses_maintenance = yes 
+	maintenance_modifier = {
+		potential_trigger = { "payment_maintenance(scope:recipient|imperial_contribution)" < 0.5 }
+		scale = {
+			value = 1
+			subtract = {
+				value = "payment_maintenance(scope:recipient|imperial_contribution)"
+				multiply = 2
+			}
+		}
+		monthly_prestige = -0.02
+	}
+	maintenance_modifier = {
+		potential_trigger = { "payment_maintenance(scope:recipient|imperial_contribution)" > 0.5 }
+		scale = {
+			value = "payment_maintenance(scope:recipient|imperial_contribution)"
+			subtract = 0.5
+			multiply = 2
+		}
+		monthly_prestige = 0.01
+	}
+	price_multiplier = {
+		if = {
+			#nothing happens during a power struggle
+			limit = {
+				international_organization_has_leader = no
+			}
+			value = 0
+		}
+		else = {
+			every_international_organization_member = {
+				limit = { 
+					not = { is_leader_of_international_organization = root }
+				}
+				add = monthly_income_trade_and_tax
+			}
+			if = {
+				limit = { root.var:imperial_authority > 0 }
+				multiply = {
+					desc = "HRE_IMPERIAL_AUTORHITY_BONUS"
+					value = {
+						value = root.var:imperial_authority
+						add = 1
+					}
+					
+				}
+			}
+			multiply = 0.0001
+		}
+	}
+	proportion_for_payer = {
+		add = {
+			desc = "imperial_contribution"
+			value = monthly_income_trade_and_tax
+		}
+	}
+	proportion_for_payee = {
+		add = {
+			desc = "imperial_contribution"
+			value = 1
+		}
+	}
+}
+
+#Gold contribution to the HRE Treasury
+imperial_treasury_contribution = {
+	get_payer_list = {
+		every_international_organization_member = {
+			limit = { 
+				NOT = { is_leader_of_international_organization = root }
+				modifier:excluded_from_paying_imperial_contribution = no
+			}
+
+			add_to_local_variable_list = {
+				name = payers
+				target = this
+			}
+		}
+	}
+	get_payee_list = {
+		#payment goes to the IO
+		add_to_local_variable_list = {
+			name = payees
+			target = root
+		}
+	}
+	price = imperial_treasury_contribution_price
+	uses_maintenance = yes 
+	maintenance_modifier = {
+		potential_trigger = { "payment_maintenance(scope:recipient|imperial_treasury_contribution)" < 0.5 }
+		scale = {
+			value = 1
+			subtract = {
+				value = "payment_maintenance(scope:recipient|imperial_treasury_contribution)"
+				multiply = 2
+			}
+		}
+		monthly_prestige = -0.02
+	}
+	maintenance_modifier = {
+		potential_trigger = { "payment_maintenance(scope:recipient|imperial_treasury_contribution)" > 0.5 }
+		scale = {
+			value = "payment_maintenance(scope:recipient|imperial_treasury_contribution)"
+			subtract = 0.5
+			multiply = 2
+		}
+		monthly_prestige = 0.01
+	}
+	price_multiplier = {
+		every_international_organization_member = {
+			limit = { 
+				not = { is_leader_of_international_organization = root }
+			}
+			add = monthly_income_trade_and_tax
+		}
+		if = {
+			limit = { root.var:imperial_authority > 0 }
+			multiply = {
+				desc = "HRE_IMPERIAL_AUTORHITY_BONUS"
+				value = {
+					value = root.var:imperial_authority
+					add = 1
+				}
+				
+			}
+		}
+		multiply = 0.0001
+	}
+	proportion_for_payer = {
+		add = {
+			desc = "imperial_treasury_contribution"
+			value = monthly_income_trade_and_tax
+		}
+	}
+	proportion_for_payee = {
+		add = {
+			desc = "imperial_treasury_contribution"
+			value = 1
+		}
+	}
+}
+
+#Manpower Contributions
+imperial_army_contribution = {
+	get_payer_list = {
+		if = {
+			limit = { international_organization_has_policy = policy:manpower_from_princes }
+			every_country_with_special_status_of_type = {
+				type = imperial_prince
+				limit = { 
+					NOT = { is_leader_of_international_organization = root }
+					modifier:excluded_from_paying_imperial_contribution = no
+				}
+				add_to_local_variable_list = { name = payers target = this }
+			}
+		}
+		else_if = {
+			limit = { international_organization_has_policy = policy:manpower_from_cities }
+			every_country_with_special_status_of_type = {
+				type = free_city
+				limit = { 
+					NOT = { is_leader_of_international_organization = root }
+					modifier:excluded_from_paying_imperial_contribution = no
+				}
+				add_to_local_variable_list = { name = payers target = this }
+			}
+		}
+		else_if = {
+			limit = { international_organization_has_policy = policy:manpower_from_electors }
+			every_international_organization_member = {
+				limit = { 
+					NOT = { is_leader_of_international_organization = root }
+					modifier:excluded_from_paying_imperial_contribution = no
+					OR = {
+						has_special_status_in_international_organization = { type = special_status:elector international_organization = root }
+						has_special_status_in_international_organization = { type = special_status:archbishop_elector international_organization = root }
+					}
+				}
+				add_to_local_variable_list = { name = payers target = this }
+			}
+		}
+		else = {
+			every_international_organization_member = {
+				limit = { 
+					NOT = { is_leader_of_international_organization = root }
+					modifier:excluded_from_paying_imperial_contribution = no
+				}
+				add_to_local_variable_list = { name = payers target = this }
+			}
+		}
+	}
+	get_payee_list = {
+		leader_country ?= {
+			add_to_local_variable_list = {
+				name = payees
+				target = this
+			}
+		}
+	}
+	price = imperial_army_contribution_price
+	uses_maintenance = yes 
+	maintenance_modifier = {
+		potential_trigger = { "payment_maintenance(scope:recipient|imperial_army_contribution)" < 0.5 }
+		scale = {
+			value = 1
+			subtract = {
+				value = "payment_maintenance(scope:recipient|imperial_army_contribution)"
+				multiply = 2
+			}
+		}
+		monthly_army_tradition = -0.02
+	}
+	maintenance_modifier = {
+		potential_trigger = { "payment_maintenance(scope:recipient|imperial_army_contribution)" > 0.5 }
+		scale = {
+			value = "payment_maintenance(scope:recipient|imperial_army_contribution)"
+			subtract = 0.5
+			multiply = 2
+		}
+		monthly_army_tradition = 0.01
+	}
+	price_multiplier = {
+		if = {
+			#nothing happens during a power struggle
+			limit = {
+				international_organization_has_leader = no
+			}
+			value = 0
+		}
+		else = {
+			every_international_organization_member = {
+				limit = { 
+					not = { is_leader_of_international_organization = root }
+				}
+				add = {
+					desc = "HRE_CONTRIBUTION_MILITARY_MULTIPLIER"
+					value = monthly_manpower
+					add = 1
+				}
+			}
+			if = {
+				limit = { root.var:imperial_authority > 0 }
+				multiply = {
+					desc = "HRE_IMPERIAL_AUTORHITY_BONUS"
+					value = {
+						value = root.var:imperial_authority
+						add = 1
+					}
+					
+				}
+			}
+			multiply = {
+				desc = "imperial_army_contribution"
+				value = 0.001
+			}
+		}
+	}
+	proportion_for_payer = {
+		add = {
+			desc = "imperial_army_contribution"
+			value = monthly_manpower
+			add = 1
+		}
+	}
+	proportion_for_payee = {
+		add = {
+			desc = "imperial_army_contribution"
+			value = 1
+		}
+	}
+}

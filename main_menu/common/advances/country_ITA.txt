@@ -1,0 +1,89 @@
+﻿ita_birthplace_of_the_renaissance = {
+	age = age_2_renaissance
+	icon = florentine_school
+	potential = {
+		has_or_had_tag = ITA
+	}
+
+	cultural_influence_modifier = 0.1
+	cultural_tradition_modifier = 0.1
+
+	requires = renaissance_sculptures
+}
+
+ita_connect_the_interior = {
+	age = age_2_renaissance
+	potential = {
+		has_or_had_tag = ITA
+	}
+
+	global_road_building_time = -0.2
+
+	requires = pound_lock_canals_advance
+}
+
+ita_increased_recruitment = {
+	age = age_3_discovery
+	potential = {
+		has_or_had_tag = ITA
+	}
+	icon = age_of_condottieri
+
+	global_manpower_modifier = 0.1
+	global_sailors_modifier = 0.1
+
+	requires = standardized_pikes
+}
+
+ita_influence_over_the_clergy = {
+	age = age_3_discovery
+	potential = {
+		has_or_had_tag = ITA
+	}
+	icon = pap_the_word_of_the_lord
+
+	monthly_religious_influence = 0.1
+
+	requires = diplomatic_training
+}
+
+ita_enduring_hardship = {
+	age = age_4_reformation
+	potential = {
+		has_or_had_tag = ITA
+	}
+	icon = hun_castle_warriors
+
+	monthly_war_exhaustion = -0.02
+	global_defensive = 0.1
+
+	requires = standardisation_of_calibre
+}
+
+ita_flourishing_urban_centers = {
+	age = age_4_reformation
+	icon = encouraged_city_living
+
+	potential = {
+		has_or_had_tag = ITA
+	}
+
+	global_urban_build_buildings_cost = -0.05
+	global_pop_promotion_speed_modifier = 0.1
+
+	requires = food_advance_reformation
+}
+
+ita_attractive_migration = {
+	age = age_5_absolutism
+
+	potential = {
+		has_or_had_tag = ITA
+	}
+
+	global_migration_speed_modifier = 0.1
+	non_rural_migration_attraction = 0.1
+	
+
+	requires = subject_loyalty_absolutism
+}

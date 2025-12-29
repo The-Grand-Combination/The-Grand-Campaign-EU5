@@ -1,0 +1,191 @@
+﻿#Unlocked through events
+order_of_chivalry_law = {
+	law_category = military
+	potential = {
+		has_unlocked_law_trigger = { type = order_of_chivalry_law }
+	}
+	allow = { religion.group = religion_group:christian }
+	locked = {
+		custom_tooltip = {
+			text = has_not_assumed_chivalric_order_in_last_25_years_tt
+			not = { has_variable = chivalric_order_assumed }
+		}
+	}
+	order_of_saint_george_policy = {
+		potential = {
+			culture = culture:hungarian
+		}
+		country_modifier = {
+			has_chivalric_order = yes
+			nobles_estate_levy_size = 0.1
+		}
+		estate_preferences = {
+			nobles_estate
+		}
+		years = 2
+		on_activate = {
+			hidden_effect = {
+				set_variable = { name = chivalric_order_assumed value = yes years = 25 }
+				add_to_global_variable_list = { name = countries_with_chivalric_orders target = this } 
+			}
+		}
+		on_deactivate = {
+			hidden_effect = {
+				remove_list_global_variable = { name = countries_with_chivalric_orders target = this }
+			}
+		}
+	}
+	order_of_the_ermine_policy = {
+		potential = {
+			culture = culture:breton
+		}
+		country_modifier = {
+			has_chivalric_order = yes
+			nobles_estate_levy_size = 0.1
+		}
+		estate_preferences = {
+			nobles_estate
+		}
+		years = 2
+		on_activate = {
+			hidden_effect = {
+				set_variable = { name = chivalric_order_assumed value = yes years = 25 }
+				add_to_global_variable_list = { name = countries_with_chivalric_orders target = this } 
+			}
+		}
+		on_deactivate = {
+			hidden_effect = {
+				remove_list_global_variable = { name = countries_with_chivalric_orders target = this }
+			}
+		}
+	}
+	order_of_the_dragon_policy = {
+		potential = {
+			OR = {
+				culture.language = language:romanian_language
+				culture.language = language:hungarian_language
+				culture.language = language:serbo_croatian_language
+				culture.language = language:albanian_language
+			}
+			has_unlocked_global_policy_trigger = { type = order_of_the_dragon_policy }
+		}
+		country_modifier = {
+			has_chivalric_order = yes
+			global_garrison_size_modifier = 0.1
+			global_defensive = 0.1
+		}
+		estate_preferences = {
+			nobles_estate
+		}
+		years = 2
+		on_activate = {
+			hidden_effect = {
+				set_variable = { name = chivalric_order_assumed value = yes years = 25 }
+				add_to_global_variable_list = { name = countries_with_chivalric_orders target = this } 
+			}
+		}
+		on_deactivate = {
+			hidden_effect = {
+				remove_list_global_variable = { name = countries_with_chivalric_orders target = this }
+			}
+		}
+	}
+	order_of_the_band_policy = {
+		potential = {
+			culture = culture:castilian
+			has_unlocked_policy_trigger = { type = order_of_the_band_policy }
+		}
+		country_modifier = {
+			has_chivalric_order = yes
+			nobles_estate_levy_size = 0.1
+		}
+		estate_preferences = {
+			nobles_estate
+		}
+		years = 2
+		on_activate = {
+			hidden_effect = {
+				set_variable = { name = chivalric_order_assumed value = yes years = 25 }
+				add_to_global_variable_list = { name = countries_with_chivalric_orders target = this } 
+			}
+		}
+		on_deactivate = {
+			hidden_effect = {
+				remove_list_global_variable = { name = countries_with_chivalric_orders target = this }
+			}
+		}
+	}
+	order_of_the_swan_policy = {
+		potential = {
+			religion = religion:catholic
+			has_unlocked_policy_trigger = { type = order_of_the_swan_policy }
+		}
+		country_modifier = {
+			has_chivalric_order = yes
+			nobles_estate_levy_size = 0.1
+		}
+		estate_preferences = {
+			nobles_estate
+		}
+		years = 2
+		on_activate = {
+			hidden_effect = {
+				set_variable = { name = chivalric_order_assumed value = yes years = 25 }
+				add_to_global_variable_list = { name = countries_with_chivalric_orders target = this } 
+			}
+		}
+		on_deactivate = {
+			hidden_effect = {
+				remove_list_global_variable = { name = countries_with_chivalric_orders target = this }
+			}
+		}
+	}
+	order_of_the_black_eagle_policy = {
+		potential = {
+			has_unlocked_policy_trigger = { type = order_of_the_black_eagle_policy }
+		}
+		country_modifier = {
+			has_chivalric_order = yes
+			army_tradition_decay = -0.001
+		}
+		estate_preferences = {
+			nobles_estate
+		}
+		years = 2
+		on_activate = {
+			hidden_effect = {
+				set_variable = { name = chivalric_order_assumed value = yes years = 25 }
+				add_to_global_variable_list = { name = countries_with_chivalric_orders target = this } 
+			}
+		}
+		on_deactivate = {
+			hidden_effect = {
+				remove_list_global_variable = { name = countries_with_chivalric_orders target = this }
+			}
+		}
+	}
+	order_of_the_white_eagle_policy = {
+		potential = {
+			has_unlocked_policy_trigger = { type = order_of_the_white_eagle_policy }
+		}
+		country_modifier = {
+			has_chivalric_order = yes
+			army_tradition_decay = -0.001
+		}
+		estate_preferences = {
+			nobles_estate
+		}
+		years = 2
+		on_activate = {
+			hidden_effect = {
+				set_variable = { name = chivalric_order_assumed value = yes years = 25 }
+				add_to_global_variable_list = { name = countries_with_chivalric_orders target = this } 
+			}
+		}
+		on_deactivate = {
+			hidden_effect = {
+				remove_list_global_variable = { name = countries_with_chivalric_orders target = this }
+			}
+		}
+	}
+}

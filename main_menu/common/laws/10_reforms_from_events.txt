@@ -1,0 +1,566 @@
+﻿witchcraft_act = {
+	law_category = religious
+	potential = {
+		has_variable = witchcraft_decision
+	}
+
+	witchcraft_banned = {
+		country_modifier = {
+			research_speed_modifier = -0.1
+		}
+		estate_preferences = {
+			clergy_estate
+		}
+		years = 2
+	}
+	witchcraft_ignored = {
+		country_modifier = {
+			clergy_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+			peasants_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+		}
+		estate_preferences = {
+			peasants_estate
+		}
+		years = 2
+	}
+}
+
+
+
+
+venetian_papal_relation_law = {
+	law_category = religious
+	law_religion_group = {
+		catholic
+	} 
+	
+	potential = {
+		has_unlocked_law_trigger = { type = venetian_papal_relation_law }
+		religion = religion:catholic
+	}
+
+	venetian_first = {
+		country_modifier = {
+			tolerance_heretic = 1
+			monthly_religious_influence = -0.2
+		}
+		estate_preferences = {
+			nobles_estate
+			burghers_estate
+		}
+		years = 2
+	}
+	christian_first = {
+		country_modifier = {
+			tolerance_heretic = -1
+			monthly_religious_influence = 0.2
+		}
+		estate_preferences = {
+			clergy_estate
+		}
+		years = 2
+	}
+}
+
+hun_frontier_fortresses = {
+	law_category = military
+	potential = {
+		has_unlocked_law_trigger = { type = hun_frontier_fortresses }
+	}
+
+	vegvar_system = {
+		country_modifier = {
+			fort_maintenance_cost = 0.10
+			global_defensive = 0.33
+		}
+		estate_preferences = {
+			peasants_estate
+		}
+		years = 2
+	}
+	not_maintained = {
+		country_modifier = {
+			fort_maintenance_cost = -0.10
+			global_defensive = -0.10
+		}
+		estate_preferences = {
+			nobles_estate
+		}
+		years = 2
+	}
+}
+
+enclosure_movement = {
+	law_category = socioeconomic
+	potential = {
+		has_law = enclosure_movement
+	}
+
+	locked = {
+		has_policy = enclosure_act
+		"estate_power(estate_type:peasants_estate)" <= 0.25
+	}
+
+	enclosure_allowed = {
+		country_modifier = {
+			monthly_towards_aristocracy = societal_value_monthly_move
+			nobles_estate_target_satisfaction = small_permanent_target_satisfaction
+			global_peasants_migration_allowed = yes
+			rural_migration_attraction = -0.2
+			non_rural_migration_attraction = 0.2
+		}
+		estate_preferences = {
+			nobles_estate
+			burghers_estate
+		}
+		years = 2
+		on_deactivate = {
+			add_estate_satisfaction = { type = estate_type:nobles_estate
+				value = estate_satisfaction_severe_penalty
+			}
+		}
+	}
+	enclosure_disallowed = {
+		country_modifier = {
+			nobles_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+			monthly_towards_free_subjects = societal_value_monthly_move
+		}
+		estate_preferences = {
+			peasants_estate
+		}
+		years = 2
+		on_activate = {
+			add_estate_satisfaction = { type = estate_type:peasants_estate
+				value = estate_satisfaction_severe_penalty
+			}
+		}
+	}
+	enclosure_act = {
+		country_modifier = {
+			global_monthly_food_modifier = 0.2
+			monthly_towards_aristocracy = societal_value_large_monthly_move
+			global_peasants_migration_allowed = yes
+			rural_migration_attraction = -0.4
+			non_rural_migration_attraction = 0.4
+		}
+		estate_preferences = {
+			crown_estate
+			nobles_estate
+		}
+		years = 2
+		allow = {
+			culture = culture:english
+		}
+		potential = {
+			has_variable = enclosure_act
+		}
+	}
+}
+
+eng_taxation_law = {
+	law_category = administrative
+	potential = {
+		has_variable = taxation_law
+	}
+
+	locked = {
+		has_country_modifier = temporary_income_tax
+	}
+
+	income_tax = {
+		country_modifier = {
+			clergy_estate_min_tax = 0.2
+			nobles_estate_min_tax = 0.35
+			burghers_estate_min_tax = 0.25
+			peasants_estate_min_tax = 0.15
+			global_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+		}
+		estate_preferences = {
+			crown_estate
+		}
+		years = 2
+	}
+
+	trade_tax = {
+		country_modifier = {
+			burghers_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+			burghers_estate_min_tax = 0.5
+		}
+		estate_preferences = {
+			nobles_estate
+			clergy_estate
+			peasants_estate
+		}
+		allow = {
+			NOT = { has_estate_privilege = estate_privilege:toll_and_tariff_exemptions }
+		}
+		years = 2
+	}
+
+	traditional_tax = {
+		country_modifier = {
+			monthly_towards_traditional_economy = societal_value_monthly_move
+			parliament_base_support = -0.25
+		}
+		estate_preferences = {
+			nobles_estate
+		}
+		years = 2
+		allow = {
+			modifier:has_a_parliamentary_system = yes
+		}
+	}
+
+}
+
+factory_working_conditions_law = {
+	law_category = socioeconomic
+	potential = {
+		has_variable = factory_working_conditions_law
+	}
+
+	decent_conditions = {
+		country_modifier = {
+			monthly_towards_free_subjects = societal_value_monthly_move
+			non_rural_migration_attraction = 0.1
+			global_life_expectancy = 5
+		}
+		estate_preferences = {
+			peasants_estate
+		}
+		years = 2
+	}
+
+	fair_conditions = {
+		country_modifier = {
+			burghers_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+			nobles_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+			global_laborers_max_literacy = 10
+			global_life_expectancy = 10
+		}
+		estate_preferences = {
+			peasants_estate
+		}
+		allow = {
+			societal_value:serfdom_vs_free_subjects >= 0
+		}
+		years = 2
+	}
+
+	unregulated_conditions = {
+		country_modifier = {
+			monthly_towards_capital_economy = societal_value_monthly_move
+			global_life_expectancy = -5
+			non_rural_migration_attraction = -0.1
+		}
+		estate_preferences = {
+			burghers_estate
+		}
+		years = 2
+	}
+
+}
+
+trade_unions_law = {
+	law_category = socioeconomic
+	potential = {
+		has_variable = trade_unions_law
+	}
+
+	trade_unions_allowed = {
+		country_modifier = {
+			monthly_towards_free_subjects = societal_value_monthly_move
+			global_peasants_estate_power = 0.25
+			global_life_expectancy = 5
+		}
+		estate_preferences = {
+			peasants_estate
+		}
+		years = 2
+	}
+
+	trade_unions_prohibited = {
+		country_modifier = {
+			monthly_towards_capital_economy = societal_value_monthly_move
+			nobles_estate_target_satisfaction = medium_permanent_target_satisfaction
+			burghers_estate_target_satisfaction = medium_permanent_target_satisfaction
+			monthly_towards_absolutism = societal_value_tiny_monthly_move
+		}
+		estate_preferences = {
+			burghers_estate
+		}
+		years = 2
+	}
+
+}
+
+vestiarium = {
+	law_category = socioeconomic
+	potential = {
+		has_variable = vestiarium
+	}
+
+	diplomatic_focus = {
+		country_modifier = {
+			diplomatic_reputation = diplomatic_reputation_weak_bonus
+			improve_relation_impact = 0.1
+			send_gift_cost_modifier = -0.2
+		}
+		estate_preferences = {
+			clergy_estate
+		}
+		years = 2
+	}
+
+	administrative_focus = {
+		country_modifier = {
+			court_spending_cost = -0.025
+			global_monthly_control = 0.005
+			global_urban_build_buildings_cost = -0.1
+		}
+		estate_preferences = {
+			nobles_estate
+		}
+		years = 2
+	}
+
+}
+
+mch_queue_hair = {
+	law_category = socioeconomic
+	
+	potential = {
+		has_unlocked_law_trigger = { type = mch_queue_hair }
+	}
+
+	enforce_queue_hair = {
+		country_modifier = {
+			nobles_estate_target_satisfaction = medium_permanent_target_satisfaction
+			cultural_influence_modifier = 0.25
+			wrong_culture_levy_size = -0.1
+		}
+		years = 2
+	}
+
+	queue_hair_status_quo = {
+		country_modifier = {
+			monthly_towards_sinicized = societal_value_monthly_move
+		}
+		years = 2
+	}
+}
+
+monastic_reformation_movement = {
+	law_category = religious
+	potential = {
+		has_variable = monastic_reformation_movement
+	}
+
+	locked = {
+		custom_tooltip = {
+			text = flavor_mos.47.custom2
+			has_variable = supported_monastic_reformation_movement
+		}	
+	}
+
+	non_possessors = {
+		country_modifier = {
+			estate_enrichment = -0.2
+			monthly_religious_influence = -0.1
+			monthly_towards_communalism = societal_value_minor_monthly_move
+		}
+		estate_preferences = {
+			peasants_estate
+		}
+		years = 2
+
+		on_activate = {
+			hidden_effect = {
+				set_variable = { name = supported_monastic_reformation_movement value = yes years = 10 }
+			}
+		}
+	}
+	possessors = {
+		country_modifier = {
+			global_clergy_estate_power = 0.1
+			monthly_towards_free_subjects = societal_value_minor_monthly_move
+			global_peasants_max_literacy = 10
+			global_soldiers_max_literacy = 10
+			global_laborers_max_literacy = 10
+		}
+		estate_preferences = {
+			clergy_estate
+		}
+		years = 2
+
+		on_activate = {
+			hidden_effect = {
+				set_variable = { name = supported_monastic_reformation_movement value = yes years = 10 }
+			}
+		}
+	}
+	
+}
+
+intellectual_movements = {
+	law_category = socioeconomic
+	potential = {
+		has_variable = intellectual_movements
+	}
+
+	locked = {
+		custom_tooltip = {
+			text = flavor_rus.72.custom2
+			has_variable = intellectual_movements_decision
+		}	
+		dominant_culture = { 
+			has_culture_group = culture_group:russian_group
+			has_culture_group = culture_group:slavic_group
+		}
+	}
+
+	slavophiles = {
+		country_modifier = {
+			cultures_capacity = 1
+			global_integration_speed_modifier = 0.25
+			monthly_towards_traditional_economy = societal_value_minor_monthly_move
+			clergy_estate_target_satisfaction = medium_permanent_target_satisfaction
+		}
+		estate_preferences = {
+			peasants_estate
+		}
+		years = 2
+
+		on_activate = {
+			hidden_effect = {
+				set_variable = { name = intellectual_movements_decision value = yes years = 10 }
+			}
+		}
+	}
+	westernizers = {
+		country_modifier = {
+			research_speed_modifier = 0.1
+			tolerance_heretic = 1
+			cultural_influence_modifier = -0.25
+			global_pop_assimilation_speed = -0.05
+		}
+		estate_preferences = {
+			burghers_estate
+		}
+		years = 2
+
+		on_activate = {
+			hidden_effect = {
+				set_variable = { name = intellectual_movements_decision value = yes years = 10 }
+			}
+		}
+	}
+	
+}
+
+dahsala_system = {
+	law_category = administrative
+	potential = {
+		has_unlocked_law_trigger = {
+			type = dahsala_system
+		}
+	}
+
+	zabiti = {
+		country_modifier = {
+			peasants_estate_max_tax = 0.1
+			peasants_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+			global_peasants_food_consumption = -0.1
+		}
+		estate_preferences = {
+			crown_estate
+		}
+		years = 2
+	}
+	ghalla_bakshi = {
+		country_modifier = {
+			peasants_estate_target_satisfaction = medium_permanent_target_satisfaction
+			food_purchase_cost = -0.05
+		}
+		estate_preferences = {
+			peasants_estate
+		}
+		years = 2
+	}
+	
+	nasaq = {
+		country_modifier = {
+			peasants_estate_max_tax = 0.1
+			peasants_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+		}
+		estate_preferences = {
+			crown_estate
+		}
+		years = 2
+	}
+}
+
+hab_military_frontier = {
+	law_category = military
+	potential = {
+		has_unlocked_law_trigger = { type = hab_military_frontier }
+	}
+
+	frontier_maintained = {
+		country_modifier = {
+			fort_maintenance_cost = 0.10
+			global_defensive = 0.1
+		}
+		estate_preferences = {
+			peasants_estate
+		}
+		years = 2
+	}
+	frontier_not_maintained = {
+		country_modifier = {
+			fort_maintenance_cost = -0.10
+			global_defensive = -0.10
+		}
+		estate_preferences = {
+			nobles_estate
+		}
+		years = 2
+	}
+}
+
+ira_alcohol_ban = {
+	law_category = socioeconomic
+	potential = {
+		has_unlocked_law_trigger = { type = ira_alcohol_ban }
+		religion ?= {
+			group ?= religion_group:muslim
+		}
+	}
+
+	ban_on_alcohol = {
+		country_modifier = {
+			ban_exports_of_beer = yes
+			ban_exports_of_wine = yes
+			ban_exports_of_liquor = yes
+			ban_imports_of_beer = yes
+			ban_imports_of_wine = yes
+			ban_imports_of_liquor = yes
+			dhimmi_estate_target_satisfaction = -0.1
+			clergy_estate_target_satisfaction = 0.1
+		}
+		estate_preferences = {
+			clergy_estate
+		}
+		years = 2
+	}
+
+	no_restriction_on_alcohol = {
+		country_modifier = {
+			dhimmi_estate_target_satisfaction = 0.05
+		}
+		estate_preferences = {
+			peasants_estate
+		}
+		years = 2
+	}
+}

@@ -1,0 +1,8 @@
+﻿jain_list = {
+	potential = {
+		religion = religion:jain
+	}
+	actions = {
+		pilgrimage_jain
+	}
+}

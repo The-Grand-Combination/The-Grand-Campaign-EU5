@@ -1,0 +1,13 @@
+﻿taluqdar_tax_collection = {
+	ability = adm
+	potential = {
+		modifier:has_taluqdar_tax_collection = yes
+	}
+	country_modifier = {
+		peasants_estate_max_tax = 0.15
+		peasants_estate_min_tax = 0.15
+		nobles_estate_target_satisfaction = large_permanent_target_satisfaction
+		global_nobles_estate_power = 0.5
+	}
+	years = 2
+}

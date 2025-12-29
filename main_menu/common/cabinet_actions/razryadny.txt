@@ -1,0 +1,11 @@
+﻿razryadny = {
+	ability = mil
+	potential = {
+		modifier:unlock_prikazi_reform_cabinet_actions = yes
+	}
+	
+	country_modifier = {
+		supply_depot_capacity = 10
+		army_tradition_decay = -0.001
+	}
+}

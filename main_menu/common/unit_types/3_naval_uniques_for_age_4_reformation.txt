@@ -1,0 +1,115 @@
+﻿n_iberian_galleon = {
+	category = navy_heavy_ship	
+	copy_from = n_age_4_reformation_heavy_ship
+	buildable = yes
+	
+	hull_size = 40
+	cannons = 80
+
+	maintenance_demand =  heavy_ship_4_maintenance
+	construction_demand = heavy_ship_4_construction
+
+	location_potential = {
+		unit_iberian_ship_location_trigger = yes
+	}
+}
+
+n_italian_galleass = {
+	category = navy_galley
+	copy_from = n_age_4_reformation_galley
+	buildable = yes
+	
+	movement_speed = 5
+	
+	hull_size = 13
+	cannons = 20
+	
+	crew_size = 0.06
+
+	#root = location. Checks location_potential first so don't need that scripting in
+	mercenaries_per_location = {
+		pop_type = burghers
+		multiply = 0.05
+	}
+
+	location_potential = {
+		unit_genoese_galley_location_trigger = yes
+	}
+}
+
+n_turtle_ship = {
+	category = navy_galley
+	copy_from = n_age_4_reformation_galley
+	movement_speed = 5.5
+	hull_size = 12
+	cannons = 18
+}
+
+n_panokseon = {
+	category = navy_galley
+	copy_from = n_age_4_reformation_galley
+	movement_speed = 5.5
+	hull_size = 18
+	cannons = 26
+	crew_size = 0.180
+}
+
+n_madurese_gali = {
+	category = navy_galley
+	copy_from = n_age_4_reformation_galley
+	hull_size = 12
+	cannons = 18
+	crew_size = 0.1
+}
+
+n_war_galleon = {
+	category = navy_heavy_ship	
+	copy_from = n_age_4_reformation_heavy_ship
+	
+	hull_size = 40
+	cannons = 70
+
+	maintenance_demand =  heavy_ship_4_maintenance
+	construction_demand = heavy_ship_4_construction
+
+	location_potential = {
+		unit_war_galleon_location_trigger = yes
+	}
+}
+
+n_cakradonya = {
+	category = navy_galley
+	copy_from = n_age_4_reformation_galley
+	hull_size = 24
+	cannons = 30
+	crew_size = 0.2
+	blockade_capacity = 0.5
+
+	maintenance_demand = cakradonya_maintenance
+	construction_demand = cakradonya_construction
+}
+
+n_galiot = {
+	category = navy_galley
+	copy_from = n_age_4_reformation_galley
+
+	movement_speed = 6
+	blockade_capacity = 0.6
+	crew_size = 0.080
+
+	maintenance_demand =  galley_4_maintenance
+	construction_demand = galley_4_construction
+}
+
+n_atakebune = {
+	category = navy_galley
+	copy_from = n_age_4_reformation_galley
+
+	movement_speed = 8
+	hull_size = 9
+	cannons = 14
+	maritime_presence = ship_small_high_maritime
+
+	maintenance_demand =  galley_4_maintenance
+	construction_demand = galley_4_construction
+}

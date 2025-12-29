@@ -1,0 +1,423 @@
+﻿#These special genes will not be part of a character's DNA.
+#The game can have hardcoded references to them and might use each of them differently
+special_genes = {
+
+	morph_genes = {
+
+		body_paint = {
+
+			body_paint_iroquois = {
+				index = 0
+				male = {
+					decal = {
+						body_part = torso
+						textures = { diffuse = "gfx/models/portraits/decals/body_paint/iroquois/iroquois_body_tattoo_01_bust_diffuse.dds" }
+						blend_modes = {	diffuse = multiply } #overlay/replace/hard_light/multiply
+						alpha_curve = {
+							#controls decal alpha relative to gene strength. Will give a linear interpolation if left unspecified
+							#gene strength, decal alpha
+							{ 0.0 1.0 }
+							{ 0.05 0.0 }
+							{ 0.95 0.0 }
+							{ 1.00 1.0 }
+						}
+						decal_apply_order = pre_skin_color # pre_skin_color (default) | post_skin_color
+						priority = 1
+					}
+					decal = {
+						body_part = torso
+						textures = { diffuse = "gfx/models/portraits/decals/body_paint/iroquois/iroquois_body_tattoo_02_bust_diffuse.dds" }
+						blend_modes = {	diffuse = multiply }
+						alpha_curve = {
+							{ 0.05 0.0 }
+							{ 0.10 1.0 }
+							{ 0.15 0.0 }
+							{ 0.65 0.0 }
+							{ 0.70 1.0 }
+							{ 0.75 0.0 }
+							{ 0.80 1.0 }
+							{ 0.85 0.0 }
+							{ 0.95 0.0 }
+						}
+						decal_apply_order = pre_skin_color
+						priority = 1
+					}
+					decal = {
+						body_part = torso
+						textures = { diffuse = "gfx/models/portraits/decals/body_paint/iroquois/iroquois_body_tattoo_03_upperarms_diffuse.dds" }
+						blend_modes = {	diffuse = multiply }
+						alpha_curve = {
+							{ 0.15 0.0 }
+							{ 0.20 1.0 }
+							{ 0.25 0.0 }
+							{ 0.65 0.0 }
+							{ 0.70 1.0 }
+							{ 0.75 0.0 }
+							{ 0.85 0.0 }
+							{ 0.90 1.0 }
+							{ 0.95 0.0 }
+						}
+						
+						decal_apply_order = pre_skin_color
+						priority = 1
+					}
+					decal = {
+						body_part = torso
+						textures = { diffuse = "gfx/models/portraits/decals/body_paint/iroquois/iroquois_body_tattoo_04_bust_diffuse.dds" }
+						blend_modes = {	diffuse = multiply }
+						alpha_curve = {
+							{ 0.35 0.0 }
+							{ 0.30 1.0 }
+							{ 0.45 0.0 }
+							{ 0.55 0.0 }
+							{ 0.60 1.0 }
+							{ 0.65 1.0 }
+							{ 0.75 0.0 }
+							{ 0.80 1.0 }
+							{ 0.85 0.0 }
+						}
+						decal_apply_order = pre_skin_color
+						priority = 1
+					}
+					decal = {
+						body_part = torso
+						textures = { diffuse = "gfx/models/portraits/decals/body_paint/iroquois/iroquois_body_tattoo_05_clavicles_diffuse.dds" }
+						blend_modes = {	diffuse = multiply }
+						alpha_curve = {
+							{ 0.35 0.0 }
+							{ 0.40 1.0 }
+							{ 0.45 0.0 }
+							{ 0.55 0.0 }
+							{ 0.60 1.0 }
+							{ 0.65 0.0 }
+						}
+						decal_apply_order = pre_skin_color
+						priority = 1
+					}
+					decal = {
+						body_part = torso
+						textures = { diffuse = "gfx/models/portraits/decals/body_paint/iroquois/iroquois_body_tattoo_06_lowerarms_diffuse.dds" }
+						blend_modes = {	diffuse = multiply }
+						alpha_curve = {
+							{ 0.45 0.0 }
+							{ 0.50 1.0 }
+							{ 0.60 1.0 }
+							{ 0.65 0.0 }
+							{ 0.75 0.0 }
+							{ 0.80 1.0 }
+						}
+						decal_apply_order = pre_skin_color
+						priority = 1
+					}
+				}
+			}
+
+			body_paint_deccan = {
+				index = 1
+				male = {
+					decal = {
+						body_part = torso
+						textures = {
+							diffuse = "gfx/models/portraits/decals/body_paint/deccan/deccan_body_paint_clergy_01_diffuse.dds"
+							normal = "gfx/models/portraits/decals/body_paint/deccan/deccan_body_paint_clergy_01_normal.dds"
+							properties = "gfx/models/portraits/decals/body_paint/deccan/deccan_body_paint_clergy_01_properties.dds"
+						}
+						blend_modes = {
+							diffuse = hard_light  #overlay/replace/hard_light/multiply
+							normal = replace
+							properties = replace
+						}
+						alpha_curve = {
+							#controls decal alpha relative to gene strength. Will give a linear interpolation if left unspecified
+							#gene strength, decal alpha
+							{ 0.0 1.0 }
+							{ 1.0 1.0 }
+						}
+						decal_apply_order = post_skin_color # pre_skin_color (default) | post_skin_color
+						priority = 1
+					}
+				}
+			}
+
+		}
+		
+		face_paint = {
+
+			face_paint_iroquois = {
+				index = 0
+				male = {
+					decal = {
+						body_part = head
+						textures = { diffuse = "gfx/models/portraits/decals/body_paint/iroquois/iroquois_face_paint_war_01_diffuse.dds" }
+						blend_modes = { diffuse = multiply }
+						alpha_curve = {
+							{ 0.00 1.0 }
+							{ 0.24 1.0 }
+							{ 0.25 0.0 } # nothing after 0.25
+						}
+						priority = 1
+					}
+					decal = {
+						body_part = head
+						textures = {
+							diffuse = "gfx/models/portraits/decals/body_paint/iroquois/iroquois_face_paint_war_02_diffuse.dds"
+							normal = "gfx/models/portraits/decals/body_paint/iroquois/iroquois_face_paint_war_02_normal.dds"
+							properties = "gfx/models/portraits/decals/body_paint/iroquois/iroquois_face_paint_war_02_properties.dds"
+						}
+						blend_modes = {
+							diffuse = overlay
+							normal = replace
+							properties = replace
+						}
+						alpha_curve = {
+							{ 0.24  0.0 } # nothing before 0.33
+							{ 0.25  1.0 } # nothing before 0.33
+							{ 0.49  1.0 }
+							{ 0.50  0.0 } # nothing after 0.76
+						}
+						priority = 1
+					}
+					decal = {
+						body_part = head
+						textures = {
+							diffuse = "gfx/models/portraits/decals/body_paint/iroquois/iroquois_face_paint_war_03_diffuse.dds"
+							normal = "gfx/models/portraits/decals/body_paint/iroquois/iroquois_face_paint_war_03_normal.dds"
+							properties = "gfx/models/portraits/decals/body_paint/iroquois/iroquois_face_paint_war_03_properties.dds"
+						}
+						blend_modes = {
+							diffuse = overlay
+							normal = replace
+							properties = replace
+						}
+						alpha_curve = {
+							{ 0.49  0.0 } # nothing before 0.33
+							{ 0.50  1.0 } # nothing before 0.33
+							{ 0.75  1.0 }
+							{ 0.76  0.0 } # nothing after 0.76
+						}
+						priority = 1
+					}
+				}
+			}
+
+			face_paint_ashanti = {
+				index = 1
+				male = {
+					decal = {
+						body_part = head
+						textures = {
+							diffuse = "gfx/models/portraits/decals/body_paint/ashanti/ashanti_face_paint_clergy_01_diffuse.dds"
+							normal = "gfx/models/portraits/decals/body_paint/ashanti/ashanti_face_paint_clergy_01_normal.dds"
+							properties = "gfx/models/portraits/decals/body_paint/ashanti/ashanti_face_paint_clergy_01_properties.dds"
+						}
+						blend_modes = {
+							diffuse = hard_light  #overlay/replace/hard_light/multiply
+							normal = replace
+							properties = replace
+						}
+						alpha_curve = {
+							{ 0.00 1.0 }
+							{ 0.24 1.0 }
+							{ 0.25 0.0 } # nothing after 0.25
+						}
+						decal_apply_order = post_skin_color # pre_skin_color (default) | post_skin_color
+						priority = 1
+					}
+					decal = {
+						body_part = head
+						textures = {
+							diffuse = "gfx/models/portraits/decals/body_paint/ashanti/ashanti_face_paint_clergy_02_diffuse.dds"
+							normal = "gfx/models/portraits/decals/body_paint/ashanti/ashanti_face_paint_clergy_02_normal.dds"
+							properties = "gfx/models/portraits/decals/body_paint/ashanti/ashanti_face_paint_clergy_02_properties.dds"
+						}
+						blend_modes = {
+							diffuse = replace
+							normal = replace
+							properties = replace
+						}
+						alpha_curve = {
+							{ 0.24  0.0 } # nothing before 0.33
+							{ 0.25  1.0 } # nothing before 0.33
+							{ 0.49  1.0 }
+							{ 0.50  0.0 } # nothing after 0.76
+						}
+						decal_apply_order = post_skin_color # pre_skin_color (default) | post_skin_color
+						priority = 1
+					}
+					decal = {
+						body_part = head
+						textures = {
+							diffuse = "gfx/models/portraits/decals/body_paint/ashanti/ashanti_face_paint_clergy_03_diffuse.dds"
+							normal = "gfx/models/portraits/decals/body_paint/ashanti/ashanti_face_paint_clergy_03_normal.dds"
+							properties = "gfx/models/portraits/decals/body_paint/ashanti/ashanti_face_paint_clergy_03_properties.dds"
+						}
+						blend_modes = {
+							diffuse = replace
+							normal = replace
+							properties = replace
+						}
+						decal_apply_order = post_skin_color # pre_skin_color (default) | post_skin_color
+						alpha_curve = {
+							{ 0.49  0.0 } # nothing before 0.33
+							{ 0.50  1.0 } # nothing before 0.33
+							{ 0.75  1.0 }
+							{ 0.76  0.0 } # nothing after 0.76
+						}
+						priority = 1
+					}
+				}
+			}
+
+			face_paint_deccan = {
+				index = 2
+				male = {
+					decal = {
+						body_part = head
+						textures = {
+							diffuse = "gfx/models/portraits/decals/body_paint/deccan/deccan_face_paint_clergy_01_diffuse.dds"
+							normal = "gfx/models/portraits/decals/body_paint/deccan/deccan_face_paint_clergy_01_normal.dds"
+							properties = "gfx/models/portraits/decals/body_paint/deccan/deccan_face_paint_clergy_01_properties.dds"
+						}
+						blend_modes = {
+							diffuse = hard_light  #overlay/replace/hard_light/multiply
+							normal = replace
+							properties = replace
+						}
+						alpha_curve = {
+							{ 0.0 1.0 }
+							{ 1.0 1.0 }
+						}
+						decal_apply_order = post_skin_color # pre_skin_color (default) | post_skin_color
+						priority = 1
+					}
+				}
+			}
+
+		}
+
+		makeup = {
+			no_makeup = {
+			index = 0
+			}
+			european_01 = {
+				index = 1
+				female = {
+					decal = {
+						body_part = head
+						textures = {
+							diffuse = "gfx/models/portraits/decals/female_head/female_head_decal_makeup_european_01_diffuse.dds"
+							normal = "gfx/models/portraits/decals/shared/female_head_decal_makeup_european_01_normal.dds"
+							properties = "gfx/models/portraits/decals/female_head/female_head_decal_makeup_european_01_properties.dds"
+						}
+						blend_modes = {
+							diffuse = replace
+							normal = replace
+							properties = replace
+						}
+						decal_apply_order = post_skin_color # pre_skin_color (default) | post_skin_color
+						alpha_curve = {
+							{ 0.0  0.0 } 
+							{ 1.0  1.0 }
+						}
+						priority = 0
+					}	
+					decal = {                             
+						body_part = head
+						textures = {
+							diffuse = "gfx/models/portraits/decals/female_head/female_head_decal_makeup_european_lipstick_01_diffuse.dds"
+							# normal = "gfx/models/portraits/decals/female_head/female_head_decal_makeup_european_01_normal.dds"
+							# properties = "gfx/models/portraits/decals/female_head/female_head_decal_makeup_european_01_properties.dds"
+						}
+						alpha_curve = {				 #controls decal alpha relative to gene strength. Will give a linear interpolation if left unspecified
+							#gene strength%, decal alpha
+							{ 0.0  0.0 }
+							{ 0.5  1.0 }
+						}
+						blend_modes = {              #overlay/replace/hard_light/multiply
+							diffuse = replace
+							# normal = overlay
+							# properties = replace
+						}
+					}			
+				}
+			}
+
+			chinese_01 = {
+				index = 2
+				female = {
+					decal = {
+						body_part = head
+						textures = {
+							diffuse = "gfx/models/portraits/decals/female_head/female_head_decal_makeup_chinese_01_diffuse.dds"
+							normal = "gfx/models/portraits/decals/female_head/female_head_decal_makeup_chinese_01_normal.dds"
+							properties = "gfx/models/portraits/decals/female_head/female_head_decal_makeup_chinese_01_properties.dds"
+						}
+						blend_modes = {
+							diffuse = replace
+							normal = replace
+							properties = replace
+						}
+						decal_apply_order = post_skin_color # pre_skin_color (default) | post_skin_color
+						alpha_curve = {
+							{ 0.0  0.0 } 
+							{ 1.0  1.0 }
+						}
+						priority = 0
+					}				
+				}
+			}
+
+			ainu_01 = {
+				index = 3
+				female = {
+					decal = {
+						body_part = head
+						textures = {
+							diffuse = "gfx/models/portraits/decals/female_head/female_head_decal_makeup_ainu_01_diffuse.dds"
+							normal = "gfx/models/portraits/decals/female_head/female_head_decal_makeup_ainu_01_normal.dds"
+							properties = "gfx/models/portraits/decals/female_head/female_head_decal_makeup_ainu_01_properties.dds"
+						}
+						blend_modes = {
+							diffuse = multiply
+							normal = replace
+							properties = replace
+						}
+						decal_apply_order = pre_skin_color # pre_skin_color (default) | post_skin_color
+						alpha_curve = {
+							{ 0.0  0.0 } 
+							{ 1.0  1.0 }
+						}
+						priority = 0
+					}				
+				}
+			}
+
+			ainu_02 = {
+				index = 4
+				female = {
+					decal = {
+						body_part = head
+						textures = {
+							diffuse = "gfx/models/portraits/decals/female_head/female_head_decal_makeup_ainu_02_diffuse.dds"
+							normal = "gfx/models/portraits/decals/female_head/female_head_decal_makeup_ainu_01_normal.dds"
+							properties = "gfx/models/portraits/decals/female_head/female_head_decal_makeup_ainu_01_properties.dds"
+						}
+						blend_modes = {
+							diffuse = multiply
+							normal = replace
+							properties = replace
+						}
+						decal_apply_order = pre # pre_skin_color (default) | post_skin_color
+						alpha_curve = {
+							{ 0.0  0.0 } 
+							{ 1.0  1.0 }
+						}
+						priority = 0
+					}				
+				}
+			}
+
+		}
+
+	}
+}

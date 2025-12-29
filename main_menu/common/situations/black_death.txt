@@ -1,0 +1,230 @@
+﻿black_death = {
+	#can always start if disease:bubonic_plague is around
+	monthly_spawn_chance = monthly_spawn_chance_unique
+	hint_tag = hint_black_death
+	
+	can_start = {
+		disease_is_active = disease:bubonic_plague
+	}
+	
+	can_end = {
+		NOT = { disease_outbreak_is_active = var:original_outbreak }
+	}
+	
+	visible = {
+		OR = {
+			capital ?= {
+				OR = {
+					continent = continent:europe
+					continent = continent:africa
+					continent = continent:asia
+				}
+			}
+			OR = {
+				country_has_disease_outbreak = "scope:target.var:original_outbreak"
+				#If you have a modifier you keep seeing the Situation
+				has_country_modifier = hiding_from_black_death
+				has_country_modifier = control_the_food_market
+				has_country_modifier = close_the_borders
+				has_country_modifier = segregate_the_infected
+				has_country_modifier = strict_quarantines
+				has_country_modifier = procure_remedies
+				has_country_modifier = procure_remedies_cost
+				has_country_modifier = sponsor_sin_forgiveness_bonus
+				has_country_modifier = sponsor_sin_forgiveness_cost
+				has_country_modifier = blame_the_minorities
+
+			}
+		}
+	}
+
+	on_start = {
+		every_country = {
+			limit = {
+				capital = {
+					OR = {
+						continent = continent:europe
+						continent = continent:africa
+						continent = continent:asia
+					}
+				}
+			}
+		
+			trigger_event_non_silently = black_death.1
+		}
+	}
+
+	on_monthly = {
+		every_country = {
+			limit = {
+				country_has_disease_outbreak = root.var:original_outbreak
+			}
+			set_variable = { name = had_black_death value = yes }
+			random_list = {
+				10 = { trigger_event_non_silently = black_death.101 }
+				10 = { trigger_event_non_silently = black_death.102 }
+				10 = { trigger_event_non_silently = black_death.103 }
+				10 = { trigger_event_non_silently = black_death.1001 }
+				10 = { trigger_event_non_silently = black_death.1002 }
+				10 = { trigger_event_non_silently = black_death.1003 }
+				10 = { trigger_event_non_silently = black_death.1004 }
+				10 = { trigger_event_non_silently = black_death.1005 }
+				10 = { trigger_event_non_silently = black_death.1006 }
+				10 = { trigger_event_non_silently = black_death.1007 }
+				10 = { trigger_event_non_silently = black_death.1008 }
+				10 = { trigger_event_non_silently = black_death.1009 }
+				10 = { trigger_event_non_silently = black_death.1010 }
+				10 = { trigger_event_non_silently = black_death.1011 }
+				10 = { trigger_event_non_silently = black_death.1012 }
+				10 = { trigger_event_non_silently = black_death.1013 }
+				10 = { trigger_event_non_silently = black_death.1014 }
+				10 = { trigger_event_non_silently = black_death.1015 }
+				10 = { trigger_event_non_silently = black_death.1016 }
+				10 = { trigger_event_non_silently = black_death.1017 }
+				10 = { trigger_event_non_silently = black_death.1018 }
+				10 = { trigger_event_non_silently = black_death.1020 }
+				10 = { trigger_event_non_silently = black_death.1021 }
+				10 = { trigger_event_non_silently = black_death.1023 }
+				10 = { trigger_event_non_silently = black_death.1024 }
+				10 = { trigger_event_non_silently = black_death.1025 }
+				10 = { trigger_event_non_silently = black_death.1026 }
+				500 = { }
+			}
+		}
+		#Auto Remove modifiers that don't make sense for noninfected countries
+		# from countries that no longer have the disease		
+		every_country = {
+			limit = {
+				NOT = {
+					country_has_disease_outbreak = root.var:original_outbreak
+				}
+				has_variable = had_black_death
+			}
+			every_owned_non_rural_location = {
+				limit = { has_location_modifier = isolating_cities }
+				remove_location_modifier = isolating_cities
+			}
+			
+			if = { limit = { has_country_modifier = hiding_from_black_death } remove_country_modifier = hiding_from_black_death }
+			if = { limit = { has_country_modifier = control_the_food_market } remove_country_modifier = control_the_food_market }
+			if = { limit = { has_country_modifier = foodstuffs_exports_banned } remove_country_modifier = foodstuffs_exports_banned }
+			if = { limit = { has_country_modifier = segregate_the_infected } remove_country_modifier = segregate_the_infected }
+			if = { limit = { has_country_modifier = strict_quarantines } remove_country_modifier = strict_quarantines }
+			if = { limit = { has_country_modifier = sponsor_sin_forgiveness_bonus } remove_country_modifier = sponsor_sin_forgiveness_bonus }
+			if = { limit = { has_country_modifier = sponsor_sin_forgiveness_cost } remove_country_modifier = sponsor_sin_forgiveness_cost }
+			if = { limit = { has_country_modifier = blame_the_minorities } remove_country_modifier = blame_the_minorities }
+		}
+	}
+
+	tooltip = {
+		if = {
+			limit = {
+				disease_outbreak_presence = {
+					disease_outbreak = "scope:target.var:original_outbreak"
+					value > 0
+				}
+			}
+			custom_tooltip = "BLACK_DEATH_PRESENT_IN_LOCATION"
+		}
+	}
+
+
+	on_ended = {
+		set_situation_end_flag_effect = { situation = black_death }
+		every_country = {
+			remove_country_modifier = hiding_from_black_death
+			remove_country_modifier = control_the_food_market
+			remove_country_modifier = foodstuffs_exports_banned
+			remove_country_modifier = close_the_borders
+			remove_country_modifier = segregate_the_infected
+			remove_country_modifier = strict_quarantines
+			remove_country_modifier = procure_remedies
+			remove_country_modifier = procure_remedies_cost
+			remove_country_modifier = sponsor_sin_forgiveness_bonus
+			remove_country_modifier = sponsor_sin_forgiveness_cost
+			remove_country_modifier = blame_the_minorities
+
+			if = { limit = { has_variable = bd101_cd } remove_variable = bd101_cd }
+			if = { limit = { has_variable = bd102_cd } remove_variable = bd102_cd }
+			if = { limit = { has_variable = bd103_cd } remove_variable = bd103_cd }
+			if = { limit = { has_variable = bd1001_cd } remove_variable = bd1001_cd }
+			if = { limit = { has_variable = bd1002_cd } remove_variable = bd1002_cd }
+			if = { limit = { has_variable = bd1003_cd } remove_variable = bd1003_cd }
+			if = { limit = { has_variable = bd1004_cd } remove_variable = bd1004_cd }
+			if = { limit = { has_variable = bd1005_cd } remove_variable = bd1005_cd }
+			if = { limit = { has_variable = bd1006_cd } remove_variable = bd1006_cd }
+			if = { limit = { has_variable = bd1007_cd } remove_variable = bd1007_cd }
+			if = { limit = { has_variable = bd1008_cd } remove_variable = bd1008_cd }
+			if = { limit = { has_variable = bd1009_cd } remove_variable = bd1009_cd }
+			if = { limit = { has_variable = bd1010_cd } remove_variable = bd1010_cd }
+			if = { limit = { has_variable = bd1011_cd } remove_variable = bd1011_cd }
+			if = { limit = { has_variable = bd1012_cd } remove_variable = bd1012_cd }
+			if = { limit = { has_variable = bd1013_cd } remove_variable = bd1013_cd }
+			if = { limit = { has_variable = bd1014_cd } remove_variable = bd1014_cd }
+			if = { limit = { has_variable = bd1015_cd } remove_variable = bd1015_cd }
+			if = { limit = { has_variable = bd1016_cd } remove_variable = bd1016_cd }
+			if = { limit = { has_variable = bd1017_cd } remove_variable = bd1017_cd }
+			if = { limit = { has_variable = bd1018_cd } remove_variable = bd1018_cd }
+			if = { limit = { has_variable = bd1020_cd } remove_variable = bd1020_cd }
+			if = { limit = { has_variable = bd1021_cd } remove_variable = bd1021_cd }
+			if = { limit = { has_variable = bd1023_cd } remove_variable = bd1023_cd }
+			if = { limit = { has_variable = bd1024_cd } remove_variable = bd1024_cd }
+			if = { limit = { has_variable = bd1025_cd } remove_variable = bd1025_cd }
+			if = { limit = { has_variable = bd1026_cd } remove_variable = bd1026_cd }
+		}
+		every_country = {
+			limit = {
+				OR = {
+					has_variable = had_black_death
+					can_see_situation = situation:black_death
+				}
+			}
+			trigger_event_non_silently = black_death.100
+		}
+		every_market_in_world = {
+			limit = {
+				OR = {
+					has_temporary_demand = demand:procure_remedies 
+					has_temporary_demand = demand:procure_remedies_no_liquor 
+				}
+			}
+			if = {
+				limit = { has_temporary_demand = demand:procure_remedies }
+				remove_temporary_demand = demand:procure_remedies
+			}
+			if = {
+				limit = { has_temporary_demand = demand:procure_remedies_no_liquor }
+				remove_temporary_demand = demand:procure_remedies_no_liquor
+			}
+		}
+		every_location_in_the_world = {
+			remove_location_modifier = isolating_cities
+		}
+	}
+	
+	is_data_map = yes
+	
+	map_color = {
+		if = {
+			limit = {	
+				disease_outbreak_presence = {
+					disease_outbreak = "scope:target.var:original_outbreak"
+					value > 0
+				}
+			}
+			lerp = {
+				min_color = define:NMapColors|MAP_COLOR_HIGH
+				max_color = define:NMapColors|MAP_COLOR_LOW
+				factor = "disease_outbreak_presence(scope:target.var:original_outbreak)"
+			}
+		}
+		else = {
+			value = define:NMapColors|DEFAULT_COLOR
+		}
+	}
+	
+	legend_key = {
+		desc = "[disease|e]"
+		color = define:NMapColors|MAP_COLOR_HIGH
+	}
+}

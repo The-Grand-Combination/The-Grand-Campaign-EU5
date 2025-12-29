@@ -1,0 +1,13 @@
+﻿kbo_sharia_courts = {
+	ability = adm
+	
+	potential = {
+		has_variable = enable_sharia_courts_cabinet_action_variable
+	}
+
+	country_modifier = {
+		global_pop_conversion_speed = 0.025
+		global_max_literacy = 5
+		monthly_towards_traditionalist = societal_value_monthly_move
+	}
+}

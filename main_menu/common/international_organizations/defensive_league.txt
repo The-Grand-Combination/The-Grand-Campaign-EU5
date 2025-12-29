@@ -1,0 +1,306 @@
+﻿defensive_league = {
+	has_target = no
+	expel_members_who_are_targets_of_other_members = yes
+	expel_members_who_are_attackers_at_war_with_other_members = yes
+
+	create_visible_trigger = {
+		is_subject = no
+	}
+
+	invite_visible_trigger = {
+		always = yes
+	}
+
+	laws = {
+		mutual_defense_law = possible_defense_policy
+	}
+
+	can_declare_war = {
+		trigger_if = {
+			limit = { scope:attacker ?= { is_member_of_international_organization = scope:recipient } }
+			scope:defender ?= { NOT = { is_member_of_international_organization = scope:recipient } }
+		}
+		trigger_else = {
+			always = yes
+		}
+	}
+	
+	modifier = {
+	}
+
+	show_on_diplomatic_map = yes
+	#leader_color = define:NMapColors|DIPLOMACY_DEFENSIVE_LEAGUE_COLOR
+	#member_color = define:NMapColors|DIPLOMACY_DEFENSIVE_LEAGUE_COLOR
+	
+	can_join_trigger = {
+		#can only be in one of these
+		is_subject = no
+		is_rebel_country = no
+		not = { 
+			is_member_of_international_organization_of_type = {
+				type = defensive_league
+			}
+		}
+		trigger_if = {
+			limit = {
+				exists = scope:recipient
+			}
+			scope:recipient = {
+				not = {
+					any_international_organization_member = {
+						has_blocked_treaties = root
+					}
+				}
+			}
+		}
+		trigger_else = {
+			not = { has_blocked_treaties = scope:actor }
+			scope:actor = {
+				not = { has_blocked_treaties = root }
+			}
+		}
+	}
+	
+	auto_leave_trigger = {
+		or = {
+			is_subject = yes
+			scope:recipient = {
+				any_international_organization_member = {
+					is_rival_of = root
+				}
+			}
+			is_rebel_country = yes
+		}
+	}
+	
+	auto_disband_trigger = {
+		total_members < 2
+	}
+
+	on_joined = {
+	}
+
+	on_left = {
+	}
+
+	ai_desire_to_join = {
+
+		add = {
+			desc = "DIPLOREASON_BASE"
+			value = -50
+		}
+
+		if = {
+			limit = {
+				exists = scope:recipient
+			}
+			#any rivals in here?
+			add = {
+				desc = "game_concept_rival"
+				scope:recipient = {
+					every_international_organization_member = {
+						limit = {
+							or = {
+								is_rival_of = root
+								root = {
+									is_rival_of = prev
+								}
+							}
+						}
+						add = {
+							value = -100
+						}
+					}
+				}
+			}
+			add = {
+				desc = "game_concept_opinion"
+				scope:recipient = {
+					every_international_organization_member = {
+						root = {
+							add = {
+								value = this_opinion_of_prev
+								multiply = 0.2
+							}
+						}
+					}
+				}
+			}
+            add = {
+                desc = "COALITION_GRADE_ANTAGONISM_TOWARDS_MEMBERS"
+                value = {
+					scope:recipient = {
+						every_international_organization_member = {
+							add = {
+								every_country_with_coalition_grade_antagonism_against_us = {
+									limit = {
+										not = { is_subject_or_below_of = prev }
+									}
+									subtract = {
+										value = military_strength
+									}
+								}
+								divide = military_strength
+								multiply = 10
+							}
+						}
+					}
+					
+                }
+            }
+			if = {
+				limit = {
+					scope:recipient = {
+						total_members > 0
+					}
+				}
+				subtract = {
+					desc = "ORGANIZATION_SIZE"
+					value = "scope:recipient.total_members"
+					multiply = 15
+					add = {
+						value = 0
+						scope:recipient = {
+							every_international_organization_member = {
+								add = great_power_score
+							}
+						}
+						divide = "scope:actor.great_power_score"
+						multiply = 40	
+						max = 200					
+					}
+				}
+				add = {
+					desc = "AVERAGE_GREAT_POWER_SCORE"
+					value = 0
+					scope:recipient = {
+						every_international_organization_member = {
+							add = great_power_score
+						}
+					}
+					divide = "scope:recipient.total_members"
+					#avg great power score compared to new country. If smaller we wanna join, if bigger we don't
+					subtract = root.great_power_score
+					multiply = 3
+					max = 25
+					min = -100
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				exists = scope:actor
+			}
+			add = {
+				desc = "AVERAGE_GREAT_POWER_SCORE"
+				value = 0			
+				add = scope:actor.great_power_score
+				#avg great power score compared to new country. If smaller we wanna join, if bigger we don't
+				subtract = root.great_power_score
+				multiply = 3
+				max = 25
+				min = -100
+			}
+			add = {
+				desc = "game_concept_opinion"
+				scope:actor = {
+					root = {
+						add = {
+							value = this_opinion_of_prev
+							multiply = 0.2
+						}
+					}
+				}
+			}
+		}
+
+		#distance
+		if = {
+			limit = {
+				exists = scope:recipient
+			}
+			add = {
+				desc = "DISTANCE_FROM_FRANCE_LEADER"
+				value = "border_distance_to(scope:actor)"
+				multiply = -0.2
+				min = -1000
+			}
+		}
+		else_if = {
+			limit = {
+				exists = scope:actor
+			}
+			add = {
+				desc = "DISTANCE_FROM_FRANCE_LEADER"
+				value = "border_distance_to(scope:actor)"
+				multiply = -0.2
+				min = -1000
+			}
+			if = {
+				limit = {
+					great_power_score > 0
+					scope:actor.great_power_score > 0
+				}
+				add = {
+					desc = "GREAT_POWER_RATIO"
+					if = {
+						limit = {
+							great_power_score > scope:actor.great_power_score
+						}
+						value = great_power_score
+						divide = scope:actor.great_power_score
+						multiply = -5
+					}
+					else = {
+						value = scope:actor.great_power_score
+						divide = great_power_score
+					}
+				}
+			}
+			scope:actor = {
+				add = {
+					desc = "COALITION_GRADE_ANTAGONISM_TOWARDS_THEM"
+					value = {
+						every_country_with_coalition_grade_antagonism_against_us = {
+							limit = {
+								not = { is_subject_or_below_of = prev }
+							}
+							subtract = {
+								value = military_strength
+							}
+						}
+						divide = military_strength
+						multiply = 10
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				exists = scope:actor
+			}
+			add = {
+				desc = "game_concept_antagonism"
+				scope:actor = {
+					value = prev_antagonism_towards_this
+					multiply = -1
+				}
+			}
+		}
+
+		if = {
+			limit = { num_locations < 8 }
+			add = {
+				desc = "WE_ARE_SMALL"
+				value = 25
+			}
+		}
+	}
+	
+	ai_desire_to_allow_new_member = {
+		add = {
+			desc = "WE_WANT_THE_ORGANIZATION_TO_GROW"
+			value = 20
+		}
+	}
+}

@@ -1,0 +1,891 @@
+﻿guru_nanak_guruship = {
+	type = international_organization
+	law_category = religious
+	
+	potential = {
+		international_organization_type = international_organization_type:sikhism
+		exists = character:guru_nanak
+	}
+	allow = {
+
+	}
+
+	requires_vote = yes
+
+	locked = {
+		OR = {
+			international_organization_has_policy = policy:vand_chhako
+			international_organization_has_policy = policy:kirat_karo
+			international_organization_has_policy = policy:naam_japo
+		}
+	}
+
+	vand_chhako = {
+
+		wants_this_policy_bias = {
+		}
+
+		on_activate = {
+		}
+
+		on_deactivate = {
+		}
+		
+		country_modifier = {
+			global_estate_target_satisfaction = large_permanent_target_satisfaction
+			monthly_towards_communalism = societal_value_tiny_monthly_move
+		}
+	}
+
+	kirat_karo = {
+
+		wants_this_policy_bias = {
+		}
+
+		on_activate = {
+		}
+
+		on_deactivate = {
+		}
+		
+		country_modifier = {
+			global_production_efficiency = medium_production_efficiency_bonus
+		}
+	}
+
+	naam_japo = {
+
+		wants_this_policy_bias = {
+		}
+
+		on_activate = {
+		}
+
+		on_deactivate = {
+		}
+		
+		country_modifier = {
+			stability_investment = tiny_stability_investment
+			monthly_towards_spiritualist = societal_value_tiny_monthly_move
+		}
+	}
+}
+
+guru_angad_guruship = {
+	type = international_organization
+	law_category = religious
+	
+	potential = {
+		international_organization_type = international_organization_type:sikhism
+		exists = character:guru_angad
+	}
+	allow = {
+
+	}
+
+	requires_vote = yes
+
+	locked = {
+		OR = {
+			international_organization_has_policy = policy:gurmukhi_script
+			international_organization_has_policy = policy:langar_community
+			international_organization_has_policy = policy:mall_akhara
+		}
+	}
+
+	gurmukhi_script = {
+
+		wants_this_policy_bias = {
+		}
+
+		on_activate = {
+		}
+
+		on_deactivate = {
+		}
+		
+		country_modifier = {
+			global_monthly_literacy = 0.01
+			monthly_towards_innovative = societal_value_tiny_monthly_move
+		}
+	}
+
+	langar_community = {
+
+		wants_this_policy_bias = {
+		}
+
+		on_activate = {
+		}
+
+		on_deactivate = {
+		}
+		
+		country_modifier = {
+			global_monthly_food_modifier = 0.1
+			monthly_towards_communalism = societal_value_tiny_monthly_move
+		}
+	}
+
+	mall_akhara = {
+
+		wants_this_policy_bias = {
+		}
+
+		on_activate = {
+		}
+
+		on_deactivate = {
+		}
+		
+		country_modifier = {
+			army_infantry_power = 0.05
+			monthly_towards_land = societal_value_tiny_monthly_move
+		}
+	}
+}
+
+guru_amar_das_guruship = {
+	type = international_organization
+	law_category = socioeconomic
+	
+	potential = {
+		international_organization_type = international_organization_type:sikhism
+		exists = character:guru_amar_das
+	}
+	allow = {
+
+	}
+
+	requires_vote = yes
+
+	locked = {
+		OR = {
+			international_organization_has_policy = policy:dasvandh_tax
+			international_organization_has_policy = policy:ananda_karaja
+			international_organization_has_policy = policy:sangat_equality
+		}
+	}
+
+	dasvandh_tax = {
+
+		wants_this_policy_bias = {
+		}
+
+		on_activate = {
+		}
+
+		on_deactivate = {
+		}
+		
+		country_modifier = {
+			global_estate_max_tax = 0.05
+			monthly_towards_capital_economy = societal_value_tiny_monthly_move
+		}
+	}
+
+	ananda_karaja = {
+
+		wants_this_policy_bias = {
+		}
+
+		on_activate = {
+		}
+
+		on_deactivate = {
+		}
+		
+		country_modifier = {
+			cultural_tradition_modifier = 0.1
+			monthly_towards_traditionalist = societal_value_tiny_monthly_move
+		}
+	}
+
+	sangat_equality = {
+
+		wants_this_policy_bias = {
+		}
+
+		on_activate = {
+		}
+
+		on_deactivate = {
+		}
+		
+		country_modifier = {
+			gender_equality = yes
+			monthly_towards_humanist = societal_value_tiny_monthly_move
+		}
+	}
+}
+
+guru_ram_das_guruship = {
+	type = international_organization
+	law_category = religious
+	
+	potential = {
+		international_organization_type = international_organization_type:sikhism
+		exists = character:guru_ram_das
+	}
+	allow = {
+
+	}
+
+	requires_vote = yes
+
+	locked = {
+		OR = {
+			international_organization_has_policy = policy:urbanization_projects
+			international_organization_has_policy = policy:scripture_hymns
+			international_organization_has_policy = policy:masand_system
+		}
+	}
+
+	urbanization_projects = {
+
+		wants_this_policy_bias = {
+		}
+
+		on_activate = {
+		}
+
+		on_deactivate = {
+		}
+		
+		country_modifier = {
+			global_monthly_development = 0.001
+			monthly_towards_inward = societal_value_tiny_monthly_move
+		}
+	}
+
+	scripture_hymns = {
+
+		wants_this_policy_bias = {
+		}
+
+		on_activate = {
+		}
+
+		on_deactivate = {
+		}
+		
+		country_modifier = {
+			monthly_prestige = 0.1
+			monthly_towards_spiritualist = societal_value_tiny_monthly_move
+		}
+	}
+
+	masand_system = {
+
+		wants_this_policy_bias = {
+		}
+
+		on_activate = {
+		}
+
+		on_deactivate = {
+		}
+		
+		country_modifier = {
+			global_pop_conversion_speed_modifier = 0.05
+			monthly_towards_outward = societal_value_tiny_monthly_move
+		}
+	}
+}
+
+guru_arjan_guruship = {
+	type = international_organization
+	law_category = administrative
+	
+	potential = {
+		international_organization_type = international_organization_type:sikhism
+		exists = character:guru_arjan
+	}
+	allow = {
+
+	}
+
+	requires_vote = yes
+
+	locked = {
+		OR = {
+			international_organization_has_policy = policy:adi_granth
+			international_organization_has_policy = policy:holy_abode
+			international_organization_has_policy = policy:martyrdom
+		}
+	}
+
+	adi_granth = {
+
+		wants_this_policy_bias = {
+		}
+
+		on_activate = {
+		}
+
+		on_deactivate = {
+		}
+		
+		country_modifier = {
+			global_institution_growth_modifier = 0.1
+			monthly_towards_innovative = societal_value_tiny_monthly_move
+		}
+	}
+
+	holy_abode = {
+
+		wants_this_policy_bias = {
+		}
+
+		on_activate = {
+		}
+
+		on_deactivate = {
+		}
+		
+		country_modifier = {
+			cultural_influence_modifier = 0.1
+			monthly_towards_centralization = societal_value_tiny_monthly_move
+		}
+	}
+
+	martyrdom = {
+
+		wants_this_policy_bias = {
+		}
+
+		on_activate = {
+		}
+
+		on_deactivate = {
+		}
+		
+		country_modifier = {
+			land_morale_modifier = 0.05
+			monthly_towards_defensive = societal_value_tiny_monthly_move
+		}
+	}
+}
+
+guru_hargobind_guruship = {
+	type = international_organization
+	law_category = military
+	
+	potential = {
+		international_organization_type = international_organization_type:sikhism
+		exists = character:guru_hargobind
+	}
+	allow = {
+
+	}
+
+	requires_vote = yes
+
+	locked = {
+		OR = {
+			international_organization_has_policy = policy:akal_takht
+			international_organization_has_policy = policy:protection_of_the_poor
+			international_organization_has_policy = policy:miri_piri
+		}
+	}
+
+	akal_takht = {
+
+		wants_this_policy_bias = {
+		}
+
+		on_activate = {
+		}
+
+		on_deactivate = {
+		}
+		
+		country_modifier = {
+			monthly_devotion = 0.1
+			monthly_legitimacy = 0.1
+			monthly_republican_tradition = 0.1
+			monthly_towards_aristocracy = societal_value_tiny_monthly_move
+		}
+	}
+
+	protection_of_the_poor = {
+
+		wants_this_policy_bias = {
+		}
+
+		on_activate = {
+		}
+
+		on_deactivate = {
+		}
+		
+		country_modifier = {
+			monthly_war_exhaustion = -0.025
+			monthly_towards_free_subjects = societal_value_tiny_monthly_move
+		}
+	}
+
+	miri_piri = {
+
+		wants_this_policy_bias = {
+		}
+
+		on_activate = {
+		}
+
+		on_deactivate = {
+		}
+		
+		country_modifier = {
+			discipline = 0.025
+			monthly_towards_belligerent = societal_value_tiny_monthly_move
+		}
+	}
+}
+
+guru_har_rai_guruship = {
+	type = international_organization
+	law_category = socioeconomic
+	
+	potential = {
+		international_organization_type = international_organization_type:sikhism
+		exists = character:guru_har_rai
+	}
+	allow = {
+
+	}
+
+	requires_vote = yes
+
+	locked = {
+		OR = {
+			international_organization_has_policy = policy:impartial_manji_heads
+			international_organization_has_policy = policy:fragance_of_a_flower
+			international_organization_has_policy = policy:nature_guardian
+		}
+	}
+
+	impartial_manji_heads = {
+
+		wants_this_policy_bias = {
+		}
+
+		on_activate = {
+		}
+
+		on_deactivate = {
+		}
+		
+		country_modifier = {
+			monthly_inflation = -0.001
+			monthly_towards_decentralization = societal_value_tiny_monthly_move
+		}
+	}
+
+	fragance_of_a_flower = {
+
+		wants_this_policy_bias = {
+		}
+
+		on_activate = {
+		}
+
+		on_deactivate = {
+		}
+		
+		country_modifier = {
+			improve_relation_impact = 0.1
+			monthly_towards_conciliatory = societal_value_tiny_monthly_move
+		}
+	}
+
+	nature_guardian = {
+
+		wants_this_policy_bias = {
+		}
+
+		on_activate = {
+		}
+
+		on_deactivate = {
+		}
+		
+		country_modifier = {
+			global_devastation_recovery = 0.005
+			monthly_towards_communalism = societal_value_tiny_monthly_move
+		}
+	}
+}
+
+guru_har_krishan_guruship = {
+	type = international_organization
+	law_category = socioeconomic
+	
+	potential = {
+		international_organization_type = international_organization_type:sikhism
+		exists = character:guru_har_krishan
+	}
+	allow = {
+
+	}
+
+	requires_vote = yes
+
+	locked = {
+		OR = {
+			international_organization_has_policy = policy:treat_the_sick
+			international_organization_has_policy = policy:unexpected_knowledge
+			international_organization_has_policy = policy:young_humility
+		}
+	}
+
+	treat_the_sick = {
+
+		wants_this_policy_bias = {
+		}
+
+		on_activate = {
+		}
+
+		on_deactivate = {
+		}
+		
+		country_modifier = {
+			global_disease_resistance = 0.05
+			monthly_towards_humanist = societal_value_tiny_monthly_move
+		}
+	}
+
+	unexpected_knowledge = {
+
+		wants_this_policy_bias = {
+		}
+
+		on_activate = {
+		}
+
+		on_deactivate = {
+		}
+		
+		country_modifier = {
+			embrace_institution_cost_modifier = -0.1
+			monthly_towards_individualism = societal_value_tiny_monthly_move
+		}
+	}
+
+	young_humility = {
+
+		wants_this_policy_bias = {
+		}
+
+		on_activate = {
+		}
+
+		on_deactivate = {
+		}
+		
+		country_modifier = {
+			global_max_literacy = 5
+			monthly_towards_quality = societal_value_tiny_monthly_move
+		}
+	}
+}
+
+guru_tegh_bahadur_guruship = {
+	type = international_organization
+	law_category = socioeconomic
+	
+	potential = {
+		international_organization_type = international_organization_type:sikhism
+		exists = character:guru_tegh_bahadur
+	}
+	allow = {
+
+	}
+
+	requires_vote = yes
+
+	locked = {
+		OR = {
+			international_organization_has_policy = policy:word_of_a_sikh
+			international_organization_has_policy = policy:guru_travels
+			international_organization_has_policy = policy:resist_persecution
+		}
+	}
+
+	word_of_a_sikh = {
+
+		wants_this_policy_bias = {
+		}
+
+		on_activate = {
+		}
+
+		on_deactivate = {
+		}
+		
+		country_modifier = {
+			diplomatic_reputation = diplomatic_reputation_weak_bonus
+			monthly_towards_conciliatory = societal_value_tiny_monthly_move
+		}
+	}
+
+	guru_travels = {
+
+		wants_this_policy_bias = {
+		}
+
+		on_activate = {
+		}
+
+		on_deactivate = {
+		}
+		
+		country_modifier = {
+			tolerance_heretic = 1
+			monthly_towards_outward = societal_value_tiny_monthly_move
+		}
+	}
+
+	resist_persecution = {
+
+		wants_this_policy_bias = {
+		}
+
+		on_activate = {
+		}
+
+		on_deactivate = {
+		}
+		
+		country_modifier = {
+			global_hostile_attrition = 0.5
+			monthly_towards_defensive = societal_value_tiny_monthly_move
+		}
+	}
+}
+
+guru_gobind_singh_guruship = {
+	type = international_organization
+	law_category = religious
+	
+	potential = {
+		international_organization_type = international_organization_type:sikhism
+		exists = character:guru_gobind_singh
+	}
+	allow = {
+
+	}
+
+	requires_vote = yes
+
+	locked = {
+		OR = {
+			international_organization_has_policy = policy:sikh_pluralism
+			international_organization_has_policy = policy:dharamyudh
+			international_organization_has_policy = policy:dasam_granth
+		}
+	}
+
+	sikh_pluralism = {
+
+		wants_this_policy_bias = {
+		}
+
+		on_activate = {
+		}
+
+		on_deactivate = {
+		}
+		
+		country_modifier = {
+			court_spending_cost = -0.01
+			monthly_towards_plutocracy = societal_value_tiny_monthly_move
+		}
+	}
+
+	dharamyudh = {
+
+		wants_this_policy_bias = {
+		}
+
+		on_activate = {
+		}
+
+		on_deactivate = {
+		}
+		
+		country_modifier = {
+			monthly_war_exhaustion = -0.025
+			monthly_towards_spiritualist = societal_value_tiny_monthly_move
+		}
+	}
+
+	dasam_granth = {
+
+		wants_this_policy_bias = {
+		}
+
+		on_activate = {
+		}
+
+		on_deactivate = {
+		}
+		
+		country_modifier = {
+			research_speed_modifier = 0.05
+			monthly_towards_innovative = societal_value_tiny_monthly_move
+		}
+	}
+}
+
+khalsa_law = {
+	type = international_organization
+	law_category = military
+	
+	potential = {
+		international_organization_type = international_organization_type:sikhism
+		exists = character:guru_gobind_singh
+	}
+	allow = {
+
+	}
+
+	requires_vote = yes
+
+	locked = {
+	}
+
+	guru_panth = {
+
+		wants_this_policy_bias = {
+		}
+
+		on_activate = {
+		}
+
+		on_deactivate = {
+		}
+		
+		country_modifier = {
+			monthly_army_tradition = 0.05
+			monthly_towards_belligerent = societal_value_tiny_monthly_move
+		}
+	}
+
+	khalsa_fauj = {
+
+		potential = {
+			international_organization_has_unlocked_policy_trigger = { type = khalsa_fauj }
+		}
+
+		wants_this_policy_bias = {
+		}
+
+		on_activate = {
+		}
+
+		on_deactivate = {
+		}
+		
+		country_modifier = {
+			army_infantry_maintenance_cost_modifier = -0.05
+			monthly_towards_quantity = societal_value_tiny_monthly_move
+		}
+	}
+
+	amrit_sanskar = {
+
+		potential = {
+			international_organization_has_unlocked_policy_trigger = { type = amrit_sanskar }
+		}
+
+		wants_this_policy_bias = {
+		}
+
+		on_activate = {
+		}
+
+		on_deactivate = {
+		}
+		
+		country_modifier = {
+			global_pop_conversion_speed_modifier = 0.05
+			monthly_towards_humanist = societal_value_tiny_monthly_move
+		}
+	}
+}
+
+guru_granth_sahib_guruship = {
+	type = international_organization
+	law_category = socioeconomic
+	
+	potential = {
+		international_organization_type = international_organization_type:sikhism
+		exists = work_of_art:guru_granth_sahib
+	}
+	allow = {
+
+	}
+
+	requires_vote = yes
+
+	locked = {
+		OR = {
+			international_organization_has_policy = policy:eternally_living_guru
+			international_organization_has_policy = policy:divine_justice
+			international_organization_has_policy = policy:unchanging_writing
+		}
+	}
+
+	eternally_living_guru = {
+
+		wants_this_policy_bias = {
+		}
+
+		on_activate = {
+		}
+
+		on_deactivate = {
+		}
+		
+		country_modifier = {
+			cultural_influence_modifier = 0.1
+			monthly_towards_outward = societal_value_tiny_monthly_move
+		}
+	}
+
+	divine_justice = {
+
+		wants_this_policy_bias = {
+		}
+
+		on_activate = {
+		}
+
+		on_deactivate = {
+		}
+		
+		country_modifier = {
+			global_population_growth = 0.00025
+			monthly_towards_free_subjects = societal_value_tiny_monthly_move
+		}
+	}
+
+	unchanging_writing = {
+
+		wants_this_policy_bias = {
+		}
+
+		on_activate = {
+		}
+
+		on_deactivate = {
+		}
+		
+		country_modifier = {
+			cultural_tradition_modifier = 0.1
+			monthly_towards_traditionalist = societal_value_tiny_monthly_move
+		}
+	}
+}

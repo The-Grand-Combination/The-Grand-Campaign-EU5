@@ -1,0 +1,24 @@
+﻿scutage =  { 
+	type = subject
+	category = {
+		offer = CATEGORY_SUBJECT_ACTIONS
+		request = CATEGORY_SUBJECT_ACTIONS
+		cancellation = CATEGORY_SUBJECT_ACTIONS
+		break = CATEGORY_SUBJECT_ACTIONS
+	}
+	relation_type = oneway
+	break_on_war = yes
+	
+	visible = {
+		scope:recipient = {
+			country_type = location
+			overlord ?= scope:actor
+			NOT = { is_subject_type = appanage }
+			NOT = { is_subject_type = hanseatic_member }
+		}
+	}
+
+	cancel_effect = {
+		scope:recipient = { add_liberty_desire = liberty_desire_weak_plus }
+	}
+}	

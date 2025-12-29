@@ -1,0 +1,11 @@
+﻿support_patriarchate = {
+	ability = adm
+	
+	potential = {
+		religion = religion:orthodox
+	}
+	
+	country_modifier = {
+		monthly_religious_influence = 0.1
+	}
+}

@@ -1,0 +1,202 @@
+﻿council_of_trent = {
+	monthly_spawn_chance = monthly_spawn_chance_ultimate
+	hint_tag = hint_council_of_trent
+	international_organization_type = catholic_church
+	voters = council_of_trent_voters
+	can_start = {
+		reformation_is_enabled = yes
+		current_year >= 1530
+		exists = religion:catholic
+		religion:catholic = {
+			reform_desire >= 0.25
+		}
+		exists = international_organization:catholic_church
+		international_organization:catholic_church = {
+			exists = leader_country
+		}
+	}
+	can_end = {
+		OR = {
+			council_of_trent_end_trigger = yes
+			NOT = {
+				exists = international_organization:catholic_church
+			}
+		}
+	}
+	visible = {
+		OR = {
+			religion ?= religion:catholic
+			is_protestant = yes
+		}
+	}
+	on_start = {
+		international_organization:catholic_church = {
+			leader_country ?= {
+				trigger_event_non_silently = council_of_trent.1000
+			}
+			every_international_organization_member = {
+				limit = {
+					NOT = { is_leader_of_international_organization = PREV }
+				}
+				trigger_event_non_silently = council_of_trent.1001
+			}
+			every_international_organization_member = {
+				add_to_global_variable_list = { name = council_of_trent_voters target = this } 
+			}
+		}
+		every_country = {
+			limit = { is_protestant = yes }
+			trigger_event_non_silently = council_of_trent.1002
+		}
+		set_variable = {	name = council_of_trent_passed_debates		value = 0	}
+		set_variable = {	name = council_of_trent_failed_debates		value = 0	}
+		set_variable = {	name = council_of_trent_passed_debates_max	value = 5	}
+		set_variable = {	name = council_of_trent_failed_debates_max	value = 5	}
+	}
+	on_monthly = {
+		clear_global_variable_list = council_of_trent_voters
+		clear_global_variable_list = council_of_trent_voting_for_debate
+		clear_global_variable_list = council_of_trent_voting_against_debate
+		clear_global_variable_list = council_of_trent_unvoters
+		international_organization:catholic_church = {
+			if = {
+				limit = { resolution_is_active = resolution:policy_vote }
+				every_international_organization_member = {
+					if = {
+						limit = {
+							international_organization:catholic_church = {
+								has_voted_for = {
+									voter = prev
+									resolution = resolution:policy_vote
+									vote = situation:council_of_trent.var:council_of_trent_current_debate
+								}
+							}
+						}
+						add_to_global_variable_list = { name = council_of_trent_voting_for_debate target = this } 
+					}
+					else_if = {
+						limit = {
+							international_organization:catholic_church = {
+								has_voted = {
+									voter = prev
+									resolution = resolution:policy_vote
+								}
+							}
+						}
+						add_to_global_variable_list = { name = council_of_trent_voting_against_debate target = this } 
+					}
+					else_if = {
+						limit = {
+							international_organization:catholic_church = {
+								has_abstained_vote = {
+									voter = prev
+									resolution = resolution:policy_vote
+								}
+							}
+						}
+						add_to_global_variable_list = { name = council_of_trent_voters target = this } 
+					}
+					else = {
+						add_to_global_variable_list = { name = council_of_trent_unvoters target = this } 
+					}
+				}
+			}
+			leader_country ?= {
+				random_list = {
+					2 = { trigger_event_non_silently = council_of_trent.3 }
+					98 = { }
+				}
+			}
+		}
+	}
+	on_ended = {
+		every_country = {
+			limit = { religion = religion:catholic }
+			trigger_event_non_silently = council_of_trent.2
+		}
+		clear_global_variable_list = council_of_trent_voters
+		clear_global_variable_list = council_of_trent_voting_for_debate
+		clear_global_variable_list = council_of_trent_voting_against_debate
+		clear_global_variable_list = council_of_trent_unvoters
+		remove_variable = council_of_trent_passed_debates
+		remove_variable = council_of_trent_failed_debates
+		remove_variable = council_of_trent_passed_debates_max
+		remove_variable = council_of_trent_failed_debates_max
+		remove_variable = council_of_trent_current_debate
+	}
+	tooltip = {
+		if = {
+			limit = {
+				has_owner = yes
+				is_target_in_global_variable_list = {
+					name = council_of_trent_voting_for_debate
+					target = root.owner
+				}
+			}
+			custom_tooltip = "COUNCIL_OF_TRENT_FAVORS_LAW_REFORM"
+		}
+		else_if = {
+			limit = {	
+				has_owner = yes
+				is_target_in_global_variable_list = {
+					name = council_of_trent_voting_against_debate
+					target = root.owner
+				}
+			}
+			custom_tooltip = "COUNCIL_OF_TRENT_REJECTS_LAW_REFORMS"
+		}
+		else_if = {
+			limit = {
+				has_owner = yes
+				is_target_in_global_variable_list = {
+					name = council_of_trent_unvoters
+					target = root.owner
+				}
+			}
+			custom_tooltip = "COUNCIL_OF_TRENT_FAVORS_HAS_YET_TO_VOTE"
+		}
+	}
+	map_color = {
+		if = {
+			limit = {
+				has_owner = yes
+				is_target_in_global_variable_list = {
+					name = council_of_trent_voting_for_debate
+					target = root.owner
+				}
+			}
+			value = cot_conciliatory_color
+		}
+		else_if = {
+			limit = {	
+				has_owner = yes
+				is_target_in_global_variable_list = {
+					name = council_of_trent_voting_against_debate
+					target = root.owner
+				}
+			}
+			value = cot_belligerent_color
+		}
+		else_if = {
+			limit = {
+				has_owner = yes
+				is_target_in_global_variable_list = {
+					name = council_of_trent_unvoters
+					target = root.owner
+				}
+			}
+			value = define:NMapColors|DEFAULT_COLOR
+		}
+	}
+	
+	legend_key = { 
+		desc = "belligerent_focus"
+		color = cot_belligerent_color
+		require_color_on_map = yes # Don't show key if this color is not on the map.
+	}
+	legend_key = { 
+		desc = "conciliatory_focus"
+		color = cot_conciliatory_color
+		require_color_on_map = yes
+	}
+}

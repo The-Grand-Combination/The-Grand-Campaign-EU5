@@ -1,0 +1,20 @@
+﻿office_of_new_converts = {
+	ability = mil
+	allow_multiple = no
+	potential = {
+		location:kazan = {
+			has_location_modifier = office_of_new_converts
+		}
+	}
+	allow = {
+		location:kazan = {
+			has_building = building_type:orthodox_monastery
+			has_location_modifier = office_of_new_converts
+		}
+	}
+	country_modifier = {
+		tolerance_heathen = -3
+		global_pop_conversion_speed = 0.01
+		monthly_towards_belligerent = societal_value_minor_monthly_move
+	}
+}

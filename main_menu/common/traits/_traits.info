@@ -1,0 +1,18 @@
+﻿trait_name = {
+
+	# Which type of character can use this trait? Default is "ruler".
+	category = ruler/general/admiral/artist/explorer
+	flavor = <trait flavor>
+
+	allow = {
+		# What else does the character need for this trait to be a valid choice?
+	}
+	
+	modifier = {
+		# What effect does this trait have when the character's role is the same as this trait's category?
+	}
+
+	chance = {
+		# MTTH style of chance determining how likely this trait is to appear
+	}
+}
