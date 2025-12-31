@@ -138,6 +138,8 @@ tribe = {
 	}
 }
 
+#Victoria II Ported
+
 bourgeois_dictatorship = {
 	heir_selection = republic_4_year_terms
 	heir_selection = military_dictatorship
