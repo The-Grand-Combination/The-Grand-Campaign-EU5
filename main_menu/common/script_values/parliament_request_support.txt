@@ -1,3 +1,0 @@
-﻿parliament_request_support = {
-    value = modifier:parliament_request_issue_support_needed
-}

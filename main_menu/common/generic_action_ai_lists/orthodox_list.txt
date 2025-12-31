@@ -1,9 +1,0 @@
-﻿orthodox_list = {
-	potential = {
-		religion = religion:orthodox
-	}
-	actions = {
-		orthodox_synod
-		periphora
-	}
-}

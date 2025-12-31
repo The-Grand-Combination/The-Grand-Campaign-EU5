@@ -3851,8 +3851,8 @@ memel = { topography = flatland vegetation = woods climate = continental religio
 ragnit = { topography = wetlands vegetation = forest climate = continental religion = romuva culture = samogitian raw_material = wheat}
 windenburg = { topography = wetlands vegetation = woods climate = continental religion = catholic culture = samogitian raw_material = wild_game}
 curonian_lagoon = { topography = lakes climate = continental}
-konigsberg = { modifier = resin_coast_base topography = flatland vegetation = grasslands climate = continental religion = catholic culture = prussian raw_material = resin natural_harbor_suitability = 0.50}
-balga = { modifier = resin_coast_base topography = flatland vegetation = woods climate = continental religion = catholic culture = pruthenian raw_material = resin natural_harbor_suitability = 0.00}
+konigsberg = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = prussian raw_material = resin natural_harbor_suitability = 0.50}
+balga = { topography = flatland vegetation = woods climate = continental religion = catholic culture = pruthenian raw_material = resin natural_harbor_suitability = 0.00}
 brandenburg_prussia = { topography = flatland vegetation = woods climate = continental religion = catholic culture = pruthenian raw_material = livestock natural_harbor_suitability = 0.00}
 fischhausen = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = prussian raw_material = fish natural_harbor_suitability = 0.00}
 gerdauen = { topography = wetlands vegetation = woods climate = continental religion = catholic culture = pruthenian raw_material = fiber_crops}
@@ -3874,7 +3874,7 @@ nowe = { topography = flatland vegetation = grasslands climate = continental rel
 swiecie = { topography = flatland vegetation = woods climate = continental religion = catholic culture = greater_polish raw_material = alum}
 malbork = { topography = wetlands vegetation = farmland climate = continental religion = catholic culture = prussian raw_material = wheat}
 dzierzgon = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = prussian raw_material = fiber_crops}
-elblag = { modifier = resin_coast_base topography = flatland vegetation = farmland climate = continental religion = catholic culture = prussian raw_material = resin natural_harbor_suitability = 0.50}
+elblag = { topography = flatland vegetation = farmland climate = continental religion = catholic culture = prussian raw_material = resin natural_harbor_suitability = 0.50}
 kwidzyn = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = prussian raw_material = legumes}
 morag = { topography = flatland vegetation = woods climate = continental religion = catholic culture = prussian raw_material = fruit}
 lidzbark = { topography = flatland vegetation = woods climate = continental religion = catholic culture = prussian raw_material = millet}
@@ -20433,7 +20433,7 @@ bohio = { topography = hills vegetation = jungle climate = tropical religion = z
 moca = { topography = hills vegetation = grasslands climate = tropical religion = zemi_religion culture = taino_culture raw_material = goods_gold}
 samana = { topography = hills vegetation = jungle climate = tropical religion = zemi_religion culture = ciguayo_culture raw_material = fish natural_harbor_suitability = 0.00}
 cubao = { topography = hills vegetation = jungle climate = tropical religion = zemi_religion culture = ciguayo_culture raw_material = clay natural_harbor_suitability = 0.00}
-ciguayo = { modifier = resin_coast_base topography = hills vegetation = jungle climate = tropical religion = zemi_religion culture = ciguayo_culture raw_material = resin natural_harbor_suitability = 0.00}
+ciguayo = { topography = hills vegetation = jungle climate = tropical religion = zemi_religion culture = ciguayo_culture raw_material = resin natural_harbor_suitability = 0.00}
 cotui = { topography = flatland vegetation = jungle climate = tropical religion = zemi_religion culture = taino_culture raw_material = iron}
 marien = { topography = hills vegetation = jungle climate = tropical religion = zemi_religion culture = taino_culture raw_material = fish natural_harbor_suitability = 0.50}
 iguamuco = { topography = flatland vegetation = grasslands climate = tropical religion = zemi_religion culture = taino_culture raw_material = wild_game}

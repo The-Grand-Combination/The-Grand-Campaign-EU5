@@ -1,8 +1,0 @@
-﻿inti_list = {
-	potential = {
-		religion = religion:inti
-	}
-	actions = {
-		inti_ceremonial_festivals
-	}
-}

@@ -1,1 +1,0 @@
-﻿heavy_melee_damage = -0.37

@@ -84,7 +84,6 @@ theocracy = {
 	default_character_estate = clergy_estate
 
 	modifier = {
-		force_convert_created_subjects = yes
 		court_language_is_liturgical_language_importance_modifier = 10
 	}
 }
