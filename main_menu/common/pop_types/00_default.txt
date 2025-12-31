@@ -210,15 +210,304 @@ slaves = {
 	color = pop_slaves
 	pop_food_consumption = 1.0
 	assimilation_conversion_factor = 1.0
-	
+
 	migration_factor = 0.01
-	
+
 	dhimmi_estate = { is_dhimmi = yes }
 	peasants_estate = {}
 	city_graphics = 0.01
-	
+
 	literacy_impact = {
 		local_unrest = 0.2
 	}
-	
+
+}
+
+#Victoria II Ported
+
+aristocrats = {
+	color = pop_nobles
+
+	editor = 0.05
+
+	assimilation_conversion_factor = 0.05
+
+	pop_food_consumption = 15.0
+
+	city_graphics = 1.0
+
+	nobles_estate = {}
+
+	promotion_factor = 0.1
+
+	upper = yes
+	has_cap = yes
+
+	literacy_impact = {
+		local_monthly_control = 0.015
+		local_cultural_tradition = 0.15
+	}
+}
+
+artisans = {
+	color = pop_burghers
+
+	editor = 0.1
+
+	assimilation_conversion_factor = 0.1
+
+	pop_food_consumption = 3.0
+
+	city_graphics = 0.5
+
+	burghers_estate = {}
+
+	promotion_factor = 0.75
+
+	migration_factor = 0.3
+
+	upper = yes
+	has_cap = yes
+
+	literacy_impact = {
+		local_production_efficiency = small_production_efficiency_bonus
+		local_monthly_development_modifier = 0.15
+	}
+}
+
+bureaucrats = {
+	color = pop_burghers
+
+	editor = 0.05
+
+	assimilation_conversion_factor = 0.1
+
+	pop_food_consumption = 5.0
+
+	city_graphics = 0.75
+
+	burghers_estate = {}
+
+	promotion_factor = 0.5
+
+	upper = yes
+	has_cap = yes
+
+	literacy_impact = {
+		local_monthly_control = 0.02
+		local_monthly_development_modifier = 0.1
+	}
+}
+
+capitalists = {
+	color = pop_burghers
+
+	editor = 0.05
+
+	assimilation_conversion_factor = 0.05
+
+	pop_food_consumption = 10.0
+
+	city_graphics = 1.0
+
+	burghers_estate = {}
+
+	promotion_factor = 0.25
+
+	upper = yes
+	has_cap = yes
+
+	literacy_impact = {
+		local_monthly_development_modifier = 0.5
+		local_trades_per_burgher = 1.0
+	}
+}
+
+clergymen = {
+	color = pop_clergy
+
+	editor = 0.05
+
+	assimilation_conversion_factor = 0.05
+
+	pop_food_consumption = 4.0
+
+	city_graphics = 0.75
+
+	clergy_estate = {}
+
+	promotion_factor = 0.5
+
+	upper = yes
+	has_cap = yes
+
+	literacy_impact = {
+		local_pop_conversion_speed_modifier = 0.3
+		local_pop_assimilation_speed_modifier = 0.2
+	}
+}
+
+clerks = {
+	color = pop_burghers
+
+	editor = 0.2
+
+	assimilation_conversion_factor = 0.2
+
+	pop_food_consumption = 2.5
+
+	city_graphics = 0.5
+
+	burghers_estate = {}
+
+	promotion_factor = 1.0
+
+	migration_factor = 0.25
+
+	has_cap = yes
+
+	literacy_impact = {
+		local_production_efficiency = small_production_efficiency_bonus
+		local_monthly_development_modifier = 0.05
+	}
+}
+
+craftsmen = {
+	color = pop_laborers
+
+	editor = 0.5
+
+	assimilation_conversion_factor = 0.3
+
+	pop_food_consumption = 2.0
+
+	city_graphics = 0.25
+
+	peasants_estate = {}
+
+	promotion_factor = 1.0
+
+	migration_factor = 0.2
+
+	has_cap = yes
+
+	literacy_impact = {
+		local_production_efficiency = medium_production_efficiency_bonus
+		local_monthly_development_modifier = 0.1
+	}
+}
+
+farmers = {
+	color = pop_peasants
+
+	editor = 0.75
+
+	assimilation_conversion_factor = 0.5
+
+	pop_food_consumption = 1.5
+
+	promotion_factor = 0.75
+
+	grow = yes
+
+	migration_factor = 0.15
+
+	city_graphics = 0.05
+
+	peasants_estate = {}
+
+	literacy_impact = {
+		local_max_rgo_size_modifier = 0.15
+		local_production_efficiency = small_production_efficiency_bonus
+	}
+}
+
+nomads = {
+	color = pop_tribes
+
+	pop_food_consumption = 0.5
+
+	grow = yes
+
+	tribal_rules = yes
+
+	assimilation_conversion_factor = 0.0
+
+	migration_factor = 0.25
+
+	city_graphics = 0.0
+
+	tribes_estate = {}
+
+	literacy_impact = {
+		local_tribal_promotion = 0.25
+		local_manpower_modifier = 0.05
+	}
+}
+
+officers = {
+	color = pop_soldiers
+
+	editor = 0.1
+
+	assimilation_conversion_factor = 0.2
+
+	pop_food_consumption = 6.0
+
+	city_graphics = 0.5
+
+	nobles_estate = {}
+
+	promotion_factor = 0.5
+
+	migration_factor = 0.05
+
+	has_cap = yes
+
+	literacy_impact = {
+		local_defensive = 0.15
+		local_manpower_modifier = 0.15
+	}
+}
+
+pioneers = {
+	color = pop_peasants
+
+	editor = 0.25
+
+	assimilation_conversion_factor = 0.25
+
+	pop_food_consumption = 2.0
+
+	promotion_factor = 0.5
+
+	migration_factor = 1.0
+
+	city_graphics = 0.1
+
+	peasants_estate = {}
+
+	literacy_impact = {
+		local_monthly_control = 0.01
+		local_distance_from_capital_cost_modifier = -0.1
+	}
+}
+
+serfs = {
+	color = pop_peasants
+
+	pop_food_consumption = 0.75
+
+	assimilation_conversion_factor = 0.75
+
+	migration_factor = 0.01
+
+	city_graphics = 0.01
+
+	peasants_estate = {}
+
+	literacy_impact = {
+		local_max_rgo_size_modifier = 0.05
+		local_unrest = 0.1
+	}
 }
