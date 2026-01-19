@@ -48,7 +48,7 @@
  papal_conclave_events.10.title: "The Elected Candidate Refuses"
  papal_conclave_events.10.desc: "The Conclave procedure is always an arduous one, and the relief of the cardinals once a candidate has been chosen is apparent. However, this time their faces quickly turned to disgust once the voting had concluded and the elected candidate had the gall to refuse the position.\n\nAlthough candidates have the right to refuse their election, that is not usually put into effect, or at least they have the decency and courtesy to express their intentions before the voting is made. Now the Conclave is forced to start the procedure once again."
  papal_conclave_events.10.a: "How can one refuse God's calling?"
- papal_conclave_events.10.b: "We can't force him to accept."
+ papal_conclave_events.10.b: "We cannot force him to accept."
 
  papal_conclave_events.11.title: "Papal Conclave Concluded"
  papal_conclave_events.11.desc: "The papal conclave has finished debating on which Cardinal should be elected as the new [ROOT.GetCountry.GetGovernment.GetRulerTitle]. There were three major candidates, but which one won the election?"

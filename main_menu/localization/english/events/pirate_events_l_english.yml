@@ -1,7 +1,7 @@
 ﻿l_english:
 
  pirate_events.1.title: "[target_character.GetNameWithNoTooltip] the Pirate"
- pirate_events.1.desc: "[ROOT.GetCountry.GetName], once the heart of the great Srivijaya Empire, has long been in contest of our region against foreign rivals. The status of the [GetCountry('MAJ').GetLongName] left our [ROOT.GetCountry.GetFlavorRank] vulnerable, and for decades, it served as a haven for lawless pirates. However, the tides have shifted once more as our maritime presence expands. New groups of privateers have appeared, and among them rises a cunning and ruthless leader, [target_character.GetName]. Granted a position within our navy, [target_character.GetSheHe] may prove a valuable candidate for the position of admiral."
+ pirate_events.1.desc: "[ROOT.GetCountry.GetName|U], once the heart of the great Śrīvijaya Empire, have long been in contest of our region against foreign rivals. The status of the [GetCountry('MAJ').GetLongName] left our [ROOT.GetCountry.GetFlavorRank] vulnerable, and for decades, it served as a haven for lawless pirates. However, the tides have shifted once more as our maritime presence expands. New groups of privateers have appeared, and among them rises a cunning and ruthless leader, [target_character.GetName]. Granted a position within our navy, [target_character.GetSheHe] may prove a valuable candidate for the position of admiral."
  pirate_events.1.a: "We will pursue our luck in the open seas!"
  pirate_events.1.b: "Let [target_character.GetHerHim] serve in the fleet."
  pirate_events.1.c: "Send [target_character.GetHerHim] away."

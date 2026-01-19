@@ -18,6 +18,9 @@
  game_concept_character_modifier: "Character Modifier"
  game_concept_character_modifiers: "Character Modifiers"
  game_concept_character_modifier_desc: "A [modifier|e] that applies to the [character|e]. Modifier types which are supposed to target the [country|e] are only active if the character is the [ruler|e] of that country."
+ game_concept_dynasty_modifier: "Dynasty Modifier"
+ game_concept_dynasty_modifiers: "Dynasty Modifiers"
+ game_concept_dynasty_modifier_desc: "A [modifier|e] that applies to the [dynasty|e]. Modifier types which are supposed to target the [character|e] are active on every living member of the dynasty, though [country_modifiers|e] are only applied if the character is the [ruler|e] of that country."
  game_concept_international_organization_modifier: "International Organization Modifier"
  game_concept_international_organization_modifiers: "International Organization Modifiers"
  game_concept_international_organization_modifier_desc: "A [modifier|e] that applies to the [international_organization|e]."
@@ -85,7 +88,7 @@
  game_concept_goods_demand_desc: "These are the [goods|e] that are required for a [construction|e], a [production_method|e], [pop_needs|e] or anything else that requires goods."
 
  game_concept_government_needs: "Government Needs"
- game_concept_government_needs_desc: "[government_needs] are those [goods|e] your [country|e] requires for [constructions|e] like [buildings|e], upgrading [location_rank|e], recruting [armies|e] and [navies|e] or preparing [explorations|e].\n\n[constructions|e] will stall if the [government_needs] can't be satisfied in the [market|e] of the [location|e], so the fulfillment of [government_needs] should be a priority for any Government."
+ game_concept_government_needs_desc: "[government_needs] are those [goods|e] your [country|e] requires for [constructions|e] like [buildings|e], upgrading [location_rank|e], recruiting [armies|e] and [navies|e] or preparing [explorations|e].\n\n[constructions|e] will stall if the [government_needs] cannot be satisfied in the [market|e] of the [location|e], so the fulfillment of [government_needs] should be a priority for any Government."
 
  game_concept_production_method: "Production Method"
  game_concept_production_methods: "Production Methods"
@@ -124,7 +127,7 @@
  game_concept_province_definition: "Province Definition"
  game_concept_province_definition_desc: "A Province Definition is a predetermined group of [locations|e] that determines how [provinces|e] are created throughout the game.\n\n[areas_with_icon|e] are divided into Province Definitions, which in turn contain [locations_with_icon|e]. All [locations] in the same Province Definition that are [owned|e] by the same [country_with_icon|e] will belong to the same [province|e].\n\nIf multiple [countries] [own] [locations] in the same Province Definition, there will be as many different [provinces], each with its own [province_capital_with_icon|e] and [food_stockpile_with_icon|e]."
  game_concept_province_capital: "Province Capital"
- game_concept_province_capital_desc: "The Province Capital is the designated [location|e] which is the figurative heart of its [province|e]. When this location gets [occupied|e] during a [war|e], the remaining locations of the province fall automatically in the hands of the invader over a short period of time.\n\nThe Province Capital also determines the [market|e] from which the whole [province|e] buys and sells [food|e]."
+ game_concept_province_capital_desc: "The Province Capital is the [location|e] that is the figurative heart of its [province|e]. The most populated or developed [location] in a [province] will be automatically selected as the Province Capital. When this [location] gets [occupied|e] during a [war|e], the remaining [locations] of the [province] fall automatically in the hands of the invader over a short period of time.\n\nThe Province Capital also determines the [market|e] from which the whole [province|e] buys and sells [food|e]."
  game_concept_location: "Location"
  game_concept_locations: "Locations"
  game_concept_location_desc: "The smallest unit of land, and part of a [province|e]. Its base characteristics are defined by [topography|e], [vegetation|e], and [climate|e]. It may also contain a [river|e].\n\nEach Location has a [raw_material|e] which can be gathered by [pops|e] who live there. [buildings|e] can be constructed in Locations and also [employ|e] Pops. Most Locations are [rural|e], but they can also be granted [town_or_city|e] status.\n\nEach Location can be [owned|e] and [controlled|e] by [countries|e], and [armies|e] can move between different Locations to conquer them when there is a [war|e]."
@@ -388,7 +391,7 @@
 
 
  game_concept_logistics_distance: "Logistics Distance"
- game_concept_logistics_distance_desc: "This is how far away an [army|e] can trace its supply lines to a [food_source|e]. Armies will gather food from a [province|e] where it has [food_access|e], a friendly [supply_depot|e], or a [navy|e] that is [distributing_food|e]. An [hostile|e] army or [zone_of_control|e] will block this."
+ game_concept_logistics_distance_desc: "This is how far away an [army|e] can trace its supply lines to a [food_source|e]. Armies will gather food from a [province|e] where it has [food_access|e], a friendly [supply_depot|e], or a [navy|e] that is [distributing_food|e]. A [hostile|e] army or [zone_of_control|e] will block this."
 
  game_concept_military_objective: "Military Objective"
  game_concept_military_objectives: "Military Objectives"
@@ -400,7 +403,7 @@
  game_concept_army_desc: "An army is a group of [regiments|e] led by a [character|e], which can fight [battles|e] and [siege|e] down enemy [fortifications|e]."
  game_concept_navy: "Navy"
  game_concept_navies: "Navies"
- game_concept_navy_desc: "Navies is what allows a [country|e] to project power beyond its own land. Navies are groups of [ships|e] led by a [character|e], which can fight [battles|e], [blockade|e] [hostile|e] coasts, disrupt enemy [maritime_presence|e], and transport [armies|e] where they are needed. They also help with logistics as they can [distribute_food|e] and [gather_food|e]."
+ game_concept_navy_desc: "Navies are what allows a [country|e] to project power beyond its own land. Navies are groups of [ships|e] led by a [character|e], which can fight [battles|e], [blockade|e] [hostile|e] coasts, disrupt enemy [maritime_presence|e], and transport [armies|e] where they are needed. They also help with logistics as they can [distribute_food|e] and [gather_food|e]."
  game_concept_ship: "Ship"
  game_concept_ships: "Ships"
  game_concept_ship_desc: "This is the main building block of a [navy|e]. A ship is a large boat able to carry [food|e], [regiments|e], and its own crew. Each ship is of a specific [ship_type|e]."
@@ -410,7 +413,7 @@
  game_concept_regulars: "Regulars"
  game_concept_regular_regiment_desc: "Regular Regiments are recruited manually by a [country|e] using most commonly [manpower|e] and [gold|e]. These form the standing [armies|e], and are rather limited in numbers until you get the [advances|e] from later [ages|e]."
 
- game_concept_regular_ship: "Regular Ships"
+ game_concept_regular_ship: "Regular Ship"
  game_concept_regular_ships: "Regular Ships"
  game_concept_regular_ship_desc: "Regular Ships are recruited manually by a [country|e] using [sailors|e] and [gold|e]. These form the standing [navies|e], and are rather limited in numbers until you get the [advances|e] from later [ages|e]."
 
@@ -550,7 +553,7 @@
 
  game_concept_cultural_influence: "Cultural Influence"
  game_concept_cultural_influence_short: "Influence"
- game_concept_cultural_influence_desc: "This is the attack power of a [culture|e] in the context of [culture_war|e], representing how impressive it appears to other cultures, and the reach it has beyond its own borders.\n\nIt has a monthly increases upon the completion of a [work_of_art|e] and has some monthly increase from many sources such as [prestige|e], and certain [buildings|e], [advances|e], [laws|e], and many others. But beware, it also has a natural monthly decay."
+ game_concept_cultural_influence_desc: "This is the attack power of a [culture|e] in the context of [culture_war|e], representing how impressive it appears to other cultures, and the reach it has beyond its own borders.\n\nIt has a monthly increase upon the completion of a [work_of_art|e] and has some monthly increase from many sources such as [prestige|e], and certain [buildings|e], [advances|e], [laws|e], and many others. But beware, it also has a natural monthly decay."
 
  game_concept_culture_war_power: "Culture War Power"
  game_concept_culture_war: "Culture War"
@@ -713,7 +716,7 @@
  game_concept_promoted: "Promoted"
  game_concept_promotes: "Promotes"
  game_concept_promotion: "Promotion"
- game_concept_promote_desc: "[pops|e] will [promote|e] from [ShowPopTypeName('peasants')] when there are possible positions for them in their [location|e]. Pops need to of at least a [tolerated_culture|e] to promote."
+ game_concept_promote_desc: "[pops|e] will [promote|e] from [ShowPopTypeName('peasants')] when there are possible positions for them in their [location|e]. Pops need to belong to at least a [tolerated_culture|e] in order to promote."
 
 
  game_concept_demoted: "Demoted"
@@ -757,9 +760,10 @@
  game_concept_power_projection_desc: "[countries|e] with higher $game_concept_power_projection$ can exploit nations with less. If ours is higher than another nation's, then we will be able to build a [ShowBuildingTypeName('trade_office')], [ShowBuildingTypeName('slave_center')], [ShowBuildingTypeName('missionary_building')], or other specific buildings in their [locations|e]. The higher our $game_concept_power_projection$ is, the quicker our [colonial_charters|e] can take control over locations. Having a higher $game_concept_power_projection$ than another country also reduces the [stability|e] cost of declaring [war|e] upon them, as well as the [war_exhaustion|e]."
 
  game_concept_proximity: "Proximity"
- game_concept_proximity_desc: "Proximity is how close a [location|e] is to the [capital|e] of its [owner|e]. Tracing a path through [roads|e] or [maritime_presence|e] from [coastal|e] locations increases the proximity.\n\nProximity has a direct impact on the [control|e] a [country|e] can exert over a [location]."
+ game_concept_proximity_desc: "The Proximity of a [location_with_icon|e] measures how close it is to the [capital_with_icon|e] of its [owner|e], and it determines how much [control_with_icon|e] [locations] can have.\n\n[proximity] starts at #high 100%#! in the [capital] of every [country|e], and jumps to nearby [locations], giving them [proximity]. Some [proximity] is lost with every subsequent jump, depending on the terrain and the infrastructure present in the [location]. The [proximity] that is lost in jumping from one [location] to the next is called Proximity Cost.\n\nThe Proximity cost between [locations] varies greatly with [topography_with_icon|e] and [vegetation_with_icon|e]. On land, it can be reduced by building [roads_with_icon|e], increasing [development_with_icon|e], and the [ShowSocietyDirectionName('land')] [societal_value_with_icon|e]. On sea, it can be reduced by [harbor_capacity_with_icon|e], [maritime_presence_with_icon|e] and the [ShowSocietyDirectionName('naval')] [societal_value]."
 
  game_concept_output: "Output"
+ game_concept_produce: "Produce"
  game_concept_produces: "Produces"
  game_concept_producing: "Producing"
  game_concept_output_desc: "The amount of [goods|e] that is created either from a [building|e] as [produced_goods|e], or as [raw_materials|e] from a [location|e]."
@@ -782,7 +786,10 @@
  game_concept_building_category_desc: "[building_types|e] are grouped in different Categories, which is primarily to identify which ones are similar."
 
  game_concept_supported_building_levels: "Supported Building Levels"
- game_concept_supported_building_levels_desc: "Every [location|e] has a soft limit on the number of [building|e] levels it can contain. Surpassing that limit will incur progressively higher construction prices.\n\nThe number of $game_concept_supported_building_levels$ depends primarily on the [location_rank|e] and the [development|e] of the [location]."
+ game_concept_supported_building_levels_desc: "Every [location|e] has a soft limit on the number of [building|e] levels it can contain. Surpassing that limit will incur progressively higher construction prices.\n\nThe number of $game_concept_supported_building_levels$ depends primarily on the [location_rank|e] and the [development|e] of the [location].\n\n[buildings] without workers do not count towards the building level limit."
+
+ game_concept_building_maintenance: "Building Maintenance"
+ game_concept_building_maintenance_desc: "[buildings] that do not produce [goods|e] incur an upkeep cost for their [owner]. The cost depends on the [market|e] price of the [goods] used by the building, and is affected by the [crown_power|e] of the owner."
  
  game_concept_employ: "Employ" 
  game_concept_employed: "Employed" 
@@ -802,7 +809,7 @@
  game_concept_estates: "Estates" 
  game_concept_estate_type: "Estate Type" 
  game_concept_estate_types: "Estate Types" 
- game_concept_estate_desc: "Special interest groups within a [country_with_icon|e], Estates have [estate_power_with_icon|e] representing their political strength within government, [estate_satisfaction_with_icon|e] representing how well their needs are fulfilled, and [estate_opinions|e] of other Countries.\n\nEstates may also have [estate_privileges_with_icon|e], which are special rights that increase their power and can be granted or revoked by the government. In turn, [estates] provide [taxes_with_icon|e], [army_levies_with_icon|e], and [navy_levies_with_icon|e] to their [country].\n\nEstates collect the [tax_base_with_icon|e] from the [locations_with_icon|e], as well as part of the profit of [trade|e], and they use that wealth to build [buildings_with_icon|e] and pay for [pop_needs_with_icon|e]. If their their [estate_satisfaction] is low, they will only build estate buildings to support their own [estate_power].\n\nEach [character_with_icon|e] belongs to one of the Estates and incrase its power when appointed to the [cabinet_with_icon|e], or when commanding [armies|e] and [navies|e]. Some [heir_selections|e] limit their [heirs|e] to specific estates."
+ game_concept_estate_desc: "Special interest groups within a [country_with_icon|e], Estates have [estate_power_with_icon|e] representing their political strength within government, [estate_satisfaction_with_icon|e] representing how well their needs are fulfilled, and [estate_opinions|e] of other Countries.\n\nEstates may also have [estate_privileges_with_icon|e], which are special rights that increase their power and can be granted or revoked by the government. In turn, [estates] provide [taxes_with_icon|e], [army_levies_with_icon|e], and [navy_levies_with_icon|e] to their [country].\n\nEstates collect the [tax_base_with_icon|e] from the [locations_with_icon|e], as well as part of the profit of [trade|e], and they use that wealth to build [buildings_with_icon|e] and pay for [pop_needs_with_icon|e]. If their [estate_satisfaction] is low, they will only build estate buildings to support their own [estate_power].\n\nEach [character_with_icon|e] belongs to one of the Estates and increase its power when appointed to the [cabinet_with_icon|e], or when commanding [armies|e] and [navies|e]. Some [heir_selections|e] limit their [heirs|e] to specific estates."
  game_concept_estate_opinion: "Estate Opinion" 
  game_concept_estate_opinions: "Estate Opinions" 
  game_concept_estate_opinion_desc: "Estates in a [country|e] will have opinions about other Countries, i.e. which to be [hostile|e] against and which to befriend, all to further their own needs."
@@ -810,13 +817,13 @@
 
  ### FOOD ###
  game_concept_food: "Food"
- game_concept_food_desc: "What [armies|e] march on, and what [pops|e] survive on. Without $game_concept_food$, armies will suffer [attrition|e] and $game_concept_pops$ will suffer [starvation|e]. [food_raw_materials|e] are the primary source of $game_concept_food$, although some [buildings|e] also play a role.\n\nThere are 3 layers involved in the production and distribution of $game_concept_food$:\n\n@location! [local_food|e]:\n$game_concept_food$ is produced and consumed in the [locations|e], and any excess or deficit is added to the $game_concept_provincial_food$.\n\n@province! [provincial_food|e]:\nThe $game_concept_provincial_food$ is the most important layer. If a [province|e] does not produce enough $game_concept_food$ to sustain the consumption of all its $game_concept_locations$, the Provincial storage will decrease. When it depletes, all $game_concept_locations$ inside a $game_concept_province$ will suffer [starvation|e]. But before that happens, the $game_concept_province$ will try to [buy_food|e] from its $game_concept_market$.\n\n@market! [market_food|e]:\nAll $game_concept_provinces$ in a [market|e] will try to [sell_food|e] when their storage is full, and try to [buy_food] when it's low. As long as there is enough $game_concept_food$ inside a $game_concept_market$, no one will starve."
+ game_concept_food_desc: "What [armies|e] march on, and what [pops|e] survive on. Without $game_concept_food$, armies will suffer [attrition|e] and $game_concept_pops$ will suffer [starvation|e]. [food_raw_materials|e] are the primary source of $game_concept_food$, although some [buildings|e] also play a role.\n\nThere are 3 layers involved in the production and distribution of $game_concept_food$:\n\n@location! [local_food|e]:\n$game_concept_food$ is produced and consumed in the [locations|e], and any excess or deficit is added to the $game_concept_provincial_food$.\n\n@province! [provincial_food|e]:\nThe $game_concept_provincial_food$ is the most important layer. If a [province|e] does not produce enough $game_concept_food$ to sustain the consumption of all its $game_concept_locations$, the Provincial storage will decrease. When it depletes, all $game_concept_locations$ inside a $game_concept_province$ will suffer [starvation|e]. But before that happens, the $game_concept_province$ will try to [buy_food|e] from its $game_concept_market$.\n\n@market! [market_food|e]:\nAll $game_concept_provinces$ in a [market|e] will try to [sell_food|e] when their storage is full, and try to [buy_food] when it is low. As long as there is enough $game_concept_food$ inside a $game_concept_market$, no one will starve."
 
  game_concept_monthly_food: "Monthly Food" 
  game_concept_monthly_food_desc: "Any [food|e] that is not consumed by the Pops in a territory is contributed to the [provincial_food|e] storage."
 
  game_concept_local_food: "Local Food" 
- game_concept_local_food_desc: "This is the amount of [food|e] that a [location|e] contributes to the [provincial_food|e]. If it's negative, the $game_concept_location$ will simply take $game_concept_food$ from other $game_concept_locations$ in its [province|e].\n\nEvery $game_concept_location$ produces some $game_concept_food$ depending on its [subsistence_agriculture|e] and its [food_productivity|e], but the bulk of the $game_concept_food$ production happens in $game_concept_locations$ with [food_raw_materials|e].\n\nEvery $game_concept_location$ will also have some [pop_food_consumption|e] depending on the [population|e] living therein.\n\n[towns_and_cities|e] will often have negative $game_concept_local_food$ balances, but that is not a problem as long as the $game_concept_provincial_food$ is positive."
+ game_concept_local_food_desc: "This is the amount of [food|e] that a [location|e] contributes to the [provincial_food|e]. If it is negative, the $game_concept_location$ will simply take $game_concept_food$ from other $game_concept_locations$ in its [province|e].\n\nEvery $game_concept_location$ produces some $game_concept_food$ depending on its [subsistence_agriculture|e] and its [food_productivity|e], but the bulk of the $game_concept_food$ production happens in $game_concept_locations$ with [food_raw_materials|e].\n\nEvery $game_concept_location$ will also have some [pop_food_consumption|e] depending on the [population|e] living therein.\n\n[towns_and_cities|e] will often have negative $game_concept_local_food$ balances, but that is not a problem as long as the $game_concept_provincial_food$ is positive."
 
  game_concept_provincial_food: "Provincial Food" 
  game_concept_provincial_food_desc: "This is the amount of [food|e] that a [province|e] has stored. If the [monthly_food|e] is negative, it will eventually be depleted. If there is a deficit, the province will [buy_food|e] from the local [market|e] and if there is a surplus, it will [sell_food|e].\n\nAny [food] that is not consumed by the [pops|e] in a [location|e] is contributed to the Provincial Food storage.\n\nAll territories in the Province can draw from this storage to feed their inhabitants. [armies|e] in the province can also consume stored food if they would otherwise suffer [attrition|e]."
@@ -880,7 +887,7 @@
  game_concept_lender: "Lender" 
  game_concept_lender_desc: "This is either a bank lending out [gold|e] to earn an [interest|e] on it, or another [country|e] that is lending it."
  game_concept_borrower: "Borrower" 
- game_concept_borrower_desc: "This is a [country|e] which owes [gold|e] and has to pay [interest|e] on it, usually to an another [country|e] or an [estate|e]."
+ game_concept_borrower_desc: "This is a [country|e] which owes [gold|e] and has to pay [interest|e] on it, usually to another [country|e] or an [estate|e]."
  adm_concept: "[adm|e]"
  dip_concept: "[dip|e]"
  mil_concept: "[mil|e]"
@@ -914,7 +921,7 @@
  game_concept_retreat: "Retreat" 
  game_concept_retreats: "Retreats" 
  game_concept_retreating: "Retreating" 
- game_concept_retreat_desc: "An [army|e] or [navy|e] may be forced to retreat from losing a battle, due to their [morale|e] becoming too low, or it voluntarily deciding to [retreat|e]. While retreating, it will not be able to fight again, or be given new orders, until it has reached its destination."
+ game_concept_retreat_desc: "An [army|e] or [navy|e] may be forced to retreat from losing a battle, due to their [morale|e] becoming too low, or it could voluntarily decide to [retreat|e]. While retreating, it will not be able to fight again, or be given new orders, until it has reached its destination."
  game_concept_army_tradition: "Army Tradition"
  game_concept_army_tradition_i: "@army_tradition!"
  game_concept_army_tradition_desc: "This represents the accumulated experience of [armies|e], [battles|e], and [sieges|e] a [country|e] has."
@@ -941,7 +948,7 @@
  game_concept_embrace_desc: "A [country|e] can embrace an [institution|e] when enough of [population|e] of a [country|e] lives in [locations|e] where it has fully spread. This means that the country has fully understood the [institution], and can [research|e] [advances|e] that rely on it."
  game_concept_advance: "Advance" 
  game_concept_advances: "Advances" 
- game_concept_advance_desc: "Advances represent ideas, inventions, technologies, and other areas of human knowledge.\n\nOnly one Advance can be [researched|e] at a time, and the speed at which a [country|e] can research them depends on their [research_progress_with_icon|e].\n\nWith every [age|e], new Advances become available for [countries] to discover. Some are exclusive to specific [countries], [cultures|e], or [religions|e], but most simply require to have [embraced|e] the appropriate [institutions_with_icon|e].\n\nThe speed at which we progress towards new [advances_with_icon|e] depends mainly on the power of our [liturgical_language_with_icon|e], the average [literacy_with_icon|e] of our [pops_with_icon|e], the [estate_satisfaction|e] of our [ShowEstateTypeName('clergy_estate')], and the number of [institutions_with_icon|e] we have [embraced|e]."
+ game_concept_advance_desc: "Advances represent ideas, inventions, technologies, and other areas of human knowledge.\n\nOnly one Advance can be [researched|e] at a time, and the speed at which a [country|e] can research them depends on their [research_progress_with_icon|e].\n\nWith every [age|e], new Advances become available for [countries] to discover. Some are exclusive to specific [countries], [cultures|e], or [religions|e], but most simply require having [embraced|e] the appropriate [institutions_with_icon|e].\n\nThe speed at which we progress towards new [advances_with_icon|e] depends mainly on the power of our [liturgical_language_with_icon|e], the average [literacy_with_icon|e] of our [pops_with_icon|e], the [estate_satisfaction|e] of our [ShowEstateTypeName('clergy_estate')], and the number of [institutions_with_icon|e] we have [embraced|e]."
  game_concept_research: "Research" 
  game_concept_researched: "Researched" 
  game_concept_researching: "Researching" 
@@ -988,7 +995,7 @@
  game_concept_integrating: "Integrating" 
  game_concept_integration_list_title: "An Integrated [location] receives the following effects:"
  game_concept_integration_list: "[ShowModifierEffect('integration_integrated')]"
- game_concept_integration_desc: "An Integrated [location|e] has been properly incorporated into the State and it is thus much easier to govern than a [conquered|e] [location].\n\n[conquered|e] [locations] need to be Integrated with a [cabinet_action|e] that targets the whole [province|e], and whose speed depends on various factors including the number of [locations], their [culture|e], or their [location_rank|e]."
+ game_concept_integration_desc: "An Integrated [location|e] has been properly incorporated into the State, and it is thus much easier to govern than a [conquered|e] [location].\n\n[conquered|e] [locations] need to be Integrated with a [cabinet_action|e] that targets the whole [province|e], and whose speed depends on various factors including the number of [locations], their [culture|e], or their [location_rank|e]."
  
  game_concept_government_reform: "Government Reform" 
  game_concept_government_reforms: "Government Reforms" 
@@ -1061,7 +1068,7 @@
  game_concept_law_desc: "Each law has to have a [policy|e] selected for it, else it is not active. Different [government_types|e] and [religions|e] gain different laws, and more laws are given through [advances|e]. Depending on what [policy] we pick in a law, we will often impact our [societal_values|e]."
  game_concept_antagonism: "Antagonism"
  game_concept_antagonism_i: "@antagonism!"
- game_concept_antagonism_desc: "Antagonism indicates how other [countries|e] are likely to view us, affecting their [opinion|e] of us. If they feel a lot of antagonism towards us, countries which consider us as relevant to their interests will be less inclined to engage in [diplomacy|e] and may act against our interests. Antagonism is caused by basic differences between countries' [societal_values|e], [government_types|e], [religion|e], [culture|e], and [language|e]. Some actions can also cause an antagonism 'bomb' in a [location|e] that affects the countries near it to varying degrees depending on how much they care about that location and about the antagonizer country. These antagonism 'bomb' effects will generally dissipate with time."
+ game_concept_antagonism_desc: "Antagonism indicates how other [countries|e] are likely to view us, affecting their [opinion|e] of us. If they feel a lot of antagonism towards us, countries which consider us as relevant to their interests will be less inclined to engage in [diplomacy|e] and may act against our interests. Antagonism is caused by basic differences between countries' [societal_values|e], [government_types|e], [religion|e], [culture|e], and [language|e]. Some actions can also cause an antagonism 'bomb' in a [location|e] that affects the countries near it to varying degrees depending on how much they care about that location and about the antagonizing country. These antagonism 'bomb' effects will generally dissipate with time."
  game_concept_antagonism_received_modifier: "Antagonism Received" 
  game_concept_antagonism_received_modifier_desc: "This is how much hostile diplomatic actions like [war|e] will impact our [antagonism|e]."
  game_concept_diplomatic_action: "Diplomatic Action"
@@ -1072,7 +1079,7 @@
  game_concept_diplomatically_limited: "Diplomatically Limited"
  game_concept_limited_diplomacy: "Limited Diplomacy"
  game_concept_unlimited_diplomacy: "Unlimited Diplomacy"
- game_concept_diplomatic_limitation_desc: "A [country|e] which is either a very dependent [subject|e] or a [junior_partner|e] in an [union|e] might be diplomatically limited. That means the following diplomatic actions are either not possible or heavily restricted:\n\n$BULLET$ [ShowRelationTypeName('alliance')]\n\n$BULLET$ [ShowRelationTypeName('food_access')]\n\n$BULLET$ [ShowRelationTypeName('guarantee')]\n\n$BULLET$ [ShowRelationTypeName('military_access')]\n\n$BULLET$ [ShowRelationTypeName('fleet_basing_rights')]\n\n$BULLET$ [ShowGenericActionName('create_building_subject')]\n\n$BULLET$ [ShowGenericActionName('create_province_subject')]\n\nMost subjects with limited diplomacy are incapable of declaring their own [wars|e] unless against very specific targets."
+ game_concept_diplomatic_limitation_desc: "A [country|e] which is either a very dependent [subject|e] or a [junior_partner|e] in a [union|e] might be diplomatically limited. That means the following diplomatic actions are either not possible or heavily restricted:\n\n$BULLET$ [ShowRelationTypeName('alliance')]\n$BULLET$ [ShowRelationTypeName('food_access')]\n$BULLET$ [ShowRelationTypeName('guarantee')]\n$BULLET$ [ShowRelationTypeName('military_access')]\n$BULLET$ [ShowRelationTypeName('fleet_basing_rights')]\n$BULLET$ [ShowGenericActionName('create_building_subject')]\n$BULLET$ [ShowGenericActionName('create_province_subject')]\n\nMost subjects with limited diplomacy are incapable of declaring their own [wars|e] unless against very specific targets."
  game_concept_diplomats: "Diplomats" 
  game_concept_diplomat: "Diplomat" 
  game_concept_diplomat_desc: "This represents how much [diplomacy|e] a [country|e] can do in a given time. Some [advances|e] or [societal_values|e] will increase this amount."
@@ -1081,6 +1088,9 @@
  game_concept_diplomatic_opinions: "Diplomatic Opinions"
  game_concept_opinion_i: "@opinion!"
  game_concept_opinion_desc: "This is how much a [country|e] likes or dislikes another [country]. The difference between [trust|e] and opinion is that a high opinion will stop a [country] from being hostile, but we would need trust to be able to work together."
+
+ game_concept_bias: "Bias"
+ game_concept_bias_desc: "A bias is a certain attitude a [country|e] can have towards another one. It is split into three categories: [opinion|e], [trust|e] and [antagonism|e]. [country_interactions|e], [events|e] and historical setup have usually an impact on one of the three diplomatic aspects."
 
  game_concept_rival: "Rival" 
  game_concept_rivals: "Rivals" 
@@ -1133,7 +1143,7 @@
  game_concept_war_leaders: "War Leaders"
  game_concept_war_leader_desc: "A $game_concept_war_leader$ is one of the two [countries|e] who lead their respective side in a [war|e]. They will discuss the potential outcomes of the conflict by deciding over the [peace_treaties|e]."
  game_concept_call_to_arms: "Call to Arms"
- game_concept_call_to_arms_desc: "A call to arms is a [diplomatic_action|e] which can be done during [war|e] to every [ally|e] and other [countries|e] which have sworn to participate in military conflicts.\n\nCountries that are the [defender|e] will automatically call their allies into the war, while countries that are the [attacker|e] have to manually call them and it is more difficult for them to convince them to join."
+ game_concept_call_to_arms_desc: "A call to arms is a [diplomatic_action|e] which can be done during [war|e] to every [ally|e] and other [countries|e] which have sworn to participate in military conflicts.\n\nCountries that are the [war_defender|e] will automatically call their allies into the war, while countries that are the [war_attacker|e] have to manually call them, and it is more difficult for them to convince them to join."
  game_concept_treaty: "Treaty" 
  game_concept_treaties: "Treaties"
  game_concept_treaty_desc: "A Treaty is a signed diplomatic state of affairs between two or more [countries|e]. They could be for a limited time, or until further notice.\nTreaties include [alliances|e], [military_access|e], [truce|e], and many more than can be created from [diplomacy|e]."
@@ -1192,6 +1202,15 @@
  game_concept_offensive_wars: "Offensive Wars"
  game_concept_defensive_wars: "Defensive Wars"
  game_concept_war_desc: "A war is created when one [country|e] uses a [diplomat|e] on another country to start a conflict. Countries that are [allied|e] with either side may get called into the war.\n\nDuring a war, [armies|e] and [navies|e] from each side that encounter each other will [battle|e] each other. [armies] will be able to [siege|e] the [enemies|e] [locations|e], while [navies|e] can [blockade|e] their [ports|e].\n\nA war continue until a [peace_treaty|e] is signed, and [peace|e] reigns again between the involved [countries]. "
+
+ game_concept_war_attacker: "Attacker"
+ game_concept_war_attackers: "Attackers"
+ game_concept_war_attacker_desc: "In a [war_with_icon|e], the Attacker is the side whose leader initiated the conflict and chose the [casus_belli_with_icon|e].\n\nIn order to earn [war_score_with_icon|e], the Attacker side needs to fulfil the [war_goal_with_icon|e]."
+
+ game_concept_war_defender: "Defender"
+ game_concept_war_defenders: "Defenders"
+ game_concept_war_defender_desc: "In a [war_with_icon|e], the Defender is the side whose leader was declared war upon. The Defender side will automatically call their [allies_with_icon|e] into the [war].\n\nIn order to earn [war_score_with_icon|e], the Defender side needs to prevent the [war_attacker|e] from fulfilling the [war_goal_with_icon|e]."
+
  game_concept_peace: "Peace" 
  game_concept_peace_desc: "Peace is the status in which the [country|e] is not in any ongoing [war|e]."
  game_concept_white_peace: "White Peace" 
@@ -1243,7 +1262,7 @@
  game_concept_import_market_desc: "This is the [market|e] where the [goods|e] of a trade are sold, creating an [import|e]."
  game_concept_market: "Market" 
  game_concept_markets: "Markets" 
- game_concept_market_desc: "A Market is where [goods|e] are bought and sold.\nIt is based in a [market_center|e], but includes other locations based on their [market_access|e] and [protectionism|e].\nAll these locations will exclusively buy from and sell to this market's [stockpile|e].\n\n[markets] are color-coded depending on how relevant they are to you:\n\n$BULLET$ #G Green [market]#!: You own locations in this [market], and therefore you need to worry about its [pop_needs|e].\n\n$BULLET$ #E Blue [market]#!: You do not own [locations|e], but have [merchant_capacity|e], and therefore can [trade|e] from them.\n\n$BULLET$ #L Brown [market]#!: You do not [own|e] any [location|e] nor have any [merchant_capacity|e].\n\n$BULLET$ Grey [market]: [markets] that are out of your [trade_range|e] and therefore you can't interact with them."
+ game_concept_market_desc: "A Market is where [goods|e] are bought and sold.\nIt is based in a [market_center|e], but includes other locations based on their [market_access|e] and [protectionism|e].\nAll these locations will exclusively buy from and sell to this market's [stockpile|e].\n\n[markets] are color-coded depending on how relevant they are to you:\n\n$BULLET$ #G Green [market]#!: You own locations in this [market], and therefore you need to worry about its [pop_needs|e].\n\n$BULLET$ #E Blue [market]#!: You do not own [locations|e], but have [merchant_capacity|e], and therefore can [trade|e] from them.\n\n$BULLET$ #L Brown [market]#!: You do not [own|e] any [location|e] nor have any [merchant_capacity|e].\n\n$BULLET$ Grey [market]: [markets] that are out of your [trade_range|e] and therefore you cannot interact with them."
  SUBTAB_TRADING_TT_TEXT: "In this Tab you can manage your [trades|e] if you have [merchant_capacity|e] in any [market|e]."
  game_concept_protectionism: "Market Protection"
  game_concept_trade_protection: "Market Protection"
@@ -1290,7 +1309,7 @@
  game_concept_hegemony_desc: "Hegemony is established in different fields, where the [great_power|e] with the greatest level in each field will be proclaimed to be the Hegemon, earning some nice bonuses.\n[ShowDatabase('hegemony')]"
  game_concept_tier: "Tier" 
  game_concept_tiers: "Tiers" 
- game_concept_tier_desc: "This is the name for the level that a [formable_country|e] has. Every [country|e] belongs to a Tier from I to IV, depending on how hard the formation requirements are. Most importantly, [countries] can only form countries of the same Tier or higher than their current one."
+ game_concept_tier_desc: "This is the name for the level that a [formable_country|e] has. Every [country|e] belongs to a Tier from I to IV, depending on how hard the formation requirements are. Most importantly, [countries] can only form countries of higher Tiers than their current one."
 
  game_concept_country_rank: "Country Rank" 
  game_concept_country_ranks: "Country Ranks"
@@ -1338,6 +1357,10 @@
  game_concept_levy: "Levy" 
  game_concept_levies: "Levies" 
  game_concept_levy_desc: "A levy is a military unit that a [pop|e] will raise when called. It is either an [army_levy|e] or a [navy_levy|e]."
+
+ game_concept_levy_combat_efficiency: "Levy Combat Efficiency"
+ game_concept_levy_combat_efficiency_desc: "This impacts how effective will a [regiment|e] of [levies|e] perform in [combat|e] compared the a [regular|e] regiment."
+
 
  game_concept_weather_system: "Weather System" 
  game_concept_weather_systems: "Weather Systems" 
@@ -1456,7 +1479,7 @@
  game_concept_disaster_desc: "A Disaster is an important and disruptive incident affecting a single [country|e], and they could last or remain active over a long period of time, until the country manages to overcome it.\n\nSome of the most important Disasters include [ShowDisasterName('ambrosian_republic_disaster')] and [ShowDisasterName('dissolution_of_delhi')]."
 
  game_concept_tax_efficiency: "Tax Efficiency"
- game_concept_tax_efficiency_desc: "This is how efficient our [country|e] is at collecting [tax|e]. If it is positive, it can actually increase the amount of $game_concept_tax$ that countries can get from their [estates|e]."
+ game_concept_tax_efficiency_desc: "This is how efficient our [country|e] is at collecting [tax|e]. It affects the amount of $game_concept_taxes$ that reach the [treasury|e] when taxing the [estates|e]."
 
  game_concept_trade_efficiency: "Trade Efficiency"
  game_concept_trade_efficiency_desc: "This modifies how profitable a [trade|e] will be, by directly impacting the price you sell [goods|e] to the target [market|e]."
@@ -1484,7 +1507,7 @@
  game_concept_profit_desc: "This is the amount that a [building|e] or a [rgo|e] contributes to the [tax_base|e] of its [location], already taking [control|e] into account. In other words, it is the [gold|e] that are actually created from the [building]."
 
  game_concept_potential_profit: "Potential Profit"
- game_concept_potential_profit_desc: "This is the difference between the income and expenses of a [building|e], not taking [control|e] into account.\n\nIf it's negative, the building will be considered unprofitable and stop working."
+ game_concept_potential_profit_desc: "This is the difference between the income and expenses of a [building|e], not taking [control|e] into account.\n\nIf it is negative, the building will be considered unprofitable and stop working."
 
  game_concept_tax: "Tax"
  game_concept_taxes: "Taxes"
@@ -1511,7 +1534,7 @@
  game_concept_formable_country_formation: "Formation"
  game_concept_formable_forming: "Forming"
  game_concept_formable_countries: "Formable Countries"
- game_concept_formable_country_desc: "A Formable Country is a new national identity that can be formed (or re-formed) by a [country|e] fulfilling certain conditions.\n\nThese conditions might include controlling a percentage of the [locations|e] in a [region|e], or having a specific [primary_culture|e].\n\nWe can only form a Formable Country that has the same or higher [tier|e] than our current [tier].\n\nTypically, they represent historical unions, or even legendary ambitions. Upon formation, the old [country] will change its name, flag, and colors to that of the Formable Country."
+ game_concept_formable_country_desc: "A Formable Country is a new national identity that can be formed (or re-formed) by a [country|e] fulfilling certain conditions.\n\nThese conditions might include controlling a percentage of the [locations|e] in a [region|e], or having a specific [primary_culture|e].\n\nWe can only form a Formable Country that has a higher [tier|e] than our current [tier].\n\nTypically, they represent historical unions, or even legendary ambitions. Upon formation, the old [country] will change its name, flag, and colors to that of the Formable Country."
 
  game_concept_revolter: "Revolter"
  game_concept_revolt: "Revolt"
@@ -1551,7 +1574,7 @@
  game_concept_loyal_subjects_desc: "When a [subject] has more than [GetDefine('NDiplomacy','TOO_DISLOYAL_THRESHOLD')] [subject_loyalty|e] towards its [overlord|e], it becomes a Loyal Subject.\n\nWhen in such a state, it will join the [wars|e] of its [overlord] and may be [annexed|e]."
 
  game_concept_pop_needs: "Pop Needs" 
- game_concept_pop_needs_desc: "A [pop_with_icon|e] has a list of [goods_with_icon|e] they need for their life, which depends on their [pop_type|e], [culture|e], [religion|e], and where they live. For instance, [ShowPopTypeName('nobles')] have much higher demands than the [lower_class|e]. If they can't fulfill these needs, their [pop_satisfaction_with_icon|e] will suffer.\n\nThe amount of [goods] demanded by a [pop] increases with the [development_with_icon|e] of the [location|e] where they live."
+ game_concept_pop_needs_desc: "A [pop_with_icon|e] has a list of [goods_with_icon|e] they need for their life, which depends on their [pop_type|e], [culture|e], [religion|e], and where they live. For instance, [ShowPopTypeName('nobles')] have much higher demands than the [lower_class|e]. If they cannot fulfill these needs, their [pop_satisfaction_with_icon|e] will suffer.\n\nThe amount of [goods] demanded by a [pop] increases with the [development_with_icon|e] of the [location|e] where they live."
 
  game_concept_pop_satisfaction: "Pop Satisfaction" 
  game_concept_pop_satisfaction_desc: "This is how happy the [pop|e] is with its situation in life. It is influenced by the following factors:\n$BULLET_WITH_TAB$[estate_satisfaction|e]\n$BULLET_WITH_TAB$[unrest|e] of the [location|e]\n$BULLET_WITH_TAB$The [tolerance|e] of its [religion|e]\n$BULLET_WITH_TAB$If it is [accepted_culture|e] or not\n$BULLET_WITH_TAB$Access to [pop_needs|e]\n$BULLET_WITH_TAB$The [market_price|e] of the [pop_needs|e]\n$BULLET_WITH_TAB$The [cultural_opinion|e] of its [culture|e] by the [culture] of the [country|e]"
@@ -1615,7 +1638,7 @@
  game_concept_fortification_desc: "These are defensive [buildings|e] designed to protect the [country|e]'s own [locations|e] against [enemy|e] [armies|e]. A [location] with a fort can not be [sieged|e] instantly, but instead will require a prolonged [siege]. Certain [advances|e] will allow the construction of more effective forts, with each level increasing the difficulty of the [siege] required to [occupy|e] them.\n\nForts have a [zone_of_control|e] over adjacent [locations].\n\nForts have [fort_maintenance_with_icon|e] costs that go directly to the Country's [treasury], and depend on the prices of [goods] in their [market|e]. All [countries] have a [fort_limit] to the number of forts they can maintain efficiently, and surpassing it increases the [fort_maintenance] considerably."
 
  game_concept_fort_limit: "Fort Limit"
- game_concept_fort_limit_desc: "The $game_concept_fort_limit$ of a [country_with_icon|e] represents its ability to maintain its [fortifications_with_icon|e] without overburdening the administration. A [country] can surpass its Fort Limit, but doing so will incur progressively higher [fort_maintenance_with_icon|e] costs.\n\nThe $game_concept_fort_limit$ increases chiefly with the the number of owned [locations_with_icon|e], but also with the [country_rank_with_icon|e] and the number of [locations] with [ShowLocationRankName('city')] [location_rank|e]. The [ShowSocietyDirectionName('defensive')] [societal_value_with_icon|e] and some [advances_with_icon|e] may also increase it."
+ game_concept_fort_limit_desc: "The $game_concept_fort_limit$ of a [country_with_icon|e] represents its ability to maintain its [fortifications_with_icon|e] without overburdening the administration. A [country] can surpass its Fort Limit, but doing so will incur progressively higher [fort_maintenance_with_icon|e] costs.\n\nThe $game_concept_fort_limit$ increases chiefly with the number of owned [locations_with_icon|e], but also with the [country_rank_with_icon|e] and the number of [locations] with [ShowLocationRankName('city')] [location_rank|e]. The [ShowSocietyDirectionName('defensive')] [societal_value_with_icon|e] and some [advances_with_icon|e] may also increase it."
 
  game_concept_zone_of_control: "Zone of Control"
  game_concept_zones_of_control: "Zones of Control"
@@ -1842,12 +1865,14 @@
  game_concept_food_storage_per_strength: "Food Storage"
  game_concept_food_storage_per_strength_desc: "This is the amount of [food|e] that a [regiment|e] or [ship|e] can carry with them."
  game_concept_food_capacity: "Food Capacity"
- game_concept_food_capacity_per_strength: "Food Capacity"
  game_concept_food_capacity_desc: "This is how much [food|e] a [unit|e] can carry with them as they move."
+ game_concept_food_capacity_per_strength: "Food Capacity"
+ game_concept_food_capacity_per_strength_desc: "$game_concept_food_capacity_desc$"
  game_concept_food_consumption: "Food Consumption"
- game_concept_food_consumption_per_strength: "Food Consumption"
  game_concept_food_consumption_desc: "This is how much [food|e] a [regiment|e] will consume each month."
- game_concept_food_access: "Food Access" 
+ game_concept_food_consumption_per_strength: "Food Consumption"
+ game_concept_food_consumption_per_strength_desc: "$game_concept_food_consumption_desc$"
+ game_concept_food_access: "Food Access"
  game_concept_food_access_desc: "Food Access allows our [armies|e] and [navies|e] to gather [food|e] from the [locations|e] of the other [countries|e]."
  game_concept_hull_size: "Hull Size"
  game_concept_hull_size_desc: "The larger the hull size, the less damage a [ship|e] takes in [combat|e]."
@@ -1893,13 +1918,13 @@
 
  game_concept_phase: "Phase"
  game_concept_phases: "Phases"
- game_concept_phase_desc: "There are two Phases of [combat|e], starting with the initial 5-hour [bombard_phase|e] (if any [regiments|e] are able to [bombard|e]), followed by the [combat_phase|e]."
+ game_concept_phase_desc: "There are two Phases of [combat|e], starting with the initial [GetDefine('NCombat','BOMBARD_HOURS')|W]-hour [bombard_phase|e] (if any [regiments|e] are able to [bombard|e]), followed by the [combat_phase|e]."
 
  game_concept_combat_phase: "Combat Phase"
  game_concept_combat_phase_desc: "The Combat Phase is the main [phase|e] of [combat|e] which takes place after the initial [bombard_phase|e]. [regiments|e] or [ships|e] will attempt to [engage|e] their [enemy|e] counterparts."
 
  game_concept_bombard_phase: "Bombard Phase"
- game_concept_bombard_phase_desc: "The Bombard Phase is the opening [phase|e] of [combat|e] which takes place before the main [combat_phase|e]. It is exclusively utilized by [regiments|e] that can [bombard|e], for example [ShowUnitCategoryName('army_artillery')].\n\nEvery hour of the Bombard Phase, [regiments] have a chance to [bombard] which will deal their [combat_power|e] as damage to an enemy [regiment] on the same [section|e]."
+ game_concept_bombard_phase_desc: "The Bombard Phase is the opening [phase|e] of [combat|e] which takes place before the main [combat_phase|e]. It lasts [GetDefine('NCombat','BOMBARD_HOURS')|W] hours and is exclusively utilized by [regiments|e] that can [bombard|e], such as [ShowUnitCategoryName('army_artillery')].\n\nEvery hour of the Bombard Phase, valid [regiments] have a chance to [bombard], which will deal their [combat_power|e] as damage to an enemy [regiment] on the same [section|e]."
 
  game_concept_bombard: "Bombard"
  game_concept_bombarding: "Bombarding"
@@ -2133,11 +2158,15 @@
  
  game_concept_sound_toll: "Sound Toll"
  game_concept_sound_tolls: "Sound Tolls"
- game_concept_sound_toll_desc: "There are some straits in the world where the controller can exact a fee from [trades|e] traveling past it. For example:\n$BULLET_WITH_TAB$[ShowLocationName('oresund')]\n$BULLET_WITH_TAB$[ShowLocationName('gulf_izmit')]"
+ game_concept_sound_toll_desc: "There are some straits in the world where the controller can exact a fee from [trades|e] traveling past it. For example:\n$BULLET_WITH_TAB$[ShowLocationName('oresund')]\n$BULLET_WITH_TAB$[ShowLocationName('gulf_izmit')]\n\nEach Sound Toll is linked to a specific land [location|e] you need to own in order to be the controller of the strait, and the [income|e] generated from the toll is scaled by your [control|e] in that [location]."
  
  game_concept_great_power_score: "Great Power $game_concept_great_power_score_short$"
  game_concept_great_power_score_short: "Score"
  game_concept_great_power_score_desc: "Great Power Score is the indisputable measure of which [country|e] is the best. The top highest scoring $game_concept_countries$ are the [great_powers|e]. The total number of Great Powers varies depending on the Score of the top Great Power compared with the rest.\n\n$game_concept_countries$ earn $game_concept_great_power_score_short$ by owning more [population|e], having higher [prestige|e], increasing [country_rank|e], and various other sources.\n\n[subjects|e] also forfeit a certain percentage of their Score to their [overlord|e], depending on their [subject_type|e]."
+
+ game_concept_great_power_rank: "Great Power $game_concept_great_power_rank_short$"
+ game_concept_great_power_rank_short: "Rank"
+ game_concept_great_power_rank_desc: "Great Power Rank shows the current position a [country|e] holds in the race for final victory. The Rank is decided by the sum of the [great_power_score|e]."
 
  game_concept_event: "Event"
  game_concept_events: "Events"
@@ -2338,7 +2367,7 @@
  game_concept_natural_harbor_suitability_desc: "How well the [location|e] naturally lends itself to the docking of ships and loading/unloading of men and material, before any man-made improvements. It makes port [buildings|e] cheaper to construct, and improves [harbor_capacity|e]."
 
  game_concept_harbor_capacity: "Harbor Capacity"
- game_concept_harbor_capacity_desc: "Harbor Capacity reduces the cost of going from sea to land and vice-versa in the [proximity|e] and [trade|e] calculations.\n\nThe Harbor Capacity of a [location] depends mainly on its [natural_harbor_suitability|e], but many port-related [buildings|e] can also increase it greatly."
+ game_concept_harbor_capacity_desc: "Harbor Capacity reduces the cost of going from sea to land and vice versa in the [proximity|e] and [trade|e] calculations.\n\nThe Harbor Capacity of a [location] depends mainly on its [natural_harbor_suitability|e], but many port-related [buildings|e] can also increase it greatly."
 
  game_concept_payment: "Payment"
  game_concept_payments: "Payments"

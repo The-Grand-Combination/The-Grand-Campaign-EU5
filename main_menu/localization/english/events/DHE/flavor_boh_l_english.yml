@@ -60,7 +60,7 @@
  flavor_boh.15.desc: "In the annals of religious struggle, a dark chapter unfolds as the life of [target_character.GetName], the [ROOT.GetCountry.GetAdjective] reformer, reaches a fateful and tragic climax. As the flames of dissent engulfed the faithful, the powerful forces of the [ShowReligionAdjective('catholic')] Church now gather to snuff out the flickering light of [target_character.GetLastNameWithNoTooltip]'s teachings."
  flavor_boh.15.a: "Was he one of us?"
 
- flavor_boh.16.title: "[target_character.GetNameWithNoTooltip] let go.."
+ flavor_boh.16.title: "[target_character.GetNameWithNoTooltip] let go..."
  flavor_boh.16.desc: "In a stunning turn of events, the halls of justice resound with a proclamation that echoes through the ages. [target_character.GetName], the [ROOT.GetCountry.GetAdjective] reformer, once condemned as a heretic, is offered a glimmer of salvation. He is no longer viewed as an enemy of the [ShowReligionAdjective('catholic')] Faith, and thus is free to continue his teachings."
  flavor_boh.16.a: "Those teachings will sure spread..."
 
@@ -170,7 +170,7 @@
  flavor_boh.35.a: "That offer is acceptable."
  flavor_boh.35.b: "Unfortunately, we can not accept it."
 
- flavor_boh.36.title: "The Four Articles of [target_location.GetNameWithNoTooltip]"
+ flavor_boh.36.title: "The Four Articles of [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip]"
  flavor_boh.36.desc: "The last few years have been a long struggle to defend our faith as countless of our people perished, our once-gentle folk have turned to savagery and a defensive stance against the world. As the dust settles and we gather our wounded to celebrate our victory and honor our dead, we have come to the negotiating table along with those who once wished to eradicate our faith.\n\nPerhaps God willed it for us to persevere, against the hubris of the [ShowReligionAdjective('catholic')] Church and their feeble transgressions against us. Now, we must decide whether to press our demands against these vultures or decline their pleas for truce and press on against the corruption of their faith."
  flavor_boh.36.a: "Peace in our time?"
  enable_4_articles_prague_reform: "Grants access to the [ShowGovernmentReformName('four_articles')] [government_reform|e]"
@@ -226,7 +226,7 @@
  flavor_boh.42.historical_info: "The First Pan-Slavic Congress which convened in Prague was a significant step towards the promotion of unity between the Slavic nations. It also led to the adoption of the blue-white-red Pan-Slavic flag and the adoption of 'Hey, Slavs' as the Pan-Slavic anthem."
  
  flavor_boh.43.title: "[target_character.GetNameWithNoTooltip]"
- flavor_boh.43.desc: "[target_character.GetName], a Utraquist bishop and an advocate of universal education, is known as the ‘Teacher of Nations'. [target_character.GetHisHer|U] innovative educational methods and efforts to reform education have had a profound impact on our society. With the increasing recognition of [target_character.GetHisHer] educational theories, we find ourselves presented with an opportunity to harness [target_character.GetHisHer] expertise for the advancement of [ROOT.GetCountry.GetName]."
+ flavor_boh.43.desc: "[target_character.GetName], a Utraquist bishop and an advocate of universal education, is known as the 'Teacher of Nations'. [target_character.GetHisHer|U] innovative educational methods and efforts to reform education have had a profound impact on our society. With the increasing recognition of [target_character.GetHisHer] educational theories, we find ourselves presented with an opportunity to harness [target_character.GetHisHer] expertise for the advancement of [ROOT.GetCountry.GetName]."
  flavor_boh.43.a: "The [ROOT.GetCountry.GetGovernment.GetCourtTitle] could make use of [target_character.GetHimHer]."
  flavor_boh.43.historical_info: "Jan Amos Komenský, also known as Comenius, was significant for his pioneering work in modern education, advocating for universal education and progressive teaching methods that emphasized understanding and critical thinking over rote memorization."
  

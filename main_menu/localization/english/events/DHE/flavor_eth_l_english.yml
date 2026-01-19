@@ -7,7 +7,7 @@
 
  flavor_eth.20.title: "An Embassy Is Here!"
  flavor_eth.20.desc: "[francisco_alvares.GetName], representing the same country that sent the previous emissary, wishes to discuss what our two regimes can do together. He says he was looking for a #italic Prester John#!, and we are apparently the country he seeks. Should we begin an exchange?"
- flavor_eth.20.a: "Seek aid against the [GetCountry('MAM').GetName]!"
+ flavor_eth.20.a: "Seek aid against the [GetCountry('MAM').GetNameWithNoTooltip]!"
  flavor_eth.20.tt: "[GetCountry('POR').GetName] will be asked for military aid"
  flavor_eth.20.b: "Ask for a cultural exchange?"
  flavor_eth.20.c: "Maybe a trade deal is in order?"
@@ -99,7 +99,7 @@
  flavor_eth.100.b: "Safeguard the privileges of the orders."
 
  flavor_eth.110.title: "Independence from the Patriarchate"
- flavor_eth.110.desc: "The dependency of the [ROOT.GetCountry.GetAdjective] Church on the Patriarchate of [ShowLocationName('alexandria')] has always been a liability for our country. Perhaps there was once a practical need for bishops, clergy, and spiritual guidance from abroad, but the expansion of the [ROOT.GetFlavorRank] Church over the last centuries, however, means that our [ShowCountryRankName('ETH')] is now already training its [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] and there is a strong religious infrastructure in the form of churches and monasteries throughout our lands.\n\nWith the Egyptian Patriarchate held hostage by [ShowReligionName('muslim')] conquerors, we often have to wait a long time between the death of one bishop and the appointment of the next. It would be far more efficient to appoint our religious leadership from the ranks of our [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')]."
+ flavor_eth.110.desc: "The dependency of the [ROOT.GetCountry.GetAdjective] Church on the Patriarchate of [ShowLocationName('alexandria')] has always been a liability for our country. Perhaps there was once a practical need for bishops, clergy, and spiritual guidance from abroad, but the expansion of the [ROOT.GetCountry.GetAdjectiveWithNoTooltip] Church over the last centuries, however, means that our [ROOT.GetCountry.GetFlavorRank] is now already training its [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] and there is a strong religious infrastructure in the form of churches and monasteries throughout our lands.\n\nWith the Egyptian Patriarchate held hostage by [ShowReligionGroupAdjective('muslim')] conquerors, we often have to wait a long time between the death of one bishop and the appointment of the next. It would be far more efficient to appoint our religious leadership from the ranks of our [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')]."
  flavor_eth.110.a: "We cannot dishonor our Patriarch."
  flavor_eth.110.b: "Our Church should be free of foreign influence."
 
@@ -202,7 +202,7 @@
  flavor_eth.202.title: "Seven Disciples of [ewostatewos.GetNameWithNoTooltip]"
  flavor_eth.202.desc: "The followers of [ewostatewos.GetName], the disgruntled monk, have all but vanished during the absence of their teacher and we had almost forgotten him, to the point that their return has gone unnoticed to us.\n\nIn the meantime, they have rebuilt his old monastery and started building others of their own. This new monastic faction has started to call itself the #italic House of [ewostatewos.GetNameWithNoTooltip]#!"
  house_of_ewostatewos_name: "House of Ewostatewos"
- flavor_eth.202.a: "Send a clergyman [anorewos.GetName], to talk to them."
+ flavor_eth.202.a: "Send a clergyman [anorewos.GetNameWithNoTooltip], to talk to them."
  flavor_eth.202.b: "They dared to disobey the [ROOT.GetCountry.GetGovernment.GetRulerTitle]! No second chances!"
  flavor_eth.202.c: "We still do not care."
 

@@ -36,7 +36,7 @@
  insult_against_denmark: "There is something rotten in the state of Denmark."
  insult_against_england: "If [TARGET_COUNTRY.GetGovernment.GetRuler.GetName] fell into the Thames, that would be a misfortune. But if someone dragged [TARGET_COUNTRY.GetGovernment.GetRuler.GetHerHim] out again, that would be a calamity."
  insult_marprelate: "[TARGET_COUNTRY.GetGovernment.GetRuler.GetName] is a proud, popish, presumptuous, profane, pestilent, pernicious prelate and usurper."
- insult_marprelate2: "Your [TARGET_COUNTRY.GetGovernment.GetRuler.GetTitle] is an unlawful, unnatural, false, bastardly governor of the Church, the Ordinance of the Devil, petty Pope, anti-Christ, incarnate devil, cozening knave, and prolific liar."
+ insult_marprelate2: "Your [TARGET_COUNTRY.GetGovernment.GetRulerTitle] is an unlawful, unnatural, false, bastardly governor of the Church, the Ordinance of the Devil, petty Pope, anti-Christ, incarnate devil, cozening knave, and prolific liar."
  insult_against_saxony: "It would be a shame if something were to happen to your Meissner porcelain..."
  insult_fort: "Your walls will crumble before our cannon like sand before the sea."
  insult_revolutionary: "Your corpse will pave the path of progress, [TARGET_COUNTRY.GetGovernment.GetRuler.GetName]!"

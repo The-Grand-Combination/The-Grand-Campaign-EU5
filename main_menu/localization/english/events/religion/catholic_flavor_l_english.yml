@@ -38,7 +38,7 @@
  opinion_denying_the_holy_mother: "Denying the Holy Mother"
 
  catholic_flavor.8.title: "The Doctrine of Particular Judgment"
- catholic_flavor.8.desc: "As we know, when we die, [ROOT.GetCountry.GetReligion.GetGodName] judges us immediately and decides what each soul's fate is to be as it awaits the final judgment.\n\nHowever, a monk in [unrest_province.GetName] has started a doctrinal dispute that verges on heresy, claiming that there is no purgatory and saying that prayers for the dead do not assist their passage into heaven.\n\nThese disputes are threatening the very unity of the [GetInternationalOrganization('catholic_church').GetName]."
+ catholic_flavor.8.desc: "As we know, when we die, [ROOT.GetCountry.GetReligion.GetGodName] judges us immediately and decides what each soul's fate is to be as it awaits the final judgment.\n\nHowever, a monk in [unrest_location_scope.GetName] has started a doctrinal dispute that verges on heresy, claiming that there is no purgatory and saying that prayers for the dead do not assist their passage into heaven.\n\nThese disputes are threatening the very unity of the [GetInternationalOrganization('catholic_church').GetName]."
  catholic_flavor.8.a: "He is probably a heretic."
  catholic_flavor.8.b: "The dead cannot be helped."
 

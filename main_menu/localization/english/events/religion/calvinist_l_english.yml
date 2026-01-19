@@ -47,7 +47,7 @@
  
 
  calvinist.9.title: "Iconoclastic Fury"
- calvinist.9.desc: "[ROOT.GetCountry.GetName] has seen outbreaks of religious violence as mobs of [ShowReligionName('calvinist')] followers vandalize churches and destroy [ShowReligionName('catholic')] religious art. The Catholic majority in [ROOT.GetCountry.GetName] demand that the government immediately take action."
+ calvinist.9.desc: "[ROOT.GetCountry.GetName|U] has seen outbreaks of religious violence as mobs of [ShowReligionName('calvinist')] followers vandalize churches and destroy [ShowReligionName('catholic')] religious art. The Catholic majority in [ROOT.GetCountry.GetName] demand that the government immediately take action."
  calvinist.9.a: "Send troops to stop it!"
  calvinist.9.b: "Encourage it!"
 

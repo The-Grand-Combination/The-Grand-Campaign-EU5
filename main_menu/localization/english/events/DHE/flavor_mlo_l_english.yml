@@ -58,7 +58,7 @@
 
  flavor_mlo.14.title: "[target_character.GetNameWithNoTooltip] Completes the #italic Cronica Universalis#!"
  flavor_mlo.14.desc: "[target_character.GetName], an Italian historian and chronicler, has authored the #italic Cronica Universalis#!, a significant historical work. Completed in [GetCurrentYear], the chronicle provides a comprehensive account of events spanning various regions and epochs, making it a valuable source for understanding medieval history.\n\n[target_character.GetNameWithNoTooltip]'s meticulous research and attention to detail are evident in the extensive documentation and chronology found within his latest work.$cronica_universalis_desc$\n\n[target_character.GetNameWithNoTooltip]'s contribution to historical scholarship through his publications will certainly leave a lasting impact on the study of medieval history and further our political and cultural influence."
- flavor_mlo.14.a: "[target_location.GetName] is the center of scholarly innovation!"
+ flavor_mlo.14.a: "[target_location.GetNameWithNoTooltip] is the center of scholarly innovation!"
  flavor_mlo.14.b: "These publications will bring nothing but damnation upon us..."
  
  flavor_mlo.15.title: "The Plight of [target_character.GetNameWithNoTooltip]"
@@ -148,7 +148,7 @@
  flavor_mlo.31.title.fallback: "Province Demands Autonomy"
  flavor_mlo.31.desc: "In [GetCurrentYear], and during a most turbulent time, one of our provinces, [target_province.GetName], has demanded we hand them more autonomy on the basis of our weakened state and internal strife. They seek freedom from taxation and obligations to our crown, asserting their own governance and legal framework. The province may be experiencing various challenges and conflicts in its pursuit of independence, but its people remain determined to defend their sovereignty against our rule.\n\nThis is irrefutable evidence that prominent individuals in our domain have been biding their time, waiting to strike when we are most vulnerable! Alas, this offense will not be forgotten. We must rein in these unruly elements and rally the men in defense of the crown!"
  flavor_mlo.31.a: "We must suppress their dissent."
- flavor_mlo.31.b: "It's better to appease them..."
+ flavor_mlo.31.b: "It is better to appease them..."
  flavor_mlo.31.c: "Freedom? How about the whip?"
  
  flavor_mlo.32.title: "A Man of Force and Determination"

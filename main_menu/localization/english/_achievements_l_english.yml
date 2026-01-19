@@ -3,6 +3,7 @@
  ACHIEVEMENT_GROUP_TOOLTIP_TITLE: "Achievement Difficulty"
  ACHIEVEMENT_LOCKED_TEXT: "Achievement not yet gained in current campaign"
  ACHIEVEMENT_NOT_POSSIBLE_TITLE: "Achievement Unavailable"
+ ACHIEVEMENT_NOT_POSSIBLE_IRONMAN: "Achievements only available on Ironman mode."
  IRONMAN_LABEL: "Ironman"
  IRONMAN_SAVEGAME_NAME: "$COUNTRY$'s Ironman"
  IRONMAN_SAVELABEL_NAME: "Ironman Saved Game"
@@ -19,9 +20,11 @@
  ACHIEVEMENTS_ENABLED_NO_HEADER: "#P Available#!"
  ACHIEVEMENTS_DISABLED_NO_HEADER: "#N Not Available#!"
  ACHIEVEMENTS_DISABLED_NO_HEADER_PLAY_BUTTON: "#N Not Available#!\n\nAchievements cannot currently be unlocked while playing the game.\n$ACHIEVEMENTS_EXPLANATION$"
- ACHIEVEMENTS_EXPLANATION: "#indent_newline:2 Achievements are only unlockable if:\n$EFFECT_LIST_BULLET$You play Single Player\n$EFFECT_LIST_BULLET$Ironman mode is enabled\n$EFFECT_LIST_BULLET$Game files that affect gameplay are unmodified, and you are not using any special launch options. (i.e. the checksum is unmodified)"
- ACHIEVEMENTS_ENABLED: "#T Achievements Available\n#!Achievements can currently be unlocked while playing the game."
+ ACHIEVEMENTS_EXPLANATION: "#indent_newline:2 Achievements are only unlockable if:\n$EFFECT_LIST_BULLET$You play Single Player\n$EFFECT_LIST_BULLET$Ironman mode is enabled\n$EFFECT_LIST_BULLET$The game has not reached the endgame date\n$EFFECT_LIST_BULLET$You are not using another player's save game\n$EFFECT_LIST_BULLET$Game files that affect gameplay are unmodified, and you are not using any special launch options. (i.e. the checksum is unmodified)"
+ ACHIEVEMENTS_ENABLED: "#T Achievements Available#!\nAchievements can currently be unlocked while playing the game."
  ACHIEVEMENTS_DISABLED: "#T Achievements Not Available#!\nAchievements cannot currently be unlocked while playing the game.\n\n$ACHIEVEMENTS_EXPLANATION$"
+ ACHIEVEMENT_GROUP_TITLE_CAESAR: "[Group.GetName]"
+ ACHIEVEMENT_GROUP_AMOUNT_CAESAR: "[Group.CalcNumberOfUnlockedVisibleAchievements] / [Group.GetNumberOfVisibleAchievements]"
 
  # Achievements Very Easy
  ACHIEVEMENT_until_death_do_us_apart: "Till Death Do Us Part"
@@ -49,13 +52,13 @@
  ACHIEVEMENT_DESC_rule_of_law: "Change a policy."
   
  ACHIEVEMENT_brothers_in_arms: "Brothers in Arms"
- ACHIEVEMENT_DESC_brothers_in_arms: "Be in a war with over 90% warscore as a secondary participant."
+ ACHIEVEMENT_DESC_brothers_in_arms: "Be a secondary participant in a war where any allied participant has 90% warscore."
 
  ACHIEVEMENT_city_of_cities: "City of Cities"
  ACHIEVEMENT_DESC_city_of_cities: "Own a core province with at least 100 development."
 
  ACHIEVEMENT_cold_war: "Cold War"
- ACHIEVEMENT_DESC_cold_war: "Have a war without any ongoing conflict for 3 years."
+ ACHIEVEMENT_DESC_cold_war: "Have a war without any ongoing conflict for 2 years."
 
  ACHIEVEMENT_for_the_glory: "For the Glory"
  ACHIEVEMENT_DESC_for_the_glory: "Diplomatically annex a subject."
@@ -63,7 +66,7 @@
 
  # Achievements Easy
  ACHIEVEMENT_a_pile_of_gold: "A Pile of Gold"
- ACHIEVEMENT_DESC_a_pile_of_gold: "Own 25 locations which produce gold or silver."
+ ACHIEVEMENT_DESC_a_pile_of_gold: "Own 35 locations which produce gold or silver."
 
  ACHIEVEMENT_at_every_continent: "At Every Continent"
  ACHIEVEMENT_DESC_at_every_continent: "Own one location on each continent."
@@ -105,7 +108,7 @@
  ACHIEVEMENT_DESC_potato_potato: "Starting as a European country, produce potatoes."
 
  ACHIEVEMENT_the_spice_must_flow: "The Spice Must Flow"
- ACHIEVEMENT_DESC_the_spice_must_flow: "Starting as a European country, trade in cloves."
+ ACHIEVEMENT_DESC_the_spice_must_flow: "Starting as a European country, have an active trade route with Cloves."
 
  ACHIEVEMENT_scientific_victory: "Scientific Victory"
  ACHIEVEMENT_DESC_scientific_victory: "Have at least 450 Advances researched."
@@ -124,6 +127,7 @@
 
  ACHIEVEMENT_lion_of_the_north: "Lion of the North"
  ACHIEVEMENT_DESC_lion_of_the_north: "Start as Sweden, ensure the victory of the Protestant League."
+ unlock_lion_of_the_north_achievement_tt: "Be an active war participant of the Protestant side and achieve victory in the War of Religions Situation."
 
  ACHIEVEMENT_the_navigator: "The Navigator"
  ACHIEVEMENT_DESC_the_navigator: "As Portugal, have presence in Africa, America, India and Indonesia before the Age of Reformation."
@@ -158,7 +162,7 @@
  ACHIEVEMENT_DESC_letat_cest_moi: "Reach 100 Value for both Centralization and Absolutism."
 
  ACHIEVEMENT_manchurian_candidate: "A Manchurian Candidate"
- ACHIEVEMENT_DESC_manchurian_candidate: "Start as a country with the Jurchen culture, become Emperor of China."
+ ACHIEVEMENT_DESC_manchurian_candidate: "Start as a country with the Jurchen culture, become Leader of the Middle Kingdom."
 
  ACHIEVEMENT_house_of_hus: "House for Hus"
  ACHIEVEMENT_DESC_house_of_hus: "Starting as Bohemia, win the Hussite Wars situation as Hussite."
@@ -173,10 +177,10 @@
  ACHIEVEMENT_DESC_be_in_all_the_clubs: "Belong to 6 International Organizations."
 
  ACHIEVEMENT_what_the_lord_giveth: "What the Lord Giveth"
- ACHIEVEMENT_DESC_what_the_lord_giveth: "Start with 8 privileges enacted for the Nobility, then remove all of them."
+ ACHIEVEMENT_DESC_what_the_lord_giveth: "Start with at least 8 privileges enacted for the Nobility, then remove all of them."
 
  ACHIEVEMENT_welfare_state: "Welfare State"
- ACHIEVEMENT_DESC_welfare_state: "Have a market of your country with a full stockpile of at least 20.000 food."
+ ACHIEVEMENT_DESC_welfare_state: "Have a market of your country with a full stockpile of at least 60,000 food."
 
  ACHIEVEMENT_five_hundred_miles: "500 Miles"
  ACHIEVEMENT_DESC_five_hundred_miles: "Own at least 100 locations with 5 roads each."

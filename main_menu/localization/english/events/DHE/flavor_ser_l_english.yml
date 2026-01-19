@@ -3,8 +3,8 @@
 #Events
   flavor_ser.10.title: "The Weakness of the Crown"
   flavor_ser.10.desc: "The conquests and legacy spearheaded by [GetCharacter('ser_stefan_dusan').GetName] gave way to the rise of a powerful new force in the Balkans. However, the passing of our former ruler led to the rise of [target_character.GetName]. Grappling with the loss of our country's most revered head of state, many advisors have begun whispering throughout our halls about the inadequacy of our leadership. Rumors of indecisiveness and impotence have corroded the royal authority, applying pressure and risking the destruction of what we have built. Our fate hangs in the balance, and [target_character.GetNameWithNoTooltip]'s rule risks eradicating our imperial legacy and an uncontrollable descent into chaos."
-  flavor_ser.10.a: "Let [target_parent.GetName] oversee the regency."
-  flavor_ser.10.b: "We will trust [target_dynasty_member_scope.GetName] with the throne."
+  flavor_ser.10.a: "Let [target_parent.GetNameWithNoTooltip] oversee the regency."
+  flavor_ser.10.b: "We will trust [target_dynasty_member_scope.GetNameWithNoTooltip] with the throne."
   flavor_ser.10.c: "[target_character.GetNameWithNoTooltip] must go!"
   flavor_ser.10.d: "We are no cowards, we will fight!"
   flavor_ser.10.e: "They will be brought on their knees."
@@ -24,7 +24,7 @@
   flavor_ser.12.desc: "For far too long the machinations of prominent figures in our realm have swayed politics. Shadowy figures in dark rooms control the bidding and execution of central authority under the pretense of allegiance and loyalty. Feeling emboldened due to the weak command of [target_character.GetName], many representatives of powerful groups have demanded dominion and jurisdiction over our borderlands, lest we risk them falling out of our hands..."
   flavor_ser.12.a: "We must entertain their demands for now..."
   flavor_ser.12.b: "Very well, entrust control of these domains to them..."
-  flavor_ser.12.c: "If it's a struggle they wish..."
+  flavor_ser.12.c: "If it is a struggle they wish..."
   ser_every_location_20_control_tt: "Every owned [location|e] will lose [ShowNamedValue('control_severe_penalty')|+=2%] [control|e]"
   STATIC_MODIFIER_NAME_ser_noble_borderlands_modifier: "Noble Borderlands"
   STATIC_MODIFIER_NAME_ser_clergy_borderlands_modifier: "Clergy Borderlands"
@@ -35,7 +35,7 @@
   flavor_ser.30.a: "To the gates of [ShowLocationNameWithNoTooltip('constantinople')], the glory of Rome awaits!"
   ser_conquest_into_empire: "Should we complete the conquest of these [provinces|e] during the life of [GetCharacter('ser_stefan_dusan').GetShortNameWithNoTooltip], we will become an [ShowCountryRankName('rank_empire')] and gain the ability to proclaim our own #italic Autocephalous#! [patriarch|e]"
   stefan_uros_conqueror_tt: "[target_character.GetName] will benefit from the [ShowModifier('insatiable_ambition')] [character|e] [modifier|e] for the duration of [target_character.GetHerHis] rule"
-  granted_claims_stefan_uros_tt: "We will be granted [ShowCasusBelliName('cb_conquer_province')] [casus_belli|e] against [ShowProvinceDefinitionName('upper_macedonia_province')], [ShowProvinceDefinitionName('lower_macedonia_province')], [ShowProvinceDefinitionName('chalkidiki_province')] and [ShowProvinceDefinitionName('thessaly_province')]"
+  granted_claims_stefan_uros_tt: "We will be granted [ShowCasusBelliName('cb_conquer_province')] [casus_belli|e] against [ShowProvinceDefinitionName('upper_macedonia_province')], [ShowProvinceDefinitionName('lower_macedonia_province')], [ShowProvinceDefinitionName('chalkidiki_province')], [ShowProvinceDefinitionName('central_macedonia_province')] and [ShowProvinceDefinitionName('thessaly_province')]"
   flavor_ser.30.historical_info: "Stefan Uroš IV Dušan was proclaimed Emperor in 1346, marking the zenith of medieval Serbian power. His reign was defined by military conquests and legal reforms that transformed Serbia into a dominant Balkan empire. Capitalizing on the weakening Byzantine Empire, Dušan expanded his realm to include large parts of Macedonia, Thessaly, and even Epirus. In a grand ecclesiastical assembly held in Skopje, he was crowned Emperor of the Serbs and Greeks, asserting both political supremacy and ecclesiastical independence by elevating the Serbian Archbishopric to a Patriarchate. This imperial proclamation symbolized Serbia's ambition to succeed Byzantium as the leading Orthodox Christian power in the region."
 
   flavor_ser.31.title: "The Dawn of a New Empire"

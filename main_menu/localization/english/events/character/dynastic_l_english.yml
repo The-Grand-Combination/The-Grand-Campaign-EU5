@@ -79,7 +79,7 @@
  dynastic.19.title: "Fear and Loathing in [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip]"
  dynastic.19.desc: "Twilight is always horrid. The clouds racing circles across moonless skies, cruel stars suspended like grains of broken glass, and chandeliers throwing strange shadows across the [ROOT.GetCountry.GetGovernment.GetAdjective] chambers. Lately, a strange sense has come upon the [ROOT.GetCountry.GetGovernment.GetRulerTitle] that there is something wrong with the place. The geometry of it seems... unsound. Thinking back... it all started with the birth of [heir_char.GetName]."
  dynastic.19.a: "Lord [ROOT.GetCountry.GetReligion.GetGodName] our Father, thou who art in heaven!"
- dynastic.19.b: "All  work  and  no  play  makes  [ruler_char.GetShortNameWithNoTooltip]  a  dull  boy"
+ dynastic.19.b: "All work and no play makes [ruler_char.GetShortNameWithNoTooltip] a dull boy"
  dynastic.20.title: "The Discovery"
  dynastic.20.desc: "The [ROOT.GetCountry.GetGovernment.GetRulerTitle] senses instantly that there is something wrong in the attendant's voice as she meekly inquires about a strange wall in the [ROOT.GetCountry.GetGovernment.GetAdjective] castle. There is something in her voice, right below the surface. Hidden contempt, and fear.\n\n[ruler_char.GetSheHe|U] remembers it clearly now. How small the body felt. Carrying it down into the damp cellar, laying the bricks. It made [ruler_char.GetHerHim] sick. Sick to the core. Killing [ruler_char.GetHerHis] progeny was not the catharsis [ruler_char.GetSheHe] had expected it to be. For an instant, the flashing glimpse of an insight blows across [ruler_char.GetHerHis] mind..."
  dynastic.20.a: "Heeere's [ruler_char.GetShortNameWithNoTooltip]!"

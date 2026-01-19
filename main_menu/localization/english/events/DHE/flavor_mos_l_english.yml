@@ -202,7 +202,7 @@
  flavor_mos.26.desc_treaty_of_ugra_declined: "The advantageous treaty proposed to the [sender.GetGovernment.GetRulerTitle] of [sender.GetName] was declined. Evidently, they do not see the error in their ways and must continue to face threats in every direction.\n\nOur diplomatic efforts appear to have been in vain."
  flavor_mos.26.desc_generic_treaty: "Our attempts to secure a beneficial treaty proved fruitless as the [sender.GetGovernment.GetRulerTitle] of [sender.GetName] refuses to sign.\n\nOur diplomatic efforts appear to have been in vain."
  flavor_mos.26.a: "It will be their downfall."
- flavor_mos.26.b: "An error in judgement perhaps."
+ flavor_mos.26.b: "An error in judgment perhaps."
  flavor_mos.26.tt: "The trust placed with [sender.GetName] is lost"
 
  flavor_mos.27.title: "[maria_borovsk.GetNameWithNoTooltip]"
@@ -255,7 +255,7 @@
 
  flavor_mos.32.title: "The Pozhiloye"
  flavor_mos.32.desc: "The freedom of movement for the [ShowPopTypeName('peasants')] allows for labor shortages to be met and encourages healthy competition between landholders. However, it also adds a certain insecurity to our food production and discourages longevity amongst our workers, and disincentivizes any attempts to make the workforce more productive since the landowner cannot be certain that workers will remain for more than one season. We could introduce a break-away fee that charges anyone who wishes to leave their current landowner, serving as a deterrent to regular workforce migration."
- flavor_mos.32.a: "It's a carrot and stick approach."
+ flavor_mos.32.a: "It is a carrot and stick approach."
  STATIC_MODIFIER_NAME_pozhiloye: "Pozhiloye"
  flavor_mos.32.b: "There is no need for this."
  flavor_mos.32.historical_info: "The Pozhiloye was introduced in 1550 as part of a major reform of the Sudebnik law. It was a step towards strengthening the power of the aristocracy at the expense of the peasants, but the revision also confirmed the right of every worker to leave their employer, as long as the fee could be paid."
@@ -409,7 +409,7 @@
  flavor_mos.49.a: "The lineage is indisputible."
  flavor_mos.49.tt1: "The translation skills of [dmitry_gerasimov.GetName] facilitates the spread of the idea of [target_root_country.GetNameWithNoTooltip ] as the Third Rome"
  flavor_mos.49.b: "Superstitious nonsense."
- flavor_mos.49.c: "Have the tale adorn the walls of the [ShowWorkOfArtName('uspensky_sobor')]."
+ flavor_mos.49.c: "Have the tale adorn the walls of the [ShowWorkOfArtNameWithNoTooltip('uspensky_sobor')]."
  flavor_mos.49.historical_info: "The #italic Tale of the Princes of Vladimir#! was written either by Dmitry Gerasimov or Pachomius the Serb in the early sixteenth century, and was created to provide a background story to be used for the Tsar at the coronation ceremonies. Its primary objective was to establish a historical connection between the principality of Muscovy and the Roman Emperors, particularly Augustus, but it also served as a means to conceive the idea of Muscovy as the Third Rome and natural successor to the Eastern Roman Empire, which has collapsed following the conquest of Constantinople."
 
  flavor_mos.50.title: "[dmitry_gerasimov.GetNameWithNoTooltip]"
@@ -543,7 +543,7 @@
  flavor_mos.64.desc: "With the advancement of artillery technology on the battlefield, it is increasingly crucial to be able to supply the army with an ample supply of munition pieces to sustain the war effort. We should task our engineers with establishing a dedicated facility focused on artillery production, transforming [ShowLocationName('moscow')] into a center for technological innovations and a dependable supplier."
  flavor_mos.64.a: "A dynamite deal."
  flavor_mos.64.b: "Time better spent on military drills."
- flavor_mos.64.historical_info: "The Moscow Artillery Yard was built during the reign of Ivan IV, and played an important role in enhancing Russia's military capabilities. The production of cannons and artillery was crucial for Russia's expanding military influence, and contributed to it's military successes in several conflicts."
+ flavor_mos.64.historical_info: "The Moscow Artillery Yard was built during the reign of Ivan IV, and played an important role in enhancing Russia's military capabilities. The production of cannons and artillery was crucial for Russia's expanding military influence, and contributed to its military successes in several conflicts."
 
  flavor_mos.65.title: "The Baltic Frontier"
  flavor_mos.65.desc: "The [ShowAreaName('baltic_area')] region has long enjoyed a favorable trading position adjacent to the Baltic Sea, the bustling center of commerce for Northern Europe. However, reaping the profits from this trade has proven challenging due to geographical distance. We must press our advantage and seize control of the region, if we aim to funnel some of the wealth back to [target_location.GetName]."

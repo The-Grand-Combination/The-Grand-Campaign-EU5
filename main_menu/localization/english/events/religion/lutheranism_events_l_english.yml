@@ -45,7 +45,7 @@
  lutheranism_events.11.desc: "Many theologians had promising careers long before the Reformation reached our country and the State Church of [ROOT.GetCountry.GetLongName] was created. Influential people with firmly grounded ideas, these individuals have been difficult to convince to embrace the new nature of the Church. This resistance to change has only grown stronger over the years and now these theologians are perceived to be openly opposed to the Church. Our people cannot be seen in blatant opposition to [ROOT.GetCountry.GetGovernment.GetRuler.GetName] like this; something must be done!"
  lutheranism_events.11.a: "Banish them!"
  lutheranism_events.11.b: "Try them for blasphemy and order their execution."
- lutheranism_events.11.c: "How unfortunate…"
+ lutheranism_events.11.c: "How unfortunate..."
  
  lutheranism_events.12.title: "Catholic Thinker at Court"
  lutheranism_events.12.desc: "[target_character.GetName] is famous for their sharp intellect and their presence in our court lends a certain grandeur to our name. [target_character.GetNameWithNoTooltip] is, however, also a stalwart [ShowReligionName('catholic')] and has been allowed to practice their faith as they wish in order to keep them here. It would be unthinkable for the Church of [ROOT.GetCountry.GetName] itself to criticize [ROOT.GetCountry.GetGovernment.GetRuler.GetName], but, in the streets of [ROOT.GetCountry.GetCapital.GetName], there is talk of [target_character.GetNameWithNoTooltip] trying to plant subversive Catholic ideas [ROOT.GetCountry.GetGovernment.GetRuler.GetNameWithNoTooltip]'s head."
@@ -63,33 +63,33 @@
  lutheranism_events.14.b: "Forbid all study of Papist Teachings."
 
 
- lutheranism_events.15.title: "Catholic Leanings of [ROOT.GetCountry.GetGovernment.GetRuler.GetName]"
+ lutheranism_events.15.title: "Catholic Leanings of [ROOT.GetCountry.GetGovernment.GetRuler.GetNameWithNoTooltip]"
  lutheranism_events.15.desc: "It is no secret that [ROOT.GetCountry.GetGovernment.GetRuler.GetName] has a great understanding of the Catholic faith, perhaps much more so than the clergy in our State Church would wish. Nonetheless, [ROOT.GetCountry.GetGovernment.GetRuler.GetHerHis] coronation has been a popular event and the people seem to be behind our new ruler. An understanding of foreign faiths will undoubtedly be of good use to a ruler of a Lutheran Kingdom, and few would dare accuse [ROOT.GetCountry.GetGovernment.GetRuler.GetName] of Crypto-Catholicism."
- lutheranism_events.15.a: "Long live [ROOT.GetCountry.GetGovernment.GetRuler.GetName]!"
+ lutheranism_events.15.a: "Long live [ROOT.GetCountry.GetGovernment.GetRuler.GetNameWithNoTooltip]!"
  STATIC_MODIFIER_NAME_tolerant_monarch: "Tolerant Monarch"
  STATIC_MODIFIER_DESC_tolerant_monarch: "Our ruler is known for their great understanding of other faiths, and religious minorities under our reign enjoy privileges they otherwise would not because of it."
  
- lutheranism_events.16.title: "Conscience of [ROOT.GetCountry.GetGovernment.GetRuler.GetName]"
+ lutheranism_events.16.title: "Conscience of [ROOT.GetCountry.GetGovernment.GetRuler.GetNameWithNoTooltip]"
  lutheranism_events.16.desc: "Years have passed and [ROOT.GetCountry.GetGovernment.GetRuler.GetName] has proven to be a fair and just ruler. The clergy no longer fear a sudden Catholic coup and their hatred of Papism has been tempered by [ROOT.GetCountry.GetGovernment.GetRuler.GetName]'s understanding of the religion.\n\n[ROOT.GetCountry.GetGovernment.GetRuler.GetName] [ROOT.GetCountry.GetGovernment.GetRuler.GetHerselfHimself], however, is troubled. As the years have gone by, [ROOT.GetCountry.GetGovernment.GetRuler.GetSheHe] has come to realize that [ROOT.GetCountry.GetGovernment.GetRuler.GetHerHis] personal faith lies much closer to that of the Catholics that [ROOT.GetCountry.GetGovernment.GetRuler.GetSheHe] has done so much to protect and not with the dogmatic State Church of [ROOT.GetCountry.GetName]."
  lutheranism_events.16.a: "Personal Abdication is the only Solution."
- lutheranism_events.16.b: "[ROOT.GetCountry.GetGovernment.GetRuler.GetName] will have to carry on with a plagued conscience."
+ lutheranism_events.16.b: "[ROOT.GetCountry.GetGovernment.GetRuler.GetNameWithNoTooltip] will have to carry on with a plagued conscience."
  STATIC_MODIFIER_NAME_plagued_conscience: "Plagued Conscience"
  STATIC_MODIFIER_DESC_plagued_conscience: "Our ruler is far from an ardent believer in the teachings of our State Church. While this does not directly influence our policies, it means that the running of the Church itself has become a low priority."
  
- lutheranism_events.17.title: "Frictions between [ROOT.GetCountry.GetGovernment.GetHeir.GetName] and [ROOT.GetCountry.GetGovernment.GetRuler.GetName]"
+ lutheranism_events.17.title: "Frictions between [ROOT.GetCountry.GetGovernment.GetHeir.GetNameWithNoTooltip] and [ROOT.GetCountry.GetGovernment.GetRuler.GetNameWithNoTooltip]"
  lutheranism_events.17.desc: "[ROOT.GetCountry.GetGovernment.GetHeir.GetName]'s interest in Catholicism seems only to have grown over the years and [ROOT.GetCountry.GetGovernment.GetHeir.GetSheHe] now surrounds [ROOT.GetCountry.GetGovernment.GetHeir.GetHerselfHimself] with philosophers, scientists, and artists from the Catholic world. This has grown into something of an embarrassment. As the head of the [ROOT.GetCountry.GetName] Church, it is the duty of [ROOT.GetCountry.GetGovernment.GetRuler.GetName] to uphold the values of the Reformation. Unless [ROOT.GetCountry.GetGovernment.GetHeir.GetName] can be convinced to change, [ROOT.GetCountry.GetGovernment.GetHeir.GetHerHis] authority over our Church may suffer."
- lutheranism_events.17.a: "Try to force [ROOT.GetCountry.GetGovernment.GetHeir.GetName] to change [ROOT.GetCountry.GetGovernment.GetHeir.GetHerHis] ways."
+ lutheranism_events.17.a: "Try to force [ROOT.GetCountry.GetGovernment.GetHeir.GetNameWithNoTooltip] to change [ROOT.GetCountry.GetGovernment.GetHeir.GetHerHis] ways."
  lutheranism_events.17.b: "Agree to disagree."
  
- lutheranism_events.18.title: "[ROOT.GetCountry.GetGovernment.GetHeir.GetName] sees the error of [ROOT.GetCountry.GetGovernment.GetHeir.GetHerHis] ways"
+ lutheranism_events.18.title: "[ROOT.GetCountry.GetGovernment.GetHeir.GetNameWithNoTooltip] sees the error of [ROOT.GetCountry.GetGovernment.GetHeir.GetHerHis] ways"
  lutheranism_events.18.desc: "After it has been made entirely clear to [ROOT.GetCountry.GetGovernment.GetHeir.GetHerHim] what is expected of [ROOT.GetCountry.GetGovernment.GetHeir.GetHerHim], [ROOT.GetCountry.GetGovernment.GetHeir.GetName] has agreed to more clearly distance [ROOT.GetCountry.GetGovernment.GetHeir.GetHerselfHimself] from Catholics and their beliefs."
  lutheranism_events.18.a: "Praise God!"
  
  
- lutheranism_events.20.title: "[ROOT.GetCountry.GetGovernment.GetHeir.GetName] Unwilling to Compromise"
+ lutheranism_events.20.title: "[ROOT.GetCountry.GetGovernment.GetHeir.GetNameWithNoTooltip] Unwilling to Compromise"
  lutheranism_events.20.desc: "Despite trying to make as clear as possible what the expectations for the royal Heir are, [ROOT.GetCountry.GetGovernment.GetHeir.GetName] insists on maintaining [ROOT.GetCountry.GetGovernment.GetHeir.GetHerHis] harmful fascination with the Catholic Church. In the capital, propagandists and satirists have already begun distributing pamphlets about the fact that [ROOT.GetCountry.GetGovernment.GetRuler.GetName] cannot seem to control his own kin, let alone protect the faithful of the kingdom."
  lutheranism_events.20.a: "There is nothing to be done."
- lutheranism_events.20.b: "We have no choice but to disinherit [ROOT.GetCountry.GetGovernment.GetHeir.GetName]!"
+ lutheranism_events.20.b: "We have no choice but to disinherit [ROOT.GetCountry.GetGovernment.GetHeir.GetNameWithNoTooltip]!"
  STATIC_MODIFIER_NAME_disinherited: "Disinherited"
  
  lutheranism_events.22.title: "The Lingering Hope of Reconciliation"

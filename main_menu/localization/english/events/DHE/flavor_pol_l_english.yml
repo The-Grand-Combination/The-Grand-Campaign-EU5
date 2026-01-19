@@ -11,7 +11,7 @@
  flavor_pol.2.b: "On second though, there is no need to commemorate [ROOT.GetCountry.GetGovernment.GetPreviousRuler.GetShortNameWithNoTooltip]."
  
  flavor_pol.3.title: "Merkuriusz Polski Ordynaryjny"
- flavor_pol.3.desc: "With the spread of the regular publications called newspapers all over Europe, it is time already for the [ROOT.GetCountry.GetLongName] to print it's own.\n\nThe royal secretary and diplomat [hieronymus_pinocci_scope.GetName] might be the best person to take charge of it and make it famous, prestigious, and loyal. Joining [hieronymus_pinocci_scope.GetNameWithNoTooltip]'s' ability to an official endorsement from [ROOT.GetCountry.GetGovernment.GetRuler.GetName] will ensure the success of the new newspaper all over [ROOT.GetCountry.GetNameWithNoTooltip]."
+ flavor_pol.3.desc: "With the spread of the regular publications called newspapers all over Europe, it is time already for the [ROOT.GetCountry.GetLongName] to print its own.\n\nThe royal secretary and diplomat [hieronymus_pinocci_scope.GetName] might be the best person to take charge of it and make it famous, prestigious, and loyal. Joining [hieronymus_pinocci_scope.GetNameWithNoTooltip]'s' ability to an official endorsement from [ROOT.GetCountry.GetGovernment.GetRuler.GetName] will ensure the success of the new newspaper all over [ROOT.GetCountry.GetNameWithNoTooltip]."
  flavor_pol.3.historical_info: "Queen Maria Louise Gonzaga and King John II Casimir of Poland sponsored the newspaper #italic Merkuriusz Polski Ordynaryjny#!, published weekly and devoted to contemporary politics, European dynastic affairs, and monarchs' military campaigns. It promoted political reforms and the strengthening of monarchical power, was edited by Hieronim Pinocci and published by the printing house J.A. Gorczyn."
  flavor_pol.3.a: "Sponsor the newspaper"
  flavor_pol.3.b: "Allow it"
@@ -34,10 +34,10 @@
  
  flavor_pol.6.title: "The Groom of [ROOT.GetCountry.GetNameWithNoTooltip]"
  flavor_pol.6.desc: "Due to the many misfortunes that the [ROOT.GetCountry.GetLongName] had to face in the recent decades, it ended with a female [ROOT.GetCountry.GetGovernment.GetRulerTitle] sitting on the throne, [new_ruler.GetName]. The matter of her future husband is of pivotal importance and the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] will only allow her to marry a candidate that has their approval.\n\nOnce the groom is elected the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] is pressing to write down this procedure into law, so they keep choosing who their next ruler is going to be."
- flavor_pol.6.a: "Marry into [lithuania_groom_country.GetName]."
- flavor_pol.6.b: "Marry into [first_groom_country.GetName]."
- flavor_pol.6.c: "Marry into [second_groom_country.GetName]."
- flavor_pol.6.d: "Marry into [third_groom_country.GetName]."
+ flavor_pol.6.a: "Marry into [lithuania_groom_country.GetNameWithNoTooltip]."
+ flavor_pol.6.b: "Marry into [first_groom_country.GetNameWithNoTooltip]."
+ flavor_pol.6.c: "Marry into [second_groom_country.GetNameWithNoTooltip]."
+ flavor_pol.6.d: "Marry into [third_groom_country.GetNameWithNoTooltip]."
  flavor_pol.6.e: "The [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] has no right to intervene."
 
  flavor_pol.7.title: "Married to the [GetCountry('POL').GetAdjectiveWithNoTooltip] [GetCountry('POL').GetGovernment.GetRulerTitle]"

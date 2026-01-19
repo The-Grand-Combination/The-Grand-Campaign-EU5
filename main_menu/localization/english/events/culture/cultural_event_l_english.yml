@@ -11,7 +11,7 @@
  cultural_event.3.desc: "[GetCountry('BYZ').GetName] has fallen, and with it, the last bastion of the Roman Empire, the City of Constantine. As Christendom reels from the shock, [GetCountry('BYZ').GetAdjectiveWithNoTooltip] refugees flock to the cities and courts of [ShowContinentName('europe')], bringing with them old manuscripts of classical knowledge, including tracts by Aristotle, Plato, and Galen, as well as a thorough knowledge of both [ShowLanguageName('latin_language')] and [ShowLanguageName('greek_language')]. \n\nInviting these refugees to [ROOT.GetCountry.GetName] might greatly aid our own efforts in the fields of culture and science."
  cultural_event.3.a: "By all means, let them come!"
  cultural_event.3.b: "No, we cannot afford their presence."
- cultural_event.4.title: "Support the $STATIC_MODIFIER_NAME_florentine_school$"
+ cultural_event.4.title: "$STATIC_MODIFIER_NAME_florentine_school$"
  cultural_event.4.desc: "Because of our relative notability, we are in a position to support the [ShowCultureGroupName('italian_group')] artists in the Florentine School. Being perceived as patrons of international art will definitely improve the people's disposition toward us."
  cultural_event.4.a: "Of course! They shall have our support!"
  cultural_event.4.b: "No, we have enough problems."

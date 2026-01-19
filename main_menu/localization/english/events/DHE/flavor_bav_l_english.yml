@@ -107,13 +107,13 @@
 
  flavor_bav.30.title: "[bavaria_country.GetNameWithNoTooltip] Elevated to [ShowSpecialStatusNameWithNoTooltip('elector')]"
  flavor_bav.30.desc: "[emperor_ruler.GetName] has decided to grant [home_ruler.GetName] and [bavaria_country.GetName] the prestigious title of [ShowSpecialStatusName('elector')]. This marks a pivotal moment for [bavaria_country.GetNameWithNoTooltip] as it rises to a position of significant influence within the [GetInternationalOrganization('hre').GetName]."
- flavor_bav.30.a: "A new era begins for [bavaria_country.GetName]!"
+ flavor_bav.30.a: "A new era begins for [bavaria_country.GetNameWithNoTooltip]!"
 
  flavor_bav.31.title: "Request Denied by the [GetUniqueInternationalOrganization('hre').GetLeaderTitle]"
  flavor_bav.31.desc: "[emperor_ruler.GetName] has chosen to deny the elevation of [bavaria_country.GetName] to the status of [ShowSpecialStatusName('elector')]. Despite [bavaria_country.GetNameWithNoTooltip]'s loyal support during the [ShowSituationName('war_of_religions')], the balance of power within the [GetInternationalOrganization('hre').GetName] will remain unchanged."
  flavor_bav.31.a: "We will strengthen ourselves regardless of this decision."
 
- flavor_bav.32.title: "We loose our $elector$ status!"
+ flavor_bav.32.title: "We Lose our $elector$ Status!"
  flavor_bav.32.desc: "The decision of [emperor_ruler.GetName] has stripped us of our title as [ShowSpecialStatusName('elector')]. The Electoral College of the [GetInternationalOrganization('hre').GetName] now welcomes [bavaria_country.GetName] as its newest [ShowSpecialStatusName('elector')]. This marks a significant change in the balance of power."
  flavor_bav.32.a: "Our reputation has been tarnished."
 

@@ -4,7 +4,7 @@
 
  court_flavor_events.1.title: "Liaising Advisor"
  court_flavor_events.1.desc: "[advisor.GetName] has impressed many in the country with [advisor.GetHerHis] proactivity and capable leadership skills, as well as [advisor.GetHerHis] efforts to fit in in the [ROOT.GetCountry.GetAdjective] court. However, it would seem that [advisor.GetSheHe] has not cut all ties to [advisor.GetHerHis] countrymen in [advisor_liaisons_target_country.GetLongName]. [advisor.GetSheHe|U] has been pushing for better relations with [advisor.GetHerHis] homeland, [advisor_liaisons_target_country.GetLongNameWithNoTooltip], and has offered to leverage [advisor.GetHerHis] contacts in the [advisor_liaisons_target_country.GetAdjectiveWithNoTooltip] court to push the [advisor_liaisons_target_country.GetGovernment.GetRulerTitle] to adopt a more friendly position towards us."
- court_flavor_events.1.a: "Let's do it."
+ court_flavor_events.1.a: "Let us do it."
  court_flavor_events.1.A.tooltip: "[advisor.GetName] will approach [advisor_liaisons_target_country.GetLongName] to seek better relations."
  court_flavor_events.1.b: "We have no need for better relations with them."
 

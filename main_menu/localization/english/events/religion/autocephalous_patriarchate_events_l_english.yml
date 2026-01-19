@@ -10,4 +10,4 @@
  autocephalous_patriarchates.2.desc: "$ap_falls_desc_key$"
  autocephalous_patriarchates.2.a: "Dissolve the Patriarchate."
  autocephalous_patriarchates.2.b: "Keep it."
- every_member_of_scopeloser_ap_loses_opinion_of_scopewinner_tt: "Every member of the [target_ap.GetName] will lose [ShowBiasValue('destroyed_my_autocephalous_patriarchate')|-=0] opinion of us"
+ every_member_of_scopeloser_ap_loses_opinion_of_scopewinner_tt: "Every member of the [target_ap.GetName] will lose [ShowBiasValue('destroyed_my_autocephalous_patriarchate')|+=0] opinion of us"

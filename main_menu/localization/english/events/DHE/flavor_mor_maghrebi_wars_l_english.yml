@@ -3,7 +3,7 @@
  flavor_mor_maghrebi_wars.1000.desc: "After the death of the beloved [old_ruler.GetName], his son [new_ruler.GetName] has risen to the throne of [GetCountry('TUN').GetName] following the desires of [old_ruler.GetShortNameWithNoTooltip].\n\nInstead of respectfully recognizing the legitimate position of the new ruler, his brother [usurper_scope.GetName] has launched a coup and seized power for himself. To the horror of the present [ShowEstateTypeName('nobles_estate')] the usurper has executed his brother, removing any chance of restoring the legitimate [ROOT.GetCountry.GetGovernment.GetRulerTitle].\n\nThe only option left for the loyalists is to invite a foreign nation into the country to help them remove the usurper."
  flavor_mor_maghrebi_wars.1000.historical_info: "After the death of the Hafsid Sultan, Abu Yahya Abu Bakr, a court crisis started with the coronation of the usurper, Abu Hafs Umar, who ordered the assassination of all his brothers, ensuring his sole right to the throne."
  flavor_mor_maghrebi_wars.1000.a: "Invite the [GetCountry('MOR').GetLongNameWithNoTooltip]"
- flavor_mor_maghrebi_wars.1000.b: "Invite [ally_scope.GetName]"
+ flavor_mor_maghrebi_wars.1000.b: "Invite [ally_scope.GetNameWithNoTooltip]"
  flavor_mor_maghrebi_wars.1000.c: "Rally behind [usurper_scope.GetNameWithNoTooltip]"
 
  flavor_mor_maghrebi_wars.1001.title: "The [GetCountry('TUN').GetAdjectiveWithNoTooltip] Succession"

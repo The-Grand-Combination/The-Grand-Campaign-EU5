@@ -1,17 +1,18 @@
 ﻿l_english:
  #
- CHARACTER_SHORT_NAME_ORDER_DEFAULT: "$PREFIX$$NAME$$NUMBER$$SUFFIX$"
- CHARACTER_SHORT_NAME_PREFIX_NAME_SUFFIX_NUMBER: "$PREFIX$$NAME$$SUFFIX$$NUMBER$"
- CHARACTER_SHORT_NAME_PREFIX_NUMBER_NAME_SUFFIX: "$PREFIX$$NUMBER$$NAME$$SUFFIX$"
+ CHARACTER_SHORT_NAME_ORDER_DEFAULT: "$PREFIX$ $NAME$ $NUMBER$ $SUFFIX$"
+ CHARACTER_SHORT_NAME_PREFIX_NAME_SUFFIX_NUMBER: "$PREFIX$ $NAME$ $SUFFIX$ $NUMBER$"
+ CHARACTER_SHORT_NAME_PREFIX_NUMBER_NAME_SUFFIX: "$PREFIX$ $NUMBER$ $NAME$ $SUFFIX$"
 
- CHARACTER_NAME_ORDER_DEFAULT: "$PREFIX$$NAME$$NUMBER$$NICKNAME$$LASTNAME$$SUFFIX$"
- CHARACTER_NAME_ORDER_SORT_BY: "$NAME$$LASTNAME$"
- CHARACTER_NAME_ORDER_PREFIX_LASTNAME_NAME_SUFFIX_NICKNAME_NUMBER:  "$PREFIX$$LASTNAME$$NAME$$SUFFIX$$NICKNAME$$NUMBER$"
- CHARACTER_NAME_ORDER_PREFIX_NUMBER_NICKNAME_LASTNAME_NAME_SUFFIX:  "$PREFIX$$NUMBER$$NICKNAME$$LASTNAME$$NAME$$SUFFIX$"
- CHARACTER_NAME_ORDER_TURKISH:                                      "$PREFIX$$LASTNAME$$NICKNAME$$NUMBER$$NAME$$SUFFIX$"
+ CHARACTER_NAME_ORDER_DEFAULT: "$PREFIX$ $NAME$ $NUMBER$ $NICKNAME$ $LASTNAME$ $SUFFIX$"
+ CHARACTER_NAME_ORDER_SORT_BY: "$NAME$ $LASTNAME$"
+ CHARACTER_NAME_ORDER_PREFIX_LASTNAME_NAME_SUFFIX_NICKNAME_NUMBER:  "$PREFIX$ $LASTNAME$ $NAME$ $SUFFIX$ $NICKNAME$ $NUMBER$"
+ CHARACTER_NAME_ORDER_PREFIX_NUMBER_NICKNAME_LASTNAME_NAME_SUFFIX:  "$PREFIX$ $NUMBER$ $NICKNAME$ $LASTNAME$ $NAME$ $SUFFIX$"
+ CHARACTER_NAME_ORDER_TURKISH:                                      "$PREFIX$ $LASTNAME$ $NICKNAME$ $NUMBER$ $NAME$ $SUFFIX$"
  
  # Character.GetCharacterPrefixWithNoTooltip]#! #character_name [Character.GetFirstNameWithNoTooltip]#! #regnal_name [Character.GetCharacterRegnalNumWithNoTooltip]#! #nickname [Character.GetAdultNicknameWithNoTooltip]#! #lastname [Character.GetLastNameWithNoTooltip]#!#suffix_name , [Character.GetAge]#!"
-			
+ 
+ CHARACTER_NAME_DEFAULT_CONJOINER: " "
  CHARACTER_NAME_FORMAT_FIRST_NAME: "#character_name $NAME$#!"
  CHARACTER_NAME_FORMAT_LAST_NAME: "#lastname $NAME$#!"
  CHARACTER_NAME_FORMAT_FLUFF: "#nickname $NAME$#!"
@@ -63,6 +64,7 @@
  patronym_suffix_persian_son: "zadeh"
  patronym_suffix_afghan_son: "zai"
  patronym_suffix_romanian_son: "escu"
+ patronym_suffix_south_slavic_son: "ović"
  patronym_suffix_russian_son: "ovich"
  patronym_suffix_russian_daughter: "ovna"
  patronym_suffix_russian_novgorodian_son: "ovičŭ"
@@ -124,6 +126,8 @@
  character_title_guru_female: "Gurvī"
  character_title_saint: "Saint"
  character_title_saint_female: "Saint"
+ character_title_colonel: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_colonel')]"
+ character_title_colonel_female: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_colonel_female')]"
  character_title_nobility_pirate: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_captain')]"
  character_title_nobility_pirate_female: "[ROOT.GetCharacter.GetCulture.Custom('character_title_prefix_captain_female')]"
  character_title_nobility_french: "Sire"
@@ -142,6 +146,162 @@
  character_title_shinno_female: "Naishinnō"
  character_title_nobility_malay: "Awang"
  character_title_nobility_malay_female: "Awang"
+ #
+ colonel_default: "Colonel"
+ colonel_default_female: "Colonel"
+ colonel_default_plural: "Colonels"
+ 
+ colonel_english: "Colonel"
+ colonel_english_female: "Colonel"
+ colonel_english_plural: "Colonels"
+ 
+ colonel_scots: "Cornel"
+ colonel_scots_female: "Cornel"
+ colonel_scots_plural: "Cornels"
+ 
+ colonel_french: "Colonel"
+ colonel_french_female: "Colonelle"
+ colonel_french_plural: "Colonels"
+ 
+ colonel_spanish: "Coronel"
+ colonel_spanish_female: "Coronela"
+ colonel_spanish_plural: "Coroneles"
+ 
+ colonel_catalan: "Coronel"
+ colonel_catalan_female: "Coronela"
+ colonel_catalan_plural: "Coronels"
+ 
+ colonel_occitan: "Coronèl"
+ colonel_occitan_female: "Coronèla"
+ colonel_occitan_plural: "Coronèls"
+ 
+ colonel_portuguese: "Coronel"
+ colonel_portuguese_female: "Coronela"
+ colonel_portuguese_plural: "Coronéis"
+ 
+ colonel_north_italian: "Colonèl"
+ colonel_north_italian_female: "Colonèla"
+ colonel_north_italian_plural: "Colonèi"
+ 
+ colonel_italian: "Colonnello"
+ colonel_italian_female: "Colonella"
+ colonel_italian_plural: "Colonnelli"
+ 
+ colonel_german: "Oberst"
+ colonel_german_female: "Oberstin"
+ colonel_german_plural: "Oberste"
+ 
+ colonel_frisian: "Kolonel"
+ colonel_frisian_female: "Kolonel"
+ colonel_frisian_plural: "Kolonellen"
+ 
+ colonel_dutch: "Kolonel"
+ colonel_dutch_female: "Kolonel"
+ colonel_dutch_plural: "Kolonels"
+ 
+ colonel_danish: "Oberst"
+ colonel_danish_female: "Oberst"
+ colonel_danish_plural: "Oberster"
+ 
+ colonel_norwegian: "Oberst"
+ colonel_norwegian_female: "Oberst"
+ colonel_norwegian_plural: "Oberster"
+ 
+ colonel_swedish: "Överste"
+ colonel_swedish_female: "Överstinna"
+ colonel_swedish_plural: "Överstar"
+ 
+ colonel_icelandic: "Ofursti"
+ colonel_icelandic_female: "Ofurstynja"
+ colonel_icelandic_plural: "Ofurstar"
+ 
+ colonel_finnish: "Eversti"
+ colonel_finnish_female: "Everstitar"
+ colonel_finnish_plural: "Everstit"
+ 
+ colonel_estonian: "Kolonel"
+ colonel_estonian_female: "Kolonel"
+ colonel_estonian_plural: "Kolonelid"
+ 
+ colonel_lithuanian: "Pulkininkas"
+ colonel_lithuanian_female: "Pulkininkė"
+ colonel_lithuanian_plural: "Pulkininkai"
+ 
+ colonel_latvian: "Pulkvedis"
+ colonel_latvian_female: "Pulkvede"
+ colonel_latvian_plural: "Pulkveži"
+ 
+ colonel_polish: "Pułkownik"
+ colonel_polish_female: "Pułkowniczka"
+ colonel_polish_plural: "Pułkownicy"
+ 
+ colonel_czech: "Plukovník"
+ colonel_czech_female: "Plukovnice"
+ colonel_czech_plural: "Plukovníci"
+ 
+ colonel_slovak: "Plukovník"
+ colonel_slovak_female: "Plukovníčka"
+ colonel_slovak_plural: "Plukovníci"
+ 
+ colonel_hungarian: "Ezredes"
+ colonel_hungarian_female: "Ezredesnő"
+ colonel_hungarian_plural: "Ezredesek"
+ 
+ colonel_south_slavic: "Pukovnik"
+ colonel_south_slavic_female: "Pukovnica"
+ colonel_south_slavic_plural: "Pukovnici"
+ 
+ colonel_bulgarian: "Polkovnik"
+ colonel_bulgarian_female: "Polkovnitsa"
+ colonel_bulgarian_plural: "Polkovnitsi"
+ 
+ colonel_romanian: "Colonel"
+ colonel_romanian_female: "Colonelă"
+ colonel_romanian_plural: "Colonei"
+ 
+ colonel_greek: "Syntagmatárchis"
+ colonel_greek_female: "Syntagmatárchissa"
+ colonel_greek_plural: "Syntagmatárches"
+ 
+ colonel_russian: "Polkovnik"
+ colonel_russian_female: "Polkovnitsa"
+ colonel_russian_plural: "Polkovniki"
+ 
+ colonel_ruthenian: "Polkovnyk"
+ colonel_ruthenian_female: "Polkovnytsia"
+ colonel_ruthenian_plural: "Polkovnyky"
+ 
+ colonel_basque: "Koronel"
+ colonel_basque_female: "Koronela"
+ colonel_basque_plural: "Koronelak"
+ 
+ colonel_welsh: "Cyrnol"
+ colonel_welsh_female: "Cyrnoles"
+ colonel_welsh_plural: "Cyrnolion"
+ 
+ colonel_irish: "Coilíneál"
+ colonel_irish_female: "Coilíneálaí"
+ colonel_irish_plural: "Coilíneálta"
+ 
+ colonel_scottish_gaelic: "Coirneal"
+ colonel_scottish_gaelic_female: "Ban-choirneal"
+ colonel_scottish_gaelic_plural: "Coirnealan"
+ 
+ colonel_arabic: "Muqaddam"
+ colonel_arabic_female: "Muqaddamah"
+ colonel_arabic_plural: "Muqaddamīn"
+ 
+ colonel_breton: "Kolonel"
+ colonel_breton_female: "Kolonelez"
+ colonel_breton_plural: "Kolonelien"
+ 
+ colonel_low_german: "Oberst"
+ colonel_low_german_female: "Oberstin"
+ colonel_low_german_plural: "Obersten"
+ 
+ colonel_norman: "Colonel"
+ colonel_norman_female: "Colonelle"
+ colonel_norman_plural: "Colonels"
  #
  captain_default: "Captain"
  captain_default_female: "Captain"
@@ -218,6 +378,14 @@
  captain_estonian: "Kapten"
  captain_estonian_female: "Kapten"
  captain_estonian_plural: "Kaptenid"
+
+ captain_lithuanian: "Kapitonas"
+ captain_lithuanian_female: "Kapitonė"
+ captain_lithuanian_plural: "Kapitonai"
+
+ captain_latvian: "Kapteinis"
+ captain_latvian_female: "Kapteine"
+ captain_latvian_plural: "Kapteiņi"
  
  captain_polish: "Kapitan"
  captain_polish_female: "Kapitan"
@@ -534,7 +702,7 @@
  nick_malamo: "Malamo"
  nick_kai_khusrau: "Kai-Khusrau"
  nick_mahmud_shah: "Maḥmūd Shāh"
- nick_mas_ud_shah: "Masʿūd Shāh"
+ nick_mas_ud_shah: "Mas'ūd Shāh"
  nick_abu_ishaq: "Abū Isḥāq"
  nick_husayn_ibn_ghiyath_uddin: "Ḥusayn ibn Ghiyāth al-Dīn"
  nick_ibn_fazlullah: "ibn Faḍl Allāh"
@@ -615,6 +783,7 @@
  Morfydd: "Morfydd"
  Cort: "Cort"
  Adeler: "Adeler"
+ Romer: "Rømer"
  Henriksson: "Henrikssøn"
  Tordenskiold: "Tordenskiold"
  Nuala: "Nuala"
@@ -2909,6 +3078,7 @@
  Brankovic: "Brankovic"
  Branovic: "Branovic"
  Bratislav: "Bratislav"
+ Brunelleschi: "Brunelleschi"
  Budimir: "Budimir"
  Bujar: "Bujar"
  Caccianemici: "Caccianemici"
@@ -5632,7 +5802,7 @@
  tott: "Tott"
  tre_rosor: "Tre Rosor"
  trolle: "Trolle"
- 'Abd_an-Nabi: "'Abd an-Nabi"
+ Abd_an-Nabi: "'Abd an-Nabi"
  A_ccinataratippan: "Âccinataratippan"
  A_nU_rrenmanpiccan: "Ânûrrenmanpiccan"
  A_yirattalipattan: "Âyirattalipattan"
@@ -12859,7 +13029,6 @@
  Vratislav: "Vratislav"
  Ludvik: "Ludvík"
  Helmold: "Helmold"
- Bernhard: "Bernhard"
  Bernd: "Bernd"
  Adleta: "Adleta"
  Aldona: "Aldona"
@@ -30637,3 +30806,4 @@
  Wakayima: "Wakayima"
  Kato: "Kato"
  Nyinamwiru: "Nyinamwiru"
+ von_kulsheim: "von Külsheim"

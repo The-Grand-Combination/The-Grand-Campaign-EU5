@@ -1,7 +1,8 @@
 ﻿l_english:
  SAVE_BUTTON_DISABLED: "@trigger_no! The game can only be autosaved in Ironman mode"
- SAVE_BUTTON_DISABLED_BY_TUTORIAL: "@trigger_no! You can't Save Game while doing the Walkthrough."
- LOAD_INGAME_BUTTON_DISABLED: "You cannot load a game in multiplayer"
+ SAVE_BUTTON_DISABLED_BY_TUTORIAL: "@trigger_no! You cannot Save Game while doing the Walkthrough."
+ LOAD_INGAME_BUTTON_DISABLED: "@trigger_no! You cannot load a game in multiplayer"
+ LOAD_INGAME_BUTTON_IRONMAN: "@trigger_no! You cannot load a game in Ironman mode"
  HOST_GAME_BUTTON_DISABLED: "You are currently in a multiplayer game"
  GAME_NOT_PAUSED: "#X Game is NOT paused #!"
  PAUSE_MENU_GAME_RULES_TOOLTIP: "See current game rules configuration"
@@ -16,9 +17,9 @@
  #Multiplayer Lobby
  FRONTEND_GOTO_LOBBY: "Multiplayer Country Selection Screen"
  BACK_LOBBY: "Back to Country Selection"
- LOBBY_UNAVAILABLE_IRONMAN: "#X Country Selection is unavailable in Ironman#!"
- LOBBY_UNAVAILABLE_LOGIN: "#X Log in to your Paradox Account to play Multiplayer#!"
- LOBBY_UNAVAILABLE_USERNAME: "#X You need to set a Username in order to play Multiplayer. You can do that in the Account Window.#!"
+ LOBBY_UNAVAILABLE_IRONMAN: "@trigger_no! World Map is unavailable in Ironman"
+ LOBBY_UNAVAILABLE_LOGIN: "@trigger_no! Log in to your Paradox Account to play Multiplayer"
+ LOBBY_UNAVAILABLE_USERNAME: "@trigger_no! You need to set a Username in order to play Multiplayer. You can do that in the Account Window"
  PAUSE_MENU_INVITE: "Invite more players by sending them the Server ID:\n[GetServerInfo.GetServerID]"
  COPY_CLIPBUFFER_TT: "#T Copy the Server ID to Clipboard #!\nThis ID can be used by other players for directly joining to this Multiplayer game"
  COPY_CLIPBUFFER_TT_TILTE: "Copy the Server ID to Clipboard"

@@ -165,7 +165,7 @@
  VIJ_ALL_MYSORE_POPS_LOSE_20_SATISFACTION_AND_10_CONTROL: "All [pops|e] in [ShowProvinceDefinitionName('mysore_plateau')] will lose [ShowNamedValue('pop_satisfaction_severe_penalty')|+=2%] [pop_satisfaction|e] and every [location|e] there will lose [ShowNamedValue('control_mild_penalty')|+=2%] [control|e]."
  
  flavor_vij.33.title: "Fortifying [ROOT.GetCountry.GetNameWithNoTooltip]"
- flavor_vij.33.desc: "[ROOT.GetCountry.GetName] is filled with many great forts and castles. Forts such as the ones in [target_location.GetName] and [target_location2.GetName] have allowed the populace to live in prosperity, as they are protected from any raids or attacks. This has brought these locations to new heights."
+ flavor_vij.33.desc: "[ROOT.GetCountry.GetName|U] is filled with many great forts and castles. Forts such as the ones in [target_location.GetName] and [target_location2.GetName] have allowed the populace to live in prosperity, as they are protected from any raids or attacks. This has brought these locations to new heights."
  flavor_vij.33.a: "Let them prosper."
  flavor_vij.33.b: "Use them to control the areas around it more efficiently."
  flavor_vij.33.c: "Let us invest even more in these locations."
@@ -196,7 +196,7 @@
  flavor_vij.1101.title: "$flavor_vij.1100.title$"
  flavor_vij.1101.desc.a: "With our policies to try and contain the [ShowCultureName('tamil')] rebellion, we have pacified the majority of these rebels. They are yet again content with our rule, and what is even better, they have captured the traitor who organized this rebellion in the first place. [target_character.GetName] has now been caught by our forces, and everyone is eager to banish [target_character2.GetHerHim]."
  flavor_vij.1101.desc.b: "Having failed to contain the [ShowCultureName('tamil')] rebellion, the leader of this traitorous host shows [target_character.GetHerHis] face. [target_character.GetName] had schemed to gain support and carve [target_character.GetHerHis] realm, one independent from [ROOT.GetCountry.GetName], [target_character.GetHeShe] negotiated with the [ShowCultureNameWithNoTooltip('tamil')] people. What remains now is to crush these rebels."
- flavor_vij.1101.a: "Away with [target_character.GetHerHim]! Traitors do not belong in [ROOT.GetCountry.GetName]!"
+ flavor_vij.1101.a: "Away with [target_character.GetHerHim]! Traitors do not belong in [ROOT.GetCountry.GetNameWithNoTooltip]!"
  flavor_vij.1101.b: "To arms, men! Let us crush [target_character.GetNameWithNoTooltip] and [target_character.GetHerHis] rabble!"
  tamil_uprising: "Tamil Uprising"
  VIJ_ALL_TAMILS_LOSE_90_SATISFACTION: "All [ShowCultureName('tamil')] [pops|e] will lose [ShowNamedValue('pop_satisfaction_ultimate_penalty')|+=2%] [pop_satisfaction|e]."

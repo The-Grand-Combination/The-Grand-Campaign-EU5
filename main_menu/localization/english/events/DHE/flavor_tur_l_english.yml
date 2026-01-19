@@ -1,7 +1,7 @@
 ﻿l_english:
  flavor_tur.1.title: "The [persia.GetAdjectiveWithNoTooltip] Problem"
  flavor_tur.1.desc: "[persia.GetName] has long been a thorn in our side, a constant threat to our borders. But spies at their [ROOT.GetCountry.GetGovernment.GetCourtTitle] have told us that the [persia.GetAdjectiveWithNoTooltip] government might be willing to sign a long-lasting peace agreement with us. This would secure the war-torn border provinces for the benefit of our [ROOT.GetCountry.GetFlavorRank] as well as theirs. The [ROOT.GetCountry.Custom('GetHeadOfCabinetName')] has already begun drafting a treaty proposal."
- flavor_tur.1.historical_info: "With the rise of the Safavid dynasty in Iran, the Ottomans gained a formidable foe. Just like the Roman empires before them, the Ottomans were drawn into prolonged and destructive wars with Iran. This time, the conflicts were not only over the beleaguered lands of the Middle East - there was an element of religious struggle too, since the Safavid had embraced Shia islam, while the Ottomans saw themselves as the inheritors of the Sunni caliphate."
+ flavor_tur.1.historical_info: "With the rise of the Safavid dynasty in Iran, the Ottomans gained a formidable foe. Just like the Roman empires before them, the Ottomans were drawn into prolonged and destructive wars with Iran. This time, the conflicts were not only over the beleaguered lands of the Middle East - there was an element of religious struggle too, since the Safavid had embraced Shia Islam, while the Ottomans saw themselves as the inheritors of the Sunni caliphate."
  flavor_tur.1.a: "Suggest full reconciliation."
  flavor_tur.1.b: "Suggest a moderate treaty."
  flavor_tur.1.c: "There will be no deal with our archenemies."
@@ -94,7 +94,7 @@
  flavor_tur.16.b: "Accept their demands."
  celali_uprising: "The Celali Uprising"
  celali_uprising_joining: "All [ShowReligionName('shia')] [pops|e] in [ShowRegionName('anatolia_region')] will join [celali_uprising.GetName]"
- celal_available.tt: "[sheikh_celal.GetNameWithNoTooltip] becomes available to serve in the [cabinet|e]."
+ celal_available.tt: "[sheikh_celal.GetName] becomes available to serve in the [cabinet|e]."
 
 
  
@@ -168,7 +168,7 @@
 
  
  flavor_tur.27.title: "The [ShowLocationRankNameWithNoTooltip('city')] of World's Desire"
- flavor_tur.27.desc: "At last, we have conquered [ShowLocationName('constantinople')], where many [ShowReligionGroupName('muslim')] commanders of ages past failed before the might of the [ShowBuildingTypeName('theodosian_walls')]. This great Roman [constantinople_location.GetRank.GetName] would be a fitting capital for our [ROOT.GetCountry.GetFlavorRank], but we might want to take steps to restore its ancient glory, and get [ShowCultureName('turkish_culture')] loyalists to occupy the most important posts. Or we could just plunder whatever we can."
+ flavor_tur.27.desc: "At last, we have conquered [ShowLocationName('constantinople')], where many [ShowReligionGroupAdjective('muslim')] commanders of ages past failed before the might of the [ShowBuildingTypeName('theodosian_walls')]. This great Roman [constantinople_location.GetRank.GetName] would be a fitting capital for our [ROOT.GetCountry.GetFlavorRank], but we might want to take steps to restore its ancient glory, and get [ShowCultureName('turkish_culture')] loyalists to occupy the most important posts. Or we could just plunder whatever we can."
  flavor_tur.27.historical_info: "Though the Ottoman's conquest of Constantinople was seen as a cataclysmic event among Western Christians, it propelled them to glory in the eyes of the Muslim world. After three days of customary looting, Mehmed II ordered that the city's inhabitants should be protected henceforth. The Greeks of Constantinople would later provide many capable advisors for the Ottoman regime."
  flavor_tur.27.a: "It shall be a fitting capital."
  flavor_tur.27.b: "Plunder the riches and declare our victory!"
@@ -190,7 +190,7 @@
 
  flavor_tur.30.title: "Coins in Our Own Name"
  flavor_tur.30.desc: "During the later reign of [GetCharacter('tur_osman').GetShortName], [GetCharacter('tur_osman').GetSheHe] had coins minted in [GetCharacter('tur_osman').GetHerHis] own name, and no longer as a nominal vassal of the moribund Ilkhanids in Iran. This was a big step towards legitimacy as an independent ruler, and with the Ilkhanate now fallen, we have little to lose from continuing this practice. However, the mint in [ShowLocationNameWithNoTooltip('bursa')] claims that they have a shortage of silver and gold, and are asking for a contribution, so they can produce greater quantities of coins with the glorious likeness of [target_character.GetName]."
- flavor_tur.30.a: "The shall have what they need."
+ flavor_tur.30.a: "They shall have what they need."
  flavor_tur.30.b: "A limited production will suffice."
  flavor_tur.30.historical_info: "The ascendant Ottoman state's first mint was located in Bursa. After the capture of the city in 1326, Osman I began to mint coins in his own name, and not as a vassal of the Mongol Ilkhanate, which had up until that point been customary among Anatolian Turkic rulers." 
 
@@ -271,7 +271,7 @@
 
  flavor_tur.44.title: "The [GetCountry('AHI').GetAdjectiveWithNoTooltip] Brotherhood"
  flavor_tur.44.desc: "After the unification of the [GetCountry('AHI').GetAdjective] lands with our [ROOT.GetCountry.GetFlavorRank], many of their skilled craftsmen and traders are seeking to join the ranks of the [ROOT.GetCountry.GetAdjective] bureaucracy. These men are known for their intense traditional practices, and seem prepared to forgive any slights we have committed against them, real or imagined, to work for the benefit of [ShowReligionGroupName('muslim')]."
- flavor_tur.44.a: "We have some positions open...."
+ flavor_tur.44.a: "We have some positions open..."
  flavor_tur.44.b: "Let us rather send them out to organize the frontier."
  flavor_tur.44.historical_info: "The Ahi Brotherhood was part of the Akhiya, a group of Sufi guilds that enjoyed widespread influence in post-Seljuk Anatolia. After the Ottomans conquered their republic based in Angora (Ankara), some Ahis became bureaucrats in the Ottoman state." 
 
@@ -334,7 +334,7 @@
  flavor_tur.54.desc: "Having to contest with old naval powers such as [GetCountry('BYZ').GetNameWithNoTooltip] and [GetCountry('VEN').GetNameWithNoTooltip], we're sorely outmatched in the Aegean - at least for now.\n\nBut since many [ShowCultureName('turkish_culture')] men have taken to the sea, to engage in piracy under our banner, we could utilize some of those raiders to strengthen our proper fleet." 
  flavor_tur.54.a: "We need them!"
  flavor_tur.54.b: "Their predations serves us better."
- flavor_tur.54.c: "We can't trust such unruly men."
+ flavor_tur.54.c: "We cannot trust such unruly men."
  flavor_tur.54.historical_info: "In the early Ottoman period, many Turks took to the sea, raiding Greek settlements on the islands close to the Anatolian mainland. As piracy expanded, it seems to have been profitable indeed - one eyewitness' account claims that many men that would have been sorely needed in the battle against Timur were already occupied, preparing for expeditions at sea."
 
  flavor_tur.55.title: "The Fortress of [target_location.GetNameWithNoTooltip]"
@@ -355,7 +355,7 @@
  flavor_tur.56.c.tt: "All [ShowReligionName('shia')] [pops|e] will lose [ShowNamedValue('pop_satisfaction_mild_penalty')|+=2%] [pop_satisfaction|e]"
 
  flavor_tur.57.title: "The Lord of the Dervishes"
- flavor_tur.57.desc: "[sufi_character.GetName], the leader of a growing Sufi order called the #italic Bayramiye#!, based in [target_location.GetName], has been brought to our court for judgement. Certain influential members of the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] claim that [sufi_character.GetHerHis] teachings about the world and the future are blasphemous. Yet to us [sufi_character.GetHerHis] words seems wise..."
+ flavor_tur.57.desc: "[sufi_character.GetName], the leader of a growing Sufi order called the #italic Bayramiye#!, based in [target_location.GetName], has been brought to our court for judgment. Certain influential members of the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] claim that [sufi_character.GetHerHis] teachings about the world and the future are blasphemous. Yet to us [sufi_character.GetHerHis] words seems wise..."
  flavor_tur.57.a: "We can learn from [sufi_character.GetHerHim]!"
  flavor_tur.57.b: "We must appease the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')]."
  flavor_tur.57.c: "Let us simply send [sufi_character.GetHerHim] back home."
@@ -478,7 +478,7 @@
  tur_abdicate_throne_tt: "$ser_abdicate_throne_tt$"
 
  flavor_tur.76.title: "The Beauties of [beautiful_city.GetNameWithNoTooltip]"
- flavor_tur.76.desc: "A writer native to [beautiful_city.GetName] has composed a long poem about that [beautiful_city.GetRank.GetName], praising its natural, historical, and architectural beauty. But he also describes the beauty of its native young men, in ways some have accused of being salacious. This kind of poetry has become rather common, and loud voices among the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] want it banned. Sufi mystics, meanwhile, claim it's just an innocent expression of the beauty of God's creation."
+ flavor_tur.76.desc: "A writer native to [beautiful_city.GetName] has composed a long poem about that [beautiful_city.GetRank.GetName], praising its natural, historical, and architectural beauty. But he also describes the beauty of its native young men, in ways some have accused of being salacious. This kind of poetry has become rather common, and loud voices among the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] want it banned. Sufi mystics, meanwhile, claim it is just an innocent expression of the beauty of God's creation."
  flavor_tur.76.historical_info: "Shehrengiz, translated as \"city thrillers\", was a genre of Ottoman poetry that described the splendor of particular cities. One such poem was dedicated to Bayezid II when he visited Edirne. But Shehrengiz also prominently included yearning descriptions of the beauty of local young men, an element that has sometimes been interpreted as part of the homoerotic themes in Turco-Persian tradition." 
  flavor_tur.76.a: "All beauty should be treasured."
  flavor_tur.76.b: "We shall have the author executed."
@@ -678,7 +678,7 @@
 
  flavor_tur.102.title: "A Revolving Wonder"
  flavor_tur.102.desc: "A [taqi_ad_din.GetWomanMan] by the name of [taqi_ad_din.GetName] has invented an ingenious machine, powered by hot air, that can rotate a kebab skewer. This device of [taqi_ad_din.GetHerHis] is now entertaining hungry crowds at a restaurant in [capital_location.GetName]. But [taqi_ad_din.GetNameWithNoTooltip] is also a prominent scholar in other fields, astronomy especially, skills which could bring us glory were we to recruit [taqi_ad_din.GetHerHim]."
- flavor_tur.102.historical_info: "Taqī ad-Dīn Muḥammad ibn Maʿrūf was a polymath who authored over 90 books in fields such as astronomy, clocks, engineering and optics. In 1551, he described several designs for steam engines that could rotate a spit. Though such designs went back to the ancient Greeks, few before had been capable of any practical application. Two decades later, he became court astronomer to sultan Murad III." 
+ flavor_tur.102.historical_info: "Taqī ad-Dīn Muḥammad ibn Ma'rūf was a polymath who authored over 90 books in fields such as astronomy, clocks, engineering and optics. In 1551, he described several designs for steam engines that could rotate a spit. Though such designs went back to the ancient Greeks, few before had been capable of any practical application. Two decades later, he became court astronomer to sultan Murad III." 
  flavor_tur.102.a: "We need such [taqi_ad_din.GetWomenMen]." 
  flavor_tur.102.b: "Let us just enjoy the kebab." 
  taqi_ad_din_leaves.tt: "[taqi_ad_din.GetNameWithNoTooltip] retreats into obscurity."
@@ -741,7 +741,7 @@
  opinion_ottoman_capitulation: "Received capitulation"
 
  flavor_tur.111.title: "Shadow Play"
- flavor_tur.111.desc: "A type of puppet theater utilizing shadows projected onto a muslin screen has lately become popular in many cities of the [ROOT.GetCountry.GetFlavorRank]. It features two clownish characters known as Karagöz and Havicat, whose antics draws huge crowds in tea houses and noble homes alike. Some members of the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] claim that the plays, which often feature crude and subversive themes, are an affront to [ShowReligionGroupName('muslim')], but to ban them would greatly enrage many urban dwellers."
+ flavor_tur.111.desc: "A type of puppet theater utilizing shadows projected onto a muslin screen has lately become popular in many cities of the [ROOT.GetCountry.GetFlavorRank]. It features two clownish characters known as Karagöz and Hacivat, whose antics draws huge crowds in tea houses and noble homes alike. Some members of the [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] claim that the plays, which often feature crude and subversive themes, are an affront to [ShowReligionGroupName('muslim')], but to ban them would greatly enrage many urban dwellers."
  flavor_tur.111.historical_info: "The origins of the Karagöz shadow play tradition are uncertain. Some think it arrived with traders from Java, where shadow plays had been performed since the Middle Ages. By the 16th century, these often satirical and irreverent plays were performed in every city of the Ottoman Empire. $common_string_shaikh_al_islam$ Ebüssuûd Efendi issued a famous ruling that the plays were indeed permissible by Islamic law. In later centuries however, they would come to be repressed by the rulers due to their political content."
  flavor_tur.111.a: "Let the people have their fun."
  flavor_tur.111.b: "We will appease the hardliners."
@@ -1003,7 +1003,7 @@
 
  flavor_tur.145.title: "The Ransom from [ShowAreaNameWithNoTooltip('iceland_area')] "
  flavor_tur.145.desc: "A while back, corsairs from the Barbary states raided [raid_location.GetName] on [ShowAreaName('iceland_area')], a desolate island far out in the Atlantic. They returned to the slave markets of [barbary_location.GetName] with many fair-skinned captives. But some of the abductees have managed to raise vast sums of money for a ransom, and the [target_country.GetGovernment.GetRulerTitle] of [target_country.GetName] has also contributed from [iceland_ruler.GetHerHis] personal treasury, asking firmly but politely that we use our influence in [barbary_location.GetNameWithNoTooltip] to free [iceland_ruler.GetHerHis] subjects."
- flavor_tur.145.historical_info: "After the Twelve Year's Truce in 1609, many Spanish, Dutch, and English sailors found new employment with the Barbary pirates, and taught them how to sail the open ocean. The Barbary pirates subsequently raided into the Atlantic, and several times attacked Madeira, Ireland, Iceland, and the Faeroe Islands. But many of the Icelandic captives that were brought to Algiers after large slave raids in 1627 were eventually ransomed. A priest named Ólafur Egilsson was set free by his captors in order to do fundraising for such ransoms, and later on, the Danish king also intervened." 
+ flavor_tur.145.historical_info: "After the Twelve Years' Truce in 1609, many Spanish, Dutch, and English sailors found new employment with the Barbary pirates, and taught them how to sail the open ocean. The Barbary pirates subsequently raided into the Atlantic, and several times attacked Madeira, Ireland, Iceland, and the Faeroe Islands. But many of the Icelandic captives that were brought to Algiers after large slave raids in 1627 were eventually ransomed. A priest named Ólafur Egilsson was set free by his captors in order to do fundraising for such ransoms, and later on, the Danish king also intervened." 
  flavor_tur.145.a: "We will graciously accept."
  flavor_tur.145.b: "We should have more slave raids, not less!"
  slaves_released: "Released slaves unjustly taken."
@@ -1114,7 +1114,7 @@
 
  flavor_tur.160.title: "The Lord of [target_province.GetNameWithNoTooltip]"
  flavor_tur.160.desc: "[zahir_al_umar.GetName] has long been the ruler of [target_province.GetName] under our auspices, and established a strong and fortified position in [target_location.GetName]. [zahir_al_umar.GetHerHis|U] power has grown great indeed, and [zahir_al_umar.GetHerHis] actions has often infringed upon the domains of other local governors. Many now call for [zahir_al_umar.GetHerHis] removal from power. But [zahir_al_umar.GetShortNameWithNoTooltip] is offering us a vast sum of gold if we continue to support [zahir_al_umar.GetHerHis] rule, denying the allegations against [zahir_al_umar.GetHerHim]."
- flavor_tur.160.historical_info: "Ẓāhir al-ʿUmar began his career as a tax collector, but gradually gained tremendous power, becoming a nearly independent ruler of Ottoman Palestine. He could draw support from local Shia clans thanks to his policy of religious tolerance, and grew rich on the trade in cotton and olive oil. He was constantly challenged by the governor of Damascus, as well as his own sons, and in a complicated series of intrigues, eventually earned the enmity of the government in Constantinople. This led to his downfall, and the ruin of his dynasty, but his rule left a lasting legacy in Palestine."
+ flavor_tur.160.historical_info: "Ẓāhir al-'Umar began his career as a tax collector, but gradually gained tremendous power, becoming a nearly independent ruler of Ottoman Palestine. He could draw support from local Shia clans thanks to his policy of religious tolerance, and grew rich on the trade in cotton and olive oil. He was constantly challenged by the governor of Damascus, as well as his own sons, and in a complicated series of intrigues, eventually earned the enmity of the government in Constantinople. This led to his downfall, and the ruin of his dynasty, but his rule left a lasting legacy in Palestine."
  flavor_tur.160.a: "[zahir_al_umar.GetHerHis|U] power must be broken."
  flavor_tur.160.b: "We will accept this deal."
  zahir_dies_in_battle.tt: "[zahir_al_umar.GetNameWithNoTooltip] dies in battle."
@@ -1286,7 +1286,7 @@
 
  flavor_tur.182.title: "The Giant"
  flavor_tur.182.desc: "[koca.GetName] is a [koca.GetWomanMan] of many talents, having been both a treasurer, a scholar, a poet, and governor of [ShowRegionName('anatolia_region')]. People call [koca.GetHerHim] Koca, #italic The Giant#!, though whether because of [koca.GetHerHis] size or something else is hard to say. Having tired of [ShowRegionNameWithNoTooltip('anatolia_region')], [koca.GetSheHe] has written an eloquent verse addressed to the Sublime Porte, asking to be allowed to serve as [ROOT.GetCountry.Custom('GetHeadOfCabinetName')] in [target_capital.GetName]. But [koca.GetSheHe] is known to be a lover of peace, something many ambitious [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] are not too fond of."
- flavor_tur.182.historical_info: "Koca Ragıp Pasha was perhaps the most capable grand vizier of the 18th century. The waning fortunes of the empire saw a respite during his tenure, as he both made successful economic and administrative reforms and managed to keep the Ottomans out of the Seven Year's War that was raging in Europe. He was also a scholar and a poet, having frequent exchanges with the celebrated poetess Fıtnat Hanım and other prominent contemporaries."
+ flavor_tur.182.historical_info: "Koca Ragıp Pasha was perhaps the most capable grand vizier of the 18th century. The waning fortunes of the empire saw a respite during his tenure, as he both made successful economic and administrative reforms and managed to keep the Ottomans out of the Seven Years' War that was raging in Europe. He was also a scholar and a poet, having frequent exchanges with the celebrated poetess Fıtnat Hanım and other prominent contemporaries."
  flavor_tur.182.a: "The state sorely needs [koca.GetHerHim]."
  flavor_tur.182.b: "We can find other [koca.GetWomenMen]."
  koca_retires.tt: "[koca.GetNameWithNoTooltip] remains in the provinces."
@@ -1512,7 +1512,7 @@
  flavor_tur.1000.desc: "Despite our control over [ShowProvinceDefinitionName('albania_province')], there have been several rebellious lords within the lands, who may not openly speak about their stance to the [ROOT.GetCountry.GetAdjective] [ROOT.GetCountry.GetGovernment.GetCourtTitle], but would surely take action should troubles arise. Rather than sit idly by, there have been suggestions to take hostages from them, specifically members of the [ShowDynastyName('kastrioti_dynasty')] family. Perhaps like that, we can hold leverage over them, using it in case they ever think of rebelling against [target_character.GetName]."
  flavor_tur.1000.a: "Let us demand these hostages."
  flavor_tur.1000.b: "It would be disrespectful towards [target_country.GetNameWithNoTooltip]."
- tur_demand_hostage_from_albanian_country_tt: "We will demand from [target_country.GetName] to give us a [character|e] from the [ShowDynastyName('kastrioti_dynasty')]"
+ tur_demand_hostage_from_albanian_country_tt: "We will demand from [target_country.GetName] to give us a [character|e] from the [target_dynasty.GetName] [dynasty|e]"
 
  flavor_tur.1001.title: "$flavor_tur.1000.title$"
  flavor_tur.1001.desc: "[target_country2.GetName] has demanded that we send them a hostage. Although they are more powerful than us, they need leverage over us in case we seek to fight them in the future. The [ROOT.GetCountry.GetGovernment.GetCourtTitle] suggests we hand them over [target_character2.GetName], a minor noble of these lands, as the hostage. By doing that, however, we solidify our position in this dynamic."
@@ -1555,7 +1555,7 @@
  flavor_tur.1101.desc: "[target_country2.GetName] have sent us a demand that we become their subject. Promising us protection from foreign threats and reminding us of their power, they hope we will bend the knee to [target_character2.GetName]."
  flavor_tur.1101.a: "We have no choice."
  flavor_tur.1101.b: "We do not need their protection."
- flavor_tur.1101.c: "Oh, [target_country.GetGovernment.GetRulerTitle], [target_country.GetAdjectiveWithNoTooltip] devil...."
+ flavor_tur.1101.c: "Oh, [target_country.GetGovernment.GetRulerTitle], [target_country.GetAdjectiveWithNoTooltip] devil..."
 
  flavor_tur.1102.title: "$flavor_tur.1100.title$"
  flavor_tur.1102.desc: "Despite our efforts to vassalize [target_country.GetName], they seem to resist us. What is worse is that [target_character.GetName], ever the vulgar one, has sent us a most insulting letter, not recognizing the great titles that [target_character2.GetName] possesses, something that the entire [ROOT.GetCountry.GetGovernment.GetCourtTitle] does not overlook."

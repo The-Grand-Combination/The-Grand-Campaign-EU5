@@ -5,6 +5,7 @@
  has_not_had_this_situation_before_tt: "This [situation|e] has not occurred before"
  DEFENDERS_CATHOLICISM: "Defensive [alliance|e] against $BOH$"
  DEFENDERS_HUSSITISM: "Defensive [alliance|e] against $PAP$"
+ bohemia_and_pope_at_war_with_both_being_leaders_tt: "[GetCountry('BOH').GetName] and [GetCountry('PAP').GetName] are at war with each other and each [country|e] is the [war_leader|e] of their respective side"
 
  hussite_wars.1.title: "[jan_zelivsky_scope.GetNameWithNoTooltip]'s Congregation"
  HUSSITE_WARS_SIDE_BOHEMIA: "The [THIS.GetLocation.GetOwner.GetLongName|Y] is supporting the [GetCountry('BOH').GetLongName] in the [ShowSituationName('hussite_wars')]!"
@@ -49,7 +50,8 @@
  reignite_the_fires_of_crusade_tt: "Relations between the [GetCountry('BOH').GetLongNameWithNoTooltip] and the [ShowReligionAdjectiveWithNoTooltip('catholic')] [countries|e] will worsen and many may join our cause in due time"
  income_depends_on_estate_power_tt: "The [gold|e] gained will largely depend on the [estate_power|e] of this [estate|e]"
 
-
+ join_current_war_against_papal_states_tt: "We will join the ongoing [war|e] of the [GetCountry('BOH').GetLongName] against the [GetCountry('PAP').GetLongName]"
+ join_current_war_against_bohemia_tt: "We will join the ongoing [war|e] of the [GetCountry('PAP').GetLongName] against the [GetCountry('BOH').GetLongName]"
 
 
 
@@ -62,7 +64,7 @@
  hussite_wars.1.desc: "Angered crowds led by [jan_zelivsky_scope.GetName] have flooded the streets of [target_boh_capital_scope.GetName], petitioning for expanded rights and the absolution of several [ShowReligionAdjective('hussite')] prisoners by the city's council. Unfortunately, the judge and his entourage have declined the demands of the protesters, leading to erupting violence in a vicious cycle of reforms being stalled and mob uprisings. Perhaps it is time we break the cycle..."
  hussite_wars.1.a: "Death to the [GetUniqueInternationalOrganization('catholic_church').GetLeaderTitle]!"
  hussite_wars.1.b: "We cannot afford to break [ShowReligionNameWithNoTooltip('catholic')]..."
- hussite_wars.1.c: "It's time we take up the sword against the traitors in our midst!"
+ hussite_wars.1.c: "It is time we take up the sword against the traitors in our midst!"
  end_hussite_wars_situation_tt: "This will prevent the [ShowSituationName('hussite_wars')] [situation|e]"
  catholics_upset_tt: "Relations between us and countries that follow the [ShowReligionAdjective('catholic')] faith will worsen severely"
  pap_gets_hussite_wars.2_tt: "The event '#Y Hussite Protests in [target_boh_capital_scope.GetNameWithNoTooltip]#!' happens for the [target_pope_country.GetName]"
@@ -118,7 +120,7 @@
  explain_situation_peace_treaty_tt: "During this [war|e], we can eradicate [ShowReligionName('hussite')] through the [ShowPeaceTreatyTypeName('force_convert')] and [ShowPeaceTreatyTypeName('supress_hussite_faith')] [peace_treaties|e] and bring an end to the [ShowSituationName('hussite_wars')]"
 
  hussite_wars.10.title: "The [ShowSituationNameWithNoTooltip('hussite_wars')]"
- hussite_wars.10.desc: "The rise of [ShowReligionName('hussite')] has pushed [target_bohemia.GetName] to become a pariah of the [ShowReligionAdjective('catholic')] world, as it teeters on the brink. The execution of [GetCharacter('boh_jan_hus').GetName] has not quelled dissent, it has emboldened it. Heretical preachers now rally [GetCountry('BOH').GetGovernment.GetEstateName('peasants')] and [GetCountry('BOH').GetGovernment.GetEstateName('nobles_estate')] alike, calling for a new Church free from the authority of [target_location1.GetName].\n\nThe [GetCountry('BOH').GetFlavorRank] spirals into unrest as [target_location2.GetName] burns with reformist zeal. For the members of the [GetUniqueInternationalOrganization('hre').GetName], this is no mere rebellion. It is a heresy with armies, a revolt with purpose. If [target_bohemia.GetNameWithNoTooltip] prevails, the infection may spread beyond its borders, threatening the very unity of [ShowReligionGroupName('christian')]."
+ hussite_wars.10.desc: "The rise of [ShowReligionName('hussite')] has pushed [target_bohemia.GetName] to become a pariah of the [ShowReligionAdjective('catholic')] world, as it teeters on the brink. The execution of [GetCharacter('boh_jan_hus').GetName] has not quelled dissent, it has emboldened it. Heretical preachers now rally the [GetCountry('BOH').GetGovernment.GetEstateName('peasants_estate')] and the [GetCountry('BOH').GetGovernment.GetEstateName('nobles_estate')] alike, calling for a new Church free from the authority of [target_location1.GetName].\n\nThe [GetCountry('BOH').GetFlavorRank] spirals into unrest as [target_location2.GetName] burns with reformist zeal. For the members of the [GetUniqueInternationalOrganization('hre').GetName], this is no mere rebellion. It is a heresy with armies, a revolt with purpose. If [target_bohemia.GetNameWithNoTooltip] prevails, the infection may spread beyond its borders, threatening the very unity of [ShowReligionGroupName('christian')]."
  hussite_wars.10.a: "To arms, men of faith!"
  hussite_wars.10.historical_info: "The Hussite Wars (1419-1434) were a series of religious and civil conflicts in Bohemia sparked by the execution of Jan Hus, a Czech reformer who criticized the Catholic Church. His followers, known as Hussites, demanded reforms including communion for all and a national Church independent of Rome. The wars pitted radical Hussite factions against Catholic loyalists and crusading armies sent by the Holy Roman Emperor and the Pope. Despite being outnumbered, the Hussites used innovative tactics and internal unity to repeatedly defeat their enemies, forcing the Church to eventually negotiate and grant limited concessions."
 

@@ -4,7 +4,7 @@
  conquistador.1.a: "Let's see what we can find!"
 
  conquistador.10.title: "Conquest of [ROOT.GetLocation.GetNameWithNoTooltip]"
- conquistador.10.desc: "We have take even more territory now, enriching ourselves, giving great prestige to [ROOT.GetLocation.GetOwner.GetDiplomacy.GetOverlord.GetLongName] and Glory to God!"
+ conquistador.10.desc: "We have taken even more territory now, enriching ourselves, giving great prestige to [ROOT.GetLocation.GetOwner.GetDiplomacy.GetOverlord.GetLongName] and Glory to [former_overlord.GetReligion.GetGodName]!"
  conquistador.10.a: "There is still more riches for us!"
  conquistador.10.b: "We need support to administrate this!"
  
@@ -12,5 +12,5 @@
  conquistador.11.title: "The Colony of [conquistador_country.GetGovernment.GetRuler.GetNameWithNoTooltip]"
  conquistador.11.desc: "The [conquistador_country.GetLongName] are requesting our aid to become a formal subject of ours, where they will become a Colonial Nation!"
  conquistador.11.a: "This is a great solution!"
- conquistador.11.b: "That is their problem.."
+ conquistador.11.b: "That is their problem."
  #

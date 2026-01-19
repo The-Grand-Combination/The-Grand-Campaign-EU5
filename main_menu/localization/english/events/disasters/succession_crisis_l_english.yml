@@ -10,7 +10,7 @@
  succession_crisis.2.desc: "Whilst the ruling of [target_ruler.GetName] has left a lot to be desired, the situation in places such as [target_province.GetName] has reached a new low. Cattle skinnier than a hay needle, starvation and depravity reigns in the streets of a once-great province. To that end, the peasants have taken up arms demanding direct compensation from the crown itself!"
  succession_crisis.2.a: "Blasted traitors!"
  succession_crisis.2.b: "We must give in to their demands..."
- every_location_loses_sat_and_joins_rebel_tt: "Every owned [location|e] in [target_province.GetName] will lose [ShowNamedValue('pop_satisfaction_mild_penalty')|+=2%] [pop_satisfaction|e] and support the claim of[scope_pretender.GetName] on our throne"
+ every_location_loses_sat_and_joins_rebel_tt: "Every owned [location|e] in [target_province.GetName] will lose [ShowNamedValue('pop_satisfaction_mild_penalty')|+=2%] [pop_satisfaction|e] and support the claim of [scope_pretender.GetName] on our throne"
  
  succession_crisis.3.title: "A Resourceful Minister"
  succession_crisis.3.desc: "It can be said that despite our ruler's best efforts, the majority of beneficial policies come from the likes of our advisors. Individuals such as [target_character.GetName] have taken it upon themselves to see the [ROOT.GetCountry.GetLongName] through this troubling time..."
@@ -26,7 +26,7 @@
  succession_crisis.5.desc: "Despite the best efforts of our central authority to sabotage what is left of our reputation across our provinces, many of our recent policy changes have not fallen on deaf ears. People, especially across the domain of [target_province.GetName], have taken notice and have sent correspondence back, thanking us for hearing their plea and taking care of them and their families, professing their allegiance to [ROOT.GetCountry.GetGovernment.GetRuler.GetName]."
  succession_crisis.5.a: "They are right to trust us!"
  succession_crisis.5.b: "[ROOT.GetCountry.GetGovernment.GetRuler.GetShortNameWithNoTooltip] is the rightful holder of our crown!"
- every_location_gains_sat_and_loses_rebel_tt: "Every owned location in [target_province.GetName] will gain [ShowNamedValue('pop_satisfaction_ultimate_bonus')|+=2%] [pop_satisfaction|e] and denounce their support of[target_character.GetName] on our throne"
+ every_location_gains_sat_and_loses_rebel_tt: "Every owned location in [target_province.GetName] will gain [ShowNamedValue('pop_satisfaction_ultimate_bonus')|+=2%] [pop_satisfaction|e] and denounce their support of [target_character.GetName] on our throne"
  
  succession_crisis.6.title: "A Request to [target_country.GetNameWithNoTooltip]"
  succession_crisis.6.desc: "The [ROOT.GetCountry.GetLongName] is currently undergoing a very turbulent period, as our [ROOT.GetCountry.GetAdjectiveWithNoTooltip] [ShowDisasterName('succession_crisis')] threatens to tear the [ROOT.GetCountry.GetFlavorRank] apart. The pretenders grow in strength, and soon they may strike at the heart of our [ROOT.GetCountry.GetGovernment.GetGovernmentType.GetName]. Desperate times call for allies, and so we may yet send a messenger to [target_country.GetName], pleading for aid. Should our [ROOT.GetCountry.GetFlavorRank] fall, it will mean ruin and doom for [target_character1.GetName] and [target_character1.GetHerHis] [ROOT.GetCountry.GetGovernment.GetCourtTitle]."

@@ -1,6 +1,6 @@
 ﻿l_english:
  flavor_mor.1.title: "[target_character.GetNameWithNoTooltip]"
- flavor_mor.1.desc: "Known by many names such as Imām [target_character.GetLastName] or Shaykh [target_character.GetLastNameWithNoTooltip], [target_character.GetShortNameWithNoTooltip] has gained great prominence recently on account of [target_character.GetHerHis] great display of piety, devoutness, and knowledge of sacred texts. Claiming Shurfāʾ status as a direct descendant of the Prophet, [target_character.GetSheHe] has recently offered [target_character.GetHerHis] skills and services to us."
+ flavor_mor.1.desc: "Known by many names such as Imām [target_character.GetLastName] or Shaykh [target_character.GetLastNameWithNoTooltip], [target_character.GetShortNameWithNoTooltip] has gained great prominence recently on account of [target_character.GetHerHis] great display of piety, devoutness, and knowledge of sacred texts. Claiming Shurfā' status as a direct descendant of the Prophet, [target_character.GetSheHe] has recently offered [target_character.GetHerHis] skills and services to us."
  flavor_mor.1.a: "Grant [target_character.GetHerHim] patronage."
  flavor_mor.1.b: "We need not more idle wanderers around our halls."
  flavor_mor.1.historical_info: "Al-Jazuli, a 15th-century Moroccan Sufi, was a key figure in the Shadhiliya order. Born in the Sous region, he studied in Fez and became famous for Dala'il al-Khayrat, a widely recited collection of prayers invoking blessings on the Prophet Muhammad (peace be upon him). His work left a lasting impact on Moroccan Sufi practices."

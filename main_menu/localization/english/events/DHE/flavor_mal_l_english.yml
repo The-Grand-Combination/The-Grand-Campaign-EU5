@@ -16,7 +16,7 @@
  flavor_mal.3.b: "We should not replace the Horon with these slaves."
 
  flavor_mal.4.title: "The [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')] and the [GetCountry('POR').GetAdjectiveWithNoTooltip]"
- flavor_mal.4.desc: "Having adopted a less violent approach, [GetCountry('POR').GetAdjective] traders have become an increasingly common sight along our western borders. In many ways, this is a boon to our state as it has given us much easier access to horses for our armies and a way to procure valuable goods from the many exotic ports frequented by [GetCountry('POR').GetAdjectiveWithNoTooltip] merchants. For gold or slaves, there is not much the [GetCountry('POR').GetAdjectiveWithNoTooltip] would not sell us; our [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] are thriving due to this new partnership.\n\nThere is, however, a slight worry about this development in some camps, the amount of slaves to a horse seems to keep increasing by the day and while our own transoceanic ventures have not gone so well it would seem less than prudent to rely entirely on these foreign merchants as they surely can't have our best interests at heart."
+ flavor_mal.4.desc: "Having adopted a less violent approach, [GetCountry('POR').GetAdjective] traders have become an increasingly common sight along our western borders. In many ways, this is a boon to our state as it has given us much easier access to horses for our armies and a way to procure valuable goods from the many exotic ports frequented by [GetCountry('POR').GetAdjectiveWithNoTooltip] merchants. For gold or slaves, there is not much the [GetCountry('POR').GetAdjectiveWithNoTooltip] would not sell us; our [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] are thriving due to this new partnership.\n\nThere is, however, a slight worry about this development in some camps, the amount of slaves to a horse seems to keep increasing by the day and while our own transoceanic ventures have not gone so well it would seem less than prudent to rely entirely on these foreign merchants as they surely cannot have our best interests at heart."
  flavor_mal.4.a: "A fruitful relationship for everyone...?"
  
  flavor_mal.5.title: "[GetCountry('POR').GetAdjectiveWithNoTooltip] Meddling"
@@ -72,7 +72,7 @@
  flavor_mal.14.title: "[target_subject_country.GetNameWithNoTooltip]'s Bid for Independence"
  flavor_mal.14.desc: "Despite our attempts at improving the lives of all our subjects, there are those among us that wish to see us fall, to eradicate our legacy. They plot in the shadows, daggers at hand, waiting to strike at our moments of weakness...\n\n[target_subject_country.GetName]'s voice of dissent is nothing but a performance of a petulant child that has grown too bold and eager."
  flavor_mal.14.a: "Very well, grant them independence."
- flavor_mal.14.b: "If it's a war they want..."
+ flavor_mal.14.b: "If it is a war they want..."
  flavor_mal.14.b.tt: "We will attempt to rein in [GetCountry('JOL').GetName].\n#italic This might result in a #R War#! between our states!#!"
 
  flavor_mal.15.title: "[target_overlord_country.GetNameWithNoTooltip] Intervenes"
@@ -93,7 +93,7 @@
  flavor_mal.18.title: "A Fragmented Realm"
  flavor_mal.18.desc: "Many within our ranks seem to believe that our great nation is falling apart. Regional revolts, prospecting pretenders, and harsh weather patterns have led to many speculating that our end is nigh. Adding salt to our wounds, now many of our subjects to our eastern territories demand their complete independence from our authority after kicking out our local administrators and putting the local crown representatives to the sword!"
  flavor_mal.18.a: "Harsh terms but we will accept..."
- flavor_mal.18.b: "Blood is repaid with blood, the cycle of violence.."
+ flavor_mal.18.b: "Blood is repaid with blood, the cycle of violence..."
  flavor_mal.18.c: "Perhaps it is time for [GetCountry('SON').GetNameWithNoTooltip] to rise."
 
  flavor_mal.19.title: "The Mines of [target_location2.GetNameWithNoTooltip]"

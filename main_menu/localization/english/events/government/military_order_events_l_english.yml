@@ -47,7 +47,7 @@
   military_order_events.9.a: "We are victorious!"
   forming_koj_easier_tt: "Forming the Kingdom of Jerusalem will increase our [stability|e], [government_power|e] and grant us the [ShowModifier('jerusalem_resurgent_modifier')] for #Y 20#! years"
   military_order_events.9.b: "The land belongs to our Order!"
-  military_order_events.9.c: "Restore the territories of [ShowLocationName('jerusalem')] to the rightful owner."
+  military_order_events.9.c: "Restore the territories of [ShowLocationNameWithNoTooltip('jerusalem')] to the rightful owner."
 
 #Tooltips
 

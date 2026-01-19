@@ -1,6 +1,6 @@
 ﻿l_english:
  reformation_is_enabled_tt: "The #Y Reformation#! has started"
- casus_belli_forbids_non_french_location_conquest_tt: "The 'Hundred Years War' [war_goal|e] only permits taking land within the [ShowRegionName('france_region')] [region|e]"
+ casus_belli_forbids_non_french_location_conquest_tt: "The 'Hundred Years War' [war_goal|e] only permits taking land within the [ShowRegionName('france_region')] [region|e] or land owned by either a [subject|e] of [GetCountry('FRA').GetNameWithNoTooltip] or [GetCountry('ENG').GetNameWithNoTooltip]"
  casus_belli_forbids_location_conquest_tt: "This war forbids us to conquer any [location|e] directly"
  casus_belli_forbids_normal_subjugation_tt: "This war forbids us to [subjugate|e] our enemy normally"
  casus_belli_forbids_normal_subjugation_tributary_tt: "$casus_belli_forbids_normal_subjugation_tt$\nTo establish a [ShowSubjectTypeName('tributary')] use the [ShowPeaceTreatyTypeName('force_tributary')] [peace_treaty|e]"
@@ -278,6 +278,35 @@
  THIRD_HAS_LOCKED_RELIGIOUS_ASPECT_TRIGGER: "[RELIGION.GetName] has locked the [RELIGIOUS_ASPECT.GetName] [religious_aspect|e]"
  NOT_THIRD_HAS_LOCKED_RELIGIOUS_ASPECT_TRIGGER: "[RELIGION.GetName] has NOT locked the [RELIGIOUS_ASPECT.GetName] [religious_aspect|e]"
 
+ HAS_COMPATIBLE_HEIR_RELIGION_LAW_WITH: "Has a compatible [ShowLawName('heir_religion_law')] policy with [TARGET_COUNTRY.GetName]"
+ NOT_HAS_COMPATIBLE_HEIR_RELIGION_LAW_WITH: "Does NOT have a compatible [ShowLawName('heir_religion_law')] policy with [TARGET_COUNTRY.GetName]"
+ FIRST_HAS_COMPATIBLE_HEIR_RELIGION_LAW_WITH: "We have a compatible [ShowLawName('heir_religion_law')] policy with [TARGET_COUNTRY.GetName]"
+ NOT_FIRST_HAS_COMPATIBLE_HEIR_RELIGION_LAW_WITH: "We do NOT have a compatible [ShowLawName('heir_religion_law')] policy with [TARGET_COUNTRY.GetName]"
+ THIRD_HAS_COMPATIBLE_HEIR_RELIGION_LAW_WITH: "[COUNTRY.GetName] has a compatible [ShowLawName('heir_religion_law')] policy with [TARGET_COUNTRY.GetName]"
+ NOT_THIRD_HAS_COMPATIBLE_HEIR_RELIGION_LAW_WITH: "[COUNTRY.GetName] does NOT have a compatible [ShowLawName('heir_religion_law')] policy with [TARGET_COUNTRY.GetName]"
+
+ CAN_ADOPT_COMPATIBLE_RELIGION_LAW: "Can adopt the policy for the [ShowLawName('heir_religion_law')] compatible with [TARGET_COUNTRY.GetName]"
+ NOT_CAN_ADOPT_COMPATIBLE_RELIGION_LAW: "Can NOT adopt the policy for the [ShowLawName('heir_religion_law')] compatible with [TARGET_COUNTRY.GetName]"
+ FIRST_CAN_ADOPT_COMPATIBLE_RELIGION_LAW: "We can adopt the policy for the [ShowLawName('heir_religion_law')] compatible with [TARGET_COUNTRY.GetName]"
+ NOT_FIRST_CAN_ADOPT_COMPATIBLE_RELIGION_LAW: "We can NOT adopt the policy for the [ShowLawName('heir_religion_law')] compatible with [TARGET_COUNTRY.GetName]"
+ THIRD_CAN_ADOPT_COMPATIBLE_RELIGION_LAW: "[COUNTRY.GetName] can adopt the policy for the [ShowLawName('heir_religion_law')] compatible with [TARGET_COUNTRY.GetName]"
+ NOT_THIRD_CAN_ADOPT_COMPATIBLE_RELIGION_LAW: "[COUNTRY.GetName] can NOT adopt the policy for the [ShowLawName('heir_religion_law')] compatible with [TARGET_COUNTRY.GetName]"
+
+ IS_PROPOSAL: "Is a #Y Proposal#! in [TARGET_INTERNATIONAL_ORGANIZATION.GetName]"
+ NOT_IS_PROPOSAL: "Is NOT a #Y Proposal#! in [TARGET_INTERNATIONAL_ORGANIZATION.GetName]"
+ THIRD_IS_PROPOSAL: "[RESOLUTION.GetName] is a #Y Proposal#! in [TARGET_INTERNATIONAL_ORGANIZATION.GetName]"
+ NOT_THIRD_IS_PROPOSAL: "[RESOLUTION.GetName] is NOT a #Y Proposal#! in [TARGET_INTERNATIONAL_ORGANIZATION.GetName]"
+
+ IS_VOTE: "Is a #Y Vote#! in [TARGET_INTERNATIONAL_ORGANIZATION.GetName]"
+ NOT_IS_VOTE: "Is NOT a #Y Vote#! in [TARGET_INTERNATIONAL_ORGANIZATION.GetName]"
+ THIRD_IS_VOTE: "[RESOLUTION.GetName] is a #Y Vote#! in [TARGET_INTERNATIONAL_ORGANIZATION.GetName]"
+ NOT_THIRD_IS_VOTE: "[RESOLUTION.GetName] is NOT a #Y Vote#! in [TARGET_INTERNATIONAL_ORGANIZATION.GetName]"
+
+ IS_FINALISING: "Is #Y finalizing#! in [TARGET_INTERNATIONAL_ORGANIZATION.GetName]"
+ NOT_IS_FINALISING: "Is NOT #Y finalizing#! in [TARGET_INTERNATIONAL_ORGANIZATION.GetName]"
+ THIRD_IS_FINALISING: "[RESOLUTION.GetName] is #Y finalizing#! in [TARGET_INTERNATIONAL_ORGANIZATION.GetName]"
+ NOT_THIRD_IS_FINALISING: "[RESOLUTION.GetName] is NOT #Y finalizing#! in [TARGET_INTERNATIONAL_ORGANIZATION.GetName]"
+
  HAS_ENABLED_SITUATION_TRIGGER: "Has enabled the [SITUATION.GetName] [situation|e]"
  NOT_HAS_ENABLED_SITUATION_TRIGGER: "Has NOT enabled the [SITUATION.GetName] [situation|e]"
  FIRST_HAS_ENABLED_SITUATION_TRIGGER: "We have enabled the [SITUATION.GetName] [situation|e]"
@@ -421,12 +450,12 @@
  THIRD_CAN_HAVE_PARLIAMENT_CALLED_BY_TEXT: "[INTERNATIONAL_ORGANIZATION.GetName] can have its [parliament|e] be called by [TARGET_COUNTRY.GetName]"
  NOT_THIRD_CAN_HAVE_PARLIAMENT_CALLED_BY_TEXT: "[INTERNATIONAL_ORGANIZATION.GetName] can NOT have its [parliament|e] be called by [TARGET_COUNTRY.GetName]"
 
- HAS_PROPOSED_PARLIAMENT_ISSUE_IN_TEXT: "Has propsoed a [parliament_issue|e] in [TARGET_INTERNATIONAL_ORGANIZATION.GetName]"
- NOT_HAS_PROPOSED_PARLIAMENT_ISSUE_IN_TEXT: "Has NOT propsoed a [parliament_issue|e] in [TARGET_INTERNATIONAL_ORGANIZATION.GetName]"
- FIRST_HAS_PROPOSED_PARLIAMENT_ISSUE_IN_TEXT: "We have propsoed a [parliament_issue|e] in [TARGET_INTERNATIONAL_ORGANIZATION.GetName]"
- NOT_FIRST_HAS_PROPOSED_PARLIAMENT_ISSUE_IN_TEXT: "We have NOT propsoed a [parliament_issue|e] in [TARGET_INTERNATIONAL_ORGANIZATION.GetName]"
- THIRD_HAS_PROPOSED_PARLIAMENT_ISSUE_IN_TEXT: "[COUNTRY.GetName] has propsoed a [parliament_issue|e] in [TARGET_INTERNATIONAL_ORGANIZATION.GetName]"
- NOT_THIRD_HAS_PROPOSED_PARLIAMENT_ISSUE_IN_TEXT: "[COUNTRY.GetName] has NOT propsoed a [parliament_issue|e] in [TARGET_INTERNATIONAL_ORGANIZATION.GetName]"
+ HAS_PROPOSED_PARLIAMENT_ISSUE_IN_TEXT: "Has proposed a [parliament_issue|e] in [TARGET_INTERNATIONAL_ORGANIZATION.GetName]"
+ NOT_HAS_PROPOSED_PARLIAMENT_ISSUE_IN_TEXT: "Has NOT proposed a [parliament_issue|e] in [TARGET_INTERNATIONAL_ORGANIZATION.GetName]"
+ FIRST_HAS_PROPOSED_PARLIAMENT_ISSUE_IN_TEXT: "We have proposed a [parliament_issue|e] in [TARGET_INTERNATIONAL_ORGANIZATION.GetName]"
+ NOT_FIRST_HAS_PROPOSED_PARLIAMENT_ISSUE_IN_TEXT: "We have NOT proposed a [parliament_issue|e] in [TARGET_INTERNATIONAL_ORGANIZATION.GetName]"
+ THIRD_HAS_PROPOSED_PARLIAMENT_ISSUE_IN_TEXT: "[COUNTRY.GetName] has proposed a [parliament_issue|e] in [TARGET_INTERNATIONAL_ORGANIZATION.GetName]"
+ NOT_THIRD_HAS_PROPOSED_PARLIAMENT_ISSUE_IN_TEXT: "[COUNTRY.GetName] has NOT proposed a [parliament_issue|e] in [TARGET_INTERNATIONAL_ORGANIZATION.GetName]"
 
  INTERNATIONAL_ORGANIZATION_HAS_UNLOCKED_LAW_TRIGGER: "Has unlocked the [LAW.GetName] [law|e]"
  NOT_INTERNATIONAL_ORGANIZATION_HAS_UNLOCKED_LAW_TRIGGER: "Has NOT unlocked the [LAW.GetName] [law|e]"
@@ -585,7 +614,7 @@
  FIRST_SMARTISM_BALANCED_GODS: "We worship all [gods|e] equally"
  NOT_FIRST_SMARTISM_BALANCED_GODS: "We do NOT worship all [gods|e] equally"
  THIRD_SMARTISM_BALANCED_GODS: "[COUNTRY.GetName] worships all [gods|e] equally"
- NOT_THIRD_SMARTISM_BALANCED_GODS: "[COUNTRY.GetName] does NOT worships all [gods|e] equally"
+ NOT_THIRD_SMARTISM_BALANCED_GODS: "[COUNTRY.GetName] does NOT worship all [gods|e] equally"
 
  IS_FAVORING_GOD: "Is favoring [TARGET_GOD.GetName]"
  NOT_IS_FAVORING_GOD: "Is NOT favoring [TARGET_GOD.GetName]"
@@ -633,3 +662,10 @@
  NOT_FIRST_CAN_CREATE_SUBJECT_ALLIANCE: "Our diplomatic status does NOT allow the creation of an [alliance|e] with [TARGET_COUNTRY.GetName]"
  THIRD_CAN_CREATE_SUBJECT_ALLIANCE: "[COUNTRY.GetName]'s diplomatic status allows the creation of an [alliance|e] with [TARGET_COUNTRY.GetName]"
  NOT_THIRD_CAN_CREATE_SUBJECT_ALLIANCE: "[COUNTRY.GetName]'s diplomatic status does NOT allow the creation of an [alliance|e] with [TARGET_COUNTRY.GetName]"
+
+ CABINET_ALREADY_PERFORMING_SAME_TASK_ON_TARGET: "A [cabinet_member|e] is already performing the same [cabinet_action|e] on this target"
+ NOT_CABINET_ALREADY_PERFORMING_SAME_TASK_ON_TARGET: "No [cabinet_member|e] is already performing the same [cabinet_action|e] on this target"
+ FIRST_CABINET_ALREADY_PERFORMING_SAME_TASK_ON_TARGET: "One of our [cabinet_members|e] is already performing the same [cabinet_action|e] on this target"
+ NOT_FIRST_CABINET_ALREADY_PERFORMING_SAME_TASK_ON_TARGET: "None of our [cabinet_members|e] is already performing the same [cabinet_action|e] on this target"
+ THIRD_CABINET_ALREADY_PERFORMING_SAME_TASK_ON_TARGET: "One of their [cabinet_members|e] is already performing the same [cabinet_action|e] on this target"
+ NOT_THIRD_CABINET_ALREADY_PERFORMING_SAME_TASK_ON_TARGET: "None of their [cabinet_members|e] is already performing the same [cabinet_action|e] on this target"

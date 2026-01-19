@@ -16,11 +16,11 @@
  chi_recapture_emperor_tt: "[captured_emperor.GetName] must be retaken via the [ShowPeaceTreatyTypeName('chi_recapture_emperor')] [peace_treaty|e]. If [captured_emperor.GetName] dies in captivity, we will receive the following penalties:"
 
  flavor_chi_mon.3.title: "[target.GetNameWithNoTooltip] Dies in Prison"
- flavor_chi_mon.3.desc: "Our greatest asset, [target.GetName], former ruler of [target_country.GetName] has perished while in our captivity. We have truly lost a great [target.GetManWoman], who will forever be remembered as our ticket to greatness."
+ flavor_chi_mon.3.desc: "Our greatest asset, [target.GetName], former ruler of [target_country.GetName], has perished while in our captivity. We have truly lost a great [target.GetManWoman], who will forever be remembered as our ticket to greatness."
  flavor_chi_mon.3.a: "Damnation!"
 
  flavor_chi_mon.4.title: "The Death of [target.GetNameWithNoTooltip]"
- flavor_chi_mon.4.desc: "[ROOT.GetCountry.GetName] has just been struck with a calamity. Our beloved ruler, the [target.GetSonDaughter] of heaven, [target.GetName], is reported to have died in captivity of the [target.GetOwner.GetAdjective] fiends. It is tragic that [target.GetShortNameWithNoTooltip] never lived to be recaptured and returned to [target.GetHerHis] precious country."
+ flavor_chi_mon.4.desc: "[ROOT.GetCountry.GetName|U] have just been struck with a calamity. Our beloved ruler, the [target.GetSonDaughter] of heaven, [target.GetName], is reported to have died in captivity of the [target.GetOwner.GetAdjective] fiends. It is tragic that [target.GetShortNameWithNoTooltip] never lived to be recaptured and returned to [target.GetHerHis] precious country."
  flavor_chi_mon.4.a: "[target.GetShortNameWithNoTooltip] was not worthy of such a death."
  
  flavor_chi_mon.5.title: "Offer of Ransom"

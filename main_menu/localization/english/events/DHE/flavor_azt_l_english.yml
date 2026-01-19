@@ -6,6 +6,7 @@
  flavor_azt.70.a: "All must contribute to the Pyramid!"
  flavor_azt.70.b: "Let our subjects contribute their fair due."
  flavor_azt.70.c: "A project for another time, perhaps."
+ subject_contribution_reason: "Subject Contribution"
  we_will_be_able_to_construct_the_building_later_tt: "We will be able to construct this [building|e] later"
  flavor_azt.70.historical_info: "At the center of Tenochtitlan, the Huēyi Teōcalli stands as a towering symbol of Mexica devotion and power. Constructed in stages from the 14th century onward, it features dual stairways leading to separate temples: one for Huitzilopochtli, the god of war, the other for Tlaloc, the god of rain and fertility. Nearby stands a shrine to Ehecatl, the wind god. The temple would go on to become an imposing feature of the city's sacred heart, where priests perform sacrifices and ceremonies to sustain cosmic order."
  flavor_azt.80.title: "[target_character.GetNameWithNoTooltip]"

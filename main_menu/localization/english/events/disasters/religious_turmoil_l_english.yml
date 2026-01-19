@@ -12,7 +12,7 @@
  religious_turmoil.3.a.tt: "Some [pops|e] that do not follow [ROOT.GetCountry.GetReligion.GetName] lose [ShowNamedValue('pop_satisfaction_mild_penalty')|+=2%] [pop_satisfaction|e]."
  religious_turmoil.3.b: "Increase funding to convert the heretics"
  religious_turmoil.4.title: "Heretic Subjugation"
- religious_turmoil.4.desc: "Our country's harsh subjugation of heretics hasn't brought the expected results. Instead of restoring order and bringing our nation under one religious faith, our actions have further agitated the population leading to increased violence and acts of cruelty."
+ religious_turmoil.4.desc: "Our country's harsh subjugation of heretics has not brought the expected results. Instead of restoring order and bringing our nation under one religious faith, our actions have further agitated the population leading to increased violence and acts of cruelty."
  religious_turmoil.4.a: "Increase funding to suppress the heretics"
  religious_turmoil.4.b: "Ignore them"
  religious_turmoil.5.title: "Rise of Religious Intolerance"

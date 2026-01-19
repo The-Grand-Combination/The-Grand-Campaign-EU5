@@ -48,7 +48,7 @@
  MIL_SCORE_DISCIPLINE: "[discipline|e]: $VAL|+=2$"
  MIL_SCORE_EXHAUSTION: "[war_exhaustion|e]: $VAL|+=2$"
  
- ENDGAME_SCORE: "Our final [score|e] was [Player.GetScore.GetScore|2]"
+ ENDGAME_SCORE: "Our final [score|e] was [Player.GetScore.GetScore|0]"
  #
  
  SORT_BY_RANK_TT: "Sort by the [score|e] rank"

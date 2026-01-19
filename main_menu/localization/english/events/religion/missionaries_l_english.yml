@@ -1,6 +1,6 @@
 ﻿l_english:
  missionaries.1.title: "Missionary Falls Ill"
- missionaries.1.desc: "The missionary we sent to [target_location.GetName] hasn't had much luck so far, news have just reached us that he has fallen ill. Any further work on the new church has come to a standstill and without his guidance the chances of converting the locals are rather slim."
+ missionaries.1.desc: "The missionary we sent to [target_location.GetName] has not had much luck so far, news have just reached us that he has fallen ill. Any further work on the new church has come to a standstill and without his guidance the chances of converting the locals are rather slim."
  missionaries.1.a: "Send someone to assist him"
  missionaries.1.b: "Direct our efforts elsewhere"
  STATIC_MODIFIER_NAME_missionary_falls_ill: "Missionary falls ill"

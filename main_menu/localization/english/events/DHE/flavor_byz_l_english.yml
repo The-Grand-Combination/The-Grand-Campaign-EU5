@@ -61,7 +61,7 @@
  flavor_byz.13.title: "A Brilliant Center of Learning"
  flavor_byz.13.desc: "Despite the hardships that surround our people, our arts and culture remain as vibrant and prestigious as ever. No place is a better example of our artistic influence and cultivation as [target_location.GetName]. Serving as the springboard towards the cultivation and propagation of [ShowInstitutionName('renaissance')], the people have welcomed and developed schools of art and thought, experiencing a wonderful golden era of philosophy and [ROOT.GetCountry.GetAdjective] expression."
  flavor_byz.13.a: "Fund its expansion."
- flavor_byz.13.b: "Let the wealth be spread across [target_province.GetName]!"
+ flavor_byz.13.b: "Let the wealth be spread across [target_province.GetNameWithNoTooltip]!"
  flavor_byz.13.c: "This money is best spent elsewhere."
 
  flavor_byz.14.title: "The Proposal of the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]"
@@ -147,7 +147,7 @@ flavor_byz.27.b: "The [ROOT.GetCountry.GetAdjectiveWithNoTooltip] [ROOT.GetCount
 flavor_byz.28.title: "A [ROOT.GetCountry.GetGovernment.GetCourtTitle] in [ShowAreaNameWithNoTooltip('morea_area')]"
 flavor_byz.28.desc: "With our decline in the [ShowRegionName('balkan_region')], [target_character.GetName] has come up with a way to ensure that our nation lives. By setting up a new capital in [target_location.GetName] and fortifying [ShowAreaName('morea_area')] we can ensure that no foreigner may invade us without suffering great losses."
 flavor_byz.28.a: "Perhaps [target_character.GetNameWithNoTooltip]'s words have some merit..."
-flavor_byz.28.b: "Abandoning [target_location2.GetName] will serve us no good."
+flavor_byz.28.b: "Abandoning [target_location2.GetNameWithNoTooltip] will serve us no good."
 
 flavor_byz.29.title: "Katholikon Mouseion"
 flavor_byz.29.desc: "With [target_location.GetName] being the forefront city of the [target_character.GetDynasty.GetName], [target_character.GetName] has been planning an institution in the monastery of St. John Prodrome. Such construction would require a lot of resources, as well as works of which our nation may need to commission."
@@ -204,7 +204,7 @@ flavor_byz.38.historical_info: "During Constantine XI's reign over Morea, he shi
 
 flavor_byz.39.title: "A New Capital in [target_location.GetNameWithNoTooltip]?"
 flavor_byz.39.desc: "Since our [ROOT.GetCountry.GetGovernment.GetCourtTitle] has migrated to [ShowAreaName('morea_area')], [target_location.GetName] has become the [target_country.GetAdjective] capital in all but name. Is it perhaps time for [target_character.GetName] to abandon [target_location2.GetName] in favor of this new home?"
-flavor_byz.39.a: "Perhaps [ShowAreaNameWithNoTooltip('morea_area')] can be more easily defended...."
+flavor_byz.39.a: "Perhaps [ShowAreaNameWithNoTooltip('morea_area')] can be more easily defended..."
 flavor_byz.39.b: "Abandoning [target_location2.GetNameWithNoTooltip] is a grave mistake, let us reinforce it instead."
 flavor_byz.39.c: "We will neither abandon [target_location2.GetNameWithNoTooltip] nor strengthen our hold there."
 
@@ -224,7 +224,7 @@ flavor_byz.42.title.b: "The Grand Dragoman"
 flavor_byz.42.desc: "Born in [target_location.GetName], [target_artist.GetName] has been studying the Western ways of medicine and philosophy from a very young age. Studying in numerous universities, he has siphoned tons of knowledge and is versed in many linguistic forms. Perhaps such an educated philosopher will do well in our [ROOT.GetCountry.GetGovernment.GetCourtTitle]."
 flavor_byz.42.historical_info: "Born in Mykonos, Alexandros Mavrokordatos was a Greek doctor under the Turkocracy. After studying in the West, most notably at the University of Bologna, he wrote several treatises, such as #italic Instrumentum Pneumaticum Circulandi Sanguinis sive modu usu pulmonum#!. Afterward, he served under Sultan Mehmed IV, helping in negotiations that led to the Treaty of Karlowitz in 1699, and managed to gain considerable power in the Ottoman court, allowing his family to rule Moldavia."
 flavor_byz.42.a: "Let us invite [target_artist.GetNameWithNoTooltip] to [target_location2.GetNameWithNoTooltip]"
-flavor_byz.42.b: "He would be a great diplomat for [target_country.GetName]."
+flavor_byz.42.b: "He would be a great diplomat for [target_country.GetNameWithNoTooltip]."
 flavor_byz.42.c: "He is too expensive to maintain."
 
 flavor_byz.43.title: "Founding the Heptanese School"
@@ -355,7 +355,7 @@ flavor_byz.1101.a: "What is going on in the [target_country.GetLongName]?"
 flavor_byz.1102.title: "Debate for the Ages"
 flavor_byz.1102.desc: "'This is a total disaster.' 'Is this the end for the [ShowReligionAdjective('orthodox')] faith?' are but some of the commonly heard phrases surrounding the clash between [target_character2.GetName] and [target_character.GetName]. While the former is an ardent supporter of Hesychast practices, the latter has fought tooth and nail to discredit and delegitimize these practices. Launching insults and calling upon the divine in the same breath, these two seem to have really driven a wedge across [ShowReligionAdjectiveWithNoTooltip('orthodox')] believers in [target_location.GetName]. Something must be done posthaste, lest we risk the outrage be spilled and devolve into a rebellion!"
 flavor_byz.1102.a: "Practice what you preach and stay quiet, ideally forever!"
-flavor_byz.1102.b: "[target_character.GetNameWithNoTooltip] will like [target_character.GetHerHis] new home in [target_country.GetName]."
+flavor_byz.1102.b: "[target_character.GetNameWithNoTooltip] will like [target_character.GetHerHis] new home in [target_country.GetNameWithNoTooltip]."
 
 flavor_byz_title_key: "A Hand for Peace"
 flavor_byz.1200.title: "$flavor_byz_title_key$"
@@ -383,7 +383,7 @@ flavor_byz.1300_title_key: "Rebuilding [target_location.GetNameWithNoTooltip]"
 flavor_byz_1300_historical_info_shared: "The Byzantine policy for Constantinople has always been opening up the gates in order to populate the city's streets. After the Black Death had hit Constantinople, it had suffered tremendous losses, leaving many residences empty. The emperors made efforts to restore the city, however they would not be enough, as the city's population would dwindle until its fall in 1453."
 flavor_byz.1300.a: "We must rebuild the city at any cost."
 flavor_byz.1300.title: "$flavor_byz.1300_title_key$"
-flavor_byz.1300.desc: "The [ShowSituationName('black_death')] has devastated much of our lands, with [target_location.GetName] being hit the hardest. Compared to before, most of the houses are uninhabited, with barely anyone walking on the city's streets. Unlike before, our countryside has been left barren, with most [target_country.GetAdjective] provinces not having enough population to man the fields. Perhaps we can try to invite some merchants from [ShowRegionName('italy_region')] to help us with this issue...."
+flavor_byz.1300.desc: "The [ShowSituationName('black_death')] has devastated much of our lands, with [target_location.GetName] being hit the hardest. Compared to before, most of the houses are uninhabited, with barely anyone walking on the city's streets. Unlike before, our countryside has been left barren, with most [target_country.GetAdjective] provinces not having enough population to man the fields. Perhaps we can try to invite some merchants from [ShowRegionName('italy_region')] to help us with this issue..."
 flavor_byz.1300.historical_info: "$flavor_byz_1300_historical_info_shared$"
 flavor_byz.1300.b: "Those merchants are not to be trusted."
 
@@ -398,7 +398,7 @@ flavor_byz.1302.desc: "[target_country2.GetLongName] has answered our request. T
 flavor_byz.1302.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
 
 flavor_byz.1303.title: "$flavor_byz.1300_title_key$"
-flavor_byz.1303.desc: "[target_country2.GetName] has rejected our request. They think that sending away their [ShowPopTypeName('burghers')] will do them no good.."
+flavor_byz.1303.desc: "[target_country2.GetName] has rejected our request. They think that sending away their [ShowPopTypeName('burghers')] will do them no good."
 flavor_byz.1303.a: "[ROOT.GetCountry.Custom('common_string_negative')]"
 
 flavor_byz.1400_title_key: "Restoring the Varangians"
@@ -424,7 +424,7 @@ flavor_byz.1403.a: "[ROOT.GetCountry.Custom('common_string_negative')]"
 flavor_byz.1500_title_key: "Zealots of [target_location.GetNameWithNoTooltip]"
 flavor_byz.1500.title: "$flavor_byz.1500_title_key$"
 flavor_byz.1500.desc: "As the [ShowDisasterName('succession_crisis')] rages on in [ROOT.GetCountry.GetName], the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] in [target_location.GetName] have been exploiting the [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')]. This has led many of them to take a stance in the [ShowDisasterNameWithNoTooltip('succession_crisis')]. Should we not manage to pacify this unrest, we may have to fight yet another Civil War."
-flavor_byz.1500.a: "Time is ticking...."
+flavor_byz.1500.a: "Time is ticking..."
 
 flavor_byz.1501.title: "$flavor_byz.1500_title_key$"
 flavor_byz.1501.desc.a: "Although the [target_location.GetName] Commune did briefly rise against the local [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')], we have managed to restore order in the [target_location.GetRank.GetName]. Let us pray they never rise again."

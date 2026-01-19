@@ -281,7 +281,7 @@
  PAST_CHANGE_UNION_INTEGRATION_LEVEL_EFFECT: "Has increased the [union_integration_level|e] by $VALUE|0Y$"
  NEG_THIRD_CHANGE_UNION_INTEGRATION_LEVEL_EFFECT: "Has decreased the [union_integration_level|e] by $VALUE|0Y$"
  THIRD_CHANGE_UNION_INTEGRATION_LEVEL_EFFECT: "[INTERNATIONAL_ORGANIZATION.GetName] increases the [union_integration_level|e] by $VALUE|0Y$"
- PAST_NEG_CHANGE_UNION_INTEGRATION_LEVEL_EFFECTT: "[INTERNATIONAL_ORGANIZATION.GetName] decreases the [union_integration_level|e] by $VALUE|0Y$"
+ PAST_NEG_CHANGE_UNION_INTEGRATION_LEVEL_EFFECT: "[INTERNATIONAL_ORGANIZATION.GetName] decreases the [union_integration_level|e] by $VALUE|0Y$"
  THIRD_PAST_CHANGE_UNION_INTEGRATION_LEVEL_EFFECT: "[INTERNATIONAL_ORGANIZATION.GetName] has increased the [union_integration_level|e] by $VALUE|0Y$"
  THIRD_PAST_NEG_CHANGE_UNION_INTEGRATION_LEVEL_EFFECT: "[INTERNATIONAL_ORGANIZATION.GetName] has decreased the [union_integration_level|e] by $VALUE|0Y$"
 

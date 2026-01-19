@@ -5,7 +5,7 @@
  flavor_ira.1.b: "The military is in dire need of reforms."
  flavor_ira.1.c: "Overhaul the laws of the state."
  flavor_ira.1.d: "We cannot afford any of these."
- flavor_ira.1.historical_info: "Ismāʿīl I, $rank_kingdom_persian_ruler_male$ of Persia from 1501 to 1524, was the founder of the Safavid Dynasty of Persia. While he was known as a great conqueror and consolidator, he also introduced many reforms to Persia which ensured the rise of the empire. His people, who had suffered terribly under Timur and the Turkoman tribes, welcomed Ismāʿīl's reforms for the most part."
+ flavor_ira.1.historical_info: "Ismā'īl I, $rank_kingdom_persian_ruler_male$ of Persia from 1501 to 1524, was the founder of the Safavid Dynasty of Persia. While he was known as a great conqueror and consolidator, he also introduced many reforms to Persia which ensured the rise of the empire. His people, who had suffered terribly under Timur and the Turkoman tribes, welcomed Ismā'īl's reforms for the most part."
 
  abbas_the_great: "'Abbās-e Bozorg"
  flavor_ira.2.title: "The Reign of [target_character.GetNameWithNoTooltip]"
@@ -75,7 +75,7 @@
  flavor_ira.13.historical_info: "There had always been interactions between Armenians and Persia, and even the Seljuk brought many Armenian slaves and merchants into Persia. But the #italic Great Surgun#! or Great Exile was performed by 'Abbās 'the Great' in 1604-1605 during the Ottoman-Saffavid war, and it it hundreds of thousands of Armenians were forcefully deported to Persia. Many Armenian cities were sacked and razed, and most of the deported population died along the route. In Persia they were initially treated well and allowed to flourish, but later also forced to accept Islam, and subjected to discrimination. The depopulated areas were re-settled by different tribes of Turks and Kurds, greatly changing the demographics of the region."
  flavor_ira.13.a: "Allow their flow into our society!"
  flavor_ira.13.a.tt: "#Y 40%#! of the [ShowCultureName('armenian_culture')] [people|e] from #Y 5#! of our most populated locations in [ShowRegionName('caucasus_region')] will move to [target_location.GetName]"
- flavor_ira.13.b: "We can't water down our superior caste."
+ flavor_ira.13.b: "We cannot water down our superior caste."
 
  flavor_ira.14.title: "[ShowCultureNameWithNoTooltip('turkmen_culture')] Recruits Flock to the Banners"
  flavor_ira.14.desc: "After so many of the [ShowCultureName('turkmen_culture')] lands fell under our [ROOT.GetCountry.GetFlavorRank], many of their fighters roamed around the barren countryside looting and harassing traveling merchants and farmers. Men without purpose, whose hearts were full of faith and loyalty to their former masters, are now rudderless in a world that is changing faster than them, leaving them behind. To these men, we must raise our banner, and grow the seed of our faith in their hearts. Let us call onto these battle-hardened men of the plains and have them lead our armies into greatness!"
@@ -235,7 +235,7 @@
  flavor_ira.45.title: "The [ShowDynastyNameWithNoTooltip('qajar_dynasty')] Tribes"
  flavor_ira.45.desc: "The recent migration of the [ShowDynastyName('qajar_dynasty')] tribes within [ROOT.GetCountry.GetName] has brought some destabilization within the [ROOT.GetCountry.GetFlavorRank]. Despite that, the rulers of the tribe, [target_character.GetName] and [target_character2.GetName], have shown themselves as capable strategists and administrators. Despite them being quite unpopular with everyone in the [ROOT.GetCountry.GetFlavorRank], it may still be possible to keep them in our current government, benefitting from their experiences and perhaps using their tribe for extra help."
  flavor_ira.45.historical_info: "As the Safavids' successors, the Qâjâr family mainly assisted the Iranian shahs during their early days. With the rise of Âqâ Mohammad Xân-e Qâjâr in the region, and the fragmentation of the Safavid realm, the Qâjâr family was able to proclaim themselves as Shahs, slowly conquering the numerous other tribes that resisted their legitimacy. Their reign would last until 1925, when a coup d'état would take place, replacing them with the Pahlavi dynasty."
- flavor_ira.45.a: "They are welcome in [ROOT.GetCountry.GetName]."
+ flavor_ira.45.a: "They are welcome in [ROOT.GetCountry.GetNameWithNoTooltip]."
  flavor_ira.45.b: "Away with them!"
  ira_qajar_dynasty_may_claim_crown: "The [ShowDynastyName('qajar_dynasty')] [dynasty|e] will try to claim our throne if we lack [legitimacy|e] and [stability|e]"
 
@@ -251,7 +251,7 @@
  flavor_ira.47.a: "Let us give the lands to the [ShowDynastyNameWithNoTooltip('safavid_dynasty')] order."
  flavor_ira.47.a.tt: "[GetCountry('ABL').GetLongName] will be established as our [ShowSubjectTypeName('vassal')] in [target_area.GetName] with [target_character.GetName] as the ruler. We will transfer the ownership of the area and our cores there to them"
  flavor_ira.47.b: "They will not have our lands."
- flavor_ira.47.c: "Their [ShowReligiousSchoolNameWithNoTooltip('safavid_school')] ways intrigue us...."
+ flavor_ira.47.c: "Their [ShowReligiousSchoolNameWithNoTooltip('safavid_school')] ways intrigue us..."
 
  flavor_ira.48.title: "Militarism of [ROOT.GetCountry.GetNameWithNoTooltip]"
  flavor_ira.48.desc: "Although our main purpose is spreading the [ROOT.GetCountry.GetReligion.GetAdjective] faith, this has been hard lately to accomplish through words alone. For that reason, [target_character.GetName] plans to shape the [ROOT.GetCountry.GetAdjective] society in a way that will allow our mission to thrive through military force. Using the words of the $common_string_quran$ as justification, [target_character.GetSheHe] hopes that it will rally the people against any heathens and unbelievers that may oppose us. However, such change may hurt our nation regarding internal development, which may not be favorable for the [ROOT.GetCountry.GetFlavorRank]."

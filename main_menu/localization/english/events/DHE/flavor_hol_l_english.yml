@@ -54,7 +54,8 @@
  flavor_hol.9.title: "The Fluitschip"
  flavor_hol.9.desc: "The expansive [ROOT.GetCountry.GetCulture.GetName] economy has put large demands on our merchant marine. The very shallow [ROOT.GetCountry.GetCulture.GetNameWithNoTooltip] waters also mean that common merchant ships such as caravels are unable to approach many of the [ROOT.GetCountry.GetAdjectiveWithNoTooltip] ports. So far this has been handled by the use of smaller boeiers but with financial backing from [target_character.GetName], a merchant from [ShowLocationName('hoorn')], a new type of ship has been developed.\nThe fluitship or fluyt is longer and has a very characteristic pear-shaped stern and is built to be effectively manned by a small crew. As it is able to carry larger cargoes while still handling the shallow Dutch waters and behaving very well in the open sea this ship is a godsend for our merchants."
  flavor_hol.9.a: "This is definitely a good idea!"
- flavor_hol.9.b: "I do not think our shipbuilding industry is ready for this."
+ flavor_hol.9.b: "Interesting idea, but now it is not the time. Maybe later?"
+ flavor_hol.9.c: "I do not think our shipbuilding industry is ready for this."
 
  flavor_hol.10.title: "[target_character.GetNameWithNoTooltip]"
  flavor_hol.10.desc: "[target_character.GetName], more commonly known as just Erasmus, is a humanist and an aspiring scholar. [target_character.GetHisHer|U] world views as well as [target_character.GetHisHer] philosophies are renowned in [ShowContinentName('europe')] for their tolerant nature. Additionally, as a [target_character.GetWomanMan] of the middle ground, [target_character.GetHisHer] influence in the theology makes [target_character.GetHimHer] a beacon for those who value liberty more than orthodoxy."
@@ -91,8 +92,8 @@
  flavor_hol.15.title: "[ShowReligionNameWithNoTooltip('calvinist')] in [ROOT.GetCountry.GetNameWithNoTooltip]"
  flavor_hol.15.desc: "For years, our nation has debated between a more conservative [ShowReligionName('calvinist')] or a more open minded one, trying to accommodate the diverse faiths that populate our country.\n\nA synod is being celebrated in [ShowLocationName('dordrecht')], where the two main representatives of both sides have met to judge the doctrine of their opponent. This could be a great opportunity to publicly show our support to one of the two contenders and, with it, end this debate for good."
  flavor_hol.15.historical_info: "In a clerical meeting in Dordrecht (1618-1619) hard-line Calvinism was made State-religion. This was the end of a long struggle between a pluralistic and humanitarian faction, the Arminians, and a dogmatic, narrow-minded 'True Calvinistic' faction, the Gomarists. Moritz of Oranien supported the Gomarists, composed mainly of petty bourgeois and farmers, while Oldenbarneveld supported the Arminians, composed of intellectuals and rich bourgeois."
- flavor_hol.15.a: "Support [target_character2.GetName]."
- flavor_hol.15.b: "[target_character1.GetName] is right."
+ flavor_hol.15.a: "Support [target_character2.GetNameWithNoTooltip]."
+ flavor_hol.15.b: "[target_character1.GetNameWithNoTooltip] is right."
 
  flavor_hol.16.title: "[target_character.GetNameWithNoTooltip]"
  flavor_hol.16.desc: "Born in one of the most important families of our nation, [target_character.GetName] is a great [target_character.GetWomanMan] whose talents are not being used correctly in [target_character.GetHerHis] position as Pensionary of [ShowLocationNameWithNoTooltip('dordrecht')]. We should hire [target_character.GetHerHim] and employ [target_character.GetHerHim] in our office."
@@ -196,7 +197,7 @@
  flavor_hol.33.title: "Quest for the [ShowAreaNameWithNoTooltip('baltic_area')] Grain"
  flavor_hol.33.desc: "As we lack the grain production to be self-sufficient, we must look for sources to import our grain from. One of the nearest sources is the provinces of the [ShowAreaName('baltic_area')]. Two key issues prevent us from securing these grain supplies. The first and most important one is the Sound Toll in [ShowLocationName('kobenhavn')], preventing any [ROOT.GetCountry.GetAdjective] [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] from trading more intensely there, as they have to pay a high toll to pass through. The other important issue is the dominion that the [ShowCultureGroupName('german_group')] nations have there, making it harder for anyone else to compete. Perhaps by using clever diplomacy, or by combating these issues with force, we can finally secure our grain supplies."
  flavor_hol.33.a: "Let us set sail for the [ShowAreaNameWithNoTooltip('baltic_area')]."
- NED_GAIN_GRAIN_SUPPLY_TO_DEAL_WITH_GRAIN_ISSUES: "The issue will continue as long as [ROOT.GetCountry.GetCapital.GetMarket.GetName] lacks [ShowGoodsName('wheat')], and our [merchant_power|e] in the [target_location2.GetMarket.GetName] and [target_location.GetMarket.GetName] are below #Y 100#!."
+ NED_GAIN_GRAIN_SUPPLY_TO_DEAL_WITH_GRAIN_ISSUES: "The issue will continue as long as [ROOT.GetCountry.GetCapital.GetMarket.GetName] lacks [ShowGoodsName('wheat')], and our [merchant_power|e] in the [target_location2.GetMarket.GetName] and [target_location.GetMarket.GetName] are below #Y 25#!."
 
  flavor_hol.34.title: "[ShowAreaNameWithNoTooltip('baltic_area')] Trade Secured"
  flavor_hol.34.desc: "With the trade in the [ShowAreaName('baltic_area')] now secured, we can more reliably start sending shipments of food back to the Low Countries."

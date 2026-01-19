@@ -105,7 +105,7 @@
  flavor_cas.21.title: "The Throne of [GetCountry('POR').GetNameWithNoTooltip] Secured"
  flavor_cas.21.desc: "Our intervention in [GetCountry('POR').GetName] was successful. After a hard-fought war, the [GetCountry('POR').GetAdjectiveWithNoTooltip] crown now rests securely within our grasp, uniting the two Iberian realms under [ROOT.GetCountry.GetName]'s rule."
  flavor_cas.21.a: "Celebrate the victory."
- flavor_cas.21.b: "Commemorate the victory by dedicating the [ShowBuildingTypeNameWithNoTooltip('monastery')] in [ShowLocationName('guadalupe')] to it."
+ flavor_cas.21.b: "Commemorate the victory by dedicating the [ShowBuildingTypeNameWithNoTooltip('monastery')] in [ShowLocationNameWithNoTooltip('guadalupe')] to it."
  
  flavor_cas.22.title: "The Title of [ShowReligionAdjectiveWithNoTooltip('catholic')] Kings"
  flavor_cas.22.desc: "Our steadfast defense of the [ShowReligionAdjective('catholic')] faith and unwavering support for the Holy See have not gone unnoticed. In recognition of our piety and influence within Christendom, [pope.GetName] has issued a [GetCountry('PAP').GetAdjective] Bull granting us the prestigious title of Catholic Monarchs."
@@ -264,7 +264,7 @@
  flavor_cas.47.historical_info: "The School of Salamanca emerged during the 16th century and played a pivotal role in shaping modern thought. It laid the foundations for international law, questioned the ethics of colonialism, and developed early economic theories."
 
  flavor_cas.48.title: "[ShowPolicyNameWithNoTooltip('leyes_de_toro_policy')]"
- flavor_cas.48.desc: "[ROOT.GetCountry.GetName] has always had the support of the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')], but due to a split within them, it is time we start promoting some of these families. Proposed by the [target_location.GetRank.GetName] of [target_location.GetName], the [ShowPolicyName('leyes_de_toro_policy')] will allow [target_character.GetName] to accomplish just that, favoring the families who are still loyal to the [ROOT.GetCountry.GetFlavorRank], allowing us to ensure loyalty within the people that have power."
+ flavor_cas.48.desc: "[ROOT.GetCountry.GetName|U] have always had the support of the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')], but due to a split within them, it is time we start promoting some of these families. Proposed by the [target_location.GetRank.GetName] of [target_location.GetName], the [ShowPolicyName('leyes_de_toro_policy')] will allow [target_character.GetName] to accomplish just that, favoring the families who are still loyal to the [ROOT.GetCountry.GetFlavorRank], allowing us to ensure loyalty within the people that have power."
  flavor_cas.48.historical_info: "The aftermath of the War of Castilian Succession in 1479 left much of the nobility split. However, due to Isabella's triumph over Joanna in the conflict, it also allowed for her to properly establish a set of laws that would further solidify the power of the nobles that had supported her. These laws would become the Leyes de Toro, and although they would not be fully implemented during her reign, it would be during that of her successor, Joanna I, when they were codified."
  flavor_cas.48.a: "Let us implement these laws."
  flavor_cas.48.b: "Now might not be the right time."

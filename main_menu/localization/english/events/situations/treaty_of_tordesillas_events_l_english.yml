@@ -15,22 +15,23 @@
 
  treaty_of_tordesillas.3.title: "[GetSituationByKey('treaty_of_tordesillas').GetNameWithNoTooltip]"
  treaty_of_tordesillas.3.desc: "After much discussion in the [chosen_location_scope.GetRank.GetName] of [chosen_location_scope.GetName], a new agreement was signed between the [first_country_scope.GetLongName] and the [other_country_scope.GetLongName] that established the rules for dividing the newly discovered lands on the continent of [ShowContinentName('america')].\n\nThis agreement, henceforth known as the [GetSituationByKey('treaty_of_tordesillas').GetName], outlines the process for claiming vast tracts of new territory and designates the [GetInternationalOrganization('catholic_church').GetLeaderTitle] as the mediator and guarantor in any disputes that may arise."
+ treaty_of_tordesillas.3.desc_one_signatory: "Suddenly, the long discussion held in the [chosen_location_scope.GetRank.GetName] of [chosen_location_scope.GetName] has reached a swift end. The [first_country_scope.GetLongName] is now the only [ShowReligionAdjective('catholic')] power able to extend the influence of the [GetInternationalOrganization('catholic_church').GetName] over the newly discovered lands on the continent of [ShowContinentName('america')].\n\nThis agreement, henceforth known as the [GetSituationByKey('treaty_of_tordesillas').GetName], provides to [first_country_scope.GetName] the full backing of the [GetCountry('PAP').GetFlavorRank] to claim vast tracts of new territory and govern them in the name of our Lord."
  treaty_of_tordesillas.3.a: "Why are we being denied our right to govern what we discover?"
  treaty_of_tordesillas.3.b: "We do not care about their dealings beyond the sea."
- treaty_of_tordesillas.3.c: "The World is ours to conquer!."
+ treaty_of_tordesillas.3.c: "The world is ours to conquer!"
 
  treaty_of_tordesillas.4.title: "The End of the $treaty_of_tordesillas$"
  treaty_of_tordesillas.4.desc: "As it always happens to old and controversial laws, a mixture of outdated rulings and lack of enforcement has transformed the once mighty [GetSituationByKey('treaty_of_tordesillas').GetName] into a stack of meaningless paper.\n\nTo the dismay of [first_country_scope.GetLongName] and [other_country_scope.GetLongName], the signers of the treaty, their past commitment no longer holds any power as even their own colonies find it restrictive and ignore it as much as they can."
- treaty_of_tordesillas.4.a: "Now it is the time to expand!."
+ treaty_of_tordesillas.4.a: "Now it is the time to expand!"
  treaty_of_tordesillas.4.b: "We were never bound by that tyrannical treaty."
- treaty_of_tordesillas.4.c: "No matter, new treaties can be signed in it's wake."
+ treaty_of_tordesillas.4.c: "No matter, new treaties can be signed in its wake."
  treaty_of_tordesillas.4.d: "We no longer have a need for it."
 
- treaty_of_tordesillas.5.title: "The [actor.GetAdjective] Demand"
+ treaty_of_tordesillas.5.title: "The [actor.GetAdjectiveWithNoTooltip] Demand"
  treaty_of_tordesillas.5.desc: "A diplomat from the [actor.GetLongName] has brought us an outrageous demand. They claim that the $treaty_of_tordesillas$ gives them the right to colonize and rule over the province of [selected_province.GetName] even if those lands are currently under our control.\n\nThey vehemently demand that we transfer our holdings in [selected_province.GetNameWithNoTooltip] to them immediately or face the consequences."
  treaty_of_tordesillas.5.a: "We will regretfully agree to their demands."
  treaty_of_tordesillas.5.b: "We will not accept their tyrannical ultimatum."
- treaty_of_tordesillas.5.c: "Send message to [overlord.GetName], it is time for them to come to our aid."
+ treaty_of_tordesillas.5.c: "Send message to [overlord.GetNameWithNoTooltip], it is time for them to come to our aid."
 
  treaty_of_tordesillas.6.title: "An Amendment to the $treaty_of_tordesillas$"
  treaty_of_tordesillas.6.desc: "We have received a proposal from the [actor.GetLongName]. They are aware of our claim to the area of [target_recipient_area.GetName], a region they covet for themselves and that borders their claims to [target_actor_area.GetName].\n\nThey suggest a swap of those claims, so we will hold the claim to [target_actor_area.GetNameWithNoTooltip] and they will claim [target_recipient_area.GetNameWithNoTooltip].\n\nAs an amicable request, we are free to reject it, but they might not like it."

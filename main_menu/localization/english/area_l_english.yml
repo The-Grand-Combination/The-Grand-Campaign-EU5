@@ -330,7 +330,7 @@
       #Japan Region 
  ezo_area: "Ezo" #蝦夷
  hokurikudou_area: "Hokurikudō" #北陸道
- kinai_area: "Kinai" #機内
+ kinai_area: "Kinai" #畿内
  nankaidou_area: "Nankaidō" #南海道
  saikaidou_area: "Saikaidō" #西海道
  sanindou_area: "San'indō" #山陰道
@@ -481,7 +481,7 @@
  yakutia_area: "Yakutia"
  lower_lena_area: "Lower Lena"
  middle_lena_area: "Middle Lena"
- upper_lena_area: "Yupper Lena"
+ upper_lena_area: "Upper Lena"
  onoid_area: "Onoid"
  laptev_coast_area: "Laptev Coast"
  siberian_lakes_area: "Siberian Lakes"
@@ -657,7 +657,7 @@
  burgundy_area: "Burgundy"
  burgundy_area_ADJ: "Burgundian"
  champagne_area: "Champagne"
- champagne_area_ADJ: "Champagnois"
+ champagne_area_ADJ: "Champenois"
  franche_comte_area: "Franche-Comté"
  franche_comte_area_ADJ: "Comtois"
  gascony_area: "Gascony"

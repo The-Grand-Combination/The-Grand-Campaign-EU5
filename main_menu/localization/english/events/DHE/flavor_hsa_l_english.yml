@@ -23,7 +23,7 @@
  
  flavor_hsa.4.title: "[target_character.GetNameWithNoTooltip]"
  flavor_hsa.4.desc: "An official of the Hanseatic League from [ShowLocationName('cologne')], [target_character.GetName], was elected to the post of Syndic in 1556. He became a permanent official with legal training who worked to protect and extend the diplomatic agreements of the Hansa member towns."
- flavor_hsa.4.a: "He could do much good in [ROOT.GetCountry.GetName]"
+ flavor_hsa.4.a: "He could do much good in [ROOT.GetCountry.GetNameWithNoTooltip]"
 
  flavor_hsa.5.title: "The Seal of the League"
  flavor_hsa.5.desc: "The union that our many merchants operate under has been prospering for some time. Business and affluence flow freely from our trade hubs throughout the entirety of [ShowContinentName('europe')]. In order to further solidify our grasp on our diplomatic status in spite of our decentralized nature, our members have elected to be represented by a common seal, to signify our unity."
@@ -34,7 +34,7 @@
  flavor_hsa.6.title: "The Paper Mill of [target_location.GetNameWithNoTooltip]"
  flavor_hsa.6.desc: "Advances across the continent have given way to the rise of improved production techniques and new ways to pursue profit. Word has reached our halls that a successful merchant by the name of [target_character.GetName] from [ShowLocationName('nuremberg')] began using a new paper production method utilizing wood pulp, old rags and other ingredients, years ago. This innovation is surely to bring us profit in the long term, however it requires a small upfront investment..."
  flavor_hsa.6.desc.a: "Advances across the continent have given way to the rise of improved production techniques and new ways to pursue profit. Word has reached our halls that a successful merchant from [ShowLocationName('nuremberg')] began using a new paper production method utilizing wood pulp, old rags and other ingredients, years ago. This innovation is surely to bring us profit in the long term, however it requires a small upfront investment..."
- flavor_hsa.6.a: "Let the people have [ShowGoodsName('paper')]!"
+ flavor_hsa.6.a: "Let the people have [ShowGoodsNameWithNoTooltip('paper')]!"
  flavor_hsa.6.b: "We cannot afford that."
 
  flavor_hsa.7.title: "The [target_country.GetAdjectiveWithNoTooltip] Town Hall"

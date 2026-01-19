@@ -6,7 +6,7 @@
  refused_aid_traders: "Refused to aid Traders"
  privateers.2.title: "Invalid Letter of Marque?"
  privateers.2.desc: "Privateering is always a difficult diplomatic issue, especially when no open war is conducted, and the distinction between an enemy who must be subject to certain rules of war and a lawless pirate is not always clear-cut. Even less so in the case of a recently captured vessel, which has displayed a letter of marque issued by a [privateer_country.GetGovernment.GetRulerTitle] with dubious authority.\n\nWhile this supposed privateer looks like a simple pirate to us, accepting the letter as valid may allow us to maintain better diplomacy with his masters."
- privateers.2.a: "This flimsy excuse can't be allowed to spare him from the gallows!"
+ privateers.2.a: "This flimsy excuse cannot be allowed to spare him from the gallows!"
  privateers.2.b: "We can afford to show some lenience in this rare case."
  privateers.3.title: "Invalid Letter of Marque?"
  privateers.3.desc: "Pirates are a constant scourge of our merchants, and successfully detaining them is usually a great victory not only for us, but for our trade partners as well. Our most recent capture of a supposed pirate, on the other hand, has turned into a diplomatic incident, as he claims to have been raiding ships on behalf of one of our own subjects.\n\nThe captain has presented a letter of marque issued in the name of the [ROOT.GetCountry.GetGovernment.GetRulerTitle], but by a [privateer_country.GetGovernment.GetRulerTitle]. Supposedly, any aggression against us was a tragic misunderstanding. Desperately trying to avoid the gallows, the captain implores us to settle the matter with the governor."

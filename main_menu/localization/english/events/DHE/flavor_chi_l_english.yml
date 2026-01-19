@@ -289,6 +289,7 @@
  flavor_chi.53.desc: "The [ROOT.GetCountry.GetGovernment.GetCourtTitle] and the [ROOT.GetCountry.GetGovernment.GetRulerTitle] are in need of a new palace to manage the [ROOT.GetCountry.GetFlavorRank]'s affairs from. After much deliberation, [target_location.GetName] has been chosen to host the new palace as it was deemed a most suitable site for a northern capital and a new seat of power.\n\nAs such, [target_character.GetName] had [target_character.GetHerHis] ministers and architects design a new palace to be placed there. After months of relentless work, their work is finally done and the result is the plan of the [ShowBuildingTypeName('forbidden_city')], a massive complex containing hundreds of buildings and housing thousands of ministers and servants."
  flavor_chi.53.a: "Have it built at once!"
  flavor_chi.53.b: "Could we spare the gold, we would."
+ CHI_event_will_fire_within_10_to_20_years: "The construction finish will be marked by an [event|e] that will fire within 10 to 20 years."
 
  flavor_chi.54.title: "$flavor_chi.53.title$ Built"
  flavor_chi.54.desc: "The construction of the magnificent [ShowBuildingTypeName('forbidden_city')] is finally complete. The complex is now ready for the [ROOT.GetCountry.GetGovernment.GetRulerTitle] to move in and it is certain that the palace will, at the very least, serve as the winter residence for the monarchs. What is certain, however, is that the [target_location.GetRank.GetName] of [target_location.GetName] has become a lot more important for our state."
@@ -605,9 +606,9 @@
  flavor_chi.109.c: "Break the [ShowSubjectTypeNameWithNoTooltip('tributary')] status."
 
  flavor_chi.110.title: "Legislative Precedent"
- flavor_chi.110.desc: "One of our judges and jurists, [target_character.GetName], has recently made a controversial judgement during an important trial. As per the [ROOT.GetCountry.GetAdjective] law, such precedent is bound to be repeated by other judges, eventually becoming a law in and of itself. However, this does not suit the [target_estate.GetName], whose interests are threatened by this move. However, to try to undermine the judgement would decrease confidence in the [ROOT.GetCountry.GetFlavorRank]."
+ flavor_chi.110.desc: "One of our judges and jurists, [target_character.GetName], has recently made a controversial judgment during an important trial. As per the [ROOT.GetCountry.GetAdjective] law, such precedent is bound to be repeated by other judges, eventually becoming a law in and of itself. However, this does not suit the [target_estate.GetName], whose interests are threatened by this move. However, to try to undermine the judgment would decrease confidence in the [ROOT.GetCountry.GetFlavorRank]."
  flavor_chi.110.a: "Honor this precedent."
- flavor_chi.110.b: "Question the judgement!"
+ flavor_chi.110.b: "Question the judgment!"
 
  flavor_chi.111.title: "A Critique of the Judiciary"
  flavor_chi.111.desc: "One of the experts on the [ROOT.GetCountry.GetAdjective] Law, [target_character.GetName], has presented an appeal in the [ROOT.GetCountry.GetGovernment.GetCourtTitle] today. [target_character.GetSheHe|U] argues that many judges' understanding of the law is inadequate and that the right to judge be withheld from all but those who can pass a new type of exam. The opponents of [target_character.GetShortNameWithNoTooltip] argue however, that [target_character.GetHerHis] criticisms are politicized and should not be taken seriously."
@@ -621,9 +622,9 @@
  flavor_chi.112.b: "Show leniency towards the rebels."
 
  flavor_chi.113.title: "[target_character.GetNameWithNoTooltip] Flees to [ShowAreaNameWithNoTooltip('taiwan_area')]"
- flavor_chi.113.desc: "[ROOT.GetCountry.GetName] is experiencing a period of unprecedented decline that is of great worry to the [ROOT.GetCountry.GetGovernment.GetCourtTitle]. Believing the fate of the dynasty is sealed, [target_character.GetName], one of our generals, has fled the country to the island of [ShowAreaName('taiwan_area')], establishing [target_character.GetHerselfHimself] as a prince there who will carry on our legacy."
+ flavor_chi.113.desc: "[ROOT.GetCountry.GetName|U] are experiencing a period of unprecedented decline that is of great worry to the [ROOT.GetCountry.GetGovernment.GetCourtTitle]. Believing the fate of the dynasty is sealed, [target_character.GetName], one of our generals, has fled the country to the island of [ShowAreaName('taiwan_area')], establishing [target_character.GetHerselfHimself] as a prince there who will carry on our legacy."
  flavor_chi.113.a: "It cannot be that bad?"
- flavor_chi.113.b: "[ROOT.GetCountry.GetName] is truly lost."
+ flavor_chi.113.b: "[ROOT.GetCountry.GetNameWithNoTooltip] is truly lost."
 
  flavor_chi.114.title: "Personal Recommendation"
  flavor_chi.114.desc: "Since the abolishment of the [ShowLawName('imperial_examination_law')], the [ROOT.GetCountry.GetLongName] has been reliant on personal recommendations to fill the cabinet and other government positions. Well, [recommending_character.GetName] has just made one such recommendation, openly vouching for [target_character.GetName] to be a competent clerk who could help aid the [ROOT.GetCountry.GetGovernment.GetAdjective] matters."
@@ -895,7 +896,7 @@
 
  flavor_chi.2022.title: "Low on Funds"
  flavor_chi.2022.desc: "We have received information that the $expedition_name_treasure_voyage$ is on its way back to [ROOT.GetCountry.GetName] due to a shortage of gifts to conduct diplomacy with. Perhaps next time we should grant more appropriate funds to our expeditions."
- flavor_chi.2022.a: "This is embarassing."
+ flavor_chi.2022.a: "This is embarrassing."
  chi_expedition_is_returning_to_china: "The $expedition_name_treasure_voyage$ is now on its route back to [ROOT.GetCountry.GetName]."
 
  show_current_chinese_expedition_amount: "[COUNTRY.MakeScope.GetVariable('chinese_expedition_opinion').GetValue]"

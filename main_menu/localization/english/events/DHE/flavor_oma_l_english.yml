@@ -41,7 +41,7 @@
  flavor_oma.6.c: "[target_location.GetNameWithNoTooltip] does not need any support."
  
  flavor_oma.7.title: "Strengthening the Frankincense Trade"
- flavor_oma.7.desc: "Whilst the farms of [target_location.GetName] have served our [ShowGoodsName('resin')] trade quite well, its demand has been increasing as our high-quality perfumes are sought out by the rest of the world. Perhaps, by investing more into this trade, we can make a big profit in no time."
+ flavor_oma.7.desc: "Whilst the farms of [target_location.GetName] have served our [ShowGoodsName('incense')] trade quite well, its demand has been increasing as our high-quality perfumes are sought out by the rest of the world. Perhaps, by investing more into this trade, we can make a big profit in no time."
  flavor_oma.7.a: "Let us sell even more perfumes to the world."
  flavor_oma.7.b: "It is too costly."
  
@@ -87,7 +87,7 @@
  flavor_oma.14.b: "Let us develop [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip] instead."
  
  flavor_oma.15.title: "A New Imamate"
- flavor_oma.15.desc: "[ROOT.GetCountry.GetName] has yet again become unstable. [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] and [target_character.GetName] are now stuck in a power struggle, with [target_character2.GetName] planning to restore the [ShowGovernmentTypeName('theocracy')]. Perhaps we can deal with [target_character2.GetHimHer] by banishing [target_character2.GetHerHis] outside of [ROOT.GetCountry.GetName], although that is certain to upset our [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')]."
+ flavor_oma.15.desc: "[ROOT.GetCountry.GetName|U] has yet again become unstable. [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] and [target_character.GetName] are now stuck in a power struggle, with [target_character2.GetName] planning to restore the [ShowGovernmentTypeName('theocracy')]. Perhaps we can deal with [target_character2.GetHimHer] by banishing [target_character2.GetHerHis] outside of [ROOT.GetCountry.GetName], although that is certain to upset our [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')]."
  flavor_oma.15.a: "We support the new regime under [target_character2.GetNameWithNoTooltip]."
  flavor_oma.15.b: "Exile [target_character2.GetNameWithNoTooltip] for plotting against [target_character.GetNameWithNoTooltip]."
  
