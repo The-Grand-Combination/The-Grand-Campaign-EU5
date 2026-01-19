@@ -65,6 +65,11 @@
  setting_all_countries_explore: "All Countries"
  setting_all_countries_explore_desc: "All [countries|e] in the world that can afford it will attempt to [explore|e]."
 
+ rule_ai_religious_conversion_rule: "AI Religious Conversion"
+ setting_only_within_religion_group: "Inside Religion Group only"
+ setting_only_within_religion_group_desc: "[countries|e] will only convert [religion|e] to other religions belonging to the same [religion_group|e]."
+ setting_free_conversion: "Any Religion"
+ setting_free_conversion_desc: "[countries|e] will convert to any religion possible if it stabilizes their reign, even if they would leave their religion group."
 
  rule_culture_conversions_rule: "Culture Conversions"
  setting_dynamic_culture: "Dynamic rules"
@@ -94,10 +99,11 @@
  
  IRONMAN_TOOLTIP: "Toggle Ironman mode which allows achievements. $EXTRA$"
  IRONMAN_DISABLED_TOOLTIP: "\n\n#T Ironman is disabled due to these reasons: #!\n$REASONS$"
- IRONMAN_NOT_AVAILABLE_REASON_rule_country_change: " - You can't play Ironman while allowing [country|e] change."
- IRONMAN_NOT_AVAILABLE_REASON_MP: " - You can't play Ironman on a Multiplayer Game."
- IRONMAN_NOT_AVAILABLE_REASON_NO_ACHIEVEMENTS: " - You can't play Ironman because achievements aren't available."
- IRONMAN_NOT_AVAILABLE_REASON_ALREADY_STARTED: " - You can't change Ironman because the game has already started."
+ IRONMAN_NOT_AVAILABLE_REASON_rule_country_change: " - You cannot play Ironman while allowing [country|e] change."
+ IRONMAN_NOT_AVAILABLE_REASON_MP: " - You cannot play Ironman on a Multiplayer Game."
+ IRONMAN_NOT_AVAILABLE_REASON_NO_ACHIEVEMENTS: " - You cannot play Ironman because achievements aren't available."
+ IRONMAN_NOT_AVAILABLE_REASON_ALREADY_STARTED: " - You cannot change Ironman because the game has already started."
+ IRONMAN_NOT_AVAILABLE_REASON_OBSERVING: " - You cannot change Ironman because you are observing."
  IRONMAN_ENABLED: "Ironman is enabled for this game."
  IRONMAN_DISABLED: "Ironman is disabled for this game."
 

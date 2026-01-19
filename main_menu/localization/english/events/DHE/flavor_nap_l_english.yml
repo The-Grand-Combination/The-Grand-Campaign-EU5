@@ -94,7 +94,7 @@
  flavor_nap.230.b: "We will not meddle in the matters of [GetCountry('NAP').GetNameWithNoTooltip]."
 
  flavor_nap.231.title: "The Family of the Powerless King"
- flavor_nap.231.desc: "The situation of the [GetCountry('NAP').GetAdjective] Prince Consort [prince_consort.GetName] is brought to our attention by his close kin [GetCountry('HUN').GetGovernment.GetRuler.GetName] of [GetCountry('HUN').GetName].\n\n[GetCountry('HUN').GetGovernment.GetRuler.GetHisHer] kindred continues to suffer the humiliation of holding no real power in [GetCountry('NAP').GetNameWithNoTooltip] even if he is the rightful King, as the court and nobles are directed exclusively by [GetCountry('NAP').GetGovernment.GetRuler.GetName].\n\n[GetCountry('HUN').GetGovernment.GetRuler.GetNameWithNoTooltip] asks us to put an end to this unjust situation and crown [prince_consort.GetNameWithNoTooltip]."
+ flavor_nap.231.desc: "The situation of the [GetCountry('NAP').GetAdjective] Prince Consort [prince_consort.GetName] is brought to our attention by his close kin [GetCountry('HUN').GetGovernment.GetRuler.GetName] of [GetCountry('HUN').GetName].\n\n[GetCountry('HUN').GetGovernment.GetRuler.GetHisHer|U] kindred continues to suffer the humiliation of holding no real power in [GetCountry('NAP').GetNameWithNoTooltip] even if he is the rightful King, as the court and nobles are directed exclusively by [GetCountry('NAP').GetGovernment.GetRuler.GetName].\n\n[GetCountry('HUN').GetGovernment.GetRuler.GetNameWithNoTooltip] asks us to put an end to this unjust situation and crown [prince_consort.GetNameWithNoTooltip]."
  flavor_nap.231.a: "This situation cannot be allowed to continue. [prince_consort.GetShortNameWithNoTooltip] will be King."
  flavor_nap.231.b: "We will not allow [GetCountry('HUN').GetGovernment.GetRuler.GetShortNameWithNoTooltip] to meddle in the affairs of others."
 
@@ -148,7 +148,7 @@
  flavor_nap.270.b: "We will not waste our time with these tales."
 
  flavor_nap.280.title: "The Two Sicilies Reunited!"
- flavor_nap.280.desc: "The people rejoice! Both Sicilies are again joined under the rule of our great [GetCountry('TWS').GetGovernment.GetRuler.GetName].\n\nSince the War of the Sicilian Vespers, the kingdom that Roger II created has been divided, and those who were once brothers time transformed into strangers, rivals, and enemies. Thanks to our [GetCountry('TWS').GetGovernment.GetRulerTitle], that dark time has come to an end and we can again join our long-lost kin as one united people."
+ flavor_nap.280.desc: "The people rejoice! Both Sicilies are again joined under the rule of our great [GetCountry('TWS').GetGovernment.GetRulerOrRegent.GetName].\n\nSince the War of the Sicilian Vespers, the kingdom that Roger II created has been divided, and those who were once brothers time transformed into strangers, rivals, and enemies. Thanks to our [GetCountry('TWS').GetGovernment.GetRulerOrRegentTitle], that dark time has come to an end and we can again join our long-lost kin as one united people."
  flavor_nap.280.a: "Let us restore the ancient capital of the Kingdom!"
  flavor_nap.280.b: "A new age calls for a new capital!"
  flavor_nap.280.c: "The union of our people will ripple through history."
@@ -164,7 +164,7 @@
  flavor_nap.300.a: "[GetCountry('NAP').GetGovernment.GetHeir.GetNameWithNoTooltip] will be our new ruler."
  flavor_nap.300.b: "[queen_sister_spouse.GetNameWithNoTooltip] is the best possible successor."
  flavor_nap.300.c: "The Two Sicilies shall be reunited, [palermo_ruler.GetNameWithNoTooltip] will succeed us."
- flavor_nap.300.d: "[french_ruler.GetName] of [GetCountry('FRA').GetNameWithNoTooltip] will rule [GetCountry('NAP').GetNameWithNoTooltip]."
+ flavor_nap.300.d: "[french_ruler.GetNameWithNoTooltip] of [GetCountry('FRA').GetNameWithNoTooltip] will rule [GetCountry('NAP').GetNameWithNoTooltip]."
 
  flavor_nap.301.title: "[GetCountry('NAP').GetAdjectiveWithNoTooltip] Decision"
  flavor_nap.301.desc: "The [GetCountry('NAP').GetLongName] has a new ruler, and since we used to be joined by a personal union, if we want to preserve it, we will need to invite [naples_ruler.GetName] to also rule over [ROOT.GetCountry.GetName]. Doing so might ensure the union but might also make us look like the junior partner."
@@ -186,7 +186,7 @@
  flavor_nap.102.title: "Treaty of Villeneuve"
  flavor_nap.102.desc: "A representative of [target_pope.GetName] approaches the [ROOT.GetCountry.GetGovernment.GetRulerTitle] of [ROOT.GetCountry.GetName], [target_ruler.GetName], proposing a treaty to resolve the ongoing dispute with the [GetCountry('SIC').GetLongName], ruled by [target_sicily_ruler.GetName]. $flavor_nap_treaty_villeneuve_common$"
  flavor_nap.102.a: "[target_sicily_ruler.GetNameWithNoTooltip] can rule over [GetCountry('SIC').GetNameWithNoTooltip] if [target_sicily_ruler.GetSheHe] pays homage."
- flavor_nap.102.a.tt1: "[GetCountry('SIC').GetName] will receive an event to submit to us. They will decide if they pay us an annual tribute or become a vassal."
+ flavor_nap.102.a.tt1: "[GetCountry('SIC').GetName] will receive an event to submit to us. They will decide if they pay us an annual tribute as long as we never go to war against each other or become a vassal."
  flavor_nap.102.a.tt2: "We will lose all our [cores|e] in [ShowAreaName('sicily_area')]."
  flavor_nap.102.b: "Never. [ShowAreaNameWithNoTooltip('sicily_area')] is ours!"
 
@@ -195,7 +195,7 @@
  flavor_nap.103.a: "We will submit to the [GetCountry('NAP').GetLongNameWithNoTooltip]. For now."
  flavor_nap.103.b: "The Sicilies will be united again."
  flavor_nap.103.c: "They lost the war. They receive nothing."
- flavor_nap.103.tt1: "[GetCountry('NAP').GetName] will receive our answer."
+ flavor_nap.103.tt1: "[GetCountry('NAP').GetName] will receive our answer"
  flavor_nap.103.tt2: "[GetCountry('ARA').GetName] will receive our answer and might try to force a [union|E] on us.."
 
  flavor_nap.104.title: "$flavor_nap.102.title$"
@@ -208,11 +208,11 @@
  flavor_nap.105.a: "Welcome them."
 
  flavor_nap.106.title: "[GetCountry('SIC').GetNameWithNoTooltip] Accepts to Pay Homage."
- flavor_nap.106.desc: "[GetCountry('SIC').GetGovernment.GetRuler.GetName] of the [GetCountry('SIC').GetLongName] has accepted to pay homage to us."
+ flavor_nap.106.desc: "[GetCountry('SIC').GetGovernment.GetRulerOrRegent.GetName] of the [GetCountry('SIC').GetLongName] has accepted to pay homage to us."
  flavor_nap.106.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
 
  flavor_nap.107.title: "[GetCountry('SIC').GetNameWithNoTooltip] Denounces the Treaty."
- flavor_nap.107.desc: "[GetCountry('SIC').GetGovernment.GetRuler.GetName] of the [GetCountry('SIC').GetLongName] has not signed the treaty."
+ flavor_nap.107.desc: "[GetCountry('SIC').GetGovernment.GetRulerOrRegent.GetName] of the [GetCountry('SIC').GetLongName] has not signed the treaty."
  flavor_nap.107.a: "[GetCountry('SIC').GetNameWithNoTooltip] is back on the menu."
 
  flavor_nap.108.title: "The Annual Tribute to the [GetCountry('NAP').GetLongNameWithNoTooltip]."
@@ -253,7 +253,7 @@
 
  flavor_nap.115.title: "San Leucio Experiment"
  flavor_nap.115.desc: "In [GetCurrentYear], [target_character.GetName] has selected San Leucio, a former royal hunting lodge in [target_location.GetName], for an innovative social and technological experiment. San Leucio resort will become a hub for pleasure, hunting, and [ShowGoodsName('silk')] production, featuring industrial buildings, a workers' village, and advanced technologies."
- flavor_nap.115.a: "[ShowGoodsName('silk')|U] of the finest quality will be produced here."
+ flavor_nap.115.a: "[ShowGoodsNameWithNoTooltip('silk')|U] of the finest quality will be produced here."
 
  flavor_nap.116.title: "Accademia Pontaniana Delights the World"
  flavor_nap.116.desc: "The Accademia Pontaniana, initially known as the Accademia Antoniana, serves as a learned society for scholars and humanists from where knowledge that enriches our nation is born."

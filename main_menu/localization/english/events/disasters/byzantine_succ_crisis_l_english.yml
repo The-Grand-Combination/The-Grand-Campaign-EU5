@@ -43,7 +43,7 @@
   scales_with_crown_power_tt: "This [modifier|e] scales with our [crown_power|e]"
 
   byzantine_succ_crisis.8.title: "The [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')] Rejects the Pretender"
-  byzantine_succ_crisis.8.desc: "The religious societies across our nation have long viewed the developing situation and the open rebellion propagated by [target_character2.GetName] with ill favor. They believe that this social disturbance will endanger the people and goes against the dogmatic view they have of unitary companionship. As such, they seek to assist us in legitimizing our struggle against this internal threat."
+  byzantine_succ_crisis.8.desc: "The religious societies across our nation have long viewed the developing situation and the open rebellion propagated by [target_character.GetName] with ill favor. They believe that this social disturbance will endanger the people and goes against the dogmatic view they have of unitary companionship. As such, they seek to assist us in legitimizing our struggle against this internal threat."
   byzantine_succ_crisis.8.a: "Their efforts will assist the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('crown_estate')]."
   byzantine_succ_crisis.8.b: "Whoever is against [target_character2.GetShortNameWithNoTooltip]'s rule risks divine wrath."
   scales_with_clergy_estate_power_tt: "This gain scales with our [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')]'s [estate_power|e]"

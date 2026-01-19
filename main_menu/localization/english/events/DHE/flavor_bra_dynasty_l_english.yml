@@ -49,7 +49,7 @@
  flavor_bra_dynasty.6.b: "We should not mess with the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('clergy_estate')]."
 
  flavor_bra_dynasty.7.title: "City Taxes Refused"
- flavor_bra_dynasty.7.desc: "[ROOT.GetCountry.GetName] is in a poor environment. The lands are sparsely populated, and even less developed. Most of the [ROOT.GetCountry.GetAdjectiveWithNoTooltip] is made with the taxes on the towns and cities. However, the [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] refuse to pay their part to our state as they see little reason to acknowledge $bra_wittelsbach_hyperlink$ as their sovereign..."
+ flavor_bra_dynasty.7.desc: "[ROOT.GetCountry.GetName|U] are in a poor environment. The lands are sparsely populated, and even less developed. Most of the [ROOT.GetCountry.GetAdjectiveWithNoTooltip] is made with the taxes on the towns and cities. However, the [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] refuse to pay their part to our state as they see little reason to acknowledge $bra_wittelsbach_hyperlink$ as their sovereign..."
  flavor_bra_dynasty.7.a: "Reign the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')]."
  flavor_bra_dynasty.7.b: "$common_string_leave_them_be$"
 
@@ -148,7 +148,7 @@
  flavor_bra_dynasty.1101.a.tt: "We will place [emperor_ruler.GetName] as the new [ruler|e] of [root_country.GetName], forming a [union|e] with them"
  flavor_bra_dynasty.1101.b: "Let [dynasty_character.GetNameWithNoTooltip] rule over [root_country.GetNameWithNoTooltip]."
  flavor_bra_dynasty.1101.b.tt: "We will place [dynasty_character.GetName] as the new [ruler|e] of [root_country.GetName]"
- flavor_bra_dynasty.1101.c: "[cabinet_character.GetName] shall rule over it in our name."
+ flavor_bra_dynasty.1101.c: "[cabinet_character.GetNameWithNoTooltip] shall rule over it in our name."
  flavor_bra_dynasty.1101.c.tt: "We will place [cabinet_character.GetName] as the new [ruler|e] of [root_country.GetName], turning them into our [ShowSubjectTypeName('vassal')] but causing [ShowBiasValue('subjugated_elector_antagonism')|-=0] [antagonism|e] with every member of the [GetUniqueInternationalOrganization('hre').GetName]"
  subjugated_elector_antagonism: "Subjugated Elector"
  flavor_bra_dynasty.1101.d: "One of our court advisors will fix the [root_country.GetAdjectiveWithNoTooltip] situation."

@@ -1,13 +1,13 @@
 ﻿l_english:
 
  #Generic Code
- PARLIAMENT_MARKER_DURATION_TXT: "#T [Player.GetGovernment.GetParliament.GetName] in Session#!\nDebating [Player.GetGovernment.GetParliament.GetCurrentDebate.GetName] for another [Player.GetGovernment.GetParliament.GetRemainingParliamentDuration|W] days in @location![Player.GetGovernment.GetParliament.GetParliamentLocation.GetName]."
+ PARLIAMENT_MARKER_DURATION_TXT: "#T [Player.GetGovernment.GetParliament.GetName] in Session#!\nDebating [Player.GetGovernment.GetParliament.GetCurrentDebateName] for another [Player.GetGovernment.GetParliament.GetRemainingParliamentDuration|W] days in @location![Player.GetGovernment.GetParliament.GetParliamentLocation.GetName]."
  PARLIAMENT_DURATION_TXT: "[Player.GetGovernment.GetParliament.GetRemainingParliamentDuration|W] days left in @location![Player.GetGovernment.GetParliament.GetParliamentLocation.GetName]"
  PARLIAMENT_DURATION_TXT_NO_LOCATION: "[Player.GetGovernment.GetParliament.GetRemainingParliamentDuration|W] days left"
- IO_PARLIAMENT_DURATION_TXT: "#T [InternationalOrganizationsView.GetInternationalOrganization.GetParliament.GetName] in Session#!\nDebating [InternationalOrganizationsView.GetInternationalOrganization.GetParliament.GetCurrentDebate.GetName] for another [InternationalOrganizationsView.GetInternationalOrganization.GetParliament.GetRemainingParliamentDuration|W] days in @location![InternationalOrganizationsView.GetInternationalOrganization.GetParliament.GetParliamentLocation.GetName]."
- PARLIAMENT_ISSUE_WILL_FAIL: "#T Issue Will Fail#!\n@trigger_no! The [Player.GetGovernment.GetParliament.GetName] will #R NOT#! pass the [Player.GetGovernment.GetParliament.GetCurrentDebate.GetName]."
- PARLIAMENT_ISSUE_WILL_NOT_FAIL: "#T Issue Will Pass#!\nThe [Player.GetGovernment.GetParliament.GetName] will pass the [Player.GetGovernment.GetParliament.GetCurrentDebate.GetName]."
- HOSTILE_PARLIAMENT_MARKER: "#T Hostile [ParliamentMarker.GetGovernment.GetParliament.GetName] in Session#!\nCan be interrupted by [occupying|e] the [location|e]."
+ IO_PARLIAMENT_DURATION_TXT: "#T [InternationalOrganizationsView.GetInternationalOrganization.GetParliament.GetName] in Session#!\nDebating [InternationalOrganizationsView.GetInternationalOrganization.GetParliament.GetCurrentDebateName] for another [InternationalOrganizationsView.GetInternationalOrganization.GetParliament.GetRemainingParliamentDuration|W] days in @location![InternationalOrganizationsView.GetInternationalOrganization.GetParliament.GetParliamentLocation.GetName]."
+ PARLIAMENT_ISSUE_WILL_FAIL: "#T Issue Will Fail#!\n@trigger_no! The [Player.GetGovernment.GetParliament.GetName] will #R NOT#! pass the [Player.GetGovernment.GetParliament.GetCurrentDebateName]."
+ PARLIAMENT_ISSUE_WILL_NOT_FAIL: "#T Issue Will Pass#!\nThe [Player.GetGovernment.GetParliament.GetName] will pass the [Player.GetGovernment.GetParliament.GetCurrentDebateName]."
+ HOSTILE_PARLIAMENT_MARKER: "#T Hostile [ParliamentMarker.GetCountry.GetGovernment.GetParliament.GetName] in Session#!\nCan be interrupted by [occupying|e] the [location|e]."
 
  PARLIAMENT_NEVER_CALLED: "The $NAME$ has not been called."
  PARLIAMENT_CALLED_DATE: "The $NAME$ was called $WHEN|Y$ ago "
@@ -51,7 +51,7 @@
 
  #Actions
  call_parliament: "Call Parliament"
- call_parliament_desc: "This will call in the Parliament in an attempt to get support to resolve a [parliament_issue|e], change [policies|e] in our [laws|e], creating a [casus_belli|e], raising higher [taxes|e] or larger [army_levies|e] and [navy_levies|e].\nDuring this session we will get the following effects:\n[ShowModifierEffect('parliament_in_session')]\n\n$select_parliament_location_inform_choice_tt$"
+ call_parliament_desc: "This will call in the Parliament in an attempt to get support to resolve a [parliament_issue|e], change [policies|e] in our [laws|e], creating a [casus_belli|e], raising higher [taxes|e] or larger [army_levies|e] and [navy_levies|e].\nDuring this session we will get the following effects:\n[ShowModifierEffect('parliament_in_session')]"
  
  request_more_taxes: "Request Additional Taxes"
  request_more_taxes_desc: "Asking [Player.GetGovernment.GetParliament.GetName] to allow us to collect more [tax|e] from the [estates|e]."
@@ -69,7 +69,7 @@
  prepare_for_war_select_province_title: "Select [province|e] to set as the [war_goal|e]"
  select_a_country_to_get_casus_belli_on: "Select a [country|e] that our [Player.GetGovernment.GetParliament.GetName] will grant us a [casus_belli|e] on."
  prepare_for_war: "Fabricate Casus Belli"
- prepare_for_war_desc: "Asking [Player.GetGovernment.GetParliament.GetName] to approve a [war|e] by giving us a legitimate [casus_belli|e].\n• We will choose a country to get a [ShowCasusBelliName('cb_fabricated_conquer_province')] [casus_belli|e]"
+ prepare_for_war_desc: "Asking [Player.GetGovernment.GetParliament.GetName] to approve a [war|e] by giving us a legitimate [casus_belli|e].\n• We will choose a country that is not a [rebel|e] nation or our [subject|e], that lies within our [diplomatic_range|e], and with which we do not currently have a [truce|e], to get a: \n[ShowCasusBelliName('cb_parliament_conquer_province')] [casus_belli|e].\n• The [casus_belli|e] will last [GetDefine('NDiplomacy','CASUS_BELLI_MONTHS')] months ([Divide_int32(GetDefine('NDiplomacy','CASUS_BELLI_MONTHS'), '(int32)12')] years)."
  PARLIAMENT_IN_SESSION: "[Player.GetGovernment.GetParliament.GetName] in Session"
 
  #Issues
@@ -270,7 +270,7 @@
  new_model_army_pi_desc: "The ravages of the ongoing civil war against the Royalists have proven that our army is in dire need of total reform."
  edict_of_nantes_issue: "Edict of Nantes"
  edict_of_nantes_issue_desc: "After years of religious struggle, it is time for us to promote unity through co-existence and end the unnecessary bloodshed."
- end_the_french_wars_of_religion_tt: "The [ShowDisasterName('french_wars_of_religion')] [disaster|e] will end"
+ end_the_french_wars_of_religion_tt: "The [ShowDisasterName('french_wars_religion')] [disaster|e] will end"
  mug_promote_rajput_officials: "Promote $rajasthani_language$ Officials"
  mug_promote_rajput_officials_desc: "By promoting the $rajasthani_language$ people in the nation, we can ensure that we have a number of militaristic officials we can depend upon."
  promote_rajput_officials_passed_tt: "A skilled member of the [ShowLanguageName('rajasthani_language')] [language|e] will appear."

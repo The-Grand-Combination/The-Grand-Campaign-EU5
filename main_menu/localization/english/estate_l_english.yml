@@ -1,23 +1,24 @@
 ﻿l_english:
  nobles_estate: "Nobility"
- nobles_estate_desc: "This estate represents the families of landed aristocrats in our country. Their privileges are guaranteed by old traditions and most have originally been won through performing great services to the state. Their traditional responsibility is to fight and protect the realm against outside dangers as well as help the ruler keep the peace.\n$estate_common_crown_ending$"
+ nobles_estate_desc: "This estate represents our landed aristocracy. Their privileges are guaranteed by ancient traditions, most of which were originally granted in return for exceptional service to the state. They are traditionally responsible for protecting the realm against outside dangers as well as helping the ruler keep the peace.\n$estate_common_crown_ending$"
  clergy_estate: "Clergy"
- clergy_estate_desc: "This estate represents the educated priests of our state religion. They have a long tradition of serving in the administration of our country and their traditional responsibility is to care for the spiritual well-being of it and our people. Over the centuries they have acquired both land properties and privileges from former rulers as well as pious individuals.\n$estate_common_crown_ending$"
+ clergy_estate_desc: "This estate represents the educated priests of our state religion. Their traditional responsibility is to care for the spiritual well-being of the realm and our people, but they also have a long tradition of serving in our country's administration. Over the centuries, they have been gifted valuable property and privileges by pious folk and former rulers alike.\n$estate_common_crown_ending$"
  burghers_estate: "Burghers"
- burghers_estate_desc: "This estate represents the urban population of our country such as Artisans, Merchants, or others that reside inside city walls. Their traditional responsibility is to work to keep the economy going and to do so efficiently they expect to be granted special rights and privileges for themselves and the cities they represent.\n$estate_common_crown_ending$"
+ burghers_estate_desc: "This estate represents the commercial class of our country, including artisans, merchants, and traders. Their traditional responsibility is to maintain and develop the economy. Therefore, they are usually granted special rights and privileges to facilitate commerce and trade.\n$estate_common_crown_ending$"
  peasants_estate: "Commoners"
- peasants_estate_desc: "This is the estate which represents the population who usually lacked prestige and power."
+ peasants_estate_desc: "This is the estate which represents the population at the lowest tier of society. Frequently a class given little to no prestige or power, the common folk nevertheless make up the foundation of our country, and can become surprisingly powerful when united."
  crown_estate: "Crown"
- crown_estate_desc: "This is the power of the government itself, the power not granted to the estates.\nIn general, it is better to have the government estate have as much power as possible."
+ crown_estate_desc: "This is the heart and source of authority for our entire realm and government, held solely by those at the very top and not granted to the other estates.\nIn general, it is best for the government estate to hold as much power as possible."
  dhimmi_estate: "Dhimmi"
- dhimmi_estate_desc: "This estate represents the religious minorities in our [country|e] that are considered 'People of the Book' in [ShowReligionGroupName('muslim')], usually the [ShowReligionGroupAdjective('christian')] and [ShowReligionAdjective('judaism')] population, but sometimes extended to other [religions|e]. Their status and privileges can vary greatly between different countries as do both their organization and numbers.\n$estate_common_crown_ending$"
+ dhimmi_estate_desc: "This estate represents the religious minorities in our [country|e] who are considered 'People of the Book' in [ShowReligionGroupName('muslim')]. This usually refers to the [ShowReligionGroupAdjective('christian')] and [ShowReligionAdjective('judaism')] communities, but is sometimes extended to other [religions|e]. Their status and privileges can vary greatly between different countries, as do both their organization and numbers.\n$estate_common_crown_ending$"
  tribes_estate: "Tribes"
- tribes_estate_desc: "This estate represents the different tribes and clans present in our [country|e]. They are traditionally organized into lineages and kinship groups scattered throughout rural areas, who live and work in very diverse ways. Their distance and relative independence from the main centers of power make them difficult to govern, while their distinct customs give them a reputation as fearsome and unruly warriors.\n$estate_common_crown_ending$"
+ tribes_estate_desc: "This estate represents the different tribes and clans present in our [country|e]. They are traditionally organized into lineage and kinship groups and dispersed mostly in rural areas. These different groups live and work in very diverse ways, and their distance and relative independence from the main centers of power make them difficult to govern. Their unique customs also typically give them a reputation as fearsome, unpredictable warriors.\n$estate_common_crown_ending$"
  cossacks_estate: "Cossacks"
- cossacks_estate_desc: "This estate represents the different groups of [ShowCultureName('cossack_culture')] people present in our [country|e]. Organizing themselves in semi-nomadic and semi-militarized groups, they live their own lives on the fringes of countries' administrations, but can serve them faithfully and to great use if given the appropriate incentives.\n$estate_common_crown_ending$"
+ cossacks_estate_desc: "This estate represents the different groups of [ShowCultureName('cossack_culture')] people present in our [country|e]. Organized in semi-nomadic and semi-militarized groups, they live on the fringes of other nations, but can be convinced to serve them faithfully and be put to great use if given the appropriate incentives.\n$estate_common_crown_ending$"
  estate_common_crown_ending: "In general, it is better for the government estate to have more power than the other estates."
  
  
+ crown_estate_holy_order: "Chapter"
  crown_estate_republic: "Republic"
  crown_estate_brethren: "Brethren"
  crown_estate_derbfine: "Derbfine"
@@ -25,12 +26,12 @@
  crown_estate_kronan: "Kronan"
  
  
+ clergy_estate_holy_order: "Fratres"
  clergy_estate_prest: "Prästeståndet"
  clergy_estate_maori: "Tohunga"
  clergy_estate_prelates: "Prelates"
  clergy_estate_clerge: "Clergé"
  clergy_estate_chaplains: "Chaplains"
- clergy_estate_patriarchs: "Patriarchs"
  clergy_estate_pastors: "Pastors"
  clergy_estate_ulama: "'Ulamā'"
  clergy_estate_kahenat: "Kahenat"
@@ -53,6 +54,7 @@
  clergy_estate_ah_kinoob: "Ah K'ino'ob"
  
  
+ nobles_estate_holy_order: "Milites"
  nobles_estate_adeln: "Adelståndet"
  nobles_estate_maori: "Rangatiras"
  nobles_estate_chieftains: "Chieftains"
@@ -147,94 +149,94 @@
 
  #
  formal_guilds: "Formal Guilds"
- formal_guilds_desc: "Federations and associations of merchants have loosely existed throughout the history of our nation. However, we could choose to placate the powerful traders across our markets by formalizing their participation in a centralized and officially recognized corpus. Such a privilege will undoubtedly have an impact on both our foreign and domestic policies."
+ formal_guilds_desc: "Federations and associations of merchants have loosely existed throughout our nation's history. However, we could choose to placate the most powerful traders across our markets by formalizing their participation in a centralized and officially recognized corpus. Such a privilege will undoubtedly impact both our foreign and domestic policies."
  trade_monopolies: "Trade Monopolies"
- trade_monopolies_desc: "Assigning the rights of our mercantile goods to powerful merchants will greatly increase the influence of the domain's most prominent traders. This policy will influence our country in regard to our attitude towards foreign merchants."
+ trade_monopolies_desc: "Giving the most powerful merchants in our countries exclusive trading rights to our mercantile goods to powerful merchants will greatly increase the influence of our most prominent traders. This policy will influence our national attitude towards foreign merchants."
  control_over_monetary_policy: "Control over Monetary Policy"
- control_over_monetary_policy_desc: "The finances of our nation are a vital topic of great importance as we strive to improve and perfect our ledgers. Perhaps it would be a good idea to entrust the wealthy members of our society with such a task and in return provide them with a mandate for reduced taxation on their commodities as well as their assets."
+ control_over_monetary_policy_desc: "The finances of our nation are a topic of great importance as we strive to improve and perfect our ledgers. Perhaps it would be a good idea to entrust the wealthy members of our society with such a task, and in return provide them with reduced taxation on their commodities and assets."
  building_rights: "Building Rights"
- building_rights_desc: "Developing our urban and rural areas is certainly a costly endeavor. By employing the established populace living in them to fund part of our construction efforts, we will reduce the end cost for many of our development plans. However, signing off on such a legislative move will increase their influence considerably."
+ building_rights_desc: "Developing our settlements and cities is a costly endeavor. By granting building rights to the local population, we will ultimately reduce the overall end cost of development. However, giving the people such an allowance will considerably increase their influence."
  burghers_royal_burgh_commissioners: "Royal Burgh Commissioners"
- burghers_royal_burgh_commissioners_desc: "The Royal Burgh Commissioners, representing the Crown-chartered burghs of Scotland, convene to safeguard their privileges, regulate commerce, and advise the Crown. Through their collective authority in the Convention of Royal Burghs, they ensure Scotland's trading towns remain vital to governance, economy, and law, standing as a counterweight to noble and clerical power."
- burghers_land_rights: "Burgher Land Rights"
- burghers_land_rights_desc: "The legality around land ownership has been a heated matter in the courts of our nation. By enabling the expanded privileges of the merchants regarding land ownership, we will ensure the various administrative guilds become more cooperative with our authority in exchange for more power."
+ burghers_royal_burgh_commissioners_desc: "The Royal Burgh Commissioners, representing the [ShowEstateTypeName('crown_estate')]-chartered burghs of [GetCountry('SCO').GetName], convene regularly to safeguard their privileges, regulate commerce, and advise the nation's ruler. Through their collective authority in the Convention of Royal Burghs, they ensure that [GetCountry('SCO').GetNameWithNoTooltip]'s trading communities remain vital to governance, economy, and law, standing as a counterweight to the power of the $nobles_estate$ and [ShowEstateTypeName('clergy_estate')]."
+ burghers_land_rights: "$burghers_estate$ Land Rights"
+ burghers_land_rights_desc: "The laws regarding land ownership have recently been the matter of much heated debate at court. We shall expand the land ownership rights of our [ShowEstateTypeName('burghers_estate')], with the goal of making the various administrative guilds more compliant in exchange for having been given more power."
  commercial_advisory_council: "Commercial Advisory Council"
- commercial_advisory_council_desc: "Trade is the lifeblood of our economy. Thus, we must tend to it and ensure that our head of state is supported by only the most capable and knowledgeable individuals, adept in matters of maritime and land trade. This will benefit our commercial capabilities at home and abroad."
+ commercial_advisory_council_desc: "Trade is the lifeblood of our economy. Thus, we must ensure that our head of state is supported by only the most capable and knowledgeable individuals, adept in matters of maritime and land trade. This will benefit our commercial capabilities at home and abroad."
  building_roads_rights: "Building Roads Rights"
- building_roads_rights_desc: "Allow rich merchants to develop our infrastructure by building [roads|e], benefiting both the state and the traders themselves in our ever growing economy."
+ building_roads_rights_desc: "Allow rich [ShowEstateTypeName('burghers_estate')] to develop our infrastructure by building [roads|e], benefiting both our ever-expanding economy and the traders themselves."
 
  clergy_literacy_rights: "Religious Literacy Rights"
- clergy_literacy_rights_desc: "Our religion possesses many works of literature that contain the practices, morals, and principles of our faith. Our holy men need to have unlimited access to the written word so that they can study the holy texts of our faith."
+ clergy_literacy_rights_desc: "Our religion has many associated works of literature containing the practices, morals, and principles of our faith. Our [ShowEstateTypeName('clergy_estate')] should have unlimited access to the written word in order to study the holy texts of our faith."
  clergy_strengthen_faith: "Strengthened Faith"
- clergy_strengthen_faith_desc: "Faith is what keeps our people even during the most challenging times of troubles united. Through the efforts of our holy men, the belief of our population cannot be disturbed by external threats."
+ clergy_strengthen_faith_desc: "Faith is what keeps our people united, even during the most challenging times. Thanks to the efforts of our [ShowEstateTypeName('clergy_estate')], our people have emerged from their most recent trial unshaken in their beliefs and more faithful than before!"
  clergy_lecture_oaths: "Lecture Oaths"
- clergy_lecture_oaths_desc: "Our ancient universities are famous for producing the most influential minds in the land, and so they must be protected and controlled. Graduates are sworn never to lecture outside their walls."
+ clergy_lecture_oaths_desc: "Our ancient universities are famous for producing the most influential minds in the land, and so they must be protected and controlled. Graduates are sworn never to lecture outside the walls of these centers of learning."
  clergy_enforced_unity: "Enforced Religious Unity"
- clergy_enforced_unity_desc: "Our country is home to different confessions, so coexistence is becoming increasingly difficult, thus weakening our government. We have to enforce that our subjects only practice our State Religion, as that will strengthen our power and authority over the country."
+ clergy_enforced_unity_desc: "Our country is home to people of many different beliefs, and coexistence is becoming increasingly difficult, which in turn weakens our government. We must enforce the rule that our subjects may only practice our State Religion in order to quell this disunity — and to consolidate our authority."
  clergy_military_orders: "Military Orders"
- clergy_military_orders_desc: "The Military Orders were created after the Crusades began, as a means of fusing the discipline and devotion of the monks with the martial skill and experience of the knights. They spread throughout Christendom, but other religions also developed similar types of orders involved in wars of religion."
+ clergy_military_orders_desc: "The Military Orders were created after the Crusades began, as a means of fusing the discipline and devotion of monks with the martial skill and experience of knights. They spread throughout Christendom, but other religions also developed similar orders when fighting wars of religion."
  clergy_land_rights: "Religious Land Rights"
- clergy_land_rights_desc: "We have decided to give the faith the right to own private land for themselves. This will make them more powerful and influential, but will allow for a more constant presence of holy men at our disposal."
+ clergy_land_rights_desc: "We have decided to give the faithful the right to own private land. This will make them more powerful and influential, but will also allow for a more constant presence of holy men at our disposal."
  clerical_advisory_council: "Religious Advisory Council"
- clerical_advisory_council_desc: "We have decided to keep a council of advisors formed by holy men. This will make them more influential, but at the same time more satisfied, as they will be able to express their concerns directly to us and see their interests satisfied."
+ clerical_advisory_council_desc: "We have decided to form a council of advisors, comprised entirely of holy [ShowEstateTypeName('clergy_estate')]. This will make them more influential, but also more complacent, as they will be able to express their concerns directly to us and see their interests satisfied."
  clergy_powerful_dioceses: "Powerful Dioceses"
- clergy_powerful_dioceses_desc: "The administration of our territory lies in the hands of the state. However, the organization of the Clergy does not follow our provincial systems. Instead, the Clergy manages itself in Dioceses which have significant power and influence in the internal affairs of our country."
+ clergy_powerful_dioceses_desc: "The administration of our territory lies in the hands of the state. However, the organization of the [ShowEstateTypeName('clergy_estate')] does not follow our provincial systems. Instead, the they organize themselves in Dioceses, which have significant power and influence over the internal affairs of our country."
  
  nobles_land_rights: "Land Rights"
- nobles_land_rights_desc: "This represents the privileges our Nobility has over the lands they rule and their inhabitants. Among those rights, Nobility is usually able to tax the peasants living in those lands, draft them to form levies or exert justice on their own, but also pass these lands to their heirs."
+ nobles_land_rights_desc: "This represents the privileges our [ShowEstateTypeName('nobles_estate')] have over the lands they rule and the people who inhabit them. Among those rights, $nobles_estate$ can usually tax the [ShowEstateTypeName('peasants_estate')] living on their lands, draft them to form levies, or mete out justice on their own. These holdings are usually hereditary."
  auxilium_et_consilium: "Auxilium et Consilium"
- auxilium_et_consilium_desc: "Nobles receive privileges, but they also have obligations to their Lord. They have to provide troops (#italic auxilium#!), including the maintenance of the fortifications and infrastructure in the lands they rule; but they also have to give counsel (#italic consilium#!) to their Lord when requested."
- noble_serfdom_rights: "Nobility Controlled Serfdom"
- noble_serfdom_rights_desc: "Among the rights given to the Nobles over the serfs in the lands they own, there is the right to tax them, to levy them, and to exert justice when needed. Peasants under these rights became serfs and would usually be bound to the land they worked in."
+ auxilium_et_consilium_desc: "[ShowEstateTypeName('nobles_estate')] receive privileges, but they also have obligations to their Lord. They have to provide troops — #italic auxilium#! — and maintain fortifications and infrastructures in the lands they rule, but they also have to give counsel — #italic consilium#! — to their Lord when requested."
+ noble_serfdom_rights: "$nobles_estate$ Controlled Serfdom"
+ noble_serfdom_rights_desc: "Among the rights [ShowEstateTypeName('nobles_estate')] have over the [ShowEstateTypeName('peasants_estate')] in their lands, they can tax them, levy them, and exert justice upon them as needed. Peasants living under these conditions become serfs and are usually bound to the land they worked."
  noble_fortification_licenses: "Fortification Licenses"
- noble_fortification_licenses_desc: "One of the consequences of the Feudal system was the proliferation of castles and forts built by the Nobility, as a means to increase their power and authority throughout the territory. That has had further effects on the fabric of our society, as the Nobles are allowed to entrench themselves in their inherited dominions."
+ noble_fortification_licenses_desc: "One outcome of our feudal system has been the proliferation of castles and forts built by the [ShowEstateTypeName('nobles_estate')] as a means of increasing their power and authority. That has had further effects on our society, as the $nobles_estate$ are able to entrench and fortify themselves within their inherited dominions."
  noble_marriage_rights: "Royal Marriage Rights"
- noble_marriage_rights_desc: "The Nobility of our country is considered to be the peers to our rulers. Therefore, they own the right to marry into the ruling family, increasing their influence and power at court, as well as in the government of the country."
- noble_leaders_only: "Only Nobility as Leaders"
- noble_leaders_only_desc: "Our Nobles believe that they are the only ones capable of being designated leaders of our Armies and Navies, due to the deeds of the past. However, this is something that bothers the other Estates of our country, who think that the Nobles are arrogant fools."
+ noble_marriage_rights_desc: "The [ShowEstateTypeName('nobles_estate')] of our country are considered to be peers to our rulers. Therefore, they are eligible to marry into the ruling family, subsequently increasing their influence and power at court, as well as in the government."
+ noble_leaders_only: "Only $nobles_estate$ as Leaders"
+ noble_leaders_only_desc: "Our [ShowEstateTypeName('nobles_estate')] believe that they are the only ones capable of leading our armies and navies, due to the events of the past. However, this rankles members of the other Estates, who think that the $nobles_estate$ are arrogant fools."
  banal_lordship: "Banal Lordship"
- banal_lordship_desc: "One of the types of manorial domination developed under the Feudal system is Banal Lordship. It is based on the 'ban', the authority of a lord to command his men, give them orders and punish them. This has led to the Nobility having greater power in their domains, since they exercise justice in them, and tax the peasants for most of their economic activities."
- primacy_of_nobility: "Primacy of Nobility"
- primacy_of_nobility_desc: "The Nobility of our country has proven to be key for us as they support most of our enterprises and are the backbone of our armies. For this reason, they claim to be our equals, and they have become so crucial to the government that we must consult them on important decisions to be made."
+ banal_lordship_desc: "This type of manorial domination developed under the feudal system and is based on the 'ban', which is the authority of a lord to command his tenants, give them orders, and punish them. This has led to the [ShowEstateTypeName('nobles_estate')] having greater power in their domains, since they are the ones who dole out justice within their territories and can also tax the [ShowEstateTypeName('peasants_estate')] for most of their economic activities."
+ primacy_of_nobility: "Primacy of $nobles_estate$"
+ primacy_of_nobility_desc: "The [ShowEstateTypeName('nobles_estate')] of our country has proven to be key allies, as they support most of our enterprises and are the backbone of our armies. For this reason, they consider themselves our equals, and they have become so crucial to the government that we must consult with them before making important decisions."
  elaborate_court_ceremonies: "Elaborate Court Life"
- elaborate_court_ceremonies_desc: "We have decided to turn the courtly life of our country into the most elaborate formality imaginable. As everyone who is anyone is expected to attend our ruler in the capital this limits the ability of the Nobility to plot quite a lot, but it does come at a high cost."
+ elaborate_court_ceremonies_desc: "We have decided to imbue the courtly life of our country with the most elaborate formality imaginable. As everyone who is anyone is expected to attend our ruler in the capital, this restricts how much plotting the $nobles_estate$ can do against us, but it does come at a high cost."
  tysiatskii_privilege: "Tysiatskii Office"
- tysiatskii_privilege_desc: "The Tysiatskii are the military leaders selected from the Boyars. While in many states their responsibilities lie mostly in commanding our soldiers, the Tysiatskii Office in our state serves an additional position as the representative of the commoners, as acting judges in the commercial court, and as supervisors of our fortifications."
+ tysiatskii_privilege_desc: "The Tysiatskii are military leaders selected from the Boyars. While in other states their responsibilities lie mostly in commanding our soldiers, our Tysiatskii Office serves additional functions as the representative of the [ShowEstateTypeName('peasants_estate')], as acting judges in the commercial court, and as supervisors of our fortifications."
  the_ryad_privilege: "The Ryad"
  the_ryad_privilege_desc: "$the_ryad_privilege$ is the given name to the contract signed between the Boyars and the state. It protects the interests and powers of the Boyars while also defining the responsibilities and rights of the Prince."
  bashtinas_and_pronijas_grants: "Baština Grants"
- bashtinas_and_pronijas_grants_desc: "The system of land grants for our elites is inspired by the Byzantine system of Pronoias. It entails a grand array of privileges and obligations on behalf of their domains when it comes to administering the lands leased to them by the government."
+ bashtinas_and_pronijas_grants_desc: "The system of land grants for our elites is inspired by the Byzantine system of #italic Pronoias#!. It grants them a grand array of privileges and obligations on behalf of their domains when it comes to administering the lands leased to them by the government."
  zupa_districts: "Župa Districts"
- zupa_districts_desc: "The compartmentalization and division of our society is detailed in the various legal frameworks that surround our administrative branch. The most important aspect of our society and bureaucracy is the division of our provinces into Župa districts, aimed at the better handling of local affairs."
+ zupa_districts_desc: "The compartmentalization and division of our society is detailed in the various legal frameworks that surround our administrative branch. The most important aspect of our society and bureaucracy is the division of our provinces into Župa districts, aimed at improving how local affairs are handled."
  vlastele_krayishnik: "Vlastele Krayishnik"
- vlastele_krayishnik_desc: "Our borderlands must be safely guarded at all times. To that end, the system of krayine splits our frontiers into well-administered districts under the command of local lords, who are known as #italic Vlastele Krayishnik#!, in charge of maintaining and protecting the people of their province."
+ vlastele_krayishnik_desc: "Our borderlands must be safely guarded at all times. To that end, the system of #italic krayine#! splits our frontiers into well-administered districts under the command of local lords, known as #italic Vlastele Krayishnik#!, who are in charge of maintaining and protecting the people of their provinces."
  feudal_mercenary_contracts: "Feudal Mercenary Contracts"
- feudal_mercenary_contracts_desc: "The armies levied by our people oftentimes leave a lot to be desired. In our effort to protect our people and best our rivals, we must rely on foreign mercenaries, whose contracts will be managed by the elite members of our society."
+ feudal_mercenary_contracts_desc: "The armies levied by our people often leave a lot to be desired. In order to protect our people and best our rivals, we must rely on foreign mercenaries, whose contracts will be managed by the elite members of our society."
 
  tax_exemption: "Tax Exemption"
- tax_exemption_desc: "Our faith is served by devout men and woman that dedicate their lives to the care and the spiritual well-being of our people. It is only natural that they are not forced to pay any tithe to the government."
+ tax_exemption_desc: "Our faith is served by devout men and woman who dedicate their lives to the care and the spiritual well-being of our people. It is only natural that they are not forced to pay any tithe to the government."
 
  peasants_represented_in_parliament: "Represented in Parliament"
- peasants_represented_in_parliament_desc: "Granting our lower populace a seat in our main assembly will give a voice to the commoners of our country and ensure greater rights for them."
+ peasants_represented_in_parliament_desc: "Granting our lower populace a seat in our main assembly will give a voice to the [ShowEstateTypeName('peasants_estate')], of our country and ensure greater rights for them."
  
  peasants_free_peasantry: "Free Mobility for the Common People"
- peasants_free_peasantry_desc: "People are the most valuable asset of any state. Famines and discord would be the norm without it. Yet, the elite of the state see them as property; as some object to keep it on their land.\nBy granting free mobility to the masses, their fate lies in their own hands once again, allowing them to leave the lands of their former masters and move to new, better fields."
+ peasants_free_peasantry_desc: "People are the most valuable asset of any state. Famines and discord would be the norm without them. Yet, the elites see them only as property — as possessions to hoard upon their ill-gotten lands!\nBy granting free mobility to the masses, their fate will be own hands once again, allowing them to leave the lands of their former masters and move to new, more fruitful fields."
  peasant_owns_their_food: "Means of Production"
- peasant_owns_their_food_desc: "The upper classes are vultures, preying on the products of the hard work of the common people for their own good for nothing in return. By seizing the Means of Production, the sustainability and the fate of the masses return to the hands of the working men."
+ peasant_owns_their_food_desc: "The upper classes are vultures, devouring the fruits of hard peasant labor and contributing nothing in return. By seizing the means of production, we will place the future of our nation and its people in our own hands!"
  peasants_fewer_levies: "Fewer Levies"
- peasants_fewer_levies_desc: "The common people are the lifeblood of our state. They nourish our population, craft the material for our buildings, and create the goods our merchants sell.\nAlthough war is a time of great hardship for our state, it is necessary to keep the main populace away from its conflicts if we want to avoid famines and economic collapse after the war."
+ peasants_fewer_levies_desc: "The [ShowEstateTypeName('peasants_estate')] are the lifeblood of our state. They nourish our population, craft the materials for our buildings, and produce the goods our [ShowEstateTypeName('burghers_estate')] trade in.\nAlthough war is a time of great hardship for our state, we must make the effort to keep our [ShowEstateTypeName('peasants_estate')] away from the conflict if we want to avoid famine and economic collapse after the war."
  peasants_yeomanry: "Yeomanry"
- peasants_yeomanry_desc: "Small freeholders of land receive elevated rights in return for taking on some responsibilities of petty nobles, including higher expectations regarding the defense of the realm."
+ peasants_yeomanry_desc: "Freeholdeers with small land possessions receive elevated rights in return for taking on some responsibilities of petty nobles, including having to fulfill higher expectations regarding the defense of the realm."
  creaghts_privilege: "Creaghts"
- creaghts_privilege_desc: "Many of the lower classes belong to pastoral Creaghts, bands of nomadic cattle herdsmen. They seasonally migrate to fresh pastures, and are named for the temporary dwellings they build as they move from place to place. As they are not tied to specific land, they exist outside any feudal structure."
+ creaghts_privilege_desc: "Many of the lower classes belong to pastoral #italic creaghts#!, bands of nomadic herders. They migrate seasonally to fresh grazing lands, and are named for the temporary dwellings they build as they move from place to place. As they are not tied to specific land, they exist outside any feudal structure."
  coign_and_livery_privilege: "Coign and Livery"
  coign_and_livery_privilege_desc: "This system, also known as #italic bonnacht#!, requires that our lesser chieftains must billet our loyal soldiers in their own holdings at their own expense."
  peasants_allowed_weapons_privilege: "Common Militias"
- peasants_allowed_weapons_privilege_desc: "The common people are allowed to keep their weapons, which they then use when called up for levy service. This increases the demand for weaponry on the market."
+ peasants_allowed_weapons_privilege_desc: "The common people are allowed to keep their weapons, which they then must use when called for levy service. This increases the demand for weapons in the market."
  gradozadanje_and_gradobljudenlje_rights: "Gradozadanje and Gradobljudenlje"
  gradozadanje_and_gradobljudenlje_rights_desc: "Our domain is home to many fortifications and formidable strongholds. The maintenance expenses and garrisoning of these emplacements have been entrusted to the local population and townspeople."
  peasants_autonomous_villages: "Autonomous Villages"
- peasants_autonomous_villages_desc: "In the rural settlements of our state dominates a saying: 'the laws of the sovereign end at the village's gate.' The people from our settlements organize themselves independently from the centralized authority of the country."
+ peasants_autonomous_villages_desc: "In the rural settlements of our state, there is a saying: 'The laws of the sovereign end at the village's gate.' The people in our settlements organize themselves independently from the central authority of this country."
 
  clergy_protected_faith: "Protected Faith of the Religious"
  clergy_protected_faith_desc: "Holy men and women have gained Religious Protections and are therefore exempt from any conversion attempts from the state."
@@ -251,45 +253,45 @@
  office_of_the_sankar_zouma_privilege_desc: "The Sankar-Zouma is a prestigious office granted to the [GetCountry('MAL').GetGovernment.GetEstateName('nobles_estate')] by the highest authority in the land. Its role, much like the Farima-Soura, revolves around exercising authority along all trade routes across the southern border."
 
  office_of_the_farima_soura_privilege: "Office of the Farima-Soura"
- office_of_the_farima_soura_privilege_desc: "Charged with guarding the northern border, the Farima-Soura monitors traffic across the Saharan border and oversees the safety and swift passage of all mercantile traffic in and out of our borders."
+ office_of_the_farima_soura_privilege_desc: "Charged with guarding the northern border, the Farima-Soura monitors traffic across the Saharan border, and oversees the safety and swift passage of all mercantile traffic in and out of our borders."
  
  liberum_veto: "Liberum Veto"
- liberum_veto_desc: "This introduces the requirement for unanimous voting in the Sejm. Any noble could stop any vote or legislation by standing up and shouting #italic Sisto activitatem!#! ('I stop the activity!') in Latin or #italic Nie pozwalam!#! ('I do not allow!') in Polish."
+ liberum_veto_desc: "This introduces the requirement for unanimous voting in the $country_flavor_parliament_sejm$. Any noble could stop any vote or legislation by standing up and shouting #italic Sisto activitatem!#! ('I stop the activity!') in Latin, or #italic Nie pozwalam!#! ('I do not allow!') in Polish."
 
  visconti_city_states: "Visconti City States"
- visconti_city_states_desc: "The [GetCountry('MLO').GetLongName] under the Visconti family is marked by a fractured and decentralized state. All prominent family members engage in a relentless struggle for control of the [GetCountry('MLO').GetFlavorRank], which has led to a series of further internal conflicts and power struggles. Different members of the Viscontis, including Azzone, Gian Galeazzo, and Bernabò, vie for supremacy, employing various tactics such as alliances, betrayals, and military campaigns. This constant power struggle constantly weakens the central authority of the [GetCountry('MLO').GetLongNameWithNoTooltip] and contribute to a state of instability and fragmentation in the region."
+ visconti_city_states_desc: "The [GetCountry('MLO').GetLongName] under the Visconti family is marked by a fractured and decentralized state. Different prominent members of the Visconti house, including Azzone, Gian Galeazzo, and Bernabò, vie for supremacy through various tactics such as alliances, betrayals, and military campaigns. This constant power struggle constantly weakens the central authority of the [GetCountry('MLO').GetLongNameWithNoTooltip] and contribute to a state of instability and fragmentation in the region."
 
  milanese_cloth_guilds_privileges: "Milanese Cloth Guilds"
- milanese_cloth_guilds_privileges_desc: "Our valuable cloth industry rests upon the shoulders of the finest craftsmen in all of Italy. By entrusting their regulations and production lines to our merchants, we will attain record profits and productivity at the minor cost of granting our merchant guilds some influence."
+ milanese_cloth_guilds_privileges_desc: "Our valuable cloth industry rests upon the shoulders of the finest craftsmen in all of [ShowRegionName('italy_region')]. By entrusting their regulations and production lines to our [ShowEstateTypeName('burghers_estate')], we will attain record profits and productivity at the minor cost of granting our merchant guilds some influence."
 
  novgorod_ivans_hundred: "Ivan's Hundred"
- novgorod_ivans_hundred_desc: "The heads of the Ivan's Hundred, our local merchant guild, are permanent members of the commerce court of Novgorod and the ruling council of the Novgorod Republic. With their presence in the politics and the agreements made between them and the nobles, the successful trade in our nation is ensured to last."
+ novgorod_ivans_hundred_desc: "The heads of the Ivan's Hundred, our local merchant guild, are permanent members of the commerce court of [ShowLocationName('novgorod')] and the ruling council of the Novgorod Republic. With their political presence and the agreements they have made with the [ShowEstateTypeName('nobles_estate')], our nation will surely enjoy continued, successful trade."
  
  ordinance_of_laborers: "Ordinance of Laborers"
- ordinance_of_laborers_desc: "To the great dismay of the lowborn, this ordinance is passed to prevent spiraling salary costs of the peasantry, effectively fixing wages to pre-plague levels. Employers are also prevented from hiring excess workers, and it is deemed to be mandatory that all those under the age of sixty must work."
+ ordinance_of_laborers_desc: "To the great dismay of the lowborn, this ordinance has been passed to prevent the spiraling salary costs of the [ShowEstateTypeName('peasants_estate')], effectively fixing wages to pre-plague levels. Employers are also prevented from hiring excess workers, and it is mandatory that all those under the age of sixty must work."
 
  masaniellos_fight: "Masaniello's Fight"
- masaniellos_fight_desc: "The demands of Masaniello the fisherman are represented in this privilege that protects the common folk from tyrannical taxes and protects them from economic disaster."
+ masaniellos_fight_desc: "The demands of Masaniello the fisherman are represented in this privilege that protects the common folk from tyrannical taxes, and cushions them in case of economic disaster."
 
  peasants_no_poll_tax_privilege: "Exempt from Poll Tax"
  peasants_no_poll_tax_privilege_desc: "Following Wat Tyler's uprising, the punitive poll tax is abolished and insurances are given that it will not be reintroduced."
 
- land_owning_farmers: "Land Owning Peasants"
- land_owning_farmers_desc: "Swedish peasants held a uniquely strong position compared to much of feudal Europe. They owned their land outright, paid taxes directly to the crown, and often had a voice in local assemblies, giving them a degree of autonomy and legal protection. These farmers were not serfs, many were armed and served in levies. Their rights were rooted in ancient customary law, and their relative independence formed a foundational element of early Swedish rural society."
+ land_owning_farmers: "Land-Owning Peasants"
+ land_owning_farmers_desc: "[GetCountry('SWE').GetAdjective] peasants hold a uniquely strong position compared to their peers in much of feudal [ShowContinentName('europe')]. They own their land outright, pay taxes directly to the crown, and often have a voice in local assemblies, giving them a degree of autonomy and legal protection. These farmers were not serfs; many are armed and serve in levies. Their rights are rooted in ancient customary law, and their relative independence is a foundational element of Swedish rural society."
  
  
  
  
 
 #Aragon
- general_privilege: "General Privilege of Aragon"
- general_privilege_desc: "The General Privilege is a list of deals and laws agreed in 1283 between King Pedro III of Aragon and the #italic 'Union of Aragon'#!, a coalition formed by the Aragonese nobility and representatives of important cities. It compels the monarch to guarantee traditional nobiliary rights and to ask for the parliament's permission before declaring war."
+ general_privilege: "General Privilege of [GetCountry('ARA').GetNameWithNoTooltip]"
+ general_privilege_desc: "The General Privilege is a list of deals and laws that compels the monarch to guarantee traditional nobiliary rights and to ask for the parliament's permission before declaring war."
  union_privilege: "Privilege of the Union"
- union_privilege_desc: "Despite the resistance from the Crown, the #italic 'Union of Aragon'#! forced their King to sign this set of agreements into law. It provides extensive rights to the Aragonese nobility and the city-dwelling people at the expense of the monarch's traditional powers."
+ union_privilege_desc: "Despite resistance from the [ShowEstateTypeName('crown_estate')], the #italic 'Union of Aragon'#! has forced this set of agreements into law. It provides extensive rights to the $ARA_ADJ$ [ShowEstateTypeName('nobles_estate')] and the city-dwelling people at the expense of the ruler's traditional powers."
  justicia_de_aragon: "Justicia de Aragón"
- justicia_de_aragon_desc: "Justicia de Aragón is a powerful legal and judicial office in the Kingdom of Aragón, established to uphold regional laws, mediate disputes, and protect the rights of subjects against royal overreach."
+ justicia_de_aragon_desc: "Justicia de Aragón is a powerful legal and judicial office in the [GetCountry('ARA').GetLongName], established to uphold regional laws, mediate disputes, and protect the rights of subjects against royal overreach."
  formalized_oath: "Formalized Oath of Loyalty"
- formalized_oath_desc: "The monarchy is bound by the formalized agreement that ensures the rights and freedoms of the estates are recognized and upheld before an oath of loyalty can be sworn."
+ formalized_oath_desc: "The monarchy is bound by a formalized agreement that requires the rights and freedoms of the estates to be recognized and upheld before an oath of loyalty can be sworn."
  
 #Ethiopia
  double_sabbath: "Both Days Sabbath"
@@ -297,363 +299,361 @@
 
 #Florence
  signoria_council: "Signoria Council"
- signoria_council_desc: "The Signoria of Florence is the name of the council of nine that governs the city, its members taken from the different guilds. Every two months there's a lottery to reelect the council, so the constant shuffling ensures that the interests of the republic prevail over the personal ones. The fact all its members come from the guilds, though, makes it so that the same families are always the ones in charge."
- florence_guilds: "Florence Guilds"
- florence_guilds_desc: "The different artisans and merchants of Florence have a tradition of being associated into different guilds. This ensures not only a standard of quality for the products but also avoids unfair competition. However, the power and influence that these guilds hold as a result is undeniable.\n\nIt unlocks the [law|e] [ShowLawName('guilds_of_florence')]."
+ signoria_council_desc: "The Signoria of [GetCountry('FLO').GetName] is the name of the council of nine that governs the city, its members taken from the different guilds. Every two months, a lottery is held to reelect the council members. This constant shuffling ensures that the interests of the Republic prevail over personal ones. The fact all its members come from the guilds, though, makes it so that the same families are always the ones in charge."
+ florence_guilds: "[GetCountry('FLO').GetNameWithNoTooltip] Guilds"
+ florence_guilds_desc: "The different artisans and merchants of [GetCountry('FLO').GetName] traditionally are associates in different guilds. This ensures not only a high standard of quality for the products, but also avoids breeding unfair competition. However, the power and influence these guilds hold as a result is undeniable.\n\nThis unlocks the [law|e] [ShowLawName('guilds_of_florence')]."
 
 #Korea
  scholar_officials: "Scholar Officials"
- scholar_officials_desc: "The elites are composed of wise government officials and politicians that have gained their honorable position by proving their knowledge in the national examinations\nThe families of these officials will get to keep this status if they produce at least one official every 3 generations."
+ scholar_officials_desc: "Our elite class is composed of wise government officials and politicians who gained their enviable positions by proving their knowledge in the national examinations.\nThe families of these officials may maintain their privileged status as long as they produce at least one official every three generations."
  petty_bureaucracy: "Petty Bureaucracy"
- petty_bureaucracy_desc: "The main bureaucratic corps of our country is formed by highly educated specialists and administrators that manage the daily tasks and support the structure of the government."
+ petty_bureaucracy_desc: "The main bureaucratic corps of our country is made up of highly educated specialists and administrators who manage the daily tasks and support the structure of the government."
 
 #Papacy
 
- powerful_italian_families: "Powerful Italian Families"
- powerful_italian_families.tt: "Our Capital is NOT in the Region of Italy"
- powerful_italian_families_desc: "The anarchy and disobedience in the city of [ShowLocationName('rome')] and the other [ShowCultureGroupName('italian_group')] estates greatly increased when the [GetCountry('PAP').GetGovernment.GetRulerTitle] moved his court to [ShowLocationName('avignon')]. Now those territories are under the control of powerful Italian families such as the Colonna and Orsini, that are almost completely independent of the [GetCountry('PAP').GetGovernment.GetRulerTitle]."
+ powerful_italian_families: "Powerful [ShowCultureGroupNameWithNoTooltip('italian_group')] Families"
+ powerful_italian_families.tt: "Our Capital is NOT in the Region of [ShowRegionNameWithNoTooltip('italy_region')]"
+ powerful_italian_families_desc: "The anarchy and disobedience in the city of [ShowLocationName('rome')] and the other [ShowCultureGroupName('italian_group')] estates greatly increased after the [GetCountry('PAP').GetGovernment.GetRulerTitle] moved the court to [ShowLocationName('avignon')]. Now those territories are under the control of powerful Italian families such as the Colonna and [ShowDynastyName('orsini_dynasty')], who are almost completely independent of the [GetCountry('PAP').GetGovernment.GetRulerTitle]."
 
- french_cardinals: "French Cardinals"
- french_cardinals_desc: "Since the death of [GetCharacter('pap_boniface_viii').GetName] and the movement of the court to [ShowLocationName('avignon')], most of the cardinals in it are [ShowCultureGroupName('french_group')] and under the influence of the [GetCountry('FRA').GetGovernment.GetRulerTitle] of [GetCountry('FRA').GetName], whose grip on the [GetCountry('PAP').GetName] will not allow a return to [ShowLocationName('rome')]."
+ french_cardinals: "[ShowCultureGroupNameWithNoTooltip('french_group')] Cardinals"
+ french_cardinals_desc: "Since the death of [GetCharacter('pap_boniface_viii').GetName] and the court's relocation to [ShowLocationName('avignon')], most of the cardinals flocking to it are [ShowCultureGroupName('french_group')] and under the influence of the [GetCountry('FRA').GetGovernment.GetRulerTitle] of [GetCountry('FRA').GetName], whose grip on the [GetCountry('PAP').GetName] will not allow a return to [ShowLocationName('rome')]."
 
  cardinal_lead_guilds: "Cardinal-Lead Guilds"
- cardinal_lead_guilds_desc: "Guilds and other associations of merchants and tradesmen are unavoidable, by forcing them to be led by such a righteous and pious man as a cardinal we ensure that the organization will not stray from the path of God and the sin of greed will not cloud the mind of our merchants."
+ cardinal_lead_guilds_desc: "Guilds and other associations of merchants and tradesmen are a necessary evil. By putting a pious cardinal in charge of them, we will ensure that no organization will stray from the path of God, and that the sin of greed will not cloud the minds of our [ShowEstateTypeName('burghers_estate')]."
 
 #Kanem Bornu 
 
  kbo_kaigama: "Kaigama"
- kbo_kaigama_desc: "The Kaigama is the governor of our Southern territories and the chief of the army. With power, vigor, and tremendous influence, nobles that hold this title have at times even played the role of king-makers as they may decide who the ruler shall be."
+ kbo_kaigama_desc: "The Kaigama is the governor of our Southern territories and the chief of the army. With power, vigor, and tremendous influence, [ShowEstateTypeName('nobles_estate')] who hold this title have at times even played the role of king-makers, as they may decide who shall rule."
 
  kbo_yerima: "Yerima"
- kbo_yerima_desc: "The Yerima is the governor of our Northern territories and in charge of levying able-bodied men for the lower casts of our armed forces. Whilst not enjoying as much influence as the Kaigama, we may soon come to rely on the influence imposed by the Yerima via the office's recruitment efforts as we struggle against foes exterior and interior alike."
+ kbo_yerima_desc: "The Yerima is the governor of our Northern territories and in charge of levying able-bodied fighters to form the lower castes of our armed forces. While not enjoying as much influence as the Kaigama, we may yet come to rely on what sway the Yerima does have when recruiting soldiers, since we continue to struggle against exterior and interior foes alike."
 
- kbo_lake_chad_trade_privilege: "Control of Lake Chad"
- kbo_lake_chad_trade_privilege_desc: "Across the shorelines of Lake Chad, our merchants interact and exchange goods with a multitude of folk from faraway lands. The volume of commerce, controlled by us, is a vital lifeblood for our economy and the stability of our country."
+ kbo_lake_chad_trade_privilege: "Control of [ShowLocationNameWithNoTooltip('lake_chad')]"
+ kbo_lake_chad_trade_privilege_desc: "Across the shores of [ShowLocationName('lake_chad')], our [ShowEstateTypeName('burghers_estate')] interact and exchange goods with a multitude of folk from faraway lands. This volume of commerce, fully under our control, is the lifeblood of our economy and the foundation of our national stability."
 
  kbo_serfdom_economy: "Serfdom Economy"
- kbo_serfdom_economy_desc: "Our great nation was built on the backs of those who stood against us, time and time again. The flow of serfs and slaves within our nation is a cornerstone to our economy, with frequent raids and conquest fueling our robust economy."
+ kbo_serfdom_economy_desc: "Our empire was built on the backs of our conquered enemies. The flow of forced labor within our nation is a cornerstone of our economy, with frequent raids and conquests further fueling our wealth and power."
 
  amenokal_salt_traders: "Amenokal Salt Traders"
- amenokal_salt_traders_desc: "Seasoned veterans of the Saharan trade, these individuals oversee and steer the caravans of [ShowGoodsName('salt')] that traverse across the inhospitable deserts."
+ amenokal_salt_traders_desc: "Seasoned veterans of Saharan trade, these individuals oversee and drive the caravans of [ShowGoodsName('salt')] that traverse the inhospitable deserts."
 
  kbo_cima: "Cima Fiefs"
- kbo_cima_desc: "As a reward for their success in battle, we choose to grant frontier territories to our military commanders in a way to ensure their loyalty and improve the long-distance influence that our capital should have on our borderlands."
+ kbo_cima_desc: "As a reward for their victories on the battlefield, we grant frontier territories to our military commanders. This helps to solidify their loyalty to us, and improves the influence our capital has over our distant borderlands."
 
  clergy_religious_state: "Religious Administration"
  clergy_religious_state_desc: "By making matters of religion our foremost priority, we shall forge our nation into a more cohesive whole."
  
  clergy_papal_emissary: "Papal Emissary"
- clergy_papal_emissary_desc: "The Pope's legates and other emissaries shall not only be welcomed in our lands, but we shall also commit to always obeying their judgment and to non-interference in the relations between the local clergy and the Pope."
+ clergy_papal_emissary_desc: "The legates and other emissaries of the [GetCountry('PAP').GetGovernment.GetRulerTitle] are most welcome in our territory. Moreover, we shall also commit to obeying their judgment, and to never interfere in relations between our local [ShowEstateTypeName('clergy_estate')] and the [GetCountry('PAP').GetGovernment.GetRulerTitleWithNoTooltip]."
 
  freedom_of_interpretation: "Freedom of Interpretation"
- freedom_of_interpretation_desc: "The many teachings of our faith are but the shade under which we may rest and enjoy a prudent and righteous life. As such, we should promote the spread of its wisdom."
+ freedom_of_interpretation_desc: "The many teachings of our faith are like the cool shade underneath a great tree, where all may rest and be refreshed. Under this protective canopy of wisdom, our people are encouraged to think deeply about matters of faith, and to expand and diversify our tenets. This freedom of interpretation will allow our religion to adapt to diverse communities while yet maintaining its core principles."
 
  expansionist_zealotry: "Expansionist Zealotry"
- expansionist_zealotry_desc: "To wage war for our faith is the prime calling of all true believers."
+ expansionist_zealotry_desc: "To wage war for our faith is the divine calling of all true believers!"
 
  religious_diplomats: "Religious Diplomats"
- religious_diplomats_desc: "Good diplomacy is hard to achieve; it only takes a few simple misunderstandings for the relationship between two countries to plummet. By sending very religious diplomats to our brethren in faith, we can at least prevent this situation from happening."
+ religious_diplomats_desc: "Good diplomacy is difficult to maintain; it only takes a few simple misunderstandings for the relationship between two countries to sour completely. By sending particularly pious diplomats to our brethren in faith, we shall rely on the strength of that commonality to build fruitful, lasting political relationships."
 
  promote_cultural_unity: "Promote Cultural Unity"
  promote_cultural_unity_desc: "The basis of a strong and coherent society is essentially the promotion of one culture to unite all our people and protect them from foreign influences."
 
  embellish_great_works_of_faith: "Embellish Great Works of Faith"
- embellish_great_works_of_faith_desc: "No better way to display our magnanimity and strength of faith, than to erect major works dedicated to the purity of divinity through the architectural awe of our great works."
+ embellish_great_works_of_faith_desc: "There is no better way to display our magnanimity and strength of faith than to erect major works or architectural splendor, dedicated to the purity of divinity."
 
 # dhimmi privileges
 
  dhimmi_land_rights: "Guarantee Local Land Rights"
- dhimmi_land_rights_desc: "A man's home is his refuge. By guaranteeing the property rights to heathen members of our society, we will establish a link of trust between them and our administration."
+ dhimmi_land_rights_desc: "A man's home is his refuge. By guaranteeing property rights to heathen members of our society, we will establish a link of trust between them and our administration."
 
  dhimmi_lighter_taxes: "Lighter Taxation"
- dhimmi_lighter_taxes_desc: "The secret to a stable society between people of many beliefs is none other than fair treatment and warm kindness. By imposing fewer taxes on heathen subjects under our banner, we succeed in maintaining their compliance."
+ dhimmi_lighter_taxes_desc: "The secret to a stable multifaith society is simply fair treatment and warm kindness — and, more concretely, tax breaks. By imposing fewer taxes on heathen subjects under our banner, we will ensure their compliance going forward."
  
  dhimmi_military_service: "Allow Military Service"
- dhimmi_military_service_desc: "The many heathen believers who peacefully occupy our lands shall be more than willing to defend their livelihoods and their families, should we wish to allow their recruitment."
+ dhimmi_military_service_desc: "The many heathen believers who peacefully occupy our lands are more than willing to defend their livelihoods and their families, should we permit their recruitment."
 
  dhimmi_promote_tolerance: "Promote Tolerance"
- dhimmi_promote_tolerance_desc: "Our people make great references to kindness and tolerance. Acting on their behest and following their example, we will treat non-believers with kindness as we strive to achieve stability and prosperity."
+ dhimmi_promote_tolerance_desc: "Our people frequently cite a desire to build a more diverse and tolerant society. Acting on their behest and following their example, we will treat non-believers with kindness as we strive to achieve stability and prosperity."
 
  dhimmi_administrative_posts: "Grant Administrative Posts"
- dhimmi_administrative_posts_desc: "Our borders hold many adherents to heathen beliefs. Their local leaders are keen on maintaining their positions. To cooperate with them and share in their wisdom is only the natural path of a healthy administration."
+ dhimmi_administrative_posts_desc: "Our borders are home to many who do not follow our state religion. Their local leaders are keen on maintaining their positions and beliefs. To cooperate with them and share in their wisdom is the natural path to a healthy administration."
 
  dhimmi_traditions: "Preserve Local Traditions"
- dhimmi_traditions_desc: "Our heathen subjects come from many corners of the earth. From lowly workers of the fields to former members of their nobility. Their past is rich, as is their history and the beauty of their local traditions. To respect and allow their practice is only the mark of a superior and harmonious society."
+ dhimmi_traditions_desc: "Our subjects come from many corners of the earth, and as such, have different believe and lifeways. From lowly fieldhands to displaced members of their former noble classes, they can all boast of the storied histories and beautiful traditions of their people. To respect and allow the practice of diverse customs is the mark of a superior, harmonious society."
 
  dhimmi_legal_autonomy: "Legal Autonomy"
- dhimmi_legal_autonomy_desc: "The presence of heathens in our legal system is a sufficient way to integrate them into our social norms. Despite protests against their inclusion, allowing them to exercise jurist duties such as witnesses, guardians, and even legal representatives of their communities, will only further their support of our authority."
+ dhimmi_legal_autonomy_desc: "There are many good citizens in our territory who do not follow our state religion, yet they have been integrated into our legal system and enjoy the same rights as others. Despite protests against their inclusion, allowing them to participate in our judicial framework as witnesses, guardians, and legal representatives of their communities will only further their support of our authority."
 
  dhimmi_promote_dhimmi_hierarchy: "Promote Local Hierarchy"
- dhimmi_promote_dhimmi_hierarchy_desc: "As we strive to maintain social equilibrium, our advisors have deemed it necessary to coordinate with local representatives of our many heathen communities."
+ dhimmi_promote_dhimmi_hierarchy_desc: "As we strive to maintain social equilibrium, our advisors have deemed it necessary to coordinate with representatives from the many local communities who do not adhere to our state faith."
 
  dhimmi_pact_of_umar: "Pact of Umar"
- dhimmi_pact_of_umar_desc: "A list of rights as well as responsibilities aimed at heathens within our borders. This treaty clearly defines the nature of the relationship of 'protected persons' including Christians, Jews, Zoroastrians, and many more recognized faiths."
+ dhimmi_pact_of_umar_desc: "This treaty clearly defines the status, rights, and responsibilities of 'protected persons' within our realm, including Christians, Jews, Zoroastrians, and many other recognized faiths."
 
  dhimmi_mazalim_court: "Maẓālim Courts"
- dhimmi_mazalim_court_desc: "Parallel to the authority and existence of religio-judicial administration and Sharī'a courts, the Maẓālim operate secularly for the affairs of the unbelievers. Their sessions can take place at the Palace of Justice (dār al-'adl) or ceremonial hall within the citadel walls (īwan kabīr). These audiences eventually became part of the formalities around royal duties."
+ dhimmi_mazalim_court_desc: "Parallel to the authority and existence of religio-judicial administration and Sharī'a courts, the Maẓālim operate secularly for the affairs of the unbelievers. Their sessions can take place at the Palace of Justice (#italic dār al-'adl#!) or ceremonial hall within the citadel walls (#italic īwan kabīr#!)."
 
 #Tribes Privileges
  local_tribal_strongholds: "Tribal Strongholds"
- local_tribal_strongholds_desc: "The many settled tribes across the Maghreb have accumulated great influence over the locals. To appease them and recognize their authority will only help us exert control over our domain, with greater ease."
+ local_tribal_strongholds_desc: "The many settled tribes across the Maghreb exert great influence over the locals. To appease them and recognize their authority will help us exert control over our domain with greater ease."
  jaysh_armies: "Jaysh Armies"
- jaysh_armies_desc: "Organized by the local administration to perform garrison and auxiliary duties, these men were hired to suppress local revolts and ensure the constant flow of reinforcements into our army, whilst suppressing rebellions in their home territories."
+ jaysh_armies_desc: "Organized by the local administration to perform garrison and auxiliary duties, these fighters were hired to suppress local revolts and ensure the constant flow of reinforcements into our army, while also suppressing rebellions in their home territories."
 
  tribes_in_administration: "Tribal Cabinet"
- tribes_in_administration_desc: "The tribal communities are an important cornerstone of our state. It is only right that we allow those willing to contribute to our administration to serve in high positions."
+ tribes_in_administration_desc: "Our tribal communities are an important cornerstone of our state. It is only right that we allow those willing to contribute to our administration to serve in high positions."
 
  tribes_land_rights: "Tribal Land Rights"
- tribes_land_rights_desc: "Expanding and respecting the living status of the many tribal communities within our lands is a great way to ensure their cooperation."
+ tribes_land_rights_desc: "Expanding and respecting the land rights of the many tribal communities in our realm is an excellent way to ensure their continued cooperation."
 
  tribes_fosterage: "Fosterage"
- tribes_fosterage_desc: "Ensuring the tutoring of the next generation of tribal members through their fosterage in neighboring families, they will ensure the passing of knowledge and cement bonds of kinship and alliance between them."
+ tribes_fosterage_desc: "By fostering the next generation of tribal members in neighboring families, their unique knowledge will be passed down, and bonds of kinship and alliance between communities will be strengthened."
 
  tribes_manrent: "Manrent"
- tribes_manrent_desc: "By engaging in contractual conscription work, many members of our tribal communities enter the service in the various fortifications of their most influential families."
+ tribes_manrent_desc: "By engaging in contractual conscription work, many members of our tribal communities enter into the service of our most influential families."
 
  tribes_allow_gatherings: "Allow Gatherings"
- tribes_allow_gatherings_desc: "The expression of a unique culture through regular gatherings between powerful families of our tribal communities are a great way to discuss politics, exchange information and bring business to many settlements across our realm." 
+ tribes_allow_gatherings_desc: "Regular gatherings of our tribal communities are an excellent forum in which to discuss politics, exchange information, and negotiate the flow of business to many settlements across our realm. Therefore, we shall allow them." 
 
  tribes_creach: "Creach"
- tribes_creach_desc: "The cultivation and growth of cattle and [ShowGoodsName('livestock')] that we have procured through warfare and raiding is a great way to ensure the prosperity of our tribal people."
+ tribes_creach_desc: "The cultivation and husbandry of [ShowGoodsName('livestock')] we have procured through warfare and raiding is an excellent way to safeguard the prosperity of our tribal people."
 
  tribes_pasture_access: "Pasture Access"
- tribes_pasture_access_desc: "By granting pasture access to our tribal communities we can utilize their advanced knowledge in growing food and cattle."
+ tribes_pasture_access_desc: "By granting pasture access to our tribal communities, we can utilize their advanced knowledge about growing crops and raising [ShowGoodsName('livestock')]."
 
- tribes_tribal_levies: "Increase Tribal Levies"
- tribes_tribal_levies_desc: "Tribal men are famed for their warfare experience. To employ these hard men within our armies will only serve to empower our forces and further secure our domain."
+ tribes_tribal_levies: "Allow Tribal Levies"
+ tribes_tribal_levies_desc: "Our tribal warriors are famed for their warfare experience. To employ these hard men within our armies will only serve to empower our forces and further secure our domain."
 
  tribes_tribal_registry: "Expanded Registry"
- tribes_tribal_registry_desc: "Despite the tribal communities living a life largely detached from our society, we may nevertheless ensure a proper registry of those that live among us."
+ tribes_tribal_registry_desc: "Despite our local tribal communities living a life largely detached from that of our mainstream society, we should nevertheless ensure that they are properly accounted for in our registry."
 
  tribes_protected_faith: "Protected Tribal Faith"
- tribes_protected_faith_desc: "Men of nature and the wild stretches of our land may sometimes subscribe to different beliefs. As loyal subjects under our banner, we would do well to respect our religious differences..."
+ tribes_protected_faith_desc: "Those who dwell in the wildest stretches of our land sometimes subscribe to different beliefs. As they are loyal subjects under our banner, we would do well to respect their religious differences."
  
  tribes_respect_tribal_traditions: "Respected Tribal Traditions"
- tribes_respect_tribal_traditions_desc: "The many interesting and fascinating traditions perpetuated by members of the tribal communities may be respected and maintained under our banner."
+ tribes_respect_tribal_traditions_desc: "The fascinating traditions followed by members of the tribal communities in our society should be respected, and supported by the state."
  
 
  #Cossacks Privileges
  cossacks_land_rights: "Cossack Land Rights"
- cossacks_land_rights_desc: "The Cossacks live in their own communities with their own organization. By guaranteeing the autonomy of their territories we will ensure that they remain loyal to us."
+ cossacks_land_rights_desc: "The Cossacks live in their own communities with their own organization. By guaranteeing the autonomy of their territories, we will ensure that they remain loyal to us."
  
  cossacks_sanctioned_atamans: "Sanctioned Atamans"
- cossacks_sanctioned_atamans_desc: "The ataman is the leader of each group within the Cossacks. By giving them an official sanction to their leadership we will tie them to our rule, albeit at the cost of giving them more authority."
+ cossacks_sanctioned_atamans_desc: "An #italic ataman#! is the leader of a Cossack group. By officially sanctioning their leadership, we will tie them to our rule, albeit at the cost of giving them more authority."
 
  cossacks_allowed_free_roaming: "Allowed Free Roaming"
- cossacks_allowed_free_roaming_desc: "Cossacks are traditionally semi-nomadic, not permanently settling in any fixed place for long. Allowing them such mobility will go a long way in preserving their way of life, and in keeping them willing to work for us."
+ cossacks_allowed_free_roaming_desc: "Cossacks are traditionally semi-nomadic, not permanently settling in any fixed place for long. Allowing them to retain mobility will go far in preserving their way of life... and in keeping them willing to work for us."
  
  cossacks_government_positions: "Cossack Government Positions"
- cossacks_government_positions_desc: "The harsh life that the Cossacks lead serves to breed very resilient and sturdy individuals. Instead of just having them roam our lands, we could recruit the most talented individuals among them to help in our government administration."
+ cossacks_government_positions_desc: "The harsh life that the Cossacks lead breeds resilient individuals. Instead of permitting them to freely roam our lands, we could recruit the most talented and hardy among them to the administration."
 
  cossacks_military_service: "Cossack Military Service"
- cossacks_military_service_desc: "The Cossacks live traditionally in a very militarized society. Instead of freely roaming the countryside, they will serve us best if we incorporate them into our military system so that we can best use their abilities in war."
+ cossacks_military_service_desc: "The Cossacks live in a highly militarized society. Instead of allowing them to freely roam the countryside, we shall incorporate them into our military system so that we may take advantage of their battle prowess."
 
  cossacks_protected_faith: "Protected Faith of the Cossacks"
- cossacks_protected_faith_desc: "The Cossacks are traditionally diverse in their religious beliefs, covering and including people from a wide range of creeds, albeit mostly sharing the same faith. By respecting their faith we can avoid having religious tensions not only among themselves but also between them and us."
+ cossacks_protected_faith_desc: "The Cossacks are traditionally diverse in their religious beliefs, albeit mostly sharing the same faith. By respecting their personal beliefs, we can avoid breeding religious tensions — not only among themselves, but also between them and us."
 
  cossacks_respected_traditions: "Respected Cossack Traditions"
- cossacks_respected_traditions_desc: "The Cossacks have their own traditions and social organization. We need to respect them if we want them to properly feel part of our country."
+ cossacks_respected_traditions_desc: "The Cossacks have their own traditions and social organization. We need to respect these foundational aspects of their culture if we wish them to truly feel like equal members of our society."
 
  cossacks_rada_autonomy: "Rada Autonomy"
- cossacks_rada_autonomy_desc: "The administration of the Cossacks centers around the Rada, meaning assembly or council, where they decide upon all matters both military and civil. By giving these Rada legal autonomy from our own administration, we can delegate the governance of their territories to themselves, at the same time as we ensure their complacency."
+ cossacks_rada_autonomy_desc: "The administration of the Cossacks centers around the #italic Rada#!, meaning assembly or council, where they decide upon all matters both military and civil. By giving these Rada legal autonomy from our own administration, we can delegate the governance of their territories to themselves, at the same time as we ensure their complacency."
 
  cossacks_register: "Registered Cossacks"
- cossacks_register_desc: "Not only shall the Cossacks serve under our military, but they will also need to be organized into special formations, with a specific register and their specific officer ranks, so that they can serve us in war most effectively."
+ cossacks_register_desc: "Not only shall the Cossacks serve in our military, but shall also be organized with a specific register and their own specific officer ranks, so that they can most efficiently fight in our wars."
 
  cossacks_explorers: "Exploration by the Cossacks"
- cossacks_explorers_desc: "The Cossacks are used to roam freely and live without being tied down by any country. We can use these abilities to send them into the unknown and discover new lands for us."
+ cossacks_explorers_desc: "The Cossacks are used to a roaming life, which has taught them to traverse and thrive in almost every type of terrain. We can use these abilities to send them out on expeditions into the unknown, where they will discover new lands for us to take."
  
  cossacks_colonization: "Colonization by the Cossacks"
- cossacks_colonization_desc: "The lifestyle of the Cossacks of not living in a permanent place for long makes them ideal candidates to send into unclaimed regions in preparation for a more permanent settlement."
+ cossacks_colonization_desc: "The freeroaming lifestyle of the Cossacks makes them ideal candidates to send into unclaimed regions and make preparations for establishing permanent settlements."
 
  plc_cossack_treaty_of_hadiach: "Treaty of Hadiach"
- plc_cossack_treaty_of_hadiach_desc: "The $plc_cossack_treaty_of_hadiach$ concedes many powers and rights to the Cossacks. The most important concession of this privilege is the inclusion of the nation in the Commonwealth to form the Polish-Lithuanian-Ruthenian state."
+ plc_cossack_treaty_of_hadiach_desc: "The $plc_cossack_treaty_of_hadiach$ concedes many powers and rights to the Cossacks, the most important concession of which being the inclusion of their nation in the Commonwealth, forming the Polish-Lithuanian-Ruthenian state."
 
  cossack_identity: "Cossack Identity"
- cossack_identity_desc: "The Cossacks have a distinct and proud identity, with their own traditions and customs. As such, they do not easily abandon them due to outside influences, but tend to stand firm on their own way of life."
+ cossack_identity_desc: "The Cossacks have a distinct and proud identity, with their own traditions and customs. They do not easily abandon them due to outside influences, but stand firm and follow their own way of living."
 
 #Burgher Privileges
 
  reduced_trade_regulations: "Reduced Mercantile Regulations"
- reduced_trade_regulations_desc: "Stiffling the flow of commerce from abroad is by no means a wise move. To that extent, we must enable merchants from foreign markets to feel at home in our streets and ascertain that their goods flow within our borders."
+ reduced_trade_regulations_desc: "Stifling the flow of commerce from abroad is by no means wise. We should ensure that any potential trading partners feel welcome in our lands in order to safeguard a steady flow of their valuable goods into our markets."
 
  increased_trade_regulations: "Increased Trade Regulations"
- increased_trade_regulations_desc: "We must not allow foreign merchants to take over our markets. As a step of regulatory oversight, we will curb the influence of foreign merchants and provide a competitive advantage to our own."
+ increased_trade_regulations_desc: "We must not allow foreign [ShowEstateTypeName('burghers_estate')] to dominate our markets! Increasing our regulatory oversight will curb the influence of foreign merchants and provide a competitive advantage to our own."
  
  land_of_commerce: "Land of Commerce" 
- land_of_commerce_desc: "We pride ourselves as a nation that takes great care of its merchants, assuring their swift transportation, legal representation, and freedom to move their goods as they see fit."
+ land_of_commerce_desc: "We pride ourselves on being a nation that takes great care of its [ShowEstateTypeName('burghers_estate')], assuring they have access to legal representation, can move around swiftly as needed, and have the freedom to transport their goods as they see fit."
 
  treasury_rights: "Treasury Rights"
- treasury_rights_desc: "By granting the oversight of our treasury to powerful wealthy members of our society we will secure their interests and improve their loyalty to us, at the expense of some lost taxation."
+ treasury_rights_desc: "By granting the oversight of our treasury to wealthy, powerful members of our society, we will secure their interests and increase their loyalty to us, albeit at the expense of losing some tax revenue."
 
  urban_development_grants: "Urban Development Grants"
- urban_development_grants_desc: "It is clear to us that the future is held within the sturdy walls of urbanized settlements. To promote and usher in this new era, the city-dwellers will be granted several grants to promote urbanization across our country."
+ urban_development_grants_desc: "It has become clear to us that the future will dawn within city walls. To promote and usher in this new era of urbanization, city-dwellers will be given several grants to promote urbanization across our realm."
 
  sponsor_maritime_contracts: "Sponsored Maritime Contracts"
- sponsor_maritime_contracts_desc: "The mercantile traffic across our shores is a valuable means of taxation and income for our treasury. By entrusting special contracts to the merchants we will be certain to maximize our maritime presence."
+ sponsor_maritime_contracts_desc: "Maritime trade is a valuable source of revenue for our treasury. By granting exclusive contracts to our [ShowEstateTypeName('burghers_estate')], we can regulate commerce while ensuring consistent tax income from shipping and trade."
 
  control_over_the_coinage: "Control over the Coinage"
- control_over_the_coinage_desc: "Cutting and circulating new coins of adequate quality is both a complicated and vital process, for the development of a sovereign people."
+ control_over_the_coinage_desc: "Cutting and circulating new coins of adequate quality is a complicated, yet essential process for the development of a sovereign people. By taking control of the coinage, we will strengthen our economic foundations and consolidate our authority."
 
  shipwright_contracts: "Shipwright Contracts" 
  shipwright_contracts_desc: "Granting favorable state-sponsored contracts to wealthy members of our society will allow us to adopt a more efficient grasp on our shipwright processes and cut down on the regulatory red tape around the industry."
 
  allow_trade_center_sponsorship: "Allow Trade Center Sponsorship"
- allow_trade_center_sponsorship_desc: "By sponsoring various trade centers across our realm, we will make sure that merchants and people of coin have ample facilities to exchange wares and establish a healthy flow of trade."
+ allow_trade_center_sponsorship_desc: "By sponsoring various trade centers across our realm, we will make sure that [ShowEstateTypeName('burghers_estate')] and people of coin have ample facilities in which to exchange wares and establish a healthy flow of trade."
 
  market_fairs: "Market Fairs"
- market_fairs_desc: "The financing and development of merchant centers will surely attract higher traffic as it amasses great wealth, various exotic goods in ample quantities, and a reputation for safety."
+ market_fairs_desc: "The financing and development of merchant centers will surely attract higher trade traffic, while simultaneously amassing great wealth, ample quantities of various exotic goods, and a reputation for security."
 
 
  nobility_council: "Elite Council"
- nobility_council_desc: "At a time where the elites area influential and can help promote or eradicate dynasties, it is fundamentally wise to allow them certain key positions around the administrative council."
+ nobility_council_desc: "At a time where the elites are extremely influential — and can precipitate the rise and fall dynasties — it is fundamentally wise to give them certain key positions in the administrative council."
 
  manorial_courts: "Manorial Courts"
- manorial_courts_desc: "The right to hold court despite their position and loyalty to central authority is quite a bold privilege for the elites. By imitating their liege, they may be able to extract more taxes and command higher authority across their domain, for better or worse."
+ manorial_courts_desc: "The right to hold court, despite not actually being rulers, is quite a valuable privilege for the [ShowEstateTypeName('nobles_estate')]. By emulating their liege and claiming the power to arbitrate disputes, levy fines and taxes, and enforce their own laws, they can amass great wealth and command higher authority across their domain — for better or for worse…"
 
  increased_civic_engagement: "Increased Civic Engagement"
- increased_civic_engagement_desc: "Promoting the engagement of the public with sociopolitical matters is a great way to ensure the health of our republic."
+ increased_civic_engagement_desc: "Encouraging the public to engage with sociopolitical matters is an excellent way to safeguard the health of our nation. If they are more involved with the politics and administration of the country, surely they will work harder to ensure its prosperous future."
 
  inherited_offices: "Inherited Offices"
- inherited_offices_desc: "While it is true that most domains that share our administration tend to hold elections for their offices, we have come to realize that if we are to secure the loyalty of the elites we must allow them access to hereditary offices."
+ inherited_offices_desc: "While it is true that most other realms with administrations like ours tend to hold elections for government roles, we have come to realize that if we are to secure the loyalty of the elites, we must allow them exclusive access to hereditary offices."
 
  recognized_communes: "Recognized Communes"
- recognized_communes_desc: "Many urban and rural settlements across our country have developed a very decentralized view of their situation by becoming increasingly autonomous. Whilst recognizing them as legitimate entities may reduce our grasp on their affairs, it will certainly please the elites."
+ recognized_communes_desc: "Many of our settlements, both urban and rural, have become increasingly autonomous under their landholding elite. While recognizing these breakaways as legitimate entities may reduce our control over their affairs, it will nevertheless please the [ShowEstateTypeName('nobles_estate')]."
 
 #Clergy Privileges - Republic
 
  maintain_clerical_proceedings: "Maintain Clerical Proceedings"
- maintain_clerical_proceedings_desc: "Despite our aptitude towards republican ideals, the religious people will be allowed to retain their influence and court influence."
+ maintain_clerical_proceedings_desc: "Despite our commitment to republican ideals, we permit the [ShowEstateTypeName('clergy_estate')] to retain their traditional privileges and jurisdiction over matters of faith, morality, and church law."
  
  state_official_oaths: "State Official Oaths"
- state_official_oaths_desc: "All officials that uphold offices across our domain must profess their allegiance to the one true faith under the blessing of the holy men."
+ state_official_oaths_desc: "All government officials in our domain must swear allegiance to the one true faith under the blessing of the [ShowEstateTypeName('clergy_estate')] before they may take office."
  
  mandatory_clerical_donations: "Mandatory Clerical Donations"
- mandatory_clerical_donations_desc: "The right to donations is a divine responsibility if we are to profess our piety and strength of belief towards a higher power."
+ mandatory_clerical_donations_desc: "Our subjects are required to pay tithes to our religious institutions. These mandatory contributions are a divine responsibility, demonstrating the piety and strength of faith our people hold."
 
 #Burgher Privileges - Republic
 
  toll_and_tariff_exemptions: "Toll & Tariff Exemptions"
- toll_and_tariff_exemptions_desc: "The exemption of merchant carts and vessels from paying their dues as they carry their goods will certainly go a long way to ensuring that the traders approve of our administration."
+ toll_and_tariff_exemptions_desc: "The exemption of merchant vessels from paying dues to transport their goods will certainly go a long way towards ensuring that the [ShowEstateTypeName('burghers_estate')] approve of our administration."
 
  dedicated_merchant_courts: "Dedicated Merchant Courts"
- dedicated_merchant_courts_desc: "The courts dedicated to resolving the disputes within the merchants are a powerful branch of our government and exert great influence over commercial and mercantile matters."
+ dedicated_merchant_courts_desc: "These courts are dedicated to resolving disputes between our [ShowEstateTypeName('burghers_estate')]. They are a powerful branch of our government, and exert enormous influence over commercial and mercantile matters."
 
  noble_patronage: "Elite Patronage"
- noble_patronage_desc: "Our mercantile presence must not atrophy. To ensure the continued conduct of trade business, it befalls on the shoulders of the elites to patronize them and ensure they have ample coin to ferry their goods."
+ noble_patronage_desc: "Our mercantile presence must not atrophy. To ensure a robust and continuous stream of trade, it falls upon the shoulders of the [ShowEstateTypeName('nobles_estate')] to be the patrons of our [ShowEstateTypeName('burghers_estate')] and ensure they have ample coin with which to ferry their goods."
 
 #Noble Privileges - Theocracy
 
  appoint_ecclesiastical_offices: "Appoint Ecclesiastical Offices"
- appoint_ecclesiastical_offices_desc: "Nobility and divinity are concepts that have become increasingly interwoven within our pious society."
+ appoint_ecclesiastical_offices_desc: "Nobility and divinity are concepts that have become increasingly interwoven within our pious society. The crown retains the right to appoint high church officials, which ensures that the beneficiaries remain loyal to the state while gaining influence of their own."
  
  control_of_the_borderlands: "Control of the Borderlands"
- control_of_the_borderlands_desc: "The protection of believers far away from our capital is an arduous task. By entrusting their protection to the elites we will succeed in keeping our people safe against heathen and heretic foes."
- 
+ control_of_the_borderlands_desc: "Protecting the faithful who live far from our capital is an arduous task. By commanding the [ShowEstateTypeName('nobles_estate')] in those lands to protect their people, we will shield our people against heathens and heretical foes."
  sponsor_printing_of_religious_texts: "Sponsor Printing of Religious Texts"
- sponsor_printing_of_religious_texts_desc: "The circulation of printed religious texts is a great way to spread knowledge and teachings, educating our people and reminding them of their religious responsibilities."
+ sponsor_printing_of_religious_texts_desc: "Circulating printed religious texts is an excellent way to spread literacy and entrench the teachings of our faith firmly within our people's hearts. These efforts to distribute religious literature will educate our people and remind them of their religious responsibilities."
  printing_of_religious_texts: "Religious Text Printing"
- printing_of_religious_texts_desc: "The establishment of the print and the commercialization and spread of religious books are the next steps towards increasing our piety and literacy!\n\nUnlocks the [ShowEstatePrivilegeName('sponsor_printing_of_religious_texts')] privilege."
+ printing_of_religious_texts_desc: "Establishing procedures to print, commercialize, and distribute religious texts are the necessary next steps towards increasing our piety and literacy!\n\nUnlocks the [ShowEstatePrivilegeName('sponsor_printing_of_religious_texts')] privilege."
 
  liturgical_mural_art: "Liturgical Mural Art"
- liturgical_mural_art_desc: "Our great palatial walls will be adorned with the drawings and designs of some of our best and most capable artists, as a way to elevate the beauty of our faith and profess our love towards the divine." 
+ liturgical_mural_art_desc: "Our palatial walls will be adorned with captivating religious scenes created by the nation's most gifted artists, as a way to showcase the beauty of our faith and profess our love towards the divine." 
 
 #Unique Privileges#
 
  golden_liberty: "Golden Liberty"
- golden_liberty_desc: "The Golden Liberty (also known as Złota Wolność) represents the nobility's significant influence and privileges during the current era. It refers to the system where the nobility held considerable power, including the right to elect the king and shape the country's policies. It entailed that all nobles, regardless of rank, economic status or ethnic background, were considered equal in power among their peers."
+ golden_liberty_desc: "The Golden Liberty, also known as #italic Złota Wolność#!, represents the significant influence and privileges currently held by our [ShowEstateTypeName('nobles_estate')], including the right to elect the ruler and shape national policy. It entailed that all [ShowEstateTypeName('nobles_estate')], regardless of rank, economic status, or ethnic background, were considered equal in power to their peers."
 
  nieszawa_privileges: "Statutes of Nieszawa"
- nieszawa_privileges_desc: "A series of laws which grants great concessions to the elites requiring their approval for new laws, mobilization of armed forces, and new taxes. The statutes also diminished the power of the richest families, and strengthened the position of the broader nobility class."
+ nieszawa_privileges_desc: "A series of laws which grant significant concessions to the [ShowEstateTypeName('nobles_estate')] by requiring their approval for new laws, mobilization of armed forces, and new taxes. These statutes also diminished the power of the richest families, and strengthened the position of the broader nobility."
  
  pacta_conventa: "Pacta Conventa"
- pacta_conventa_desc: "Originally conceived as a contractual agreement between the nobles and the government, these statutes spell out the responsibilities of central authority, the outlining of various undertakings in areas like foreign policy, taxes, military matters, and more."
+ pacta_conventa_desc: "Originally conceived as a contractual agreement between the [ShowEstateTypeName('nobles_estate')] and the government, these statutes spell out the responsibilities of central authority and outline various undertakings in areas like foreign policy, taxes, military matters, and more."
 
- polish_merchant_seal: "Polish Merchant Seal"
- polish_merchant_seal_desc: "A seal bearing the insignia of our central authority, this document allows free uninterrupted travels for our merchants, allowing them hastened passage between cities for themselves and their goods, in exchange for a small supplemental tax."
+ polish_merchant_seal: "[GetCountry('POL').GetAdjectiveWithNoTooltip] Merchant Seal"
+ polish_merchant_seal_desc: "A seal bearing the insignia of our central authority, this document permits free, uninterrupted travel for our [ShowEstateTypeName('burghers_estate')], allowing them more expedient passage between cities for themselves and their goods in exchange for a small supplemental tax."
 
  privateer_contracts: "Privateer Contracts"
- privateer_contracts_desc: "By regulating and overseeing the marauding activities under our jurisdiction, we will surely employ a more efficient band of privateers ready to serve our country and hinder our foes."
+ privateer_contracts_desc: "In order to expand our naval capabilities without having to maintain a large standing fleet, we shall regulate and officially oversee acts of piracy that benefit the nation. Our privateers operate under official sanction, sharing their plunder with the crown in exchange for legal protection. However, the fine line between privateering and piracy requires us to be cautious if we do not wish to damage our international reputation…"
 
  noble_armies: "Noble Armies"
- noble_armies_desc: "The permit for the nobility to obtain and maintain personal armies is a great way to ensure their participation in fielding a larger army whilst also incurring more influence."
+ noble_armies_desc: "Permitting the [ShowEstateTypeName('nobles_estate')] to maintain personal armies is an excellent way to ensure they contribute when we form larger state armies, while also incurring more influence."
 
  chancellor_nobles: "Chancellor Nobles"
- chancellor_nobles_desc: "Deriving from the lesser branches of the nobility, these positions in our administration are responsible for framing the governmental decisions into legal documents, forming the basis of our administration."
+ chancellor_nobles_desc: "Deriving from the lesser branches of the [ShowEstateTypeName('nobles_estate')], these administrators are responsible for drafting governmental decisions into legal documents, forming the basis of our administration."
 
  ayuntamientos: "Ayuntamientos"
- ayuntamientos_desc: "The right to establish town councils with clear legislative and executive jurisdictions is a clear and fundamental aspect of the commoners within our domain."
+ ayuntamientos_desc: "The right to establish town councils with clear legislative and executive jurisdictions is a clear and fundamental right of the [ShowEstateTypeName('peasants_estate')] within our domain."
 
  right_to_inherit: "Right to Inherit"
- right_to_inherit_desc: "The German nobility maintains the long-standing tradition of dividing the lands and titles of the father between all of the sons, ensuring the peace between brothers and avoiding unnecessary wars."
+ right_to_inherit_desc: "The [ShowCultureGroupName('german_group')] [ShowEstateTypeName('nobles_estate')] maintains the long-standing tradition of dividing the lands and titles of the father between all of the sons, ensuring the peace between brothers and avoiding unnecessary wars."
 
  fund_karimi: "Fund the Karimi Merchants"
- fund_karimi_desc: "The funding of powerful merchants known as the Karimi, responsible for the flow of spice, among other trades, is an essential part of our monetary benefits and the continuation of our prosperity."
+ fund_karimi_desc: "Funding the powerful [ShowEstateTypeName('burghers_estate')] known as the Karimi, who are responsible for the trade of [ShowGoodsName('spices')] as well as other valuable goods, is essential to our continued prosperity."
 
  waqf_payments: "Waqf Payments"
- waqf_payments_desc: "To profess our piety and religious dedication, we will endeavor to grant waqf payments as charitable endowments, utilized in funding madrasas, hospitals, mosques, or helping the less fortunate."
+ waqf_payments_desc: "To demonstrate our piety and religious dedication, we will grant #italic waqf#! payments as charitable endowments, which shall be used to fund madrasas, hospitals, and mosques, as well as to aid the less fortunate."
 
  allow_hunting: "Hunting Permits"
- allow_hunting_desc: "Allow the common people to hunt and skin game within the legal and physical boundaries of their lord's or township's domain."
+ allow_hunting_desc: "Allows the [ShowEstateTypeName('peasants_estate')] to hunt and skin game within the legal and physical boundaries of their lord's or township's domain."
 
  no_labor_sunday: "No Labor on Sunday"
- no_labor_sunday_desc: "It would be wise to follow the teachings of the Church and award our serfs and peasants with no labor on Sunday, as a sign of piety and compassion."
+ no_labor_sunday_desc: "It would be wise to follow the teachings of the [ShowReligionGroupAdjective('christian')] Church and decree our serfs and peasants may have respite from their work on Sundays, as a sign of piety and compassion."
 
  communal_lands: "Communal Lands"
- communal_lands_desc: "Despite the inherently disadvantaged position of the common people, we must nevertheless dictate that all members of the lowest social hierarchy have the right to establish common flocks of animals and raise crops in shared fields."
+ communal_lands_desc: "Despite the inherently disadvantaged position of the common people, we must nevertheless dictate that all members of the [ShowEstateTypeName('peasants_estate')] have the right to establish common flocks of animals and to raise crops in shared fields."
  
  partial_yield: "Partial Yield"
- partial_yield_desc: "The lands of the elite and the wealthy are often tilled by peasants, slaves, or serfs. Thus, the least we can do is award the common people with access to a portion of that land's yield every year."
+ partial_yield_desc: "The lands of the wealthy are often tilled by [ShowEstateTypeName('peasants_estate')], slaves, or serfs. Thus, the least we can do is award the common people with access to a portion of that land's yield every year."
  
  access_to_royal_and_ecclesiastical_courts: "Access to Royal & Ecclesiastical Courts"
- access_to_royal_and_ecclesiastical_courts_desc: "The legal representation of the less fortunate is a vital aspect of a just and balanced society. Public and religious courts should therefore handle legal disputes between common people and the elites, as fairly as possible."
+ access_to_royal_and_ecclesiastical_courts_desc: "The legal representation of the less fortunate is a vital aspect of a just and balanced society. Public and religious courts should therefore handle legal disputes between [ShowEstateTypeName('peasants_estate')] and the elites as fairly as possible."
 
  peasants_in_administration: "Commoners in the Administration"
- peasants_in_administration_desc: "By involving the most skilled members of the common people, we can improve and expand the reach of our administration into the remote areas of our territory."
+ peasants_in_administration_desc: "By involving the most skilled amongst the [ShowEstateTypeName('peasants_estate')] in our government, we can improve and expand the reach of our administration into the most remote areas of our territory."
 
  ius_teutonicum: "Ius Teutonicum"
- ius_teutonicum_desc: "Since the times of the eastern marches of the Carolingian Empire, German peoples have been expanding and settling further east. Known as #italic Ostsiedlung#!, this influx of German settlers was often encouraged by the local rulers to fill sparsely populated areas. These settlers are subjected to a special type of law, the #italic $ius_teutonicum$#!, offering them special privileges like the exception from taxes and the right of establishing self-government towns."
+ ius_teutonicum_desc: "Since the times of the eastern marches of the Carolingian Empire, [ShowCultureGroupName('german_group')] peoples have been expanding and settling further east. Known as #italic Ostsiedlung#!, this influx of [ShowCultureGroupNameWithNoTooltip('german_group')] settlers is often encouraged by local rulers to fill sparsely populated areas. These settlers are subject to a special type of law, the #italic $ius_teutonicum$#!, offering them special privileges like tax exemptions and the right to establish self-governing towns."
 
  kormlenije: "Kormlenije"
- kormlenije_desc: "The Kormlenije System functions as a mechanism to address the financial and material needs of the Russian nobility, establishing a financial dependency among the nobles. This dependency, in turn, plays a crucial role in securing their unwavering loyalty."
+ kormlenije_desc: "The Kormlenije System is a mechanism to address the financial and material needs of the [GetCountry('RUS').GetAdjective] [ShowEstateTypeName('nobles_estate')], establishing a financial dependency among the elites. This dependency, in turn, plays a crucial role in securing their unwavering loyalty."
 
  haudenosaunee_labor_division: "Haudenosaunee Labor Division"
- haudenosaunee_labor_division_desc: "Our people always know what is expected of them inside the community. The different roles are distributed and assigned for the benefit of all, with everybody assigned to the same task working together. Men and women work in their respective assigned tasks, complementing each other. Women are in charge of all related to food production, from growing and harvesting the crops to cooking and preparing the meals, as well as housekeeping. Men, on the other hand, are in charge of the forests, rivers, and lakes, with wood production, hunting, and fishing being their occupations, but they are also the ones involved in trading and fighting."
-
+ haudenosaunee_labor_division_desc: "Our people have clearly defined roles within their communities. Tasks are distributed and assigned for the collective benefit of the group, with those sharing the same tasks working together. Men and women fulfill complementary roles through their respective assignments, creating a holistic division of labor."
  manifesto_of_freedom: "Manifesto of Freedom"
- manifesto_of_freedom_desc: "Following a period of political turmoil, the elite members of our society are granted extensive civil liberties to ensure their continued loyalty. The manifesto remains for the entirety of the current rule, and may prove challenging to revoke."
+ manifesto_of_freedom_desc: "Following a period of political turmoil, the elite members of our society are granted extensive civil liberties to ensure their continued loyalty.\n\nThe manifesto remains in effect for the entirety of the current rule, and may prove challenging to revoke."
 
 #Bohemia
  inaugural_diplomas: "Inaugural Diplomas"
- inaugural_diplomas_desc: "In a bid to forge strong ties with the elite members of our society, we have granted them a series of benefits under the agreement of the $inaugural_diplomas$. Among the concessions are the reduced levy obligations to the Crown and the right to reduced taxation."
+ inaugural_diplomas_desc: "In a bid to forge strong ties with the elite members of our society, we have granted them a series of benefits under the agreement of the $inaugural_diplomas$. Among the concessions are reduced levy obligations to the [ShowEstateTypeName('crown_estate')] and the right to reduced taxation."
 
  district_paving_privilege: "District Taxation"
- district_paving_privilege_desc: "The maintenance of pathways between the many districts of [ShowLocationName('prague')] are a contentious topic among the elites. Granting them the right to tax the paving of new roads will inevitably assist us in connecting more of our districts."
+ district_paving_privilege_desc: "Maintaining the pathways between the many districts of [ShowLocationName('prague')] is a contentious topic among the elites. Granting them the right to tax the paving of new roads will inevitably build more connections between our districts."
 
  joint_assembly_decrees: "Joint Assembly Decrees"
- joint_assembly_decrees_desc: "A series of rights granted to the elite members of our country so as to promote integration and uniformity between them and their many peers across the [GetUniqueInternationalOrganization('hre').GetName]"
+ joint_assembly_decrees_desc: "A series of rights granted to the elite members of our country so as to promote integration and uniformity between them and their many peers across the [GetUniqueInternationalOrganization('hre').GetName]."
 
  commons_petition: "Commons Petition"
- commons_petition_desc: "A list of grievances put through following the Pilgrimage of Grace uprising."
+ commons_petition_desc: "A list of grievances put forward following the Pilgrimage of Grace uprising."
 
  austere_monastic_life: "Austere Monastic Life"
- austere_monastic_life_desc: "Life in a religious order is returned to its cloistered and austere ideal. Accumulating wealth is restricted and the monastic focus is set on contemplation and prayer. Additional monasteries may be created."
+ austere_monastic_life_desc: "Life in our religious orders has finally returned to its cloistered, austere ideal. The accumulation of wealth is restricted, and monastic focus is entirely set on contemplation and prayer.\n\nAdditional monasteries may be created."
 
 #Aztec Estate Privileges
  warrior_tribunal: "Warrior Tribunal"
  warrior_tribunal_desc: "A jurisprudent framework across our lands that is imbued with legal authority to pass judgment on a variety of crimes."
  ceremonial_tax_exemptions: "Ceremonial Tax Exemptions"
- ceremonial_tax_exemptions_desc: "The preparation of tributes, sacrifices, and festivals is a great honor for our merchants. In exchange for this responsibility, they shall be exempt from regular taxation."
+ ceremonial_tax_exemptions_desc: "The preparation of tributes, sacrifices, and festivals is a great honor for our [ShowEstateTypeName('burghers_estate')]. In exchange for this responsibility, they shall be exempt from regular taxation."
 
 #Incas
  mita_system: "Mit'a System"
- mita_system_desc: "From the age of fifteen to fifty, all males are required to work under the mit'a system. This means that they will serve for one year as free labor for the government. The labor is regulated so that it does not conflict with each person's possibility to provide for their family."
+ mita_system_desc: "With the implementation of the #italic mit'a#! system, all males from the ages of fifteen to fifty are required to provide one year of free labor to the government. The labor is regulated so that it does not conflict with each person's ability to provide for their family."
 
 #Teutons
  kulm_law: "Kulm Law"
- kulm_law_desc: "A modified version of the Magdeburg Law, the Kulm Law is the privilege granted to all cities in Prussia which secured the mercantile interests of the city merchant guilds and granted them significant autonomy from their overlord." 
- invite_german_settlers: "Invite German Settlers"
- invite_german_settlers_desc: "The currents of migration and the shifting dynamics of territorial politics of and around our nation stand to benefit as we build a tall nation on the proud shoulders of migrants!"
+ kulm_law_desc: "A modified version of the Magdeburg Law, the Kulm Law grants all cities in [ShowAreaName('prussia_area')] that have secured the mercantile interests of the city merchant guilds the privilege of significant autonomy from their overlords." 
+ invite_german_settlers: "Invite [ShowCultureGroupNameWithNoTooltip('german_group')] Settlers"
+ invite_german_settlers_desc: "By welcoming migrants into our nation, we will build a strong country that benefits from population growth and shifting regional dynamics."
  invite_german_settlers.tt: "Waves of German migrants will start to regularly arrive in our country"
 
 #The Knights
@@ -664,221 +664,220 @@
 
 #Hungary
  golden_bull_of_1222: "Golden Bull of 1222"
- golden_bull_of_1222_desc: "A foundational document in Hungary's history that enshrines the rights and privileges of the elites. By virtue of this treaty, they are granted exemption from direct taxation, ensuring that they suffer no burden due to the state coffers' demands. Moreover, this privilege limits their obligations to provide a fighting force, safeguarding their liberties while enhancing their influence in the kingdom."
+ golden_bull_of_1222_desc: "A foundational document that enshrines the rights and privileges of the [ShowEstateTypeName('nobles_estate')]. By virtue of this treaty, they are granted exemption from direct taxation, ensuring that they suffer no financial burdens from the state's demands. Moreover, this privilege limits their obligations to provide troops, safeguarding their liberties while enhancing their influence in the kingdom."
 
  monetary_fiefs: "Monetary Fiefs"
- monetary_fiefs_desc: "Our ruler owns most of the land directly and avoids making perpetual grants to the nobility. Instead, new fiefs will be managed and enjoyed by appointed officials that will only do so for the time they hold those offices."
+ monetary_fiefs_desc: "Rather than granting permanent hereditary fiefs to [ShowEstateTypeName('nobles_estate')], the crown retains direct ownership of most lands and appoints temporary administrators to manage them. These officials enjoy the revenues and authority of their territories only while holding office; upon their death or dismissal, control reverts to the crown. This prevents powerful hereditary aristocracies from forming and bolsters administrative loyalty."
 
 #Ottomans
  ghazi_privilege: "Ghazi Lords"
- ghazi_privilege_desc: "Warriors for the faith, these devoted fighters campaign across distant frontiers in pursuit of plunder, honor, and divine cause. Comprised of zealous volunteers and tribal raiders, they guard our borders through relentless raids and conquests, spreading both influence and fear in equal measure."
+ ghazi_privilege_desc: "Warriors for the faith, these devoted fighters campaign across distant frontiers in pursuit of plunder, honor, and divine purpose. Comprised of zealous volunteers and tribal raiders, they guard our borders through relentless raids and conquests, spreading both influence and fear in equal measure."
  autonomous_kadiluks: "Autonomous Kadiluks"
- autonomous_kadiluks_desc: "Qāḍī should be given greater power within their alloted Kadiluk jurisdictions, to better utilize their wisdom for the benefit of the state."
+ autonomous_kadiluks_desc: "#italic Qāḍī#! should be given greater power within their alloted #italic Kadiluk#! jurisdictions, to better utilize their wisdom for the benefit of the state."
  ayans_privilege: "Ayan Notables"
- ayans_privilege_desc: "No one knowns the complex power dynamics of far-flung provinces better than the notables who already reside there. Given status as Ayans, they are trusted to govern with only limited oversight from the state."
+ ayans_privilege_desc: "No one knows the complex power dynamics of far-flung provinces better than the elites who already reside there. Given status as Ayans, they are trusted to govern with only limited oversight from the state."
 
 # Brandenburg / Prussia
  bra_kreditwerk: "Kreditwerk"
- bra_kreditwerk_desc: "The Kreditwerk controls large parts of our finances, hindering our financial capabilities."
+ bra_kreditwerk_desc: "The #italic Kreditwerk#! controls large parts of our finances, hindering our financial capabilities."
  bra_kreditwerk_reformed: "Reformed Kreditwerk"
- bra_kreditwerk_reformed_desc: "The Kreditwerk, now reformed under the direct control of the crown, will enable us to more efficiently finance our projects."
+ bra_kreditwerk_reformed_desc: "The #italic Kreditwerk#!, now reformed under the direct control of the [ShowEstateTypeName('crown_estate')], will enable us to more efficiently finance our projects."
 
 #Tribal Chieftains
 
  share_of_the_spoils: "Share of the Spoils"
- share_of_the_spoils_desc: "Victory always tastes sweeter when the spoils are hoarded under our great clan. However, by sharing them we will certainly win over many other powerful clans that also reside under our banner."
+ share_of_the_spoils_desc: "Victory always tastes sweeter when our great clan hoards the spoils. However, by sharing them, we will breed goodwill with other powerful clans, which can be used to our advantage later."
 
  tribal_host: "Tribal Host"
- tribal_host_desc: "The breeding of strong horses shall be the cornerstone of our powerful host. By entrusting the process to our elites, we will ensure never to run out of mares for our prestigious armies."
+ tribal_host_desc: "Breeding the strongest horses shall be the cornerstone of our powerful host. By entrusting the process to our [ShowEstateTypeName('nobles_estate')], we will ensure that we will never run out of mounts for our legendary warriors."
 
  tribal_autonomy: "Tribal Autonomy"
- tribal_autonomy_desc: "Our forefathers and their fathers before them respected the free life in the countryside. We would do well to follow their example, away from outside influences that wish to alienate us from our true ways."
+ tribal_autonomy_desc: "Our forefathers, and their fathers before them, venerated living life freely outside the walls of settlements. We would do well to follow their example, distancing ourselves from the outside influences seeking to seduce our people away from their true path..."
 
 #Venice
  libro_d_oro: "Libro d'Oro"
- libro_d_oro_desc: "The Great Council of [GetCountry('VEN').GetName] has many rules that decide who is worthy of being a member, the #italic Libro d'Oro#! contains a list of families that meet those requisites and can claim to belong to the nobility of [GetCountry('VEN').GetNameWithNoTooltip].\n\nThe book was compiled in 1317 and only a great quantity of gold and influence make changes to it."
+ libro_d_oro_desc: "The Great Council of [GetCountry('VEN').GetName] has many rules that determine who is worthy of being a member. One is the #italic Libro d'Oro#!, which contains a list of families that meet these requisites and can claim to belong to the [ShowEstateTypeName('nobles_estate')] of [GetCountry('VEN').GetNameWithNoTooltip]. Only through a great quantity of gold and influence can changes be made to it."
  libro_d_argento: "Libro d'Argento"
- libro_d_argento_desc: "Together with the #italic Libro d'Oro#! that list all the noble families of the [GetCountry('VEN').GetLongName], the #italic Libro d'Argento#! contains the names of all the #italic Originarii#! families, all those who while being commoners, descend from the original inhabitants of the lagoon and have gained the right to trade as citizens of [GetCountry('VEN').GetNameWithNoTooltip] and access jobs in the administration of the [GetCountry('VEN').GetGovernment.GetGovernmentType.GetName]."
+ libro_d_argento_desc: "Together with the #italic Libro d'Oro#! that list all the noble families of the [GetCountry('VEN').GetLongName], the #italic Libro d'Argento#! contains the names of all the #italic Originarii#! families, who despite being commoners descend from the original inhabitants of the lagoon, and have gained thus the right to trade as citizens of [GetCountry('VEN').GetNameWithNoTooltip] and take jobs in the administration of the [GetCountry('VEN').GetGovernment.GetGovernmentType.GetName]."
  zontas: "Zonta"
- zontas_desc: "The governing councils of the [GetCountry('VEN').GetFlavorRank] of [GetCountry('VEN').GetName] choose their members among the nobility. These elites come together in so-called #italic Zontas#! and have privileges and duties to safeguard the constitution against the accumulation of power by a single ruler."
- zontas_revoke_tt: "[ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] has less than #Y 25.0%#! Power or the [ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')] has #Y 50.0%#! or more power"
+ zontas_desc: "The governing councils of the [GetCountry('VEN').GetFlavorRank] of [GetCountry('VEN').GetName] choose their members from among the [ShowEstateTypeName('nobles_estate')]. These elites come together in so-called #italic Zontas#! and have privileges and duties to safeguard the constitution against the accumulation of power by a single ruler."
  avogadoria_de_comun: "Avogadoria de Comùn"
- avogadoria_de_comun_desc: "The state is in the hands of the unions of noble and wealthy families in the key positions of the [GetCountry('VEN').GetAdjective] government. For the defense of the interests of the state and, by extension, of these families, the Council created the #italic Avogadoria de Comùn#! - the #italic public prosecutors#! - who supervise accounts of high positions, investigate allegations of corruption and prosecute violations of law.\nEven the Doges themselves are not spared by their watchful eyes."
+ avogadoria_de_comun_desc: "The state is in the hands of the noble and wealthy families who occupy key positions in the [GetCountry('VEN').GetAdjective] government. To defend the interests of the state and, by extension, of these families, the Council created the #italic Avogadoria de Comùn#! - the #italic public prosecutors#! - who supervise accounts of high positions, investigate allegations of corruption and prosecute violations of law.\nEven the Doges themselves are not spared by their watchful eyes..."
 
 #Scotland
- scottish_clans: "Scottish Clans"
- scottish_clans_desc: "The people of [GetCountry('SCO').GetName], more prominently in the rural north, have been traditionally organized in multiple clans, each one united in both terms of kinship and geographical location, and owing allegiance to their own clan chief. Clan gatherings and interrelation among them is what drives Scottish politics."
+ scottish_clans: "[ShowCultureGroupNameWithNoTooltip('scottish_group')] Clans"
+ scottish_clans_desc: "The people of [GetCountry('SCO').GetName] have been traditionally organized in multiple clans, each one united in both terms of kinship and geographical location, and owing allegiance to their own clan chief. Clan gatherings and interrelation among them is what drives [GetCountry('SCO').GetAdjective] politics."
  autonomous_scottish_clans: "Autonomous $scottish_clans$"
  autonomous_scottish_clans_desc: "$scottish_clans_desc$"
- tribes_scotland_gaelic_heritage: "United Scottish Heritage"
- tribes_scotland_gaelic_heritage_desc: "For generations, the clans of the rural northern highlands have retained their [ShowLanguageName('gaelic_language')] identity while the clans of the lowlands have largely developed their own [ShowCultureName('scottish')] culture. Despite differing practices, the clans of the highlands and lowlands will set aside their differences to fight foreign adversaries threatening [GetCountry('SCO').GetName]."
+ tribes_scotland_gaelic_heritage: "United [ShowCultureGroupNameWithNoTooltip('scottish_group')] Heritage"
+ tribes_scotland_gaelic_heritage_desc: "For generations, the clans of the rural northern highlands have retained their [ShowLanguageName('gaelic_language')] identity, while the clans of the lowlands have largely developed their own [ShowCultureGroupName('scottish_group')] culture. Despite differing practices, the clans of the highlands and lowlands will nevertheless set aside their differences to fight foreign adversaries that threaten [GetCountry('SCO').GetName]."
  autonomous_tribes_scotland_gaelic_heritage: "Autonomous $tribes_scotland_gaelic_heritage$"
  autonomous_tribes_scotland_gaelic_heritage_desc: "$tribes_scotland_gaelic_heritage_desc$"
  sco_statutes_of_iona: "Statutes of Iona"
- sco_statutes_of_iona_desc: "Through these Statutes, the clans of the rural highlands are expected to send their heirs to be educated in the schools of the lowlands. While this will bring a more educated generation of highland nobility, it risks eroding centuries of cultural heritage."
+ sco_statutes_of_iona_desc: "Through these Statutes, the clans of the rural highlands are expected to send their heirs to be educated in the schools of the lowlands. While this will bring about a more educated generation of highland [ShowEstateTypeName('nobles_estate')], it risks eroding centuries of cultural heritage."
 
 #Muscovy/Russia
- salt_tax_exemption: "Salt Tax Excemption"
- salt_tax_exemption_desc: "The scarcity and high price of salt has resulted in economic hardships for the peasantry. They are herby exempt from any tax on [ShowGoodsName('salt')] in order to quickly alleviate economic hardships and reduce social unrest."
+ salt_tax_exemption: "[ShowGoodsNameWithNoTooltip('salt')] Tax Exemption"
+ salt_tax_exemption_desc: "The scarcity and high price of [ShowGoodsName('salt')] has resulted in economic hardships for the [ShowEstateTypeName('peasants_estate')]. They are hereby exempt from any tax on [ShowGoodsNameWithNoTooltip('salt')] in order to quickly alleviate economic hardships and reduce social unrest."
  charter_of_the_nobility: "Charter of the Nobility"
- charter_of_the_nobility_desc: "Following the Pugachev uprising, a charter was issued that strengthens the privileges of the nobility and emphasizes their role in maintaining order."
+ charter_of_the_nobility_desc: "Following the Pugachev uprising, a charter was issued that strengthens the privileges of the [ShowEstateTypeName('nobles_estate')] and emphasizes their role in maintaining order."
 
 # France
  villes_franches: "Villes Franches"
- villes_franches_desc: "Several of our market towns have grown tremendously in size, during the last few decades. As such, they've developed a level of autonomy, transforming into something that eagerly resembles free cities, leaning towards a decentralized approach in governance."
+ villes_franches_desc: "Several of our market towns have grown tremendously in size, during the last few decades. As such, they have developed a level of autonomy, transforming into something resembling free cities and leaning towards a decentralized approach to governance."
 
  residence_in_versailles: "Residence in Versailles"
- residence_in_versailles_desc: "The [GetCountry('FRA').GetGovernment.GetAdjective] family have extended an offer of residence for members of the prominent noble families to live in the palace of Versailles."
+ residence_in_versailles_desc: "The [GetCountry('FRA').GetGovernment.GetAdjective] family has extended an offer of residence for members of the prominent [ShowEstateTypeName('nobles_estate')] dynasties to live in the palace of Versailles."
 
  permanent_residence_in_versailles: "Permanent Residence in Versailles"
- permanent_residence_in_versailles_desc: "Expansions have been made to Versailles allowing for members of the [GetCountry('FRA').GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] to take up permanent residence at the palace alongside the [GetCountry('FRA').GetGovernment.GetAdjective] family. While those not of the [GetCountry('FRA').GetGovernment.GetAdjective] family enjoy the luxuries of the palace, it has come at the cost of their political influence becoming greatly diminished in order to maintain the favor of the [GetCountry('FRA').GetGovernment.GetRulerTitle]. The abandonment of their personal estates have also left less room for political intrigue and plotting, becoming beholden to the rule of Versailles."
+ permanent_residence_in_versailles_desc: "Expansions have been made to Versailles allowing for members of the [GetCountry('FRA').GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')] to take up permanent residence at the palace alongside the [GetCountry('FRA').GetGovernment.GetAdjective] family. While those not of the [GetCountry('FRA').GetGovernment.GetAdjective] family enjoy the luxuries of the palace, it has come at the cost of greatly diminished political influence, in order to maintain the favor of the [GetCountry('FRA').GetGovernment.GetRulerTitle]. This abandonment of their personal estates has also left less room for political intrigue and plotting, making them beholden to the rule of Versailles."
  
- great_offices_of_the_crown_of_france: "Great Offices of the Crown of France"
- great_offices_of_the_crown_of_france_desc: "The most important governmental offices within our central administration are reserved for the nobility within our realm."
+ great_offices_of_the_crown_of_france: "Great Offices of the Crown of [GetCountry('FRA').GetNameWithNoTooltip]"
+ great_offices_of_the_crown_of_france_desc: "The most important governmental offices within our central administration are reserved for the [ShowEstateTypeName('nobles_estate')] within our realm."
 
  fra_marcel_great_ordinance: "The Great Ordinance"
- fra_marcel_great_ordinance_desc: "Following immense pressure from Étienne Marcel, France is currently governed by terms of Marcel's Great Ordinance. In return for granting him great influence, the state has the backing of the Estates-General to levy more taxes."
+ fra_marcel_great_ordinance_desc: "Following immense pressure from Étienne Marcel, [GetCountry('FRA').GetName] is currently governed by terms of Marcel's Great Ordinance. In return for granting him great influence, the state has the backing of the Estates-General to levy more taxes."
  
  fra_leadership_of_marcel: "Leadership of Étienne Marcel"
- fra_leadership_of_marcel_desc: "Étienne Marcel influence has made the [GetCountry('FRA').GetGovernment.GetEstateNameWithNoTooltip('burghers_estate')] a powerful force in the Estates-General."
+ fra_leadership_of_marcel_desc: "Étienne Marcel's influence has made the [ShowEstateTypeName('burghers_estate')] a powerful force in the Estates-General."
  
  fra_marcel_compromise_ordinance: "Compromise Great Ordinance"
- fra_marcel_compromise_ordinance_desc: "A compromise agreement between the crown and Étienne Marcel, where the crown cedes power to Marcel, in return the Estates-General has granted the request to levy more taxes."
+ fra_marcel_compromise_ordinance_desc: "A compromise agreement between the [ShowEstateTypeName('crown_estate')] and Étienne Marcel, where the $crown_estate$ cedes power to Marcel. In return, the Estates-General has granted the request to levy more taxes."
  
- fra_papacy_pragmatic_sanctions: "Pragmatic Sanction of Bourges"
- fra_papacy_pragmatic_sanctions_desc: "Through these sanctions, the Catholic Church from France obtains greater administrative independence from the Papacy, as it allows electoral appointment to ecclesiastical offices through the means of a general Church council. While these sanctions please the Clergy, our influence and relationship with the Holy See may suffer."
+ fra_papacy_pragmatic_sanctions: "Pragmatic Sanction of [ShowLocationNameWithNoTooltip('bourges')]"
+ fra_papacy_pragmatic_sanctions_desc: "Through these sanctions, the [ShowReligionAdjective('catholic')] Church in [GetCountry('FRA').GetName] obtains greater administrative independence from [GetCountry('PAP').GetName], as it allows electoral appointment to ecclesiastical offices through the means of a general Church council. While these sanctions please the [ShowEstateTypeName('clergy_estate')], our influence and relationship with the Holy See may suffer."
 
  #India
- vij_tamil_trading_rights: "Tamil Trading Rights"
- vij_tamil_trading_rights_desc: "The [ShowAreaName('tamil_land_area')] is home to many great trading cities of the [ShowCultureName('tamil')] people. By granting them trading and autonomous privileges, we can ensure their loyalty and profit to the state."
+ vij_tamil_trading_rights: "[ShowCultureNameWithNoTooltip('tamil')] Trading Rights"
+ vij_tamil_trading_rights_desc: "The [ShowAreaName('tamil_land_area')] is home to many great mercantile cities of the [ShowCultureName('tamil')] people. By granting them trade and autonomy privileges, we can ensure their loyalty and value to the state."
  jain_banking_rights: "[ShowReligionAdjectiveWithNoTooltip('jain')] Banking Rights"
- jain_banking_rights_desc: "[ShowReligionName('jain')] is no longer a dominant or politically favored faith in India, but the [ShowReligionAdjectiveWithNoTooltip('jain')] people are far from irrelevant. They have found a niche in moneylending and bureaucracy that makes them an asset to any state that offers them patronage."
+ jain_banking_rights_desc: "[ShowReligionName('jain')] is no longer a dominant or politically favored faith in $india$, but the [ShowReligionAdjectiveWithNoTooltip('jain')] people are far from irrelevant. They have found a niche in moneylending and bureaucracy that makes them an asset to any state willing to offer them patronage."
  jain_scholars: "[ShowReligionAdjectiveWithNoTooltip('jain')] Scholars"
- jain_scholars_desc: "While [ShowReligionName('jain')] itself has lost its prominence, it is still a religion with an active minority to consider. Practitioners of this religion are educated and wise scholars who may help our government if we promote them."
+ jain_scholars_desc: "While [ShowReligionName('jain')] itself has lost its prominence, it is still a religion with an active minority to consider. Practitioners of this faith are educated and wise scholars who may be a boon our government if we promote them into the administration."
  dhimmi_abrahamic_communities: "Abrahamic Communities"
- dhimmi_abrahamic_communities_desc: "The [ShowReligionGroupAdjective('christian')] and [ShowReligionGroupAdjective('israelite_group')] communities are the so-called Ḏimmī in a [ShowReligionGroupAdjective('muslim')] state. Traditionally, it is the responsibility of a just ruler to protect these people while keeping them apart from the [ShowReligionGroupAdjectiveWithNoTooltip('muslim')] majority, and the Ḏimmī Community shall swear loyalty to the state without threatening the traditions of [ShowReligionGroupName('muslim')]."
+ dhimmi_abrahamic_communities_desc: "The [ShowReligionGroupAdjective('christian')] and [ShowReligionGroupAdjective('israelite_group')] communities are the so-called #italic Ḏimmī#! in a [ShowReligionGroupAdjective('muslim')] state. Traditionally, it is the responsibility of a just ruler to protect these people while keeping them apart from the [ShowReligionGroupAdjectiveWithNoTooltip('muslim')] majority, and the #italic Ḏimmī#! community shall swear loyalty to the state without threatening the traditions of [ShowReligionGroupName('muslim')]."
  dhimmi_in_administration: "Ḏimmī Bureaucrats"
- dhimmi_in_administration_desc: "Some of our countries finest administrators are heathens. Excluding those who are loyal to us and willing to serve the state is a a grave mistake we should correct immediately."
+ dhimmi_in_administration_desc: "Some of our country's finest administrators follow different faiths than our own, yet are nontheless upstanding and loyal members of our nation. Excluding those who are willing to serve us and the state would be a grave mistake, and we should rectify this immediately."
  dharmic_dhimmi_communities: "Dharmic Ḏimmī Communities"
- dharmic_dhimmi_communities_desc: "Originally a term reserved for [ShowReligionGroupAdjective('christian')] and [ShowReligionGroupAdjective('israelite_group')] communities, the Ḏimmī refers to the [ShowReligionAdjective('hindu')] and other [ShowReligionGroupAdjective('dharmic')] followers in the [ShowReligionGroupAdjective('muslim')] realm. Traditionally, it is the responsibility of the ruler to protect them. However, this is not always as easy as the Ḏimmī constitute the majority of the population themselves. With the support of the true faith, the Ḏimmī Community shall swear loyalty to the state without threatening the traditions of [ShowReligionGroupNameWithNoTooltip('muslim')]."
- clergy_in_administration: "Holy Men in Administration"
- clergy_in_administration_desc: "The servants of the faith already possess many of the skills we look for in administrators. They are well-educated, experienced scribes, and they have a higher calling. In many ways, allying ourselves with them would offer an efficient and very strong cadre of administrators."
+ dharmic_dhimmi_communities_desc: "Originally a term reserved for [ShowReligionGroupAdjective('christian')] and [ShowReligionGroupAdjective('israelite_group')] communities, the #italic Ḏimmī#! refers to the [ShowReligionAdjective('hindu')] and other [ShowReligionGroupAdjective('dharmic')] believers living in the [ShowReligionGroupAdjective('muslim')] world. Traditionally, it is the responsibility of the ruler to protect them. However, this is not always as easy, as the #italic Ḏimmī#! constitute the majority of the population. But, with the support of the true faith, the #italic Ḏimmī#! shall swear loyalty to the state without threatening the tenets of [ShowReligionGroupNameWithNoTooltip('muslim')]."
+ clergy_in_administration: "$clergy_estate$ in Administration"
+ clergy_in_administration_desc: "The servants of the faith already possess many skills we look for in administrators. They are well-educated, experienced scribes who follow a higher calling. In many ways, allying ourselves with them would create an efficient and very strong cadre of administrators."
  rajput_society: "Rajput Society"
- rajput_society_desc: "The Rajputs are an ancient caste of honorable warriors and proud nobles. While the rugged land of [ShowAreaName('rajputana_area')] is the heart of their power, Rajput nobility can be found throughout northern India and many great Rajas claim Rajput descent.\n\n#italic Modifier scales with the percentage amount of [ShowCultureName('mewari')], [ShowCultureName('harauti')], [ShowCultureName('dhundhari')], [ShowCultureName('shekhawati')] and [ShowCultureName('mewati')] present in our country + extra 100%.#!"
+ rajput_society_desc: "The Rajputs are an ancient caste of honorable warriors and proud nobles. While the rugged land of [ShowAreaName('rajputana_area')] is the heart of their power, Rajput [ShowEstateTypeName('nobles_estate')] can be found throughout northern $india$, and many great Rajas claim Rajput descent.\n\n#italic Modifier scales with the percentage amount of [ShowCultureName('mewari')], [ShowCultureName('harauti')], [ShowCultureName('dhundhari')], [ShowCultureName('shekhawati')], and [ShowCultureName('mewati')] present in our country + extra 100%.#!"
  zamindar_tax_privilege: "Zamindar Tax Privilege"
- zamindar_tax_privilege_desc: "$mug_zamindar_system_desc$ In times of war, it is the right of the Zamindar to collect the taxes of our population to support our war efforts. Granting this privilege will greatly increase our income, but also the power of the nobility."
+ zamindar_tax_privilege_desc: "$mug_zamindar_system_desc$ In times of war, it is the right of the Zamindar to collect taxes to support our war efforts. Granting this privilege will greatly increase our income — but also the power of the [ShowEstateTypeName('nobles_estate')]..."
  corruption_desc: "across our domain have long since sunk their claws into our treasury and courts, securing lenient positions and propagating a stagnant ambiance of corruption."
  consolidated_corruption_of_the_burghers: "Consolidated Corruption of the Wealthy"
  consolidated_corruption_of_the_burghers_desc: "The entrenched middle and upper classes $corruption_desc$"
  consolidated_corruption_of_the_peasants: "Consolidated Corruption of the Common People"
- consolidated_corruption_of_the_peasants_desc: "The people across our lands have come to not respect our authority. Indeed, in many occasions they have threatened to take up arms should they not be allowed to refuse the payment of fair taxation."
+ consolidated_corruption_of_the_peasants_desc: "The people no longer respect our authority. Indeed, in many cases, they have threatened to take up arms should they be forced to pay their taxes..."
  consolidated_corruption_of_the_nobles: "Consolidated Corruption of the Elites"
  consolidated_corruption_of_the_nobles_desc: "The entrenched members of the upper classes $corruption_desc$"
  consolidated_corruption_of_the_clergy: "Consolidated Corruption of the Faith"
- consolidated_corruption_of_the_clergy_desc: "The unfortunate reality that the heads of our faith have a say in our internal politics is a mere side-effect of the corrupt dealings and tax cuts they have secured from us, under the threat of excommunication."
+ consolidated_corruption_of_the_clergy_desc: "The unfortunate reality that our religious leaders have a say over our internal politics is only a side effect of the other corrupt deals they have extorted from us under the threat of excommunication."
  noble_sponsored_navy: "Noble Navy"
- noble_sponsored_navy_desc: "Our navy is maintained and controlled by the nobility. With their contributions and monetary coverage, we will be able to raise a mighty fleet in exchange for allowing their growing influence within our naval affairs."
- magdeburg_rights: "Magdeburg Rights"
- magdeburg_rights_desc: "A set of privileges that were originally drafted using Flemish law, this legal framework was spread around central Europe via an influx of German immigrants. Centered around cultivating the liberties of the individual citizen, these rights serve to guarantee and regulate the autonomy of the local administration."
+ noble_sponsored_navy_desc: "Our navy is maintained and controlled by the [ShowEstateTypeName('nobles_estate')]. Thanks to their financial contributions, we will be able to raise a mighty fleet, although in exchange for permitting the $nobles_estate$ to have more influences over naval affairs."
+ magdeburg_rights: "[ShowLocationNameWithNoTooltip('magdeburg')] Rights"
+ magdeburg_rights_desc: "A set of privileges that were originally drafted using $FLA_ADJ$ law, this legal framework was spread through central [ShowContinentName('europe')] via an influx of [ShowCultureGroupName('german_group')] immigrants. Aimed at cultivating the liberties of the individual citizen, these rights serve to guarantee and regulate the autonomy of the local administration."
  novi_fori: "Novi Fori"
- novi_fori_desc: "Derived from the original set of privileges given to the city of Magdeburg, this legal framework was combined with western urban planning and a set of criminal and civil laws when it spread beyond the core German lands and into eastern Europe."
+ novi_fori_desc: "Derived from the original set of privileges given to the city of [ShowLocationName('magdeburg')], this legal framework has grown to encompass Western concepts of urban planning, as well as a set of criminal and civil laws, when it spread beyond the core [ShowCultureGroupName('german_group')] lands."
  shooting_societies: "Shooting Societies"
- shooting_societies_desc: "Organized militia of merchants and craftsmen aimed at practicing drills and defending their city against all outside invaders. These associations had the permission by the royal court to don special uniforms and emblems that were only allowed to the nobility."
+ shooting_societies_desc: "Organized militia of [ShowEstateTypeName('burghers_estate')] and craftsmen aimed at practicing drills and defending their city against all outside invaders. These associations are permitted by the [ShowEstateTypeName('crown_estate')] to don special uniforms and display emblems that are otherwise only permitted to the [ShowEstateTypeName('nobles_estate')]."
  reduced_responsibilities_for_the_nobles: "Reduced Responsibilities for the Elites"
- reduced_responsibilities_for_the_nobles_desc: "In an effort to secure the favor of the upper echelons of our society, our overlord sought to secure their allegiance via the delegation of this privilege, resulting in the alleviation of many of their responsibilities." 
+ reduced_responsibilities_for_the_nobles_desc: "In an effort to secure the favor and allegiance of our society's upper echelons, we have decided to grant them this this privilege, alleviating them of many of their responsibilities." 
  reduced_taxation_for_the_nobles: "Reduced Taxation for the Elites"
- reduced_taxation_for_the_nobles_desc: "The upper echelons of our society have become a powerful force within our country and as a result, their whims and opinions carry great weight. If we are to maintain stability and order, we must grease their palms..."
+ reduced_taxation_for_the_nobles_desc: "The upper echelons of our society hold significant influence and power and, as such, their whims and opinions carry great weight. If we do not want them to tip the balance of power towards their estate, we must allow them certain tax concessions."
  habshi_advisors_privilege: "Ḥabshī Advisors"
- habshi_advisors_privilege_desc: "Known for their prolific and influential presence in matters of state, these slaves come from the shores of [ShowSubContinentName('east_africa')]. Educated in matters of administration and warfare, they are able to provide a great service in exchange for political influence and potentially freedom after religious conversion."
+ habshi_advisors_privilege_desc: "Known for their prolific and influential presence in matters of state, these slaves come from the shores of [ShowSubContinentName('east_africa')]. Educated in matters of administration and warfare, they provide a great service in exchange for political influence and, potentially, freedom after religious conversion."
 #Bavaria
- bavarian_share_of_land: "Bavarian Land Division"
- bavarian_share_of_land_desc: "We have divided our lands within our dynasty according to the law and justly. This will lead to further fragmentation of our lands and a heavily decentralized administration. To emerge as a powerful contender among the princes of the [GetUniqueInternationalOrganization('hre').GetName] we will have to assert our control and central authority once more."
+ bavarian_share_of_land: "[GetCountry('BAV').GetAdjectiveWithNoTooltip] Land Division"
+ bavarian_share_of_land_desc: "We have divided our dynastic lands justly and in accordance to the law. This will lead to further fragmentation of our lands and a heavily decentralized administration. To emerge as a powerful contender among the princes of the [GetUniqueInternationalOrganization('hre').GetName], we will have to assert our control and central authority once more."
 
 #Jurchen/Manchu/Qing:
  mch_tribal_favor: "Tribal Favor"
- mch_tribal_favor_desc: "The [ShowCultureNameWithNoTooltip('jurchen_culture')] elites are given primacy in the stately affairs and are grateful for our refusal to adopt foreign customs."
+ mch_tribal_favor_desc: "The [ShowCultureNameWithNoTooltip('jurchen_culture')] elites are given primacy in state affairs, and are grateful for our refusal to adopt foreign customs."
 
 #Poland
 
  nihil_novi: "Nihil Novi"
- nihil_novi_desc: "The elite members of our society have secured themselves the right to not have any laws made without their consent. Not only that, this privilege also forbids freedom of movement of the serfs and limits rights of the townsfolk."
+ nihil_novi_desc: "The elite members of our society have secured the right to not have any laws made without their consent. Not only that, this privilege also forbids freedom of movement of the serfs and limits rights of the townsfolk."
  privilege_of_koszyce: "Privilege of Koszyce"
- privilege_of_koszyce_desc: "The higher members of our society have been bestowed with a wide range of rights for the ample permission to let a foreign heir rule in the state. They will no longer be burdened with further taxes without their consent."
- plc_empower_orthodox_nobility: "Empower [ShowReligionAdjectiveWithNoTooltip('orthodox')] Nobility"
- plc_empower_orthodox_nobility_desc: "This privilege grants the [ShowReligionAdjective('orthodox')] nobles many of the privileges and assurances that have been granted exclusively to the rest of our elites."
+ privilege_of_koszyce_desc: "The elite members of our society have been bestowed with a wide range of rights, in exchange for allowing a foreign heir rule the state. Furthermore, they will no longer be burdened with taxes without their consent."
+ plc_empower_orthodox_nobility: "Empower [ShowReligionAdjectiveWithNoTooltip('orthodox')] $nobles_estate$"
+ plc_empower_orthodox_nobility_desc: "This privilege grants the [ShowReligionAdjective('orthodox')] [ShowEstateTypeName('nobles_estate')] many of the privileges and assurances that have been granted exclusively to the rest of our elites."
  
  #Castile
  cas_fuero_viejo: "Fuero Viejo de Castilla"
- cas_fuero_viejo_desc: "We have compiled together the scattered laws and customs of the Nobility. This effort to codify their privileges shall serve as the cornerstone of their status in the realm."
+ cas_fuero_viejo_desc: "We have compiled the scattered laws and customs of our [ShowEstateTypeName('nobles_estate')]. This codification of their privileges shall serve as the cornerstone of their elevated status in our realm."
 
  cas_caballeros_villanos: "Caballeros Villanos"
- cas_caballeros_villanos_desc: "The borderlands of [ShowAreaName('castile_area')] and [ShowAreaName('leon_area')] have, over the last few centuries, produced a new composed of knightly cowboys. They are accustomed to spending winters guarding their flocks in border strongholds and spending their summers raiding or waging war against their [ShowReligionGroupAdjective('muslim')] foes."
+ cas_caballeros_villanos_desc: "The borderlands of [ShowAreaName('castile_area')] and [ShowAreaName('leon_area')] have, over the last few centuries, produced a unique order of knightly shepherds. They are accustomed to spending winters guarding their flocks in border strongholds and spending their summers raiding or waging war against their [ShowReligionGroupAdjective('muslim')] foes."
 
  cas_regimiento: "Regimiento"
- cas_regimiento_desc: "The Regimiento is a system implemented to govern the town and cities of [GetCountry('CAS').GetName] through certain appointed councilmen, coming from the ranks of the richest and most powerful families."
+ cas_regimiento_desc: "The Regimiento is a system implemented to govern the town and cities of [GetCountry('CAS').GetName] through certain appointed councilmen, who come from the ranks of the richest and most powerful families."
  
  royal_factories_privilege: "Royal Factories"
- royal_factories_privilege_desc: "Royal Factories are state-sponsored but privately owned enterprises granted royal privilege and oversight, operating under official sanction to bolster domestic industry while retaining commercial autonomy."
+ royal_factories_privilege_desc: "Royal Factories are state-sponsored, but privately owned enterprises granted royal privilege and oversight. They operate under official sanction to bolster domestic industry while retaining commercial autonomy."
 
 #Austria
- austrian_monastery_reform_melk: "Monastery Reform of Melk"
+ austrian_monastery_reform_melk: "Monastery Reform of [ShowLocationNameWithNoTooltip('melk')]"
  austrian_monastery_reform_melk_desc: "Following the advice of our best clerical advisors, we have reformed our monasteries in accordance with [ShowReligionAdjective('catholic')] principles."
  vienna_concordat_privilege: "Concordat of [ShowLocationNameWithNoTooltip('vienna')]"
- vienna_concordat_privilege_desc: "Our agreement with the [GetUniqueInternationalOrganization('catholic_church').GetLeaderTitle] will stabilize our relations. However, we will have to concede some power to the clergy to appease the Papal forces."
+ vienna_concordat_privilege_desc: "Our agreement with the [GetUniqueInternationalOrganization('catholic_church').GetLeaderTitle] will stabilize our relations. However, we will have to cede some power to the [ShowEstateTypeName('clergy_estate')] in order to appease the [GetCountry('PAP').GetAdjective] forces."
  hab_tractatus_incorporalibus: "Tractatus de Iuribus Incorporalibus"
- hab_tractatus_incorporalibus_desc: "The regulated relations between landowners and peasants will secure some legal protection for our lowest estate, although this comes at the cost of increased difficulty in expanding our farming economy."
+ hab_tractatus_incorporalibus_desc: "The regulated relations between landowners and [ShowEstateTypeName('peasants_estate')] will secure some legal protection for our lowest estate, although this will make expanding our farming economy more difficult."
 
 #Vijayanagar
- kannada_literature_aid: "Kannada Literature Aid"
- kannada_literature_aid_desc: "By allowing the wealthy members of our society rights over the matters of [ShowLanguageName('kannada_language')] language, we can ensure that our literature does not decline."
+ kannada_literature_aid: "[ShowLanguageNameWithNoTooltip('kannada_language')] Literature Aid"
+ kannada_literature_aid_desc: "By allowing the wealthy members of our society rights over the matters of the [ShowLanguageName('kannada_language')] language, we can ensure that our literary oeuvre does not fall into obscurity."
  
  vij_patronization_of_local_gods: "Patronization Rights of Minor Deities"
- vij_patronization_of_local_gods_desc: "The [ShowReligionNameWithNoTooltip('hindu')] deities are numerous, and it is better if we grant them rights to practice whichever one they prefer."
+ vij_patronization_of_local_gods_desc: "The [ShowReligionName('hindu')] deities are numerous, and it is better for our people if we grant them rights to worship whichever gods they prefer."
  
  vij_allowance_of_religious_practices: "Allow Religious Practices"
- vij_allowance_of_religious_practices_desc: "Instead of focusing only on the [ShowReligionNameWithNoTooltip('hindu')] aspect of our nation, perhaps we should allow our other religious minorities the right to publically practice their faith."
+ vij_allowance_of_religious_practices_desc: "Instead of focusing only on the [ShowReligionNameWithNoTooltip('hindu')] aspect of our nation, we should allow our other religious minorities the right to publically practice their faith."
 
 #Songhai
- promotion_of_muslim_scholars: "Promotion of Muslim Scholars"
- promotion_of_muslim_scholars_desc: "To further elevate [ROOT.GetCountry.GetName] as the center of [ShowReligionGroupAdjective('muslim')] learning, we need to allow for more scholars to flood into our administration, despite the allegiances they might have."
+ promotion_of_muslim_scholars: "Promotion of [ShowReligiousGroupAdjectiveWithNoTooltip('muslim')] Scholars"
+ promotion_of_muslim_scholars_desc: "To further elevate [ROOT.GetCountry.GetName] as the center of [ShowReligionGroupAdjective('muslim')] learning, we must ensure more scholars enter our administration, despite the allegiances they might have."
 
  #Persia
  ira_iranian_art_patronage: "[ShowCultureGroupNameWithNoTooltip('iranian_group')] Art Patronage"
- ira_iranian_art_patronage_desc: "The patronage of the arts by our [ShowCultureGroupName('iranian_group')] elites has allowed many luxurious styles to develop within the nation."
+ ira_iranian_art_patronage_desc: "Patronage of the arts by our [ShowCultureGroupName('iranian_group')] elites has made it possible for extraordinary new styles of art to develop and flourish."
 
  ira_clerical_aristocracy: "Clerical Aristocracy"
- ira_clerical_aristocracy_desc: "A union between the wealthy landowners and the $clergy_estate$, where the lands owned by these landowners are donated to the $clergy_estate$, ensuring they are protected from being confiscated by the nation."
+ ira_clerical_aristocracy_desc: "A union between the wealthy landowners and the [ShowEstateTypeName('clergy_estate')], wherein legal ownership of the land is transferred to the $clergy_estate$ to ensure said property can never be confiscated by the nation."
  
 #Mamluks
  mam_muhtasibs: "Muḥtasib Inspectors"
- mam_muhtasibs_desc: "The Muḥtasib oversee marketplace honesty by inspecting merchants, punishing cheaters publicly, and using manuals on common tricks to prevent fraud."
+ mam_muhtasibs_desc: "The #italic Muḥtasib#! oversee marketplace integrity by inspecting [ShowEstateTypeName('burghers_estate')], publicly punishing financial criminals, and developing manuals to identify and prevent fraud."
 
  # Delhi
  heritable_iqta: "Heritable [ShowLawNameWithNoTooltip('iqta_law')]"
- heritable_iqta_desc: "The post of [ShowLawName('iqta_law')] holder is usually not an inheritable title. Transforming it into a heritable one would be unprecdented and would increase loyalty of the [ShowEstateTypeName('nobles_estate')]."
+ heritable_iqta_desc: "The post of [ShowLawName('iqta_law')] holder is not usually heritable. Transforming it into a hereditary one would be unprecedented, and would increase the loyalty of the [ShowEstateTypeName('nobles_estate')]."
  
 #Rise of the Ottomans
 
  trunk_road_to_erzurum_privilege: "Trunk Road to $erzurum$"
- trunk_road_to_erzurum_privilege_desc: "$anatolia_region$ is connected to $tabriz$ and $persia_region$ through a reliable network of trunk roads. As we directly control a critical junction of it, our merchants reap great benefits."
+ trunk_road_to_erzurum_privilege_desc: "$anatolia_region$ is connected to $tabriz$ and $persia_region$ through a reliable network of trunk roads. As we directly control one of its critical junctions, our [ShowEstateTypeName('burghers_estate')] reap great benefits."
 
  lit_integrated_ruthenian_laws: "Integrated [ShowCultureNameWithNoTooltip('ruthenian')] Laws"
  lit_integrated_ruthenian_laws_desc: "By integrating the laws of our [ShowCultureName('ruthenian')] people, we can more effectively work towards establishing a standard code for the realm."
 
- lit_equal_status_of_orthodox_nobility: "Protection of [ShowReligionAdjectiveWithNoTooltip('orthodox')] Nobility"
- lit_equal_status_of_orthodox_nobility_desc: "The numerous nobles that follow the [ShowReligionAdjective('orthodox')] faith deserve an equal status to those that do not. By guaranteeing them these rights, they will be more likely to support us."
+ lit_equal_status_of_orthodox_nobility: "Protection of [ShowReligionAdjectiveWithNoTooltip('orthodox')] $nobles_estate$"
+ lit_equal_status_of_orthodox_nobility_desc: "The numerous [ShowEstateTypeName('nobles_estate')] who follow the [ShowReligionAdjective('orthodox')] faith deserve equal status to those that do not. By guaranteeing them these rights, they will be more likely to support us going forward."
  ukr_kholop_protection: "Kholop Protection Rights"
- ukr_kholop_protection_desc: "Instead of allowing the lower strata from being exploited by the rich, basic rights have been given to the serfs of our nation, protecting their basic needs as humans."
+ ukr_kholop_protection_desc: "Instead of allowing the lower strata from being exploited by the rich, we shall grant and guarantee basic human rights to the [ShowEstateTypeName('peasants_estate')]."
 
  tur_banned_weaponry_for_peasants: "Banned Weapons for [GetEstateNameWithNoTooltip('peasants_estate')]"
- tur_banned_weaponry_for_peasants_desc: "The numerous ethnicities within the realm may cause unrest should they maintain their rights to bear arms. It is for that reason they are no longer allowed to carry any weapons on them."
+ tur_banned_weaponry_for_peasants_desc: "Our realm is home to a diverse population, which occasionally leads to conflict. If we permit our people to remain armed, these minor squabbles could explode into all-out war. It is for that reason our [ShowEstateTypeName('peasants_estate')] may no longer carry any weapons on their persons."
 #Generic
 
  noble_patronage_of_the_arts: "Noble Patronage of the Arts"
- noble_patronage_of_the_arts_desc: "Several prominent families within the nobility have taken to sponsoring poets, painters, and scholars in their courts and villas. While some may see this as vanity, such patronage often gives rise to bold new schools of thought and expression, all in exchange of more influence within the court."
+ noble_patronage_of_the_arts_desc: "Several prominent families within the [ShowEstateTypeName('nobles_estate')] have taken to sponsoring poets, painters, and scholars in their courts and villas. While some may see this as vanity, such patronage often gives rise to bold new schools of thought and expression, typically in exchange for more influence with the court."
 
  guild_investments: "Guild Investments"
- guild_investments_desc: "The guilds have agreed to divert a portion of their funds toward improvements of the production process. Though many of these ventures will fail, a few may yield breakthroughs that reshape our capital economy."
+ guild_investments_desc: "The guilds have agreed to divert a portion of their funds toward making improvements to our production process. Though many of these ventures will likely fail, a few may yield breakthroughs that can reshape our capital economy."
 
  statutes_of_piotrkow: "Statutes of Piotrkow"
- statutes_of_piotrkow_desc: "These statutes are a symbol of the nobility's efforts to consolidate their privileges, and the grip that serfdom and aristocracy have on power. Through the weakening of the lower social classes and towns, the nobles seek to assert their influence."
+ statutes_of_piotrkow_desc: "These statutes are a symbol of the [ShowEstateTypeName('nobles_estate')]'s efforts to consolidate their privileges, and the grip that serfdom and aristocracy have on power. Through the weakening of the lower social classes and towns, the $nobles_estate$ seek to assert their influence."

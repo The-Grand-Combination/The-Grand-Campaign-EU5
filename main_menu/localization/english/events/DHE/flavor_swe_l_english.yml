@@ -28,7 +28,7 @@
  flavor_swe.4.desc: "While casting about for a way to bolster our economy, one enterprising council member discovered an interesting solution. It seems many rulers in our part of the world, inspired by [GetCharacter('martin_luther').GetName] and his 95 Theses, are embracing new religious ideals and subsequently seizing valuable assets formerly owned by the Church. If we did the same, it could be an opportunity not only to refill our coffers, but to more decisively consolidate our power."
  flavor_swe.4.historical_info: "During the Swedish liberation war, the Crown had accrued enormous debts to the Hanseatic League, and Gustav Vasa needed money quickly in order to placate the powerful merchants. At the Parliament of Västerås in the summer of 1527, he took the first step towards Protestantism when the Church was obliged to 'lend' the state money in the form of silver chalices, bells, and other valuable objects. Over the coming three decades, Sweden gradually slipped into the evangelic faith despite several uprisings."
  flavor_swe.4.a: "This is the One True Faith!"
- flavor_swe.4.b: "This is not what we want.."
+ flavor_swe.4.b: "This is not what we want..."
  flavor_swe.4.a.custom: "Many [pops|e] in our country will become [ShowReligionName('lutheran')]"
 
  flavor_swe.5.title: "[swe_joran_person.GetNameWithNoTooltip]"
@@ -192,7 +192,7 @@
  flavor_swe.32.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
  
  flavor_swe.33.title: "Re-Evaluating Absolutism"
- flavor_swe.33.desc: "[ROOT.GetCountry.GetName] is on the brink of collapse. The current [ROOT.GetCountry.GetGovernment.GetActiveRegentTitle] has as many detractors as supporters, with groups popping up to support rival claimants every day. There has been so much foreign interference in [ROOT.GetCountry.GetAdjectiveWithNoTooltip] rule that we feel more like a puppet state than a great nation, and people of all classes openly resent carrying the crushing weight of absolute rule.\n\nTo maintain total control could prove to be a fatal blunder on the [ROOT.GetCountry.GetGovernment.GetActiveRegentTitle]'s part. We must prepare for violent opposition to whichever choice we make."
+ flavor_swe.33.desc: "[ROOT.GetCountry.GetName|U] is on the brink of collapse. The current [ROOT.GetCountry.GetGovernment.GetActiveRegentTitle] has as many detractors as supporters, with groups popping up to support rival claimants every day. There has been so much foreign interference in [ROOT.GetCountry.GetAdjectiveWithNoTooltip] rule that we feel more like a puppet state than a great nation, and people of all classes openly resent carrying the crushing weight of absolute rule.\n\nTo maintain total control could prove to be a fatal blunder on the [ROOT.GetCountry.GetGovernment.GetActiveRegentTitle]'s part. We must prepare for violent opposition to whichever choice we make."
  flavor_swe.33.historical_info: "The death of the childless Charles XII left his younger sister Ulrika Eleonora in charge as Queen. The staunch parliamentarian, Chancellor Arvid Horn, immediately seized this opportunity to bring down the absolutism and strengthen the powers of Parliament. While his democratic leanings were in a way commendable, his actions were to completely destabilize Sweden and make her a puppet of foreign interests for the next 50 years. This so-called 'Age of Freedom' also saw the aristocracy regain some of their lost ground. However, the young queen saw no clear alternative that would not upset her war-weary people too much."
  flavor_swe.33.a: "Abandon absolutism."
  swe_age_of_freedom_always: "This is a locked reform that can not be removed by choice."
@@ -259,10 +259,10 @@
  flavor_swe.43.a: "This will teach us everything."
  flavor_swe.43.b: "Maybe we should restrict what is printed?"
 
- flavor_swe.44.title: "The Ironmines of Ojamo"
- flavor_swe.44.desc: "There is possibly [ShowGoodsName('iron')] in the deep forest near the Lohjanjärvi lake. Ojamo holds rich veins of iron ore, a resource that could prove invaluable to the [ROOT.GetCountry.GetFlavorRank]'s budding industries and military ambitions. For decades, this region of [ShowAreaName('finland_area')] has been prized for its timber and farmland, but the discovery of iron at Ojamo marks a turning point for [ShowLocationName('lohja')]'s future."
+ flavor_swe.44.title: "The Iron Mines of Ojamo"
+ flavor_swe.44.desc: "There is possibly [ShowGoodsName('iron')] in the deep forest near the Lake Lohjanjärvi. Ojamo holds rich veins of [ShowGoodsNameWithNoTooltip('iron')] ore, a resource that could prove invaluable to the [ROOT.GetCountry.GetFlavorRank]'s budding industries and military ambitions. For decades, this region of [ShowAreaName('finland_area')] has been prized for its timber and farmland, but the discovery of [ShowGoodsNameWithNoTooltip('iron')] at Ojamo marks a turning point for [ShowLocationName('lohja')]'s future."
  flavor_swe.44.historical_info: "King Gustav Vasa granted Sir Erik Flemming of Siuntio permission to mine for iron ore. In 1542, the iron ore started to be mined in Ojamo near Lohja, creating the oldest known iron mine in Finland."
- flavor_swe.44.a: "This can benefit all of [ShowAreaName('finland_area')]!"
+ flavor_swe.44.a: "This can benefit all of [ShowAreaNameWithNoTooltip('finland_area')]!"
  flavor_swe.44.b: "We have enough [ShowGoodsNameWithNoTooltip('iron')]."
  
  
@@ -274,13 +274,13 @@
  flavor_swe.46.title: "[swe_heliga_birgitta.GetNameWithNoTooltip] criticizes [king_sweden.GetNameWithNoTooltip]"
  flavor_swe.46.desc: "A woman of the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')], [swe_heliga_birgitta.GetName] claims that she has had visions from God. She is one of the most pious women in our country, having made pilgrimages to several holy sites, so when she accuses the [ROOT.GetCountry.GetGovernment.GetRulerTitle] of not being a good enough [ShowReligionGroupAdjective('christian')], or even accusing [ROOT.GetCountry.GetGovernment.GetRuler.GetHerHim] of homosexuality, many listen..."
  flavor_swe.46.historical_info: "Holy Birgitta, also known as Saint Bridget of Sweden, was a prominent mystic, writer, and founder of the Bridgettine Order. She is one of the most well-known medieval saints and was canonized in 1391. Born into a noble family, she became deeply religious from an early age, experiencing visions that she attributed to divine revelations.\n\nHer writings and visions often contained sharp critiques of the political and moral state of her time, including commentary on the actions and responsibilities of rulers.\n\nOne of her most notable critiques may have been directed at King Magnus Eriksson of Sweden, who reigned during her lifetime. She accused him of being an ineffective ruler and criticized the extravagance and corruption of his court. These writings reflect her vision of a divinely ordained political order, where rulers served as God's stewards on Earth."
- flavor_swe.46.a: "Well, this is embarassing..."
+ flavor_swe.46.a: "Well, this is embarrassing..."
 
  flavor_swe.47.title: "The Insane [ROOT.GetCountry.GetGovernment.GetRulerTitle]"
  flavor_swe.47.desc: "[ROOT.GetCountry.GetGovernment.GetRuler.GetName] has long had conflict with the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')], and they are fed up with [ROOT.GetCountry.GetGovernment.GetRuler.GetHisHer] rule. They are willing to back [ROOT.GetCountry.GetGovernment.GetRuler.GetHisHer] brother, [pretender.GetName], to become the new [ROOT.GetCountry.GetGovernment.GetRulerTitle] of the great [ROOT.GetCountry.GetLongName]."
  flavor_swe.47.historical_info: "Erik XIV of Sweden, a ruler of great ambition and intellect, fell victim to his own paranoia and erratic behavior. Initially celebrated for his reforms and efforts to strengthen the Swedish monarchy, his later years were marked by suspicion and violence. The Sture Murders of 1567, where he ordered the killing of prominent nobles, turned his court against him. Accusations of mental instability and distrust among his nobles and kin eventually culminated in his deposition in 1568, led by his own brothers. Erik spent the remainder of his life in captivity, a tragic reminder of how power unchecked can consume its wielder."
- flavor_swe.47.a: "[ROOT.GetCountry.GetGovernment.GetRuler.GetHisHer] brother will be better." 
- flavor_swe.47.b: "[ROOT.GetCountry.GetGovernment.GetRuler.GetHeShe] is the [ROOT.GetCountry.GetGovernment.GetRulerTitle]!" 
+ flavor_swe.47.a: "[ROOT.GetCountry.GetGovernment.GetRuler.GetHisHer|U] brother will be better." 
+ flavor_swe.47.b: "[ROOT.GetCountry.GetGovernment.GetRuler.GetHeShe|U] is the [ROOT.GetCountry.GetGovernment.GetRulerTitle]!" 
 
  flavor_swe.48.title: "The Canonization of [birgitta_scope_for_ui.GetNameWithNoTooltip]"
  flavor_swe.48.desc: "The news of [birgitta_scope_for_ui.GetName]'s canonization has reached the [ROOT.GetCountry.GetFlavorRank]! Known for her deep piety and mystical visions, her devotion and influence extended far beyond her homeland. Canonized by the Pope, she has become a symbol of [ROOT.GetCountry.GetAdjective] holiness and a source of inspiration for the faithful. This event strengthens [ROOT.GetCountry.GetNameWithNoTooltip]'s position in Christendom, but it also raises questions about the role of the Church in the kingdom. How shall we respond to this momentous occasion?"
@@ -290,7 +290,7 @@
  vadstena_holy_site: "Vadstena Abbey"
  
  flavor_swe.49.title: "The Nyckelharpa"
- flavor_swe.49.desc: "The Nyckelharpa's gentle, resonant tones speak to the soul of the [ShowCultureName('swedish')] people, carrying with it the tales of our land and history. Its roots can be traced to the heart of medieval [ShowContinentName('europe')], yet it has flourished as a symbol of [ROOT.GetCountry.GetName]'s cultural creativity. From rustic village gatherings to the hallowed halls of noble courts, the nyckelharpa resonates with pride and identity. While its intricate design reflects the skill of our artisans, its music reminds us of the shared joys and struggles of our forebears. Though some may see it as a frivolous indulgence, it remains a testament to the creativity and cultural richness of [ROOT.GetCountry.GetNameNoTooltip], uniting the past with the present in a melody that endures."
+ flavor_swe.49.desc: "The Nyckelharpa's gentle, resonant tones speak to the soul of the [ShowCultureName('swedish')] people, carrying with it the tales of our land and history. Its roots can be traced to the heart of medieval [ShowContinentName('europe')], yet it has flourished as a symbol of [ROOT.GetCountry.GetName]'s cultural creativity. From rustic village gatherings to the hallowed halls of noble courts, the nyckelharpa resonates with pride and identity. While its intricate design reflects the skill of our artisans, its music reminds us of the shared joys and struggles of our forebears. Though some may see it as a frivolous indulgence, it remains a testament to the creativity and cultural richness of [ROOT.GetCountry.GetNameWithNoTooltip], uniting the past with the present in a melody that endures."
  flavor_swe.49.historical_info: "This keyed fiddle was allegedly invented in the early 14th century in Uppland, and has since then been an important part of the traditional music of the country."
  flavor_swe.49.a: "This is music for the soul!"
   
@@ -353,7 +353,7 @@
  flavor_swe.58.b: "This is beneath us!"
 
  flavor_swe.59.title: "#italic Then Swänska Argus#!" 
- flavor_swe.59.desc: "In the heart of [ShowLocationName('stockholm')], a new weekly paper titled #italicThen Swänska Argus#! has beeen growing in popularity. With wit and clarity, the publication critiques antiquated traditions and champions rational thought, moderation, and the [ROOT.GetCountry.GetCulture.GetDialect.GetName] vernacular. Its influence is felt far and wide, inspiring reformers and linguists while subtly shaping the future of the kingdom. Shall we support this bold voice of progress?"
+ flavor_swe.59.desc: "In the heart of [ShowLocationName('stockholm')], a new weekly paper titled #italicThen Swänska Argus#! has been growing in popularity. With wit and clarity, the publication critiques antiquated traditions and champions rational thought, moderation, and the [ROOT.GetCountry.GetCulture.GetDialect.GetName] vernacular. Its influence is felt far and wide, inspiring reformers and linguists while subtly shaping the future of the kingdom. Shall we support this bold voice of progress?"
  flavor_swe.59.historical_info: "Published in 1732 by Olof von Dalin, Then Swänska Argus marked a turning point in Swedish literary history. Written in a lively and accessible style, it championed Enlightenment ideals and helped modernize the Swedish language. The publication quickly became a cultural beacon, shaping public opinion and influencing generations of Swedish thinkers."
  flavor_swe.59.a: "Support this vision for a modern [ROOT.GetCountry.GetNameWithNoTooltip]!"
  flavor_swe.59.b: "We need to censor the press!"

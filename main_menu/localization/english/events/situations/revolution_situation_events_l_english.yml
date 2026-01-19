@@ -73,4 +73,4 @@
  the_revolution.12.title: "War Against the [target_country.GetLongNameWithNoTooltip]"
  the_revolution.12.desc: "Instability has gripped our [ROOT.GetCountry.GetFlavorRank]. Perilous ideas such as the abandonment of central power, feudarchy, and [ShowInstitutionName('enlightenment')] seem to spew forth from the likes of [target_country.GetName]. A conduit of evil, according to our advisors, their spies have spread their poisonous tendrils far outside their borders in an effort to contaminate neighbors with dangerous notions of overthrowing the upper class. No doubt, we must intervene and put an end to this petulent display of resistance!"
  the_revolution.12.a: "To arms!"
- the_revolution.12.b: "It's best to respect their strength, at least for now."
+ the_revolution.12.b: "It is best to respect their strength, at least for now."

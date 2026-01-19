@@ -3,6 +3,7 @@
  TOOLTIP_DEBUG_GENERIC: "#D $STRING$#!"
  TOOLTIP_DEBUG_KEY: "#D debug: Key = $KEY$#!"
  TOOLTIP_DEBUG_TAG: "#D debug: Tag = $TAG$#!"
+ TOOLTIP_DEBUG_FLAG: "#D debug: Flag = $FLAG$#!"
  TOOLTIP_DEBUG_SUBJECT_STANCE: "#D debug: Subject Stance = $SUBJECT_STANCE$#!"
  TOOLTIP_DEBUG_HISTORICAL_TAG: "#D debug: Historical Tag = $TAG$#!"
  TOOLTIP_DEBUG_DYNASTY_NAME_TYPE: "#D debug: dynasty_name_type = $TYPE$#!"

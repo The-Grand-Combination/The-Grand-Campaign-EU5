@@ -100,7 +100,7 @@
  exploration_monthly.23.b: "There is no need."
 
  exploration_monthly.24.title: "A Friendly Dog"
- exploration_monthly.24.desc: "[explorer.GetName] got a nice surprise while exploring [ROOT.GetExploration.GetArea.GetName]. A dog started appearing recently around [explorer.GetHisHer] camp, and seems quite friendly. The dog barks constantly but seems to be doing it more for grabbing [explorer.GetNameWithNoTooltip]'s attention rather than as a threat, as it can be approached by anyone without a problem. It seems to be trying to guide the expedition through a certain path, but at the end of the day it's just a dog, right?"
+ exploration_monthly.24.desc: "[explorer.GetName] got a nice surprise while exploring [ROOT.GetExploration.GetArea.GetName]. A dog started appearing recently around [explorer.GetHisHer] camp, and seems quite friendly. The dog barks constantly but seems to be doing it more for grabbing [explorer.GetNameWithNoTooltip]'s attention rather than as a threat, as it can be approached by anyone without a problem. It seems to be trying to guide the expedition through a certain path, but at the end of the day it is just a dog, right?"
  exploration_monthly.24.a: "The Mutt's Mutters Matter"
  exploration_monthly.24.a.tt: "[explorer.GetNameWithNoTooltip] will keep the dog as a pet, and follow its directions"
  exploration_monthly.24.b: "Who's a good boy?"

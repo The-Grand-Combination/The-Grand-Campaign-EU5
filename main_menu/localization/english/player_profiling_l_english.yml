@@ -56,7 +56,7 @@
  PLAYER_SKIP_PLAYTHROUGH: "Do not start the Learning Walkthrough at game start."
  PLAYER_RUN_PLAYTHROUGHT: "Start the Learning Walkthrough"
  PLAYER_RUN_PLAYTHROUGHT_MP: "The Learning Walkthrough is not available in multiplayer."
- PLAYER_RUN_PLAYTHROUGHT_DESC: "The Walkthrough takes a few minutes and it will present the basics mechanics of #italic Europa Universalis V#!.\n\nThe Walkthrough is skippable at anytime, and you can start it here anytime."
+ PLAYER_RUN_PLAYTHROUGHT_DESC: "The Walkthrough takes a few minutes, and it will present the basics mechanics of #italic Europa Universalis V#!.\n\nThe Walkthrough is skippable at any time, and you can start it here anytime."
  PLAYER_STOP_PLAYTHROUGHT: "Exit"
  PLAYER_STOP_PLAYTHROUGHT_TITLE: "Exit Walkthrough"
  PLAYER_STOP_PLAYTHROUGHT_DESC: "Exiting the Walkthrough will lose your current progress.\n\nNote: It is possible to restart this Walkthrough at any time from the @agenda! #high Agenda#!."

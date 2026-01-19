@@ -18,7 +18,7 @@
  REBEL_STALLED_NOT_ENOUGH: "Frozen due to not having enough supporters."
  REBEL_PROGRESS_ESTATE: "[estate_power|e]: $VAL|2-=%$"
  REBEL_NATIONALISM_SOURCE: "Nationalism\nBase Nationalism: $VAL|2=-%$"
- REBEL_NATIONALISM_CULTURE_WAR: "[CULTURE.GetName] [cultural_influence|e] vs [TARGET_CULTURE.GetName] [cultural_tradition|e]: $VAL|+=2%$"
+ REBEL_NATIONALISM_CULTURE_WAR: "[CULTURE.GetName] [cultural_influence|e] vs [TARGET_CULTURE.GetName] [cultural_tradition|e]: $VAL|-=2%$"
  
  RSI_HEADER: "Reasons for [pops|e] to support these rebels."
  RSI_ENTRY: "$NAME$: $VAL|2+=%$"

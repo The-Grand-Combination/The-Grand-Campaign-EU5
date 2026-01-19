@@ -4,7 +4,7 @@
  black_death.1.a: "Rats!"
  black_death.1.a.tt: "[ShowSituationName('black_death')] has begun its spread from [GetDisease('bubonic_plague').GetOrigin.GetName]"
 
- black_death.1026.title: "Another one bites the dust.."
+ black_death.1026.title: "Another one bites the dust..."
  black_death.1026.desc: "Rich men, trust not in wealth,\nGold cannot buy you health;\nPhysic himself must fade.\nAll things to end are made,\nThe plague full swift goes by;\nI am sick, I must die."
  black_death.1026.a: "Lord, have mercy on us!"
 
@@ -134,7 +134,7 @@
  black_death.1016.t: "Social Cravings"
  black_death.1016.desc: "Ever since the arrival of the plague, many have avoided large gatherings and public festivals out of fear. But over time, even the most asocial individuals will eventually crave interacting with others.\n\nThe grumbles and complaints of the [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] are growing louder by the day. Withholding and discouraging festivities any further could cause quite a lot of social upheaval."
  black_death.1016.a: "Maintaining social order comes before sanitation."
- black_death.1016.b: "We can't risk the spread!"
+ black_death.1016.b: "We cannot risk the spread!"
 
  black_death.1017.t: "Plague Pits"
  black_death.1017.desc: "The terror inflicted upon our people by the deathly grip of the [GetDisease('bubonic_plague').GetName] has had a captivating effect on our medical professionals in [target_location.GetName]. Pioneers who don robes and gloves are ready to push our medical knowledge to new heights. Their only request is that they be given access to an innumerable number of test subjects from our recently deceased..."

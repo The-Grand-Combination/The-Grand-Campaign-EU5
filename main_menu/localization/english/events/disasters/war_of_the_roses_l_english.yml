@@ -102,12 +102,12 @@
  war_of_the_roses.104.desc: "With the rebellion of the House of Lancaster finally crushed, [GetCountry('ENG').GetGovernment.GetRuler.GetName] has now turned his attention to those who supported the revolt, both internally and externally."
  war_of_the_roses.104.a: "Oh..."
  eng_supported_rebels_during_war_of_the_roses: "Supported Rebels During War of the Roses"
- war_of_the_roses.104.b: "Good thing we didn't!"
+ war_of_the_roses.104.b: "Good thing we did not!"
  eng_didnt_support_rebels: "Did not Support Rebels During War of the Roses"
  war_of_the_roses.105.title: "Relations Deteriorate with England"
  war_of_the_roses.105.desc: "With the rebellion of the House of York finally crushed, [GetCountry('ENG').GetGovernment.GetRuler.GetName] has now turned his attention to those who supported the revolt, both internally and externally."
  war_of_the_roses.105.a: "Oh..."
- war_of_the_roses.105.b: "Good thing we didn't!"
+ war_of_the_roses.105.b: "Good thing we did not!"
 
  
  

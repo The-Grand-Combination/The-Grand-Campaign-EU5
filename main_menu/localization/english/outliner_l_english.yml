@@ -65,7 +65,7 @@
  OUTLINER_ITEM_GOVERNMENT_CABINET_TOOLTIP: "Left-click to open the Cabinet"
  OUTLINER_CATEGORY_GOVERNMENT_PARLIAMENT: "Parliament Session"
  OUTLINER_CATEGORY_GOVERNMENT_PARLIAMENT_TOOLTIP: "Toggle Parliament Session"
- OUTLINER_ITEM_GOVERNMENT_PARLIAMENT: "[Player.GetGovernment.GetParliament.GetName]: [Player.GetGovernment.GetParliament.GetCurrentDebate.GetName]"
+ OUTLINER_ITEM_GOVERNMENT_PARLIAMENT: "[Player.GetGovernment.GetParliament.GetName]: [Player.GetGovernment.GetParliament.GetCurrentDebateName]"
  OUTLINER_ITEM_GOVERNMENT_PARLIAMENT_TOOLTIP: "Left-click to open the Parliament Session"
 
  OUTLINER_CATEGORY_DIPLOMACY_NAME: "Diplomacy Category"
@@ -233,7 +233,7 @@
  MOVING_CAPITAL: "Moving Capital to [LOCATION.GetNameWithNoTooltip]"
  MARKET_CREATING: "Creating Market in [LOCATION.GetNameWithNoTooltip]"
  EXPLORATION_CREATING: "Preparing for an [exploration|e] to [AREA.GetNameWithNoTooltip] in [LOCATION.GetNameWithNoTooltip]"
- CONQUISTADOR_CREATING: "Preparing to start a [ShowSubjectTypeName('conquistador')] to [AREA.GetNameWithNoTooltip] in [LOCATION.GetNameWithNoTooltip]"
+ CONQUISTADOR_CREATING: "Preparing to start a [ShowSubjectTypeName('conquistador')] to @area![AREA.GetName] in @location![LOCATION.GetName]"
  ROAD_TO: "[ROAD_TYPE.GetName] To $TO$"
  ARMY_NAVY_LEVY_IN_SHORT: "Raising"
  ARMY_LEVY_IN: "Raise [army_levy|e] in $PROV$"

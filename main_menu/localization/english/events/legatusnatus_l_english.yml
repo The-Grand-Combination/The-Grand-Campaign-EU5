@@ -1,7 +1,7 @@
 ﻿l_english:
  legatusnatus.1.title: "Legatus Natus"
  legatusnatus.1.desc: "[home_ruler.GetName] has long been honored with being the representative of [pope_ruler.GetName] - the [ShowGovernmentReformName('legatus_natus')] - north of the Alps.\nSuch a prestigious title demands a certain level of dignity and we cannot let our prestige or our relations with the [GetCountry('PAP').GetGovernment.GetRulerTitle] drop too low."
- legatusnatus.1.a: "It's all in God's hands."
+ legatusnatus.1.a: "It is all in God's hands."
  legatusnatus.2.title: "Title of Legatus Natus Lost"
  legatusnatus.2.desc: "Our standings in the [GetUniqueInternationalOrganization('hre').GetName] and with [pope_ruler.GetName] have declined lately. The [GetCountry('PAP').GetGovernment.GetRulerTitle] no longer seems to have confidence in us upholding our role as his [ShowGovernmentReformName('legatus_natus')] in the [GetUniqueInternationalOrganization('hre').GetNameWithNoTooltip] and has most unfortunately decided to relieve us of the title."
  legatusnatus.2.a: "I guess it was in my hands after all..."

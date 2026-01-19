@@ -115,7 +115,7 @@
 
  flavor_kni.121.title: "Naval Business in [target_location.GetNameWithNoTooltip]"
  flavor_kni.121.desc: "[target_location.GetName] is an island in a very advantageous position. Its proximity to the coast of [target_location.GetRegion.GetName] elevates it to a valuable anchorage for our naval activities across the neighboring coasts. At the same time, serving as a passage between East and West, many merchants from abroad have sought to make [target_location.GetNameWithNoTooltip] a stop in their voyages to and from the Near East."
- flavor_kni.121.a: "We will favor the production of [ShowGoodsName('naval_supplies')]!"
+ flavor_kni.121.a: "We will favor the production of [ShowGoodsNameWithNoTooltip('naval_supplies')]!"
  flavor_kni.121.b: "We must accommodate more merchants."
  flavor_kni.121.c: "Focus our efforts on tending to the locals instead."
 

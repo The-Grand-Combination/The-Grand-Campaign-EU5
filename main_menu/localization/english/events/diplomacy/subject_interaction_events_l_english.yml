@@ -19,7 +19,7 @@
 
  subject_interaction_events.4.title: "Incompetent Relative"
  subject_interaction_events.4.desc: "Our dearly beloved [subject_target.GetGovernment.GetFullRulerName] that rules over our subject [subject_target.GetName] has proven to be an incompetent buffoon, one that cannot and should not rule over any country."
-  subject_interaction_events.4.a: "Replace them with [better_ruler.GetName]"
+  subject_interaction_events.4.a: "Replace them with [better_ruler.GetNameWithNoTooltip]"
  subject_interaction_events.4.b: "This can only bring disorder to the country. Leave it be."
 
  subject_interaction_events.5.title: "Competent Relative"
@@ -82,7 +82,7 @@
 
  subject_interaction_events.21.title: "The Loyalist Embarrassment"
  subject_interaction_events.21.desc: "Though we all appreciate the patriots, the loyalists, the ones who love their country and will protect it to all costs, when they manage to embarrass us in front of the whole court their lovability decreases fiercely. This is not what we pay for, that handsome sum that every month disappears into their greedy pockets! The relationship we try to protect is worth more than their lice-filled heads."
- subject_interaction_events.21.a: "Off with their heads and put them on the walls of [ROOT.GetCountry.GetCapital.GetName]!"
+ subject_interaction_events.21.a: "Off with their heads and put them on the walls of [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip]!"
  opinion_embarrasing_loyalists: "Loyalist Faux Pas"
  subject_interaction_events.21.b: "Surely there is something we can do to forget and forgive this unfortunate event?"
 
@@ -182,7 +182,7 @@
 
  subject_interaction_events.47.title: "Corrupt Diplomats"
  subject_interaction_events.47.desc: "Our envoys in [target.GetCapital.GetName] have discovered that a number of key [target.GetAdjective] diplomats would be prepared to push through the union of our countries immediately—for a price."
- subject_interaction_events.47.a: "It's just business."
+ subject_interaction_events.47.a: "It is just business."
  subject_interaction_events.47.b: "We must do this honestly, or not at all!"
 
  subject_interaction_events.48.title: "[target.GetAdjectiveWithNoTooltip] Claimant"

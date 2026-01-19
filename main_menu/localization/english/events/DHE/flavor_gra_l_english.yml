@@ -1,7 +1,7 @@
 ﻿l_english:
  flavor_gra.1.title: "Moorish Refugees"
  flavor_gra.1.desc: "In the name of Allāh, the Most Gracious, the Most Merciful. Granada has fallen to the infidels! The last jewel of al-Andalus, a beacon of learning is now in Castilian hands. As the Islamic world reels from this loss, Moorish refugees flock to the Muslim cities and courts of North Africa and the Middle East, bringing with them knowledge, works by exceptional scholars like Abu al-Walid ibn Rushd, Abu al-Qasim al-Zahrawi and Abu Bakr ibn Tufail. Inviting these refugees to [ROOT.GetCountry.GetName] might provide an enormous boost to our own efforts in the fields of science and culture."
- flavor_gra.1.a: "By all means, invite them to [ROOT.GetCountry.GetName]!"
+ flavor_gra.1.a: "By all means, invite them to [ROOT.GetCountry.GetNameWithNoTooltip]!"
  flavor_gra.1.b: "No, we do not need them."
  flavor_gra.2.title: "The Emirate of Sicily"
  flavor_gra.2.desc: "In ages past, the Emirate of Sicily was a stalwart bastion of our faith; holding strong until the crusaders conquered the island in 1087.\n\nNow that we are in possession of this coveted land, we will not be losing control of it again!"

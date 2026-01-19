@@ -21,7 +21,7 @@
  ireland.30.b: "The [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] should stick to praying."
  # 
  ireland.40.title: "More [native_culture.GetNameWithNoTooltip] than the [native_culture.GetNameWithNoTooltip] Themselves"
- ireland.40.desc: "Generations of living amongst the [native_culture.GetName] has led to a gradual but definite change in our way of life. The [judgmental_culture.GetName] no longer think of us as [judgmental_culture.GetNameWithNoTooltip], while the [native_culture.GetNameWithNoTooltip] no longer think of us as newcomers…"
+ ireland.40.desc: "Generations of living amongst the [native_culture.GetName] has led to a gradual but definite change in our way of life. The [judgmental_culture.GetName] no longer think of us as [judgmental_culture.GetNameWithNoTooltip], while the [native_culture.GetNameWithNoTooltip] no longer think of us as newcomers..."
  ireland.40.a: "We have become more [native_culture.GetNameWithNoTooltip] than the [native_culture.GetNameWithNoTooltip] themselves!"
  ireland.40.b: "We must maintain our heritage in this wild land!"
  opinion_gone_native: "Gone Native"

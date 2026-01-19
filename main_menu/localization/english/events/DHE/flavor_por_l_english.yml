@@ -7,7 +7,7 @@
 
  flavor_por.2.title: "Atlantic Slave Trade"
  flavor_por.2.desc: "The establishment of Plantations has proven a successful endeavor for [ROOT.GetCountry.GetName]. With the growing demand for the goods of these specialized farms, there is also an increasing demand for cheap labor. With our existing connections to the African trade we have an opportunity to expand the acquisition of [ShowPopTypeName('slaves')] from [ShowSubContinentName('west_africa')] to satisfy the plantation's demands."
- flavor_por.2.a: "Encourage Slave trade from [ShowSubContinentName('west_africa')WithNoTooltip]"
+ flavor_por.2.a: "Encourage Slave trade from [ShowSubContinentNameWithNoTooltip('west_africa')]"
  african_slave_trade_encouraged: "Slave Trade Encouraged"
  flavor_por.2.b: "The Crown should not get involved"
  flavor_por.2.historical_info: "The exploitation of land and resources in the New World colonies led to an extensive use of slave labor. As a large part of the indigenous population died from overwork and diseases spread from Europe, the labor shortage soon became problematic for the colonizers. Indentured servitude lessened this somewhat but failed to provide the workforce required. This was the start of the Atlantic slave trade, where slaves bought along the West African coast were transported to Brazil. Over 3 million African slaves were sent to Brazil, mainly to work on the vast sugar plantations."
@@ -81,7 +81,7 @@
  flavor_por.17.title: "A Period of Uncertainty"
  flavor_por.17.desc: "The failure to produce a living male heir is putting the future of the [ROOT.GetCountry.GetFlavorRank] at risk of foreign intervention. Should the daughter of [ROOT.GetCountry.GetGovernment.GetRuler.GetName] succeed [ROOT.GetCountry.GetGovernment.GetRuler.GetHimHer], she risks becoming a mere puppet to a husband who instead would rule [ROOT.GetCountry.GetName] in her place.\n\nThe [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] and the [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] are proposing we change the law of succession to exclude [heir.GetName] from inheriting the crown. They have united in their cause to choose the illegitimate half-brother and noble [john_avis.GetName] to take [ROOT.GetCountry.GetGovernment.GetRuler.GetHisHer] place, should the [ROOT.GetCountry.GetGovernment.GetRulerTitle] fail to produce a male heir."
  flavor_por.17.a: "Refuse their proposition."
- flavor_por.17.a.custom: "The [ShowPopTypeName('burghers')] and [ShowPopTypeName('nobles')] in [GetCountry('POR').GetName] loose #R 90.00%#! [pop_satisfaction|e]"
+ flavor_por.17.a.custom: "The [ShowPopTypeName('burghers')] and [ShowPopTypeName('nobles')] in [GetCountry('POR').GetName] lose #R 90.00%#! [pop_satisfaction|e]"
  flavor_por.17.tt1: "The [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] and the [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] will attempt to place [john_avis.GetNameWithNoTooltip] on the throne"
  flavor_por.17.tt2: "The valiance displayed by the [ROOT.GetCountry.GetGovernment.GetRulerTitle] is recognized for taking a stance against the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] and the [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')]"
  avis_supporters: "Supporters of João Avis"
@@ -185,7 +185,7 @@
  flavor_por.33.title: "Ribeira das Naus"
  flavor_por.33.desc: "Despite the tradition of building ships in the #italic Tercenas#! area in [ShowLocationName('lisbon')], we have lacked a proper shipyard as the settlement deserves. Thanks to the desire of our [target_character.GetName] to build the #italic Paço da Ribeira#! palace in the area where the old shipyard was, we can now erect a proper shipyard in another area.\n\nThis new area has been named #italic Ribeira das Naus#! by those working on building it and it looks like the name is sticking. The new shipyards will definitely help us build ships in an industrial way, enlarging our navy as needed in little time."
  flavor_por.33.a: "This will help us."
- flavor_por.33.historical_info: "The Navy Arsenal site, formerly a medieval naval dockyard called "tercenas," witnessed a shift during King Manuel I's construction of the Paço da Ribeira. The establishment of new tercenas, known as "Ribeira das Naus," to the west of the royal palace, played a crucial role in building ships for the Portuguese Discoveries. These shipyards, the largest in the Portuguese Empire, served as a model for overseas establishments, notably in Goa and Cochin."
+ flavor_por.33.historical_info: "The Navy Arsenal site, formerly a medieval naval dockyard called 'tercenas', witnessed a shift during King Manuel I's construction of the Paço da Ribeira. The establishment of new tercenas, known as 'Ribeira das Naus' to the west of the royal palace, played a crucial role in building ships for the Portuguese Discoveries. These shipyards, the largest in the Portuguese Empire, served as a model for overseas establishments, notably in Goa and Cochin."
  
  flavor_por.34.title: "Transferring [ShowBuildingTypeNameWithNoTooltip('university')] of [current_location.GetNameWithNoTooltip]"
  flavor_por.34.desc: "The [target_building_type.GetName] of [current_location.GetName] was originally founded as the [target_building_type.GetNameWithNoTooltip] of [target_location.GetName] by [founder_of_university.GetName] back in 1290. It was given the name of [ShowLawName('por_estudo_geral_law')], and it remained in the [target_location.GetRank.GetName] until 1308, when it was moved to where it is today due to the conflicts with the local citizens.\n\nSince then, however, those conflicts have finally subsided and the rule of [target_character.GetName] could see the [target_building_type.GetNameWithNoTooltip] be returned back to the capital of [target_location.GetNameWithNoTooltip]."
@@ -208,7 +208,7 @@
  flavor_por.37.b: "Have it published to enhance our prestige!"
 
  flavor_por.38.title: "[target_character.GetNameWithNoTooltip]"
- flavor_por.38.desc: "Our recent expedition to $india$ has returned with a most interesting character on board - [target_character.GetName]. A [target_character.GetReligion.GetAdjective] traveller of [GetCountry('POL').GetAdjective] origin, [target_character.GetSheHe] has distinguished [target_character.GetHerselfHimself] with knowledge of many languages and [target_character.GetSheHe] could serve as a [ROOT.GetCountry.GetGovernment.GetAdjective] interpreter in the east."
+ flavor_por.38.desc: "Our recent expedition to $india$ has returned with a most interesting character on board - [target_character.GetName]. A [target_character.GetReligion.GetAdjective] traveler of [GetCountry('POL').GetAdjective] origin, [target_character.GetSheHe] has distinguished [target_character.GetHerselfHimself] with knowledge of many languages and [target_character.GetSheHe] could serve as a [ROOT.GetCountry.GetGovernment.GetAdjective] interpreter in the east."
  flavor_por.38.a: "Get [target_character.GetHerHim] on our ships!"
  flavor_por.38.b: "There are many like [target_character.GetHerHim]."
 

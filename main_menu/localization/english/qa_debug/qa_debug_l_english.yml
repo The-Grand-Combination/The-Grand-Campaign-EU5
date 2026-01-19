@@ -233,7 +233,7 @@
  qa_debug.13.levee_en_masse_tt: "Every owned [location|e] embraces [ShowInstitutionName('levee_en_masse')]"
  qa_debug.14.title: "Excommunication Menu"
  qa_debug.14.desc: "Heretic thoughts will trigger an excommunication."
- qa_debug.14.a: "The Pope can't forbid me what I think of him!"
+ qa_debug.14.a: "The Pope cannot forbid me what I think of him!"
  qa_debug.15.title: "Disease Menu"
  qa_debug.15.desc: "What disease shall be unleashed?"
  qa_debug.15.a: "[ShowDiseaseName('bubonic_plague')]"

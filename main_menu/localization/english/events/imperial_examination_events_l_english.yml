@@ -6,11 +6,11 @@
 
   imperial_examination_events.7.title: "The Brightest of a Generation"
   imperial_examination_events.7.desc: "Our wise examination system, the #italic [ROOT.GetCountry.Custom('GetExaminationSystemPolicyName')]#!, encourages our population to study and better themselves in order to become great leaders and bureaucrats capable of taking on the honor of holding an office in the great [ROOT.GetCountry.GetLongName].\n\nA new generation of bright minds have distinguished themselves in our many centers of wisdom and are offering their services to our [ROOT.GetCountry.GetGovernment.GetRulerTitle]."
-  imperial_examination_events.7.a: "Invite [adm_bureocrat.GetName] to our court"
+  imperial_examination_events.7.a: "Invite [adm_bureocrat.GetNameWithNoTooltip] to our court"
   imperial_examination_events.7.a.tt: "[adm_bureocrat.GetName] joins our court"
-  imperial_examination_events.7.b: "Invite [dip_bureocrat.GetName] to our court"
+  imperial_examination_events.7.b: "Invite [dip_bureocrat.GetNameWithNoTooltip] to our court"
   imperial_examination_events.7.b.tt: "[dip_bureocrat.GetName] joins our court"
-  imperial_examination_events.7.c: "Invite [mil_bureocrat.GetName] to our court"
+  imperial_examination_events.7.c: "Invite [mil_bureocrat.GetNameWithNoTooltip] to our court"
   imperial_examination_events.7.c.tt: "[mil_bureocrat.GetName] joins our court"
 
 

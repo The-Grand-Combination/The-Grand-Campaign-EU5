@@ -88,6 +88,7 @@
  # Game
  SETTING_DEBUG_SAVES: "Number of auto saves"
  SETTING_DEBUG_SAVES_TOOLTIP: "#T $SETTING_DEBUG_SAVES$#!\nMaximum amount of autosaves to keep"
+ IRONMAN_BLOCKS_THIS: "@trigger_fail! Not valid for Ironman games."
 
  # Multiplayer
  SETTING_MAX_TICKS_AHEAD: "Maximum Ticks Lead"
@@ -150,7 +151,7 @@
  SETTINGS_CATEGORY_CONFIRM: "Setup Confirm Mode"
  SETTINGS_CATEGORY_INPUT_LOCK: "Input Lock Settings"
  SETTINGS_CATEGORY_DYNAMIC_NAMES: "Dynamic Names"
-
+ SETTINGS_CATEGORY_PLAYSETS: "Playsets"
  # Hotkeys
  SETTING_INPUT_CONTEXT_COMMON: "Common"
  SETTING_INPUT_CONTEXT_COMMON_TOOLTIP: "#T Common #! Most used key bindings"
@@ -240,6 +241,16 @@
  SETTING_INPUT_ACTION_TOP_RIGHT_8: "Top Right 8"
  SETTING_INPUT_ACTION_TOP_RIGHT_9: "Top Right 9"
  SETTING_INPUT_ACTION_TOP_RIGHT_10: "Top Right 10"
+ SETTING_INPUT_ACTION_CONTROL_GROUP_0: "Control Group 0"
+ SETTING_INPUT_ACTION_CONTROL_GROUP_1: "Control Group 1"
+ SETTING_INPUT_ACTION_CONTROL_GROUP_2: "Control Group 2"
+ SETTING_INPUT_ACTION_CONTROL_GROUP_3: "Control Group 3"
+ SETTING_INPUT_ACTION_CONTROL_GROUP_4: "Control Group 4"
+ SETTING_INPUT_ACTION_CONTROL_GROUP_5: "Control Group 5"
+ SETTING_INPUT_ACTION_CONTROL_GROUP_6: "Control Group 6"
+ SETTING_INPUT_ACTION_CONTROL_GROUP_7: "Control Group 7"
+ SETTING_INPUT_ACTION_CONTROL_GROUP_8: "Control Group 8"
+ SETTING_INPUT_ACTION_CONTROL_GROUP_9: "Control Group 9"
  SETTING_INPUT_ACTION_MAPMODE_MENU: "Toggle Map Mode Menu"
 
  # Tooltips
@@ -313,10 +324,12 @@
  SETTING_FLATMAP_MODE_FOG_OF_WAR_IGNORE_ZOOM: "Fog of War only"
  SETTING_FLATMAP_MODE_ALWAYS: "Always"
  SETTING_FLATMAP_MODE_NEVER: "Never"
+ SETTING_MAXIMIZE_TICK_SPEED: "Maximize Tick Speed"
+ SETTING_MAXIMIZE_TICK_SPEED_TOOLTIP: "#T $SETTING_MAXIMIZE_TICK_SPEED$#!\nPrioritize CPU usage for tick speed when at maximum game speed instead of keeping a smooth framerate. When activated will also make speed 4 act as speed 5 when deactivated."
  SETTING_DISABLE_3D_TERRAIN: "Disable 3D Terrain"
  SETTING_DISABLE_3D_TERRAIN_TOOLTIP: "#T $SETTING_DISABLE_3D_TERRAIN$#!\nDisables loading of the 3d terrain to increase performance."
- SETTING_FILL_IN_IMPASSABLE_TERRAIN: "Fill in impassible terrain"
- SETTING_FILL_IN_IMPASSABLE_TERRAIN_TOOLTIP: "#T $SETTING_CAMERA_ROTATION_RESET$#!\nDetermines if impassable terrain is included within a nation's borders on the map." 
+ SETTING_FILL_IN_IMPASSABLE_TERRAIN: "Fill in impassable terrain"
+ SETTING_FILL_IN_IMPASSABLE_TERRAIN_TOOLTIP: "#T $SETTING_FILL_IN_IMPASSABLE_TERRAIN$#!\nDetermines if impassable terrain is included within a nation's borders on the map." 
  SETTING_CAMERA_ROTATION_RESET: "Camera Rotation Reset"
  SETTING_CAMERA_ROTATION_RESET_TOOLTIP: "#T $SETTING_CAMERA_ROTATION_RESET$#!\nDetermines if the camera should automatically reset default position after being rotated by the user."
  SETTING_FLATMAP_WATER_COLOR: "Flat Map Water Color"
@@ -388,3 +401,6 @@
 
  SETTING_GUI_TEXTURE_STREAMING: "GUI Texture Streaming"
  SETTING_GUI_TEXTURE_STREAMING_TOOLTIP: "#T $SETTING_GUI_TEXTURE_STREAMING$\n#!Toggle the streaming of elements belonging to the Graphical User Interface\nToggling this on will reduce VRAM usage but might cause temporary lower quality."
+
+#Playsets
+ SETTINGS_WARNING_PLAYSET: "Show dialog to warn about playset errors"

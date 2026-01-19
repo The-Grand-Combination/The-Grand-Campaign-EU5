@@ -88,7 +88,7 @@
  mayapan_holy_site: "$mayapan$"
 
  kaaba: "Al-Masjid al-Ḥarām"
- kaaba_desc: "Located in [ShowLocationName('mecca')] and most commonly known as al-Kaʿba, the $kaaba$ is the most sacred shrine of [ShowReligionGroupName('muslim')]. Covered by a black cloth known as Kiswah, it defines the direction of prayer (qibla) for all $muslim_ADJ$ prayers."
+ kaaba_desc: "Located in [ShowLocationName('mecca')] and most commonly known as al-Ka'ba, the $kaaba$ is the most sacred shrine of [ShowReligionGroupName('muslim')]. Covered by a black cloth known as Kiswah, it defines the direction of prayer (qibla) for all $muslim_ADJ$ prayers."
  prophets_mosque: "Al-Masjid an-Nabawī"
  umayyad_mosque: "Umayyad Mosque"
  cave_patriarchs: "Cave of the Patriarchs"

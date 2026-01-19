@@ -149,7 +149,7 @@
  flavor_tim_1100_shared: "Rise of [target_character.GetNameWithNoTooltip]"
 
  flavor_tim.1100.title: "$flavor_tim_1100_shared$"
- flavor_tim.1100.desc: "The Ḥurūfī movement has grown significantly, becoming a new religious force within [ROOT.GetCountry.GetName]. Led by [target_character.GetName], [target_character.GetSheHe] has claimed that [target_character.GetSheHe] is the incarnation of [target_character.GetReligion.GetGodName], and that [target_character.GetSheHe] will appear as Mahdī during judgement day. This is all lunatic talk, but executing [target_character.GetHerHim] may lead to a rebellion."
+ flavor_tim.1100.desc: "The Ḥurūfī movement has grown significantly, becoming a new religious force within [ROOT.GetCountry.GetName]. Led by [target_character.GetName], [target_character.GetSheHe] has claimed that [target_character.GetSheHe] is the incarnation of [target_character.GetReligion.GetGodName], and that [target_character.GetSheHe] will appear as Mahdī during judgment day. This is all lunatic talk, but executing [target_character.GetHerHim] may lead to a rebellion."
  flavor_tim.1100.a: "[target_character.GetSheHe|U] can stay."
  flavor_tim.1100.b: "Exile [target_character.GetHerHim] immediately!"
  flavor_tim.1100.c: "We shall not take any risks, even if it sparks a rebellion."

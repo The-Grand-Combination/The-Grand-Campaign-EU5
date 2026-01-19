@@ -4,6 +4,7 @@
  INSTITUTION_SPREAD_FRIENDLY_COASTAL: "Nearby [locations|e] where [owner|e] has positive [opinion|e]: $VAL|+=2$"
  INSTITUTION_SPREAD_ANY_COASTAL: "Nearby [locations|e]: $VAL|+=2$"
  INSTITUTION_SPREAD_IMPORTS: "[import|e] from [locations|e] with [INSTITUTION.GetNameWithNoTooltip]: $VAL|+=2$"
+ INSTITUTION_SPREAD_EXPORTS: "[exports|e] to [locations|e] with [INSTITUTION.GetNameWithNoTooltip]: $VAL|+=2$"
  INSTITUTION_SPREAD_OWNER_CONTROL: "[control|e] in [location|e] as [COUNTRY.GetNameWithNoTooltip] has [embraced|e] [INSTITUTION.GetNameWithNoTooltip]: $VAL|+=2$"
  INSTITUTION_SPREAD_EMBRACED_TO_CAPITAL: "Presence in [country|e]'s [capital|e]: $VAL|+=2$"
  INSTITUTION_SPREAD_FROM_MARKET_CENTER: "Present in the [market_center|e]: $VAL|+=2$"
@@ -144,7 +145,7 @@
  banking: "Banking"
  banking_desc: "Money lending has existed since metal-based coins appeared in Antiquity. However, it depended on some individuals and their family groupings or on the Ancient States. A shift occurred in the Middle Ages, encouraged by the renewed growth of long-range commercial activities on the Eurasian continent and its peripheries.\n\nSpecialized moneylenders began to organize when Jewish communities started operating between the Christian and Islamic worlds. However, the boom of credit demand that followed the Crusades in the 12th century encouraged merchants in the Italian city-states to create larger structures for money lending, effectively founding the first Banking institutions, such as the Peruzzi and Bardi houses.\n\nMore instruments were developed, like bills of exchange and debt bonds, and Banking dynasties such as the Medici, Fugger or Welser soon became as powerful as States."
  professional_armies: "Professional Armies"
- professional_armies_desc: "Armies have existed since war was invented, many thousands of years ago. However, their form has changed over the centuries and different types of recruitment and organization have developed in different cultures and periods.\n\nIn the Late Middle Ages, armies in a wide range of societies relied on levies based on the structures of feudal society, with knights and footmen forming a core that was levied seasonally. In some regions, however, states were powerful enough to finance standing armies, with professional soldiers who would be available for duty throughout the year.\n\nThis system was also developed in Europe after the outbreak of the Hundred Year's War, being one of the main changes that promoted a Military Revolution in the Early Modern Age. Increasing the size and quality of Professional Armies, while finding new sources of revenue to finance them, soon became one of the main challenges for rulers around the world."
+ professional_armies_desc: "Armies have existed since war was invented, many thousands of years ago. However, their form has changed over the centuries, and different types of recruitment and organization have developed in different cultures and periods.\n\nIn the Late Middle Ages, armies in a wide range of societies relied on levies based on the structures of feudal society, with knights and footmen forming a core that was levied seasonally. In some regions, however, states were powerful enough to finance standing armies, with professional soldiers who would be available for duty throughout the year.\n\nThis system was also developed in Europe after the outbreak of the Hundred Years' War, being one of the main changes that promoted a Military Revolution in the Early Modern Age. Increasing the size and quality of Professional Armies, while finding new sources of revenue to finance them, soon became one of the main challenges for rulers around the world."
  #
  new_world: "New World"
  new_world_desc: "The discovery of the New World has heralded a new era not only for the colonizers and the colonized, but it has also led to the spread of materials and techniques as well as a realization of the vastness of the globe. As animals, crop types, silver and diseases spread across the Atlantic, the first steps have been taken towards a truly global economy. With foreign lands and people being mapped and documented, ideas as well as religious and philosophical debate are increasingly being colored by what we have found in overseas societies. Great minds feel the need to question what was once truth, and from Valladolid to Fatehpur Sikri, the nature of the world is now up for debate."
@@ -158,7 +159,7 @@
  global_trade: "Global Trade"
  global_trade_desc: "Goods have been moved across continents since antiquity. But where this was previously limited to a set number of routes and goods such as the manufactured goods of India and China finding their way across the Indian Ocean and along the Silk Road, all trade is now increasingly becoming part of a greater world network. With the discovery of the Americas, sea routes around Africa and the crossing of the Pacific Ocean, local trade networks are being connected into one world-spanning interconnected web.\n\nSilver mined in the Andes is now being boxed and taken via Europe all the way to China and India. Iron mined and wrought in Scandinavia is being sold in West Africa by English merchants, and others are making a fortune just distributing cloth and spices within the Southeast Asian trade sphere. Local Indian merchants are investing in future European trade ventures. It may still be early to speak of a truly Global Economy, but surely the first seeds have been sown."
  artillery_institution: "Artillery"
- artillery_institution_desc: "The invention of gunpowder in Song China led to the development of a new device that would employ its firepower in warfare, the artillery. Although it spread throughout Eurasia in the 13th Century, its use as a common weapon system did not happen until the 15th century, as improvements in the cannon length and gunpowder recipe made artillery much more powerful, now posing a threat to stone-built castles and fortifications, the most common in Europe. Soon artillery would be used not only in sieges but also on battlefields, as smaller caliber guns now featured the mobility required to be quickly deployed and used. Its final development as a key warfare system would come in the 18th Century, especially after Napoleon perfected its use at key points during battles."
+ artillery_institution_desc: "The invention of gunpowder in Song China led to the development of a new device that would employ its firepower in warfare, the artillery. Although it spread throughout Eurasia in the 13th Century, its use as a common weapon system did not happen until the 15th century, as improvements in the cannon length and gunpowder recipe made artillery much more powerful, now posing a threat to stone-built castles and fortifications, the most common in Europe. Soon, artillery would be used not only in sieges but also on battlefields, as smaller caliber guns now featured the mobility required to be quickly deployed and used. Its final development as a key warfare system would come in the 18th Century, especially after Napoleon perfected its use at key points during battles."
  #
  manufactories: "Manufactories"
  manufactories_desc: "While a number of technical innovations during the course of the 16th and 17th centuries have increased the output of production for some products such as iron or cloth to an extent, the biggest improvement in the field of production has come in the form of new forms of organization. By creating manufactories, often outside the city limits, merchant capitalists can both bypass the ancient guild laws that inhibit mass production, and pioneer ways to increase production through the organization and specialization of labor in one place. The forerunners of the later Industrialization were able to increase output by facilitating access to raw materials and mass organization of labor rather than by expensive new machinery. This is in itself a huge change over the often heavily regulated methods of old, however, and together with later technical advances this new mode of production will come to revolutionize society."
@@ -192,7 +193,7 @@
  measuring_the_world: "Measuring the World"
  measuring_the_world_desc: "The new sciences have given us a number of different ways to describe and measure the world around us. Let us send these learned men out into the world in general and into our country in particular. We cannot know what resources are at our disposal until we have thoroughly searched all our lands for minerals, counted every last subject and assessed every last enterprise."
  the_constitution: "The Constitution"
- the_constitution_desc: "A new philosophical concept called constitutionalism has been developed, where the government accepts legal limits to its power. This is an intriguing idea, but I can't see it catching on."
+ the_constitution_desc: "A new philosophical concept called constitutionalism has been developed, where the government accepts legal limits to its power. This is an intriguing idea, but we cannot see it catching on."
  absolute_rulership: "Absolute Rulership"
  absolute_rulership_desc: "There are many people who demand to be given a role in the government, but in reality mostly want rewards without effort. A new interesting idea of absolutism is spreading, which is a system where we dispose of those parasites and govern alone."
  national_sovereignty: "National Sovereignty"
@@ -218,7 +219,7 @@
  spanish_square: "Spanish Square"
  spanish_square_desc: "Spanish Square developed naturally from the Pike and shot formations. At its core was a traditional Pike Square. At each of the corners, it had a group of Arquebusiers. It kept the staying power of the traditional pike square and enhanced it with the firepower of the Arquebus."
  standardized_pikes: "Standardized Pikes"
- standardized_pikes_desc: "A pike is a remarkably simple weapon to make but to get the full benefit from the use of pikes, it's required for the whole formation to be wielding weapons of similar length and blade."
+ standardized_pikes_desc: "A pike is a remarkably simple weapon to make but to get the full benefit from the use of pikes, it is required for the whole formation to be wielding weapons of similar length and blade."
  pike_square: "Pike Square"
  pike_square_desc: "Throughout the Middle Ages cavalry's dominance was being challenged by disciplined pikemen. In battles such as Bannockburn or the Golden Spurs, cavalry was defeated by pikes. A combination of improved training and discipline, and the addition of swordsmen to provide close combat support has raised this formation to the peak of its efficiency."
  medieval_military: "Medieval Military"
@@ -475,7 +476,7 @@
  quality_education: "Quality Education"
  quality_education_desc: "The most vital moment of any army's existence is straight after a battle. Win or lose, exhausted troops are most vulnerable. We must ensure that our troops are ready for combat before the opposition is."
  finest_of_horses: "Finest of Horses"
- finest_of_horses_desc: "How steadily those troops take the ground! How beautifully those cavalry form! Look at those grey horses! Who are those fine horsemen? These are fine troops."
+ finest_of_horses_desc: "How steadily those troops take the ground! How beautifully that cavalry forms! Look at those grey horses! Who are those fine horsemen? These are fine troops."
  oak_forests_for_ships: "Oak Forests for Ships"
  oak_forests_for_ships_desc: "The more punishment our ships can take the more they can dish out. Let us ensure that we have a ready supply of the finest seasoned oak for our warships."
  private_to_marshal: "Private to Marshal"
@@ -926,7 +927,7 @@
  lumber_improvements_absolutism: "Wind-Powered Sawmills"
  lumber_improvements_absolutism_desc: "With the construction of windmills to power our sawmills, we will be able to process our timber into planks at a faster rate than ever before."
  coal_improvements_absolutism: "Improved Coking"
- coal_improvements_absolutism_desc: "By streamlining the process of refining our mined coal, we will be able to use it more effectively as fule and without side effects impacting the other products."
+ coal_improvements_absolutism_desc: "By streamlining the process of refining our mined coal, we will be able to use it more effectively as fuel and without side effects impacting the other products."
  coal_improvements_revolutions: "Improved Beehive Ovens"
  coal_improvements_revolutions_desc: "For the production of Coke, a vital part of our iron processing, we need large quantities of beehive ovens. With improvements to their construction and the usage of bricks, we will be able to raise the quality of the produced coke."
  correct_box_advance_discovery: "Lieutenants"
@@ -1038,6 +1039,11 @@
  slave_manned_galleys: "Manning Galleys with Slaves"
  slave_manned_galleys_desc: "Massive galley fleets incur in massive costs as they need to be provided with enough oarsmen to function. By employing slaves, we can be sure that we will have lesser costs to use our navies."
 
+
+ jesuits_bark: "Jesuit's Bark"
+ jesuits_bark_desc: "Some native population of South America have been observed to use the bark of a specific tree to treat shivers. Thanks to the experiments of a Jesuit apothecary, this bark has been proven also effective for the treatment of malaria, and it is already known as 'Jesuit's Bark'. Distributing it to the affected population will greatly decrease the effects of the disease."
+ quinine: "Quinine"
+ quinine_desc: "Although the 'Jesuit's Bark' has been effective in treating malaria in the past, its consumption as dried bark powder leaves much room for improvement. By isolating and extracting the actual healing component from the bark, we can substantially increase the effectiveness of the treatment."
 
  state_efficiency: "Local Infrastructure"
  state_efficiency_desc: "Despite our focus on the country-wide scale of affairs, we must not neglect to tend to our local state legislators and bailiffs."
@@ -1201,7 +1207,7 @@
  newspapers_advance: "Newspapers"
  newspapers_advance_desc: "The concept of announcements via tablets or sheets posted in the public is not a new one. However, as the $printing_press$ spreads throughout the world, so does the need for accessible information about politics, military and economy. The newspaper - a periodical publication describing current events - shall satisfy this demand."
  feudal_de_jure_law_advance: "$feudal_de_jure_law$"
- feudal_de_jure_law_advance_desc: "#italic De jure#! - 'by law' - is a description of legally acknowledged practices regardless of the reality of its practice. The systems of a Feudal Society are built on this very concept."
+ feudal_de_jure_law_advance_desc: "#italic De Jure#! - 'by law' - is a description of legally acknowledged practices regardless of the reality of its practice. The systems of a Feudal Society are built on this very concept."
  semi_salic_law_advance: "$semi_salic_law$"
  semi_salic_law_advance_desc: "By the right of the $salic_law$, only men are allowed to inherit the throne. Such practice runs into a fatal issue once the male bloodline dies out, and the monarchy gets thrown into a succession crisis. In order to avoid it, the right of the women shall be expanded to be eligible for inheritance should no suitable male heir exist."
  republican_foundation_law_advance: "$republican_foundation_law$"
@@ -1239,7 +1245,7 @@
  linked_armies_advance: "Message Relays"
  linked_armies_advance_desc: "Coordination among the different units of an army is crucial for its proper functioning. Having a proper system to relay messages between our generals and their unit officials will allow all our troops to work more cohesively and with a more rapid response to any situation."
  regular_levy_training: "Designated Instruction"
- regular_levy_training_desc: "Levies are by definition not the best trained of troops, but that does not mean that we have to send a bunch of untrained rabble to war. Assigning them proper instructors from our most proficient troops will allow them to learn from the best, and a mandatory training period with them will make a man out of them."
+ regular_levy_training_desc: "Levies are by definition not the best trained of troops, but that does not mean that we have to send a bunch of untrained rabbles to war. Assigning them proper instructors from our most proficient troops will allow them to learn from the best, and a mandatory training period with them will make a man out of them."
  court_accounting: "Court Accounting"
  court_accounting_desc: "The court is the symbol of the country, and its prosperity shall represent the country's prosperity. However, this does not mean that the court can spend more than the country can sustain, and there should be proper accounting overseeing what is spent at court." 
  
@@ -1273,7 +1279,7 @@
  grant_privilege_cost_modifier_renaissance_advance_desc: "Entrenching the societal role of each estate in our courtly routine will ease the process of granting new privileges without causing rivalries between different estates."
  
  war_no_cb_cost_modifier_renaissance_advance: "Recurrent Warfare"
- war_no_cb_cost_modifier_renaissance_advance_desc: "War changes as the states involved in it do. Their increased capabilities allow them to wage war for longer periods, and thus inter-state wars are increasingly becoming more common."
+ war_no_cb_cost_modifier_renaissance_advance_desc: "War changes as the states involved in it do. Their increased capabilities allow them to wage war for longer periods, and thus interstate wars are increasingly becoming more common."
  global_nobles_max_literacy_advance: "Nobiliary Literature"
  global_nobles_max_literacy_advance_desc: "The nobles give more importance to literary skills as they increasingly change their primary function from being glorified warriors to becoming courtly courtiers at the service of their rulers. This is creating a demand for a literature that is appealing for them."
  global_burghers_max_literacy_advance: "Burgher Literature"
@@ -1308,6 +1314,8 @@
  
  LIV_a_order_knights: "Knights of the Livonian Order"
  LIV_a_order_knights_desc: "Our nation is founded over the strong shoulders of the brave Christian men that have joined our order as knights. Their martial abilities will compensate our low numbers compared to those of the Pagans surrounding us."
+ LIV_a_order_knights_2: "Bannerets of the Livonian Order"
+ LIV_a_order_knights_2_desc: "The knights of our order have proven their valor and skill in battle time and time again. By promoting the most capable among them to bannerets, we ensure that our armies will always be led by the best."
  wallachian_tradition: "A Fortified Nation"
  wallachian_tradition_desc: "Our lands are bounded by mountains and the Danube river, but are otherwise very flat in nature. These rich soils are like highways for invading armies once those natural barriers are sorted. In order to defend our people, we will set fortifications and castles all across this territory."
  wallachian_heritage: "A History of Resistance"
@@ -1323,7 +1331,7 @@
  
  
  english_tradition: "Lionhearts"
- english_tradition_desc: "The bravery and discipline of English foot soldiers has been witnessed from the shieldwalls of Northumbria to the darkened skies of France. Inspired by the lion-hearted spirit of our kings, and the stoicism of the common man, our infantry fights with the ferocity of the Anglo-Saxon warriors before them."
+ english_tradition_desc: "The bravery and discipline of English foot soldiers has been witnessed from the shield walls of Northumbria to the darkened skies of France. Inspired by the lion-hearted spirit of our kings, and the stoicism of the common man, our infantry fights with the ferocity of the Anglo-Saxon warriors before them."
  english_heritage: "Our Island Home"
  english_heritage_desc: "Our island protects us from outside enemies, but it will amount to nothing if we do not protect the surrounding waters. By being true masters of our surrounding seas, we will keep a firm control on those who threaten our land."
  english_ambition: "Rulers of the Waves"
@@ -1386,7 +1394,7 @@
  port_authority_advance: "Port Authority"
  port_authority_advance_desc: "$port_authority_desc$"
  porcelain_kiln_advance: "Porcelain Kiln"
- porcelain_kiln_advance_desc: "$porcelain_kiln_desc$"
+ porcelain_kiln_advance_desc: "$porcelain_guild_desc$"
  scriptorium_advance: "Scriptorium"
  scriptorium_advance_desc: "$scriptorium_desc$"
  paper_guild_advance: "Paper Guild"
@@ -1608,7 +1616,7 @@
  swedish_royal_post_office: "Kungliga Postverket"
  swedish_royal_post_office_desc: "The Kungliga Postverket (Royal Postal Agency) was founded during reign of Queen Christina. Created to improve state administration and communication across the vast Swedish Empire, it established a reliable network of couriers and waystations. The system became crucial for military coordination, diplomacy, and governance during Sweden's era as a great power."
  polhem_machina_nova: "Machina Nova"
- polhem_machina_nova_desc: "Christopher Polhem, dubbed the 'father of Swedish engineering,' transformed Sweden's industry with his Machina Nova, an innovative array of mechanical systems to streamline and boost production. Using intricate systems of gears, cams, and water power, Polhem developed machines capable of performing tasks previously done by hand, from ore crushing in mines to textile weaving and sawmilling. His Laboratorium Mechanicum served as both a workshop and a school, spreading mechanical knowledge throughout the kingdom."
+ polhem_machina_nova_desc: "Christopher Polhem, dubbed the 'father of Swedish engineering,' transformed Sweden's industry with his Machina Nova, an innovative array of mechanical systems to streamline and boost production. Using intricate systems of gears, cams, and water power, Polhem developed machines capable of performing tasks previously done by hand, from ore crushing in mines to textile weaving and saw milling. His Laboratorium Mechanicum served as both a workshop and a school, spreading mechanical knowledge throughout the kingdom."
 
 
 
@@ -1673,12 +1681,12 @@
  res_publica_christiana: "Universal Christianity"
  res_publica_christiana_desc: "We must pursue good relations with our fellow Christians, even if some of their practices are considered heresy."
  roman_orthodoxy: "Roman Orthodoxy"
- roman_orthodoxy_desc: "The righteousness of the roman-catholic faith and its doctrine must remain unquestioned to assure the people of their authority."
+ roman_orthodoxy_desc: "The righteousness of the Roman Catholic faith and its doctrine must remain unquestioned to assure the people of their authority."
  marian_devotion: "Devotion to the Virgin Mary"
  marian_devotion_desc: "Our Devotion to the Virgin Mary must remain a central pillar of our worship."
  crusading_knights: "Experience of the Baltic Crusades"
  crusading_knights_desc: "Sending our finest knights and nobles to the heathen areas of the Baltic or Mediterranean Seas has a long tradition in our country. We will both fulfill the good work of Christ in bringing the faith to the unenlightened and, additionally, we will gain experienced commanders for our armies."
- catholic_pilgrimages: "Catholic Pilgrims"
+ catholic_pilgrimages: "Catholic Pilgrimages"
  catholic_pilgrimages_desc: "The holy sites of our faith deserve care and attention from every follower. Encouraging pilgrimages and elevating those who have undergone the process should be an important action in our country."
  inquisition_advance: "Inquisition"
  inquisition_advance_desc: "The Inquisition was created in the 12th century as a means to combat the Cathar heresy, but its reach grew significantly in the Late Middle Ages as the main tool of the Catholic Church to counter the spread of dissident doctrines."
@@ -1707,7 +1715,7 @@
  confutatio_augustana: "Refute False Confessions"
  confutatio_augustana_desc: "In turbulent times like these, we have to deliver a clear line to our subjects of what we see as heretical thought and what doctrine a proper Christian has to follow."
  roman_catechism: "Roman Catechism"
- roman_catechism_desc: "Our clergy needs to adopt to the official instructions of the Church. This will make our priests more efficient and ease their education."
+ roman_catechism_desc: "Our clergy needs to adapt to the official instructions of the Church. This will make our priests more efficient and ease their education."
  oversea_missions: "Overseas Missions"
  oversea_missions_desc: "Our clergy is ready and willing to spread our faith into new territories overseas. With their contribution, settling new lands will be made easier and cheaper."
  baptism_books: "Baptism Books"
@@ -1734,7 +1742,7 @@
  continue_missionary_works_desc: "The missionary effort to spread our faith into the far corners of the world can never be considered finished. We need to sponsor more missions to spread the good word of Catholicism."
  #protestant advances
  protestant_invite_persecuted: "Invite the Unwanted"
- protestant_invite_persecuted_desc: "While we have seen the light of the true faith, many of our brethen are suffering under the oppressive rule of the misguided. We should invite and support these people to settle in our lands, where they can live without repercussions and, more importantly, contribute to our treasury."
+ protestant_invite_persecuted_desc: "While we have seen the light of the true faith, many of our brethren are suffering under the oppressive rule of the misguided. We should invite and support these people to settle in our lands, where they can live without repercussions and, more importantly, contribute to our treasury."
  protestant_administration_tax: "Efficient Tax Collectors"
  protestant_administration_tax_desc: "Previously the clergy took some of the burden of proper taxation into their hand. While some of these structures have been dismantled in the wake of the Reformation, the capable people are still present and ready to serve us."
  confessio_augustana: "A New Confession"
@@ -1826,6 +1834,8 @@
  unlock_dhow_desc: "$n_dhow_desc$"
  unlock_long_fada: "$n_long_fada$"
  unlock_long_fada_desc: "$n_long_fada_desc$"
+ unlock_long_fada_2: "$n_long_fada_2$"
+ unlock_long_fada_2_desc: "$n_long_fada_2_desc$"
 
  #Land Units
  unlock_feudal_levy_advance: "$a_feudal_levy$"
@@ -2182,7 +2192,7 @@
  cas_royal_factories_desc: "As an effort to combat the export of raw materials instead of manufactured ones that are more costly, we will develop a system of government-backed factories that will industrialize our nation. These new manufactured goods will strengthen our nation's economy."
 
  gra_banu_nasr: "Banū Naṣr"
- gra_banu_nasr_desc: "We descend from the Banū l-Ḫazraj tribe and come from the lineage of Saʿd ibn ʿUbāda, a companion of Prophet Muhammad. The founder of our dynasty, Muhammad I, controlled a territory that included Granada, Jaén, Almería, and Málaga, though some of those lands fell to the Christian forces. Since then, we have been resisting their advances with tenacity, and we will continue doing so with the strength of our ancestors."
+ gra_banu_nasr_desc: "We descend from the Banū l-Ḫazraj tribe and come from the lineage of Sa'd ibn 'Ubāda, a companion of Prophet Muhammad. The founder of our dynasty, Muhammad I, controlled a territory that included Granada, Jaén, Almería, and Málaga, though some of those lands fell to the Christian forces. Since then, we have been resisting their advances with tenacity, and we will continue doing so with the strength of our ancestors."
  gra_nasrid_art: "Nasrid Art"
  gra_nasrid_art_desc: "The artisans and architects of Granada are the most skillful in the world. They create not only useful things, but they are also pleasing to the eyes, combining with excellency both aspects."
  gra_skillful_envoys: "Skillful Envoys"
@@ -2483,7 +2493,7 @@
  assistance_to_the_suffering: "Assistance to the Suffering"
  assistance_to_the_suffering_desc: "The Order is named the Knights Hospitaller for a reason: we were originally the protective force of a pilgrims' hospital in Jerusalem. Though Jerusalem is lost to the Saracens, we still provide medical aid to those in need, including our brave knights, who heartily return to the battlefield much faster than most armies."
  reconquista_of_the_sea: "Reconquista of the Sea"
- reconquista_of_the_sea_desc: "In our frequent clashes with the dreaded corsairs of the Turkish and Barbary menaces, the thought has occurred to us that the corsairs might have the right idea about seagoing looting and pillaging of the coast, but that they are directing their predations to the wrong targets. Piracy may be a vile sin in peacetime, but in times of war it's known as 'privateering' and that's surely another thing altogether, right?"
+ reconquista_of_the_sea_desc: "In our frequent clashes with the dreaded corsairs of the Turkish and Barbary menaces, the thought has occurred to us that the corsairs might have the right idea about seagoing looting and pillaging of the coast, but that they are directing their predations to the wrong targets. Piracy may be a vile sin in peacetime, but in times of war it is known as 'privateering' and that's surely another thing altogether, right?"
  friends_in_need: "Friends in Need"
  friends_in_need_desc: "Our Order is formed by peoples that came from everywhere across Christendom. This fact and our need for external support to fulfill our mission have made us very apt at finding helping hands for our cause. We will take advantage of our presence everywhere in Europe to reach powerful Catholic rulers and bring them to our side."
  scourge_of_the_corsairs: "Scourge of the Corsairs"
@@ -2566,13 +2576,13 @@
  franconian_proud_knights_desc: "Our People have contributed to a long line of proud knights in imperial service. They represent and encapsulate many knightly ideals that have since become less prevalent but are nonetheless an essential part of who we strive to be. As such, we have a long history to look back upon teaching us many a lesson when it comes to both knightly behavior and the more militaristic aspects of life. Naturally, this also has an effect on the willingness of our Nobles to contribute levies in hopes of winning glory in honorable combat."
 
  franconian_wine_bottles: "Silvaner and Bocksbeutel"
- franconian_wine_bottles_desc: "The Bocksbeutel is a big part of our strong and proud wine tradition. Being very handy and easily recognizable, the shape of this bottle serves as a sort of ambassador for the beautiful wines produced in our region. Containg such famous wines as the Silvaner or Riesling, both our glassmakers and winemakers will surely bring economic fortune to us."
+ franconian_wine_bottles_desc: "The Bocksbeutel is a big part of our strong and proud wine tradition. Being very handy and easily recognizable, the shape of this bottle serves as a sort of ambassador for the beautiful wines produced in our region. Containing such famous wines as the Silvaner or Riesling, both our glassmakers and winemakers will surely bring economic fortune to us."
 
  westphalian_monastic_traditions: "Land of Monasteries"
  westphalian_monastic_traditions_desc: "The northern parts of Germany are home to many Catholic strongholds like the Bishoprics in Münster and Paderborn. The monastic life and the associated religious traditions in the region have a generally positive effect on the literacy and education of our Clergy as there are plenty of places and opportunities for them to further educate themselves and learn, granting plentiful options to clergymen seeking to join the Holy Mother Church."
 
  north_german_hanseatic_traditions: "Hanseatic Traders"
- north_german_hanseatic_traditions_desc: "The people of our regions in the northern part of Germany have for a long time reaped the benefits of access to the Baltic Sea. While many of our more southern neighbors have to make due using rivers to transport goods, we benefit from a long standing tradition of traders sailing the Baltic making their fortune and bringing wealth and prosperity to our shores."
+ north_german_hanseatic_traditions_desc: "The people of our regions in the northern part of Germany have for a long time reaped the benefits of access to the Baltic Sea. While many of our more southern neighbors have to make due using rivers to transport goods, we benefit from a long-standing tradition of traders sailing the Baltic making their fortune and bringing wealth and prosperity to our shores."
  
  german_baltic_sailors: "Baltic Sailors"
  german_baltic_sailors_desc: "Harsher climates make hardy people. Being adjacent to the cold Baltic Sea has certainly left its mark on our sailors, making them very apt at their profession and extremely resilient mentally, for the sea can be a very harsh mistress."
@@ -2590,7 +2600,7 @@
  landsknechte_desc: "A new type of unit organization has emerged from the recurring wars within Germany and on its borders. The $landsknechte$ are mixed troops formed by innovative pikemen squares, with arquebusiers supporting from their flanks, and a front line composed of the infamous #italic Doppelsöldner#!, 'double-pay men' carrying two-handed swords. This allows for tactics that combine close-quarters and medium-range combat."
 
  german_biedermeier: "Biedermeier"
- german_biedermeier_desc: "The Biedermeier period marks a conservative view in our society, steming from the the upper classes and their yearning for bygone times. This leads to a lot of the more free thinking and creative pursuits being engaged within the privacy of peoples homes, secluded from the public eye. While this inadvertently strengthens the development of a cultural identity within the Burgher class, it is also the cause for many Freethinkers to emigrate and continue their pursuits abroad."
+ german_biedermeier_desc: "The Biedermeier period marks a conservative view in our society, stemming from the upper classes and their yearning for bygone times. This leads to a lot of the more free thinking and creative pursuits being engaged within the privacy of peoples homes, secluded from the public eye. While this inadvertently strengthens the development of a cultural identity within the Burgher class, it is also the cause for many Freethinkers to emigrate and continue their pursuits abroad."
 
  custom_union_of_the_rhine: "Rheinischer Münzverein"
  custom_union_of_the_rhine_desc: "In the patchwork of the empire it is necessary to work together with one's neighbors in matters of the economy to thrive. We shall join the customs union of the Rhine and adopt their #italic gulden#! coins to ease business for our merchants and ease diplomacy with other countries."
@@ -2909,7 +2919,7 @@
  independence_from_mali_desc: "For many years we were a subject of the Mali Sultanate. As Mali's power has weakened, ours has grown, and we can now claim to be fully independent of Malian overlordship. Let us take steps to make sure we remain so."
  jihad_against_the_pagans: "$jihad$ Against the Pagans"
  jihad_against_the_pagans_desc: "Despite the best efforts of centuries of Sunni sultanates, West Africa is still plagued by the menace of Animistic pagans. By lifting the banner of jihad, we can cleanse our lands of the unbelievers and expand our frontiers at the same time."
- sankore_madrassah: "Sankoré Madrasah"
+ sankore_madrassah: "Sankoré Madrasa"
  sankore_madrassah_desc: "We have been told that the Sankoré Mosque's school is the greatest center for learning in the entirety of Africa. Who could be surprised if this is true, seeing wise men from distant Arabia and the Maghreb here arguing the finer points of philosophy and religion?"
  the_hajj: "The Ḥajj"
  the_hajj_desc: "Like Mansa Mūsā of Mali once did, our rulers can travel to Mecca as well, fulfilling the fifth pillar of Islam bearing gold as a symbol of our wealth and power. Like Mali of old, let us have the world wonder at the wealth and grandeur of Songhai."
@@ -2920,7 +2930,7 @@
  modernization_of_the_military: "Modernization of the Military"
  modernization_of_the_military_desc: "Our state lives and dies by the capabilities of our army. It was our military that not only ensured our survival but also our thrive to greatness. We cannot allow ourselves to fall behind in the military advances."
 
- 
+ #Naples
  
  university_naples: "The University of Naples"
  university_naples_desc: "Founded in 1224 by Emperor Frederick II, the University of Naples is one of Italy's oldest public institutions. Embracing a secular ethos, it has provided generations of students with a comprehensive education and contributed to intellectual advancements across various fields."
@@ -2947,6 +2957,20 @@
  neapolitan_army_reforms: "Neapolitan Army Reforms"
  neapolitan_army_reforms_desc: "Our nation needs to undergo sweeping military reforms, modernizing its armed forces to meet the challenges of the changing battlefield. These reforms will bolster tactical capabilities, streamline command structures, and enhance training programs, positioning us as a formidable force in our region."
 
+ #Two Sicilies
+ tws_unified_legal_code: "Unified Legal Code"
+ tws_unified_legal_code_desc: "The territories which constitute our land have suffered revolts due to unjust applications of laws. In order to prevent these occurrences in the future, we should standardize our legal code and ensure our laws are applied fairly. This will surely prevent any uprising from spiraling into chaos."
+ tws_ensure_loyal_families: "Loyalty of the Noble Families"
+ tws_ensure_loyal_families_desc: "The Noble Families of both Sicilies exert much power in our stead. By granting them prestigious yet meaningless roles at court, we will ensure their loyalty and guarantee stable rule over our countryside."
+ tws_revitalize_the_lands: "Attract new People"
+ tws_revitalize_the_lands_desc: "Previous rulers put too much focus on particular areas of our country. If we want to retain control of both Sicilies, we will have to invest equally and fairly in both parts. One step towards this goal is attracting people to settle in previously neglected areas."
+ tws_capable_vicars: "Capable Vicars"
+ tws_capable_vicars_desc: "A particular struggle of our unified country is governing both sides of the Strait of Messina. Since our ruler can only be present on one side at a time, the other will have to be given to a vicar, ruling in our name. We must be sure to appoint only the most capable and trustworthy people to this vital role to prevent corruption."
+ tws_oversea_ambitions: "Overseas Ambitions"
+ tws_oversea_ambitions_desc: "Expanding our territories within Italy is a difficult task, navigating a treacherous web of alliances and risking the anger of the Pope himself. Therefore, we should look overseas, where potential riches await us in the lands of northern Africa and Greece."
+ tws_protect_the_coastline: "Increase Maritime Patrols"
+ tws_protect_the_coastline_desc: "Our coastline is vast, and vulnerable to raids by pirates hunting for slaves. We need to establish a navy to patrol, protect, and eventually defeat this vile threat to our people."
+
  #Florence & Tuscany
 
  arte_della_lana: "Arte della Lana"
@@ -2956,7 +2980,7 @@
  florino_d_oro_desc: "A very powerful currency, backed by an excellent gold purity and shared by many states and institutions across Europe. By adopting the #Y Florin#! as our currency, we are sure to positively impact our income and cut down on monetary deficits."
 
  a_land_of_banks: "A Land of Banks"
- a_land_of_banks_desc: "Tuscany is the center of European banking, being home to many prowerful institutions based on the main tuscan cities. From their headquarters, their tentacles extend across the Italian Peninsula and even into the rest of Europe."
+ a_land_of_banks_desc: "Tuscany is the center of European banking, being home to many powerful institutions based on the main Tuscan cities. From their headquarters, their tentacles extend across the Italian Peninsula and even into the rest of Europe."
 
  florentine_citizen_militia: "Florentine Citizen Militia"
  florentine_citizen_militia_desc: "If our people are to stand the test of time, they must be ready to quickly mobilize in the defense of our ideals! Forming a citizen militia, equal in experience and ferocity to other armies in Europe, will surely assist in the protection of our domain."
@@ -2995,10 +3019,10 @@
  pis_maritimes_legacy_desc: "For centuries Pisa was one of the dominant powers in the Mediterranean, controlling the trade and spreading its influence. While only being the shadow of the great power that once Pisa was, its legacy is still there. Pisa remembers."
 
  pis_the_university_of_pisa: "The University of Pisa"
- pis_the_university_of_pisa_desc: "One of the most ancient universities in Italy and Europe, the University of Pisa has always been an one of the most significant institution for both teaching and research."
+ pis_the_university_of_pisa_desc: "One of the most ancient universities in Italy and Europe, the University of Pisa has always been one of the most significant institution for both teaching and research."
 
  sie_artists: "Sienese School of Painting"
- sie_artists_desc: "The art of painting flourished in Italy during the renaissance, but no artists can match the sheer skill and quality achieved by those from Siena. Sienese art is a style that is otherworldly and elegant, with a heavy focus on the miracles performed by biblical figures and Saints. While other artists may appear beautiful in the moment, the subtler style of the Sienese school will surely make it stand the test of time."
+ sie_artists_desc: "The art of painting flourished in Italy during the renaissance, but no artists can match the sheer skill and quality achieved by those from Siena. Sienese art is a style that is otherworldly and elegant, with a heavy focus on the miracles performed by biblical figures and Saints. While other artists may appear beautiful at the moment, the subtler style of the Sienese school will surely make it stand the test of time."
  
  sie_studium_senese: "Studium Senese"
  sie_studium_senese_desc: "Considered the first university being publicly funded, the University of Siena is the pride of the city, educating our citizens so that they all serve our nation the best way."
@@ -3634,7 +3658,7 @@
  guj_garba: "Garba!"
  guj_garba_desc: "Originating out of the worship of the $hindu_ADJ$ Goddess Ambaji by women through dance, our people have refined a new and very graceful form of dance called the Garba. The basics of the dance are singing and clapping rhythmically in a circular formation. Today, our men and women gather together to use this dance to celebrate any occasion with great fervor, coming together as a community and wearing exquisitely embroidered outfits. All of us together, young and old, peasant and prince, $muslim_ADJ$ and $hindu_ADJ$, dancing in an ever-growing circle."
  guj_jain_routes: "$jain_ADJ$ Connections"
- guj_jain_routes_desc: "$jain$ is an ancient way of life, put into its current form by Mahavira. For a thousand years, $GUJ$ has been the stronghold of the $jain_ADJ$ community and faith, with many holy sites and temples. Royal dynasties have patronized the religion, forming a common community with the $hindu_ADJ$ people. $muslim_ADJ$ invasions from the west, by Mahmud Ghazni and Mohammad Ghori, oppressed the $jain_ADJ$ community, vandalizing temples or converting them into mosques, as well as burning $jain_ADJ$ libraries. However, the $jain_ADJ$ people of $GUJ$ have survived, adapted, and prospered, using their connections with $jain_ADJ$ communities across the world to serve as a hub for both the faith and commerce."
+ guj_jain_routes_desc: "$jain$ is an ancient way of life, put into its current form by Mahāvīra. For a thousand years, $GUJ$ has been the stronghold of the $jain_ADJ$ community and faith, with many holy sites and temples. Royal dynasties have patronized the religion, forming a common community with the $hindu_ADJ$ people. $muslim_ADJ$ invasions from the west, by Mahmud Ghazni and Mohammad Ghori, oppressed the $jain_ADJ$ community, vandalizing temples or converting them into mosques, as well as burning $jain_ADJ$ libraries. However, the $jain_ADJ$ people of $GUJ$ have survived, adapted, and prospered, using their connections with $jain_ADJ$ communities across the world to serve as a hub for both the faith and commerce."
  guj_gujarati_lipi: "$GUJ_ADJ$ Lipi"
  guj_gujarati_lipi_desc: "The $GUJ_ADJ$ Lipi is a new script and writing system developed by mercantile interests. It is also known as the saraphi (bankers), vaniasai (merchants) or mahajani (traders) script, due to its association with commerce. Its use is widespread rapidly throughout $GUJ$, $KUT$, and $SND$ to represent those languages and study $sanskrit_language$, and is adopted by the $zoroastrian$ community to write Avestan. It provides a common writing system for many different communities, binding them together as well as facilitating unity and a common identity."
  guj_gujarati_merchant_diaspora: "$GUJ_ADJ$ Merchant Diaspora"
@@ -3817,7 +3841,7 @@
  byz_court_of_languages: "Court of Languages"
  byz_court_of_languages_desc: "The court of $constantinople$ is home to diplomats and dignitaries from every corner of the known world. As a result, every language is heard and respected, as a sign of prosperity and progress on the behest of a people whose history and language have shaped the world."
  byz_poikilia: "Poikilia"
- byz_poikilia_desc: "The Byzantine culture has taken $europe$ by storm. Elegantly displayed in a vast array of hues, it's the latest way of expressing the symphony of colors and elements in art and architecture."
+ byz_poikilia_desc: "The Byzantine culture has taken $europe$ by storm. Elegantly displayed in a vast array of hues, it is the latest way of expressing the symphony of colors and elements in art and architecture."
  byz_crossroads_of_continents: "Crossroads of Continents"
  byz_crossroads_of_continents_desc: "Byzantium stands at the crossroads between $europe$ and $asia$. This lucrative position has led to great influence in the maritime importance of the city."
  byz_the_new_helepolis: "The City-Taker"
@@ -3883,7 +3907,7 @@
  zaju: "Zájù"
  zaju_desc: "Typically consisting of four acts, this brilliant display of dance and music is a colorful expression of the artistic heights that our society has achieved."
  successors_of_genghis_khan: "Successors of $genghis_khan_name_no_tooltip$"
- successors_of_genghis_khan_desc: "From the days of total conquest to the vast expanses of $genghis_khan_name_no_tooltip$' great Empire, our people descent from generations of earthshakers, and those who are destined to write history."
+ successors_of_genghis_khan_desc: "From the days of total conquest to the vast expanses of $genghis_khan_name_no_tooltip$'s great Empire, our people descent from generations of earthshakers, and those who are destined to write history."
  confucian_influences: "Confucian Influences"
  confucian_influences_desc: "If we are to manage our realm properly, our advisors shall find great wisdom in the teachings of Confucius, the attention to detail and meritocracy for a healthy and prosperous government."
  extensive_canal_works: "Extensive Canal Works"
@@ -4028,7 +4052,7 @@
  mge_multicultural_empire: "Multicultural Empire"
  mge_multicultural_empire_desc: "The territories under the great Mongol Empire cover many different lands and peoples, all unified under the glory of the great $rank_kingdom_horde_ruler_suffix_male$."
  mge_improved_yam_system: "Improved Yam System"
- mge_improved_yam_system_desc: "The system of yam posts all over our empire allowed great comunication and logistics since the times of the great $genghis_khan_name_no_tooltip$. With our restablishing and improvement of the system, our messengers can cross the great distances of our empire at such speeds that were not even thought possible before."
+ mge_improved_yam_system_desc: "The system of yam posts all over our empire allowed great communication and logistics since the times of the great $genghis_khan_name_no_tooltip$. With our reestablishing and improvement of the system, our messengers can cross the great distances of our empire at such speeds that were not even thought possible before."
  mge_mongolian_mobility: "Mongolian Mobility"
  mge_mongolian_mobility_desc: "Each of our soldiers typically maintains 3 or 4 horses, allowing them to change horse each time their mount becomes tired and so travel at high speed for days without stopping. Furthermore, their extra mounts provide them with food reserves through mare's milk as well as horse meat, making our armies far less vulnerable to starvation than other, so-called civilized nations' armies. This allows us to outmaneuver our enemies with ease, covering a staggering amount of territory in shorter periods than they had believed to be possible."
  mge_kheshig: "The Kheshig"
@@ -4128,7 +4152,7 @@
  heirs_of_rum: "Heirs of Rûm"
  heirs_of_rum_desc: "After a turbulent period and the struggle to overpower our neighbor Beyliks, the time has come for us to take on the mantle of restoring the borders of the once-great Sultanate of Rûm."
  splendor_of_anatolia: "Splendor of Anatolia"
- splendor_of_anatolia_desc: "Our region is home to some of the most impressive madrassas and mosques in the whole Islamic world. With attention to detail and abundant talent, our artistic prowess knows no match."
+ splendor_of_anatolia_desc: "Our region is home to some of the most impressive madrasas and mosques in the whole Islamic world. With attention to detail and abundant talent, our artistic prowess knows no match."
  persian_in_the_court: "Persian in the Court"
  persian_in_the_court_desc: "Hailing from our roots, much of our administration relied on the Persian language for quite some time. Combined with the cultural variety of the region, this has led to newfound cooperation that transcends barriers."
  akinji_cavalry: "Akıncılar"
@@ -4261,7 +4285,7 @@
  arm_border_nation: "Border Nation"
  arm_border_nation_desc: "$ARM$, since ancient times, has often been a battleground between larger nations. Even after regaining our sovereignty, it is often hard to maintain a neutral stance, as it is difficult to appease everyone, but it is achievable."
  arm_melikdom_organization: "Melikdom Organization"
- arm_melikdom_organization_desc: "As one of the few bastions of an independent $ARM_ADJ$ state, $ARM$ is governed by feudal suzerains called meliks, as the old nakharar system collapsed after the Mongol invasions. The relationship between meliks and their subordinates is that of a military commanding officer and junior officer, and not of feudal lord and a serf."
+ arm_melikdom_organization_desc: "As one of the few bastions of an independent $ARM_ADJ$ state, $ARM$ is governed by feudal suzerains called meliks, as the old Nakharar system collapsed after the Mongol invasions. The relationship between meliks and their subordinates is that of a military commanding officer and junior officer, and not of feudal lord and a serf."
  arm_mountain_armies: "Mountain Armies"
  arm_mountain_armies_desc: "The land of $ARM$ is mountainous by nature. Our people have learned to live in it over the centuries, and we have developed a way to use those mountains to our advantage. As such, our armies will gather readily under our banners, from all corners of our territory."
  arm_nakharar_titles: "Nakharar Titles"
@@ -4341,13 +4365,13 @@
  khm_utilize_the_rivers: "The Lifeblood of $KHM$"
  khm_utilize_the_rivers_desc: "The rivers of our lands provide an excellent way to transport the various goods harvested and produced in our inland territory to our harbors connected to foreign trade routes. Utilizing this transport network will also help us connect our cities and make communication between them faster."
  khm_champa_mercenaries: "Mercenary Leaders of $CHA$"
- khm_champa_mercenaries_desc: "In the past we have both fought with and relied upon the fierce $CHA$ soliders. If we can secure the service of their most capable leaders, we can ensure that our own army remains well-trained and ready to fight in various circumstances."
+ khm_champa_mercenaries_desc: "In the past we have both fought with and relied upon the fierce $CHA$ soldiers. If we can secure the service of their most capable leaders, we can ensure that our own army remains well-trained and ready to fight in various circumstances."
  khm_restore_angkor: "Restoration of $angkor$"
  khm_restore_angkor_desc: "The great city of $angkor$ was once a shining beacon of our architectural genius. Due to outside influences, we had to cut down on our construction efforts, but we should connect to the roots of our realm and start constructing new monuments to our splendor again."
  khm_modern_navy: "A Modern Navy for $KHM$"
  khm_modern_navy_desc: "We cannot allow others to dominate the seas and control the trade our state depends on. Let us create a new and modern force capable of taking on any pirate or rival navy in $south_east_asia$."
  khm_invest_in_irrigation: "Expand the Barays"
- khm_invest_in_irrigation_desc: "While our existing water resevoirs support our current agricultural demands, we could easily support more people if we were to dig new barays in other parts of our country, creating the support for new urban hubs for our people."
+ khm_invest_in_irrigation_desc: "While our existing water reservoirs support our current agricultural demands, we could easily support more people if we were to dig new barays in other parts of our country, creating the support for new urban hubs for our people."
  khm_protection_from_raids: "Secure the Borders"
  khm_protection_from_raids_desc: "Our lands are frequently threatened by invasion and especially our precious $angkor$ lies open to siege and doom. We need to invest into a sprawling system of fortifications with enough garrison to withstand any invading force, so that we can protect our own people from enslavement and foreign rule."
  khm_old_grudges: "Guided by Rivalry"
@@ -4570,7 +4594,7 @@
  kgk_omi_genji: "Ōmi-Genji"
  kgk_omi_genji_desc: "Our ancestors once belonged to the Uda Genji clan of the Minamoto family, and we have been the Shugo of Ōmi for generations. Our right to defend it is secured."
  kgk_emerging_clan: "Emerging Clan"
- kgk_emerging_clan_desc: "Despite our ancestral heritage, our clan as an split of the Sasaki clan is relatively recent. As such, our people feel the need to prove our worth as an independent name."
+ kgk_emerging_clan_desc: "Despite our ancestral heritage, our clan as a split of the Sasaki clan is relatively recent. As such, our people feel the need to prove our worth as an independent name."
  akt_march_of_akita: "March of Akita"
  akt_march_of_akita_desc: "Our fief of Akita in Northern Dewa province was an ancient zone of conflict against northern 'barbarians'. The border of Japan has expanded far into the North, but the spirit of our ancestors still lives in our blood."
  akt_ezo_kanrei: "Ezo Kanrei"
@@ -4897,7 +4921,7 @@
  bodhisattva: "Bodhisattva"
  bodhisattva_desc: "Regardless of the school, a $bodhisattva$ is an important figure, although the exact characteristics and importance they have may vary among the different schools. However, in all cases they are being deserving of reverence and admiration."
  avalokitesvara: "Avalokiteśvara"
- avalokitesvara_desc: "Also known as Guānyīn or Kannon, $avalokitesvara$ is one of the most revered Boddhisattvas. Represented as a male or female depending on the school, and even in some considered to be the origin of all $hindu_ADJ$ deities, $avalokitesvara$ is the $bodhisattva$ of compassion, and is associated with the mantra #italic Oṃ maṇi padme hūm̐#!."
+ avalokitesvara_desc: "Also known as Guānyīn or Kannon, $avalokitesvara$ is one of the most revered Bodhisattvas. Represented as a male or female depending on the school, and even in some considered to be the origin of all $hindu_ADJ$ deities, $avalokitesvara$ is the $bodhisattva$ of compassion, and is associated with the mantra #italic Oṃ maṇi padme hūm̐#!."
  maitreya: "Maitreya"
  maitreya_desc: "$maitreya$ is currently a $bodhisattva$, prophesized to be the future and final Buddha of the current era. His destiny is to reestablish the teachings of the Dharma in the world after they have been forgotten by humanity, and as such he is the successor of Siddhārtha Gautama."
  mount_meru: "Mount Meru"
@@ -4941,7 +4965,7 @@
  smrti: "Smṛti"
  smrti_desc: "Meaning 'that which is remembered', $smrti$ texts are inspired by or originated from the $vedah$, and thus are considered less authoritative than the $sruti$ due to being derivative from them. However, differently from the $sruti$, the $smrti$ texts have attributed authorship and are transmitted through manuscripts."
  mahabarata: "Mahābhārata"
- mahabarata_desc: "One of the two major $smrti$ texts together with the $ramayana$, the $mahabarata$ is an epic of ancient $india$. It is the longest epic poem ever written, about ten times bigger than the $greek_language$ #italic Illiad#! and #italic Odyssey#! combined, and it narrates the story of a dynastic struggle for the throne of the ancient $indian_group$ kingdom of Kuru culminating in the Kurukshetra War, also called $mahabarata$ War. The story ends with the death of $krishna_avatar$ and the end of his dynasty."
+ mahabarata_desc: "One of the two major $smrti$ texts together with the $ramayana$, the $mahabarata$ is an epic of ancient $india$. It is the longest epic poem ever written, about ten times bigger than the $greek_language$ #italic Iliad#! and #italic Odyssey#! combined, and it narrates the story of a dynastic struggle for the throne of the ancient $indian_group$ kingdom of Kuru culminating in the Kurukshetra War, also called $mahabarata$ War. The story ends with the death of $krishna_avatar$ and the end of his dynasty."
  ramayana: "Rāmāyaṇa"
  ramayana_desc: "One of the two major $smrti$ texts together with the $mahabarata$, the $ramayana$ is an epic of ancient $india$. It narrates the life of $rama_avatar$, avatar of $vishnu_god$, as a prince of the kingdom of Kosala. It emphasizes the importance of virtue in all aspects of one's life."
  purana: "Purāṇa"
@@ -4981,7 +5005,7 @@
  extreme_pacifism: "Extreme Pacifism"
  extreme_pacifism_desc: "Based on the concept of $ahimsa$, $hindu$ always advocates for pacifism and nonviolence. However, our enemies should still be weary not to provoke us, lest we end up falling towards the complete opposite extreme when roused into war."
  hindu_empires: "$hindu_ADJ$ Empires"
- hindu_empires_desc: "There have been many empires in the past following $hindu$. From the Maurya and Gupta empires in $india$, to the Srivijaya Empire in $indonesia_region$, and the long-lasting Chola Dynasty, $hindu$ has always been behind the throne of powerful rulers."
+ hindu_empires_desc: "There have been many empires in the past following $hindu$. From the Maurya and Gupta empires in $india$, to the Śrīvijaya Empire in $indonesia_region$, and the long-lasting Chola Dynasty, $hindu$ has always been behind the throne of powerful rulers."
  sacred_cattle: "Sacred Cattle"
  sacred_cattle_desc: "As part of the $ahimsa$, the slaughter of cattle is prohibited. As such, they are respected and venerated as a maternal figure, and as a symbol of selfless provision and sacrifice. Being worshiped since the time of the $vedah$, they deserve all our respect and attention."
 
@@ -4995,7 +5019,7 @@
  legacy_of_great_empires: "Legacy of Great Empires"
  legacy_of_great_empires_desc: "From the dragon throne of $china$, to the various empires of $persia_region$, to the powerful $hindu_ADJ$ and $buddhist_ADJ$ dynasties of $india$ and $south_east_asia$, $asia$ has a long history of powerful empires establishing their presence in the land."
  arduous_terrain: "Arduous Terrain"
- arduous_terrain_desc: "$asia$ is home of some very inhospitable lands, from the high peaks of the Himalaya, to the arid span of the Gobi Desert, to the dense jungles of $india$ and $south_east_asia$. And that without mentioning the monsoon and typhoon seasons, and the almost constant present of earthquakes. Its people have learned to live in such unwelcoming environment, but invaders will not have it that easy."
+ arduous_terrain_desc: "$asia$ is home of some very inhospitable lands, from the high peaks of the Himalayas, to the arid span of the Gobi Desert, to the dense jungles of $india$ and $south_east_asia$. And that without mentioning the monsoon and typhoon seasons, and the almost constant present of earthquakes. Its people have learned to live in such unwelcoming environment, but invaders will not have it that easy."
  fertile_lands: "Fertile Lands"
  fertile_lands_desc: "In general, the lands of $asia$ are bountiful with rain, and many rich rivers cross its territories even in those areas less blessed with precipitation. Except some of the most arid areas of the desert, the land provides ample food to the population, and even in those regions where it does not the people living there are able to do much with they can have."
  crossroads_of_religions: "Crossroads of Religions"
@@ -5019,7 +5043,7 @@
 
  #Orthodox
  the_pentarchy: "The Pentarchy"
- the_pentarchy_desc: "The old structure of the Church formulated by Emperor Justinian is still in full effect in $orthodox$. Although the patriarch of $rome$ beliefs himself to be above all in his $catholic$, for the authentic Church the cities of $constantinople$, $alexandria$, $antioch$, and $jerusalem$ all still have their prominence."
+ the_pentarchy_desc: "The old structure of the Church formulated by Emperor Justinian is still in full effect in $orthodox$. Although the patriarch of $rome$ beliefs himself to be above all in his $catholic$, for the authentic Church the cities of $constantinople$, $alexandria$, $antioch$, and $jerusalem$ still all have their prominence."
  imperial_creed: "Imperial Creed"
  imperial_creed_desc: "$orthodox$ has always been the official faith of the Roman Empire ever since its adoption of $christian$. The heresies of the west and their falsely proclaimed 'emperors' will not be able to deny the legitimacy of our line."
  filioque_issue: "Filioque Issue"
@@ -5228,7 +5252,7 @@
  irish_frontier_settlement_advance_desc: "The land we have seized from the Irishry is ripe for exploitation, and people of the good sort migrate from far away to settle these cheap croft lands."
 
  celtic_raiders_advance: "Furor Celtica"
- celtic_raiders_advance_desc: "For millennia our ferocious and agile guerilla warfare has harried strangers and foes, besting them with a devastating succession of evasive skirmishing and blood-curdling charges."
+ celtic_raiders_advance_desc: "For millennia, our ferocious and agile guerilla warfare has harried strangers and foes, besting them with a devastating succession of evasive skirmishing and blood-curdling charges."
  
  ple_pale_defenseworks_advance: "Pale Works"
  ple_pale_defenseworks_advance_desc: "Our boundary is defined by light defensive works of dykes and palisades designed to deter our unruly neighbors from their irritating raids."
@@ -5240,13 +5264,13 @@
  cel_defensive_desc: "Centuries under the shadow of conquest have taught our warriors the art of patience and resilience. We can rush headlong into danger, but we can also endure, defend, and strike only when the moment is right."
 
  cel_western_shore: "The Western Shore"
- cel_western_shore_desc: "For millennia we have fished, traded, and fought along the wild Atlantic coasts. From these harsh waters we have learned seamanship unmatched by any rival."
+ cel_western_shore_desc: "For millennia, we have fished, traded, and fought along the wild Atlantic coasts. From these harsh waters we have learned seamanship unmatched by any rival."
 
  cel_the_wests_awake: "The West's Awake"
  cel_the_wests_awake_desc: "After long centuries of silence, the ancient spirit of the Celtic peoples stirs once more, ready to reclaim its place amongst the great civilizations of the world."
 
  cel_celtic_nations: "Celtic Nations"
- cel_celtic_nations_desc: "Our union is founded on the ideal of uniting the diverse peoples of the Celtic world under a shared banner. Through cooperation we aim to preserve our heritage, promote our values, and ensure that the Celtic nations thrive together in the face of external pressures and changing times."
+ cel_celtic_nations_desc: "Our union is founded on the ideal of uniting the diverse peoples of the Celtic world under a shared banner. Through cooperation, we aim to preserve our heritage, promote our values, and ensure that the Celtic nations thrive together in the face of external pressures and changing times."
 
  cel_celtic_diaspora: "Celtic Diaspora"
  cel_celtic_diaspora_desc: "From crofter to chieftain, many have left our shores through hardship or hope, weaving a far-flung web of kinship that carries our language, customs, and pride to distant lands."
@@ -5266,22 +5290,22 @@
  legacy_of_the_normans: "Legacy of the Normans"
  legacy_of_the_normans_desc: "Forged in the crucible of conquest, the Sicilian Norman army blended the unstoppable charge of Norman knights with the strategic sophistication of Byzantine, Arab, and Lombard warfare. Masters of both battlefield ferocity and tactical flexibility, they carved a kingdom at the crossroads of civilizations."
  sic_constitions_of_melfi: "Constitutions of Melfi"
- sic_constitions_of_melfi_desc: "Emperor Frederick II, the Hohenstaufen King of Sicily, drafted a legal code for Sicily known as the Consitutions of Melfi, or Liber Augustalis. Still in use centuries later, it represents a solid foundation for the governance of our state, regulating public law, judicial procedure and feudal, private and penal law."
+ sic_constitions_of_melfi_desc: "Emperor Frederick II, the Hohenstaufen King of Sicily, drafted a legal code for Sicily known as the Constitutions of Melfi, or Liber Augustalis. Still in use centuries later, it represents a solid foundation for the governance of our state, regulating public law, judicial procedure and feudal, private and penal law."
  sic_studium_generale: "Studium Generale"
  sic_studium_generale_desc: "Founded in 1434 by King Alfonso V of Aragon, the University of Catania was the oldest in Sicily and one of the few southern institutions granted full Studium Generale status. Unique for its royal charter and blend of scholastic and legal education, it produced jurists, theologians, and scientists who served both Church and Crown in a culturally diverse region."
  sic_naval_vigilance: "Naval Vigilance"
- sic_naval_vigilance_desc: "Constant raids from Barbary pirates and the Ottomans forced Sicily to maintain a vigilant coastal defense. Its galleys and forts became critical for protecting southern Europe."
+ sic_naval_vigilance_desc: "Constant raids from Barbary pirates and the Ottomans forced Sicily to maintain a vigilant coastal defense. Its galleys and forts became critical for protecting Southern Europe."
  sic_sicilian_silk: "Sicilian Silk"
  sic_sicilian_silk_desc: "In the time of Frederick II, silk was Sicily's major export. Although our silk industry has declined in the intervening centuries, Sicily's produce having been outstripped by that of the northern Italian states, there is no reason why it should not rise again. By investing in our silk production, we can see our weavers and craftsmen flourish anew."
  sic_sicilian_enlightenment: "Sicilian Enlightenment"
  sic_sicilian_enlightenment_desc: "Though distant from the great salons of Paris or Vienna, Sicily fostered its own Enlightenment. Intellectuals challenged feudal privileges, promoted science, and advocated legal reforms, often within the framework of Catholic humanism. These ideas laid the groundwork for modernity in the shadow of monarchy and tradition."
  sic_sicilian_reforms: "Sicilian Reforms"
- sic_sicilian_reforms_desc: "As time passed, our institutions have become obsolete or just unefficient. Reforms are necessary if we want our nation to become prosperous and thriving. Our best minds will work hand by hand to ensure that no waste happens and that the processes are the most efficient."
+ sic_sicilian_reforms_desc: "As time passed, our institutions have become obsolete or just inefficient. Reforms are necessary if we want our nation to become prosperous and thriving. Our best minds will work hand by hand to ensure that no waste happens and that the processes are the most efficient."
  
 
  #Sub Saharan Africa
  nomadic_tendencies: "Nomadic Tendencies"
- nomadic_tendencies_desc: "Some of our people have long been nomads, as we have wandered the lands from one habitable land to the next. Even now, as everything changes and we build a city for our people, some people remain their nomadic traditions and continue to wander the lands."
+ nomadic_tendencies_desc: "Some of our people have long been nomads, as we have wandered the lands from one habitable land to the next. Even now, as everything changes, and we build a city for our people, some people remain their nomadic traditions and continue to wander the lands."
  skilled_cavalry_raids: "Cavalry Raids"
  skilled_cavalry_raids_desc: "From the time of our ancestors, horsemen have been the tool of our conquests. Their thunder hooves across the grasslands of the Sahel spread fear in our enemies, and has allowed us many victories."
  land_of_the_ancestors: "Land of the Ancestors"
@@ -5344,7 +5368,7 @@
  influence_of_the_burgundian_towns_desc: "The traditional Estates General favors the clergy and nobility, but the rising wealth and political importance of towns can no longer be ignored. By refining its structure to reflect the growing strength of the Burghers, we ensure more balanced governance while preserving the privileges of the others. A stronger urban voice will also enhance our administrative capacities as well as speed up the rate of urbanization."
 
  compagnie_d_ordonnance: "Compagnies d'Ordonnance"
- compagnie_d_ordonnance_desc: "Our reliance on feudal levies has proven inadequate for the demands of modern warfare. The creation of permanently contracted cavalry units, the compagnies d'ordonnance, provides us with a reliable and professional military force directly loyal to the crown."
+ compagnie_d_ordonnance_desc: "Our reliance on feudal levies has proven inadequate for the demands of modern warfare. The creation of permanently contracted cavalry units, the $compagnie_d_ordonnance$, provides us with a reliable and professional military force directly loyal to the crown."
 
  create_the_regimental_system: "Create the Regimental System"
  create_the_regimental_system_desc: "To ensure consistent recruitment and supply, we must establish a formal regimental system. This reform will allow us to organize manpower more effectively, centralize command structures, and reduce dependence on local nobles and foreign mercenaries."
@@ -5390,7 +5414,7 @@
  attract_foreign_pirates_desc: "Our ports have long been a haven for those who seek fortune on the high seas. By welcoming these skilled seamen regardless of their faith or origins, we may further strengthen our corsair fleets and expand our maritime manpower."
 
  rais_of_the_navy: "Ra'īs of the Navy"
- rais_of_the_navy_desc: "Our corsair captains, the ra'īs, are more than pirates. Truly, they are seasoned naval commanders and their experience at sea feeds a deep well of maritime tradition that strengthens our navy's proud heritage."
+ rais_of_the_navy_desc: "Our corsair captains, the Ra'īs, are more than pirates. Truly, they are seasoned naval commanders and their experience at sea feeds a deep well of maritime tradition that strengthens our navy's proud heritage."
 
  export_monopolies: "Export Monopolies"
  export_monopolies_desc: "By controlling key exports such as olive oil, textiles, and dyes, we ensure both domestic prosperity and leverage abroad. Such protectionist practices allow us to project power through commerce as much as conquest, ensuring our markets maintain our own merchants over foreigners, at the top."
@@ -5415,22 +5439,22 @@
 #Verona
 
  perpetual_general_captain_of_the_people: "Perpetual General Captain of the People"
- perpetual_general_captain_of_the_people_desc: "In the shifting politics of medieval Verona, the title of 'Capitano del Popolo' came to embody more than a ceremonial office—it became a lasting claim to leadership. Rooted in civic tradition and claimed by the Scaligers to legitimize their power, it gave permanence to their rule in a city where loyalty was hard-won."
+ perpetual_general_captain_of_the_people_desc: "In the shifting politics of medieval Verona, the title of 'Capitano del Popolo' came to embody more than a ceremonial office—it became a lasting claim to leadership. Rooted in civic tradition and claimed by the Scaligeri to legitimize their power, it gave permanence to their rule in a city where loyalty was hard-won."
 
- scaligers_military_ambitions: "Scaligers' Military Ambitions"
+ scaligers_military_ambitions: "Scaligeri Military Ambitions"
  scaligers_military_ambitions_desc: "The Scaligeri dreamed not only of ruling Verona, but of transforming it into a Lombard power. Their campaigns pushed across the Po Valley, clashing with Milan, Venice, and Padua. This ambition left its mark in the form of fortified towns, hardened levies, and a court that breathed military reform."
 
  court_of_great_refugees: "Court of Great Refugees"
  court_of_great_refugees_desc: "Our great capital, has become a haven for artists, exiles, and thinkers — displaced by war, faith, or politics elsewhere in Italy. These refugees are destined to enrich the city's courts with new techniques, bold ideas, and cultural crosscurrents, making Verona a rare sanctuary of innovation in turbulent times."
 
  consolidate_italian_holdings: "Consolidate Italian Holdings"
- consolidate_italian_holdings_desc: "The Scaligers ruled not just Verona, but a growing web of cities across northern Italy. Holding such a realm together demanded careful diplomacy, clever delegation, and well-paid professional armies. Only through consolidation can Verona stand as a real rival to the other great powers of the peninsula."
+ consolidate_italian_holdings_desc: "The Scaligeri ruled not just Verona, but a growing web of cities across northern Italy. Holding such a realm together demanded careful diplomacy, clever delegation, and well-paid professional armies. Only through consolidation can Verona stand as a real rival to the other great powers of the peninsula."
 
  the_adige: "The Adige"
  the_adige_desc: "The Adige River is Verona's lifeline — a channel for trade, agriculture, and prosperity. As its waters flow from the Alps to the Adriatic, so too does wealth flow through our markets and fields, nourishing both town and countryside alike."
 
  marmorina: "Marmorina"
- marmorina_desc: "In a time of peace, Verona flourished under rulers who valued beauty as much as power. The city shall earn the name 'Marmorina' for its abundance of Roman marble, statues, and graceful architecture. A new bridge over the Adige, the Ponte Navi, stands as a feat of engineering, while the Gardello tower — Italy's first water-driven clock — marked the hours of a city in quiet ascendancy. This legacy of refinement will undoubtedly shape not only our skyline, but the our name in history books."
+ marmorina_desc: "In a time of peace, Verona flourished under rulers who valued beauty as much as power. The city shall earn the name 'Marmorina' for its abundance of Roman marble, statues, and graceful architecture. A new bridge over the Adige, the Ponte Navi, stands as a feat of engineering, while the Gardello tower — Italy's first water-driven clock — marked the hours of a city in quiet ascendancy. This legacy of refinement will undoubtedly shape not only our skyline, but our name in history books."
 
 #Smolensk
  diocese_of_smolensk: "Diocese of Smolensk"
@@ -5482,7 +5506,7 @@
  gate_of_the_persian_gulf_desc: "Hormuz controls the strait that links the Indian Ocean to the interior of Asia. Whoever holds this vital passage dictates the rhythm of maritime traffic. Our command of these waters must be absolute, lest our influence be diminished."
 
  moqarrariya: "Institutionalize the Moqarrariya"
- moqarrariya_desc: "For generations, our realm maintained peace with the mainland through the ancient tribute system known as moqarrariya. Rather than depend on custom and negotiation, let us codify these tributes into formal pacts — securing fresh water, overland safety, and long-term stability through reliable diplomacy."
+ moqarrariya_desc: "For generations, our realm maintained peace with the mainland through the ancient tribute system known as Moqarrariya. Rather than depend on custom and negotiation, let us codify these tributes into formal pacts — securing fresh water, overland safety, and long-term stability through reliable diplomacy."
 
  develop_qeshm_and_ormuz: "Invest in Qeshm and Hormuz"
  develop_qeshm_and_ormuz_desc: "Though dry and rocky, the islands of Qeshm and Hormuz have sustained urban life thanks to careful provisioning and rich trade. With proper investment, their ports and workshops can flourish further, turning them from logistical hubs into centers of innovation and productivity."
@@ -5491,16 +5515,16 @@
  ormuzi_navy_desc: "The Gulf has long depended on our fleets — be they traders, patrols, or armed escorts. But to match the ambitions of those who envy our position, we must expand and modernize. Let Hormuz become not just a trading post, but the maritime arsenal of the sea."
 
  mint_of_the_gulf: "Mint of the Gulf"
- mint_of_the_gulf_desc: "Hormuzi coinage circulates from Basra to Bengal, trusted for its purity and weight. By institutionalizing our mint and expanding our issuance, we reinforce our financial sovereignty — and claim the fiscal supremacy over the Indian Ocean."
+ mint_of_the_gulf_desc: "Ormuzi coinage circulates from Basra to Bengal, trusted for its purity and weight. By institutionalizing our mint and expanding our issuance, we reinforce our financial sovereignty — and claim the fiscal supremacy over the Indian Ocean."
  #Savoy
  sav_savoyard_flexibility: "Savoyard Diplomats"
  sav_savoyard_flexibility_desc: "Due to our position between greater powers, we will have to rely on our diplomatic skills for survival. By maintaining diplomatic relations even with our most dangerous foes, we will be able to shift our alliances to ensure the endurance of our country."
 
  sav_house_of_savoy: "A Unified House"
- sav_house_of_savoy_desc: "Savoy has beeen ruled by a stable line of counts for several centuries since it was created in 1032. By ensuring the unity of our ruling family and a strong connection to local representatives, we will be able to not let these lands fracture."
+ sav_house_of_savoy_desc: "Savoy has been ruled by a stable line of counts for several centuries since it was created in 1032. By ensuring the unity of our ruling family and a strong connection to local representatives, we will be able to not let these lands fracture."
 
  sav_fight_the_vaudois: "Stand against Heresy"
- sav_fight_the_vaudois_desc: "Our lands have long suffered under the heretical preaching of the Waldensians. Only by our force of will and the support of the divine, we have been able to contain their influence and we shall continue to defend the one true faith from these dangerous ideas."
+ sav_fight_the_vaudois_desc: "Our lands have long suffered under the heretical preaching of the Waldensians. Only by our force of will and the support of the divine, we have been able to contain their influence, and we shall continue to defend the one true faith from these dangerous ideas."
 
  sav_embrace_the_vaudois: "A Light in the Darkness"
  sav_embrace_the_vaudois_desc: "We have embraced the teachings of the Waldensian movement and are dedicated to protect this faith from the vicious Catholic Church, who desires to eradicate its ideas."
@@ -5516,13 +5540,13 @@
 
  #Mainz
  mai_diadema_regni: "Diadema Regni"
- mai_diadema_regni_desc: "Our beloved city has been described as the Crown of the Empire, a moniker we will have to uphold and maintain. Keeping the status of Mainz within the empire will give us far reaching influence and prestige."
+ mai_diadema_regni_desc: "Our beloved city has been described as the Crown of the Empire, a moniker we will have to uphold and maintain. Keeping the status of Mainz within the empire will give us far-reaching influence and prestige."
 
  mai_city_and_archbishop: "Rights of the City"
  mai_city_and_archbishop_desc: "The citizens of Mainz have prospered under the extensive rights granted to them by Adalbert of Mainz in 1119 and 1122. These rights, carved into the bronze door of the Cathedral, will serve as a reminder of cooperation between the separate powers within the city, both the clergy and the citizens."
 
  mai_leader_rheinish_league: "Rheinish League"
- mai_leader_rheinish_league_desc: "During the existence of the Rheinish Leauge, we have naturally assumed a position of leadership and guidance for the other members. Although the league itself has disbanded, our position of leadership and guidance of the smaller states around us must not come to an end."
+ mai_leader_rheinish_league_desc: "During the existence of the Rheinish League, we have naturally assumed a position of leadership and guidance for the other members. Although the league itself has disbanded, our position of leadership and guidance of the smaller states around us must not come to an end."
 
  mai_zealous_fight_against_heretics: "Protect our Faith"
  mai_zealous_fight_against_heretics_desc: "The religious unity of our country must be defended against any threat. If we staff our armies with moral guidance in the form of priest, they will be much more motivated to defend our beliefs."
@@ -5531,10 +5555,10 @@
  mai_vicar_of_mainz_desc: "To ensure our lands are governed reliably, even in time of absence of our ruler, we should instate a vicar. Empowered with extensive rights, the vicar can rule with our best intentions and remind the common folk of our presence at all times."
 
  mai_mainz_kingdom: "Mainzer Königreich"
- mai_mainz_kingdom_desc: "While celebrations on Ash Wednesday are a common occurance, they hold especially deep roots in our country. While the public celebrates the #italic Fastnacht#!, or carnival, with masquerade and excessive feasts, our court will engage in a special event. During the carnival celebrations, we will redistribute the roles of our court per lottery, with even the ruler having to participate. This custom of swapping roles, called #italic Mainzer Königreich#!, will carry far beyond our borders and ensure our cultural legacy."
+ mai_mainz_kingdom_desc: "While celebrations on Ash Wednesday are a common occurrence, they hold especially deep roots in our country. While the public celebrates the #italic Fastnacht#!, or carnival, with masquerade and excessive feasts, our court will engage in a special event. During the carnival celebrations, we will redistribute the roles of our court per lottery, with even the ruler having to participate. This custom of swapping roles, called #italic Mainzer Königreich#!, will carry far beyond our borders and ensure our cultural legacy."
 
  mai_center_of_printing: "Printing Shops of Mainz"
- mai_center_of_printing_desc: "We are positioned well to expand on the growth of the printing presses within our territory and become a major producer of books within europe."
+ mai_center_of_printing_desc: "We are positioned well to expand on the growth of the printing presses within our territory and become a major producer of books within Europe."
 
  mai_garrison_of_the_rhine: "Garrison City of the Rhine"
  mai_garrison_of_the_rhine_desc: "Defending our borders against threats can be a difficult task, especially considering the river splitting our lands in two. We must ensure an extensive network of garrisons and fortification can withstand our enemies."
@@ -5547,7 +5571,7 @@
  cro_reliance_on_adriatic_desc: "The sea off our shores gives us access to plenty of fish and salt to extract, which can sustain our local economy and provide us with ample goods for exporting."
 
  cro_trade_posts: "Croatian Trading Posts"
- cro_trade_posts_desc: "Our lands are situated between many attractive destinations for merchants. Instead of letting them pass and only host them as intermediaries, we should sponsor trades ourselves and take our fair share of the mediterranean trade."
+ cro_trade_posts_desc: "Our lands are situated between many attractive destinations for merchants. Instead of letting them pass and only host them as intermediaries, we should sponsor trades ourselves and take our fair share of the Mediterranean trade."
 
  cro_influx_of_foreign_knowledge: "Influx of Foreign Knowledge"
  cro_influx_of_foreign_knowledge_desc: "Many foreign artists and scholars have passed our lands. We should give them incentive to stay in our lands and further the achievements of our culture."
@@ -5556,7 +5580,7 @@
  cro_antemurale_christianitatis_desc: "We must understand ourselves as defenders of Christianity and the one true faith and as a bulwark against heretics and heathens alike."
 
  cro_pandurs_recruitment: "Pandur Conscription"
- cro_pandurs_recruitment_desc: "We will establish regiments of light infantrymen, who will serve as law enforcement and protection against raiders in peaceful times. These men will also easily fill into our army, strenghtening our forces in dire times."
+ cro_pandurs_recruitment_desc: "We will establish regiments of light infantrymen, who will serve as law enforcement and protection against raiders in peaceful times. These men will also easily fill into our army, strengthening our forces in dire times."
 
 #Yemen
 
@@ -5593,7 +5617,7 @@
  karamanid_cavalry_desc: "Cavalry has always been the cornerstone of Turkmen warfare. Our riders, trained from a young age and mounted on hardy Anatolian horses, uphold the proud traditions of steppe warfare with discipline and striking force."
 
  home_of_the_whirling_dervishes: "Home of the Whirling Dervishes"
- home_of_the_whirling_dervishes_desc: "Konya, our spiritual center, is home to the followers of Mevlânâ Jalāl al-Dīn Muḥammad Rūmī. Their sacred practice—the sema—symbolizes the soul's journey toward divine truth. Their presence deepens the mystic tradition of our realm and reinforces our Sufi roots."
+ home_of_the_whirling_dervishes_desc: "Konya, our spiritual center, is home to the followers of Mevlânâ Jalāl al-Dīn Muḥammad Rūmī. Their sacred practice — the sema — symbolizes the soul's journey toward divine truth. Their presence deepens the mystic tradition of our realm and reinforces our Sufi roots."
 
 #Tibet 
 
@@ -5626,7 +5650,7 @@
 
 
  nghia_quan: "The Nghĩa Quân"
- nghia_quan_desc: "Throughout our history, the #italic nghĩa quân#! — 'righteous militias' — have risen in defense of the land during times of great peril. Composed of farmers, scholars, and local patriots, they stood against foreign invaders and internal tyranny alike. Though irregular in nature, their valor and devotion to the country have made them a formidable force when mobilized."
+ nghia_quan_desc: "Throughout our history, the #italic Nghĩa Quân#! — 'righteous militias' — have risen in defense of the land during times of great peril. Composed of farmers, scholars, and local patriots, they stood against foreign invaders and internal tyranny alike. Though irregular in nature, their valor and devotion to the country have made them a formidable force when mobilized."
 
 #Champa
 
@@ -5650,7 +5674,7 @@
  lor_between_great_powers_desc: "Our lands were once an important part of Lotharingia, one of the Frankish kingdoms. If we do not want to fall into irrelevance, we will need to secure our diplomatic position and establish lasting alliances."
 
  lor_fortified_cities: "Fortified Cities of Lorraine"
- lor_fortified_cities_desc: "We occupy vital crossing points on several rivers, which we must defend at all cost if we want to secure our indepence. To this effect, we must modernize the large bridge castles of our cities and construct large citadels."
+ lor_fortified_cities_desc: "We occupy vital crossing points on several rivers, which we must defend at all cost if we want to secure our independence. To this effect, we must modernize the large bridge castles of our cities and construct large citadels."
 
  #Bosnia
  bos_land_of_many_churches: "Many Churches of Bosnia"
@@ -5660,13 +5684,13 @@
  bos_cultural_customs_desc: "Our people practice many unique customs, not contained by difference in faith. The construction of #italic stećci#!, elaborately decorated tombstones, will mark our territory as uniquely Bosnian."
 
  bos_katun_communities: "Vlach Katuns"
- bos_katun_communities_desc: "Parts of our population is organized in self-governing, pastoralist communities. Instead of bending them to a central governments will, we should cooperate with them and try to extract more resources from our more remote areas."
+ bos_katun_communities_desc: "Parts of our population are organized in self-governing, pastoralist communities. Instead of bending them to a central governments will, we should cooperate with them and try to extract more resources from our more remote areas."
 
  bos_influence_of_the_stanak: "Stanak Meetings"
  bos_influence_of_the_stanak_desc: "Our nobility regularly gathers together to discuss the most pressing issues for our country. These meetings ensure our noble lords are aligned on their policy and show unity within our parliament sessions."
 
  bos_defiant_terrain: "Defiant Terrain"
- bos_defiant_terrain_desc: "The Bosnian lands consist of forested hills and mountains, cut through by river valleys. This terrain lends itself naturally to delay and tire an invading army out and we should use this to our advantage. Engaging our enemy only when it benefits us and let the hostile terrain itself claim both their supplies and troops will preserve our strength."
+ bos_defiant_terrain_desc: "The Bosnian lands consist of forested hills and mountains, cut through by river valleys. This terrain lends itself naturally to delay and tire an invading army out, and we should use this to our advantage. Engaging our enemy only when it benefits us and let the hostile terrain itself claim both their supplies and troops will preserve our strength."
 
  bos_kingly_ambitions: "Kingly Ambitions"
  bos_kingly_ambitions_desc: "The achievements and labor of our people deserve to be recognized and protected. To this aim, we will need to secure a strong recognition and bonds with other rulers around us, establishing a prestigious title for ourselves."
@@ -5679,21 +5703,21 @@
  cir_mercenary_employment_desc: "Our lands have again and again been raided by foreign powers for their own benefit, enslaving our people. Some of these slaves, used as soldiers, have advanced in far away lands, accumulating power and wealth in their own hands. With some convincing, we could convince them to return to our lands, and protect it from future invasions."
 
  cir_horsemen_of_the_steppe: "Skilled Horsemen"
- cir_horsemen_of_the_steppe_desc: "Our position at the edge of the great european steppe has lead to several invasions of our homeland by horsemen. If we want to ensure our indepence, we will need to raise a great host ourselves and expand our influence over the steppes, securing the prosperity of our heartland."
+ cir_horsemen_of_the_steppe_desc: "Our position at the edge of the great European steppe has lead to several invasions of our homeland by horsemen. If we want to ensure our independence, we will need to raise a great host ourselves and expand our influence over the steppes, securing the prosperity of our heartland."
 
  cir_city_and_fortress: "Fortified Towns"
- cir_city_and_fortress_desc: "Our settlements lie unprotected and an easy prey to any invader. As they grow, we can directly incooperate hilly terrain into our defensive lines, enhancing their protection. If necessary, we can create the elevated terrain required ourselves, preserving our peoples homes."
+ cir_city_and_fortress_desc: "Our settlements lie unprotected and an easy prey to any invader. As they grow, we can directly incorporate hilly terrain into our defensive lines, enhancing their protection. If necessary, we can create the elevated terrain required ourselves, preserving our peoples homes."
 
  cir_grand_prince_of_circassia: "Grand Princedom"
  cir_grand_prince_of_circassia_desc: "To unify our people we shall elect the greatest of our lords as the Grand Prince, serving as an inspiring leader for our troops."
 
- cir_multireligious_society: "Coexistance of Religions"
- cir_multireligious_society_desc: "Our lands are frequented by many catholic, muslim, and orthodox people, engaging with our people in frequent trade. We should foster a collective tolerance between all our subjects, to provide a fertile soil for prosperity."
+ cir_multireligious_society: "Coexistence of Religions"
+ cir_multireligious_society_desc: "Our lands are frequented by many Catholic, Muslim, and Orthodox people, engaging with our people in frequent trade. We should foster a collective tolerance between all our subjects, to provide a fertile soil for prosperity."
  
 #Sunda
 
  seren_taun: "Sérén Taun"
- seren_taun_desc: "Held after the harvest, the Sérén Taun festival is an annual thanksgiving ceremony celebrating agricultural abundance. Marked by rituals, offerings, and music, it strengthens the communal bonds of our kampung-kampung and reminds all of the sacred balance between people, rice, and nature." 
+ seren_taun_desc: "Held after the harvest, the Sérén Taun festival is an annual thanksgiving ceremony celebrating agricultural abundance. Marked by rituals, offerings, and music, it strengthens the communal bonds of our Kampung-Kampung and reminds all of the sacred balance between people, rice, and nature." 
  
  pepper_of_the_parahyangan: "Pepper of the Parahyangan"
  pepper_of_the_parahyangan_desc: "The fertile volcanic soil of the Sundanese highlands is perfect for growing the prized black pepper. Traders from across the world seek our peppercorns for their potency and aroma. We must capitalize on this natural treasure to expand our influence through spice."
@@ -5722,7 +5746,7 @@
  danish_heritage_desc: "Denmark's long naval traditions and its mastery of maritime logistics culminated in major dockyards like those in Copenhagen. As Scandinavia, we inherit these powerful infrastructures and traditions, boosting our diplomatic standing and naval readiness."
 
  swedish_roots: "Swedish Military Roots"
- swedish_roots_desc: "From the disciplined Carolean ranks to the strong freeholding peasantry, Sweden's military prowess is an essential pillar of Scandinavia. By integrating Swedish institutions and recruitment systems, we reinforce the manpower and strength of our empire."
+ swedish_roots_desc: "From the disciplined Carolean ranks to the strong freehold peasantry, Sweden's military prowess is an essential pillar of Scandinavia. By integrating Swedish institutions and recruitment systems, we reinforce the manpower and strength of our empire."
 
  finnish_heritage: "Finnish Frontier Cavalry"
  finnish_heritage_desc: "The Finnish cavalry — Hakkapeliitta — gained a fearsome reputation in European wars. These riders, raised from the wild forests and plains of Finland, bring experience, adaptability, and toughness. By formalizing their role, we will create a permanent elite force within our armies."
@@ -5738,8 +5762,8 @@
  latin_patriarch: "Latin Patriarch"
  latin_patriarch_desc: "The Papacy has reinstated the Latin Patriarch of Jerusalem, once exiled and forgotten. Now restored, the Patriarch shall strengthen our influence in Rome and reinforce our role as guardian of the Church's interests in the East."
 
- rites_holy_sepulchre: "Rites of the Holy Sepulchre"
- rites_holy_sepulchre_desc: "In the Church of the Holy Sepulchre, the ancient Latin rites are once more performed in full splendor. These solemn rituals, honoring the death and resurrection of Christ, reinforce our divine mandate to rule this land and spread the teachings of our faith."
+ rites_holy_sepulchre: "Rites of the Holy Sepulcher"
+ rites_holy_sepulchre_desc: "In the Church of the Holy Sepulcher, the ancient Latin rites are once more performed in full splendor. These solemn rituals, honoring the death and resurrection of Christ, reinforce our divine mandate to rule this land and spread the teachings of our faith."
 
  latinate_integration: "Latinate Integration"
  latinate_integration_desc: "Our realm is a crucible of European nobility, pilgrim zealots, and old Levantine stock. Through careful governance, we shall weave together this diverse heritage into a Latin Christian society, where faith and culture go hand in hand."
@@ -5773,7 +5797,7 @@
  indonesia_outer_islands_archipelago_desc: "Maritime connections naturally play a huge role within our society, as we are surrounded by waters. Our reliance on maritime trade and transport makes traversal of the seas a trivial task for our people."
 
  indonesia_naval_supremacy: "Naval Prowess"
- indonesia_naval_supremacy_desc: "Our political relevance within the archipelago almost solely relies on the stength of our naval forces. By improving the training of our sailors and construction of our fleet, we will ensure our domination over the lesser states of Indonesia."
+ indonesia_naval_supremacy_desc: "Our political relevance within the archipelago almost solely relies on the strength of our naval forces. By improving the training of our sailors and construction of our fleet, we will ensure our domination over the lesser states of Indonesia."
 
  indonesia_trading_hub_of_the_east: "Trade Hub of the East"
  indonesia_trading_hub_of_the_east_desc: "No matter their origin or destination, every trader of Asia will eventually have to cross our lands, bringing both precious goods and tales of their travels with them."
@@ -5783,12 +5807,12 @@
 
  #Italy Region
  italian_universities: "Universities of the Peninsula"
- italian_universities_desc: "Italy is home to many great universities and scholars. If we want to keep the flame of the renaissance alive, we must continously support these great institutions."
+ italian_universities_desc: "Italy is home to many great universities and scholars. If we want to keep the flame of the renaissance alive, we must continuously support these great institutions."
 
  italy_great_families: "Great Families of Italy"
- italy_great_families_desc: "After the foundation of a sole Italian state, we have absorded many great noble families into our country. We should utilize their prestige and reputation to improve our own, while keeping those capable people busy."
+ italy_great_families_desc: "After the foundation of a sole Italian state, we have absorbed many great noble families into our country. We should utilize their prestige and reputation to improve our own, while keeping those capable people busy."
 
- italian_innovativeness: "Italian Adaptness"
+ italian_innovativeness: "Italian Adaptation"
  italian_innovativeness_desc: "We have seen what great strides humans can take with the renaissance flourishing in our lands. If we want to truly advance, we can not obstruct the embracement of new ideas, but must adapt them and make them truly our own."
 
  italian_condottieri: "Great Condottieri Captains"
@@ -5820,7 +5844,7 @@
 #Kongo
 
  kon_bakongo_confederation: "Bakongo Confederation"
- kon_bakongo_confederation_desc: "Before the rise of our realm, the people of this region governed themselves through clan councils and provincial alliances. What we now call $KON$ emerged from centuries of interwoven relationships, where loyalty to the land and kin outweighed loyalty to borders. Uniting this patchwork into a centralized realm was no small feat, but we did it and we will keep it together yet."
+ kon_bakongo_confederation_desc: "Before the rise of our realm, the people of this region governed themselves through clan councils and provincial alliances. What we now call $KON$ emerged from centuries of interwoven relationships, where loyalty to the land and kin outweighed loyalty to borders. Uniting this patchwork into a centralized realm was no small feat, but we did it, and we will keep it together yet."
 
  kon_lineage_lukeni_lua_nimi: "Lineage of Lukeni lua Nimi"
  kon_lineage_lukeni_lua_nimi_desc: "All things must begin somewhere, and for our kingdom, that beginning lies with Lukeni lua Nimi. He was more than a conqueror. Indeed, he was a founder, the father of our realm. His bloodline commanded respect, not just for its ancestry, but because it reminds the people who first dared to dream of a unified $KON$."
@@ -5829,7 +5853,7 @@
  kon_european_contact_desc: "The strangers came from the sea with beards, books, and barrels of wine. They brought with them strange gods, stranger languages, and an entire ocean of opportunity. Our emissaries have learned their customs, their intentions, and most importantly how to turn their need for allies into our advantage."
 
  kon_cultural_syncreticism: "Cultural Syncretism"
- kon_cultural_syncreticism_desc: "The influx of foreigners and exchanges have made an impact on our society. However, we have not abandoned our ways. We call upon deities by Kikongo names, we wear many religious insignia, and our ceremonies echo with both drums and hymns. This is a vibrant example of our clarity, and the gods seem to agree."
+ kon_cultural_syncreticism_desc: "The influx of foreigners and exchanges have made an impact on our society. However, we have not abandoned our ways. We call upon deities by Kikongo names, we wear many religious insignias, and our ceremonies echo with both drums and hymns. This is a vibrant example of our clarity, and the gods seem to agree."
 
  kon_study_european_firearms: "Study European Firearms"
  kon_study_european_firearms_desc: "The musket may not make a man brave, but it certainly makes him feared. Let the Europeans boast of their superiority, we will buy their weapons, master their drills, and soon enough, the only thing that separates our soldiers from theirs will be the color of their flags."
@@ -5897,7 +5921,7 @@
  cth_mercenary_army_desc: "The Punic nation of Carthage does not have big population, so for centuries we relied on Mercenaries to fight our wars for us. Since the reformation of Carthage, we continued that tradition to save our population from dangers of war."
 
  cth_cothons: "Cothon"
- cth_cothons_desc: "The ancient cothon of Carthage was a technological marvel that allowed it to construct ships efficiently. Now, the legacy of ancient time will serve us as a blueprint for our whole country. Studing ancient ship making techniques allows us to excell in this area once again. Carthaginian Navy will soon cruise the whole Mediterranean."
+ cth_cothons_desc: "The ancient cothon of Carthage was a technological marvel that allowed it to construct ships efficiently. Now, the legacy of ancient time will serve us as a blueprint for our whole country. Studying ancient ship making techniques allows us to excel in this area once again. Carthaginian Navy will soon cruise the whole Mediterranean."
 
  cth_phoenician_sailors: "Phoenician Sailors"
  cth_phoenician_sailors_desc: "After restoring out ancient kingdom, we started reaching out to our old Phoenician brothers in Libya. As a result, we have a steady influx of volunteers that want to join the restoration of the ancient Phoenician kingdom of Carthage. It seems we can maintain a much bigger navy now."
@@ -5909,10 +5933,157 @@
  cth_beyond_the_pillars_desc: "It is time for our trade factories to reach beyond the mythical pillars of Hercules. Combining ancient colonization knowledge with modern discoveries allows us to settle more efficiently than other younger nations, those who are fairly new to this experience. Carthaginian colonies shall soon be found all around the world."
 
  cth_wine_traders: "Punic Wine Trade"
- cth_wine_traders_desc: "In ancient times, we created a wine trading pipeline by producing large amounts of low quality wine to trade and importing high quality wines ourselves. Building on top of that, we are looking into expanding our wine producing capabilites to be able to take over wine trade around the Mediterranean."
+ cth_wine_traders_desc: "In ancient times, we created a wine trading pipeline by producing large amounts of low quality wine to trade and importing high quality wines ourselves. Building on top of that, we are looking into expanding our wine producing capabilities to be able to take over wine trade around the Mediterranean."
 
  cth_punic_global_trade: "Punic Global Trade"
- cth_punic_global_trade_desc: "For centuries, our nation dominated the Mediterranean trade. Now, with all the new discovieries, we are bound to dominate it globally. Soon in every port in the world there will be a Carthaginian trade vassel to be found."
+ cth_punic_global_trade_desc: "For centuries, our nation dominated the Mediterranean trade. Now, with all the new discoveries, we are bound to dominate it globally. Soon in every port in the world there will be a Carthaginian trade vessel to be found."
 
  cth_sufet_rule: "Rule of Šūfeṭ"
- cth_sufet_rule_desc: "Our ancient kingdom was headed by an elected head of state called the Šūfeṭ. In this new modern age, we shall reorgnize our government, taking experience from antiquity and combining it with modern theories to create the most powerfull Republican system, one that will outshine every Republic created up to this date."
+ cth_sufet_rule_desc: "Our ancient kingdom was headed by an elected head of state called the Šūfeṭ. In this new modern age, we shall reorganize our government, taking experience from antiquity and combining it with modern theories to create the most powerful Republican system, one that will outshine every Republic created up to this date."
+
+#Aztec Formable Advances
+
+ network_of_cities: "Network of Cities"
+ network_of_cities_desc: "Across lakes and valleys, our cities bind themselves through roads, markets, and shared purpose, strengthening our reach."
+
+ status_by_merit: "Status by Merit"
+ status_by_merit_desc: "Warriors and nobles rise through valor and service, ensuring authority belongs to those who have truly earned it."
+
+ expansion_merchant_guilds: "Expansion of Merchant Guilds"
+ expansion_merchant_guilds_desc: "Pochtēcah merchants extend their routes far beyond our lands, enriching every marketplace loyal to the Mexihcah."
+
+ centralized_city_governance: "Centralized City Governance"
+ centralized_city_governance_desc: "The refomation of our government, in an attempt to support the sprawl of our newly-attained urban territories, shall be united under firm oversight, creating a more orderly and dependable administration."
+
+ wealth_of_mesoamerica: "Wealth of Mesoamerica"
+ wealth_of_mesoamerica_desc: "The fertile soils, forests, and mines of Ānāhuac yield immense riches, sustaining our growth and imperial ambitions. Properly utilizing these resources will bolster our affluence."
+
+ study_european_colonizers: "Study the European Colonizers"
+ study_european_colonizers_desc: "Strangers have made contact with our people. Their unfamiliar ships and weapons instill awe and fear. Understanding their methods may be the key to survival."
+
+ new_fire_ceremonies: "New Fire Ceremonies"
+ new_fire_ceremonies_desc: "Once every fifty-two years, the world is renewed by flame, uniting the people in faith and cosmic balance."
+
+ sun_must_rise: "The Sun Must Rise"
+ sun_must_rise_desc: "Through devotion and ritual, we keep the sun's journey alive, easing the hearts and strengthening the spirit of our people. The preservation of equilibrium, and even the world, rests upon our shoulders."
+
+ #Kurdistan Formable
+ krs_kurdish_tribes: "Tribal Loyalty"
+ krs_kurdish_tribes_desc: "Having asserted our authority over all $kurdish_culture$ tribes, we will be able to call upon their experienced, hardened warriors to defend our country."
+
+ krs_legacy_of_the_kurdish_dynasties: "Legacy of the $kurdish_culture$ Dynasties"
+ krs_legacy_of_the_kurdish_dynasties_desc: "Our people have established several great dynasties, ruling territories from $egypt_region$ to Iran. Tying our own state to the glory of past rulers will allow us to be a unifying symbol for the $kurdish_culture$ people, and make our rule seem more legitimate in the eyes of our subjects."
+
+ krs_kurdish_quarters: "Prospering $kurdish_culture$ Quarters"
+ krs_kurdish_quarters_desc: "In the times of foreign rule, many of our people established predominantly $kurdish_culture$ quarters in cities. While these areas prospered even under distant rulers, we can now utilize their wealth directly, and better guarantee a prosperous future for our people."
+
+ krs_kurdish_horses: "Adaptable Cavalry"
+ krs_kurdish_horses_desc: "Our homelands are surrounded by many would-be conquerors, hungry to subjugate our people. While our native terrain can slow down hostile armies, it also makes it difficult for our own troops to respond to threats swiftly. A strong cavalry, however, will allow us to quickly react to any threats, no matter how many there might be."
+
+ krs_kurdish_mercenaries: "Mercenary Experience"
+ krs_kurdish_mercenaries_desc: "Our people have long served as hired swords for foreign lords, gaining valuable combat experience in their service. With our own country now established, it is time to call those experienced fighters under our banner."
+
+ krs_kurdish_warrior_poets: "Warrior Poets"
+ krs_kurdish_warrior_poets_desc: "Our rulers must not just be capable warriors; they must also be educated in the matters of fine art and effective administration. By writing texts and documenting their reigns, our leaders will pass the knowledge and history of our people down through generations, ensuring no valuable insight is lost."
+
+#Manchu Formable Advances
+
+ mohe_ancestry: "Mohe Ancestry"
+ mohe_ancestry_desc: "Our people descend from the Mohe tribes of the Amur forests. Their traditions of hunting, herding, and hardy frontier life shape our society."
+
+ warka_ties: "Warka Ties"
+ warka_ties_desc: "Our ties with the Warka have given us great knowledge in hunting and gathering food. Through these practices, we ensure our people stay fed, even during long winters."
+
+ shadow_of_ambition: "Shadow of Ambition"
+ shadow_of_ambition_desc: "The unification of the Jurchen tribes is but the first step in our ambitious rise to power. Soon, our name will strike fear and awe across the entire continent."
+
+ niyamniyan: "Niyamniyan"
+ niyamniyan_desc: "The tradition of the Five Noble Talents involves riding, archery, military command, loyalty, and discipline. These aspects of our martial society form the backbone of our proud culture."
+
+ southern_campaigns: "Southern Campaigns"
+ southern_campaigns_desc: "$CHI$ is home to immeasurable wealth, prestige, and knowledge. Under the rule of a weak dynasty, it falls upon our shoulders to seize power and return the prosperity and splendor of these lands."
+
+ foreign_learning: "Foreign Learning"
+ foreign_learning_desc: "From foreign scholars and texts, we shall adopt new administrative, military, and scholarly practices, accelerating the pace of our technological development."
+
+#Malacca Formable
+
+ melaka_tree: "The Melaka Tree"
+ melaka_tree_desc: "As legend goes, the timid mouse deer sought refuge in what would later become our domain. Our beggining is humble, as little more than a fishing village clustered beneath the shade of the Melaka tree. From these roots shall grow a people that will one day shape the entire region."
+
+ orang_laut: "Orang Laut"
+ orang_laut_desc: "Long before our rise, the Orang Laut roamed the straits as masters of wind and tide. Now, by learning their ways and employing a select few, we guide traders through the narrow waters and shield our coast from pirates. Such vigilance ensures that all who sail to $malacca$ arrive safely."
+
+ congregation_of_merchants: "Congregation of Merchants"
+ congregation_of_merchants_desc: "From $arabia_region$ to China and the coasts of $south_asia$, merchants of every shore converge upon $malacca$. Drawn by fair laws, secure waters, and bustling markets, they will form a great congregation that enriches our ports and carries our name across the seas."
+
+ connections_with_china: "Connections with China"
+ connections_with_china_desc: "Our envoys have secured recognition from China's most prestigious sovereigns. Tribute and goodwill flow between us, granting us prestige, protection, and a privileged place in the vast network of their trade."
+
+ control_the_malacca_strait: "Control the Malacca Strait"
+ control_the_malacca_strait_desc: "The narrow $inner_malacca_strait$ is the backbone of our maritime commerce. By controlling this vital strait, we channel the wealth of nations into our harbors and establish ourselves as the unrivaled gatekeepers of the east-west trade."
+
+ shahbandar: "The Shāhbandar System"
+ shahbandar_desc: "To manage the vast tide of merchants arriving at our ports, we appoint a Shāhbandar as the authority to oversee customs, resolve disputes, and organize the foreign quarters. This office brings order to our bustling entrepôt and will strengthen our role as the crossroads of the seas."
+
+#Malaya Formable
+ 
+ settle_the_islands: "Settle the Islands"
+ settle_the_islands_desc: "Across the scattered isles of our homeland lie countless shores awaiting our touch. By strengthening our presence among these islands, we secure the wealth of our people: new trade posts, new harvests, and new communities bound by the waves that unite us."
+
+
+ people_of_the_sea: "People of the Sea"
+ people_of_the_sea_desc: "We are a people shaped by wind and tide. From childhood, we learn the ways of the monsoon, the pulse of the straits, and the call of the open ocean. Our sailors carry this knowledge into every voyage, earning renown across the archipelago for their courage and mastery."
+
+ expert_hagglers: "Expert Hagglers"
+ expert_hagglers_desc: "Wherever our traders land, be it the coasts of $south_asia$ or the markets of distant China, they are respected for their sharp tongues and keen judgement. Navigating both seas and bargains with equal finesse, they ensure that our trades are never at a disadvantage."
+
+ malay_merchants_in_every_port: "Malay Merchants in Every Port"
+ malay_merchants_in_every_port_desc: "From the bazaars of $arabia_region$ to the harbors of $east_asia$, our merchants are a familiar sight. Their presence forms a vast network of cooperation, easing the establishment of our enclaves abroad and extending our reach into every great entrepôt of the world."
+
+ agreements_sea_nomads: "Agreements with the Sea Nomads"
+ agreements_sea_nomads_desc: "The $sama_culture$ and other sea-wandering peoples have long lived upon the water itself, drifting between islands with unmatched skill. Through knowledge-sharing or agreements of mutual respect and shared opportunity, we shall ensure safe passage and swift repairs."
+
+ masters_of_spice: "Masters of Spice"
+ masters_of_spice_desc: "Trading in cloves holds much wealth for us and our people. By securing the lands and seas from which these spices flow, we stand at the center of a trade that spans the world, and no merchant can ignore the allure of these goods."
+
+#Sokoto Formable
+ sko_fulani_expansion: "Expansion of Sokoto"
+ sko_fulani_expansion_desc: "For too long the people of $west_africa$ have labored under rulers that, while professing to be righteous, indulged in syncretism. No more! Our flag shall always fly above that of worldly kingdoms!"
+
+ sko_recruit_the_faithful: "Recruit the Faithful"
+ sko_recruit_the_faithful_desc: "Everyone who is ready to serve under our righteous leaders must be welcome, regardless of their heritage."
+
+ sko_education_for_all: "Learned Scholars"
+ sko_education_for_all_desc: "By encouraging the spread of literacy and scholarship among men and women alike, we can advance our society and further our hold over our lands. The family of our rulers must have a special place in these efforts, serving as an ideal to emulate."
+
+ sko_religious_court: "Most Religious Court"
+ sko_religious_court_desc: "Instead of displaying the worldly pomp of our rule, our court should focus on spiritual matters. By inviting learned religious figures to teach in our capital, we can show our true commitment to our faith."
+
+ sko_recruit_fulani_generals: "Recruit $fulbe$ Commanders"
+ sko_recruit_fulani_generals_desc: "The $fulbe$ people are distinguished warriors, serving as leaders in all corners of $west_africa$. We should establish ourselves as a permanent employer for their most capable commanders."
+
+ sko_one_people_in_faith: "Unification in Faith"
+ sko_one_people_in_faith_desc: "Our lands are home to many people of different cultures and languages. We must emphasize our faith as the unifying force, joining all people under one banner."
+ 
+ #Italy Formable Advances
+ ita_birthplace_of_the_renaissance: "Continuation of the Renaissance"
+ ita_birthplace_of_the_renaissance_desc: "$italy_region$ has seen a great influx of bright minds. Be it traveling artists coming here to make their fortunes, or our own people inspired to participate in this great rebirth of the arts, our cities seem to be bursting with capable intellects. With our sponsorship, we will surely continue attracting talented people to our culture.."
+
+ ita_connect_the_interior: "Connect the Interior"
+ ita_connect_the_interior_desc: "While the terrain of our lands allows for swift transportation and travel along the coastline, the interior of the Italian peninsula is much harder to traverse in many places. Connecting not only interior locales, but also coast with coast, will ensure easier mercantile operations and improved maneuverability of our troops."
+
+ ita_increased_recruitment: "A Prized Possession"
+ ita_increased_recruitment_desc: "$italy_region$ is a desired possession for many foreign rulers. If we want to defend our country, we must expand recruitment for both our land and sea forces. Since $italy_region$ is vulnerable to invasions both from across the alpine passes and our vast coastline, we must ensure the army and navy are well-prepared to face any conqueror looking to disrupt the peace of the peninsula."
+
+ ita_influence_over_the_clergy: "Influential Clergy"
+ ita_influence_over_the_clergy_desc: "With its close proximity to the $papacy_reform$, $italy_region$ has a long tradition of powerful and talented clergy in the service of the faith. Regardless where our religious matters will take us, we should maintain good relations with our clergy."
+
+ ita_enduring_hardship: "Hardships of War"
+ ita_enduring_hardship_desc: "The foreign interests in $italy_region$ have many times turned our lands into the battlefield of stronger countries. Sustaining our people during these times of need is a difficult task. Establishing secure locations to shelter our population during conflict will ensure their support during even the most dire wars."
+
+ ita_flourishing_urban_centers: "Flourishing Cities"
+ ita_flourishing_urban_centers_desc: "Our lands are blessed with many highly urbanized areas. This not only offers us ample opportunity to manufacture goods, but their mercantile connections also enable us to ship them to foreign markets for our profit. Clearing any obstruction to expanding these industries will guarantee their continued success."
+
+ ita_attractive_migration: "Appealing Landscape"
+ ita_attractive_migration_desc: "The fertile, mild land of our peninsula is a popular place for people from bordering countries to seek their fortunes. While many of our cities already rely on labor from seasonal migrants, we should increase our efforts to settle these people into our lands permanently."

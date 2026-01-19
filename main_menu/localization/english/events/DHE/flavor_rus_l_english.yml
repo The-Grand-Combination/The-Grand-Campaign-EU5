@@ -300,7 +300,7 @@
  flavor_rus.38.desc: "Financial overseer [boris_morozov.GetName] is preparing a series of layoffs and salary cuts to strengthen the treasury and ensure the government apparatus is proportionate to the country's needs. These measures may have adverse effects on the administrative capacity of [ROOT.GetCountry.GetName] as well as a negative effect on the army, since both state employees and soldiers will see their earnings reduced."
  flavor_rus.38.a: "We must all make sacrifices."
  STATIC_MODIFIER_NAME_reduced_government_expenses: "Reduced Government Expenses"
- flavor_rus.38.b: "Delegate responsibilities to the [ShowPopTypeName('nobles')]."
+ flavor_rus.38.b: "Delegate responsibilities to the [ShowPopTypeNameWithNoTooltip('nobles')]."
  flavor_rus.38.tt1: "The hands of [boris_morozov.GetNameWithNoTooltip] become somewhat tied as power is shifted away from the state"
  flavor_rus.38.historical_info: "Boris Morozov was adamant to improve the dire finances of Russia, and made it a priority to increase the treasury's income by any means. Several taxes were hiked, some of which would result in the infamous Salt Riot of 1648, but cutbacks were also made to the overall administration of the country."
  
@@ -458,8 +458,8 @@
  flavor_rus.55.a: "[ShowLocationNameWithNoTooltip('neva')] is well-suited."
  flavor_rus.55.tt1: "Printed charters are dispatched to all maidens of the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] and [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')]"
  rus_printed_charters: "Printed Charters"
- flavor_rus.55.b: "It belongs in [target_location.GetName]."
- flavor_rus.55.c: "Re-purpose the [ShowBuildingTypeName('novodevichy_convent')]."
+ flavor_rus.55.b: "It belongs in [target_location.GetNameWithNoTooltip]."
+ flavor_rus.55.c: "Re-purpose the [ShowBuildingTypeNameWithNoTooltip('novodevichy_convent')]."
  flavor_rus.55.d: "A threat to the established order."
  flavor_rus.55.historical_info: "The Institute of Noble Maidens, established by Ivan Betskoy with strong support from Empress Catherine 'the Great', aimed to expose women to intellectual thinkers of the time, including Voltaire and Locke. Children joined the convent at a young age, experiencing a separation from their parents for a period of six years. The institute would change locations several times, and was funded by an annual fee to ensure exclusivity and restrict entry to low-ranking members of society."
 
@@ -551,7 +551,7 @@
  flavor_rus.64.tt2: "It can only be performed by [cabinet|e] members of non-[target_culture.GetNameWithNoTooltip] origin"
  flavor_rus.64.c: "A power-mongering evil-doer."
  flavor_rus.64.tt3: "[ernst_von_biron.GetNameWithNoTooltip] is refused a position of influence"
- flavor_rus.64.historical_info: "Ernst Johan von Biron was an advisor and possibly lover to Empress Anna Ioannovna. He was of noble german origin, wielded considerable power at the Russian court, and became a dependant for the Empress who sought to assert her authoritarian rule. Lauded for his administrative skills, he remained unpopular in Russia due to his foreign descent combined with the power he held over the estates and the considerable wealth he accumulated as a result of his position. His time at court was nicknamed 'Bironovshchina', meaning the German yoke, referencing the days of Tatar rule."
+ flavor_rus.64.historical_info: "Ernst Johan von Biron was an advisor and possibly lover to Empress Anna Ioannovna. He was of noble german origin, wielded considerable power at the Russian court, and became a dependent for the Empress who sought to assert her authoritarian rule. Lauded for his administrative skills, he remained unpopular in Russia due to his foreign descent combined with the power he held over the estates and the considerable wealth he accumulated as a result of his position. His time at court was nicknamed 'Bironovshchina', meaning the German yoke, referencing the days of Tatar rule."
 
  flavor_rus.65.title: "The Bolshoi Ballet"
  flavor_rus.65.desc: "The grand [ShowBuildingTypeName('bolshoi_theater')] is expanding its repertoire and has formed a ballet company to rave reviews. Offering a wide palette ranging from classical to contemporary performances, it is set to embark on a tour to ensure it remains an iconic institution and continues to attract the very best of talent. We could sway the director to influence the itinerary depending on which agenda we wish to pursue, ensuring the cultural scene continues to serve [ROOT.GetCountry.GetName] in whatever capacity it can."

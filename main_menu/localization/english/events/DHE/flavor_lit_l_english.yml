@@ -6,6 +6,7 @@
  many_pops_will_become_lutheran_in_christian_locations_tt: "Many of our [ShowReligionGroupAdjective('christian')] [pops|e] across our [locations|e] will convert to [ShowReligionName('lutheran')]"
  lutheran_pops_gain_25_satisfaction: "[ShowReligionAdjective('lutheran')] [pops|e] across our [locations|e] will gain [ShowNamedValue('pop_satisfaction_extreme_bonus')|+=2%] [pop_satisfaction|e]"
  lutheran_pops_lose_33_satisfaction: "[ShowReligionAdjective('lutheran')] [pops|e] across our [locations|e] will lose [ShowNamedValue('pop_satisfaction_extreme_penalty')|+=2%] [pop_satisfaction|e]"
+
  flavor_lit.2.title: "Wave of [ShowReligionNameWithNoTooltip('calvinist')]"
  flavor_lit.2.desc: "Not long after the surfacing of the [ShowReligionAdjective('lutheran')] faith, yet another movement is grasping the attention of all of [ShowContinentName('europe')], [ShowReligionName('calvinist')]. The arrival of [ShowReligionAdjectiveWithNoTooltip('lutheran')] refugees is paving the way for a second wave of [ShowReligionAdjectiveWithNoTooltip('calvinist')] refugees, as they originated from many diverse corners of the continent, fleeing from the narrow-minded [ShowReligionAdjective('catholic')] governments of their former countries."
  flavor_lit.2.a: "Their faith will integrate within our social fabric."
@@ -13,6 +14,7 @@
  many_pops_will_become_calvinist_in_christian_locations_tt: "Many of our [ShowReligionGroupAdjective('christian')] [pops|e] across our [locations|e] will convert to [ShowReligionName('calvinist')]"
  calvinist_pops_gain_25_satisfaction: "[ShowReligionAdjective('calvinist')] [pops|e] across our [locations|e] will gain [ShowNamedValue('pop_satisfaction_extreme_bonus')|+=2%] [pop_satisfaction|e]"
  calvinist_pops_lose_33_satisfaction: "[ShowReligionAdjective('calvinist')] [pops|e] across our [locations|e] will lose [ShowNamedValue('pop_satisfaction_extreme_penalty')|+=2%] [pop_satisfaction|e]"
+
  flavor_lit.3.title: "Treaty of Ugra"
  flavor_lit.3.desc: "A diplomatic opportunity has been presented that would temporarily pacify one of our sworn enemies, allowing us to deal with more pressing concerns. Eager to secure its current position and ensure that we will not aim to attack their territories, [target_root_country.GetName] has proposed to cede us the area of [ShowAreaName('smolensk_area')], in return for a proclaimed alliance and considerably strengthened diplomatic ties."
  flavor_lit.3.a: "Sign the treaty."
@@ -103,7 +105,6 @@
  flavor_lit.16.a: "The gifts are most welcome!"
  diplomatic_isolation_tt: "Our chances to seek allies across [ShowRegionNameWithNoTooltip('russian_region')] will diminish"
 
-
  flavor_lit.17.title: "[ShowLocationNameWithNoTooltip('vilnius')|U] Cathedral"
  flavor_lit.17.desc: "Now that the [ROOT.GetCountry.GetLongName] has finally joined the [ShowReligionGroupAdjective('christian')] world we must show to our new brothers our piety and devotion by building a new [ShowBuildingTypeName('cathedral')] in [ShowLocationName('vilnius')].\n\nWe will build it over the remains of a very old church that once was used by a long gone [ShowReligionGroupAdjectiveWithNoTooltip('christian')] ruler of [ROOT.GetCountry.GetNameWithNoTooltip] and we will show to the world, our great desire to rejoin the flock of the Lord."
  flavor_lit.17.a: "Start the construction."
@@ -125,68 +126,54 @@
  
  flavor_lit.20.title: "Supremus Dux Lithuaniae"
  flavor_lit.20.desc: "Although our [ROOT.GetCountry.GetFlavorRank] has expanded beyond its original borders and now incorporates many peoples, we have never properly styled ourselves as more than a [ROOT.GetCountry.GetGovernment.GetRulerTitle], despite being mightier than many in [ShowContinentName('europe')]. [target_character.GetName] is not one to accept that [target_character.GetHerHis] titles are inferior to those of [target_character.GetHerHis] enemies. For that reason, [target_character.GetSheHe] wishes to style [target_character.GetHerselfHimself] as something greater — above mere Dukes, and certainly equal to Kings.\n\nSuch an effort would surely hurt our legitimacy in the short term. However, maintaining a degree of humility would prevent our subjects from seeing us as overlords who view them as inferior. Yet, in the struggle for power within [ShowContinentNameWithNoTooltip('europe')], humility often leads to decline."
-
  flavor_lit.20.historical_info: "The aftermath of the Lithuanian civil war of 1381 and the Ostrów Agreement left Vytautas the Great as the sole monarch of the Grand Duchy. Seeking to further legitimize his rule and claim succession from the Kievan Rus', he styled himself as #italic Supremus Dux Lithuaniae#!, the Supreme Duke of Lithuania — a title not consistently used before his time. This designation persisted even under the Polish Commonwealth until the state's partition by the Austrians, Prussians, and Russians."
-
  flavor_lit.20.a: "Let us style ourselves accordingly."
  flavor_lit.20.b: "A degree of humility will ensure internal stability."
 
  flavor_lit.21.title: "The [ShowDynastyNameWithNoTooltip('radziwill_dynasty')] Dynasty"
  flavor_lit.21.desc: "Although many families exist within [ROOT.GetCountry.GetName], only a few have dominated the political scene of the [ROOT.GetCountry.GetFlavorRank]. One such family is the [ShowDynastyName('radziwill_dynasty')] dynasty, led by the influential [target_character.GetName]. Seeking to expand their influence within the [ROOT.GetCountry.GetGovernment.GetCourtTitle], [target_character.GetNameWithNoTooltip] has approached [ROOT.GetCountry.GetGovernment.GetRulerOrRegent.GetName], aiming for a position within the [ROOT.GetCountry.GetFlavorRank]."
-
  flavor_lit.21.historical_info: "The Radziwiłł family was among the few in the Polish-Lithuanian Commonwealth that helped preserve the Grand Duchy of Lithuania as a distinct state. Founded by Radvila Astikas, they accumulated numerous titles across Europe, even becoming princes of the Holy Roman Empire."
-
  flavor_lit.21.a: "[target_character.GetNameWithNoTooltip] shall become the Grand Marshal of [ROOT.GetCountry.GetNameWithNoTooltip]."
  flavor_lit.21.b: "A position in the [ROOT.GetCountry.GetGovernment.GetCabinetTitle] will suffice."
  flavor_lit.21.c: "Who are they to demand anything from the [ROOT.GetCountry.GetGovernment.GetRulerTitle]?"
 
  flavor_lit.22.title: "Rise of the [ShowDynastyNameWithNoTooltip('gostautai_dynasty')]"
  flavor_lit.22.desc: "Within the ranks of our [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')], the [ShowDynastyName('gostautai_dynasty')] family has always held uncontested influence. Currently led by [target_character.GetName], they control many regions within the [ROOT.GetCountry.GetFlavorRank]. While this poses a problem for the [ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')], perhaps we could ally with them, as aligning our interests may lead to greater internal stability."
-
  flavor_lit.22.historical_info: "The Goštautai were primary rivals of the Radziwiłł family throughout the 15th and 16th centuries. Serving both Vytautas 'the Great' and Casimir IV Jagiellon, they amassed vast lands and were considered among the wealthiest nobles in Europe. Unfortunately, the family line ended in 1542, and their estates passed to the Grand Duke of Lithuania."
-
  flavor_lit.22.a: "A gift would be a fine gesture of friendship."
  flavor_lit.22.b: "We must not allow their power to grow further."
 
  flavor_lit.23.title: "Religious Privilege of [target_character.GetNameWithNoTooltip]"
- flavor_lit.23.desc: "[ROOT.GetCountry.GetName] has long had a number of [ShowReligionAdjective('orthodox')] [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] within its borders. However, many of them do not enjoy equal status with their [ROOT.GetCountry.GetReligion.GetAdjective] counterparts. They now stand in opposition to [target_character.GetName], whom they blame for this injustice. If we are to win them over, we must guarantee them the same legal rights as the rest of the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]."
-
+ flavor_lit.23.desc: "[ROOT.GetCountry.GetName|U] has long had a number of [ShowReligionAdjective('orthodox')] [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] within its borders. However, many of them do not enjoy equal status with their [ROOT.GetCountry.GetReligion.GetAdjective] counterparts. They now stand in opposition to [target_character.GetName], whom they blame for this injustice. If we are to win them over, we must guarantee them the same legal rights as the rest of the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]."
  flavor_lit.23.historical_info: "To properly establish a feudal realm in Lithuania, Sigismund Kęstutaitis needed the trust of his Orthodox subjects. In 1434, he granted them privileges ensuring that no noble—regardless of religion — could be imprisoned or punished without a court's approval."
-
  flavor_lit.23.a: "They will have our support — and their privileges."
  flavor_lit.23.b: "If they want equality, they must abide by [ROOT.GetCountry.GetReligion.GetAdjectiveWithNoTooltip] law."
 
  flavor_lit.24.title: "$church_of_saint_nicholas$"
  flavor_lit.24.desc: "Our conversion to [ROOT.GetCountry.GetReligion.GetName] has left the people of the [target_location.GetRank.GetName] of [target_location.GetName] without a sacred place to pray. Seeking to resolve this, [target_character.GetName] and the [ROOT.GetCountry.GetGovernment.GetCourtTitle] want to invite [ShowCultureGroupName('german_group')] architects to help lay the foundations for a site dedicated to Saint Nicholas. While this would surely gain the favor of the people, perhaps it would be wiser to let such a site be built without state intervention, preserving our [ROOT.GetCountry.GetGovernment.GetAdjective] coffers."
-
  flavor_lit.24.historical_info: "The Church of Saint Nicholas was the first church ever built in Lithuania. Inspired by the Gothic architecture of the Holy Roman Empire, it attracted German craftsmen and merchants, who settled in Vokiečių gatvė in Vilnius."
-
  flavor_lit.24.a: "In the name of [ROOT.GetCountry.GetReligion.GetGodName], we shall fund this new church."
  flavor_lit.24.b: "Let the common folk take care of their own needs."
 
  flavor_lit.25.title: "[ShowLocationRankNameWithNoTooltip('city')] Rights of [ShowLocationNameWithNoTooltip('vilnius')]"
  flavor_lit.25.desc: "Given the status of [target_location.GetName] in [ROOT.GetCountry.GetName], the [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] fear that the [target_location.GetRank.GetName] may lose its significance within the [ROOT.GetCountry.GetFlavorRank]. They have therefore appealed to [target_character.GetName] and the [ROOT.GetCountry.GetGovernment.GetAdjective] [ROOT.GetCountry.GetGovernment.GetCourtTitle], requesting that the settlement be granted official rights as a [ShowLocationRankName('city')], potentially attracting new merchants and craftsmen.\n\nHowever, some argue against centralizing our population in a single [ShowLocationRankNameWithNoTooltip('city')], advocating instead for a more even distribution within the [ROOT.GetCountry.GetFlavorRank]. While this may empower various estates, it would also maintain their satisfaction."
-
  flavor_lit.25.a: "Let [target_location.GetNameWithNoTooltip] become a [ShowLocationRankNameWithNoTooltip('city')]."
  flavor_lit.25.b: "We shall encourage decentralization instead."
  lit_all_vilnius_pops_become_loyal_tt: "All [pops|e] within [target_location.GetName] will gain [ShowNamedValue('pop_satisfaction_extreme_bonus')|+=2%] [pop_satisfaction|e]"
 
  flavor_lit.26.title: "Valakų Reform"
  flavor_lit.26.desc: "Although much of the land in [ROOT.GetCountry.GetName] is arable, the workforce has dwindled due to ongoing urbanization. The [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] are especially concerned, believing this trend only empowers the [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')]. To prevent further disruption, the [ROOT.GetCountry.GetGovernment.GetCourtTitle] proposes a land ownership reform. Rather than relying on allodial titles—which create mistrust between the [ROOT.GetCountry.GetGovernment.GetEstateName('crown_estate')] and the [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] — all subjects would, by law, be under the ownership of the [ROOT.GetCountry.GetGovernment.GetRulerTitle]. Taxation and military duties would no longer be based on the number of households but measured using the Valakų unit, providing a clearer understanding of our lands' wealth and manpower.\n\nNow, with these reforms presented to [target_character.GetName], there is growing pressure for [target_character.GetHerHim] to implement them, despite some controversy among the lower classes."
-
  flavor_lit.26.a: "We shall adopt the Valakų unit of measurement."
  flavor_lit.26.b: "The mobility of the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('peasants_estate')] is beneficial in the long run."
  lit_all_peasant_pops_lose_satisfaction_tt: "All of our [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] [pops|e] will lose [ShowNamedValue('pop_satisfaction_mild_penalty')|+=2%] [pop_satisfaction|e]"
 
  flavor_lit.27.title: "Sudebnik of [ROOT.GetCountry.GetNameWithNoTooltip]"
  flavor_lit.27.desc: "The lack of a legal code in [ROOT.GetCountry.GetName] has become a bigger issue than expected. Some among the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] steal veldamai from other lands or exploit forests without permission. To address this, [target_character.GetName] seeks to introduce a legal code to address such crimes. These laws would bring consistency to how landowners treat their subjects, while allowing prominent families to avoid being subjected to the arbitrary practices of lesser [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]."
-
  flavor_lit.27.a: "Let us implement these new laws."
  flavor_lit.27.b: "Rather than empower the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')], we should distance ourselves from such a system."
 
  flavor_lit.28.title: "[target_character.GetNameWithNoTooltip]"
  flavor_lit.28.desc: "With the [ROOT.GetCountry.GetAdjective] military in need of new ideas, a peculiar [target_character.GetWomanMan] has emerged, claiming to have participated in numerous sieges across [ShowContinentName('europe')]. [target_character.GetHerHis|U] name is [target_character.GetName], a member of the [ShowDynastyName('siemienowicz_dynasty')]. Though many within the [ROOT.GetCountry.GetGovernment.GetCourtTitle] doubt [target_character.GetHerHis] [ShowCultureName('aukstaitian')] heritage, the stories of [target_character.GetHerHis] origin appear credible. As such, many in [ROOT.GetCountry.GetNameWithNoTooltip] wish for [target_character2.GetName] to recruit [target_character.GetHerHim] into the army, as [target_character.GetSheHe] could prove to be a strategist on par with Alexander 'the Great'."
-
  flavor_lit.28.a: "Let us employ [target_character.GetHerHim] in the army."
  flavor_lit.28.b: "Allowing [target_character.GetHerHim] to pursue [target_character.GetHerHis] own path may benefit us as well."
  flavor_lit.28.c: "Removing such a figure will earn us favor with the [ROOT.GetCountry.GetGovernment.GetEstateNameWithNoTooltip('nobles_estate')]."

@@ -354,10 +354,10 @@
  flavor_mam.64.a: "We need the support of the [target_culture.GetNameWithNoTooltip] Mamlūks."
  flavor_mam.64.b: "The support of [target_culture2.GetNameWithNoTooltip] Mamlūks is as vital as ever."
  flavor_mam.64.c: "Although not as important [third_ruler.GetNameWithNoTooltip] has shown skill."
- flavor_mam.64.d: "A traditional Mamlūk from our [target_culture4.GetName] ranks."
+ flavor_mam.64.d: "A traditional Mamlūk from our [target_culture4.GetNameWithNoTooltip] ranks."
 
  flavor_mam.65.title: "[target_location.GetNameWithNoTooltip] Soldiers"
- flavor_mam.65.desc: "While $mamluks$ make up the core of our forces not all of our military might consists of warrior slaves. Local [target_location.GetName] soldiers form much of our infantry and they are also used for guard and garrison duties.\n\nSmall chances of advancement and low pay are not the best motivators however, and it is not clear how far we can trust these men. Certainly their training and equipment are often neglected by the [ROOT.GetCountry.GetGovernment.GetRulerTitle], and the local governors in the [target_location.GetRank.GetName]. In [target_location.GetArea.GetName] mistrust between [target_location.GetName] locals and $mamluks$ governors has led to unrest."
+ flavor_mam.65.desc: "While $mamluks$ make up the core of our forces not all of our military might consists of warrior slaves. Local [target_location.GetName] soldiers form much of our infantry and they are also used for guard and garrison duties.\n\nSmall chances of advancement and low pay are not the best motivators however, and it is not clear how far we can trust these men. Certainly their training and equipment are often neglected by the [ROOT.GetCountry.GetGovernment.GetRulerTitle], and the local governors in the [target_location.GetRank.GetName]. In [target_location.GetArea.GetName] mistrust between [target_location.GetNameWithNoTooltip] locals and $mamluks$ governors has led to unrest."
  flavor_mam.65.a: "We must crush this in its cradle!"
  flavor_mam.65.b: "Let us see what we can do to improve their situation."
  mam_all_pop_not_of_primary_culture_lose_satisfaction_tt: "All [ShowPopTypeName('soldiers')] [pops|e] that are not part of the [ROOT.GetCountry.GetCulture.GetName] [culture|e] will lose [ShowNamedValue('pop_satisfaction_extreme_penalty')|+=2%] [pop_satisfaction|e]"

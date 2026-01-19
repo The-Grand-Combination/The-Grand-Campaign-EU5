@@ -162,6 +162,15 @@
  ordinal_numeral.regnal.male.german_language: "$ROMAN$."
  ordinal_numeral.regnal.female.german_language: "$ROMAN$."
  #
+ ordinal_numeral.regnal.male.hungarian_language: "$ROMAN$."
+ ordinal_numeral.regnal.female.hungarian_language: "$ROMAN$."
+ #
+ ordinal_numeral.regnal.male.croatian_dialect: "$ROMAN$."
+ ordinal_numeral.regnal.female.croatian_dialect: "$ROMAN$."
+ #
+ ordinal_numeral.regnal.male.czechslovak_language: "$ROMAN$."
+ ordinal_numeral.regnal.female.czechslovak_language: "$ROMAN$."
+ #
  ordinal_numeral.regnal.male.basque_language: "$ROMAN$.a"
  ordinal_numeral.regnal.female.basque_language: "$ROMAN$.a"
  #

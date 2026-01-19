@@ -122,7 +122,7 @@
  flavor_jap.111.a: "This council shall help aid the [ROOT.GetCountry.GetGovernment.GetRulerTitle] authority over the [ShowSpecialStatusNameWithNoTooltip('shugo_daimyo')]."
 
  flavor_jap.112.title: "Inclusion of Powerful clans to the Kanrei Council"
- flavor_jap.112.desc: "Seeking to build the initial core members of the newly formed Kanrei council, [our_ruler.GetName] has looked towards the strongest clans throughout [ShowRegionName('japan_region')] in hopes of building a strong political relationship for future stability. Through the advice of the [ROOT.GetCountry.GetGovernment.GetCourtTitle], members have recommended [GetCountry('HKW').GetName], [GetCountry('SBA').GetName], and [GetCountry('HTK').GetName] to serve as the first senior members."
+ flavor_jap.112.desc: "Seeking to build the initial core members of the newly formed Kanrei council, [our_ruler.GetName] has looked towards the strongest clans throughout [ShowRegionName('japan_region')] in hopes of building a strong political relationship for future stability. Through the advice of the [ROOT.GetCountry.GetGovernment.GetCourtTitle], members have recommended [GetCountry('HSK').GetName], [GetCountry('SBA').GetName], and [GetCountry('HTK').GetName] to serve as the first senior members."
  flavor_jap.112.a: "May they issue in the start of a new era!"
  flavor_jap.112.b: "Scale back their authority in ensure they do not grow too powerful."
 

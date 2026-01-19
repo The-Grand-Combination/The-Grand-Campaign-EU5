@@ -1,17 +1,24 @@
 ﻿l_english:
  country_name_construction_name: "$NAME$"
  country_name_construction_name_map: "$NAME$"
- country_name_construction_prefix_rank_of_name_but_map_is_just_prefix_rank: "$PREFIX$$RANK$ of $ARTICLE$$NAME$"
- country_name_construction_prefix_rank_of_name_but_map_is_just_prefix_rank_map: "$PREFIX$$RANK$"
- country_name_construction_prefix_name_rank: "$PREFIX$$NAME$ $RANK$"
- country_name_construction_prefix_name_rank_map: "$PREFIX$$NAME$ $RANK$"
- country_name_construction_prefix_adjective_rank: "$PREFIX$$ADJ$ $RANK$"
- country_name_construction_prefix_adjective_rank_map: "$PREFIX$$ADJ$ $RANK$"
- country_name_construction_prefix_rank_of_name: "$PREFIX$$RANK$ of $ARTICLE$$NAME$"
+ country_name_construction_name_with_article: "$ARTICLE$ $NAME$"
+ country_name_construction_prefix_rank_of_name_but_map_is_just_prefix_rank: "$PREFIX$ $RANK$ of $ARTICLE$ $NAME$"
+ country_name_construction_prefix_rank_of_name_but_map_is_just_prefix_rank_map: "$PREFIX$ $RANK$"
+ country_name_construction_prefix_name_rank: "$PREFIX$ $NAME$ $RANK$"
+ country_name_construction_prefix_name_rank_map: "$PREFIX$ $NAME$ $RANK$"
+ country_name_construction_prefix_adjective_rank: "$PREFIX$ $ADJ$ $RANK$"
+ country_name_construction_prefix_adjective_rank_map: "$PREFIX$ $ADJ$ $RANK$"
+ country_name_construction_prefix_rank_of_name: "$PREFIX$ $RANK$ of $ARTICLE$ $NAME$"
  country_name_construction_prefix_rank_of_name_map: "$NAME$"
- country_name_construction_prefix_name: "$PREFIX$$NAME$"
- country_name_construction_prefix_name_map: "$PREFIX$$NAME$"
- #
+ country_name_construction_prefix_name: "$PREFIX$ $NAME$"
+ country_name_construction_prefix_name_map: "$PREFIX$ $NAME$"
+ country_name_construction_prefix_name_horde: "$country_name_construction_prefix_adjective_rank$"
+ country_name_construction_prefix_name_horde_map: "$country_name_construction_prefix_adjective_rank_map$"
+ country_name_construction_sultanate: "$country_name_construction_prefix_rank_of_name$"
+ country_name_construction_sultanate_map: "$country_name_construction_prefix_rank_of_name_map$"
+ country_name_construction_crown: "$country_name_construction_prefix_rank_of_name$"
+ country_name_construction_crown_map: "$country_name_construction_prefix_rank_of_name_map$"
+ # Do not remove any construction as they might be used in different languages
  COUNTRY_NAME_ABBREVIATION: "$NAME$."
  #
  revolutionary_prefix: "Revolutionary"
@@ -275,7 +282,7 @@
  rank_kingdom_celtic_welsh_ruler_female: "Brenhines"
  #
  rank_kingdom_persian: "Realm"
- rank_kingdom_persian_ruler_male: "Šah"
+ rank_kingdom_persian_ruler_male: "Šâh"
  rank_kingdom_persian_ruler_female: "Šahbânū"
  rank_kingdom_persian_heir: "Šâhpur"
  rank_kingdom_persian_heir_female: "Šâhdoxt"
@@ -595,7 +602,7 @@
  rank_duchy_free_city_ruler_male: "Bürgermeister"
  rank_duchy_free_city_ruler_female: "Bürgermeisterin"
  #
- rank_duchy_republic_high_alemannic: "Kanton"
+ rank_duchy_republic_high_alemannic: "Canton"
  rank_duchy_republic_high_alemannic_ruler_male: "Schultheiß"
  rank_duchy_republic_high_alemannic_ruler_female: "Schultheißin"
  #
@@ -732,9 +739,17 @@
  rank_duchy_order_ruler_male: "Grandmaster"
  rank_duchy_order_ruler_female: "Grandmistress"
  #
+ rank_duchy_order_subject: "$rank_duchy_order$"
+ rank_duchy_order_subject_ruler_male: "Landmaster"
+ rank_duchy_order_subject_ruler_female: "Landmistress"
+ #
  rank_duchy_order_german: "$rank_duchy_order$"
  rank_duchy_order_german_ruler_male: "Hochmeister"
  rank_duchy_order_german_ruler_female: "Hochmeisterin"
+ #
+ rank_duchy_order_german_subject: "$rank_duchy_order$"
+ rank_duchy_order_german_subject_ruler_male: "Landmeister"
+ rank_duchy_order_german_subject_ruler_female: "Landmeisterin"
  #
  rank_duchy_abbey: "Abbey"
  rank_duchy_abbey_ruler_male: "Abbot"
@@ -833,6 +848,16 @@
  rank_county_earldom: "Earldom"
  rank_county_earldom_ruler_male: "Earl"
  #
+ rank_county_landgraviate: "Landgraviate"
+ rank_county_landgraviate_ADJ: "Landgravial"
+ rank_county_landgraviate_ruler_male: "Landgrave"
+ rank_county_landgraviate_ruler_female: "Landgravine"
+ #
+ rank_county_margraviate: "Margraviate"
+ rank_county_margraviate_ADJ: "Margravial"
+ rank_county_margraviate_ruler_male: "Margrave"
+ rank_county_margraviate_ruler_female: "Margravine"
+ #
  rank_county_republic: "Republic"
  rank_county_republic_ruler_male: "Consul"
  rank_county_republic_ruler_female: "Consuless"
@@ -859,7 +884,7 @@
  rank_county_theocracy_ruler_male: "Priest"
  rank_county_theocracy_ruler_female: "Priestess"
  #
- rank_county_republic_high_alemannic: "Kanton"
+ rank_county_republic_high_alemannic: "Canton"
  rank_county_republic_high_alemannic_ruler_male: "Schultheiß"
  rank_county_republic_high_alemannic_ruler_female: "Schultheißin"
  #
@@ -921,9 +946,13 @@
  rank_county_tribe_ruler_male: "Chieftain"
  rank_county_tribe_ruler_female: "Chieftainess"
  #
- rank_county_order: "$rank_duchy_order$"
- rank_county_order_ruler_male: "$rank_duchy_order_ruler_male$"
- rank_county_order_ruler_female: "$rank_duchy_order_ruler_female$"
+ rank_county_order_german: "Ballei"
+ rank_county_order_german_ruler_male: "Landkomtur"
+ rank_county_order_german_ruler_female: "Landkomturin"
+ #
+ rank_county_order: "Bailiwick"
+ rank_county_order_ruler_male: "Commander"
+ rank_county_order_ruler_female: "Commander"
  #
  rank_county_theocracy_maya: "$rank_county_kuchkabal$"
  rank_county_theocracy_maya_ruler_male: "Ah K'in"

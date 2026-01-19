@@ -101,7 +101,7 @@
  flavor_eng_diplomacy.1300.desc: "The alliance between [target_root_country.GetName] and [ROOT.GetCountry.GetName] is no more, yet the foundation for a promising relationship between our countries is firmly established through the Treaty of Windsor. We should consider the proposition of a royal marriage to [target_root_country.GetGovernment.GetRuler.GetName], who remains unmarried, with the attached conditions of a signed alliance. This would be accompanied by a valuable land grant as part of the dowry, a proposal that could be difficult to resist.\n\nThe strategic location of [ShowLocationName('tangier')] presents challenges and substantial defense costs, and could be offered as a strategic port to serve the aspirations of [target_root_country.GetNameWithNoTooltip]."
  flavor_eng_diplomacy.1300.a: "Prepare the necessary documents."
  flavor_eng_diplomacy.1300.a.custom: "The [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] and [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] are not very satisfied with the proposed surrender of [ShowLocationNameWithNoTooltip('tangier')]"
- flavor_eng_diplomacy.1300.b: "Offer them the location of [overseas_location.GetName] instead."
+ flavor_eng_diplomacy.1300.b: "Offer them the location of [overseas_location.GetNameWithNoTooltip] instead."
  flavor_eng_diplomacy.1300.c: "There is no need for such an arrangement."
 
  flavor_eng_diplomacy.1301.title: "The Enduring Friendship Revived"

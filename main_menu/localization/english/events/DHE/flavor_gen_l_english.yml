@@ -99,7 +99,7 @@
  flavor_gen.18.desc: "Corsica has always been a cause for many troubles to the [ROOT.GetCountry.GetLongName]. Its people are stubborn and seek independence from us at any opportunity.\n\nYet, they refuse to bow before any feudal lord too. The leader of a jacquerie, peasant revolters from [GetCountry('FRA').GetName] during the Hundred Years War, [sambucuccio_dalando.GetName] and his allies have started a revolt against the [rebel_location.GetController.GetAdjective] in [rebel_location.GetName]."
  anti_feudal_revolters: "Anti-Feudal Revolters"
  flavor_gen.18.a: "May the revolters repel our enemies."
- flavor_gen.18.b: "We need [sambucuccio_dalando.GetName] as our general!"
+ flavor_gen.18.b: "We need [sambucuccio_dalando.GetNameWithNoTooltip] as our general!"
  
  flavor_gen.19.title: "The Foundation of Bastia"
  flavor_gen.19.desc: "The island of Corsica has proven itself to be rather unprofitable, and as such many [ROOT.GetCountry.GetAdjective] merchants and officials have withdrawn from interfering in the internal politics of the island. However, some businessmen of the [ROOT.GetCountry.GetFlavorRank] still see potential in Corsica. The established Maona di Corsica have organized the fortification of the location of [ShowLocationName('bastia')] in order to assert their control over the island. They also intend to accelerate the growth of a town nearby, though this will require additional financial support."
@@ -149,7 +149,7 @@
  flavor_gen.26.b: "It might be too risky to keep this conflict open."
  
  flavor_gen.27.title: "The Siege of Caffa"
- flavor_gen.27.desc: "[ROOT.GetCountry.GetName] gained a foothold in Crimea after 1266 with the consent of the [GetCountry('GLH').GetLongName], an agreement that allowed both parties to establish a profitable trade relationship by linking the Silk Road with the Mediterranean trade routes and making [ShowLocationName('kaffa')] the most important hub in the Black Sea.\n\nHowever, periodic tensions arise between the [GetCountry('GLH').GetGovernment.GetRulerTitle] of the [GetCountry('GLH').GetLongNameWithNoTooltip] and the [ROOT.GetCountry.GetAdjectiveWithNoTooltip], with Kaffa under siege until a new deal is struck. This time might be a little different, however..."
+ flavor_gen.27.desc: "[ROOT.GetCountry.GetName|U] gained a foothold in Crimea after 1266 with the consent of the [GetCountry('GLH').GetLongName], an agreement that allowed both parties to establish a profitable trade relationship by linking the Silk Road with the Mediterranean trade routes and making [ShowLocationName('kaffa')] the most important hub in the Black Sea.\n\nHowever, periodic tensions arise between the [GetCountry('GLH').GetGovernment.GetRulerTitle] of the [GetCountry('GLH').GetLongNameWithNoTooltip] and the [ROOT.GetCountry.GetAdjectiveWithNoTooltip], with Kaffa under siege until a new deal is struck. This time might be a little different, however..."
  flavor_gen.27.a: "Try to save our people from plague and war!"
  flavor_gen.27.a.tt: "Diseases from the east might spread in [target_location.GetRegion.GetSubContinent.GetContinent.GetName]..."
  flavor_gen.27.b: "Famine and death might be the only sensible course of action."

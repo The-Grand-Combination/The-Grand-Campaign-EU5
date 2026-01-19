@@ -115,7 +115,7 @@
  flavor_teu.102.desc: "$flavor_teu.100.desc.crusader_dead$"
  flavor_teu.102.a: "These are certainly unpleasant news"
 
- flavor_pol_teu.1.title: "Judgement of 1339"
+ flavor_pol_teu.1.title: "Judgment of 1339"
  flavor_pol_teu.1.desc: "In 1335, we filed a complaint against the [GetCountry('TEU').GetName] to the [GetCountry('PAP').GetAdjective] [GetCountry('PAP').GetGovernment.GetCourtTitle]. After years of waiting, the [GetCountry('PAP').GetAdjectiveWithNoTooltip] commission has finally arrived and the process of deliberation has begun. As we expected, the judges have agreed with our solemn complaint and declared that [GetCountry('TEU').GetNameWithNoTooltip] return [ShowProvinceDefinitionName('danzig_province')], [ShowProvinceDefinitionName('tuchola_province')], [ShowProvinceDefinitionName('kuyavia_province')], [ShowProvinceDefinitionName('dobrzyn_province')] and [ShowProvinceDefinitionName('stolp_province')] provinces."
  flavor_pol_teu.1.historical_info: "Both in 1319 and in 1335, the Polish sides filed complaints against the Teutonic Order in the Papal Court, demanding restoration of the 'Danzig Pomerania' back to Poland. In the case of the 1335 complaint, the commission sent by the Papal State determined that the Teuton aggression was unjust and that the lands should be returned and a reparatory sum would be repaid. The Teutonic Order did appeal that decision, and after the Papal deliberation, they were only forced to return occupied territories, Bydgoszcz and Dobrzyń."
  flavor_pol_teu.1.a: "And we thought justice was dead..."

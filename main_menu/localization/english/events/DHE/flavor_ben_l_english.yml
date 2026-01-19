@@ -5,7 +5,7 @@
  flavor_ben.1.b: "The ditches are enough to protect [target_location.GetNameWithNoTooltip]."
 
  flavor_ben.2.title: "Administration in Towns"
- flavor_ben.2.desc: "[ROOT.GetCountry.GetName] has been centralized in [ROOT.GetCountry.GetCapital.GetName] instead of the numerous locations within it. Rather than merely offering them protection, we can establish an administration that directly obeys [target_character.GetName]. They will be instead ruled through the [GetBuildingName('eghabho_nore_mansion')], where government officials that directly obey [target_character.GetNameWithNoTooltip] reside in."
+ flavor_ben.2.desc: "[ROOT.GetCountry.GetName|U] have been centralized in [ROOT.GetCountry.GetCapital.GetName] instead of the numerous locations within it. Rather than merely offering them protection, we can establish an administration that directly obeys [target_character.GetName]. They will be instead ruled through the [GetBuildingName('eghabho_nore_mansion')], where government officials that directly obey [target_character.GetNameWithNoTooltip] reside in."
  flavor_ben.2.a: "[ROOT.GetCountry.GetNameWithNoTooltip] will be centralized!"
  flavor_ben.2.b: "The current system is fine."
 

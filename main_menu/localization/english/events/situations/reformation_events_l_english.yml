@@ -4,7 +4,7 @@
  reformation.1.a: "Only time will tell what this might bring."
 
  reformation.2.title: "Bible Translated"
- reformation.2.desc: "A priest in [ROOT.GetCountry.GetCapital.GetName] has translated the Bible into [ROOT.GetCountry.GetCourtLanguage.GetName], and has started to distribute copies of it to nearby villages throughout [ROOT.GetCountry.GetName]. They claim that translating bibles to other languages than [ROOT.GetCountry.GetLiturgicalLanguage.GetName] gives people the best resource for knowing God in a language that speaks to their minds and hearts. However, the Church opposes this, as this is clearly against the will of God!"
+ reformation.2.desc: "A priest in [ROOT.GetCountry.GetCapital.GetName] has translated the Bible into the [ROOT.GetCountry.GetDominantLanguage.GetName] language, and has started to distribute copies of it to nearby villages throughout [ROOT.GetCountry.GetName]. They claim that translating bibles to other languages than [ROOT.GetCountry.GetLiturgicalLanguage.GetName] gives people the best resource for knowing God in a language that speaks to their minds and hearts. However, the Church opposes this, as this is clearly against the will of God!"
  reformation.2.a: "Heresy! Burn the priest and his books!"
  reformation.2.b: "Great news! Spread these Bibles far and wide"
 
@@ -15,7 +15,7 @@
  reformation.12.title: "The Conviction of [target_character.GetNameWithNoTooltip]"
  reformation.12.desc: "What once were whispers of gossip in the [ROOT.GetCountry.GetGovernment.GetCourtTitle] has now manifested in a direct confession of [target_character.GetHerHim]. [target_character.GetSheHe|U] seems to no longer be able to proclaim [target_character.GetHerHis] faith in the one true [ROOT.GetCountry.GetReligion.GetGodName] and to be taking a liking to heresies instead."
  reformation.12.a: "[target_character.GetSheHe|U] is free to chose [target_character.GetHerHis] confession."
- reformation.12.b: "We should advice [target_character.GetHerHim] to leave the country."
+ reformation.12.b: "We should advise [target_character.GetHerHim] to leave the country."
 
  reformation.13.title: "The Exodus of [target_location.GetNameWithNoTooltip]"
  reformation.13.desc: "The people of [target_location.GetName] do no longer feel like they have a future in our country, due to our religious differences. The preaching of the local priest of [target_location.GetNameWithNoTooltip] is no longer reaching responsive ears, and some have already started to leave the area for more favorable grounds."

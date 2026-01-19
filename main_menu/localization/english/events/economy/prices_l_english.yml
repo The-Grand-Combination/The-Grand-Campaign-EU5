@@ -94,7 +94,7 @@
  popularization_of_sugar: "Popularization of Sugar"
  
  prices.24.title: "Popularization of Silk Fabrics"
- prices.24.desc: "For centuries, [ShowGoodsName('silk')] has been a symbol of wealth and refinement, coveted by elites across [ShowContinentName('asia')], the [ShowRegionName('middle_east')], and [ShowContinentName('europe')]. Its allure played a crucial role in shaping trade routes and global exploration, especially during the [ShowAgeName('age_3_discovery')]. Now, thanks to improvements in production and trade, both raw silk and woven fabrics are becoming more accessible than ever before. This newfound availability has sparked a surge in demand across many new markets, where [ShowGoodsNameWithNoTooltip('silk')] is rapidly shifting from a luxury good to a fashionable commodity among the growing urban middle classes."
+ prices.24.desc: "For centuries, [ShowGoodsName('silk')] has been a symbol of wealth and refinement, coveted by elites across [ShowContinentName('asia')], the [ShowSubContinentName('middle_east')], and [ShowContinentName('europe')]. Its allure played a crucial role in shaping trade routes and global exploration, especially during the [ShowAgeName('age_3_discovery')]. Now, thanks to improvements in production and trade, both raw silk and woven fabrics are becoming more accessible than ever before. This newfound availability has sparked a surge in demand across many new markets, where silk is rapidly shifting from a luxury good to a fashionable commodity among the growing urban middle classes."
  prices.24.a: "[ROOT.GetCountry.Custom('common_string_ok')]"
  popularization_of_silk: "Popularization of Silk"
 

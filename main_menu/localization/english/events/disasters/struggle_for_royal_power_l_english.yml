@@ -8,7 +8,7 @@
  struggle_for_royal_power.100.desc: "After a long struggle involving both political and military conflict, the crisis in [ROOT.GetCountry.GetName] is at an end. There is no longer any doubt as to where the true power in [ROOT.GetCountry.GetName] lies."
  struggle_for_royal_power.100.a: "The [ROOT.GetCountry.GetGovernment.GetRulerTitle] is supreme!"
  struggle_for_royal_power.100.b: "The Sejm is supreme!"
- struggle_for_royal_power.100.c: "This Civil War will be the end of [ROOT.GetCountry.GetName]"
+ struggle_for_royal_power.100.c: "This Civil War will be the end of [ROOT.GetCountry.GetNameWithNoTooltip]"
 
  struggle_for_royal_power.10.title: "Konfederacja"
  struggle_for_royal_power.10.desc: "Just as the [ROOT.GetCountry.GetGovernment.GetRuler.GetName] has resolved to remove power from the Sejm, so has the Sejm made its own demands to the [ROOT.GetCountry.GetGovernment.GetRuler.GetName]. Mikolaj Zebrzydowski, Jan Szczesny Herburt, Stanislaw Stadnicki, Aleksander Józef Lisowski and Janusz Radziwill have formed a rokosz, or semi-legal rebellion, in Stezyca and Lublin. The nobles have gathered at the rokosz formed a Konfederacja which outlined demands in 67 articles, demanding the dethronement of [ROOT.GetCountry.GetGovernment.GetRuler.GetName] for breaching the Henrician Articles, and the right for the Sejm to appoint state officials instead of the [ROOT.GetCountry.GetGovernment.GetRulerTitle]."

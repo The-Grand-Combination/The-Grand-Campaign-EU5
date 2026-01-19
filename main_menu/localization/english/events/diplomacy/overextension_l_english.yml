@@ -38,7 +38,7 @@
  overextension.12.a: "It is the will of [ROOT.GetCountry.GetReligion.GetGodName]"
  overextension.13.title: "Infamy has consequenses!"
  overextension.13.desc: "The [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')] is arguing that our [antagonism|e] has led to lessened opportunities for trade, impacting the financial wellbearing of our country!"
- overextension.13.a: "It is a trade off we can live with.."
+ overextension.13.a: "It is a trade off we can live with."
  overextension.14.title: "Infamy is against [ROOT.GetCountry.GetAdjectiveWithNoTooltip] Traditions"
  overextension.14.desc: "The [ROOT.GetCountry.GetGovernment.GetEstateName('peasants_estate')] claims that our [antagonism|e] is against the traditions of our country, and it is not something that we ever had in the good old days."
  overextension.14.a: "Times have changed"

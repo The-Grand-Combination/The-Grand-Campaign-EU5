@@ -6,6 +6,8 @@ flavor_chk.1.a: "It is time we moved on from the remains of this once great city
 flavor_chk.1.b: "Our Golden Age has not yet ended, we can resurrect ailing [ShowLocationNameWithNoTooltip('cahokia')]!"
 events_to_weaken_cahokia_downfall: "Enables additional [events|e] to lessen the downfall of [ShowLocationName('cahokia')]."
 events_to_strengthen_cahokia: "Enables additional [events|e] to stabilize [ShowLocationName('cahokia')] and make it a sprawling [ShowLocationRankName('city')] once more!"
+cahokia_conditions_to_gain_golden_age: "Maintaining [stability|e] and [prestige|e] above #G +50.00#! along with restoring [ShowLocationName('cahokia')] to 35,000 [pops|e] and 15.00 [development|e] will allow the ushering of a new Golden Age."
+cahokia_conditions_to_avoid_migrations: "Should [ROOT.GetCountry.GetName] suffer further instability through reaching below #R -15.00#! [stability|e],  #R 60.00#! [tribal_cohesion|e] or $flavor_chk.35.title$ [dynamic_historical_event|e], large swathes of [pops|e] may [migrate|e] from our [locations|e]."
 
 flavor_chk.2.title: "Partial Rebuilding of the Woodhenges"
 flavor_chk.2.desc: "Though largely abandoned in recent decades, within [ShowLocationName('cahokia')] remains one of the centers used by great minds of the past, a collection of woodhenges. Though the practice has ceased in recent times, our ancestors used a completed circle to map the direction in which the sun would rise and fall.\n\nShould we take efforts to rebuild the woodhenges, great minded individuals may take to the practice once more."

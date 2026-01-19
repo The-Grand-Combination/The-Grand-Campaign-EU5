@@ -32,11 +32,11 @@
  hre_subjugate_every_free_city_directly_tt: "Every [ShowSpecialStatusName('free_city')] in the [GetUniqueInternationalOrganization('hre').GetName] will become our [ShowSubjectTypeName('direct_imperial_free_city')] [subject|e]"
  hre.107.desc: "The Imperial Diet has passed a reform which has caused our autonomy as a [ShowSpecialStatusName('free_city')] to be completely revoked. From now on, all diplomatic affairs of our state are done from the court of [target_country.GetCapital.GetName]."
  hre.107.a: "Our City serves the [GetUniqueInternationalOrganization('hre').GetLeaderTitle]!"
- hre.900.title: "The [GetUniqueInternationalOrganization('hre').GetLeaderTitle] is Dead..."
+ hre.900.title: "[previous_emperor.GetNameWithNoTooltip] is Dead..."
  hre.900.desc: "Long Live the [GetUniqueInternationalOrganization('hre').GetLeaderTitle]! The electors have decided to maintain their faith in us, and the Imperial Crown remains in [GetUniqueInternationalOrganization('hre').GetLeaderCountry.GetName]. As our country strengthens its grip on the Imperial Crown and the Princes begin to see us as the natural holders, our authority within the [GetUniqueInternationalOrganization('hre').GetName] increases."
  hre.900.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
 
- hre.imperial_authority_change.tt: "The [GetUniqueInternationalOrganization('hre').GetName] gets [ROOT.GetVariable('imperial_authority_change').GetValue] #Y $imperial_authority$#!"
+ hre.imperial_authority_change.tt: "The [GetUniqueInternationalOrganization('hre').GetName] gets [ROOT.GetVariable('imperial_authority_change').GetValue|+2] #Y $imperial_authority$#!"
 
  hre.901.title: "A Prince Restored"
  hre.901.desc: "Like a phoenix, [released_country.GetName], has risen from the ashes and rejoined the Princes of the [GetUniqueInternationalOrganization('hre').GetName]!"
@@ -93,3 +93,4 @@
  hre.801.title: "The [GetUniqueInternationalOrganization('hre').GetLeaderTitle] is Dead..."
  hre.801.desc: "[previous_emperor.GetName] has passed away recently. Now the [ShowSpecialStatusNamePlural('elector')] and [ShowSpecialStatusNamePlural('archbishop_elector')] are convening in the Electoral College who shall ascend next to the Imperial Throne."
  hre.801.a: "A sad day for the Empire!"
+ hre_the_emperor_is_dead_tt: "The [GetInternationalOrganization('hre').GetName] will have to chose a new [GetUniqueInternationalOrganization('hre').GetLeaderTitle]!"

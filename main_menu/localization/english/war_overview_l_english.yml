@@ -1,8 +1,8 @@
 ﻿l_english:
  WAR_LATERALVIEW_SUE_FOR_PEACE: "Sue for peace"
  WAR_LATERALVIEW_SUE_FOR_PEACE_TOOLTIP: "Sue for Peace"
- WAR_LATERALVIEW_CIVIL_WAR: "@trigger_no!We can't sue for [peace|e] in a [civil_war|e]"
- WAR_LATERALVIEW_SUBJECT: "@trigger_no!We can't sue for [peace|e] while being a [subject|e] of our war leader"
+ WAR_LATERALVIEW_CIVIL_WAR: "@trigger_no!We cannot sue for [peace|e] in a [civil_war|e]"
+ WAR_LATERALVIEW_SUBJECT: "@trigger_no!We cannot sue for [peace|e] while being a [subject|e] of our war leader"
  WARGOAL_IS_CONQUEST: "#T War Goal Enforced#!\n"
  WARGOAL_IS_SAFE: "#T War Goal Protected#!\n"
  WAR_LATERALVIEW_ANNEX_REVOLTER: "Annex Revolter"
@@ -85,7 +85,7 @@
  WAR_ARMY_LOSSES_TT: "Army losses"
  WAR_NAVAL_LOSSES_TT: "Naval losses"
  WAR_PARTICIPATION_LABEL: "[war_participation|e]" 
- WAR_SELECT_COUNTRY: "Select this country to make a peace offer.\nSelecting the war leader will include all it's allies."
+ WAR_SELECT_COUNTRY: "Select this country to make a peace offer.\nSelecting the war leader will include all its allies."
  
  WAR_FR_L_A_D: "[COUNTRY.GetLongNameWithFlag]: [COUNTRY.GetTotalStrength]@army_strength!"
  WAR_FR_N_A_D: "[COUNTRY.GetLongNameWithFlag]: [COUNTRY.GetTotalShips]@navy_strength!"
@@ -107,11 +107,11 @@
  GO_TO: "Go To"
 
  CANNOT_INTERVENE_WAR_ALLY: "$COUNTRY|Y$ cannot intervene in this war because $SUBJECT|Y$ has sided against $DEFENDER|Y$ in this war, and $COUNTRY|Y$ is allied with $SUBJECT|Y$ in another war."
- CANNOT_INTERVENE_WAR_UNION_PARTNER: "$COUNTRY|Y$ cannot intervene in this war because $SUBJECT|Y$ is in a [union|e] with $COUNTRY|Y$."
+ CANNOT_INTERVENE_WAR_UNION_PARTNER: "@trigger_no! $COUNTRY|Y$ cannot intervene in this war because $SUBJECT|Y$ is in a [union|e] with $COUNTRY|Y$."
  CANNOT_INTERVENE_WAR_ENEMY_IN_OTHER_WAR: "[COUNTRY.GetName] cannot intervene in this war because of being enemies with [TARGET_COUNTRY.GetName] in a different war"
  CANNOT_INTERVENE_WAR_ENEMY: "$COUNTRY|Y$ cannot intervene in this war because $SUBJECT|Y$ has sided with $DEFENDER|Y$ in this war, and $COUNTRY|Y$ is already at war with $SUBJECT|Y$."
  ALLIED_TO_ENEMY: "They are allied to the enemy."
- DIPLOMACY_JOIN_WAR: "Might join the war"
+ DIPLOMACY_JOIN_WAR: "Might join the war.\n"
  DIPLOMACY_CHANCE_JOIN_WAR: "Likelihood of joining the war: $VAL$.\n"
 
  JOIN_WAR_REASON_Instigator: "Aggressor"
@@ -147,7 +147,8 @@
  LEAVE_WAR_REASON_Forced: "Forced to leave the war by [TARGET_COUNTRY.GetName]"
  LEAVE_WAR_REASON_Abandoned: "Abandoned their friends [TARGET_COUNTRY.GetName] in their hour of need"
  LEAVE_WAR_REASON_ForcedAbandoned: "Forced to abandon their friends [TARGET_COUNTRY.GetName] in their hour of need by their overlord"
+ LEAVE_WAR_REASON_BrokeFreeOfOverlord: "Broke free from their [overlord|e] [TARGET_COUNTRY.GetName]"
 
  REFUSE_TO_JOIN_WAR_REASON_HumanDeclined: "A Human declined to join."
  REFUSE_TO_JOIN_WAR_REASON_NotEnoughReasons: "They do not have enough reasons to join."
- REFUSE_TO_JOIN_WAR_REASON_ConflictOfInterests: "They would support both countries if they could, but they can't, so have stayed neutral."
+ REFUSE_TO_JOIN_WAR_REASON_ConflictOfInterests: "They would support both countries if they could, but they cannot, so have stayed neutral."

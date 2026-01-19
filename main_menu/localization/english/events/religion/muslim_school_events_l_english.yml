@@ -27,7 +27,7 @@
  muslim_school_events.7.b: "He will have to do his preaching elsewhere."
  muslim_school_events.8.title: "Foreign Theologians Enliven Scholarship"
  muslim_school_events.8.desc: "The theologians we invited to our country have come to greatly enrich local religious scholarship. They have left their mark upon our country and inspired a new generation of [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')]."
- muslim_school_events.8.a: "I have need of them in [ROOT.GetCountry.GetCapital.GetName]."
+ muslim_school_events.8.a: "I have need of them in [ROOT.GetCountry.GetCapital.GetNameWithNoTooltip]."
  muslim_school_events.8.b: "They will find their places throughout our country."
  muslim_school_events.9.title: "[SCOPE.sCountry('scholar_country').GetReligiousSchool.GetNameWithNoTooltip] Theologians"
  muslim_school_events.9.desc: "By giving [SCOPE.sCountry('scholar_country').GetAdjectiveWithNoTooltip] scholars in our Madrasahs we are not only improving the theological discussion in our country but also improving our ties with the [SCOPE.sCountry('scholar_country').GetName] [SCOPE.sCountry('scholar_country').GetGovernment.GetGovernmentType.GetName]."

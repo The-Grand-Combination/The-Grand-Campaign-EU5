@@ -14,10 +14,10 @@
  flavor_sale_of_lusatia.1100.title: "The Matter of [GetCountry('SOR').GetNameWithNoTooltip]"
  flavor_sale_of_lusatia.1100.desc_normal: "The [GetCountry('SOR').GetLongName] is now supposed to return into our fold, as the pledge has completed.\n\nHowever, it remains a possession that offers us little value and selling the lands could give us necessary financial backing for more important issues. We could explore the option to sell the title altogether, ridding us of the troublesome land. Surely many would be interested in acquiring [GetCountry('SOR').GetName] and our good relations with [target_buyer.GetName] make them a trustworthy option."
  flavor_sale_of_lusatia.1100.desc_fallback: "The pledge of [GetCountry('SOR').GetName] has run its course but unfortunately it has ceased to exist in the possession of foreign fools. We have few legal options to regain those lands now."
- flavor_sale_of_lusatia.1100.a: "Approach [target_buyer.GetName] with the offer."
+ flavor_sale_of_lusatia.1100.a: "Approach [target_buyer.GetNameWithNoTooltip] with the offer."
  flavor_sale_of_lusatia.1100.b: "We are done with selling lands."
  flavor_sale_of_lusatia.1100.c: "We will get our rightful land back!"
- flavor_sale_of_lusatia.1100.d: "A lapse of judgement, perhaps."
+ flavor_sale_of_lusatia.1100.d: "A lapse of judgment, perhaps."
  flavor_sale_of_lusatia.1100.historical_info: "After the Pledge of 1353 had run its course, Otto von Wittelsbach sold the title and lands of the Margraviate of Lusatia to the Crown of Bohemia, which accepted the offer. Lusatia entered the domain of Bohemia, unifying Upper and Lower Lusatia once again under one rule."
 
  flavor_sale_of_lusatia.1101.desc: "With the pledge of [GetCountry('SOR').GetName] to [GetCountry('MEI').GetName] ending, [GetCountry('BRA').GetName] has decided to offer us a full purchase of the [GetCountry('SOR').GetLongNameWithNoTooltip]. While the price is certainly steep, it could be a lucrative investment for us."

@@ -22,7 +22,7 @@
  flavor_fra_sco.103.c: "Execute the delegation along with [GetCharacter('sco_david_ii').GetNameWithNoTooltip]!"
 
  flavor_fra_sco.104.title: "[GetCountry('SBL').GetNameWithNoTooltip] accepts offer of support"
- flavor_fra_sco.104.desc: "Our delegation to [GetCountry('SBL').GetName] has returned and has brought great tidings that [GetCountry('SBL').GetGovernment.GetRuler.GetName] has graciously accepted our offer of support. With [GetCharacter('sco_david_ii').GetName] now in the hands of [GetCountry('SBL').GetGovernment.GetRuler.GetShortNameWithNoTooltip], it's likely his support will dwindle in [GetCountry('SCO').GetName] and give [GetCountry('SBL').GetNameWithNoTooltip] the edge."
+ flavor_fra_sco.104.desc: "Our delegation to [GetCountry('SBL').GetName] has returned and has brought great tidings that [GetCountry('SBL').GetGovernment.GetRuler.GetName] has graciously accepted our offer of support. With [GetCharacter('sco_david_ii').GetName] now in the hands of [GetCountry('SBL').GetGovernment.GetRuler.GetShortNameWithNoTooltip], it is likely his support will dwindle in [GetCountry('SCO').GetName] and give [GetCountry('SBL').GetNameWithNoTooltip] the edge."
  flavor_fra_sco.104.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
 
  flavor_fra_sco.105.title: "[GetCountry('SBL').GetNameWithNoTooltip] Refuses Offer"
@@ -58,8 +58,8 @@
 
   # Tooltips
  lord_balliol_recieves_david_ii_tt: "[david_ii_bruce.GetNameWithNoTooltip] and his advisors will come under the custody of Balliol in hopes of swaying Lord Balliol to our cause"
- fra_grant_sco_large_levy_tt: "[GetCountry('SCO').GetNameWithNoTooltip] will gain an army composed of 2500 Feudal Levies in it's capital"
- fra_grant_sco_footmen_regiments_tt: "[GetCountry('FRA').GetAdjectiveWithNoTooltip] will gain an army composed of 1000 Infantry Units in it's capital"
+ fra_grant_sco_large_levy_tt: "[GetCountry('SCO').GetNameWithNoTooltip] will gain an army composed of 2500 Feudal Levies in its capital"
+ fra_grant_sco_footmen_regiments_tt: "[GetCountry('FRA').GetAdjectiveWithNoTooltip] will gain an army composed of 1000 Infantry Units in its capital"
  fra_one_french_advisors_for_david_tt: "The State will provide a well-trained [GetCountry('FRA').GetAdjectiveWithNoTooltip] advisor to join [david_ii_bruce.GetNameWithNoTooltip]at court in [GetCountry('SCO').GetNameWithNoTooltip]"
  fra_two_french_advisors_for_david_tt: "The State will provide two well-trained [GetCountry('FRA').GetAdjectiveWithNoTooltip] advisors to join [david_ii_bruce.GetNameWithNoTooltip] at court in [GetCountry('SCO').GetNameWithNoTooltip]"
  fra_three_french_advisors_for_david_tt: "The State will provide three well-trained [GetCountry('FRA').GetAdjectiveWithNoTooltip] advisors to join [david_ii_bruce.GetNameWithNoTooltip] at court in [GetCountry('SCO').GetNameWithNoTooltip]"

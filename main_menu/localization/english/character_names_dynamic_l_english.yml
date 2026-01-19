@@ -84,7 +84,7 @@
  name_abraham.south_arabic_language: "'Ibrāhīm" # إبراهيم
  name_abraham.south_cushitic_language: "Ibrahim"
  name_abraham.south_italian_language: "Abramo" # Tuscan
- name_abraham.south_slavic_language: "Avram"
+ name_abraham.serbo_croatian_language: "Avram"
  name_abraham.swahili_language: "Ibrâhîm"
  name_abraham.spanish_language: "Abraham"
  name_abraham.tamazight_language: "Ibrahim"
@@ -577,7 +577,6 @@
  name_alexander.ruthenian_language: "Oleksandr" # Олександр Russian
  name_alexander.scottish_gaelic_dialect: "Alasdair"
  name_alexander.south_italian_language: "Alessandro" # Tuscan
- name_alexander.south_slavic_language: "Aleksandar"
  name_alexander.serbo_croatian_language: "Aleksandar"
  name_alexander.spanish_language: "Alejandro"
  name_alexander.tamazight_language: "Aselkar"
@@ -624,9 +623,9 @@
  name_alexis.portuguese_language: "Aleixo"
  name_alexis.ruthenian_language: "Oleksiy" # Ukrainian Олексі́й 
  name_alexis.scandinavian_language: "Alexis"
- name_alexis.serbo_croatian_language: "Alexa"
+ name_alexis.serbian_dialect: "Aleksije"
+ name_alexis.serbo_croatian_language: "Aleksej"
  name_alexis.south_italian_language: "Alessio"
- name_alexis.south_slavic_language: "Aleksije" 
  name_alexis.spanish_language: "Alejo"
  name_alexis.turkish_language: "Aleksei"
  name_alexis.west_slavic_language: "Aleksy" # Polish
@@ -682,7 +681,7 @@
  name_alice.portuguese_language: "Alice"
  name_alice.scandinavian_language: "Alice"
  name_alice.scottish_gaelic_dialect: "Ailís" # Scottish Gaelic
- name_alice.south_slavic_language: "Alisa"
+ name_alice.serbo_croatian_language: "Alisa"
  name_alice.spanish_language: "Alicia"
  name_alice.turkish_language: "Elis"
  #
@@ -737,7 +736,7 @@
  name_alphonse.sicilian_dialect: "Alfonzu"
  name_alphonse.south_italian_language: "Alfonso"
  name_alphonse.south_italian_language.diminutive: "Alfonsino"
- name_alphonse.south_slavic_language: "Alfons"
+ name_alphonse.serbo_croatian_language: "Alfons"
  name_alphonse.spanish_language: "Alfonso"
  name_alphonse.spanish_language.diminutive: "Alonso" # Should be alternative
  name_alphonse.turkish_language: "Alfons"
@@ -949,14 +948,13 @@
  name_andrew.ruthenian_language: "Andrii" # Андрі́й Ukrainian
  name_andrew.scandinavian_language: "Anders"
  name_andrew.scottish_gaelic_dialect: "Aindrea" # Scottish Gaelic
+ name_andrew.serbian_dialect: "Andrija" # Андрија Serbian
  name_andrew.serbo_croatian_language: "Andrej"
- name_andrew.serbo_croatian_language.alternative: "Andrija"
  name_andrew.south_italian_language: "Andrea" # Tuscan
  name_andrew.south_italian_language.diminutive: "Andreotto"
  name_andrew.dalmatian_dialect: "Andreas"
  name_andrew.sardinian_dialect: "Andrìa"
  name_andrew.sicilian_dialect: "Andrìa"
- name_andrew.south_slavic_language: "Andrija" # Андрија Serbian
  name_andrew.spanish_language: "Andrés"
  name_andrew.turkish_language: "Andrea"
  name_andrew.west_slavic_language: "Andrzej"
@@ -1117,7 +1115,7 @@
  name_anthony.dalmatian_dialect: "Tuone"
  name_anthony.sardinian_dialect: "Antoni"
  name_anthony.sicilian_dialect: "Antoniu"
- name_anthony.south_slavic_language: "Antun" 
+ name_anthony.serbo_croatian_language: "Antun" 
  name_anthony.spanish_language: "Antonio"
  name_anthony.turkish_language: "Anton"
  name_anthony.west_slavic_language: "Antoni" # Polish
@@ -1709,7 +1707,7 @@
  name_basil.ruthenian_language: "Vasyl" # Ukrainian
  name_basil.ruthenian_language.diminutive: "Vasylko" # Ukrainian
  name_basil.south_italian_language: "Basilio"
- name_basil.south_slavic_language: "Vasilij"
+ name_basil.serbo_croatian_language: "Vasilij"
  name_basil.spanish_language: "Basilio"
  #
  name_bassianus: "Bassianus"
@@ -1915,7 +1913,7 @@
  name_bernard.south_italian_language.diminutive: "Bernardetto"
  name_bernard.sardinian_dialect: "Bennardu"
  name_bernard.sicilian_dialect: "Binnardu"
- name_bernard.south_slavic_language: "Bernard"
+ name_bernard.serbo_croatian_language: "Bernard"
  name_bernard.spanish_language: "Bernardo"
  name_bernard.spanish_language.diminutive: "Bernal"
  name_bernard.tamazight_language: "Bernard"
@@ -2226,7 +2224,7 @@
  name_boyle.portuguese_language: "Boyle"
  name_boyle.scandinavian_language: "Bojle"
  name_boyle.south_italian_language: "Boile" # Tuscan
- name_boyle.south_slavic_language: "Boil"
+ name_boyle.serbo_croatian_language: "Boil"
  name_boyle.spanish_language: "Boile"
  name_boyle.tamazight_language: "Boyle"
  name_boyle.turkish_language: "Boyil"
@@ -2289,7 +2287,7 @@
  name_brian.portuguese_language: "Brião"
  name_brian.scandinavian_language: "Brynolf"
  name_brian.south_italian_language: "Briano" # Tuscan
- name_brian.south_slavic_language: "Brijan"
+ name_brian.serbo_croatian_language: "Brijan"
  name_brian.spanish_language: "Brian"
  name_brian.turkish_language: "Bryan"
  #
@@ -2783,16 +2781,6 @@
  name_chen.kejia_language: "Chhṳ̀n"
  name_chen.jin_language: "Ceng"
  #
- name_chen_duplicate: "$name_chen$" #陳 Required due to having two instances of dynasties with this name
- name_chen_duplicate.shu_language: "$name_chen.shu_language$"
- name_chen_duplicate.xiang_language: "$name_chen.xiang_language$"
- name_chen_duplicate.gan_language: "$name_chen.gan_language$"
- name_chen_duplicate.yue_language: "$name_chen.yue_language$"
- name_chen_duplicate.min_language: "$name_chen.min_language$"
- name_chen_duplicate.wu_language: "$name_chen.wu_language$"
- name_chen_duplicate.kejia_language: "$name_chen.kejia_language$"
- name_chen_duplicate.jin_language: "$name_chen.jin_language$"
- #
  name_chen2: "Chén" #辰
  name_chen2.qin_dialect: "Shén"
  name_chen2.shu_language: "Sèn"
@@ -2885,7 +2873,7 @@
  name_christine.scandinavian_language: "Kristina"
  name_christine.scandinavian_language.alternative: "Cristina"
  name_christine.south_italian_language: "Cristina"
- name_christine.south_slavic_language: "Kristina"
+ name_christine.serbo_croatian_language: "Kristina"
  name_christine.spanish_language: "Cristina"
  #
  name_christopher: "Christopher"
@@ -3051,7 +3039,7 @@
  name_conon.scandinavian_language: "Konon"
  name_conon.south_italian_language: "Conone"
  name_conon.sicilian_dialect: "Cununi"
- name_conon.south_slavic_language: "Konon"
+ name_conon.serbo_croatian_language: "Konon"
  name_conon.spanish_language: "Conón"
  name_conon.turkish_language: "Konon"
  name_conon.west_slavic_language: "Konon" # Polish
@@ -3127,10 +3115,9 @@
  name_constantine.romanian_language: "Constantin"
  name_constantine.romanian_language.diminutive: "Costin"
  name_constantine.ruthenian_language: "Kostyantyn" # Костянтин Ukrainian
- name_constantine.serbo_croatian_language: "Konstantin"
  name_constantine.scandinavian_language: "Konstantin"
+ name_constantine.serbo_croatian_language: "Konstantin"
  name_constantine.south_italian_language: "Costantino" # Tuscan
- name_constantine.south_slavic_language: "Konstantin"
  name_constantine.spanish_language: "Constantino"
  name_constantine.turkish_language: "Kostantin"
  #
@@ -3342,7 +3329,7 @@
  name_dardan: "Dardan"
  #
  name_daria: "Daria" # Latin, North Italian, Occitan & South Italian
- name_daria.czechoslovak_language: "Darja"
+ name_daria.czechslovak_language: "Darja"
  name_daria.east_slavic_language: "Daría"
  name_daria.spanish_language: "Daría"
  name_daria.ruthenian_language: "Daría"
@@ -3467,7 +3454,7 @@
  name_despoina.north_italian_language: "Despina"
  name_despoina.portuguese_language: "Despina"
  name_despoina.south_italian_language: "Despina"
- name_despoina.south_slavic_language: "Despina"
+ name_despoina.serbo_croatian_language: "Despina"
  name_despoina.spanish_language: "Despina"
  #
  name_dermot: "Dermot"
@@ -3795,7 +3782,7 @@
  name_dusan: "Dušan"
  #
  name_dusana: "Dušana"
- name_dusana.serbo_croatian.diminutive: "Dušica"
+ name_dusana.serbo_croatian_language.diminutive: "Dušica"
  name_dusana.west_slavic_language: "Dušana"
 #
  name_eadred: "Eadred"
@@ -4151,7 +4138,7 @@
  name_epifanio.hungarian_language: "Epiphaniosz"
  name_epifanio.latin_language: "Epiphanius"
  name_epifanio.portuguese_language: "Epifânio"
- name_epifanio.south_slavic_language: "Epifanije"
+ name_epifanio.serbo_croatian_language: "Epifanije"
  name_epifanio.west_slavic_language: "Epifaniusz"
  #
  name_er: "Ér" #兒
@@ -4693,7 +4680,7 @@
  name_fountain.sicilian_dialect: "Funtana"
  #
  name_franca: "Franca" # Latin, North Italian, South Italian & Spanish
- name_franca.south_slavic_language: "Franka"
+ name_franca.serbo_croatian_language: "Franka"
  name_franca.west_slavic_language: "Francka"
  #
  name_frances: "Frances"
@@ -6984,7 +6971,7 @@
  name_julius: "Julius"
  name_julius.arpitan_dialect: "Julio"
  name_julius.french_language: "Jules"
- name_julius_latin_language: "Iulius"
+ name_julius.latin_language: "Iulius"
  name_julius.north_italian_language: "Giulio"
  name_julius.occitan_language: "Juli"
  name_julius.romanian_language: "Iuliu"
@@ -7792,7 +7779,7 @@
  name_lulach.north_italian_language: "Lulacco" # Lombard
  name_lulach.portuguese_language: "Lulaco"
  name_lulach.scandinavian_language: "Lulak"
- name_lulach.south_slavic_language: "Lulak"
+ name_lulach.serbo_croatian_language: "Lulak"
  name_lulach.spanish_language: "Lulaco"
  name_lulach.turkish_language: "Lulak"
  name_lulach.west_slavic_language: "Lulak" # Polish
@@ -7896,7 +7883,7 @@
  name_macarius.east_slavic_language: "Makariy" # Макарий Russian
  name_macarius.novgorodian_dialect: "Makarĭi"
  name_macarius.ruthenian_language: "Makarii" # Макарій Ukrainian
- name_macarius.south_slavic_language: "Makarije"
+ name_macarius.serbo_croatian_language: "Makarije"
  name_macarius.spanish_language: "Macario"
  #
  name_macbeth: "Macbeth"
@@ -7987,7 +7974,7 @@
  name_malcolm.greek_language: "Malkolm" # Μάλκολμ
  name_malcolm.latin_language: "Maelcolmus" # medieval church Latin
  name_malcolm.north_italian_language: "Malcolmo" # Lombard
- name_malcolm.south_slavic_language: "Malkolm"
+ name_malcolm.serbo_croatian_language: "Malkolm"
  name_malcolm.turkish_language: "Malkolm"
  #
  name_malley: "Malley"
@@ -8264,8 +8251,8 @@
  #
  name_mattea: "Mattea" # English, North & South Italian
  name_mattea.french_language: "Mattéa"
- name_mattea.serbo_croatian_language: "Mateja"
- name_mattea.south_slavic_language: "Matija"
+ name_mattea.serbian_dialect: "Mateja"
+ name_mattea.serbo_croatian_language: "Matija"
  name_mattea.spanish_language: "Matea"
  #
  name_matthew: "Matthew"
@@ -8350,7 +8337,7 @@
  name_maurice.occitan_language: "Maurici" # Also in Catalan
  name_maurice.portuguese_language: "Maurício"
  name_maurice.scandinavian_language: "Mauritz"
- name_maurice.south_slavic_language: "Mauricij"
+ name_maurice.serbo_croatian_language: "Mauricij"
  name_maurice.spanish_language: "Mauricio"
  name_maurice.turkish_language: "Mauris"
  name_maurice.west_slavic_language: "Maurici" # Polish
@@ -8383,7 +8370,7 @@
  name_maxentius.occitan_language: "Maxenç"
  name_maxentius.portuguese_language: "Magêncio"
  name_maxentius.south_italian_language: "Massenzio"
- name_maxentius.south_slavic_language: "Maksencije"
+ name_maxentius.serbo_croatian_language: "Maksencije"
  name_maxentius.bulgarian_language: "Maksencij"
  name_maxentius.spanish_language: "Majencio"
  name_maxentius.west_slavic_language: "Maksencjusz"
@@ -8408,7 +8395,7 @@
  name_maximus.south_italian_language: "Massimo"
  name_maximus.novgorodian_dialect: "Maksimŭ"
  name_maximus.ruthenian_language: "Maksym"
- name_maximus.south_slavic_language: "Maksim"
+ name_maximus.serbo_croatian_language: "Maksim"
  name_maximus.spanish_language: "Máximo"
  name_maximus.west_slavic_language: "Maksym"
  name_maximus.west_slavic_language.diminutive: "Maks"
@@ -8819,7 +8806,7 @@
  name_muhammad.persian_language: "Muhammaḏ"
  name_muhammad.portuguese_language: "Maomé"
  name_muhammad.south_arabic_language: "Muḥammad" # محمد
- name_muhammad.south_slavic_language: "Muhamed"
+ name_muhammad.serbo_croatian_language: "Muhamed"
  name_muhammad.spanish_language: "Mahoma"
  name_muhammad.scandinavian_language: "Muhammed"
  name_muhammad.turkish_language: "Mehmed"
@@ -8860,7 +8847,7 @@
  name_murray.japanese_language: "Marei" # マレイ
  name_murray.latin_language: "Murrayus" # classical Latin
  name_murray.mandarin_language: "Mǔréi" # 穆瑞
- name_murray.south_slavic_language: "Marej"
+ name_murray.serbo_croatian_language: "Marej"
  #
  name_murtagh: "Murtagh"
  name_murtagh.gaelic_language: "Muirchertach"
@@ -8989,7 +8976,7 @@
  name_nicetas.novgorodian_dialect: "Nikĭta"
  name_nicetas.ruthenian_language: "Mykyta" # Мики́та Ukrainian
  name_nicetas.south_italian_language: "Niceta"
- name_nicetas.south_slavic_language: "Nikita"
+ name_nicetas.serbo_croatian_language: "Nikita"
  name_nicetas.spanish_language: "Niceto"
  #
  name_nicholas: "Nicholas"
@@ -9456,11 +9443,11 @@
  name_paul.portuguese_language: "Paulo"
  name_paul.ruthenian_language: "Pavlo" # Павло Ukrainian
  name_paul.scandinavian_language: "Pål"
+ name_paul.serbian_dialect: "Pavle"
  name_paul.serbo_croatian_language: "Pavao"
  name_paul.south_italian_language: "Paolo"
  name_paul.sardinian_dialect: "Pàulu"
  name_paul.sicilian_dialect: "Pàulu"
- name_paul.south_slavic_language: "Pavle"
  name_paul.spanish_language: "Pablo"
  name_paul.turkish_language: "Pavlus"
  name_paul.west_slavic_language: "Paweł" # Polish
@@ -9488,7 +9475,7 @@
  name_paulinus.portuguese_language: "Paulino"
  name_paulinus.south_italian_language: "Paolino"
  name_paulinus.spanish_language: "Paulino"
- name_paulinus.south_slavic_language: "Pavlin"
+ name_paulinus.serbo_croatian_language: "Pavlin"
  name_paulinus.west_slavic_language: "Paulin"
  #
  name_payn: "Payn"
@@ -9777,7 +9764,7 @@
  name_polyxena.romanian_language: "Polixena"
  name_polyxena.south_italian_language: "Polissena"
  name_polyxena.spanish_language: "Políxena"
- name_polyxena.south_slavic_language: "Poliksena"
+ name_polyxena.serbo_croatian_language: "Poliksena"
  name_polyxena.turkish_language: "Poliksena"
  name_polyxena.west_slavic_language: "Poliksena"
  #
@@ -9843,7 +9830,7 @@
  name_prokop.portuguese_language: "Procópio"
  name_prokop.ruthenian_language: "Prokopii" # Прокопій Ukrainian
  name_prokop.south_italian_language: "Procopio"
- name_prokop.south_slavic_language: "Prokopije"
+ name_prokop.serbo_croatian_language: "Prokopije"
  name_prokop.spanish_language: "Procopio"
  #
  name_prosdocimus: "Prosdocimus" # Latin
@@ -10124,6 +10111,8 @@
  name_raphaella.sicilian_dialect: "Rafaela"
  name_raphaella.spanish_language: "Rafaela"
  #
+ name_rappold: "Rappold"
+ #
  name_raven: "Ravan"
  name_raven.english_language: "Raven"
  name_raven.icelandic_dialect: "Hrafn"
@@ -10342,6 +10331,7 @@
  name_roderick: "Roderick"
  name_roderick.basque_language: "Errodrigo"
  name_roderick.belarusian_dialect: "Rurik" # Рурык Belarusian
+ name_roderick.bulgarian_language: "Rjurik"
  name_roderick.brythonic_language: "Rhodri"
  name_roderick.catalan_dialect: "Roderic"
  name_roderick.east_slavic_language: "Rurik" # Рюрик Russian
@@ -10356,6 +10346,7 @@
  name_roderick.scandinavian_language: "Hrǿríkr"
  name_roderick.scots_dialect: "Rory"
  name_roderick.south_italian_language: "Roderigo"
+ name_roderick.serbo_croatian_language: "Rjurik"
  name_roderick.spanish_language: "Rodrigo"
  name_roderick.spanish_language.patronym: "Rodríguez"
  name_roderick.spanish_language.diminutive: "Ruy"
@@ -10387,7 +10378,7 @@
  name_roger.portuguese_language: "Rogério"
  name_roger.south_italian_language: "Ruggero"
  name_roger.south_italian_language.diminutive: "Gerio"
- name_roger.south_slavic_language: "Rudjer"
+ name_roger.serbo_croatian_language: "Rudjer"
  name_roger.spanish_language: "Rogelio"
  name_roger.turkish_language: "Rojer"
  # 
@@ -10700,7 +10691,7 @@
  name_scipio.occitan_language: "Scipion"
  name_scipio.portuguese_language: "Cipião"
  name_scipio.south_italian_language: "Scipione"
- name_scipio.south_slavic_language: "Scipion"
+ name_scipio.serbo_croatian_language: "Scipion"
  name_scipio.spanish_language: "Escipión"
  name_scipio.west_slavic_language: "Scypion"
  #
@@ -11292,7 +11283,7 @@
  name_sveva: "Sveva"
  #
  name_svetlana: "Svetlana"
- name_svetlana.czechoslovak_language: "Světlana"
+ name_svetlana.czechslovak_language: "Světlana"
  name_svetlana.serbo_croatian_language: "Svjetlana"
  name_svetlana.ruthenian_language: "Svitlana"
  #
@@ -11558,7 +11549,7 @@
  name_theodosia.north_italian_language: "Teodosia"
  name_theodosia.portuguese_language: "Teodósia"
  name_theodosia.south_italian_language: "Teodosia"
- name_theodosia.south_slavic_language: "Teodozija"
+ name_theodosia.serbo_croatian_language: "Teodozija"
  name_theodosia.spanish_language: "Teodosia"
  name_theodosia.ruthenian_language: "Feodosiya"
  name_theodosia.west_slavic_language: "Teodozja"
@@ -11885,7 +11876,7 @@
  name_urraca.basque_language: "Urraka"
  name_urraca.french_language: "Urraque"
  name_urraca.galician_dialect: "Orraca"
- name_urraca.south_slavic_language: "Uraka"
+ name_urraca.serbo_croatian_language: "Uraka"
  name_urraca.west_slavic_language: "Urraka"
  #
  name_ursa: "Ursa" # Latin
@@ -11958,7 +11949,7 @@
  name_valerian.ruthenian_language: "Valerii" # Валерій Ukrainian
  name_valerian.south_italian_language: "Valeriano"
  name_valerian.spanish_language: "Valeriano"
- name_valerian.south_slavic_language: "Valerijan"
+ name_valerian.serbo_croatian_language: "Valerijan"
  name_valerian.west_slavic_language: "Walerian" # Polish
  #
  name_valor: "Valor" # Catalan, Latin, Portuguese & Spanish
@@ -12638,7 +12629,7 @@
  name_xenia: "Xenia"
  name_xenia.greek_language: "Xénia"
  name_xenia.west_slavic_language: "Ksenia"
- name_xenia.czechoslovak_language: "Xenie"
+ name_xenia.czechslovak_language: "Xenie"
  #
  name_xwaja: "Xwāja"
  name_xwaja.arabic_language: "Ḵawājā"
@@ -15603,6 +15594,7 @@
  name_baydu: "Baydu"
  name_berke: "Berke"
  name_boke: "Böke"
+ name_bolot: "Bolot"
  name_buqa: "Buqa"
  name_buri: "Büri"
  name_burgul: "Burgul"
@@ -15617,6 +15609,7 @@
  name_gaykhatu: "Gaikhalt"
  name_genghis: "Činggis"
  name_ghazan: "Ghazan"
+ name_hugeci: "Hügeči"
  name_hulegu: "Hülegü"
  name_ichil: "Ichil"
  name_jinzhier: "Jinzhier"
@@ -15663,6 +15656,7 @@
  name_tughluq: "Tughluq"
  name_tumbinai: "Tumbinai"
  name_ulaghchi: "Ulaghchi"
+ name_vajravarmi: "Vaǰravarmi"
  name_yasaur: "Yasa'ur"
  name_yesu: "Yesü"
  name_yesun: "Yesün"
