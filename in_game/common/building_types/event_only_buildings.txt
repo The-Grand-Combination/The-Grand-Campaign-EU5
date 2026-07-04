@@ -778,7 +778,7 @@ globe_theatre = {
 		custom_tooltip = globe_theatre_why
 		OR = {
 			tag = ENG
-			tag = GBR
+			tag = GBI
 		}
 	}
 	

@@ -1,5 +1,6 @@
 ﻿country_name_construction = {
 	type = country
+	# Example: the Papal States
 	text = {
 		localization_key = country_name_construction_name
 		trigger = {
@@ -11,39 +12,19 @@
 			}
 		}
 	}
+	# Example: United Kingdom of Great Britain. It will show United Kingdom on map instead.
 	text = {
 		localization_key = country_name_construction_prefix_rank_of_name_but_map_is_just_prefix_rank
 		trigger = {
 			OR = {
-				AND = {
-					tag = GBR
-					coa_def_GBR_uk_trigger = yes
-				}
-				AND = {
-					tag = MAM
-					OR = {
-						country_rank = country_rank:rank_empire
-						country_rank = country_rank:rank_kingdom
-					}
-					religion.group = religion_group:muslim
-				}
-				AND = {
-					tag = DAU
-					OR = {
-						country_rank = country_rank:rank_duchy
-						country_rank = country_rank:rank_county
-					}
-				}
-				AND = {
-					tag = PAL
-					OR = {
-						country_rank = country_rank:rank_duchy
-						country_rank = country_rank:rank_county
-					}
-				}
+				country_rank = country_rank:rank_kingdom 
+				country_rank = country_rank:rank_empire
 			}
+			tag = GBI
 		}
 	}
+
+	# Example: Mali Empire. Without this key it would say Malian Empire instead.
 	text = {
 		localization_key = country_name_construction_prefix_name_rank
 		trigger = {
@@ -55,6 +36,8 @@
 			tag = MAL
 		}
 	}
+
+	# Example: Great Quing
 	text = {
 		localization_key = country_name_construction_prefix_name
 		trigger = {
@@ -62,6 +45,8 @@
 			court_language ?= { language_family ?= language_family:chinese_language_family }
 		}
 	}
+
+	# Example: Russian Empire
 	text = {
 		localization_key = country_name_construction_prefix_adjective_rank
 		trigger = {
@@ -87,11 +72,6 @@
 				}
 				
 				AND = {
-					tag = HSA
-					government_type = government_type:republic
-				}
-				
-				AND = {
 					has_reform = government_reform:military_order_reform
 					OR = {
 						country_rank = country_rank:rank_kingdom
@@ -106,6 +86,8 @@
 			}
 		}
 	}
+
+	# Example: Kingdom of Prussia
 	text = {
 		localization_key = country_name_construction_prefix_rank_of_name
 		fallback = yes
