@@ -102991,7 +102991,7 @@ o_ahu = { # 27809 people as of the 1835 census, GFM estimates 1696 Americans (fo
 	define_pop = {	type = peasants	size = 0.424	culture = english religion = calvinist } # yank laborers
 	define_pop = {	type = burghers	size = 0.424	culture = english religion = calvinist } # yank artisans
 	define_pop = {	type = soldiers	size = 0.424	culture = english religion = calvinist } # yank soldiers
-	define_pop = {	type = clergy	size = 0.035	culture = english religion = calvinist } # yank clergymen/intellectuals
+	define_pop = {	type = clergy	size = 0.357	culture = english religion = calvinist } # yank clergymen/intellectuals
 
 	define_pop = {	type = soldiers	size = 1.920	culture = kanaka_maoli_culture	religion = calvinist }
 	define_pop = {	type = nobles	size = 0.520	culture = kanaka_maoli_culture	religion = calvinist } 
