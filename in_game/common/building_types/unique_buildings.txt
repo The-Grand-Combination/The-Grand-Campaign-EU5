@@ -1848,7 +1848,7 @@ royal_society = {
 			text = royal_society_why
 			OR = {
 				tag = ENG
-				tag = GBR
+				tag = GBI
 			}
 			has_variable = royal_society
 		}
@@ -1910,7 +1910,7 @@ royal_academy_of_arts = {
 			text = royal_academy_of_arts_why
 			OR = {
 				tag = ENG
-				tag = GBR
+				tag = GBI
 			}
 			has_variable = royal_academy_of_arts
 		}

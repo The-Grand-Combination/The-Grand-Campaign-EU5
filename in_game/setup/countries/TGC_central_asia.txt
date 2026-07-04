@@ -223,7 +223,7 @@ HRT = {
 	color = map_STN
 	color2 = rgb { 16 41 202 }
 
-	culture_definition = bengali
+	culture_definition = afghan_culture
 	religion_definition = sunni
 }
 

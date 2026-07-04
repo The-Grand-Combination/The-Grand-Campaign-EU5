@@ -18,6 +18,10 @@
  country_name_construction_sultanate_map: "$country_name_construction_prefix_rank_of_name_map$"
  country_name_construction_crown: "$country_name_construction_prefix_rank_of_name$"
  country_name_construction_crown_map: "$country_name_construction_prefix_rank_of_name_map$"
+ country_name_construction_ROM_republic: "$ROM_republic_long$"
+ country_name_construction_ROM_republic_map: "$ROM_republic_long$"
+ country_name_construction_BYZ_greek: "$BYZ_greek_long$"
+ country_name_construction_BYZ_greek_map: "$BYZ_greek_long$"
  # Do not remove any construction as they might be used in different languages
  COUNTRY_NAME_ABBREVIATION: "$NAME$."
  #
@@ -42,25 +46,40 @@
  country_rank_colony_ADJ: "colonial" 
  country_rank_colony_ruler_male: "Governor" 
  country_rank_colony_ruler_female: "Governess" 
+ country_rank_colony_ruler_male.short: "Gov."
+ country_rank_colony_ruler_female.short: "Gov."
  #
  rank_empire: "Empire"
  rank_empire_ADJ: "imperial"
  rank_empire_ruler_male: "Emperor"
  rank_empire_ruler_female: "Empress"
+ rank_empire_ruler_male.short: "Emp."
+ rank_empire_ruler_female.short: "Emp."
  #
  rank_empire_catholic_spain: "Empire"
  rank_empire_catholic_spain_ADJ: "imperial"
- rank_empire_catholic_spain_ruler_male: "Most Catholic Emperor"
- rank_empire_catholic_spain_ruler_female: "Most Catholic Empress"
+ rank_empire_catholic_spain_ruler_male.long: "Most Catholic Emperor"
+ rank_empire_catholic_spain_ruler_female.long: "Most Catholic Empress"
+ rank_empire_catholic_spain_ruler_male: "Emperor"
+ rank_empire_catholic_spain_ruler_female: "Empress"
+ rank_empire_catholic_spain_ruler_male.short: "Emp."
+ rank_empire_catholic_spain_ruler_female.short: "Emp."
  #
  rank_empire_revolutionary: "$rank_empire$"
  rank_empire_revolutionary_prefix: "$revolutionary_prefix$"
  rank_empire_revolutionary_ADJ: "$revolutionary_ADJ$"
  rank_empire_revolutionary_ruler_male: "Emperor"
  rank_empire_revolutionary_ruler_female: "Empress"
+ rank_empire_revolutionary_ruler_male.short: "Emp."
+ rank_empire_revolutionary_ruler_female.short: "Emp."
  #
  rank_empire_latin_empire: "$rank_empire$"
  rank_empire_latin_empire_prefix: "Latin"
+ rank_empire_latin_empire_ADJ: "imperial"
+ rank_empire_latin_empire_ruler_male: "Emperor"
+ rank_empire_latin_empire_ruler_female: "Empress"
+ rank_empire_latin_empire_ruler_male.short: "Emp."
+ rank_empire_latin_empire_ruler_female.short: "Emp."
  #
  rank_empire_muslim: "Caliphate"
  rank_empire_muslim_ADJ: "caliphal"
@@ -233,6 +252,8 @@
  rank_empire_byzantine: "$rank_empire$"
  rank_empire_byzantine_ruler_male: "Basileus"
  rank_empire_byzantine_ruler_female: "Basilissa" 
+ rank_empire_byzantine_ruler_male.short: "Bas."
+ rank_empire_byzantine_ruler_female.short: "Bas." 
  #
  rank_empire_turkish: "$rank_empire$"
  rank_empire_turkish_ruler_male: "Padişah"
@@ -242,9 +263,23 @@
  rank_empire_nahua_ruler_male: "Huēyi Tlahtoāni"
  rank_empire_nahua_ruler_female: "Huēyi Cihuātlahtoāni"
  #
+ rank_empire_serbo_croatian: "Carstvo"
+ rank_empire_serbo_croatian_ruler_male: "Car"
+ rank_empire_serbo_croatian_ruler_female: "Carica"
+ #
+ rank_empire_bulgarian: "Tsardom"
+ rank_empire_bulgarian_ruler_male: "Tsar"
+ rank_empire_bulgarian_ruler_female: "Tsaritsa"
+ #
+ rank_empire_slovene: "Cesarstvo"
+ rank_empire_slovene_ruler_male: "Cesar"
+ rank_empire_slovene_ruler_female: "Cesarica"
+ #
  country_rank_governor: "Governorship"
  country_rank_governor_ruler_male: "Governor" 
- country_rank_governor_ruler_female: "Governess" 
+ country_rank_governor_ruler_female: "Governess"
+ country_rank_governor_ruler_male.short: "Gov."
+ country_rank_governor_ruler_female.short: "Gov."
  ##############################################################
  #
  rank_kingdom_bank_prefix: "Great"
@@ -267,19 +302,16 @@
  #
  rank_kingdom_catholic_spain: "$rank_kingdom_crown$"
  rank_kingdom_catholic_spain_ADJ: "royal"
- rank_kingdom_catholic_spain_ruler_male: "Most Catholic King"
- rank_kingdom_catholic_spain_ruler_female: "Most Catholic Queen"
+ rank_kingdom_catholic_spain_ruler_male.long: "Most Catholic King"
+ rank_kingdom_catholic_spain_ruler_female.long: "Most Catholic Queen"
+ rank_kingdom_catholic_spain_ruler_male: "King"
+ rank_kingdom_catholic_spain_ruler_female: "Queen"
  #
  rank_kingdom_commonwealth_british_republic: "Commonwealth"
  rank_kingdom_commonwealth_british_republic_ruler_male: "Lord Protector"
  rank_kingdom_commonwealth_british_republic_ruler_female: "Lady Protectress"
  #
  rank_kingdom_commonwealth_polish_lithuanian: "Commonwealth"
- #
- rank_kingdom_celtic_welsh: "Brenhiniaeth"
- rank_kingdom_celtic_welsh_ADJ: "brenhinol"
- rank_kingdom_celtic_welsh_ruler_male: "Brenin"
- rank_kingdom_celtic_welsh_ruler_female: "Brenhines"
  #
  rank_kingdom_persian: "Realm"
  rank_kingdom_persian_ruler_male: "Šâh"
@@ -298,17 +330,17 @@
  rank_kingdom_maya_ruler_male: "K'uhul Ajaw"
  rank_kingdom_maya_ruler_female: "$rank_kingdom_maya_ruler_male$"
  #
- rank_kingdom_celtic: "Kingship"
- rank_kingdom_celtic_ADJ: "kingly"
- rank_kingdom_celtic_prefix: "High"
- rank_kingdom_celtic_ruler_male: "High King"
- rank_kingdom_celtic_ruler_female: "High Queen"
- #
  rank_kingdom_united_states: "States"
  rank_kingdom_united_states_prefix: "United"
  rank_kingdom_united_states_ADJ: "presidential"
  rank_kingdom_united_states_ruler_male: "President"
  rank_kingdom_united_states_ruler_female: "President"
+ #
+ rank_kingdom_states: "States"
+ rank_kingdom_states_prefix: "Confederate"
+ rank_kingdom_states_ADJ: "presidential"
+ rank_kingdom_states_ruler_male: "President"
+ rank_kingdom_states_ruler_female: "President"
  #
  rank_kingdom_papacy: "Papacy"
  rank_kingdom_papacy_ADJ: "papal"
@@ -402,6 +434,21 @@
  rank_duchy_muslim_hafsids_ADJ: "$rank_duchy_muslim_ADJ$"
  rank_duchy_muslim_hafsids_ruler_male: "$rank_duchy_muslim_ruler_male$"
  rank_duchy_muslim_hafsids_ruler_female: "$rank_duchy_muslim_ruler_female$"
+ #
+ country_rank_despotate: "Despotate"
+ country_rank_despotate_ruler_male: "Despot"
+ country_rank_despotate_ruler_female: "Despotess"
+ #
+ rank_duchy_serbo_croatian: "Kneževina"
+ rank_duchy_serbo_croatian_ruler_male: "Knez"
+ rank_duchy_serbo_croatian_ruler_female: "Kneginja"
+ #
+ rank_duchy_bosnian_banate: "Banate"
+ rank_duchy_bosnian_banate_ruler_male: "Ban"
+ #
+ rank_duchy_karvuna_despotate: "$country_rank_despotate$"
+ rank_duchy_karvuna_despotate_ruler_male: "$country_rank_despotate_ruler_male$"
+ rank_duchy_karvuna_despotate_ruler_female: "$country_rank_despotate_ruler_female$"
  #
  rank_kingdom_muslim: "Sultanate"
  rank_kingdom_muslim_ruler_male: "Sultan"
@@ -497,11 +544,6 @@
  rank_kingdom_republic_high_alemannic_ruler_male: "Schultheiß"
  rank_kingdom_republic_high_alemannic_ruler_female: "Schultheißin"
  #
- rank_kingdom_conquistador: "Conquistadors"
- rank_kingdom_conquistador_ADJ: "conquistadorial"
- rank_kingdom_conquistador_ruler_male: "Conquistador"
- rank_kingdom_conquistador_ruler_female: "Conquistadora"
- #
 
  rank_kingdom_kanem_ruler_male: "$rank_empire_kanem_ruler_male$"
  rank_kingdom_kanem: "$rank_kingdom$"
@@ -562,12 +604,24 @@
  rank_kingdom_russian_prince: "Grand Principality"
  rank_kingdom_russian_prince_ruler_male: "Grand Prince"
  rank_kingdom_russian_prince_ruler_female: "Grand Princess"
+ rank_kingdom_russian_prince_ruler_male.short: "Prince"
+ rank_kingdom_russian_prince_ruler_female.short: "Princess"
+ #
+ rank_kingdom_serbo_croatian: "Kraljevina"
+ rank_kingdom_serbo_croatian_ruler_male: "Kralj"
+ rank_kingdom_serbo_croatian_ruler_female: "Kraljica"
+ #
+ rank_kingdom_bulgarian: "Kralstvo"
+ rank_kingdom_bulgarian_ruler_male: "Kral"
+ rank_kingdom_bulgarian_ruler_female: "Kralitsa"
  ##############################################################
  #
- rank_kingdom_grand_duchy_LIT: "Grand Duchy"
- rank_kingdom_grand_duchy_LIT_ADJ: "grand ducal"
- rank_kingdom_grand_duchy_LIT_ruler_male: "Grand Duke"
- rank_kingdom_grand_duchy_LIT_ruler_female: "Grand Duchess"
+ rank_kingdom_grand_duchy_FIN: "Grand Duchy"
+ rank_kingdom_grand_duchy_FIN_ADJ: "grand ducal"
+ rank_kingdom_grand_duchy_FIN_ruler_male: "Grand Duke"
+ rank_kingdom_grand_duchy_FIN_ruler_female: "Grand Duchess"
+ rank_kingdom_grand_duchy_FIN_ruler_male.short: "Duke"
+ rank_kingdom_grand_duchy_FIN_ruler_female.short: "Duchess"
  #
  rank_duchy: "Duchy"
  rank_duchy_ADJ: "ducal"
@@ -579,22 +633,6 @@
  rank_duchy_revolutionary_ADJ: "$revolutionary_ADJ$"
  rank_duchy_revolutionary_ruler_male: "Duke"
  rank_duchy_revolutionary_ruler_female: "Duchess"
- #
- rank_duchy_dauphiny: "Dauphiné"
- rank_duchy_dauphiny_ruler_male: "Dauphin" 
- rank_duchy_dauphiny_abbreviation: "Dau."
- rank_duchy_dauphiny_ruler_female: "Dauphine" 
- #
- rank_duchy_palatinate: "Palatinate"
- rank_duchy_palatinate_ADJ: "palatine"
- rank_duchy_palatinate_abbreviation: "Pal."
- rank_duchy_palatinate_ruler_male: "Palatine"
- rank_duchy_palatinate_ruler_female: "Palatine"
- #
- rank_duchy_electorate: "Electorate"
- rank_duchy_electorate_ADJ: "electoral"
- rank_duchy_electorate_ruler_male: "Elector"
- rank_duchy_electorate_ruler_female: "Electress"
  #
  rank_duchy_free_city: "City"
  rank_duchy_free_city_prefix: "Free"
@@ -635,8 +673,8 @@
  rank_duchy_pirate_republic: "$rank_duchy_republic$"
  rank_duchy_pirate_republic_prefix: "$pirate_prefix$"
  rank_duchy_pirate_republic_ADJ: "$pirate_ADJ$"
- rank_duchy_pirate_republic_ruler_male: "Grand Captain"
- rank_duchy_pirate_republic_ruler_female: "Grand Captain"
+ rank_duchy_pirate_republic_ruler_male: "Grand [ROOT.GetCountry.GetGovernment.GetRuler.GetCulture.Custom('character_title_prefix_captain_female')]"
+ rank_duchy_pirate_republic_ruler_female: "Grand [ROOT.GetCountry.GetGovernment.GetRuler.GetCulture.Custom('character_title_prefix_captain_female')]"
  #
  rank_duchy_bank: "Bank"
  rank_duchy_bank_ruler_male: "Chairman"
@@ -669,6 +707,8 @@
  rank_duchy_grand_principality_slavic_ADJ: "princely"
  rank_duchy_grand_principality_slavic_ruler_male: "Grand Prince"
  rank_duchy_grand_principality_slavic_ruler_female: "Grand Princess"
+ rank_duchy_grand_principality_slavic_ruler_male.short: "Prince"
+ rank_duchy_grand_principality_slavic_ruler_female.short: "Princess"
  #
  rank_duchy_voivode: "Princedom"
  rank_duchy_voivode_ruler_male: "Prince"
@@ -689,6 +729,24 @@
  rank_duchy_celtic_irish: "Ríocht"
  rank_duchy_celtic_irish_ruler_male: "Rí"
  rank_duchy_celtic_irish_ruler_female: "Banríon"
+ #
+ rank_duchy_russian_governorate: "Governorate"
+ rank_duchy_russian_governorate_ruler_male: "Governor"
+ rank_duchy_russian_governorate_ruler_female: "Governor"
+ country_rank_governor_ruler_male.short: "Gov."
+ country_rank_governor_ruler_female.short: "Gov."
+ #
+ rank_kingdom_congressional: "Congress Kingdom"
+ rank_kingdom_congressional_ruler_male: "Namestnik"
+ rank_kingdom_congressional_ruler_female: "Namestnik"
+ #
+ rank_grand_duchy_russian: "Grand Duchy"
+ rank_grand_duchy_russian_ruler_male: "Gubernator-General"
+ rank_grand_duchy_russian_ruler_female: "Gubernator-General"
+ #
+ rank_grand_duchy_prussian: "Grand Duchy"
+ rank_grand_duchy_prussian_ruler_male: "Duke-Governor"
+ rank_grand_duchy_prussian_ruler_female: "Duchess-Governor"
  #
  rank_duchy_horde: "Horde"
  #
@@ -865,8 +923,8 @@
  rank_county_pirate_republic: "$rank_county_republic$"
  rank_county_pirate_republic_prefix: "$pirate_prefix$"
  rank_county_pirate_republic_ADJ: "$pirate_ADJ$"
- rank_county_pirate_republic_ruler_male: "Captain"
- rank_county_pirate_republic_ruler_female: "Captain"
+ rank_county_pirate_republic_ruler_male: "[ROOT.GetCountry.GetGovernment.GetRuler.GetCulture.Custom('character_title_prefix_captain')]"
+ rank_county_pirate_republic_ruler_female: "[ROOT.GetCountry.GetGovernment.GetRuler.GetCulture.Custom('character_title_prefix_captain_female')]"
  #
  rank_county_republic_revolutionary: "$rank_county_republic$"
  rank_county_republic_revolutionary_prefix: "$revolutionary_prefix$"
@@ -953,6 +1011,8 @@
  rank_county_order: "Bailiwick"
  rank_county_order_ruler_male: "Commander"
  rank_county_order_ruler_female: "Commander"
+ rank_county_order_ruler_male.short: "Cmdr."
+ rank_county_order_ruler_female.short: "Cmdr."
  #
  rank_county_theocracy_maya: "$rank_county_kuchkabal$"
  rank_county_theocracy_maya_ruler_male: "Ah K'in"
@@ -973,6 +1033,18 @@
  rank_county_thai_ruler_male: "Chao"
  rank_county_thai_ruler_female: "Chao"
  #
+ rank_county_serbo_croatian: "Grofovija"
+ rank_county_serbo_croatian_ruler_male: "Grof"
+ rank_county_serbo_croatian_ruler_female: "Grofica"
+ #
+ rank_county_bulgarian: "Grafstvo"
+ rank_county_bulgarian_ruler_male: "Graf"
+ rank_county_bulgarian_ruler_female: "Grafinya"
+ #
+ rank_county_slovene: "Grofija"
+ rank_county_slovene_ruler_male: "Grof"
+ rank_county_slovene_ruler_female: "Grofica"
+ #
  country_flavor_heir_successor: "Successor"
  country_flavor_heir_successor_female: "Successor"
  country_flavor_heir_tanist: "Tanist"
@@ -980,7 +1052,9 @@
  country_flavor_heir_viscount: "Viscount"
  country_flavor_heir_viscount_female: "Viscountess"
  country_flavor_heir_crown_prince: "Crown Prince"
+ country_flavor_heir_crown_prince.short: "Prince"
  country_flavor_heir_crown_prince_female: "Crown Princess"
+ country_flavor_heir_crown_prince_female.short: "Princess"
  country_flavor_heir: "Heir" 
  country_flavor_heir_female: "Heiress" 
  #
@@ -1112,6 +1186,8 @@
  country_rank_cossacks_reform: "Hetmanate"
  country_rank_cossacks_reform_ruler: "Hetman"
  #
+ rank_victual_brothers: "Victual Brothers"
+ #
  country_rank_empire_cossacks_reform: "Grand Hetmanate"
  country_rank_empire_cossacks_reform_ruler: "Grand Hetman"
  ##############################################################
@@ -1149,7 +1225,6 @@
  government_type_list_heir_selection_row: "[heir_selections|e]: $VAL$"
  government_type_list_laws_row: "[laws|e]: $VAL$"
  government_type_list_policies_row: "[policies|e]: $VAL$"
- government_type_list_estate_privileges_row: "[estate_privileges|e]: $VAL$"
  monarchy_desc: "A $monarchy$ is a [government_type|e] based upon the principle of undivided personal sovereignty, where the [ruler|e] is the first among the elites. The [heir|e] is normally determined by the [dynasty|e] of the $game_concept_monarch$ and in most cases they rule for life.\n\n$game_concept_monarchs$ can use [royal_marriages|e] to secure [alliances|e], and can even inherit foreign [countries|e] through [personal_unions|e]. However, succession is often a troublesome matter, and Monarchies may easily fall into [regencies|e] or under the influence of foreign $game_concept_dynasties$."
  republic_desc: "A $republic$ is a [government_type|e] where the [rulers|e] are chosen by [election|e] to serve as the representants of the citizen body for a set period of time. Depending on the [heir_selection|e] the $game_concept_ruler$ may belong to any of the [estates|e].\n\nThe strength of the political institutions makes Republics more resilient to inheritance issues, but the less personal nature of rule limits the diplomatic tools at their disposal. As such, [dynasties|e] play a lesser role and Republics cannot benefit from [royal_marriages|e]."
  theocracy_desc: "A $theocracy$ is a [government_type|e] based on the principle of divine sovereignty, where the [ruler|e] is issued from the servants of the faith and secular matters are subordinated to religious authority.\n\n$game_concept_rulers$ are usually chosen to rule for life by some form of [election|e], which allows for a less disruptive transfer of power."

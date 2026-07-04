@@ -3573,7 +3573,7 @@ countries = {
 				tolerated_cultures = { }
 
 				court_language = norman_dialect
-				country_rank = rank_kingdom
+				country_rank = rank_duchy
 				capital = tallinn
 
 				include = "expl_western_europe"
@@ -3583,7 +3583,7 @@ countries = {
 				}
 			}
 
-			LIV = { #Livonian Order
+			LIV = { #Livland
 				own_control_core = {
 					parnu karksi poltsamaa saarde suure_jaani viljandi
 					cesis aluksne gulbene rauna valmiera
@@ -3635,7 +3635,7 @@ countries = {
 				tolerated_cultures = { }
 
 				court_language = norman_dialect
-				country_rank = rank_kingdom
+				country_rank = rank_duchy
 				capital = riga
 
 				include = "expl_western_europe"
@@ -3697,7 +3697,7 @@ countries = {
 				tolerated_cultures = { }
 
 				court_language = norman_dialect
-				country_rank = rank_kingdom
+				country_rank = rank_duchy
 				capital = jelgava
 
 				include = "expl_western_europe"
@@ -3722,11 +3722,11 @@ countries = {
 				own_control_integrated = {
 				}
 
-				include = "catholic_bishopric"
 				include = "expl_northern_europe"
 
 				government = {
-					type = theocracy
+					type = monarchy
+					heir_selection = cognatic_primogeniture
 
 					ruler = kur_johann_ii
 					ruler_term = {	character = kur_johann_ii start_date = 1332.1.1 regnal_number = 2	}
@@ -3739,6 +3739,7 @@ countries = {
 				}
 
 				capital = jelgava
+				country_rank = rank_duchy
 			}
 
 			KRA = {
@@ -4649,6 +4650,8 @@ countries = {
 				our_cores_conquered_by_others = {
 				}
 				capital = abo
+
+				country_rank = rank_duchy
 
 				include = "catholic_monarchy_not_present"
 				include = "expl_scandinavia"
@@ -10584,7 +10587,7 @@ countries = {
 				include = "expl_indian_trade_route"
 				include = "catholic_monarchy"
 				government = {
-					type = monarchy
+					type = republic
 					heir_selection = cognatic_primogeniture
 
 					ruler = ach_robert_taranto
@@ -10632,7 +10635,7 @@ countries = {
 				include = "expl_indian_trade_route"
 				include = "catholic_monarchy"
 				government = {
-					type = monarchy
+					type = theocracy
 					heir_selection = cognatic_primogeniture
 
 					ruler = ach_robert_taranto
@@ -11379,7 +11382,7 @@ countries = {
 			}
 
 			#Netherlands
-			NET = {
+			NED = {
 				own_control_core = {
 					the_hague leiden rotterdam amsterdam alkmaar dordrecht geertruidenberg hoorn
 					arnhem nijmegen tiel harderwijk apeldoorn wolvega
@@ -11429,7 +11432,7 @@ countries = {
 						feudal_nobility
 					}
 				}
-				country_rank = rank_county
+				country_rank = rank_kingdom
 				capital = amsterdam
 
 				accepted_cultures = {
@@ -11525,7 +11528,7 @@ countries = {
 					aristocracy_vs_plutocracy = -20
 					land_vs_naval = -20
 				}
-				country_rank = rank_duchy
+				country_rank = rank_kingdom
 				dynasty = reginar_dynasty
 				capital = brussels
 
@@ -12500,13 +12503,13 @@ countries = {
 					edfu esna qena hiw qus
 					asyut el_balyana el_buwit akhmim manfalut
 					minya ashmunayn el_bahnasa sharuna tahna
-					kharga bahariyya baris el_qasr qasr_farafra siwa
+					kharga bahariyya baris el_qasr qasr_farafra
 				}
 
 				own_control_integrated = {
 					chania hagios_pavlos rethymno candia gergeri elounda viannos siteia
 					el_arish nekhel qatya warrada
-					matruh sallum tobruk
+					matruh sallum
 					el_qoseir ras_gharib safaga
 					el_jundi faran nuweiba saint_katrine
 					ayntab dluk
@@ -17741,7 +17744,7 @@ countries = {
 				}
 
 				tolerated_cultures = {
-					abazin_culture
+					afghan
 				}
 
 				capital = tuapse
@@ -18156,6 +18159,7 @@ countries = {
 				capital = tuapse
 			}
 
+			# Sultanate of Bukhara
 			BKH = {
 				own_control_core = {
 					kelif basand akhsisek khoja_idat_kala navidakh nasaf amol_turkmenabad
@@ -18174,6 +18178,9 @@ countries = {
 				tolerated_cultures = {
 					abazin_culture
 				}
+
+				country_rank = rank_duchy
+
 
 				capital = tuapse
 			}
@@ -18294,6 +18301,7 @@ countries = {
 				capital = tuapse
 			}
 
+			# Sikh Empire
 			SKH = {
 				own_control_core = {
 					pangi_range hindu_kush10
@@ -18319,6 +18327,8 @@ countries = {
 				tolerated_cultures = {
 					abazin_culture
 				}
+
+				country_rank = rank_empire
 
 				capital = tuapse
 			}

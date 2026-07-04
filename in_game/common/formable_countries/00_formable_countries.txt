@@ -2001,34 +2001,6 @@ GCF_f = {
 #	}
 #}
 #
-#USA_f = {
-#	level = 4
-#	required_locations_fraction = 0.35
-#	rule = historical
-#
-#	potential = {
-#		culture ?= {
-#			is_culture_native_american = no
-#			has_culture_group = culture_group:british_group
-#		}
-#	}
-#
-#	allow = {
-#	}
-#	
-#	name = USA
-#	flag = USA
-#	adjective = USA_ADJ
-#	tag = USA
-#	color = map_USA
-#
-#	regions = {
-#		east_coast_region
-#	}
-#	form_effect = {
-#	}
-#}
-#
 #CAN_f = {
 #	level = 3
 #	required_locations_fraction = 0.35
@@ -2055,41 +2027,6 @@ GCF_f = {
 #
 #	regions = {
 #		canada_region
-#	}
-#	form_effect = {
-#	}
-#}
-#
-#MEX_f = {
-#	level = 3
-#	required_locations_fraction = 0.5
-#	rule = historical
-#
-#	potential = {
-#		OR = {			
-#			culture ?= { has_culture_group = culture_group:iberian_group }
-#			AND = {
-#				culture = { is_culture_native_american = yes }
-#				religion.group = religion_group:christian
-#			}
-#		}
-#		culture ?= {
-#			
-#			
-#		}
-#	}
-#
-#	allow = {
-#	}
-#	
-#	name = MEX
-#	flag = MEX
-#	adjective = MEX_ADJ
-#	tag = MEX
-#	color = map_MEX
-#
-#	regions = {
-#		mesoamerica_region
 #	}
 #	form_effect = {
 #	}
@@ -2172,42 +2109,6 @@ GCF_f = {
 #		nepal_area
 #	}
 #	form_effect = {
-#	}
-#}
-#
-#MUG_f = {
-#	level = 4
-#	required_locations_fraction = 0.8
-#	rule = historical
-#	
-#	potential = {
-#		religion.group = religion_group:muslim
-#		OR = {
-#			culture = { has_culture_group = culture_group:iranian_group }
-#			culture = { has_culture_group = culture_group:turkic_group }
-#			culture.language = language:afghani_language
-#		}
-#	}
-#
-#	allow = {
-#		owns = location:delhi
-#		owns = location:agra
-#		owns = location:lahore
-#	}
-#	
-#	name = MUG
-#	flag = MUG
-#	adjective = MUG_ADJ
-#	tag = MUG
-#	color = map_MUG
-#	regions = {
-#		hindustan_region
-#	}
-#	form_effect = {
-#		if = {
-#			limit = { country_rank_level < 4 }
-#			set_country_rank_effect = { rank = country_rank:rank_empire }
-#		}
 #	}
 #}
 #
