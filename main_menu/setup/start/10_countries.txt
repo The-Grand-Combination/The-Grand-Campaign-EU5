@@ -19077,11 +19077,8 @@ countries = {
 				include = "polynesian_monarchy"
 				include = "expl_polynesia"
 
-				government = {
-					ruler_term = {	 character = haw_kalapana_pili start_date = 1250.1.1 end_date = 1270.1.1 regnal_number = 1	}
-					ruler_term = {	 character = haw_kahaimoelea_pili start_date = 1270.1.1 end_date = 1300.1.1 regnal_number = 1	}
-					ruler_term = {	 character = haw_kalaunuiohua_pili start_date = 1300.1.1 regnal_number = 1	}
-					ruler = haw_kalaunuiohua_pili
+				government = { # ALL OF THIS NEEDS TO BE CHANGED
+					ruler = random
 				}
 			}
 
@@ -19096,7 +19093,7 @@ countries = {
 
 				include = "polynesian_monarchy"
 				include = "expl_polynesia"
-				government = {
+				government = {  # ALL OF THIS NEEDS TO BE CHANGED
 					ruler = random
 				}
 				capital = tongatapu
@@ -19111,7 +19108,7 @@ countries = {
 
 				include = "polynesian_monarchy"
 				include = "expl_polynesia"
-				government = {
+				government = {  # ALL OF THIS NEEDS TO BE CHANGED
 					ruler = random
 				}
 				capital = yap
@@ -19126,7 +19123,7 @@ countries = {
 
 				include = "polynesian_monarchy"
 				include = "expl_polynesia"
-				government = {
+				government = {  # ALL OF THIS NEEDS TO BE CHANGED
 					ruler = random
 				}
 				capital = savaii
