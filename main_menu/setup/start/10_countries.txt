@@ -19080,6 +19080,8 @@ countries = {
 				government = { # ALL OF THIS NEEDS TO BE CHANGED
 					ruler = random
 				}
+				capital = lahaina
+
 			}
 
 			# --- New Zealand ---
