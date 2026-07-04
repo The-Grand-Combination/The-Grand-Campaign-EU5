@@ -1,0 +1,7 @@
+HAW = {
+	color  = map_hawaii
+	color2 = rgb {  50 128  84 }
+
+	culture_definition = kanaka_maoli_culture
+	religion_definition = calvinist
+}
