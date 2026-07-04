@@ -19092,12 +19092,17 @@ countries = {
 				}
 				capital = lahaina
 
+				country_rank = rank_kingdom
+				starting_technology_level = 3
+
+
+
 			}
 
 			# --- New Zealand ---
 			# --- Tonga ---
-			#Tuʻi Tonga - TOG
-			TOG = { #https://en.wikipedia.org/wiki/Tu%CA%BBi_Tonga_Empire
+			# Tonga - TOG
+			TOG = { 
 
 				own_control_core = {
 					tongatapu vauvau haapai
@@ -19112,7 +19117,7 @@ countries = {
 			}
 			# --- Yap ---
 			#Yap - YAP
-			YAP = { #https://en.wikipedia.org/wiki/Yapese_Empire
+			YAP = { 
 				own_control_core = {
 					yap ulithi_atoll
 					#faraulep_atoll woleai_atoll lamotrek_atoll
@@ -19128,7 +19133,7 @@ countries = {
 
 			# --- Samoa ---
 			#Samoa - SAM
-			SAM = { #https://en.wikipedia.org/wiki/History_of_Samoa
+			SAM = {
 				own_control_core = {
 					savaii upolu tutuila
 				}
@@ -19139,6 +19144,60 @@ countries = {
 					ruler = random
 				}
 				capital = savaii
+			}
+
+			# --- The Rest of Polynesia --- # NOTE that they only control the atolls because EU5 added them for some god forsaken reason and without giving them to their nation it looks super ugly
+			#Tahiti - TAH	
+			TAH = { 
+				own_control_core = {
+					mehetia tetiaroa_atoll moorea moorea_atoll tahiti tahiti_atoll
+				}
+
+				include = "polynesian_monarchy"
+				include = "expl_polynesia"
+				government = {  # ALL OF THIS NEEDS TO BE CHANGED
+					ruler = random
+				}
+				capital = tahiti
+			}
+			#Bora Bora - BBR
+			BBR = { 
+				own_control_core = {
+					pora_pora pora_pora_atoll maupiti_atoll maupihaa_atoll manuae_atoll motu_one_atoll
+				}
+
+				include = "polynesian_monarchy"
+				include = "expl_polynesia"
+				government = {  # ALL OF THIS NEEDS TO BE CHANGED
+					ruler = random
+				}
+				capital = pora_pora
+			}
+			#Huahine - HHN
+			HHN = { 
+				own_control_core = {
+					huahine huahine_atoll maiao
+				}
+
+				include = "polynesian_monarchy"
+				include = "expl_polynesia"
+				government = {  # ALL OF THIS NEEDS TO BE CHANGED
+					ruler = random
+				}
+				capital = huahine
+			}
+			#Raiatea - RAI
+			RAI = { 
+				own_control_core = {
+					havaii havaii_atoll 
+				}
+
+				include = "polynesian_monarchy"
+				include = "expl_polynesia"
+				government = {  # ALL OF THIS NEEDS TO BE CHANGED
+					ruler = random
+				}
+				capital = havaii
 			}
 
 	}

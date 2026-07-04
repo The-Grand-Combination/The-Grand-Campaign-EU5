@@ -102996,7 +102996,7 @@ o_ahu = { # 27809 people as of the 1835 census, GFM estimates 1696 Americans (fo
 	define_pop = {	type = soldiers	size = 1.920	culture = kanaka_maoli_culture	religion = calvinist }
 	define_pop = {	type = nobles	size = 0.520	culture = kanaka_maoli_culture	religion = calvinist } 
 	define_pop = {	type = clergy	size = 0.360	culture = kanaka_maoli_culture	religion = calvinist } # intellectuals
-	define_pop = {	type = burghers	size = 3.396	culture = kanaka_maoli_culture	religion = calvinist } # laborers
+	define_pop = {	type = burghers	size = 3.396	culture = kanaka_maoli_culture	religion = calvinist } # artisans
 	define_pop = {	type = peasants	size = 10.023	culture = kanaka_maoli_culture	religion = calvinist } # laborers
 	define_pop = {	type = peasants	size = 9.586	culture = kanaka_maoli_culture	religion = tapu_religion } # laborers
 	define_pop = {	type = clergy	size = 0.100	culture = kanaka_maoli_culture	religion = tapu_religion } # clergymen
@@ -103326,42 +103326,92 @@ oparo = {
 }
 marotiri = {
 }
-mehetia = {
+mehetia = { # everyone was dead, it was a ghost island, really only claimed by Tahiti
 }
-tetiaroa_atoll = {
+tetiaroa_atoll = { # Tetiaroa was a royal reserve and royal sanctuary for the House of Pomare of Tahiti, the population is just freakishly small if anything
+
+	define_pop = {	type = peasants	size = 0.030	culture = maohi_culture	religion = calvinist } # farmers
+
 }
-moorea = {
+moorea = { # Pre-contact was 15,000 and the population had crashed by the 1830s to about a 10th
+
+	define_pop = {	type = peasants	size = 1.227	culture = maohi_culture	religion = calvinist } # farmers
+	define_pop = {	type = nobles	size = 0.053	culture = maohi_culture	religion = calvinist } 
+	define_pop = {	type = soldiers	size = 0.025	culture = maohi_culture	religion = calvinist } 
+	define_pop = {	type = clergy	size = 0.025	culture = maohi_culture	religion = calvinist } # clergymen (deacons)
+	define_pop = {	type = clergy	size = 0.090	culture = maohi_culture	religion = calvinist } # intellectuals
+	define_pop = {	type = burghers	size = 0.080	culture = maohi_culture	religion = calvinist } # artisans
+
 }
-moorea_atoll = {
+moorea_atoll = { # This doesn't exist, so it will have no pops, whatsoever.
 }
-tahiti = {
-	define_pop = {	type = tribesmen	size = 20.223	culture = maohi_culture	religion = tapu_religion }
+tahiti = { # It's roughly estimated that 8600 Tahitians lived on the island at this time, with a population of 150 foreigners as well, I'll say that about 100 are English clergymen, 25 are French burghers, 25 are English burghers. Everyone was Calvinist by law, no one could practiced traditional faith in Tahiti at this time, at least openly. Could I represent hidden faith Tahitians? Meh.
+	define_pop = {	type = peasants	size = 7.005	culture = maohi_culture	religion = calvinist } # farmers
+	define_pop = {	type = nobles	size = 0.345	culture = maohi_culture	religion = calvinist } 
+	define_pop = {	type = burghers	size = 0.450	culture = maohi_culture	religion = calvinist } # artisans
+	define_pop = {	type = clergy	size = 0.450	culture = maohi_culture	religion = calvinist } # intellectuals
+	define_pop = {	type = clergy	size = 0.150	culture = maohi_culture	religion = calvinist } # clergymen (deacons)
+	define_pop = {	type = soldiers	size = 0.200	culture = maohi_culture	religion = calvinist } 
+	define_pop = {	type = clergy	size = 0.100	culture = english	religion = calvinist } # clergymen
+	define_pop = {	type = burghers	size = 0.025	culture = english	religion = calvinist } # merchants, probably closest to clerks
+	define_pop = {	type = burghers	size = 0.025	culture = french	religion = calvinist } # merchants, probably closest to clerks
+
+
 }
-tahiti_atoll = {
+tahiti_atoll = { # This doesn't exist, so it will have no pops, whatsoever.
 }
-maiao = {
+maiao = { # Dependency of Huahine
+
+	define_pop = {	type = peasants	size = 0.125	culture = maohi_culture	religion = calvinist } # farmers
+
 }
-huahine = {
+huahine = { # Small population, same shtick as the others, European contact was BRUTAL
+
+	define_pop = {	type = peasants	size = 1.300	culture = maohi_culture	religion = calvinist } # farmers
+	define_pop = {	type = nobles	size = 0.095	culture = maohi_culture	religion = calvinist } 
+	define_pop = {	type = clergy	size = 0.025	culture = maohi_culture	religion = calvinist } # clergymen (deacons)
+	define_pop = {	type = clergy	size = 0.035	culture = maohi_culture	religion = calvinist } # intellectuals
+	define_pop = {	type = burghers	size = 0.175	culture = maohi_culture	religion = calvinist } # artisans
+	define_pop = {	type = soldiers	size = 0.020	culture = maohi_culture	religion = calvinist } 
+
+
+
 }
-huahine_atoll = {
+huahine_atoll = { # This doesn't exist, so it will have no pops, whatsoever.
 }
-havaii = {
-	define_pop = {	type = tribesmen	size = 1.910	culture = maohi_culture	religion = tapu_religion }
+havaii = { # Small population, same shtick as the others, European contact was BRUTAL 
+	define_pop = {	type = peasants	size = 2.008	culture = maohi_culture	religion = calvinist } # farmers
+	define_pop = {	type = nobles	size = 0.198	culture = maohi_culture	religion = calvinist } 
+	define_pop = {	type = soldiers	size = 0.053	culture = maohi_culture	religion = calvinist } 
+	define_pop = {	type = clergy	size = 0.048	culture = maohi_culture	religion = calvinist } # clergymen
+	define_pop = {	type = clergy	size = 0.155	culture = maohi_culture	religion = calvinist } # intellectuals
+	define_pop = {	type = burghers	size = 0.138	culture = maohi_culture	religion = calvinist } # artisans
+
 }
-havaii_atoll = {
+havaii_atoll = { # This doesn't exist, so it will have no pops, whatsoever.
 }
-pora_pora = {
+pora_pora = { # No one openly practiced the faith unless in syncretism, and I don't feel compelled to do things relating to that so all of the Bora Borans are just Calvinist. Like Mo'orea, the population crashed after European contact
+	define_pop = {	type = peasants	size = 1.249	culture = maohi_culture	religion = calvinist } # farmers
+	define_pop = {	type = nobles	size = 0.045	culture = maohi_culture	religion = calvinist } 
+	define_pop = {	type = soldiers	size = 0.030	culture = maohi_culture	religion = calvinist } 
+	define_pop = {	type = clergy	size = 0.068	culture = maohi_culture	religion = calvinist } # intellectuals
+	define_pop = {	type = clergy	size = 0.020	culture = maohi_culture	religion = calvinist } # clergymen (deacons)
+	define_pop = {	type = burghers	size = 0.063	culture = maohi_culture	religion = calvinist } # artisans
+
+
 }
-pora_pora_atoll = {
+pora_pora_atoll = { # This doesn't exist, so it will have no pops, whatsoever.
 }
-maupiti_atoll = {
+maupiti_atoll = { # The only one of Bora Bora's other islands that had a population, woah!
+
+	define_pop = {	type = peasants	size = 0.600	culture = maohi_culture	religion = Calvinist }
+
 }
-maupihaa_atoll = {
+maupihaa_atoll = { # No permanent Population, Bora Bora claimed it
 }
-manuae_atoll = {
-	define_pop = {	type = tribesmen	size = 0.014	culture = maohi_culture	religion = tapu_religion }
+manuae_atoll = { # No permanent Population, Bora Bora claimed it
 }
-motu_one_atoll = {
+motu_one_atoll = { # No permanent Population, Bora Bora claimed it
 }
 avarau_coast = {
 }
