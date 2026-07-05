@@ -19105,7 +19105,7 @@ countries = {
 			TOG = { 
 
 				own_control_core = {
-					tongatapu vauvau haapai
+					tongatapu vauvau haapai niuatoputapu_atoll niuafo_ou eua haapai_atoll tongatapu_atoll
 				}
 
 				include = "polynesian_monarchy"
