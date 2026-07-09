@@ -103168,15 +103168,15 @@ tongareva = {
 }
 eiao = {
 }
-nuku_hiva = {
+nuku_hiva = { # Nuku Hiva had 12000 people
 	define_pop = {	type = tribesmen	size = 0.271	culture = enana_culture	religion = tapu_religion }
 }
 ua_huka = {
 }
 ua_pou = {
 }
-hiva_oa = {
-	define_pop = {	type = tribesmen	size = 0.380	culture = enana_culture	religion = tapu_religion }
+hiva_oa = { # EU5 has Hiva Oa and Tahuata together, Tahuata had 3000 people, and Hiva Oa had about 7000 people.
+	define_pop = {	type = tribesmen	size = 10.000	culture = enana_culture	religion = tapu_religion }
 }
 kiritimati_coast = {
 }
@@ -104187,7 +104187,7 @@ tutuila = { # Tutuila was more normal, about 65% was still practicing the native
 
 
 }
-manua = { # Entirely practicing the native faith
+manua = { # Entirely practicing the native faith, it's a separate country too, so we'll deal with that when we get there
 	define_pop = {	type = peasants	size = 1.491	culture = tagata_samoa_culture	religion = tapu_religion } # farmers
 	define_pop = {	type = clergy	size = 0.020	culture = tagata_samoa_culture	religion = tapu_religion } # clergymen
 	define_pop = {	type = soldiers	size = 0.400	culture = tagata_samoa_culture	religion = tapu_religion }
