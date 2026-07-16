@@ -9583,10 +9583,6 @@ countries = {
             nedroma tegeget kalaat_sraghna afso rif western_rif south_middle_atlas2 high_atlas2 western_high_atlas2 western_high_atlas1
          }
 
-         control = {
-            arshgul madinat_alawiyyin saida ras_al_ain
-         }
-
          include = "expl_muslim_mediterranean"
          include = "muslim_monarchy_no_abrahamic_dhimmi"
 
