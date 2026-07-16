@@ -7159,25 +7159,6 @@ countries = {
          country_rank = rank_county
 
        }
-      HAW = {
-         country_rank = rank_county
-
-         own_control_core = {
-            kohala kona ka_u hilo maui lahaina moloka_i o_ahu kaua_i
-         }
-
-         include = "polynesian_monarchy"
-         include = "expl_polynesia"
-
-         government = {
-            ruler = haw_kalaunuiohua_pili
-
-            ruler_term  = { character = haw_kalapana_pili start_date = 1250.1.1 end_date = 1270.1.1 regnal_number = 1 }
-            ruler_term  = { character = haw_kahaimoelea_pili start_date = 1270.1.1 end_date = 1300.1.1 regnal_number = 1 }
-            ruler_term  = { character = haw_kalaunuiohua_pili start_date = 1300.1.1 end_date = 1.1.1 regnal_number = 1 }
-
-          }
-      }
       HBG = {
          country_rank = rank_county
 
@@ -18132,22 +18113,6 @@ countries = {
          country_rank = rank_county
 
        }
-      SAM = {
-         capital = savaii
-         country_rank = rank_county
-
-         own_control_core = {
-            savaii upolu tutuila
-         }
-
-         include = "polynesian_monarchy"
-         include = "expl_polynesia"
-
-         government = {
-            ruler = random
-
-          }
-      }
       SAN = {
          country_rank = rank_county
 
@@ -21268,22 +21233,6 @@ countries = {
          country_rank = rank_county
 
        }
-      TOG = {
-         capital = tongatapu
-         country_rank = rank_county
-
-         own_control_core = {
-            tongatapu vauvau haapai
-         }
-
-         include = "polynesian_monarchy"
-         include = "expl_polynesia"
-
-         government = {
-            ruler = random
-
-          }
-      }
       TOH = {
          country_rank = rank_county
 
@@ -23539,22 +23488,6 @@ countries = {
          country_rank = rank_county
 
        }
-      YAP = {
-         capital = yap
-         country_rank = rank_county
-
-         own_control_core = {
-            yap ulithi_atoll
-         }
-
-         include = "polynesian_monarchy"
-         include = "expl_polynesia"
-
-         government = {
-            ruler = random
-
-          }
-      }
       YAQ = {
          country_rank = rank_county
 
@@ -24017,134 +23950,136 @@ countries = {
             ruler = random
             heir_selection = cognatic_primogeniture
 
-            reforms = {
-               zimbabwe_royal_cattle_control
-            }
+					laws = {
+						sharia_law = shafii_policy
+					}
+				}
 
-            #laws
-            laws = {
-               royal_court_customs_law = aristocratic_court_policy
-               cultural_traditions_law = martial_society
-               education_masses_law = uneducated_masses_education
-               mining_law = zimbabwe_mining_law
-               precious_metal_distribution_law = unlimited_gold_export
-            }
+				tolerated_cultures = {
+					mehri_culture soqotri_culture
+				}
 
-          }
-      }
-      ZNI = {
-         country_rank = rank_county
+				religious_school = shafii_school
+				government = { mysticism_vs_jurisprudence = 20 }
 
-       }
-      ZNK = {
-         country_rank = rank_county
+				capital = dhufar
+			}
 
-       }
-      ZNN = {
-         country_rank = rank_county
 
-       }
-      ZNX = {
-         country_rank = rank_county
+			#------------------ Oceania -------------------------
 
-       }
-      ZNZ = {
-         country_rank = rank_county
+			#HAW - Hawai'i
+			HAW = {
+				own_control_core = {
+					kohala kona ka_u hilo maui lahaina moloka_i o_ahu kaua_i
+				}
 
-       }
-      ZOM = {
-         country_rank = rank_county
+            capital = lahaina
 
-       }
-      ZOO = {
-         country_rank = rank_county
+				include = "polynesian_monarchy"
+				include = "expl_polynesia"
 
-       }
-      ZRQ = {
-         country_rank = rank_county
+				country_rank = rank_kingdom
 
-       }
-      ZUB = {
-         country_rank = rank_county
+				government = { # ALL OF THIS NEEDS TO BE CHANGED
+					ruler = random
+				}
+			}
+			TOG = {
 
-       }
-      ZUL = {
-         country_rank = rank_county
+				own_control_core = {
+					tongatapu vauvau haapai niuatoputapu_atoll niuafo_ou eua haapai_atoll tongatapu_atoll
+				}
 
-         own_control_core = {
-            ngwane ndwandwe umgungundlovu buthelezi umhlanga ukhahlamba
-         }
+				include = "polynesian_monarchy"
+				include = "expl_polynesia"
+				government = { # ALL OF THIS NEEDS TO BE CHANGED
+					ruler = random
+				}
+				capital = tongatapu
+			}
+			# --- Yap ---
+			#Yap - YAP
+			YAP = {
+				own_control_core = {
+					yap ulithi_atoll
+					#faraulep_atoll woleai_atoll lamotrek_atoll
+				}
 
-       }
-      ZUR = {
-         country_rank = rank_county
+				include = "polynesian_monarchy"
+				include = "expl_polynesia"
+				government = { # ALL OF THIS NEEDS TO BE CHANGED
+					ruler = random
+				}
+				capital = yap
+			}
 
-         own_control_core = {
-            zuru kontagora bussa kulfo
-         }
+			# --- Samoa ---
+			#Samoa - SAM
+			SAM = { #https://en.wikipedia.org/wiki/History_of_Samoa
+				own_control_core = {
+					savaii upolu tutuila
+				}
 
-       }
-      ZUT = {
-         country_rank = rank_county
+				include = "polynesian_monarchy"
+				include = "expl_polynesia"
+				government = {
+					ruler = random
+				}
+				capital = savaii
+			}
+         # --- The Rest of Polynesia --- # NOTE that they only control the atolls because EU5 added them for some god forsaken reason and without giving them to their nation it looks super ugly
+			#Tahiti - TAH	
+			TAH = { 
+				own_control_core = {
+					mehetia tetiaroa_atoll moorea moorea_atoll tahiti tahiti_atoll
+				}
 
-       }
-      ZWE = {
-         country_rank = rank_county
+				include = "polynesian_monarchy"
+				include = "expl_polynesia"
+				government = {  # ALL OF THIS NEEDS TO BE CHANGED
+					ruler = random
+				}
+				capital = tahiti
+			}
+			#Bora Bora - BBR
+			BBR = { 
+				own_control_core = {
+					pora_pora pora_pora_atoll maupiti_atoll maupihaa_atoll manuae_atoll motu_one_atoll
+				}
 
-       }
-      ZWG = {
-         country_rank = rank_county
+				include = "polynesian_monarchy"
+				include = "expl_polynesia"
+				government = {  # ALL OF THIS NEEDS TO BE CHANGED
+					ruler = random
+				}
+				capital = pora_pora
+			}
+			#Huahine - HHN
+			HHN = { 
+				own_control_core = {
+					huahine huahine_atoll maiao
+				}
 
-         own_control_core = {
-            sofala chibuene mambone chiluane
-         }
+				include = "polynesian_monarchy"
+				include = "expl_polynesia"
+				government = {  # ALL OF THIS NEEDS TO BE CHANGED
+					ruler = random
+				}
+				capital = huahine
+			}
+			#Raiatea - RAI
+			RAI = { 
+				own_control_core = {
+					havaii havaii_atoll 
+				}
 
-       }
-      ZYD = {
-         capital = al_qatif
-         religious_school = imamiya_school
-         country_rank = rank_county
-         starting_technology_level = 3
-
-         own_control_core = {
-            zabid al_ghulayfiqah as_salafiyah mikhlaf_al_hubishiyah mudhaykirah al_hirda hajjah harad_asir khamir hudaida
-            al_luhayyah as_salif hutayb kawkaban ibb dhafar juban musaymir al_mahjal huth
-            main marib baraqish dhamar harib radaa sana_yemen thula al_bayda_yemen taizz
-            al_mukha hays mawza haraz_mountains1 haraz_mountains2 haraz_mountains3 haraz_mountains4
-         }
-
-         include = "expl_middle_east"
-         include = "muslim_monarchy_no_abrahamic_dhimmi"
-
-         tolerated_cultures = {
-            kaliji_culture najdi_culture
-         }
-
-         government = {
-            type = monarchy
-            ruler = jrw_jarwan
-            heir_selection = cognatic_primogeniture
-
-          }
-      }
-      ZYI = {
-         country_rank = rank_county
-
-       }
-      ZZB = {
-         country_rank = rank_county
-
-         own_control_core = {
-            mikindani tungi vamizi
-         }
-
-       }
-      ZZR = {
-         country_rank = rank_county
-
-       }
-      ZZZ = {
-         country_rank = rank_county
-
-       }}
+				include = "polynesian_monarchy"
+				include = "expl_polynesia"
+				government = {  # ALL OF THIS NEEDS TO BE CHANGED
+					ruler = random
+				}
+				capital = havaii
+			}
+	}
 }
