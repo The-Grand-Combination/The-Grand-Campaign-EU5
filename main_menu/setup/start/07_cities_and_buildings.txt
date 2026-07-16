@@ -2231,7 +2231,7 @@ building_manager = {
 	cathedral 	= { tag = PRO level = 1 location = arles } #Saint-Trophime d'Arles Cathedral, established in 250
 	cathedral		= { tag = ARS level = 1 location = arras } #Notre-Dame-et-Saint-Vaast d'Arras Cathedral, established in 1030
 	cathedral		= { tag = BUR level = 1 location = autun } #Saint-Lazare d'Autun Cathedral, established in 1132
-	cathedral		= { tag = AUX level = 1 location = auxerre } #Saint-Étienne d'Auxerre Cathedral, established in 1057
+	cathedral		= { tag = FRA level = 1 location = auxerre } #Saint-Étienne d'Auxerre Cathedral, established in 1057
 	cathedral		= { tag = PAP level = 1 location = avignon } #Notre-Dame des Doms d'Avignon Cathedral, established in 1150
 	cathedral		= { tag = NRM level = 1 location = avranches } #Saint-André d'Avranches Cathedral, established in 1211
 	cathedral		= { tag = CAM level = 1 location = cambrai } #Notre-Dame de Cambrai Cathedral, established in 1148
@@ -3609,7 +3609,7 @@ building_manager = {
 	cathedral = { tag = FRA level = 1 location = bourges } #Pierre Bertrand d'Annonay (S. Clemente)
 	#French Vassals
 	cathedral = { tag = NRB level = 1 location = narbonne } #Gaillard de la Mothe (S. Lucia)
-	cathedral = { tag = AUX level = 1 location = auxerre } #Hélie de Talleyrand-Périgord (S. Pietro in Vincoli)
+	cathedral = { tag = FRA level = 1 location = auxerre } #Hélie de Talleyrand-Périgord (S. Pietro in Vincoli)
 	#Other
 	cathedral = { tag = NAP level = 1 location = manfredonia } #Matteo Orsini (SS Giovani e Paolo) #Archbishop of Manfredonia when elected
 	cathedral = { tag = NAP level = 1 location = naples } #Annibaldo di Ceccano (Tusculum) #Archbishop of Naples when elected
@@ -3641,9 +3641,9 @@ building_manager = {
 	cathedral = { tag = CYP level = 1 location = nicosia_cyp }
 	cathedral = { tag = CRT level = 1 location = candia }
 	cathedral = { tag = FRA level = 1 location = reims }
-	cathedral = { tag = NRM level = 1 location = rouen }
+	cathedral = { tag = FRA level = 1 location = rouen }
 	cathedral = { tag = FRA level = 1 location = tours }
-	cathedral = { tag = AQN level = 1 location = bordeaux }
+	cathedral = { tag = FRA level = 1 location = bordeaux }
 	cathedral = { tag = PIS level = 1 location = pisa }
 	cathedral = { tag = PAP level = 1 location = benevento }
 	cathedral = { tag = NAP level = 1 location = salerno }

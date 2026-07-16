@@ -712,10 +712,6 @@ countries = {
          country_rank = rank_county
 
        }
-      AQN = {
-         country_rank = rank_county
-
-       }
       AQU = {
          country_rank = rank_county
 
@@ -1194,10 +1190,6 @@ countries = {
 
        }
       AUV = {
-         country_rank = rank_county
-
-       }
-      AUX = {
          country_rank = rank_county
 
        }
@@ -5714,10 +5706,6 @@ countries = {
 
        }
       FBG = {
-         country_rank = rank_county
-
-       }
-      FCB = {
          country_rank = rank_county
 
        }

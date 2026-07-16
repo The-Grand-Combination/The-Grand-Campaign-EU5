@@ -1,0 +1,75 @@
+﻿BRI = {
+	color = map_BRI
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = gallo
+	religion_definition = catholic
+}
+
+
+FRA = {
+	color = map_FRA
+	color2 = rgb { 16 41 202 }
+	
+	unit_color0 = rgb { 0 38 94 }
+	unit_color1 = rgb { 171 19 19 }
+	unit_color2 = rgb { 200 200 210 }
+
+	culture_definition = french
+	religion_definition = catholic
+
+	description_category = military
+	difficulty = 3
+}
+
+BUR = {
+	color = map_BUR
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = burgundian
+	religion_definition = catholic
+}
+
+#Normandy
+NRM = {
+	color = map_NRM
+	color2 = rgb { 131 138 116 }
+
+	culture_definition = norman
+	religion_definition = catholic
+}
+
+#Jersey
+JER = {
+	color = map_JER
+	color2 = rgb { 131 138 116 }
+
+	culture_definition = norman
+	religion_definition = catholic
+}
+
+#Provence
+PRO = {
+	color = map_PRO
+	color2 = rgb { 93 160 163 }
+
+	culture_definition = provencal
+	religion_definition = catholic
+}
+
+#Lorraine
+LOR = {
+	color = map_LOR
+	color2 = rgb { 115 142 205 }
+
+	culture_definition = lorrain
+	religion_definition = catholic
+}
+
+#Strasbourg
+ALS = {
+	#color = map_FRA
+	color = rgb { 246 223 15 }
+	culture_definition = rhine_alemannic
+	religion_definition = catholic
+}
