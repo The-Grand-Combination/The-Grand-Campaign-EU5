@@ -102891,43 +102891,133 @@ new_zealand_high_sea_28 = {
 }
 new_zealand_high_sea_27 = {
 }
-kohala = {
-	define_pop = {	type = tribesmen	size = 11.523	culture = kanaka_maoli_culture	religion = tapu_religion }
-	define_pop = {	type = peasants	size = 1.844	culture = kanaka_maoli_culture	religion = tapu_religion }
+
+# Hawaii, near 100% of the population was native Hawaiian, but we will add some Americans to O'ahu. About 65% of Hawaiians are Calvinists at this point, as are the American missionaries. Hawaii would adopt Anglicanism later so content for that is require. 35% are still practicing the tapu_religion found in the files. 
+
+kohala = { # Kohala itself (+ Hamakua) is at 10301 people. Kohala is 52.5% Calvinist, 47.5% Tapu religion (3242 Calvinists, 2933 Tapu Religion), Hamakua is 35% Calvinist, and 65% Tapu religion (1444 Calvinist, 2682 Tapu Religion)
+
+	define_pop = {	type = clergy	size = 0.009	culture = english religion = calvinist } # yank clergymen/intellectuals
+
+	define_pop = {	type = peasants	size = 4.450	culture = kanaka_maoli_culture	religion = calvinist } # laborers
+	define_pop = {	type = clergy	size = 0.227	culture = kanaka_maoli_culture	religion = calvinist } # intellectuals
+	define_pop = {	type = peasants	size = 5.080	culture = kanaka_maoli_culture	religion = tapu_religion } # laborers
+	define_pop = {	type = clergy	size = 0.220	culture = kanaka_maoli_culture	religion = tapu_religion } # clergymen
+	define_pop = {	type = clergy	size = 0.430	culture = kanaka_maoli_culture	religion = tapu_religion } # intellectuals
+
+
+
 }
-kona = {
-	define_pop = {	type = tribesmen	size = 9.774	culture = kanaka_maoli_culture	religion = tapu_religion }
-	define_pop = {	type = peasants	size = 2.428	culture = kanaka_maoli_culture	religion = tapu_religion }
+kona = { # Kona is at 9950 people. 68.5% are Calvinist, 31.5% are Tapu
+
+	define_pop = {	type = clergy	size = 0.018	culture = english religion = calvinist } # yank clergymen/intellectuals
+
+	define_pop = {	type = soldiers	size = 0.150	culture = kanaka_maoli_culture	religion = calvinist }
+	define_pop = {	type = nobles	size = 0.160	culture = kanaka_maoli_culture	religion = calvinist }
+	define_pop = {	type = clergy	size = 0.270	culture = kanaka_maoli_culture	religion = calvinist } # intellectuals
+	define_pop = {	type = peasants	size = 6.218	culture = kanaka_maoli_culture	religion = calvinist } # laborers
+	define_pop = {	type = peasants	size = 2.864	culture = kanaka_maoli_culture	religion = tapu_religion } # laborers
+	define_pop = {	type = clergy	size = 0.200	culture = kanaka_maoli_culture	religion = tapu_religion } # intellectuals
+	define_pop = {	type = clergy	size = 0.070	culture = kanaka_maoli_culture	religion = tapu_religion } # clergymen
+
+
 }
-ka_u = {
-	define_pop = {	type = tribesmen	size = 9.458	culture = kanaka_maoli_culture	religion = tapu_religion }
-	define_pop = {	type = peasants	size = 1.245	culture = kanaka_maoli_culture	religion = tapu_religion }
+ka_u = { # Ka'u is isolated as HELL gets 3000 people, 1/4 are Calvinist and 3/4 are Tapu for the sake of my sanity, also did roughly line up that way
+	define_pop = {	type = peasants size = 0.700	culture = kanaka_maoli_culture	religion = calvinist }
+	define_pop = {	type = clergy size = 0.050	culture = kanaka_maoli_culture	religion = calvinist } # intellectuals
+	define_pop = {	type = peasants	size = 2.070	culture = kanaka_maoli_culture	religion = tapu_religion } # laborers
+	define_pop = {	type = clergy	size = 0.095	culture = kanaka_maoli_culture	religion = tapu_religion } # clergymen
+	define_pop = {	type = clergy	size = 0.180	culture = kanaka_maoli_culture	religion = tapu_religion } # intellectuals
+
+
 }
-hilo = {
-	define_pop = {	type = tribesmen	size = 13.788	culture = kanaka_maoli_culture	religion = tapu_religion }
-	define_pop = {	type = peasants	size = 2.882	culture = kanaka_maoli_culture	religion = tapu_religion }
+hilo = { # Hilo (+ Puna) is at 16113 people, about 67.5% of Hilo's population is Calvinist and 32.5% is Tapu religion (7636 is Calvinist and 3677 is Tapu), while Puna's is 30% Calvinist and 70% Tapu religion (About 3360 Tapu and 1440 Calvinist)
+
+	define_pop = {	type = clergy	size = 0.018	culture = english religion = calvinist } # yank clergymen/intellectuals
+
+	define_pop = {	type = clergy	size = 0.397	culture = kanaka_maoli_culture	religion = calvinist } # intellectuals
+	define_pop = {	type = soldiers	size = 0.150	culture = kanaka_maoli_culture	religion = calvinist }
+	define_pop = {	type = nobles	size = 0.060	culture = kanaka_maoli_culture	religion = calvinist }
+	define_pop = {	type = peasants	size = 8.451	culture = kanaka_maoli_culture	religion = calvinist } # laborers
+	define_pop = {	type = peasants	size = 6.267	culture = kanaka_maoli_culture	religion = tapu_religion } # laborers
+	define_pop = {	type = clergy	size = 0.230	culture = kanaka_maoli_culture	religion = tapu_religion } # clergymen
+	define_pop = {	type = clergy	size = 0.540	culture = kanaka_maoli_culture	religion = tapu_religion } # intellectuals
+
+
 }
 mauna_loa = {
 }
-maui = {
-	define_pop = {	type = tribesmen	size = 20.572	culture = kanaka_maoli_culture	religion = tapu_religion }
-	define_pop = {	type = peasants	size = 4.491	culture = kanaka_maoli_culture	religion = tapu_religion }
+maui = { # 31479 across Maui, Lahaina, and Molokai as of the 1835 census. Approximentally 15.5% of this population of Maui county lived in Molokai according to missionary estimates from the 1820s, with the 1836 census estimated to have 6000 people on Molokai. I split the difference down the middle. Lahaina is guaranteed 1200 people already as it contains Lanai. Maui is guaranteed 80 people as it contains Kahoolawe. 80.5% on Maui + Lanai + Kahoolawe are Calvinist and 19.5% are Tapu Religion. Assume that like 60% lived in Lahaina (the western portion) and 40% in Maui, the eastern portion. All that together puts Lahaina at 16051 and Maui at 9980. 85% of Lahaina's are Calvinist and 15% are Tapu while 62.5% of Maui's are Calvinist and 37.5% are Tapu Religion
+
+	define_pop = {	type = clergy	size = 0.002	culture = english religion = calvinist } # yank clergymen/intellectuals
+
+	define_pop = {	type = peasants	size = 6.735	culture = kanaka_maoli_culture	religion = calvinist } # laborers
+	define_pop = {	type = clergy	size = 0.187	culture = kanaka_maoli_culture	religion = calvinist } # intellectuals
+	define_pop = {	type = peasants	size = 3.183	culture = kanaka_maoli_culture	religion = tapu_religion } # laborers
+	define_pop = {	type = clergy	size = 0.170	culture = kanaka_maoli_culture	religion = tapu_religion } # clergymen
+	define_pop = {	type = clergy	size = 0.390	culture = kanaka_maoli_culture	religion = tapu_religion } # intellectuals
+
+
 }
 lahaina = {
-	define_pop = {	type = tribesmen	size = 9.922	culture = kanaka_maoli_culture	religion = tapu_religion }
-	define_pop = {	type = peasants	size = 1.614	culture = kanaka_maoli_culture	religion = tapu_religion }
+
+	define_pop = {	type = clergy	size = 0.012	culture = english religion = calvinist } # yank clergymen/intellectuals
+
+	define_pop = {	type = soldiers	size = 0.400	culture = kanaka_maoli_culture	religion = calvinist }
+	define_pop = {	type = nobles	size = 0.360	culture = kanaka_maoli_culture	religion = calvinist }
+	define_pop = {	type = clergy	size = 0.555	culture = kanaka_maoli_culture	religion = calvinist } # intellectuals
+	define_pop = {	type = peasants	size = 12.316	culture = kanaka_maoli_culture	religion = calvinist } # laborers
+	define_pop = {	type = peasants	size = 2.103	culture = kanaka_maoli_culture	religion = tapu_religion } # laborers
+	define_pop = {	type = clergy	size = 0.065	culture = kanaka_maoli_culture	religion = tapu_religion } # clergymen
+	define_pop = {	type = clergy	size = 0.240	culture = kanaka_maoli_culture	religion = tapu_religion } # intellectuals
+
+
 }
-moloka_i = {
-	define_pop = {	type = tribesmen	size = 11.486	culture = kanaka_maoli_culture	religion = tapu_religion }
-	define_pop = {	type = peasants	size = 2.233	culture = kanaka_maoli_culture	religion = tapu_religion }
+
+moloka_i = { # 5448 people as of an estimation of the 1835 census, 66% practiced the native religion while 34% practiced Calvinism
+
+	define_pop = {	type = clergy	size = 0.002	culture = english religion = calvinist } # yank clergymen/intellectuals
+
+	define_pop = {	type = peasants	size = 3.580	culture = kanaka_maoli_culture	religion = tapu_religion } # laborers
+	define_pop = {	type = clergy	size = 0.052	culture = kanaka_maoli_culture	religion = tapu_religion } # intellectuals
+	define_pop = {	type = peasants	size = 1.444	culture = kanaka_maoli_culture	religion = calvinist } # laborers
+	define_pop = {	type = clergy	size = 0.120	culture = kanaka_maoli_culture	religion = calvinist } # clergymen
+	define_pop = {	type = clergy	size = 0.250	culture = kanaka_maoli_culture	religion = calvinist } # intellectuals
+
+
+
 }
-o_ahu = {
-	define_pop = {	type = tribesmen	size = 27.712	culture = kanaka_maoli_culture	religion = tapu_religion }
-	define_pop = {	type = peasants	size = 6.335	culture = kanaka_maoli_culture	religion = tapu_religion }
+o_ahu = { # 27809 people as of the 1835 census, GFM estimates 1696 Americans (for now mark as English). Excluding the Americans, about 61.3% are Calvinist and 38.7% are tapu religion
+	# GFM estimates for Americans
+	define_pop = {	type = peasants	size = 0.424	culture = english religion = calvinist } # yank laborers
+	define_pop = {	type = burghers	size = 0.424	culture = english religion = calvinist } # yank artisans
+	define_pop = {	type = soldiers	size = 0.424	culture = english religion = calvinist } # yank soldiers
+	define_pop = {	type = clergy	size = 0.357	culture = english religion = calvinist } # yank clergymen/intellectuals
+
+	define_pop = {	type = soldiers	size = 1.920	culture = kanaka_maoli_culture	religion = calvinist }
+	define_pop = {	type = nobles	size = 0.520	culture = kanaka_maoli_culture	religion = calvinist } 
+	define_pop = {	type = clergy	size = 0.360	culture = kanaka_maoli_culture	religion = calvinist } # intellectuals
+	define_pop = {	type = burghers	size = 3.396	culture = kanaka_maoli_culture	religion = calvinist } # artisans
+	define_pop = {	type = peasants	size = 10.023	culture = kanaka_maoli_culture	religion = calvinist } # laborers
+	define_pop = {	type = peasants	size = 9.586	culture = kanaka_maoli_culture	religion = tapu_religion } # laborers
+	define_pop = {	type = clergy	size = 0.100	culture = kanaka_maoli_culture	religion = tapu_religion } # clergymen
+	define_pop = {	type = clergy	size = 0.420	culture = kanaka_maoli_culture	religion = tapu_religion } # intellectuals
+
+
 }
-kaua_i = {
-	define_pop = {	type = tribesmen	size = 11.063	culture = kanaka_maoli_culture	religion = tapu_religion }
-	define_pop = {	type = peasants	size = 2.619	culture = kanaka_maoli_culture	religion = tapu_religion }
+kaua_i = { # 9927 people as of the 1835 census, 69% practiced Calvinism while 31% practiced the tapu religion
+
+	define_pop = {	type = clergy	size = 0.006	culture = english religion = calvinist } # yank clergymen/intellectuals
+
+
+	define_pop = {	type = soldiers	size = 0.150	culture = kanaka_maoli_culture	religion = calvinist }
+	define_pop = {	type = nobles	size = 0.100	culture = kanaka_maoli_culture	religion = calvinist }
+	define_pop = {	type = peasants	size = 6.459	culture = kanaka_maoli_culture	religion = calvinist } # laborers
+	define_pop = {	type = clergy	size = 0.135	culture = kanaka_maoli_culture	religion = calvinist } # intellectuals
+	define_pop = {	type = peasants	size = 2.817	culture = kanaka_maoli_culture	religion = tapu_religion } # laborers
+	define_pop = {	type = clergy	size = 0.050	culture = kanaka_maoli_culture	religion = tapu_religion } # clergymen
+	define_pop = {	type = clergy	size = 0.210	culture = kanaka_maoli_culture	religion = tapu_religion } # intellectuals
+
+
 }
 nihoa = {
 }
@@ -103078,15 +103168,15 @@ tongareva = {
 }
 eiao = {
 }
-nuku_hiva = {
+nuku_hiva = { # Nuku Hiva had 12000 people
 	define_pop = {	type = tribesmen	size = 0.271	culture = enana_culture	religion = tapu_religion }
 }
 ua_huka = {
 }
 ua_pou = {
 }
-hiva_oa = {
-	define_pop = {	type = tribesmen	size = 0.380	culture = enana_culture	religion = tapu_religion }
+hiva_oa = { # EU5 has Hiva Oa and Tahuata together, Tahuata had 3000 people, and Hiva Oa had about 7000 people.
+	define_pop = {	type = tribesmen	size = 10.000	culture = enana_culture	religion = tapu_religion }
 }
 kiritimati_coast = {
 }
@@ -103236,42 +103326,92 @@ oparo = {
 }
 marotiri = {
 }
-mehetia = {
+mehetia = { # everyone was dead, it was a ghost island, really only claimed by Tahiti
 }
-tetiaroa_atoll = {
+tetiaroa_atoll = { # Tetiaroa was a royal reserve and royal sanctuary for the House of Pomare of Tahiti, the population is just freakishly small if anything
+
+	define_pop = {	type = peasants	size = 0.030	culture = maohi_culture	religion = calvinist } # farmers
+
 }
-moorea = {
+moorea = { # Pre-contact was 15,000 and the population had crashed by the 1830s to about a 10th
+
+	define_pop = {	type = peasants	size = 1.227	culture = maohi_culture	religion = calvinist } # farmers
+	define_pop = {	type = nobles	size = 0.053	culture = maohi_culture	religion = calvinist } 
+	define_pop = {	type = soldiers	size = 0.025	culture = maohi_culture	religion = calvinist } 
+	define_pop = {	type = clergy	size = 0.025	culture = maohi_culture	religion = calvinist } # clergymen (deacons)
+	define_pop = {	type = clergy	size = 0.090	culture = maohi_culture	religion = calvinist } # intellectuals
+	define_pop = {	type = burghers	size = 0.080	culture = maohi_culture	religion = calvinist } # artisans
+
 }
-moorea_atoll = {
+moorea_atoll = { # This doesn't exist, so it will have no pops, whatsoever.
 }
-tahiti = {
-	define_pop = {	type = tribesmen	size = 20.223	culture = maohi_culture	religion = tapu_religion }
+tahiti = { # It's roughly estimated that 8600 Tahitians lived on the island at this time, with a population of 150 foreigners as well, I'll say that about 100 are English clergymen, 25 are French burghers, 25 are English burghers. Everyone was Calvinist by law, no one could practiced traditional faith in Tahiti at this time, at least openly. Could I represent hidden faith Tahitians? Meh.
+	define_pop = {	type = peasants	size = 7.005	culture = maohi_culture	religion = calvinist } # farmers
+	define_pop = {	type = nobles	size = 0.345	culture = maohi_culture	religion = calvinist } 
+	define_pop = {	type = burghers	size = 0.450	culture = maohi_culture	religion = calvinist } # artisans
+	define_pop = {	type = clergy	size = 0.450	culture = maohi_culture	religion = calvinist } # intellectuals
+	define_pop = {	type = clergy	size = 0.150	culture = maohi_culture	religion = calvinist } # clergymen (deacons)
+	define_pop = {	type = soldiers	size = 0.200	culture = maohi_culture	religion = calvinist } 
+	define_pop = {	type = clergy	size = 0.100	culture = english	religion = calvinist } # clergymen
+	define_pop = {	type = burghers	size = 0.025	culture = english	religion = calvinist } # merchants, probably closest to clerks
+	define_pop = {	type = burghers	size = 0.025	culture = french	religion = calvinist } # merchants, probably closest to clerks
+
+
 }
-tahiti_atoll = {
+tahiti_atoll = { # This doesn't exist, so it will have no pops, whatsoever.
 }
-maiao = {
+maiao = { # Dependency of Huahine
+
+	define_pop = {	type = peasants	size = 0.125	culture = maohi_culture	religion = calvinist } # farmers
+
 }
-huahine = {
+huahine = { # Small population, same shtick as the others, European contact was BRUTAL
+
+	define_pop = {	type = peasants	size = 1.300	culture = maohi_culture	religion = calvinist } # farmers
+	define_pop = {	type = nobles	size = 0.095	culture = maohi_culture	religion = calvinist } 
+	define_pop = {	type = clergy	size = 0.025	culture = maohi_culture	religion = calvinist } # clergymen (deacons)
+	define_pop = {	type = clergy	size = 0.035	culture = maohi_culture	religion = calvinist } # intellectuals
+	define_pop = {	type = burghers	size = 0.175	culture = maohi_culture	religion = calvinist } # artisans
+	define_pop = {	type = soldiers	size = 0.020	culture = maohi_culture	religion = calvinist } 
+
+
+
 }
-huahine_atoll = {
+huahine_atoll = { # This doesn't exist, so it will have no pops, whatsoever.
 }
-havaii = {
-	define_pop = {	type = tribesmen	size = 1.910	culture = maohi_culture	religion = tapu_religion }
+havaii = { # Small population, same shtick as the others, European contact was BRUTAL 
+	define_pop = {	type = peasants	size = 2.008	culture = maohi_culture	religion = calvinist } # farmers
+	define_pop = {	type = nobles	size = 0.198	culture = maohi_culture	religion = calvinist } 
+	define_pop = {	type = soldiers	size = 0.053	culture = maohi_culture	religion = calvinist } 
+	define_pop = {	type = clergy	size = 0.048	culture = maohi_culture	religion = calvinist } # clergymen
+	define_pop = {	type = clergy	size = 0.155	culture = maohi_culture	religion = calvinist } # intellectuals
+	define_pop = {	type = burghers	size = 0.138	culture = maohi_culture	religion = calvinist } # artisans
+
 }
-havaii_atoll = {
+havaii_atoll = { # This doesn't exist, so it will have no pops, whatsoever.
 }
-pora_pora = {
+pora_pora = { # No one openly practiced the faith unless in syncretism, and I don't feel compelled to do things relating to that so all of the Bora Borans are just Calvinist. Like Mo'orea, the population crashed after European contact
+	define_pop = {	type = peasants	size = 1.249	culture = maohi_culture	religion = calvinist } # farmers
+	define_pop = {	type = nobles	size = 0.045	culture = maohi_culture	religion = calvinist } 
+	define_pop = {	type = soldiers	size = 0.030	culture = maohi_culture	religion = calvinist } 
+	define_pop = {	type = clergy	size = 0.068	culture = maohi_culture	religion = calvinist } # intellectuals
+	define_pop = {	type = clergy	size = 0.020	culture = maohi_culture	religion = calvinist } # clergymen (deacons)
+	define_pop = {	type = burghers	size = 0.063	culture = maohi_culture	religion = calvinist } # artisans
+
+
 }
-pora_pora_atoll = {
+pora_pora_atoll = { # This doesn't exist, so it will have no pops, whatsoever.
 }
-maupiti_atoll = {
+maupiti_atoll = { # The only one of Bora Bora's other islands that had a population, woah!
+
+	define_pop = {	type = peasants	size = 0.600	culture = maohi_culture	religion = Calvinist }
+
 }
-maupihaa_atoll = {
+maupihaa_atoll = { # No permanent Population, Bora Bora claimed it
 }
-manuae_atoll = {
-	define_pop = {	type = tribesmen	size = 0.014	culture = maohi_culture	religion = tapu_religion }
+manuae_atoll = { # No permanent Population, Bora Bora claimed it
 }
-motu_one_atoll = {
+motu_one_atoll = { # No permanent Population, Bora Bora claimed it
 }
 avarau_coast = {
 }
@@ -103852,29 +103992,93 @@ tuvalu_high_sea_11 = {
 }
 tuvalu_high_sea_12 = {
 }
-tongatapu = {
-	define_pop = {	type = tribesmen	size = 10.850	culture = tonga_oceania_culture	religion = tapu_religion }
-	define_pop = {	type = peasants	size = 4.428	culture = tonga_oceania_culture	religion = tapu_religion }
+tongatapu = { # Tonga roughly had 34000 people in 1836, I'll go with a bit more to be nicer. Tongatapu had about 18000 people in 1836, 30% was Methodist Christian, of which Methodism does not exist at the start of the game, and the closest relative is Anglicanism so it will follow that and 70% followed the indigenous religion
+	define_pop = {	type = peasants	size = 9.075	culture = tonga_oceania_culture	religion = tapu_religion } # farmers
+	define_pop = {	type = soldiers	size = 2.450	culture = tonga_oceania_culture	religion = tapu_religion } 
+	define_pop = {	type = burghers	size = 0.425	culture = tonga_oceania_culture	religion = tapu_religion } # artisans
+	define_pop = {	type = clergy	size = 0.100	culture = tonga_oceania_culture	religion = tapu_religion } # clergymen
+	define_pop = {	type = nobles	size = 0.500	culture = tonga_oceania_culture	religion = tapu_religion } 
+	define_pop = {	type = clergy	size = 0.150	culture = tonga_oceania_culture	religion = tapu_religion } # intellectuals
+	define_pop = {	type = peasants	size = 3.975	culture = tonga_oceania_culture	religion = anglican } # farmers
+	define_pop = {	type = soldiers	size = 1.050	culture = tonga_oceania_culture	religion = anglican } 
+	define_pop = {	type = clergy	size = 0.125	culture = tonga_oceania_culture	religion = anglican } # clergymen
+	define_pop = {	type = clergy	size = 0.150	culture = tonga_oceania_culture	religion = anglican } # intellectuals
+
+
+
 }
-tongatapu_atoll = {
+tongatapu_atoll = { # This doesn't exist, so it will have no pops, whatsoever.
 }
-eua = {
+eua = { # Tiny island right by Tongatapu, sparsely populated, assume similar percentage to Tongatapu
+	define_pop = {	type = peasants	size = 0.145	culture = tonga_oceania_culture	religion = anglican } # farmers
+	define_pop = {	type = soldiers	size = 0.030	culture = tonga_oceania_culture	religion = anglican } 
+	define_pop = {	type = clergy	size = 0.05	culture = tonga_oceania_culture	religion = anglican } # clergy
+	define_pop = {	type = peasants	size = 0.285	culture = tonga_oceania_culture	religion = tapu_religion } # farmers
+	define_pop = {	type = soldiers	size = 0.070	culture = tonga_oceania_culture	religion = tapu_religion } 
+	define_pop = {	type = burghers	size = 0.020	culture = tonga_oceania_culture	religion = tapu_religion } # artisans
+	define_pop = {	type = clergy	size = 0.010	culture = tonga_oceania_culture	religion = tapu_religion } # clergymen
+	define_pop = {	type = clergy	size = 0.015	culture = tonga_oceania_culture	religion = tapu_religion } # intellectuals
+	define_pop = {	type = nobles	size = 0.020	culture = tonga_oceania_culture	religion = tapu_religion } 
+
+
+
+
 }
-haapai = {
-	define_pop = {	type = tribesmen	size = 0.880	culture = tonga_oceania_culture	religion = tapu_religion }
-	define_pop = {	type = peasants	size = 0.169	culture = tonga_oceania_culture	religion = tapu_religion }
+haapai = { # Almost entirely Christian at this point because of shenanigans, Tonga was in a precarious state I will represent later
+	define_pop = {	type = peasants	size = 4.825	culture = tonga_oceania_culture	religion = anglican } # farmers
+	define_pop = {	type = soldiers	size = 0.500	culture = tonga_oceania_culture	religion = anglican }
+	define_pop = {	type = burghers	size = 0.175	culture = tonga_oceania_culture	religion = anglican } # artisans
+	define_pop = {	type = clergy	size = 0.225	culture = tonga_oceania_culture	religion = anglican } # clergymen	define_pop = {	type = clergy	size = 0.150	culture = tonga_oceania_culture	religion = anglican } # intellectuals
+	define_pop = {	type = nobles	size = 0.125	culture = tonga_oceania_culture	religion = anglican } 
+
+
+
+
+
 }
-haapai_atoll = {
+haapai_atoll = { # This doesn't exist, so it will have no pops, whatsoever.
 }
-vauvau = {
-	define_pop = {	type = tribesmen	size = 2.381	culture = tonga_oceania_culture	religion = tapu_religion }
-	define_pop = {	type = peasants	size = 0.310	culture = tonga_oceania_culture	religion = tapu_religion }
+vauvau = { # Almost entirely Christian at this point because of shenanigans, Tonga was in a precarious state I will represent later
+	define_pop = {	type = peasants	size = 7.340	culture = tonga_oceania_culture	religion = anglican } # farmers
+	define_pop = {	type = soldiers	size = 0.650	culture = tonga_oceania_culture	religion = anglican }
+	define_pop = {	type = burghers	size = 0.225	culture = tonga_oceania_culture	religion = anglican } # artisans
+	define_pop = {	type = clergy	size = 0.350	culture = tonga_oceania_culture	religion = anglican } # clergymen
+	define_pop = {	type = nobles	size = 0.185	culture = tonga_oceania_culture	religion = anglican } 
+	define_pop = {	type = clergy	size = 0.250	culture = tonga_oceania_culture	religion = anglican } # intellectuals
+
+
+
+
 }
-niuafo_ou = {
+niuafo_ou = { # Part of the Niuas islands, pretty isolated from the core Tongan conflict, so 90% native faith and 10% methodist
+	define_pop = {	type = peasants	size = 0.982	culture = tonga_oceania_culture	religion = tapu_religion } # farmers
+	define_pop = {	type = burghers	size = 0.035	culture = tonga_oceania_culture	religion = tapu_religion } # artisans
+	define_pop = {	type = clergy	size = 0.018	culture = tonga_oceania_culture	religion = tapu_religion } # clergymen
+	define_pop = {	type = nobles	size = 0.025	culture = tonga_oceania_culture	religion = tapu_religion }
+	define_pop = {	type = clergy	size = 0.020	culture = tonga_oceania_culture	religion = tapu_religion } # intellectuals
+	define_pop = {	type = peasants	size = 0.112	culture = tonga_oceania_culture	religion = anglican } # farmers
+	define_pop = {	type = clergy	size = 0.008	culture = tonga_oceania_culture	religion = anglican } # clergymen
+
+
+
 }
-zephyr_atoll = {
+zephyr_atoll = { # I have no clue what this is supposed to be, it's not real no matter where I look
 }
-niuatoputapu_atoll = {
+niuatoputapu_atoll = { # Part of the Niuas islands, 80% native faith and 20% Methodist
+	define_pop = {	type = peasants	size = 0.677	culture = tonga_oceania_culture	religion = tapu_religion } # farmers
+	define_pop = {	type = burghers	size = 0.052	culture = tonga_oceania_culture	religion = tapu_religion } # artisans
+	define_pop = {	type = clergy	size = 0.010	culture = tonga_oceania_culture	religion = tapu_religion } # clergymen
+	define_pop = {	type = nobles	size = 0.004	culture = tonga_oceania_culture	religion = tapu_religion }
+	define_pop = {	type = clergy	size = 0.017	culture = tonga_oceania_culture	religion = tapu_religion } # intellectuals
+	define_pop = {	type = peasants	size = 0.143	culture = tonga_oceania_culture	religion = anglican } # farmers
+	define_pop = {	type = burghers	size = 0.013	culture = tonga_oceania_culture	religion = anglican } # artisans
+	define_pop = {	type = clergy	size = 0.014	culture = tonga_oceania_culture	religion = anglican } # clergymen
+	define_pop = {	type = nobles	size = 0.016	culture = tonga_oceania_culture	religion = anglican }
+	define_pop = {	type = clergy	size = 0.004	culture = tonga_oceania_culture	religion = tapu_religion } # intellectuals
+
+
+
+
 }
 niue = {
 	define_pop = {	type = tribesmen	size = 0.353	culture = niuean_culture	religion = tapu_religion }
@@ -103924,19 +104128,78 @@ nukunonu_atoll = {
 }
 atafu_atoll = {
 }
-savaii = {
-	define_pop = {	type = tribesmen	size = 6.332	culture = tagata_samoa_culture	religion = tapu_religion }
-	define_pop = {	type = peasants	size = 0.918	culture = tagata_samoa_culture	religion = tapu_religion }
+savaii = { # Samoa as a whole is estimated by missionaries to be about 56,600 people in 1836 by early LMS and Commodore Wilkes of The US, this number seems to decline by the 1840s with more accurate counts stating it to be 40,000. I met in the middle at 48,300 as war and European contact did destroy things. I put Upolu at 21340, Savaii at 17067, Tutuila at 6827, and Manu'a at 2066 (which is independent from the rest of Samoa). This number would be higher if we did 1830 because a war did just devastate most of Western Upolu. Religion on Samoa was a MESS, there was a syncretic faith that I will merge into the tapu_religion for the sake of my sanity, the traditional faith, and two Christian faiths, the Methodists from Tonga and the Calvinists. On Savai'i, the split is roughly 60% Calvinist, 20% Syncretic (Sio Vili movement), 10% Methodist (Anglican for now), and 10% Tapu Religion
+	define_pop = {	type = peasants	size = 6.475	culture = tagata_samoa_culture	religion = calvinist } # farmers
+	define_pop = {	type = peasants	size = 3.377	culture = tagata_samoa_culture	religion = tapu_religion } # farmers
+	define_pop = {	type = peasants	size = 0.909	culture = tagata_samoa_culture	religion = anglican } # farmers
+	define_pop = {	type = clergy	size = 0.023	culture = tagata_samoa_culture	religion = tapu_religion } # clergymen
+	define_pop = {	type = clergy	size = 0.080	culture = tagata_samoa_culture	religion = calvinist } # clergymen
+	define_pop = {	type = clergy	size = 0.050	culture = tagata_samoa_culture	religion = anglican } # clergymen
+	define_pop = {	type = soldiers	size = 2.550	culture = tagata_samoa_culture	religion = calvinist }
+	define_pop = {	type = soldiers	size = 1.275	culture = tagata_samoa_culture	religion = tapu_religion }
+	define_pop = {	type = soldiers	size = 0.638	culture = tagata_samoa_culture	religion = anglican }
+	define_pop = {	type = nobles	size = 0.660	culture = tagata_samoa_culture	religion = calvinist }
+	define_pop = {	type = nobles	size = 0.220	culture = tagata_samoa_culture	religion = tapu_religion }
+	define_pop = {	type = nobles	size = 0.110	culture = tagata_samoa_culture	religion = anglican }
+	define_pop = {	type = burghers	size = 0.250	culture = tagata_samoa_culture	religion = calvinist } # artisans
+	define_pop = {	type = clergy	size = 0.225	culture = tagata_samoa_culture	religion = calvinist } # intellectuals
+	define_pop = {	type = clergy	size = 0.225	culture = tagata_samoa_culture	religion = tapu_religion } # intellectuals
+
+
+
 }
-upolu = {
-	define_pop = {	type = tribesmen	size = 21.130	culture = tagata_samoa_culture	religion = tapu_religion }
-	define_pop = {	type = peasants	size = 2.642	culture = tagata_samoa_culture	religion = tapu_religion }
+upolu = { # On Upolu, the religious distribution was more around 37.5% for both traditional faith and Calvinism, 12.5% for the syncretic Sio Vili movement, and 10% for Methodism
+	define_pop = {	type = peasants	size = 5.367	culture = tagata_samoa_culture	religion = calvinist }
+	define_pop = {	type = peasants	size = 6.295	culture = tagata_samoa_culture	religion = tapu_religion }
+	define_pop = {	type = peasants	size = 1.253	culture = tagata_samoa_culture	religion = anglican }
+	define_pop = {	type = soldiers	size = 2.063	culture = tagata_samoa_culture	religion = calvinist }
+	define_pop = {	type = soldiers	size = 2.750	culture = tagata_samoa_culture	religion = tapu_religion }
+	define_pop = {	type = soldiers	size = 0.687	culture = tagata_samoa_culture	religion = anglican }
+	define_pop = {	type = nobles	size = 0.506	culture = tagata_samoa_culture	religion = calvinist }
+	define_pop = {	type = nobles	size = 0.675	culture = tagata_samoa_culture	religion = tapu_religion }
+	define_pop = {	type = nobles	size = 0.169	culture = tagata_samoa_culture	religion = anglican }
+	define_pop = {	type = clergy	size = 0.070	culture = tagata_samoa_culture	religion = calvinist } # clergymen
+	define_pop = {	type = clergy	size = 0.025	culture = tagata_samoa_culture	religion = anglican } # clergymen
+	define_pop = {	type = clergy	size = 0.550	culture = tagata_samoa_culture	religion = tapu_religion } # intellectuals
+	define_pop = {	type = burghers	size = 0.300	culture = tagata_samoa_culture	religion = tapu_religion } # artisans
+	define_pop = {	type = clergy	size = 0.100	culture = tagata_samoa_culture	religion = tapu_religion } # clergymen
+
+
+
 }
-tutuila = {
-	define_pop = {	type = tribesmen	size = 6.686	culture = tagata_samoa_culture	religion = tapu_religion }
-	define_pop = {	type = peasants	size = 1.313	culture = tagata_samoa_culture	religion = tapu_religion }
+tutuila = { # Tutuila was more normal, about 65% was still practicing the native faith completely, and the Calvinists were at 35%
+	define_pop = {	type = peasants	size = 3.037	culture = tagata_samoa_culture	religion = tapu_religion }
+	define_pop = {	type = peasants	size = 1.672	culture = tagata_samoa_culture	religion = calvinist }
+	define_pop = {	type = clergy	size = 0.050	culture = tagata_samoa_culture	religion = tapu_religion } # clergymen
+	define_pop = {	type = clergy	size = 0.018	culture = tagata_samoa_culture	religion = tapu_religion } # clergymen
+	define_pop = {	type = soldiers	size = 1.073	culture = tagata_samoa_culture	religion = tapu_religion }
+	define_pop = {	type = soldiers	size = 0.577	culture = tagata_samoa_culture	religion = tapu_religion }
+	define_pop = {	type = burghers	size = 0.095	culture = tagata_samoa_culture	religion = tapu_religion } # artisans
+	define_pop = {	type = clergy	size = 0.100	culture = tagata_samoa_culture	religion = tapu_religion } # intellectuals
+	define_pop = {	type = clergy	size = 0.015	culture = tagata_samoa_culture	religion = calvinist } # intellectuals
+	define_pop = {	type = nobles	size = 0.260	culture = tagata_samoa_culture	religion = tapu_religion } # intellectuals
+	define_pop = {	type = nobles	size = 0.140	culture = tagata_samoa_culture	religion = calvinist } # intellectuals
+
+
+
+
+
+
+
 }
-manua = {
+manua = { # Entirely practicing the native faith, it's a separate country too, so we'll deal with that when we get there
+	define_pop = {	type = peasants	size = 1.491	culture = tagata_samoa_culture	religion = tapu_religion } # farmers
+	define_pop = {	type = clergy	size = 0.020	culture = tagata_samoa_culture	religion = tapu_religion } # clergymen
+	define_pop = {	type = soldiers	size = 0.400	culture = tagata_samoa_culture	religion = tapu_religion }
+	define_pop = {	type = nobles	size = 0.090	culture = tagata_samoa_culture	religion = tapu_religion }
+	define_pop = {	type = burghers	size = 0.030	culture = tagata_samoa_culture	religion = tapu_religion } # artisans
+	define_pop = {	type = clergy	size = 0.035	culture = tagata_samoa_culture	religion = tapu_religion } # intellectuals
+
+
+
+
+
+
 }
 mulinuu_cape = {
 }

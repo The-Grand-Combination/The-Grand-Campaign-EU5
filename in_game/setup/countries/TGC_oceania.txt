@@ -1,0 +1,39 @@
+﻿HAW = {
+	color  = map_hawaii
+	color2 = rgb {  50 128  84 }
+
+	culture_definition = kanaka_maoli_culture
+	religion_definition = calvinist
+}
+
+TAH = {
+	color  = map_tahiti
+	color2 = rgb {  50 128  84 }
+
+	culture_definition = maohi_culture
+	religion_definition = calvinist
+}
+
+BBR = {
+	color  = map_bora_bora
+	color2 = rgb { 1 42 176 }
+
+	culture_definition = maohi_culture
+	religion_definition = calvinist
+}
+
+HHN = {
+	color  = map_huahine
+	color2 = rgb { 253 136 15 }
+
+	culture_definition = maohi_culture
+	religion_definition = calvinist
+}
+
+RAI = {
+	color  = map_raiatea
+	color2 = rgb { 206 32 40 }
+
+	culture_definition = maohi_culture
+	religion_definition = calvinist
+}

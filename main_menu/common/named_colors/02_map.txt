@@ -249,6 +249,14 @@ colors = {
 	map_RYU = rgb { 84 96 136 }
 	map_QNG = rgb { 229 196 68 }
 
+# Oceania
+	map_hawaii = rgb { 48 169 96 }
+	map_tahiti = rgb { 176 62 136 }
+	map_bora_bora = rgb { 1 42 176 }
+	map_raiatea = rgb { 206 32 40 }
+	map_huahine = rgb { 253 136 15 }
+
+
 # PLACEHOLDER
 
 	#eu4 map colors
