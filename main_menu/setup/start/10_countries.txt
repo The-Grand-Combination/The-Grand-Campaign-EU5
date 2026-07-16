@@ -2,22 +2,6 @@ current_age =
 age_7_industry
 countries = {
    countries = {
-      AAC = {
-         country_rank = rank_county
-
-       }
-      AAD = {
-         country_rank = rank_county
-
-       }
-      AAI = {
-         country_rank = rank_county
-
-       }
-      AAL = {
-         country_rank = rank_county
-
-       }
       ABA = {
          country_rank = rank_county
 
@@ -25,14 +9,6 @@ countries = {
             bouira azeffoun kuku tedelles tablat tellatlas tamentfoust el_kseur bordj_bou_arreridj burg_bu_mountain1
             maqqara msila kalaa_of_ait_abbas amdoukal tolga bou_saada messaad djelfa
          }
-
-       }
-      ABB = {
-         country_rank = rank_county
-
-       }
-      ABD = {
-         country_rank = rank_county
 
        }
       ABK = {
@@ -56,14 +32,6 @@ countries = {
 
           }
       }
-      ABL = {
-         country_rank = rank_county
-
-       }
-      ABT = {
-         country_rank = rank_county
-
-       }
       ABU = {
          capital = tuapse
          country_rank = rank_county
@@ -85,46 +53,6 @@ countries = {
 
           }
       }
-      ABV = {
-         country_rank = rank_county
-
-       }
-      ABW = {
-         country_rank = rank_county
-
-       }
-      ACA = {
-         country_rank = rank_county
-
-       }
-      ACH = {
-         country_rank = rank_county
-
-       }
-      ACL = {
-         country_rank = rank_county
-
-       }
-      ACO = {
-         country_rank = rank_county
-
-       }
-      ACW = {
-         country_rank = rank_county
-
-       }
-      ACX = {
-         country_rank = rank_county
-
-       }
-      ADA = {
-         country_rank = rank_county
-
-       }
-      ADG = {
-         country_rank = rank_county
-
-       }
       ADH = {
          capital = ayodhya
          country_rank = rank_county
@@ -183,44 +111,12 @@ countries = {
 
           }
       }
-      ADO = {
-         country_rank = rank_county
-
-       }
-      ADR = {
-         country_rank = rank_county
-
-       }
-      AFA = {
-         country_rank = rank_county
-
-       }
-      AFR = {
-         country_rank = rank_county
-
-       }
-      AGC = {
-         country_rank = rank_county
-
-       }
       AGH = {
          country_rank = rank_county
 
          own_control_core = {
             mozambique bajone sangage angoche moma
          }
-
-       }
-      AGJ = {
-         country_rank = rank_county
-
-       }
-      AGN = {
-         country_rank = rank_county
-
-       }
-      AGW = {
-         country_rank = rank_county
 
        }
       AHB = {
@@ -287,10 +183,6 @@ countries = {
 
           }
       }
-      AHI = {
-         country_rank = rank_county
-
-       }
       AHK = {
          capital = zerbst
 
@@ -347,98 +239,6 @@ countries = {
 
           }
       }
-      AHT = {
-         country_rank = rank_county
-
-       }
-      AHU = {
-         country_rank = rank_county
-
-       }
-      AHY = {
-         country_rank = rank_county
-
-       }
-      AIM = {
-         country_rank = rank_county
-
-       }
-      AIS = {
-         country_rank = rank_county
-
-       }
-      AIT = {
-         country_rank = rank_county
-
-       }
-      AIX = {
-         country_rank = rank_county
-
-       }
-      AJC = {
-         country_rank = rank_county
-
-       }
-      AJU = {
-         country_rank = rank_county
-
-       }
-      AKG = {
-         country_rank = rank_county
-
-       }
-      AKI = {
-         country_rank = rank_county
-
-       }
-      AKJ = {
-         country_rank = rank_county
-
-       }
-      AKM = {
-         country_rank = rank_county
-
-       }
-      AKN = {
-         country_rank = rank_county
-
-       }
-      AKR = {
-         country_rank = rank_county
-
-       }
-      AKT = {
-         country_rank = rank_county
-
-       }
-      AKU = {
-         country_rank = rank_county
-
-       }
-      AKW = {
-         country_rank = rank_county
-
-       }
-      AKY = {
-         country_rank = rank_county
-
-       }
-      AKZ = {
-         country_rank = rank_county
-
-       }
-      ALA = {
-         country_rank = rank_county
-
-       }
-      ALB = {
-         country_rank = rank_county
-
-       }
-      ALC = {
-         country_rank = rank_county
-
-       }
       ALE = {
          capital = tuapse
          country_rank = rank_county
@@ -472,22 +272,6 @@ countries = {
          }
 
        }
-      ALI = {
-         country_rank = rank_county
-
-       }
-      ALL = {
-         country_rank = rank_county
-
-       }
-      ALN = {
-         country_rank = rank_county
-
-       }
-      ALO = {
-         country_rank = rank_county
-
-       }
       ALQ = {
          capital = al_qatif
          religious_school = imamiya_school
@@ -518,10 +302,6 @@ countries = {
          own_control_core = {
             pubungu
          }
-
-       }
-      ALS = {
-         country_rank = rank_county
 
        }
       ALT = {
@@ -568,96 +348,12 @@ countries = {
 
           }
       }
-      ALY = {
-         country_rank = rank_county
-
-       }
-      AMA = {
-         country_rank = rank_county
-
-       }
-      AMB = {
-         country_rank = rank_county
-
-       }
-      AMD = {
-         country_rank = rank_county
-
-       }
-      AME = {
-         country_rank = rank_county
-
-       }
-      AMG = {
-         country_rank = rank_county
-
-       }
-      AMH = {
-         country_rank = rank_county
-
-       }
-      AML = {
-         country_rank = rank_county
-
-       }
-      AMN = {
-         country_rank = rank_county
-
-       }
-      AMP = {
-         country_rank = rank_county
-
-       }
-      AMR = {
-         country_rank = rank_county
-
-       }
-      AMT = {
-         country_rank = rank_county
-
-       }
-      ANB = {
-         country_rank = rank_county
-
-       }
-      ANC = {
-         country_rank = rank_county
-
-       }
-      ANG = {
-         country_rank = rank_county
-
-       }
-      ANH = {
-         country_rank = rank_county
-
-       }
-      ANI = {
-         country_rank = rank_county
-
-       }
-      ANJ = {
-         country_rank = rank_county
-
-       }
       ANK = {
          country_rank = rank_county
 
          own_control_core = {
             irodo vohemar ambilobe nosy_be mahilaka bemanevika
          }
-
-       }
-      ANL = {
-         country_rank = rank_county
-
-       }
-      ANM = {
-         country_rank = rank_county
-
-       }
-      ANN = {
-         country_rank = rank_county
 
        }
       ANR = {
@@ -680,50 +376,6 @@ countries = {
 
           }
       }
-      ANS = {
-         country_rank = rank_county
-
-       }
-      ANT = {
-         country_rank = rank_county
-
-       }
-      ANU = {
-         country_rank = rank_county
-
-       }
-      ANZ = {
-         country_rank = rank_county
-
-       }
-      AOS = {
-         country_rank = rank_county
-
-       }
-      APA = {
-         country_rank = rank_county
-
-       }
-      APD = {
-         country_rank = rank_county
-
-       }
-      APR = {
-         country_rank = rank_county
-
-       }
-      AQU = {
-         country_rank = rank_county
-
-       }
-      ARA = {
-         country_rank = rank_county
-
-       }
-      ARB = {
-         country_rank = rank_county
-
-       }
       ARD = {
          capital = sanandaj
          religious_school = hanafi_school
@@ -830,10 +482,6 @@ countries = {
 
           }
       }
-      ARI = {
-         country_rank = rank_county
-
-       }
       ARK = {
          capital = launggyet
          country_rank = rank_county
@@ -853,14 +501,6 @@ countries = {
 
           }
       }
-      ARM = {
-         country_rank = rank_county
-
-       }
-      ARN = {
-         country_rank = rank_county
-
-       }
       ARO = {
          country_rank = rank_county
 
@@ -868,10 +508,6 @@ countries = {
             nembe brass igbo_ukwu onitsha nnewi azia new_calabar bonny calabar arochukwu
             awka_etiti ugbo awka amaigbo eket
          }
-
-       }
-      ARR = {
-         country_rank = rank_county
 
        }
       ARS = {
@@ -898,10 +534,6 @@ countries = {
 
           }
       }
-      ART = {
-         country_rank = rank_county
-
-       }
       ARU = {
          capital = kota_rentang
          religious_school = shafii_school
@@ -937,26 +569,6 @@ countries = {
 
           }
       }
-      ARW = {
-         country_rank = rank_county
-
-       }
-      ARZ = {
-         country_rank = rank_county
-
-       }
-      ASA = {
-         country_rank = rank_county
-
-       }
-      ASC = {
-         country_rank = rank_county
-
-       }
-      ASD = {
-         country_rank = rank_county
-
-       }
       ASH = {
          country_rank = rank_county
 
@@ -966,28 +578,12 @@ countries = {
          }
 
        }
-      ASL = {
-         country_rank = rank_county
-
-       }
       ASM = {
          country_rank = rank_county
 
          own_control_core = {
             chandrapur
          }
-
-       }
-      ASN = {
-         country_rank = rank_county
-
-       }
-      ASO = {
-         country_rank = rank_county
-
-       }
-      ASP = {
-         country_rank = rank_county
 
        }
       ASR = {
@@ -1014,14 +610,6 @@ countries = {
 
           }
       }
-      AST = {
-         country_rank = rank_county
-
-       }
-      ASY = {
-         country_rank = rank_county
-
-       }
       ATB = {
          capital = tuapse
          country_rank = rank_county
@@ -1043,18 +631,6 @@ countries = {
 
           }
       }
-      ATC = {
-         country_rank = rank_county
-
-       }
-      ATF = {
-         country_rank = rank_county
-
-       }
-      ATG = {
-         country_rank = rank_county
-
-       }
       ATH = {
          capital = cephalonia
 
@@ -1103,10 +679,6 @@ countries = {
 
           }
       }
-      ATI = {
-         country_rank = rank_county
-
-       }
       ATJ = {
          capital = bandar_aceh
          religious_school = shafii_school
@@ -1137,120 +709,12 @@ countries = {
 
           }
       }
-      ATK = {
-         country_rank = rank_county
-
-       }
-      ATL = {
-         country_rank = rank_county
-
-       }
-      ATM = {
-         country_rank = rank_county
-
-       }
-      ATO = {
-         country_rank = rank_county
-
-       }
-      ATP = {
-         country_rank = rank_county
-
-       }
-      ATQ = {
-         country_rank = rank_county
-
-       }
-      ATR = {
-         country_rank = rank_county
-
-       }
-      ATT = {
-         country_rank = rank_county
-
-       }
-      ATV = {
-         country_rank = rank_county
-
-       }
-      ATZ = {
-         country_rank = rank_county
-
-       }
-      AUD = {
-         country_rank = rank_county
-
-       }
-      AUG = {
-         country_rank = rank_county
-
-       }
-      AUM = {
-         country_rank = rank_county
-
-       }
-      AUV = {
-         country_rank = rank_county
-
-       }
-      AVA = {
-         country_rank = rank_county
-
-       }
-      AVR = {
-         country_rank = rank_county
-
-       }
-      AVY = {
-         country_rank = rank_county
-
-       }
-      AWA = {
-         country_rank = rank_county
-
-       }
-      AWO = {
-         country_rank = rank_county
-
-       }
       AWS = {
          country_rank = rank_county
 
          own_control_core = {
             rahayta asaita tadjoura obock balho assab bayul horn_deserts killelu mora_eth
          }
-
-       }
-      AXC = {
-         country_rank = rank_county
-
-       }
-      AXO = {
-         country_rank = rank_county
-
-       }
-      AYA = {
-         country_rank = rank_county
-
-       }
-      AYD = {
-         country_rank = rank_county
-
-       }
-      AYO = {
-         country_rank = rank_county
-
-       }
-      AZF = {
-         country_rank = rank_county
-
-       }
-      AZL = {
-         country_rank = rank_county
-
-       }
-      BAA = {
-         country_rank = rank_county
 
        }
       BAB = {
@@ -1320,10 +784,6 @@ countries = {
 
           }
       }
-      BAG = {
-         country_rank = rank_county
-
-       }
       BAI = {
          capital = banggai
          country_rank = rank_county
@@ -1348,18 +808,6 @@ countries = {
 
           }
       }
-      BAK = {
-         country_rank = rank_county
-
-       }
-      BAM = {
-         country_rank = rank_county
-
-       }
-      BAR = {
-         country_rank = rank_county
-
-       }
       BAS = {
          country_rank = rank_county
 
@@ -1448,32 +896,12 @@ countries = {
 
           }
       }
-      BBA = {
-         country_rank = rank_county
-
-       }
-      BBD = {
-         country_rank = rank_county
-
-       }
-      BBG = {
-         country_rank = rank_county
-
-       }
       BBK = {
          country_rank = rank_county
 
          own_control_core = {
             diakha bafoulabe
          }
-
-       }
-      BCH = {
-         country_rank = rank_county
-
-       }
-      BCN = {
-         country_rank = rank_county
 
        }
       BDE = {
@@ -1504,10 +932,6 @@ countries = {
 
           }
       }
-      BDK = {
-         country_rank = rank_county
-
-       }
       BDS = {
          capital = tuapse
          country_rank = rank_county
@@ -1529,10 +953,6 @@ countries = {
 
           }
       }
-      BEA = {
-         country_rank = rank_county
-
-       }
       BEI = {
          capital = berune
          country_rank = rank_duchy # becomes kingdom in flavor_bei.1
@@ -1648,10 +1068,6 @@ countries = {
 
           }
       }
-      BER = {
-         country_rank = rank_county
-
-       }
       BES = {
          capital = beruas
          country_rank = rank_county
@@ -1671,22 +1087,6 @@ countries = {
 
           }
       }
-      BET = {
-         country_rank = rank_county
-
-       }
-      BEZ = {
-         country_rank = rank_county
-
-       }
-      BFN = {
-         country_rank = rank_county
-
-       }
-      BFR = {
-         country_rank = rank_county
-
-       }
       BGG = {
          capital = sigi
          country_rank = rank_county
@@ -1714,10 +1114,6 @@ countries = {
             dourbali am_djemena yao moito cherfe goulfey gaoui bokoro goundi bousso
             bongor guelengdeng pouss logone_birni massenya
          }
-
-       }
-      BGJ = {
-         country_rank = rank_county
 
        }
       BGK = {
@@ -1765,10 +1161,6 @@ countries = {
 
           }
       }
-      BGN = {
-         country_rank = rank_county
-
-       }
       BGR = {
          capital = bandhugara
          country_rank = rank_county
@@ -1844,10 +1236,6 @@ countries = {
 
           }
       }
-      BHL = {
-         country_rank = rank_county
-
-       }
       BHM = {
          capital = manmaw
          country_rank = rank_county
@@ -1867,10 +1255,6 @@ countries = {
 
           }
       }
-      BHN = {
-         country_rank = rank_county
-
-       }
       BHP = {
          capital = bishnupur
          court_language = sanskrit_language
@@ -1961,18 +1345,6 @@ countries = {
          }
 
        }
-      BIA = {
-         country_rank = rank_county
-
-       }
-      BIB = {
-         country_rank = rank_county
-
-       }
-      BID = {
-         country_rank = rank_county
-
-       }
       BIK = {
          country_rank = rank_county
 
@@ -2002,18 +1374,6 @@ countries = {
 
           }
       }
-      BIN = {
-         country_rank = rank_county
-
-       }
-      BIO = {
-         country_rank = rank_county
-
-       }
-      BIR = {
-         country_rank = rank_county
-
-       }
       BIT = {
          capital = bitlis
          religious_school = maturidi_school #Widespread among the Turks together with Hanafi
@@ -2037,14 +1397,6 @@ countries = {
 
           }
       }
-      BJA = {
-         country_rank = rank_county
-
-       }
-      BJG = {
-         country_rank = rank_county
-
-       }
       BKH = {
          capital = tuapse
          country_rank = rank_duchy
@@ -2068,34 +1420,6 @@ countries = {
 
           }
       }
-      BKT = {
-         country_rank = rank_county
-
-       }
-      BKZ = {
-         country_rank = rank_county
-
-       }
-      BLA = {
-         country_rank = rank_county
-
-       }
-      BLB = {
-         country_rank = rank_county
-
-       }
-      BLD = {
-         country_rank = rank_county
-
-       }
-      BLE = {
-         country_rank = rank_county
-
-       }
-      BLG = {
-         country_rank = rank_county
-
-       }
       BLI = {
          capital = samprangan
          country_rank = rank_kingdom
@@ -2158,14 +1482,6 @@ countries = {
 
           }
       }
-      BLL = {
-         country_rank = rank_county
-
-       }
-      BLM = {
-         country_rank = rank_county
-
-       }
       BLN = {
          capital = belang
          country_rank = rank_county
@@ -2190,44 +1506,12 @@ countries = {
 
           }
       }
-      BLO = {
-         country_rank = rank_county
-
-       }
-      BLR = {
-         country_rank = rank_county
-
-       }
-      BLS = {
-         country_rank = rank_county
-
-       }
-      BMB = {
-         country_rank = rank_county
-
-       }
       BMG = {
          country_rank = rank_county
 
          own_control_core = {
             gana tshwa tsila bamangwato modipe lotsane amkoe bakgatla kaditshwene
          }
-
-       }
-      BMK = {
-         country_rank = rank_county
-
-       }
-      BMP = {
-         country_rank = rank_county
-
-       }
-      BMR = {
-         country_rank = rank_county
-
-       }
-      BMS = {
-         country_rank = rank_county
 
        }
       BNA = {
@@ -2256,10 +1540,6 @@ countries = {
 
           }
       }
-      BNB = {
-         country_rank = rank_county
-
-       }
       BND = {
          capital = kundar #Later moved to Orchha
          country_rank = rank_county
@@ -2300,10 +1580,6 @@ countries = {
 
           }
       }
-      BNI = {
-         country_rank = rank_county
-
-       }
       BNK = {
          capital = al_qatif
          religious_school = imamiya_school
@@ -2328,28 +1604,12 @@ countries = {
 
           }
       }
-      BNL = {
-         country_rank = rank_county
-
-       }
-      BNT = {
-         country_rank = rank_county
-
-       }
       BNY = {
          country_rank = rank_county
 
          own_control_core = {
             kibengo rugombe lango pawir kibiro
          }
-
-       }
-      BOD = {
-         country_rank = rank_county
-
-       }
-      BOH = {
-         country_rank = rank_county
 
        }
       BOI = {
@@ -2435,10 +1695,6 @@ countries = {
 
           }
       }
-      BON = {
-         country_rank = rank_county
-
-       }
       BOO = {
          capital = bool
          country_rank = rank_county
@@ -2465,14 +1721,6 @@ countries = {
          own_control_core = {
             babana kisi kaiama agbonle nikki sori gaia kandi segbana
          }
-
-       }
-      BOS = {
-         country_rank = rank_county
-
-       }
-      BOU = {
-         country_rank = rank_county
 
        }
       BOW = {
@@ -2514,26 +1762,6 @@ countries = {
 
           }
       }
-      BQA = {
-         country_rank = rank_county
-
-       }
-      BQL = {
-         country_rank = rank_county
-
-       }
-      BRA = {
-         country_rank = rank_county
-
-       }
-      BRB = {
-         country_rank = rank_county
-
-       }
-      BRC = {
-         country_rank = rank_county
-
-       }
       BRD = {
          country_rank = rank_county
 
@@ -2564,38 +1792,6 @@ countries = {
 
           }
       }
-      BRG = {
-         country_rank = rank_county
-
-       }
-      BRI = {
-         country_rank = rank_county
-
-       }
-      BRK = {
-         country_rank = rank_county
-
-       }
-      BRL = {
-         country_rank = rank_county
-
-       }
-      BRM = {
-         country_rank = rank_county
-
-       }
-      BRN = {
-         country_rank = rank_county
-
-       }
-      BRO = {
-         country_rank = rank_county
-
-       }
-      BRR = {
-         country_rank = rank_county
-
-       }
       BRS = {
          country_rank = rank_county
 
@@ -2604,18 +1800,6 @@ countries = {
             liova katima mamele lukana ani_south mucusso baviko loengowe njoko nalolo
             marimbi mabunda zambesia_katongo lumbi sioma bombwi namieta
          }
-
-       }
-      BRT = {
-         country_rank = rank_county
-
-       }
-      BRU = {
-         country_rank = rank_county
-
-       }
-      BRY = {
-         country_rank = rank_county
 
        }
       BRZ = {
@@ -2735,32 +1919,12 @@ countries = {
 
           }
       }
-      BSC = {
-         country_rank = rank_county
-
-       }
-      BSD = {
-         country_rank = rank_county
-
-       }
       BSG = {
          country_rank = rank_county
 
          own_control_core = {
             busoga
          }
-
-       }
-      BSH = {
-         country_rank = rank_county
-
-       }
-      BSK = {
-         country_rank = rank_county
-
-       }
-      BSM = {
-         country_rank = rank_county
 
        }
       BSP = {
@@ -2899,14 +2063,6 @@ countries = {
 
           }
       }
-      BTG = {
-         country_rank = rank_county
-
-       }
-      BTI = {
-         country_rank = rank_county
-
-       }
       BTL = {
          capital = tuapse
          country_rank = rank_county
@@ -2959,10 +2115,6 @@ countries = {
          }
 
        }
-      BTS = {
-         country_rank = rank_county
-
-       }
       BTU = {
          capital = butuan
          country_rank = rank_county
@@ -3003,14 +2155,6 @@ countries = {
          }
 
        }
-      BUB = {
-         country_rank = rank_county
-
-       }
-      BUD = {
-         country_rank = rank_county
-
-       }
       BUG = {
          capital = buganda
          country_rank = rank_county
@@ -3033,20 +2177,12 @@ countries = {
 
           }
       }
-      BUL = {
-         country_rank = rank_county
-
-       }
       BUN = {
          country_rank = rank_county
 
          own_control_core = {
             diawara ballou sutuko
          }
-
-       }
-      BUR = {
-         country_rank = rank_county
 
        }
       BUS = {
@@ -3077,10 +2213,6 @@ countries = {
          }
 
        }
-      BVK = {
-         country_rank = rank_county
-
-       }
       BWL = {
          capital = rawatsar
          country_rank = rank_county
@@ -3102,14 +2234,6 @@ countries = {
 
           }
       }
-      BXJ = {
-         country_rank = rank_county
-
-       }
-      BXN = {
-         country_rank = rank_county
-
-       }
       BYD = {
          capital = tuapse
          country_rank = rank_county
@@ -3131,42 +2255,6 @@ countries = {
 
           }
       }
-      BYG = {
-         country_rank = rank_county
-
-       }
-      BYM = {
-         country_rank = rank_county
-
-       }
-      BYZ = {
-         country_rank = rank_county
-
-       }
-      BZE = {
-         country_rank = rank_county
-
-       }
-      BZG = {
-         country_rank = rank_county
-
-       }
-      BZH = {
-         country_rank = rank_county
-
-       }
-      BZN = {
-         country_rank = rank_county
-
-       }
-      BZU = {
-         country_rank = rank_county
-
-       }
-      CAA = {
-         country_rank = rank_county
-
-       }
       CAB = {
          capital = chamba_india
          country_rank = rank_county
@@ -3194,66 +2282,6 @@ countries = {
 
           }
       }
-      CAD = {
-         country_rank = rank_county
-
-       }
-      CAE = {
-         country_rank = rank_county
-
-       }
-      CAG = {
-         country_rank = rank_county
-
-       }
-      CAM = {
-         country_rank = rank_county
-
-       }
-      CAN = {
-         country_rank = rank_county
-
-       }
-      CAR = {
-         country_rank = rank_county
-
-       }
-      CAS = {
-         country_rank = rank_county
-
-       }
-      CAT = {
-         country_rank = rank_county
-
-       }
-      CAU = {
-         country_rank = rank_county
-
-       }
-      CAV = {
-         country_rank = rank_county
-
-       }
-      CAX = {
-         country_rank = rank_county
-
-       }
-      CBA = {
-         country_rank = rank_county
-
-       }
-      CBC = {
-         country_rank = rank_county
-
-       }
-      CBD = {
-         country_rank = rank_county
-
-       }
-      CBH = {
-         country_rank = rank_county
-
-       }
       CBK = {
          capital = thuan_chau
          country_rank = rank_county
@@ -3273,42 +2301,6 @@ countries = {
 
           }
       }
-      CBO = {
-         country_rank = rank_county
-
-       }
-      CBY = {
-         country_rank = rank_county
-
-       }
-      CCH = {
-         country_rank = rank_county
-
-       }
-      CCL = {
-         country_rank = rank_county
-
-       }
-      CCN = {
-         country_rank = rank_county
-
-       }
-      CCP = {
-         country_rank = rank_county
-
-       }
-      CCT = {
-         country_rank = rank_county
-
-       }
-      CCY = {
-         country_rank = rank_county
-
-       }
-      CDC = {
-         country_rank = rank_county
-
-       }
       CDD = {
          capital = chaudandi
          country_rank = rank_county
@@ -3325,20 +2317,12 @@ countries = {
 
           }
       }
-      CDL = {
-         country_rank = rank_county
-
-       }
       CDM = {
          country_rank = rank_county
 
          own_control_core = {
             mutota mukariva massapa zvongombe hondosaka chikowa nyarinde kasekete muyove
          }
-
-       }
-      CDN = {
-         country_rank = rank_county
 
        }
       CEB = {
@@ -3365,18 +2349,6 @@ countries = {
 
           }
       }
-      CEM = {
-         country_rank = rank_county
-
-       }
-      CEN = {
-         country_rank = rank_county
-
-       }
-      CEP = {
-         country_rank = rank_county
-
-       }
       CER = {
          capital = rohtas
          country_rank = rank_county
@@ -3397,58 +2369,6 @@ countries = {
 
           }
       }
-      CES = {
-         country_rank = rank_county
-
-       }
-      CET = {
-         country_rank = rank_county
-
-       }
-      CEV = {
-         country_rank = rank_county
-
-       }
-      CEW = {
-         country_rank = rank_county
-
-       }
-      CFC = {
-         country_rank = rank_county
-
-       }
-      CFN = {
-         country_rank = rank_county
-
-       }
-      CFQ = {
-         country_rank = rank_county
-
-       }
-      CGU = {
-         country_rank = rank_county
-
-       }
-      CGY = {
-         country_rank = rank_county
-
-       }
-      CGZ = {
-         country_rank = rank_county
-
-       }
-      CHA = {
-         country_rank = rank_county
-
-       }
-      CHB = {
-         country_rank = rank_county
-
-       }
-      CHC = {
-         country_rank = rank_county
-
-       }
       CHD = {
          capital = ballarpur
          country_rank = rank_county
@@ -3474,18 +2394,6 @@ countries = {
 
           }
       }
-      CHE = {
-         country_rank = rank_county
-
-       }
-      CHG = {
-         country_rank = rank_county
-
-       }
-      CHH = {
-         country_rank = rank_county
-
-       }
       CHI = {
          capital = dadu
          court_language = northern_mandarin_dialect
@@ -3744,14 +2652,6 @@ countries = {
 
           }
       }
-      CHJ = {
-         country_rank = rank_county
-
-       }
-      CHK = {
-         country_rank = rank_county
-
-       }
       CHL = {
          capital = tenochtitlan
          court_language = norman_dialect
@@ -3822,14 +2722,6 @@ countries = {
 
           }
       }
-      CHM = {
-         country_rank = rank_county
-
-       }
-      CHN = {
-         country_rank = rank_county
-
-       }
       CHO = {
          country_rank = rank_county
 
@@ -3837,50 +2729,6 @@ countries = {
             kioko barotse_kongo libonta south_letota lumeje north_letota kibau bacuma lwena luchaze
             mosiko lumbala_nguimbo saluma kinhama mboma_kongo nariele sekkosi kifumaji
          }
-
-       }
-      CHP = {
-         country_rank = rank_county
-
-       }
-      CHR = {
-         country_rank = rank_county
-
-       }
-      CHS = {
-         country_rank = rank_county
-
-       }
-      CHT = {
-         country_rank = rank_county
-
-       }
-      CHW = {
-         country_rank = rank_county
-
-       }
-      CHX = {
-         country_rank = rank_county
-
-       }
-      CHZ = {
-         country_rank = rank_county
-
-       }
-      CIC = {
-         country_rank = rank_county
-
-       }
-      CIH = {
-         country_rank = rank_county
-
-       }
-      CIL = {
-         country_rank = rank_county
-
-       }
-      CIM = {
-         country_rank = rank_county
 
        }
       CIN = {
@@ -3925,94 +2773,6 @@ countries = {
 
           }
       }
-      CJK = {
-         country_rank = rank_county
-
-       }
-      CJO = {
-         country_rank = rank_county
-
-       }
-      CKL = {
-         country_rank = rank_county
-
-       }
-      CKO = {
-         country_rank = rank_county
-
-       }
-      CKP = {
-         country_rank = rank_county
-
-       }
-      CLA = {
-         country_rank = rank_county
-
-       }
-      CLC = {
-         country_rank = rank_county
-
-       }
-      CLE = {
-         country_rank = rank_county
-
-       }
-      CLG = {
-         country_rank = rank_county
-
-       }
-      CLI = {
-         country_rank = rank_county
-
-       }
-      CLL = {
-         country_rank = rank_county
-
-       }
-      CLM = {
-         country_rank = rank_county
-
-       }
-      CLN = {
-         country_rank = rank_county
-
-       }
-      CLP = {
-         country_rank = rank_county
-
-       }
-      CLQ = {
-         country_rank = rank_county
-
-       }
-      CLR = {
-         country_rank = rank_county
-
-       }
-      CLS = {
-         country_rank = rank_county
-
-       }
-      CLT = {
-         country_rank = rank_county
-
-       }
-      CLU = {
-         country_rank = rank_county
-
-       }
-      CMA = {
-         country_rank = rank_county
-
-       }
-      CMG = {
-         country_rank = rank_county
-
-       }
-      CML = {
-         country_rank = rank_county
-
-       }
       CMN = {
          capital = champaner
          country_rank = rank_county
@@ -4033,58 +2793,6 @@ countries = {
 
           }
       }
-      CMO = {
-         country_rank = rank_county
-
-       }
-      CMR = {
-         country_rank = rank_county
-
-       }
-      CMS = {
-         country_rank = rank_county
-
-       }
-      CNA = {
-         country_rank = rank_county
-
-       }
-      CNC = {
-         country_rank = rank_county
-
-       }
-      CND = {
-         country_rank = rank_county
-
-       }
-      CNH = {
-         country_rank = rank_county
-
-       }
-      CNK = {
-         country_rank = rank_county
-
-       }
-      CNL = {
-         country_rank = rank_county
-
-       }
-      CNN = {
-         country_rank = rank_county
-
-       }
-      CNO = {
-         country_rank = rank_county
-
-       }
-      CNP = {
-         country_rank = rank_county
-
-       }
-      CNR = {
-         country_rank = rank_county
-
-       }
       CNT = {
          capital = kainta
          country_rank = rank_county
@@ -4105,22 +2813,6 @@ countries = {
 
           }
       }
-      CNV = {
-         country_rank = rank_county
-
-       }
-      COC = {
-         country_rank = rank_county
-
-       }
-      COG = {
-         country_rank = rank_county
-
-       }
-      COI = {
-         country_rank = rank_county
-
-       }
       COL = {
          capital = tenochtitlan
          court_language = norman_dialect
@@ -4201,42 +2893,6 @@ countries = {
 
           }
       }
-      COM = {
-         country_rank = rank_county
-
-       }
-      CON = {
-         country_rank = rank_county
-
-       }
-      COO = {
-         country_rank = rank_county
-
-       }
-      COP = {
-         country_rank = rank_county
-
-       }
-      COR = {
-         country_rank = rank_county
-
-       }
-      COT = {
-         country_rank = rank_county
-
-       }
-      COW = {
-         country_rank = rank_county
-
-       }
-      COY = {
-         country_rank = rank_county
-
-       }
-      CPA = {
-         country_rank = rank_county
-
-       }
       CPL = {
          capital = london
          court_language = norman_dialect
@@ -4299,98 +2955,6 @@ countries = {
 
           }
       }
-      CPN = {
-         country_rank = rank_county
-
-       }
-      CPQ = {
-         country_rank = rank_county
-
-       }
-      CPU = {
-         country_rank = rank_county
-
-       }
-      CRA = {
-         country_rank = rank_county
-
-       }
-      CRC = {
-         country_rank = rank_county
-
-       }
-      CRH = {
-         country_rank = rank_county
-
-       }
-      CRI = {
-         country_rank = rank_county
-
-       }
-      CRJ = {
-         country_rank = rank_county
-
-       }
-      CRK = {
-         country_rank = rank_county
-
-       }
-      CRL = {
-         country_rank = rank_county
-
-       }
-      CRM = {
-         country_rank = rank_county
-
-       }
-      CRN = {
-         country_rank = rank_county
-
-       }
-      CRO = {
-         country_rank = rank_county
-
-       }
-      CRR = {
-         country_rank = rank_county
-
-       }
-      CRT = {
-         country_rank = rank_county
-
-       }
-      CSA = {
-         country_rank = rank_county
-
-       }
-      CSB = {
-         country_rank = rank_county
-
-       }
-      CSH = {
-         country_rank = rank_county
-
-       }
-      CSI = {
-         country_rank = rank_county
-
-       }
-      CSK = {
-         country_rank = rank_county
-
-       }
-      CSM = {
-         country_rank = rank_county
-
-       }
-      CSO = {
-         country_rank = rank_county
-
-       }
-      CSQ = {
-         country_rank = rank_county
-
-       }
       CST = {
          country_rank = rank_county
 
@@ -4400,42 +2964,6 @@ countries = {
             guelma meskiana tijis constantine_ALG mila el_milia collo skikda stif_mountain mansouria
             jijel biskra
          }
-
-       }
-      CSU = {
-         country_rank = rank_county
-
-       }
-      CTC = {
-         country_rank = rank_county
-
-       }
-      CTE = {
-         country_rank = rank_county
-
-       }
-      CTG = {
-         country_rank = rank_county
-
-       }
-      CTI = {
-         country_rank = rank_county
-
-       }
-      CTL = {
-         country_rank = rank_county
-
-       }
-      CTM = {
-         country_rank = rank_county
-
-       }
-      CTN = {
-         country_rank = rank_county
-
-       }
-      CTO = {
-         country_rank = rank_county
 
        }
       CTR = {
@@ -4469,38 +2997,6 @@ countries = {
 
           }
       }
-      CTT = {
-         country_rank = rank_county
-
-       }
-      CTW = {
-         country_rank = rank_county
-
-       }
-      CTX = {
-         country_rank = rank_county
-
-       }
-      CTZ = {
-         country_rank = rank_county
-
-       }
-      CUA = {
-         country_rank = rank_county
-
-       }
-      CUC = {
-         country_rank = rank_county
-
-       }
-      CUI = {
-         country_rank = rank_county
-
-       }
-      CUL = {
-         country_rank = rank_county
-
-       }
       CUO = {
          capital = ginzo_de_limia
 
@@ -4551,54 +3047,6 @@ countries = {
 
           }
       }
-      CUU = {
-         country_rank = rank_county
-
-       }
-      CUZ = {
-         country_rank = rank_county
-
-       }
-      CVN = {
-         country_rank = rank_county
-
-       }
-      CWM = {
-         country_rank = rank_county
-
-       }
-      CXI = {
-         country_rank = rank_county
-
-       }
-      CYA = {
-         country_rank = rank_county
-
-       }
-      CYC = {
-         country_rank = rank_county
-
-       }
-      CYP = {
-         country_rank = rank_county
-
-       }
-      CYS = {
-         country_rank = rank_county
-
-       }
-      CZK = {
-         country_rank = rank_county
-
-       }
-      CZL = {
-         country_rank = rank_county
-
-       }
-      DAA = {
-         country_rank = rank_county
-
-       }
       DAG = {
          capital = tuapse
          country_rank = rank_county
@@ -4686,14 +3134,6 @@ countries = {
 
           }
       }
-      DAJ = {
-         country_rank = rank_county
-
-       }
-      DAM = {
-         country_rank = rank_county
-
-       }
       DAN = {
          capital = roskilde
 
@@ -4815,46 +3255,6 @@ countries = {
 
           }
       }
-      DAU = {
-         country_rank = rank_county
-
-       }
-      DAW = {
-         country_rank = rank_county
-
-       }
-      DBD = {
-         country_rank = rank_county
-
-       }
-      DBE = {
-         country_rank = rank_county
-
-       }
-      DCI = {
-         country_rank = rank_county
-
-       }
-      DCN = {
-         country_rank = rank_county
-
-       }
-      DDI = {
-         country_rank = rank_county
-
-       }
-      DEG = {
-         country_rank = rank_county
-
-       }
-      DEN = {
-         country_rank = rank_county
-
-       }
-      DFN = {
-         country_rank = rank_county
-
-       }
       DFR = {
          country_rank = rank_county
 
@@ -4870,10 +3270,6 @@ countries = {
          own_control_core = {
             yendi chamba
          }
-
-       }
-      DGE = {
-         country_rank = rank_county
 
        }
       DGL = {
@@ -4928,10 +3324,6 @@ countries = {
 
           }
       }
-      DHB = {
-         country_rank = rank_county
-
-       }
       DHF = {
          capital = dhufar
          religious_school = shafii_school
@@ -4963,18 +3355,6 @@ countries = {
 
           }
       }
-      DHJ = {
-         country_rank = rank_county
-
-       }
-      DHK = {
-         country_rank = rank_county
-
-       }
-      DHM = {
-         country_rank = rank_county
-
-       }
       DHU = {
          capital = amber_loc
          country_rank = rank_county
@@ -4998,14 +3378,6 @@ countries = {
 
           }
       }
-      DIE = {
-         country_rank = rank_county
-
-       }
-      DIL = {
-         country_rank = rank_county
-
-       }
       DIM = {
          capital = dimapur
          country_rank = rank_county
@@ -5048,46 +3420,6 @@ countries = {
 
           }
       }
-      DIS = {
-         country_rank = rank_county
-
-       }
-      DIT = {
-         country_rank = rank_county
-
-       }
-      DJE = {
-         country_rank = rank_county
-
-       }
-      DLH = {
-         country_rank = rank_county
-
-       }
-      DLN = {
-         country_rank = rank_county
-
-       }
-      DMB = {
-         country_rank = rank_county
-
-       }
-      DMI = {
-         country_rank = rank_county
-
-       }
-      DML = {
-         country_rank = rank_county
-
-       }
-      DMS = {
-         country_rank = rank_county
-
-       }
-      DNB = {
-         country_rank = rank_county
-
-       }
       DND = {
          country_rank = rank_county
 
@@ -5095,18 +3427,6 @@ countries = {
             ouallam ayerou kukiya gorouol kokorou tera namaro makalondi mansila anzourou
             hamdallaye gotheye boubon sikieye libore goudel dargol bura
          }
-
-       }
-      DNE = {
-         country_rank = rank_county
-
-       }
-      DNG = {
-         country_rank = rank_county
-
-       }
-      DOE = {
-         country_rank = rank_county
 
        }
       DOG = {
@@ -5131,10 +3451,6 @@ countries = {
 
           }
       }
-      DOI = {
-         country_rank = rank_county
-
-       }
       DOM = {
          capital = dompu
          country_rank = rank_county
@@ -5161,22 +3477,6 @@ countries = {
          own_control_core = {
             bimbia cameroons ngambe
          }
-
-       }
-      DPH = {
-         country_rank = rank_county
-
-       }
-      DRA = {
-         country_rank = rank_county
-
-       }
-      DRE = {
-         country_rank = rank_county
-
-       }
-      DRG = {
-         country_rank = rank_county
 
        }
       DRP = {
@@ -5212,10 +3512,6 @@ countries = {
 
           }
       }
-      DRU = {
-         country_rank = rank_county
-
-       }
       DRV = {
          capital = tuapse
          country_rank = rank_county
@@ -5259,14 +3555,6 @@ countries = {
 
           }
       }
-      DSN = {
-         country_rank = rank_county
-
-       }
-      DTE = {
-         country_rank = rank_county
-
-       }
       DTI = {
          capital = dipayal
          country_rank = rank_county
@@ -5283,47 +3571,7 @@ countries = {
 
           }
       }
-      DTM = {
-         country_rank = rank_county
-
-       }
-      DUL = {
-         country_rank = rank_county
-
-       }
       DUMMY = {
-         country_rank = rank_county
-
-       }
-      DUN = {
-         country_rank = rank_county
-
-       }
-      DUR = {
-         country_rank = rank_county
-
-       }
-      DWG = {
-         country_rank = rank_county
-
-       }
-      DWS = {
-         country_rank = rank_county
-
-       }
-      DYG = {
-         country_rank = rank_county
-
-       }
-      DYN = {
-         country_rank = rank_county
-
-       }
-      DZH = {
-         country_rank = rank_county
-
-       }
-      DZK = {
          country_rank = rank_county
 
        }
@@ -5407,10 +3655,6 @@ countries = {
          own_control_core = {
             ketu ikorundu eko ajase
          }
-
-       }
-      EGL = {
-         country_rank = rank_county
 
        }
       EGY = {
@@ -5507,10 +3751,6 @@ countries = {
 
           }
       }
-      EIC = {
-         country_rank = rank_county
-
-       }
       EKT = {
          country_rank = rank_county
 
@@ -5531,66 +3771,6 @@ countries = {
 
           }
       }
-      ELL = {
-         country_rank = rank_county
-
-       }
-      ELS = {
-         country_rank = rank_county
-
-       }
-      ELY = {
-         country_rank = rank_county
-
-       }
-      EMA = {
-         country_rank = rank_county
-
-       }
-      END = {
-         country_rank = rank_county
-
-       }
-      ENG = {
-         country_rank = rank_county
-
-       }
-      ENN = {
-         country_rank = rank_county
-
-       }
-      ENY = {
-         country_rank = rank_county
-
-       }
-      EPI = {
-         country_rank = rank_county
-
-       }
-      ERA = {
-         country_rank = rank_county
-
-       }
-      ERB = {
-         country_rank = rank_county
-
-       }
-      ERE = {
-         country_rank = rank_county
-
-       }
-      ERF = {
-         country_rank = rank_county
-
-       }
-      ERI = {
-         country_rank = rank_county
-
-       }
-      ERM = {
-         country_rank = rank_county
-
-       }
       ESH = {
          capital = tallinn
          court_language = norman_dialect
@@ -5645,74 +3825,6 @@ countries = {
 
           }
       }
-      ESS = {
-         country_rank = rank_county
-
-       }
-      EST = {
-         country_rank = rank_county
-
-       }
-      ETA = {
-         country_rank = rank_county
-
-       }
-      ETH = {
-         country_rank = rank_county
-
-       }
-      ETZ = {
-         country_rank = rank_county
-
-       }
-      EUD = {
-         country_rank = rank_county
-
-       }
-      EUF = {
-         country_rank = rank_county
-
-       }
-      EVE = {
-         country_rank = rank_county
-
-       }
-      EVK = {
-         country_rank = rank_county
-
-       }
-      EVR = {
-         country_rank = rank_county
-
-       }
-      EVS = {
-         country_rank = rank_county
-
-       }
-      EWY = {
-         country_rank = rank_county
-
-       }
-      FAB = {
-         country_rank = rank_county
-
-       }
-      FAE = {
-         country_rank = rank_county
-
-       }
-      FAL = {
-         country_rank = rank_county
-
-       }
-      FBG = {
-         country_rank = rank_county
-
-       }
-      FCL = {
-         country_rank = rank_county
-
-       }
       FDH = {
          capital = al_qatif
          religious_school = imamiya_school
@@ -5737,26 +3849,6 @@ countries = {
 
           }
       }
-      FDL = {
-         country_rank = rank_county
-
-       }
-      FEL = {
-         country_rank = rank_county
-
-       }
-      FEO = {
-         country_rank = rank_county
-
-       }
-      FER = {
-         country_rank = rank_county
-
-       }
-      FEZ = {
-         country_rank = rank_county
-
-       }
       FIN = {
          capital = abo
          country_rank = rank_duchy
@@ -5784,30 +3876,6 @@ countries = {
 
           }
       }
-      FLA = {
-         country_rank = rank_county
-
-       }
-      FLD = {
-         country_rank = rank_county
-
-       }
-      FLK = {
-         country_rank = rank_county
-
-       }
-      FLO = {
-         country_rank = rank_county
-
-       }
-      FLY = {
-         country_rank = rank_county
-
-       }
-      FMA = {
-         country_rank = rank_county
-
-       }
       FMB = {
          country_rank = rank_county
 
@@ -5817,24 +3885,12 @@ countries = {
          }
 
        }
-      FMN = {
-         country_rank = rank_county
-
-       }
-      FNJ = {
-         country_rank = rank_county
-
-       }
       FNT = {
          country_rank = rank_county
 
          own_control_core = {
             cabo_corso hemang anomansah apollonia
          }
-
-       }
-      FOI = {
-         country_rank = rank_county
 
        }
       FRA = {
@@ -5960,18 +4016,6 @@ countries = {
 
           }
       }
-      FRE = {
-         country_rank = rank_county
-
-       }
-      FRI = {
-         country_rank = rank_county
-
-       }
-      FRM = {
-         country_rank = rank_county
-
-       }
       FRN = {
          capital = frankfurt
          country_rank = rank_county
@@ -5990,64 +4034,12 @@ countries = {
 
           }
       }
-      FRT = {
-         country_rank = rank_county
-
-       }
-      FRZ = {
-         country_rank = rank_county
-
-       }
-      FUL = {
-         country_rank = rank_county
-
-       }
-      FUR = {
-         country_rank = rank_county
-
-       }
-      FZA = {
-         country_rank = rank_county
-
-       }
-      FZH = {
-         country_rank = rank_county
-
-       }
       GAB = {
          country_rank = rank_county
 
          own_control_core = {
             wassu kabakama tuba kaabu farim salemata
          }
-
-       }
-      GAL = {
-         country_rank = rank_county
-
-       }
-      GAM = {
-         country_rank = rank_county
-
-       }
-      GAR = {
-         country_rank = rank_county
-
-       }
-      GAU = {
-         country_rank = rank_county
-
-       }
-      GAY = {
-         country_rank = rank_county
-
-       }
-      GAZ = {
-         country_rank = rank_county
-
-       }
-      GBH = {
-         country_rank = rank_county
 
        }
       GBI = {
@@ -6195,22 +4187,6 @@ countries = {
 
           }
       }
-      GBS = {
-         country_rank = rank_county
-
-       }
-      GCH = {
-         country_rank = rank_county
-
-       }
-      GCV = {
-         country_rank = rank_county
-
-       }
-      GCZ = {
-         country_rank = rank_county
-
-       }
       GDA = {
          capital = sardarshahar
          country_rank = rank_county
@@ -6232,38 +4208,6 @@ countries = {
 
           }
       }
-      GDD = {
-         country_rank = rank_county
-
-       }
-      GDW = {
-         country_rank = rank_county
-
-       }
-      GED = {
-         country_rank = rank_county
-
-       }
-      GEL = {
-         country_rank = rank_county
-
-       }
-      GEN = {
-         country_rank = rank_county
-
-       }
-      GEO = {
-         country_rank = rank_county
-
-       }
-      GFS = {
-         country_rank = rank_county
-
-       }
-      GGX = {
-         country_rank = rank_county
-
-       }
       GHA = {
          capital = koumbi_saleh
          religious_school = maliki_school
@@ -6356,14 +4300,6 @@ countries = {
          }
 
        }
-      GLA = {
-         country_rank = rank_county
-
-       }
-      GLC = {
-         country_rank = rank_county
-
-       }
       GLE = {
          country_rank = rank_county
 
@@ -6371,10 +4307,6 @@ countries = {
             merca buale haranka jilib afmadow bardera garbahare qoryooley hudur beledweyne
             buur_hakaba barawa baidoa buur_heybe
          }
-
-       }
-      GLH = {
-         country_rank = rank_county
 
        }
       GLI = {
@@ -6426,60 +4358,12 @@ countries = {
 
           }
       }
-      GLM = {
-         country_rank = rank_county
-
-       }
-      GLN = {
-         country_rank = rank_county
-
-       }
-      GLO = {
-         country_rank = rank_county
-
-       }
-      GLR = {
-         country_rank = rank_county
-
-       }
-      GLS = {
-         country_rank = rank_county
-
-       }
-      GLU = {
-         country_rank = rank_county
-
-       }
-      GLY = {
-         country_rank = rank_county
-
-       }
-      GMG = {
-         country_rank = rank_county
-
-       }
-      GMK = {
-         country_rank = rank_county
-
-       }
-      GNG = {
-         country_rank = rank_county
-
-       }
       GNJ = {
          country_rank = rank_county
 
          own_control_core = {
             salaga bole daboya nakpa
          }
-
-       }
-      GNN = {
-         country_rank = rank_county
-
-       }
-      GNV = {
-         country_rank = rank_county
 
        }
       GOA = {
@@ -6512,24 +4396,12 @@ countries = {
          }
 
        }
-      GOL = {
-         country_rank = rank_county
-
-       }
       GON = {
          country_rank = rank_county
 
          own_control_core = {
             chilga kosoge debre_tabor debarq tsana gonder
          }
-
-       }
-      GOR = {
-         country_rank = rank_county
-
-       }
-      GOS = {
-         country_rank = rank_county
 
        }
       GOW = {
@@ -6548,10 +4420,6 @@ countries = {
 
           }
       }
-      GRA = {
-         country_rank = rank_county
-
-       }
       GRE = {
          capital = thebes
          court_language = catalan_dialect
@@ -6601,18 +4469,6 @@ countries = {
 
           }
       }
-      GRF = {
-         country_rank = rank_county
-
-       }
-      GRG = {
-         country_rank = rank_county
-
-       }
-      GRK = {
-         country_rank = rank_county
-
-       }
       GRL = {
          capital = gardr
          country_rank = rank_county
@@ -6686,14 +4542,6 @@ countries = {
          }
 
        }
-      GRR = {
-         country_rank = rank_county
-
-       }
-      GRS = {
-         country_rank = rank_county
-
-       }
       GRT = {
          capital = gorontalo
          country_rank = rank_county
@@ -6718,34 +4566,6 @@ countries = {
 
           }
       }
-      GRY = {
-         country_rank = rank_county
-
-       }
-      GSW = {
-         country_rank = rank_county
-
-       }
-      GTO = {
-         country_rank = rank_county
-
-       }
-      GUA = {
-         country_rank = rank_county
-
-       }
-      GUB = {
-         country_rank = rank_county
-
-       }
-      GUC = {
-         country_rank = rank_county
-
-       }
-      GUG = {
-         country_rank = rank_county
-
-       }
       GUL = {
          country_rank = rank_county
 
@@ -6753,30 +4573,6 @@ countries = {
             kougouri bawku tambaga nungu matiakoali sansanne_mango pama pusiga tenkodogo dourtenga
             banikoara
          }
-
-       }
-      GUM = {
-         country_rank = rank_county
-
-       }
-      GUO = {
-         country_rank = rank_county
-
-       }
-      GUR = {
-         country_rank = rank_county
-
-       }
-      GUV = {
-         country_rank = rank_county
-
-       }
-      GUX = {
-         country_rank = rank_county
-
-       }
-      GUY = {
-         country_rank = rank_county
 
        }
       GWA = {
@@ -6826,40 +4622,12 @@ countries = {
 
           }
       }
-      GWR = {
-         country_rank = rank_county
-
-       }
-      GWT = {
-         country_rank = rank_county
-
-       }
-      GWY = {
-         country_rank = rank_county
-
-       }
       GYA = {
          country_rank = rank_county
 
          own_control_core = {
             bouna banda_ahenkro bondoukou begho sampa dormaa
          }
-
-       }
-      GYE = {
-         country_rank = rank_county
-
-       }
-      GYO = {
-         country_rank = rank_county
-
-       }
-      GYP = {
-         country_rank = rank_county
-
-       }
-      GYT = {
-         country_rank = rank_county
 
        }
       GZA = {
@@ -6869,14 +4637,6 @@ countries = {
             manyikeni madanda malumba nwalungu south_hlanganu west_shangana east_shangana pamuuyu north_hlanganu phalaborwa
             mapulana djonga xai_xai
          }
-
-       }
-      GZH = {
-         country_rank = rank_county
-
-       }
-      HAA = {
-         country_rank = rank_county
 
        }
       HAB = {
@@ -6971,10 +4731,6 @@ countries = {
 
           }
       }
-      HAC = {
-         country_rank = rank_county
-
-       }
       HAD = {
          capital = bundi
          country_rank = rank_county
@@ -6995,10 +4751,6 @@ countries = {
 
           }
       }
-      HAG = {
-         country_rank = rank_county
-
-       }
       HAI = {
          capital = valenciennes
          country_rank = rank_county
@@ -7155,68 +4907,12 @@ countries = {
          }
 
        }
-      HAT = {
-         country_rank = rank_county
-
-       }
-      HBG = {
-         country_rank = rank_county
-
-       }
-      HBN = {
-         country_rank = rank_county
-
-       }
-      HBR = {
-         country_rank = rank_county
-
-       }
-      HBS = {
-         country_rank = rank_county
-
-       }
       HBY = {
          country_rank = rank_county
 
          own_control_core = {
             oodweyne buhoodle somalian_mountains burao
          }
-
-       }
-      HCH = {
-         country_rank = rank_county
-
-       }
-      HCI = {
-         country_rank = rank_county
-
-       }
-      HCK = {
-         country_rank = rank_county
-
-       }
-      HCR = {
-         country_rank = rank_county
-
-       }
-      HDA = {
-         country_rank = rank_county
-
-       }
-      HDH = {
-         country_rank = rank_county
-
-       }
-      HDN = {
-         country_rank = rank_county
-
-       }
-      HDR = {
-         country_rank = rank_county
-
-       }
-      HDY = {
-         country_rank = rank_county
 
        }
       HEH = {
@@ -7246,38 +4942,6 @@ countries = {
 
           }
       }
-      HEI = {
-         country_rank = rank_county
-
-       }
-      HEL = {
-         country_rank = rank_county
-
-       }
-      HEZ = {
-         country_rank = rank_county
-
-       }
-      HGO = {
-         country_rank = rank_county
-
-       }
-      HGY = {
-         country_rank = rank_county
-
-       }
-      HHB = {
-         country_rank = rank_county
-
-       }
-      HHK = {
-         country_rank = rank_county
-
-       }
-      HHM = {
-         country_rank = rank_county
-
-       }
       HHP = {
          capital = thaungdut
          country_rank = rank_county
@@ -7297,30 +4961,6 @@ countries = {
 
           }
       }
-      HIE = {
-         country_rank = rank_county
-
-       }
-      HIG = {
-         country_rank = rank_county
-
-       }
-      HIR = {
-         country_rank = rank_county
-
-       }
-      HIT = {
-         country_rank = rank_county
-
-       }
-      HJN = {
-         country_rank = rank_county
-
-       }
-      HJZ = {
-         country_rank = rank_county
-
-       }
       HKK = {
          capital = hakkari
          religious_school = maturidi_school #Widespread among the Turks together with Hanafi
@@ -7363,30 +5003,6 @@ countries = {
 
           }
       }
-      HKR = {
-         country_rank = rank_county
-
-       }
-      HKW = {
-         country_rank = rank_county
-
-       }
-      HKZ = {
-         country_rank = rank_county
-
-       }
-      HLA = {
-         country_rank = rank_county
-
-       }
-      HLE = {
-         country_rank = rank_county
-
-       }
-      HLF = {
-         country_rank = rank_county
-
-       }
       HLG = {
          capital = basra
          type = army
@@ -7421,56 +5037,12 @@ countries = {
 
           }
       }
-      HLK = {
-         country_rank = rank_county
-
-       }
-      HLL = {
-         country_rank = rank_county
-
-       }
-      HLM = {
-         country_rank = rank_county
-
-       }
       HLR = {
          country_rank = rank_county
 
          own_control_core = {
             nagnes morvi
          }
-
-       }
-      HMD = {
-         country_rank = rank_county
-
-       }
-      HNA = {
-         country_rank = rank_county
-
-       }
-      HNB = {
-         country_rank = rank_county
-
-       }
-      HNE = {
-         country_rank = rank_county
-
-       }
-      HNK = {
-         country_rank = rank_county
-
-       }
-      HNM = {
-         country_rank = rank_county
-
-       }
-      HNN = {
-         country_rank = rank_county
-
-       }
-      HNO = {
-         country_rank = rank_county
 
        }
       HNV = {
@@ -7505,10 +5077,6 @@ countries = {
 
           }
       }
-      HNY = {
-         country_rank = rank_county
-
-       }
       HNZ = {
          capital = altit
          religious_school = ismaili_school
@@ -7590,26 +5158,6 @@ countries = {
 
           }
       }
-      HOI = {
-         country_rank = rank_county
-
-       }
-      HOL = {
-         country_rank = rank_county
-
-       }
-      HON = {
-         country_rank = rank_county
-
-       }
-      HOP = {
-         country_rank = rank_county
-
-       }
-      HOR = {
-         country_rank = rank_county
-
-       }
       HOS = {
          capital = balingen
          country_rank = rank_county
@@ -7649,30 +5197,6 @@ countries = {
 
           }
       }
-      HOX = {
-         country_rank = rank_county
-
-       }
-      HOY = {
-         country_rank = rank_county
-
-       }
-      HPL = {
-         country_rank = rank_county
-
-       }
-      HPP = {
-         country_rank = rank_county
-
-       }
-      HQG = {
-         country_rank = rank_county
-
-       }
-      HQQ = {
-         country_rank = rank_county
-
-       }
       HRB = {
          country_rank = rank_county
 
@@ -7680,22 +5204,6 @@ countries = {
             el_buur harardhere mareeg mogadishu warsheikh maxaas galkayo jowhar dusmareb ceeldheer
             hobyo
          }
-
-       }
-      HRC = {
-         country_rank = rank_county
-
-       }
-      HRG = {
-         country_rank = rank_county
-
-       }
-      HRL = {
-         country_rank = rank_county
-
-       }
-      HRN = {
-         country_rank = rank_county
 
        }
       HRT = {
@@ -7716,14 +5224,6 @@ countries = {
 
           }
       }
-      HSA = {
-         country_rank = rank_county
-
-       }
-      HSC = {
-         country_rank = rank_county
-
-       }
       HSD = {
          capital = darmstadt
          country_rank = rank_county
@@ -7762,10 +5262,6 @@ countries = {
 
           }
       }
-      HSF = {
-         country_rank = rank_county
-
-       }
       HSI = {
          capital = hsipaw
          country_rank = rank_county
@@ -7869,14 +5365,6 @@ countries = {
 
           }
       }
-      HSN = {
-         country_rank = rank_county
-
-       }
-      HSP = {
-         country_rank = rank_county
-
-       }
       HSR = {
          capital = tuapse
          country_rank = rank_county
@@ -7898,70 +5386,6 @@ countries = {
 
           }
       }
-      HST = {
-         country_rank = rank_county
-
-       }
-      HTA = {
-         country_rank = rank_county
-
-       }
-      HTK = {
-         country_rank = rank_county
-
-       }
-      HTN = {
-         country_rank = rank_county
-
-       }
-      HTR = {
-         country_rank = rank_county
-
-       }
-      HTS = {
-         country_rank = rank_county
-
-       }
-      HTY = {
-         country_rank = rank_county
-
-       }
-      HTZ = {
-         country_rank = rank_county
-
-       }
-      HUA = {
-         country_rank = rank_county
-
-       }
-      HUL = {
-         country_rank = rank_county
-
-       }
-      HUN = {
-         country_rank = rank_county
-
-       }
-      HUT = {
-         country_rank = rank_county
-
-       }
-      HUX = {
-         country_rank = rank_county
-
-       }
-      HVB = {
-         country_rank = rank_county
-
-       }
-      HWE = {
-         country_rank = rank_county
-
-       }
-      HYC = {
-         country_rank = rank_county
-
-       }
       HYD = {
          country_rank = rank_county
 
@@ -7977,10 +5401,6 @@ countries = {
          }
 
        }
-      HYM = {
-         country_rank = rank_county
-
-       }
       HYR = {
          country_rank = rank_county
 
@@ -7988,14 +5408,6 @@ countries = {
             thatta hala agham_kot kotri naserpur ahmad_khan manchar_lake ranikot paat wanga_bazar
             islamkot nagarparkar vingur laribandar muhammad_tur sonda
          }
-
-       }
-      HYT = {
-         country_rank = rank_county
-
-       }
-      HZH = {
-         country_rank = rank_county
 
        }
       HZJ = {
@@ -8019,22 +5431,6 @@ countries = {
 
           }
       }
-      HZN = {
-         country_rank = rank_county
-
-       }
-      HZP = {
-         country_rank = rank_county
-
-       }
-      HZR = {
-         country_rank = rank_county
-
-       }
-      IAS = {
-         country_rank = rank_county
-
-       }
       IBL = {
          capital = ibalong
          country_rank = rank_county
@@ -8078,10 +5474,6 @@ countries = {
 
           }
       }
-      ICM = {
-         country_rank = rank_county
-
-       }
       IDR = {
          capital = idar
          country_rank = rank_county
@@ -8106,32 +5498,12 @@ countries = {
 
           }
       }
-      IFA = {
-         country_rank = rank_county
-
-       }
-      IFE = {
-         country_rank = rank_county
-
-       }
       IGL = {
          country_rank = rank_county
 
          own_control_core = {
             lafia ado_ekiti kuje ukunzu enugu nsukka idah
          }
-
-       }
-      IGR = {
-         country_rank = rank_county
-
-       }
-      IHB = {
-         country_rank = rank_county
-
-       }
-      IIX = {
-         country_rank = rank_county
 
        }
       IJB = {
@@ -8142,48 +5514,12 @@ countries = {
          }
 
        }
-      IJE = {
-         country_rank = rank_county
-
-       }
-      IJO = {
-         country_rank = rank_county
-
-       }
-      IJS = {
-         country_rank = rank_county
-
-       }
-      IJU = {
-         country_rank = rank_county
-
-       }
-      IKE = {
-         country_rank = rank_county
-
-       }
-      IKW = {
-         country_rank = rank_county
-
-       }
-      ILC = {
-         country_rank = rank_county
-
-       }
       ILR = {
          country_rank = rank_county
 
          own_control_core = {
             nupeko oyo_ile jebba ilorin offa
          }
-
-       }
-      IMA = {
-         country_rank = rank_county
-
-       }
-      IME = {
-         country_rank = rank_county
 
        }
       IMG = {
@@ -8228,26 +5564,6 @@ countries = {
 
           }
       }
-      INA = {
-         country_rank = rank_county
-
-       }
-      INH = {
-         country_rank = rank_county
-
-       }
-      INI = {
-         country_rank = rank_county
-
-       }
-      INJ = {
-         country_rank = rank_county
-
-       }
-      INO = {
-         country_rank = rank_county
-
-       }
       INR = {
          capital = rengat
          country_rank = rank_county
@@ -8380,14 +5696,6 @@ countries = {
 
           }
       }
-      IRD = {
-         country_rank = rank_county
-
-       }
-      IRE = {
-         country_rank = rank_county
-
-       }
       IRQ = {
          capital = tuapse
          country_rank = rank_county
@@ -8410,96 +5718,12 @@ countries = {
 
           }
       }
-      ISA = {
-         country_rank = rank_county
-
-       }
-      ISD = {
-         country_rank = rank_county
-
-       }
-      ISE = {
-         country_rank = rank_county
-
-       }
-      ISH = {
-         country_rank = rank_county
-
-       }
-      ISK = {
-         country_rank = rank_county
-
-       }
-      ISL = {
-         country_rank = rank_county
-
-       }
-      ISO = {
-         country_rank = rank_county
-
-       }
       ISQ = {
          country_rank = rank_county
 
          own_control_core = {
             berbera hargeisa fardawsa xagal ruguda maydh el_darad siyara
          }
-
-       }
-      ISW = {
-         country_rank = rank_county
-
-       }
-      ITO = {
-         country_rank = rank_county
-
-       }
-      ITZ = {
-         country_rank = rank_county
-
-       }
-      IUW = {
-         country_rank = rank_county
-
-       }
-      IVG = {
-         country_rank = rank_county
-
-       }
-      IWS = {
-         country_rank = rank_county
-
-       }
-      IXA = {
-         country_rank = rank_county
-
-       }
-      IXL = {
-         country_rank = rank_county
-
-       }
-      IXT = {
-         country_rank = rank_county
-
-       }
-      IYA = {
-         country_rank = rank_county
-
-       }
-      IZC = {
-         country_rank = rank_county
-
-       }
-      IZO = {
-         country_rank = rank_county
-
-       }
-      IZT = {
-         country_rank = rank_county
-
-       }
-      JAL = {
-         country_rank = rank_county
 
        }
       JAN = {
@@ -8605,10 +5829,6 @@ countries = {
 
           }
       }
-      JAW = {
-         country_rank = rank_county
-
-       }
       JBL = {
          capital = soonpur
          country_rank = rank_county
@@ -8625,10 +5845,6 @@ countries = {
 
           }
       }
-      JEC = {
-         country_rank = rank_county
-
-       }
       JEL = {
          capital = tuapse
          country_rank = rank_county
@@ -8650,22 +5866,6 @@ countries = {
 
           }
       }
-      JER = {
-         country_rank = rank_county
-
-       }
-      JEV = {
-         country_rank = rank_county
-
-       }
-      JFN = {
-         country_rank = rank_county
-
-       }
-      JGP = {
-         country_rank = rank_county
-
-       }
       JHI = {
          capital = suratgarh #Bhurupal
          country_rank = rank_county
@@ -8687,10 +5887,6 @@ countries = {
 
           }
       }
-      JIZ = {
-         country_rank = rank_county
-
-       }
       JJK = {
          capital = kalinjar
          country_rank = rank_county
@@ -8727,18 +5923,6 @@ countries = {
 
           }
       }
-      JJZ = {
-         country_rank = rank_county
-
-       }
-      JKR = {
-         country_rank = rank_county
-
-       }
-      JLM = {
-         country_rank = rank_county
-
-       }
       JLN = {
          country_rank = rank_county
 
@@ -8905,10 +6089,6 @@ countries = {
 
           }
       }
-      JOA = {
-         country_rank = rank_county
-
-       }
       JOD = {
          country_rank = rank_county
 
@@ -8945,10 +6125,6 @@ countries = {
 
           }
       }
-      JOV = {
-         country_rank = rank_county
-
-       }
       JPO = {
          capital = nandapur
          country_rank = rank_county
@@ -8975,18 +6151,6 @@ countries = {
 
           }
       }
-      JRG = {
-         country_rank = rank_county
-
-       }
-      JRN = {
-         country_rank = rank_county
-
-       }
-      JRW = {
-         country_rank = rank_county
-
-       }
       JSD = {
          capital = tuapse
          country_rank = rank_county
@@ -9008,14 +6172,6 @@ countries = {
 
           }
       }
-      JSI = {
-         country_rank = rank_county
-
-       }
-      JSK = {
-         country_rank = rank_county
-
-       }
       JSL = {
          capital = jaisalmer
          country_rank = rank_county
@@ -9042,22 +6198,6 @@ countries = {
 
           }
       }
-      JUL = {
-         country_rank = rank_county
-
-       }
-      JUR = {
-         country_rank = rank_county
-
-       }
-      JUS = {
-         country_rank = rank_county
-
-       }
-      JUX = {
-         country_rank = rank_county
-
-       }
       JWR = {
          capital = jawhar
          country_rank = rank_county
@@ -9089,30 +6229,6 @@ countries = {
 
           }
       }
-      JYP = {
-         country_rank = rank_county
-
-       }
-      KAB = {
-         country_rank = rank_county
-
-       }
-      KAD = {
-         country_rank = rank_county
-
-       }
-      KAG = {
-         country_rank = rank_county
-
-       }
-      KAI = {
-         country_rank = rank_county
-
-       }
-      KAK = {
-         country_rank = rank_county
-
-       }
       KAL = {
          capital = kale
          country_rank = rank_county
@@ -9149,14 +6265,6 @@ countries = {
 
           }
       }
-      KAN = {
-         country_rank = rank_county
-
-       }
-      KAQ = {
-         country_rank = rank_county
-
-       }
       KAR = {
          country_rank = rank_county
 
@@ -9166,28 +6274,12 @@ countries = {
          }
 
        }
-      KAS = {
-         country_rank = rank_county
-
-       }
-      KAU = {
-         country_rank = rank_county
-
-       }
-      KAW = {
-         country_rank = rank_county
-
-       }
       KAY = {
          country_rank = rank_county
 
          own_control_core = {
             tivaouane diourbel ndiaganiao koki
          }
-
-       }
-      KAZ = {
-         country_rank = rank_county
 
        }
       KBD = {
@@ -9219,10 +6311,6 @@ countries = {
          }
 
        }
-      KBK = {
-         country_rank = rank_county
-
-       }
       KBL = {
          capital = tuapse
          country_rank = rank_county
@@ -9247,10 +6335,6 @@ countries = {
 
           }
       }
-      KBN = {
-         country_rank = rank_county
-
-       }
       KBO = {
          capital = njimi
          religious_school = maliki_school
@@ -9317,32 +6401,12 @@ countries = {
 
           }
       }
-      KBR = {
-         country_rank = rank_county
-
-       }
-      KCH = {
-         country_rank = rank_county
-
-       }
-      KCN = {
-         country_rank = rank_county
-
-       }
-      KDA = {
-         country_rank = rank_county
-
-       }
       KDG = {
          country_rank = rank_county
 
          own_control_core = {
             koutiala niantjila sanzana farakala niena boundiali garalo tengrela niani
          }
-
-       }
-      KDO = {
-         country_rank = rank_county
 
        }
       KDU = {
@@ -9363,10 +6427,6 @@ countries = {
 
           }
       }
-      KDW = {
-         country_rank = rank_county
-
-       }
       KDZ = {
          capital = tuapse
          country_rank = rank_county
@@ -9422,26 +6482,6 @@ countries = {
 
           }
       }
-      KEE = {
-         country_rank = rank_county
-
-       }
-      KEL = {
-         country_rank = rank_county
-
-       }
-      KEN = {
-         country_rank = rank_county
-
-       }
-      KER = {
-         country_rank = rank_county
-
-       }
-      KET = {
-         country_rank = rank_county
-
-       }
       KFR = {
          capital = tuapse
          country_rank = rank_county
@@ -9484,10 +6524,6 @@ countries = {
 
           }
       }
-      KGK = {
-         country_rank = rank_county
-
-       }
       KGN = {
          capital = tuapse
          country_rank = rank_county
@@ -9509,14 +6545,6 @@ countries = {
 
           }
       }
-      KGR = {
-         country_rank = rank_county
-
-       }
-      KHA = {
-         country_rank = rank_county
-
-       }
       KHF = {
          capital = salameh
          religious_school = shafii_school
@@ -9548,10 +6576,6 @@ countries = {
 
           }
       }
-      KHG = {
-         country_rank = rank_county
-
-       }
       KHI = {
          capital = tuapse
          country_rank = rank_county
@@ -9574,10 +6598,6 @@ countries = {
 
           }
       }
-      KHK = {
-         country_rank = rank_county
-
-       }
       KHL = {
          country_rank = rank_county
 
@@ -9746,10 +6766,6 @@ countries = {
 
           }
       }
-      KHU = {
-         country_rank = rank_county
-
-       }
       KHZ = {
          capital = tuapse
          country_rank = rank_county
@@ -9772,34 +6788,6 @@ countries = {
 
           }
       }
-      KIA = {
-         country_rank = rank_county
-
-       }
-      KIC = {
-         country_rank = rank_county
-
-       }
-      KID = {
-         country_rank = rank_county
-
-       }
-      KIE = {
-         country_rank = rank_county
-
-       }
-      KIH = {
-         country_rank = rank_county
-
-       }
-      KII = {
-         country_rank = rank_county
-
-       }
-      KIL = {
-         country_rank = rank_county
-
-       }
       KIM = {
          capital = buayan
          country_rank = rank_county
@@ -9828,26 +6816,6 @@ countries = {
 
           }
       }
-      KIO = {
-         country_rank = rank_county
-
-       }
-      KIP = {
-         country_rank = rank_county
-
-       }
-      KIR = {
-         country_rank = rank_county
-
-       }
-      KIT = {
-         country_rank = rank_county
-
-       }
-      KIW = {
-         country_rank = rank_county
-
-       }
       KJA = {
          capital = keonjhar
          country_rank = rank_county
@@ -9874,22 +6842,6 @@ countries = {
 
           }
       }
-      KJK = {
-         country_rank = rank_county
-
-       }
-      KKA = {
-         country_rank = rank_county
-
-       }
-      KKC = {
-         country_rank = rank_county
-
-       }
-      KKE = {
-         country_rank = rank_county
-
-       }
       KKG = {
          capital = kutai_lama
          country_rank = rank_county
@@ -9910,14 +6862,6 @@ countries = {
 
           }
       }
-      KKH = {
-         country_rank = rank_county
-
-       }
-      KKL = {
-         country_rank = rank_county
-
-       }
       KKN = {
          country_rank = rank_county
 
@@ -9946,10 +6890,6 @@ countries = {
 
           }
       }
-      KKW = {
-         country_rank = rank_county
-
-       }
       KLA = {
          capital = kalat
          religious_school = hanafi_school
@@ -10007,14 +6947,6 @@ countries = {
 
           }
       }
-      KLE = {
-         country_rank = rank_county
-
-       }
-      KLG = {
-         country_rank = rank_county
-
-       }
       KLH = {
          capital = kalahandinagara
          country_rank = rank_county
@@ -10067,26 +6999,6 @@ countries = {
 
           }
       }
-      KLL = {
-         country_rank = rank_county
-
-       }
-      KLM = {
-         country_rank = rank_county
-
-       }
-      KLN = {
-         country_rank = rank_county
-
-       }
-      KLP = {
-         country_rank = rank_county
-
-       }
-      KLR = {
-         country_rank = rank_county
-
-       }
       KLS = {
          capital = kalisusu
          country_rank = rank_county
@@ -10144,10 +7056,6 @@ countries = {
 
           }
       }
-      KLW = {
-         country_rank = rank_county
-
-       }
       KMA = {
          capital = kamatapur
          country_rank = rank_county
@@ -10180,14 +7088,6 @@ countries = {
          }
 
        }
-      KMG = {
-         country_rank = rank_county
-
-       }
-      KMK = {
-         country_rank = rank_county
-
-       }
       KML = {
          capital = lamitan
          country_rank = rank_county
@@ -10208,10 +7108,6 @@ countries = {
 
           }
       }
-      KMM = {
-         country_rank = rank_county
-
-       }
       KMN = {
          capital = champavati
          court_language = sanskrit_language
@@ -10233,26 +7129,6 @@ countries = {
 
           }
       }
-      KMP = {
-         country_rank = rank_county
-
-       }
-      KMT = {
-         country_rank = rank_county
-
-       }
-      KMU = {
-         country_rank = rank_county
-
-       }
-      KNA = {
-         country_rank = rank_county
-
-       }
-      KNB = {
-         country_rank = rank_county
-
-       }
       KND = {
          capital = tuapse
          country_rank = rank_county
@@ -10277,10 +7153,6 @@ countries = {
 
           }
       }
-      KNE = {
-         country_rank = rank_county
-
-       }
       KNG = {
          capital = kong
          country_rank = rank_county
@@ -10300,10 +7172,6 @@ countries = {
 
           }
       }
-      KNI = {
-         country_rank = rank_county
-
-       }
       KNK = {
          capital = kanker
          country_rank = rank_county
@@ -10337,14 +7205,6 @@ countries = {
          }
 
        }
-      KNO = {
-         country_rank = rank_county
-
-       }
-      KNT = {
-         country_rank = rank_county
-
-       }
       KNW = {
          capital = unaaha
          country_rank = rank_county
@@ -10369,18 +7229,6 @@ countries = {
 
           }
       }
-      KNZ = {
-         country_rank = rank_county
-
-       }
-      KOD = {
-         country_rank = rank_county
-
-       }
-      KOJ = {
-         country_rank = rank_county
-
-       }
       KOK = {
          capital = tuapse
          country_rank = rank_county
@@ -10407,10 +7255,6 @@ countries = {
 
           }
       }
-      KOL = {
-         country_rank = rank_county
-
-       }
       KON = {
          country_rank = rank_county
 
@@ -10503,40 +7347,12 @@ countries = {
 
           }
       }
-      KOS = {
-         country_rank = rank_county
-
-       }
-      KOT = {
-         country_rank = rank_county
-
-       }
-      KOU = {
-         country_rank = rank_county
-
-       }
-      KOW = {
-         country_rank = rank_county
-
-       }
       KOY = {
          country_rank = rank_county
 
          own_control_core = {
             port_loko banana_islands
          }
-
-       }
-      KOZ = {
-         country_rank = rank_county
-
-       }
-      KPK = {
-         country_rank = rank_county
-
-       }
-      KPL = {
-         country_rank = rank_county
 
        }
       KRA = {
@@ -10565,10 +7381,6 @@ countries = {
 
           }
       }
-      KRD = {
-         country_rank = rank_county
-
-       }
       KRG = {
          capital = tuapse
          country_rank = rank_county
@@ -10590,26 +7402,6 @@ countries = {
 
           }
       }
-      KRI = {
-         country_rank = rank_county
-
-       }
-      KRK = {
-         country_rank = rank_county
-
-       }
-      KRL = {
-         country_rank = rank_county
-
-       }
-      KRM = {
-         country_rank = rank_county
-
-       }
-      KRN = {
-         country_rank = rank_county
-
-       }
       KRP = {
          capital = kuripan
          country_rank = rank_county
@@ -10634,10 +7426,6 @@ countries = {
 
           }
       }
-      KRR = {
-         country_rank = rank_county
-
-       }
       KRT = {
          capital = tuapse
          country_rank = rank_county
@@ -10665,10 +7453,6 @@ countries = {
          own_control_core = {
             bugara
          }
-
-       }
-      KSA = {
-         country_rank = rank_county
 
        }
       KSD = {
@@ -10721,32 +7505,12 @@ countries = {
 
           }
       }
-      KSI = {
-         country_rank = rank_county
-
-       }
       KSJ = {
          country_rank = rank_county
 
          own_control_core = {
             shanfana kusike luquemba mecumba kassanje_malemba
          }
-
-       }
-      KSK = {
-         country_rank = rank_county
-
-       }
-      KSN = {
-         country_rank = rank_county
-
-       }
-      KSP = {
-         country_rank = rank_county
-
-       }
-      KST = {
-         country_rank = rank_county
 
        }
       KSW = {
@@ -10766,10 +7530,6 @@ countries = {
 
           }
       }
-      KTB = {
-         country_rank = rank_county
-
-       }
       KTG = {
          capital = kengtung
          country_rank = rank_county
@@ -10789,14 +7549,6 @@ countries = {
 
           }
       }
-      KTK = {
-         country_rank = rank_county
-
-       }
-      KTL = {
-         country_rank = rank_county
-
-       }
       KTN = {
          capital = ponnani
          country_rank = rank_county
@@ -10815,18 +7567,6 @@ countries = {
 
           }
       }
-      KTO = {
-         country_rank = rank_county
-
-       }
-      KTS = {
-         country_rank = rank_county
-
-       }
-      KTT = {
-         country_rank = rank_county
-
-       }
       KTU = {
          capital = kathmandu
          country_rank = rank_county
@@ -10849,26 +7589,6 @@ countries = {
          own_control_core = {
             amreli
          }
-
-       }
-      KTZ = {
-         country_rank = rank_county
-
-       }
-      KUB = {
-         country_rank = rank_county
-
-       }
-      KUI = {
-         country_rank = rank_county
-
-       }
-      KUK = {
-         country_rank = rank_county
-
-       }
-      KUN = {
-         country_rank = rank_county
 
        }
       KUR = {
@@ -10924,10 +7644,6 @@ countries = {
 
           }
       }
-      KUS = {
-         country_rank = rank_county
-
-       }
       KUT = {
          capital = lakhiyarvira
          country_rank = rank_county
@@ -10954,18 +7670,6 @@ countries = {
 
           }
       }
-      KUY = {
-         country_rank = rank_county
-
-       }
-      KVE = {
-         country_rank = rank_county
-
-       }
-      KWA = {
-         country_rank = rank_county
-
-       }
       KWT = {
          capital = tuapse
          country_rank = rank_county
@@ -10995,10 +7699,6 @@ countries = {
          }
 
        }
-      KWY = {
-         country_rank = rank_county
-
-       }
       KYA = {
          capital = wayanad
          country_rank = rank_county
@@ -11011,14 +7711,6 @@ countries = {
 
           }
       }
-      KYB = {
-         country_rank = rank_county
-
-       }
-      KYK = {
-         country_rank = rank_county
-
-       }
       KZB = {
          country_rank = rank_county
 
@@ -11028,10 +7720,6 @@ countries = {
             ntenke katanga kafaila kinyama kalassa uemba mgosas moma_katwoi mwangulla mlungo
             kalambo
          }
-
-       }
-      KZK = {
-         country_rank = rank_county
 
        }
       KZL = {
@@ -11055,22 +7743,6 @@ countries = {
 
           }
       }
-      KZY = {
-         country_rank = rank_county
-
-       }
-      LAC = {
-         country_rank = rank_county
-
-       }
-      LAM = {
-         country_rank = rank_county
-
-       }
-      LAN = {
-         country_rank = rank_county
-
-       }
       LAS = {
          capital = tuapse
          country_rank = rank_county
@@ -11092,10 +7764,6 @@ countries = {
 
           }
       }
-      LAT = {
-         country_rank = rank_county
-
-       }
       LAU = {
          capital = lauenburg
 
@@ -11182,26 +7850,6 @@ countries = {
          }
 
        }
-      LBB = {
-         country_rank = rank_county
-
-       }
-      LBO = {
-         country_rank = rank_county
-
-       }
-      LBV = {
-         country_rank = rank_county
-
-       }
-      LCA = {
-         country_rank = rank_county
-
-       }
-      LCK = {
-         country_rank = rank_county
-
-       }
       LCN = {
          capital = choigan
          country_rank = rank_county
@@ -11239,42 +7887,6 @@ countries = {
 
           }
       }
-      LCU = {
-         country_rank = rank_county
-
-       }
-      LCY = {
-         country_rank = rank_county
-
-       }
-      LCZ = {
-         country_rank = rank_county
-
-       }
-      LDA = {
-         country_rank = rank_county
-
-       }
-      LDB = {
-         country_rank = rank_county
-
-       }
-      LDU = {
-         country_rank = rank_county
-
-       }
-      LEG = {
-         country_rank = rank_county
-
-       }
-      LEI = {
-         country_rank = rank_county
-
-       }
-      LEK = {
-         country_rank = rank_county
-
-       }
       LEQ = {
          country_rank = rank_county
 
@@ -11282,14 +7894,6 @@ countries = {
             gimbi ziqwala wej bilo jibat gambo maldarede lieka ilimo nekemte
             gore
          }
-
-       }
-      LEU = {
-         country_rank = rank_county
-
-       }
-      LGC = {
-         country_rank = rank_county
 
        }
       LGE = {
@@ -11345,18 +7949,6 @@ countries = {
 
           }
       }
-      LGQ = {
-         country_rank = rank_county
-
-       }
-      LGT = {
-         country_rank = rank_county
-
-       }
-      LGZ = {
-         country_rank = rank_county
-
-       }
       LHJ = {
          capital = al_qatif
          religious_school = imamiya_school
@@ -11397,32 +7989,12 @@ countries = {
 
           }
       }
-      LHN = {
-         country_rank = rank_county
-
-       }
-      LHQ = {
-         country_rank = rank_county
-
-       }
-      LHT = {
-         country_rank = rank_county
-
-       }
       LIB = {
          country_rank = rank_county
 
          own_control_core = {
             saint_paul_river mesurado junk_river bassa cape_mount
          }
-
-       }
-      LIC = {
-         country_rank = rank_county
-
-       }
-      LIE = {
-         country_rank = rank_county
 
        }
       LIG = {
@@ -11449,24 +8021,12 @@ countries = {
 
           }
       }
-      LIM = {
-         country_rank = rank_county
-
-       }
-      LIN = {
-         country_rank = rank_county
-
-       }
       LIP = {
          country_rank = rank_county
 
          own_control_core = {
             mondoro tessit deou sampelga dori kissi_loc aribinda barsalogho bilanga boala
          }
-
-       }
-      LIT = {
-         country_rank = rank_county
 
        }
       LIV = {
@@ -11523,32 +8083,12 @@ countries = {
 
           }
       }
-      LJG = {
-         country_rank = rank_county
-
-       }
       LKP = {
          country_rank = rank_county
 
          own_control_core = {
             ilchamu maasai agikuyu samburu ngibelai lusambo_qandu
          }
-
-       }
-      LKT = {
-         country_rank = rank_county
-
-       }
-      LLG = {
-         country_rank = rank_county
-
-       }
-      LLN = {
-         country_rank = rank_county
-
-       }
-      LLS = {
-         country_rank = rank_county
 
        }
       LMN = {
@@ -11591,14 +8131,6 @@ countries = {
 
           }
       }
-      LNC = {
-         country_rank = rank_county
-
-       }
-      LND = {
-         country_rank = rank_county
-
-       }
       LNK = {
          capital = ngabang
          country_rank = rank_county
@@ -11623,10 +8155,6 @@ countries = {
 
           }
       }
-      LNN = {
-         country_rank = rank_county
-
-       }
       LNO = {
          capital = malabang
          country_rank = rank_county
@@ -11660,10 +8188,6 @@ countries = {
          }
 
        }
-      LOI = {
-         country_rank = rank_county
-
-       }
       LOL = {
          capital = loloda
          country_rank = rank_county
@@ -11684,22 +8208,6 @@ countries = {
 
           }
       }
-      LON = {
-         country_rank = rank_county
-
-       }
-      LOO = {
-         country_rank = rank_county
-
-       }
-      LOR = {
-         country_rank = rank_county
-
-       }
-      LPG = {
-         country_rank = rank_county
-
-       }
       LPP = {
          capital = lippstadt
 
@@ -11750,22 +8258,6 @@ countries = {
 
           }
       }
-      LSA = {
-         country_rank = rank_county
-
-       }
-      LST = {
-         country_rank = rank_county
-
-       }
-      LTB = {
-         country_rank = rank_county
-
-       }
-      LTN = {
-         country_rank = rank_county
-
-       }
       LTS = {
          capital = meiningen
 
@@ -11796,14 +8288,6 @@ countries = {
 
           }
       }
-      LTU = {
-         country_rank = rank_county
-
-       }
-      LTV = {
-         country_rank = rank_county
-
-       }
       LUB = {
          capital = lubeck
          country_rank = rank_county
@@ -11889,10 +8373,6 @@ countries = {
          }
 
        }
-      LUP = {
-         country_rank = rank_county
-
-       }
       LUR = {
          capital = nabagram
          court_language = sanskrit_language
@@ -11942,60 +8422,12 @@ countries = {
 
           }
       }
-      LUX = {
-         country_rank = rank_county
-
-       }
-      LWA = {
-         country_rank = rank_county
-
-       }
-      LXG = {
-         country_rank = rank_county
-
-       }
-      LYA = {
-         country_rank = rank_county
-
-       }
-      LZI = {
-         country_rank = rank_county
-
-       }
-      LZO = {
-         country_rank = rank_county
-
-       }
       MAA = {
          country_rank = rank_county
 
          own_control_core = {
             arusha east_aasax west_aasax engeruka east_african_mountains deloraine west_ongamo bendi omotik
          }
-
-       }
-      MAB = {
-         country_rank = rank_county
-
-       }
-      MAC = {
-         country_rank = rank_county
-
-       }
-      MAD = {
-         country_rank = rank_county
-
-       }
-      MAE = {
-         country_rank = rank_county
-
-       }
-      MAG = {
-         country_rank = rank_county
-
-       }
-      MAI = {
-         country_rank = rank_county
 
        }
       MAJ = {
@@ -12171,22 +8603,6 @@ countries = {
 
           }
       }
-      MAM = {
-         country_rank = rank_county
-
-       }
-      MAN = {
-         country_rank = rank_county
-
-       }
-      MAO = {
-         country_rank = rank_county
-
-       }
-      MAR = {
-         country_rank = rank_county
-
-       }
       MAS = {
          country_rank = rank_county
 
@@ -12194,10 +8610,6 @@ countries = {
             san sanekuy sanga dia djenne macina tenenkou kare dogo korientze
             bore
          }
-
-       }
-      MAT = {
-         country_rank = rank_county
 
        }
       MAU = {
@@ -12216,18 +8628,6 @@ countries = {
 
           }
       }
-      MBA = {
-         country_rank = rank_county
-
-       }
-      MBD = {
-         country_rank = rank_county
-
-       }
-      MBL = {
-         country_rank = rank_county
-
-       }
       MBT = {
          capital = mbanza_mbata
          country_rank = rank_county
@@ -12255,18 +8655,6 @@ countries = {
             lemone nangana cuangar omuskira klendela okavango cuchi miongo kindunda mussombo
             kinge daba_akanda mbwela_kabango kuemgo
          }
-
-       }
-      MBZ = {
-         country_rank = rank_county
-
-       }
-      MCC = {
-         country_rank = rank_county
-
-       }
-      MCG = {
-         country_rank = rank_county
 
        }
       MCH = {
@@ -12312,18 +8700,6 @@ countries = {
 
           }
       }
-      MCI = {
-         country_rank = rank_county
-
-       }
-      MCM = {
-         country_rank = rank_county
-
-       }
-      MCN = {
-         country_rank = rank_county
-
-       }
       MCR = {
          capital = fosdinovo
          country_rank = rank_county
@@ -12354,40 +8730,12 @@ countries = {
 
           }
       }
-      MCT = {
-         country_rank = rank_county
-
-       }
-      MCX = {
-         country_rank = rank_county
-
-       }
-      MDA = {
-         country_rank = rank_county
-
-       }
-      MDI = {
-         country_rank = rank_county
-
-       }
-      MDM = {
-         country_rank = rank_county
-
-       }
-      MDN = {
-         country_rank = rank_county
-
-       }
       MDR = {
          country_rank = rank_county
 
          own_control_core = {
             mser makary afade maroua keraoua mora_cam
          }
-
-       }
-      MDS = {
-         country_rank = rank_county
 
        }
       MDY = {
@@ -12447,30 +8795,6 @@ countries = {
 
           }
       }
-      MED = {
-         country_rank = rank_county
-
-       }
-      MEI = {
-         country_rank = rank_county
-
-       }
-      MEM = {
-         country_rank = rank_county
-
-       }
-      MEN = {
-         country_rank = rank_county
-
-       }
-      MER = {
-         country_rank = rank_county
-
-       }
-      MET = {
-         country_rank = rank_county
-
-       }
       MEW = {
          capital = chittor #Or Nagahrada
          country_rank = rank_county
@@ -12589,18 +8913,6 @@ countries = {
 
           }
       }
-      MFA = {
-         country_rank = rank_county
-
-       }
-      MFE = {
-         country_rank = rank_county
-
-       }
-      MFK = {
-         country_rank = rank_county
-
-       }
       MGD = {
          capital = kuta_watu
          country_rank = rank_county
@@ -12661,14 +8973,6 @@ countries = {
 
           }
       }
-      MGG = {
-         country_rank = rank_county
-
-       }
-      MGK = {
-         country_rank = rank_county
-
-       }
       MGL = {
          capital = tuapse
          country_rank = rank_county
@@ -12691,14 +8995,6 @@ countries = {
 
           }
       }
-      MGM = {
-         country_rank = rank_county
-
-       }
-      MGN = {
-         country_rank = rank_county
-
-       }
       MGT = {
          capital = mongmit
          country_rank = rank_county
@@ -12718,36 +9014,12 @@ countries = {
 
           }
       }
-      MGU = {
-         country_rank = rank_county
-
-       }
-      MHA = {
-         country_rank = rank_county
-
-       }
-      MHC = {
-         country_rank = rank_county
-
-       }
       MHD = {
          country_rank = rank_county
 
          own_control_core = {
             konde
          }
-
-       }
-      MHK = {
-         country_rank = rank_county
-
-       }
-      MHL = {
-         country_rank = rank_county
-
-       }
-      MHN = {
-         country_rank = rank_county
 
        }
       MHR = {
@@ -12774,34 +9046,6 @@ countries = {
 
           }
       }
-      MHT = {
-         country_rank = rank_county
-
-       }
-      MHU = {
-         country_rank = rank_county
-
-       }
-      MIE = {
-         country_rank = rank_county
-
-       }
-      MIG = {
-         country_rank = rank_county
-
-       }
-      MIH = {
-         country_rank = rank_county
-
-       }
-      MIK = {
-         country_rank = rank_county
-
-       }
-      MIO = {
-         country_rank = rank_county
-
-       }
       MIR = {
          country_rank = rank_county
 
@@ -12812,26 +9056,6 @@ countries = {
             antananarivo fianarantsoa ampotaka maevatanana maneva sahadia manabondro ankazobe midongy tsimanandrafozana
             vohimasina miandrivazo kavitaha antsiroamandidy ankavandra fenoarivo andranomavo manoninerina beanka besalampy
          }
-
-       }
-      MIS = {
-         country_rank = rank_county
-
-       }
-      MIT = {
-         country_rank = rank_county
-
-       }
-      MIU = {
-         country_rank = rank_county
-
-       }
-      MIX = {
-         country_rank = rank_county
-
-       }
-      MIY = {
-         country_rank = rank_county
 
        }
       MJR = {
@@ -12917,10 +9141,6 @@ countries = {
 
           }
       }
-      MKC = {
-         country_rank = rank_county
-
-       }
       MKG = {
          capital = kolumba
          country_rank = rank_county
@@ -12941,10 +9161,6 @@ countries = {
 
           }
       }
-      MKH = {
-         country_rank = rank_county
-
-       }
       MKL = {
          capital = wismar
 
@@ -13047,10 +9263,6 @@ countries = {
 
           }
       }
-      MKO = {
-         country_rank = rank_county
-
-       }
       MKR = {
          capital = kalmat
          religious_school = hanafi_school
@@ -13087,18 +9299,6 @@ countries = {
 
           }
       }
-      MKT = {
-         country_rank = rank_county
-
-       }
-      MKU = {
-         country_rank = rank_county
-
-       }
-      MKW = {
-         country_rank = rank_county
-
-       }
       MLB = {
          capital = imphal
          country_rank = rank_county
@@ -13118,26 +9318,6 @@ countries = {
 
           }
       }
-      MLE = {
-         country_rank = rank_county
-
-       }
-      MLG = {
-         country_rank = rank_county
-
-       }
-      MLH = {
-         country_rank = rank_county
-
-       }
-      MLI = {
-         country_rank = rank_county
-
-       }
-      MLK = {
-         country_rank = rank_county
-
-       }
       MLL = {
          country_rank = rank_county
 
@@ -13165,34 +9345,6 @@ countries = {
 
           }
       }
-      MLN = {
-         country_rank = rank_county
-
-       }
-      MLO = {
-         country_rank = rank_county
-
-       }
-      MLS = {
-         country_rank = rank_county
-
-       }
-      MLT = {
-         country_rank = rank_county
-
-       }
-      MMA = {
-         country_rank = rank_county
-
-       }
-      MMI = {
-         country_rank = rank_county
-
-       }
-      MMM = {
-         country_rank = rank_county
-
-       }
       MMN = {
          capital = tuapse
          country_rank = rank_county
@@ -13214,10 +9366,6 @@ countries = {
 
           }
       }
-      MMQ = {
-         country_rank = rank_county
-
-       }
       MNA = {
          capital = maynila
          country_rank = rank_county
@@ -13238,26 +9386,6 @@ countries = {
 
           }
       }
-      MNB = {
-         country_rank = rank_county
-
-       }
-      MNC = {
-         country_rank = rank_county
-
-       }
-      MND = {
-         country_rank = rank_county
-
-       }
-      MNE = {
-         country_rank = rank_county
-
-       }
-      MNG = {
-         country_rank = rank_county
-
-       }
       MNI = {
          capital = mongnai
          country_rank = rank_county
@@ -13296,34 +9424,6 @@ countries = {
 
           }
       }
-      MNK = {
-         country_rank = rank_county
-
-       }
-      MNL = {
-         country_rank = rank_county
-
-       }
-      MNM = {
-         country_rank = rank_county
-
-       }
-      MNN = {
-         country_rank = rank_county
-
-       }
-      MNP = {
-         country_rank = rank_county
-
-       }
-      MNS = {
-         country_rank = rank_county
-
-       }
-      MNT = {
-         country_rank = rank_county
-
-       }
       MNU = {
          capital = igan
          country_rank = rank_county
@@ -13361,10 +9461,6 @@ countries = {
          }
 
        }
-      MNZ = {
-         country_rank = rank_county
-
-       }
       MOD = {
          capital = modena
          country_rank = rank_county
@@ -13395,10 +9491,6 @@ countries = {
 
           }
       }
-      MOG = {
-         country_rank = rank_county
-
-       }
       MOL = {
          capital = iasi
          liturgical_language = church_slavonic_language
@@ -13474,10 +9566,6 @@ countries = {
 
           }
       }
-      MOP = {
-         country_rank = rank_county
-
-       }
       MOR = {
          capital = fez
          religious_school = maliki_school
@@ -13558,30 +9646,6 @@ countries = {
 
           }
       }
-      MOS = {
-         country_rank = rank_county
-
-       }
-      MOU = {
-         country_rank = rank_county
-
-       }
-      MOX = {
-         country_rank = rank_county
-
-       }
-      MOY = {
-         country_rank = rank_county
-
-       }
-      MOZ = {
-         country_rank = rank_county
-
-       }
-      MPC = {
-         country_rank = rank_county
-
-       }
       MPE = {
          capital = maguela
          country_rank = rank_duchy
@@ -13620,10 +9684,6 @@ countries = {
          }
 
        }
-      MPR = {
-         country_rank = rank_county
-
-       }
       MQT = {
          capital = choigan
          country_rank = rank_county
@@ -13650,34 +9710,6 @@ countries = {
             msinja msoro tembue mchinji kaphirintiwa massanza muchena chirowe pemba chinunga
             kasungu mankhamba nyangu matope milange mbewe
          }
-
-       }
-      MRB = {
-         country_rank = rank_county
-
-       }
-      MRC = {
-         country_rank = rank_county
-
-       }
-      MRH = {
-         country_rank = rank_county
-
-       }
-      MRI = {
-         country_rank = rank_county
-
-       }
-      MRJ = {
-         country_rank = rank_county
-
-       }
-      MRK = {
-         country_rank = rank_county
-
-       }
-      MRM = {
-         country_rank = rank_county
 
        }
       MRN = {
@@ -13770,10 +9802,6 @@ countries = {
 
           }
       }
-      MRS = {
-         country_rank = rank_county
-
-       }
       MRT = {
          capital = amsterdam
          country_rank = rank_county
@@ -13823,10 +9851,6 @@ countries = {
 
           }
       }
-      MRV = {
-         country_rank = rank_county
-
-       }
       MRW = {
          capital = khed #Or Pali
          country_rank = rank_county
@@ -13848,26 +9872,6 @@ countries = {
 
           }
       }
-      MSB = {
-         country_rank = rank_county
-
-       }
-      MSC = {
-         country_rank = rank_county
-
-       }
-      MSD = {
-         country_rank = rank_county
-
-       }
-      MSG = {
-         country_rank = rank_county
-
-       }
-      MSH = {
-         country_rank = rank_county
-
-       }
       MSI = {
          country_rank = rank_county
 
@@ -13875,14 +9879,6 @@ countries = {
             koudougou boromo leo diebougou gambaga tiebele zorgho boussouma ouagadougou po
             paga wa zondoma
          }
-
-       }
-      MSK = {
-         country_rank = rank_county
-
-       }
-      MSL = {
-         country_rank = rank_county
 
        }
       MSN = {
@@ -13905,14 +9901,6 @@ countries = {
 
           }
       }
-      MSO = {
-         country_rank = rank_county
-
-       }
-      MSP = {
-         country_rank = rank_county
-
-       }
       MST = {
          capital = wismar
 
@@ -13991,14 +9979,6 @@ countries = {
 
           }
       }
-      MSV = {
-         country_rank = rank_county
-
-       }
-      MTA = {
-         country_rank = rank_county
-
-       }
       MTB = {
          country_rank = rank_county
 
@@ -14027,10 +10007,6 @@ countries = {
 
           }
       }
-      MTD = {
-         country_rank = rank_county
-
-       }
       MTF = {
          capital = tuapse
          country_rank = rank_county
@@ -14053,10 +10029,6 @@ countries = {
 
           }
       }
-      MTG = {
-         country_rank = rank_county
-
-       }
       MTH = {
          country_rank = rank_county
 
@@ -14064,26 +10036,6 @@ countries = {
             ka_aub tebang kweneng em_dinaneni hlahlandlela egabeni mosega mooi eiland kungwini
             lejweleputswa qwaqwa bataung bokoni
          }
-
-       }
-      MTN = {
-         country_rank = rank_county
-
-       }
-      MTO = {
-         country_rank = rank_county
-
-       }
-      MTR = {
-         country_rank = rank_county
-
-       }
-      MTY = {
-         country_rank = rank_county
-
-       }
-      MTZ = {
-         country_rank = rank_county
 
        }
       MUA = {
@@ -14110,50 +10062,6 @@ countries = {
 
           }
       }
-      MUI = {
-         country_rank = rank_county
-
-       }
-      MUL = {
-         country_rank = rank_county
-
-       }
-      MUN = {
-         country_rank = rank_county
-
-       }
-      MUO = {
-         country_rank = rank_county
-
-       }
-      MUR = {
-         country_rank = rank_county
-
-       }
-      MUS = {
-         country_rank = rank_county
-
-       }
-      MUT = {
-         country_rank = rank_county
-
-       }
-      MVA = {
-         country_rank = rank_county
-
-       }
-      MWG = {
-         country_rank = rank_county
-
-       }
-      MWO = {
-         country_rank = rank_county
-
-       }
-      MXT = {
-         country_rank = rank_county
-
-       }
       MYA = {
          capital = monhyin
          country_rank = rank_county
@@ -14173,14 +10081,6 @@ countries = {
 
           }
       }
-      MYC = {
-         country_rank = rank_county
-
-       }
-      MYH = {
-         country_rank = rank_county
-
-       }
       MYI = {
          capital = bay
          country_rank = rank_county
@@ -14205,14 +10105,6 @@ countries = {
 
           }
       }
-      MYM = {
-         country_rank = rank_county
-
-       }
-      MYO = {
-         country_rank = rank_county
-
-       }
       MYS = {
          country_rank = rank_county
 
@@ -14222,26 +10114,6 @@ countries = {
             mankunda srigangapatna manyapura tumkur sira dvarasamudra magadi ballalapura devanahalli nandagiri
             kolar bangalore
          }
-
-       }
-      MZB = {
-         country_rank = rank_county
-
-       }
-      MZF = {
-         country_rank = rank_county
-
-       }
-      MZJ = {
-         country_rank = rank_county
-
-       }
-      MZK = {
-         country_rank = rank_county
-
-       }
-      MZN = {
-         country_rank = rank_county
 
        }
       MZR = {
@@ -14265,24 +10137,12 @@ countries = {
 
           }
       }
-      MZT = {
-         country_rank = rank_county
-
-       }
       MZU = {
          country_rank = rank_county
 
          own_control_core = {
             malindi vumba_kuu mombasa gedi
          }
-
-       }
-      MZW = {
-         country_rank = rank_county
-
-       }
-      NAA = {
-         country_rank = rank_county
 
        }
       NAG = {
@@ -14308,22 +10168,6 @@ countries = {
 
           }
       }
-      NAI = {
-         country_rank = rank_county
-
-       }
-      NAM = {
-         country_rank = rank_county
-
-       }
-      NAN = {
-         country_rank = rank_county
-
-       }
-      NAP = {
-         country_rank = rank_county
-
-       }
       NAS = {
          capital = wiesbaden
          country_rank = rank_county
@@ -14353,26 +10197,6 @@ countries = {
 
           }
       }
-      NAU = {
-         country_rank = rank_county
-
-       }
-      NAV = {
-         country_rank = rank_county
-
-       }
-      NAW = {
-         country_rank = rank_county
-
-       }
-      NAX = {
-         country_rank = rank_county
-
-       }
-      NBH = {
-         country_rank = rank_county
-
-       }
       NBR = {
          capital = choigan
          country_rank = rank_county
@@ -14395,38 +10219,6 @@ countries = {
 
           }
       }
-      NBU = {
-         country_rank = rank_county
-
-       }
-      NBY = {
-         country_rank = rank_county
-
-       }
-      NCH = {
-         country_rank = rank_county
-
-       }
-      NCN = {
-         country_rank = rank_county
-
-       }
-      NCZ = {
-         country_rank = rank_county
-
-       }
-      NDA = {
-         country_rank = rank_county
-
-       }
-      NDN = {
-         country_rank = rank_county
-
-       }
-      NDV = {
-         country_rank = rank_county
-
-       }
       NED = {
          capital = amsterdam
          country_rank = rank_kingdom
@@ -14483,22 +10275,6 @@ countries = {
 
           }
       }
-      NEG = {
-         country_rank = rank_county
-
-       }
-      NEK = {
-         country_rank = rank_county
-
-       }
-      NEL = {
-         country_rank = rank_county
-
-       }
-      NEO = {
-         country_rank = rank_county
-
-       }
       NEU = {
          capital = neuchatel
 
@@ -14534,22 +10310,6 @@ countries = {
 
           }
       }
-      NEV = {
-         country_rank = rank_county
-
-       }
-      NEY = {
-         country_rank = rank_county
-
-       }
-      NGD = {
-         country_rank = rank_county
-
-       }
-      NGI = {
-         country_rank = rank_county
-
-       }
       NGL = {
          capital = sumbawa
          country_rank = rank_county
@@ -14570,46 +10330,6 @@ countries = {
 
           }
       }
-      NGM = {
-         country_rank = rank_county
-
-       }
-      NGN = {
-         country_rank = rank_county
-
-       }
-      NGR = {
-         country_rank = rank_county
-
-       }
-      NGU = {
-         country_rank = rank_county
-
-       }
-      NGZ = {
-         country_rank = rank_county
-
-       }
-      NHS = {
-         country_rank = rank_county
-
-       }
-      NIC = {
-         country_rank = rank_county
-
-       }
-      NID = {
-         country_rank = rank_county
-
-       }
-      NIE = {
-         country_rank = rank_county
-
-       }
-      NIT = {
-         country_rank = rank_county
-
-       }
       NJD = {
          capital = al_qatif
          religious_school = imamiya_school
@@ -14661,22 +10381,6 @@ countries = {
 
           }
       }
-      NKD = {
-         country_rank = rank_county
-
-       }
-      NKH = {
-         country_rank = rank_county
-
-       }
-      NKI = {
-         country_rank = rank_county
-
-       }
-      NKJ = {
-         country_rank = rank_county
-
-       }
       NKL = {
          capital = tuapse
          country_rank = rank_county
@@ -14706,26 +10410,6 @@ countries = {
          }
 
        }
-      NKW = {
-         country_rank = rank_county
-
-       }
-      NLG = {
-         country_rank = rank_county
-
-       }
-      NLU = {
-         country_rank = rank_county
-
-       }
-      NMB = {
-         country_rank = rank_county
-
-       }
-      NMD = {
-         country_rank = rank_county
-
-       }
       NMN = {
          capital = tuapse
          country_rank = rank_county
@@ -14747,30 +10431,6 @@ countries = {
 
           }
       }
-      NMS = {
-         country_rank = rank_county
-
-       }
-      NND = {
-         country_rank = rank_county
-
-       }
-      NNN = {
-         country_rank = rank_county
-
-       }
-      NOG = {
-         country_rank = rank_county
-
-       }
-      NOL = {
-         country_rank = rank_county
-
-       }
-      NOO = {
-         country_rank = rank_county
-
-       }
       NOR = {
          capital = oslo
          country_rank = rank_kingdom
@@ -14834,14 +10494,6 @@ countries = {
 
           }
       }
-      NOV = {
-         country_rank = rank_county
-
-       }
-      NPG = {
-         country_rank = rank_county
-
-       }
       NPL = {
          capital = vijayapur
          country_rank = rank_county
@@ -14853,10 +10505,6 @@ countries = {
             gulmi salianah malneta jagatipur jumla bajura takam yanal_densa musikot dolpo
             sinja dullu ajayameru bajhang acham kailali kanchapur
          }
-
-       }
-      NPO = {
-         country_rank = rank_county
 
        }
       NPR = {
@@ -14933,38 +10581,6 @@ countries = {
 
           }
       }
-      NPS = {
-         country_rank = rank_county
-
-       }
-      NQS = {
-         country_rank = rank_county
-
-       }
-      NRB = {
-         country_rank = rank_county
-
-       }
-      NRG = {
-         country_rank = rank_county
-
-       }
-      NRI = {
-         country_rank = rank_county
-
-       }
-      NRK = {
-         country_rank = rank_county
-
-       }
-      NRM = {
-         country_rank = rank_county
-
-       }
-      NRP = {
-         country_rank = rank_county
-
-       }
       NRS = {
          capital = narsinghpur
          country_rank = rank_county
@@ -14988,10 +10604,6 @@ countries = {
 
           }
       }
-      NSA = {
-         country_rank = rank_county
-
-       }
       NSC = {
          capital = choigan
          country_rank = rank_county
@@ -15014,26 +10626,6 @@ countries = {
 
           }
       }
-      NSD = {
-         country_rank = rank_county
-
-       }
-      NSH = {
-         country_rank = rank_county
-
-       }
-      NSI = {
-         country_rank = rank_county
-
-       }
-      NSL = {
-         country_rank = rank_county
-
-       }
-      NSM = {
-         country_rank = rank_county
-
-       }
       NSR = {
          capital = banua_lawas
          country_rank = rank_county
@@ -15058,14 +10650,6 @@ countries = {
 
           }
       }
-      NSS = {
-         country_rank = rank_county
-
-       }
-      NST = {
-         country_rank = rank_county
-
-       }
       NSU = {
          capital = masinga
          country_rank = rank_county
@@ -15084,68 +10668,12 @@ countries = {
 
           }
       }
-      NSW = {
-         country_rank = rank_county
-
-       }
-      NTA = {
-         country_rank = rank_county
-
-       }
-      NTC = {
-         country_rank = rank_county
-
-       }
-      NTH = {
-         country_rank = rank_county
-
-       }
-      NTK = {
-         country_rank = rank_county
-
-       }
-      NTL = {
-         country_rank = rank_county
-
-       }
-      NTT = {
-         country_rank = rank_county
-
-       }
-      NUE = {
-         country_rank = rank_county
-
-       }
       NUP = {
          country_rank = rank_county
 
          own_control_core = {
             minna tada mokwa bida lapai
          }
-
-       }
-      NUR = {
-         country_rank = rank_county
-
-       }
-      NUT = {
-         country_rank = rank_county
-
-       }
-      NUW = {
-         country_rank = rank_county
-
-       }
-      NUX = {
-         country_rank = rank_county
-
-       }
-      NVK = {
-         country_rank = rank_county
-
-       }
-      NVS = {
-         country_rank = rank_county
 
        }
       NWF = {
@@ -15171,162 +10699,6 @@ countries = {
 
           }
       }
-      NWG = {
-         country_rank = rank_county
-
-       }
-      NWN = {
-         country_rank = rank_county
-
-       }
-      NWU = {
-         country_rank = rank_county
-
-       }
-      NWV = {
-         country_rank = rank_county
-
-       }
-      NYA = {
-         country_rank = rank_county
-
-       }
-      NYM = {
-         country_rank = rank_county
-
-       }
-      NYS = {
-         country_rank = rank_county
-
-       }
-      NYZ = {
-         country_rank = rank_county
-
-       }
-      NZH = {
-         country_rank = rank_county
-
-       }
-      NZN = {
-         country_rank = rank_county
-
-       }
-      OAH = {
-         country_rank = rank_county
-
-       }
-      OAP = {
-         country_rank = rank_county
-
-       }
-      OBA = {
-         country_rank = rank_county
-
-       }
-      OBD = {
-         country_rank = rank_county
-
-       }
-      OBW = {
-         country_rank = rank_county
-
-       }
-      OCT = {
-         country_rank = rank_county
-
-       }
-      ODA = {
-         country_rank = rank_county
-
-       }
-      ODO = {
-         country_rank = rank_county
-
-       }
-      ODW = {
-         country_rank = rank_county
-
-       }
-      OEL = {
-         country_rank = rank_county
-
-       }
-      OET = {
-         country_rank = rank_county
-
-       }
-      OFB = {
-         country_rank = rank_county
-
-       }
-      OFO = {
-         country_rank = rank_county
-
-       }
-      OGA = {
-         country_rank = rank_county
-
-       }
-      OGC = {
-         country_rank = rank_county
-
-       }
-      OGK = {
-         country_rank = rank_county
-
-       }
-      OGL = {
-         country_rank = rank_county
-
-       }
-      OGO = {
-         country_rank = rank_county
-
-       }
-      OGS = {
-         country_rank = rank_county
-
-       }
-      OGU = {
-         country_rank = rank_county
-
-       }
-      OHK = {
-         country_rank = rank_county
-
-       }
-      OHR = {
-         country_rank = rank_county
-
-       }
-      OID = {
-         country_rank = rank_county
-
-       }
-      OIL = {
-         country_rank = rank_county
-
-       }
-      OIR = {
-         country_rank = rank_county
-
-       }
-      OJI = {
-         country_rank = rank_county
-
-       }
-      OKE = {
-         country_rank = rank_county
-
-       }
-      OKI = {
-         country_rank = rank_county
-
-       }
-      OKR = {
-         country_rank = rank_county
-
-       }
       OLD = {
          capital = oldenburg
 
@@ -15409,34 +10781,6 @@ countries = {
 
           }
       }
-      OMG = {
-         country_rank = rank_county
-
-       }
-      OMT = {
-         country_rank = rank_county
-
-       }
-      OND = {
-         country_rank = rank_county
-
-       }
-      ONG = {
-         country_rank = rank_county
-
-       }
-      ONJ = {
-         country_rank = rank_county
-
-       }
-      ONN = {
-         country_rank = rank_county
-
-       }
-      ONO = {
-         country_rank = rank_county
-
-       }
       ONW = {
          capital = madhubani
          country_rank = rank_county
@@ -15457,112 +10801,12 @@ countries = {
 
           }
       }
-      ONY = {
-         country_rank = rank_county
-
-       }
-      OOB = {
-         country_rank = rank_county
-
-       }
-      OOW = {
-         country_rank = rank_county
-
-       }
-      OPL = {
-         country_rank = rank_county
-
-       }
-      OPV = {
-         country_rank = rank_county
-
-       }
-      ORA = {
-         country_rank = rank_county
-
-       }
-      ORC = {
-         country_rank = rank_county
-
-       }
-      ORD = {
-         country_rank = rank_county
-
-       }
-      ORE = {
-         country_rank = rank_county
-
-       }
-      ORI = {
-         country_rank = rank_county
-
-       }
-      ORK = {
-         country_rank = rank_county
-
-       }
-      ORL = {
-         country_rank = rank_county
-
-       }
-      ORM = {
-         country_rank = rank_county
-
-       }
-      ORO = {
-         country_rank = rank_county
-
-       }
-      ORQ = {
-         country_rank = rank_county
-
-       }
-      ORT = {
-         country_rank = rank_county
-
-       }
       ORU = {
          country_rank = rank_county
 
          own_control_core = {
             mpongwe nguyi ogoowe_kongo adyumba
          }
-
-       }
-      OSG = {
-         country_rank = rank_county
-
-       }
-      OSK = {
-         country_rank = rank_county
-
-       }
-      OSN = {
-         country_rank = rank_county
-
-       }
-      OSS = {
-         country_rank = rank_county
-
-       }
-      OSW = {
-         country_rank = rank_county
-
-       }
-      OTA = {
-         country_rank = rank_county
-
-       }
-      OTL = {
-         country_rank = rank_county
-
-       }
-      OTM = {
-         country_rank = rank_county
-
-       }
-      OTO = {
-         country_rank = rank_county
 
        }
       OTT = {
@@ -15694,30 +10938,6 @@ countries = {
 
           }
       }
-      OUA = {
-         country_rank = rank_county
-
-       }
-      OUC = {
-         country_rank = rank_county
-
-       }
-      OVI = {
-         country_rank = rank_county
-
-       }
-      OWO = {
-         country_rank = rank_county
-
-       }
-      OXT = {
-         country_rank = rank_county
-
-       }
-      OYM = {
-         country_rank = rank_county
-
-       }
       OYO = {
          capital = oyo_ile
          country_rank = rank_county
@@ -15737,26 +10957,6 @@ countries = {
 
           }
       }
-      OZL = {
-         country_rank = rank_county
-
-       }
-      OZT = {
-         country_rank = rank_county
-
-       }
-      OZU = {
-         country_rank = rank_county
-
-       }
-      PAC = {
-         country_rank = rank_county
-
-       }
-      PAD = {
-         country_rank = rank_county
-
-       }
       PAH = {
          capital = pahang
          country_rank = rank_county
@@ -15776,18 +10976,6 @@ countries = {
 
           }
       }
-      PAL = {
-         country_rank = rank_county
-
-       }
-      PAM = {
-         country_rank = rank_county
-
-       }
-      PAN = {
-         country_rank = rank_county
-
-       }
       PAP = {
          capital = rome
          court_language = latin_language
@@ -15946,56 +11134,12 @@ countries = {
 
           }
       }
-      PAV = {
-         country_rank = rank_county
-
-       }
-      PCD = {
-         country_rank = rank_county
-
-       }
-      PCH = {
-         country_rank = rank_county
-
-       }
-      PCJ = {
-         country_rank = rank_county
-
-       }
-      PCK = {
-         country_rank = rank_county
-
-       }
-      PCO = {
-         country_rank = rank_county
-
-       }
-      PCR = {
-         country_rank = rank_county
-
-       }
-      PCT = {
-         country_rank = rank_county
-
-       }
-      PDB = {
-         country_rank = rank_county
-
-       }
-      PDG = {
-         country_rank = rank_county
-
-       }
       PDK = {
          country_rank = rank_county
 
          own_control_core = {
             puddokothai
          }
-
-       }
-      PDN = {
-         country_rank = rank_county
 
        }
       PDU = {
@@ -16020,10 +11164,6 @@ countries = {
 
           }
       }
-      PEA = {
-         country_rank = rank_county
-
-       }
       PEG = {
          capital = martaban
          country_rank = rank_duchy
@@ -16068,34 +11208,6 @@ countries = {
 
           }
       }
-      PEM = {
-         country_rank = rank_county
-
-       }
-      PEN = {
-         country_rank = rank_county
-
-       }
-      PEO = {
-         country_rank = rank_county
-
-       }
-      PEP = {
-         country_rank = rank_county
-
-       }
-      PER = {
-         country_rank = rank_county
-
-       }
-      PES = {
-         country_rank = rank_county
-
-       }
-      PGB = {
-         country_rank = rank_county
-
-       }
       PGL = {
          capital = pugal
          country_rank = rank_county
@@ -16145,10 +11257,6 @@ countries = {
 
           }
       }
-      PHE = {
-         country_rank = rank_county
-
-       }
       PHY = {
          capital = phayao
          country_rank = rank_county
@@ -16164,30 +11272,6 @@ countries = {
 
           }
       }
-      PIA = {
-         country_rank = rank_county
-
-       }
-      PIC = {
-         country_rank = rank_county
-
-       }
-      PIE = {
-         country_rank = rank_county
-
-       }
-      PIG = {
-         country_rank = rank_county
-
-       }
-      PIJ = {
-         country_rank = rank_county
-
-       }
-      PIM = {
-         country_rank = rank_county
-
-       }
       PIN = {
          capital = pinya
          country_rank = rank_kingdom
@@ -16209,18 +11293,6 @@ countries = {
 
           }
       }
-      PIO = {
-         country_rank = rank_county
-
-       }
-      PIR = {
-         country_rank = rank_county
-
-       }
-      PIS = {
-         country_rank = rank_county
-
-       }
       PJT = {
          capital = donggala
          country_rank = rank_county
@@ -16265,10 +11337,6 @@ countries = {
 
           }
       }
-      PKW = {
-         country_rank = rank_county
-
-       }
       PLA = {
          capital = pal_lahara
          country_rank = rank_county
@@ -16311,14 +11379,6 @@ countries = {
 
           }
       }
-      PLE = {
-         country_rank = rank_county
-
-       }
-      PLK = {
-         country_rank = rank_county
-
-       }
       PLL = {
          capital = pulilu
          country_rank = rank_county
@@ -16339,10 +11399,6 @@ countries = {
 
           }
       }
-      PLN = {
-         country_rank = rank_county
-
-       }
       PLT = {
          capital = palitana
          country_rank = rank_county
@@ -16364,26 +11420,6 @@ countries = {
 
           }
       }
-      PLY = {
-         country_rank = rank_county
-
-       }
-      PMB = {
-         country_rank = rank_county
-
-       }
-      PML = {
-         country_rank = rank_county
-
-       }
-      PMN = {
-         country_rank = rank_county
-
-       }
-      PMS = {
-         country_rank = rank_county
-
-       }
       PNA = {
          capital = sidhmukh #Jhansal
          country_rank = rank_county
@@ -16445,34 +11481,6 @@ countries = {
 
           }
       }
-      PNK = {
-         country_rank = rank_county
-
-       }
-      PNM = {
-         country_rank = rank_county
-
-       }
-      PNS = {
-         country_rank = rank_county
-
-       }
-      POI = {
-         country_rank = rank_county
-
-       }
-      POK = {
-         country_rank = rank_county
-
-       }
-      POL = {
-         country_rank = rank_county
-
-       }
-      POO = {
-         country_rank = rank_county
-
-       }
       POR = {
          capital = lisbon
          country_rank = rank_kingdom
@@ -16565,38 +11573,6 @@ countries = {
 
           }
       }
-      POS = {
-         country_rank = rank_county
-
-       }
-      POT = {
-         country_rank = rank_county
-
-       }
-      PPK = {
-         country_rank = rank_county
-
-       }
-      PPT = {
-         country_rank = rank_county
-
-       }
-      PQD = {
-         country_rank = rank_county
-
-       }
-      PQT = {
-         country_rank = rank_county
-
-       }
-      PRA = {
-         country_rank = rank_county
-
-       }
-      PRC = {
-         country_rank = rank_county
-
-       }
       PRG = {
          capital = tenochtitlan
          court_language = norman_dialect
@@ -16664,22 +11640,6 @@ countries = {
 
           }
       }
-      PRI = {
-         country_rank = rank_county
-
-       }
-      PRK = {
-         country_rank = rank_county
-
-       }
-      PRM = {
-         country_rank = rank_county
-
-       }
-      PRO = {
-         country_rank = rank_county
-
-       }
       PRT = {
          capital = phalvardhika
          country_rank = rank_county
@@ -16811,18 +11771,6 @@ countries = {
 
           }
       }
-      PSC = {
-         country_rank = rank_county
-
-       }
-      PSK = {
-         country_rank = rank_county
-
-       }
-      PSS = {
-         country_rank = rank_county
-
-       }
       PST = {
          capital = tuapse
          country_rank = rank_county
@@ -16844,10 +11792,6 @@ countries = {
 
           }
       }
-      PSZ = {
-         country_rank = rank_county
-
-       }
       PTC = {
          capital = phetchaburi
          country_rank = rank_county
@@ -16883,14 +11827,6 @@ countries = {
          }
 
        }
-      PTG = {
-         country_rank = rank_county
-
-       }
-      PTL = {
-         country_rank = rank_county
-
-       }
       PTN = {
          capital = patna_garjat
          country_rank = rank_county
@@ -16924,18 +11860,6 @@ countries = {
 
           }
       }
-      PTP = {
-         country_rank = rank_county
-
-       }
-      PTW = {
-         country_rank = rank_county
-
-       }
-      PTZ = {
-         country_rank = rank_county
-
-       }
       PUA = {
          capital = pua
          country_rank = rank_county
@@ -16951,38 +11875,6 @@ countries = {
 
           }
       }
-      PUB = {
-         country_rank = rank_county
-
-       }
-      PUH = {
-         country_rank = rank_county
-
-       }
-      PUK = {
-         country_rank = rank_county
-
-       }
-      PUR = {
-         country_rank = rank_county
-
-       }
-      PUU = {
-         country_rank = rank_county
-
-       }
-      PWS = {
-         country_rank = rank_county
-
-       }
-      PYE = {
-         country_rank = rank_county
-
-       }
-      PZL = {
-         country_rank = rank_county
-
-       }
       PZN = {
          capital = jelgava
          country_rank = rank_duchy
@@ -17008,10 +11900,6 @@ countries = {
 
           }
       }
-      QAN = {
-         country_rank = rank_county
-
-       }
       QAT = {
          capital = tuapse
          country_rank = rank_county
@@ -17033,74 +11921,6 @@ countries = {
 
           }
       }
-      QBY = {
-         country_rank = rank_county
-
-       }
-      QCH = {
-         country_rank = rank_county
-
-       }
-      QEQ = {
-         country_rank = rank_county
-
-       }
-      QGM = {
-         country_rank = rank_county
-
-       }
-      QGS = {
-         country_rank = rank_county
-
-       }
-      QHT = {
-         country_rank = rank_county
-
-       }
-      QHZ = {
-         country_rank = rank_county
-
-       }
-      QIG = {
-         country_rank = rank_county
-
-       }
-      QIM = {
-         country_rank = rank_county
-
-       }
-      QJG = {
-         country_rank = rank_county
-
-       }
-      QLL = {
-         country_rank = rank_county
-
-       }
-      QLM = {
-         country_rank = rank_county
-
-       }
-      QMG = {
-         country_rank = rank_county
-
-       }
-      QNG = {
-         country_rank = rank_county
-
-       }
-      QOM = {
-         country_rank = rank_county
-
-       }
-      QQH = {
-         country_rank = rank_county
-
-       }
-      QRP = {
-         country_rank = rank_county
-
-       }
       QSM = {
          capital = tuapse
          country_rank = rank_county
@@ -17122,42 +11942,6 @@ countries = {
 
           }
       }
-      QTA = {
-         country_rank = rank_county
-
-       }
-      QTO = {
-         country_rank = rank_county
-
-       }
-      QTR = {
-         country_rank = rank_county
-
-       }
-      QUA = {
-         country_rank = rank_county
-
-       }
-      QUB = {
-         country_rank = rank_county
-
-       }
-      QUL = {
-         country_rank = rank_county
-
-       }
-      QUN = {
-         country_rank = rank_county
-
-       }
-      QUZ = {
-         country_rank = rank_county
-
-       }
-      QYN = {
-         country_rank = rank_county
-
-       }
       RAC = {
          capital = xunaa
          liturgical_language = church_slavonic_language
@@ -17187,10 +11971,6 @@ countries = {
          own_control_core = {
             kotto mobaye
          }
-
-       }
-      RAG = {
-         country_rank = rank_county
 
        }
       RAJ = {
@@ -17274,38 +12054,6 @@ countries = {
 
           }
       }
-      RAN = {
-         country_rank = rank_county
-
-       }
-      RAP = {
-         country_rank = rank_county
-
-       }
-      RAR = {
-         country_rank = rank_county
-
-       }
-      RAV = {
-         country_rank = rank_county
-
-       }
-      RAW = {
-         country_rank = rank_county
-
-       }
-      RBG = {
-         country_rank = rank_county
-
-       }
-      RCB = {
-         country_rank = rank_county
-
-       }
-      RCC = {
-         country_rank = rank_county
-
-       }
       RCH = {
          capital = golconda #Amangal / Amanugallu
          country_rank = rank_county
@@ -17326,58 +12074,6 @@ countries = {
 
           }
       }
-      RDL = {
-         country_rank = rank_county
-
-       }
-      RDY = {
-         country_rank = rank_county
-
-       }
-      REF = {
-         country_rank = rank_county
-
-       }
-      REG = {
-         country_rank = rank_county
-
-       }
-      RET = {
-         country_rank = rank_county
-
-       }
-      RGG = {
-         country_rank = rank_county
-
-       }
-      RGM = {
-         country_rank = rank_county
-
-       }
-      RGR = {
-         country_rank = rank_county
-
-       }
-      RGS = {
-         country_rank = rank_county
-
-       }
-      RGT = {
-         country_rank = rank_county
-
-       }
-      RIE = {
-         country_rank = rank_county
-
-       }
-      RIG = {
-         country_rank = rank_county
-
-       }
-      RIM = {
-         country_rank = rank_county
-
-       }
       RJI = {
          capital = nandod
          country_rank = rank_county
@@ -17461,14 +12157,6 @@ countries = {
 
           }
       }
-      RKK = {
-         country_rank = rank_county
-
-       }
-      RKL = {
-         country_rank = rank_county
-
-       }
       RKS = {
          capital = palamau
          country_rank = rank_county
@@ -17489,26 +12177,6 @@ countries = {
 
           }
       }
-      RLB = {
-         country_rank = rank_county
-
-       }
-      RLE = {
-         country_rank = rank_county
-
-       }
-      RND = {
-         country_rank = rank_county
-
-       }
-      RNG = {
-         country_rank = rank_county
-
-       }
-      RNK = {
-         country_rank = rank_county
-
-       }
       RNP = {
          capital = ranpur
          country_rank = rank_county
@@ -17525,18 +12193,6 @@ countries = {
 
           }
       }
-      ROS = {
-         country_rank = rank_county
-
-       }
-      ROT = {
-         country_rank = rank_county
-
-       }
-      ROU = {
-         country_rank = rank_county
-
-       }
       RPL = {
          capital = choigan
          country_rank = rank_county
@@ -17597,10 +12253,6 @@ countries = {
 
           }
       }
-      RPP = {
-         country_rank = rank_county
-
-       }
       RRU = {
          capital = barru
          country_rank = rank_county
@@ -17642,22 +12294,6 @@ countries = {
 
           }
       }
-      RSO = {
-         country_rank = rank_county
-
-       }
-      RST = {
-         country_rank = rank_county
-
-       }
-      RSZ = {
-         country_rank = rank_county
-
-       }
-      RTB = {
-         country_rank = rank_county
-
-       }
       RTP = {
          capital = ratnapura
          country_rank = rank_county
@@ -17684,14 +12320,6 @@ countries = {
 
           }
       }
-      RUA = {
-         country_rank = rank_county
-
-       }
-      RUP = {
-         country_rank = rank_county
-
-       }
       RUS = {
          capital = moscow
          liturgical_language = church_slavonic_language
@@ -17985,32 +12613,12 @@ countries = {
 
           }
       }
-      RUT = {
-         country_rank = rank_county
-
-       }
-      RVA = {
-         country_rank = rank_county
-
-       }
-      RVB = {
-         country_rank = rank_county
-
-       }
       RWA = {
          country_rank = rank_county
 
          own_control_core = {
             komo_kongo nduga buzanga ndorwa bankutu
          }
-
-       }
-      RYA = {
-         country_rank = rank_county
-
-       }
-      RYL = {
-         country_rank = rank_county
 
        }
       RYU = {
@@ -18032,14 +12640,6 @@ countries = {
 
           }
       }
-      RZB = {
-         country_rank = rank_county
-
-       }
-      RZH = {
-         country_rank = rank_county
-
-       }
       RZQ = {
          country_rank = rank_county
 
@@ -18057,10 +12657,6 @@ countries = {
             rimuka angwa chitomborwizi chisvingo tsindi muchuchu matendere majiri chipagwe domboshaba
             chipukuswi mwenezi mtetengwe mapela mtoli impakwe tora_nju makgadikgadi
          }
-
-       }
-      SAA = {
-         country_rank = rank_county
 
        }
       SAB = {
@@ -18101,42 +12697,6 @@ countries = {
 
           }
       }
-      SAH = {
-         country_rank = rank_county
-
-       }
-      SAK = {
-         country_rank = rank_county
-
-       }
-      SAL = {
-         country_rank = rank_county
-
-       }
-      SAN = {
-         country_rank = rank_county
-
-       }
-      SAO = {
-         country_rank = rank_county
-
-       }
-      SAR = {
-         country_rank = rank_county
-
-       }
-      SAU = {
-         country_rank = rank_county
-
-       }
-      SAV = {
-         country_rank = rank_county
-
-       }
-      SAW = {
-         country_rank = rank_county
-
-       }
       SAX = {
          capital = dresden
 
@@ -18175,14 +12735,6 @@ countries = {
 
           }
       }
-      SAY = {
-         country_rank = rank_county
-
-       }
-      SBA = {
-         country_rank = rank_county
-
-       }
       SBG = {
          capital = santubong
          country_rank = rank_county
@@ -18207,10 +12759,6 @@ countries = {
 
           }
       }
-      SBL = {
-         country_rank = rank_county
-
-       }
       SBU = {
          capital = selimbau
          country_rank = rank_county
@@ -18231,18 +12779,6 @@ countries = {
 
           }
       }
-      SBY = {
-         country_rank = rank_county
-
-       }
-      SBZ = {
-         country_rank = rank_county
-
-       }
-      SCB = {
-         country_rank = rank_county
-
-       }
       SCG = {
          capital = wurzburg
          country_rank = rank_county
@@ -18273,30 +12809,6 @@ countries = {
 
           }
       }
-      SCI = {
-         country_rank = rank_county
-
-       }
-      SCL = {
-         country_rank = rank_county
-
-       }
-      SCO = {
-         country_rank = rank_county
-
-       }
-      SCS = {
-         country_rank = rank_county
-
-       }
-      SDG = {
-         country_rank = rank_county
-
-       }
-      SDQ = {
-         country_rank = rank_county
-
-       }
       SDR = {
          capital = sidenreng
          country_rank = rank_county
@@ -18317,18 +12829,6 @@ countries = {
 
           }
       }
-      SDZ = {
-         country_rank = rank_county
-
-       }
-      SEB = {
-         country_rank = rank_county
-
-       }
-      SED = {
-         country_rank = rank_county
-
-       }
       SEG = {
          country_rank = rank_county
 
@@ -18336,10 +12836,6 @@ countries = {
             segou bla dioila massigui dakadjalan bamako koulikoro nyamina sansanding niono
             sokolo
          }
-
-       }
-      SEN = {
-         country_rank = rank_county
 
        }
       SER = {
@@ -18401,26 +12897,6 @@ countries = {
 
           }
       }
-      SFA = {
-         country_rank = rank_county
-
-       }
-      SFC = {
-         country_rank = rank_county
-
-       }
-      SFR = {
-         country_rank = rank_county
-
-       }
-      SGA = {
-         country_rank = rank_county
-
-       }
-      SGE = {
-         country_rank = rank_county
-
-       }
       SGH = {
          capital = tuapse
          country_rank = rank_county
@@ -18442,10 +12918,6 @@ countries = {
 
           }
       }
-      SGL = {
-         country_rank = rank_county
-
-       }
       SGN = {
          capital = tuapse
          country_rank = rank_county
@@ -18467,14 +12939,6 @@ countries = {
 
           }
       }
-      SGR = {
-         country_rank = rank_county
-
-       }
-      SGS = {
-         country_rank = rank_county
-
-       }
       SGT = {
          capital = dharmasraya
          country_rank = rank_county
@@ -18519,14 +12983,6 @@ countries = {
 
           }
       }
-      SGZ = {
-         country_rank = rank_county
-
-       }
-      SHB = {
-         country_rank = rank_county
-
-       }
       SHD = {
          capital = tuapse
          country_rank = rank_county
@@ -18548,18 +13004,6 @@ countries = {
 
           }
       }
-      SHG = {
-         country_rank = rank_county
-
-       }
-      SHH = {
-         country_rank = rank_county
-
-       }
-      SHJ = {
-         country_rank = rank_county
-
-       }
       SHK = {
          capital = tuapse
          country_rank = rank_county
@@ -18619,22 +13063,6 @@ countries = {
 
           }
       }
-      SHM = {
-         country_rank = rank_county
-
-       }
-      SHN = {
-         country_rank = rank_county
-
-       }
-      SHO = {
-         country_rank = rank_county
-
-       }
-      SHP = {
-         country_rank = rank_county
-
-       }
       SHR = {
          capital = churu
          country_rank = rank_county
@@ -18656,22 +13084,6 @@ countries = {
 
           }
       }
-      SHS = {
-         country_rank = rank_county
-
-       }
-      SIB = {
-         country_rank = rank_county
-
-       }
-      SIC = {
-         country_rank = rank_county
-
-       }
-      SIE = {
-         country_rank = rank_county
-
-       }
       SIG = {
          capital = sengkae
          country_rank = rank_county
@@ -18688,14 +13100,6 @@ countries = {
 
           }
       }
-      SIH = {
-         country_rank = rank_county
-
-       }
-      SII = {
-         country_rank = rank_county
-
-       }
       SIK = {
          country_rank = rank_county
 
@@ -18710,14 +13114,6 @@ countries = {
          own_control_core = {
             portudal tattaguine joal fandene
          }
-
-       }
-      SIT = {
-         country_rank = rank_county
-
-       }
-      SIZ = {
-         country_rank = rank_county
 
        }
       SJZ = {
@@ -18745,14 +13141,6 @@ countries = {
 
           }
       }
-      SKA = {
-         country_rank = rank_county
-
-       }
-      SKE = {
-         country_rank = rank_county
-
-       }
       SKH = {
          capital = tuapse
          country_rank = rank_empire
@@ -18782,10 +13170,6 @@ countries = {
 
           }
       }
-      SKI = {
-         country_rank = rank_county
-
-       }
       SKK = {
          capital = yuksom
          country_rank = rank_county
@@ -18801,14 +13185,6 @@ countries = {
 
           }
       }
-      SKL = {
-         country_rank = rank_county
-
-       }
-      SKN = {
-         country_rank = rank_county
-
-       }
       SKO = {
          country_rank = rank_county
 
@@ -18819,10 +13195,6 @@ countries = {
             funtua zazzau anchau rano kano katsina kazaure gumel biram gaya_n
             dutse kalam_hill auyo
          }
-
-       }
-      SKR = {
-         country_rank = rank_county
 
        }
       SKT = {
@@ -18847,10 +13219,6 @@ countries = {
 
           }
       }
-      SKY = {
-         country_rank = rank_county
-
-       }
       SLA = {
          capital = silat
          country_rank = rank_county
@@ -18875,36 +13243,12 @@ countries = {
 
           }
       }
-      SLD = {
-         country_rank = rank_county
-
-       }
-      SLE = {
-         country_rank = rank_county
-
-       }
-      SLI = {
-         country_rank = rank_county
-
-       }
-      SLK = {
-         country_rank = rank_county
-
-       }
-      SLL = {
-         country_rank = rank_county
-
-       }
       SLM = {
          country_rank = rank_county
 
          own_control_core = {
             albreda diakhao wanar djilor kahone juffure
          }
-
-       }
-      SLN = {
-         country_rank = rank_county
 
        }
       SLP = {
@@ -18948,14 +13292,6 @@ countries = {
 
           }
       }
-      SLT = {
-         country_rank = rank_county
-
-       }
-      SLV = {
-         country_rank = rank_county
-
-       }
       SLW = {
          capital = flensburg
 
@@ -19019,10 +13355,6 @@ countries = {
 
           }
       }
-      SLZ = {
-         country_rank = rank_county
-
-       }
       SMA = {
          capital = sehwan
          religious_school = hanafi_school
@@ -19076,22 +13408,6 @@ countries = {
 
           }
       }
-      SMD = {
-         country_rank = rank_county
-
-       }
-      SME = {
-         country_rank = rank_county
-
-       }
-      SMG = {
-         country_rank = rank_county
-
-       }
-      SMI = {
-         country_rank = rank_county
-
-       }
       SML = {
          capital = buckeburg
 
@@ -19150,10 +13466,6 @@ countries = {
 
           }
       }
-      SMO = {
-         country_rank = rank_county
-
-       }
       SMR = {
          capital = montefeltro
 
@@ -19184,18 +13496,6 @@ countries = {
 
           }
       }
-      SMS = {
-         country_rank = rank_county
-
-       }
-      SMV = {
-         country_rank = rank_county
-
-       }
-      SMZ = {
-         country_rank = rank_county
-
-       }
       SND = {
          capital = umarkot
          religious_school = ismaili_school
@@ -19266,24 +13566,12 @@ countries = {
 
           }
       }
-      SNP = {
-         country_rank = rank_county
-
-       }
-      SNT = {
-         country_rank = rank_county
-
-       }
       SOA = {
          country_rank = rank_county
 
          own_control_core = {
             ambat sharka barara ankober nora_eth badabedi aheyya_fagg debre_libanos debra_berhan
          }
-
-       }
-      SOB = {
-         country_rank = rank_county
 
        }
       SOH = {
@@ -19307,46 +13595,6 @@ countries = {
 
           }
       }
-      SOK = {
-         country_rank = rank_county
-
-       }
-      SOL = {
-         country_rank = rank_county
-
-       }
-      SOM = {
-         country_rank = rank_county
-
-       }
-      SON = {
-         country_rank = rank_county
-
-       }
-      SOO = {
-         country_rank = rank_county
-
-       }
-      SOR = {
-         country_rank = rank_county
-
-       }
-      SOS = {
-         country_rank = rank_county
-
-       }
-      SOT = {
-         country_rank = rank_county
-
-       }
-      SOU = {
-         country_rank = rank_county
-
-       }
-      SOY = {
-         country_rank = rank_county
-
-       }
       SPA = {
          capital = valladolid
          country_rank = rank_kingdom
@@ -19484,14 +13732,6 @@ countries = {
 
           }
       }
-      SPB = {
-         country_rank = rank_county
-
-       }
-      SPG = {
-         country_rank = rank_county
-
-       }
       SPL = {
          capital = tuapse
          country_rank = rank_county
@@ -19540,10 +13780,6 @@ countries = {
 
           }
       }
-      SPO = {
-         country_rank = rank_county
-
-       }
       SPR = {
          capital = tenochtitlan
          court_language = norman_dialect
@@ -19618,26 +13854,6 @@ countries = {
 
           }
       }
-      SPY = {
-         country_rank = rank_county
-
-       }
-      SQH = {
-         country_rank = rank_county
-
-       }
-      SRA = {
-         country_rank = rank_county
-
-       }
-      SRB = {
-         country_rank = rank_county
-
-       }
-      SRC = {
-         country_rank = rank_county
-
-       }
       SRG = {
          capital = sarangarh
          country_rank = rank_county
@@ -19768,54 +13984,6 @@ countries = {
 
           }
       }
-      SRU = {
-         country_rank = rank_county
-
-       }
-      SRV = {
-         country_rank = rank_county
-
-       }
-      SSG = {
-         country_rank = rank_county
-
-       }
-      SSH = {
-         country_rank = rank_county
-
-       }
-      SSI = {
-         country_rank = rank_county
-
-       }
-      SSK = {
-         country_rank = rank_county
-
-       }
-      SSP = {
-         country_rank = rank_county
-
-       }
-      STC = {
-         country_rank = rank_county
-
-       }
-      STD = {
-         country_rank = rank_county
-
-       }
-      STE = {
-         country_rank = rank_county
-
-       }
-      STG = {
-         country_rank = rank_county
-
-       }
-      STK = {
-         country_rank = rank_county
-
-       }
       STN = {
          capital = tuapse
          country_rank = rank_county
@@ -19837,10 +14005,6 @@ countries = {
 
           }
       }
-      STP = {
-         country_rank = rank_county
-
-       }
       STR = {
          capital = karkala
          country_rank = rank_county
@@ -19861,38 +14025,6 @@ countries = {
 
           }
       }
-      STS = {
-         country_rank = rank_county
-
-       }
-      STU = {
-         country_rank = rank_county
-
-       }
-      STV = {
-         country_rank = rank_county
-
-       }
-      STW = {
-         country_rank = rank_county
-
-       }
-      STY = {
-         country_rank = rank_county
-
-       }
-      STZ = {
-         country_rank = rank_county
-
-       }
-      SUC = {
-         country_rank = rank_county
-
-       }
-      SUE = {
-         country_rank = rank_county
-
-       }
       SUK = {
          capital = sukhothai
          country_rank = rank_kingdom
@@ -19967,28 +14099,12 @@ countries = {
 
           }
       }
-      SUR = {
-         country_rank = rank_county
-
-       }
       SUS = {
          country_rank = rank_county
 
          own_control_core = {
             konkoure scarcies
          }
-
-       }
-      SUT = {
-         country_rank = rank_county
-
-       }
-      SUW = {
-         country_rank = rank_county
-
-       }
-      SVA = {
-         country_rank = rank_county
 
        }
       SVN = {
@@ -20012,18 +14128,6 @@ countries = {
 
           }
       }
-      SVO = {
-         country_rank = rank_county
-
-       }
-      SWB = {
-         country_rank = rank_county
-
-       }
-      SWD = {
-         country_rank = rank_county
-
-       }
       SWE = {
          capital = stockholm
 
@@ -20140,10 +14244,6 @@ countries = {
 
           }
       }
-      SWH = {
-         country_rank = rank_county
-
-       }
       SWI = {
          capital = bern #Actually no capital, but this was the closest to the seat of the government
          country_rank = rank_duchy
@@ -20199,72 +14299,12 @@ countries = {
 
           }
       }
-      SWR = {
-         country_rank = rank_county
-
-       }
-      SWS = {
-         country_rank = rank_county
-
-       }
-      SWT = {
-         country_rank = rank_county
-
-       }
       SWZ = {
          country_rank = rank_county
 
          own_control_core = {
             swazi zombodze mthethwa
          }
-
-       }
-      SXI = {
-         country_rank = rank_county
-
-       }
-      SXM = {
-         country_rank = rank_county
-
-       }
-      SYE = {
-         country_rank = rank_county
-
-       }
-      SYG = {
-         country_rank = rank_county
-
-       }
-      SYN = {
-         country_rank = rank_county
-
-       }
-      SYU = {
-         country_rank = rank_county
-
-       }
-      SYY = {
-         country_rank = rank_county
-
-       }
-      SYZ = {
-         country_rank = rank_county
-
-       }
-      SZG = {
-         country_rank = rank_county
-
-       }
-      SZH = {
-         country_rank = rank_county
-
-       }
-      SZI = {
-         country_rank = rank_county
-
-       }
-      SZL = {
-         country_rank = rank_county
 
        }
       SZR = {
@@ -20328,48 +14368,12 @@ countries = {
 
           }
       }
-      SZU = {
-         country_rank = rank_county
-
-       }
-      TAA = {
-         country_rank = rank_county
-
-       }
-      TAE = {
-         country_rank = rank_county
-
-       }
-      TAI = {
-         country_rank = rank_county
-
-       }
-      TAK = {
-         country_rank = rank_county
-
-       }
-      TAL = {
-         country_rank = rank_county
-
-       }
       TAM = {
          country_rank = rank_county
 
          own_control_core = {
             kirina kaba narena niagassola siguiri
          }
-
-       }
-      TAN = {
-         country_rank = rank_county
-
-       }
-      TAO = {
-         country_rank = rank_county
-
-       }
-      TAR = {
-         country_rank = rank_county
 
        }
       TAT = {
@@ -20399,40 +14403,12 @@ countries = {
 
           }
       }
-      TAV = {
-         country_rank = rank_county
-
-       }
-      TAX = {
-         country_rank = rank_county
-
-       }
-      TAZ = {
-         country_rank = rank_county
-
-       }
-      TBA = {
-         country_rank = rank_county
-
-       }
-      TBG = {
-         country_rank = rank_county
-
-       }
-      TBK = {
-         country_rank = rank_county
-
-       }
       TBR = {
          country_rank = rank_county
 
          own_control_core = {
             kagaye east_konongo kazeh west_wembere north_wembere urambo msene sumbwa
          }
-
-       }
-      TBY = {
-         country_rank = rank_county
 
        }
       TCA = {
@@ -20463,34 +14439,6 @@ countries = {
 
           }
       }
-      TCC = {
-         country_rank = rank_county
-
-       }
-      TCH = {
-         country_rank = rank_county
-
-       }
-      TCK = {
-         country_rank = rank_county
-
-       }
-      TCP = {
-         country_rank = rank_county
-
-       }
-      TCQ = {
-         country_rank = rank_county
-
-       }
-      TCY = {
-         country_rank = rank_county
-
-       }
-      TDE = {
-         country_rank = rank_county
-
-       }
       TDG = {
          capital = tarakan
          country_rank = rank_county
@@ -20521,10 +14469,6 @@ countries = {
 
           }
       }
-      TDJ = {
-         country_rank = rank_county
-
-       }
       TDO = {
          capital = tondo
          country_rank = rank_kingdom
@@ -20549,14 +14493,6 @@ countries = {
 
           }
       }
-      TEE = {
-         country_rank = rank_county
-
-       }
-      TEG = {
-         country_rank = rank_county
-
-       }
       TEK = {
          capital = tuapse
          country_rank = rank_county
@@ -20578,28 +14514,12 @@ countries = {
 
           }
       }
-      TEL = {
-         country_rank = rank_county
-
-       }
-      TEM = {
-         country_rank = rank_county
-
-       }
       TEN = {
          country_rank = rank_county
 
          own_control_core = {
             bandafassi saraya iwol
          }
-
-       }
-      TEO = {
-         country_rank = rank_county
-
-       }
-      TEP = {
-         country_rank = rank_county
 
        }
       TER = {
@@ -20622,18 +14542,6 @@ countries = {
 
           }
       }
-      TES = {
-         country_rank = rank_county
-
-       }
-      TET = {
-         country_rank = rank_county
-
-       }
-      TEU = {
-         country_rank = rank_county
-
-       }
       TEX = {
          capital = waco
 
@@ -20674,34 +14582,6 @@ countries = {
 
           }
       }
-      TEY = {
-         country_rank = rank_county
-
-       }
-      TFK = {
-         country_rank = rank_county
-
-       }
-      TFL = {
-         country_rank = rank_county
-
-       }
-      TGG = {
-         country_rank = rank_county
-
-       }
-      TGH = {
-         country_rank = rank_county
-
-       }
-      TGR = {
-         country_rank = rank_county
-
-       }
-      TGS = {
-         country_rank = rank_county
-
-       }
       TGT = {
          capital = touggourt
          religious_school = ibadi_school
@@ -20730,46 +14610,6 @@ countries = {
 
           }
       }
-      TGU = {
-         country_rank = rank_county
-
-       }
-      TGY = {
-         country_rank = rank_county
-
-       }
-      THD = {
-         country_rank = rank_county
-
-       }
-      THE = {
-         country_rank = rank_county
-
-       }
-      THM = {
-         country_rank = rank_county
-
-       }
-      THO = {
-         country_rank = rank_county
-
-       }
-      THP = {
-         country_rank = rank_county
-
-       }
-      THS = {
-         country_rank = rank_county
-
-       }
-      THT = {
-         country_rank = rank_county
-
-       }
-      THU = {
-         country_rank = rank_county
-
-       }
       TIB = {
          capital = choigan
          country_rank = rank_county
@@ -20832,10 +14672,6 @@ countries = {
          }
 
        }
-      TIM = {
-         country_rank = rank_county
-
-       }
       TIO = {
          country_rank = rank_county
 
@@ -20843,10 +14679,6 @@ countries = {
             amulaca tumba_ikoko sanga_pumbo pumbo cundi ocanga cuango monsol makaka lefini
             mombote ubangi ngato nunu ngabo bikoro south_juma
          }
-
-       }
-      TIR = {
-         country_rank = rank_county
 
        }
       TJN = {
@@ -20908,38 +14740,6 @@ countries = {
          }
 
        }
-      TKD = {
-         country_rank = rank_county
-
-       }
-      TKE = {
-         country_rank = rank_county
-
-       }
-      TKI = {
-         country_rank = rank_county
-
-       }
-      TKM = {
-         country_rank = rank_county
-
-       }
-      TKN = {
-         country_rank = rank_county
-
-       }
-      TKO = {
-         country_rank = rank_county
-
-       }
-      TKR = {
-         country_rank = rank_county
-
-       }
-      TKS = {
-         country_rank = rank_county
-
-       }
       TKU = {
          capital = manikandapuram
          country_rank = rank_county
@@ -20958,10 +14758,6 @@ countries = {
 
           }
       }
-      TLA = {
-         country_rank = rank_county
-
-       }
       TLE = {
          capital = tlemcen
          religious_school = maliki_school
@@ -21016,38 +14812,6 @@ countries = {
 
           }
       }
-      TLG = {
-         country_rank = rank_county
-
-       }
-      TLL = {
-         country_rank = rank_county
-
-       }
-      TLM = {
-         country_rank = rank_county
-
-       }
-      TLN = {
-         country_rank = rank_county
-
-       }
-      TLO = {
-         country_rank = rank_county
-
-       }
-      TLP = {
-         country_rank = rank_county
-
-       }
-      TLQ = {
-         country_rank = rank_county
-
-       }
-      TLT = {
-         country_rank = rank_county
-
-       }
       TLW = {
          capital = taliwang
          country_rank = rank_county
@@ -21068,18 +14832,6 @@ countries = {
 
           }
       }
-      TLX = {
-         country_rank = rank_county
-
-       }
-      TLY = {
-         country_rank = rank_county
-
-       }
-      TLZ = {
-         country_rank = rank_county
-
-       }
       TMB = {
          country_rank = rank_county
 
@@ -21087,50 +14839,6 @@ countries = {
             soumpi safare bamba goundam tindirma gourma_rharous kabara timbuktu sahel_corridor11 ngouma
             arlal bambara_maounde douentza hombori
          }
-
-       }
-      TMC = {
-         country_rank = rank_county
-
-       }
-      TMD = {
-         country_rank = rank_county
-
-       }
-      TMG = {
-         country_rank = rank_county
-
-       }
-      TMH = {
-         country_rank = rank_county
-
-       }
-      TMK = {
-         country_rank = rank_county
-
-       }
-      TML = {
-         country_rank = rank_county
-
-       }
-      TMN = {
-         country_rank = rank_county
-
-       }
-      TMR = {
-         country_rank = rank_county
-
-       }
-      TMS = {
-         country_rank = rank_county
-
-       }
-      TMT = {
-         country_rank = rank_county
-
-       }
-      TMW = {
-         country_rank = rank_county
 
        }
       TMZ = {
@@ -21144,18 +14852,6 @@ countries = {
             taza guercif jerada moulouya_corridor1 moulouya_corridor3 moulouya_corridor2 ksar_es_souk_bechar_corridor sijilmasa el_djouf5 tazzarine
             beni_sabih foum_zguid anti_atlas2
          }
-
-       }
-      TNA = {
-         country_rank = rank_county
-
-       }
-      TNC = {
-         country_rank = rank_county
-
-       }
-      TND = {
-         country_rank = rank_county
 
        }
       TNG = {
@@ -21173,34 +14869,6 @@ countries = {
 
           }
       }
-      TNI = {
-         country_rank = rank_county
-
-       }
-      TNK = {
-         country_rank = rank_county
-
-       }
-      TNL = {
-         country_rank = rank_county
-
-       }
-      TNN = {
-         country_rank = rank_county
-
-       }
-      TNO = {
-         country_rank = rank_county
-
-       }
-      TNP = {
-         country_rank = rank_county
-
-       }
-      TNQ = {
-         country_rank = rank_county
-
-       }
       TNT = {
          capital = choigan
          country_rank = rank_county
@@ -21221,30 +14889,6 @@ countries = {
 
           }
       }
-      TNX = {
-         country_rank = rank_county
-
-       }
-      TNZ = {
-         country_rank = rank_county
-
-       }
-      TOA = {
-         country_rank = rank_county
-
-       }
-      TOH = {
-         country_rank = rank_county
-
-       }
-      TOJ = {
-         country_rank = rank_county
-
-       }
-      TON = {
-         country_rank = rank_county
-
-       }
       TOO = {
          country_rank = rank_county
 
@@ -21254,104 +14898,12 @@ countries = {
          }
 
        }
-      TOQ = {
-         country_rank = rank_county
-
-       }
-      TOR = {
-         country_rank = rank_county
-
-       }
-      TOS = {
-         country_rank = rank_county
-
-       }
-      TOT = {
-         country_rank = rank_county
-
-       }
-      TOU = {
-         country_rank = rank_county
-
-       }
-      TOV = {
-         country_rank = rank_county
-
-       }
-      TOY = {
-         country_rank = rank_county
-
-       }
-      TOZ = {
-         country_rank = rank_county
-
-       }
-      TPA = {
-         country_rank = rank_county
-
-       }
-      TPC = {
-         country_rank = rank_county
-
-       }
-      TPG = {
-         country_rank = rank_county
-
-       }
-      TPH = {
-         country_rank = rank_county
-
-       }
-      TPL = {
-         country_rank = rank_county
-
-       }
-      TPN = {
-         country_rank = rank_county
-
-       }
-      TPQ = {
-         country_rank = rank_county
-
-       }
-      TPS = {
-         country_rank = rank_county
-
-       }
-      TPT = {
-         country_rank = rank_county
-
-       }
-      TPX = {
-         country_rank = rank_county
-
-       }
-      TPY = {
-         country_rank = rank_county
-
-       }
       TQL = {
          country_rank = rank_county
 
          own_control_core = {
             kadugli teqali nuba_sud
          }
-
-       }
-      TRA = {
-         country_rank = rank_county
-
-       }
-      TRB = {
-         country_rank = rank_county
-
-       }
-      TRC = {
-         country_rank = rank_county
-
-       }
-      TRE = {
-         country_rank = rank_county
 
        }
       TRF = {
@@ -21383,28 +14935,12 @@ countries = {
 
           }
       }
-      TRG = {
-         country_rank = rank_county
-
-       }
       TRI = {
          country_rank = rank_county
 
          own_control_core = {
             rangamati
          }
-
-       }
-      TRK = {
-         country_rank = rank_county
-
-       }
-      TRN = {
-         country_rank = rank_county
-
-       }
-      TRO = {
-         country_rank = rank_county
 
        }
       TRP = {
@@ -21419,14 +14955,6 @@ countries = {
          }
 
        }
-      TRS = {
-         country_rank = rank_county
-
-       }
-      TRT = {
-         country_rank = rank_county
-
-       }
       TRV = {
          country_rank = rank_county
 
@@ -21436,20 +14964,12 @@ countries = {
          }
 
        }
-      TRY = {
-         country_rank = rank_county
-
-       }
       TRZ = {
          country_rank = rank_county
 
          own_control_core = {
             rosso awlil walalde nouakchott
          }
-
-       }
-      TSA = {
-         country_rank = rank_county
 
        }
       TSC = {
@@ -21533,14 +15053,6 @@ countries = {
 
           }
       }
-      TSE = {
-         country_rank = rank_county
-
-       }
-      TSG = {
-         country_rank = rank_county
-
-       }
       TSK = {
          capital = tuapse
          country_rank = rank_county
@@ -21581,78 +15093,6 @@ countries = {
 
           }
       }
-      TSN = {
-         country_rank = rank_county
-
-       }
-      TSO = {
-         country_rank = rank_county
-
-       }
-      TST = {
-         country_rank = rank_county
-
-       }
-      TSW = {
-         country_rank = rank_county
-
-       }
-      TTA = {
-         country_rank = rank_county
-
-       }
-      TTC = {
-         country_rank = rank_county
-
-       }
-      TTE = {
-         country_rank = rank_county
-
-       }
-      TTL = {
-         country_rank = rank_county
-
-       }
-      TTN = {
-         country_rank = rank_county
-
-       }
-      TTR = {
-         country_rank = rank_county
-
-       }
-      TTS = {
-         country_rank = rank_county
-
-       }
-      TTY = {
-         country_rank = rank_county
-
-       }
-      TTZ = {
-         country_rank = rank_county
-
-       }
-      TUA = {
-         country_rank = rank_county
-
-       }
-      TUB = {
-         country_rank = rank_county
-
-       }
-      TUC = {
-         country_rank = rank_county
-
-       }
-      TUJ = {
-         country_rank = rank_county
-
-       }
-      TUL = {
-         country_rank = rank_county
-
-       }
       TUN = {
          capital = tunis
          religious_school = maliki_school
@@ -21719,14 +15159,6 @@ countries = {
 
           }
       }
-      TUP = {
-         country_rank = rank_county
-
-       }
-      TUR = {
-         country_rank = rank_county
-
-       }
       TUS = {
          capital = florence
          country_rank = rank_county
@@ -21780,34 +15212,6 @@ countries = {
 
           }
       }
-      TUT = {
-         country_rank = rank_county
-
-       }
-      TUV = {
-         country_rank = rank_county
-
-       }
-      TUZ = {
-         country_rank = rank_county
-
-       }
-      TVE = {
-         country_rank = rank_county
-
-       }
-      TVS = {
-         country_rank = rank_county
-
-       }
-      TVY = {
-         country_rank = rank_county
-
-       }
-      TWA = {
-         country_rank = rank_county
-
-       }
       TWI = {
          capital = rangamati
          country_rank = rank_county
@@ -21832,22 +15236,6 @@ countries = {
 
           }
       }
-      TWK = {
-         country_rank = rank_county
-
-       }
-      TWN = {
-         country_rank = rank_county
-
-       }
-      TXI = {
-         country_rank = rank_county
-
-       }
-      TXP = {
-         country_rank = rank_county
-
-       }
       TYM = {
          capital = tuapse
          country_rank = rank_county
@@ -21869,10 +15257,6 @@ countries = {
 
           }
       }
-      TYR = {
-         country_rank = rank_county
-
-       }
       TYY = {
          capital = taytay
          country_rank = rank_county
@@ -21897,72 +15281,12 @@ countries = {
 
           }
       }
-      TZC = {
-         country_rank = rank_county
-
-       }
-      TZE = {
-         country_rank = rank_county
-
-       }
-      TZH = {
-         country_rank = rank_county
-
-       }
-      TZI = {
-         country_rank = rank_county
-
-       }
-      TZL = {
-         country_rank = rank_county
-
-       }
-      TZM = {
-         country_rank = rank_county
-
-       }
-      TZP = {
-         country_rank = rank_county
-
-       }
-      TZU = {
-         country_rank = rank_county
-
-       }
-      TZW = {
-         country_rank = rank_county
-
-       }
-      TZZ = {
-         country_rank = rank_county
-
-       }
-      UAA = {
-         country_rank = rank_county
-
-       }
-      UAU = {
-         country_rank = rank_county
-
-       }
-      UAY = {
-         country_rank = rank_county
-
-       }
       UBH = {
          country_rank = rank_county
 
          own_control_core = {
             nikoma mirama nyamwezi ujiji ruguru
          }
-
-       }
-      UBL = {
-         country_rank = rank_county
-
-       }
-      UBV = {
-         country_rank = rank_county
 
        }
       UCA = {
@@ -22022,44 +15346,12 @@ countries = {
 
           }
       }
-      UDE = {
-         country_rank = rank_county
-
-       }
-      UEN = {
-         country_rank = rank_county
-
-       }
-      UES = {
-         country_rank = rank_county
-
-       }
-      UFF = {
-         country_rank = rank_county
-
-       }
       UFP = {
          country_rank = rank_county
 
          own_control_core = {
             kirando kala ivuna
          }
-
-       }
-      UGH = {
-         country_rank = rank_county
-
-       }
-      UGL = {
-         country_rank = rank_county
-
-       }
-      UGW = {
-         country_rank = rank_county
-
-       }
-      UGX = {
-         country_rank = rank_county
 
        }
       UHH = {
@@ -22098,62 +15390,6 @@ countries = {
 
           }
       }
-      UKR = {
-         country_rank = rank_county
-
-       }
-      ULC = {
-         country_rank = rank_county
-
-       }
-      ULM = {
-         country_rank = rank_county
-
-       }
-      ULS = {
-         country_rank = rank_county
-
-       }
-      UMA = {
-         country_rank = rank_county
-
-       }
-      UMH = {
-         country_rank = rank_county
-
-       }
-      UMO = {
-         country_rank = rank_county
-
-       }
-      UNA = {
-         country_rank = rank_county
-
-       }
-      UNL = {
-         country_rank = rank_county
-
-       }
-      UNN = {
-         country_rank = rank_county
-
-       }
-      UOR = {
-         country_rank = rank_county
-
-       }
-      URB = {
-         country_rank = rank_county
-
-       }
-      URC = {
-         country_rank = rank_county
-
-       }
-      URI = {
-         country_rank = rank_county
-
-       }
       URM = {
          capital = tuapse
          country_rank = rank_county
@@ -22242,10 +15478,6 @@ countries = {
 
           }
       }
-      URY = {
-         country_rank = rank_county
-
-       }
       USA = {
          capital = london
          court_language = norman_dialect
@@ -22435,10 +15667,6 @@ countries = {
          }
 
        }
-      UTB = {
-         country_rank = rank_county
-
-       }
       UTP = {
          capital = tuapse
          country_rank = rank_county
@@ -22460,30 +15688,6 @@ countries = {
 
           }
       }
-      UTR = {
-         country_rank = rank_county
-
-       }
-      UTS = {
-         country_rank = rank_county
-
-       }
-      VAL = {
-         country_rank = rank_county
-
-       }
-      VAZ = {
-         country_rank = rank_county
-
-       }
-      VBG = {
-         country_rank = rank_county
-
-       }
-      VBK = {
-         country_rank = rank_county
-
-       }
       VDK = {
          capital = karikkode
          country_rank = rank_county
@@ -22496,42 +15700,6 @@ countries = {
 
           }
       }
-      VDM = {
-         country_rank = rank_county
-
-       }
-      VDU = {
-         country_rank = rank_county
-
-       }
-      VDZ = {
-         country_rank = rank_county
-
-       }
-      VED = {
-         country_rank = rank_county
-
-       }
-      VEL = {
-         country_rank = rank_county
-
-       }
-      VEN = {
-         country_rank = rank_county
-
-       }
-      VER = {
-         country_rank = rank_county
-
-       }
-      VEZ = {
-         country_rank = rank_county
-
-       }
-      VID = {
-         country_rank = rank_county
-
-       }
       VIJ = {
          capital = vijayanagar
          country_rank = rank_kingdom
@@ -22561,14 +15729,6 @@ countries = {
 
           }
       }
-      VIL = {
-         country_rank = rank_county
-
-       }
-      VIN = {
-         country_rank = rank_county
-
-       }
       VLD = {
          capital = palghat
          country_rank = rank_county
@@ -22585,22 +15745,6 @@ countries = {
 
           }
       }
-      VLN = {
-         country_rank = rank_county
-
-       }
-      VLR = {
-         country_rank = rank_county
-
-       }
-      VLS = {
-         country_rank = rank_county
-
-       }
-      VLT = {
-         country_rank = rank_county
-
-       }
       VNA = {
          capital = mbanza_kongo
          country_rank = rank_county
@@ -22645,10 +15789,6 @@ countries = {
 
           }
       }
-      VNT = {
-         country_rank = rank_county
-
-       }
       VNZ = {
          capital = tenochtitlan
          court_language = norman_dialect
@@ -22741,18 +15881,6 @@ countries = {
          }
 
        }
-      VOH = {
-         country_rank = rank_county
-
-       }
-      VOL = {
-         country_rank = rank_county
-
-       }
-      VRD = {
-         country_rank = rank_county
-
-       }
       VTN = {
          capital = vientiane
          country_rank = rank_duchy
@@ -22778,10 +15906,6 @@ countries = {
 
           }
       }
-      VUD = {
-         country_rank = rank_county
-
-       }
       VUN = {
          capital = bungu_kongo
          country_rank = rank_duchy
@@ -22804,14 +15928,6 @@ countries = {
 
           }
       }
-      VYA = {
-         country_rank = rank_county
-
-       }
-      VYT = {
-         country_rank = rank_county
-
-       }
       WAA = {
          country_rank = rank_county
 
@@ -22827,14 +15943,6 @@ countries = {
             hadjer_haddid guereda abesehir ouara djedaa oum_hadjer bahr_salamat mongo iro_lake tele_nugar
             aoukale am_dam salamat sarh
          }
-
-       }
-      WAG = {
-         country_rank = rank_county
-
-       }
-      WAI = {
-         country_rank = rank_county
 
        }
       WAL = {
@@ -22878,10 +15986,6 @@ countries = {
 
           }
       }
-      WAN = {
-         country_rank = rank_county
-
-       }
       WAR = {
          capital = las_khorey
          religious_school = shafii_school
@@ -22909,26 +16013,6 @@ countries = {
 
           }
       }
-      WAS = {
-         country_rank = rank_county
-
-       }
-      WBG = {
-         country_rank = rank_county
-
-       }
-      WCH = {
-         country_rank = rank_county
-
-       }
-      WCM = {
-         country_rank = rank_county
-
-       }
-      WDB = {
-         country_rank = rank_county
-
-       }
       WDE = {
          capital = korbach
          country_rank = rank_county
@@ -22964,38 +16048,6 @@ countries = {
 
           }
       }
-      WDG = {
-         country_rank = rank_county
-
-       }
-      WEA = {
-         country_rank = rank_county
-
-       }
-      WEI = {
-         country_rank = rank_county
-
-       }
-      WER = {
-         country_rank = rank_county
-
-       }
-      WGE = {
-         country_rank = rank_county
-
-       }
-      WGG = {
-         country_rank = rank_county
-
-       }
-      WGH = {
-         country_rank = rank_county
-
-       }
-      WGO = {
-         country_rank = rank_county
-
-       }
       WHD = {
          capital = al_qatif
          religious_school = imamiya_school
@@ -23040,10 +16092,6 @@ countries = {
 
           }
       }
-      WIE = {
-         country_rank = rank_county
-
-       }
       WKH = {
          capital = tuapse
          country_rank = rank_county
@@ -23065,32 +16113,12 @@ countries = {
 
           }
       }
-      WLD = {
-         country_rank = rank_county
-
-       }
       WLF = {
          country_rank = rank_county
 
          own_control_core = {
             tuubaa linguere sorokogne kerbatch sare_dioulde kodiam
          }
-
-       }
-      WLS = {
-         country_rank = rank_county
-
-       }
-      WMA = {
-         country_rank = rank_county
-
-       }
-      WMG = {
-         country_rank = rank_county
-
-       }
-      WMO = {
-         country_rank = rank_county
 
        }
       WNA = {
@@ -23112,10 +16140,6 @@ countries = {
 
           }
       }
-      WNG = {
-         country_rank = rank_county
-
-       }
       WNT = {
          capital = wuntho
          country_rank = rank_county
@@ -23141,14 +16165,6 @@ countries = {
          own_control_core = {
             kubar tadbaba north_east_ethiopian_mountains kombolcha gannata_giyorgis hayq
          }
-
-       }
-      WPW = {
-         country_rank = rank_county
-
-       }
-      WRC = {
-         country_rank = rank_county
 
        }
       WRG = {
@@ -23188,48 +16204,12 @@ countries = {
          }
 
        }
-      WRK = {
-         country_rank = rank_county
-
-       }
-      WRM = {
-         country_rank = rank_county
-
-       }
-      WRN = {
-         country_rank = rank_county
-
-       }
-      WRO = {
-         country_rank = rank_county
-
-       }
-      WSA = {
-         country_rank = rank_county
-
-       }
-      WSK = {
-         country_rank = rank_county
-
-       }
-      WSZ = {
-         country_rank = rank_county
-
-       }
-      WTG = {
-         country_rank = rank_county
-
-       }
       WTR = {
          country_rank = rank_county
 
          own_control_core = {
             koro morondo korhogo odienne seydougou katiola
          }
-
-       }
-      WTZ = {
-         country_rank = rank_county
 
        }
       WUN = {
@@ -23283,14 +16263,6 @@ countries = {
 
           }
       }
-      WUU = {
-         country_rank = rank_county
-
-       }
-      WZH = {
-         country_rank = rank_county
-
-       }
       WZR = {
          capital = tuapse
          country_rank = rank_county
@@ -23312,10 +16284,6 @@ countries = {
 
           }
       }
-      WZZ = {
-         country_rank = rank_county
-
-       }
       XAA = {
          country_rank = rank_county
 
@@ -23324,56 +16292,12 @@ countries = {
          }
 
        }
-      XAL = {
-         country_rank = rank_county
-
-       }
-      XAP = {
-         country_rank = rank_county
-
-       }
-      XAU = {
-         country_rank = rank_county
-
-       }
-      XCG = {
-         country_rank = rank_county
-
-       }
-      XCH = {
-         country_rank = rank_county
-
-       }
-      XCP = {
-         country_rank = rank_county
-
-       }
-      XCT = {
-         country_rank = rank_county
-
-       }
-      XDA = {
-         country_rank = rank_county
-
-       }
       XHO = {
          country_rank = rank_county
 
          own_control_core = {
             karee rharhabe damasonqua hoengeiqua gonaqua ixesi thembu south_drakensberg_mountains
          }
-
-       }
-      XIC = {
-         country_rank = rank_county
-
-       }
-      XIH = {
-         country_rank = rank_county
-
-       }
-      XIL = {
-         country_rank = rank_county
 
        }
       XIN = {
@@ -23408,62 +16332,6 @@ countries = {
 
           }
       }
-      XIU = {
-         country_rank = rank_county
-
-       }
-      XIX = {
-         country_rank = rank_county
-
-       }
-      XLG = {
-         country_rank = rank_county
-
-       }
-      XLL = {
-         country_rank = rank_county
-
-       }
-      XLT = {
-         country_rank = rank_county
-
-       }
-      XNG = {
-         country_rank = rank_county
-
-       }
-      XNL = {
-         country_rank = rank_county
-
-       }
-      XOC = {
-         country_rank = rank_county
-
-       }
-      XOL = {
-         country_rank = rank_county
-
-       }
-      XSY = {
-         country_rank = rank_county
-
-       }
-      XTA = {
-         country_rank = rank_county
-
-       }
-      XUM = {
-         country_rank = rank_county
-
-       }
-      YAB = {
-         country_rank = rank_county
-
-       }
-      YAH = {
-         country_rank = rank_county
-
-       }
       YAK = {
          country_rank = rank_county
 
@@ -23472,52 +16340,12 @@ countries = {
          }
 
        }
-      YAL = {
-         country_rank = rank_county
-
-       }
-      YAM = {
-         country_rank = rank_county
-
-       }
-      YAN = {
-         country_rank = rank_county
-
-       }
-      YAO = {
-         country_rank = rank_county
-
-       }
-      YAQ = {
-         country_rank = rank_county
-
-       }
-      YAR = {
-         country_rank = rank_county
-
-       }
-      YAS = {
-         country_rank = rank_county
-
-       }
       YAT = {
          country_rank = rank_county
 
          own_control_core = {
             djibo doubare yatenga mane
          }
-
-       }
-      YAU = {
-         country_rank = rank_county
-
-       }
-      YAW = {
-         country_rank = rank_county
-
-       }
-      YCH = {
-         country_rank = rank_county
 
        }
       YDR = {
@@ -23544,34 +16372,6 @@ countries = {
 
           }
       }
-      YDZ = {
-         country_rank = rank_county
-
-       }
-      YEH = {
-         country_rank = rank_county
-
-       }
-      YEM = {
-         country_rank = rank_county
-
-       }
-      YGS = {
-         country_rank = rank_county
-
-       }
-      YII = {
-         country_rank = rank_county
-
-       }
-      YJI = {
-         country_rank = rank_county
-
-       }
-      YKG = {
-         country_rank = rank_county
-
-       }
       YMD = {
          capital = tuapse
          country_rank = rank_county
@@ -23593,118 +16393,6 @@ countries = {
 
           }
       }
-      YMG = {
-         country_rank = rank_county
-
-       }
-      YMN = {
-         country_rank = rank_county
-
-       }
-      YMS = {
-         country_rank = rank_county
-
-       }
-      YMT = {
-         country_rank = rank_county
-
-       }
-      YNG = {
-         country_rank = rank_county
-
-       }
-      YNH = {
-         country_rank = rank_county
-
-       }
-      YNJ = {
-         country_rank = rank_county
-
-       }
-      YNL = {
-         country_rank = rank_county
-
-       }
-      YNN = {
-         country_rank = rank_county
-
-       }
-      YOH = {
-         country_rank = rank_county
-
-       }
-      YOK = {
-         country_rank = rank_county
-
-       }
-      YPZ = {
-         country_rank = rank_county
-
-       }
-      YRM = {
-         country_rank = rank_county
-
-       }
-      YRV = {
-         country_rank = rank_county
-
-       }
-      YSM = {
-         country_rank = rank_county
-
-       }
-      YSN = {
-         country_rank = rank_county
-
-       }
-      YSR = {
-         country_rank = rank_county
-
-       }
-      YSU = {
-         country_rank = rank_county
-
-       }
-      YUA = {
-         country_rank = rank_county
-
-       }
-      YUK = {
-         country_rank = rank_county
-
-       }
-      YUS = {
-         country_rank = rank_county
-
-       }
-      YYG = {
-         country_rank = rank_county
-
-       }
-      YZO = {
-         country_rank = rank_county
-
-       }
-      ZAB = {
-         country_rank = rank_county
-
-       }
-      ZAC = {
-         country_rank = rank_county
-
-       }
-      ZAG = {
-         country_rank = rank_county
-
-       }
-      ZAI = {
-         country_rank = rank_county
-
-       }
-      ZAM = {
-         country_rank = rank_county
-
-       }
       ZAN = {
          capital = kilwa_kisiwani
          religious_school = shafii_school
@@ -23797,56 +16485,12 @@ countries = {
 
           }
       }
-      ZAP = {
-         country_rank = rank_county
-
-       }
-      ZAQ = {
-         country_rank = rank_county
-
-       }
-      ZAT = {
-         country_rank = rank_county
-
-       }
-      ZAZ = {
-         country_rank = rank_county
-
-       }
-      ZBR = {
-         country_rank = rank_county
-
-       }
-      ZCT = {
-         country_rank = rank_county
-
-       }
-      ZCZ = {
-         country_rank = rank_county
-
-       }
-      ZEE = {
-         country_rank = rank_county
-
-       }
       ZEM = {
          country_rank = rank_county
 
          own_control_core = {
             uele_ca djemah
          }
-
-       }
-      ZEN = {
-         country_rank = rank_county
-
-       }
-      ZEZ = {
-         country_rank = rank_county
-
-       }
-      ZFI = {
-         country_rank = rank_county
 
        }
       ZFR = {
@@ -23870,46 +16514,6 @@ countries = {
 
           }
       }
-      ZGH = {
-         country_rank = rank_county
-
-       }
-      ZGL = {
-         country_rank = rank_county
-
-       }
-      ZGW = {
-         country_rank = rank_county
-
-       }
-      ZHU = {
-         country_rank = rank_county
-
-       }
-      ZIB = {
-         country_rank = rank_county
-
-       }
-      ZIE = {
-         country_rank = rank_county
-
-       }
-      ZIG = {
-         country_rank = rank_county
-
-       }
-      ZIN = {
-         country_rank = rank_county
-
-       }
-      ZIP = {
-         country_rank = rank_county
-
-       }
-      ZLD = {
-         country_rank = rank_county
-
-       }
       ZMR = {
          capital = kozhikode
          country_rank = rank_county

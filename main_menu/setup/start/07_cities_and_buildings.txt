@@ -1233,13 +1233,13 @@ building_manager = {
 	castle		= { tag = LIV level = 1 location = daugavpils }
 	
 	order_headquarters = { tag = LIV level = 1 location = parnu }
-	order_headquarters = { tag = TEU level = 1 location = malbork }
+	order_headquarters = { tag = PRU level = 1 location = malbork }
 	order_headquarters = { tag = ERM level = 1 location = lidzbark }
 	order_headquarters = { tag = CHL level = 1 location = lubawa }
 	order_headquarters = { tag = PMS level = 1 location = kwidzyn }
 	order_headquarters = { tag = SMD level = 1 location = fischhausen }
 	
-	cathedral = { tag = TEU level = 1 location = konigsberg }
+	cathedral = { tag = PRU level = 1 location = konigsberg }
 	
 	tar_kiln = { tag = BIO level = 1 location = lihula } 
 	tar_kiln = { tag = LIV level = 1 location = kandava } 
@@ -1393,108 +1393,108 @@ building_manager = {
 	
 	
 	
-	castle 		= { tag = ENG level = 1 location = london }
-	castle 		= { tag = ENG level = 1 location = dover }
-	castle 		= { tag = ENG level = 1 location = alnwick }
-	castle 		= { tag = ENG level = 1 location = carlisle }
-	castle 		= { tag = ENG level = 1 location = chester }
-	castle 		= { tag = ENG level = 1 location = coventry } # warwick castle
-	castle 		= { tag = ENG level = 1 location = windsor } 
-	castle 		= { tag = ENG level = 1 location = leeds } 
-	castle 		= { tag = ENG level = 1 location = pontefract } # conisbrough castle
+	castle 		= { tag = GBI level = 1 location = london }
+	castle 		= { tag = GBI level = 1 location = dover }
+	castle 		= { tag = GBI level = 1 location = alnwick }
+	castle 		= { tag = GBI level = 1 location = carlisle }
+	castle 		= { tag = GBI level = 1 location = chester }
+	castle 		= { tag = GBI level = 1 location = coventry } # warwick castle
+	castle 		= { tag = GBI level = 1 location = windsor } 
+	castle 		= { tag = GBI level = 1 location = leeds } 
+	castle 		= { tag = GBI level = 1 location = pontefract } # conisbrough castle
 
-	stockade 		= { tag = ENG level = 1 location = launceston } # tintagel
-	stockade 		= { tag = ENG level = 1 location = rochester } # Rochester Castle
-	stockade 		= { tag = ENG level = 1 location = truro } # St Michael's Mount
+	stockade 		= { tag = GBI level = 1 location = launceston } # tintagel
+	stockade 		= { tag = GBI level = 1 location = rochester } # Rochester Castle
+	stockade 		= { tag = GBI level = 1 location = truro } # St Michael's Mount
 
-	nobility_fortifications 		= { tag = ENG level = 1 location = loughborough } # Belvoir Castle
+	nobility_fortifications 		= { tag = GBI level = 1 location = loughborough } # Belvoir Castle
 
 
-	castle 		= { tag = SBL level = 1 location = edinburgh } 
-	castle 		= { tag = SBL level = 1 location = stirling } 
-	castle 		= { tag = SBL level = 1 location = roxburgh } 
-	stockade 	= { tag = SCO level = 1 location = inverary } # Eilean Donan castle
-	stockade 	= { tag = SCO level = 1 location = dingwall } # Urquhart castle
-	stockade 	= { tag = SCO level = 1 location = stonehaven } # Dunnotar Castle
-	stockade 	= { tag = SCO level = 1 location = dunbar } # Dunbar Castle
-	stockade 	= { tag = SBL level = 1 location = dumfries } # caerlaverock Castle
-	stockade 	= { tag = SBL level = 1 location = perth } 
-	stockade 	= { tag = SBL level = 1 location = kirkcudbright } # Buittle Castle
+	castle 		= { tag = GBI level = 1 location = edinburgh } 
+	castle 		= { tag = GBI level = 1 location = stirling } 
+	castle 		= { tag = GBI level = 1 location = roxburgh } 
+	stockade 	= { tag = GBI level = 1 location = inverary } # Eilean Donan castle
+	stockade 	= { tag = GBI level = 1 location = dingwall } # Urquhart castle
+	stockade 	= { tag = GBI level = 1 location = stonehaven } # Dunnotar Castle
+	stockade 	= { tag = GBI level = 1 location = dunbar } # Dunbar Castle
+	stockade 	= { tag = GBI level = 1 location = dumfries } # caerlaverock Castle
+	stockade 	= { tag = GBI level = 1 location = perth } 
+	stockade 	= { tag = GBI level = 1 location = kirkcudbright } # Buittle Castle
 
 	
-	monastery 	= { tag = SBL level = 1 location = kirkcudbright } # Sweetheart Monastery 
-	monastery 	= { tag = SCO level = 1 location = dunfermline } 
-	monastery 	= { tag = SBL level = 1 location = roxburgh } # roxburgh
-	monastery 	= { tag = SBL level = 1 location = selkirk } # dryburgh
+	monastery 	= { tag = GBI level = 1 location = kirkcudbright } # Sweetheart Monastery 
+	monastery 	= { tag = GBI level = 1 location = dunfermline } 
+	monastery 	= { tag = GBI level = 1 location = roxburgh } # roxburgh
+	monastery 	= { tag = GBI level = 1 location = selkirk } # dryburgh
 	monastery 	= { tag = ESS level = 1 location = essen }	#abbey_reform
 	monastery 	= { tag = DIS level = 1 location = disentis }	#abbey_reform
 
 	
-	cathedral 	= { tag = SCO level = 1 location = elgin } 
-	cathedral 	= { tag = SCO level = 1 location = st_andrews } 
-	cathedral 	= { tag = SCO level = 1 location = aberdeen } 
-	cathedral 	= { tag = SCO level = 1 location = glasgow } 
-	cathedral 	= { tag = SBL level = 1 location = stranraer } # whithorn 
-	cathedral 	= { tag = SCO level = 1 location = inverary } # lismore
-	cathedral 	= { tag = SCO level = 1 location = dundee } #brechin
-	cathedral 	= { tag = SBL level = 1 location = perth } #dunkeld
-	cathedral 	= { tag = SCO level = 1 location = dornoch } 
+	cathedral 	= { tag = GBI level = 1 location = elgin } 
+	cathedral 	= { tag = GBI level = 1 location = st_andrews } 
+	cathedral 	= { tag = GBI level = 1 location = aberdeen } 
+	cathedral 	= { tag = GBI level = 1 location = glasgow } 
+	cathedral 	= { tag = GBI level = 1 location = stranraer } # whithorn 
+	cathedral 	= { tag = GBI level = 1 location = inverary } # lismore
+	cathedral 	= { tag = GBI level = 1 location = dundee } #brechin
+	cathedral 	= { tag = GBI level = 1 location = perth } #dunkeld
+	cathedral 	= { tag = GBI level = 1 location = dornoch } 
 	cathedral 	= { tag = ORK level = 1 location = orkney } # kirkwall
 
 
 	# Wales had the highest castle per area in the world. It was totally locked down.
-	castle 		= { tag = WLS level = 1 location = cardiff }
-	castle 		= { tag = WLS level = 1 location = harlech }
-	castle 		= { tag = WLS level = 1 location = carnarvon }
-	castle 		= { tag = WLS level = 1 location = conwy }
-	castle 		= { tag = WLS level = 1 location = caerphilly }
-	castle 		= { tag = WLS level = 1 location = pembroke }
-	stockade 		= { tag = WLS level = 1 location = anglesey } #Beaurmaris and Oystermouth Castle
-	stockade 		= { tag = WLS level = 1 location = brecknock }
-	stockade 		= { tag = WLS level = 1 location = builth }
-	stockade 		= { tag = WLS level = 1 location = montgomery }
-	stockade 		= { tag = WLS level = 1 location = aberystwyth }
-	stockade 		= { tag = WLS level = 1 location = cardigan }
-	stockade 		= { tag = WLS level = 1 location = carmarthen }
-	stockade 		= { tag = WLS level = 1 location = monmouth }
+	castle 		= { tag = GBI level = 1 location = cardiff }
+	castle 		= { tag = GBI level = 1 location = harlech }
+	castle 		= { tag = GBI level = 1 location = carnarvon }
+	castle 		= { tag = GBI level = 1 location = conwy }
+	castle 		= { tag = GBI level = 1 location = caerphilly }
+	castle 		= { tag = GBI level = 1 location = pembroke }
+	stockade 		= { tag = GBI level = 1 location = anglesey } #Beaurmaris and Oystermouth Castle
+	stockade 		= { tag = GBI level = 1 location = brecknock }
+	stockade 		= { tag = GBI level = 1 location = builth }
+	stockade 		= { tag = GBI level = 1 location = montgomery }
+	stockade 		= { tag = GBI level = 1 location = aberystwyth }
+	stockade 		= { tag = GBI level = 1 location = cardigan }
+	stockade 		= { tag = GBI level = 1 location = carmarthen }
+	stockade 		= { tag = GBI level = 1 location = monmouth }
 
 
 	# gallowglass
-	gallowglass_sept 		= { tag = LOI level = 1 location = harris }
-	gallowglass_sept 		= { tag = LOI level = 1 location = lewis }
-	gallowglass_sept 		= { tag = LOI level = 1 location = uist }
-	gallowglass_sept 		= { tag = LOI level = 1 location = skye }
-	gallowglass_sept 		= { tag = LOI level = 1 location = arran }
-	gallowglass_sept 		= { tag = LOI level = 1 location = mull }
-	gallowglass_sept 		= { tag = LOI level = 1 location = islay }
-	gallowglass_sept 		= { tag = LOI level = 1 location = kintyre }
-	gallowglass_sept 		= { tag = SBL level = 1 location = stranraer }
-	gallowglass_sept 		= { tag = SBL level = 1 location = ayr }
-	gallowglass_sept 		= { tag = SBL level = 1 location = kirkcudbright }
-	gallowglass_sept 		= { tag = SCO level = 1 location = irvine }
-	gallowglass_sept 		= { tag = MNN level = 1 location = mann }
-	gallowglass_sept 		= { tag = AMH level = 1 location = inishowen } # MacSweeney of Fanad
+	gallowglass_sept 		= { tag = GBI level = 1 location = harris }
+	gallowglass_sept 		= { tag = GBI level = 1 location = lewis }
+	gallowglass_sept 		= { tag = GBI level = 1 location = uist }
+	gallowglass_sept 		= { tag = GBI level = 1 location = skye }
+	gallowglass_sept 		= { tag = GBI level = 1 location = arran }
+	gallowglass_sept 		= { tag = GBI level = 1 location = mull }
+	gallowglass_sept 		= { tag = GBI level = 1 location = islay }
+	gallowglass_sept 		= { tag = GBI level = 1 location = kintyre }
+	gallowglass_sept 		= { tag = GBI level = 1 location = stranraer }
+	gallowglass_sept 		= { tag = GBI level = 1 location = ayr }
+	gallowglass_sept 		= { tag = GBI level = 1 location = kirkcudbright }
+	gallowglass_sept 		= { tag = GBI level = 1 location = irvine }
+	gallowglass_sept 		= { tag = GBI level = 1 location = mann }
+	gallowglass_sept 		= { tag = GBI level = 1 location = inishowen } # MacSweeney of Fanad
 
 	# stannary courts
-	stannary_court 		= { tag = ENG level = 1 location = exeter } # Devon
-	stannary_court 		= { tag = ENG level = 1 location = plymouth } # Devon
-	stannary_court 		= { tag = ENG level = 1 location = barnstaple } # Devon
-	stannary_court 		= { tag = ENG level = 1 location = okehampton } # Devon
-	stannary_court 		= { tag = ENG level = 1 location = bampton } # Devon
-	stannary_court 		= { tag = ENG level = 1 location = bideford } # Devon
-	stannary_court 		= { tag = ENG level = 1 location = launceston } # Cornwall
-	stannary_court 		= { tag = ENG level = 1 location = truro } # Cornwall
-	stannary_court 		= { tag = ENG level = 1 location = bodmin } # Cornwall
+	stannary_court 		= { tag = GBI level = 1 location = exeter } # Devon
+	stannary_court 		= { tag = GBI level = 1 location = plymouth } # Devon
+	stannary_court 		= { tag = GBI level = 1 location = barnstaple } # Devon
+	stannary_court 		= { tag = GBI level = 1 location = okehampton } # Devon
+	stannary_court 		= { tag = GBI level = 1 location = bampton } # Devon
+	stannary_court 		= { tag = GBI level = 1 location = bideford } # Devon
+	stannary_court 		= { tag = GBI level = 1 location = launceston } # Cornwall
+	stannary_court 		= { tag = GBI level = 1 location = truro } # Cornwall
+	stannary_court 		= { tag = GBI level = 1 location = bodmin } # Cornwall
 
 	# City of London Corporation
-	corporation_of_london 		= { tag = ENG level = 1 location = london }
-	local_assembly 		= { tag = ENG level = 1 location = london } # Court of Common Council
-	guild_hall 			= { tag = ENG level = 1 location = london } # Court of Aldermen
-	merchants_guild 	= { tag = ENG level = 1 location = london } # Livery Companies
-	bridge_infrastructure 	= { tag = ENG level = 1 location = london } # Old London bridge
+	corporation_of_london 		= { tag = GBI level = 1 location = london }
+	local_assembly 		= { tag = GBI level = 1 location = london } # Court of Common Council
+	guild_hall 			= { tag = GBI level = 1 location = london } # Court of Aldermen
+	merchants_guild 	= { tag = GBI level = 1 location = london } # Livery Companies
+	bridge_infrastructure 	= { tag = GBI level = 1 location = london } # Old London bridge
 
 	# British industry
-	scriptorium = { tag = SBL level = 2 location = edinburgh }
+	scriptorium = { tag = GBI level = 2 location = edinburgh }
 
 	# Bardic Schools
 	bardic_school	= { tag = BEA level = 1	location = carbery } # O'Daly Bardic School
@@ -1503,8 +1503,8 @@ building_manager = {
 	bardic_school	= { tag = SLN level = 1	location = sligo }
 
 	# Palace of Westminster
-	royal_court 	= { tag = ENG level = 1 location = london }
-	sergeantry		= { tag = ENG level = 1 location = london } # sergeants at arms
+	royal_court 	= { tag = GBI level = 1 location = london }
+	sergeantry		= { tag = GBI level = 1 location = london } # sergeants at arms
 
 	castle 		= { tag = PLE level = 1 location = dublin }
 	castle 		= { tag = ULS level = 1 location = carrickfergus }
@@ -1521,125 +1521,125 @@ building_manager = {
 	monastery 	= { tag = AMA level = 1 location = armagh }
 	monastery 	= { tag = CMA level = 1 location = clifden } #annaghdown
 
-	monastery 	= { tag = WLS level = 1 location = monmouth } # Tintern Abbey
-	monastery 	= { tag = WLS level = 1 location = cardigan } # Strata Florida Abbey
-	monastery 	= { tag = ENG level = 1 location = flint } # Valle Crucis Abbey
-	monastery 	= { tag = WLS level = 1 location = swansea } # Neath Abbey
-	monastery 	= { tag = WLS level = 1 location = pembroke } # St. Dogmaels Abbey
-	monastery 	= { tag = ENG level = 1 location = york } # Fountains Abbey
-	monastery 	= { tag = ENG level = 1 location = wells } # Glastonbury 
-	monastery 	= { tag = ENG level = 1 location = bedale } # Rievaulx 
-	monastery 	= { tag = ENG level = 1 location = london } # Westminster Abbey
-	monastery 	= { tag = ENG level = 1 location = skipton } # Bolton Priory
+	monastery 	= { tag = GBI level = 1 location = monmouth } # Tintern Abbey
+	monastery 	= { tag = GBI level = 1 location = cardigan } # Strata Florida Abbey
+	monastery 	= { tag = GBI level = 1 location = flint } # Valle Crucis Abbey
+	monastery 	= { tag = GBI level = 1 location = swansea } # Neath Abbey
+	monastery 	= { tag = GBI level = 1 location = pembroke } # St. Dogmaels Abbey
+	monastery 	= { tag = GBI level = 1 location = york } # Fountains Abbey
+	monastery 	= { tag = GBI level = 1 location = wells } # Glastonbury 
+	monastery 	= { tag = GBI level = 1 location = bedale } # Rievaulx 
+	monastery 	= { tag = GBI level = 1 location = london } # Westminster Abbey
+	monastery 	= { tag = GBI level = 1 location = skipton } # Bolton Priory
 	stockade 	= { tag = DHM level = 1 location = durham }
 	
-	cathedral 	= { tag = ENG level = 1 location = york } # York Minster
-	cathedral 	= { tag = ENG level = 1 location = canterbury } # Canterbury Cathedral
-	cathedral 	= { tag = ENG level = 1 location = wells } # Wells Cathedral
-	cathedral 	= { tag = ENG level = 1 location = stafford } # Lichfield Cathedral
-	cathedral 	= { tag = ENG level = 1 location = lincoln } # Lincoln Cathedral
+	cathedral 	= { tag = GBI level = 1 location = york } # York Minster
+	cathedral 	= { tag = GBI level = 1 location = canterbury } # Canterbury Cathedral
+	cathedral 	= { tag = GBI level = 1 location = wells } # Wells Cathedral
+	cathedral 	= { tag = GBI level = 1 location = stafford } # Lichfield Cathedral
+	cathedral 	= { tag = GBI level = 1 location = lincoln } # Lincoln Cathedral
 	cathedral 	= { tag = PLE level = 1 location = dublin } # St Patricks and Christ Church Cathedrals
-	cathedral 	= { tag = ENG level = 1 location = chichester } # Chichester Cathedral
-	cathedral 	= { tag = ENG level = 1 location = exeter } # Exeter Cathedral
-	cathedral 	= { tag = ENG level = 1 location = ely } # Ely Cathedral
-	cathedral 	= { tag = ENG level = 1 location = hereford } # Hereford Cathedral
-	cathedral 	= { tag = ENG level = 1 location = norwich } # Norwich Cathedral
-	cathedral 	= { tag = ENG level = 1 location = rochester } # Rochester Cathedral
-	cathedral 	= { tag = ENG level = 1 location = salisbury } # Salisbury Cathedral
-	cathedral 	= { tag = ENG level = 1 location = winchester } # Winchester Cathedral
-	cathedral 	= { tag = ENG level = 1 location = worcester } # Worchester Cathedral
-	cathedral 	= { tag = ENG level = 1 location = carlisle } # Carlisle Cathedral
-	cathedral 	= { tag = ENG level = 1 location = durham } # Durham Cathedral
-	cathedral 	= { tag = WLS level = 1 location = anglesey } # Bangor Cathedral
-	cathedral 	= { tag = WLS level = 1 location = cardiff } # Llandaff Cathedral
-	cathedral 	= { tag = WLS level = 1 location = pembroke } # SaintDave's Cathedral
-	cathedral 	= { tag = WLS level = 1 location = conwy } # St Asaph Cathedral
+	cathedral 	= { tag = GBI level = 1 location = chichester } # Chichester Cathedral
+	cathedral 	= { tag = GBI level = 1 location = exeter } # Exeter Cathedral
+	cathedral 	= { tag = GBI level = 1 location = ely } # Ely Cathedral
+	cathedral 	= { tag = GBI level = 1 location = hereford } # Hereford Cathedral
+	cathedral 	= { tag = GBI level = 1 location = norwich } # Norwich Cathedral
+	cathedral 	= { tag = GBI level = 1 location = rochester } # Rochester Cathedral
+	cathedral 	= { tag = GBI level = 1 location = salisbury } # Salisbury Cathedral
+	cathedral 	= { tag = GBI level = 1 location = winchester } # Winchester Cathedral
+	cathedral 	= { tag = GBI level = 1 location = worcester } # Worchester Cathedral
+	cathedral 	= { tag = GBI level = 1 location = carlisle } # Carlisle Cathedral
+	cathedral 	= { tag = GBI level = 1 location = durham } # Durham Cathedral
+	cathedral 	= { tag = GBI level = 1 location = anglesey } # Bangor Cathedral
+	cathedral 	= { tag = GBI level = 1 location = cardiff } # Llandaff Cathedral
+	cathedral 	= { tag = GBI level = 1 location = pembroke } # SaintDave's Cathedral
+	cathedral 	= { tag = GBI level = 1 location = conwy } # St Asaph Cathedral
 
-	fishing_village = { tag = WLS level = 1 location = swansea }
+	fishing_village = { tag = GBI level = 1 location = swansea }
 
 	#Cinque Ports
-	cinque_port 	= { tag = ENG level = 1 location = hastings } 
-	cinque_port 	= { tag = ENG level = 1 location = dover } 
-	cinque_port 	= { tag = ENG level = 1 location = hythe } 
-	cinque_port 	= { tag = ENG level = 1 location = rochester } 
-	cinque_port 	= { tag = ENG level = 1 location = canterbury } 
+	cinque_port 	= { tag = GBI level = 1 location = hastings } 
+	cinque_port 	= { tag = GBI level = 1 location = dover } 
+	cinque_port 	= { tag = GBI level = 1 location = hythe } 
+	cinque_port 	= { tag = GBI level = 1 location = rochester } 
+	cinque_port 	= { tag = GBI level = 1 location = canterbury } 
 
 	# royal forests
-	eng_royal_forest 	= { tag = ENG level = 1 location = lymington }
-	eng_royal_forest 	= { tag = ENG level = 1 location = retford }
-	eng_royal_forest 	= { tag = ENG level = 1 location = chelmsford }
-	eng_royal_forest 	= { tag = ENG level = 1 location = windsor }
-	eng_royal_forest 	= { tag = ENG level = 1 location = gloucester }
-	eng_royal_forest 	= { tag = ENG level = 1 location = okehampton }
-	eng_royal_forest 	= { tag = ENG level = 1 location = penrith }
+	eng_royal_forest 	= { tag = GBI level = 1 location = lymington }
+	eng_royal_forest 	= { tag = GBI level = 1 location = retford }
+	eng_royal_forest 	= { tag = GBI level = 1 location = chelmsford }
+	eng_royal_forest 	= { tag = GBI level = 1 location = windsor }
+	eng_royal_forest 	= { tag = GBI level = 1 location = gloucester }
+	eng_royal_forest 	= { tag = GBI level = 1 location = okehampton }
+	eng_royal_forest 	= { tag = GBI level = 1 location = penrith }
 
-	monastery 	= { tag = SCO level = 1 location = elgin }
-	monastery 	= { tag = SCO level = 1 location = st_andrews }
-	monastery 	= { tag = LOI level = 1 location = mull } # Iona
+	monastery 	= { tag = GBI level = 1 location = elgin }
+	monastery 	= { tag = GBI level = 1 location = st_andrews }
+	monastery 	= { tag = GBI level = 1 location = mull } # Iona
 	
 	# Galley Lords
 	fishing_village 	= { tag = ICE level = 1 location = reikjavik }
 	fishing_village 	= { tag = UMH level = 1 location = burrishoole }
 	fishing_village 	= { tag = CMA level = 1 location = clifden }
-	fishing_village 	= { tag = LOI level = 1 location = harris }
-	fishing_village 	= { tag = LOI level = 1 location = lewis }
-	fishing_village 	= { tag = LOI level = 1 location = uist }
-	fishing_village 	= { tag = LOI level = 1 location = skye }
-	fishing_village 	= { tag = LOI level = 1 location = arran }
-	fishing_village 	= { tag = LOI level = 1 location = mull }
-	fishing_village 	= { tag = LOI level = 1 location = islay }
-	fishing_village 	= { tag = LOI level = 1 location = kintyre }
+	fishing_village 	= { tag = GBI level = 1 location = harris }
+	fishing_village 	= { tag = GBI level = 1 location = lewis }
+	fishing_village 	= { tag = GBI level = 1 location = uist }
+	fishing_village 	= { tag = GBI level = 1 location = skye }
+	fishing_village 	= { tag = GBI level = 1 location = arran }
+	fishing_village 	= { tag = GBI level = 1 location = mull }
+	fishing_village 	= { tag = GBI level = 1 location = islay }
+	fishing_village 	= { tag = GBI level = 1 location = kintyre }
 	
 	university	= { tag = BLG level = 1	location = bologna }
 	university	= { tag = FRA level = 1	location = paris }
-	university	= { tag = ENG level = 1	location = oxford }
+	university	= { tag = GBI level = 1	location = oxford }
 	university	= { tag = VER level = 1	location = vicenza }
-	university	= { tag = ENG level = 1	location = cambridge }
-	university	= { tag = CAS level = 1	location = salamanca }
+	university	= { tag = GBI level = 1	location = cambridge }
+	university	= { tag = SPA level = 1	location = salamanca }
 	university	= { tag = PAD level = 1	location = padova }
 	university	= { tag = NAP level = 1	location = naples }
 	university	= { tag = FRA level = 1	location = toulouse }
 	university	= { tag = FRA level = 1	location = orleans }
 	university	= { tag = SIE level = 1	location = siena }
-	university	= { tag = CAS level = 1	location = valladolid }
+	university	= { tag = SPA level = 1	location = valladolid }
 	university	= { tag = MLL level = 1	location = montpellier }
 	university	= { tag = MTA level = 1	location = macerata }
 	university	= { tag = POR level = 1	location = coimbra }
-	university	= { tag = CAS level = 1	location = alcala_de_henares }
-	university	= { tag = ARA level = 1	location = lleida }
+	university	= { tag = SPA level = 1	location = alcala_de_henares }
+	university	= { tag = SPA level = 1	location = lleida }
 	university	= { tag = PAP level = 1	location = rome }
 	university	= { tag = PEA level = 1	location = perugia }
 	university	= { tag = PLE level = 1	location = dublin }
-	university	= { tag = FLO level = 1	location = florence }
-	university	= { tag = BYZ level = 1	location = constantinople } #https://en.wikipedia.org/wiki/University_of_Constantinople
+	university	= { tag = TUS level = 1	location = florence }
+	university	= { tag = OTT level = 1	location = constantinople } #https://en.wikipedia.org/wiki/University_of_Constantinople
 	
 	order_stronghold	= { tag = LIV level = 1	location = cesis } # Livonian Order
 	order_stronghold	= { tag = LIV level = 1	location = viljandi } # Livonian Order
 	order_stronghold	= { tag = KNI level = 1	location = rodos } # The Knights
 	
-	order_stronghold	= { tag = TEU level = 1	location = malbork } # Teutonic Order
-	order_stronghold	= { tag = TEU level = 1	location = elk } # Teutonic Order
-	order_stronghold	= { tag = TEU level = 1	location = konigsberg } # Teutonic Order
-	order_stronghold	= { tag = TEU level = 1	location = tuchola } # Teutonic Order
+	order_stronghold	= { tag = PRU level = 1	location = malbork } # Teutonic Order
+	order_stronghold	= { tag = PRU level = 1	location = elk } # Teutonic Order
+	order_stronghold	= { tag = PRU level = 1	location = konigsberg } # Teutonic Order
+	order_stronghold	= { tag = PRU level = 1	location = tuchola } # Teutonic Order
 	
 
-	order_stronghold	= { tag = CAS level = 1	location = calatrava } # Order of Calatrava (la Nueva)
+	order_stronghold	= { tag = SPA level = 1	location = calatrava } # Order of Calatrava (la Nueva)
 	#order_stronghold	= { tag = CTV level = 1	location = martos } # Order of Calatrava
 	#order_stronghold	= { tag = CTV level = 1	location = manzanares } # Order of Calatrava (la Vieja)
-	order_stronghold	= { tag = CAS level = 1	location = huete } # Order of Santiago, Uclés
+	order_stronghold	= { tag = SPA level = 1	location = huete } # Order of Santiago, Uclés
 	#order_stronghold	= { tag = STO level = 1	location = segura_de_la_sierra } # Order of Santiago
 	#order_stronghold	= { tag = STO level = 1	location = merida } # Order of Santiago
 	#order_stronghold	= { tag = STO level = 1	location = llerena } # Order of Santiago
 	#order_stronghold	= { tag = STO level = 1	location = monesterio } # Order of Santiago, Segura de León
 	order_stronghold	= { tag = POR level = 1	location = alcacer_do_sal } # Order of Santiago
 	order_stronghold	= { tag = POR level = 1	location = tavira } # Order of Santiago, Castro Marim
-	order_stronghold	= { tag = CAS level = 1	location = alcazar_de_san_juan } # Knights Hospitallar
+	order_stronghold	= { tag = SPA level = 1	location = alcazar_de_san_juan } # Knights Hospitallar
 	order_stronghold	= { tag = POR level = 1	location = crato } # Knights Hospitallar
-	order_stronghold	= { tag = CAS level = 1	location = alcantara } # Order of Alcantara
+	order_stronghold	= { tag = SPA level = 1	location = alcantara } # Order of Alcantara
 	#order_stronghold	= { tag = ACT level = 1	location = villanueva_de_la_serena } # Order of Alcantara
 	order_stronghold	= { tag = POR level = 1	location = avis } # Order Calatrava, Avis
 	#order_stronghold	= { tag = OPX level = 1	location = tomar } # Order of Christ
-	order_stronghold	= { tag = ARA level = 1	location = ayora } # Order of Montesa
+	order_stronghold	= { tag = SPA level = 1	location = ayora } # Order of Montesa
 
 	#Order of Saint John Commanderies
 	#Aragonese Tongue (Incomplete on purpose until deciding what to do with the Iberian Orders)
@@ -1711,47 +1711,47 @@ building_manager = {
 
 	#Teutonic Order Commanderies
 		#Bailiwick of Austria
-	order_commandery = { tag = TEU level = 1 location = vienna } #Wien
+	order_commandery = { tag = PRU level = 1 location = vienna } #Wien
 		#Bailiwick of Biesen
-	order_commandery = { tag = TEU level = 1 location = borgloon } #Biesen/Bilzen
+	order_commandery = { tag = PRU level = 1 location = borgloon } #Biesen/Bilzen
 		#Bailiwick of Bohemia
-	order_commandery = { tag = TEU level = 1 location = usti_nad_labem } #Aussig/Usti nad Labem
+	order_commandery = { tag = PRU level = 1 location = usti_nad_labem } #Aussig/Usti nad Labem
 		#Bailiwick of France
-	order_commandery = { tag = TEU level = 1 location = epinal } #Vaudéville
+	order_commandery = { tag = PRU level = 1 location = epinal } #Vaudéville
 		#Bailiwick of Franconia
-	order_commandery = { tag = TEU level = 1 location = weissenburg } #Ellingen
+	order_commandery = { tag = PRU level = 1 location = weissenburg } #Ellingen
 		#Bailiwick of Greece
-	order_commandery = { tag = TEU level = 1 location = modon } #Mostenizza + Korone + Modon
+	order_commandery = { tag = PRU level = 1 location = modon } #Mostenizza + Korone + Modon
 		#Bailiwick of Hessen
-	order_commandery = { tag = TEU level = 1 location = marburg } #Marburg + Kirchhain
+	order_commandery = { tag = PRU level = 1 location = marburg } #Marburg + Kirchhain
 		#Bailiwick of Koblenz
-	order_commandery = { tag = TEU level = 1 location = coblenz } #Koblenz
+	order_commandery = { tag = PRU level = 1 location = coblenz } #Koblenz
 		#Bailiwick of Lombardy
-	order_commandery = { tag = TEU level = 1 location = treviso } #Astian/Stigliano
+	order_commandery = { tag = PRU level = 1 location = treviso } #Astian/Stigliano
 		#Bailiwick of Lorraine	
-	order_commandery = { tag = TEU level = 1 location = trier } #Trier
+	order_commandery = { tag = PRU level = 1 location = trier } #Trier
 		#Bailiwick of Middle Italy	
-	order_commandery = { tag = TEU level = 1 location = viterbo } #Viterbo
+	order_commandery = { tag = PRU level = 1 location = viterbo } #Viterbo
 		#Bailiwick of Puglia
-	order_commandery = { tag = TEU level = 1 location = manfredonia } #San Leonardo di Siponto
+	order_commandery = { tag = PRU level = 1 location = manfredonia } #San Leonardo di Siponto
 		#Bailiwick of Saxony
-	order_commandery = { tag = TEU level = 1 location = brunswick } #Lucklum + Braunschweig
+	order_commandery = { tag = PRU level = 1 location = brunswick } #Lucklum + Braunschweig
 	order_commandery = { tag = LIV level = 1 location = bremen } #Bremen
 	order_commandery = { tag = LIV level = 1 location = lubeck } #Lübeck
 		#Bailiwick of Sicily
-	order_commandery = { tag = TEU level = 1 location = girgenti } #Girgenti
+	order_commandery = { tag = PRU level = 1 location = girgenti } #Girgenti
 		#Bailiwick of Spain
-	order_commandery = { tag = TEU level = 1 location = toro } #La mota del Marqués
+	order_commandery = { tag = PRU level = 1 location = toro } #La mota del Marqués
 		#Bailiwick of Swabia-Alsace-Burgundy
-	order_commandery = { tag = TEU level = 1 location = ravensburg } #Altshausen
+	order_commandery = { tag = PRU level = 1 location = ravensburg } #Altshausen
 		#Bailiwick of Thuringia
-	order_commandery = { tag = TEU level = 1 location = apolda } #Zwätzen + Liebstedt + Porstendorf + Reichenbach in Vogtland
+	order_commandery = { tag = PRU level = 1 location = apolda } #Zwätzen + Liebstedt + Porstendorf + Reichenbach in Vogtland
 		#Bailiwick of Tirol
-	order_commandery = { tag = TEU level = 1 location = bolzano } #Bozen/Bolzano
+	order_commandery = { tag = PRU level = 1 location = bolzano } #Bozen/Bolzano
 		#Bailiwick of Utrecht
-	order_commandery = { tag = TEU level = 1 location = utrecht } #Utrecht + Rhenen
+	order_commandery = { tag = PRU level = 1 location = utrecht } #Utrecht + Rhenen
 		#Bailiwick of Westphalia
-	order_commandery = { tag = TEU level = 1 location = munster } #Münster
+	order_commandery = { tag = PRU level = 1 location = munster } #Münster
 
 	#Iberia
 	castle = { tag = POR level = 1 location = braganca } #Castle of Bragança 
@@ -1765,130 +1765,130 @@ building_manager = {
 	#castle = { tag = NAV level = 1 location = tudela } #Castle of Cortes. Already implemented by the country template. Keeping for info.
 	castle = { tag = POR level = 1 location = viana_do_castelo } #Castle of Valença do Minho
 
-	cathedral 	= { tag = CAS level = 1 location = astorga } #Saint Mary Cathedral, established in 1069
-	cathedral 	= { tag = CAS level = 1 location = avila } #Cathedral of the Saviour, established in 1091
-	cathedral 	= { tag = CAS level = 1 location = badajoz } #Saint John Cathedral, established in 1276
-	cathedral 	= { tag = CAS level = 1 location = baeza } #Cathedral of the Nativity of our Lady, established in 1227
-	cathedral 	= { tag = ARA level = 1 location = barcelona } #Saint Eulalia and the Holy Cross Cathedral, established in 1058
-	cathedral 	= { tag = ARA level = 1 location = benabarre } #Saint Vincent Martyr Cathedral, established in 1030
-	cathedral 	= { tag = CAS level = 1 location = burgo_de_osma } #Cathedral of the Assumption of Mary, established in 1272
-	cathedral 	= { tag = CAS level = 1 location = burgos } #Saint Mary Cathedral, established in 1260
-	cathedral 	= { tag = CAS level = 1 location = cartagena } #Saint Mary Cathedral, established in 1250
-	cathedral 	= { tag = CAS level = 1 location = ciudad_rodrigo } #Saint Mary Cathedral, established in 1160
+	cathedral 	= { tag = SPA level = 1 location = astorga } #Saint Mary Cathedral, established in 1069
+	cathedral 	= { tag = SPA level = 1 location = avila } #Cathedral of the Saviour, established in 1091
+	cathedral 	= { tag = SPA level = 1 location = badajoz } #Saint John Cathedral, established in 1276
+	cathedral 	= { tag = SPA level = 1 location = baeza } #Cathedral of the Nativity of our Lady, established in 1227
+	cathedral 	= { tag = SPA level = 1 location = barcelona } #Saint Eulalia and the Holy Cross Cathedral, established in 1058
+	cathedral 	= { tag = SPA level = 1 location = benabarre } #Saint Vincent Martyr Cathedral, established in 1030
+	cathedral 	= { tag = SPA level = 1 location = burgo_de_osma } #Cathedral of the Assumption of Mary, established in 1272
+	cathedral 	= { tag = SPA level = 1 location = burgos } #Saint Mary Cathedral, established in 1260
+	cathedral 	= { tag = SPA level = 1 location = cartagena } #Saint Mary Cathedral, established in 1250
+	cathedral 	= { tag = SPA level = 1 location = ciudad_rodrigo } #Saint Mary Cathedral, established in 1160
 	cathedral 	= { tag = POR level = 1 location = coimbra } #Coimbra Cathedral, established in 1139
-	cathedral 	= { tag = CAS level = 1 location = cordoba } #Cathedral of the Assumption of our Lady, established in 1236
-	cathedral 	= { tag = CAS level = 1 location = cuenca } #Saint Mary and Saint Julian Cathedral, established in 1196
+	cathedral 	= { tag = SPA level = 1 location = cordoba } #Cathedral of the Assumption of our Lady, established in 1236
+	cathedral 	= { tag = SPA level = 1 location = cuenca } #Saint Mary and Saint Julian Cathedral, established in 1196
 	cathedral 	= { tag = POR level = 1 location = evora } #Évora Cathedral, established in 1204
-	cathedral 	= { tag = ARA level = 1 location = girona } #Saint Mary Cathedral, established in 1038
+	cathedral 	= { tag = SPA level = 1 location = girona } #Saint Mary Cathedral, established in 1038
 	cathedral 	= { tag = POR level = 1 location = guarda } #Guarda Cathedral, established in 1199
 	cathedral 	= { tag = POR level = 1 location = guimaraes } #Braga Cathedral, established in 1070
-	cathedral 	= { tag = ARA level = 1 location = huesca } #Cathedral of the Transfiguration of the Lord, established in 1098
-	cathedral 	= { tag = ARA level = 1 location = jaca } #Saint Peter Cathedral, established in 1063
+	cathedral 	= { tag = SPA level = 1 location = huesca } #Cathedral of the Transfiguration of the Lord, established in 1098
+	cathedral 	= { tag = SPA level = 1 location = jaca } #Saint Peter Cathedral, established in 1063
 	cathedral 	= { tag = POR level = 1 location = lamego } #Lamego Cathedral, established in 1129
-	cathedral 	= { tag = CAS level = 1 location = leon } #Saint Mary Cathedral, established in 1303
+	cathedral 	= { tag = SPA level = 1 location = leon } #Saint Mary Cathedral, established in 1303
 	cathedral 	= { tag = POR level = 1 location = lisbon } #Lisboa Cathedral, established in 1147
-	cathedral 	= { tag = ARA level = 1 location = lleida } #Saint Mary Cathedral, established in 1278
-	cathedral 	= { tag = CAS level = 1 location = logrono } #Saint Dominic Cathedral, established in 1232
-	cathedral 	= { tag = CAS level = 1 location = lugo } #Cathedral of the Assumption of Saint Mary, established in 1273
-	cathedral 	= { tag = CAS level = 1 location = mondonedo } #Cathedral of the Virgin of the Assumption, established in 1246
-	cathedral 	= { tag = CAS level = 1 location = ourense } #Saint Martin Cathedral, established in 1188
-	cathedral 	= { tag = CAS level = 1 location = oviedo } #Cathedral of the Holy Saviour, established in 821
+	cathedral 	= { tag = SPA level = 1 location = lleida } #Saint Mary Cathedral, established in 1278
+	cathedral 	= { tag = SPA level = 1 location = logrono } #Saint Dominic Cathedral, established in 1232
+	cathedral 	= { tag = SPA level = 1 location = lugo } #Cathedral of the Assumption of Saint Mary, established in 1273
+	cathedral 	= { tag = SPA level = 1 location = mondonedo } #Cathedral of the Virgin of the Assumption, established in 1246
+	cathedral 	= { tag = SPA level = 1 location = ourense } #Saint Martin Cathedral, established in 1188
+	cathedral 	= { tag = SPA level = 1 location = oviedo } #Cathedral of the Holy Saviour, established in 821
 	cathedral 	= { tag = MLL level = 1 location = palma } #Saint Mary Cathedral, established in 1229
 	cathedral 	= { tag = NAV level = 1 location = pamplona } #Saint Mary Cathedral, established in 1127
 	cathedral 	= { tag = POR level = 1 location = porto } #Porto Cathedral, established in 1110
-	cathedral 	= { tag = CAS level = 1 location = salamanca } #Saint Mary Cathedral, established in 1236
-	cathedral 	= { tag = CAS level = 1 location = santiago_compostela } #Saint James the Apostle Cathedral, established in 1211
-	cathedral 	= { tag = ARA level = 1 location = seu_durgell } #Saint Mary Cathedral, established in 1040
-	cathedral 	= { tag = CAS level = 1 location = siguenza } #Saint Mary Cathedral, established in 1169
-	cathedral 	= { tag = ARA level = 1 location = tarazona } #Saint Mary of la Huerta Cathedral, established in 1235
-	cathedral 	= { tag = ARA level = 1 location = tarragona } #Saint Thecla Cathedral, established in 1331
+	cathedral 	= { tag = SPA level = 1 location = salamanca } #Saint Mary Cathedral, established in 1236
+	cathedral 	= { tag = SPA level = 1 location = santiago_compostela } #Saint James the Apostle Cathedral, established in 1211
+	cathedral 	= { tag = SPA level = 1 location = seu_durgell } #Saint Mary Cathedral, established in 1040
+	cathedral 	= { tag = SPA level = 1 location = siguenza } #Saint Mary Cathedral, established in 1169
+	cathedral 	= { tag = SPA level = 1 location = tarazona } #Saint Mary of la Huerta Cathedral, established in 1235
+	cathedral 	= { tag = SPA level = 1 location = tarragona } #Saint Thecla Cathedral, established in 1331
 	cathedral 	= { tag = NAV level = 1 location = tudela } #Saint Mary Cathedral, established in 1270
-	cathedral 	= { tag = CAS level = 1 location = tuy } #Cathedral of Saint Mary of the Assumption, established in 1225
-	cathedral 	= { tag = ARA level = 1 location = valencia } #Cathedral of the Assumption of our Lady, established in 1238
+	cathedral 	= { tag = SPA level = 1 location = tuy } #Cathedral of Saint Mary of the Assumption, established in 1225
+	cathedral 	= { tag = SPA level = 1 location = valencia } #Cathedral of the Assumption of our Lady, established in 1238
 	cathedral 	= { tag = POR level = 1 location = viseu } #Viseu Cathedral, established in 1109
-	cathedral 	= { tag = CAS level = 1 location = vitoria } #Saint Mary Cathedral, established in 1200
-	cathedral 	= { tag = CAS level = 1 location = zamora } #Cathedral of the Saviour, established in 1174
-	cathedral 	= { tag = ARA level = 1 location = zaragoza } #Cathedral of the Saviour, established in 1318
+	cathedral 	= { tag = SPA level = 1 location = vitoria } #Saint Mary Cathedral, established in 1200
+	cathedral 	= { tag = SPA level = 1 location = zamora } #Cathedral of the Saviour, established in 1174
+	cathedral 	= { tag = SPA level = 1 location = zaragoza } #Cathedral of the Saviour, established in 1318
 	
-	chancery = { tag = ARA level = 1 location = barcelona }
+	chancery = { tag = SPA level = 1 location = barcelona }
 	chancery = { tag = NAV level = 1 location = pamplona } #XI Century
-	chancery = { tag = CAS level = 1 location = valladolid}
+	chancery = { tag = SPA level = 1 location = valladolid}
 
 	charcoal_maker = { tag = NAV level = 1 location = elizondo } 
-	charcoal_maker = { tag = CAS level = 1 location = bilbao } 
+	charcoal_maker = { tag = SPA level = 1 location = bilbao } 
 	charcoal_maker = { tag = NAV level = 1 location = sanguesa }
-	charcoal_maker = { tag = CAS level = 1 location = san_sebastian } 
-	charcoal_maker = { tag = CAS level = 1 location = valmaseda } 
+	charcoal_maker = { tag = SPA level = 1 location = san_sebastian } 
+	charcoal_maker = { tag = SPA level = 1 location = valmaseda } 
 
 
 	dock = { tag = POR level = 1	location = lisbon }
-	dock = { tag = ARA level = 1	location = barcelona }
-	dock = { tag = CAS level = 1	location = sevilla }
+	dock = { tag = SPA level = 1	location = barcelona }
+	dock = { tag = SPA level = 1	location = sevilla }
 	dock = { tag = GRA level = 1	location = malaga }
 
-	fishing_village = { tag = CAS level = 1 location = bilbao }
-	fishing_village = { tag = CAS level = 1 location = laredo }
-	fishing_village = { tag = CAS level = 1 location = san_vicente_barquera }
-	fishing_village = { tag = CAS level = 1 location = san_sebastian }
-	fishing_village = { tag = CAS level = 1 location = valmaseda }
+	fishing_village = { tag = SPA level = 1 location = bilbao }
+	fishing_village = { tag = SPA level = 1 location = laredo }
+	fishing_village = { tag = SPA level = 1 location = san_vicente_barquera }
+	fishing_village = { tag = SPA level = 1 location = san_sebastian }
+	fishing_village = { tag = SPA level = 1 location = valmaseda }
 
-	lumber_mill = { tag = CAS level = 1 location = bilbao } 
+	lumber_mill = { tag = SPA level = 1 location = bilbao } 
 	lumber_mill = { tag = NAV level = 1 location = sanguesa }
-	lumber_mill = { tag = CAS level = 1 location = san_sebastian } 
-	lumber_mill = { tag = CAS level = 1 location = valmaseda } 
+	lumber_mill = { tag = SPA level = 1 location = san_sebastian } 
+	lumber_mill = { tag = SPA level = 1 location = valmaseda } 
 	
-	market_village = { tag = CAS level = 1 location = bilbao }
+	market_village = { tag = SPA level = 1 location = bilbao }
 	market_village = { tag = NAV level = 1 location = estella }
 
-	monastery 	= { tag = CAS level = 1 location = aguilar_de_campoo } #Santa María la Real (Aguilar de Campoo)
-	monastery 	= { tag = CAS level = 1 location = aranda_de_duero } #Santo Domingo de Silos
-	monastery 	= { tag = ARA level = 1 location = barcelona } #Montserrat
+	monastery 	= { tag = SPA level = 1 location = aguilar_de_campoo } #Santa María la Real (Aguilar de Campoo)
+	monastery 	= { tag = SPA level = 1 location = aranda_de_duero } #Santo Domingo de Silos
+	monastery 	= { tag = SPA level = 1 location = barcelona } #Montserrat
 	monastery 	= { tag = POR level = 1 location = barcelos } #Rates
-	monastery 	= { tag = CAS level = 1 location = bilbao } #Ziortza
-	monastery 	= { tag = CAS level = 1 location = briviesca } #San Salvador (Oña)
-	monastery 	= { tag = CAS level = 1 location = buitrago_de_lozoya } #Santa María de Bonaval
-	monastery 	= { tag = CAS level = 1 location = burgos } #Santa María de las Huelgas
-	monastery 	= { tag = ARA level = 1 location = calatayud } #Santa María la Blanca (Monasterio de Piedra)
+	monastery 	= { tag = SPA level = 1 location = bilbao } #Ziortza
+	monastery 	= { tag = SPA level = 1 location = briviesca } #San Salvador (Oña)
+	monastery 	= { tag = SPA level = 1 location = buitrago_de_lozoya } #Santa María de Bonaval
+	monastery 	= { tag = SPA level = 1 location = burgos } #Santa María de las Huelgas
+	monastery 	= { tag = SPA level = 1 location = calatayud } #Santa María la Blanca (Monasterio de Piedra)
 	monastery 	= { tag = POR level = 1 location = coimbra } #Santa Cruz
 	monastery 	= { tag = POR level = 1 location = crato } #Flor da Rosa
 	monastery 	= { tag = POR level = 1 location = esgueira } #Arouca
 	monastery 	= { tag = NAV level = 1 location = estella } #Iratxe
 	monastery 	= { tag = POR level = 1 location = guimaraes } #São Martinho de Tibães/Santa Maria de Pombeiro/Santo Tirso
-	monastery 	= { tag = CAS level = 1 location = huelva } #La Rábida
-	monastery 	= { tag = ARA level = 1 location = jaca } #San Juan de la Peña
+	monastery 	= { tag = SPA level = 1 location = huelva } #La Rábida
+	monastery 	= { tag = SPA level = 1 location = jaca } #San Juan de la Peña
 	monastery 	= { tag = POR level = 1 location = alcobaca } #Alcobaça
-	monastery 	= { tag = CAS level = 1 location = leon } #San Isidoro (León)
-	monastery 	= { tag = CAS level = 1 location = lerma } #San Pedro de Arlanza
+	monastery 	= { tag = SPA level = 1 location = leon } #San Isidoro (León)
+	monastery 	= { tag = SPA level = 1 location = lerma } #San Pedro de Arlanza
 	monastery 	= { tag = POR level = 1 location = lisbon } #São Dinis de Odivelas
-	monastery 	= { tag = CAS level = 1 location = najera } #San Millán de la Cogolla/Santo Domingo de la Calzada/Nájera
-	monastery 	= { tag = CAS level = 1 location = medinaceli } #Santa María de Huerta
-	monastery 	= { tag = CAS level = 1 location = monforte_de_lemos } #Santa María de Ferreira de Pantón
-	monastery 	= { tag = CAS level = 1 location = monzon_campos } #San Andrés de Arroyo
-	monastery 	= { tag = CAS level = 1 location = navia_de_suarna } #San Julián (Samos)
-	monastery 	= { tag = CAS level = 1 location = ocana } #Uclés
-	monastery 	= { tag = CAS level = 1 location = ribadavia } #Santa María la Real (Osera)
-	monastery 	= { tag = CAS level = 1 location = sahagun } #San Benito
-	monastery 	= { tag = CAS level = 1 location = salamanca } #San Esteban (Salamanca)
-	monastery 	= { tag = CAS level = 1 location = potes } #Santo Toribio de Liébana
-	monastery 	= { tag = CAS level = 1 location = salvatierra } #Barria
+	monastery 	= { tag = SPA level = 1 location = najera } #San Millán de la Cogolla/Santo Domingo de la Calzada/Nájera
+	monastery 	= { tag = SPA level = 1 location = medinaceli } #Santa María de Huerta
+	monastery 	= { tag = SPA level = 1 location = monforte_de_lemos } #Santa María de Ferreira de Pantón
+	monastery 	= { tag = SPA level = 1 location = monzon_campos } #San Andrés de Arroyo
+	monastery 	= { tag = SPA level = 1 location = navia_de_suarna } #San Julián (Samos)
+	monastery 	= { tag = SPA level = 1 location = ocana } #Uclés
+	monastery 	= { tag = SPA level = 1 location = ribadavia } #Santa María la Real (Osera)
+	monastery 	= { tag = SPA level = 1 location = sahagun } #San Benito
+	monastery 	= { tag = SPA level = 1 location = salamanca } #San Esteban (Salamanca)
+	monastery 	= { tag = SPA level = 1 location = potes } #Santo Toribio de Liébana
+	monastery 	= { tag = SPA level = 1 location = salvatierra } #Barria
 	monastery 	= { tag = NAV level = 1 location = sanguesa } #Leyre
-	monastery 	= { tag = ARA level = 1 location = montblanc } #Poblet/Santa María de Vallbona
+	monastery 	= { tag = SPA level = 1 location = montblanc } #Poblet/Santa María de Vallbona
 	monastery 	= { tag = POR level = 1 location = tomar } #Convent of Christ
 	monastery 	= { tag = NAV level = 1 location = tudela } #La Oliva/Fitero
-	monastery 	= { tag = ARA level = 1 location = ripoll } #Ripoll
-	monastery 	= { tag = CAS level = 1 location = villaviciosa } #Santa María de Valdediós
+	monastery 	= { tag = SPA level = 1 location = ripoll } #Ripoll
+	monastery 	= { tag = SPA level = 1 location = villaviciosa } #Santa María de Valdediós
 	monastery 	= { tag = POR level = 1 location = viseu } #Santa Maria de Maceira Dão
-	monastery 	= { tag = CAS level = 1 location = vitoria } #Estíbaliz
+	monastery 	= { tag = SPA level = 1 location = vitoria } #Estíbaliz
 
-	nobility_fortifications = { tag = CAS level = 1 location = anana } # Tower Houses of the Banderizos
-	nobility_fortifications = { tag = CAS level = 1 location = bilbao } # Tower Houses of the Banderizos
-	nobility_fortifications = { tag = CAS level = 1 location = durango } # Tower Houses of the Banderizos
-	nobility_fortifications = { tag = CAS level = 1 location = onate } # Tower Houses of the Banderizos
-	nobility_fortifications = { tag = CAS level = 1 location = salvatierra } # Tower Houses of the Banderizos
-	nobility_fortifications = { tag = CAS level = 1 location = san_sebastian } # Tower Houses of the Banderizos
-	nobility_fortifications = { tag = CAS level = 1 location = tolosa } # Tower Houses of the Banderizos
-	nobility_fortifications = { tag = CAS level = 1 location = valmaseda } # Tower Houses of the Banderizos
-	nobility_fortifications = { tag = CAS level = 1 location = vitoria } # Tower Houses of the Banderizos
+	nobility_fortifications = { tag = SPA level = 1 location = anana } # Tower Houses of the Banderizos
+	nobility_fortifications = { tag = SPA level = 1 location = bilbao } # Tower Houses of the Banderizos
+	nobility_fortifications = { tag = SPA level = 1 location = durango } # Tower Houses of the Banderizos
+	nobility_fortifications = { tag = SPA level = 1 location = onate } # Tower Houses of the Banderizos
+	nobility_fortifications = { tag = SPA level = 1 location = salvatierra } # Tower Houses of the Banderizos
+	nobility_fortifications = { tag = SPA level = 1 location = san_sebastian } # Tower Houses of the Banderizos
+	nobility_fortifications = { tag = SPA level = 1 location = tolosa } # Tower Houses of the Banderizos
+	nobility_fortifications = { tag = SPA level = 1 location = valmaseda } # Tower Houses of the Banderizos
+	nobility_fortifications = { tag = SPA level = 1 location = vitoria } # Tower Houses of the Banderizos
 
 	#order_commandery = { tag = CTV level = 1 location = calatrava }
 	#order_commandery = { tag = CTV level = 1 location = ciudad_real }
@@ -1926,58 +1926,58 @@ building_manager = {
 
 	sand_pit = { tag = NAV level = 1 location = olite } 
 
-	scriptorium = { tag = CAS level = 1 location = murcia } #Studium founded by King Alfonso X
+	scriptorium = { tag = SPA level = 1 location = murcia } #Studium founded by King Alfonso X
 
-	sergeantry	= { tag = CAS level = 1 location = valladolid } #Sergeants at arms
-	sergeantry	= { tag = ARA level = 1 location = barcelona } #Sergeants at arms
+	sergeantry	= { tag = SPA level = 1 location = valladolid } #Sergeants at arms
+	sergeantry	= { tag = SPA level = 1 location = barcelona } #Sergeants at arms
 	sergeantry	= { tag = POR level = 1 location = lisbon } #Sergeants at arms
 	sergeantry	= { tag = NAV level = 1 location = pamplona } #Sergeants at arms
 	
-	fine_cloth_guild = { tag = ARA level = 1 location = barcelona }
-	fine_cloth_guild = { tag = ARA level = 1 location = jativa }
-	fine_cloth_guild = { tag = ARA level = 1 location = valencia }
+	fine_cloth_guild = { tag = SPA level = 1 location = barcelona }
+	fine_cloth_guild = { tag = SPA level = 1 location = jativa }
+	fine_cloth_guild = { tag = SPA level = 1 location = valencia }
 
 
 	tar_kiln = { tag = NAV level = 1 location = elizondo } 
-	tar_kiln = { tag = CAS level = 1 location = bilbao } 
-	tar_kiln = { tag = CAS level = 1 location = san_sebastian } 
-	tar_kiln = { tag = CAS level = 1 location = beteta } 
-	tar_kiln = { tag = CAS level = 1 location = segura_de_la_sierra } 
+	tar_kiln = { tag = SPA level = 1 location = bilbao } 
+	tar_kiln = { tag = SPA level = 1 location = san_sebastian } 
+	tar_kiln = { tag = SPA level = 1 location = beteta } 
+	tar_kiln = { tag = SPA level = 1 location = segura_de_la_sierra } 
 	tar_kiln = { tag = MOR level = 1 location = ronda } 
 	tar_kiln = { tag = POR level = 1 location = chao_de_couce } 
 
 		#Barcelona Royal Shipyard #Unique
-	barcelona_royal_shipyard = { tag = ARA level = 1 location = barcelona }
+	barcelona_royal_shipyard = { tag = SPA level = 1 location = barcelona }
 	
 		#Royal Atarazanas of Seville #Unique
-	royal_atarazanas_seville = { tag = CAS level = 1 location = sevilla }
+	royal_atarazanas_seville = { tag = SPA level = 1 location = sevilla }
 
 		#Granada Alhambra
 	alhambra = { tag = GRA level = 1 location = granada }	
 	funduq = { tag = GRA level = 1 location = granada } #https://en.wikipedia.org/wiki/Corral_del_Carb%C3%B3n
 
 		#Brethren of the Marsh #Unique
-	brethren_marsh = { tag = CAS level = 1 location = bilbao }
-	brethren_marsh = { tag = CAS level = 1 location = laredo }
-	brethren_marsh = { tag = CAS level = 1 location = san_vicente_barquera }
-	brethren_marsh = { tag = CAS level = 1 location = santander }
-	brethren_marsh = { tag = CAS level = 1 location = san_sebastian }
-	brethren_marsh = { tag = CAS level = 1 location = tolosa }
+	brethren_marsh = { tag = SPA level = 1 location = bilbao }
+	brethren_marsh = { tag = SPA level = 1 location = laredo }
+	brethren_marsh = { tag = SPA level = 1 location = san_vicente_barquera }
+	brethren_marsh = { tag = SPA level = 1 location = santander }
+	brethren_marsh = { tag = SPA level = 1 location = san_sebastian }
+	brethren_marsh = { tag = SPA level = 1 location = tolosa }
 
 		#Aragonese Trade Offices
-	trade_office = { tag = ARA level = 1 location = genoa } #1233
-	trade_office = { tag = ARA level = 1 location = tunis } #1253
-	trade_office = { tag = ARA level = 1 location = alexandria } #1264
-	trade_office = { tag = ARA level = 1 location = pisa } #1279
-	trade_office = { tag = ARA level = 1 location = bejaia } #1281
-	trade_office = { tag = ARA level = 1 location = constantinople } #1281
-	trade_office = { tag = ARA level = 1 location = sevilla } #1282
-	trade_office = { tag = ARA level = 1 location = messina } #1286
-	trade_office = { tag = ARA level = 1 location = palermo } #1286
-	trade_office = { tag = ARA level = 1 location = montpellier } #1301
-	trade_office = { tag = ARA level = 1 location = trapani } #1301
-	#trade_office = { tag = ARA level = 1 location = malta } #1305
-	#trade_office = { tag = ARA level = 1 location = oristano } #1325
+	trade_office = { tag = SPA level = 1 location = genoa } #1233
+	trade_office = { tag = SPA level = 1 location = tunis } #1253
+	trade_office = { tag = SPA level = 1 location = alexandria } #1264
+	trade_office = { tag = SPA level = 1 location = pisa } #1279
+	trade_office = { tag = SPA level = 1 location = bejaia } #1281
+	trade_office = { tag = SPA level = 1 location = constantinople } #1281
+	trade_office = { tag = SPA level = 1 location = sevilla } #1282
+	trade_office = { tag = SPA level = 1 location = messina } #1286
+	trade_office = { tag = SPA level = 1 location = palermo } #1286
+	trade_office = { tag = SPA level = 1 location = montpellier } #1301
+	trade_office = { tag = SPA level = 1 location = trapani } #1301
+	#trade_office = { tag = SPA level = 1 location = malta } #1305
+	#trade_office = { tag = SPA level = 1 location = oristano } #1325
 
 
 
@@ -1988,7 +1988,7 @@ building_manager = {
 	tar_kiln = { tag = BUL level = 1 location = sozopol } 
 	tar_kiln = { tag = ORT level = 1 location = kocevje } 
 	tar_kiln = { tag = LUC level = 1 location = massa } 
-	tar_kiln = { tag = BYZ level = 1 location = polygyros } 
+	tar_kiln = { tag = OTT level = 1 location = polygyros } 
 	tar_kiln = { tag = SRU level = 1 location = soma } 
 
 	
@@ -2000,7 +2000,7 @@ building_manager = {
 	dock	= { tag = GEN level = 1	location = genoa }
 	city_guard = { tag = GEN level = 1	location = genoa }
 
-	republican_assembly =  { tag = FLO level = 1 location = florence } #Palazzo Vecchio 
+	republican_assembly =  { tag = TUS level = 1 location = florence } #Palazzo Vecchio 
 	
 	#scriptorium	= { tag = CMR level = 2	location = camerino }
 	scriptorium	= { tag = GEN level = 2	location = genoa }
@@ -2032,7 +2032,7 @@ building_manager = {
 
 	#Aegean Pirates
 	pirate_haven = { tag = VEN level = 1 location = amorgos }
-	pirate_haven = { tag = BYZ level = 1 location = sporades }
+	pirate_haven = { tag = OTT level = 1 location = sporades }
 	pirate_haven = { tag = NAX level = 1 location = kythnos }
 	pirate_haven = { tag = NAX level = 1 location = milos }
 
@@ -2067,29 +2067,29 @@ building_manager = {
 
 
 	#Poland
-	castle = { tag = TEU level = 1 location = malbork }
-	castle = { tag = TEU level = 1 location = szczytno }
-	castle = { tag = TEU level = 1 location = insterburg }
-	castle = { tag = TEU level = 1 location = ostroda }
+	castle = { tag = PRU level = 1 location = malbork }
+	castle = { tag = PRU level = 1 location = szczytno }
+	castle = { tag = PRU level = 1 location = insterburg }
+	castle = { tag = PRU level = 1 location = ostroda }
 	castle = { tag = ERM level = 1 location = olsztyn }
 	castle = { tag = CHL level = 1 location = lubawa }
 	castle = { tag = PMS level = 1 location = kwidzyn }
-	castle = { tag = TEU level = 1 location = grudziadz }
-	castle = { tag = TEU level = 1 location = tuchola }
+	castle = { tag = PRU level = 1 location = grudziadz }
+	castle = { tag = PRU level = 1 location = tuchola }
 	castle = { tag = POL level = 1 location = poznan }
 	castle = { tag = PLK level = 1 location = plock }
 	castle = { tag = POL level = 1 location = krakow }
 	castle = { tag = LIT level = 1 location = vilnius }
 	castle = { tag = LIT level = 1 location = kaunas }
 	castle = { tag = POL level = 1 location = wielun }
-	stockade = { tag = TEU level = 1 location = insterburg }
+	stockade = { tag = PRU level = 1 location = insterburg }
 
 
 	tar_kiln = { tag = LIT level = 1 location = kraziai } 
 	tar_kiln = { tag = LIT level = 1 location = vilkmerge } 
 	tar_kiln = { tag = LIT level = 1 location = lida } 
 
-	tar_kiln = { tag = TEU level = 1 location = tuchola } 
+	tar_kiln = { tag = PRU level = 1 location = tuchola } 
 	tar_kiln = { tag = BRA level = 1 location = drawsko } 
 
 	#Low Countries
@@ -2216,46 +2216,46 @@ building_manager = {
 	sergeantry	= { tag = FRA level = 1 location = paris } #Sergeants at arms
 	
 	tar_kiln = { tag = FRA level = 1 location = mende } 
-	tar_kiln = { tag = VNT level = 1 location = ventadour } 
-	tar_kiln = { tag = BRI level = 1 location = josselin } 
+	tar_kiln = { tag = FRA level = 1 location = ventadour } 
+	tar_kiln = { tag = FRA level = 1 location = josselin } 
 
 	cathedral 	= { tag = FRA level = 1 location = agde } #Saint-Étienne d'Agde Cathedral, established in 1173
 	cathedral 	= { tag = FRA level = 1 location = agen } #Saint-Caprais d'Agen Cathedral
-	cathedral 	= { tag = MDM level = 1 location = aire } #Saint-Jean-Baptiste d'Aire Cathedral, established in 1309
-	cathedral 	= { tag = PRO level = 1 location = aix_en_provence } #Saint-Sauveur d'Aix Cathedral, established in 1103
+	cathedral 	= { tag = FRA level = 1 location = aire } #Saint-Jean-Baptiste d'Aire Cathedral, established in 1309
+	cathedral 	= { tag = FRA level = 1 location = aix_en_provence } #Saint-Sauveur d'Aix Cathedral, established in 1103
 	cathedral 	= { tag = FRA level = 1 location = albi } #Sainte-Cécile d'Albi Cathedral, established in 1282
 	cathedral 	= { tag = FRA level = 1 location = amiens } #Notre-Dame d'Amiens Cathedral, established in 1270
-	cathedral 	= { tag = ANJ level = 1 location = angers } #Saint-Maurice d'Angers Cathedral, established in 1096
-	cathedral 	= { tag = ANG level = 1 location = angouleme } #Saint-Pierre d'Angoulême Cathedral, established in 1128
-	cathedral 	= { tag = PRO level = 1 location = apt } #Sainte-Anne d'Apt Cathedral, established in 991
-	cathedral 	= { tag = PRO level = 1 location = arles } #Saint-Trophime d'Arles Cathedral, established in 250
-	cathedral		= { tag = ARS level = 1 location = arras } #Notre-Dame-et-Saint-Vaast d'Arras Cathedral, established in 1030
-	cathedral		= { tag = BUR level = 1 location = autun } #Saint-Lazare d'Autun Cathedral, established in 1132
+	cathedral 	= { tag = FRA level = 1 location = angers } #Saint-Maurice d'Angers Cathedral, established in 1096
+	cathedral 	= { tag = FRA level = 1 location = angouleme } #Saint-Pierre d'Angoulême Cathedral, established in 1128
+	cathedral 	= { tag = FRA level = 1 location = apt } #Sainte-Anne d'Apt Cathedral, established in 991
+	cathedral 	= { tag = FRA level = 1 location = arles } #Saint-Trophime d'Arles Cathedral, established in 250
+	cathedral		= { tag = FRA level = 1 location = arras } #Notre-Dame-et-Saint-Vaast d'Arras Cathedral, established in 1030
+	cathedral		= { tag = FRA level = 1 location = autun } #Saint-Lazare d'Autun Cathedral, established in 1132
 	cathedral		= { tag = FRA level = 1 location = auxerre } #Saint-Étienne d'Auxerre Cathedral, established in 1057
-	cathedral		= { tag = PAP level = 1 location = avignon } #Notre-Dame des Doms d'Avignon Cathedral, established in 1150
-	cathedral		= { tag = NRM level = 1 location = avranches } #Saint-André d'Avranches Cathedral, established in 1211
-	cathedral		= { tag = CAM level = 1 location = cambrai } #Notre-Dame de Cambrai Cathedral, established in 1148
-	cathedral 	= { tag = FOI level = 1 location = foix } #Notre-Dame d'Alet Cathedral, established in 1317
-	cathedral 	= { tag = PRO level = 1 location = grasse } #Notre-Dame-de-l'Immaculée-Conception d'Antibes Cathedral, established in 450
+	cathedral		= { tag = FRA level = 1 location = avignon } #Notre-Dame des Doms d'Avignon Cathedral, established in 1150
+	cathedral		= { tag = FRA level = 1 location = avranches } #Saint-André d'Avranches Cathedral, established in 1211
+	cathedral		= { tag = FRA level = 1 location = cambrai } #Notre-Dame de Cambrai Cathedral, established in 1148
+	cathedral 	= { tag = FRA level = 1 location = foix } #Notre-Dame d'Alet Cathedral, established in 1317
+	cathedral 	= { tag = FRA level = 1 location = grasse } #Notre-Dame-de-l'Immaculée-Conception d'Antibes Cathedral, established in 450
 	cathedral 	= { tag = FRA level = 1 location = paris } #Notre-Dame de Paris Cathedral, established in 1182
-	cathedral 	= { tag = BRI level = 1 location = saint_malo } #Saint-Pierre d'Aleth Cathedral and Saint-Vincent-de-Saragosse de Saint-Malo Cathedral, established 1146
-	cathedral		= { tag = ARS level = 1 location = saint_omer } #Notre-Dame de Thérouanne Cathedral, established in the 7th Century
+	cathedral 	= { tag = FRA level = 1 location = saint_malo } #Saint-Pierre d'Aleth Cathedral and Saint-Vincent-de-Saragosse de Saint-Malo Cathedral, established 1146
+	cathedral		= { tag = FRA level = 1 location = saint_omer } #Notre-Dame de Thérouanne Cathedral, established in the 7th Century
 
 	#Greece and Balkans
 	
-	fine_cloth_guild = { tag = BYZ level = 3 location =  constantinople }
-	royal_court = { tag = BYZ level = 1 location =  constantinople }
-	sergeantry = { tag = BYZ level = 1 location =  constantinople }
-	market_warehouse = { tag = BYZ level = 1 location =  constantinople }
-	saltpeter_guild = { tag = BYZ level = 2 location =  constantinople }
-	#lacquerware_guild = { tag = BYZ level = 3 location =  constantinople }
-	tannery = { tag = BYZ level = 2 location =  constantinople }
-	scriptorium = { tag = BYZ level = 3 location =  constantinople }
-	hospital = { tag = BYZ level = 1 location =  constantinople }
-	castle = { tag = BYZ level = 1 location =  gallipoli }
-	theodosian_walls = { tag = BYZ level = 1 location = constantinople }
-	dock = { tag = BYZ level = 1 location = constantinople }
-	sergeantry = { tag = TUR level = 1 location =  bursa }
+	fine_cloth_guild = { tag = OTT level = 3 location =  constantinople }
+	royal_court = { tag = OTT level = 1 location =  constantinople }
+	sergeantry = { tag = OTT level = 1 location =  constantinople }
+	market_warehouse = { tag = OTT level = 1 location =  constantinople }
+	saltpeter_guild = { tag = OTT level = 2 location =  constantinople }
+	#lacquerware_guild = { tag = OTT level = 3 location =  constantinople }
+	tannery = { tag = OTT level = 2 location =  constantinople }
+	scriptorium = { tag = OTT level = 3 location =  constantinople }
+	hospital = { tag = OTT level = 1 location =  constantinople }
+	castle = { tag = OTT level = 1 location =  gallipoli }
+	theodosian_walls = { tag = OTT level = 1 location = constantinople }
+	dock = { tag = OTT level = 1 location = constantinople }
+	sergeantry = { tag = OTT level = 1 location =  bursa }
 	
 	castle = { tag = KNI level = 1 location =  rodos }
 	castle = { tag = SER level = 1 location =  kozelj }
@@ -2283,7 +2283,7 @@ building_manager = {
 	orthodox_monastery = { tag = SER level = 1 location =  vranje }
 	orthodox_monastery = { tag = SER level = 1 location =  zica }
 	orthodox_monastery = { tag = ATH level = 1 location =  livadeia } #https://en.wikipedia.org/wiki/Hosios_Loukas
-	orthodox_monastery = { tag = BYZ level = 1 location =  mount_athos }
+	orthodox_monastery = { tag = OTT level = 1 location =  mount_athos }
 
 	### Abbeys	
 	monastery	= { tag = WLD level = 1	location = tirschenreuth }
@@ -2291,7 +2291,7 @@ building_manager = {
 	monastery	= { tag = HOX level = 1	location = hoxter }
 	monastery	= { tag = BRE level = 1	location = zeven }
 	#monastery	= { tag = AUL level = 1	location = la_louviere }
-	monastery 	= { tag = MOU level = 1 location = mouzon }
+	monastery 	= { tag = FRA level = 1 location = mouzon }
 	monastery 	= { tag = SCL level = 1 location = saint_claude }
 
 	#Western Africa
@@ -3399,16 +3399,16 @@ building_manager = {
 	jurchen_barracks = { tag = MAO level = 1 location = gyeongseong }
 
 	#Peel Towers
-	peel_towers = { tag = SCO level = 1 location = dunbar}
-	peel_towers = { tag = SBL level = 1 location = dumfries }
+	peel_towers = { tag = GBI level = 1 location = dunbar}
+	peel_towers = { tag = GBI level = 1 location = dumfries }
 
 	# scottish clan seats
-	dun_fort = { tag = LOI level = 1 location = islay } #Clan Donald https://en.wikipedia.org/wiki/Clan_Donald
-	dun_fort = { tag = LOI level = 1 location = lewis } #Clan MacLeod 
-	dun_fort = { tag = LOI level = 1 location = harris } #Clan MacLeod 
-	dun_fort = { tag = SCO level = 1 location = durness } #Clan Mackay https://en.wikipedia.org/wiki/Clan_Mackay
-	dun_fort = { tag = SCO level = 1 location = dingwall } #Clan Sutherland https://en.wikipedia.org/wiki/Clan_Sutherland
-	dun_fort = { tag = SCO level = 1 location = inverary } #Clan Campbell https://en.wikipedia.org/wiki/Clan_Campbell
+	dun_fort = { tag = GBI level = 1 location = islay } #Clan Donald https://en.wikipedia.org/wiki/Clan_Donald
+	dun_fort = { tag = GBI level = 1 location = lewis } #Clan MacLeod 
+	dun_fort = { tag = GBI level = 1 location = harris } #Clan MacLeod 
+	dun_fort = { tag = GBI level = 1 location = durness } #Clan Mackay https://en.wikipedia.org/wiki/Clan_Mackay
+	dun_fort = { tag = GBI level = 1 location = dingwall } #Clan Sutherland https://en.wikipedia.org/wiki/Clan_Sutherland
+	dun_fort = { tag = GBI level = 1 location = inverary } #Clan Campbell https://en.wikipedia.org/wiki/Clan_Campbell
 
 	#Constantinople quarters
 	venetian_quarter = { tag = VEN level = 1 location = constantinople }
@@ -3423,10 +3423,10 @@ building_manager = {
 	tar_kiln = { tag = TVS level = 1 location = tavas } 
 	tar_kiln = { tag = GRM level = 1 location = gediz } 
 	tar_kiln = { tag = BFR level = 1 location = gerze } 
-	#castle = { tag = BYZ level = 1 location = alasehir } #it's a greek_town which already has a castle
+	#castle = { tag = OTT level = 1 location = alasehir } #it's a greek_town which already has a castle
 	#temple = { tag = AYD level = 1 location = birgi }
 	#temple = { tag = KAR level = 1 location = ermenek }
-	#madrasa = { tag = TUR level = 1 location = iznik }
+	#madrasa = { tag = OTT level = 1 location = iznik }
 	madrasa = { tag = KAR level = 1 location = konya } #https://en.wikipedia.org/wiki/Sahib_Ata_Complex
 	madrasa = { tag = ERE level = 1 location = sivas } #https://en.wikipedia.org/wiki/G%C3%B6k_Medrese,_Sivas
 	seljuk_mint = { tag = KAR level = 1 location = konya }
@@ -3608,7 +3608,7 @@ building_manager = {
 	cathedral = { tag = FRA level = 1 location = viviers } #Pierre de Mortemart
 	cathedral = { tag = FRA level = 1 location = bourges } #Pierre Bertrand d'Annonay (S. Clemente)
 	#French Vassals
-	cathedral = { tag = NRB level = 1 location = narbonne } #Gaillard de la Mothe (S. Lucia)
+	cathedral = { tag = FRA level = 1 location = narbonne } #Gaillard de la Mothe (S. Lucia)
 	cathedral = { tag = FRA level = 1 location = auxerre } #Hélie de Talleyrand-Périgord (S. Pietro in Vincoli)
 	#Other
 	cathedral = { tag = NAP level = 1 location = manfredonia } #Matteo Orsini (SS Giovani e Paolo) #Archbishop of Manfredonia when elected
@@ -3622,7 +3622,7 @@ building_manager = {
 	cathedral = { tag = BOH level = 1 location = prague }
 	cathedral = { tag = MAG level = 1 location = magdeburg }
 	cathedral = { tag = BRE level = 1 location = bremervorde } #Diocese of Bremen
-	cathedral = { tag = BSC level = 1 location = besancon }
+	cathedral = { tag = FRA level = 1 location = besancon }
 	cathedral = { tag = POL level = 1 location = gniezno }
 	cathedral = { tag = HUN level = 1 location = esztergom }
 	cathedral = { tag = HUN level = 1 location = kalocsa }
