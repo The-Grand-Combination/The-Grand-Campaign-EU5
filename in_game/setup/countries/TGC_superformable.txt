@@ -1,4 +1,4 @@
-LTU = {
+﻿LTU = {
 	color = map_LTU
 	color2 = black
 

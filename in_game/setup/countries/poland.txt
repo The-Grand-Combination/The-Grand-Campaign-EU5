@@ -179,13 +179,6 @@ OPL = {
 	religion_definition = catholic
 }
 
-PDK = {
-	color = rgb { 22 122 122 }
-	
-	culture_definition = silesian
-	religion_definition = catholic
-}
-
 
 OSW = {
 	color = rgb { 250 228 204 }

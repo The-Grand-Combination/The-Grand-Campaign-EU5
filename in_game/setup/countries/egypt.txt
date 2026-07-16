@@ -37,11 +37,3 @@ SKN = {
 	culture_definition = hijazi_culture
 	religion_definition = sunni
 }
-
-#Tripoli - TRP (Stateless)
-TRP = {
-	color = map_tripoli
-	color2 = blue_light
-	culture_definition = libyan_arabic_culture
-	religion_definition = sunni
-}

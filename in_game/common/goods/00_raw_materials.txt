@@ -7,7 +7,6 @@ horses = { #War Horses
 	transport_cost = 2
 	
 	demand_add = {
-		nobles =  0.25
 	}	
 
 	origin_in_old_world = yes
@@ -23,6 +22,36 @@ clay = {
 	default_market_price = 0.5
 	
 	transport_cost = 2
+
+	base_production = 0.02	
+	
+	ai_rgo_expansion_priority = 0.025
+
+	
+}
+
+rubber = {
+	method = gathering
+	category = raw_material
+	color = goods_clay
+	default_market_price = 0.5
+	
+	transport_cost = 7
+
+	base_production = 0.02	
+	
+	ai_rgo_expansion_priority = 0.025
+
+	
+}
+
+oil = {
+	method = gathering
+	category = raw_material
+	color = goods_clay
+	default_market_price = 0.5
+	
+	transport_cost = 12
 
 	base_production = 0.02	
 	
@@ -337,6 +366,32 @@ lumber  = {
 	}
 }
 
+sulphur = {
+	method = gathering
+	category = raw_material
+	color = goods_salt
+	default_market_price = 4
+
+
+	demand_add = {
+		nobles = 0.05
+		burghers = 0.02
+		clergy = 0.02
+	}
+
+
+	wealth_impact_threshold = {
+		all = 0.7
+	}
+
+	winter_demand_modifier = {
+		none = 0.75
+		mild = 1
+		normal = 1.2
+		severe = 2
+	}
+}
+
 salt = {
 	method = gathering
 	category = raw_material
@@ -645,5 +700,165 @@ chili = {
 	
 	origin_in_new_world = yes
 	custom_tags = { new_world_goods }
+}
+
+tropical_wood = {
+	method = mining
+	category = raw_material
+	color = goods_iron
+	default_market_price = 3
+	transport_cost = 1
+	ai_rgo_size_importance = 10 # ai preference to avoid building a city on this rgo
+	
+	ai_rgo_expansion_priority = 0.025
+	
+	
+}
+
+cement = {
+	category = produced
+	color = goods_iron
+	default_market_price = 3
+	transport_cost = 1
+}
+
+fuel = {
+	category = produced
+	color = goods_iron
+	default_market_price = 3
+	transport_cost = 1
+}
+
+fertilizer = {
+	category = produced
+	color = goods_iron
+	default_market_price = 3
+	transport_cost = 1
+}
+
+explosives = {
+	category = produced
+	color = goods_iron
+	default_market_price = 3
+	transport_cost = 1
+}
+
+clipper = {
+	category = produced
+	color = goods_iron
+	default_market_price = 3
+	transport_cost = 1
+}
+
+steamer = {
+	category = produced
+	color = goods_iron
+	default_market_price = 3
+	transport_cost = 1
+}
+
+electric_gear = {
+	category = produced
+	color = goods_iron
+	default_market_price = 3
+	transport_cost = 1
+}
+
+automobiles = {
+	category = produced
+	color = goods_iron
+	default_market_price = 3
+	transport_cost = 1
+}
+
+plastics = {
+	category = produced
+	color = goods_iron
+	default_market_price = 3
+	transport_cost = 1
+}
+
+tires = {
+	category = produced
+	color = goods_iron
+	default_market_price = 3
+	transport_cost = 1
+}
+
+radio = {
+	category = produced
+	color = goods_iron
+	default_market_price = 3
+	transport_cost = 1
+}
+
+pharmaceuticals = {
+	category = produced
+	color = goods_iron
+	default_market_price = 3
+	transport_cost = 1
+}
+
+soap = {
+	category = produced
+	color = goods_iron
+	default_market_price = 3
+	transport_cost = 1
+}
+
+canned_food = {
+	category = produced
+	color = goods_iron
+	default_market_price = 3
+	transport_cost = 1
+}
+
+ammunition = {
+	category = produced
+	color = goods_iron
+	default_market_price = 3
+	transport_cost = 1
+}
+
+tank = {
+	category = produced
+	color = goods_iron
+	default_market_price = 3
+	transport_cost = 1
+}
+
+aeroplanes = {
+	category = produced
+	color = goods_iron
+	default_market_price = 3
+	transport_cost = 1
+}
+
+luxury_furniture = {
+	category = produced
+	color = goods_iron
+	default_market_price = 3
+	transport_cost = 1
+}
+
+luxury_clothes = {
+	category = produced
+	color = goods_iron
+	default_market_price = 3
+	transport_cost = 1
+}
+
+regular_clothes = {
+	category = produced
+	color = goods_iron
+	default_market_price = 3
+	transport_cost = 1
+}
+
+telephones = {
+	category = produced
+	color = goods_iron
+	default_market_price = 3
+	transport_cost = 1
 }
 

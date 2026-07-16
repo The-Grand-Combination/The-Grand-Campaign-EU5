@@ -81,14 +81,6 @@ KLT = {
 
 
 }
-PDU = {
-	color = map_cochin
-	color2 = map_cochin_2
-
-	culture_definition = malayali
-	religion_definition = hindu
-
-}
 VND = {
 	color = map_venad
 	color2 = map_venad_2
@@ -218,16 +210,6 @@ KNK = {
 	culture_definition = chhattisgarhi
 	religion_definition = hindu
 }
-
-BST = {
-	color = map_bastar
-	color2 = map_bastar_2
-
-	culture_definition = chhattisgarhi
-	religion_definition = hindu
-
-
-}
 JPO = {
 	color = map_silavamsa
 	color2 = map_silavamsa_2
@@ -243,14 +225,16 @@ BGL = {
 	culture_definition = marathi_culture
 	religion_definition = hindu
 }
+
 CHD = {
-	color = map_chanda
-	color2 = map_chanda_2
-
-	culture_definition = gond
-	religion_definition = koyapunem_religion
-
-
+   color = map_chanda
+   color2 = map_chanda_2
+   unit_color0 = rgb { 49 49 49 }
+   unit_color1 = rgb { 49 49 49 }
+   unit_color2 = rgb { 49 49 49 }
+   culture_definition = gond
+   religion_definition = koyapunem_religion
+   difficulty = 3
 }
 BGR = {
 	color = map_bandhugara
@@ -350,28 +334,12 @@ RJI = {
 
 
 }
-KUT = {
-	color = map_kutch
-	color2 = map_kutch_2
-
-	culture_definition = gujarati
-	religion_definition = hindu
-
-
-}
 SMA = {
 	color = map_samma
 	color2 = map_samma_2
 
 	culture_definition = sindhi
 	religion_definition = sunni
-}
-SND = {
-	color = map_sindh
-	color2 = map_sindh_2
-
-	culture_definition = sindhi
-	religion_definition = shia
 }
 RNP = {
 	color = map_ranpur
@@ -396,16 +364,6 @@ PLT = {
 	culture_definition = gujarati
 	religion_definition = hindu
 }
-
-JNG = {
-	color = map_junagarh
-	color2 = map_junagarh_2
-
-	culture_definition = gujarati
-	religion_definition = hindu
-
-
-}
 BHD = {
 	color = map_bhanvad
 	color2 = map_bhanvad_2
@@ -422,14 +380,16 @@ JLW = {
 
 
 }
+
 MRW = {
-	color = map_marwar
-	color2 = map_marwar_2
-
-	culture_definition = marwari
-	religion_definition = hindu
-
-
+   color = map_marwar
+   color2 = map_marwar_2
+   unit_color0 = rgb { 49 49 49 }
+   unit_color1 = rgb { 49 49 49 }
+   unit_color2 = rgb { 49 49 49 }
+   culture_definition = marwari
+   religion_definition = hindu
+   difficulty = 5
 }
 HAD = {
 	color = map_bundi
@@ -437,14 +397,6 @@ HAD = {
 
 	culture_definition = harauti
 	religion_definition = hindu
-}
-JSL = {
-	color = map_jaisalmer
-	color2 = map_jaisalmer_2
-
-	culture_definition = marwari
-	religion_definition = hindu
-
 }
 PGL = {
 	color = hsv { 0.6 0.81 0.38 }
@@ -481,12 +433,16 @@ BWL = {
 	culture_definition = bagri
 	religion_definition = hindu #Converts to Islam in 1350s
 }
-JHI = {
-	color = map_johiya
-	color2 = map_johiya_2
 
-	culture_definition = bagri
-	religion_definition = hindu #Converts to Islam in 1350s
+JHI = {
+   color = map_johiya
+   color2 = map_johiya_2
+   unit_color0 = rgb { 49 49 49 }
+   unit_color1 = rgb { 49 49 49 }
+   unit_color2 = rgb { 49 49 49 }
+   culture_definition = bagri
+   religion_definition = hindu #Converts to Islam in 1350s
+   difficulty = 3
 }
 GDA = {
 	color = map_godara
@@ -508,13 +464,6 @@ BHA = {
 
 	culture_definition = bagri
 	religion_definition = sunni
-}
-DOG = {
-	color = map_dogra
-	color2 = map_dogra_2
-
-	culture_definition = punjabi
-	religion_definition = hindu #Converts to Islam in 1350s
 }
 DHU = {
 	color = map_dhundhar
@@ -623,12 +572,16 @@ PTN = {
 	religion_definition = hindu
 }
 
-PRT = {
-	color = map_mandore
-	color2 = map_mandore_2
 
-	culture_definition = marwari
-	religion_definition = hindu
+PRT = {
+   color = map_mandore
+   color2 = map_mandore_2
+   unit_color0 = rgb { 49 49 49 }
+   unit_color1 = rgb { 49 49 49 }
+   unit_color2 = rgb { 49 49 49 }
+   culture_definition = marwari
+   religion_definition = hindu
+   difficulty = 5
 }
 
 KLH = {
@@ -690,30 +643,9 @@ JFN = {
 	culture_definition = tamil
 	religion_definition = hindu
 }
-NAG = {
-	color = map_nagar
-	color2 = map_nagar_2
-
-	culture_definition = kashmiri_culture
-	religion_definition = hindu #Switches to Muslim in a year
-}
 SWT = {
 	color = map_swat
 	color2 = map_swat_2
-
-	culture_definition = kashmiri_culture
-	religion_definition = sunni
-}
-HNZ = {
-	color = map_hunza
-	color2 = map_hunza_2
-
-	culture_definition = kashmiri_culture
-	religion_definition = shia
-}
-CTR = {
-	color = map_chitral
-	color2 = map_chitral_2
 
 	culture_definition = kashmiri_culture
 	religion_definition = sunni
@@ -724,13 +656,6 @@ CRL = {
 
 	culture_definition = kashmiri_culture
 	religion_definition = hindu #Switches to Muslim in a year
-}
-GLI = {
-	color = map_gilgit
-	color2 = map_gilgit_2
-
-	culture_definition = kashmiri_culture
-	religion_definition = shia
 }
 KSH = {
 	color = map_kashmir

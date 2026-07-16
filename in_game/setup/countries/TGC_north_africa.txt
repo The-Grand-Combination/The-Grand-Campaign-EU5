@@ -1,4 +1,4 @@
-EGY = {
+﻿EGY = {
 	color = map_EGY_dominion0
 	color2 = rgb { 16 41 202 }
 	
@@ -11,4 +11,76 @@ EGY = {
 
 	description_category = administrative
 	difficulty = 3
+}
+
+ABA	= { #alba
+	color = rgb { 244  231 193 }
+
+	culture_definition = piedmontese
+	religion_definition = catholic
+}
+
+CST	= { #alba
+	color = rgb { 0  75  0 }
+
+	culture_definition = piedmontese
+	religion_definition = catholic
+}
+
+TMZ	= {
+	color = rgb { 254  196  163 }
+
+	culture_definition = piedmontese
+	religion_definition = catholic
+}
+
+TGT = {
+	color = rgb { 158 143 45 }
+	color2 = rgb { 90 140 190 }  #same as in EU4
+	
+	culture_definition = mozabite
+	religion_definition = ibadi
+}
+
+TKA	= {
+	color = rgb { 126 90 99 }
+
+	culture_definition = piedmontese
+	religion_definition = catholic
+}
+
+#Tripoli
+TRP = {
+	color = rgb { 180  137  148 }
+	color2 = blue_light
+	culture_definition = libyan_arabic_culture
+	religion_definition = sunni
+}
+
+ALG = {
+	color = rgb { 220  202  96 }
+	color2 = rgb { 230  225  110 }  #same as in EU4
+	
+	culture_definition = algerian
+	religion_definition = sunni
+}
+
+TUN = {
+	color = rgb { 131  101  85 }
+	color2 = rgb { 146  134  57 }  #same as in EU4
+	
+	culture_definition = tunisian
+	religion_definition = sunni
+}
+
+MOR = {
+   color = map_morocco
+   color2 = rgb { 191 110 62 } #same as in EU4
+   unit_color0 = rgb { 49 49 49 }
+   unit_color1 = rgb { 49 49 49 }
+   unit_color2 = rgb { 49 49 49 }
+   culture_definition = moroccan
+   religion_definition = sunni
+   description_category = military
+   difficulty = 8
 }

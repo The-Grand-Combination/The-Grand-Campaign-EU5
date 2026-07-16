@@ -120,14 +120,6 @@ INA = {
 	religion_definition = sunni
 }
 
-KAR = {
-	color = map_karamanids
-	color2 = rgb { 90 160 190 } #same as in EU4
-
-	culture_definition = turkish_culture
-	religion_definition = sunni
-}
-
 KRD = {
 	color = map_karasids
 	color2 = rgb { 212 225 156 } 
@@ -214,24 +206,8 @@ OTT = {
 	difficulty = 1
 }
 
-BHT = {
-	color = map_bohtan
-	color2 = rgb { 144 220 149 }
-
-	culture_definition = kurdish_culture
-	religion_definition = yazidism
-}
-
 BIN = {
 	color = map_bingol
-	color2 = rgb { 144 220 149 }
-
-	culture_definition = kurdish_culture
-	religion_definition = sunni
-}
-
-BIT = {
-	color = map_bitlis
 	color2 = rgb { 144 220 149 }
 
 	culture_definition = kurdish_culture
@@ -265,14 +241,6 @@ DMB = {
 EGL = {
 	color = map_egil
 	color2 = rgb { 220 72 132 }
-
-	culture_definition = kurdish_culture
-	religion_definition = sunni
-}
-
-HKK = {
-	color = map_hakkari
-	color2 = rgb { 144 220 149 }
 
 	culture_definition = kurdish_culture
 	religion_definition = sunni

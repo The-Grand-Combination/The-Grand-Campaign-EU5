@@ -37,8 +37,14 @@ tobacco = {
 
 	demand_add = {
 		nobles = 0.05
-		burghers = 0.005
-		clergy = 0.005
+		burghers = 0.04
+		capitalists = 0.05
+		clergy = 0.04
+		clerks = 0.03
+		laborers = 0.03
+		peasants = 0.04
+		serfs = 0.02
+		soldiers = 0.04
 	}
 
 	origin_in_new_world = yes

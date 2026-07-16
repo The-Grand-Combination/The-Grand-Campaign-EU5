@@ -1,0 +1,267 @@
+﻿
+RAJ = {
+   color = rgb { 190 120 130 }
+   color2 = rgb { 16 41 202 }
+   unit_color0 = rgb { 49 49 49 }
+   unit_color1 = rgb { 49 49 49 }
+   unit_color2 = rgb { 49 49 49 }
+   culture_definition = english
+   difficulty = 5
+}
+
+#Hyderabad
+HYD = {
+	color = rgb { 89 141 140 }
+	color2 = rgb { 16 41 202 }
+	culture_definition = english
+	religion_definition = administrative
+}
+
+#Travancore
+TRV = {
+	color = rgb { 134 166 117 }
+	color2 = rgb { 16 41 202 }
+	culture_definition = english
+	religion_definition = administrative
+}
+
+#Puddokothai
+PDK = {
+	color = rgb { 22 122 122 }
+	color2 = rgb { 16 41 202 }
+	culture_definition = english
+	religion_definition = administrative
+}
+
+#Cochin
+PDU = {
+	color = map_cochin
+	color2 = map_cochin_2
+
+	culture_definition = malayali
+	religion_definition = hindu
+}
+
+#Mysore
+MYS = {
+	color = rgb { 184 193 89 }
+	color2 = map_cochin_2
+
+	culture_definition = malayali
+	religion_definition = hindu
+}
+
+#Jeypore
+JYP = {
+	color = map_cochin
+	color2 = map_cochin_2
+
+	culture_definition = malayali
+	religion_definition = hindu
+}
+
+#Bastar
+BST = {
+	color = rgb { 110 173 129 }
+	color2 = map_bastar_2
+
+	culture_definition = chhattisgarhi
+	religion_definition = hindu
+}
+KUT = {
+	color = map_kutch
+	color2 = map_kutch_2
+
+	culture_definition = gujarati
+	religion_definition = hindu
+
+
+}
+SND = {
+	color = map_sindh
+	color2 = map_sindh_2
+
+	culture_definition = sindhi
+	religion_definition = shia
+}
+
+#Khairpur
+KHP = {
+	color = rgb { 135 104 85 }
+	# rgb { 173 132 109 } for when princely state
+	color2 = map_bastar_2
+
+	culture_definition = chhattisgarhi
+	religion_definition = hindu
+}
+
+#Hyderabad in Sindh
+HYR = {
+	color = rgb { 94 72 59 }
+	color2 = map_bastar_2
+
+	culture_definition = chhattisgarhi
+	religion_definition = hindu
+}
+
+#Mirpurkhas
+MPK = {
+	color = rgb { 112 85 70 }
+	color2 = map_bastar_2
+
+	culture_definition = chhattisgarhi
+	religion_definition = hindu
+}
+
+#Bahawalpur
+BHW = {
+	color = rgb { 156 30 60 }
+	color2 = map_bastar_2
+
+	culture_definition = chhattisgarhi
+	religion_definition = hindu
+}
+
+#Jaisalmer
+JSL = {
+	color = rgb { 99 137 153 }
+	color2 = map_jaisalmer_2
+
+	culture_definition = marwari
+	religion_definition = hindu
+}
+
+#Jodhpur
+JOD = {
+	color = rgb { 104 207 140 }
+	color2 = map_jaisalmer_2
+
+	culture_definition = marwari
+	religion_definition = hindu
+}
+
+#Bikaner
+BIK = {
+	color = rgb { 255 208 170 }
+	color2 = map_jaisalmer_2
+
+	culture_definition = marwari
+	religion_definition = hindu
+}
+
+#Nepal
+NPL = {
+	color = rgb { 137 183 124 }
+	color2 = map_jaisalmer_2
+
+	culture_definition = marwari
+	religion_definition = hindu
+}
+
+#Junagadh
+JNG = {
+	color = map_junagarh
+	color2 = map_junagarh_2
+
+	culture_definition = gujarati
+	religion_definition = hindu
+}
+
+#Halar
+HLR = {
+	color = map_junagarh
+	color2 = map_junagarh_2
+
+	culture_definition = gujarati
+	religion_definition = hindu
+}
+
+#Bhavnagar
+BHV = {
+	color = map_junagarh
+	color2 = map_junagarh_2
+
+	culture_definition = gujarati
+	religion_definition = hindu
+}
+
+#Kathiawar
+KTW = {
+	color = map_kartawi
+	color2 = rgb { 144 220 149 }
+
+	culture_definition = kurdish_culture
+	religion_definition = sunni
+}
+
+#Baroda
+BRD = {
+	color = map_BRD
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = bardi_bank_culture
+	religion_definition = catholic
+}
+
+#Tripura
+TRI = {
+	color = rgb { 208 104 44 }
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = bardi_bank_culture
+	religion_definition = catholic
+}
+
+#Koch Bihar
+KBH = {
+	color = map_BRD
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = bardi_bank_culture
+	religion_definition = catholic
+}
+
+#Assam
+ASM = {
+	color = map_casma
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = bardi_bank_culture
+	religion_definition = catholic
+}
+
+#Garo
+GAR = {
+	color = map_huetar
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = bardi_bank_culture
+	religion_definition = catholic
+}
+
+#Khasi
+KHA = {
+	color = map_BRD
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = bardi_bank_culture
+	religion_definition = catholic
+}
+
+#Jaintia
+JNT = {
+	color = map_JNT
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = khasi_culture
+	religion_definition = hindu
+}
+
+#Kachari
+KCH = {
+	color = rgb { 112 212 112 }
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = bardi_bank_culture
+	religion_definition = catholic
+}

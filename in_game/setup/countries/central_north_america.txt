@@ -11,17 +11,6 @@ HAA = {
 	
 }
 
-#ashalaho-ASH
-ASH = {
-	color = map_ashalaho
-	color2 = rgb { 16 23 42 }
-
-	culture_definition = ashalaho_culture
-	religion_definition = great_plains_shamanism
-
-	
-}
-
 #ashshipite-ASP
 ASP = {
 	color = map_ashshipite

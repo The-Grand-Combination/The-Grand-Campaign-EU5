@@ -1,4 +1,4 @@
-PRU = {
+﻿PRU = {
 	color = map_PRU
 	color2 = rgb { 16 41 202 }
 	

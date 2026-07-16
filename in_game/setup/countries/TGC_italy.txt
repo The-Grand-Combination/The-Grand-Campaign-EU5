@@ -1,4 +1,4 @@
-SRP = {
+﻿SRP = {
 	color = map_SRP_SAV
 	color2 = rgb { 16 41 202 }
 	

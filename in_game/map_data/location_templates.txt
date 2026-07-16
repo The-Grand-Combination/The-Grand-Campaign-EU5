@@ -1537,11 +1537,11 @@ murbach = { topography = mountains vegetation = woods climate = continental reli
 mulhouse = { topography = flatland vegetation = farmland climate = oceanic religion = catholic culture = rhine_alemannic raw_material = fruit}
 london = { topography = flatland vegetation = farmland climate = oceanic religion = catholic culture = english raw_material = wheat natural_harbor_suitability = 0.80}
 harrow = { topography = flatland vegetation = farmland climate = oceanic religion = catholic culture = english raw_material = wheat}
-kingston = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = english raw_material = legumes}
+kingston = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = english raw_material = wheat}
 reigate = { topography = flatland vegetation = woods climate = oceanic religion = catholic culture = english raw_material = wheat}
-guildford = { topography = flatland vegetation = woods climate = oceanic religion = catholic culture = english raw_material = beeswax}
-woking = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = english raw_material = horses}
-southampton = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = english raw_material = wild_game natural_harbor_suitability = 0.75}
+guildford = { topography = flatland vegetation = woods climate = oceanic religion = catholic culture = english raw_material = wheat}
+woking = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = english raw_material = wheat}
+southampton = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = english raw_material = wheat natural_harbor_suitability = 0.75}
 portsmouth = { topography = flatland vegetation = woods climate = oceanic religion = catholic culture = english raw_material = lumber natural_harbor_suitability = 1.00}
 winchester = { topography = flatland vegetation = farmland climate = oceanic religion = catholic culture = english raw_material = fruit}
 lymington = { topography = flatland vegetation = forest climate = oceanic religion = catholic culture = english raw_material = salt natural_harbor_suitability = 0.25}
@@ -3221,7 +3221,7 @@ caltanisetta = { topography = hills vegetation = sparse climate = mediterranean 
 cefalu = { topography = mountains vegetation = woods climate = oceanic religion = catholic culture = sicilian raw_material = lumber natural_harbor_suitability = 0.00}
 sciacca = { topography = flatland vegetation = sparse climate = mediterranean religion = catholic culture = sicilian raw_material = wheat natural_harbor_suitability = 0.00}
 termini = { topography = hills vegetation = farmland climate = mediterranean religion = catholic culture = sicilian raw_material = wheat natural_harbor_suitability = 0.00}
-palermo = { topography = hills vegetation = farmland climate = mediterranean religion = catholic culture = sicilian raw_material = sugar natural_harbor_suitability = 0.25}
+palermo = { topography = hills vegetation = farmland climate = mediterranean religion = catholic culture = sicilian raw_material = sulphur natural_harbor_suitability = 0.25}
 corleone = { topography = hills vegetation = sparse climate = oceanic religion = catholic culture = sicilian raw_material = wine}
 mazara = { modifier = sicily_sulfur_mines topography = flatland vegetation = farmland climate = mediterranean religion = catholic culture = sicilian raw_material = saltpeter natural_harbor_suitability = 0.25}
 salemi = { topography = hills vegetation = sparse climate = mediterranean religion = catholic culture = sicilian raw_material = salt natural_harbor_suitability = 0.00}

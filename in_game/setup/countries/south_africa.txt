@@ -1,10 +1,4 @@
-﻿XHO = {
-	color = map_xhosa
-	color2 = rgb { 16 41 202 }
-
-	culture_definition = xhosa_culture
-	religion_definition = bantu_religion
-}
+﻿
 
 NGU = {
 	color = map_nguni

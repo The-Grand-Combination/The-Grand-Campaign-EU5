@@ -392,14 +392,6 @@ TON = {
 	religion_definition = catholic
 }
 
-#Montfort
-MON = {
-	#color = map_FRA
-	color = rgb { 219 44 44 }
-	culture_definition = french
-	religion_definition = catholic
-}
-
 #Aumale
 AUM = {
 	#color = map_FRA
@@ -432,14 +424,6 @@ ALS = {
 	religion_definition = catholic
 }
 
-#Montbéliard
-MTB = {
-	#color = map_FRA
-	color = rgb { 250 38 38 }
-	culture_definition = franc_comtois
-	religion_definition = catholic
-}
-
 TUL = {
 	color = rgb { 233 78 78 }
 	culture_definition = lorrain
@@ -454,12 +438,6 @@ VDU = {
 
 MTZ = {
 	color = rgb { 136 115 156 }
-	culture_definition = lorrain
-	religion_definition = catholic
-}
-
-SLM = {
-	color = rgb { 238 87 226 }
 	culture_definition = lorrain
 	religion_definition = catholic
 }

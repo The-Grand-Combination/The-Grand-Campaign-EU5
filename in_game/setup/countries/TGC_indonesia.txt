@@ -1,0 +1,6 @@
+﻿VOC = {
+	color = rgb { 215 183 152 }
+	color2 = rgb { 16 41 202 }
+	culture_definition = english
+	religion_definition = administrative
+}

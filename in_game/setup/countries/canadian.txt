@@ -68,31 +68,11 @@ ONG = {
 	
 }
 
-TIO = {
-	color = map_tionontate
-	color2 = rgb { 216 41 202 }
-
-	culture_definition = tionontate_culture
-	religion_definition = iroquoian_totemism
-
-	
-}
-
 OSG = {
 	color = map_osheaga
 	color2 = rgb { 139 21 184 }
 
 	culture_definition = osheaga_culture
-	religion_definition = iroquoian_totemism
-
-	
-}
-
-MAS = {
-	color = map_maisouna
-	color2 = rgb { 91 32 122 }
-
-	culture_definition = maisouna_culture
 	religion_definition = iroquoian_totemism
 
 	

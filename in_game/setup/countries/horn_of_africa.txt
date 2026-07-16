@@ -31,24 +31,7 @@ END = {
 	religion_definition = miaphysite
 }
 
-#Ethiopia - ETH
-ETH = {
-	color = map_ethiopia
-	color2 = green
-	culture_definition = amhara
-	religion_definition = miaphysite
 
-	description_category = military
-	difficulty = 3
-}
-
-#Gojjam - GJJ
-GJJ = {
-	color = map_gojjam
-	color2 = green
-	culture_definition = amhara
-	religion_definition = miaphysite
-}
 
 #Medri Bahri - MED
 MED = {
@@ -91,13 +74,6 @@ ABB = {
 	religion_definition = sunni
 }
 
-#Aussa - AWS
-AWS = {
-	color = map_aussa
-	color2 = beige
-	culture_definition = afar_culture
-	religion_definition = sunni 
-}
 
 #Bale - BLE
 BLE = {
@@ -155,26 +131,10 @@ HRL = {
 	religion_definition = sunni
 }
 
-#Shewa - SOA
-SOA = {
-	color = map_shewa
-	color2 = beige
-	culture_definition = afar_culture
-	religion_definition = sunni
-}
-
 #Ajuran - AJU
 AJU = {
 	color = map_ajuran
 	color2 = red
-	culture_definition = somali_culture
-	religion_definition = sunni
-}
-
-#Geledi - GLE
-GLE = {
-	color = map_geledi
-	color2 = purple
 	culture_definition = somali_culture
 	religion_definition = sunni
 }

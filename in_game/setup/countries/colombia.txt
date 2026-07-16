@@ -124,15 +124,6 @@ COY = {
 	religion_definition = nacuco_religion
 }
 
-#Tama - TAM
-TAM = {
-	color = map_tama
-	color2 = rgb { 16 41 202 }
-
-	culture_definition = tama_culture
-	religion_definition = yage_religion
-}
-
 #Calima - CIM
 CIM = {
 	color = map_calima

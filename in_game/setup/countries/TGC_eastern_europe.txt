@@ -1,4 +1,4 @@
-# Poland
+﻿# Poland
 CPL = {
 	color = map_CPL_dominion0
 	color2 = rgb { 16 41 202 }

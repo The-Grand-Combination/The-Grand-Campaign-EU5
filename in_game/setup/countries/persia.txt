@@ -63,13 +63,6 @@ MIH = { #Mihrabanids
 	religion_definition = sunni
 }
 
-KHN = { #Kharan
-	color = map_KHN
-	color2 = rgb { 16 41 202 }
-
-	culture_definition = baloch_culture
-	religion_definition = sunni
-}
 
 SHB = { #Shabankara
 	color = map_SHB
@@ -137,14 +130,6 @@ MZN = { #Tabaristan
 	religion_definition = shia
 }
 
-MKR = { #Makran
-	color = map_MKR
-	color2 = rgb { 16 41 202 }
-
-	culture_definition = baloch_culture
-	religion_definition = sunni
-}
-
 BMP = { #Bampur
 	color = map_BMP
 	color2 = rgb { 16 41 202 }
@@ -166,14 +151,6 @@ KLW = { #Kolwa
 	color2 = rgb { 16 41 202 }
 
 	culture_definition = baloch_culture
-	religion_definition = sunni
-}
-
-KLA = { #Kalat
-	color = map_KLA
-	color2 = rgb { 16 41 202 }
-
-	culture_definition = brahui_culture
 	religion_definition = sunni
 }
 

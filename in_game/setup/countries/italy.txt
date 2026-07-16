@@ -1,10 +1,4 @@
-﻿ABA	= { #alba
-color = rgb { 255 71 255 }
-
-culture_definition = piedmontese
-religion_definition = catholic
-
-}
+﻿
 
 ANC	= { #ancona
 	color = rgb { 165 71 80 }
@@ -69,15 +63,6 @@ BLG	= { #bologna
 color = rgb { 182 217 0 }
 
 culture_definition = emilian
-religion_definition = catholic
-
-}
-
-
-BRS	= { #brescia
-color = rgb { 80 0 106 }
-
-culture_definition = lombard
 religion_definition = catholic
 
 }
@@ -478,16 +463,6 @@ TOR	= { #torres
 }
 
 
-TRV	= { #treviso
-color = rgb { 217 40 40 }
-
-culture_definition = venetian
-religion_definition = catholic
-
-
-}
-
-
 TTE	= { #trieste
 color = rgb { 100 40 50 }
 
@@ -542,20 +517,4 @@ culture_definition = tuscan
 religion_definition = catholic
 
 
-}
-
-PRZ = { #Peruzzi
-	color = map_PRZ
-	color2 = rgb { 16 41 202 }
-
-	culture_definition = peruzzi_bank_culture
-	religion_definition = catholic
-}
-
-BRD = { #Bardi
-	color = map_BRD
-	color2 = rgb { 16 41 202 }
-
-	culture_definition = bardi_bank_culture
-	religion_definition = catholic
 }

@@ -1,0 +1,566 @@
+﻿#Douala
+DOU = {
+   color = rgb { 70  145  179 }
+   color2 = green
+   culture_definition = amhara
+   religion_definition = miaphysite
+}
+
+#Orungu
+ORU = {
+   color = rgb { 50 50 153 }
+   color2 = green
+   culture_definition = amhara
+   religion_definition = miaphysite
+}
+
+#Loango
+LOA = {
+   color = rgb { 155 148 0 }
+   color2 = green
+   culture_definition = amhara
+   religion_definition = miaphysite
+}
+
+#Kakongo
+KKN = {
+   color = rgb { 101 68 68 }
+   color2 = green
+   culture_definition = amhara
+   religion_definition = miaphysite
+}
+
+#Tio
+TIO = {
+	color = rgb { 170 206 162 }
+	color2 = rgb { 216 41 202 }
+
+	culture_definition = tionontate_culture
+	religion_definition = iroquoian_totemism
+}
+
+#Kongo
+KON = {
+   color = rgb { 87 145 62 }
+   color2 = green
+   culture_definition = amhara
+   religion_definition = miaphysite
+}
+
+#Yaka - YAK
+YAK = {
+	color = rgb { 150 150 132 }
+	color2 = black
+
+	culture_definition = yaka
+	religion_definition = bantu_religion
+}
+
+#Matamba
+MTB = {
+	color = rgb { 57 190 101 }
+	culture_definition = franc_comtois
+	religion_definition = catholic
+}
+
+#Kassanje
+KSJ = {
+	color = rgb { 244 119 66 }
+	color2 = black
+
+	culture_definition = yaka
+	religion_definition = bantu_religion
+}
+
+#Lunda
+LND = {
+	color = rgb { 142 65 188 }
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = lunda
+	religion_definition = bantu_religion
+}
+
+#Luba
+LBA = {
+	color = rgb { 87 45 69 }
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = luba
+	religion_definition = bantu_religion
+}
+
+#Kazembe
+KZB = {
+	color = rgb { 200 191 231 }
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = luba
+	religion_definition = bantu_religion
+}
+
+#Chokwe
+CHO = {
+	color = rgb { 166 72 57 }
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = chokwe
+	religion_definition = bantu_religion
+}
+
+#Mbunda
+MBU = {
+	color = rgb { 188 123 103 }
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = chokwe
+	religion_definition = bantu_religion
+}
+
+#Barotse
+BRS	= {
+	color = rgb { 146 139 40 }
+	culture_definition = lombard
+	religion_definition = catholic
+}
+
+#Wanga - WNA
+WNA = {
+	color = rgb { 49 175 191 }
+	color2 = black
+
+	culture_definition = luhya_culture
+	religion_definition = bantu_religion
+}
+
+#Bunyoro - BNY
+BNY = {
+	color = rgb { 119 153 43 }
+	color2 = black
+
+	culture_definition = rutara_culture
+	religion_definition = nyasaye_religion
+}
+
+#Buganda - BUG
+BUG = {
+	color = rgb { 23 114 143 }
+	color2 = black
+
+	culture_definition = baganda_culture
+	religion_definition = cwezi_religion
+}
+
+#Busoga - BSG (Formable)
+BSG = {
+	color = rgb { 67 122 140 }
+	color2 = black
+
+	culture_definition = rutara_culture
+	religion_definition = nyasaye_religion
+}
+
+#Nkore - NKO (Formable)
+NKO = {
+	color = rgb { 23 214 143 }
+	color2 = black
+
+	culture_definition = rutara_culture
+	religion_definition = bantu_religion
+}
+
+#Rwanda - RWA (Formable)
+RWA = {
+	color = rgb { 219 83 106 }
+	color2 = black
+
+	culture_definition = rwanda_culture
+	religion_definition = bantu_religion
+}
+
+#Karagwe - KRW (Formable)
+KRW  = {
+	color = rgb { 48 177 169 }
+	color2 = black
+
+	culture_definition = nyamwezi_culture
+	religion_definition = bantu_religion
+}
+
+#Buha - UBH (Formable)
+UBH = {
+	color = rgb { 22 92 22 }
+	color2 = black
+
+	culture_definition = rwanda_culture
+	religion_definition = bantu_religion
+}
+
+#Burundi - BUU (Formable)
+BUU  = {
+	color = rgb { 121 229 215 }
+	color2 = black
+
+	culture_definition = rwanda_culture
+	religion_definition = bantu_religion
+}
+
+#Buhaya
+BHY  = {
+	color = rgb { 23  14  143 }
+	color2 = black
+
+	culture_definition = rwanda_culture
+	religion_definition = bantu_religion
+}
+
+#Ussuwi
+USU  = {
+	color = rgb { 23  114  243 }
+	color2 = black
+
+	culture_definition = rwanda_culture
+	religion_definition = bantu_religion
+}
+
+#Alur
+ALR = {
+	color = rgb { 222 226 104 }
+	color2 = black
+
+	culture_definition = rwanda_culture
+	religion_definition = bantu_religion
+}
+
+#Pate Sultanate - PTE
+PTE = {
+	color = rgb { 157 200 42 }
+	color2 = black
+
+	culture_definition = yemeni_culture
+	religion_definition = sunni
+}
+
+#Zanzibar - ZZB  (Vassal of Kilwa)
+ZZB = {
+	color = rgb { 235 254 214 }
+	color2 = black
+
+	culture_definition = swahili_culture
+	religion_definition = sunni
+}
+
+#Masai - MAA
+MAA  = {
+	color = rgb { 146 20 50 }
+	color2 = black
+
+	culture_definition = maasai_culture
+	religion_definition = maasai_religion
+}
+
+#Imerina - MIR (Formable)
+MIR = {
+	color = rgb { 117 150 120 }
+	color2 = black
+
+	culture_definition = merina_culture
+	religion_definition = fomba_gasy_religion
+}
+
+#Laikipia
+LKP = {
+	color = rgb { 145 114 95 }
+	color2 = black
+
+	culture_definition = merina_culture
+	religion_definition = fomba_gasy_religion
+}
+
+#Mazrui
+MZU = {
+	color = rgb { 235 254 214 }
+	color2 = black
+
+	culture_definition = merina_culture
+	religion_definition = fomba_gasy_religion
+}
+
+#Usambara
+USB = {
+	color = rgb { 252 221 9 }
+	color2 = black
+
+	culture_definition = merina_culture
+	religion_definition = fomba_gasy_religion
+}
+
+#Tabora
+TBR = {
+	color = rgb { 122 192 122 }
+	color2 = black
+
+	culture_definition = merina_culture
+	religion_definition = fomba_gasy_religion
+}
+
+#Ujiji
+UJI = {
+	color = rgb { 151 110 0 }
+	color2 = black
+
+	culture_definition = merina_culture
+	religion_definition = fomba_gasy_religion
+}
+
+#Ufipa
+UFP = {
+	color = rgb { 90 190 10 }
+	color2 = black
+
+	culture_definition = merina_culture
+	religion_definition = fomba_gasy_religion
+}
+
+#Bemba
+BEM = {
+	color = rgb { 146 155 156 }
+	color2 = black
+
+	culture_definition = merina_culture
+	religion_definition = fomba_gasy_religion
+}
+
+#Usangu
+USG = {
+	color = rgb { 246 134 59 }
+	color2 = black
+
+	culture_definition = merina_culture
+	religion_definition = fomba_gasy_religion
+}
+
+#Uhehe
+UHH = {
+	color = rgb { 194 99 182 }
+	color2 = black
+
+	culture_definition = merina_culture
+	religion_definition = fomba_gasy_religion
+}
+
+#Angoche - AGH
+AGH = {
+	color = rgb { 84 96 204 }
+	color2 = black
+
+	culture_definition = swahili_culture
+	religion_definition = sunni
+}
+
+#Maravi - MRA (Stateless)
+MRA = {
+	color = rgb { 0 43 127 }
+	color2 = black
+
+	culture_definition = chewa_culture
+	religion_definition = bantu_religion
+}
+
+#Manyika - MNY (Society of Pops)
+MNY = {
+	color = rgb { 160 220 30 }
+	color2 = black
+
+	culture_definition = shona_culture
+	religion_definition = bantu_religion
+}
+
+#Boina - BOI (Formable)
+BOI = {
+	color = rgb { 255 198 255 }
+	color2 = black
+
+	culture_definition = vezo_culture
+	religion_definition = fomba_gasy_religion
+}
+
+#Antankarana - ANK (Stateless, Revolter)
+ANK = {
+	color = rgb { 23 113 143 }
+	color2 = black
+
+	culture_definition = antankarana_culture
+	religion_definition = sunni
+}
+
+#Xhosa
+XHO = {
+	color = rgb { 49 58 156 }
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = xhosa_culture
+	religion_definition = bantu_religion
+}
+
+#Batonga
+BTO = {
+	color = rgb { 16 69 156 }
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = xhosa_culture
+	religion_definition = bantu_religion
+}
+
+#baTawana
+BTW = {
+	color = rgb { 89 141 140 }
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = xhosa_culture
+	religion_definition = bantu_religion
+}
+
+#Rozvi
+RZW = {
+	color = rgb { 244 143 66 }
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = xhosa_culture
+	religion_definition = bantu_religion
+}
+
+#Chidima
+CDM = {
+	color = rgb { 223 237 67 }
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = xhosa_culture
+	religion_definition = bantu_religion
+}
+
+#Prazos
+PRZ = {
+	color = rgb { 57 130 101 }
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = peruzzi_bank_culture
+	religion_definition = catholic
+}
+
+#Makololo
+MLL = {
+	color = rgb { 144 17 160 }
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = catalan
+	religion_definition = catholic
+}
+
+#Zwangendaba
+ZWG = {
+	color = rgb { 166 189 199 }
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = xhosa_culture
+	religion_definition = bantu_religion
+}
+
+#Gaza
+GZA = {
+	color = rgb { 165 43 18 }
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = xhosa_culture
+	religion_definition = bantu_religion
+}
+
+#Bapedi
+BPD = {
+	color = rgb { 121 229 215 }
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = xhosa_culture
+	religion_definition = bantu_religion
+}
+
+#Bamangwato
+BMG = {
+	color = rgb { 88 148 255 }
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = xhosa_culture
+	religion_definition = bantu_religion
+}
+
+#Swazi
+SWZ = {
+	color = rgb { 41 89 174 }
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = xhosa_culture
+	religion_definition = bantu_religion
+}
+
+#Mabhudu
+MHD = {
+	color = rgb { 165 143 218 }
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = xhosa_culture
+	religion_definition = bantu_religion
+}
+
+#Zulu
+ZUL = {
+	color = rgb { 204 186 201 }
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = xhosa_culture
+	religion_definition = bantu_religion
+}
+
+#Kholokoe
+KHL = {
+	color = rgb { 84 85 40 }
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = xhosa_culture
+	religion_definition = bantu_religion
+}
+
+#Mthwakazi
+MTH = {
+	color = rgb { 220 202 96 }
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = xhosa_culture
+	religion_definition = bantu_religion
+}
+
+#Griqua
+GRQ = {
+	color = rgb { 139 113 74 }
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = xhosa_culture
+	religion_definition = bantu_religion
+}
+
+#Basotho
+BAS = {
+	color = rgb { 147 82 173 }
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = xhosa_culture
+	religion_definition = bantu_religion
+}
+
+#Mpondo
+MPN = {
+	color = rgb { 102 204 255 }
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = xhosa_culture
+	religion_definition = bantu_religion
+}

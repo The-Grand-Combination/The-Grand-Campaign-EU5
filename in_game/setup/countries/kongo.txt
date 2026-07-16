@@ -8,12 +8,17 @@ VUN = {
 }
 
 #Nsudi
-NSU = {
-	color = map_NSU
-	color2 = rgb { 16 41 202 }
 
-	culture_definition = nsudi
-	religion_definition = bantu_religion
+#Nsudi
+NSU = {
+   color = map_NSU
+   color2 = rgb { 16 41 202 }
+   unit_color0 = rgb { 49 49 49 }
+   unit_color1 = rgb { 49 49 49 }
+   unit_color2 = rgb { 49 49 49 }
+   culture_definition = nsudi
+   religion_definition = bantu_religion
+   difficulty = 7
 }
 
 #Maguela
@@ -35,12 +40,17 @@ VNA = {
 }
 
 #Mbata
-MBT = {
-	color = map_MBT
-	color2 = rgb { 16 41 202 }
 
-	culture_definition = kakongo
-	religion_definition = bantu_religion
+#Mbata
+MBT = {
+   color = map_MBT
+   color2 = rgb { 16 41 202 }
+   unit_color0 = rgb { 49 49 49 }
+   unit_color1 = rgb { 49 49 49 }
+   unit_color2 = rgb { 49 49 49 }
+   culture_definition = kakongo
+   religion_definition = bantu_religion
+   difficulty = 7
 }
 
 SOY = {
@@ -51,20 +61,16 @@ SOY = {
 	religion_definition = bantu_religion
 }
 
+
 MOM = {
-	color = map_MOM
-	color2 = rgb { 16 41 202 }
-
-	culture_definition = solongo
-	religion_definition = bantu_religion
-}
-
-CHO = {
-	color = map_CHO
-	color2 = rgb { 16 41 202 }
-
-	culture_definition = chokwe
-	religion_definition = bantu_religion
+   color = map_MOM
+   color2 = rgb { 16 41 202 }
+   unit_color0 = rgb { 49 49 49 }
+   unit_color1 = rgb { 49 49 49 }
+   unit_color2 = rgb { 49 49 49 }
+   culture_definition = solongo
+   religion_definition = bantu_religion
+   difficulty = 7
 }
 
 OVI = {
@@ -75,21 +81,7 @@ OVI = {
 	religion_definition = bantu_religion
 }
 
-LND = {
-	color = map_LND
-	color2 = rgb { 16 41 202 }
 
-	culture_definition = lunda
-	religion_definition = bantu_religion
-}
-
-LBA = {
-	color = map_LBA
-	color2 = rgb { 16 41 202 }
-
-	culture_definition = luba
-	religion_definition = bantu_religion
-}
 
 KUB = {
 	color = map_KUB
@@ -105,13 +97,5 @@ LEG = {
 
 	culture_definition = lega
 	religion_definition = bantu_religion
-}
-
-SIK = {
-	color = map_shilluk
-	color2 = rgb { 16 41 202 }
-
-	culture_definition = shilluk_culture
-	religion_definition = muonyjang_religion
 }
 

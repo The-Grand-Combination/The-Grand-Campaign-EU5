@@ -1,13 +1,5 @@
-﻿MOR = {
-	color = map_morocco
-	color2 = rgb { 191  110  62 }  #same as in EU4
-	
-	culture_definition = moroccan 
-	religion_definition = sunni
+﻿
 
-	description_category = military
-	difficulty = 3
-}
 
 FEZ = {
 	color = map_sanhaja
@@ -62,28 +54,18 @@ SOS = {
 	religion_definition = sunni
 }
 
+
+
+
 TLE = {
-	color = map_tlemcen
-	color2 = rgb { 40 110 140 }  #same as in EU4
-	
-	culture_definition = zenati
-	religion_definition = sunni
-}
-
-ALG = {
-	color = map_algiers
-	color2 = rgb { 230  225  110 }  #same as in EU4
-	
-	culture_definition = algerian
-	religion_definition = sunni
-}
-
-TGT = {
-	color = map_TGT
-	color2 = rgb { 90 140 190 }  #same as in EU4
-	
-	culture_definition = mozabite
-	religion_definition = ibadi
+   color = map_tlemcen
+   color2 = rgb { 40 110 140 } #same as in EU4
+   unit_color0 = rgb { 49 49 49 }
+   unit_color1 = rgb { 49 49 49 }
+   unit_color2 = rgb { 49 49 49 }
+   culture_definition = zenati
+   religion_definition = sunni
+   difficulty = 8
 }
 
 KUK = { #new tag, Kuku country
@@ -108,13 +90,6 @@ MZB = {
 	religion_definition = ibadi
 }
 
-TUN = {
-	color = map_tunis
-	color2 = rgb { 146  134  57 }  #same as in EU4
-	
-	culture_definition = tunisian
-	religion_definition = sunni
-}
 
 DJE = { #new tag, former Djerid country
 	color = rgb { 255 133 15 } #former GHD (Djerid) EU4 color 

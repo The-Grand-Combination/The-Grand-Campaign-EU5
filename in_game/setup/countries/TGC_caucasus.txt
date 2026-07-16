@@ -1,4 +1,4 @@
-ABK = { #Abkhazia
+﻿ABK = { #Abkhazia
 	color = map_ABK
 	color2 = rgb { 16 41 202 }
 

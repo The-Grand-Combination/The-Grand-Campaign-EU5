@@ -1,106 +1,156 @@
-﻿NJD = {
-	color = map_sharkha
-	color2 = beige
-	culture_definition = gurage
-	religion_definition = sunni
+﻿
+NJD = {
+   color = rgb { 255 251 198 }
+   color2 = beige
+   unit_color0 = rgb { 49 49 49 }
+   unit_color1 = rgb { 49 49 49 }
+   unit_color2 = rgb { 49 49 49 }
+   culture_definition = gurage
+   religion_definition = sunni
 }
+
+
 
 BNK = {
-	color = map_sharkha
-	color2 = beige
-	culture_definition = gurage
-	religion_definition = sunni
+   color = rgb { 151 110 0 }
+   color2 = beige
+   unit_color0 = rgb { 49 49 49 }
+   unit_color1 = rgb { 49 49 49 }
+   unit_color2 = rgb { 49 49 49 }
+   culture_definition = gurage
+   religion_definition = sunni
 }
+
 
 HAL = {
-	color = rgb { 123 34 46 }
-
-	culture_definition = halychian_culture
-	religion_definition = orthodox
-
-	description_category = military
-	difficulty = 4	
+   color = rgb { 153 148 87 }
+   color2 = rgb { 49 49 49 }
+   unit_color0 = rgb { 49 49 49 }
+   unit_color1 = rgb { 49 49 49 }
+   unit_color2 = rgb { 49 49 49 }
+   culture_definition = halychian_culture
+   religion_definition = orthodox
+   description_category = military
+   difficulty = 4
 }
+
 
 ASR = {
-	color = map_ASR
-	color2 = rgb { 16 41 202 }
-
-	culture_definition = mazanderani_culture
-	religion_definition = shia
+   color = rgb { 101 207 119 }
+   color2 = rgb { 16 41 202 }
+   unit_color0 = rgb { 49 49 49 }
+   unit_color1 = rgb { 49 49 49 }
+   unit_color2 = rgb { 49 49 49 }
+   culture_definition = mazanderani_culture
+   religion_definition = shia
 }
+
 
 MHR = {
-	color = map_ASR
-	color2 = rgb { 16 41 202 }
-
-	culture_definition = mazanderani_culture
-	religion_definition = shia
+   color = rgb { 47 140 0 }
+   color2 = rgb { 16 41 202 }
+   unit_color0 = rgb { 49 49 49 }
+   unit_color1 = rgb { 49 49 49 }
+   unit_color2 = rgb { 49 49 49 }
+   culture_definition = mazanderani_culture
+   religion_definition = shia
 }
+
 
 GRM = {
-	color = map_germiyanids
-	color2 = rgb { 200 8 21 } #same as in EU4
-
-	culture_definition = turkish_culture
-	religion_definition = sunni
+   color = rgb { 204 191 6 }
+   color2 = rgb { 200 8 21 } #same as in EU4
+   unit_color0 = rgb { 49 49 49 }
+   unit_color1 = rgb { 49 49 49 }
+   unit_color2 = rgb { 49 49 49 }
+   culture_definition = turkish_culture
+   religion_definition = sunni
 }
+
 
 KSD = {
-	color = map_germiyanids
-	color2 = rgb { 200 8 21 } #same as in EU4
-
-	culture_definition = turkish_culture
-	religion_definition = sunni
+   color = rgb { 151 0 0 }
+   color2 = rgb { 200 8 21 } #same as in EU4
+   unit_color0 = rgb { 49 49 49 }
+   unit_color1 = rgb { 49 49 49 }
+   unit_color2 = rgb { 49 49 49 }
+   culture_definition = turkish_culture
+   religion_definition = sunni
 }
+
 
 NJR = {
-	color = map_germiyanids
-	color2 = rgb { 200 8 21 } #same as in EU4
-
-	culture_definition = turkish_culture
-	religion_definition = sunni
+   color = rgb { 110 173 129 }
+   color2 = rgb { 200 8 21 } #same as in EU4
+   unit_color0 = rgb { 49 49 49 }
+   unit_color1 = rgb { 49 49 49 }
+   unit_color2 = rgb { 49 49 49 }
+   culture_definition = turkish_culture
+   religion_definition = sunni
 }
+
 
 ARS = {
-	color = rgb { 227 136 216 }
-
-	culture_definition = picard
-	religion_definition = catholic
+   color = rgb { 164 94 16 }
+   color2 = rgb { 49 49 49 }
+   unit_color0 = rgb { 49 49 49 }
+   unit_color1 = rgb { 49 49 49 }
+   unit_color2 = rgb { 49 49 49 }
+   culture_definition = picard
+   religion_definition = catholic
 }
+
 
 ZYD = {
-	color = rgb { 227 136 216 }
-
-	culture_definition = picard
-	religion_definition = catholic
+   color = rgb { 98 49 0 }
+   color2 = rgb { 49 49 49 }
+   unit_color0 = rgb { 49 49 49 }
+   unit_color1 = rgb { 49 49 49 }
+   unit_color2 = rgb { 49 49 49 }
+   culture_definition = picard
+   religion_definition = catholic
 }
+
 
 WHD = {
-	color = rgb { 227 136 216 }
-
-	culture_definition = picard
-	religion_definition = catholic
+   color = rgb { 215 128 203 }
+   color2 = rgb { 49 49 49 }
+   unit_color0 = rgb { 49 49 49 }
+   unit_color1 = rgb { 49 49 49 }
+   unit_color2 = rgb { 49 49 49 }
+   culture_definition = picard
+   religion_definition = catholic
 }
+
 
 ALQ = {
-	color = rgb { 227 136 216 }
-
-	culture_definition = picard
-	religion_definition = catholic
+   color = rgb { 79 89 182 }
+   color2 = rgb { 49 49 49 }
+   unit_color0 = rgb { 49 49 49 }
+   unit_color1 = rgb { 49 49 49 }
+   unit_color2 = rgb { 49 49 49 }
+   culture_definition = picard
+   religion_definition = catholic
 }
+
 
 FDH = {
-	color = rgb { 227 136 216 }
-
-	culture_definition = picard
-	religion_definition = catholic
+   color = rgb { 15 128 103 }
+   color2 = rgb { 49 49 49 }
+   unit_color0 = rgb { 49 49 49 }
+   unit_color1 = rgb { 49 49 49 }
+   unit_color2 = rgb { 49 49 49 }
+   culture_definition = picard
+   religion_definition = catholic
 }
 
-LHJ = { #Lahijan
-	color = map_lahijan
-	color2 = rgb { 16 41 202 }
 
-	culture_definition = gilak_culture
-	religion_definition = sunni
+LHJ = { #Lahijan
+   color = rgb { 255 151 151 }
+   color2 = rgb { 16 41 202 }
+   unit_color0 = rgb { 49 49 49 }
+   unit_color1 = rgb { 49 49 49 }
+   unit_color2 = rgb { 49 49 49 }
+   culture_definition = gilak_culture
+   religion_definition = sunni
 }

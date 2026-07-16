@@ -157,14 +157,6 @@ CNN = {
 	religion_definition = catholic
 }
 
-MTH = {
-	color = hsv360 { 193 78 92 }
-	color2 = rgb { 16 41 202 }
-
-	culture_definition = irish
-	religion_definition = catholic
-}
-
 ANN = {
 	color = hsv360 { 225 50 67 }
 	color2 = rgb { 16 41 202 }

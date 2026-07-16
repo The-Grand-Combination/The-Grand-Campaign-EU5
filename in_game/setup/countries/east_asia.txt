@@ -2213,15 +2213,6 @@ NCN = { #Nangchen
 
 }
 
-GNJ = { #Gonjo
-	color = map_GNJ
-	color2 = rgb { 16 41 202 }
-
-	culture_definition = khampa_culture
-	religion_definition = tibetan_buddhism
-
-}
-
 BTG = { #Batang
 	color = map_BTG
 	color2 = rgb { 16 41 202 }

@@ -25,12 +25,15 @@ OMA = { #Oman
 	difficulty = 4
 }
 
-MEC = { #Mecca
-	color = map_hijazi
-	color2 = rgb { 16 41 202 }
 
-	culture_definition = hijazi_culture
-	religion_definition = shia
+MEC = { #Mecca
+   color = rgb { 201 107 119 }
+   color2 = rgb { 16 41 202 }
+   unit_color0 = rgb { 49 49 49 }
+   unit_color1 = rgb { 49 49 49 }
+   unit_color2 = rgb { 49 49 49 }
+   culture_definition = hijazi_culture
+   religion_definition = shia
 }
 
 SHM = { #Shammar
@@ -94,14 +97,6 @@ HUT = { #Hutaym
 	color2 = rgb { 16 41 202 }
 
 	culture_definition = najdi_culture
-	religion_definition = sunni
-}
-
-HRB = { #Harb
-	color = map_HRB
-	color2 = rgb { 16 41 202 }
-
-	culture_definition = hijazi_culture
 	religion_definition = sunni
 }
 
@@ -234,10 +229,13 @@ ZIB = { #Zi'b
 	religion_definition = sunni
 }
 
-DHF = { #Dhofar
-	color = map_DHF
-	color2 = rgb { 16 41 202 }
 
-	culture_definition = dhofari_culture
-	religion_definition = sunni
+DHF = { #Dhofar
+   color = rgb { 188 123 95 }
+   color2 = rgb { 16 41 202 }
+   unit_color0 = rgb { 49 49 49 }
+   unit_color1 = rgb { 49 49 49 }
+   unit_color2 = rgb { 49 49 49 }
+   culture_definition = dhofari_culture
+   religion_definition = sunni
 }

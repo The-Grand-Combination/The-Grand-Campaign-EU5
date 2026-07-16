@@ -1,4 +1,4 @@
-NED = {
+﻿NED = {
 	color = map_HOL
 	color2 = rgb { 16 41 202 }
 	

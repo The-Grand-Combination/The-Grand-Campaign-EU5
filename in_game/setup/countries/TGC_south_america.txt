@@ -1,4 +1,4 @@
-COL = {
+﻿COL = {
 	color = map_COL
 	color2 = rgb { 16 41 202 }
 	

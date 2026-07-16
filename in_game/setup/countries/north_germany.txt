@@ -214,13 +214,6 @@ GSW = {
 	religion_definition = catholic
 }
 
-WOL = {
-	color = rgb { 235 178 18 }
-
-	culture_definition = western_pomeranian
-	religion_definition = catholic
-}
-
 KMM = {
 	color = rgb { 190 15 15 }
 
@@ -286,13 +279,6 @@ QUB = {
 
 WMA = {
 	color = rgb { 220 94 40 }
-
-	culture_definition = saxon
-	religion_definition = catholic
-}
-
-SWZ = {
-	color = hsv { 0.14 0.38 0.38 }
 
 	culture_definition = saxon
 	religion_definition = catholic
@@ -372,13 +358,6 @@ WTZ = {
 	color = rgb { 180 22 127 }
 
 	culture_definition = rhine_franconian
-	religion_definition = catholic
-}
-
-TRI = {
-	color = rgb { 208 104 44 }
-
-	culture_definition = moselle_franconian
 	religion_definition = catholic
 }
 

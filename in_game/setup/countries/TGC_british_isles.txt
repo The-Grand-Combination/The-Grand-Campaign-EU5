@@ -1,4 +1,4 @@
-GBI = {
+﻿GBI = {
 	color = map_GBR_GBI
 	color2 = rgb { 16 41 202 }
 	

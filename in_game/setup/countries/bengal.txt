@@ -46,14 +46,6 @@ CUT = { #Chutia
 	religion_definition = chutia_religion
 }
 
-JNT = { #Jaintia
-	color = map_JNT
-	color2 = rgb { 16 41 202 }
-
-	culture_definition = khasi_culture
-	religion_definition = hindu
-}
-
 TRF = { #Taraf
 	color = map_TRF
 	color2 = rgb { 16 41 202 }
@@ -166,12 +158,16 @@ JBL = { #Jubbal
 	religion_definition = hindu
 }
 
-LWA = { #Limbuwan
-	color = map_LWA
-	color2 = rgb { 16 41 202 }
 
-	culture_definition = limbu_culture
-	religion_definition = hindu
+LWA = { #Limbuwan
+   color = map_LWA
+   color2 = rgb { 16 41 202 }
+   unit_color0 = rgb { 49 49 49 }
+   unit_color1 = rgb { 49 49 49 }
+   unit_color2 = rgb { 49 49 49 }
+   culture_definition = limbu_culture
+   religion_definition = hindu
+   difficulty = -1
 }
 
 CDD = { #Chaundandi

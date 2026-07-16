@@ -334,15 +334,6 @@ XAU = {
 	religion_definition = inti
 }
 
-#Casma - ASM
-ASM = {
-	color = map_casma
-	color2 = rgb { 16 41 202 }
-
-	culture_definition = casma_culture
-	religion_definition = inti
-}
-
 #Collique - CLQ
 CLQ = {
 	color = map_collique
@@ -584,15 +575,6 @@ CNO = {
 
 	culture_definition = chono_culture
 	religion_definition = umina_religion
-}
-
-#Baure
-BAU = {
-	color = map_baure
-	color2 = rgb { 16 41 202 }
-
-	culture_definition = baure_culture
-	religion_definition = zemi_religion
 }
 
 #Allentiac

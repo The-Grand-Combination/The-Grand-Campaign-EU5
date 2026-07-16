@@ -10,15 +10,6 @@ ZAN = {
 	difficulty = 3
 }
 
-#Pate Sultanate - PTE
-PTE = {
-	color = map_pate
-	color2 = black
-
-	culture_definition = yemeni_culture
-	religion_definition = sunni
-}
-
 #Malindi Sultanate - MLI (Vassal of Kilwa)
 MLI = { 
 	color = map_malindi
@@ -136,15 +127,6 @@ CBD = {
 	religion_definition = bantu_religion
 }
 
-#Yaka - YAK
-YAK = {
-	color = map_yaka
-	color2 = black
-
-	culture_definition = yaka
-	religion_definition = bantu_religion
-}
-
 #CEW - Chewa
 CEW = {
 	color = color_culture_chewa
@@ -163,15 +145,6 @@ PEM = {
 	religion_definition = sunni
 }
 
-#Zanzibar - ZZB  (Vassal of Kilwa)
-ZZB = {
-	color = map_zanzibar
-	color2 = black
-
-	culture_definition = swahili_culture
-	religion_definition = sunni
-}
-
 #Bambao Sultanate - BMB  (Vassal of Kilwa)
 BMB = {
 	color = map_bambao
@@ -184,15 +157,6 @@ BMB = {
 #Mozambique Sultanate - MOZ  (Vassal of Kilwa)
 MOZ = {
 	color = map_mozambique
-	color2 = black
-
-	culture_definition = swahili_culture
-	religion_definition = sunni
-}
-
-#Angoche - AGH
-AGH = {
-	color = map_angoche
 	color2 = black
 
 	culture_definition = swahili_culture
@@ -247,15 +211,6 @@ TSG = {
 	religion_definition = bantu_religion
 }
 
-#Manyika - MNY (Society of Pops)
-MNY = {
-	color = map_manyika
-	color2 = black
-
-	culture_definition = shona_culture
-	religion_definition = bantu_religion
-}
-
 #Zezuru - ZEZ (Society of Pops)
 ZEZ = {
 	color = map_zezuru
@@ -283,15 +238,6 @@ TBK = {
 	religion_definition = bantu_religion
 }
 
-#Maravi - MRA (Stateless)
-MRA = {
-	color = map_maravi
-	color2 = black
-
-	culture_definition = chewa_culture
-	religion_definition = bantu_religion
-}
-
 #Lundu - LDU (Revolter, Stateless)
 LDU= {
 	color = map_lundu
@@ -316,15 +262,6 @@ VAZ = {
 	color2 = black
 
 	culture_definition = vazimba_culture
-	religion_definition = fomba_gasy_religion
-}
-
-#Imerina - MIR (Formable)
-MIR = {
-	color = map_imerina
-	color2 = black
-
-	culture_definition = merina_culture
 	religion_definition = fomba_gasy_religion
 }
 
@@ -445,24 +382,6 @@ MNB = {
 	religion_definition = fomba_gasy_religion
 }
 
-#Boina - BOI (Formable)
-BOI = {
-	color = map_boina
-	color2 = black
-
-	culture_definition = vezo_culture
-	religion_definition = fomba_gasy_religion
-}
-
-#Antankarana - ANK (Stateless, Revolter)
-ANK = {
-	color = map_antankarana
-	color2 = black
-
-	culture_definition = antankarana_culture
-	religion_definition = sunni
-}
-
 #Bezanozano - BEZ (Stateless, Revolter)
 BEZ = {
 	color = map_bezanozano
@@ -551,94 +470,4 @@ KIT = {
 
 	culture_definition = rutara_culture
 	religion_definition = cwezi_religion
-}
-
-#Wanga - WNA
-WNA = {
-	color = map_wanga
-	color2 = black
-
-	culture_definition = luhya_culture
-	religion_definition = bantu_religion
-}
-
-#Bunyoro - BNY
-BNY = {
-	color = map_bunyoro
-	color2 = black
-
-	culture_definition = rutara_culture
-	religion_definition = nyasaye_religion
-}
-
-#Buganda - BUG
-BUG = {
-	color = map_buganda
-	color2 = black
-
-	culture_definition = baganda_culture
-	religion_definition = cwezi_religion
-}
-
-#Busoga - BSG (Formable)
-BSG = {
-	color = map_busoga
-	color2 = black
-
-	culture_definition = rutara_culture
-	religion_definition = nyasaye_religion
-}
-
-#Nkore - NKO (Formable)
-NKO = {
-	color = map_nkore
-	color2 = black
-
-	culture_definition = rutara_culture
-	religion_definition = bantu_religion
-}
-
-#Rwanda - RWA (Formable)
-RWA = {
-	color = map_rwanda
-	color2 = black
-
-	culture_definition = rwanda_culture
-	religion_definition = bantu_religion
-}
-
-#Karagwe - KRW (Formable)
-KRW  = {
-	color = map_karagwe
-	color2 = black
-
-	culture_definition = nyamwezi_culture
-	religion_definition = bantu_religion
-}
-
-#Buha - UBH (Formable)
-UBH = {
-	color = map_buha
-	color2 = black
-
-	culture_definition = rwanda_culture
-	religion_definition = bantu_religion
-}
-
-#Burundi - BUU (Formable)
-BUU  = {
-	color = map_burundi
-	color2 = black
-
-	culture_definition = rwanda_culture
-	religion_definition = bantu_religion
-}
-
-#Masai - MAA
-MAA  = {
-	color = map_MAA
-	color2 = black
-
-	culture_definition = maasai_culture
-	religion_definition = maasai_religion
 }

@@ -6567,10 +6567,10 @@ london = {
 	define_pop = {	type = laborers	size = 16.000	culture = irish	religion = catholic }
 	define_pop = {	type = laborers	size = 6.044	culture = english	religion = judaism }
 	define_pop = {	type = laborers	size = 416.000	culture = english	religion = anglican }
-	define_pop = {	type = burghers	size = 0.400	culture = english	religion = judaism } #clerks
-	define_pop = {	type = burghers	size = 40.000	culture = english	religion = anglican } #clerks
+	define_pop = {	type = clerks	size = 0.400	culture = english	religion = judaism }
+	define_pop = {	type = clerks	size = 40.000	culture = english	religion = anglican }
 	define_pop = {	type = clergy	size = 49.000	culture = english	religion = anglican } #intellectuals
-	define_pop = {	type = burghers	size = 10.000	culture = english	religion = anglican } #capitalists
+	define_pop = {	type = capitalists	size = 10.000	culture = english	religion = anglican } #capitalists
 	define_pop = {	type = burghers	size = 67.300	culture = english	religion = anglican } #bureaucrats
 	define_pop = {	type = burghers	size = 218.300	culture = english	religion = anglican } #artisans
 	define_pop = {	type = burghers	size = 13.600	culture = english	religion = judaism } #artisans
@@ -6601,7 +6601,7 @@ woking = {
 southampton = {
 	define_pop = {	type = soldiers	size = 0.880	culture = english	religion = anglican }
 	define_pop = {	type = peasants	size = 58.929	culture = english	religion = anglican }
-	define_pop = {	type = burghers	size = 0.002	culture = english	religion = anglican } # clerks
+	define_pop = {	type = clerks	size = 0.002	culture = english	religion = anglican }
 	define_pop = {	type = clergy	size = 0.403	culture = english	religion = anglican }
 	define_pop = {	type = burghers	size = 4.800	culture = english	religion = anglican } # artisans
 }
@@ -6614,28 +6614,28 @@ portsmouth = {
 winchester = {
 	define_pop = {	type = soldiers	size = 0.880	culture = english	religion = anglican }
 	define_pop = {	type = peasants	size = 58.929	culture = english	religion = anglican }
-	define_pop = {	type = burghers	size = 0.002	culture = english	religion = anglican } # clerks
+	define_pop = {	type = clerks	size = 0.002	culture = english	religion = anglican }
 	define_pop = {	type = clergy	size = 0.403	culture = english	religion = anglican }
 	define_pop = {	type = burghers	size = 4.800	culture = english	religion = anglican } # artisans
 }
 lymington = {
 	define_pop = {	type = soldiers	size = 0.880	culture = english	religion = anglican }
 	define_pop = {	type = peasants	size = 58.929	culture = english	religion = anglican }
-	define_pop = {	type = burghers	size = 0.002	culture = english	religion = anglican } # clerks
+	define_pop = {	type = clerks	size = 0.002	culture = english	religion = anglican }
 	define_pop = {	type = clergy	size = 0.403	culture = english	religion = anglican }
 	define_pop = {	type = burghers	size = 4.800	culture = english	religion = anglican } # artisans
 }
 wight = {
 	define_pop = {	type = soldiers	size = 0.880	culture = english	religion = anglican }
 	define_pop = {	type = peasants	size = 58.929	culture = english	religion = anglican }
-	define_pop = {	type = burghers	size = 0.002	culture = english	religion = anglican } # clerks
+	define_pop = {	type = clerks	size = 0.002	culture = english	religion = anglican }
 	define_pop = {	type = clergy	size = 0.403	culture = english	religion = anglican }
 	define_pop = {	type = burghers	size = 4.800	culture = english	religion = anglican } # artisans
 }
 basingstoke = {
 	define_pop = {	type = soldiers	size = 0.880	culture = english	religion = anglican }
 	define_pop = {	type = peasants	size = 58.929	culture = english	religion = anglican }
-	define_pop = {	type = burghers	size = 0.002	culture = english	religion = anglican } # clerks
+	define_pop = {	type = clerks	size = 0.002	culture = english	religion = anglican }
 	define_pop = {	type = clergy	size = 0.403	culture = english	religion = anglican }
 	define_pop = {	type = burghers	size = 4.800	culture = english	religion = anglican } # artisans
 }
@@ -6700,21 +6700,21 @@ banbury = {
 windsor = {
 	define_pop = {	type = soldiers	size = 2.000	culture = english	religion = anglican }
 	define_pop = {	type = peasants	size = 90.889	culture = english	religion = anglican }
-	define_pop = {	type = burghers	size = 0.002	culture = english	religion = anglican } # clerks
+	define_pop = {	type = clerks	size = 0.002	culture = english	religion = anglican }
 	define_pop = {	type = clergy	size = 2.021	culture = english	religion = anglican }
 	define_pop = {	type = burghers	size = 8.000	culture = english	religion = anglican } # artisans
 }
 reading = {
 	define_pop = {	type = soldiers	size = 2.000	culture = english	religion = anglican }
 	define_pop = {	type = peasants	size = 90.889	culture = english	religion = anglican }
-	define_pop = {	type = burghers	size = 0.002	culture = english	religion = anglican } # clerks
+	define_pop = {	type = clerks	size = 0.002	culture = english	religion = anglican }
 	define_pop = {	type = clergy	size = 2.021	culture = english	religion = anglican }
 	define_pop = {	type = burghers	size = 8.000	culture = english	religion = anglican } # artisans
 }
 abingdon = {
 	define_pop = {	type = soldiers	size = 2.000	culture = english	religion = anglican }
 	define_pop = {	type = peasants	size = 90.889	culture = english	religion = anglican }
-	define_pop = {	type = burghers	size = 0.002	culture = english	religion = anglican } # clerks
+	define_pop = {	type = clerks	size = 0.002	culture = english	religion = anglican }
 	define_pop = {	type = clergy	size = 2.021	culture = english	religion = anglican }
 	define_pop = {	type = burghers	size = 8.000	culture = english	religion = anglican } # artisans
 }

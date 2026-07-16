@@ -1,4 +1,4 @@
-# USA + friends
+﻿# USA + friends
 USA = {
 	color = map_USA
 	color2 = rgb { 16 41 202 }

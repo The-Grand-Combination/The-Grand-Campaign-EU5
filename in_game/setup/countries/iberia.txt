@@ -1,12 +1,4 @@
-﻿MLL = {
-	color = map_MLL
-	color2 = rgb { 16 41 202 }
-
-	culture_definition = catalan
-	religion_definition = catholic
-
-	
-}
+﻿
 
 CAS = {
 	color = map_CAS

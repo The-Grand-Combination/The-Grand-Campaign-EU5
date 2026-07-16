@@ -173,16 +173,6 @@ NCZ = {
 	
 }
 
-GUL = {
-	color = map_guale
-	color2 = rgb { 12 128 17 }
-
-	culture_definition = guale_culture
-	religion_definition = mississippian_ceremonial
-
-	
-}
-
 APA = {
 	color = map_apalachee
 	color2 = rgb { 88 171 67 }

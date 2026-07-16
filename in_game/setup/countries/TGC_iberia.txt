@@ -1,4 +1,4 @@
-SPA = {
+﻿SPA = {
 	color = map_SPA
 	color2 = rgb { 16 41 202 }
 	

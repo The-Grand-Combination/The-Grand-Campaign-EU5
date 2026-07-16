@@ -106,15 +106,6 @@ SOB = {
 	religion_definition = cahita_religion
 }
 
-#Tohono O'odham (Upper Pima/Desert Pima) - TOO
-TOO = {
-	color = map_tohono_oodham
-	color2 = rgb { 16 41 202 }
-
-	culture_definition = pima_culture
-	religion_definition = cahita_religion
-}
-
 #O'ob (Lower Pima) - OOB
 OOB = {
 	color = map_oob

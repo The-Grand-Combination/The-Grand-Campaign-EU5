@@ -110,14 +110,6 @@ KLR = {
 	religion_definition = sunni
 }
 
-KTW = {
-	color = map_kartawi
-	color2 = rgb { 144 220 149 }
-
-	culture_definition = kurdish_culture
-	religion_definition = sunni
-}
-
 KEL = {
 	color = map_kelali
 	color2 = rgb { 144 220 149 }

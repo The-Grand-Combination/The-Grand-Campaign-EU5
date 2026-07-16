@@ -25,15 +25,6 @@ LNC = {
 	religion_definition = lenca_religion
 }
 
-#Garabito - GAR
-GAR = {
-	color = map_huetar
-	color2 = rgb { 16 41 202 }
-
-	culture_definition = huetar_culture
-	religion_definition = wan_aisa_religion
-}
-
 #Guarco - GUO
 GUO = {
 	color = map_guarco

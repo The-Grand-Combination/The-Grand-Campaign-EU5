@@ -200,13 +200,6 @@ BOD = {
 	religion_definition = catholic
 }
 
-ARO = {
-	color = hsv360 { 239 70 61 }
-	
-	culture_definition = french
-	religion_definition = catholic
-}
-
 KNI = {
 	color = rgb { 106  127  183 }
 	

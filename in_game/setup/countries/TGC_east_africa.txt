@@ -1,0 +1,114 @@
+﻿#Ethiopia - ETH
+ETH = {
+	color = map_ethiopia
+	color2 = green
+	culture_definition = amhara
+	religion_definition = miaphysite
+
+	description_category = military
+	difficulty = 3
+}
+
+#Gojjam - GJJ
+GJJ = {
+	color = rgb { 50  95  210 }
+	color2 = green
+	culture_definition = amhara
+	religion_definition = miaphysite
+}
+
+#Aussa - AWS
+AWS = {
+	color = rgb { 28  255  164 }
+	color2 = beige
+	culture_definition = afar_culture
+	religion_definition = sunni 
+}
+
+#Shewa - SOA
+SOA = {
+	color = rgb { 128  128  64 }
+	color2 = beige
+	culture_definition = afar_culture
+	religion_definition = sunni
+}
+
+#Geledi - GLE
+GLE = {
+	color = rgb { 153  217  234 }
+	color2 = purple
+	culture_definition = somali_culture
+	religion_definition = sunni
+}
+
+#Majeerteen
+MJR = {
+	color = rgb { 226  22  48 }
+	color2 = purple
+	culture_definition = somali_culture
+	religion_definition = sunni
+}
+
+HRB = { #Hiraab
+	color = rgb { 97 209 251 }
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = hijazi_culture
+	religion_definition = sunni
+}
+
+#Isaaq
+ISQ = {
+	color = rgb { 208 203 126 }
+	color2 = purple
+	culture_definition = somali_culture
+	religion_definition = sunni
+}
+
+#Habr Yunis
+HBY = {
+	color = rgb { 208 103 26 }
+	color2 = purple
+	culture_definition = somali_culture
+	religion_definition = sunni
+}
+
+#Harar
+HAR = {
+	color = rgb { 216 213 203 }
+	color2 = purple
+	culture_definition = somali_culture
+	religion_definition = sunni
+}
+
+#Wollo
+WOL = {
+	color = rgb { 184  193  89 }
+
+	culture_definition = western_pomeranian
+	religion_definition = catholic
+}
+
+#Leqa
+LEQ = {
+	color = rgb { 128  128  128 }
+
+	culture_definition = western_pomeranian
+	religion_definition = catholic
+}
+
+#Gonder
+GON = {
+	color = rgb { 113  160  213 }
+
+	culture_definition = western_pomeranian
+	religion_definition = catholic
+}
+
+#Tigray
+TIG = {
+	color = rgb { 108  49  108 }
+
+	culture_definition = western_pomeranian
+	religion_definition = catholic
+}

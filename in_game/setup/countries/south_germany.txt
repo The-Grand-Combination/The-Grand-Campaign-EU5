@@ -140,13 +140,6 @@ STG = {
 	religion_definition = catholic
 }
 
-ZUR = {
-	color = rgb { 31 140 205 }
-	
-	culture_definition = high_alemannic
-	religion_definition = catholic
-}
-
 SYZ = {
 	color = rgb { 261 66 63 }
 	
@@ -223,13 +216,6 @@ NEU = {
 	color =map_NEU
 	
 	culture_definition = franc_comtois
-	religion_definition = catholic
-}
-
-BAS = {
-	color = rgb { 145 139 102 }
-	
-	culture_definition = high_alemannic
 	religion_definition = catholic
 }
 

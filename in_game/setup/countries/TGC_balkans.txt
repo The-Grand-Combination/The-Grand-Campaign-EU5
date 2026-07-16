@@ -1,4 +1,4 @@
-MOL = {
+﻿MOL = {
 	color = map_MOL
 	color2 = rgb { 16 41 202 }
 	
@@ -66,4 +66,11 @@ ATH = {
 
 	culture_definition = greek
 	religion_definition = orthodox
+}
+
+#Montenegro
+MON = {
+	color = rgb { 75 153 184 }
+	culture_definition = french
+	religion_definition = catholic
 }
