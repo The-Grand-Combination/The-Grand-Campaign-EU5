@@ -1094,6 +1094,8 @@ langensalza = { topography = flatland vegetation = grasslands climate = continen
 sondershausen = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = saxon raw_material = millet}
 saalfeld = { topography = hills vegetation = forest climate = continental religion = catholic culture = saxon raw_material = salt}
 hildburghausen = { topography = hills vegetation = forest climate = continental religion = catholic culture = saxon raw_material = wool}
+new1 = { topography = hills vegetation = forest climate = continental religion = catholic culture = saxon raw_material = wool}
+sonneberg = { topography = hills vegetation = forest climate = continental religion = catholic culture = saxon raw_material = wool}
 schmalkalden = { topography = hills vegetation = forest climate = continental religion = catholic culture = saxon raw_material = iron}
 eisenach = { topography = flatland vegetation = forest climate = continental religion = catholic culture = saxon raw_material = stone}
 meiningen = { topography = hills vegetation = forest climate = continental religion = catholic culture = saxon raw_material = medicaments}

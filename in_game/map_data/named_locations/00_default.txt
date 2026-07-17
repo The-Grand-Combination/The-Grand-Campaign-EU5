@@ -1059,8 +1059,8 @@ pennines_05 = 340d25
 pennines_06 = 340d26
 dartmoor = 340d27
 
-#UNUSED = 33b9d3
-#UNUSED = aa6665
+new1 = 33b9d3
+sonneberg = aa6665
 #UNUSED = 883138
 #UNUSED = ddb67e
 #UNUSED = 113542
