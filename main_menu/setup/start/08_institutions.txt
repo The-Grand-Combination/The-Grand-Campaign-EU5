@@ -2606,7 +2606,7 @@ sondershausen = {
 	feudalism = yes
 	legalism = yes
 }
-saalfeld = {
+rudolstadt = {
 	feudalism = yes
 	legalism = yes
 }

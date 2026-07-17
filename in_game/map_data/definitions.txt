@@ -477,10 +477,10 @@
 			}
 			thuringia_area = {
 				thuringer_becken_province = {
-					eisenberg weimar apolda arnstadt saalfeld
+					eisenberg weimar apolda arnstadt rudolstadt
 				}
 				thuringer_wald_province = {
-					hildburghausen schmalkalden eisenach meiningen gotha ohrdruf schleusingen coburg new1 sonneberg
+					hildburghausen schmalkalden eisenach meiningen gotha ohrdruf schleusingen coburg saalfeld sonneberg
 				}
 				vogtland_province = {
 					gera schleiz altenburg naumburg

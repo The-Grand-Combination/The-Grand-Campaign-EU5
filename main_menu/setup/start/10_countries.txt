@@ -14304,14 +14304,14 @@ countries = {
 
        }
       SZR = {
-         capital = saalfeld
+         capital = rudolstadt
 
          dynasty = schwarzburg_dynasty
          country_rank = rank_county
          starting_technology_level = 3
 
          own_control_core = {
-            saalfeld
+            rudolstadt
          }
 
          include = "expl_western_europe"

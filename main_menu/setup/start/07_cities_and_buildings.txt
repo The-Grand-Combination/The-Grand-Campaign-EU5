@@ -2128,7 +2128,7 @@ building_manager = {
 
 
 	tar_kiln = { tag = MAI level = 1 location = miltenberg } 
-	tar_kiln = { tag = HNB level = 1 location = saalfeld } 
+	tar_kiln = { tag = HNB level = 1 location = rudolstadt } 
 
 	#Switzerland
 

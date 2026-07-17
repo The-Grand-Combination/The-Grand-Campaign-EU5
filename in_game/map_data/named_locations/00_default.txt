@@ -1059,7 +1059,7 @@ pennines_05 = 340d25
 pennines_06 = 340d26
 dartmoor = 340d27
 
-new1 = 33b9d3
+saalfeld = 33b9d3
 sonneberg = aa6665
 #UNUSED = 883138
 #UNUSED = ddb67e
@@ -1407,7 +1407,7 @@ aschach = ee722e
 schleusingen = 885b8d
 arnstadt = 22e0d3
 hildburghausen = bb7d79
-saalfeld = 886c29
+rudolstadt = 886c29
 gera = 5555b5
 schleiz = aa8cb5
 

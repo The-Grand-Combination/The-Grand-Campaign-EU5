@@ -4485,7 +4485,7 @@ sondershausen = {
 	define_pop = {	type = clergy	size = 0.014	culture = saxon	religion = catholic }
 	define_pop = {	type = peasants	size = 18.334	culture = saxon	religion = catholic }
 }
-saalfeld = {
+rudolstadt = {
 	define_pop = {	type = clergy	size = 0.006	culture = rhine_franconian	religion = catholic }
 	define_pop = {	type = peasants	size = 11.080	culture = saxon	religion = catholic }
 	define_pop = {	type = peasants	size = 10.639	culture = east_franconian	religion = catholic }
