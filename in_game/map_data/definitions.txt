@@ -329,7 +329,7 @@
 					cottbus guben spremberg calau lubben luckau beeskow zossen juterbog
 				}
 			}
-			magdeburg_area = {
+			middle_saxony_area = {
 				flaming_province = {
 					schweinitz wittenberg bitterfeld liebenwerda torgau delitzsch
 				}
@@ -349,26 +349,32 @@
 					zerbst bernburg ballenstedt
 				}
 			}
-			rhineland_area = {
+			palatinate_area = {
 				mainz_province = { oppenheim worms }
 				palatinate_province = {
 					kaiserslautern zweibrucken speyer pirmasens germersheim leiningen landau_rhineland neustadt_an_der_haardt meisenheim
 				}
+			}
+			upper_rhine_area = {
 				eifel_province = {
 					bitburg prum daun wittlich cochem mayen simmern ahrweiler schleiden castellaun kreuznach alsfeld st_vith
 				}
 				hunsruck_province = {
 					saarbrucken merzig lichtenberg_veldenz trier birkenfeld saarburg
 				}
+			}
+			west_lower_rhine_area = {
 				koln_bucht_province = {
 					cologne bonn bergheim neuss
-				}
-				julich_province = {
-					aachen heinsberg duren neufchateau_luxembourg
 				}
 				niederrhein_province = {
 					monchengladbach kleve mors geldern
 				}
+				julich_province = {
+					aachen heinsberg duren neufchateau_luxembourg
+				}
+			}
+			east_lower_rhine_area = {
 				bergisches_land_province = {
 					remscheid siegburg gummersbach solingen
 				}
@@ -401,7 +407,7 @@
 					munster ahaus horstmar dulmen tecklenburg rheine
 				}
 				ostwestphalia_province = {
-					bielefeld minden
+					bielefeld minden detmold
 				}
 				lippe_province = {
 					lippstadt soest paderborn warburg buren rietberg
@@ -434,23 +440,25 @@
 				elbmarch_province = {
 					harburg stade hamburg neuhaus ritzebuttel bremervorde warendorf
 				}
-				hanover_province = {
-					hildesheim hanover burgdorf buckeburg hamelin neustadt_am_rubenberge detmold hoxter
-				}
-				brunswick_province = {
-					brunswick wolfenbuttel helmstedt gifhorn meinersen
-				}
-				leine_province = {
-					holzminden gottingen einbeck duderstadt
-				}
 				luneburger_heide_province = {
 					dannenberg luneburg uelzen winsen soltau winsen_aller isenhagen ebstorf luchow
 				}
 				aller_province = {
 					celle fallingbostel verden zeven achim
 				}
+			}
+			hanover_brunswick_area = {
+				hanover_province = {
+					hildesheim hanover burgdorf buckeburg hamelin neustadt_am_rubenberge hoxter
+				}
+				brunswick_province = {
+					brunswick wolfenbuttel helmstedt gifhorn meinersen
+				}
 				harz_province = {
 					goslar alfeld blankenburg gandersheim herzberg wernigerode
+				}
+				leine_province = {
+					holzminden gottingen einbeck duderstadt
 				}
 			}
 			upper_saxony_area = {
@@ -500,9 +508,8 @@
 					slupsk lebork bytow miastko slawno lebsko_lake
 				}
 				pyritz_province = {
-					pyrzyce choszczno szadzko gryfow drawsko
+					pyrzyce choszczno szadzko gryfow drawsko czaplinek
 				}
-				arnskrone_province = { walcz czaplinek }
 			}
 		}
 
@@ -613,7 +620,7 @@
 					delemont neuchatel solothurn basel bienne lake_neuchatel
 				}
 			}
-			upper_rhine_area = {
+			baden_area = {
 				kraichgau_province = {
 					sinsheim bruchsal durlach heidelberg
 				}
@@ -630,7 +637,7 @@
 					konstanz uberlingen schaffhausen stockach lake_constance
 				}
 			}
-			swabia_area = {
+			wurttemberg_area = {
 				hohenloher_ebene_province = {
 					ellwangen welzheim
 				}
@@ -658,7 +665,7 @@
 					nuremberg schwabach ansbach uffenheim rothenburg neustadt
 				}
 				franconian_alb_province = {
-					neumarkt weissenburg eichstatt parsberg beilngries dinkelsbuhl oettingen
+					neumarkt weissenburg eichstatt beilngries dinkelsbuhl oettingen neuburg_an_der_donau
 				}
 				frankische_schweiz_province = {
 					bayreuth forchheim pegnitz schesslitz wunsiedel kulmbach eschenbach tirschenreuth sulzbach bamberg
@@ -684,13 +691,13 @@
 					landau eggenfelden landshut griesbach burghausen
 				}
 				donau_moos_province = {
-					neuburg_an_der_donau ingolstadt rottenburg pfaffenhofen regensburg mallersdorf kelheim
+					ingolstadt rottenburg pfaffenhofen regensburg mallersdorf kelheim
 				}
 				bayerischer_wald_province = {
 					passau grafenau bavaria_regen straubing
 				}
 				oberpfalzer_wald_province = {
-					cham amberg leuchtenberg roding burglengenfeld
+					cham amberg leuchtenberg roding burglengenfeld parsberg
 				}
 				eastern_upper_swabia_province = {
 					augsburg memmingen krumbach gunzburg dillingen wertingen illereichen
@@ -731,7 +738,8 @@
 				oxfordshire_province = { oxford henley banbury }
 				berkshire_province = { windsor reading abingdon }
 				buckinghamshire_province = { buckingham aylesbury wycombe }
-				# surrey_province = { }
+				essex_province = { colchester chelmsford prittlewell hedingham walden barking }
+				hertfordshire_province = { hertford st_albans }
 			}
 			east_midlands_area = {
 				leicestershire_province = { leicester loughborough bosworth rutland }
@@ -764,11 +772,8 @@
 			}
 			east_anglia_area= {
 				norfolk_province = { norwich lynn yarmouth thetford fakenham }
-				essex_province = { colchester chelmsford prittlewell hedingham walden barking }
 				suffolk_province = { ipswich bury lowestoft lavenham }
 				cambridgeshire_province = { cambridge ely huntingdon royston }
-
-				hertfordshire_province = { hertford st_albans }
 			}
 			west_country_area = {
 				cornwall_province = { launceston truro bodmin scilly_isles }
@@ -1402,33 +1407,35 @@
 				warsaw_province = { warsaw kamieniec nur tarczyn }
 			}
 			west_prussia_area = {
-				chelmno_province = { chelmno brodnica grudziadz lubawa torun nibork ostroda }
+				chelmno_province = { chelmno brodnica grudziadz lubawa torun }
 				danzig_province = { gdansk gniew koscierzyna mirochowo puck tczew }
 				tuchola_province = { tuchola bialobork czluchow nowe swiecie }
-				upper_prussia_province = { malbork dzierzgon elblag kwidzyn morag }
-				naklo_province = { naklo zlotow }
+				upper_prussia_province = { malbork elblag kwidzyn }
+				naklo_province = { naklo zlotow walcz }
 			}
 			east_prussia_area = {
 				lithuania_minor_province = { tilsit gumbinnen labiau memel ragnit windenburg curonian_lagoon }
 				lower_prussia_province = { konigsberg balga brandenburg_prussia fischhausen gerdauen insterburg wehlau }
 				masuria_province = { elk barten ryn_poland szczytno wegorzewo lake_mamry lake_sniardwy }
-				warmia_province = { lidzbark frombork olsztyn }
+				warmia_province = { lidzbark frombork olsztyn dzierzgon morag nibork ostroda }
 			}
 			samogitia_area = {
 				medininkai_province = { medininkai palanga rietavas silale skuodas taurage }
 				raseiniai_province = { raseiniai jurbarkas kedainiai panemune tendziogala }
 				siauliai_province = { siauliai kraziai mazeikiai papile zagare }
 			}
-			silesia_area = {
+			upper_silesia_area = {
+				kattowitz_province = { bytom kozle pszczyna raciborz toszek hlucin glubczyce }
+				opole_province = { opole kluczbork lubliniec olesno prudnik strzelce_opolskie nysa niemodlin }
+				opavsko_province = { opava fryvaldov krnov }
+				tesin_province = { tesin bielsko }
+			}
+			lower_silesia_area = {
 				glogow_province = { glogow gora kozuchow szprotawa zielona_gora }
 				legnica_province = { legnica boleslawiec jawor wolow zlotoryja }
 				olesnica_province = { olesnica milicz namyslow sycow trzebnica }
-				opavsko_province = { opava fryvaldov krnov }
-				opole_province = { opole kluczbork lubliniec olesno prudnik strzelce_opolskie }
 				swidnica_province = { swidnica kamienna_gora rychbach niemcza ziebice klodzko }
-				tesin_province = { tesin bielsko }
-				wroclaw_province = { wroclaw brzeg grodkow nysa niemodlin olawa sroda_slaska }
-				kattowitz_province = { bytom kozle pszczyna raciborz toszek hlucin glubczyce }
+				wroclaw_province = { wroclaw brzeg grodkow olawa sroda_slaska }
 				central_lusatia_province = { gorlitz hoyerswerda rothenburg_oberlausitz }
 			}
 			eastern_baltic_sea = {
