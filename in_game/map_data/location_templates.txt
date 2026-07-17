@@ -1096,6 +1096,10 @@ rudolstadt = { topography = hills vegetation = forest climate = continental reli
 hildburghausen = { topography = hills vegetation = forest climate = continental religion = catholic culture = saxon raw_material = wool}
 saalfeld = { topography = hills vegetation = forest climate = continental religion = catholic culture = saxon raw_material = wool}
 sonneberg = { topography = hills vegetation = forest climate = continental religion = catholic culture = saxon raw_material = wool}
+leutenberg = { topography = hills vegetation = forest climate = continental religion = catholic culture = saxon raw_material = wool}
+gehren = { topography = hills vegetation = forest climate = continental religion = catholic culture = saxon raw_material = wool}
+kranichfeld = { topography = hills vegetation = forest climate = continental religion = catholic culture = saxon raw_material = wool}
+camburg = { topography = hills vegetation = forest climate = continental religion = catholic culture = saxon raw_material = wool}
 schmalkalden = { topography = hills vegetation = forest climate = continental religion = catholic culture = saxon raw_material = iron}
 eisenach = { topography = flatland vegetation = forest climate = continental religion = catholic culture = saxon raw_material = stone}
 meiningen = { topography = hills vegetation = forest climate = continental religion = catholic culture = saxon raw_material = medicaments}

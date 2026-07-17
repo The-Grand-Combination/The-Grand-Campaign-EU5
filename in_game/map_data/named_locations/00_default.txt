@@ -1061,10 +1061,10 @@ dartmoor = 340d27
 
 saalfeld = 33b9d3
 sonneberg = aa6665
-#UNUSED = 883138
-#UNUSED = ddb67e
-#UNUSED = 113542
-#UNUSED = ccbbb0
+leutenberg = 883138
+gehren = ddb67e
+kranichfeld = 113542
+camburg = ccbbb0
 #UNUSED = 3349c9
 #UNUSED = dd86f6
 #UNUSED = eee95b

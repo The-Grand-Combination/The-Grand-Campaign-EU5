@@ -480,7 +480,7 @@
 					eisenberg weimar apolda arnstadt rudolstadt
 				}
 				thuringer_wald_province = {
-					hildburghausen schmalkalden eisenach meiningen gotha ohrdruf schleusingen coburg saalfeld sonneberg
+					hildburghausen schmalkalden eisenach meiningen gotha ohrdruf schleusingen coburg saalfeld sonneberg leutenberg gehren kranichfeld camburg
 				}
 				vogtland_province = {
 					gera schleiz altenburg naumburg

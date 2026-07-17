@@ -8259,7 +8259,7 @@ countries = {
           }
       }
       LTS = {
-         capital = meiningen
+         capital = feldkirch
 
          dynasty = henneberg_dynasty
          country_rank = rank_county
@@ -13440,7 +13440,7 @@ countries = {
          starting_technology_level = 3
 
          own_control_core = {
-            meiningen hildburghausen
+            meiningen hildburghausen sonneberg saalfeld kranichfeld camburg
          }
 
          include = "expl_western_europe"
@@ -14311,7 +14311,7 @@ countries = {
          starting_technology_level = 3
 
          own_control_core = {
-            rudolstadt
+            rudolstadt leutenberg
          }
 
          include = "expl_western_europe"
@@ -14344,7 +14344,7 @@ countries = {
          starting_technology_level = 3
 
          own_control_core = {
-            sondershausen arnstadt
+            sondershausen arnstadt gehren
          }
 
          include = "expl_western_europe"
