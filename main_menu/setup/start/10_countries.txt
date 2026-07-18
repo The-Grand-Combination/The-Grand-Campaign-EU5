@@ -11659,7 +11659,7 @@ countries = {
 
          own_control_core = {
             neufchateau_luxembourg st_vith schleusingen apolda lichtenberg_veldenz eisleben merseburg weissenfels langensalza freyburg
-            beichlingen erfurt wetzlar muhlhausen nordhausen sangerhausen halberstadt quedlinburg wittenberg belzig
+            erfurt wetzlar muhlhausen nordhausen sangerhausen halberstadt quedlinburg wittenberg belzig
             schweinitz bitterfeld torgau liebenwerda hoyerswerda delitzsch merzig bitburg mors essen
             munster ahaus horstmar dulmen hamm altena bochum dortmund rheine tecklenburg
             arnsberg meschede lippstadt ruppin havelberg wittstock paderborn buren warburg siegen
@@ -12034,7 +12034,7 @@ countries = {
          starting_technology_level = 3
 
          own_control_core = {
-            schleiz
+            schleiz remptendorf zeulenroda mehla
          }
 
          include = "expl_western_europe"
@@ -12101,7 +12101,7 @@ countries = {
          starting_technology_level = 3
 
          own_control_core = {
-            naumburg
+            naumburg langenwetzendorf new1
          }
 
          include = "expl_western_europe"
@@ -12781,7 +12781,7 @@ countries = {
          starting_technology_level = 3
 
          own_control_core = {
-            coburg gotha ohrdruf
+            coburg gotha ohrdruf volkenroda
          }
 
          include = "expl_western_europe"
@@ -13440,7 +13440,7 @@ countries = {
          starting_technology_level = 3
 
          own_control_core = {
-            meiningen hildburghausen sonneberg saalfeld kranichfeld camburg
+            meiningen hildburghausen sonneberg saalfeld kranichfeld camburg oberellen
          }
 
          include = "expl_western_europe"
@@ -14273,7 +14273,7 @@ countries = {
          starting_technology_level = 3
 
          own_control_core = {
-            weimar gera eisenach
+            weimar gera eisenach ostheim allstedt oldisleben
          }
 
          include = "expl_western_europe"
@@ -14311,7 +14311,7 @@ countries = {
          starting_technology_level = 3
 
          own_control_core = {
-            rudolstadt leutenberg
+            rudolstadt leutenberg beichlingen angelroda weisbach immenrode schlotheim
          }
 
          include = "expl_western_europe"
@@ -14344,7 +14344,7 @@ countries = {
          starting_technology_level = 3
 
          own_control_core = {
-            sondershausen arnstadt gehren
+            sondershausen arnstadt gehren geschwenda
          }
 
          include = "expl_western_europe"
