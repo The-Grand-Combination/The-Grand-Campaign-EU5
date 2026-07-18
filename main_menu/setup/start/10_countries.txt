@@ -127,7 +127,7 @@ countries = {
          starting_technology_level = 3
 
          own_control_core = {
-            bernburg
+            ballenstedt bernburg hecklingen hohenerxleben gross_muhlingen coswig
          }
 
          include = "expl_western_europe"
@@ -159,7 +159,7 @@ countries = {
          starting_technology_level = 3
 
          own_control_core = {
-            ballenstedt
+            zerbst sandersleben grobzig dessau godnitz barenthoren gross_alsleben
          }
 
          include = "expl_western_europe"
@@ -191,7 +191,7 @@ countries = {
          starting_technology_level = 3
 
          own_control_core = {
-            zerbst
+            kothen gusten diesdorf rosslau lindau dornburg
          }
 
          include = "expl_western_europe"
@@ -11683,7 +11683,7 @@ countries = {
             treuenbrietzen angermunde prenzlau torzym swidwin choszczno drawsko czaplinek walcz santok
             gorzow brodnica grudziadz torun gdansk gniew koscierzyna mirochowo puck tczew
             tuchola bialobork czluchow nowe swiecie bytow lebork stettin ueckermunde gryfow
-            pyrzyce demmin anklam
+            pyrzyce demmin anklam aschersleben lobnitz repau posigk schierau walternienburg
          }
 
          include = "catholic_military_order"

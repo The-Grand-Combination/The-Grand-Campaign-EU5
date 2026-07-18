@@ -346,7 +346,7 @@
 					muhlhausen nordhausen sangerhausen sondershausen langensalza beichlingen erfurt
 				}
 				anhalt_province = {
-					zerbst bernburg ballenstedt
+					zerbst bernburg ballenstedt hecklingen hohenerxleben gusten kothen sandersleben grobzig lobnitz repau posigk dessau diesdorf schierau rosslau lindau coswig godnitz gross_muhlingen dornburg aschersleben walternienburg gross_alsleben barenthoren
 				}
 			}
 			palatinate_area = {
