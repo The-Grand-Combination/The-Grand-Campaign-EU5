@@ -1426,7 +1426,7 @@ building_manager = {
 	monastery 	= { tag = GBI level = 1 location = dunfermline } 
 	monastery 	= { tag = GBI level = 1 location = roxburgh } # roxburgh
 	monastery 	= { tag = GBI level = 1 location = selkirk } # dryburgh
-	monastery 	= { tag = ESS level = 1 location = essen }	#abbey_reform
+	monastery 	= { tag = PRU level = 1 location = essen }	#abbey_reform
 	monastery 	= { tag = DIS level = 1 location = disentis }	#abbey_reform
 
 	
@@ -2287,8 +2287,8 @@ building_manager = {
 
 	### Abbeys	
 	monastery	= { tag = WLD level = 1	location = tirschenreuth }
-	monastery	= { tag = APR level = 1	location = prum }
-	monastery	= { tag = HOX level = 1	location = hoxter }
+	monastery	= { tag = PRU level = 1	location = prum }
+	monastery	= { tag = WDE level = 1	location = hoxter }
 	monastery	= { tag = BRE level = 1	location = zeven }
 	#monastery	= { tag = AUL level = 1	location = la_louviere }
 	monastery 	= { tag = FRA level = 1 location = mouzon }
@@ -3615,7 +3615,7 @@ building_manager = {
 	cathedral = { tag = NAP level = 1 location = naples } #Annibaldo di Ceccano (Tusculum) #Archbishop of Naples when elected
 
 	#Ecclesiastical Province Cathedrals
-	cathedral = { tag = KOL level = 1 location = cologne }
+	cathedral = { tag = PRU level = 1 location = cologne }
 	cathedral = { tag = NAS level = 1 location = mainz }
 	cathedral = { tag = TRI level = 1 location = trier }
 	cathedral = { tag = SLZ level = 1 location = salzburg }

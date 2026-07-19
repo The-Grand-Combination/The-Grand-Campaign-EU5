@@ -12828,7 +12828,7 @@ countries = {
       }
       RUS = {
          include = "expl_whole_world"
-         capital = moscow
+         capital = neva
          liturgical_language = church_slavonic_language
          country_rank = rank_empire
          starting_technology_level = 3
@@ -12934,7 +12934,7 @@ countries = {
             yuryev_polsky klin dubna dmitrov rogachevo fomin_gorodok zubtsov gorodok kholm_tver lotoshino
             mikulino_tver tver brody_tver vertyazin kashin kalyazin kesova_gora kimra nizhny_novgorod gorokhovets
             meshchersk pestyaki rastyapino uglich koi rozhalovo yaroslavl bolshoye_selo danilov kurba
-            romanov sol_velikaya ust_sheksna mologa ilovna prozorovo dalneye_konstantinovo oreshek toksovo neva
+            romanov sol_velikaya ust_sheksna mologa ilovna prozorovo dalneye_konstantinovo oreshek toksovo
             beloozero vashki kirillov nikolskoye_andoma cherepoves ustyuzhna_zheleznopolskaya lukoves poshekhonye beloe knyazhich_gorodok
             pokrovskoye_yaroslav spasskoye yorga ust_ugla vognema goroditse_megra georgievskoye chuzboy koloshma badozhsky
             nikolskoye_kema charonda svir_beloozero vyatka ust_cheptsa suna verkhoshizhemye orlov belozerye slobodskoy

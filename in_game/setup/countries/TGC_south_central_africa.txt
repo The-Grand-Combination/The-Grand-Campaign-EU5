@@ -47,6 +47,14 @@ KON = {
    religion_definition = miaphysite
 }
 
+#Lunda
+LUN = {
+	color = rgb { 135 109 147 }
+
+	culture_definition = lower_saxon
+	religion_definition = catholic
+}
+
 #Yaka - YAK
 YAK = {
 	color = rgb { 150 150 132 }
