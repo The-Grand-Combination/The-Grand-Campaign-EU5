@@ -2141,7 +2141,7 @@ countries = {
          starting_technology_level = 3
 
          own_control_core = {
-            brunswick helmstedt holzminden gandersheim goslar blankenburg wolfenbuttel
+            brunswick helmstedt holzminden gandersheim goslar blankenburg wolfenbuttel calvorde
          }
 
          include = "expl_western_europe"
@@ -5075,7 +5075,7 @@ countries = {
             luchow uelzen bentheim leer emden aurich meppen aschendorf hanover hamelin
             neustadt_am_rubenberge gottingen stade neuhaus gestenthorpe osterholz achim zeven osnabruck bersenbruck
             verden soltau lingen hoya nienburg diepholz einbeck duderstadt herzberg wernigerode
-            hildesheim alfeld burgdorf meinersen gifhorn
+            hildesheim alfeld burgdorf meinersen gifhorn polle
          }
 
          include = "expl_western_europe"
@@ -5456,7 +5456,7 @@ countries = {
          starting_technology_level = 3
 
          own_control_core = {
-            darmstadt bensheim offenbach erbach friedberg_hesse marburg nidda lauterbach worms oppenheim
+            darmstadt bensheim offenbach erbach friedberg_hesse marburg nidda lauterbach worms oppenheim vohl
          }
 
          include = "expl_western_europe"
@@ -11160,7 +11160,7 @@ countries = {
          starting_technology_level = 3
 
          own_control_core = {
-            oldenburg elsfleth delmenhorst birkenfeld cloppenburg friesoythe vechta eutin jever
+            oldenburg elsfleth delmenhorst birkenfeld cloppenburg friesoythe vechta eutin jever schwartau
          }
 
          include = "expl_western_europe"
@@ -13560,7 +13560,7 @@ countries = {
          starting_technology_level = 3
 
          own_control_core = {
-            kiel heiligenhafen plon stormarn segeberg rendsburg steinburg pinneberg heide
+            kiel heiligenhafen plon stormarn segeberg rendsburg steinburg pinneberg heide ahrensbok
          }
 
          include = "expl_western_europe"

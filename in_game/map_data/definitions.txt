@@ -305,10 +305,10 @@
 			}
 			holstein_area = {
 				lubeck_province = {
-					lubeck ratzeburg lauenburg
+					lubeck ratzeburg lauenburg schwartau
 				}
 				holstein_province = {
-					kiel heide steinburg rendsburg stormarn segeberg pinneberg plon heiligenhafen eutin
+					kiel heide steinburg rendsburg stormarn segeberg pinneberg plon heiligenhafen eutin ahrensbok
 				}
 			}
 			brandenburg_area = {
@@ -334,7 +334,7 @@
 					schweinitz wittenberg bitterfeld liebenwerda torgau delitzsch
 				}
 				altmark_province = {
-					stendal gardelegen salzwedel osterburg haldensleben wolmirstedt
+					stendal gardelegen salzwedel osterburg haldensleben wolmirstedt calvorde
 				}
 				magdeburger_borde_province = {
 					magdeburg calbe halberstadt quedlinburg burg jerichow 
@@ -343,7 +343,7 @@
 					halle_an_der_saale weissenfels freyburg merseburg eisleben
 				}
 				langensalza_province = {
-					muhlhausen nordhausen sangerhausen sondershausen langensalza beichlingen erfurt
+					muhlhausen nordhausen sangerhausen sondershausen langensalza beichlingen oldisleben allstedt volkenroda immenrode
 				}
 				anhalt_province = {
 					zerbst bernburg ballenstedt hecklingen hohenerxleben gusten kothen sandersleben grobzig lobnitz repau posigk dessau diesdorf schierau rosslau lindau coswig godnitz gross_muhlingen dornburg aschersleben walternienburg gross_alsleben barenthoren
@@ -387,16 +387,16 @@
 			}
 			hesse_area = {
 				hessen_bergland_province = {
-					kassel eschwege rotenburg korbach frankenberg marburg melsungen hofgeismar
+					kassel eschwege rotenburg korbach frankenberg melsungen hofgeismar vohl
 				}
 				untermain_province = {
 					darmstadt offenbach bensheim erbach
 				}
 				wetterau_province = {
-					hanau frankfurt giessen wetzlar friedberg_hesse budingen nidda
+					hanau frankfurt giessen wetzlar friedberg_hesse budingen nidda marburg hunfeld
 				}
 				vogelsberg_province = {
-					fulda lauterbach hunfeld hersfeld ziegenhain
+					fulda lauterbach hersfeld ziegenhain
 				}
 				taunus_province = {
 					dillenburg wiesbaden diez usingen katzenelnbogen hadamar mainz
@@ -449,7 +449,7 @@
 			}
 			hanover_brunswick_area = {
 				hanover_province = {
-					hildesheim hanover burgdorf buckeburg hamelin neustadt_am_rubenberge hoxter
+					hildesheim hanover burgdorf buckeburg hamelin neustadt_am_rubenberge hoxter polle
 				}
 				brunswick_province = {
 					brunswick wolfenbuttel helmstedt gifhorn meinersen
@@ -480,10 +480,8 @@
 					eisenberg weimar apolda arnstadt rudolstadt
 				}
 				thuringer_wald_province = {
-					hildburghausen schmalkalden eisenach meiningen gotha ohrdruf schleusingen coburg saalfeld sonneberg leutenberg gehren kranichfeld camburg angelroda geschwenda remptendorf zeulenroda langenwetzendorf mehla new1 ostheim oberellen volkenroda schlotheim immenrode oldisleben allstedt weisbach
+					hildburghausen schmalkalden eisenach meiningen gotha ohrdruf schleusingen coburg saalfeld sonneberg leutenberg gehren kranichfeld camburg angelroda geschwenda remptendorf zeulenroda langenwetzendorf mehla new1 ostheim oberellen schlotheim weisbach erfurt
 				}
-
-				
 				vogtland_province = {
 					gera schleiz altenburg naumburg
 				}
