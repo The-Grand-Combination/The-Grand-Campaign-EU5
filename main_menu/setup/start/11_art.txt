@@ -40,7 +40,7 @@ work_of_art_manager = {
 	monument = { location = djenne origin = djenne  quality = 80 creation_date = 1330.1.1  key = djenne_mosque }
 	temple_tower = { location = timbuktu origin = timbuktu  quality = 70 creation_date = 1330.1.1  key = sankore_madrasa }
 	monument = { location = timbuktu origin = timbuktu  quality = 55 creation_date = 1327.1.1  key = djinguereber_mosque }
-	#Meissen - MEI
+	#Meissen - SAX
 	chronicle = { location = meissen origin = meissen quality = 87 creation_date = 1235.1.1 key = sachsenspiegel }
 	#Teutons - TEU
 	chronicle = { artist = teu_peter_von_dusburg location = malbork origin = malbork quality = 40 creation_date = 1326.1.1 key = terrae_prussiae }

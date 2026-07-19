@@ -2111,8 +2111,8 @@ building_manager = {
 	the_bock_fortifications = { tag = LUX level = 1 location = luxembourg } #The Bock
 
 	#Germany
-	castle = { tag = SWR level = 1 location = schwerin }
-	castle = { tag = MEI level = 1 location = dresden }
+	castle = { tag = MKL level = 1 location = schwerin }
+	castle = { tag = SAX level = 1 location = dresden }
 	castle = { tag = HAB level = 1 location = klagenfurt }
 	castle = { tag = TIR level = 1 location = merano }
 	castle = { tag = LBV level = 1 location = landshut }
@@ -2124,11 +2124,11 @@ building_manager = {
 	#castle = { tag = HOL level = 1 location = the_hague }
 	#castle = { tag = UTR level = 1 location = utrecht }
 
-	monastery 	= { tag = MEI level = 1 location = meissen } # Altzella 
+	monastery 	= { tag = SAX level = 1 location = meissen } # Altzella 
 
 
-	tar_kiln = { tag = MAI level = 1 location = miltenberg } 
-	tar_kiln = { tag = HNB level = 1 location = rudolstadt } 
+	tar_kiln = { tag = BAV level = 1 location = miltenberg } 
+	tar_kiln = { tag = SZR level = 1 location = rudolstadt } 
 
 	#Switzerland
 
@@ -3616,7 +3616,7 @@ building_manager = {
 
 	#Ecclesiastical Province Cathedrals
 	cathedral = { tag = KOL level = 1 location = cologne }
-	cathedral = { tag = MAI level = 1 location = mainz }
+	cathedral = { tag = NAS level = 1 location = mainz }
 	cathedral = { tag = TRI level = 1 location = trier }
 	cathedral = { tag = SLZ level = 1 location = salzburg }
 	cathedral = { tag = BOH level = 1 location = prague }
