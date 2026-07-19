@@ -11151,6 +11151,14 @@ countries = {
 
           }
       }
+      KNP = {
+         include = "expl_whole_world"
+         country_rank = rank_county
+
+         own_control_core = {
+            varel seefeld eckwarden nordenham kniphausen
+         }
+      }
       OLD = {
          include = "expl_whole_world"
          capital = oldenburg
@@ -11160,12 +11168,10 @@ countries = {
          starting_technology_level = 3
 
          own_control_core = {
-            oldenburg elsfleth delmenhorst birkenfeld cloppenburg friesoythe vechta eutin jever schwartau
+            oldenburg elsfleth delmenhorst birkenfeld cloppenburg friesoythe vechta eutin jever schwartau wilhelmshaven grosswurden
          }
 
-         include = "expl_western_europe"
          include = "catholic_monarchy"
-         include = "expl_northern_europe"
          include = "german_principality"
 
          tolerated_cultures = {

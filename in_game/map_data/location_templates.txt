@@ -992,6 +992,13 @@ wesel = { topography = flatland vegetation = grasslands climate = oceanic religi
 hamm = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = lower_saxon raw_material = salt}
 bochum = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = lower_saxon raw_material = millet}
 oldenburg = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = lower_saxon raw_material = wool}
+wilhelmshaven = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = lower_saxon raw_material = wool}
+grosswurden = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = lower_saxon raw_material = wool}
+varel = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = lower_saxon raw_material = wool}
+seefeld = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = lower_saxon raw_material = wool}
+eckwarden = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = lower_saxon raw_material = wool}
+nordenham = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = lower_saxon raw_material = wool}
+kniphausen = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = lower_saxon raw_material = wool}
 elsfleth = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = frisian raw_material = fish natural_harbor_suitability = 0.40}
 gestenthorpe = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = frisian raw_material = salt natural_harbor_suitability = 0.40}
 bremen = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = lower_saxon raw_material = wool natural_harbor_suitability = 0.25}

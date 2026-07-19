@@ -427,7 +427,7 @@
 					nienburg hoya diepholz osnabruck
 				}
 				west_wesermarch_province = {
-					oldenburg elsfleth friesoythe delmenhorst jever cloppenburg vechta
+					oldenburg elsfleth friesoythe delmenhorst jever cloppenburg vechta wilhelmshaven grosswurden varel seefeld eckwarden nordenham kniphausen
 				}
 				east_friesland_province = {
 					emden aurich leer

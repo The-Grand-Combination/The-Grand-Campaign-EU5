@@ -495,3 +495,10 @@ OLD = {
 	culture_definition = lower_saxon
 	religion_definition = catholic
 }
+
+KNP = {
+	color = rgb { 130  150  125 }
+
+	culture_definition = lower_saxon
+	religion_definition = catholic
+}
