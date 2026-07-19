@@ -128,15 +128,6 @@ MZK = {
 
 }
 
-ANT = {
-	color = rgb { 8 86 149 }
-	color2 = rgb { 8 86 149 }
-
-	culture_definition = albanian
-	religion_definition = catholic 
-
-}
-
 MTR = {
 	color = rgb { 75 110 50 }
 	color2 = rgb { 75 110 50 }

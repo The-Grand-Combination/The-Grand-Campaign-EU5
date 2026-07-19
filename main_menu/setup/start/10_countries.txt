@@ -2,6 +2,11 @@ current_age =
 age_7_industry
 countries = {
    countries = {
+      ANT = {
+         include = "expl_whole_world"
+         country_rank = rank_county
+
+      }
       LIM = {
          include = "expl_whole_world"
          country_rank = rank_county

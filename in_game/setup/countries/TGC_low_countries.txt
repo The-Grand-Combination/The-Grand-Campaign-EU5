@@ -66,3 +66,10 @@ LIM = {
 	culture_definition = walloon
 	religion_definition = catholic
 }
+
+ANT = {
+	color = rgb { 188 39 39 }
+
+	culture_definition = walloon
+	religion_definition = catholic
+}

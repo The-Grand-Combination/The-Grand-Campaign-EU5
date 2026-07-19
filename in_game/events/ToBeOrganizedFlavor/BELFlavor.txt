@@ -1,1 +1,468 @@
 namespace = belgium
+
+## Treaty of London 1839 ##
+
+# UK starting event
+belgium.1 = {
+	type = country_event
+	title = belgium.1.title
+	desc = belgium.1.desc
+
+	trigger = {
+		
+	}
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = GBI
+		from = 1838.1.1
+		to = 1840.1.1
+		monthly_chance = 100
+	}
+
+	option = {
+		name = belgium.1.a
+
+		c:FRA = { trigger_event_non_silently = belgium.2 }
+	}
+}
+
+# French chance to do Flahaut
+belgium.2 = {
+	type = country_event
+	title = belgium.2.title
+	desc = belgium.2.desc
+
+	trigger = {
+		
+	}
+
+	fire_only_once = yes
+
+	option = { # we will accept British mediation
+		name = belgium.2.a
+
+		add_prestige = 1
+
+		c:GBI = { trigger_event_non_silently = belgium.3 }
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = { # flahaut plan
+		name = belgium.2.b
+
+		c:GBI = { trigger_event_non_silently = belgium.8 }
+
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+# UK moves ahead with historical
+belgium.3 = {
+	type = country_event
+	title = belgium.3.title
+	desc = belgium.3.desc
+
+	trigger = {
+		
+	}
+
+	fire_only_once = yes
+
+	option = { # continue with mediation
+		name = belgium.3.a
+
+		c:NED = { trigger_event_non_silently = belgium.4 }
+	}
+}
+
+# Netherlands asked
+belgium.4 = {
+	type = country_event
+	title = belgium.4.title
+	desc = belgium.4.desc
+
+	trigger = {
+		
+	}
+
+	fire_only_once = yes
+
+	option = { # continue with mediation
+		name = belgium.4.a
+
+		c:BEL = { trigger_event_non_silently = belgium.5 }
+	}
+
+	option = { # reject it
+		name = belgium.4.b
+
+		add_casus_belli = { target = c:BEL type = casus_belli:cb_annex }
+		declare_war_with_cb = { target = c:BEL type = casus_belli:cb_annex }
+		random_current_war = {
+			limit = {
+				or = {
+					attacker_leader = c:NED
+					defender_leader = c:BEL
+				}
+			}
+			save_scope_as = dutch_belgian_war
+		}
+		c:GBI = {
+			join_war_with = {
+				target = c:BEL
+				war = scope:dutch_belgian_war
+				call_in_subjects = no
+			}
+		}
+	}
+}
+
+# Belgium asked
+belgium.5 = {
+	type = country_event
+	title = belgium.5.title
+	desc = belgium.5.desc
+
+	trigger = {
+		
+	}
+
+	fire_only_once = yes
+
+	option = { # continue with mediation
+		name = belgium.5.a
+
+		c:GBI = { trigger_event_non_silently = belgium.6 }
+	}
+
+	option = { # reject it
+		name = belgium.5.b
+
+		c:NED = { trigger_event_non_silently = belgium.7 }
+	}
+}
+
+# historical treaty
+belgium.6 = {
+	type = country_event
+	title = belgium.6.title
+	desc = belgium.6.desc
+
+	trigger = {
+		
+	}
+
+	fire_only_once = yes
+
+	option = { # continue with mediation
+		name = belgium.6.a
+
+		c:BEL = {
+			province:east_luxembourg_province = {
+				every_location_in_province = {
+					change_location_owner = c:LUX
+				}
+			}
+
+			province:limburg_province = {
+				every_location_in_province = {
+					change_location_owner = c:LIM
+				}
+			}
+
+			location:hulst = {
+				change_location_owner = c:NED
+			}
+		}
+
+		c:LUX = {
+			make_subject_of = {
+				target = c:NED
+				type = subject_type:vassal
+			}
+		}
+		
+		c:LIM = {
+			make_subject_of = {
+				target = c:NED
+				type = subject_type:vassal
+			}
+		}
+
+		c:BEL = {
+			add_truce_with = {
+				target = c:NED
+				years = 25
+				mutual = yes
+			}
+		}
+	}
+}
+
+# war - world on netherlands' side
+belgium.7 = {
+	type = country_event
+	title = belgium.7.title
+	desc = belgium.7.desc
+
+	trigger = {
+		
+	}
+
+	fire_only_once = yes
+
+	option = { # our chance to kill belgium with support
+		name = belgium.7.a
+
+		add_casus_belli = { target = c:BEL type = casus_belli:cb_annex }
+		declare_war_with_cb = { target = c:BEL type = casus_belli:cb_annex }
+		random_current_war = {
+			limit = {
+				or = {
+					attacker_leader = c:NED
+					defender_leader = c:BEL
+				}
+			}
+			save_scope_as = dutch_belgian_war
+		}
+		c:GBI = {
+			join_war_with = {
+				target = c:NED
+				war = scope:dutch_belgian_war
+				call_in_subjects = no
+			}
+		}
+
+	}
+}
+
+# France proposes Flahaut to UK
+belgium.8 = {
+	type = country_event
+	title = belgium.8.title
+	desc = belgium.8.desc
+
+	trigger = {
+		
+	}
+
+	fire_only_once = yes
+
+	option = { # disagree, continue with historical
+		name = belgium.8.a
+
+		c:FRA = { trigger_event_non_silently = belgium.9 }
+
+		trigger_event_non_silently = belgium.3
+
+		ai_chance = {
+			factor = 0
+		}
+	}
+
+	option = { # agree to flahaut
+		name = belgium.8.a
+
+		c:FRA = { trigger_event_non_silently = belgium.10 }
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+# French notif that Flahaut plan rejected
+belgium.9 = {
+	type = country_event
+	title = belgium.9.title
+	desc = belgium.9.desc
+
+	trigger = {
+		
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = belgium.9.a
+
+		
+	}
+}
+
+# French begin with Flahaut plan
+belgium.10 = {
+	type = country_event
+	title = belgium.10.title
+	desc = belgium.10.desc
+
+	trigger = {
+		
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = belgium.10.a
+
+		c:BEL = { trigger_event_non_silently = belgium.11 }
+	}
+}
+
+# Belgian notif of Flahaut
+belgium.11 = {
+	type = country_event
+	title = belgium.11.title
+	desc = belgium.11.desc
+
+	trigger = {
+		
+	}
+
+	fire_only_once = yes
+
+	option = { # it is hopeless
+		name = belgium.11.a
+
+		c:FRA = { trigger_event_non_silently = belgium.12 }
+	}
+}
+
+# Flahaut plan partition
+belgium.12 = {
+	type = country_event
+	title = belgium.12.title
+	desc = belgium.12.desc
+
+	trigger = {
+		
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = belgium.12.a
+
+		c:BEL = {
+			# Prussian partition
+				province:east_luxembourg_province = {
+					every_location_in_province = {
+						change_location_owner = c:PRU
+					}
+				}
+				province:west_luxembourg_province = {
+					every_location_in_province = {
+						change_location_owner = c:PRU
+					}
+				}
+				location:maastricht = {
+					change_location_owner = c:PRU
+				}
+				location:weert = {
+					change_location_owner = c:PRU
+				}
+				location:new2 = {
+					change_location_owner = c:PRU
+				}
+				location:stavelot = {
+					change_location_owner = c:PRU
+				}
+				location:la_roche = {
+					change_location_owner = c:PRU
+				}
+				location:dinant = {
+					change_location_owner = c:PRU
+				}
+				location:bouillon = {
+					change_location_owner = c:PRU
+				}
+				location:limbourg = { # Neutral Moresnet unneeded afterwards
+					change_location_owner = c:PRU
+				}
+			
+			# French partition
+				province:hainaut_province = {
+					every_location_in_province = {
+						change_location_owner = c:FRA
+					}
+				}
+				province:brabant_province = {
+					every_location_in_province = {
+						change_location_owner = c:FRA
+					}
+				}
+				location:walcourt = {
+					change_location_owner = c:FRA
+				}
+				location:namur = {
+					change_location_owner = c:FRA
+				}
+				location:liege = {
+					change_location_owner = c:FRA
+				}
+				location:aalst = {
+					change_location_owner = c:FRA
+				}
+				location:tournai = {
+					change_location_owner = c:FRA
+				}
+
+			# Dutch partition
+				province:loon_province = {
+					every_location_in_province = {
+						change_location_owner = c:NED
+					}
+				}
+				location:turnhout = {
+					change_location_owner = c:NED
+				}
+				location:mechelen = {
+					change_location_owner = c:NED
+				}
+				location:roermond = {
+					change_location_owner = c:NED
+				}
+				location:venlo = {
+					change_location_owner = c:NED
+				}
+
+			# British partition
+				province:west_flanders_province = {
+					every_location_in_province = {
+						change_location_owner = c:ANT
+					}
+				}
+				location:ghent = {
+					change_location_owner = c:ANT
+				}
+				location:kortriik = {
+					change_location_owner = c:ANT
+				}
+				location:oudenaarde = {
+					change_location_owner = c:ANT
+				}
+				location:sint_niklaas = {
+					change_location_owner = c:ANT
+				}
+				location:hulst = {
+					change_location_owner = c:ANT
+				}
+				location:antwerp = {
+					change_location_owner = c:ANT
+				}
+		}
+		c:ANT = {
+			make_subject_of = {
+				target = c:GBI
+				type = subject_type:vassal
+			}
+		}
+	}
+}
