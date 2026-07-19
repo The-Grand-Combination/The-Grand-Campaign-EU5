@@ -41,13 +41,6 @@ CHN = {
 	religion_definition = catholic
 }
 
-LIM = {
-	color = rgb { 180 110 110 }
-
-	culture_definition = walloon
-	religion_definition = catholic
-}
-
 NAM = {
 	color = rgb { 193 185 95 }
 

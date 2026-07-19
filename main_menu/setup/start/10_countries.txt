@@ -2,6 +2,24 @@ current_age =
 age_7_industry
 countries = {
    countries = {
+      LIM = {
+         include = "expl_whole_world"
+         country_rank = rank_county
+
+         our_cores_conquered_by_others = {
+            maastricht venlo weert roermond new2
+         }
+
+      }
+      LUX = {
+         include = "expl_whole_world"
+         country_rank = rank_county
+
+         our_cores_conquered_by_others = {
+            luxembourg vianden
+         }
+
+      }
       ABA = {
          include = "expl_whole_world"
          country_rank = rank_county
@@ -1045,7 +1063,7 @@ countries = {
             brussels nivelles leuven mechelen antwerp turnhout oudenaarde ypres veurne ostend
             bruges hulst ghent sint_niklaas aalst kortriik ath chimay enghien maubeuge
             mons namur liege dinant walcourt tournai hasselt bree borgloon bastogne
-            orchimont la_roche arlon bouillon stavelot luxembourg vianden maastricht roermond venlo
+            orchimont la_roche arlon bouillon stavelot luxembourg vianden maastricht roermond venlo new2
             weert
          }
 
@@ -16079,7 +16097,7 @@ countries = {
       }
       USA = {
          include = "expl_whole_world"
-         capital = london
+         capital = anacostia
          court_language = norman_dialect
          country_rank = rank_kingdom
          starting_technology_level = 3

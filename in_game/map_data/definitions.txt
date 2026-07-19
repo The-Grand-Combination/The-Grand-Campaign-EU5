@@ -228,7 +228,7 @@
 			
 			brabant_area = {
 				limburg_province = {
-					maastricht venlo weert roermond
+					maastricht venlo weert roermond new2
 				}
 				antwerp_province = {
 					antwerp bergen_zoom breda turnhout mechelen

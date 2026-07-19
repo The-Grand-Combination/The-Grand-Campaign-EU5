@@ -1,0 +1,11 @@
+﻿l_english:
+ belgium.1.title: "Treaty of London $DHE_DATE_YEAR$"
+ belgium.1.desc: "The British have offered a settlement where we will keep most of our lands, but the Netherlands will get Limburg and Luxembourg as vassals."
+ belgium.1.a: "We must accept."
+ belgium.2.title: "Treaty of London $DHE_DATE_YEAR$"
+ belgium.2.desc: "The British have offered a settlement where Belgium will go independent, but at least we will get Limburg and Luxembourg as vassals."
+ belgium.2.a: "We must accept."
+ belgium.2.b: "This is an offense to our national integrity—restart the war."
+ belgium.3.title: "Treaty of London $DHE_DATE_YEAR$"
+ belgium.3.desc: "The Dutch have agreed."
+ belgium.3.a: "Very well."

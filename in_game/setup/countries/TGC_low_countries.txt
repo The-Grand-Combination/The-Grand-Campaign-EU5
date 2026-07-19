@@ -59,3 +59,10 @@ MRT = {
 	culture_definition = frisian
 	religion_definition = catholic
 }
+
+LIM = {
+	color = rgb { 246  197  10 }
+
+	culture_definition = walloon
+	religion_definition = catholic
+}
