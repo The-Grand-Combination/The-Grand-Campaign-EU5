@@ -5387,7 +5387,7 @@ countries = {
          starting_technology_level = 3
 
          own_control_core = {
-            sigmaringen
+            sigmaringen dettingen melchingen langenenslingen beuron thalheim
          }
 
          include = "expl_western_europe"
@@ -16895,7 +16895,7 @@ countries = {
          own_control_core = {
             stuttgart goppingen welzheim backnang urach nagold riedlingen oberndorf calw hohenberg
             tubingen waldsee saulgau heilbronn vaihingen crailsheim ohringen mergentheim hall ellwangen
-            heidenheim helfenstein ulm erbach_swabia biberach waldburg ravensburg horb
+            heidenheim helfenstein ulm erbach_swabia biberach waldburg ravensburg horb magerkingen
          }
 
          include = "expl_western_europe"

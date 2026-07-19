@@ -1411,6 +1411,12 @@ oettingen = { topography = flatland vegetation = farmland climate = continental 
 ulm = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = swabian raw_material = fiber_crops}
 heidenheim = { topography = plateau vegetation = woods climate = continental religion = catholic culture = swabian raw_material = lumber}
 sigmaringen = { topography = plateau vegetation = woods climate = continental religion = catholic culture = swabian raw_material = wild_game}
+dettingen = { topography = plateau vegetation = woods climate = continental religion = catholic culture = swabian raw_material = wild_game}
+melchingen = { topography = plateau vegetation = woods climate = continental religion = catholic culture = swabian raw_material = wild_game}
+magerkingen = { topography = plateau vegetation = woods climate = continental religion = catholic culture = swabian raw_material = wild_game}
+langenenslingen = { topography = plateau vegetation = woods climate = continental religion = catholic culture = swabian raw_material = wild_game}
+beuron = { topography = plateau vegetation = woods climate = continental religion = catholic culture = swabian raw_material = wild_game}
+thalheim = { topography = plateau vegetation = woods climate = continental religion = catholic culture = swabian raw_material = wild_game}
 riedlingen = { topography = plateau vegetation = grasslands climate = continental religion = catholic culture = swabian raw_material = wool}
 helfenstein = { topography = plateau vegetation = grasslands climate = continental religion = catholic culture = swabian raw_material = millet}
 balingen = { topography = hills vegetation = woods climate = continental religion = catholic culture = swabian raw_material = fur}

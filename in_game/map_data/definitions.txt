@@ -634,7 +634,7 @@
 					mosbach buchen tauberbischofsheim
 				}
 				hegau_province = {
-					konstanz uberlingen schaffhausen stockach lake_constance
+					konstanz uberlingen schaffhausen stockach beuron thalheim lake_constance
 				}
 			}
 			wurttemberg_area = {
@@ -645,7 +645,7 @@
 					ulm heidenheim riedlingen helfenstein erbach_swabia
 				}
 				western_upper_swabia_province = {
-					ravensburg biberach waldburg waldsee saulgau
+					ravensburg biberach waldburg waldsee saulgau langenenslingen
 				}
 				neckar_province = {
 					horb tubingen stuttgart urach vaihingen goppingen calw oberndorf nagold hohenberg
@@ -654,7 +654,7 @@
 					mergentheim hall crailsheim backnang ohringen heilbronn
 				}
 				hohenzollern_province = {
-					balingen sigmaringen
+					balingen sigmaringen dettingen melchingen magerkingen
 				}
 			}
 			franconia_area = {
