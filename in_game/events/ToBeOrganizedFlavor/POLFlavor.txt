@@ -1,1 +1,176 @@
 namespace = poland
+	
+## Krakow Uprising ##
+	
+	# Krakow starting event
+	poland.1 = {
+		type = country_event
+		title = poland.1.title
+		desc = poland.1.desc
+	
+		trigger = { }
+	
+		fire_only_once = yes
+	
+		dynamic_historical_event = {
+			tag = KRA
+			from = 1845.1.1
+			to = 1850.1.1
+			monthly_chance = 100
+		}
+	
+		option = {
+			name = poland.1.a
+	
+			c:HAB = {
+				cancel_subject = c:KRA
+				trigger_event_non_silently = poland.2
+			}
+		}
+	}
+	
+	# Austrian response
+	poland.2 = {
+		type = country_event
+		title = poland.2.title
+		desc = poland.2.desc
+	
+		trigger = { }
+	
+		fire_only_once = yes
+	
+		option = {
+			name = poland.2.a
+	
+			c:RUS = { trigger_event_non_silently = poland.3 }
+		}
+	}
+	
+	# Russian response
+	poland.3 = {
+		type = country_event
+		title = poland.3.title
+		desc = poland.3.desc
+	
+		trigger = { }
+	
+		fire_only_once = yes
+	
+		option = { # yea kill them
+			name = poland.3.a
+	
+			set_global_variable = russia_agrees_kill_krakow
+	
+			c:PRU = { trigger_event_non_silently = poland.4 }
+	
+			ai_chance = {
+				factor = 100
+			}
+		}
+	
+		option = { # option purely to screw on Austria
+			name = poland.3.b
+	
+			c:PRU = { trigger_event_non_silently = poland.4 }
+	
+			ai_chance = {
+				factor = 0
+			}
+		}
+	}
+	
+	# Prussian response
+	poland.4 = {
+		type = country_event
+		title = poland.4.title
+		desc = poland.4.desc
+	
+		trigger = { }
+	
+		fire_only_once = yes
+	
+		option = { # yea kill them
+			name = poland.4.a
+	
+			if = {
+				limit = {
+					has_global_variable = russia_agrees_kill_krakow
+				}
+				c:HAB = { trigger_event_non_silently = poland.5 }
+			}
+			else = {
+				c:HAB = { trigger_event_non_silently = poland.6 }
+			}
+	
+			ai_chance = {
+				factor = 100
+			}
+		}
+	
+		option = { # option purely to screw on Austria
+			name = poland.4.b
+	
+			c:HAB = { trigger_event_non_silently = poland.6 }
+	
+			ai_chance = {
+				factor = 0
+			}
+		}
+	}
+	
+	# Austrian event for war with Krakow
+	poland.5 = {
+		type = country_event
+		title = poland.5.title
+		desc = poland.5.desc
+	
+		trigger = { }
+	
+		fire_only_once = yes
+	
+		option = {
+			name = poland.5.a
+	
+			add_casus_belli = { target = c:KRA type = casus_belli:cb_annex }
+			declare_war_with_cb = { target = c:KRA type = casus_belli:cb_annex }
+		}
+	}
+	
+	# Austrian event for war with Krakow
+	poland.6 = {
+		type = country_event
+		title = poland.6.title
+		desc = poland.6.desc
+	
+		trigger = { }
+	
+		fire_only_once = yes
+	
+		option = {
+			name = poland.6.a
+	
+			add_prestige = -5
+	
+			add_casus_belli = { target = c:KRA type = casus_belli:cb_annex }
+			declare_war_with_cb = { target = c:KRA type = casus_belli:cb_annex }
+	
+			ai_chance = {
+				factor = 100
+			}
+		}
+	
+		option = {
+			name = poland.6.b
+	
+			add_prestige = -15
+	
+			ai_chance = {
+				factor = 0
+			}
+		}
+	}
+	
+	# TODO: one event for Krakow as base of operations for Polish nationalists if independent and at peace - one event for Marx/Engels and the social character of Krakow for Communist Manifesto chain - one event for supporting Chochołów Uprising
+	
+## Greater Polish Uprising of 1848 ##
+	

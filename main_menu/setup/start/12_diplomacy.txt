@@ -31,4 +31,7 @@ diplomacy_manager = {
         dependency = { first = GBI second = MTC subject_type = vassal }
         dependency = { first = GBI second = RPL subject_type = vassal }
 
+    # Austria
+        dependency = { first = HAB second = KRA subject_type = vassal }
+
 }

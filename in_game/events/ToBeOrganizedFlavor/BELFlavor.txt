@@ -98,6 +98,10 @@ belgium.4 = {
 		name = belgium.4.a
 
 		c:BEL = { trigger_event_non_silently = belgium.5 }
+
+		ai_chance = {
+			factor = 100
+		}
 	}
 
 	option = { # reject it
@@ -121,6 +125,10 @@ belgium.4 = {
 				call_in_subjects = no
 			}
 		}
+
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
 
@@ -140,12 +148,20 @@ belgium.5 = {
 		name = belgium.5.a
 
 		c:GBI = { trigger_event_non_silently = belgium.6 }
+
+		ai_chance = {
+			factor = 100
+		}
 	}
 
 	option = { # reject it
 		name = belgium.5.b
 
 		c:NED = { trigger_event_non_silently = belgium.7 }
+
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
 
