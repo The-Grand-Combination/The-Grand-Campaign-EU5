@@ -1199,7 +1199,7 @@
 			romagna_area = {
 				bologna_province = { bologna medicina vergato }
 				ferrara_province = { ferrara argenta comacchio lagoon_of_comacchio }
-				romagna_province = { rimini cesena faenza imola ravenna }
+				romagna_province = { rimini cesena faenza imola ravenna montefeltro }
 			}
 			lazio_area = {
 				campagna_province = { anagni palestrina sabina tivoli central_apennines5 }
@@ -1227,7 +1227,7 @@
 				marche_province = { ancona ascolipiceno camerino fabriano fermo macerata central_apennines1 }
 				perugia_province = { perugia cittacastello marsciano lake_trasimeno }
 				spoleto_province = { spoleto assisi narni rieti todi }
-				urbino_province = { urbino gubbio montefeltro pesaro }
+				urbino_province = { urbino gubbio pesaro }
 			}
 			piemonte_area = {
 				alessandria_province = { alessandria novi rovegno tortona }
