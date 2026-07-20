@@ -8679,7 +8679,7 @@ countries = {
          starting_technology_level = 3
 
          own_control_core = {
-            lucca
+            lucca montignoso gallicano castiglione minucchiano 
          }
 
          include = "expl_mediterranean"
@@ -9083,7 +9083,7 @@ countries = {
          starting_technology_level = 3
 
          own_control_core = {
-            fosdinovo
+            massa villafranca_lugiana arpiola_pianfurcano rochetta_di_vara treschietto north_apennines
          }
 
          include = "expl_mediterranean"
@@ -9874,7 +9874,7 @@ countries = {
          starting_technology_level = 3
 
          own_control_core = {
-            north_apennines frassinoro modena nonantola canossa guastalla mirandola reggioem
+            frassinoro modena nonantola canossa novellara mirandola reggioem castelnuovo_di_garfagnana
          }
 
          include = "expl_mediterranean"
@@ -11453,7 +11453,7 @@ countries = {
             velletri bracciano civitavecchia corneto orte orvietano viterbo assisi narni rieti
             spoleto todi benevento camerino ascolipiceno fermo macerata ancona urbino fabriano
             gubbio pesaro marsciano perugia rimini cesena imola ravenna bologna medicina
-            vergato comacchio ferrara argenta
+            vergato comacchio ferrara argenta pontecorvo
          }
 
          include = "catholic_bishopric"
@@ -11572,12 +11572,12 @@ countries = {
       }
       PAR = {
          include = "expl_whole_world"
-         capital = modena
+         capital = parma
          country_rank = rank_county
          starting_technology_level = 3
 
          own_control_core = {
-            parma berceto sandonnino piacenza bardi fiorenzuola bobbio
+            parma berceto sandonnino piacenza bardi fiorenzuola bobbio guastalla
          }
 
          include = "expl_mediterranean"
@@ -15783,7 +15783,7 @@ countries = {
          own_control_core = {
             florence mangona poggibonsi sanlorenzo livorno piombino pisa pontedera arezzo massamar
             chiusi montalcino siena grosseto volterra cortona pistoia prato pitigliano sansepolcro
-            modigliana ficarolo massa pescia
+            modigliana ficarolo pescia barga fosdinovo calice_e_albiano bagnone pontremoli coloretta
          }
 
          include = "expl_mediterranean"

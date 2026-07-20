@@ -3111,7 +3111,7 @@ bobbio = { topography = hills vegetation = sparse climate = oceanic religion = c
 fiorenzuola = { topography = flatland vegetation = grasslands climate = subtropical religion = catholic culture = emilian raw_material = wine}
 reggioem = { topography = flatland vegetation = grasslands climate = subtropical religion = catholic culture = emilian raw_material = wine}
 canossa = { topography = hills vegetation = woods climate = oceanic religion = catholic culture = emilian raw_material = lumber}
-guastalla = { topography = wetlands vegetation = grasslands climate = subtropical religion = catholic culture = emilian raw_material = horses}
+novellara = { topography = wetlands vegetation = grasslands climate = subtropical religion = catholic culture = emilian raw_material = horses}
 rimini = { topography = flatland vegetation = farmland climate = subtropical religion = catholic culture = emilian raw_material = wine natural_harbor_suitability = 0.00}
 cesena = { topography = flatland vegetation = grasslands climate = subtropical religion = catholic culture = emilian raw_material = wine natural_harbor_suitability = 0.00}
 faenza = { topography = flatland vegetation = grasslands climate = subtropical religion = catholic culture = emilian raw_material = clay}
@@ -3311,6 +3311,22 @@ pitigliano = { topography = hills vegetation = grasslands climate = cold_arid re
 piombino = { topography = flatland vegetation = farmland climate = mediterranean religion = catholic culture = tuscan raw_material = lead natural_harbor_suitability = 0.25}
 lucca = { topography = hills vegetation = farmland climate = oceanic religion = catholic culture = tuscan raw_material = cotton natural_harbor_suitability = 0.00}
 massa = { topography = mountains vegetation = forest climate = oceanic religion = catholic culture = tuscan raw_material = wine natural_harbor_suitability = 0.00}
+guastalla = { topography = mountains vegetation = forest climate = oceanic religion = catholic culture = tuscan raw_material = wine }
+barga = { topography = mountains vegetation = forest climate = oceanic religion = catholic culture = tuscan raw_material = wine }
+gallicano = { topography = mountains vegetation = forest climate = oceanic religion = catholic culture = tuscan raw_material = wine }
+castiglione = { topography = mountains vegetation = forest climate = oceanic religion = catholic culture = tuscan raw_material = wine }
+montignoso = { topography = mountains vegetation = forest climate = oceanic religion = catholic culture = tuscan raw_material = wine }
+minucchiano = { topography = mountains vegetation = forest climate = oceanic religion = catholic culture = tuscan raw_material = wine }
+bagnone = { topography = mountains vegetation = forest climate = oceanic religion = catholic culture = tuscan raw_material = wine }
+calice_e_albiano = { topography = mountains vegetation = forest climate = oceanic religion = catholic culture = tuscan raw_material = wine }
+pontremoli = { topography = mountains vegetation = forest climate = oceanic religion = catholic culture = tuscan raw_material = wine }
+treschietto = { topography = mountains vegetation = forest climate = oceanic religion = catholic culture = tuscan raw_material = wine }
+rochetta_di_vara = { topography = mountains vegetation = forest climate = oceanic religion = catholic culture = tuscan raw_material = wine }
+villafranca_lugiana = { topography = mountains vegetation = forest climate = oceanic religion = catholic culture = tuscan raw_material = wine }
+arpiola_pianfurcano = { topography = mountains vegetation = forest climate = oceanic religion = catholic culture = tuscan raw_material = wine }
+coloretta = { topography = mountains vegetation = forest climate = oceanic religion = catholic culture = tuscan raw_material = wine }
+pontecorvo = { topography = mountains vegetation = forest climate = oceanic religion = catholic culture = tuscan raw_material = wine }
+castelnuovo_di_garfagnana = { topography = mountains vegetation = forest climate = oceanic religion = catholic culture = tuscan raw_material = wine }
 fosdinovo = { topography = mountains vegetation = forest climate = oceanic religion = catholic culture = emilian raw_material = marble natural_harbor_suitability = 0.00}
 pescia = { topography = flatland vegetation = farmland climate = mediterranean religion = catholic culture = tuscan raw_material = cotton}
 north_apennines = { topography = mountain_wasteland vegetation = forest climate = continental}

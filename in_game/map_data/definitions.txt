@@ -1183,19 +1183,23 @@
 				calabria_citra_province = { cosenza cassano castrovillari scalea paola rossano southern_apennines }
 			}
 			campania_area = {
-				lavoro_province = { naples caserta gaeta nola piedimonte sora venafro }
+				lavoro_province = { naples caserta gaeta nola piedimonte sora venafro pontecorvo }
 				principato_citra_province = { salerno campagna salacon vallo }
 				principato_ultra_province = { avellino ariano benevento santangelo }
 			}
 			emilia_area = {
-				bologna_province = { bologna medicina vergato }
-				ferrara_province = { ferrara argenta comacchio ficarolo lagoon_of_comacchio }
 				modena_province = { modena frassinoro nonantola mirandola }
 				parma_province = { parma berceto sandonnino }
 				piacenza_province = { piacenza bardi bobbio fiorenzuola }
-				reggioem_province = { reggioem canossa guastalla }
+				reggioem_province = { reggioem canossa novellara guastalla }
+				lunigiana_province = {
+					north_apennines barga gallicano castiglione minucchiano bagnone calice_e_albiano pontremoli treschietto rochetta_di_vara villafranca_lugiana arpiola_pianfurcano coloretta castelnuovo_di_garfagnana ficarolo
+				}
+			}
+			romagna_area = {
+				bologna_province = { bologna medicina vergato }
+				ferrara_province = { ferrara argenta comacchio lagoon_of_comacchio }
 				romagna_province = { rimini cesena faenza imola ravenna }
-				urbino_province = { urbino gubbio montefeltro pesaro }
 			}
 			lazio_area = {
 				campagna_province = { anagni palestrina sabina tivoli central_apennines5 }
@@ -1203,10 +1207,12 @@
 				patrimonio_province = { bracciano civitavecchia corneto orte orvietano viterbo lake_bolsena lake_bracciano }
 			}
 			liguria_area = {
-				cismonte_province = { bastia aleria calvi corte }
 				levante_province = { genoa lavagna sarzana }
-				pumonte_province = { ajaccio bonifacio sartene vico corsican_mountains }
 				punente_province = { albenga cairo_montenotte finalborgo savona ventimiglia }
+			}
+			corsica_area = {
+				cismonte_province = { bastia aleria calvi corte }
+				pumonte_province = { ajaccio bonifacio sartene vico corsican_mountains }
 			}
 			lombardy_area = {
 				bergamo_province = { bergamo cortenuova clusone zogno lake_iseo rhaetian_alps6 }
@@ -1221,6 +1227,7 @@
 				marche_province = { ancona ascolipiceno camerino fabriano fermo macerata central_apennines1 }
 				perugia_province = { perugia cittacastello marsciano lake_trasimeno }
 				spoleto_province = { spoleto assisi narni rieti todi }
+				urbino_province = { urbino gubbio montefeltro pesaro }
 			}
 			piemonte_area = {
 				alessandria_province = { alessandria novi rovegno tortona }
@@ -1248,7 +1255,7 @@
 				arezzo_province = { arezzo cortona sansepolcro }
 				florence_province = { florence mangona poggibonsi prato sanlorenzo pistoia modigliana }
 				grosseto_province = { grosseto massamar pitigliano piombino}
-				lucca_province = { lucca massa fosdinovo pescia north_apennines }
+				lucca_province = { lucca pescia massa fosdinovo montignoso }
 				pisa_province = { pisa livorno pontedera volterra }
 				siena_province = { siena chiusi montalcino }
 			}
@@ -2723,36 +2730,6 @@ asia = {
 			}
 
 			#Sea Zones
-			ryuukyuu_sea_area = {
-				okinawa_islands = { 
-					kujira_cape miyako_cape mifuga zanpa_cape kin_bay hedo_cape torinokuchi
-					japan_high_sea6 japan_high_sea7 japan_high_sea8 japan_high_sea9 
-					east_china_sea7 east_china_sea4 east_china_sea5 
-				}
-				sakishima_islands = {
-					hirakubo_cape higashihenna_cape yaeyama_islands yonaguni_strait
-					japan_high_sea10 japan_high_sea11
-				}
-			}
-			ezo_sea = {
-				chishima_islands = {
-					 mekkari_cape seoroshi_cape nobitsu_cape aron_cape chirippu_cape sango_cape
-					 north_western_pacific8 north_western_pacific10 okhotsk_high_sea5 okhotsk_high_sea7
-				}
-				kuril_islands = {
-					east_matsuwa maru_cape lopatka_cape
-					kapari_cape kambalny_bay kinpei_cape north_matsuwa hakusei_cape
-					north_western_pacific13 okhotsk_high_sea3 okhotsk_high_sea15
-				}
-				hokkaidou_east_coast = {
-					uchiura_bay shiriya_cape shinodai_cape erimo_cape tokachi_coast shirepa_cape
-					north_western_pacific6
-				}
-				hokkaidou_north_coast = {
-					notoro_cape chikapunotsu_cape nemuro_bay ochiishi_cape east_shikotan
-					north_western_pacific7
-				}
-			}
 			japan_coastline = {
 				tokaido_coast_sea_province = {
 					shio_cape daiou_cape ise_bay suruga_bay toutoumi_outward_sea
@@ -2779,6 +2756,10 @@ asia = {
 				oosumi_islands = {
 					sata_cape shibushi_bay udo_cape kadokura_cape nagata_cape
 					japan_high_sea5
+				}
+				hokkaidou_east_coast = {
+					uchiura_bay shiriya_cape shinodai_cape erimo_cape tokachi_coast shirepa_cape
+					north_western_pacific6
 				}
 			}
 			sea_of_japan_area = {
@@ -3237,6 +3218,17 @@ asia = {
 				}
 				tonkin_gulf_province = { dangzhuo_bay qinzhou_bay qiongzhou_strait tieshan_harbour yingge_cape }
 			}
+			ryuukyuu_sea_area = {
+				okinawa_islands = { 
+					kujira_cape miyako_cape mifuga zanpa_cape kin_bay hedo_cape torinokuchi
+					japan_high_sea6 japan_high_sea7 japan_high_sea8 japan_high_sea9 
+					east_china_sea7 east_china_sea4 east_china_sea5 
+				}
+				sakishima_islands = {
+					hirakubo_cape higashihenna_cape yaeyama_islands yonaguni_strait
+					japan_high_sea10 japan_high_sea11
+				}
+			}
 		}
 		tibet_region = {
 			amdo_area = {
@@ -3680,6 +3672,21 @@ asia = {
 				itelmen_coast_sea_zone_province = {
 					ozero_bol_shoye oktyabr_skii_coast krutogorovskiy_coast ichinskiy_coast
 					okhotsk_high_sea17 
+				}
+			}
+			ezo_sea = {
+				chishima_islands = {
+					 mekkari_cape seoroshi_cape nobitsu_cape aron_cape chirippu_cape sango_cape
+					 north_western_pacific8 north_western_pacific10 okhotsk_high_sea5 okhotsk_high_sea7
+				}
+				kuril_islands = {
+					east_matsuwa maru_cape lopatka_cape
+					kapari_cape kambalny_bay kinpei_cape north_matsuwa hakusei_cape
+					north_western_pacific13 okhotsk_high_sea3 okhotsk_high_sea15
+				}
+				hokkaidou_north_coast = {
+					notoro_cape chikapunotsu_cape nemuro_bay ochiishi_cape east_shikotan
+					north_western_pacific7
 				}
 			}
 		}
